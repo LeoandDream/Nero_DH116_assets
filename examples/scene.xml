@@ -1,6 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
 <mujoco model="nero_dh116_static_view">
   <include file="../mjcf/nero_dh116.xml" />
+  <asset>
+    <texture name="view_background" type="skybox" builtin="flat" rgb1="0.88 0.90 0.92" rgb2="0.88 0.90 0.92" width="32" height="192" />
+  </asset>
   <worldbody>
     <light name="view_key" pos="2 -2 4" dir="-0.3 0.3 -1" ambient="0.25 0.25 0.25" diffuse="0.8 0.8 0.8" />
     <light name="view_fill" pos="-2 2 3" dir="0.3 -0.3 -1" diffuse="0.5 0.5 0.5" />

@@ -18,6 +18,7 @@ licenses/    随源许可及连接件来源缺项
 ```bash
 python examples/view_static.py
 python examples/view_static.py --collision
+python examples/view_static.py --mount
 ```
 
 无桌面服务器可导出静态图片：
@@ -27,6 +28,8 @@ MUJOCO_GL=egl python examples/view_static.py --image preview.png
 ```
 
 查看程序不调用mj_step、不执行机器人动作。原生MuJoCo ctrl前7维是电机力矩，后6维是手主动关节角；不能直接写入13D robot action。正式接口见[控制与状态契约](docs/robot-contract.json)。
+
+默认隐藏原benchmark的黑色挂载座，并按机器人可视mesh取景；`--mount`可显示挂载座。隐藏仅影响绘图分组，不删除几何或改变质量、接触、关节与控制参数。示例使用浅色背景，避免黑色机械臂部件与背景混在一起。
 
 ## 模型范围
 
