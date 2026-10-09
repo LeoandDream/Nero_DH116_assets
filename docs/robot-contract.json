@@ -1,0 +1,35 @@
+{
+  "state_dim": 18,
+  "action_dim": 13,
+  "state_order": [
+    "robot0_joint1",
+    "robot0_joint2",
+    "robot0_joint3",
+    "robot0_joint4",
+    "robot0_joint5",
+    "robot0_joint6",
+    "robot0_joint7",
+    "gripper0_finger11",
+    "gripper0_finger12",
+    "gripper0_finger13",
+    "gripper0_finger21",
+    "gripper0_finger22",
+    "gripper0_finger31",
+    "gripper0_finger32",
+    "gripper0_finger41",
+    "gripper0_finger42",
+    "gripper0_finger51",
+    "gripper0_finger52"
+  ],
+  "arm_action": "7 ABSOLUTE JOINT POSITION rad, individually source-limited",
+  "hand_action": "6 normalized absolute positions [-1,1], independent source actuator order",
+  "hand_active_order": [
+    "finger11",
+    "finger12",
+    "finger21",
+    "finger31",
+    "finger41",
+    "finger51"
+  ],
+  "controller": "Native robosuite1.4.1 JointPositionController set_qpos absolute wrapper; native MuJoCo3.2.3 position servo"
+}

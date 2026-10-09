@@ -1,0 +1,980 @@
+{
+  "source_scene_sha256": "4cbf4eb09ae18cf780d27d5e3a4956b0d01e66066b3dfe69f4752daa8ed5427d",
+  "source_scene": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/verified_white_bowl_scene_76/scene.xml",
+  "state_dim": 18,
+  "robot_action_dim": 13,
+  "mjcf_ctrl": "7 motor torques Nm + 6 active joint angle targets rad; NOT robot action",
+  "assets": [
+    {
+      "asset": "gripper0_base_link",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/0be94e52875c963d1aec4d981700ada994dc2e7e38d03eb3ccddd6b9c90a2c6c.stl",
+      "file": "meshes/dh116/gripper0_base_link-0be94e52.stl",
+      "sha256": "0be94e52875c963d1aec4d981700ada994dc2e7e38d03eb3ccddd6b9c90a2c6c"
+    },
+    {
+      "asset": "gripper0_finger11_link",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/f4e9f3fe79d699b3b76f2ac1e29d7067d48f354e8a40f5264ef6efe6353461f9.stl",
+      "file": "meshes/dh116/gripper0_finger11_link-f4e9f3fe.stl",
+      "sha256": "f4e9f3fe79d699b3b76f2ac1e29d7067d48f354e8a40f5264ef6efe6353461f9"
+    },
+    {
+      "asset": "gripper0_finger12_link",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/3da0a8e9b050d3d4608e6d30cf9466031a87a3e0bc12f3398963a1b8706494a0.stl",
+      "file": "meshes/dh116/gripper0_finger12_link-3da0a8e9.stl",
+      "sha256": "3da0a8e9b050d3d4608e6d30cf9466031a87a3e0bc12f3398963a1b8706494a0"
+    },
+    {
+      "asset": "gripper0_finger13_link",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/f34ca4cbc816d42643c532cf102b1583e1d8d39e156072f65f4bfa1e55fae7a5.stl",
+      "file": "meshes/dh116/gripper0_finger13_link-f34ca4cb.stl",
+      "sha256": "f34ca4cbc816d42643c532cf102b1583e1d8d39e156072f65f4bfa1e55fae7a5"
+    },
+    {
+      "asset": "gripper0_finger14_link",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/c8ee9ee3ba82e3fc1ee91677c3f6c616c439c0bfa0d1fa9669a6d3df8cf0eba1.stl",
+      "file": "meshes/dh116/gripper0_finger14_link-c8ee9ee3.stl",
+      "sha256": "c8ee9ee3ba82e3fc1ee91677c3f6c616c439c0bfa0d1fa9669a6d3df8cf0eba1"
+    },
+    {
+      "asset": "gripper0_finger21_link",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/1bb8e6bd2d50d1b07c7077610fade1c71dd0923d8025f1589e3f904c856f28c1.stl",
+      "file": "meshes/dh116/gripper0_finger21_link-1bb8e6bd.stl",
+      "sha256": "1bb8e6bd2d50d1b07c7077610fade1c71dd0923d8025f1589e3f904c856f28c1"
+    },
+    {
+      "asset": "gripper0_finger22_link",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/53c55c846f481d90248332d5a87319d11e0d96f0fb8cbb35717cc9ac9745f5e5.stl",
+      "file": "meshes/dh116/gripper0_finger22_link-53c55c84.stl",
+      "sha256": "53c55c846f481d90248332d5a87319d11e0d96f0fb8cbb35717cc9ac9745f5e5"
+    },
+    {
+      "asset": "gripper0_finger23_link",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/730786ab7997aa990ae4ace17ab279d36a233223bcdc47d3e0e7578b35ab703b.stl",
+      "file": "meshes/dh116/gripper0_finger23_link-730786ab.stl",
+      "sha256": "730786ab7997aa990ae4ace17ab279d36a233223bcdc47d3e0e7578b35ab703b"
+    },
+    {
+      "asset": "gripper0_finger31_link",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/7e3176cd95983c3e84369fe1639f65dcab86d54cd49ca3ed8612807ba3bc7358.stl",
+      "file": "meshes/dh116/gripper0_finger31_link-7e3176cd.stl",
+      "sha256": "7e3176cd95983c3e84369fe1639f65dcab86d54cd49ca3ed8612807ba3bc7358"
+    },
+    {
+      "asset": "gripper0_finger32_link",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/68b0442e8c8e3e0e8e94ef55596378b85556bda1959c64debbdd48d21b3af931.stl",
+      "file": "meshes/dh116/gripper0_finger32_link-68b0442e.stl",
+      "sha256": "68b0442e8c8e3e0e8e94ef55596378b85556bda1959c64debbdd48d21b3af931"
+    },
+    {
+      "asset": "gripper0_finger33_link",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/88aa060526d69f07a7d2688c2222ccbae0ea013d7395fb1a483f4287db842669.stl",
+      "file": "meshes/dh116/gripper0_finger33_link-88aa0605.stl",
+      "sha256": "88aa060526d69f07a7d2688c2222ccbae0ea013d7395fb1a483f4287db842669"
+    },
+    {
+      "asset": "gripper0_finger41_link",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/5f1647a233765270e256bf1cb1deeca0ac29ad4241e2a8e95477756885b73857.stl",
+      "file": "meshes/dh116/gripper0_finger41_link-5f1647a2.stl",
+      "sha256": "5f1647a233765270e256bf1cb1deeca0ac29ad4241e2a8e95477756885b73857"
+    },
+    {
+      "asset": "gripper0_finger42_link",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/15a9090c995e1f29ab0bb4b0a4ede7a4f60f1d0e0bf809c3ada86c53d0b66bed.stl",
+      "file": "meshes/dh116/gripper0_finger42_link-15a9090c.stl",
+      "sha256": "15a9090c995e1f29ab0bb4b0a4ede7a4f60f1d0e0bf809c3ada86c53d0b66bed"
+    },
+    {
+      "asset": "gripper0_finger43_link",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/9c48242481fb3a21921bdb7d8b5a5273bb1c193d757e0396e16f63bafcf59293.stl",
+      "file": "meshes/dh116/gripper0_finger43_link-9c482424.stl",
+      "sha256": "9c48242481fb3a21921bdb7d8b5a5273bb1c193d757e0396e16f63bafcf59293"
+    },
+    {
+      "asset": "gripper0_finger51_link",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/dfabcfce1fc923cc0745a2df5ec07efc657506c7ad50b8e883de7fc996ce9f59.stl",
+      "file": "meshes/dh116/gripper0_finger51_link-dfabcfce.stl",
+      "sha256": "dfabcfce1fc923cc0745a2df5ec07efc657506c7ad50b8e883de7fc996ce9f59"
+    },
+    {
+      "asset": "gripper0_finger52_link",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/acf84396741cf2d5fa50ad3a25e9ca4fdb0947387cb39c2697951761a5f7d22c.stl",
+      "file": "meshes/dh116/gripper0_finger52_link-acf84396.stl",
+      "sha256": "acf84396741cf2d5fa50ad3a25e9ca4fdb0947387cb39c2697951761a5f7d22c"
+    },
+    {
+      "asset": "gripper0_finger53_link",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/028f60596c26150c19aa100bdb13f073b15b9544a6598514130f02af2427255e.stl",
+      "file": "meshes/dh116/gripper0_finger53_link-028f6059.stl",
+      "sha256": "028f60596c26150c19aa100bdb13f073b15b9544a6598514130f02af2427255e"
+    },
+    {
+      "asset": "gripper0_moderate_finger14_link_0",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger14_link_00.obj",
+      "file": "meshes/dh116/gripper0_moderate_finger14_link_0-2b2ddda5.obj",
+      "sha256": "2b2ddda55ee186117724461d4e1eb7fb257d191676319114d69fd76026ceacaf"
+    },
+    {
+      "asset": "gripper0_moderate_finger14_link_1",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger14_link_01.obj",
+      "file": "meshes/dh116/gripper0_moderate_finger14_link_1-0e2d6afb.obj",
+      "sha256": "0e2d6afbd4e4a20a7f7aa039ee80776a89f39f304eccaa1ea9a322937f6c73db"
+    },
+    {
+      "asset": "gripper0_moderate_finger14_link_10",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger14_link_10.obj",
+      "file": "meshes/dh116/gripper0_moderate_finger14_link_10-21c826aa.obj",
+      "sha256": "21c826aa07ef02987385785adc8b44235834cb9c4242e62a952ea89d1b4d22ca"
+    },
+    {
+      "asset": "gripper0_moderate_finger14_link_11",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger14_link_11.obj",
+      "file": "meshes/dh116/gripper0_moderate_finger14_link_11-168acc8b.obj",
+      "sha256": "168acc8b6dd10290b92679dabf02f9d295c30317cecc7a3e1163386cc241f9bf"
+    },
+    {
+      "asset": "gripper0_moderate_finger14_link_2",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger14_link_02.obj",
+      "file": "meshes/dh116/gripper0_moderate_finger14_link_2-a71fa24f.obj",
+      "sha256": "a71fa24ff8b93d0fad952ff2bfb8d85418fa7318b3552c626204b6675956c09b"
+    },
+    {
+      "asset": "gripper0_moderate_finger14_link_3",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger14_link_03.obj",
+      "file": "meshes/dh116/gripper0_moderate_finger14_link_3-31cf7b29.obj",
+      "sha256": "31cf7b299a871be62338a48441ffff1c40de9443b08c1a66d0e0ac2c70d7e6ce"
+    },
+    {
+      "asset": "gripper0_moderate_finger14_link_4",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger14_link_04.obj",
+      "file": "meshes/dh116/gripper0_moderate_finger14_link_4-c49b43ef.obj",
+      "sha256": "c49b43efea1ab9054834dc733b62109f71f3101e8573838fac412acfabf8b0ba"
+    },
+    {
+      "asset": "gripper0_moderate_finger14_link_5",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger14_link_05.obj",
+      "file": "meshes/dh116/gripper0_moderate_finger14_link_5-c3a6773e.obj",
+      "sha256": "c3a6773e2340e69330c2de30484b3a473aca0a23b18074ca53a75911028ddf37"
+    },
+    {
+      "asset": "gripper0_moderate_finger14_link_6",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger14_link_06.obj",
+      "file": "meshes/dh116/gripper0_moderate_finger14_link_6-1d98430c.obj",
+      "sha256": "1d98430c1c8b92e1b2e6a308a347fde69723d62ff68ee5f454bbca567ad44f14"
+    },
+    {
+      "asset": "gripper0_moderate_finger14_link_7",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger14_link_07.obj",
+      "file": "meshes/dh116/gripper0_moderate_finger14_link_7-14d2570c.obj",
+      "sha256": "14d2570c3750dd1305b4c737cc449486ad0f2d5e67df99e6013088abc7e7430d"
+    },
+    {
+      "asset": "gripper0_moderate_finger14_link_8",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger14_link_08.obj",
+      "file": "meshes/dh116/gripper0_moderate_finger14_link_8-fb373efd.obj",
+      "sha256": "fb373efd00b5bb56164851d7cbf74a85a8f4fa1252368c69a7b2e4a1770f3531"
+    },
+    {
+      "asset": "gripper0_moderate_finger14_link_9",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger14_link_09.obj",
+      "file": "meshes/dh116/gripper0_moderate_finger14_link_9-d3124adb.obj",
+      "sha256": "d3124adbea53e6fb6a27b1a62f60ae3f0fd7459fd6679049637a41cc0c226844"
+    },
+    {
+      "asset": "gripper0_moderate_finger23_link_0",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger23_link_00.obj",
+      "file": "meshes/dh116/gripper0_moderate_finger23_link_0-a6cc5f75.obj",
+      "sha256": "a6cc5f7500f773f248fe89c64bbad9f86a99f3419e1b8f655997030c1d269d4d"
+    },
+    {
+      "asset": "gripper0_moderate_finger23_link_1",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger23_link_01.obj",
+      "file": "meshes/dh116/gripper0_moderate_finger23_link_1-c8663aa9.obj",
+      "sha256": "c8663aa97fb9936608d4365a4662bd5a9279d9958238f9334738ce88751b2e72"
+    },
+    {
+      "asset": "gripper0_moderate_finger23_link_10",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger23_link_10.obj",
+      "file": "meshes/dh116/gripper0_moderate_finger23_link_10-251c3834.obj",
+      "sha256": "251c38347bbcf580d96dd7ece9aeab16195b08f3a7225da3022a42043d11162d"
+    },
+    {
+      "asset": "gripper0_moderate_finger23_link_11",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger23_link_11.obj",
+      "file": "meshes/dh116/gripper0_moderate_finger23_link_11-fad1ae11.obj",
+      "sha256": "fad1ae11d1b703d56b111df28d2d4b171c86572c706a5990cd07fb59819671cb"
+    },
+    {
+      "asset": "gripper0_moderate_finger23_link_2",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger23_link_02.obj",
+      "file": "meshes/dh116/gripper0_moderate_finger23_link_2-7cc9be61.obj",
+      "sha256": "7cc9be61c42363c904859ffc3f741df9e9d80761805b9fa41333e8510ee39331"
+    },
+    {
+      "asset": "gripper0_moderate_finger23_link_3",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger23_link_03.obj",
+      "file": "meshes/dh116/gripper0_moderate_finger23_link_3-2f7c98b4.obj",
+      "sha256": "2f7c98b43d1da8bb87c0b1b9840b9942f8df6f7cb6a07b8bf3aae0a8f943ec91"
+    },
+    {
+      "asset": "gripper0_moderate_finger23_link_4",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger23_link_04.obj",
+      "file": "meshes/dh116/gripper0_moderate_finger23_link_4-bab546af.obj",
+      "sha256": "bab546afe4a240ed41c8a82c9e7d57d175b91854aef912fadbac9e210734bfc0"
+    },
+    {
+      "asset": "gripper0_moderate_finger23_link_5",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger23_link_05.obj",
+      "file": "meshes/dh116/gripper0_moderate_finger23_link_5-5d047287.obj",
+      "sha256": "5d047287b86fb6832c2efdcb4f5fb755ded0b63dc28f1aa4fac5b223bca24178"
+    },
+    {
+      "asset": "gripper0_moderate_finger23_link_6",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger23_link_06.obj",
+      "file": "meshes/dh116/gripper0_moderate_finger23_link_6-a018289e.obj",
+      "sha256": "a018289e8a36f72a3ae897d377677fe7ff2721dc2e88d63ddb0118daa3ab78e2"
+    },
+    {
+      "asset": "gripper0_moderate_finger23_link_7",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger23_link_07.obj",
+      "file": "meshes/dh116/gripper0_moderate_finger23_link_7-de354fdf.obj",
+      "sha256": "de354fdf0bea4434032984db408d004804363dc49bbbf36b8bbcc93e1a930ddd"
+    },
+    {
+      "asset": "gripper0_moderate_finger23_link_8",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger23_link_08.obj",
+      "file": "meshes/dh116/gripper0_moderate_finger23_link_8-9174795a.obj",
+      "sha256": "9174795ac15a8735c73a8cf39c09bc793a2b67585a0d982f09f7b8a5f7b1880b"
+    },
+    {
+      "asset": "gripper0_moderate_finger23_link_9",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger23_link_09.obj",
+      "file": "meshes/dh116/gripper0_moderate_finger23_link_9-1cc04f8d.obj",
+      "sha256": "1cc04f8dd6803c05636a655c1fd77960a319be6903fa01bf7b5e94662d89b132"
+    },
+    {
+      "asset": "gripper0_proxy_base_link_0",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/base_link_000.obj",
+      "file": "meshes/dh116/gripper0_proxy_base_link_0-b6201105.obj",
+      "sha256": "b62011053253549820237dd9bcd6e4fa5aa395a9b20c0f5013081357bde6163d"
+    },
+    {
+      "asset": "gripper0_proxy_base_link_1",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/base_link_001.obj",
+      "file": "meshes/dh116/gripper0_proxy_base_link_1-d5d01f7a.obj",
+      "sha256": "d5d01f7ad0324a13077df2ab2be613e0486d5a2fe9ef0e0ae9bd2719717f22ff"
+    },
+    {
+      "asset": "gripper0_proxy_base_link_2",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/base_link_002.obj",
+      "file": "meshes/dh116/gripper0_proxy_base_link_2-28926ea0.obj",
+      "sha256": "28926ea04aaba25ef8cf8287baa5169807b7412a42e3480a17c261b401c90bce"
+    },
+    {
+      "asset": "gripper0_proxy_base_link_3",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/base_link_003.obj",
+      "file": "meshes/dh116/gripper0_proxy_base_link_3-f0401ef7.obj",
+      "sha256": "f0401ef72c46652c02a47ac13e0605a1de889c50fba784b09f46793574a0c77a"
+    },
+    {
+      "asset": "gripper0_proxy_base_link_4",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/base_link_004.obj",
+      "file": "meshes/dh116/gripper0_proxy_base_link_4-b17bb2bf.obj",
+      "sha256": "b17bb2bf43d3910b603f39d1f375f5e62183e4d5ed42ed0929d5f4f73023c8fe"
+    },
+    {
+      "asset": "gripper0_proxy_base_link_5",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/base_link_005.obj",
+      "file": "meshes/dh116/gripper0_proxy_base_link_5-c3ec3427.obj",
+      "sha256": "c3ec3427e5f6b215b34633b3e33d7f241c5f43b40ba1ccf7bc5dcfe589dfaf26"
+    },
+    {
+      "asset": "gripper0_proxy_base_link_6",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/base_link_006.obj",
+      "file": "meshes/dh116/gripper0_proxy_base_link_6-d557eda8.obj",
+      "sha256": "d557eda8c52b780dbd408c8e0fecdf5c561dc300435b8b513063dbfda526f3a3"
+    },
+    {
+      "asset": "gripper0_proxy_base_link_7",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/base_link_007.obj",
+      "file": "meshes/dh116/gripper0_proxy_base_link_7-bb374ff6.obj",
+      "sha256": "bb374ff68592ac7fc07655d98b65f23a5a0a82ea894dc749205b928ba162a317"
+    },
+    {
+      "asset": "gripper0_proxy_base_link_8",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/base_link_008.obj",
+      "file": "meshes/dh116/gripper0_proxy_base_link_8-f1f6bbdb.obj",
+      "sha256": "f1f6bbdb592e1dae9b8c43c02b4123c0db07eb274234074f7739c3324933c259"
+    },
+    {
+      "asset": "gripper0_proxy_base_link_9",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/base_link_009.obj",
+      "file": "meshes/dh116/gripper0_proxy_base_link_9-41570f8d.obj",
+      "sha256": "41570f8dc791a0be2a04494e5cf3fc0fe032751605a5a49b8bbc393a7d91da07"
+    },
+    {
+      "asset": "gripper0_proxy_finger12_link_0",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger12_link_000.obj",
+      "file": "meshes/dh116/gripper0_proxy_finger12_link_0-2a6bdf00.obj",
+      "sha256": "2a6bdf00ae7c1ea87a8b35cfa5755ea112dda7b5b180813e69ab552ce4d52aee"
+    },
+    {
+      "asset": "gripper0_proxy_finger12_link_1",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger12_link_001.obj",
+      "file": "meshes/dh116/gripper0_proxy_finger12_link_1-74d9a1f6.obj",
+      "sha256": "74d9a1f6088dfd3ba6ce894762c8f63cd3fd5e6f3ba3badafc7475294f80ca72"
+    },
+    {
+      "asset": "gripper0_proxy_finger12_link_2",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger12_link_002.obj",
+      "file": "meshes/dh116/gripper0_proxy_finger12_link_2-9be8c86a.obj",
+      "sha256": "9be8c86a32a28eb6cfccfc0d4ce3c0ce3f1e65615350517f8fb624f6334ab118"
+    },
+    {
+      "asset": "gripper0_proxy_finger12_link_3",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger12_link_003.obj",
+      "file": "meshes/dh116/gripper0_proxy_finger12_link_3-a648891e.obj",
+      "sha256": "a648891e9b0097a5dc6df5f44a54a4fcbc4b522baeb915df66ebf96b0c653908"
+    },
+    {
+      "asset": "gripper0_proxy_finger12_link_4",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger12_link_004.obj",
+      "file": "meshes/dh116/gripper0_proxy_finger12_link_4-c3d2e735.obj",
+      "sha256": "c3d2e735fe8c007812868afe5a413c2f85fb616d8af43bf208c82c441ba33792"
+    },
+    {
+      "asset": "gripper0_proxy_finger12_link_5",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger12_link_005.obj",
+      "file": "meshes/dh116/gripper0_proxy_finger12_link_5-b8ec84e4.obj",
+      "sha256": "b8ec84e411668e9739fd702f45376b5bec5972e6f3ae334c9f789714696f4134"
+    },
+    {
+      "asset": "gripper0_proxy_finger12_link_6",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger12_link_006.obj",
+      "file": "meshes/dh116/gripper0_proxy_finger12_link_6-6e9a388e.obj",
+      "sha256": "6e9a388e036622b035a0c6c3a57a7c59f1128444e6aff3ea15eee700a8cdd197"
+    },
+    {
+      "asset": "gripper0_proxy_finger12_link_7",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger12_link_007.obj",
+      "file": "meshes/dh116/gripper0_proxy_finger12_link_7-3748cad4.obj",
+      "sha256": "3748cad4e9e316b359b5586674afbf3722ade675c9e240b95ea32cbd2ef1d918"
+    },
+    {
+      "asset": "gripper0_proxy_finger33_link_0",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger33_link_000.obj",
+      "file": "meshes/dh116/gripper0_proxy_finger33_link_0-766046d8.obj",
+      "sha256": "766046d8b8b6c831fe9982e6e793a913e0d722cd9dd573576eb1dcd437b43bd7"
+    },
+    {
+      "asset": "gripper0_proxy_finger33_link_1",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger33_link_001.obj",
+      "file": "meshes/dh116/gripper0_proxy_finger33_link_1-3157618f.obj",
+      "sha256": "3157618f011017aef1fd0195a6e37d4c115e4f622fa260f9d9b55b658e145d93"
+    },
+    {
+      "asset": "gripper0_proxy_finger33_link_2",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger33_link_002.obj",
+      "file": "meshes/dh116/gripper0_proxy_finger33_link_2-e6bfb653.obj",
+      "sha256": "e6bfb653704941708c1617ee5c217027be98aa23ee1a24b1bf04bce8d527bac5"
+    },
+    {
+      "asset": "gripper0_proxy_finger33_link_3",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger33_link_003.obj",
+      "file": "meshes/dh116/gripper0_proxy_finger33_link_3-b780e3de.obj",
+      "sha256": "b780e3decc6b3167bfaf70939edfd017afb02dfdd069502e5f5d3ef6831132f4"
+    },
+    {
+      "asset": "gripper0_proxy_finger33_link_4",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger33_link_004.obj",
+      "file": "meshes/dh116/gripper0_proxy_finger33_link_4-abbb8319.obj",
+      "sha256": "abbb83191e86009a5e4ca8df768fe6679c1d6261cf55f5b7263714483c2fa7df"
+    },
+    {
+      "asset": "gripper0_proxy_finger33_link_5",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger33_link_005.obj",
+      "file": "meshes/dh116/gripper0_proxy_finger33_link_5-efd967af.obj",
+      "sha256": "efd967af03781bc920aa654dc3d0622f6187a0c795671128026c01e4a76afd7e"
+    },
+    {
+      "asset": "gripper0_proxy_finger33_link_6",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger33_link_006.obj",
+      "file": "meshes/dh116/gripper0_proxy_finger33_link_6-09abc110.obj",
+      "sha256": "09abc110026cafb4b30009c4e384e8876522eed2020c12d1191c913d780f90a7"
+    },
+    {
+      "asset": "gripper0_proxy_finger33_link_7",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger33_link_007.obj",
+      "file": "meshes/dh116/gripper0_proxy_finger33_link_7-10a6dd15.obj",
+      "sha256": "10a6dd150321cff17d4702d552f9d492ab14006a1caf194d16d9c7943deddfe0"
+    },
+    {
+      "asset": "gripper0_proxy_finger43_link_0",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger43_link_000.obj",
+      "file": "meshes/dh116/gripper0_proxy_finger43_link_0-95b4cbb3.obj",
+      "sha256": "95b4cbb315cc1667311de693dcee6a7456ba742561ca01ff551958d4e519348b"
+    },
+    {
+      "asset": "gripper0_proxy_finger43_link_1",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger43_link_001.obj",
+      "file": "meshes/dh116/gripper0_proxy_finger43_link_1-07a65f22.obj",
+      "sha256": "07a65f222145a2d805b53d22a5398b5b7ad94202af938f94b640f73ed1cdf183"
+    },
+    {
+      "asset": "gripper0_proxy_finger43_link_2",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger43_link_002.obj",
+      "file": "meshes/dh116/gripper0_proxy_finger43_link_2-aab293f6.obj",
+      "sha256": "aab293f640735836c5ac0c594282d0bbbf8fc41a8eaa13bf6f1f1f1ba864c576"
+    },
+    {
+      "asset": "gripper0_proxy_finger43_link_3",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger43_link_003.obj",
+      "file": "meshes/dh116/gripper0_proxy_finger43_link_3-f7eab61f.obj",
+      "sha256": "f7eab61f906cb36cd1063faad73822c846107bc6f174c4742b409375f5b04f63"
+    },
+    {
+      "asset": "gripper0_proxy_finger43_link_4",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger43_link_004.obj",
+      "file": "meshes/dh116/gripper0_proxy_finger43_link_4-78532cbf.obj",
+      "sha256": "78532cbfb13ff856554cd396d2e5573beb69fe8b4d675ea7f669643dde8f7dd7"
+    },
+    {
+      "asset": "gripper0_proxy_finger43_link_5",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger43_link_005.obj",
+      "file": "meshes/dh116/gripper0_proxy_finger43_link_5-13af1468.obj",
+      "sha256": "13af146867ef84f7051e45a515347bd29deff7ea5c8f0c15b100fbfe4a9b3cd7"
+    },
+    {
+      "asset": "gripper0_proxy_finger43_link_6",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger43_link_006.obj",
+      "file": "meshes/dh116/gripper0_proxy_finger43_link_6-2a3fbea9.obj",
+      "sha256": "2a3fbea961a56cc9bfd5384d661e6c0957601ee07999f02d9b642b252463176c"
+    },
+    {
+      "asset": "gripper0_proxy_finger43_link_7",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger43_link_007.obj",
+      "file": "meshes/dh116/gripper0_proxy_finger43_link_7-d800f7ad.obj",
+      "sha256": "d800f7adae660e6ceb80e34b8a7e33ba3dcfb60afc357baf4818265705f7d0b2"
+    },
+    {
+      "asset": "gripper0_proxy_finger53_link_0",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger53_link_000.obj",
+      "file": "meshes/dh116/gripper0_proxy_finger53_link_0-f66430b1.obj",
+      "sha256": "f66430b17c3b0ee5d63cb097877e7d8faa12153df6725cb7ad9383607c09bb0a"
+    },
+    {
+      "asset": "gripper0_proxy_finger53_link_1",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger53_link_001.obj",
+      "file": "meshes/dh116/gripper0_proxy_finger53_link_1-fce5027c.obj",
+      "sha256": "fce5027c124ece9666bc17a88a364dd24dd79e5ae6fb0c4bdfe8169e0ad0b8dc"
+    },
+    {
+      "asset": "gripper0_proxy_finger53_link_2",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger53_link_002.obj",
+      "file": "meshes/dh116/gripper0_proxy_finger53_link_2-dd7921f7.obj",
+      "sha256": "dd7921f79cbac6ac32ea9142d4fa4c76df1dd885c47004aaeb4fca67327152b5"
+    },
+    {
+      "asset": "gripper0_proxy_finger53_link_3",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger53_link_003.obj",
+      "file": "meshes/dh116/gripper0_proxy_finger53_link_3-49e71c08.obj",
+      "sha256": "49e71c0816ce5464fd8afe99b68e292cd88549525e9986adf9c3c1b53edae3d6"
+    },
+    {
+      "asset": "gripper0_proxy_finger53_link_4",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger53_link_004.obj",
+      "file": "meshes/dh116/gripper0_proxy_finger53_link_4-84f78255.obj",
+      "sha256": "84f782558f32c9ea8067922918c95c221e617026a4e7a0d752d84b0ff828c007"
+    },
+    {
+      "asset": "gripper0_proxy_finger53_link_5",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger53_link_005.obj",
+      "file": "meshes/dh116/gripper0_proxy_finger53_link_5-3134737f.obj",
+      "sha256": "3134737f88f7b977c10b8835d0f0b8ea8d1b0d90a91c9a862fffc5cd05930704"
+    },
+    {
+      "asset": "gripper0_proxy_finger53_link_6",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger53_link_006.obj",
+      "file": "meshes/dh116/gripper0_proxy_finger53_link_6-8a45b6d5.obj",
+      "sha256": "8a45b6d5929a3338e58b416f7dbab7e43de69a2697206dbdc9eb48928e14b330"
+    },
+    {
+      "asset": "gripper0_proxy_finger53_link_7",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger53_link_007.obj",
+      "file": "meshes/dh116/gripper0_proxy_finger53_link_7-8015cab7.obj",
+      "sha256": "8015cab75b38d79aa5d59486a2b6d68198e96fbfb4a892a86ee8d334ffd817f1"
+    },
+    {
+      "asset": "mount0_pedestal",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/f96ff12bfb347c77580e4392556b15e47ef7228711c45b0f1193b100af22866a.stl",
+      "file": "meshes/nero/mount0_pedestal-f96ff12b.stl",
+      "sha256": "f96ff12bfb347c77580e4392556b15e47ef7228711c45b0f1193b100af22866a"
+    },
+    {
+      "asset": "robot0_candidate_nero_base_link_0",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/base_link_000.obj",
+      "file": "meshes/nero/robot0_candidate_nero_base_link_0-9b755fcc.obj",
+      "sha256": "9b755fcc0c0fc1a1b1e0736f2d09a5e2db149b30f2ce713d82949a3b1f3e6fe2"
+    },
+    {
+      "asset": "robot0_candidate_nero_base_link_1",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/base_link_001.obj",
+      "file": "meshes/nero/robot0_candidate_nero_base_link_1-9050d662.obj",
+      "sha256": "9050d662cba0a31f627fc6cfe9b474205e999630ffc667db779120f807b5aa3a"
+    },
+    {
+      "asset": "robot0_candidate_nero_base_link_2",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/base_link_002.obj",
+      "file": "meshes/nero/robot0_candidate_nero_base_link_2-840973e3.obj",
+      "sha256": "840973e30bb9c02d12ee66c1797e314af7d276e9faa03d609d7cae153a387586"
+    },
+    {
+      "asset": "robot0_candidate_nero_base_link_3",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/base_link_003.obj",
+      "file": "meshes/nero/robot0_candidate_nero_base_link_3-694f85c0.obj",
+      "sha256": "694f85c0d797332e9b9964d134626c0a13592ff1ca45b344ce42c12b45d070c6"
+    },
+    {
+      "asset": "robot0_candidate_nero_base_link_4",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/base_link_004.obj",
+      "file": "meshes/nero/robot0_candidate_nero_base_link_4-eb7627e7.obj",
+      "sha256": "eb7627e75e3210c52a0db9fb5f8c911b681af10f9ac76db806f67705a422a0e5"
+    },
+    {
+      "asset": "robot0_candidate_nero_base_link_5",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/base_link_005.obj",
+      "file": "meshes/nero/robot0_candidate_nero_base_link_5-bfa96b97.obj",
+      "sha256": "bfa96b97d713b4a31d4229a399179db38cdd1b99d2a810265f53546866f1ee6d"
+    },
+    {
+      "asset": "robot0_candidate_nero_base_link_6",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/base_link_006.obj",
+      "file": "meshes/nero/robot0_candidate_nero_base_link_6-1dd4555c.obj",
+      "sha256": "1dd4555c303d188db55803760c5d9a720f869610c08c9cf6833d2457c763b3f9"
+    },
+    {
+      "asset": "robot0_candidate_nero_base_link_7",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/base_link_007.obj",
+      "file": "meshes/nero/robot0_candidate_nero_base_link_7-41070495.obj",
+      "sha256": "41070495a20f2b2f7b4ec0b2bd45654a496d48dbfd480850c4a999f31cd0d1eb"
+    },
+    {
+      "asset": "robot0_candidate_nero_link1_0",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/link1_000.obj",
+      "file": "meshes/nero/robot0_candidate_nero_link1_0-64d58a3f.obj",
+      "sha256": "64d58a3fe8b73b90b9b7c0a8b86dd60af829abbba7fb4df6e9c0fcabe135ed9a"
+    },
+    {
+      "asset": "robot0_candidate_nero_link1_1",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/link1_001.obj",
+      "file": "meshes/nero/robot0_candidate_nero_link1_1-7b2c529b.obj",
+      "sha256": "7b2c529b61b96ffc4eb81a7b1fed20eb3bd58bc854cb04a83f75eefbb2e27a09"
+    },
+    {
+      "asset": "robot0_candidate_nero_link1_2",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/link1_002.obj",
+      "file": "meshes/nero/robot0_candidate_nero_link1_2-ee80fad0.obj",
+      "sha256": "ee80fad09a62aa67c9b6adb464918b8c02d209f35332252ad8f10f549ccc3bd8"
+    },
+    {
+      "asset": "robot0_candidate_nero_link1_3",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/link1_003.obj",
+      "file": "meshes/nero/robot0_candidate_nero_link1_3-fa81492e.obj",
+      "sha256": "fa81492edfdb88b27bea2e6b17a8351aa8bde6fbffcd0aa396278726d2737972"
+    },
+    {
+      "asset": "robot0_candidate_nero_link1_4",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/link1_004.obj",
+      "file": "meshes/nero/robot0_candidate_nero_link1_4-9687d613.obj",
+      "sha256": "9687d6136442210287287ad950aee9b9bbd67b9fb41228a99ab9b85d53b10609"
+    },
+    {
+      "asset": "robot0_candidate_nero_link1_5",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/link1_005.obj",
+      "file": "meshes/nero/robot0_candidate_nero_link1_5-0bebb03b.obj",
+      "sha256": "0bebb03b65a19b1df2d14f897082df2a3bbc2dee207b1b4c7f398833d304215c"
+    },
+    {
+      "asset": "robot0_candidate_nero_link1_6",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/link1_006.obj",
+      "file": "meshes/nero/robot0_candidate_nero_link1_6-8b8756ee.obj",
+      "sha256": "8b8756eefdb6c92b43a9bd3ae10529c02c1f620c26af63b36ffdcaf0b35c6a84"
+    },
+    {
+      "asset": "robot0_candidate_nero_link1_7",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/link1_007.obj",
+      "file": "meshes/nero/robot0_candidate_nero_link1_7-82b447f9.obj",
+      "sha256": "82b447f9246138fe899786f1d5111a4a44738a2789351f80a924bd5a085346a8"
+    },
+    {
+      "asset": "robot0_candidate_nero_link2_0",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/link2_000.obj",
+      "file": "meshes/nero/robot0_candidate_nero_link2_0-488533e9.obj",
+      "sha256": "488533e997702e2c9dfcd76accbaab0e2c477d345859f0133900a60d745170f6"
+    },
+    {
+      "asset": "robot0_candidate_nero_link2_1",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/link2_001.obj",
+      "file": "meshes/nero/robot0_candidate_nero_link2_1-1bab92d0.obj",
+      "sha256": "1bab92d0ee381b91852c929d5b9ab5c98f9f37f7394c1d0dfaf36bfd750b6842"
+    },
+    {
+      "asset": "robot0_candidate_nero_link2_2",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/link2_002.obj",
+      "file": "meshes/nero/robot0_candidate_nero_link2_2-a26e60e1.obj",
+      "sha256": "a26e60e118061267a04548ad5b7cfbb0d5d37ddba84a1c02553631c478153e39"
+    },
+    {
+      "asset": "robot0_candidate_nero_link2_3",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/link2_003.obj",
+      "file": "meshes/nero/robot0_candidate_nero_link2_3-6461873d.obj",
+      "sha256": "6461873d7f81c64407a1b55c90cbeedeb606d5ed79b470acb5ba8d1955ee24da"
+    },
+    {
+      "asset": "robot0_candidate_nero_link2_4",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/link2_004.obj",
+      "file": "meshes/nero/robot0_candidate_nero_link2_4-a688faa7.obj",
+      "sha256": "a688faa745249c7345baf0991ee19852f198795dbba0ce507480a752b99442ae"
+    },
+    {
+      "asset": "robot0_candidate_nero_link3_0",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/link3_000.obj",
+      "file": "meshes/nero/robot0_candidate_nero_link3_0-c42d7ac7.obj",
+      "sha256": "c42d7ac7801f587dcbb4f344a52f66b6cccefe711e2c3de984ba67bd9ecb4df9"
+    },
+    {
+      "asset": "robot0_candidate_nero_link3_1",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/link3_001.obj",
+      "file": "meshes/nero/robot0_candidate_nero_link3_1-89b20fd9.obj",
+      "sha256": "89b20fd9fb7d2167e8a63a3fe66dd3fc4df6eb16da83c233c21ad558d644e6a2"
+    },
+    {
+      "asset": "robot0_candidate_nero_link3_2",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/link3_002.obj",
+      "file": "meshes/nero/robot0_candidate_nero_link3_2-7b6481a2.obj",
+      "sha256": "7b6481a25f8b79ae12baec6ef3aef08e60851cb766b4b16cdfc74a4cab7a98d2"
+    },
+    {
+      "asset": "robot0_candidate_nero_link3_3",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/link3_003.obj",
+      "file": "meshes/nero/robot0_candidate_nero_link3_3-0cd99a08.obj",
+      "sha256": "0cd99a08311544c0395ab396a3fd4174f9b05573eceb00942cd34db901d84c43"
+    },
+    {
+      "asset": "robot0_candidate_nero_link3_4",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/link3_004.obj",
+      "file": "meshes/nero/robot0_candidate_nero_link3_4-a50f3d4d.obj",
+      "sha256": "a50f3d4d74ecfbf179c96835161edb6d9461d5f041c173649450f32ba9216c02"
+    },
+    {
+      "asset": "robot0_candidate_nero_link3_5",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/link3_005.obj",
+      "file": "meshes/nero/robot0_candidate_nero_link3_5-30d354b7.obj",
+      "sha256": "30d354b7d0f72b7999a04fff3131feafd516a206d938a4e6729c1d1761d3bcb0"
+    },
+    {
+      "asset": "robot0_candidate_nero_link3_6",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/link3_006.obj",
+      "file": "meshes/nero/robot0_candidate_nero_link3_6-b0e55916.obj",
+      "sha256": "b0e559169ec7b88b14fcdb51794921d5365ff206fe299416e0206b71f2008338"
+    },
+    {
+      "asset": "robot0_candidate_nero_link3_7",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/link3_007.obj",
+      "file": "meshes/nero/robot0_candidate_nero_link3_7-57de8162.obj",
+      "sha256": "57de8162ef5f3bfc6e830e1df69c7cd937adee7a0e88e0519bd7fd32162a84f9"
+    },
+    {
+      "asset": "robot0_candidate_nero_link4_0",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/link4_000.obj",
+      "file": "meshes/nero/robot0_candidate_nero_link4_0-b10bbb1b.obj",
+      "sha256": "b10bbb1b389c8023583cd60ba5d4b07d55f2360a46a603104b05437a8ae777af"
+    },
+    {
+      "asset": "robot0_candidate_nero_link4_1",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/link4_001.obj",
+      "file": "meshes/nero/robot0_candidate_nero_link4_1-3510fe63.obj",
+      "sha256": "3510fe633836557aa4731bda53add70d222b0925317c255571bf3d4d7f6d4623"
+    },
+    {
+      "asset": "robot0_candidate_nero_link4_2",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/link4_002.obj",
+      "file": "meshes/nero/robot0_candidate_nero_link4_2-6fe5f5ba.obj",
+      "sha256": "6fe5f5bab68a024c5df9c80c08cc484b722bb0936168eaf04be9b26facf9031b"
+    },
+    {
+      "asset": "robot0_candidate_nero_link4_3",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/link4_003.obj",
+      "file": "meshes/nero/robot0_candidate_nero_link4_3-160b1bca.obj",
+      "sha256": "160b1bca9c21faa58859e6ef995bd0289dc52ceb67d59678e7d53cb87adcaa72"
+    },
+    {
+      "asset": "robot0_candidate_nero_link4_4",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/link4_004.obj",
+      "file": "meshes/nero/robot0_candidate_nero_link4_4-6ceb0377.obj",
+      "sha256": "6ceb03776a36c23cab1c605208c0193dabe6fad662d3a76a14eb0f1a24b14a6c"
+    },
+    {
+      "asset": "robot0_candidate_nero_link4_5",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/link4_005.obj",
+      "file": "meshes/nero/robot0_candidate_nero_link4_5-61a31fef.obj",
+      "sha256": "61a31fef8a5bf2e6c79be2d617d8510bbd18fdb08114a9562fa43f5c748182f6"
+    },
+    {
+      "asset": "robot0_candidate_nero_link5_0",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/link5_000.obj",
+      "file": "meshes/nero/robot0_candidate_nero_link5_0-8e811e87.obj",
+      "sha256": "8e811e875673123e2bd95c3c781864f0ef43d0b011d867cc0c167a5851eaae2e"
+    },
+    {
+      "asset": "robot0_candidate_nero_link5_1",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/link5_001.obj",
+      "file": "meshes/nero/robot0_candidate_nero_link5_1-e06d88f5.obj",
+      "sha256": "e06d88f549456d261db9641581cfa01d93601cbf7b06e9d050a3df23761c9798"
+    },
+    {
+      "asset": "robot0_candidate_nero_link5_2",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/link5_002.obj",
+      "file": "meshes/nero/robot0_candidate_nero_link5_2-3d339924.obj",
+      "sha256": "3d33992483c63c40ead4a738ae1ca381586b3f98afaf4771b0266308eb53fd0f"
+    },
+    {
+      "asset": "robot0_candidate_nero_link5_3",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/link5_003.obj",
+      "file": "meshes/nero/robot0_candidate_nero_link5_3-208022a5.obj",
+      "sha256": "208022a56ac77703f8734d7d499a1035365a31e565f48fca7a9fb2ac2be8b277"
+    },
+    {
+      "asset": "robot0_candidate_nero_link5_4",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/link5_004.obj",
+      "file": "meshes/nero/robot0_candidate_nero_link5_4-384fc2f2.obj",
+      "sha256": "384fc2f28ced1c7d03201cea03eb3202ec717e4a91648cd2f753e8ce57e880a6"
+    },
+    {
+      "asset": "robot0_candidate_nero_link5_5",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/link5_005.obj",
+      "file": "meshes/nero/robot0_candidate_nero_link5_5-6139f37c.obj",
+      "sha256": "6139f37c5ca00058845dc786d366b19e09d8c4a6a0303729d4f6b034adc107ec"
+    },
+    {
+      "asset": "robot0_candidate_nero_link5_6",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/link5_006.obj",
+      "file": "meshes/nero/robot0_candidate_nero_link5_6-849a2feb.obj",
+      "sha256": "849a2feb5135bb01a681527a5d1309dbb8b6439a49bbdb4792816167a14a18c9"
+    },
+    {
+      "asset": "robot0_candidate_nero_link6_0",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/link6_000.obj",
+      "file": "meshes/nero/robot0_candidate_nero_link6_0-4c346805.obj",
+      "sha256": "4c34680552ab1c32ca52a1b9a8c082cfb51e039c4d35a2d6de60b9bc8591a01f"
+    },
+    {
+      "asset": "robot0_candidate_nero_link6_1",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/link6_001.obj",
+      "file": "meshes/nero/robot0_candidate_nero_link6_1-407a43b8.obj",
+      "sha256": "407a43b83e0ec64dc9a6231e2d2dc3a09680ff210b84df39d41809c0b614d3fa"
+    },
+    {
+      "asset": "robot0_candidate_nero_link6_2",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/link6_002.obj",
+      "file": "meshes/nero/robot0_candidate_nero_link6_2-8101f8fb.obj",
+      "sha256": "8101f8fbba1436c80c7c322d2b7baf586937fbc82eee8e1d4fedfebc8932a3ed"
+    },
+    {
+      "asset": "robot0_candidate_nero_link6_3",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/link6_003.obj",
+      "file": "meshes/nero/robot0_candidate_nero_link6_3-98a9a1fd.obj",
+      "sha256": "98a9a1fd33fc4118ec379e4c3c3a76410a98e6eca798a90f60c0d9b8a886d3a5"
+    },
+    {
+      "asset": "robot0_candidate_nero_link6_4",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/link6_004.obj",
+      "file": "meshes/nero/robot0_candidate_nero_link6_4-40ded262.obj",
+      "sha256": "40ded2622bca88755535091d7ee531c67513210d19f5c9701b868a42f5dbf0d1"
+    },
+    {
+      "asset": "robot0_candidate_nero_link7_0",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/link7_000.obj",
+      "file": "meshes/nero/robot0_candidate_nero_link7_0-cf4e07dc.obj",
+      "sha256": "cf4e07dc22738c6226230ab80f3b25f816fbce0548c869d617a9f47d34a39f95"
+    },
+    {
+      "asset": "robot0_candidate_nero_link7_1",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/link7_001.obj",
+      "file": "meshes/nero/robot0_candidate_nero_link7_1-521ec845.obj",
+      "sha256": "521ec8457806102731a4e36c3ad77392257a1fdc2a54b6ec3c96a7ccfb83bbcc"
+    },
+    {
+      "asset": "robot0_candidate_nero_link7_2",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/link7_002.obj",
+      "file": "meshes/nero/robot0_candidate_nero_link7_2-3eb2079f.obj",
+      "sha256": "3eb2079f00f95b9ed4c5637e351179035b09cb7fc5ede941758f549cbf41caed"
+    },
+    {
+      "asset": "robot0_candidate_nero_link7_3",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/source-collision-candidates/nero-components/link7_003.obj",
+      "file": "meshes/nero/robot0_candidate_nero_link7_3-bd0414fc.obj",
+      "sha256": "bd0414fcdd0cf95fdee6903904c6f74550a1987250ab000c3fa06ec38353a4ad"
+    },
+    {
+      "asset": "robot0_original_urdf_visual_base_link",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/e85d4a73ba7b9aec640780d1c4c053cdba03951e82dffae5b72038f796b5a571.obj",
+      "file": "meshes/nero/robot0_original_urdf_visual_base_link-e85d4a73.obj",
+      "sha256": "e85d4a73ba7b9aec640780d1c4c053cdba03951e82dffae5b72038f796b5a571"
+    },
+    {
+      "asset": "robot0_original_urdf_visual_gripper_flange",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/adfe6fc7b74ac2a3bc253a86a7720b2612053a4e906cb9f5bb0141d246085ab7.obj",
+      "file": "meshes/mount/robot0_original_urdf_visual_gripper_flange-adfe6fc7.obj",
+      "sha256": "adfe6fc7b74ac2a3bc253a86a7720b2612053a4e906cb9f5bb0141d246085ab7"
+    },
+    {
+      "asset": "robot0_original_urdf_visual_link1",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/f8b3c3c76eb65df29fc3fcb18701f81be39f60f1b9a44285462b210416abcc8d.obj",
+      "file": "meshes/nero/robot0_original_urdf_visual_link1-f8b3c3c7.obj",
+      "sha256": "f8b3c3c76eb65df29fc3fcb18701f81be39f60f1b9a44285462b210416abcc8d"
+    },
+    {
+      "asset": "robot0_original_urdf_visual_link2",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/11605e3d08b4ff8f29953609ce6edd6ba4e067a588813c22e854051f178a3790.obj",
+      "file": "meshes/nero/robot0_original_urdf_visual_link2-11605e3d.obj",
+      "sha256": "11605e3d08b4ff8f29953609ce6edd6ba4e067a588813c22e854051f178a3790"
+    },
+    {
+      "asset": "robot0_original_urdf_visual_link3",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/dd965e89354e6e296f38cada5d4642f4a69f0c17c71ab9120ea2c76052076631.obj",
+      "file": "meshes/nero/robot0_original_urdf_visual_link3-dd965e89.obj",
+      "sha256": "dd965e89354e6e296f38cada5d4642f4a69f0c17c71ab9120ea2c76052076631"
+    },
+    {
+      "asset": "robot0_original_urdf_visual_link4",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/1bd0fb7502da58a03ef779c5853e63f6c93303e0858808aa858b107db9859e7a.obj",
+      "file": "meshes/nero/robot0_original_urdf_visual_link4-1bd0fb75.obj",
+      "sha256": "1bd0fb7502da58a03ef779c5853e63f6c93303e0858808aa858b107db9859e7a"
+    },
+    {
+      "asset": "robot0_original_urdf_visual_link5",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/f1f9b607289edef1db3d9b08443f4048607074bc96c20ab9f186884c0b10637a.obj",
+      "file": "meshes/nero/robot0_original_urdf_visual_link5-f1f9b607.obj",
+      "sha256": "f1f9b607289edef1db3d9b08443f4048607074bc96c20ab9f186884c0b10637a"
+    },
+    {
+      "asset": "robot0_original_urdf_visual_link6",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/bc53aecdb367106d63546953f8b15a1624b573f2a2f4bfb015e62bd60266080c.obj",
+      "file": "meshes/nero/robot0_original_urdf_visual_link6-bc53aecd.obj",
+      "sha256": "bc53aecdb367106d63546953f8b15a1624b573f2a2f4bfb015e62bd60266080c"
+    },
+    {
+      "asset": "robot0_original_urdf_visual_link7",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/94e2407ab38217c4158026ee81352dc14023c0f1b411c7170f175b8ce54745cc.obj",
+      "file": "meshes/nero/robot0_original_urdf_visual_link7-94e2407a.obj",
+      "sha256": "94e2407ab38217c4158026ee81352dc14023c0f1b411c7170f175b8ce54745cc"
+    },
+    {
+      "asset": "robot0_source_flange_part_0",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/opposed-rim-geometry/flange-recess-proxy/source-face-hulls/flange_source_part_00.obj",
+      "file": "meshes/mount/robot0_source_flange_part_0-7c6df993.obj",
+      "sha256": "7c6df99313f122093d0632fd9956e21da9592c2a7b53e267bb1ca60a485afb90"
+    },
+    {
+      "asset": "robot0_source_flange_part_1",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/opposed-rim-geometry/flange-recess-proxy/source-face-hulls/flange_source_part_01.obj",
+      "file": "meshes/mount/robot0_source_flange_part_1-24b510b6.obj",
+      "sha256": "24b510b6d7d21fb3ecedb42bb8b319eda76bc658cccc6564ebc897729632b0d6"
+    },
+    {
+      "asset": "robot0_source_flange_part_2",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/opposed-rim-geometry/flange-recess-proxy/source-face-hulls/flange_source_part_02.obj",
+      "file": "meshes/mount/robot0_source_flange_part_2-c5005972.obj",
+      "sha256": "c500597223128b393b9ffc527bff96c8f9d7b782a258a2dcc27459b199310a0e"
+    },
+    {
+      "asset": "robot0_source_flange_part_3",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/opposed-rim-geometry/flange-recess-proxy/source-face-hulls/flange_source_part_03.obj",
+      "file": "meshes/mount/robot0_source_flange_part_3-a1e2dbb0.obj",
+      "sha256": "a1e2dbb01a0dc3e71497b725e88fe799aa4658d3952c56a33c61424f72bc4b54"
+    },
+    {
+      "asset": "robot0_source_flange_part_4",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/opposed-rim-geometry/flange-recess-proxy/source-face-hulls/flange_source_part_04.obj",
+      "file": "meshes/mount/robot0_source_flange_part_4-5bfdf6a3.obj",
+      "sha256": "5bfdf6a3094c061466d310f3abee69e801a366487b64fb88db3179a04f361279"
+    },
+    {
+      "asset": "robot0_source_flange_part_5",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/opposed-rim-geometry/flange-recess-proxy/source-face-hulls/flange_source_part_05.obj",
+      "file": "meshes/mount/robot0_source_flange_part_5-6668a712.obj",
+      "sha256": "6668a7126ea4beb7012f249a7a037b3ed1edb254cae75957bb19aee1d3143d70"
+    },
+    {
+      "asset": "robot0_source_flange_part_6",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/opposed-rim-geometry/flange-recess-proxy/source-face-hulls/flange_source_part_06.obj",
+      "file": "meshes/mount/robot0_source_flange_part_6-91ccc782.obj",
+      "sha256": "91ccc782f3402baa42be3f07ccb62534b85d1375fec76e170afa009e48cc6376"
+    },
+    {
+      "asset": "robot0_source_flange_part_7",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/opposed-rim-geometry/flange-recess-proxy/source-face-hulls/flange_source_part_07.obj",
+      "file": "meshes/mount/robot0_source_flange_part_7-4853dcf0.obj",
+      "sha256": "4853dcf02b546afa7e65c663307078defec264e1cbb0fbcd77bed51ecf9cce96"
+    },
+    {
+      "asset": "robot0_original_urdf_visual_base_link_texture",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/d550d51b829f93c390d4af50006acbf016d6fc466fc5d8883b8ee2223881f0c0.png",
+      "file": "meshes/textures/robot0_original_urdf_visual_base_link_texture-d550d51b.png",
+      "sha256": "d550d51b829f93c390d4af50006acbf016d6fc466fc5d8883b8ee2223881f0c0"
+    },
+    {
+      "asset": "robot0_original_urdf_visual_gripper_flange_texture",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/abc58d5127d7cdf313beb9ec8ee839860a9c6bfbc48c8b8eb6a3f7d8bb63de6f.png",
+      "file": "meshes/textures/robot0_original_urdf_visual_gripper_flange_texture-abc58d51.png",
+      "sha256": "abc58d5127d7cdf313beb9ec8ee839860a9c6bfbc48c8b8eb6a3f7d8bb63de6f"
+    },
+    {
+      "asset": "robot0_original_urdf_visual_link1_texture",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/d550d51b829f93c390d4af50006acbf016d6fc466fc5d8883b8ee2223881f0c0.png",
+      "file": "meshes/textures/robot0_original_urdf_visual_base_link_texture-d550d51b.png",
+      "sha256": "d550d51b829f93c390d4af50006acbf016d6fc466fc5d8883b8ee2223881f0c0"
+    },
+    {
+      "asset": "robot0_original_urdf_visual_link2_texture",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/4b4174f97f436eb5dccd31148983e6ed15b4ceec7ddce6f0cdb2bda9aa1f7ad3.png",
+      "file": "meshes/textures/robot0_original_urdf_visual_link2_texture-4b4174f9.png",
+      "sha256": "4b4174f97f436eb5dccd31148983e6ed15b4ceec7ddce6f0cdb2bda9aa1f7ad3"
+    },
+    {
+      "asset": "robot0_original_urdf_visual_link3_texture",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/d550d51b829f93c390d4af50006acbf016d6fc466fc5d8883b8ee2223881f0c0.png",
+      "file": "meshes/textures/robot0_original_urdf_visual_base_link_texture-d550d51b.png",
+      "sha256": "d550d51b829f93c390d4af50006acbf016d6fc466fc5d8883b8ee2223881f0c0"
+    },
+    {
+      "asset": "robot0_original_urdf_visual_link4_texture",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/7311991bbb4163306ccd448d3cb5dce960831e712913ed7b782cf209479f5c90.png",
+      "file": "meshes/textures/robot0_original_urdf_visual_link4_texture-7311991b.png",
+      "sha256": "7311991bbb4163306ccd448d3cb5dce960831e712913ed7b782cf209479f5c90"
+    },
+    {
+      "asset": "robot0_original_urdf_visual_link5_texture",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/4cd94b0adf5e8a471116c6e74aba956ef5e08f2a383bbbf59ac65b4552417c9c.png",
+      "file": "meshes/textures/robot0_original_urdf_visual_link5_texture-4cd94b0a.png",
+      "sha256": "4cd94b0adf5e8a471116c6e74aba956ef5e08f2a383bbbf59ac65b4552417c9c"
+    },
+    {
+      "asset": "robot0_original_urdf_visual_link6_texture",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/d550d51b829f93c390d4af50006acbf016d6fc466fc5d8883b8ee2223881f0c0.png",
+      "file": "meshes/textures/robot0_original_urdf_visual_base_link_texture-d550d51b.png",
+      "sha256": "d550d51b829f93c390d4af50006acbf016d6fc466fc5d8883b8ee2223881f0c0"
+    },
+    {
+      "asset": "robot0_original_urdf_visual_link7_texture",
+      "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/d550d51b829f93c390d4af50006acbf016d6fc466fc5d8883b8ee2223881f0c0.png",
+      "file": "meshes/textures/robot0_original_urdf_visual_base_link_texture-d550d51b.png",
+      "sha256": "d550d51b829f93c390d4af50006acbf016d6fc466fc5d8883b8ee2223881f0c0"
+    }
+  ],
+  "robot_bodies": 32,
+  "robot_geoms": 166,
+  "physics_steps": 0,
+  "policy_steps": 0,
+  "scope": "Robot asset extraction only; no kitchen, bowl, training, dataset, trajectory or grasp diagnostic shipped"
+}
