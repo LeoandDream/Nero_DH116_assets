@@ -1,4 +1,4 @@
-# NERO + 左DH116 仿真资产
+# NERO + DH116(Left) 仿真资产
 
 以源URDF为机械依据的机器人资产交接包，包含可移植URDF、MuJoCo模型、visual／collision mesh和最小静态查看入口。
 
