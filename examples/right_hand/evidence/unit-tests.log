@@ -1,0 +1,35 @@
+test_frozen_commands_exercise_all_six_source_endpoints_and_release (test_right_dynamics.PlanTests.test_frozen_commands_exercise_all_six_source_endpoints_and_release) ... ok
+test_manifest_rejects_modified_generated_mesh_and_inherited_bytes (test_right_dynamics.PlanTests.test_manifest_rejects_modified_generated_mesh_and_inherited_bytes) ... ok
+test_output_must_be_new_and_inside_checkout (test_right_dynamics.PlanTests.test_output_must_be_new_and_inside_checkout) ... ok
+test_runtime_error_is_exit_one_and_complete_screening_failure_is_exit_two (test_right_dynamics.PlanTests.test_runtime_error_is_exit_one_and_complete_screening_failure_is_exit_two) ... ok
+test_arm_drift_within_joint_limits_fails_the_hold_screen (test_right_dynamics.RecorderTests.test_arm_drift_within_joint_limits_fails_the_hold_screen) ... /data_robot/verification/nero_dh116_right/.reference-env/lib/python3.11/site-packages/robosuite/macros.py:53: DeprecationWarning: The 'warn' method is deprecated, use 'warning' instead
+  ROBOSUITE_DEFAULT_LOGGER.warn("No private macro file found!")
+[robosuite WARNING] No private macro file found! (macros.py:53)
+/data_robot/verification/nero_dh116_right/.reference-env/lib/python3.11/site-packages/robosuite/macros.py:54: DeprecationWarning: The 'warn' method is deprecated, use 'warning' instead
+  ROBOSUITE_DEFAULT_LOGGER.warn("It is recommended to use a private macro file")
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+/data_robot/verification/nero_dh116_right/.reference-env/lib/python3.11/site-packages/robosuite/macros.py:55: DeprecationWarning: The 'warn' method is deprecated, use 'warning' instead
+  ROBOSUITE_DEFAULT_LOGGER.warn("To setup, run: python {}/scripts/setup_macros.py".format(robosuite.__path__[0]))
+[robosuite WARNING] To setup, run: python /data_robot/verification/nero_dh116_right/.reference-env/lib/python3.11/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+ok
+test_arm_only_contact_does_not_satisfy_right_hand_contact_measurement (test_right_dynamics.RecorderTests.test_arm_only_contact_does_not_satisfy_right_hand_contact_measurement) ... ok
+test_enabled_static_proxy_overlap_fails_screening_without_claiming_cad_penetration (test_right_dynamics.RecorderTests.test_enabled_static_proxy_overlap_fails_screening_without_claiming_cad_penetration) ... ok
+test_error_after_native_step_keeps_the_real_step_count_and_failure_report (test_right_dynamics.RecorderTests.test_error_after_native_step_keeps_the_real_step_count_and_failure_report) ... ok
+test_external_contact_is_measured_from_actual_solver_force (test_right_dynamics.RecorderTests.test_external_contact_is_measured_from_actual_solver_force) ... ok
+test_failed_tracking_records_every_real_step_and_named_18_state (test_right_dynamics.RecorderTests.test_failed_tracking_records_every_real_step_and_named_18_state) ... ok
+test_filtered_rigid_overlap_is_reported_as_candidate_not_physical_penetration (test_right_dynamics.RecorderTests.test_filtered_rigid_overlap_is_reported_as_candidate_not_physical_penetration) ... ok
+test_nonfinite_step_is_valid_json_and_stops_without_claiming_complete (test_right_dynamics.RecorderTests.test_nonfinite_step_is_valid_json_and_stops_without_claiming_complete) ... ok
+test_probe_rejects_overlapping_candidates_and_retains_native_robot_state (test_right_dynamics.RecorderTests.test_probe_rejects_overlapping_candidates_and_retains_native_robot_state) ... ok
+test_explicit_source_simulation_parameters_and_coarse17_collision (test_right_model.RightModelTests.test_explicit_source_simulation_parameters_and_coarse17_collision) ... ok
+test_independent_urdf_fk_at_open_and_asymmetric_angles (test_right_model.RightModelTests.test_independent_urdf_fk_at_open_and_asymmetric_angles) ... ok
+test_initial_state_uses_open_active_joints_and_mimic_offsets (test_right_model.RightModelTests.test_initial_state_uses_open_active_joints_and_mimic_offsets) ... ok
+test_joint_axes_limits_fixed_links_and_linear_coupling (test_right_model.RightModelTests.test_joint_axes_limits_fixed_links_and_linear_coupling) ... ok
+test_mass_and_full_inertia_match_raw_urdf (test_right_model.RightModelTests.test_mass_and_full_inertia_match_raw_urdf) ... ok
+test_original_left_and_nonhand_physics_remain_unchanged (test_right_model.RightModelTests.test_original_left_and_nonhand_physics_remain_unchanged) ... ok
+test_resource_closure_and_source_bytes (test_right_model.RightModelTests.test_resource_closure_and_source_bytes) ... ok
+test_mount_hidden_without_changing_physical_fields (test_static_view.StaticViewTests.test_mount_hidden_without_changing_physical_fields) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 8.061s
+
+OK

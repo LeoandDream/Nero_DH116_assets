@@ -1,0 +1,6141 @@
+{
+  "schema_version": 1,
+  "scope": "Pinned upstream left/right source mechanics, explicit right-hand definition selection, compiled mechanical cross-check and mounting-frame observations. Dynamic acceptance is separate.",
+  "upstream": {
+    "repository": "https://github.com/sorrowfeng/leadtron_hand_descriptions",
+    "commit": "14275cfe32cce1fe13a16df712e8a0e610a0227e"
+  },
+  "adopted_right_definition": {
+    "mechanical_authority": "DH116-R000-A1 URDF at the pinned commit; all 17 link masses, inertial origins/full tensors and 16 joint parent/child/type/origin/axis/limits are preserved",
+    "rotation_convention": "URDF rpy is Rz(yaw) Ry(pitch) Rx(roll), converted to MuJoCo wxyz quaternion; source MJCF eulerseq=XYZ uses the same fixed-axis convention",
+    "coupling_authority": "URDF linear mimic: follower = offset + multiplier * driver; the upstream MJCF quadratic terms are not used",
+    "simulation_parameters": {
+      "joint": {
+        "source": "right MJCF default/joint",
+        "damping": 2.0,
+        "armature": 0.01,
+        "frictionloss": 0
+      },
+      "position_actuators": {
+        "source": "right MJCF actuator/position",
+        "kp": 50,
+        "kv": 2.0,
+        "ctrlrange_source": "right URDF joint lower and upper limits"
+      },
+      "equality_solver": {
+        "source": "right MJCF default/equality",
+        "solref": [
+          0.004,
+          1
+        ],
+        "solimp": [
+          0.9,
+          0.99,
+          0.001,
+          0.5,
+          2
+        ]
+      },
+      "contact": {
+        "source": "right MJCF default/geom",
+        "condim": 4,
+        "friction": [
+          1,
+          0.005,
+          0.001
+        ]
+      },
+      "model_options_and_7_arm_motors": {
+        "source": "existing mjcf/nero_dh116.xml",
+        "rule": "preserved together with all robot0_/mount0_ mechanical and physical attributes"
+      }
+    },
+    "collision": {
+      "profile": "coarse17",
+      "source": "all 17 right URDF link/collision meshes",
+      "contype": 1,
+      "conaffinity": 1,
+      "mesh_bytes": "unaltered pinned right source STL",
+      "engine_representation": "MuJoCo convex hull for each mesh",
+      "upstream_mjcf_selective_activation_used": false,
+      "left_hand_proxy_meshes_used": false,
+      "new_contact_exclusions": [],
+      "limitation": "convex hulls do not reproduce concave triangle surfaces; geometric source fidelity does not establish dynamic/contact acceptance"
+    },
+    "control_order": [
+      "finger11",
+      "finger12",
+      "finger21",
+      "finger31",
+      "finger41",
+      "finger51"
+    ],
+    "state_and_control": {
+      "qpos": 18,
+      "arm_qpos": 7,
+      "hand_qpos": 11,
+      "controls": 13,
+      "arm_control": "7 motor torques Nm",
+      "hand_control": "6 independent joint angle targets rad",
+      "passive_joint_controls": 0
+    },
+    "initial_state": {
+      "arm_qpos": "first 7 entries of the left composite keyframe",
+      "active_hand_qpos": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "follower_qpos": "URDF mimic offsets",
+      "ctrl": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "interface_metadata": "existing zero-mass gripper0_eef, three base sites and force/torque sensor references; these are application metadata, not additional manufacturer mechanical links",
+    "source_effort_velocity": "URDF effort=0 and velocity=0 are retained in the source file; these do not provide validated actuator capabilities and are not imposed as zero force limits",
+    "equivalence_claim": "The assembled variant uses URDF mechanics/linear coupling plus separately attributed source-MJCF simulation parameters. It is not claimed to be equivalent to the complete upstream MJCF model."
+  },
+  "hands": {
+    "L": {
+      "source_files": {
+        "urdf": {
+          "path": "DH116/DH116_URDF_MJCF_Files/DH116-L000-A1/urdf/DH116-L000-A1.urdf",
+          "sha256": "5e8d24141b39a2205cd90933383e0f06f32cd9333ddb48c015b677b1ec938c1e"
+        },
+        "mjcf": {
+          "path": "DH116/DH116_URDF_MJCF_Files/DH116-L000-A1/mjcf/DH116-L000-A1.xml",
+          "sha256": "df202ed6244d2c7323c25695a9538b605cb8a15f9024f87c6b24f795d630f15d"
+        }
+      },
+      "counts": {
+        "links": 17,
+        "joints": 16,
+        "revolute": 11,
+        "fixed": 5,
+        "mjcf_bodies": 17,
+        "mjcf_hinges": 11
+      },
+      "total_link_mass_kg": 0.24564069,
+      "independent_control_order": [
+        "finger11",
+        "finger12",
+        "finger21",
+        "finger31",
+        "finger41",
+        "finger51"
+      ],
+      "urdf_mechanics": {
+        "links": {
+          "base_link": {
+            "mass": 0.11674,
+            "inertial_origin": {
+              "xyz": [
+                -0.004908,
+                -0.0023087,
+                0.053425
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": [
+              8.8343e-05,
+              5.7065e-05,
+              4.4559e-05,
+              -1.5779e-07,
+              2.7103e-06,
+              4.0956e-07
+            ],
+            "visuals": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-L000-A1/meshes/base_link.STL"
+                }
+              }
+            ],
+            "collisions": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-L000-A1/meshes/base_link.STL"
+                }
+              }
+            ]
+          },
+          "finger11_link": {
+            "mass": 0.010254,
+            "inertial_origin": {
+              "xyz": [
+                0.0078225,
+                -0.0020462,
+                0.00068777
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": [
+              7.2141e-07,
+              1.1141e-06,
+              1.144e-06,
+              1.1025e-07,
+              1.8578e-07,
+              -4.8596e-08
+            ],
+            "visuals": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-L000-A1/meshes/finger11_link.STL"
+                }
+              }
+            ],
+            "collisions": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-L000-A1/meshes/finger11_link.STL"
+                }
+              }
+            ]
+          },
+          "finger12_link": {
+            "mass": 0.010117,
+            "inertial_origin": {
+              "xyz": [
+                0.001442,
+                5.4239e-07,
+                0.024371
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": [
+              2.4721e-06,
+              2.2849e-06,
+              8.8673e-07,
+              3.5819e-11,
+              -8.7771e-08,
+              1.0447e-12
+            ],
+            "visuals": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-L000-A1/meshes/finger12_link.STL"
+                }
+              }
+            ],
+            "collisions": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-L000-A1/meshes/finger12_link.STL"
+                }
+              }
+            ]
+          },
+          "finger13_link": {
+            "mass": 0.020548,
+            "inertial_origin": {
+              "xyz": [
+                0.0064864,
+                1.9023e-06,
+                0.014709
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": [
+              2.4642e-06,
+              2.3554e-06,
+              8.7678e-07,
+              -1.8605e-10,
+              -1.2758e-07,
+              -2.9766e-10
+            ],
+            "visuals": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-L000-A1/meshes/finger13_link.STL"
+                }
+              }
+            ],
+            "collisions": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-L000-A1/meshes/finger13_link.STL"
+                }
+              }
+            ]
+          },
+          "finger14_link": {
+            "mass": 0.00063385,
+            "inertial_origin": {
+              "xyz": [
+                0.0030983,
+                6.4415e-07,
+                0.024752
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": [
+              4.5297e-08,
+              3.0365e-08,
+              3.2628e-08,
+              -1.7549e-11,
+              -6.8692e-09,
+              3.6154e-12
+            ],
+            "visuals": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-L000-A1/meshes/finger14_link.STL"
+                }
+              }
+            ],
+            "collisions": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-L000-A1/meshes/finger14_link.STL"
+                }
+              }
+            ]
+          },
+          "finger21_link": {
+            "mass": 0.0067138,
+            "inertial_origin": {
+              "xyz": [
+                -0.0017977,
+                4.517e-07,
+                0.018685
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": [
+              1.195e-06,
+              1.0687e-06,
+              3.7302e-07,
+              4.4817e-12,
+              -4.5105e-09,
+              1.3869e-11
+            ],
+            "visuals": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-L000-A1/meshes/finger21_link.STL"
+                }
+              }
+            ],
+            "collisions": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-L000-A1/meshes/finger21_link.STL"
+                }
+              }
+            ]
+          },
+          "finger22_link": {
+            "mass": 0.014791,
+            "inertial_origin": {
+              "xyz": [
+                -0.001934,
+                -4.4573e-07,
+                0.02175
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": [
+              1.4669e-06,
+              1.4892e-06,
+              3.5283e-07,
+              -1.8909e-11,
+              -1.6607e-07,
+              5.6761e-11
+            ],
+            "visuals": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-L000-A1/meshes/finger22_link.STL"
+                }
+              }
+            ],
+            "collisions": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-L000-A1/meshes/finger22_link.STL"
+                }
+              }
+            ]
+          },
+          "finger23_link": {
+            "mass": 0.00081811,
+            "inertial_origin": {
+              "xyz": [
+                0.0027522,
+                -5.9223e-07,
+                0.027469
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": [
+              1.0639e-07,
+              9.4373e-08,
+              2.3583e-08,
+              -3.5393e-13,
+              -9.0804e-09,
+              7.1781e-12
+            ],
+            "visuals": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-L000-A1/meshes/finger23_link.STL"
+                }
+              }
+            ],
+            "collisions": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-L000-A1/meshes/finger23_link.STL"
+                }
+              }
+            ]
+          },
+          "finger31_link": {
+            "mass": 0.0067137,
+            "inertial_origin": {
+              "xyz": [
+                -0.0017977,
+                3.6375e-07,
+                0.018685
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": [
+              1.195e-06,
+              1.0687e-06,
+              3.7302e-07,
+              7.1207e-12,
+              -4.5072e-09,
+              1.6816e-11
+            ],
+            "visuals": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-L000-A1/meshes/finger31_link.STL"
+                }
+              }
+            ],
+            "collisions": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-L000-A1/meshes/finger31_link.STL"
+                }
+              }
+            ]
+          },
+          "finger32_link": {
+            "mass": 0.017437,
+            "inertial_origin": {
+              "xyz": [
+                -0.0021235,
+                -2.8524e-07,
+                0.024937
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": [
+              4.1693e-06,
+              4.1909e-06,
+              4.4314e-07,
+              -2.5515e-11,
+              -2.6509e-07,
+              9.5471e-11
+            ],
+            "visuals": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-L000-A1/meshes/finger32_link.STL"
+                }
+              }
+            ],
+            "collisions": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-L000-A1/meshes/finger32_link.STL"
+                }
+              }
+            ]
+          },
+          "finger33_link": {
+            "mass": 0.00081807,
+            "inertial_origin": {
+              "xyz": [
+                7.153e-07,
+                -0.0067137,
+                -0.037473
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": [
+              9.4367e-08,
+              1.0642e-07,
+              2.3554e-08,
+              7.2819e-13,
+              7.4794e-12,
+              -8.9658e-09
+            ],
+            "visuals": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-L000-A1/meshes/finger33_link.STL"
+                }
+              }
+            ],
+            "collisions": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-L000-A1/meshes/finger33_link.STL"
+                }
+              }
+            ]
+          },
+          "finger41_link": {
+            "mass": 0.0067137,
+            "inertial_origin": {
+              "xyz": [
+                -0.0017978,
+                4.6307e-07,
+                0.018685
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": [
+              1.195e-06,
+              1.0687e-06,
+              3.7301e-07,
+              -3.5541e-12,
+              -4.505e-09,
+              6.8595e-13
+            ],
+            "visuals": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-L000-A1/meshes/finger41_link.STL"
+                }
+              }
+            ],
+            "collisions": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-L000-A1/meshes/finger41_link.STL"
+                }
+              }
+            ]
+          },
+          "finger42_link": {
+            "mass": 0.014791,
+            "inertial_origin": {
+              "xyz": [
+                -0.00099518,
+                -3.8607e-07,
+                0.021813
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": [
+              1.4505e-06,
+              1.4892e-06,
+              3.692e-07,
+              -2.9273e-11,
+              -2.1339e-07,
+              6.1801e-11
+            ],
+            "visuals": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-L000-A1/meshes/finger42_link.STL"
+                }
+              }
+            ],
+            "collisions": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-L000-A1/meshes/finger42_link.STL"
+                }
+              }
+            ]
+          },
+          "finger43_link": {
+            "mass": 0.00081812,
+            "inertial_origin": {
+              "xyz": [
+                0.0039329,
+                -6.1523e-07,
+                0.027325
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": [
+              1.0545e-07,
+              9.4369e-08,
+              2.452e-08,
+              -2.6832e-13,
+              -1.261e-08,
+              6.0613e-12
+            ],
+            "visuals": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-L000-A1/meshes/finger43_link.STL"
+                }
+              }
+            ],
+            "collisions": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-L000-A1/meshes/finger43_link.STL"
+                }
+              }
+            ]
+          },
+          "finger51_link": {
+            "mass": 0.0067139,
+            "inertial_origin": {
+              "xyz": [
+                -0.0017977,
+                3.5129e-07,
+                0.018685
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": [
+              1.195e-06,
+              1.0687e-06,
+              3.7302e-07,
+              2.1372e-12,
+              -4.5117e-09,
+              5.8565e-12
+            ],
+            "visuals": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-L000-A1/meshes/finger51_link.STL"
+                }
+              }
+            ],
+            "collisions": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-L000-A1/meshes/finger51_link.STL"
+                }
+              }
+            ]
+          },
+          "finger52_link": {
+            "mass": 0.010439,
+            "inertial_origin": {
+              "xyz": [
+                -0.0024418,
+                -8.1825e-07,
+                0.016654
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": [
+              1.3354e-06,
+              1.3473e-06,
+              2.4653e-07,
+              -3.1558e-11,
+              -1.1834e-07,
+              7.0815e-11
+            ],
+            "visuals": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-L000-A1/meshes/finger52_link.STL"
+                }
+              }
+            ],
+            "collisions": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-L000-A1/meshes/finger52_link.STL"
+                }
+              }
+            ]
+          },
+          "finger53_link": {
+            "mass": 0.00058044,
+            "inertial_origin": {
+              "xyz": [
+                0.0021844,
+                1.1224e-06,
+                0.022782
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": [
+              4.4456e-08,
+              3.5896e-08,
+              1.5583e-08,
+              1.8383e-12,
+              -3.5021e-09,
+              -1.5936e-12
+            ],
+            "visuals": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-L000-A1/meshes/finger53_link.STL"
+                }
+              }
+            ],
+            "collisions": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-L000-A1/meshes/finger53_link.STL"
+                }
+              }
+            ]
+          }
+        },
+        "joints": {
+          "finger11": {
+            "type": "revolute",
+            "origin": {
+              "xyz": [
+                0.018,
+                -0.021464,
+                0.040041
+              ],
+              "rpy": [
+                0.087266,
+                0.0,
+                0.0
+              ]
+            },
+            "parent": "base_link",
+            "child": "finger11_link",
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "limit": {
+              "lower": 0.0,
+              "upper": 1.047198,
+              "effort": 0.0,
+              "velocity": 0.0
+            },
+            "mimic": null
+          },
+          "finger12": {
+            "type": "revolute",
+            "origin": {
+              "xyz": [
+                0.018876,
+                -0.0049375,
+                -0.0023593
+              ],
+              "rpy": [
+                0.0,
+                0.95149,
+                -0.25585
+              ]
+            },
+            "parent": "finger11_link",
+            "child": "finger12_link",
+            "axis": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "limit": {
+              "lower": 0.0,
+              "upper": 0.523599,
+              "effort": 0.0,
+              "velocity": 0.0
+            },
+            "mimic": null
+          },
+          "finger13": {
+            "type": "revolute",
+            "origin": {
+              "xyz": [
+                0.0,
+                0.0,
+                0.045
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "parent": "finger12_link",
+            "child": "finger13_link",
+            "axis": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "limit": {
+              "lower": 0.004592,
+              "upper": 0.594583,
+              "effort": 0.0,
+              "velocity": 0.0
+            },
+            "mimic": {
+              "joint": "finger12",
+              "multiplier": 0.8808,
+              "offset": 0.004592
+            }
+          },
+          "finger14": {
+            "type": "fixed",
+            "origin": {
+              "xyz": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "parent": "finger13_link",
+            "child": "finger14_link",
+            "axis": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "limit": {
+              "lower": 0.0,
+              "upper": 1.396263,
+              "effort": 0.0,
+              "velocity": 0.0
+            },
+            "mimic": null
+          },
+          "finger21": {
+            "type": "revolute",
+            "origin": {
+              "xyz": [
+                -0.011581,
+                -0.031971,
+                0.10003
+              ],
+              "rpy": [
+                0.052657,
+                0.10625,
+                0.0055894
+              ]
+            },
+            "parent": "base_link",
+            "child": "finger21_link",
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "limit": {
+              "lower": 0.0,
+              "upper": 1.396263,
+              "effort": 0.0,
+              "velocity": 0.0
+            },
+            "mimic": null
+          },
+          "finger22": {
+            "type": "revolute",
+            "origin": {
+              "xyz": [
+                0.0,
+                0.0,
+                0.035
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "parent": "finger21_link",
+            "child": "finger22_link",
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "limit": {
+              "lower": 0.011072,
+              "upper": 1.687426,
+              "effort": 0.0,
+              "velocity": 0.0
+            },
+            "mimic": {
+              "joint": "finger21",
+              "multiplier": 0.9206,
+              "offset": 0.011072
+            }
+          },
+          "finger23": {
+            "type": "fixed",
+            "origin": {
+              "xyz": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "parent": "finger22_link",
+            "child": "finger23_link",
+            "axis": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "limit": {
+              "lower": 0.011072,
+              "upper": 1.687426,
+              "effort": 0.0,
+              "velocity": 0.0
+            },
+            "mimic": null
+          },
+          "finger31": {
+            "type": "revolute",
+            "origin": {
+              "xyz": [
+                -0.013501,
+                -0.0105,
+                0.10286
+              ],
+              "rpy": [
+                0.0,
+                0.10214,
+                0.0
+              ]
+            },
+            "parent": "base_link",
+            "child": "finger31_link",
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "limit": {
+              "lower": 0.0,
+              "upper": 1.396263,
+              "effort": 0.0,
+              "velocity": 0.0
+            },
+            "mimic": null
+          },
+          "finger32": {
+            "type": "revolute",
+            "origin": {
+              "xyz": [
+                0.0,
+                0.0,
+                0.035
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "parent": "finger31_link",
+            "child": "finger32_link",
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "limit": {
+              "lower": 0.011072,
+              "upper": 1.687426,
+              "effort": 0.0,
+              "velocity": 0.0
+            },
+            "mimic": {
+              "joint": "finger31",
+              "multiplier": 0.9206,
+              "offset": 0.011072
+            }
+          },
+          "finger33": {
+            "type": "fixed",
+            "origin": {
+              "xyz": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "parent": "finger32_link",
+            "child": "finger33_link",
+            "axis": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "limit": {
+              "lower": 0.0,
+              "upper": 1.396263,
+              "effort": 0.0,
+              "velocity": 0.0
+            },
+            "mimic": null
+          },
+          "finger41": {
+            "type": "revolute",
+            "origin": {
+              "xyz": [
+                -0.015081,
+                0.010971,
+                0.10183
+              ],
+              "rpy": [
+                -0.052889,
+                0.14148,
+                -0.0074648
+              ]
+            },
+            "parent": "base_link",
+            "child": "finger41_link",
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "limit": {
+              "lower": 0.0,
+              "upper": 1.396263,
+              "effort": 0.0,
+              "velocity": 0.0
+            },
+            "mimic": null
+          },
+          "finger42": {
+            "type": "revolute",
+            "origin": {
+              "xyz": [
+                0.0,
+                0.0,
+                0.035
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "parent": "finger41_link",
+            "child": "finger42_link",
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "limit": {
+              "lower": 0.011072,
+              "upper": 1.687426,
+              "effort": 0.0,
+              "velocity": 0.0
+            },
+            "mimic": {
+              "joint": "finger41",
+              "multiplier": 0.9206,
+              "offset": 0.011072
+            }
+          },
+          "finger43": {
+            "type": "fixed",
+            "origin": {
+              "xyz": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "parent": "finger42_link",
+            "child": "finger43_link",
+            "axis": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "limit": {
+              "lower": 0.0,
+              "upper": 1.396263,
+              "effort": 0.0,
+              "velocity": 0.0
+            },
+            "mimic": null
+          },
+          "finger51": {
+            "type": "revolute",
+            "origin": {
+              "xyz": [
+                -0.013081,
+                0.032156,
+                0.097798
+              ],
+              "rpy": [
+                -0.078754,
+                0.073706,
+                -0.0058113
+              ]
+            },
+            "parent": "base_link",
+            "child": "finger51_link",
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "limit": {
+              "lower": 0.0,
+              "upper": 1.396263,
+              "effort": 0.0,
+              "velocity": 0.0
+            },
+            "mimic": null
+          },
+          "finger52": {
+            "type": "revolute",
+            "origin": {
+              "xyz": [
+                0.0,
+                0.0,
+                0.035
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "parent": "finger51_link",
+            "child": "finger52_link",
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "limit": {
+              "lower": 0.011072,
+              "upper": 1.687426,
+              "effort": 0.0,
+              "velocity": 0.0
+            },
+            "mimic": {
+              "joint": "finger51",
+              "multiplier": 0.9206,
+              "offset": 0.011072
+            }
+          },
+          "finger53": {
+            "type": "fixed",
+            "origin": {
+              "xyz": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "parent": "finger52_link",
+            "child": "finger53_link",
+            "axis": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "limit": {
+              "lower": 0.0,
+              "upper": 1.57,
+              "effort": 0.0,
+              "velocity": 0.0
+            },
+            "mimic": null
+          }
+        }
+      },
+      "urdf_to_mjcf_mechanical_comparison": {
+        "checked_fields": [
+          "body/link set",
+          "joint hierarchy and fixed/moving classification",
+          "body position and fixed-axis orientation",
+          "joint name, axis and range",
+          "mass",
+          "inertial position",
+          "all six full inertia components"
+        ],
+        "differences": []
+      },
+      "mjcf_source_definition": {
+        "compiler": {
+          "angle": "radian",
+          "meshdir": "../meshes",
+          "eulerseq": "XYZ",
+          "autolimits": "true"
+        },
+        "defaults": {
+          "joint": {
+            "type": "hinge",
+            "damping": "2.0",
+            "armature": "0.01",
+            "frictionloss": "0"
+          },
+          "geom": {
+            "condim": "4",
+            "friction": "1.0 0.005 0.001",
+            "contype": "0",
+            "conaffinity": "0"
+          },
+          "equality": {
+            "solref": "0.004 1",
+            "solimp": "0.9 0.99 0.001 0.5 2"
+          }
+        },
+        "equality": [
+          {
+            "name": "eq_thumb",
+            "joint1": "finger13",
+            "joint2": "finger12",
+            "polycoef": "0.004592 0.8808 0.469825 0 0"
+          },
+          {
+            "name": "eq_index",
+            "joint1": "finger22",
+            "joint2": "finger21",
+            "polycoef": "0.011072 0.9206 0.200535 0 0"
+          },
+          {
+            "name": "eq_middle",
+            "joint1": "finger32",
+            "joint2": "finger31",
+            "polycoef": "0.011072 0.9206 0.200535 0 0"
+          },
+          {
+            "name": "eq_ring",
+            "joint1": "finger42",
+            "joint2": "finger41",
+            "polycoef": "0.011072 0.9206 0.200535 0 0"
+          },
+          {
+            "name": "eq_pinky",
+            "joint1": "finger52",
+            "joint2": "finger51",
+            "polycoef": "0.011072 0.9206 0.200535 0 0"
+          }
+        ],
+        "actuators": [
+          {
+            "name": "act_finger11",
+            "joint": "finger11",
+            "kp": "50",
+            "kv": "2.0",
+            "ctrlrange": "0 1.047198"
+          },
+          {
+            "name": "act_finger12",
+            "joint": "finger12",
+            "kp": "50",
+            "kv": "2.0",
+            "ctrlrange": "0 0.523599"
+          },
+          {
+            "name": "act_finger21",
+            "joint": "finger21",
+            "kp": "50",
+            "kv": "2.0",
+            "ctrlrange": "0 1.396263"
+          },
+          {
+            "name": "act_finger31",
+            "joint": "finger31",
+            "kp": "50",
+            "kv": "2.0",
+            "ctrlrange": "0 1.396263"
+          },
+          {
+            "name": "act_finger41",
+            "joint": "finger41",
+            "kp": "50",
+            "kv": "2.0",
+            "ctrlrange": "0 1.396263"
+          },
+          {
+            "name": "act_finger51",
+            "joint": "finger51",
+            "kp": "50",
+            "kv": "2.0",
+            "ctrlrange": "0 1.396263"
+          }
+        ],
+        "contact_activation": {
+          "base_link": {
+            "contype": "0",
+            "conaffinity": "0"
+          },
+          "finger11_link": {
+            "contype": "0",
+            "conaffinity": "0"
+          },
+          "finger12_link": {
+            "contype": "0",
+            "conaffinity": "0"
+          },
+          "finger13_link": {
+            "contype": "1",
+            "conaffinity": "1"
+          },
+          "finger14_link": {
+            "contype": "1",
+            "conaffinity": "1"
+          },
+          "finger21_link": {
+            "contype": "0",
+            "conaffinity": "0"
+          },
+          "finger22_link": {
+            "contype": "1",
+            "conaffinity": "1"
+          },
+          "finger23_link": {
+            "contype": "1",
+            "conaffinity": "1"
+          },
+          "finger31_link": {
+            "contype": "0",
+            "conaffinity": "0"
+          },
+          "finger32_link": {
+            "contype": "1",
+            "conaffinity": "1"
+          },
+          "finger33_link": {
+            "contype": "1",
+            "conaffinity": "1"
+          },
+          "finger41_link": {
+            "contype": "0",
+            "conaffinity": "0"
+          },
+          "finger42_link": {
+            "contype": "1",
+            "conaffinity": "1"
+          },
+          "finger43_link": {
+            "contype": "1",
+            "conaffinity": "1"
+          },
+          "finger51_link": {
+            "contype": "0",
+            "conaffinity": "0"
+          },
+          "finger52_link": {
+            "contype": "1",
+            "conaffinity": "1"
+          },
+          "finger53_link": {
+            "contype": "1",
+            "conaffinity": "1"
+          }
+        }
+      },
+      "raw_meshes": {
+        "base_link": {
+          "file": "DH116/DH116_URDF_MJCF_Files/DH116-L000-A1/meshes/base_link.STL",
+          "sha256": "0be94e52875c963d1aec4d981700ada994dc2e7e38d03eb3ccddd6b9c90a2c6c",
+          "bytes": 5067734,
+          "format": "binary STL",
+          "triangles": 101353,
+          "binary_length_valid": true,
+          "bounds_m": [
+            [
+              -0.0339483767747879,
+              -0.041587550193071365,
+              -5.960464760645934e-11
+            ],
+            [
+              0.028362080454826355,
+              0.04183388873934746,
+              0.10835152119398117
+            ]
+          ],
+          "extents_m": [
+            0.06231045722961426,
+            0.08342143893241882,
+            0.10835152125358583
+          ],
+          "watertight": false
+        },
+        "finger11_link": {
+          "file": "DH116/DH116_URDF_MJCF_Files/DH116-L000-A1/meshes/finger11_link.STL",
+          "sha256": "f4e9f3fe79d699b3b76f2ac1e29d7067d48f354e8a40f5264ef6efe6353461f9",
+          "bytes": 209684,
+          "format": "binary STL",
+          "triangles": 4192,
+          "binary_length_valid": true,
+          "bounds_m": [
+            [
+              -0.006499338895082474,
+              -0.013742247596383095,
+              -0.007049999665468931
+            ],
+            [
+              0.026514731347560883,
+              0.008139684796333313,
+              0.0182499997317791
+            ]
+          ],
+          "extents_m": [
+            0.033014070242643356,
+            0.021881932392716408,
+            0.02529999939724803
+          ],
+          "watertight": true
+        },
+        "finger12_link": {
+          "file": "DH116/DH116_URDF_MJCF_Files/DH116-L000-A1/meshes/finger12_link.STL",
+          "sha256": "3da0a8e9b050d3d4608e6d30cf9466031a87a3e0bc12f3398963a1b8706494a0",
+          "bytes": 1072334,
+          "format": "binary STL",
+          "triangles": 21445,
+          "binary_length_valid": true,
+          "bounds_m": [
+            [
+              -0.0101388618350029,
+              -0.011489986442029476,
+              -0.004999964963644743
+            ],
+            [
+              0.013219685293734074,
+              0.011489986442029476,
+              0.04974944517016411
+            ]
+          ],
+          "extents_m": [
+            0.023358547128736973,
+            0.022979972884058952,
+            0.05474941013380885
+          ],
+          "watertight": false
+        },
+        "finger13_link": {
+          "file": "DH116/DH116_URDF_MJCF_Files/DH116-L000-A1/meshes/finger13_link.STL",
+          "sha256": "f34ca4cbc816d42643c532cf102b1583e1d8d39e156072f65f4bfa1e55fae7a5",
+          "bytes": 650184,
+          "format": "binary STL",
+          "triangles": 13002,
+          "binary_length_valid": true,
+          "bounds_m": [
+            [
+              -0.005305193830281496,
+              -0.010120137594640255,
+              -0.009525131434202194
+            ],
+            [
+              0.014837776310741901,
+              0.010120137594640255,
+              0.03632381558418274
+            ]
+          ],
+          "extents_m": [
+            0.020142970141023397,
+            0.02024027518928051,
+            0.045848947018384933
+          ],
+          "watertight": true
+        },
+        "finger14_link": {
+          "file": "DH116/DH116_URDF_MJCF_Files/DH116-L000-A1/meshes/finger14_link.STL",
+          "sha256": "c8ee9ee3ba82e3fc1ee91677c3f6c616c439c0bfa0d1fa9669a6d3df8cf0eba1",
+          "bytes": 311184,
+          "format": "binary STL",
+          "triangles": 6222,
+          "binary_length_valid": true,
+          "bounds_m": [
+            [
+              -0.004281900357455015,
+              -0.009988225996494293,
+              0.014672874473035336
+            ],
+            [
+              0.010025983676314354,
+              0.009988240897655487,
+              0.03632250055670738
+            ]
+          ],
+          "extents_m": [
+            0.014307884033769369,
+            0.01997646689414978,
+            0.021649626083672047
+          ],
+          "watertight": true
+        },
+        "finger21_link": {
+          "file": "DH116/DH116_URDF_MJCF_Files/DH116-L000-A1/meshes/finger21_link.STL",
+          "sha256": "1bb8e6bd2d50d1b07c7077610fade1c71dd0923d8025f1589e3f904c856f28c1",
+          "bytes": 1594484,
+          "format": "binary STL",
+          "triangles": 31888,
+          "binary_length_valid": true,
+          "bounds_m": [
+            [
+              -0.009180931374430656,
+              -0.009564423002302647,
+              -0.0039953552186489105
+            ],
+            [
+              0.008070958778262138,
+              0.009564423002302647,
+              0.04189997538924217
+            ]
+          ],
+          "extents_m": [
+            0.017251890152692795,
+            0.019128846004605293,
+            0.04589533060789108
+          ],
+          "watertight": true
+        },
+        "finger22_link": {
+          "file": "DH116/DH116_URDF_MJCF_Files/DH116-L000-A1/meshes/finger22_link.STL",
+          "sha256": "53c55c846f481d90248332d5a87319d11e0d96f0fb8cbb35717cc9ac9745f5e5",
+          "bytes": 838384,
+          "format": "binary STL",
+          "triangles": 16766,
+          "binary_length_valid": true,
+          "bounds_m": [
+            [
+              -0.008888347074389458,
+              -0.0074645415879786015,
+              -0.008926657028496265
+            ],
+            [
+              0.007061350625008345,
+              0.007464541122317314,
+              0.047069333493709564
+            ]
+          ],
+          "extents_m": [
+            0.015949697699397802,
+            0.014929082710295916,
+            0.05599599052220583
+          ],
+          "watertight": false
+        },
+        "finger23_link": {
+          "file": "DH116/DH116_URDF_MJCF_Files/DH116-L000-A1/meshes/finger23_link.STL",
+          "sha256": "730786ab7997aa990ae4ace17ab279d36a233223bcdc47d3e0e7578b35ab703b",
+          "bytes": 293784,
+          "format": "binary STL",
+          "triangles": 5874,
+          "binary_length_valid": true,
+          "bounds_m": [
+            [
+              -0.0035139250103384256,
+              -0.007301060948520899,
+              0.009262686595320702
+            ],
+            [
+              0.00806133821606636,
+              0.007301102392375469,
+              0.046920277178287506
+            ]
+          ],
+          "extents_m": [
+            0.011575263226404786,
+            0.014602163340896368,
+            0.037657590582966805
+          ],
+          "watertight": true
+        },
+        "finger31_link": {
+          "file": "DH116/DH116_URDF_MJCF_Files/DH116-L000-A1/meshes/finger31_link.STL",
+          "sha256": "7e3176cd95983c3e84369fe1639f65dcab86d54cd49ca3ed8612807ba3bc7358",
+          "bytes": 1594484,
+          "format": "binary STL",
+          "triangles": 31888,
+          "binary_length_valid": true,
+          "bounds_m": [
+            [
+              -0.009180931374430656,
+              -0.009564423002302647,
+              -0.0039953552186489105
+            ],
+            [
+              0.008070958778262138,
+              0.009564423002302647,
+              0.04189997538924217
+            ]
+          ],
+          "extents_m": [
+            0.017251890152692795,
+            0.019128846004605293,
+            0.04589533060789108
+          ],
+          "watertight": true
+        },
+        "finger32_link": {
+          "file": "DH116/DH116_URDF_MJCF_Files/DH116-L000-A1/meshes/finger32_link.STL",
+          "sha256": "68b0442e8c8e3e0e8e94ef55596378b85556bda1959c64debbdd48d21b3af931",
+          "bytes": 687084,
+          "format": "binary STL",
+          "triangles": 13740,
+          "binary_length_valid": true,
+          "bounds_m": [
+            [
+              -0.00890309177339077,
+              -0.0074645415879786015,
+              -0.008931105025112629
+            ],
+            [
+              0.006822895258665085,
+              0.007464541122317314,
+              0.054074324667453766
+            ]
+          ],
+          "extents_m": [
+            0.015725987032055855,
+            0.014929082710295916,
+            0.0630054296925664
+          ],
+          "watertight": false
+        },
+        "finger33_link": {
+          "file": "DH116/DH116_URDF_MJCF_Files/DH116-L000-A1/meshes/finger33_link.STL",
+          "sha256": "88aa060526d69f07a7d2688c2222ccbae0ea013d7395fb1a483f4287db842669",
+          "bytes": 293784,
+          "format": "binary STL",
+          "triangles": 5874,
+          "binary_length_valid": true,
+          "bounds_m": [
+            [
+              -0.003512150375172496,
+              -0.00734473904594779,
+              0.01587417908012867
+            ],
+            [
+              0.008023573085665703,
+              0.007257424294948578,
+              0.0535268671810627
+            ]
+          ],
+          "extents_m": [
+            0.011535723460838199,
+            0.014602163340896368,
+            0.03765268810093403
+          ],
+          "watertight": true
+        },
+        "finger41_link": {
+          "file": "DH116/DH116_URDF_MJCF_Files/DH116-L000-A1/meshes/finger41_link.STL",
+          "sha256": "5f1647a233765270e256bf1cb1deeca0ac29ad4241e2a8e95477756885b73857",
+          "bytes": 1594484,
+          "format": "binary STL",
+          "triangles": 31888,
+          "binary_length_valid": true,
+          "bounds_m": [
+            [
+              -0.009180931374430656,
+              -0.009564423002302647,
+              -0.0039953552186489105
+            ],
+            [
+              0.008070958778262138,
+              0.009564423002302647,
+              0.04189997538924217
+            ]
+          ],
+          "extents_m": [
+            0.017251890152692795,
+            0.019128846004605293,
+            0.04589533060789108
+          ],
+          "watertight": true
+        },
+        "finger42_link": {
+          "file": "DH116/DH116_URDF_MJCF_Files/DH116-L000-A1/meshes/finger42_link.STL",
+          "sha256": "15a9090c995e1f29ab0bb4b0a4ede7a4f60f1d0e0bf809c3ada86c53d0b66bed",
+          "bytes": 838384,
+          "format": "binary STL",
+          "triangles": 16766,
+          "binary_length_valid": true,
+          "bounds_m": [
+            [
+              -0.008940982632339,
+              -0.0074645415879786015,
+              -0.008876570500433445
+            ],
+            [
+              0.008743977174162865,
+              0.007464541122317314,
+              0.04698028787970543
+            ]
+          ],
+          "extents_m": [
+            0.017684959806501865,
+            0.014929082710295916,
+            0.055856858380138874
+          ],
+          "watertight": false
+        },
+        "finger43_link": {
+          "file": "DH116/DH116_URDF_MJCF_Files/DH116-L000-A1/meshes/finger43_link.STL",
+          "sha256": "9c48242481fb3a21921bdb7d8b5a5273bb1c193d757e0396e16f63bafcf59293",
+          "bytes": 293784,
+          "format": "binary STL",
+          "triangles": 5874,
+          "binary_length_valid": true,
+          "bounds_m": [
+            [
+              -0.0030342538375407457,
+              -0.007301060948520899,
+              0.009016924537718296
+            ],
+            [
+              0.009743894450366497,
+              0.007301102392375469,
+              0.04678746685385704
+            ]
+          ],
+          "extents_m": [
+            0.012778148287907243,
+            0.014602163340896368,
+            0.037770542316138744
+          ],
+          "watertight": true
+        },
+        "finger51_link": {
+          "file": "DH116/DH116_URDF_MJCF_Files/DH116-L000-A1/meshes/finger51_link.STL",
+          "sha256": "dfabcfce1fc923cc0745a2df5ec07efc657506c7ad50b8e883de7fc996ce9f59",
+          "bytes": 1594484,
+          "format": "binary STL",
+          "triangles": 31888,
+          "binary_length_valid": true,
+          "bounds_m": [
+            [
+              -0.009180931374430656,
+              -0.009564423002302647,
+              -0.0039953552186489105
+            ],
+            [
+              0.008070958778262138,
+              0.009564423002302647,
+              0.04189997538924217
+            ]
+          ],
+          "extents_m": [
+            0.017251890152692795,
+            0.019128846004605293,
+            0.04589533060789108
+          ],
+          "watertight": true
+        },
+        "finger52_link": {
+          "file": "DH116/DH116_URDF_MJCF_Files/DH116-L000-A1/meshes/finger52_link.STL",
+          "sha256": "acf84396741cf2d5fa50ad3a25e9ca4fdb0947387cb39c2697951761a5f7d22c",
+          "bytes": 619984,
+          "format": "binary STL",
+          "triangles": 12398,
+          "binary_length_valid": true,
+          "bounds_m": [
+            [
+              -0.009002123959362507,
+              -0.007098095025867224,
+              -0.008958728983998299
+            ],
+            [
+              0.005741425324231386,
+              0.007098093628883362,
+              0.037089236080646515
+            ]
+          ],
+          "extents_m": [
+            0.014743549283593893,
+            0.014196188654750586,
+            0.046047965064644814
+          ],
+          "watertight": false
+        },
+        "finger53_link": {
+          "file": "DH116/DH116_URDF_MJCF_Files/DH116-L000-A1/meshes/finger53_link.STL",
+          "sha256": "028f60596c26150c19aa100bdb13f073b15b9544a6598514130f02af2427255e",
+          "bytes": 353284,
+          "format": "binary STL",
+          "triangles": 7064,
+          "binary_length_valid": true,
+          "bounds_m": [
+            [
+              -0.003613346256315708,
+              -0.007024502847343683,
+              0.00941272173076868
+            ],
+            [
+              0.006744895596057177,
+              0.0070244502276182175,
+              0.03697437047958374
+            ]
+          ],
+          "extents_m": [
+            0.010358241852372885,
+            0.0140489530749619,
+            0.02756164874881506
+          ],
+          "watertight": true
+        }
+      },
+      "mesh_units": {
+        "stl_unit_metadata": null,
+        "scale_in_urdf": "omitted, defaults to 1 1 1",
+        "scale_in_mjcf": "omitted, defaults to 1 1 1",
+        "interpretation": "source numeric coordinates are used as meters by the source models; no millimeter-to-meter rescaling is applied"
+      }
+    },
+    "R": {
+      "source_files": {
+        "urdf": {
+          "path": "DH116/DH116_URDF_MJCF_Files/DH116-R000-A1/urdf/DH116-R000-A1.urdf",
+          "sha256": "c3ec0a6bd0e39477554e8a1a04b7a7e44004737a5a65f86b1c02bc4848911525"
+        },
+        "mjcf": {
+          "path": "DH116/DH116_URDF_MJCF_Files/DH116-R000-A1/mjcf/DH116-R000-A1.xml",
+          "sha256": "a757fdd0d3c23c274e201426acc516ce107a6df63b7f9d5a1f780eb8a0a9021c"
+        }
+      },
+      "counts": {
+        "links": 17,
+        "joints": 16,
+        "revolute": 11,
+        "fixed": 5,
+        "mjcf_bodies": 17,
+        "mjcf_hinges": 11
+      },
+      "total_link_mass_kg": 0.23767046,
+      "independent_control_order": [
+        "finger11",
+        "finger12",
+        "finger21",
+        "finger31",
+        "finger41",
+        "finger51"
+      ],
+      "urdf_mechanics": {
+        "links": {
+          "base_link": {
+            "mass": 0.10866,
+            "inertial_origin": {
+              "xyz": [
+                -0.0052741,
+                0.002479,
+                0.057207
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": [
+              8.6558e-05,
+              5.5287e-05,
+              4.1066e-05,
+              1.592e-07,
+              2.7057e-06,
+              -4.058e-07
+            ],
+            "visuals": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-R000-A1/meshes/base_link.STL"
+                }
+              }
+            ],
+            "collisions": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-R000-A1/meshes/base_link.STL"
+                }
+              }
+            ]
+          },
+          "finger11_link": {
+            "mass": 0.010254,
+            "inertial_origin": {
+              "xyz": [
+                0.0078225,
+                0.0020462,
+                -0.0025622
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": [
+              7.2142e-07,
+              1.1141e-06,
+              1.144e-06,
+              -1.1025e-07,
+              1.8578e-07,
+              4.8596e-08
+            ],
+            "visuals": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-R000-A1/meshes/finger11_link.STL"
+                }
+              }
+            ],
+            "collisions": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-R000-A1/meshes/finger11_link.STL"
+                }
+              }
+            ]
+          },
+          "finger12_link": {
+            "mass": 0.010145,
+            "inertial_origin": {
+              "xyz": [
+                0.0014182,
+                -1.2893e-06,
+                0.024329
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": [
+              2.4795e-06,
+              2.2943e-06,
+              8.8906e-07,
+              2.3633e-11,
+              -9.1895e-08,
+              4.4162e-11
+            ],
+            "visuals": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-R000-A1/meshes/finger12_link.STL"
+                }
+              }
+            ],
+            "collisions": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-R000-A1/meshes/finger12_link.STL"
+                }
+              }
+            ]
+          },
+          "finger13_link": {
+            "mass": 0.020548,
+            "inertial_origin": {
+              "xyz": [
+                0.0064864,
+                -1.72e-06,
+                0.014709
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": [
+              2.4642e-06,
+              2.3555e-06,
+              8.7678e-07,
+              2.2654e-10,
+              -1.276e-07,
+              3.4328e-10
+            ],
+            "visuals": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-R000-A1/meshes/finger13_link.STL"
+                }
+              }
+            ],
+            "collisions": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-R000-A1/meshes/finger13_link.STL"
+                }
+              }
+            ]
+          },
+          "finger14_link": {
+            "mass": 0.00064654,
+            "inertial_origin": {
+              "xyz": [
+                0.0030983,
+                8.624e-07,
+                0.024752
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": [
+              4.6206e-08,
+              3.0972e-08,
+              3.328e-08,
+              -1.7511e-11,
+              -7.0078e-09,
+              3.3703e-12
+            ],
+            "visuals": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-R000-A1/meshes/finger14_link.STL"
+                }
+              }
+            ],
+            "collisions": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-R000-A1/meshes/finger14_link.STL"
+                }
+              }
+            ]
+          },
+          "finger21_link": {
+            "mass": 0.0067143,
+            "inertial_origin": {
+              "xyz": [
+                -0.0017978,
+                3.2789e-07,
+                0.018686
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": [
+              1.1951e-06,
+              1.0688e-06,
+              3.7304e-07,
+              6.7451e-12,
+              -4.4967e-09,
+              -2.4168e-12
+            ],
+            "visuals": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-R000-A1/meshes/finger21_link.STL"
+                }
+              }
+            ],
+            "collisions": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-R000-A1/meshes/finger21_link.STL"
+                }
+              }
+            ]
+          },
+          "finger22_link": {
+            "mass": 0.014789,
+            "inertial_origin": {
+              "xyz": [
+                -0.0019337,
+                7.2998e-07,
+                0.02175
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": [
+              1.4665e-06,
+              1.4889e-06,
+              3.5281e-07,
+              1.1416e-11,
+              -1.6584e-07,
+              -9.2753e-11
+            ],
+            "visuals": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-R000-A1/meshes/finger22_link.STL"
+                }
+              }
+            ],
+            "collisions": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-R000-A1/meshes/finger22_link.STL"
+                }
+              }
+            ]
+          },
+          "finger23_link": {
+            "mass": 0.00083419,
+            "inertial_origin": {
+              "xyz": [
+                0.0027534,
+                -5.1038e-07,
+                0.027456
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": [
+              1.0852e-07,
+              9.6252e-08,
+              2.404e-08,
+              -2.4081e-13,
+              -9.2843e-09,
+              -2.9524e-12
+            ],
+            "visuals": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-R000-A1/meshes/finger23_link.STL"
+                }
+              }
+            ],
+            "collisions": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-R000-A1/meshes/finger23_link.STL"
+                }
+              }
+            ]
+          },
+          "finger31_link": {
+            "mass": 0.0067141,
+            "inertial_origin": {
+              "xyz": [
+                -0.0017978,
+                3.3269e-07,
+                0.018686
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": [
+              1.1951e-06,
+              1.0688e-06,
+              3.7303e-07,
+              1.1431e-11,
+              -4.4917e-09,
+              8.2241e-12
+            ],
+            "visuals": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-R000-A1/meshes/finger31_link.STL"
+                }
+              }
+            ],
+            "collisions": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-R000-A1/meshes/finger31_link.STL"
+                }
+              }
+            ]
+          },
+          "finger32_link": {
+            "mass": 0.017444,
+            "inertial_origin": {
+              "xyz": [
+                -0.0021242,
+                6.6141e-08,
+                0.024943
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": [
+              4.1711e-06,
+              4.1927e-06,
+              4.4322e-07,
+              1.8194e-11,
+              -2.6488e-07,
+              -1.6389e-11
+            ],
+            "visuals": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-R000-A1/meshes/finger32_link.STL"
+                }
+              }
+            ],
+            "collisions": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-R000-A1/meshes/finger32_link.STL"
+                }
+              }
+            ]
+          },
+          "finger33_link": {
+            "mass": 0.00083416,
+            "inertial_origin": {
+              "xyz": [
+                0.0025776,
+                -4.8031e-07,
+                0.03447
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": [
+              1.0861e-07,
+              9.6246e-08,
+              2.3939e-08,
+              1.3942e-12,
+              -8.8309e-09,
+              -5.9916e-13
+            ],
+            "visuals": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-R000-A1/meshes/finger33_link.STL"
+                }
+              }
+            ],
+            "collisions": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-R000-A1/meshes/finger33_link.STL"
+                }
+              }
+            ]
+          },
+          "finger41_link": {
+            "mass": 0.006714,
+            "inertial_origin": {
+              "xyz": [
+                -0.0017978,
+                2.8835e-07,
+                0.018686
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": [
+              1.1951e-06,
+              1.0688e-06,
+              3.7303e-07,
+              1.5194e-11,
+              -4.4902e-09,
+              1.057e-11
+            ],
+            "visuals": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-R000-A1/meshes/finger41_link.STL"
+                }
+              }
+            ],
+            "collisions": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-R000-A1/meshes/finger41_link.STL"
+                }
+              }
+            ]
+          },
+          "finger42_link": {
+            "mass": 0.014788,
+            "inertial_origin": {
+              "xyz": [
+                -0.00099481,
+                6.0006e-07,
+                0.021813
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": [
+              1.4501e-06,
+              1.4888e-06,
+              3.6915e-07,
+              2.324e-11,
+              -2.1315e-07,
+              -8.582e-11
+            ],
+            "visuals": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-R000-A1/meshes/finger42_link.STL"
+                }
+              }
+            ],
+            "collisions": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-R000-A1/meshes/finger42_link.STL"
+                }
+              }
+            ]
+          },
+          "finger43_link": {
+            "mass": 0.0008342,
+            "inertial_origin": {
+              "xyz": [
+                0.0039336,
+                -3.2576e-07,
+                0.027311
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": [
+              1.0756e-07,
+              9.6251e-08,
+              2.4997e-08,
+              5.2726e-13,
+              -1.2886e-08,
+              -6.5627e-13
+            ],
+            "visuals": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-R000-A1/meshes/finger43_link.STL"
+                }
+              }
+            ],
+            "collisions": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-R000-A1/meshes/finger43_link.STL"
+                }
+              }
+            ]
+          },
+          "finger51_link": {
+            "mass": 0.0067142,
+            "inertial_origin": {
+              "xyz": [
+                -0.0017978,
+                4.0336e-07,
+                0.018686
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": [
+              1.1951e-06,
+              1.0688e-06,
+              3.7303e-07,
+              9.6674e-12,
+              -4.4947e-09,
+              3.902e-12
+            ],
+            "visuals": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-R000-A1/meshes/finger51_link.STL"
+                }
+              }
+            ],
+            "collisions": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-R000-A1/meshes/finger51_link.STL"
+                }
+              }
+            ]
+          },
+          "finger52_link": {
+            "mass": 0.010445,
+            "inertial_origin": {
+              "xyz": [
+                -0.0024432,
+                3.1795e-07,
+                0.016659
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": [
+              1.336e-06,
+              1.3478e-06,
+              2.4659e-07,
+              2.6011e-11,
+              -1.1818e-07,
+              -5.5233e-12
+            ],
+            "visuals": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-R000-A1/meshes/finger52_link.STL"
+                }
+              }
+            ],
+            "collisions": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-R000-A1/meshes/finger52_link.STL"
+                }
+              }
+            ]
+          },
+          "finger53_link": {
+            "mass": 0.00059177,
+            "inertial_origin": {
+              "xyz": [
+                0.0021833,
+                1.5926e-06,
+                0.02278
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": [
+              4.5328e-08,
+              3.6598e-08,
+              1.5894e-08,
+              2.1034e-12,
+              -3.5665e-09,
+              -2.539e-12
+            ],
+            "visuals": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-R000-A1/meshes/finger53_link.STL"
+                }
+              }
+            ],
+            "collisions": [
+              {
+                "origin": {
+                  "xyz": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rpy": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                "mesh": {
+                  "filename": "package://DH116-R000-A1/meshes/finger53_link.STL"
+                }
+              }
+            ]
+          }
+        },
+        "joints": {
+          "finger11": {
+            "type": "revolute",
+            "origin": {
+              "xyz": [
+                0.018,
+                0.021747,
+                0.043279
+              ],
+              "rpy": [
+                -0.087266,
+                0.0,
+                0.0
+              ]
+            },
+            "parent": "base_link",
+            "child": "finger11_link",
+            "axis": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "limit": {
+              "lower": 0.0,
+              "upper": 1.047198,
+              "effort": 0.0,
+              "velocity": 0.0
+            },
+            "mimic": null
+          },
+          "finger12": {
+            "type": "revolute",
+            "origin": {
+              "xyz": [
+                0.018876,
+                0.0049375,
+                -0.0056093
+              ],
+              "rpy": [
+                0.0,
+                0.95149,
+                0.25585
+              ]
+            },
+            "parent": "finger11_link",
+            "child": "finger12_link",
+            "axis": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "limit": {
+              "lower": 0.0,
+              "upper": 0.523599,
+              "effort": 0.0,
+              "velocity": 0.0
+            },
+            "mimic": null
+          },
+          "finger13": {
+            "type": "revolute",
+            "origin": {
+              "xyz": [
+                0.0,
+                0.0,
+                0.045
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "parent": "finger12_link",
+            "child": "finger13_link",
+            "axis": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "limit": {
+              "lower": 0.004592,
+              "upper": 0.594583,
+              "effort": 0.0,
+              "velocity": 0.0
+            },
+            "mimic": {
+              "joint": "finger12",
+              "multiplier": 0.8808,
+              "offset": 0.004592
+            }
+          },
+          "finger14": {
+            "type": "fixed",
+            "origin": {
+              "xyz": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "parent": "finger13_link",
+            "child": "finger14_link",
+            "axis": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "limit": {
+              "lower": 0.0,
+              "upper": 1.396263,
+              "effort": 0.0,
+              "velocity": 0.0
+            },
+            "mimic": null
+          },
+          "finger21": {
+            "type": "revolute",
+            "origin": {
+              "xyz": [
+                -0.011581,
+                0.031971,
+                0.10003
+              ],
+              "rpy": [
+                -0.052657,
+                0.10625,
+                -0.0055894
+              ]
+            },
+            "parent": "base_link",
+            "child": "finger21_link",
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "limit": {
+              "lower": 0.0,
+              "upper": 1.396263,
+              "effort": 0.0,
+              "velocity": 0.0
+            },
+            "mimic": null
+          },
+          "finger22": {
+            "type": "revolute",
+            "origin": {
+              "xyz": [
+                0.0,
+                0.0,
+                0.035
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "parent": "finger21_link",
+            "child": "finger22_link",
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "limit": {
+              "lower": 0.011072,
+              "upper": 1.687426,
+              "effort": 0.0,
+              "velocity": 0.0
+            },
+            "mimic": {
+              "joint": "finger21",
+              "multiplier": 0.9206,
+              "offset": 0.011072
+            }
+          },
+          "finger23": {
+            "type": "fixed",
+            "origin": {
+              "xyz": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "parent": "finger22_link",
+            "child": "finger23_link",
+            "axis": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "limit": {
+              "lower": 0.011072,
+              "upper": 1.687426,
+              "effort": 0.0,
+              "velocity": 0.0
+            },
+            "mimic": null
+          },
+          "finger31": {
+            "type": "revolute",
+            "origin": {
+              "xyz": [
+                -0.013501,
+                0.0105,
+                0.10286
+              ],
+              "rpy": [
+                0.0,
+                0.10214,
+                0.0
+              ]
+            },
+            "parent": "base_link",
+            "child": "finger31_link",
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "limit": {
+              "lower": 0.0,
+              "upper": 1.396263,
+              "effort": 0.0,
+              "velocity": 0.0
+            },
+            "mimic": null
+          },
+          "finger32": {
+            "type": "revolute",
+            "origin": {
+              "xyz": [
+                0.0,
+                0.0,
+                0.035
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "parent": "finger31_link",
+            "child": "finger32_link",
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "limit": {
+              "lower": 0.011072,
+              "upper": 1.687426,
+              "effort": 0.0,
+              "velocity": 0.0
+            },
+            "mimic": {
+              "joint": "finger31",
+              "multiplier": 0.9206,
+              "offset": 0.011072
+            }
+          },
+          "finger33": {
+            "type": "fixed",
+            "origin": {
+              "xyz": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "parent": "finger32_link",
+            "child": "finger33_link",
+            "axis": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "limit": {
+              "lower": 0.0,
+              "upper": 1.396263,
+              "effort": 0.0,
+              "velocity": 0.0
+            },
+            "mimic": null
+          },
+          "finger41": {
+            "type": "revolute",
+            "origin": {
+              "xyz": [
+                -0.015081,
+                -0.010971,
+                0.10183
+              ],
+              "rpy": [
+                0.052889,
+                0.14148,
+                0.0074648
+              ]
+            },
+            "parent": "base_link",
+            "child": "finger41_link",
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "limit": {
+              "lower": 0.0,
+              "upper": 1.396263,
+              "effort": 0.0,
+              "velocity": 0.0
+            },
+            "mimic": null
+          },
+          "finger42": {
+            "type": "revolute",
+            "origin": {
+              "xyz": [
+                0.0,
+                0.0,
+                0.035
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "parent": "finger41_link",
+            "child": "finger42_link",
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "limit": {
+              "lower": 0.011072,
+              "upper": 1.687426,
+              "effort": 0.0,
+              "velocity": 0.0
+            },
+            "mimic": {
+              "joint": "finger41",
+              "multiplier": 0.9206,
+              "offset": 0.011072
+            }
+          },
+          "finger43": {
+            "type": "fixed",
+            "origin": {
+              "xyz": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "parent": "finger42_link",
+            "child": "finger43_link",
+            "axis": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "limit": {
+              "lower": 0.0,
+              "upper": 1.396263,
+              "effort": 0.0,
+              "velocity": 0.0
+            },
+            "mimic": null
+          },
+          "finger51": {
+            "type": "revolute",
+            "origin": {
+              "xyz": [
+                -0.013081,
+                -0.032156,
+                0.097798
+              ],
+              "rpy": [
+                0.078754,
+                0.073706,
+                0.0058113
+              ]
+            },
+            "parent": "base_link",
+            "child": "finger51_link",
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "limit": {
+              "lower": 0.0,
+              "upper": 1.396263,
+              "effort": 0.0,
+              "velocity": 0.0
+            },
+            "mimic": null
+          },
+          "finger52": {
+            "type": "revolute",
+            "origin": {
+              "xyz": [
+                0.0,
+                0.0,
+                0.035
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "parent": "finger51_link",
+            "child": "finger52_link",
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "limit": {
+              "lower": 0.011072,
+              "upper": 1.687426,
+              "effort": 0.0,
+              "velocity": 0.0
+            },
+            "mimic": {
+              "joint": "finger51",
+              "multiplier": 0.9206,
+              "offset": 0.011072
+            }
+          },
+          "finger53": {
+            "type": "fixed",
+            "origin": {
+              "xyz": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rpy": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "parent": "finger52_link",
+            "child": "finger53_link",
+            "axis": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "limit": {
+              "lower": 0.0,
+              "upper": 1.57,
+              "effort": 0.0,
+              "velocity": 0.0
+            },
+            "mimic": null
+          }
+        }
+      },
+      "urdf_to_mjcf_mechanical_comparison": {
+        "checked_fields": [
+          "body/link set",
+          "joint hierarchy and fixed/moving classification",
+          "body position and fixed-axis orientation",
+          "joint name, axis and range",
+          "mass",
+          "inertial position",
+          "all six full inertia components"
+        ],
+        "differences": []
+      },
+      "mjcf_source_definition": {
+        "compiler": {
+          "angle": "radian",
+          "meshdir": "../meshes",
+          "eulerseq": "XYZ",
+          "autolimits": "true"
+        },
+        "defaults": {
+          "joint": {
+            "type": "hinge",
+            "damping": "2.0",
+            "armature": "0.01",
+            "frictionloss": "0"
+          },
+          "geom": {
+            "condim": "4",
+            "friction": "1.0 0.005 0.001",
+            "contype": "0",
+            "conaffinity": "0"
+          },
+          "equality": {
+            "solref": "0.004 1",
+            "solimp": "0.9 0.99 0.001 0.5 2"
+          }
+        },
+        "equality": [
+          {
+            "name": "eq_thumb",
+            "joint1": "finger13",
+            "joint2": "finger12",
+            "polycoef": "0.004592 0.8808 0.469825 0 0"
+          },
+          {
+            "name": "eq_index",
+            "joint1": "finger22",
+            "joint2": "finger21",
+            "polycoef": "0.011072 0.9206 0.200535 0 0"
+          },
+          {
+            "name": "eq_middle",
+            "joint1": "finger32",
+            "joint2": "finger31",
+            "polycoef": "0.011072 0.9206 0.200535 0 0"
+          },
+          {
+            "name": "eq_ring",
+            "joint1": "finger42",
+            "joint2": "finger41",
+            "polycoef": "0.011072 0.9206 0.200535 0 0"
+          },
+          {
+            "name": "eq_pinky",
+            "joint1": "finger52",
+            "joint2": "finger51",
+            "polycoef": "0.011072 0.9206 0.200535 0 0"
+          }
+        ],
+        "actuators": [
+          {
+            "name": "act_finger11",
+            "joint": "finger11",
+            "kp": "50",
+            "kv": "2.0",
+            "ctrlrange": "0 1.047198"
+          },
+          {
+            "name": "act_finger12",
+            "joint": "finger12",
+            "kp": "50",
+            "kv": "2.0",
+            "ctrlrange": "0 0.523599"
+          },
+          {
+            "name": "act_finger21",
+            "joint": "finger21",
+            "kp": "50",
+            "kv": "2.0",
+            "ctrlrange": "0 1.396263"
+          },
+          {
+            "name": "act_finger31",
+            "joint": "finger31",
+            "kp": "50",
+            "kv": "2.0",
+            "ctrlrange": "0 1.396263"
+          },
+          {
+            "name": "act_finger41",
+            "joint": "finger41",
+            "kp": "50",
+            "kv": "2.0",
+            "ctrlrange": "0 1.396263"
+          },
+          {
+            "name": "act_finger51",
+            "joint": "finger51",
+            "kp": "50",
+            "kv": "2.0",
+            "ctrlrange": "0 1.396263"
+          }
+        ],
+        "contact_activation": {
+          "base_link": {
+            "contype": "0",
+            "conaffinity": "0"
+          },
+          "finger11_link": {
+            "contype": "0",
+            "conaffinity": "0"
+          },
+          "finger12_link": {
+            "contype": "0",
+            "conaffinity": "0"
+          },
+          "finger13_link": {
+            "contype": "1",
+            "conaffinity": "1"
+          },
+          "finger14_link": {
+            "contype": "1",
+            "conaffinity": "1"
+          },
+          "finger21_link": {
+            "contype": "0",
+            "conaffinity": "0"
+          },
+          "finger22_link": {
+            "contype": "1",
+            "conaffinity": "1"
+          },
+          "finger23_link": {
+            "contype": "1",
+            "conaffinity": "1"
+          },
+          "finger31_link": {
+            "contype": "0",
+            "conaffinity": "0"
+          },
+          "finger32_link": {
+            "contype": "1",
+            "conaffinity": "1"
+          },
+          "finger33_link": {
+            "contype": "1",
+            "conaffinity": "1"
+          },
+          "finger41_link": {
+            "contype": "0",
+            "conaffinity": "0"
+          },
+          "finger42_link": {
+            "contype": "1",
+            "conaffinity": "1"
+          },
+          "finger43_link": {
+            "contype": "1",
+            "conaffinity": "1"
+          },
+          "finger51_link": {
+            "contype": "0",
+            "conaffinity": "0"
+          },
+          "finger52_link": {
+            "contype": "1",
+            "conaffinity": "1"
+          },
+          "finger53_link": {
+            "contype": "1",
+            "conaffinity": "1"
+          }
+        }
+      },
+      "raw_meshes": {
+        "base_link": {
+          "file": "DH116/DH116_URDF_MJCF_Files/DH116-R000-A1/meshes/base_link.STL",
+          "sha256": "094504fed409afe137eafa6643c36f081934df873ef1cf9924ebb9725436b161",
+          "bytes": 5088834,
+          "format": "binary STL",
+          "triangles": 101775,
+          "binary_length_valid": true,
+          "bounds_m": [
+            [
+              -0.03394636511802673,
+              -0.04183388873934746,
+              -9.499490777331587e-11
+            ],
+            [
+              0.028366023674607277,
+              0.04158739745616913,
+              0.10835481435060501
+            ]
+          ],
+          "extents_m": [
+            0.06231238879263401,
+            0.08342128619551659,
+            0.10835481444559991
+          ],
+          "watertight": false
+        },
+        "finger11_link": {
+          "file": "DH116/DH116_URDF_MJCF_Files/DH116-R000-A1/meshes/finger11_link.STL",
+          "sha256": "5659ee7dd15833a86f30c2138685baf48671fa7458a79cbb1d611ddb7f3648c8",
+          "bytes": 209684,
+          "format": "binary STL",
+          "triangles": 4192,
+          "binary_length_valid": true,
+          "bounds_m": [
+            [
+              -0.006499338895082474,
+              -0.008139684796333313,
+              -0.01029999926686287
+            ],
+            [
+              0.026514731347560883,
+              0.013742247596383095,
+              0.015000000596046448
+            ]
+          ],
+          "extents_m": [
+            0.033014070242643356,
+            0.021881932392716408,
+            0.025299999862909317
+          ],
+          "watertight": true
+        },
+        "finger12_link": {
+          "file": "DH116/DH116_URDF_MJCF_Files/DH116-R000-A1/meshes/finger12_link.STL",
+          "sha256": "8807c48538b9396e1d132df7c5cf6ee0a44c28c4dcb759b5b00a74003b715e67",
+          "bytes": 1073834,
+          "format": "binary STL",
+          "triangles": 21475,
+          "binary_length_valid": true,
+          "bounds_m": [
+            [
+              -0.0101388618350029,
+              -0.011489986442029476,
+              -0.004999964963644743
+            ],
+            [
+              0.013219685293734074,
+              0.011489986442029476,
+              0.04974944517016411
+            ]
+          ],
+          "extents_m": [
+            0.023358547128736973,
+            0.022979972884058952,
+            0.05474941013380885
+          ],
+          "watertight": false
+        },
+        "finger13_link": {
+          "file": "DH116/DH116_URDF_MJCF_Files/DH116-R000-A1/meshes/finger13_link.STL",
+          "sha256": "594501a21c86d1d19b73cf17572b7a04ae488c5fee4b623e25c618dd15eb3419",
+          "bytes": 651084,
+          "format": "binary STL",
+          "triangles": 13020,
+          "binary_length_valid": true,
+          "bounds_m": [
+            [
+              -0.005305193830281496,
+              -0.010120137594640255,
+              -0.009525131434202194
+            ],
+            [
+              0.014837776310741901,
+              0.010120137594640255,
+              0.03632383421063423
+            ]
+          ],
+          "extents_m": [
+            0.020142970141023397,
+            0.02024027518928051,
+            0.045848965644836426
+          ],
+          "watertight": true
+        },
+        "finger14_link": {
+          "file": "DH116/DH116_URDF_MJCF_Files/DH116-R000-A1/meshes/finger14_link.STL",
+          "sha256": "c58b2a741f13cbe1da9b6bbffb0ce6acf97de28b829fe45ea65458313efff449",
+          "bytes": 310884,
+          "format": "binary STL",
+          "triangles": 6216,
+          "binary_length_valid": true,
+          "bounds_m": [
+            [
+              -0.004282503388822079,
+              -0.00998825952410698,
+              0.014673088677227497
+            ],
+            [
+              0.010025963187217712,
+              0.009988255798816681,
+              0.03632247820496559
+            ]
+          ],
+          "extents_m": [
+            0.014308466576039791,
+            0.01997651532292366,
+            0.021649389527738094
+          ],
+          "watertight": true
+        },
+        "finger21_link": {
+          "file": "DH116/DH116_URDF_MJCF_Files/DH116-R000-A1/meshes/finger21_link.STL",
+          "sha256": "7162d86cefa849458536cbb77968560dbf4e6c7a8b1734777640f9da1f828886",
+          "bytes": 1593384,
+          "format": "binary STL",
+          "triangles": 31866,
+          "binary_length_valid": true,
+          "bounds_m": [
+            [
+              -0.009180924855172634,
+              -0.009564423002302647,
+              -0.0039953552186489105
+            ],
+            [
+              0.008070958778262138,
+              0.009564423002302647,
+              0.04189997538924217
+            ]
+          ],
+          "extents_m": [
+            0.017251883633434772,
+            0.019128846004605293,
+            0.04589533060789108
+          ],
+          "watertight": true
+        },
+        "finger22_link": {
+          "file": "DH116/DH116_URDF_MJCF_Files/DH116-R000-A1/meshes/finger22_link.STL",
+          "sha256": "5ebb8a2084495cb9e87b6ee531681500cfe5a37280320e97270d6e52c804081d",
+          "bytes": 839284,
+          "format": "binary STL",
+          "triangles": 16784,
+          "binary_length_valid": true,
+          "bounds_m": [
+            [
+              -0.008888347074389458,
+              -0.007464541122317314,
+              -0.008926657028496265
+            ],
+            [
+              0.007061350625008345,
+              0.0074645415879786015,
+              0.047069333493709564
+            ]
+          ],
+          "extents_m": [
+            0.015949697699397802,
+            0.014929082710295916,
+            0.05599599052220583
+          ],
+          "watertight": false
+        },
+        "finger23_link": {
+          "file": "DH116/DH116_URDF_MJCF_Files/DH116-R000-A1/meshes/finger23_link.STL",
+          "sha256": "ccbd2de17dac2fe356e4275240f5f00f8eee01dd2f32a44fc5b1e150f93d99f6",
+          "bytes": 293884,
+          "format": "binary STL",
+          "triangles": 5876,
+          "binary_length_valid": true,
+          "bounds_m": [
+            [
+              -0.0035139243118464947,
+              -0.007301102392375469,
+              0.009264064021408558
+            ],
+            [
+              0.00806133821606636,
+              0.007301060948520899,
+              0.046920254826545715
+            ]
+          ],
+          "extents_m": [
+            0.011575262527912855,
+            0.014602163340896368,
+            0.03765619080513716
+          ],
+          "watertight": true
+        },
+        "finger31_link": {
+          "file": "DH116/DH116_URDF_MJCF_Files/DH116-R000-A1/meshes/finger31_link.STL",
+          "sha256": "2d4ec902f4b2d06872cfbda2e5a63f387aa82dfd522fd44da5e38b83f90cf2b6",
+          "bytes": 1593384,
+          "format": "binary STL",
+          "triangles": 31866,
+          "binary_length_valid": true,
+          "bounds_m": [
+            [
+              -0.009180924855172634,
+              -0.009564423002302647,
+              -0.0039953552186489105
+            ],
+            [
+              0.008070958778262138,
+              0.009564423002302647,
+              0.04189997538924217
+            ]
+          ],
+          "extents_m": [
+            0.017251883633434772,
+            0.019128846004605293,
+            0.04589533060789108
+          ],
+          "watertight": true
+        },
+        "finger32_link": {
+          "file": "DH116/DH116_URDF_MJCF_Files/DH116-R000-A1/meshes/finger32_link.STL",
+          "sha256": "f3cf0d1634338d331bc58ae7838023925a1654003f5728423de25808f490821e",
+          "bytes": 686284,
+          "format": "binary STL",
+          "triangles": 13724,
+          "binary_length_valid": true,
+          "bounds_m": [
+            [
+              -0.00890309177339077,
+              -0.007464541122317314,
+              -0.008931105025112629
+            ],
+            [
+              0.006822895258665085,
+              0.0074645415879786015,
+              0.054074324667453766
+            ]
+          ],
+          "extents_m": [
+            0.015725987032055855,
+            0.014929082710295916,
+            0.0630054296925664
+          ],
+          "watertight": false
+        },
+        "finger33_link": {
+          "file": "DH116/DH116_URDF_MJCF_Files/DH116-R000-A1/meshes/finger33_link.STL",
+          "sha256": "2082e780c44d9e2ac91a9c355c3751f084fcbb42c39e33961178b81e5b3ce147",
+          "bytes": 293884,
+          "format": "binary STL",
+          "triangles": 5876,
+          "binary_length_valid": true,
+          "bounds_m": [
+            [
+              -0.0036015440709888935,
+              -0.007301102392375469,
+              0.016293594613671303
+            ],
+            [
+              0.007822894491255283,
+              0.007301060948520899,
+              0.053930703550577164
+            ]
+          ],
+          "extents_m": [
+            0.011424438562244177,
+            0.014602163340896368,
+            0.03763710893690586
+          ],
+          "watertight": true
+        },
+        "finger41_link": {
+          "file": "DH116/DH116_URDF_MJCF_Files/DH116-R000-A1/meshes/finger41_link.STL",
+          "sha256": "5366f649baa0c5c29cc1afdbcc6163b2bcb9001f0b9b8ae69a213f5209860289",
+          "bytes": 1593384,
+          "format": "binary STL",
+          "triangles": 31866,
+          "binary_length_valid": true,
+          "bounds_m": [
+            [
+              -0.009180924855172634,
+              -0.009564423002302647,
+              -0.0039953552186489105
+            ],
+            [
+              0.008070958778262138,
+              0.009564423002302647,
+              0.04189997538924217
+            ]
+          ],
+          "extents_m": [
+            0.017251883633434772,
+            0.019128846004605293,
+            0.04589533060789108
+          ],
+          "watertight": true
+        },
+        "finger42_link": {
+          "file": "DH116/DH116_URDF_MJCF_Files/DH116-R000-A1/meshes/finger42_link.STL",
+          "sha256": "4382f6f699a2cb342f00f5bf4ddbe20b7d2b664b522c5abcd49cfee551e748ae",
+          "bytes": 839284,
+          "format": "binary STL",
+          "triangles": 16784,
+          "binary_length_valid": true,
+          "bounds_m": [
+            [
+              -0.008940982632339,
+              -0.007464541122317314,
+              -0.008876570500433445
+            ],
+            [
+              0.008743977174162865,
+              0.0074645415879786015,
+              0.04698028787970543
+            ]
+          ],
+          "extents_m": [
+            0.017684959806501865,
+            0.014929082710295916,
+            0.055856858380138874
+          ],
+          "watertight": false
+        },
+        "finger43_link": {
+          "file": "DH116/DH116_URDF_MJCF_Files/DH116-R000-A1/meshes/finger43_link.STL",
+          "sha256": "4e0b20fc9c464825b466d3ca51ff4557f70d4a3ea935a00b09ad5639722251df",
+          "bytes": 293884,
+          "format": "binary STL",
+          "triangles": 5876,
+          "binary_length_valid": true,
+          "bounds_m": [
+            [
+              -0.0030342519748955965,
+              -0.007301102392375469,
+              0.009018372744321823
+            ],
+            [
+              0.009743894450366497,
+              0.007301060948520899,
+              0.04678744077682495
+            ]
+          ],
+          "extents_m": [
+            0.012778146425262094,
+            0.014602163340896368,
+            0.03776906803250313
+          ],
+          "watertight": true
+        },
+        "finger51_link": {
+          "file": "DH116/DH116_URDF_MJCF_Files/DH116-R000-A1/meshes/finger51_link.STL",
+          "sha256": "f1b5983e1cd4b29f5e4609001c525e93ff80bb1d921711a6327fd8e688fad1db",
+          "bytes": 1593384,
+          "format": "binary STL",
+          "triangles": 31866,
+          "binary_length_valid": true,
+          "bounds_m": [
+            [
+              -0.009180924855172634,
+              -0.009564423002302647,
+              -0.0039953552186489105
+            ],
+            [
+              0.008070958778262138,
+              0.009564423002302647,
+              0.04189997538924217
+            ]
+          ],
+          "extents_m": [
+            0.017251883633434772,
+            0.019128846004605293,
+            0.04589533060789108
+          ],
+          "watertight": true
+        },
+        "finger52_link": {
+          "file": "DH116/DH116_URDF_MJCF_Files/DH116-R000-A1/meshes/finger52_link.STL",
+          "sha256": "7c5f953a3cde495eae505dfa3ea248e768c69ab911c21f61825ddb42b4531994",
+          "bytes": 617484,
+          "format": "binary STL",
+          "triangles": 12348,
+          "binary_length_valid": true,
+          "bounds_m": [
+            [
+              -0.009002123959362507,
+              -0.007098093628883362,
+              -0.008958728983998299
+            ],
+            [
+              0.005741425324231386,
+              0.007098095025867224,
+              0.037089236080646515
+            ]
+          ],
+          "extents_m": [
+            0.014743549283593893,
+            0.014196188654750586,
+            0.046047965064644814
+          ],
+          "watertight": false
+        },
+        "finger53_link": {
+          "file": "DH116/DH116_URDF_MJCF_Files/DH116-R000-A1/meshes/finger53_link.STL",
+          "sha256": "63eb67492fce45f80b798d9ead4d194a9eafdae1ed6c0893820222ef3ffedbf1",
+          "bytes": 353384,
+          "format": "binary STL",
+          "triangles": 7066,
+          "binary_length_valid": true,
+          "bounds_m": [
+            [
+              -0.003613346256315708,
+              -0.007024470251053572,
+              0.009412734769284725
+            ],
+            [
+              0.006744895596057177,
+              0.007024450693279505,
+              0.03697436302900314
+            ]
+          ],
+          "extents_m": [
+            0.010358241852372885,
+            0.014048920944333076,
+            0.027561628259718418
+          ],
+          "watertight": true
+        }
+      },
+      "mesh_units": {
+        "stl_unit_metadata": null,
+        "scale_in_urdf": "omitted, defaults to 1 1 1",
+        "scale_in_mjcf": "omitted, defaults to 1 1 1",
+        "interpretation": "source numeric coordinates are used as meters by the source models; no millimeter-to-meter rescaling is applied"
+      }
+    }
+  },
+  "left_right_mechanical_field_differences": {
+    "joints": {
+      "finger11": {
+        "origin": {
+          "L": {
+            "xyz": [
+              0.018,
+              -0.021464,
+              0.040041
+            ],
+            "rpy": [
+              0.087266,
+              0.0,
+              0.0
+            ]
+          },
+          "R": {
+            "xyz": [
+              0.018,
+              0.021747,
+              0.043279
+            ],
+            "rpy": [
+              -0.087266,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "axis": {
+          "L": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "R": [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        }
+      },
+      "finger12": {
+        "origin": {
+          "L": {
+            "xyz": [
+              0.018876,
+              -0.0049375,
+              -0.0023593
+            ],
+            "rpy": [
+              0.0,
+              0.95149,
+              -0.25585
+            ]
+          },
+          "R": {
+            "xyz": [
+              0.018876,
+              0.0049375,
+              -0.0056093
+            ],
+            "rpy": [
+              0.0,
+              0.95149,
+              0.25585
+            ]
+          }
+        }
+      },
+      "finger21": {
+        "origin": {
+          "L": {
+            "xyz": [
+              -0.011581,
+              -0.031971,
+              0.10003
+            ],
+            "rpy": [
+              0.052657,
+              0.10625,
+              0.0055894
+            ]
+          },
+          "R": {
+            "xyz": [
+              -0.011581,
+              0.031971,
+              0.10003
+            ],
+            "rpy": [
+              -0.052657,
+              0.10625,
+              -0.0055894
+            ]
+          }
+        }
+      },
+      "finger31": {
+        "origin": {
+          "L": {
+            "xyz": [
+              -0.013501,
+              -0.0105,
+              0.10286
+            ],
+            "rpy": [
+              0.0,
+              0.10214,
+              0.0
+            ]
+          },
+          "R": {
+            "xyz": [
+              -0.013501,
+              0.0105,
+              0.10286
+            ],
+            "rpy": [
+              0.0,
+              0.10214,
+              0.0
+            ]
+          }
+        }
+      },
+      "finger41": {
+        "origin": {
+          "L": {
+            "xyz": [
+              -0.015081,
+              0.010971,
+              0.10183
+            ],
+            "rpy": [
+              -0.052889,
+              0.14148,
+              -0.0074648
+            ]
+          },
+          "R": {
+            "xyz": [
+              -0.015081,
+              -0.010971,
+              0.10183
+            ],
+            "rpy": [
+              0.052889,
+              0.14148,
+              0.0074648
+            ]
+          }
+        }
+      },
+      "finger51": {
+        "origin": {
+          "L": {
+            "xyz": [
+              -0.013081,
+              0.032156,
+              0.097798
+            ],
+            "rpy": [
+              -0.078754,
+              0.073706,
+              -0.0058113
+            ]
+          },
+          "R": {
+            "xyz": [
+              -0.013081,
+              -0.032156,
+              0.097798
+            ],
+            "rpy": [
+              0.078754,
+              0.073706,
+              0.0058113
+            ]
+          }
+        }
+      }
+    },
+    "links": {
+      "base_link": {
+        "inertial_origin": {
+          "L": {
+            "xyz": [
+              -0.004908,
+              -0.0023087,
+              0.053425
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "R": {
+            "xyz": [
+              -0.0052741,
+              0.002479,
+              0.057207
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "mass": {
+          "L": 0.11674,
+          "R": 0.10866
+        },
+        "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": {
+          "L": [
+            8.8343e-05,
+            5.7065e-05,
+            4.4559e-05,
+            -1.5779e-07,
+            2.7103e-06,
+            4.0956e-07
+          ],
+          "R": [
+            8.6558e-05,
+            5.5287e-05,
+            4.1066e-05,
+            1.592e-07,
+            2.7057e-06,
+            -4.058e-07
+          ]
+        }
+      },
+      "finger11_link": {
+        "inertial_origin": {
+          "L": {
+            "xyz": [
+              0.0078225,
+              -0.0020462,
+              0.00068777
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "R": {
+            "xyz": [
+              0.0078225,
+              0.0020462,
+              -0.0025622
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": {
+          "L": [
+            7.2141e-07,
+            1.1141e-06,
+            1.144e-06,
+            1.1025e-07,
+            1.8578e-07,
+            -4.8596e-08
+          ],
+          "R": [
+            7.2142e-07,
+            1.1141e-06,
+            1.144e-06,
+            -1.1025e-07,
+            1.8578e-07,
+            4.8596e-08
+          ]
+        }
+      },
+      "finger12_link": {
+        "inertial_origin": {
+          "L": {
+            "xyz": [
+              0.001442,
+              5.4239e-07,
+              0.024371
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "R": {
+            "xyz": [
+              0.0014182,
+              -1.2893e-06,
+              0.024329
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "mass": {
+          "L": 0.010117,
+          "R": 0.010145
+        },
+        "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": {
+          "L": [
+            2.4721e-06,
+            2.2849e-06,
+            8.8673e-07,
+            3.5819e-11,
+            -8.7771e-08,
+            1.0447e-12
+          ],
+          "R": [
+            2.4795e-06,
+            2.2943e-06,
+            8.8906e-07,
+            2.3633e-11,
+            -9.1895e-08,
+            4.4162e-11
+          ]
+        }
+      },
+      "finger13_link": {
+        "inertial_origin": {
+          "L": {
+            "xyz": [
+              0.0064864,
+              1.9023e-06,
+              0.014709
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "R": {
+            "xyz": [
+              0.0064864,
+              -1.72e-06,
+              0.014709
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": {
+          "L": [
+            2.4642e-06,
+            2.3554e-06,
+            8.7678e-07,
+            -1.8605e-10,
+            -1.2758e-07,
+            -2.9766e-10
+          ],
+          "R": [
+            2.4642e-06,
+            2.3555e-06,
+            8.7678e-07,
+            2.2654e-10,
+            -1.276e-07,
+            3.4328e-10
+          ]
+        }
+      },
+      "finger14_link": {
+        "inertial_origin": {
+          "L": {
+            "xyz": [
+              0.0030983,
+              6.4415e-07,
+              0.024752
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "R": {
+            "xyz": [
+              0.0030983,
+              8.624e-07,
+              0.024752
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "mass": {
+          "L": 0.00063385,
+          "R": 0.00064654
+        },
+        "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": {
+          "L": [
+            4.5297e-08,
+            3.0365e-08,
+            3.2628e-08,
+            -1.7549e-11,
+            -6.8692e-09,
+            3.6154e-12
+          ],
+          "R": [
+            4.6206e-08,
+            3.0972e-08,
+            3.328e-08,
+            -1.7511e-11,
+            -7.0078e-09,
+            3.3703e-12
+          ]
+        }
+      },
+      "finger21_link": {
+        "inertial_origin": {
+          "L": {
+            "xyz": [
+              -0.0017977,
+              4.517e-07,
+              0.018685
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "R": {
+            "xyz": [
+              -0.0017978,
+              3.2789e-07,
+              0.018686
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "mass": {
+          "L": 0.0067138,
+          "R": 0.0067143
+        },
+        "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": {
+          "L": [
+            1.195e-06,
+            1.0687e-06,
+            3.7302e-07,
+            4.4817e-12,
+            -4.5105e-09,
+            1.3869e-11
+          ],
+          "R": [
+            1.1951e-06,
+            1.0688e-06,
+            3.7304e-07,
+            6.7451e-12,
+            -4.4967e-09,
+            -2.4168e-12
+          ]
+        }
+      },
+      "finger22_link": {
+        "inertial_origin": {
+          "L": {
+            "xyz": [
+              -0.001934,
+              -4.4573e-07,
+              0.02175
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "R": {
+            "xyz": [
+              -0.0019337,
+              7.2998e-07,
+              0.02175
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "mass": {
+          "L": 0.014791,
+          "R": 0.014789
+        },
+        "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": {
+          "L": [
+            1.4669e-06,
+            1.4892e-06,
+            3.5283e-07,
+            -1.8909e-11,
+            -1.6607e-07,
+            5.6761e-11
+          ],
+          "R": [
+            1.4665e-06,
+            1.4889e-06,
+            3.5281e-07,
+            1.1416e-11,
+            -1.6584e-07,
+            -9.2753e-11
+          ]
+        }
+      },
+      "finger23_link": {
+        "inertial_origin": {
+          "L": {
+            "xyz": [
+              0.0027522,
+              -5.9223e-07,
+              0.027469
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "R": {
+            "xyz": [
+              0.0027534,
+              -5.1038e-07,
+              0.027456
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "mass": {
+          "L": 0.00081811,
+          "R": 0.00083419
+        },
+        "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": {
+          "L": [
+            1.0639e-07,
+            9.4373e-08,
+            2.3583e-08,
+            -3.5393e-13,
+            -9.0804e-09,
+            7.1781e-12
+          ],
+          "R": [
+            1.0852e-07,
+            9.6252e-08,
+            2.404e-08,
+            -2.4081e-13,
+            -9.2843e-09,
+            -2.9524e-12
+          ]
+        }
+      },
+      "finger31_link": {
+        "inertial_origin": {
+          "L": {
+            "xyz": [
+              -0.0017977,
+              3.6375e-07,
+              0.018685
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "R": {
+            "xyz": [
+              -0.0017978,
+              3.3269e-07,
+              0.018686
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "mass": {
+          "L": 0.0067137,
+          "R": 0.0067141
+        },
+        "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": {
+          "L": [
+            1.195e-06,
+            1.0687e-06,
+            3.7302e-07,
+            7.1207e-12,
+            -4.5072e-09,
+            1.6816e-11
+          ],
+          "R": [
+            1.1951e-06,
+            1.0688e-06,
+            3.7303e-07,
+            1.1431e-11,
+            -4.4917e-09,
+            8.2241e-12
+          ]
+        }
+      },
+      "finger32_link": {
+        "inertial_origin": {
+          "L": {
+            "xyz": [
+              -0.0021235,
+              -2.8524e-07,
+              0.024937
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "R": {
+            "xyz": [
+              -0.0021242,
+              6.6141e-08,
+              0.024943
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "mass": {
+          "L": 0.017437,
+          "R": 0.017444
+        },
+        "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": {
+          "L": [
+            4.1693e-06,
+            4.1909e-06,
+            4.4314e-07,
+            -2.5515e-11,
+            -2.6509e-07,
+            9.5471e-11
+          ],
+          "R": [
+            4.1711e-06,
+            4.1927e-06,
+            4.4322e-07,
+            1.8194e-11,
+            -2.6488e-07,
+            -1.6389e-11
+          ]
+        }
+      },
+      "finger33_link": {
+        "inertial_origin": {
+          "L": {
+            "xyz": [
+              7.153e-07,
+              -0.0067137,
+              -0.037473
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "R": {
+            "xyz": [
+              0.0025776,
+              -4.8031e-07,
+              0.03447
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "mass": {
+          "L": 0.00081807,
+          "R": 0.00083416
+        },
+        "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": {
+          "L": [
+            9.4367e-08,
+            1.0642e-07,
+            2.3554e-08,
+            7.2819e-13,
+            7.4794e-12,
+            -8.9658e-09
+          ],
+          "R": [
+            1.0861e-07,
+            9.6246e-08,
+            2.3939e-08,
+            1.3942e-12,
+            -8.8309e-09,
+            -5.9916e-13
+          ]
+        }
+      },
+      "finger41_link": {
+        "inertial_origin": {
+          "L": {
+            "xyz": [
+              -0.0017978,
+              4.6307e-07,
+              0.018685
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "R": {
+            "xyz": [
+              -0.0017978,
+              2.8835e-07,
+              0.018686
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "mass": {
+          "L": 0.0067137,
+          "R": 0.006714
+        },
+        "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": {
+          "L": [
+            1.195e-06,
+            1.0687e-06,
+            3.7301e-07,
+            -3.5541e-12,
+            -4.505e-09,
+            6.8595e-13
+          ],
+          "R": [
+            1.1951e-06,
+            1.0688e-06,
+            3.7303e-07,
+            1.5194e-11,
+            -4.4902e-09,
+            1.057e-11
+          ]
+        }
+      },
+      "finger42_link": {
+        "inertial_origin": {
+          "L": {
+            "xyz": [
+              -0.00099518,
+              -3.8607e-07,
+              0.021813
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "R": {
+            "xyz": [
+              -0.00099481,
+              6.0006e-07,
+              0.021813
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "mass": {
+          "L": 0.014791,
+          "R": 0.014788
+        },
+        "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": {
+          "L": [
+            1.4505e-06,
+            1.4892e-06,
+            3.692e-07,
+            -2.9273e-11,
+            -2.1339e-07,
+            6.1801e-11
+          ],
+          "R": [
+            1.4501e-06,
+            1.4888e-06,
+            3.6915e-07,
+            2.324e-11,
+            -2.1315e-07,
+            -8.582e-11
+          ]
+        }
+      },
+      "finger43_link": {
+        "inertial_origin": {
+          "L": {
+            "xyz": [
+              0.0039329,
+              -6.1523e-07,
+              0.027325
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "R": {
+            "xyz": [
+              0.0039336,
+              -3.2576e-07,
+              0.027311
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "mass": {
+          "L": 0.00081812,
+          "R": 0.0008342
+        },
+        "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": {
+          "L": [
+            1.0545e-07,
+            9.4369e-08,
+            2.452e-08,
+            -2.6832e-13,
+            -1.261e-08,
+            6.0613e-12
+          ],
+          "R": [
+            1.0756e-07,
+            9.6251e-08,
+            2.4997e-08,
+            5.2726e-13,
+            -1.2886e-08,
+            -6.5627e-13
+          ]
+        }
+      },
+      "finger51_link": {
+        "inertial_origin": {
+          "L": {
+            "xyz": [
+              -0.0017977,
+              3.5129e-07,
+              0.018685
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "R": {
+            "xyz": [
+              -0.0017978,
+              4.0336e-07,
+              0.018686
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "mass": {
+          "L": 0.0067139,
+          "R": 0.0067142
+        },
+        "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": {
+          "L": [
+            1.195e-06,
+            1.0687e-06,
+            3.7302e-07,
+            2.1372e-12,
+            -4.5117e-09,
+            5.8565e-12
+          ],
+          "R": [
+            1.1951e-06,
+            1.0688e-06,
+            3.7303e-07,
+            9.6674e-12,
+            -4.4947e-09,
+            3.902e-12
+          ]
+        }
+      },
+      "finger52_link": {
+        "inertial_origin": {
+          "L": {
+            "xyz": [
+              -0.0024418,
+              -8.1825e-07,
+              0.016654
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "R": {
+            "xyz": [
+              -0.0024432,
+              3.1795e-07,
+              0.016659
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "mass": {
+          "L": 0.010439,
+          "R": 0.010445
+        },
+        "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": {
+          "L": [
+            1.3354e-06,
+            1.3473e-06,
+            2.4653e-07,
+            -3.1558e-11,
+            -1.1834e-07,
+            7.0815e-11
+          ],
+          "R": [
+            1.336e-06,
+            1.3478e-06,
+            2.4659e-07,
+            2.6011e-11,
+            -1.1818e-07,
+            -5.5233e-12
+          ]
+        }
+      },
+      "finger53_link": {
+        "inertial_origin": {
+          "L": {
+            "xyz": [
+              0.0021844,
+              1.1224e-06,
+              0.022782
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "R": {
+            "xyz": [
+              0.0021833,
+              1.5926e-06,
+              0.02278
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "mass": {
+          "L": 0.00058044,
+          "R": 0.00059177
+        },
+        "fullinertia_ixx_iyy_izz_ixy_ixz_iyz": {
+          "L": [
+            4.4456e-08,
+            3.5896e-08,
+            1.5583e-08,
+            1.8383e-12,
+            -3.5021e-09,
+            -1.5936e-12
+          ],
+          "R": [
+            4.5328e-08,
+            3.6598e-08,
+            1.5894e-08,
+            2.1034e-12,
+            -3.5665e-09,
+            -2.539e-12
+          ]
+        }
+      }
+    }
+  },
+  "coupling_difference_at_driver_max": {
+    "finger13": {
+      "driver": "finger12",
+      "driver_max": 0.523599,
+      "urdf_linear_follower": 0.4657779992,
+      "mjcf_quadratic_follower": 0.5945833009317298,
+      "difference_rad": 0.12880530173172983,
+      "difference_deg": 7.380000168137233,
+      "source_follower_upper_limit": 0.594583
+    },
+    "finger22": {
+      "driver": "finger21",
+      "driver_max": 1.396263,
+      "urdf_linear_follower": 1.2964717178,
+      "mjcf_quadratic_follower": 1.6874248002791654,
+      "difference_rad": 0.3909530824791654,
+      "difference_deg": 22.399961613686145,
+      "source_follower_upper_limit": 1.687426
+    },
+    "finger32": {
+      "driver": "finger31",
+      "driver_max": 1.396263,
+      "urdf_linear_follower": 1.2964717178,
+      "mjcf_quadratic_follower": 1.6874248002791654,
+      "difference_rad": 0.3909530824791654,
+      "difference_deg": 22.399961613686145,
+      "source_follower_upper_limit": 1.687426
+    },
+    "finger42": {
+      "driver": "finger41",
+      "driver_max": 1.396263,
+      "urdf_linear_follower": 1.2964717178,
+      "mjcf_quadratic_follower": 1.6874248002791654,
+      "difference_rad": 0.3909530824791654,
+      "difference_deg": 22.399961613686145,
+      "source_follower_upper_limit": 1.687426
+    },
+    "finger52": {
+      "driver": "finger51",
+      "driver_max": 1.396263,
+      "urdf_linear_follower": 1.2964717178,
+      "mjcf_quadratic_follower": 1.6874248002791654,
+      "difference_rad": 0.3909530824791654,
+      "difference_deg": 22.399961613686145,
+      "source_follower_upper_limit": 1.687426
+    }
+  },
+  "right_compiled_mechanical_cross_check": {
+    "mujoco_version": "3.2.3",
+    "upstream_mjcf_sha256": "a757fdd0d3c23c274e201426acc516ce107a6df63b7f9d5a1f780eb8a0a9021c",
+    "fields_checked": [
+      "mass",
+      "ipos",
+      "principal inertia",
+      "iquat",
+      "local pos",
+      "local quat"
+    ],
+    "rule": "direct equality of each compiled field; no tolerance relaxation for these source-to-generated comparisons",
+    "bodies": {
+      "base_link": {
+        "mass": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "ipos": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "inertia": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "iquat": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "pos": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "quat": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        }
+      },
+      "finger11_link": {
+        "mass": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "ipos": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "inertia": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "iquat": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "pos": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "quat": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        }
+      },
+      "finger12_link": {
+        "mass": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "ipos": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "inertia": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "iquat": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "pos": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "quat": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        }
+      },
+      "finger13_link": {
+        "mass": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "ipos": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "inertia": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "iquat": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "pos": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "quat": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        }
+      },
+      "finger14_link": {
+        "mass": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "ipos": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "inertia": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "iquat": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "pos": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "quat": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        }
+      },
+      "finger21_link": {
+        "mass": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "ipos": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "inertia": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "iquat": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "pos": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "quat": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        }
+      },
+      "finger22_link": {
+        "mass": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "ipos": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "inertia": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "iquat": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "pos": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "quat": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        }
+      },
+      "finger23_link": {
+        "mass": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "ipos": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "inertia": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "iquat": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "pos": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "quat": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        }
+      },
+      "finger31_link": {
+        "mass": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "ipos": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "inertia": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "iquat": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "pos": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "quat": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        }
+      },
+      "finger32_link": {
+        "mass": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "ipos": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "inertia": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "iquat": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "pos": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "quat": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        }
+      },
+      "finger33_link": {
+        "mass": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "ipos": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "inertia": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "iquat": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "pos": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "quat": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        }
+      },
+      "finger41_link": {
+        "mass": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "ipos": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "inertia": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "iquat": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "pos": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "quat": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        }
+      },
+      "finger42_link": {
+        "mass": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "ipos": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "inertia": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "iquat": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "pos": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "quat": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        }
+      },
+      "finger43_link": {
+        "mass": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "ipos": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "inertia": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "iquat": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "pos": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "quat": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        }
+      },
+      "finger51_link": {
+        "mass": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "ipos": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "inertia": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "iquat": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "pos": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "quat": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        }
+      },
+      "finger52_link": {
+        "mass": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "ipos": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "inertia": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "iquat": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "pos": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "quat": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        }
+      },
+      "finger53_link": {
+        "mass": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "ipos": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "inertia": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "iquat": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "pos": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "quat": {
+          "strict_equal": true,
+          "max_abs_difference": 0.0
+        }
+      }
+    },
+    "full_inertia_validation": {
+      "primary_check": "all six generated XML fullinertia components equal the source URDF components exactly",
+      "diagnostic_only": "MuJoCo 3.2.3 diagonalization/reconstruction has observed maximum absolute tensor residual 1.66118465060509e-11 in both source and generated models; the 2e-11 reconstruction threshold is a numerical diagnostic, not proof of physical equivalence"
+    }
+  },
+  "mounting_frame_observations": {
+    "left": {
+      "file": "meshes/dh116/gripper0_base_link-0be94e52.stl",
+      "sha256": "0be94e52875c963d1aec4d981700ada994dc2e7e38d03eb3ccddd6b9c90a2c6c",
+      "vertices": 50460,
+      "bounds_m": [
+        [
+          -0.0339483767747879,
+          -0.041587550193071365,
+          -5.960464760645934e-11
+        ],
+        [
+          0.028362080454826355,
+          0.04183388873934746,
+          0.10835152119398117
+        ]
+      ],
+      "bottom_z0_vertices": 273,
+      "axis_centered_ring_vertex_counts_rtol1e-5": {
+        "0.011": 22,
+        "0.015": 55,
+        "0.024": 41
+      }
+    },
+    "right": {
+      "file": "meshes/dh116_right/source/base_link.STL",
+      "sha256": "094504fed409afe137eafa6643c36f081934df873ef1cf9924ebb9725436b161",
+      "vertices": 50667,
+      "bounds_m": [
+        [
+          -0.03394636511802673,
+          -0.04183388873934746,
+          -9.499490777331587e-11
+        ],
+        [
+          0.028366023674607277,
+          0.04158739745616913,
+          0.10835481435060501
+        ]
+      ],
+      "bottom_z0_vertices": 275,
+      "axis_centered_ring_vertex_counts_rtol1e-5": {
+        "0.011": 22,
+        "0.015": 58,
+        "0.024": 41
+      }
+    },
+    "assembly": {
+      "flange_to_hand_local_pos": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flange_to_hand_local_quat": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hand_parent": "robot0_gripper_flange",
+      "flange_world_pos": [
+        -0.12988027366102772,
+        0.24400324656821926,
+        1.1564534170543228
+      ],
+      "hand_world_pos": [
+        -0.12988027366102772,
+        0.24400324656821926,
+        1.1564534170543228
+      ],
+      "nq": 18,
+      "nv": 18,
+      "nu": 13,
+      "neq": 5,
+      "right_total_link_mass_kg": 0.23767046000000006
+    },
+    "scope": "Source mounting-frame geometry supports a common origin/face convention; no bolt tolerance or exact concave interference fit is validated."
+  },
+  "source_observations": [
+    {
+      "scope": "both URDF",
+      "field": "revolute limit effort and velocity",
+      "value": 0,
+      "impact": "manufacturer actuation capability unspecified; do not use zero as validated physical capability"
+    },
+    {
+      "scope": "both URDF",
+      "field": "fixed joint axis and limit",
+      "value": "axis=0 0 0, obsolete limit element",
+      "impact": "fixed pieces must not create additional DOFs"
+    },
+    {
+      "scope": "left only",
+      "field": "finger33_link inertial origin",
+      "value": [
+        7.153e-07,
+        -0.0067137,
+        -0.037473
+      ],
+      "mesh_z_aabb": [
+        0.01587417908012867,
+        0.0535268671810627
+      ],
+      "impact": "COM lies outside its mesh AABB; upstream issue is not present in right and must not be copied to right"
+    }
+  ],
+  "references": {
+    "mjcf_eulerseq": "https://mujoco.readthedocs.io/en/stable/XMLreference.html#compiler-eulerseq",
+    "mjcf_mesh_collision": "https://mujoco.readthedocs.io/en/stable/XMLreference.html#asset-mesh"
+  }
+}

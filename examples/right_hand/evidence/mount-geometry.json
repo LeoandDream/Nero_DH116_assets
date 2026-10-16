@@ -1,0 +1,78 @@
+{
+  "left": {
+    "file": "meshes/dh116/gripper0_base_link-0be94e52.stl",
+    "sha256": "0be94e52875c963d1aec4d981700ada994dc2e7e38d03eb3ccddd6b9c90a2c6c",
+    "vertices": 50460,
+    "bounds_m": [
+      [
+        -0.0339483767747879,
+        -0.041587550193071365,
+        -5.960464760645934e-11
+      ],
+      [
+        0.028362080454826355,
+        0.04183388873934746,
+        0.10835152119398117
+      ]
+    ],
+    "bottom_z0_vertices": 273,
+    "axis_centered_ring_vertex_counts_rtol1e-5": {
+      "0.011": 22,
+      "0.015": 55,
+      "0.024": 41
+    }
+  },
+  "right": {
+    "file": "meshes/dh116_right/source/base_link.STL",
+    "sha256": "094504fed409afe137eafa6643c36f081934df873ef1cf9924ebb9725436b161",
+    "vertices": 50667,
+    "bounds_m": [
+      [
+        -0.03394636511802673,
+        -0.04183388873934746,
+        -9.499490777331587e-11
+      ],
+      [
+        0.028366023674607277,
+        0.04158739745616913,
+        0.10835481435060501
+      ]
+    ],
+    "bottom_z0_vertices": 275,
+    "axis_centered_ring_vertex_counts_rtol1e-5": {
+      "0.011": 22,
+      "0.015": 58,
+      "0.024": 41
+    }
+  },
+  "assembly": {
+    "flange_to_hand_local_pos": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "flange_to_hand_local_quat": [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "hand_parent": "robot0_gripper_flange",
+    "flange_world_pos": [
+      -0.12988027366102772,
+      0.24400324656821926,
+      1.1564534170543228
+    ],
+    "hand_world_pos": [
+      -0.12988027366102772,
+      0.24400324656821926,
+      1.1564534170543228
+    ],
+    "nq": 18,
+    "nv": 18,
+    "nu": 13,
+    "neq": 5,
+    "right_total_link_mass_kg": 0.23767046000000006
+  },
+  "scope": "Source mounting-frame geometry supports a common origin/face convention; no bolt tolerance or exact concave interference fit is validated."
+}

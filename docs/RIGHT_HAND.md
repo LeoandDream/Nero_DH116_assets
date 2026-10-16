@@ -51,4 +51,6 @@ python -m unittest discover -s tests -p 'test_right_*.py' -v
 
 如需复核转换，可单独克隆固定厂家提交，再执行`python tools/build_right.py --upstream <source-checkout> --output-root <new-directory>`；运行模型和默认测试不需要该源码缓存。模型生成只使用固定源描述和原始Mesh，不生成分块代理。
 
-实际结果与能力边界见[右手验收记录](../examples/right_hand/evidence/RESULTS.md)：静态加载、动态控制、接触/穿透分别给出PASS、FAIL或UNKNOWN；右手抓持能力保持UNKNOWN，未运行LIBERO完整任务。法兰许可风险维持[现有披露](../licenses/SOURCES.md)。
+实际结果见[右手验收记录](../examples/right_hand/evidence/RESULTS.md)：静态机械检查通过；9000步完整执行且无数值警告，基础掌部外物接触通过最低筛查，但全幅开合的自接触交叠和稳态跟踪未通过。此版本作为可复核的右手候选提交，不代表右手动力学整体验收通过。右手抓持能力保持UNKNOWN，未运行LIBERO完整任务。
+
+右手源文件与左手来自同一固定厂家仓库，沿用其[Apache-2.0许可](../licenses/DH116_APACHE_2_0.txt)，来源对照见[源证据](../examples/right_hand/evidence/SOURCE_COMPARISON.md)。法兰许可风险维持[现有披露](../licenses/SOURCES.md)。
