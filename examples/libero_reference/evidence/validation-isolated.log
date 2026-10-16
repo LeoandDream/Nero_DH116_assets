@@ -1,0 +1,16 @@
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /data_robot/verification/nero_dh116_d1b/.reference-env/lib/python3.11/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+Official-model preflight passed (5874 fields); integrating
+command 20/230, t=1.000s
+command 40/230, t=2.000s
+command 60/230, t=3.000s
+command 80/230, t=4.000s
+command 100/230, t=5.000s
+command 120/230, t=6.000s
+command 140/230, t=7.000s
+command 160/230, t=8.000s
+command 180/230, t=9.000s
+command 200/230, t=10.000s
+command 220/230, t=11.000s
+bounded_grasp DIAGNOSTIC_FINISHED steps 5750 mimic 0.0010005620208883587 arm error 0.07815017042475991 bowl contacts 2113 distance -0.0005797042681449684

@@ -1,0 +1,419 @@
+{
+  "comparison": "exact JSON numeric equality; no tolerance",
+  "alignment": "zero-based physics row; macro = row // 25 from archived helper",
+  "historical_trajectory_equal": true,
+  "first_difference": null,
+  "first_numeric_difference": null,
+  "first_structure_difference": null,
+  "counts": {
+    "actual": 5750,
+    "historical": 5750
+  },
+  "max_abs_diff_by_field": {
+    "time": {
+      "max_abs_diff": 0.0,
+      "row": 0,
+      "index": [],
+      "actual": 0.002,
+      "historical": 0.002
+    },
+    "bowl_z_m": {
+      "max_abs_diff": 0.0,
+      "row": 0,
+      "index": [],
+      "actual": 0.9699803851497233,
+      "historical": 0.9699803851497233
+    },
+    "other_robot_overlap_m": {
+      "max_abs_diff": 0.0,
+      "row": 0,
+      "index": [],
+      "actual": 0.0,
+      "historical": 0.0
+    },
+    "robot_state_18": {
+      "max_abs_diff": 0.0,
+      "row": 0,
+      "index": [
+        0
+      ],
+      "actual": 0.36958714657577224,
+      "historical": 0.36958714657577224
+    },
+    "robot_action_13": {
+      "max_abs_diff": 0.0,
+      "row": 0,
+      "index": [
+        0
+      ],
+      "actual": 0.3695869252103055,
+      "historical": 0.3695869252103055
+    },
+    "internal_actuator_ctrl_13": {
+      "max_abs_diff": 0.0,
+      "row": 0,
+      "index": [
+        0
+      ],
+      "actual": 0.0,
+      "historical": 0.0
+    },
+    "linear_mimic_error_rad": {
+      "max_abs_diff": 0.0,
+      "row": 0,
+      "index": [],
+      "actual": 3.419515144128995e-05,
+      "historical": 3.419515144128995e-05
+    },
+    "max_hand_target_error_rad": {
+      "max_abs_diff": 0.0,
+      "row": 0,
+      "index": [],
+      "actual": 0.0003960878096530007,
+      "historical": 0.0003960878096530007
+    },
+    "max_contact_normal_N": {
+      "max_abs_diff": 0.0,
+      "row": 0,
+      "index": [],
+      "actual": 0.0,
+      "historical": 0.0
+    },
+    "full_qpos": {
+      "max_abs_diff": 0.0,
+      "row": 0,
+      "index": [
+        0
+      ],
+      "actual": 0.36958714657577224,
+      "historical": 0.36958714657577224
+    },
+    "full_qvel": {
+      "max_abs_diff": 0.0,
+      "row": 0,
+      "index": [
+        0
+      ],
+      "actual": 0.00015309866890772403,
+      "historical": 0.00015309866890772403
+    },
+    "bowl_hand_contact_distances_m": {
+      "max_abs_diff": 0.0,
+      "row": 3637,
+      "index": [
+        0
+      ],
+      "actual": -7.178951924519249e-06,
+      "historical": -7.178951924519249e-06
+    }
+  },
+  "categories": {
+    "actions": {
+      "equal": true,
+      "first_difference": null
+    },
+    "state": {
+      "equal": true,
+      "first_difference": null
+    },
+    "contacts": {
+      "equal": true,
+      "first_difference": null
+    },
+    "warnings": {
+      "equal": true,
+      "first_difference": null
+    },
+    "other": {
+      "equal": true,
+      "first_difference": null
+    }
+  },
+  "schema": {
+    "historical_keys": [
+      "bowl_hand_contact_distances_m",
+      "bowl_z_m",
+      "full_qpos",
+      "full_qvel",
+      "internal_actuator_ctrl_13",
+      "linear_mimic_error_rad",
+      "max_contact_normal_N",
+      "max_hand_target_error_rad",
+      "opposed_contact",
+      "other_robot_overlap_m",
+      "phase",
+      "robot_action_13",
+      "robot_state_18",
+      "thumb_contact",
+      "time",
+      "warnings"
+    ],
+    "actual_keys": [
+      "bowl_hand_contact_distances_m",
+      "bowl_z_m",
+      "full_qpos",
+      "full_qvel",
+      "internal_actuator_ctrl_13",
+      "linear_mimic_error_rad",
+      "max_contact_normal_N",
+      "max_hand_target_error_rad",
+      "opposed_contact",
+      "other_robot_overlap_m",
+      "phase",
+      "robot_action_13",
+      "robot_state_18",
+      "thumb_contact",
+      "time",
+      "warnings"
+    ],
+    "intersection_keys": [
+      "bowl_hand_contact_distances_m",
+      "bowl_z_m",
+      "full_qpos",
+      "full_qvel",
+      "internal_actuator_ctrl_13",
+      "linear_mimic_error_rad",
+      "max_contact_normal_N",
+      "max_hand_target_error_rad",
+      "opposed_contact",
+      "other_robot_overlap_m",
+      "phase",
+      "robot_action_13",
+      "robot_state_18",
+      "thumb_contact",
+      "time",
+      "warnings"
+    ],
+    "actual_only_keys": [],
+    "historical_only_keys": []
+  },
+  "metrics": {
+    "actual": {
+      "physics_steps": 5750,
+      "final_time_s": 11.50000000000051,
+      "physics_dt_s": 0.002,
+      "dt_source": "source result dt or archived helper default 0.002 s",
+      "final_bowl_z_m": 1.0033629424317023,
+      "peak_bowl_z_m": 1.0034477708105844,
+      "reset_relative": {
+        "reference_z_m": 0.97,
+        "reference_source": "explicit reset_z argument",
+        "final_lift_m": 0.03336294243170235,
+        "peak_lift_m": 0.033447770810584476
+      },
+      "settled_relative": {
+        "reference_row": 249,
+        "reference_z_m": 0.8994107101064139,
+        "final_lift_m": 0.10395223232528839,
+        "peak_lift_m": 0.10403706070417051
+      },
+      "settled_reference_available": true,
+      "hold": {
+        "physics_steps": 750,
+        "duration_s": 1.5,
+        "thumb_contact_steps": 750,
+        "opposed_contact_steps": 750,
+        "height_range_m": [
+          0.9899987559829082,
+          1.0034477708105844
+        ],
+        "reset_relative_height_range_m": [
+          0.019998755982908234,
+          0.033447770810584476
+        ],
+        "settled_relative_height_range_m": [
+          0.09058804587649427,
+          0.10403706070417051
+        ]
+      },
+      "contacts": {
+        "bowl_contact_steps": 2113,
+        "thumb_contact_steps": 2109,
+        "opposed_contact_steps": 2109,
+        "min_bowl_contact_distance_m": -0.0005797042681449684,
+        "max_contact_normal_N": 0.2948832030561538,
+        "max_other_robot_overlap_m": 0.0
+      },
+      "residuals": {
+        "max_linear_mimic_error_rad": 0.0010005620208883587,
+        "final_linear_mimic_error_rad": 0.0009666510388956235,
+        "max_hand_target_error_rad": 0.03868756608173568,
+        "final_hand_target_error_rad": 0.03458318615321332,
+        "max_arm_target_error_rad": 0.07815017042475991,
+        "max_abs_full_qvel": 1.1490828198539225
+      },
+      "warnings": {},
+      "contact_body_pairs": [
+        [
+          "white_bowl_1_main",
+          "gripper0_finger14_link"
+        ],
+        [
+          "white_bowl_1_main",
+          "gripper0_finger22_link"
+        ]
+      ],
+      "contact_body_pairs_source": "/data_robot/verification/nero_dh116_d1b/runs/acceptance_001/bounded_grasp-result.json",
+      "source_result": {
+        "case": "bounded_grasp",
+        "integrator": 1,
+        "dt": 0.002,
+        "status": "DIAGNOSTIC_FINISHED",
+        "hand_base_weld_id": 9,
+        "initial_hand_contacts": [],
+        "setup": {},
+        "physics_steps": 5750,
+        "scripted_command_steps": 230,
+        "stop_reason": null,
+        "trajectory": "bounded_grasp.jsonl",
+        "simulated_time_s": 11.50000000000051,
+        "max_linear_mimic_error_rad": 0.0010005620208883587,
+        "max_arm_target_error_rad": 0.07815017042475991,
+        "max_hand_actuator_force_Nm": 0.022798694174595374,
+        "max_scene_qvel": 1.1490828198539225,
+        "bowl_contact_steps": 2113,
+        "min_bowl_contact_distance_m": -0.0005797042681449684,
+        "max_bowl_contact_normal_N": 0.2948832030561538,
+        "contact_body_pairs": [
+          [
+            "white_bowl_1_main",
+            "gripper0_finger14_link"
+          ],
+          [
+            "white_bowl_1_main",
+            "gripper0_finger22_link"
+          ]
+        ],
+        "initial_bowl_z_m": 0.97,
+        "final_bowl_z_m": 1.0033629424317023,
+        "peak_bowl_height_change_m": 0.033447770810584476,
+        "thumb_contact_physics_steps": 2109,
+        "opposed_contact_physics_steps": 2109,
+        "max_other_robot_overlap_m": 0.0,
+        "close_phase_start_macro": 120,
+        "first_actual_contact_macro": 145,
+        "final_phase": "hold",
+        "native_task_signal": false,
+        "strict_grasp_success_claim": false
+      },
+      "source_result_path": "/data_robot/verification/nero_dh116_d1b/runs/acceptance_001/bounded_grasp-result.json"
+    },
+    "historical": {
+      "physics_steps": 5750,
+      "final_time_s": 11.50000000000051,
+      "physics_dt_s": 0.002,
+      "dt_source": "source result dt or archived helper default 0.002 s",
+      "final_bowl_z_m": 1.0033629424317023,
+      "peak_bowl_z_m": 1.0034477708105844,
+      "reset_relative": {
+        "reference_z_m": 0.97,
+        "reference_source": "explicit reset_z argument",
+        "final_lift_m": 0.03336294243170235,
+        "peak_lift_m": 0.033447770810584476
+      },
+      "settled_relative": {
+        "reference_row": 249,
+        "reference_z_m": 0.8994107101064139,
+        "final_lift_m": 0.10395223232528839,
+        "peak_lift_m": 0.10403706070417051
+      },
+      "settled_reference_available": true,
+      "hold": {
+        "physics_steps": 750,
+        "duration_s": 1.5,
+        "thumb_contact_steps": 750,
+        "opposed_contact_steps": 750,
+        "height_range_m": [
+          0.9899987559829082,
+          1.0034477708105844
+        ],
+        "reset_relative_height_range_m": [
+          0.019998755982908234,
+          0.033447770810584476
+        ],
+        "settled_relative_height_range_m": [
+          0.09058804587649427,
+          0.10403706070417051
+        ]
+      },
+      "contacts": {
+        "bowl_contact_steps": 2113,
+        "thumb_contact_steps": 2109,
+        "opposed_contact_steps": 2109,
+        "min_bowl_contact_distance_m": -0.0005797042681449684,
+        "max_contact_normal_N": 0.2948832030561538,
+        "max_other_robot_overlap_m": 0.0
+      },
+      "residuals": {
+        "max_linear_mimic_error_rad": 0.0010005620208883587,
+        "final_linear_mimic_error_rad": 0.0009666510388956235,
+        "max_hand_target_error_rad": 0.03868756608173568,
+        "final_hand_target_error_rad": 0.03458318615321332,
+        "max_arm_target_error_rad": 0.07815017042475991,
+        "max_abs_full_qvel": 1.1490828198539225
+      },
+      "warnings": {},
+      "contact_body_pairs": [
+        [
+          "white_bowl_1_main",
+          "gripper0_finger14_link"
+        ],
+        [
+          "white_bowl_1_main",
+          "gripper0_finger22_link"
+        ]
+      ],
+      "contact_body_pairs_source": "/data_robot/verification/nero_dh116_d1b/examples/libero_reference/fixtures/golden/bounded_grasp-result.json",
+      "source_result": {
+        "case": "bounded_grasp",
+        "integrator": 1,
+        "dt": 0.002,
+        "status": "DIAGNOSTIC_FINISHED",
+        "hand_base_weld_id": 9,
+        "initial_hand_contacts": [],
+        "setup": {},
+        "physics_steps": 5750,
+        "scripted_command_steps": 230,
+        "stop_reason": null,
+        "trajectory": "bounded_grasp.jsonl",
+        "simulated_time_s": 11.50000000000051,
+        "max_linear_mimic_error_rad": 0.0010005620208883587,
+        "max_arm_target_error_rad": 0.07815017042475991,
+        "max_hand_actuator_force_Nm": 0.022798694174595374,
+        "max_scene_qvel": 1.1490828198539225,
+        "bowl_contact_steps": 2113,
+        "min_bowl_contact_distance_m": -0.0005797042681449684,
+        "max_bowl_contact_normal_N": 0.2948832030561538,
+        "contact_body_pairs": [
+          [
+            "white_bowl_1_main",
+            "gripper0_finger14_link"
+          ],
+          [
+            "white_bowl_1_main",
+            "gripper0_finger22_link"
+          ]
+        ],
+        "initial_bowl_z_m": 0.97,
+        "final_bowl_z_m": 1.0033629424317023,
+        "peak_bowl_height_change_m": 0.033447770810584476,
+        "thumb_contact_physics_steps": 2109,
+        "opposed_contact_physics_steps": 2109,
+        "max_other_robot_overlap_m": 0.0,
+        "close_phase_start_macro": 120,
+        "first_actual_contact_macro": 145,
+        "final_phase": "hold",
+        "native_task_signal": false,
+        "strict_grasp_success_claim": false
+      },
+      "source_result_path": "/data_robot/verification/nero_dh116_d1b/examples/libero_reference/fixtures/golden/bounded_grasp-result.json"
+    }
+  },
+  "limitations": [
+    "Exact equality concerns recorded historical trajectory fields, not task success.",
+    "Extra instrumentation is excluded from historical equality except warning dictionaries.",
+    "Contact body pairs come only from optional result sidecars; they are not recorded per physics row.",
+    "Settled metrics require exactly 5750 rows and the archived settle/approach boundary at 249/250.",
+    "Source result status, stop_reason, and success signals are preserved without reinterpretation."
+  ]
+}
