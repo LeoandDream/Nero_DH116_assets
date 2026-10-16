@@ -1,0 +1,107 @@
+{
+  "user_direction": "Reject new low-level controller; prefer parameter adjustment; MuJoCo position mode allowed",
+  "backend": "Unmodified MuJoCo position servo; no custom torque controller or gravity feedforward",
+  "robot_contract": {
+    "raw_state": 18,
+    "raw_action": 13,
+    "nero": "7D ABSOLUTE JOINT POSITION [rad]",
+    "hand": "6D normalized absolute actuator position"
+  },
+  "reference": {
+    "position_kp": 50.0,
+    "position_kv": 2.0,
+    "reference_armature_scale_kg_m2": 0.01,
+    "use_of_armature": "Gain response scaling only; NO armature copied to source joints"
+  },
+  "derivation": "Scale reference kp and kv by I_source/(I_source+I_reference_armature) to approximately preserve reference response frequency/damping relative to source inertia. Static parameter derivation only, no runtime dynamics control law.",
+  "parameters": [
+    {
+      "joint": "finger11",
+      "effective_source_inertia_kg_m2": 0.0001323006392519706,
+      "gain_scale": 0.013057314815496617,
+      "kp": 0.6528657407748308,
+      "kv": 0.026114629630993234
+    },
+    {
+      "joint": "finger12",
+      "effective_source_inertia_kg_m2": 0.00013374819426731008,
+      "gain_scale": 0.013198294619455002,
+      "kp": 0.6599147309727501,
+      "kv": 0.026396589238910004
+    },
+    {
+      "joint": "finger21",
+      "effective_source_inertia_kg_m2": 0.00010301918533789454,
+      "gain_scale": 0.010196871197414147,
+      "kp": 0.5098435598707074,
+      "kv": 0.020393742394828294
+    },
+    {
+      "joint": "finger31",
+      "effective_source_inertia_kg_m2": 0.00014056274315805162,
+      "gain_scale": 0.013861434194358774,
+      "kp": 0.6930717097179387,
+      "kv": 0.02772286838871755
+    },
+    {
+      "joint": "finger41",
+      "effective_source_inertia_kg_m2": 0.00010310624789699517,
+      "gain_scale": 0.010205400731924122,
+      "kp": 0.5102700365962061,
+      "kv": 0.020410801463848244
+    },
+    {
+      "joint": "finger51",
+      "effective_source_inertia_kg_m2": 5.9251670170157635e-05,
+      "gain_scale": 0.005890266205970704,
+      "kp": 0.2945133102985352,
+      "kv": 0.011780532411941408
+    }
+  ],
+  "numerical_integrator": "RK4",
+  "timestep_s": 0.002,
+  "mimic": {
+    "polycoef": "unchanged source URDF linear relation",
+    "solref": [
+      0.004,
+      1
+    ],
+    "solref_basis": "2 times native2ms timestep; also supplier MJCF equality reference",
+    "solimp": [
+      0.9,
+      0.99,
+      0.001,
+      0.5,
+      2
+    ],
+    "solimp_basis": "Existing supplier numerical equality profile; no source mechanical compliance claimed"
+  },
+  "physical_fields_kept": [
+    "body mass/inertia",
+    "joint mechanical damping/armature/frictionloss",
+    "joint ranges",
+    "all visual and collision geometry",
+    "contact friction/solref/solimp",
+    "NERO controller/gains",
+    "existing exclusions"
+  ],
+  "hardware_calibration_claimed": false,
+  "force_velocity_caps": null,
+  "former_custom_controller_proposal": "REJECTED_NOT_IMPLEMENTED",
+  "change_from_first_candidate": "Only integrator changes; same fixed position kp/kv and equality settings at2ms timestep",
+  "joint_limit_numerics": {
+    "solref": [
+      0.004,
+      1
+    ],
+    "solimp": [
+      0.9,
+      0.99,
+      0.001,
+      0.5,
+      2
+    ],
+    "scope": "Only11 DH116 joint limit solver parameters; all source physical limit ranges unchanged",
+    "basis": "Same two-timestep numeric response used for source mimic; reduce observed0.0087rad soft limit overlap"
+  }
+}

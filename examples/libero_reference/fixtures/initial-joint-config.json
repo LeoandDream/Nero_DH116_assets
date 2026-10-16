@@ -1,0 +1,21 @@
+{
+  "arm_absolute_qpos_rad": [
+    0.3695869252103055,
+    -0.9117843140806088,
+    -2.701898722298827,
+    0.9778290747376885,
+    -1.4394823334488054,
+    -0.1793268616846018,
+    1.4802253266239929
+  ],
+  "hand_active_source_range_fractions": [
+    0.04,
+    0.04,
+    0.04,
+    0.04,
+    0.04,
+    0.04
+  ],
+  "source": "Native higher working pose reused as initial environment configuration; hand opens to4% source range for visible closure",
+  "scope": "Source-legal environment initial pose above reset objects; source joint ranges unchanged"
+}

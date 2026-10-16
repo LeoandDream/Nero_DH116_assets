@@ -1,0 +1,17 @@
+{
+  "checkout": "/data_robot/verification/nero_dh116_d1b",
+  "commit": "1dd828dbd41fb8bf9e81c96c79cbb3ee43e47b30",
+  "masked_roots": {
+    "/data_robot/projects": {
+      "exists": true,
+      "directory_empty": true
+    },
+    "/tmp": {
+      "exists": true,
+      "directory_empty": true
+    }
+  },
+  "git_object_alternates": false,
+  "pythonpath": null,
+  "cwd_outside_masked_roots": true
+}

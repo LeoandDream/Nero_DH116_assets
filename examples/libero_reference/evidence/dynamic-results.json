@@ -1,0 +1,92 @@
+{
+  "status": "SMALL_WHITE_BOWL_CLOSURE_DIAGNOSTIC_RECORDED",
+  "scope": "Fixed diagnostic commands in actual NERO+DH116 LIBERO mount; no learned policy or demonstration labels",
+  "raw_state_dim": 18,
+  "raw_action_dim": 13,
+  "nero_action": "7D ABSOLUTE JOINT POSITION [rad]",
+  "dh116_action": "6D normalized absolute actuator position",
+  "cases": [
+    {
+      "case": "bounded_grasp",
+      "integrator": 1,
+      "dt": 0.002,
+      "status": "DIAGNOSTIC_FINISHED",
+      "hand_base_weld_id": 9,
+      "initial_hand_contacts": [],
+      "setup": {},
+      "physics_steps": 5750,
+      "scripted_command_steps": 230,
+      "stop_reason": null,
+      "trajectory": "bounded_grasp.jsonl",
+      "simulated_time_s": 11.50000000000051,
+      "max_linear_mimic_error_rad": 0.0010005620208883587,
+      "max_arm_target_error_rad": 0.07815017042475991,
+      "max_hand_actuator_force_Nm": 0.022798694174595374,
+      "max_scene_qvel": 1.1490828198539225,
+      "bowl_contact_steps": 2113,
+      "min_bowl_contact_distance_m": -0.0005797042681449684,
+      "max_bowl_contact_normal_N": 0.2948832030561538,
+      "contact_body_pairs": [
+        [
+          "white_bowl_1_main",
+          "gripper0_finger14_link"
+        ],
+        [
+          "white_bowl_1_main",
+          "gripper0_finger22_link"
+        ]
+      ],
+      "initial_bowl_z_m": 0.97,
+      "final_bowl_z_m": 1.0033629424317023,
+      "peak_bowl_height_change_m": 0.033447770810584476,
+      "thumb_contact_physics_steps": 2109,
+      "opposed_contact_physics_steps": 2109,
+      "max_other_robot_overlap_m": 0.0,
+      "close_phase_start_macro": 120,
+      "first_actual_contact_macro": 145,
+      "final_phase": "hold",
+      "native_task_signal": false,
+      "strict_grasp_success_claim": false
+    }
+  ],
+  "source_mass_inertia_joint_dynamics_unchanged": true,
+  "frozen_official_parameters_preserved": true,
+  "reset_parameter_replay": false,
+  "new_low_level_controller": false,
+  "hand_force_velocity_limits": null,
+  "new_collision_filters": false,
+  "source_face_flange_proxy_used": true,
+  "independent_hand_targets": {
+    "open_source_fractions": [
+      0.04,
+      0.04,
+      0.04,
+      0.04,
+      0.04,
+      0.04
+    ],
+    "closed_source_fractions": [
+      0.03781967745160203,
+      0.39539016679791206,
+      0.24687990099178028,
+      0.22,
+      0.26,
+      0.3
+    ],
+    "changed_channels": [
+      "finger11",
+      "finger12",
+      "finger21",
+      "finger31",
+      "finger41",
+      "finger51"
+    ],
+    "planned_closure_executed": true
+  },
+  "strict_grasp_claim": false,
+  "temporary_stopping_bounds": {
+    "mimic_rad": 0.05,
+    "contact_overlap_m": 0.002,
+    "scope": "Conservative stop for this throwaway diagnostic only; no product safety or success thresholds changed"
+  }
+}

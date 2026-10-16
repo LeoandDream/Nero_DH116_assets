@@ -21,9 +21,11 @@
 
 NERO 的 7 个 motor actuator 接受力矩；DH116 的 6 个 position actuator 接受主动关节目标角，5 组 equality joint constraint 表达源 URDF 的线性 Mimic 联动。
 
-外部 13D Robot action 的机械臂部分是绝对关节位置 rad，需要位置控制器计算力矩；手部为 6 个独立归一化目标，按主动关节范围映射到角度。手部通道依次为 `finger11`、`finger12`、`finger21`、`finger31`、`finger41`、`finger51`。参考控制组合为 robosuite 1.4.1 `JointPositionController` 的 `set_qpos` 绝对位置入口和 MuJoCo position 伺服。
+外部 13D Robot action 的机械臂部分是绝对关节位置 rad，需要位置控制器计算力矩；手部为 6 个独立归一化目标，按主动关节范围映射到角度。手部通道依次为 `finger11`、`finger12`、`finger21`、`finger31`、`finger41`、`finger51`。参考控制组合为 robosuite 1.4.1 `JointPositionController` 的 `set_goal(..., set_qpos=...)` 绝对位置入口和 MuJoCo position 伺服。
 
 两类控制输入均为 13D，但单位和作用不同。初始化 keyframe 也不替代保持姿态所需的位置控制。加入场景物体后，应按契约中的关节名称读取 18D 机器人状态，而非假设整个 `data.qpos` 都属于机器人。
+
+独立参考测试的现有适配器、原生 Reset 和固定场景见[运行说明](../examples/libero_reference/README.md)。参考入口从正式 MJCF 构建机器人，不加载历史机器人模板。
 
 ## 机械参数与求解设置
 

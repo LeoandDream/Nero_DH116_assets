@@ -1,0 +1,24 @@
+{
+  "python": {
+    "version": "3.11.16",
+    "distribution": "astral-sh/python-build-standalone",
+    "release": "20260924",
+    "url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260924/cpython-3.11.16%2B20260924-x86_64-unknown-linux-gnu-install_only_stripped.tar.gz",
+    "archive_sha256": "68c6739376b65258dee5058ccf6777232fe38d31a578965ae8bda327ec7da3a8",
+    "executable_sha256": "ec579de7512e84d960bc642a840de69c785c52d6adf89e3a15f51717b29be40f"
+  },
+  "libero": {
+    "url": "https://github.com/Lifelong-Robot-Learning/LIBERO.git",
+    "commit": "f78abd68ee283de9f9be3c8f7e2a9ad60246e95c",
+    "version": "0.1.0",
+    "installation": "editable, no dependency resolution, pinned source and assets within .reference-deps/LIBERO"
+  },
+  "robosuite": {
+    "version": "1.4.1",
+    "wheel_sha256": "62587cd5888d9d3d813f3ffcc7017f6f77efa618952527a0b9bb139ffd0a3741"
+  },
+  "mujoco": {
+    "version": "3.2.3",
+    "wheel_sha256": "4c6add7cb34dd194ffecab169dca296ef3280eeecb2d4fc647280b6484dac8c8"
+  }
+}

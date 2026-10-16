@@ -1,0 +1,8 @@
+{
+  "checkout": "/data_robot/verification/nero_dh116_d1b",
+  "code_commit": "68057c2d08492ec3c23ad93bd6ded298942927ab",
+  "masked_roots_empty": {
+    "/data_robot/projects": true,
+    "/tmp": true
+  }
+}

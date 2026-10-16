@@ -1,0 +1,35 @@
+{
+  "scope": "strace -f -e trace=file for complete physical reference run; system libraries/drivers remain available read-only",
+  "trace_sha256": "6924f6cf9fa23e24a29f20d6c8e27694fad00551d76cb82dbb0e48658d27a1fc",
+  "trace_lines": 23020,
+  "masked_project_access_attempts": 0,
+  "all_engine_scene_resources_under_checkout": true,
+  "scene_resources_count": 185,
+  "hold_contact_audit": {
+    "source_sha256": "8200b8e0386a3ccc00a63578830e6615523f5919b741485020c0cf1cb9586a76",
+    "rows": 750,
+    "row_range": [
+      5000,
+      5749
+    ],
+    "bowl_hand_contact_rows": 750,
+    "bowl_other_contact_rows": 0,
+    "body_pairs": [
+      [
+        "white_bowl_1_main",
+        "gripper0_finger14_link"
+      ],
+      [
+        "white_bowl_1_main",
+        "gripper0_finger22_link"
+      ]
+    ]
+  },
+  "cache_policy": "Only immutable package archives/wheels and independent LIBERO git objects were reused as explicit build caches. Installed CPython tree and venv created anew while original projects and old tmp were masked.",
+  "cache_origin_record_sha256": "874512acb824dc61eba1820b4267c2d4a620246d8f103c0f64d06e6178b30123",
+  "bootstrap_log_sha256": "a8e0af7ae2da046c2df5f0d005236c8010d16476b72b6541c14e3e8b0f86e08d",
+  "bootstrap_exit_code": 0,
+  "validation_pipeline_exit_code": 0,
+  "code_commit": "1dd828dbd41fb8bf9e81c96c79cbb3ee43e47b30",
+  "raw_logs_retained": "/data_robot/verification/nero_dh116_d1b/runs"
+}
