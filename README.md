@@ -88,7 +88,9 @@ source examples/libero_reference/env/activate.sh
 python examples/libero_reference/run.py --output runs/white_bowl
 ```
 
-参考入口直接使用本仓库 MJCF 与 Mesh，执行230条命令及5750个真实物理步，并输出逐步差异报告。原生任务与严格抓取成功信号保持原定义，参考结果均为 false。
+参考入口直接使用本仓库 MJCF 与 Mesh，执行230条命令及5750个真实物理步，并输出逐步差异报告。`historical_trajectory_equal` 检查完整 JSON 结构、双向字段集合（含嵌套字典）与逐值精确数值；`raw_jsonl_bytes_equal` 单独检查解压后原始 JSONL 字节的 SHA256 是否相同。两者均为 true，且完成230条命令、5750步及原有 `DIAGNOSTIC_FINISHED` 状态时，才返回 `EXACT_REFERENCE_REPRODUCED`／退出码0；差异返回2，运行错误返回1。
+
+`native_task_result=false` 是实际调用 `env.check_success()` 得到的原生完整任务结果；参考脚本没有执行柜子放置阶段。兼容字段 `strict_grasp_success_claim=false` 仅表示未提出严格抓取成功声明，脚本未运行额外严格抓取成功谓词，不能将其解读为一次抓取成功判定的失败结果。
 
 ## 仿真演示与验证
 

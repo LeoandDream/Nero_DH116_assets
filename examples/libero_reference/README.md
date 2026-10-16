@@ -23,18 +23,24 @@ python examples/libero_reference/run.py --output runs/white_bowl
 - `bounded_grasp.jsonl`：5750个真实物理步的状态、动作、内部 ctrl、接触、Mimic、高度和数值警告。
 - `contact-details.jsonl`：每步接触 geom/body、距离、接触系力与 actuator force。
 - `source-preflight.json`、`runtime-preflight.json`：文件、物理字段、绑定关系、场景 Reset 和控制器缓存的逐项检查。
-- `metrics.json`、`comparison.json`：两种高度口径及相对固定验收轨迹的首个精确差异和最大差异。
-- `run-result.json`：执行状态、真实步数、控制命令数及原生/严格成功信号。
+- `metrics.json`、`comparison.json`：两种高度口径、相对固定验收轨迹的首个精确差异和最大差异，以及字段/数值与原始字节的独立比较结果。
+- `run-result.json`：执行状态、真实步数、控制命令数、轨迹比较结果、原生完整任务判定 `native_task_result` 及严格抓取成功声明字段 `strict_grasp_success_claim`。
 
 默认显式验收基准是 `fixtures/golden/bounded_grasp.jsonl.gz`，其解压 SHA256 为 `880581b82882313c4abc4c9c838402be6ed04eac18dd5c30ee3780258a27fafa`。
 它只用于命令核对和验收比较，不提供控制输出。动作由冻结的初始配置与11节点计划生成。
 其他验收轨迹可用 `--reference FILE.jsonl[.gz]` 显式传入；不自动搜索外部目录。
 
-返回0：完整执行且逐步轨迹与验收基准精确一致。返回2：完整执行或诊断停止后生成了差异报告。返回1：配置、物理预检或执行错误。
-不设置浮点容差，也不把结果接近历史数值计为 PASS。原始停止规则保留。
+比较结果分别记录：
+
+- `historical_trajectory_equal`：逐行完整 JSON 结构与双向字段集合（含嵌套字典）一致，所有数字逐值精确相等。新增或缺失字段、数组长度或值有差异均为 false，不设置浮点容差。
+- `raw_jsonl_bytes_equal`：实际轨迹与验收基准的原始 JSONL 字节 SHA256 相同；压缩输入按解压后的字节比较。JSON 字段/数值相同但空白、键顺序等序列化字节不同，仍为 false。
+
+`run.py` 仅在上述两项均为 true、完成230条命令与5750个物理步、原始诊断状态为 `DIAGNOSTIC_FINISHED` 时返回 `EXACT_REFERENCE_REPRODUCED`／退出码0。完整执行存在任一差异或原规则触发诊断停止时，输出差异报告并返回2；配置、物理预检或执行错误返回1。
+单独运行 `compare.py` 时，两种比较均一致返回0，任一差异返回2；它不核验控制命令数或诊断结束状态。
+不把结果接近历史数值计为 PASS。原始停止规则保留，轨迹一致也不代表任务成功。
 
 相对 Reset 的最终增高为约33.36mm；相对沉降位置（零起算行249）的最终抬升约103.95mm。
-两者参照位置不同。native task / strict grasp 信号保持原定义，参考结果均为 false；这里没有完整柜子放置任务或多 seed Benchmark 成绩。
+两者参照位置不同。`native_task_result=false` 来自实际调用 `env.check_success()`，是原生 LIBERO 完整任务判定；脚本未执行柜子放置阶段。保留的兼容字段 `strict_grasp_success_claim=false` 只表示未提出严格抓取成功声明，脚本未运行额外严格抓取成功谓词，因此它不是一次抓取成功判定的失败结果。这里没有完整柜子放置任务或多 seed Benchmark 成绩。
 
 ## 机器人和 Reset 接入
 

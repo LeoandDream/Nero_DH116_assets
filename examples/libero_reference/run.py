@@ -21,11 +21,11 @@ ROOT = HERE.parents[1]
 FIXTURES = HERE / 'fixtures'
 
 
-def classify_outcome(case, equal, steps, commands):
+def classify_outcome(case, equal, steps, commands, *, raw_jsonl_bytes_equal=False):
     reason = case.get('stop_reason') or ''
     if case.get('recording_error') or reason.startswith(('RUNTIME_ERROR:', 'SETUP_OR_OUTPUT_ERROR:')):
         return 'FAILED', 1
-    if equal and steps == 5750 and commands == 230 and case['status'] == 'DIAGNOSTIC_FINISHED':
+    if equal and raw_jsonl_bytes_equal and steps == 5750 and commands == 230 and case['status'] == 'DIAGNOSTIC_FINISHED':
         return 'EXACT_REFERENCE_REPRODUCED', 0
     return 'COMPLETED_WITH_DIFFERENCES', 2
 
@@ -201,9 +201,12 @@ def execute(output, reference):
                                     reset_z=case.get('initial_bowl_z_m', .97))
         write_json(output / 'comparison.json', comparison)
         write_json(output / 'metrics.json', comparison['metrics']['actual'])
-        status, exit_code = classify_outcome(case, comparison['historical_trajectory_equal'], result['physics_steps'], result['commands'])
+        status, exit_code = classify_outcome(case, comparison['historical_trajectory_equal'], result['physics_steps'], result['commands'],
+                                           raw_jsonl_bytes_equal=comparison['raw_jsonl_bytes_equal'])
         result.update(status=status,
                       historical_trajectory_equal=comparison['historical_trajectory_equal'],
+                      raw_jsonl_bytes_equal=comparison['raw_jsonl_bytes_equal'],
+                      reference_trace_sha256=comparison['raw_jsonl_sha256']['historical'],
                       first_difference=comparison['first_difference'], trace_sha256=sha256(output / 'bounded_grasp.jsonl'))
         return exit_code
     except Exception:

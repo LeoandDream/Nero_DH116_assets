@@ -9,12 +9,30 @@ HERE = Path(__file__).resolve().parent
 
 
 class EntryTests(unittest.TestCase):
-    def classify(self, case, equal, steps, commands):
+    def classify(self, case, equal, steps, commands, **kwargs):
         spec = importlib.util.spec_from_file_location('reference_entry', HERE / 'run.py')
         module = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(module)
         self.assertTrue(hasattr(module, 'classify_outcome'), 'runtime failure classification is missing')
-        return module.classify_outcome(case, equal, steps, commands)
+        return module.classify_outcome(case, equal, steps, commands, **kwargs)
+
+    def test_exact_status_requires_field_and_byte_equality_and_complete_execution(self):
+        case = {'status': 'DIAGNOSTIC_FINISHED', 'stop_reason': None}
+        for equal, byte_equal, steps, commands, status, expected in [
+            (True, True, 5750, 230, 'DIAGNOSTIC_FINISHED', ('EXACT_REFERENCE_REPRODUCED', 0)),
+            (True, False, 5750, 230, 'DIAGNOSTIC_FINISHED', ('COMPLETED_WITH_DIFFERENCES', 2)),
+            (False, True, 5750, 230, 'DIAGNOSTIC_FINISHED', ('COMPLETED_WITH_DIFFERENCES', 2)),
+            (True, True, 5749, 230, 'DIAGNOSTIC_FINISHED', ('COMPLETED_WITH_DIFFERENCES', 2)),
+            (True, True, 5750, 229, 'DIAGNOSTIC_FINISHED', ('COMPLETED_WITH_DIFFERENCES', 2)),
+            (True, True, 5750, 230, 'DIAGNOSTIC_STOPPED', ('COMPLETED_WITH_DIFFERENCES', 2)),
+        ]:
+            with self.subTest(equal=equal, byte_equal=byte_equal, steps=steps, commands=commands, status=status):
+                case['status'] = status
+                self.assertEqual(self.classify(case, equal, steps, commands, raw_jsonl_bytes_equal=byte_equal), expected)
+
+    def test_unchecked_byte_equality_cannot_claim_exact_reproduction(self):
+        case = {'status': 'DIAGNOSTIC_FINISHED', 'stop_reason': None}
+        self.assertEqual(self.classify(case, True, 5750, 230), ('COMPLETED_WITH_DIFFERENCES', 2))
 
     def test_runtime_or_final_output_failure_is_not_a_completed_comparison(self):
         for case, steps, commands in [

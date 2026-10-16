@@ -1,6 +1,7 @@
 """Behavioral fixtures for exact historical trajectory comparison (stdlib only)."""
 import copy
 import gzip
+import hashlib
 import importlib.util
 import json
 from pathlib import Path
@@ -77,15 +78,57 @@ class ComparisonTests(unittest.TestCase):
         self.assertEqual(report['first_numeric_difference']['index'], [1, 0])
         self.assertEqual(report['first_numeric_difference']['field'], 'matrix')
 
-    def test_instrumentation_and_int_float_equivalence_do_not_change_history(self):
+    def test_extra_top_level_field_is_a_structural_difference(self):
         historical = [row()]
         actual = copy.deepcopy(historical)
-        actual[0]['full_qpos'][0] = 0
         actual[0]['diagnostics'] = {'new_measurement': 42}
         report = self.compare(actual, historical)
+        self.assertFalse(report['historical_trajectory_equal'])
+        self.assertEqual(report['first_structure_difference']['kind'], 'extra_field')
+        self.assertEqual(report['first_difference']['field'], 'diagnostics')
+        self.assertEqual(report['schema']['actual_only_keys'], ['diagnostics'])
+
+    def test_nested_extra_and_missing_fields_are_both_differences(self):
+        historical = [row()]
+        historical[0]['metadata'] = {'samples': [{'gain': 1.0}]}
+        for kind in ('extra_field', 'missing_field'):
+            with self.subTest(kind=kind):
+                actual = copy.deepcopy(historical)
+                if kind == 'extra_field':
+                    actual[0]['metadata']['samples'][0]['extra'] = None
+                    key = 'extra'
+                else:
+                    del actual[0]['metadata']['samples'][0]['gain']
+                    key = 'gain'
+                report = self.compare(actual, historical)
+                self.assertFalse(report['historical_trajectory_equal'])
+                self.assertEqual(report['first_structure_difference']['kind'], kind)
+                self.assertEqual(report['first_difference']['field'], 'metadata')
+                self.assertEqual(report['first_difference']['index'], ['samples', 0, key])
+
+    def test_numeric_equality_is_separate_from_raw_serialization_equality(self):
+        self.compare([row()], [row()])
+        # Same JSON values: changed order, whitespace, newline and numeric spelling.
+        actual = row()
+        actual['full_qpos'][0] = 0
+        self.actual.write_bytes(json.dumps(actual, sort_keys=True, separators=(',', ':')).encode())
+        report = compare_traces(self.actual, self.historical)
         self.assertTrue(report['historical_trajectory_equal'])
         self.assertIsNone(report['first_difference'])
-        self.assertEqual(report['schema']['actual_only_keys'], ['diagnostics'])
+        self.assertFalse(report['raw_jsonl_bytes_equal'])
+        self.assertEqual(report['raw_jsonl_sha256']['actual'], hashlib.sha256(self.actual.read_bytes()).hexdigest())
+        self.assertEqual(report['raw_jsonl_sha256']['historical'], hashlib.sha256(self.historical.read_bytes()).hexdigest())
+
+    def test_gzip_comparison_hashes_decompressed_bytes(self):
+        self.compare([row()], [row()])
+        compressed = self.historical.with_suffix('.jsonl.gz')
+        with gzip.GzipFile(filename=str(compressed), mode='wb', mtime=1234) as stream:
+            stream.write(self.historical.read_bytes())
+        report = compare_traces(self.actual, compressed)
+        self.assertTrue(report['historical_trajectory_equal'])
+        self.assertTrue(report['raw_jsonl_bytes_equal'])
+        self.assertEqual(report['raw_jsonl_sha256']['historical'], hashlib.sha256(self.historical.read_bytes()).hexdigest())
+        self.assertNotEqual(report['raw_jsonl_sha256']['historical'], hashlib.sha256(compressed.read_bytes()).hexdigest())
 
     def test_truncated_trace_cannot_pass_matching_prefix(self):
         report = self.compare([row()], [row(), row(1)])
@@ -189,6 +232,33 @@ class ComparisonTests(unittest.TestCase):
                                    capture_output=True, text=True)
         self.assertEqual(completed.returncode, 0, completed.stderr)
         self.assertTrue(json.loads(output.read_text())['historical_trajectory_equal'])
+
+    def test_cli_exit_code_rejects_structural_numeric_and_byte_only_differences(self):
+        for change in ('top_level_extra', 'nested_extra', 'nested_missing', 'numeric', 'shape', 'serialization'):
+            with self.subTest(change=change):
+                historical = [row()]
+                historical[0]['metadata'] = {'samples': [{'gain': 1.0}]}
+                actual = copy.deepcopy(historical)
+                if change == 'top_level_extra':
+                    actual[0]['extra'] = 1
+                elif change == 'nested_extra':
+                    actual[0]['metadata']['samples'][0]['extra'] = None
+                elif change == 'nested_missing':
+                    del actual[0]['metadata']['samples'][0]['gain']
+                elif change == 'numeric':
+                    actual[0]['full_qpos'][0] = 1e-16
+                elif change == 'shape':
+                    actual[0]['full_qvel'].pop()
+                self.compare(actual, historical)
+                if change == 'serialization':
+                    self.actual.write_text(json.dumps(actual[0], sort_keys=True) + '\n')
+                output = Path(self.directory.name) / 'comparison.json'
+                completed = subprocess.run([sys.executable, str(MODULE_PATH), '--actual', str(self.actual),
+                    '--historical', str(self.historical), '--output', str(output)], capture_output=True, text=True)
+                self.assertEqual(completed.returncode, 2, completed.stderr)
+                report = json.loads(output.read_text())
+                self.assertEqual(report['historical_trajectory_equal'], change == 'serialization')
+                self.assertFalse(report['raw_jsonl_bytes_equal'])
 
 
 if __name__ == '__main__':

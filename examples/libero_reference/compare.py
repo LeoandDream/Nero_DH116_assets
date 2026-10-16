@@ -1,11 +1,12 @@
 """Exact, read-only comparison and descriptive metrics for diagnostic JSONL traces.
 
-Historical object fields define the comparison surface; additional instrumentation
-is reported separately. Warning dictionaries are compared in full. No tolerance,
-rounding, task-success threshold, dynamics, or controller is introduced here.
+All JSON fields are compared bidirectionally, including nested dictionaries.
+Decompressed JSONL byte identity is reported separately from numeric equality.
+No tolerance, rounding, task-success threshold, dynamics, or controller is added.
 """
 import argparse
 import gzip
+import hashlib
 import json
 import math
 from pathlib import Path
@@ -39,6 +40,16 @@ def _read_trace(path):
     return rows
 
 
+def _raw_sha256(path):
+    """Hash original JSONL bytes, decompressing gzip without normalizing text."""
+    digest = hashlib.sha256()
+    opener = gzip.open if Path(path).suffix == '.gz' else open
+    with opener(path, 'rb') as stream:
+        for block in iter(lambda: stream.read(1024 * 1024), b''):
+            digest.update(block)
+    return digest.hexdigest()
+
+
 def _category(field):
     if field in ACTIONS:
         return 'actions'
@@ -49,7 +60,7 @@ def _category(field):
     return 'warnings' if field == 'warnings' else 'other'
 
 
-def _walk(actual, historical, index=(), strict_keys=False):
+def _walk(actual, historical, index=()):
     """Yield unequal leaves/structures plus all shared numeric differences."""
     if _number(actual) and _number(historical):
         yield {'kind': 'numeric', 'index': list(index), 'actual': actual,
@@ -60,17 +71,17 @@ def _walk(actual, historical, index=(), strict_keys=False):
                 yield {'kind': 'missing_field', 'index': list(index + (key,)),
                        'actual': None, 'historical': value, 'missing_from': 'actual'}
             else:
-                yield from _walk(actual[key], value, index + (key,), strict_keys)
-        if strict_keys:
-            for key in actual.keys() - historical.keys():
+                yield from _walk(actual[key], value, index + (key,))
+        for key, value in actual.items():
+            if key not in historical:
                 yield {'kind': 'extra_field', 'index': list(index + (key,)),
-                       'actual': actual[key], 'historical': None, 'missing_from': 'historical'}
+                       'actual': value, 'historical': None, 'missing_from': 'historical'}
     elif isinstance(actual, list) and isinstance(historical, list):
         if len(actual) != len(historical):
             yield {'kind': 'shape', 'index': list(index), 'actual_length': len(actual),
                    'historical_length': len(historical)}
         for i, (a, h) in enumerate(zip(actual, historical)):
-            yield from _walk(a, h, index + (i,), strict_keys)
+            yield from _walk(a, h, index + (i,))
     elif type(actual) is not type(historical) or actual != historical:
         yield {'kind': 'value', 'index': list(index), 'actual': actual, 'historical': historical}
 
@@ -150,19 +161,23 @@ def compare_traces(actual_path, historical_path, reset_z=.97):
 
     Rows are aligned by zero-based physics row. The earliest difference uses
     historical JSON field order, then nested list order. Macro is row // 25,
-    matching the archived 500 Hz physics / 20 Hz command helper. Extras within
-    historical objects are instrumentation, except warnings, which compare fully.
+    matching the archived 500 Hz physics / 20 Hz command helper. Missing and
+    extra keys are differences at every depth. Byte identity is independent of
+    semantic equality: whitespace, key order and number spelling affect hashes.
     Adjacent <stem>-result.json files are optional and read without modification.
     """
     if not _number(reset_z) or not math.isfinite(reset_z):
         raise ValueError('reset_z must be finite')
     actual = _read_trace(actual_path)
     historical = _read_trace(historical_path)
+    hashes = {'actual': _raw_sha256(actual_path), 'historical': _raw_sha256(historical_path)}
     categories = {key: {'equal': True, 'first_difference': None} for key in
                   ('actions', 'state', 'contacts', 'warnings', 'other')}
     report = {'comparison': 'exact JSON numeric equality; no tolerance',
               'alignment': 'zero-based physics row; macro = row // 25 from archived helper',
               'historical_trajectory_equal': True, 'first_difference': None,
+              'raw_jsonl_bytes_equal': hashes['actual'] == hashes['historical'],
+              'raw_jsonl_sha256': hashes,
               'first_numeric_difference': None, 'first_structure_difference': None,
               'counts': {'actual': len(actual), 'historical': len(historical)},
               'max_abs_diff_by_field': {}, 'categories': categories}
@@ -187,7 +202,7 @@ def compare_traces(actual_path, historical_path, reset_z=.97):
                 record(dict(context, kind='missing_field', field=field, index=[],
                             actual=None, historical=value, missing_from='actual'), _category(field))
                 continue
-            for difference in _walk(a[field], value, strict_keys=field == 'warnings'):
+            for difference in _walk(a[field], value):
                 event = dict(context, field=field, **difference)
                 if difference['kind'] == 'numeric':
                     previous = report['max_abs_diff_by_field'].get(field)
@@ -197,9 +212,10 @@ def compare_traces(actual_path, historical_path, reset_z=.97):
                             'index': event['index'], 'actual': event['actual'],
                             'historical': event['historical']}
                 record(event, _category(field))
-        if 'warnings' in a and 'warnings' not in h:
-            record(dict(context, kind='extra_field', field='warnings', index=[],
-                        actual=a['warnings'], historical=None), 'warnings')
+        for field, value in a.items():
+            if field not in h:
+                record(dict(context, kind='extra_field', field=field, index=[],
+                            actual=value, historical=None, missing_from='historical'), _category(field))
     if len(actual) != len(historical):
         i = min(len(actual), len(historical))
         remaining = actual[i] if i < len(actual) else historical[i]
@@ -217,8 +233,8 @@ def compare_traces(actual_path, historical_path, reset_z=.97):
     report['metrics'] = {'actual': _metrics(actual, actual_path, reset_z),
                          'historical': _metrics(historical, historical_path, reset_z)}
     report['limitations'] = [
-        'Exact equality concerns recorded historical trajectory fields, not task success.',
-        'Extra instrumentation is excluded from historical equality except warning dictionaries.',
+        'Exact semantic equality requires identical fields at every depth and exactly equal values; it does not assign task success.',
+        'Raw JSONL SHA256 equality is separate and hashes decompressed bytes without text normalization.',
         'Contact body pairs come only from optional result sidecars; they are not recorded per physics row.',
         'Settled metrics require exactly 5750 rows and the archived settle/approach boundary at 249/250.',
         'Source result status, stop_reason, and success signals are preserved without reinterpretation.']
@@ -236,8 +252,7 @@ def main():
     args = parser.parse_args()
     report = compare_traces(args.actual, args.historical, reset_z=args.reset_z)
     Path(args.output).write_text(json.dumps(report, indent=2, allow_nan=False) + '\n', encoding='utf-8')
-    # Exit 0 means a report was produced; equality is an explicit field in that report.
-    return 0
+    return 0 if report['historical_trajectory_equal'] and report['raw_jsonl_bytes_equal'] else 2
 
 
 if __name__ == '__main__':
