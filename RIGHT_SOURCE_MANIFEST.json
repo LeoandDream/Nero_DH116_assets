@@ -1,0 +1,721 @@
+{
+  "schema_version": 1,
+  "variant": "DH116-R000-A1",
+  "definition": "URDF mechanics and linear mimic, with separately sourced MJCF simulation parameters",
+  "upstream": {
+    "repository": "https://github.com/sorrowfeng/leadtron_hand_descriptions",
+    "commit": "14275cfe32cce1fe13a16df712e8a0e610a0227e",
+    "urdf": {
+      "path": "DH116/DH116_URDF_MJCF_Files/DH116-R000-A1/urdf/DH116-R000-A1.urdf",
+      "sha256": "c3ec0a6bd0e39477554e8a1a04b7a7e44004737a5a65f86b1c02bc4848911525"
+    },
+    "mjcf": {
+      "path": "DH116/DH116_URDF_MJCF_Files/DH116-R000-A1/mjcf/DH116-R000-A1.xml",
+      "sha256": "a757fdd0d3c23c274e201426acc516ce107a6df63b7f9d5a1f780eb8a0a9021c"
+    }
+  },
+  "mechanical_source": {
+    "path": "DH116/DH116_URDF_MJCF_Files/DH116-R000-A1/urdf/DH116-R000-A1.urdf",
+    "fields": [
+      "link mass",
+      "inertial origin and full inertia tensor",
+      "joint parent and child",
+      "joint origin (URDF RzRyRx to wxyz quaternion)",
+      "joint type",
+      "axis",
+      "lower and upper limits",
+      "linear mimic multiplier and offset"
+    ],
+    "counts": {
+      "links": 17,
+      "joints": 16,
+      "moving_joints": 11,
+      "fixed_joints": 5,
+      "active_joints": 6,
+      "mimic_joints": 5
+    },
+    "source_effort_velocity": "zero values are preserved in the source URDF but are unspecified physical actuator capabilities, not applied as zero force limits"
+  },
+  "simulation_parameter_sources": {
+    "joint": {
+      "source": "DH116/DH116_URDF_MJCF_Files/DH116-R000-A1/mjcf/DH116-R000-A1.xml:default/joint",
+      "values": {
+        "damping": "2.0",
+        "armature": "0.01",
+        "frictionloss": "0"
+      }
+    },
+    "position_actuator": {
+      "source": "DH116/DH116_URDF_MJCF_Files/DH116-R000-A1/mjcf/DH116-R000-A1.xml:actuator/position",
+      "kp": "50",
+      "kv": "2.0",
+      "ctrlrange_source": "DH116/DH116_URDF_MJCF_Files/DH116-R000-A1/urdf/DH116-R000-A1.urdf:joint/limit lower,upper"
+    },
+    "equality_solver": {
+      "source": "DH116/DH116_URDF_MJCF_Files/DH116-R000-A1/mjcf/DH116-R000-A1.xml:default/equality",
+      "values": {
+        "solref": "0.004 1",
+        "solimp": "0.9 0.99 0.001 0.5 2"
+      }
+    },
+    "hand_contact": {
+      "source": "DH116/DH116_URDF_MJCF_Files/DH116-R000-A1/mjcf/DH116-R000-A1.xml:default/geom",
+      "values": {
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    "coupling_override": {
+      "source": "DH116/DH116_URDF_MJCF_Files/DH116-R000-A1/urdf/DH116-R000-A1.urdf:joint/mimic",
+      "law": "q_follower = offset + multiplier * q_driver",
+      "upstream_mjcf_quadratic_terms_used": false
+    },
+    "contact_activation_override": {
+      "source": "DH116/DH116_URDF_MJCF_Files/DH116-R000-A1/urdf/DH116-R000-A1.urdf:link/collision",
+      "contype": 1,
+      "conaffinity": 1,
+      "upstream_mjcf_selective_contact_masks_used": false
+    },
+    "model_options_and_arm_motors": {
+      "source": "mjcf/nero_dh116.xml",
+      "preservation": "all non-hand XML fields unchanged"
+    }
+  },
+  "collision": {
+    "profile": "coarse17",
+    "representation": "17 unmodified per-link URDF STL meshes, convexified by MuJoCo",
+    "collision_geoms": 17,
+    "new_contact_exclusions": [],
+    "precision": "coarse convex hull approximation; not an exact concave triangle-surface collision model",
+    "left_hand_collision_proxies_used": false
+  },
+  "interface": {
+    "parent": "robot0_gripper_flange",
+    "hand_base_transform": {
+      "pos": [
+        0,
+        0,
+        0
+      ],
+      "quat_wxyz": [
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    "source": "existing left composite application interface; base mesh mounting interface remains at its source origin",
+    "copied_metadata": [
+      "gripper0_eef zero-mass body",
+      "gripper0_grip_site",
+      "gripper0_grip_site_cylinder",
+      "gripper0_ft_frame",
+      "existing force/torque sensors"
+    ]
+  },
+  "active_control_order": [
+    "finger11",
+    "finger12",
+    "finger21",
+    "finger31",
+    "finger41",
+    "finger51"
+  ],
+  "state_dim": 18,
+  "control_dim": 13,
+  "control_semantics": "first 7 motor torques in Nm; final 6 independent joint angle targets in rad; passive mimic joints have no control channel",
+  "reset": {
+    "keyframe": "right_open",
+    "arm": "first 7 qpos of left composite keyframe",
+    "hand_active": "URDF lower limits (all zero)",
+    "hand_followers": "URDF linear mimic offsets",
+    "ctrl": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "composite_template": {
+    "file": "mjcf/nero_dh116.xml",
+    "sha256": "c446124b7d938aa6e00ba5914047001de66c2a2c162e7dea1644437e5a85cb33"
+  },
+  "meshes": [
+    {
+      "link": "base_link",
+      "upstream_path": "DH116/DH116_URDF_MJCF_Files/DH116-R000-A1/meshes/base_link.STL",
+      "file": "meshes/dh116_right/source/base_link.STL",
+      "sha256": "094504fed409afe137eafa6643c36f081934df873ef1cf9924ebb9725436b161",
+      "bytes": 5088834,
+      "format": "binary STL",
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "role": "unaltered URDF visual and collision mesh; collision uses MuJoCo convex hull"
+    },
+    {
+      "link": "finger11_link",
+      "upstream_path": "DH116/DH116_URDF_MJCF_Files/DH116-R000-A1/meshes/finger11_link.STL",
+      "file": "meshes/dh116_right/source/finger11_link.STL",
+      "sha256": "5659ee7dd15833a86f30c2138685baf48671fa7458a79cbb1d611ddb7f3648c8",
+      "bytes": 209684,
+      "format": "binary STL",
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "role": "unaltered URDF visual and collision mesh; collision uses MuJoCo convex hull"
+    },
+    {
+      "link": "finger12_link",
+      "upstream_path": "DH116/DH116_URDF_MJCF_Files/DH116-R000-A1/meshes/finger12_link.STL",
+      "file": "meshes/dh116_right/source/finger12_link.STL",
+      "sha256": "8807c48538b9396e1d132df7c5cf6ee0a44c28c4dcb759b5b00a74003b715e67",
+      "bytes": 1073834,
+      "format": "binary STL",
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "role": "unaltered URDF visual and collision mesh; collision uses MuJoCo convex hull"
+    },
+    {
+      "link": "finger13_link",
+      "upstream_path": "DH116/DH116_URDF_MJCF_Files/DH116-R000-A1/meshes/finger13_link.STL",
+      "file": "meshes/dh116_right/source/finger13_link.STL",
+      "sha256": "594501a21c86d1d19b73cf17572b7a04ae488c5fee4b623e25c618dd15eb3419",
+      "bytes": 651084,
+      "format": "binary STL",
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "role": "unaltered URDF visual and collision mesh; collision uses MuJoCo convex hull"
+    },
+    {
+      "link": "finger14_link",
+      "upstream_path": "DH116/DH116_URDF_MJCF_Files/DH116-R000-A1/meshes/finger14_link.STL",
+      "file": "meshes/dh116_right/source/finger14_link.STL",
+      "sha256": "c58b2a741f13cbe1da9b6bbffb0ce6acf97de28b829fe45ea65458313efff449",
+      "bytes": 310884,
+      "format": "binary STL",
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "role": "unaltered URDF visual and collision mesh; collision uses MuJoCo convex hull"
+    },
+    {
+      "link": "finger21_link",
+      "upstream_path": "DH116/DH116_URDF_MJCF_Files/DH116-R000-A1/meshes/finger21_link.STL",
+      "file": "meshes/dh116_right/source/finger21_link.STL",
+      "sha256": "7162d86cefa849458536cbb77968560dbf4e6c7a8b1734777640f9da1f828886",
+      "bytes": 1593384,
+      "format": "binary STL",
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "role": "unaltered URDF visual and collision mesh; collision uses MuJoCo convex hull"
+    },
+    {
+      "link": "finger22_link",
+      "upstream_path": "DH116/DH116_URDF_MJCF_Files/DH116-R000-A1/meshes/finger22_link.STL",
+      "file": "meshes/dh116_right/source/finger22_link.STL",
+      "sha256": "5ebb8a2084495cb9e87b6ee531681500cfe5a37280320e97270d6e52c804081d",
+      "bytes": 839284,
+      "format": "binary STL",
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "role": "unaltered URDF visual and collision mesh; collision uses MuJoCo convex hull"
+    },
+    {
+      "link": "finger23_link",
+      "upstream_path": "DH116/DH116_URDF_MJCF_Files/DH116-R000-A1/meshes/finger23_link.STL",
+      "file": "meshes/dh116_right/source/finger23_link.STL",
+      "sha256": "ccbd2de17dac2fe356e4275240f5f00f8eee01dd2f32a44fc5b1e150f93d99f6",
+      "bytes": 293884,
+      "format": "binary STL",
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "role": "unaltered URDF visual and collision mesh; collision uses MuJoCo convex hull"
+    },
+    {
+      "link": "finger31_link",
+      "upstream_path": "DH116/DH116_URDF_MJCF_Files/DH116-R000-A1/meshes/finger31_link.STL",
+      "file": "meshes/dh116_right/source/finger31_link.STL",
+      "sha256": "2d4ec902f4b2d06872cfbda2e5a63f387aa82dfd522fd44da5e38b83f90cf2b6",
+      "bytes": 1593384,
+      "format": "binary STL",
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "role": "unaltered URDF visual and collision mesh; collision uses MuJoCo convex hull"
+    },
+    {
+      "link": "finger32_link",
+      "upstream_path": "DH116/DH116_URDF_MJCF_Files/DH116-R000-A1/meshes/finger32_link.STL",
+      "file": "meshes/dh116_right/source/finger32_link.STL",
+      "sha256": "f3cf0d1634338d331bc58ae7838023925a1654003f5728423de25808f490821e",
+      "bytes": 686284,
+      "format": "binary STL",
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "role": "unaltered URDF visual and collision mesh; collision uses MuJoCo convex hull"
+    },
+    {
+      "link": "finger33_link",
+      "upstream_path": "DH116/DH116_URDF_MJCF_Files/DH116-R000-A1/meshes/finger33_link.STL",
+      "file": "meshes/dh116_right/source/finger33_link.STL",
+      "sha256": "2082e780c44d9e2ac91a9c355c3751f084fcbb42c39e33961178b81e5b3ce147",
+      "bytes": 293884,
+      "format": "binary STL",
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "role": "unaltered URDF visual and collision mesh; collision uses MuJoCo convex hull"
+    },
+    {
+      "link": "finger41_link",
+      "upstream_path": "DH116/DH116_URDF_MJCF_Files/DH116-R000-A1/meshes/finger41_link.STL",
+      "file": "meshes/dh116_right/source/finger41_link.STL",
+      "sha256": "5366f649baa0c5c29cc1afdbcc6163b2bcb9001f0b9b8ae69a213f5209860289",
+      "bytes": 1593384,
+      "format": "binary STL",
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "role": "unaltered URDF visual and collision mesh; collision uses MuJoCo convex hull"
+    },
+    {
+      "link": "finger42_link",
+      "upstream_path": "DH116/DH116_URDF_MJCF_Files/DH116-R000-A1/meshes/finger42_link.STL",
+      "file": "meshes/dh116_right/source/finger42_link.STL",
+      "sha256": "4382f6f699a2cb342f00f5bf4ddbe20b7d2b664b522c5abcd49cfee551e748ae",
+      "bytes": 839284,
+      "format": "binary STL",
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "role": "unaltered URDF visual and collision mesh; collision uses MuJoCo convex hull"
+    },
+    {
+      "link": "finger43_link",
+      "upstream_path": "DH116/DH116_URDF_MJCF_Files/DH116-R000-A1/meshes/finger43_link.STL",
+      "file": "meshes/dh116_right/source/finger43_link.STL",
+      "sha256": "4e0b20fc9c464825b466d3ca51ff4557f70d4a3ea935a00b09ad5639722251df",
+      "bytes": 293884,
+      "format": "binary STL",
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "role": "unaltered URDF visual and collision mesh; collision uses MuJoCo convex hull"
+    },
+    {
+      "link": "finger51_link",
+      "upstream_path": "DH116/DH116_URDF_MJCF_Files/DH116-R000-A1/meshes/finger51_link.STL",
+      "file": "meshes/dh116_right/source/finger51_link.STL",
+      "sha256": "f1b5983e1cd4b29f5e4609001c525e93ff80bb1d921711a6327fd8e688fad1db",
+      "bytes": 1593384,
+      "format": "binary STL",
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "role": "unaltered URDF visual and collision mesh; collision uses MuJoCo convex hull"
+    },
+    {
+      "link": "finger52_link",
+      "upstream_path": "DH116/DH116_URDF_MJCF_Files/DH116-R000-A1/meshes/finger52_link.STL",
+      "file": "meshes/dh116_right/source/finger52_link.STL",
+      "sha256": "7c5f953a3cde495eae505dfa3ea248e768c69ab911c21f61825ddb42b4531994",
+      "bytes": 617484,
+      "format": "binary STL",
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "role": "unaltered URDF visual and collision mesh; collision uses MuJoCo convex hull"
+    },
+    {
+      "link": "finger53_link",
+      "upstream_path": "DH116/DH116_URDF_MJCF_Files/DH116-R000-A1/meshes/finger53_link.STL",
+      "file": "meshes/dh116_right/source/finger53_link.STL",
+      "sha256": "63eb67492fce45f80b798d9ead4d194a9eafdae1ed6c0893820222ef3ffedbf1",
+      "bytes": 353384,
+      "format": "binary STL",
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "role": "unaltered URDF visual and collision mesh; collision uses MuJoCo convex hull"
+    }
+  ],
+  "inherited_nonhand_assets": [
+    {
+      "file": "meshes/nero/mount0_pedestal-f96ff12b.stl",
+      "sha256": "f96ff12bfb347c77580e4392556b15e47ef7228711c45b0f1193b100af22866a"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_base_link_0-9b755fcc.obj",
+      "sha256": "9b755fcc0c0fc1a1b1e0736f2d09a5e2db149b30f2ce713d82949a3b1f3e6fe2"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_base_link_1-9050d662.obj",
+      "sha256": "9050d662cba0a31f627fc6cfe9b474205e999630ffc667db779120f807b5aa3a"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_base_link_2-840973e3.obj",
+      "sha256": "840973e30bb9c02d12ee66c1797e314af7d276e9faa03d609d7cae153a387586"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_base_link_3-694f85c0.obj",
+      "sha256": "694f85c0d797332e9b9964d134626c0a13592ff1ca45b344ce42c12b45d070c6"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_base_link_4-eb7627e7.obj",
+      "sha256": "eb7627e75e3210c52a0db9fb5f8c911b681af10f9ac76db806f67705a422a0e5"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_base_link_5-bfa96b97.obj",
+      "sha256": "bfa96b97d713b4a31d4229a399179db38cdd1b99d2a810265f53546866f1ee6d"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_base_link_6-1dd4555c.obj",
+      "sha256": "1dd4555c303d188db55803760c5d9a720f869610c08c9cf6833d2457c763b3f9"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_base_link_7-41070495.obj",
+      "sha256": "41070495a20f2b2f7b4ec0b2bd45654a496d48dbfd480850c4a999f31cd0d1eb"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_link1_0-64d58a3f.obj",
+      "sha256": "64d58a3fe8b73b90b9b7c0a8b86dd60af829abbba7fb4df6e9c0fcabe135ed9a"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_link1_1-7b2c529b.obj",
+      "sha256": "7b2c529b61b96ffc4eb81a7b1fed20eb3bd58bc854cb04a83f75eefbb2e27a09"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_link1_2-ee80fad0.obj",
+      "sha256": "ee80fad09a62aa67c9b6adb464918b8c02d209f35332252ad8f10f549ccc3bd8"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_link1_3-fa81492e.obj",
+      "sha256": "fa81492edfdb88b27bea2e6b17a8351aa8bde6fbffcd0aa396278726d2737972"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_link1_4-9687d613.obj",
+      "sha256": "9687d6136442210287287ad950aee9b9bbd67b9fb41228a99ab9b85d53b10609"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_link1_5-0bebb03b.obj",
+      "sha256": "0bebb03b65a19b1df2d14f897082df2a3bbc2dee207b1b4c7f398833d304215c"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_link1_6-8b8756ee.obj",
+      "sha256": "8b8756eefdb6c92b43a9bd3ae10529c02c1f620c26af63b36ffdcaf0b35c6a84"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_link1_7-82b447f9.obj",
+      "sha256": "82b447f9246138fe899786f1d5111a4a44738a2789351f80a924bd5a085346a8"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_link2_0-488533e9.obj",
+      "sha256": "488533e997702e2c9dfcd76accbaab0e2c477d345859f0133900a60d745170f6"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_link2_1-1bab92d0.obj",
+      "sha256": "1bab92d0ee381b91852c929d5b9ab5c98f9f37f7394c1d0dfaf36bfd750b6842"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_link2_2-a26e60e1.obj",
+      "sha256": "a26e60e118061267a04548ad5b7cfbb0d5d37ddba84a1c02553631c478153e39"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_link2_3-6461873d.obj",
+      "sha256": "6461873d7f81c64407a1b55c90cbeedeb606d5ed79b470acb5ba8d1955ee24da"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_link2_4-a688faa7.obj",
+      "sha256": "a688faa745249c7345baf0991ee19852f198795dbba0ce507480a752b99442ae"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_link3_0-c42d7ac7.obj",
+      "sha256": "c42d7ac7801f587dcbb4f344a52f66b6cccefe711e2c3de984ba67bd9ecb4df9"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_link3_1-89b20fd9.obj",
+      "sha256": "89b20fd9fb7d2167e8a63a3fe66dd3fc4df6eb16da83c233c21ad558d644e6a2"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_link3_2-7b6481a2.obj",
+      "sha256": "7b6481a25f8b79ae12baec6ef3aef08e60851cb766b4b16cdfc74a4cab7a98d2"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_link3_3-0cd99a08.obj",
+      "sha256": "0cd99a08311544c0395ab396a3fd4174f9b05573eceb00942cd34db901d84c43"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_link3_4-a50f3d4d.obj",
+      "sha256": "a50f3d4d74ecfbf179c96835161edb6d9461d5f041c173649450f32ba9216c02"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_link3_5-30d354b7.obj",
+      "sha256": "30d354b7d0f72b7999a04fff3131feafd516a206d938a4e6729c1d1761d3bcb0"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_link3_6-b0e55916.obj",
+      "sha256": "b0e559169ec7b88b14fcdb51794921d5365ff206fe299416e0206b71f2008338"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_link3_7-57de8162.obj",
+      "sha256": "57de8162ef5f3bfc6e830e1df69c7cd937adee7a0e88e0519bd7fd32162a84f9"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_link4_0-b10bbb1b.obj",
+      "sha256": "b10bbb1b389c8023583cd60ba5d4b07d55f2360a46a603104b05437a8ae777af"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_link4_1-3510fe63.obj",
+      "sha256": "3510fe633836557aa4731bda53add70d222b0925317c255571bf3d4d7f6d4623"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_link4_2-6fe5f5ba.obj",
+      "sha256": "6fe5f5bab68a024c5df9c80c08cc484b722bb0936168eaf04be9b26facf9031b"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_link4_3-160b1bca.obj",
+      "sha256": "160b1bca9c21faa58859e6ef995bd0289dc52ceb67d59678e7d53cb87adcaa72"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_link4_4-6ceb0377.obj",
+      "sha256": "6ceb03776a36c23cab1c605208c0193dabe6fad662d3a76a14eb0f1a24b14a6c"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_link4_5-61a31fef.obj",
+      "sha256": "61a31fef8a5bf2e6c79be2d617d8510bbd18fdb08114a9562fa43f5c748182f6"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_link5_0-8e811e87.obj",
+      "sha256": "8e811e875673123e2bd95c3c781864f0ef43d0b011d867cc0c167a5851eaae2e"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_link5_1-e06d88f5.obj",
+      "sha256": "e06d88f549456d261db9641581cfa01d93601cbf7b06e9d050a3df23761c9798"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_link5_2-3d339924.obj",
+      "sha256": "3d33992483c63c40ead4a738ae1ca381586b3f98afaf4771b0266308eb53fd0f"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_link5_3-208022a5.obj",
+      "sha256": "208022a56ac77703f8734d7d499a1035365a31e565f48fca7a9fb2ac2be8b277"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_link5_4-384fc2f2.obj",
+      "sha256": "384fc2f28ced1c7d03201cea03eb3202ec717e4a91648cd2f753e8ce57e880a6"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_link5_5-6139f37c.obj",
+      "sha256": "6139f37c5ca00058845dc786d366b19e09d8c4a6a0303729d4f6b034adc107ec"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_link5_6-849a2feb.obj",
+      "sha256": "849a2feb5135bb01a681527a5d1309dbb8b6439a49bbdb4792816167a14a18c9"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_link6_0-4c346805.obj",
+      "sha256": "4c34680552ab1c32ca52a1b9a8c082cfb51e039c4d35a2d6de60b9bc8591a01f"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_link6_1-407a43b8.obj",
+      "sha256": "407a43b83e0ec64dc9a6231e2d2dc3a09680ff210b84df39d41809c0b614d3fa"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_link6_2-8101f8fb.obj",
+      "sha256": "8101f8fbba1436c80c7c322d2b7baf586937fbc82eee8e1d4fedfebc8932a3ed"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_link6_3-98a9a1fd.obj",
+      "sha256": "98a9a1fd33fc4118ec379e4c3c3a76410a98e6eca798a90f60c0d9b8a886d3a5"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_link6_4-40ded262.obj",
+      "sha256": "40ded2622bca88755535091d7ee531c67513210d19f5c9701b868a42f5dbf0d1"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_link7_0-cf4e07dc.obj",
+      "sha256": "cf4e07dc22738c6226230ab80f3b25f816fbce0548c869d617a9f47d34a39f95"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_link7_1-521ec845.obj",
+      "sha256": "521ec8457806102731a4e36c3ad77392257a1fdc2a54b6ec3c96a7ccfb83bbcc"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_link7_2-3eb2079f.obj",
+      "sha256": "3eb2079f00f95b9ed4c5637e351179035b09cb7fc5ede941758f549cbf41caed"
+    },
+    {
+      "file": "meshes/nero/robot0_candidate_nero_link7_3-bd0414fc.obj",
+      "sha256": "bd0414fcdd0cf95fdee6903904c6f74550a1987250ab000c3fa06ec38353a4ad"
+    },
+    {
+      "file": "meshes/nero/robot0_original_urdf_visual_base_link-e85d4a73.obj",
+      "sha256": "e85d4a73ba7b9aec640780d1c4c053cdba03951e82dffae5b72038f796b5a571"
+    },
+    {
+      "file": "meshes/mount/robot0_original_urdf_visual_gripper_flange-adfe6fc7.obj",
+      "sha256": "adfe6fc7b74ac2a3bc253a86a7720b2612053a4e906cb9f5bb0141d246085ab7"
+    },
+    {
+      "file": "meshes/nero/robot0_original_urdf_visual_link1-f8b3c3c7.obj",
+      "sha256": "f8b3c3c76eb65df29fc3fcb18701f81be39f60f1b9a44285462b210416abcc8d"
+    },
+    {
+      "file": "meshes/nero/robot0_original_urdf_visual_link2-11605e3d.obj",
+      "sha256": "11605e3d08b4ff8f29953609ce6edd6ba4e067a588813c22e854051f178a3790"
+    },
+    {
+      "file": "meshes/nero/robot0_original_urdf_visual_link3-dd965e89.obj",
+      "sha256": "dd965e89354e6e296f38cada5d4642f4a69f0c17c71ab9120ea2c76052076631"
+    },
+    {
+      "file": "meshes/nero/robot0_original_urdf_visual_link4-1bd0fb75.obj",
+      "sha256": "1bd0fb7502da58a03ef779c5853e63f6c93303e0858808aa858b107db9859e7a"
+    },
+    {
+      "file": "meshes/nero/robot0_original_urdf_visual_link5-f1f9b607.obj",
+      "sha256": "f1f9b607289edef1db3d9b08443f4048607074bc96c20ab9f186884c0b10637a"
+    },
+    {
+      "file": "meshes/nero/robot0_original_urdf_visual_link6-bc53aecd.obj",
+      "sha256": "bc53aecdb367106d63546953f8b15a1624b573f2a2f4bfb015e62bd60266080c"
+    },
+    {
+      "file": "meshes/nero/robot0_original_urdf_visual_link7-94e2407a.obj",
+      "sha256": "94e2407ab38217c4158026ee81352dc14023c0f1b411c7170f175b8ce54745cc"
+    },
+    {
+      "file": "meshes/mount/robot0_source_flange_part_0-7c6df993.obj",
+      "sha256": "7c6df99313f122093d0632fd9956e21da9592c2a7b53e267bb1ca60a485afb90"
+    },
+    {
+      "file": "meshes/mount/robot0_source_flange_part_1-24b510b6.obj",
+      "sha256": "24b510b6d7d21fb3ecedb42bb8b319eda76bc658cccc6564ebc897729632b0d6"
+    },
+    {
+      "file": "meshes/mount/robot0_source_flange_part_2-c5005972.obj",
+      "sha256": "c500597223128b393b9ffc527bff96c8f9d7b782a258a2dcc27459b199310a0e"
+    },
+    {
+      "file": "meshes/mount/robot0_source_flange_part_3-a1e2dbb0.obj",
+      "sha256": "a1e2dbb01a0dc3e71497b725e88fe799aa4658d3952c56a33c61424f72bc4b54"
+    },
+    {
+      "file": "meshes/mount/robot0_source_flange_part_4-5bfdf6a3.obj",
+      "sha256": "5bfdf6a3094c061466d310f3abee69e801a366487b64fb88db3179a04f361279"
+    },
+    {
+      "file": "meshes/mount/robot0_source_flange_part_5-6668a712.obj",
+      "sha256": "6668a7126ea4beb7012f249a7a037b3ed1edb254cae75957bb19aee1d3143d70"
+    },
+    {
+      "file": "meshes/mount/robot0_source_flange_part_6-91ccc782.obj",
+      "sha256": "91ccc782f3402baa42be3f07ccb62534b85d1375fec76e170afa009e48cc6376"
+    },
+    {
+      "file": "meshes/mount/robot0_source_flange_part_7-4853dcf0.obj",
+      "sha256": "4853dcf02b546afa7e65c663307078defec264e1cbb0fbcd77bed51ecf9cce96"
+    },
+    {
+      "file": "meshes/textures/robot0_original_urdf_visual_base_link_texture-d550d51b.png",
+      "sha256": "d550d51b829f93c390d4af50006acbf016d6fc466fc5d8883b8ee2223881f0c0"
+    },
+    {
+      "file": "meshes/textures/robot0_original_urdf_visual_gripper_flange_texture-abc58d51.png",
+      "sha256": "abc58d5127d7cdf313beb9ec8ee839860a9c6bfbc48c8b8eb6a3f7d8bb63de6f"
+    },
+    {
+      "file": "meshes/textures/robot0_original_urdf_visual_base_link_texture-d550d51b.png",
+      "sha256": "d550d51b829f93c390d4af50006acbf016d6fc466fc5d8883b8ee2223881f0c0"
+    },
+    {
+      "file": "meshes/textures/robot0_original_urdf_visual_link2_texture-4b4174f9.png",
+      "sha256": "4b4174f97f436eb5dccd31148983e6ed15b4ceec7ddce6f0cdb2bda9aa1f7ad3"
+    },
+    {
+      "file": "meshes/textures/robot0_original_urdf_visual_base_link_texture-d550d51b.png",
+      "sha256": "d550d51b829f93c390d4af50006acbf016d6fc466fc5d8883b8ee2223881f0c0"
+    },
+    {
+      "file": "meshes/textures/robot0_original_urdf_visual_link4_texture-7311991b.png",
+      "sha256": "7311991bbb4163306ccd448d3cb5dce960831e712913ed7b782cf209479f5c90"
+    },
+    {
+      "file": "meshes/textures/robot0_original_urdf_visual_link5_texture-4cd94b0a.png",
+      "sha256": "4cd94b0adf5e8a471116c6e74aba956ef5e08f2a383bbbf59ac65b4552417c9c"
+    },
+    {
+      "file": "meshes/textures/robot0_original_urdf_visual_base_link_texture-d550d51b.png",
+      "sha256": "d550d51b829f93c390d4af50006acbf016d6fc466fc5d8883b8ee2223881f0c0"
+    },
+    {
+      "file": "meshes/textures/robot0_original_urdf_visual_base_link_texture-d550d51b.png",
+      "sha256": "d550d51b829f93c390d4af50006acbf016d6fc466fc5d8883b8ee2223881f0c0"
+    }
+  ],
+  "generated_files": [
+    {
+      "file": "urdf/dh116_right.source.urdf",
+      "sha256": "c3ec0a6bd0e39477554e8a1a04b7a7e44004737a5a65f86b1c02bc4848911525"
+    },
+    {
+      "file": "urdf/dh116_right.urdf",
+      "sha256": "1134b2e3ac3afb323dd1b5c11a793dab4c50d18445bec2ff47017c0c1c49a354"
+    },
+    {
+      "file": "mjcf/nero_dh116_right.xml",
+      "sha256": "739d3d29bbfd4a6468fb8b75f4de09b719c0f96abb39508959c1dfc33a84b9cc"
+    }
+  ],
+  "reproduce": "python tools/build_right.py --upstream /path/to/pinned/leadtron_hand_descriptions --output-root /path/to/output"
+}

@@ -1,0 +1,10 @@
+{
+  "cwd": "/data_robot/verification/nero_dh116_right",
+  "commit": "160c8f4076ae39034c28d07c40be9c62c1aa69ac",
+  "projects_hidden": true,
+  "tmp_namespace": true,
+  "upstream_source_cache_absent": true,
+  "git_alternates_absent": true,
+  "python": "/data_robot/verification/nero_dh116_right/.reference-env/bin/python",
+  "PYTHONPATH": null
+}

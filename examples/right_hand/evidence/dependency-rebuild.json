@@ -1,0 +1,446 @@
+{
+  "cwd": "/data_robot/verification/nero_dh116_right",
+  "projects_hidden": true,
+  "tmp_hidden": true,
+  "python_tree_preexisting": false,
+  "venv_preexisting": false,
+  "PYTHONPATH": null,
+  "XDG_CACHE_HOME": "/data_robot/verification/nero_dh116_right/.reference-deps/xdg-cache",
+  "archive_cache_origin": {
+    "source": "/data_robot/verification/nero_dh116_d1b/.reference-deps",
+    "clean_commit": "9b5ee0d38442dcf12bc9f41ec5a0111fb0bd6a7c",
+    "method": "Independent regular-file copies of immutable archive/wheel inputs; no installed interpreter or virtual environment copied",
+    "files": [
+      {
+        "path": "downloads/build/pip-24.0-py3-none-any.whl",
+        "sha256": "ba0d021a166865d2265246961bec0152ff124de910c5cc39f1156ce3fa7c69dc",
+        "source_inode": 112460101,
+        "copy_inode": 112539515,
+        "size": 2110226
+      },
+      {
+        "path": "downloads/build/setuptools-75.8.2-py3-none-any.whl",
+        "sha256": "558e47c15f1811c1fa7adbd0096669bf76c1d3f433f58324df69f3f5ecac4e8f",
+        "source_inode": 112460102,
+        "copy_inode": 112539516,
+        "size": 1229385
+      },
+      {
+        "path": "downloads/build/wheel-0.45.1-py3-none-any.whl",
+        "sha256": "708e7481cc80179af0e556bbf0cc00b8444c7321e2700b8d8580231d13017248",
+        "source_inode": 112460100,
+        "copy_inode": 112539517,
+        "size": 72494
+      },
+      {
+        "path": "downloads/packages/PyOpenGL-3.1.9-py3-none-any.whl",
+        "sha256": "15995fd3b0deb991376805da36137a4ae5aba6ddbb5e29ac1f35462d130a3f77",
+        "source_inode": 112460144,
+        "copy_inode": 112539519,
+        "size": 3190341
+      },
+      {
+        "path": "downloads/packages/PyYAML-6.0.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "sha256": "3ad2a3decf9aaba3d29c8f537ac4b243e36bef957511b4766cb0057d32b0be85",
+        "source_inode": 112460129,
+        "copy_inode": 112539520,
+        "size": 762952
+      },
+      {
+        "path": "downloads/packages/absl_py-2.3.0-py3-none-any.whl",
+        "sha256": "9824a48b654a306168f63e0d97714665f8490b8d89ec7bf2efc24bf67cf579b3",
+        "source_inode": 112460143,
+        "copy_inode": 112539521,
+        "size": 135657
+      },
+      {
+        "path": "downloads/packages/attrs-26.1.0-py3-none-any.whl",
+        "sha256": "c647aa4a12dfbad9333ca4e71fe62ddc36f4e63b2d260a37a8b83d2f043ac309",
+        "source_inode": 112460155,
+        "copy_inode": 112539522,
+        "size": 67548
+      },
+      {
+        "path": "downloads/packages/bddl-1.0.1.tar.gz",
+        "sha256": "1fa4e6e5050b93888ff6fd8455c39bfb29d3864ce06b4c37c0f781f513a2ae26",
+        "source_inode": 112460138,
+        "copy_inode": 112539523,
+        "size": 164809
+      },
+      {
+        "path": "downloads/packages/cloudpickle-3.1.1-py3-none-any.whl",
+        "sha256": "c8c5a44295039331ee9dad40ba100a9c7297b6f988e50e87ccdf3765a668350e",
+        "source_inode": 112460149,
+        "copy_inode": 112539524,
+        "size": 20992
+      },
+      {
+        "path": "downloads/packages/contourpy-1.3.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "sha256": "3859783aefa2b8355697f16642695a5b9792e7a46ab86da1118a4a23a51a33d7",
+        "source_inode": 112460141,
+        "copy_inode": 112539525,
+        "size": 326246
+      },
+      {
+        "path": "downloads/packages/cycler-0.12.1-py3-none-any.whl",
+        "sha256": "85cef7cff222d8644161529808465972e51340599459b8ac3ccbac5a854e0d30",
+        "source_inode": 112460148,
+        "copy_inode": 112539526,
+        "size": 8321
+      },
+      {
+        "path": "downloads/packages/easydict-1.9.tar.gz",
+        "sha256": "3f3f0dab07c299f0f4df032db1f388d985bb57fa4c5be30acd25c5f9a516883b",
+        "source_inode": 112460104,
+        "copy_inode": 112539527,
+        "size": 6430
+      },
+      {
+        "path": "downloads/packages/etils-1.12.2-py3-none-any.whl",
+        "sha256": "4600bec9de6cf5cb043a171e1856e38b5f273719cf3ecef90199f7091a6b3912",
+        "source_inode": 112460145,
+        "copy_inode": 112539528,
+        "size": 167613
+      },
+      {
+        "path": "downloads/packages/evdev-1.9.2.tar.gz",
+        "sha256": "5d3278892ce1f92a74d6bf888cc8525d9f68af85dbe336c95d1c87fb8f423069",
+        "source_inode": 112460110,
+        "copy_inode": 112539529,
+        "size": 33301
+      },
+      {
+        "path": "downloads/packages/fastjsonschema-2.22.2-py3-none-any.whl",
+        "sha256": "0fb3915616adac85ccfdd737d26be1089845d2019819505b42d39888458f74d4",
+        "source_inode": 112460126,
+        "copy_inode": 112539530,
+        "size": 27413
+      },
+      {
+        "path": "downloads/packages/fonttools-4.58.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "sha256": "3c53c6a720ee70cc25746d511ba88c45c95ec510fd258026ed209b0b9e3ba92f",
+        "source_inode": 112460136,
+        "copy_inode": 112539531,
+        "size": 4936194
+      },
+      {
+        "path": "downloads/packages/fsspec-2025.3.2-py3-none-any.whl",
+        "sha256": "2daf8dc3d1dfa65b6aa37748d112773a7a08416f6c70d96b264c96476ecaf711",
+        "source_inode": 112460130,
+        "copy_inode": 112539532,
+        "size": 194435
+      },
+      {
+        "path": "downloads/packages/future-0.18.2.tar.gz",
+        "sha256": "b1bead90b70cf6ec3f0710ae53a525360fa360d306a86583adc6bf83a4db537d",
+        "source_inode": 112460133,
+        "copy_inode": 112539533,
+        "size": 829220
+      },
+      {
+        "path": "downloads/packages/glfw-2.9.0-py2.py27.py3.py30.py31.py32.py33.py34.py35.py36.py37.py38.p39.p310.p311.p312.p313-none-manylinux_2_28_x86_64.whl",
+        "sha256": "4e11271e49eb9bc53431ade022e284d5a59abeace81fe3b178db1bf3ccc0c449",
+        "source_inode": 112460147,
+        "copy_inode": 112539534,
+        "size": 243489
+      },
+      {
+        "path": "downloads/packages/gym-0.25.2.tar.gz",
+        "sha256": "c8323f4c6f37363710b519742a0094316deddc9d8fc9e3f6deac08d6da47150c",
+        "source_inode": 112460106,
+        "copy_inode": 112539535,
+        "size": 734530
+      },
+      {
+        "path": "downloads/packages/gym_notices-0.0.8-py3-none-any.whl",
+        "sha256": "e5f82e00823a166747b4c2a07de63b6560b1acb880638547e0cabf825a01e463",
+        "source_inode": 112460121,
+        "copy_inode": 112539536,
+        "size": 2965
+      },
+      {
+        "path": "downloads/packages/importlib_resources-6.5.2-py3-none-any.whl",
+        "sha256": "789cfdc3ed28c78b67a06acb8126751ced69a3d5f79c095a98298cd8a760ccec",
+        "source_inode": 112460156,
+        "copy_inode": 112539537,
+        "size": 37461
+      },
+      {
+        "path": "downloads/packages/iniconfig-2.3.1-py3-none-any.whl",
+        "sha256": "9121e2c1fdb355232495be3194c8dfe87ccc2d5dee45947b78e68f499790d7a7",
+        "source_inode": 112460114,
+        "copy_inode": 112539538,
+        "size": 7552
+      },
+      {
+        "path": "downloads/packages/jsonschema-4.26.0-py3-none-any.whl",
+        "sha256": "d489f15263b8d200f8387e64b4c3a75f06629559fb73deb8fdfb525f2dab50ce",
+        "source_inode": 112460107,
+        "copy_inode": 112539539,
+        "size": 90630
+      },
+      {
+        "path": "downloads/packages/jsonschema_specifications-2025.9.1-py3-none-any.whl",
+        "sha256": "98802fee3a11ee76ecaca44429fda8a41bff98b00a0f2838151b113f210cc6fe",
+        "source_inode": 112460140,
+        "copy_inode": 112539540,
+        "size": 18437
+      },
+      {
+        "path": "downloads/packages/jupyter_core-5.9.1-py3-none-any.whl",
+        "sha256": "ebf87fdc6073d142e114c72c9e29a9d7ca03fad818c5d300ce2adc1fb0743407",
+        "source_inode": 112460115,
+        "copy_inode": 112539541,
+        "size": 29032
+      },
+      {
+        "path": "downloads/packages/jupytext-1.17.1-py3-none-any.whl",
+        "sha256": "99145b1e1fa96520c21ba157de7d354ffa4904724dcebdcd70b8413688a312de",
+        "source_inode": 112460150,
+        "copy_inode": 112539542,
+        "size": 164286
+      },
+      {
+        "path": "downloads/packages/kiwisolver-1.4.8-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "sha256": "3a96c0e790ee875d65e340ab383700e2b4891677b7fcd30a699146f9384a2bb0",
+        "source_inode": 112460116,
+        "copy_inode": 112539543,
+        "size": 1435109
+      },
+      {
+        "path": "downloads/packages/llvmlite-0.44.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "sha256": "c5d22c3bfc842668168a786af4205ec8e3ad29fb1bc03fd11fd48460d0df64c1",
+        "source_inode": 112460112,
+        "copy_inode": 112539544,
+        "size": 42361858
+      },
+      {
+        "path": "downloads/packages/markdown_it_py-4.2.0-py3-none-any.whl",
+        "sha256": "9f7ebbcd14fe59494226453aed97c1070d83f8d24b6fc3a3bcf9a38092641c4a",
+        "source_inode": 112460157,
+        "copy_inode": 112539545,
+        "size": 91687
+      },
+      {
+        "path": "downloads/packages/matplotlib-3.10.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "sha256": "fdfa07c0ec58035242bc8b2c8aae37037c9a886370eef6850703d7583e19964b",
+        "source_inode": 112460123,
+        "copy_inode": 112539546,
+        "size": 8606464
+      },
+      {
+        "path": "downloads/packages/mdit_py_plugins-0.6.1-py3-none-any.whl",
+        "sha256": "214c82fb2ac524472ab6a5bcab1de80f73b50443e187f401bfd77efbc7c6481d",
+        "source_inode": 112460154,
+        "copy_inode": 112539547,
+        "size": 66663
+      },
+      {
+        "path": "downloads/packages/mdurl-0.1.2-py3-none-any.whl",
+        "sha256": "84008a41e51615a49fc9966191ff91509e3c40b939176e643fd50a5c2196b8f8",
+        "source_inode": 112460134,
+        "copy_inode": 112539548,
+        "size": 9979
+      },
+      {
+        "path": "downloads/packages/mujoco-3.2.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "sha256": "4c6add7cb34dd194ffecab169dca296ef3280eeecb2d4fc647280b6484dac8c8",
+        "source_inode": 112460124,
+        "copy_inode": 112539549,
+        "size": 6137541
+      },
+      {
+        "path": "downloads/packages/nbformat-5.11.1-py3-none-any.whl",
+        "sha256": "cc6698fa75f4fab8755ead786317815f13a6fee3b53311c0abb1a8b51d52f7ec",
+        "source_inode": 112460146,
+        "copy_inode": 112539550,
+        "size": 79849
+      },
+      {
+        "path": "downloads/packages/networkx-3.4.2-py3-none-any.whl",
+        "sha256": "df5d4365b724cf81b8c6a7312509d0c22386097011ad1abe274afd5e9d3bbc5f",
+        "source_inode": 112460151,
+        "copy_inode": 112539551,
+        "size": 1723263
+      },
+      {
+        "path": "downloads/packages/numba-0.61.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+        "sha256": "3945615cd73c2c7eba2a85ccc9c1730c21cd3958bfcf5a44302abae0fb07bb60",
+        "source_inode": 112460135,
+        "copy_inode": 112539552,
+        "size": 3829227
+      },
+      {
+        "path": "downloads/packages/numpy-1.26.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "sha256": "666dbfb6ec68962c033a450943ded891bed2d54e6755e35e5835d63f4f6931d5",
+        "source_inode": 112460142,
+        "copy_inode": 112539553,
+        "size": 18252005
+      },
+      {
+        "path": "downloads/packages/opencv_python-4.11.0.86-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "sha256": "6b02611523803495003bd87362db3e1d2a0454a6a63025dc6658a9830570aa0d",
+        "source_inode": 112460105,
+        "copy_inode": 112539554,
+        "size": 62986597
+      },
+      {
+        "path": "downloads/packages/packaging-25.0-py3-none-any.whl",
+        "sha256": "29572ef2b1f17581046b3a2227d5c611fb25ec70ca1ba8554b24b0e69331a484",
+        "source_inode": 112460119,
+        "copy_inode": 112539555,
+        "size": 66469
+      },
+      {
+        "path": "downloads/packages/pillow-11.2.1-cp311-cp311-manylinux_2_28_x86_64.whl",
+        "sha256": "8f4f3724c068be008c08257207210c138d5f3731af6c155a81c2b09a9eb3a788",
+        "source_inode": 112460137,
+        "copy_inode": 112539556,
+        "size": 4607069
+      },
+      {
+        "path": "downloads/packages/platformdirs-4.13.3-py3-none-any.whl",
+        "sha256": "f6ad7f447f24f8a3b82cce5976387428bff894a0eca6c3488f4a17f153c130c4",
+        "source_inode": 112460120,
+        "copy_inode": 112539557,
+        "size": 32762
+      },
+      {
+        "path": "downloads/packages/pluggy-1.7.0-py3-none-any.whl",
+        "sha256": "7dd7b0d8832ba3cb632c306926ded123429211b83641b35dc5c41ad2d34f9bec",
+        "source_inode": 112460109,
+        "copy_inode": 112539558,
+        "size": 27082
+      },
+      {
+        "path": "downloads/packages/pynput-1.8.1-py2.py3-none-any.whl",
+        "sha256": "42dfcf27404459ca16ca889c8fb8ffe42a9fe54f722fd1a3e130728e59e768d2",
+        "source_inode": 112460131,
+        "copy_inode": 112539559,
+        "size": 91693
+      },
+      {
+        "path": "downloads/packages/pyparsing-3.2.3-py3-none-any.whl",
+        "sha256": "a749938e02d6fd0b59b356ca504a24982314bb090c383e3cf201c95ef7e2bfcf",
+        "source_inode": 112460117,
+        "copy_inode": 112539560,
+        "size": 111120
+      },
+      {
+        "path": "downloads/packages/pytest-8.3.5-py3-none-any.whl",
+        "sha256": "c69214aa47deac29fad6c2a4f590b9c4a9fdb16a403176fe154b79c0b4d4d820",
+        "source_inode": 112460152,
+        "copy_inode": 112539561,
+        "size": 343634
+      },
+      {
+        "path": "downloads/packages/python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+        "sha256": "a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427",
+        "source_inode": 112460113,
+        "copy_inode": 112539562,
+        "size": 229892
+      },
+      {
+        "path": "downloads/packages/python_xlib-0.33-py2.py3-none-any.whl",
+        "sha256": "c3534038d42e0df2f1392a1b30a15a4ff5fdc2b86cfa94f072bf11b10a164398",
+        "source_inode": 112460139,
+        "copy_inode": 112539563,
+        "size": 182185
+      },
+      {
+        "path": "downloads/packages/referencing-0.37.0-py3-none-any.whl",
+        "sha256": "381329a9f99628c9069361716891d34ad94af76e461dcb0335825aecc7692231",
+        "source_inode": 112460127,
+        "copy_inode": 112539564,
+        "size": 26766
+      },
+      {
+        "path": "downloads/packages/robosuite-1.4.1-py3-none-any.whl",
+        "sha256": "62587cd5888d9d3d813f3ffcc7017f6f77efa618952527a0b9bb139ffd0a3741",
+        "source_inode": 112460108,
+        "copy_inode": 112539565,
+        "size": 193518002
+      },
+      {
+        "path": "downloads/packages/rpds_py-2026.9.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "sha256": "136a1c3fe4402b7008bc81cb62ee538481795b61a7e83df88dff3b3f02b726ff",
+        "source_inode": 112460132,
+        "copy_inode": 112539566,
+        "size": 375426
+      },
+      {
+        "path": "downloads/packages/scipy-1.15.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "sha256": "39cb9c62e471b1bb3750066ecc3a3f3052b37751c7c3dfd0fd7e48900ed52982",
+        "source_inode": 112460118,
+        "copy_inode": 112539567,
+        "size": 37652622
+      },
+      {
+        "path": "downloads/packages/six-1.17.0-py2.py3-none-any.whl",
+        "sha256": "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274",
+        "source_inode": 112460111,
+        "copy_inode": 112539568,
+        "size": 11050
+      },
+      {
+        "path": "downloads/packages/termcolor-3.1.0-py3-none-any.whl",
+        "sha256": "591dd26b5c2ce03b9e43f391264626557873ce1d379019786f99b0c2bee140aa",
+        "source_inode": 112460125,
+        "copy_inode": 112539569,
+        "size": 7684
+      },
+      {
+        "path": "downloads/packages/traitlets-5.16.1-py3-none-any.whl",
+        "sha256": "f775618166caa0396c8e337099240f2bd3e5e917d203b2e6fbe21a58d3cb1f6b",
+        "source_inode": 112460128,
+        "copy_inode": 112539570,
+        "size": 86211
+      },
+      {
+        "path": "downloads/packages/typing_extensions-4.13.2-py3-none-any.whl",
+        "sha256": "a439e7c04b49fec3e5d3e2beaa21755cadbbdc391694e28ccdd36ca4a1408f8c",
+        "source_inode": 112460153,
+        "copy_inode": 112539571,
+        "size": 45806
+      },
+      {
+        "path": "downloads/packages/zipp-3.21.0-py3-none-any.whl",
+        "sha256": "ac1bbe05fd2991f160ebce24ffbac5f6d11d83dc90891255885223d42b3cd931",
+        "source_inode": 112460122,
+        "copy_inode": 112539572,
+        "size": 9630
+      },
+      {
+        "path": "downloads/python.tar.gz",
+        "sha256": "68c6739376b65258dee5058ccf6777232fe38d31a578965ae8bda327ec7da3a8",
+        "source_inode": 112460158,
+        "copy_inode": 112539573,
+        "size": 30778566
+      }
+    ],
+    "libero_clone_method": "git clone --no-local --no-hardlinks, then origin reset to public URL",
+    "clean_origin": "https://github.com/LeoandDream/Nero_DH116_assets.git",
+    "clean_git_alternates": false,
+    "libero_clone": {
+      "public_origin": "https://github.com/Lifelong-Robot-Learning/LIBERO.git",
+      "commit": "f78abd68ee283de9f9be3c8f7e2a9ad60246e95c",
+      "alternates": false,
+      "no_shared_object_inodes": true,
+      "objects": [
+        {
+          "path": ".git/objects/pack/pack-43b8f7572051367ca98200ec365362d5e081ad4f.idx",
+          "sha256": "764f2e8b636f800c002f0328f8c0e76c7494244298d9d95b1b9bd3feeca9d5d8",
+          "inode": 112539604,
+          "size": 39964
+        },
+        {
+          "path": ".git/objects/pack/pack-43b8f7572051367ca98200ec365362d5e081ad4f.pack",
+          "sha256": "ba7563a3380aa07b87622b4b748c3cb097f95f66eb72d6bef8ee6523aa26812e",
+          "inode": 112539600,
+          "size": 325185279
+        }
+      ]
+    }
+  },
+  "bootstrap_log_sha256": "5f22b3dd0f72ea6842634d18673c23380d41b019a61a8cdddc404c281e2e58fa"
+}
