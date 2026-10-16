@@ -11,6 +11,8 @@
 | 动态接触 | 白碗闭合、抬升、保持；接触支撑、Mimic 残差、代理交叠和数值警告检查 |
 | 仓库自带检查 | 文件 SHA256；静态查看器显示过滤及测试所覆盖物理字段的不变性 |
 
+当前独立复现入口和实际验收记录见[参考测试](../examples/libero_reference/README.md)与[验收证据](../examples/libero_reference/evidence/RESULTS.md)。公开固定依赖与必要夹具随交付提供，运行无需访问历史实验仓库。
+
 ## 白碗抓取工况
 
 参考环境为 MuJoCo 3.2.3、robosuite 1.4.1 和原生 LIBERO90 厨房桌面场景。白碗采用原尺寸，visual 最大跨度约 84.9 mm；控制采用原生 JPC 绝对关节位置入口与 MuJoCo position 伺服，RK4／2 ms，seed `20261007`。
@@ -20,6 +22,9 @@
 | 脚本动作 | 230 个 13D 命令 |
 | 仿真时长 | 11.5 s，5750 个物理步 |
 | 操作表现 | 完成闭合与抬升；末段 1.5 s 的 750/750 步持续对向接触 |
+| 相对 Reset 最终增高 | 33.362942 mm，Reset z=0.97 m |
+| 相对沉降最终抬升 | 103.952232 mm，零起算行249 z=0.8994107101064139 m |
+| 严格抓取成功声明 | false |
 | 支撑检查 | 抬升／保持代表帧为手部支撑 |
 | Mimic 峰值偏差 | 约 0.001001 rad |
 | 最大手—碗代理交叠 | 约 0.580 mm |
@@ -27,7 +32,7 @@
 
 结果来自一次固定配置的脚本抓取测试。工况覆盖抓取和持握；原场景的柜子放置阶段未执行，完整任务判定为 false。代理交叠是求解器几何指标，测试结果不包含真实材料穿透深度或学习策略成功率。[详细测量][dynamic]
 
-[查看白碗闭合、抬升与持握视频（需仓库访问权限）][demo]
+[查看白碗闭合、抬升与持握视频][demo]
 
 ## 资产与复现信息
 
@@ -45,7 +50,7 @@
 4cbf4eb09ae18cf780d27d5e3a4956b0d01e66066b3dfe69f4752daa8ed5427d
 ```
 
-本仓库可独立加载模型与运行静态检查。动态复现还需要参考场景、控制器适配及动作序列；这些材料和演示视频位于权限受限的实验仓库。
+本仓库可独立加载模型、运行静态检查与固定白碗动态参考测试。场景来自公开固定 LIBERO，控制适配、动作输入、Reset/物理验收夹具和压缩基准轨迹均随仓库交付。原始探索记录的权限受限链接仅供可选溯源。
 
 ## 尚未覆盖
 
@@ -53,5 +58,5 @@
 
 [audit]: https://github.com/LeoandDream/nero_dh116_sim/blob/0b0a316cd4e7b17471cb1827bf2b744bb1a8d80a/experiments/EXP-URDF-FIDELITY-001/reports/asset-integration-completion-audit.json
 [dynamic]: https://github.com/LeoandDream/nero_dh116_sim/blob/0b0a316cd4e7b17471cb1827bf2b744bb1a8d80a/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/native-command-comparison/dynamic-results.json
-[demo]: https://github.com/LeoandDream/nero_dh116_sim/blob/0b0a316cd4e7b17471cb1827bf2b744bb1a8d80a/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/native-command-comparison/closure-side.mp4
+[demo]: ../examples/libero_reference/evidence/closure-side.mp4
 [frozen]: https://github.com/LeoandDream/nero_dh116_sim/blob/0b0a316cd4e7b17471cb1827bf2b744bb1a8d80a/experiments/EXP-URDF-FIDELITY-001/runtime/verified_white_bowl_scene_76/README.md

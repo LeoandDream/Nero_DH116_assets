@@ -1,3 +1,6 @@
 __pycache__/
 *.pyc
 /preview.png
+/.reference-env/
+/.reference-deps/
+/runs/

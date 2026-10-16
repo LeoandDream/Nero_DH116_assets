@@ -75,13 +75,24 @@ print("机器人状态维度:", state.shape)  # (18,)
 | Robot action | 机械臂绝对关节目标角，rad | 独立归一化手位置目标，[-1, 1] |
 | MuJoCo `data.ctrl` | 机械臂电机力矩，N·m | 主动手关节目标角，rad |
 
-机械臂位置目标需经关节位置控制器转换为力矩，手部目标需映射到各主动关节角度范围。参考集成使用 robosuite `JointPositionController.set_qpos` 的绝对位置入口和 MuJoCo position 伺服；**Robot action 不能直接赋给 `data.ctrl`**。本仓库提供模型文件和接口定义，控制器适配与任务环境由下游工程配置。
+机械臂位置目标需经关节位置控制器转换为力矩，手部目标需映射到各主动关节角度范围。参考集成使用 robosuite `JointPositionController.set_goal(..., set_qpos=...)` 的绝对位置入口和 MuJoCo position 伺服；**Robot action 不能直接赋给 `data.ctrl`**。本仓库提供模型文件、接口定义及[原生 LIBERO 白碗参考入口](examples/libero_reference/README.md)；其他任务环境由下游工程配置。
 
 机器人采用固定基座，默认世界位置为 `(-0.569, 0, 0.912) m`。接入新场景前需核对基座位姿、挂载座、相机和模型级求解设置。详见[模型与接入说明](docs/MODEL.md)。
 
+## 独立动态参考测试
+
+无需访问历史实验目录，按[安装与运行说明](examples/libero_reference/README.md)重建固定环境后：
+
+```bash
+source examples/libero_reference/env/activate.sh
+python examples/libero_reference/run.py --output runs/white_bowl
+```
+
+参考入口直接使用本仓库 MJCF 与 Mesh，执行230条命令及5750个真实物理步，并输出逐步差异报告。原生任务与严格抓取成功信号保持原定义，参考结果均为 false。
+
 ## 仿真演示与验证
 
-[白碗闭合、抬升与持握演示（需仓库访问权限）][demo]
+[白碗闭合、抬升与持握演示][demo]
 
 在参考 LIBERO 场景中，模型完成白碗闭合、抬升和连续 1.5 s 对向持握。测试采用 230 个 13D 命令、5750 个物理步；Mimic 峰值偏差约 0.001 rad，最大手—碗代理交叠约 0.580 mm。测试条件、结果和适用范围见[验证说明](docs/VALIDATION.md)。
 
@@ -96,4 +107,4 @@ python -m unittest discover -s tests -v
 
 资源按来源分别提供许可：NERO URDF 为 MIT，DH116 为 Apache-2.0；厂家连接件的独立许可尚未确认。详见[来源与许可](licenses/SOURCES.md)。
 
-[demo]: https://github.com/LeoandDream/nero_dh116_sim/blob/0b0a316cd4e7b17471cb1827bf2b744bb1a8d80a/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/native-command-comparison/closure-side.mp4
+[demo]: examples/libero_reference/evidence/closure-side.mp4

@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "official_commit": "73483309e16ed812d0b28ef2cdcfca8ecbc2b38e",
+  "acquisition": "One-time extraction from D1-A reference_002 verified artifacts; no historical runtime inputs required.",
+  "compiled_snapshot": {
+    "source_artifact": "D1-A/reference_002/before-first-step.mjb",
+    "source_sha256": "9160d5fb286ef4a9267c8e6fb2382f9857a756d737b5698578c91a3a5091fdfa",
+    "extraction": "MuJoCo 3.2.3 MjModel.from_binary_path; named physical arrays only; zero simulation steps.",
+    "verified_runtime_preflight_sha256": "b81c7b69eeb917e85559f76ec325d1ad73af107c9e603bee4ed485b6bfe73b57",
+    "verified_source_preflight_sha256": "60cffd515387ff6fbb337286506c997ba29cdf03a37b6ee98af02d79cfad23f9",
+    "reference_fields_checked": 5806,
+    "dimensions": {
+      "nq": 33,
+      "nv": 31,
+      "nu": 13,
+      "na": 0,
+      "nbody": 42,
+      "njnt": 21,
+      "ngeom": 275,
+      "neq": 5,
+      "nexclude": 1,
+      "nsensor": 2
+    }
+  },
+  "historical_input_sha256": {
+    "initial-joint-config.json": "8e2c8ad504ba9be04a9b8af001d7ee2552cd9f85782c3ab18634deb65e1a877f",
+    "full-reset-state.json": "7df4faf82a9651befccafcfbfe254def84f9a0041f0caa6c38ab390eb7a648e7",
+    "prepared-white-geometry-plan.json": "0696e605131c50353c66b45a964fcb22708672dfcf2c1996dd7eb79389389c9f",
+    "parameters.json": "1fd49e089374319aff42c75f2f302b3e39093530936a9ff72917b3f8157f8032",
+    "actual-contact-roles.json": "5e810506086064e57adf3c1284ceb0d2b06a68ed64dbc2aa34868f33e4b8da4d",
+    "bounded_grasp.jsonl": "880581b82882313c4abc4c9c838402be6ed04eac18dd5c30ee3780258a27fafa",
+    "bounded_grasp-result.json": "a88bb21df0659237fe67cb7fe40b11d2422a62194623e6ec4c9de554cb33848d"
+  },
+  "d1a_metadata_sha256": "4f1d90ad2d1e70a1f6d2776d53d2eb3770f43a8abab727238cfcb40bc8e3fe93",
+  "golden_trace": {
+    "comparison_only": true,
+    "action_source": false,
+    "compression": "gzip level 9, mtime 0, header filename golden.jsonl",
+    "rows": 5750,
+    "uncompressed_sha256": "880581b82882313c4abc4c9c838402be6ed04eac18dd5c30ee3780258a27fafa"
+  },
+  "state_action_contract": {
+    "raw_state": 18,
+    "raw_action": 13,
+    "arm": "7 absolute joint positions rad",
+    "hand": "6 normalized absolute positions [-1,1]"
+  },
+  "phase_rows": {
+    "settle": 250,
+    "approach_high": 1000,
+    "descend": 1750,
+    "close": 1000,
+    "lift": 1000,
+    "hold": 750
+  },
+  "d1a_artifact_record": {
+    "metadata_artifact": "D1-A/evidence/artifacts.json",
+    "metadata_sha256": "e8b51621e70b61bc0c59b1a616b0a10890f8cbaf1fbf2936b04a6967bf0ad67c",
+    "records": [
+      {
+        "run": "002",
+        "artifact": "before-first-step.mjb",
+        "bytes": 270372202,
+        "sha256": "9160d5fb286ef4a9267c8e6fb2382f9857a756d737b5698578c91a3a5091fdfa",
+        "matches_pinned_d1a_record": true
+      },
+      {
+        "run": "002",
+        "artifact": "robot-metadata.json",
+        "bytes": 746,
+        "sha256": "4f1d90ad2d1e70a1f6d2776d53d2eb3770f43a8abab727238cfcb40bc8e3fe93",
+        "matches_pinned_d1a_record": true
+      },
+      {
+        "run": "002",
+        "artifact": "runtime-preflight.json",
+        "bytes": 2752,
+        "sha256": "b81c7b69eeb917e85559f76ec325d1ad73af107c9e603bee4ed485b6bfe73b57",
+        "matches_pinned_d1a_record": true
+      },
+      {
+        "run": "002",
+        "artifact": "source-preflight.json",
+        "bytes": 116441,
+        "sha256": "60cffd515387ff6fbb337286506c997ba29cdf03a37b6ee98af02d79cfad23f9",
+        "matches_pinned_d1a_record": true
+      }
+    ]
+  }
+}
