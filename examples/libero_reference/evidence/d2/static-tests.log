@@ -1,0 +1,9 @@
+test_mount_hidden_without_changing_physical_fields (test_static_view.StaticViewTests.test_mount_hidden_without_changing_physical_fields) ... /data_robot/verification/nero_dh116_d1b/.reference-env/lib/python3.11/site-packages/OpenGL/platform/egl.py:76: ResourceWarning: unclosed file <_io.TextIOWrapper name='/proc/cpuinfo' mode='r' encoding='UTF-8'>
+  info = open('/proc/cpuinfo').read()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.809s
+
+OK

@@ -73,4 +73,4 @@ python examples/libero_reference/env/test_provenance.py
 python -m pip check
 ```
 
-实际验收见 [evidence/RESULTS.md](evidence/RESULTS.md)。完整环境的第三方系统驱动仍需满足 EGL 条件；固定单 seed 的轨迹一致不代表实机标定、其他物体或全工作空间保证。
+实际验收见 [evidence/RESULTS.md](evidence/RESULTS.md)，比较语义修复后的回归见 [D2记录](evidence/d2/RESULTS.md)。完整环境的第三方系统驱动仍需满足 EGL 条件；固定单 seed 的轨迹一致不代表实机标定、其他物体或全工作空间保证。

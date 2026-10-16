@@ -1,0 +1,42 @@
+{
+  "status": "EXACT_REFERENCE_REPRODUCED",
+  "physics_steps": 5750,
+  "commands": 230,
+  "robot_definition": "mjcf/nero_dh116.xml",
+  "robot_sha256": "c446124b7d938aa6e00ba5914047001de66c2a2c162e7dea1644437e5a85cb33",
+  "reference": "/data_robot/verification/nero_dh116_d1b/examples/libero_reference/fixtures/golden/bounded_grasp.jsonl.gz",
+  "reference_is_action_source": false,
+  "native_task_result": false,
+  "strict_grasp_success_claim": false,
+  "model_modified": false,
+  "tolerances_added": false,
+  "environment": {
+    "python": "3.11.16 (main, Sep 24 2026, 17:56:40) [Clang 22.1.3 ]",
+    "executable": "/data_robot/verification/nero_dh116_d1b/.reference-env/bin/python",
+    "mujoco": "3.2.3",
+    "robosuite": "1.4.1",
+    "numpy": "1.26.4",
+    "libero_commit": "f78abd68ee283de9f9be3c8f7e2a9ad60246e95c",
+    "sys_path": [
+      "/data_robot/verification/nero_dh116_d1b/examples/libero_reference",
+      "/data_robot/verification/nero_dh116_d1b/.reference-deps/python/lib/python311.zip",
+      "/data_robot/verification/nero_dh116_d1b/.reference-deps/python/lib/python3.11",
+      "/data_robot/verification/nero_dh116_d1b/.reference-deps/python/lib/python3.11/lib-dynload",
+      "/data_robot/verification/nero_dh116_d1b/.reference-env/lib/python3.11/site-packages",
+      "/data_robot/verification/nero_dh116_d1b/.reference-deps/LIBERO"
+    ],
+    "module_paths": {
+      "numpy": "/data_robot/verification/nero_dh116_d1b/.reference-env/lib/python3.11/site-packages/numpy/__init__.py",
+      "mujoco": "/data_robot/verification/nero_dh116_d1b/.reference-env/lib/python3.11/site-packages/mujoco/__init__.py",
+      "robosuite": "/data_robot/verification/nero_dh116_d1b/.reference-env/lib/python3.11/site-packages/robosuite/__init__.py"
+    }
+  },
+  "task_sha256": "a595358c840e6dca31d2d914726bb49d58944252ae868796bd603345a444b627",
+  "diagnostic_status": "DIAGNOSTIC_FINISHED",
+  "stop_reason": null,
+  "historical_trajectory_equal": true,
+  "raw_jsonl_bytes_equal": true,
+  "reference_trace_sha256": "880581b82882313c4abc4c9c838402be6ed04eac18dd5c30ee3780258a27fafa",
+  "first_difference": null,
+  "trace_sha256": "880581b82882313c4abc4c9c838402be6ed04eac18dd5c30ee3780258a27fafa"
+}

@@ -1,0 +1,64 @@
+test_all_frozen_commands_match_all_golden_physics_rows (test_actions.ActionTests.test_all_frozen_commands_match_all_golden_physics_rows) ... ok
+test_frozen_macro_boundaries_and_endpoints (test_actions.ActionTests.test_frozen_macro_boundaries_and_endpoints) ... ok
+test_axis_mutation_is_rejected_with_same_counts (test_checks.RuntimeChecksTests.test_axis_mutation_is_rejected_with_same_counts) ... ok
+test_contact_friction_change_is_rejected (test_checks.RuntimeChecksTests.test_contact_friction_change_is_rejected) ... ok
+test_controller_cache_change_is_rejected (test_checks.RuntimeChecksTests.test_controller_cache_change_is_rejected) ... ok
+test_identical_model_and_reset_pass_without_mutation (test_checks.RuntimeChecksTests.test_identical_model_and_reset_pass_without_mutation) ... ok
+test_last_bit_mass_change_is_rejected (test_checks.RuntimeChecksTests.test_last_bit_mass_change_is_rejected) ... ok
+test_missing_identity_is_rejected (test_checks.RuntimeChecksTests.test_missing_identity_is_rejected) ... ok
+test_nonzero_applied_force_is_rejected (test_checks.RuntimeChecksTests.test_nonzero_applied_force_is_rejected) ... ok
+test_scene_reset_state_change_is_rejected (test_checks.RuntimeChecksTests.test_scene_reset_state_change_is_rejected) ... ok
+test_solver_option_change_is_rejected (test_checks.RuntimeChecksTests.test_solver_option_change_is_rejected) ... ok
+test_changed_actual_named_mesh_bytes_fail (test_checks.SourceChecksTests.test_changed_actual_named_mesh_bytes_fail) ... ok
+test_changed_executable_source_bytes_fail (test_checks.SourceChecksTests.test_changed_executable_source_bytes_fail) ... ok
+test_changed_fixture_bytes_fail (test_checks.SourceChecksTests.test_changed_fixture_bytes_fail) ... ok
+test_changed_official_model_bytes_fail (test_checks.SourceChecksTests.test_changed_official_model_bytes_fail) ... ok
+test_original_actual_named_mesh_bytes_pass (test_checks.SourceChecksTests.test_original_actual_named_mesh_bytes_pass) ... ok
+test_actions_are_separate_from_state (test_compare.ComparisonTests.test_actions_are_separate_from_state) ... ok
+test_bundled_golden_metrics_match_frozen_result (test_compare.ComparisonTests.test_bundled_golden_metrics_match_frozen_result) ... ok
+test_cli_exit_code_rejects_structural_numeric_and_byte_only_differences (test_compare.ComparisonTests.test_cli_exit_code_rejects_structural_numeric_and_byte_only_differences) ... ok
+test_cli_writes_json_and_reports_differences_without_losing_report (test_compare.ComparisonTests.test_cli_writes_json_and_reports_differences_without_losing_report) ... ok
+test_compressed_golden_trace_can_be_compared (test_compare.ComparisonTests.test_compressed_golden_trace_can_be_compared) ... ok
+test_extra_top_level_field_is_a_structural_difference (test_compare.ComparisonTests.test_extra_top_level_field_is_a_structural_difference) ... ok
+test_finds_first_nested_numeric_change_without_rounding (test_compare.ComparisonTests.test_finds_first_nested_numeric_change_without_rounding) ... ok
+test_gzip_comparison_hashes_decompressed_bytes (test_compare.ComparisonTests.test_gzip_comparison_hashes_decompressed_bytes) ... ok
+test_missing_field_and_list_shape_are_distinct (test_compare.ComparisonTests.test_missing_field_and_list_shape_are_distinct) ... ok
+test_nested_extra_and_missing_fields_are_both_differences (test_compare.ComparisonTests.test_nested_extra_and_missing_fields_are_both_differences) ... ok
+test_nested_index_is_reported (test_compare.ComparisonTests.test_nested_index_is_reported) ... ok
+test_new_warning_is_a_difference_even_when_historical_warning_dict_empty (test_compare.ComparisonTests.test_new_warning_is_a_difference_even_when_historical_warning_dict_empty) ... ok
+test_numeric_equality_is_separate_from_raw_serialization_equality (test_compare.ComparisonTests.test_numeric_equality_is_separate_from_raw_serialization_equality) ... ok
+test_reset_and_settled_lifts_and_hold_contacts_have_separate_references (test_compare.ComparisonTests.test_reset_and_settled_lifts_and_hold_contacts_have_separate_references) ... ok
+test_short_trace_has_no_unvalidated_settled_reference_and_reset_override (test_compare.ComparisonTests.test_short_trace_has_no_unvalidated_settled_reference_and_reset_override) ... ok
+test_truncated_trace_cannot_pass_matching_prefix (test_compare.ComparisonTests.test_truncated_trace_cannot_pass_matching_prefix) ... ok
+test_all_commands_and_physics_rows_preserve_historical_phase_schedule (test_diagnostic.RuntimeTests.test_all_commands_and_physics_rows_preserve_historical_phase_schedule) ... bounded_grasp DIAGNOSTIC_FINISHED steps 5750 mimic 0.011072 arm error 0.0 bowl contacts 0 distance None
+ok
+test_first_macro_runtime_error_is_not_finished (test_diagnostic.RuntimeTests.test_first_macro_runtime_error_is_not_finished) ... bounded_grasp DIAGNOSTIC_STOPPED steps 0 mimic 0.0 arm error 0.0 bowl contacts 0 distance None
+ok
+test_first_physics_stop_keeps_progress_and_restores_mj_step (test_diagnostic.RuntimeTests.test_first_physics_stop_keeps_progress_and_restores_mj_step) ... bounded_grasp DIAGNOSTIC_STOPPED steps 1 mimic 0.011072 arm error 0.0 bowl contacts 0 distance None
+ok
+test_reset_error_is_recorded_without_claiming_finished (test_diagnostic.RuntimeTests.test_reset_error_is_recorded_without_claiming_finished) ... ok
+test_entry_documents_bundled_reference_and_refuses_external_outputs (test_entry.EntryTests.test_entry_documents_bundled_reference_and_refuses_external_outputs) ... ok
+test_exact_status_requires_field_and_byte_equality_and_complete_execution (test_entry.EntryTests.test_exact_status_requires_field_and_byte_equality_and_complete_execution) ... ok
+test_original_diagnostic_bound_stop_remains_a_reported_difference (test_entry.EntryTests.test_original_diagnostic_bound_stop_remains_a_reported_difference) ... ok
+test_runtime_or_final_output_failure_is_not_a_completed_comparison (test_entry.EntryTests.test_runtime_or_final_output_failure_is_not_a_completed_comparison) ... ok
+test_unchecked_byte_equality_cannot_claim_exact_reproduction (test_entry.EntryTests.test_unchecked_byte_equality_cannot_claim_exact_reproduction) ... ok
+test_native_mounting_restores_delivered_world_base_pose (test_model.OfficialModelTests.test_native_mounting_restores_delivered_world_base_pose) ... /data_robot/verification/nero_dh116_d1b/.reference-env/lib/python3.11/site-packages/robosuite/macros.py:53: DeprecationWarning: The 'warn' method is deprecated, use 'warning' instead
+  ROBOSUITE_DEFAULT_LOGGER.warn("No private macro file found!")
+[robosuite WARNING] No private macro file found! (macros.py:53)
+/data_robot/verification/nero_dh116_d1b/.reference-env/lib/python3.11/site-packages/robosuite/macros.py:54: DeprecationWarning: The 'warn' method is deprecated, use 'warning' instead
+  ROBOSUITE_DEFAULT_LOGGER.warn("It is recommended to use a private macro file")
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+/data_robot/verification/nero_dh116_d1b/.reference-env/lib/python3.11/site-packages/robosuite/macros.py:55: DeprecationWarning: The 'warn' method is deprecated, use 'warning' instead
+  ROBOSUITE_DEFAULT_LOGGER.warn("To setup, run: python {}/scripts/setup_macros.py".format(robosuite.__path__[0]))
+[robosuite WARNING] To setup, run: python /data_robot/verification/nero_dh116_d1b/.reference-env/lib/python3.11/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+ok
+test_official_axis_change_reaches_adapter (test_model.OfficialModelTests.test_official_axis_change_reaches_adapter) ... ok
+test_scene_adapter_preserves_native_problem_identity_and_success (test_model.OfficialModelTests.test_scene_adapter_preserves_native_problem_identity_and_success) ... ok
+test_split_retains_all_collision_definitions_and_referenced_assets (test_model.OfficialModelTests.test_split_retains_all_collision_definitions_and_referenced_assets) ... ok
+test_existing_output_is_rejected_before_reading_run_or_loading_simulator (test_render_video.VideoTests.test_existing_output_is_rejected_before_reading_run_or_loading_simulator) ... ok
+test_frame_indices_preserve_recorded_command_endpoints (test_render_video.VideoTests.test_frame_indices_preserve_recorded_command_endpoints) ... ok
+
+----------------------------------------------------------------------
+Ran 47 tests in 8.491s
+
+OK
