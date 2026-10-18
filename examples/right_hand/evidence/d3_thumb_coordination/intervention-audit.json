@@ -1,0 +1,13 @@
+{
+  "checked_rows": 1000,
+  "changed_robot_action_indices": [
+    8
+  ],
+  "changed_scalar_count": 749,
+  "exact_q12_formula_all_steps": true,
+  "all_other_targets_phase_and_recorded_times_identical": true,
+  "first_arm_and_other_hand_ctrl_identical": true,
+  "arm_torque_after_step_one": "feedback response may differ; arm position target/controller parameters unchanged",
+  "mj_step_calls_attempted": 1000,
+  "mj_step_calls_completed": 1000
+}

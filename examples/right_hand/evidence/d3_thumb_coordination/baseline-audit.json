@@ -1,0 +1,296 @@
+{
+  "audit_scope": "Read-only source/evidence/environment audit; no MuJoCo API, model compile, controller instantiation, forward, or physical integration was executed. Only this JSON output is written.",
+  "W": "/data_robot/projects/.worktrees/nero_dh116_right",
+  "C": "/data_robot/verification/nero_dh116_right",
+  "source_commit": "8142d0ca9a6e78332118ab5e632cafe4e39da28b",
+  "baseline_files": {
+    "hand-motion-state.jsonl.gz": {
+      "path": "/data_robot/projects/.worktrees/nero_dh116_right/examples/right_hand/evidence/hand-motion-state.jsonl.gz",
+      "gzip_sha256": "57e37a567b9a9381e5dff9563dce5521b9d48be81554b20781e98ab75291c54b",
+      "gzip_sha256_matches_original_index": true,
+      "uncompressed_sha256": "ad184353f23fc368f32884dbf8a15df3c96af31f41ded9e3ef7c18258be94079",
+      "uncompressed_sha256_matches_original_index": true,
+      "runtime_uncompressed_path": "/data_robot/verification/nero_dh116_right/runs/right_hand_001/hand-motion-state.jsonl",
+      "runtime_uncompressed_bytes_match": true,
+      "bytes": 24037230,
+      "rows": 7000,
+      "prefix_1000_rows_sha256": "39545c1697bdbad2da795462a77182fbed687a8d5cac88badfda06d2e17bba4e",
+      "steps_contiguous": true,
+      "prefix_first_step": 1,
+      "prefix_last_step": 1000,
+      "prefix_last_time_s": 2.0000000000000013
+    },
+    "hand-motion-contacts.jsonl.gz": {
+      "path": "/data_robot/projects/.worktrees/nero_dh116_right/examples/right_hand/evidence/hand-motion-contacts.jsonl.gz",
+      "gzip_sha256": "c48cd97035d6bf63296fcac199b1e898d92547d566623fae5513745dc20b5b04",
+      "gzip_sha256_matches_original_index": true,
+      "uncompressed_sha256": "6fac9a84e29d6eb8a4d7e08d7938c76d1a18d4ab2d541d97804aed74fbf61aad",
+      "uncompressed_sha256_matches_original_index": true,
+      "runtime_uncompressed_path": "/data_robot/verification/nero_dh116_right/runs/right_hand_001/hand-motion-contacts.jsonl",
+      "runtime_uncompressed_bytes_match": true,
+      "bytes": 2827964,
+      "rows": 7000,
+      "prefix_1000_rows_sha256": "0a20d4301731f7d6b2f2bbd0093c1b6e9d4035d603acd60c084e9b1390a52193",
+      "steps_contiguous": true,
+      "prefix_first_step": 1,
+      "prefix_last_step": 1000,
+      "prefix_last_time_s": 2.0000000000000013
+    },
+    "frozen-commands.json.gz": {
+      "path": "/data_robot/projects/.worktrees/nero_dh116_right/examples/right_hand/evidence/frozen-commands.json.gz",
+      "gzip_sha256": "d21df12fa6eb6419a248131d0ae3faddeeaeeb4e9a59f34c3cf17f3e43c0da37",
+      "gzip_sha256_matches_original_index": true,
+      "uncompressed_sha256": "7f756fc5d6bb2bfef5ab3e97b02f4b09cc91ec469ab1d028bc92eaa4e5349fdb",
+      "uncompressed_sha256_matches_original_index": true,
+      "runtime_uncompressed_path": "/data_robot/verification/nero_dh116_right/runs/right_hand_001/frozen-commands.json",
+      "runtime_uncompressed_bytes_match": true,
+      "bytes": 1668658
+    }
+  },
+  "commands": {
+    "timestep_s": 0.002,
+    "physics_xml_option": {
+      "impratio": "20",
+      "cone": "elliptic",
+      "density": "1.2",
+      "viscosity": "0.00002",
+      "timestep": "0.002",
+      "integrator": "RK4"
+    },
+    "source_plan_steps": 7000,
+    "frozen_steps": 7000,
+    "source_plan_equals_frozen_all": true,
+    "source_plan_equals_frozen_prefix1000": true,
+    "prefix1000_phase_counts": {
+      "finger11/close_ramp": 250,
+      "finger11/closed_hold": 250,
+      "finger11/release_ramp": 250,
+      "finger11/open_hold": 250
+    },
+    "state_command_mismatched_steps": [],
+    "state_target_mismatched_steps": [],
+    "contact_state_step_time_pairing_matches": true,
+    "prefix1000_finger12_to_finger51_zero": true,
+    "active_ranges_rad": {
+      "finger11": [
+        0.0,
+        1.047198
+      ],
+      "finger12": [
+        0.0,
+        0.523599
+      ],
+      "finger21": [
+        0.0,
+        1.396263
+      ],
+      "finger31": [
+        0.0,
+        1.396263
+      ],
+      "finger41": [
+        0.0,
+        1.396263
+      ],
+      "finger51": [
+        0.0,
+        1.396263
+      ]
+    },
+    "proposed_only_change": "For each first-1000-step row, replace fractions[1] with fractions[0], preserving all other row fields and commands. This maps finger12 target to 0.523599 * finger11_fraction."
+  },
+  "source_identity": {
+    "recorded_source_preflight_sha256": "ee4e0a36400030d3481e37858f5cc47be523eafcc07da5bef7726f844b62edb7",
+    "file_count": 96,
+    "W_mismatches": {},
+    "C_mismatches": {},
+    "model_sha256": "739d3d29bbfd4a6468fb8b75f4de09b719c0f96abb39508959c1dfc33a84b9cc",
+    "urdf_sha256": "1134b2e3ac3afb323dd1b5c11a793dab4c50d18445bec2ff47017c0c1c49a354",
+    "runner_sha256": "da5d8eca983eba38ba6ad630588a9398ac2df3ff61544a975c5f74558531d172"
+  },
+  "initialization": {
+    "keyframe_name": "right_open",
+    "explicit_keyframe_state": {
+      "qpos": [
+        0.3695869252103055,
+        -0.9117843140806088,
+        -2.701898722298827,
+        0.9778290747376885,
+        -1.4394823334488054,
+        -0.1793268616846018,
+        1.4802253266239929,
+        0.0,
+        0.0,
+        0.004592,
+        0.0,
+        0.011072,
+        0.0,
+        0.011072,
+        0.0,
+        0.011072,
+        0.0,
+        0.011072
+      ],
+      "qvel": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ctrl": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "time_s": 0.0
+    },
+    "recorded_initial_full_qpos_matches_keyframe": true,
+    "recorded_initial_time_matches_keyframe": true,
+    "recorded_initial_qvel_ctrl": "Not separately saved in result, but exact zeros are explicit in hash-verified XML keyframe and source applies mj_resetDataKeyframe before any command.",
+    "fresh_data_source": "run_case constructs a fresh MjSim(model), whose stock constructor creates fresh MjData, then applies mj_resetDataKeyframe(model,data,0). Previous static/probe audits use separate data.",
+    "ordered_calls": [
+      "MjSim(model): creates fresh wrapped MjData without stepping or forwarding",
+      "mj_resetDataKeyframe(model,data,0)",
+      "mj_forward(model,data)",
+      "read initial qpos and arm_target; save result initial qpos/time",
+      "JointPositionController.__init__: Controller.__init__ calls sim.forward(), then update() calls sim.forward() again and caches state, new_update=False; JointPositionController then sets gains/defaults and goal_qpos=None",
+      "set_goal(zeros(7),set_qpos=arm_target): update() no-op while new_update=False, computes action scaling and explicit absolute goal",
+      "first run_controller(): update() no-op; cached reset state supplies mass matrix, joint_pos, joint_vel; torques=M @ PD + qfrc_bias; superclass sets new_update=True",
+      "write clipped arm torque ctrl, then hand target ctrl",
+      "first mj_step"
+    ],
+    "controller_parameters": {
+      "kp": 50,
+      "damping_ratio": 1,
+      "policy_freq": 20,
+      "qpos_limits": "source arm jnt_range transposed",
+      "interpolator": null,
+      "impedance_mode": "fixed"
+    },
+    "full_pre_step_integration_state_saved_in_original": false,
+    "strictness_note": "Original evidence has no full mjSTATE_INTEGRATION snapshot. For restart at native zero-time keyframe, deterministic reset from identical engine/model and exact stock initialization recovers solver caches via the original forward sequence. This is source-based recovery, not a direct byte comparison to an original snapshot. Reusing run_case preserves that sequence."
+  },
+  "environment": {
+    "python_version": "3.11.16",
+    "version_matches_baseline": true,
+    "executable": "/data_robot/verification/nero_dh116_right/.reference-env/bin/python",
+    "base_executable": "/data_robot/verification/nero_dh116_right/.reference-deps/python/bin/python3.11",
+    "python_sha256": "ec579de7512e84d960bc642a840de69c785c52d6adf89e3a15f51717b29be40f",
+    "python_sha256_matches_baseline": true,
+    "distributions_count": 58,
+    "distribution_version_differences": {},
+    "prefix": "/data_robot/verification/nero_dh116_right/.reference-env",
+    "isolated_venv": true,
+    "pythonpath_env": null,
+    "site_packages": "/data_robot/verification/nero_dh116_right/.reference-env/lib/python3.11/site-packages",
+    "core_wheels": {
+      "robosuite": {
+        "wheel": "/data_robot/verification/nero_dh116_right/.reference-deps/downloads/packages/robosuite-1.4.1-py3-none-any.whl",
+        "sha256": "62587cd5888d9d3d813f3ffcc7017f6f77efa618952527a0b9bb139ffd0a3741",
+        "baseline_recorded_sha256": "62587cd5888d9d3d813f3ffcc7017f6f77efa618952527a0b9bb139ffd0a3741",
+        "wheel_hash_matches_baseline_record": true,
+        "installed_files_checked": 1019,
+        "installed_file_byte_mismatches": [],
+        "installed_inventory_additions": [],
+        "installed_inventory_missing": [],
+        "installed_file_inventory_digest_sha256": "e9f5fa287b896d28efa7afe3366aba4be070de8d2b67c8dc1053e74263b51c2b"
+      },
+      "mujoco": {
+        "wheel": "/data_robot/verification/nero_dh116_right/.reference-deps/downloads/packages/mujoco-3.2.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "sha256": "4c6add7cb34dd194ffecab169dca296ef3280eeecb2d4fc647280b6484dac8c8",
+        "baseline_recorded_sha256": "4c6add7cb34dd194ffecab169dca296ef3280eeecb2d4fc647280b6484dac8c8",
+        "wheel_hash_matches_baseline_record": true,
+        "installed_files_checked": 62,
+        "installed_file_byte_mismatches": [],
+        "installed_inventory_additions": [],
+        "installed_inventory_missing": [],
+        "installed_file_inventory_digest_sha256": "c60b688a11f6b64c326d9c925dfddc70231c6a4fa3c7c8643e145e8b4397e466"
+      },
+      "numpy": {
+        "wheel": "/data_robot/verification/nero_dh116_right/.reference-deps/downloads/packages/numpy-1.26.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "sha256": "666dbfb6ec68962c033a450943ded891bed2d54e6755e35e5835d63f4f6931d5",
+        "baseline_recorded_sha256": "666dbfb6ec68962c033a450943ded891bed2d54e6755e35e5835d63f4f6931d5",
+        "wheel_hash_matches_baseline_record": true,
+        "installed_files_checked": 909,
+        "installed_file_byte_mismatches": [],
+        "installed_inventory_additions": [],
+        "installed_inventory_missing": [],
+        "installed_file_inventory_digest_sha256": "3a054d59910e83be67de203447784ca0d28a2a311b160aa3d0d4d2a2e7f68240",
+        "ignored_wheel_bytecode_cache_files": [
+          "numpy/distutils/__pycache__/conv_template.cpython-311.pyc"
+        ]
+      },
+      "numba": {
+        "wheel": "/data_robot/verification/nero_dh116_right/.reference-deps/downloads/packages/numba-0.61.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+        "sha256": "3945615cd73c2c7eba2a85ccc9c1730c21cd3958bfcf5a44302abae0fb07bb60",
+        "baseline_recorded_sha256": "3945615cd73c2c7eba2a85ccc9c1730c21cd3958bfcf5a44302abae0fb07bb60",
+        "wheel_hash_matches_baseline_record": true,
+        "installed_files_checked": 815,
+        "installed_file_byte_mismatches": [],
+        "installed_inventory_additions": [],
+        "installed_inventory_missing": [],
+        "installed_file_inventory_digest_sha256": "96d9c41a9bdb27308a67e5a2146820745c0c1e379e96d2f5c487ecde67894da7"
+      },
+      "llvmlite": {
+        "wheel": "/data_robot/verification/nero_dh116_right/.reference-deps/downloads/packages/llvmlite-0.44.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "sha256": "c5d22c3bfc842668168a786af4205ec8e3ad29fb1bc03fd11fd48460d0df64c1",
+        "baseline_recorded_sha256": "c5d22c3bfc842668168a786af4205ec8e3ad29fb1bc03fd11fd48460d0df64c1",
+        "wheel_hash_matches_baseline_record": true,
+        "installed_files_checked": 40,
+        "installed_file_byte_mismatches": [],
+        "installed_inventory_additions": [],
+        "installed_inventory_missing": [],
+        "installed_file_inventory_digest_sha256": "dc69b570a06e187f492b7c9bed65dcae68b2e7c733469db26c117f578cc84d7f"
+      },
+      "scipy": {
+        "wheel": "/data_robot/verification/nero_dh116_right/.reference-deps/downloads/packages/scipy-1.15.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "sha256": "39cb9c62e471b1bb3750066ecc3a3f3052b37751c7c3dfd0fd7e48900ed52982",
+        "baseline_recorded_sha256": "39cb9c62e471b1bb3750066ecc3a3f3052b37751c7c3dfd0fd7e48900ed52982",
+        "wheel_hash_matches_baseline_record": true,
+        "installed_files_checked": 1420,
+        "installed_file_byte_mismatches": [],
+        "installed_inventory_additions": [],
+        "installed_inventory_missing": [],
+        "installed_file_inventory_digest_sha256": "65575958f351cbd09fc39c8f543f15eaf96c4df5ad327599b8f5d0e58d22a2c0"
+      }
+    },
+    "fingerprint_scope": "Wheel package files and binary libraries are compared byte-for-byte. Generated __pycache__/pyc files are excluded on both wheel and installation sides, consistently with original stock-wheel audit; NumPy wheel contains one such cache file."
+  },
+  "controller_source_fingerprints": {
+    "robosuite/controllers/joint_pos.py": "7a8fab0200c499722e238e39a3735347bdc518138105e4d823490a9575071793",
+    "robosuite/controllers/base_controller.py": "61f99a2daeb4eb6e39bfb996d94c5a5689ef3bc771d030d070193ea56d6a8332",
+    "robosuite/utils/binding_utils.py": "5ac3c9da0cb9f85d694c6147103268df65151f751612a6c575ae0da4eb4988e4",
+    "robosuite/utils/control_utils.py": "1d0f1a063894b1e8289339e223665e14e8aec492c31e9e00f42edea8dc735f43",
+    "robosuite/macros.py": "85041caa914fbee7c9976e610ef8e0e76036af796ea65f07abb45c57962c6b25"
+  },
+  "conclusion": {
+    "alignment_pass": true,
+    "lambda0_rerun_required": false,
+    "recommendation": "REUSE_SAVED_FIRST_1000_LAMBDA0",
+    "qualification": "No empirical replay equivalence was tested, in accordance with no-extra-integration restriction. The evidence and identical environment support original native-reset baseline reuse. An absent original mjSTATE_INTEGRATION snapshot alone is not a reason to add an unnecessary control run when exact native reset and original controller initialization are reused."
+  }
+}
