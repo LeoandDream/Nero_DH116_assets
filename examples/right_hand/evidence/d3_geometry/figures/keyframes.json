@@ -1,0 +1,66 @@
+[
+  {
+    "step": 229,
+    "source_qpos_row": 229,
+    "physics_steps": 0,
+    "constraint_solves": 0,
+    "recorded_contact_marker_m": [
+      -0.09091823249275927,
+      0.23716430747911463,
+      1.1320733580635256
+    ],
+    "recorded_normal": [
+      0.7072618071787106,
+      0.6077750718097615,
+      -0.36109582965321524
+    ]
+  },
+  {
+    "step": 451,
+    "source_qpos_row": 451,
+    "physics_steps": 0,
+    "constraint_solves": 0,
+    "recorded_contact_marker_m": [
+      -0.09336133701921928,
+      0.23470063568564947,
+      1.1301140126236267
+    ],
+    "recorded_normal": [
+      0.6025256942195499,
+      0.6086682996595754,
+      -0.5162225186823711
+    ]
+  },
+  {
+    "step": 6498,
+    "source_qpos_row": 6498,
+    "physics_steps": 0,
+    "constraint_solves": 0,
+    "recorded_contact_marker_m": [
+      -0.0663583708765843,
+      0.22419847712564883,
+      1.0965010069136885
+    ],
+    "recorded_normal": [
+      0.21511006336059654,
+      -0.7960877656308649,
+      -0.565660613843546
+    ]
+  },
+  {
+    "step": 6511,
+    "source_qpos_row": 6511,
+    "physics_steps": 0,
+    "constraint_solves": 0,
+    "recorded_contact_marker_m": [
+      -0.06633802540598925,
+      0.22426529139498527,
+      1.096488363131857
+    ],
+    "recorded_normal": [
+      0.19554304063630323,
+      -0.7793823572132839,
+      -0.595252938273617
+    ]
+  }
+]

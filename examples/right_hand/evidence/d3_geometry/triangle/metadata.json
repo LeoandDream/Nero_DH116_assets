@@ -1,0 +1,77 @@
+{
+  "trace_path": "/data_robot/projects/.worktrees/nero_dh116_right/runs/d3_geometry_reproduce_001/trace/checkpoint_poses.json",
+  "trace_sha256": "6fe47e4a627e543ce955a620b0e2b18e845996aa8d4d98727cc37dc80ceedf4a",
+  "topology": {
+    "base_link": {
+      "faces": 101775,
+      "exact_weld_vertices": 50667,
+      "undirected_edges": 152675,
+      "boundary_edges": 27,
+      "nonmanifold_edges": 1,
+      "two_face_orientation_conflicts": 0,
+      "zero_area_faces": 0,
+      "min_double_area_m2": 2.8047448630875192e-14,
+      "duplicate_faces_extra": 1,
+      "vertex_connected_components": 10,
+      "component_vertex_counts": [
+        8308,
+        1940,
+        1940,
+        1940,
+        1940,
+        3751,
+        368,
+        15156,
+        2175,
+        13149
+      ],
+      "edge_watertight_exact_float32_weld": false,
+      "consistently_oriented_edges": false,
+      "note": "Topology uses exact original float32 coordinates; edge-water-tightness does not itself establish absence of self-intersections."
+    },
+    "finger12_link": {
+      "faces": 21475,
+      "exact_weld_vertices": 10728,
+      "undirected_edges": 32214,
+      "boundary_edges": 4,
+      "nonmanifold_edges": 1,
+      "two_face_orientation_conflicts": 0,
+      "zero_area_faces": 0,
+      "min_double_area_m2": 1.0809705589140019e-11,
+      "duplicate_faces_extra": 0,
+      "vertex_connected_components": 1,
+      "component_vertex_counts": [
+        10728
+      ],
+      "edge_watertight_exact_float32_weld": false,
+      "consistently_oriented_edges": false,
+      "note": "Topology uses exact original float32 coordinates; edge-water-tightness does not itself establish absence of self-intersections."
+    },
+    "finger42_link": {
+      "faces": 16784,
+      "exact_weld_vertices": 8313,
+      "undirected_edges": 25092,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 81,
+      "two_face_orientation_conflicts": 0,
+      "zero_area_faces": 0,
+      "min_double_area_m2": 1.1252184459393308e-14,
+      "duplicate_faces_extra": 6,
+      "vertex_connected_components": 1,
+      "component_vertex_counts": [
+        8313
+      ],
+      "edge_watertight_exact_float32_weld": false,
+      "consistently_oriented_edges": true,
+      "note": "Topology uses exact original float32 coordinates; edge-water-tightness does not itself establish absence of self-intersections."
+    }
+  },
+  "source_stl_sha256": {
+    "base_link": "094504fed409afe137eafa6643c36f081934df873ef1cf9924ebb9725436b161",
+    "finger12_link": "8807c48538b9396e1d132df7c5cf6ee0a44c28c4dcb759b5b00a74003b715e67",
+    "finger42_link": "4382f6f699a2cb342f00f5bf4ddbe20b7d2b664b522c5abcd49cfee551e748ae"
+  },
+  "method": "Full original binary STL, exact float32 source vertices promoted to float64; original zero-based face IDs. Relative body-frame transform to reduce world-offset roundoff. AABB BVH lower-bound branch-and-bound and continuous triangle distance (6 vertex-face, 9 edge-edge; 6 edge-triangle crossings). No mj_step or dynamics. Initial vertex upper bound only, never used as final answer without complete surface search.",
+  "precision": "float64 predicates; strict crossing requires opposite endpoint plane distances beyond 1e-12 m and other-face barycentric coordinates >1e-10. AABB lower-bound pruning retains candidates within 1e-12 m beyond the current upper distance bound.",
+  "containment_limit": "Original meshes fail 2-manifold edge watertightness; a positive surface distance does not alone prove disjoint physical solids. Winding numbers are diagnostics only, not an inside/outside certificate for these meshes."
+}

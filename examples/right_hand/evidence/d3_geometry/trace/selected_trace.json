@@ -1,0 +1,1471 @@
+{
+  "schema": "d3-offline-fk-v1",
+  "formal_head": "ce920568e159ac38af4fda412ac84f2262e27035",
+  "mujoco_version": "3.2.3",
+  "model_path": "/data_robot/projects/.worktrees/nero_dh116_right/mjcf/nero_dh116_right.xml",
+  "model_sha256": "739d3d29bbfd4a6468fb8b75f4de09b719c0f96abb39508959c1dfc33a84b9cc",
+  "integrator": 1,
+  "integrator_name": "mjtIntegrator.mjINT_RK4",
+  "timestep_s": 0.002,
+  "joint_names": [
+    "robot0_joint1",
+    "robot0_joint2",
+    "robot0_joint3",
+    "robot0_joint4",
+    "robot0_joint5",
+    "robot0_joint6",
+    "robot0_joint7",
+    "gripper0_finger11",
+    "gripper0_finger12",
+    "gripper0_finger13",
+    "gripper0_finger21",
+    "gripper0_finger22",
+    "gripper0_finger31",
+    "gripper0_finger32",
+    "gripper0_finger41",
+    "gripper0_finger42",
+    "gripper0_finger51",
+    "gripper0_finger52"
+  ],
+  "active_joint_names": [
+    "gripper0_finger11",
+    "gripper0_finger12",
+    "gripper0_finger21",
+    "gripper0_finger31",
+    "gripper0_finger41",
+    "gripper0_finger51"
+  ],
+  "actuator_names_in_force_ctrl_order": [
+    "robot0_urdf_motor_joint1",
+    "robot0_urdf_motor_joint2",
+    "robot0_urdf_motor_joint3",
+    "robot0_urdf_motor_joint4",
+    "robot0_urdf_motor_joint5",
+    "robot0_urdf_motor_joint6",
+    "robot0_urdf_motor_joint7",
+    "gripper0_urdf_act_finger11",
+    "gripper0_urdf_act_finger12",
+    "gripper0_urdf_act_finger21",
+    "gripper0_urdf_act_finger31",
+    "gripper0_urdf_act_finger41",
+    "gripper0_urdf_act_finger51"
+  ],
+  "actuator_joint_names_in_force_ctrl_order": [
+    "robot0_joint1",
+    "robot0_joint2",
+    "robot0_joint3",
+    "robot0_joint4",
+    "robot0_joint5",
+    "robot0_joint6",
+    "robot0_joint7",
+    "gripper0_finger11",
+    "gripper0_finger12",
+    "gripper0_finger21",
+    "gripper0_finger31",
+    "gripper0_finger41",
+    "gripper0_finger51"
+  ],
+  "mimics": [
+    {
+      "name": "finger13",
+      "dependent": 9,
+      "driver": 8,
+      "multiplier": 0.8808,
+      "offset": 0.004592
+    },
+    {
+      "name": "finger22",
+      "dependent": 11,
+      "driver": 10,
+      "multiplier": 0.9206,
+      "offset": 0.011072
+    },
+    {
+      "name": "finger32",
+      "dependent": 13,
+      "driver": 12,
+      "multiplier": 0.9206,
+      "offset": 0.011072
+    },
+    {
+      "name": "finger42",
+      "dependent": 15,
+      "driver": 14,
+      "multiplier": 0.9206,
+      "offset": 0.011072
+    },
+    {
+      "name": "finger52",
+      "dependent": 17,
+      "driver": 16,
+      "multiplier": 0.9206,
+      "offset": 0.011072
+    }
+  ],
+  "geometry": {
+    "gripper0_base_link_collision_0": {
+      "geom_id": 69,
+      "body_id": 10,
+      "body_name": "gripper0_base_link",
+      "mesh_name": "gripper0_base_link",
+      "source_mesh_path": "/data_robot/projects/.worktrees/nero_dh116_right/meshes/dh116_right/source/base_link.STL",
+      "geom_local_pos_m": [
+        -0.00477017161944474,
+        0.000390177706456331,
+        0.049948238694265144
+      ],
+      "geom_local_quat_wxyz": [
+        0.9905513776097186,
+        -0.0341043870914517,
+        -0.13282820509054147,
+        -0.0012357301606316538
+      ],
+      "compiled_mesh_pos_m": [
+        -0.00477017161944474,
+        0.000390177706456331,
+        0.049948238694265144
+      ],
+      "compiled_mesh_quat_wxyz": [
+        0.9905513776097186,
+        -0.0341043870914517,
+        -0.13282820509054147,
+        -0.0012357301606316538
+      ],
+      "note": "Source STL vertices use body transform (original XML geom origin is identity); compiled geom_xmat/xpos include MuJoCo mesh centering."
+    },
+    "gripper0_finger11_link_collision_0": {
+      "geom_id": 71,
+      "body_id": 11,
+      "body_name": "gripper0_finger11_link",
+      "mesh_name": "gripper0_finger11_link",
+      "source_mesh_path": "/data_robot/projects/.worktrees/nero_dh116_right/meshes/dh116_right/source/finger11_link.STL",
+      "geom_local_pos_m": [
+        0.0071648854544971875,
+        0.0018742115569487909,
+        -0.0011820209345954178
+      ],
+      "geom_local_quat_wxyz": [
+        0.331830253566727,
+        0.5131047210756983,
+        0.6648594553768298,
+        0.4296209173488875
+      ],
+      "compiled_mesh_pos_m": [
+        0.0071648854544971875,
+        0.0018742115569487909,
+        -0.0011820209345954178
+      ],
+      "compiled_mesh_quat_wxyz": [
+        0.331830253566727,
+        0.5131047210756983,
+        0.6648594553768298,
+        0.4296209173488875
+      ],
+      "note": "Source STL vertices use body transform (original XML geom origin is identity); compiled geom_xmat/xpos include MuJoCo mesh centering."
+    },
+    "gripper0_finger12_link_collision_0": {
+      "geom_id": 73,
+      "body_id": 12,
+      "body_name": "gripper0_finger12_link",
+      "mesh_name": "gripper0_finger12_link",
+      "source_mesh_path": "/data_robot/projects/.worktrees/nero_dh116_right/meshes/dh116_right/source/finger12_link.STL",
+      "geom_local_pos_m": [
+        0.0015780548325281798,
+        1.7985857059762357e-08,
+        0.02348039708713342
+      ],
+      "geom_local_quat_wxyz": [
+        0.9995554840588273,
+        -1.2874171175895687e-05,
+        0.02981331037328634,
+        -2.543157483161606e-05
+      ],
+      "compiled_mesh_pos_m": [
+        0.0015780548325281798,
+        1.7985857059762357e-08,
+        0.02348039708713342
+      ],
+      "compiled_mesh_quat_wxyz": [
+        0.9995554840588273,
+        -1.2874171175895687e-05,
+        0.02981331037328634,
+        -2.543157483161606e-05
+      ],
+      "note": "Source STL vertices use body transform (original XML geom origin is identity); compiled geom_xmat/xpos include MuJoCo mesh centering."
+    },
+    "gripper0_finger13_link_collision_0": {
+      "geom_id": 75,
+      "body_id": 13,
+      "body_name": "gripper0_finger13_link",
+      "mesh_name": "gripper0_finger13_link",
+      "source_mesh_path": "/data_robot/projects/.worktrees/nero_dh116_right/meshes/dh116_right/source/finger13_link.STL",
+      "geom_local_pos_m": [
+        0.005793484443873691,
+        -2.3278250437899644e-06,
+        0.01309098129255242
+      ],
+      "geom_local_quat_wxyz": [
+        0.998551732663112,
+        0.00029487809969768266,
+        0.05373371914835316,
+        0.002652860510642906
+      ],
+      "compiled_mesh_pos_m": [
+        0.005793484443873691,
+        -2.3278250437899644e-06,
+        0.01309098129255242
+      ],
+      "compiled_mesh_quat_wxyz": [
+        0.998551732663112,
+        0.00029487809969768266,
+        0.05373371914835316,
+        0.002652860510642906
+      ],
+      "note": "Source STL vertices use body transform (original XML geom origin is identity); compiled geom_xmat/xpos include MuJoCo mesh centering."
+    },
+    "gripper0_finger14_link_collision_0": {
+      "geom_id": 77,
+      "body_id": 14,
+      "body_name": "gripper0_finger14_link",
+      "mesh_name": "gripper0_finger14_link",
+      "source_mesh_path": "/data_robot/projects/.worktrees/nero_dh116_right/meshes/dh116_right/source/finger14_link.STL",
+      "geom_local_pos_m": [
+        0.003639951339386123,
+        -1.5140085016040353e-07,
+        0.024521983165487822
+      ],
+      "geom_local_quat_wxyz": [
+        0.9811124328333952,
+        0.0,
+        0.19343834712832025,
+        0.0
+      ],
+      "compiled_mesh_pos_m": [
+        0.003639951339386123,
+        -1.5140085016040353e-07,
+        0.024521983165487822
+      ],
+      "compiled_mesh_quat_wxyz": [
+        0.9811124328333952,
+        0.0,
+        0.19343834712832025,
+        0.0
+      ],
+      "note": "Source STL vertices use body transform (original XML geom origin is identity); compiled geom_xmat/xpos include MuJoCo mesh centering."
+    },
+    "gripper0_finger21_link_collision_0": {
+      "geom_id": 79,
+      "body_id": 15,
+      "body_name": "gripper0_finger21_link",
+      "mesh_name": "gripper0_finger21_link",
+      "source_mesh_path": "/data_robot/projects/.worktrees/nero_dh116_right/meshes/dh116_right/source/finger21_link.STL",
+      "geom_local_pos_m": [
+        -0.0014545948838743333,
+        6.708757704269455e-07,
+        0.01761633532934234
+      ],
+      "geom_local_quat_wxyz": [
+        0.9999991045733608,
+        -7.037816542525359e-06,
+        0.0013359508786365292,
+        7.770582678444614e-05
+      ],
+      "compiled_mesh_pos_m": [
+        -0.0014545948838743333,
+        6.708757704269455e-07,
+        0.01761633532934234
+      ],
+      "compiled_mesh_quat_wxyz": [
+        0.9999991045733608,
+        -7.037816542525359e-06,
+        0.0013359508786365292,
+        7.770582678444614e-05
+      ],
+      "note": "Source STL vertices use body transform (original XML geom origin is identity); compiled geom_xmat/xpos include MuJoCo mesh centering."
+    },
+    "gripper0_finger22_link_collision_0": {
+      "geom_id": 81,
+      "body_id": 16,
+      "body_name": "gripper0_finger22_link",
+      "mesh_name": "gripper0_finger22_link",
+      "source_mesh_path": "/data_robot/projects/.worktrees/nero_dh116_right/meshes/dh116_right/source/finger22_link.STL",
+      "geom_local_pos_m": [
+        -0.0018707569042517398,
+        4.856848330043201e-07,
+        0.01763825938057638
+      ],
+      "geom_local_quat_wxyz": [
+        0.7075789577115611,
+        0.02662461264350628,
+        0.026724520302011365,
+        0.7056266354241688
+      ],
+      "compiled_mesh_pos_m": [
+        -0.0018707569042517398,
+        4.856848330043201e-07,
+        0.01763825938057638
+      ],
+      "compiled_mesh_quat_wxyz": [
+        0.7075789577115611,
+        0.02662461264350628,
+        0.026724520302011365,
+        0.7056266354241688
+      ],
+      "note": "Source STL vertices use body transform (original XML geom origin is identity); compiled geom_xmat/xpos include MuJoCo mesh centering."
+    },
+    "gripper0_finger23_link_collision_0": {
+      "geom_id": 83,
+      "body_id": 17,
+      "body_name": "gripper0_finger23_link",
+      "mesh_name": "gripper0_finger23_link",
+      "source_mesh_path": "/data_robot/projects/.worktrees/nero_dh116_right/meshes/dh116_right/source/finger23_link.STL",
+      "geom_local_pos_m": [
+        0.0024053345458767404,
+        -8.239296129700187e-08,
+        0.029776311559504425
+      ],
+      "geom_local_quat_wxyz": [
+        0.9980646370573785,
+        9.189085352535e-06,
+        0.06218504780698078,
+        -5.725317687184671e-07
+      ],
+      "compiled_mesh_pos_m": [
+        0.0024053345458767404,
+        -8.239296129700187e-08,
+        0.029776311559504425
+      ],
+      "compiled_mesh_quat_wxyz": [
+        0.9980646370573785,
+        9.189085352535e-06,
+        0.06218504780698078,
+        -5.725317687184671e-07
+      ],
+      "note": "Source STL vertices use body transform (original XML geom origin is identity); compiled geom_xmat/xpos include MuJoCo mesh centering."
+    },
+    "gripper0_finger31_link_collision_0": {
+      "geom_id": 85,
+      "body_id": 18,
+      "body_name": "gripper0_finger31_link",
+      "mesh_name": "gripper0_finger31_link",
+      "source_mesh_path": "/data_robot/projects/.worktrees/nero_dh116_right/meshes/dh116_right/source/finger31_link.STL",
+      "geom_local_pos_m": [
+        -0.0014545948838743333,
+        6.708757704269462e-07,
+        0.01761633532934234
+      ],
+      "geom_local_quat_wxyz": [
+        0.9999991045733608,
+        -7.037816542525359e-06,
+        0.0013359508786365292,
+        7.770582678444614e-05
+      ],
+      "compiled_mesh_pos_m": [
+        -0.0014545948838743333,
+        6.708757704269462e-07,
+        0.01761633532934234
+      ],
+      "compiled_mesh_quat_wxyz": [
+        0.9999991045733608,
+        -7.037816542525359e-06,
+        0.0013359508786365292,
+        7.770582678444614e-05
+      ],
+      "note": "Source STL vertices use body transform (original XML geom origin is identity); compiled geom_xmat/xpos include MuJoCo mesh centering."
+    },
+    "gripper0_finger32_link_collision_0": {
+      "geom_id": 87,
+      "body_id": 19,
+      "body_name": "gripper0_finger32_link",
+      "mesh_name": "gripper0_finger32_link",
+      "source_mesh_path": "/data_robot/projects/.worktrees/nero_dh116_right/meshes/dh116_right/source/finger32_link.STL",
+      "geom_local_pos_m": [
+        -0.0019446846594192025,
+        5.126745143659861e-07,
+        0.02151185580098132
+      ],
+      "geom_local_quat_wxyz": [
+        0.7073493090555635,
+        0.018444853915088568,
+        0.018498030452727545,
+        0.706381317145378
+      ],
+      "compiled_mesh_pos_m": [
+        -0.0019446846594192025,
+        5.126745143659861e-07,
+        0.02151185580098132
+      ],
+      "compiled_mesh_quat_wxyz": [
+        0.7073493090555635,
+        0.018444853915088568,
+        0.018498030452727545,
+        0.706381317145378
+      ],
+      "note": "Source STL vertices use body transform (original XML geom origin is identity); compiled geom_xmat/xpos include MuJoCo mesh centering."
+    },
+    "gripper0_finger33_link_collision_0": {
+      "geom_id": 89,
+      "body_id": 20,
+      "body_name": "gripper0_finger33_link",
+      "mesh_name": "gripper0_finger33_link",
+      "source_mesh_path": "/data_robot/projects/.worktrees/nero_dh116_right/meshes/dh116_right/source/finger33_link.STL",
+      "geom_local_pos_m": [
+        0.0022165926845875085,
+        -8.238921109020354e-08,
+        0.036788812772976354
+      ],
+      "geom_local_quat_wxyz": [
+        0.9982289268140605,
+        9.190309054365092e-06,
+        0.059489575447192404,
+        -5.476975963996545e-07
+      ],
+      "compiled_mesh_pos_m": [
+        0.0022165926845875085,
+        -8.238921109020354e-08,
+        0.036788812772976354
+      ],
+      "compiled_mesh_quat_wxyz": [
+        0.9982289268140605,
+        9.190309054365092e-06,
+        0.059489575447192404,
+        -5.476975963996545e-07
+      ],
+      "note": "Source STL vertices use body transform (original XML geom origin is identity); compiled geom_xmat/xpos include MuJoCo mesh centering."
+    },
+    "gripper0_finger41_link_collision_0": {
+      "geom_id": 91,
+      "body_id": 21,
+      "body_name": "gripper0_finger41_link",
+      "mesh_name": "gripper0_finger41_link",
+      "source_mesh_path": "/data_robot/projects/.worktrees/nero_dh116_right/meshes/dh116_right/source/finger41_link.STL",
+      "geom_local_pos_m": [
+        -0.0014545948838743333,
+        6.708757704269465e-07,
+        0.01761633532934234
+      ],
+      "geom_local_quat_wxyz": [
+        0.9999991045733608,
+        -7.037816542525359e-06,
+        0.0013359508786365292,
+        7.770582678444614e-05
+      ],
+      "compiled_mesh_pos_m": [
+        -0.0014545948838743333,
+        6.708757704269465e-07,
+        0.01761633532934234
+      ],
+      "compiled_mesh_quat_wxyz": [
+        0.9999991045733608,
+        -7.037816542525359e-06,
+        0.0013359508786365292,
+        7.770582678444614e-05
+      ],
+      "note": "Source STL vertices use body transform (original XML geom origin is identity); compiled geom_xmat/xpos include MuJoCo mesh centering."
+    },
+    "gripper0_finger42_link_collision_0": {
+      "geom_id": 93,
+      "body_id": 22,
+      "body_name": "gripper0_finger42_link",
+      "mesh_name": "gripper0_finger42_link",
+      "source_mesh_path": "/data_robot/projects/.worktrees/nero_dh116_right/meshes/dh116_right/source/finger42_link.STL",
+      "geom_local_pos_m": [
+        -0.0011090986015910302,
+        4.856996140905277e-07,
+        0.017702480846622792
+      ],
+      "geom_local_quat_wxyz": [
+        0.7068388624624661,
+        0.04182246051178347,
+        0.04196441122391942,
+        0.7048891349000482
+      ],
+      "compiled_mesh_pos_m": [
+        -0.0011090986015910302,
+        4.856996140905277e-07,
+        0.017702480846622792
+      ],
+      "compiled_mesh_quat_wxyz": [
+        0.7068388624624661,
+        0.04182246051178347,
+        0.04196441122391942,
+        0.7048891349000482
+      ],
+      "note": "Source STL vertices use body transform (original XML geom origin is identity); compiled geom_xmat/xpos include MuJoCo mesh centering."
+    },
+    "gripper0_finger43_link_collision_0": {
+      "geom_id": 95,
+      "body_id": 23,
+      "body_name": "gripper0_finger43_link",
+      "mesh_name": "gripper0_finger43_link",
+      "source_mesh_path": "/data_robot/projects/.worktrees/nero_dh116_right/meshes/dh116_right/source/finger43_link.STL",
+      "geom_local_pos_m": [
+        0.0036859743452126235,
+        -8.23970721927339e-08,
+        0.02964503266786097
+      ],
+      "geom_local_quat_wxyz": [
+        0.9964930345541185,
+        9.173498174807084e-06,
+        0.08367575515271969,
+        -7.703008054768204e-07
+      ],
+      "compiled_mesh_pos_m": [
+        0.0036859743452126235,
+        -8.23970721927339e-08,
+        0.02964503266786097
+      ],
+      "compiled_mesh_quat_wxyz": [
+        0.9964930345541185,
+        9.173498174807084e-06,
+        0.08367575515271969,
+        -7.703008054768204e-07
+      ],
+      "note": "Source STL vertices use body transform (original XML geom origin is identity); compiled geom_xmat/xpos include MuJoCo mesh centering."
+    },
+    "gripper0_finger51_link_collision_0": {
+      "geom_id": 97,
+      "body_id": 24,
+      "body_name": "gripper0_finger51_link",
+      "mesh_name": "gripper0_finger51_link",
+      "source_mesh_path": "/data_robot/projects/.worktrees/nero_dh116_right/meshes/dh116_right/source/finger51_link.STL",
+      "geom_local_pos_m": [
+        -0.0014545948838743333,
+        6.708757704269462e-07,
+        0.01761633532934234
+      ],
+      "geom_local_quat_wxyz": [
+        0.9999991045733608,
+        -7.037816542525359e-06,
+        0.0013359508786365292,
+        7.770582678444614e-05
+      ],
+      "compiled_mesh_pos_m": [
+        -0.0014545948838743333,
+        6.708757704269462e-07,
+        0.01761633532934234
+      ],
+      "compiled_mesh_quat_wxyz": [
+        0.9999991045733608,
+        -7.037816542525359e-06,
+        0.0013359508786365292,
+        7.770582678444614e-05
+      ],
+      "note": "Source STL vertices use body transform (original XML geom origin is identity); compiled geom_xmat/xpos include MuJoCo mesh centering."
+    },
+    "gripper0_finger52_link_collision_0": {
+      "geom_id": 99,
+      "body_id": 25,
+      "body_name": "gripper0_finger52_link",
+      "mesh_name": "gripper0_finger52_link",
+      "source_mesh_path": "/data_robot/projects/.worktrees/nero_dh116_right/meshes/dh116_right/source/finger52_link.STL",
+      "geom_local_pos_m": [
+        -0.0021778273950025418,
+        4.786455479200364e-07,
+        0.013791467798286522
+      ],
+      "geom_local_quat_wxyz": [
+        0.7072764127181604,
+        0.02606626084336979,
+        0.0261456896909956,
+        0.7059723995800112
+      ],
+      "compiled_mesh_pos_m": [
+        -0.0021778273950025418,
+        4.786455479200364e-07,
+        0.013791467798286522
+      ],
+      "compiled_mesh_quat_wxyz": [
+        0.7072764127181604,
+        0.02606626084336979,
+        0.0261456896909956,
+        0.7059723995800112
+      ],
+      "note": "Source STL vertices use body transform (original XML geom origin is identity); compiled geom_xmat/xpos include MuJoCo mesh centering."
+    },
+    "gripper0_finger53_link_collision_0": {
+      "geom_id": 101,
+      "body_id": 26,
+      "body_name": "gripper0_finger53_link",
+      "mesh_name": "gripper0_finger53_link",
+      "source_mesh_path": "/data_robot/projects/.worktrees/nero_dh116_right/meshes/dh116_right/source/finger53_link.STL",
+      "geom_local_pos_m": [
+        0.0017852681561020434,
+        5.3286963786224694e-08,
+        0.024094202171928834
+      ],
+      "geom_local_quat_wxyz": [
+        0.9978033442889356,
+        -9.428998876234263e-06,
+        0.06624564918934639,
+        6.260052698128471e-07
+      ],
+      "compiled_mesh_pos_m": [
+        0.0017852681561020434,
+        5.3286963786224694e-08,
+        0.024094202171928834
+      ],
+      "compiled_mesh_quat_wxyz": [
+        0.9978033442889356,
+        -9.428998876234263e-06,
+        0.06624564918934639,
+        6.260052698128471e-07
+      ],
+      "note": "Source STL vertices use body transform (original XML geom origin is identity); compiled geom_xmat/xpos include MuJoCo mesh centering."
+    }
+  },
+  "matrix_convention": "row-major 3x3 R; source_vertex_world = R @ source_vertex + p",
+  "method": "Fresh MjData; set full_qpos; mj_kinematics + mj_comPos + mj_collision + mj_geomDistance only. No mj_step, mj_forward, constraint solve, model/equality change.",
+  "contact_method": "mj_collision creates offline collision candidates only. No forces are computed; recorded dynamic forces are kept separately.",
+  "geomDistance_queries": "distance_m is the legacy distmax=1m query. distance_queries gives distmax=0,.01,.1,1m; distmax=0 gives contact-compatible negative distances and returns a capped zero for separated pairs. MuJoCo3.2.3 convex-query results vary with distmax; these are algorithmic proxy values, not triangle penetration depth.",
+  "limitations": [
+    "MuJoCo mesh geomDistance/collision uses convex collision hulls, not original triangle surfaces.",
+    "Counterfactual mimic poses hold all six active joints and arm fixed, set only five passive joints exactly, and are kinematic comparisons; they do not establish dynamic behavior.",
+    "pre is the prior logged full_qpos; post is the selected row full_qpos. Stored contact may reflect internal RK4 stage; exact temporal correspondence is audited separately.",
+    "Logged actuator_force and dynamic contact force also belong to the final internal RK4 solve, whereas active_tracking_error is computed from the final post qpos."
+  ],
+  "checkpoints": [
+    {
+      "step": 229,
+      "time_s": 0.45800000000000035,
+      "phase": "finger11/close_ramp",
+      "steady_window": false,
+      "command": {
+        "phase": "finger11/close_ramp",
+        "fractions": [
+          0.916,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "steady": false
+      },
+      "robot_state_18": [
+        0.36959112409604766,
+        -0.9117971833061528,
+        -2.7018799944812213,
+        0.9777060525858493,
+        -1.4399899914700458,
+        -0.16406311209924151,
+        1.479903431252151,
+        0.7874851044674982,
+        0.0002499116719512977,
+        0.0048095411675158585,
+        8.012164766314475e-05,
+        0.01114616950299128,
+        9.952702684432702e-05,
+        0.011164179033292284,
+        7.092796605107646e-05,
+        0.011137649380793771,
+        5.664667406791579e-05,
+        0.01112440496636186
+      ],
+      "full_qpos": [
+        0.36959112409604766,
+        -0.9117971833061528,
+        -2.7018799944812213,
+        0.9777060525858493,
+        -1.4399899914700458,
+        -0.16406311209924151,
+        1.479903431252151,
+        0.7874851044674982,
+        0.0002499116719512977,
+        0.0048095411675158585,
+        8.012164766314475e-05,
+        0.01114616950299128,
+        9.952702684432702e-05,
+        0.011164179033292284,
+        7.092796605107646e-05,
+        0.011137649380793771,
+        5.664667406791579e-05,
+        0.01112440496636186
+      ],
+      "full_qvel": [
+        -4.2513796227204e-05,
+        0.00013564330107904536,
+        -0.0001300820057186166,
+        0.0010365516805187474,
+        0.0043698411185519575,
+        -0.0643569724795093,
+        0.002706699276340836,
+        1.9311880291437937,
+        0.0041725274259603404,
+        0.0036880910713451122,
+        2.36954578502985e-05,
+        2.218055792421572e-05,
+        2.631280877096673e-05,
+        2.43251432228934e-05,
+        1.7241906934513058e-05,
+        1.5654521917127043e-05,
+        1.1488588969895623e-05,
+        1.0215279918196157e-05
+      ],
+      "hand_target_rad": [
+        0.9592333680000001,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "active_tracking_error_rad": [
+        -0.17174826353250194,
+        0.0002499116719512977,
+        8.012164766314475e-05,
+        9.952702684432702e-05,
+        7.092796605107646e-05,
+        5.664667406791579e-05
+      ],
+      "arm_tracking_error_rad": [
+        4.198885742157099e-06,
+        -1.286922554399883e-05,
+        1.8727817605590502e-05,
+        -0.00012302215183923604,
+        -0.0005076580212404203,
+        0.015263749585360281,
+        -0.00032189537184179606
+      ],
+      "mimic_residual_rad": {
+        "finger13": -2.5810331388438634e-06,
+        "finger22": 4.095141525883861e-07,
+        "finger32": 5.544523793959283e-07,
+        "finger42": 3.530952471502563e-07,
+        "finger52": 2.5603821493525025e-07
+      },
+      "actuator_force": [
+        -0.002438703878181949,
+        8.353277344138329,
+        0.5903196852789335,
+        -2.509696840279944,
+        -0.23817393447081714,
+        0.03320401007771478,
+        0.09883363225584249,
+        4.718546666501631,
+        -0.020900127793194515,
+        -0.004062880490997415,
+        -0.005026307886816425,
+        -0.0035677914830457565,
+        -0.002839838105637228
+      ],
+      "internal_actuator_ctrl_13": [
+        -0.002438703878181949,
+        8.353277344138329,
+        0.5903196852789335,
+        -2.509696840279944,
+        -0.23817393447081714,
+        0.03320401007771478,
+        0.09883363225584249,
+        0.9592333680000001,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "selected_recorded_contacts": [
+        {
+          "geom_names": [
+            "gripper0_base_link_collision_0",
+            "gripper0_finger12_link_collision_0"
+          ],
+          "body_names": [
+            "gripper0_base_link",
+            "gripper0_finger12_link"
+          ],
+          "distance_m": -0.0020121855934654167,
+          "normal_force_N": 37.867395759614624,
+          "contact_force_torque": [
+            37.867395759614624,
+            37.551141497764036,
+            -1.839744840826113,
+            0.022620108725886358,
+            0.0,
+            0.0
+          ],
+          "position_world_m": [
+            -0.09091823249275927,
+            0.23716430747911463,
+            1.1320733580635256
+          ],
+          "frame_world": [
+            0.7072618071787106,
+            0.6077750718097615,
+            -0.36109582965321524,
+            0.2738674802214858,
+            0.23534400665850394,
+            0.9325287136635827,
+            0.6517494452498128,
+            -0.7584343482573568,
+            0.0
+          ],
+          "filter_reasons": [],
+          "robot_external": false,
+          "right_hand_external": false,
+          "enabled_nonadjacent_robot_self": true,
+          "normal_world": [
+            0.7072618071787106,
+            0.6077750718097615,
+            -0.36109582965321524
+          ]
+        }
+      ],
+      "recorded_contact_count_all_pairs": 1
+    },
+    {
+      "step": 451,
+      "time_s": 0.9020000000000007,
+      "phase": "finger11/closed_hold",
+      "steady_window": true,
+      "command": {
+        "phase": "finger11/closed_hold",
+        "fractions": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "steady": true
+      },
+      "robot_state_18": [
+        0.3695677566783545,
+        -0.911734178985795,
+        -2.7019407873496846,
+        0.9780317193372744,
+        -1.438789581609697,
+        -0.19025624406407726,
+        1.4821420896069382,
+        1.0231356680570431,
+        -7.684297365747304e-05,
+        0.004530124534333491,
+        8.824296155046698e-05,
+        0.011153691402718347,
+        0.00010917514316315971,
+        0.011173116643609088,
+        7.815259182560094e-05,
+        0.011144338305672123,
+        6.140288735101255e-05,
+        0.011128804575118815
+      ],
+      "full_qpos": [
+        0.3695677566783545,
+        -0.911734178985795,
+        -2.7019407873496846,
+        0.9780317193372744,
+        -1.438789581609697,
+        -0.19025624406407726,
+        1.4821420896069382,
+        1.0231356680570431,
+        -7.684297365747304e-05,
+        0.004530124534333491,
+        8.824296155046698e-05,
+        0.011153691402718347,
+        0.00010917514316315971,
+        0.011173116643609088,
+        7.815259182560094e-05,
+        0.011144338305672123,
+        6.140288735101255e-05,
+        0.011128804575118815
+      ],
+      "full_qvel": [
+        6.13622154528945e-05,
+        -0.0001737077196704674,
+        0.00015582651842521763,
+        -0.0007331532006503023,
+        -0.0028492468565990787,
+        0.025013966854841647,
+        -0.006270925917934518,
+        0.014806307969260607,
+        -4.528110164763997e-05,
+        -3.814831060636643e-05,
+        1.348513645286657e-06,
+        1.2607333894957042e-06,
+        3.3431488546640876e-06,
+        3.1077103302768933e-06,
+        3.837076004193791e-06,
+        3.5642395942693988e-06,
+        3.2800173346222354e-06,
+        3.045778157696962e-06
+      ],
+      "hand_target_rad": [
+        1.047198,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "active_tracking_error_rad": [
+        -0.024062331942956927,
+        -7.684297365747304e-05,
+        8.824296155046698e-05,
+        0.00010917514316315971,
+        7.815259182560094e-05,
+        6.140288735101255e-05
+      ],
+      "arm_tracking_error_rad": [
+        -1.9168531950997103e-05,
+        5.013509481377465e-05,
+        -4.206505085768697e-05,
+        0.000202644599585855,
+        0.0006927518391084408,
+        -0.010929382379475466,
+        0.001916762982945297
+      ],
+      "mimic_residual_rad": {
+        "finger13": 5.807825530993425e-06,
+        "finger22": 4.5493231498605624e-07,
+        "finger32": 6.100068130829306e-07,
+        "finger42": 3.91029637475393e-07,
+        "finger52": 2.7707702347258556e-07
+      },
+      "actuator_force": [
+        -1.5783385986149765e-05,
+        8.343124163624973,
+        0.5910319560596103,
+        -2.502412747886506,
+        -0.23603019197990213,
+        0.02833990879447198,
+        0.10633290923545811,
+        1.1735039290081914,
+        0.003932710803502072,
+        -0.004414835592597123,
+        -0.005465428204051352,
+        -0.003915289835674507,
+        -0.0030766938764735484
+      ],
+      "internal_actuator_ctrl_13": [
+        -1.5783385986149765e-05,
+        8.343124163624973,
+        0.5910319560596103,
+        -2.502412747886506,
+        -0.23603019197990213,
+        0.02833990879447198,
+        0.10633290923545811,
+        1.047198,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "selected_recorded_contacts": [
+        {
+          "geom_names": [
+            "gripper0_base_link_collision_0",
+            "gripper0_finger12_link_collision_0"
+          ],
+          "body_names": [
+            "gripper0_base_link",
+            "gripper0_finger12_link"
+          ],
+          "distance_m": -0.00603230187546299,
+          "normal_force_N": 62.14638870298467,
+          "contact_force_torque": [
+            62.14638870298467,
+            0.8631072472495179,
+            -0.026482673307460396,
+            0.0004712760761259966,
+            0.0,
+            0.0
+          ],
+          "position_world_m": [
+            -0.09336133701921928,
+            0.23470063568564947,
+            1.1301140126236267
+          ],
+          "frame_world": [
+            0.6025256942195499,
+            0.6086682996595754,
+            -0.5162225186823711,
+            0.36316854112650815,
+            0.366870957600646,
+            0.8564545003707021,
+            0.7106837542404453,
+            -0.7035116214098435,
+            0.0
+          ],
+          "filter_reasons": [],
+          "robot_external": false,
+          "right_hand_external": false,
+          "enabled_nonadjacent_robot_self": true,
+          "normal_world": [
+            0.6025256942195499,
+            0.6086682996595754,
+            -0.5162225186823711
+          ]
+        }
+      ],
+      "recorded_contact_count_all_pairs": 1
+    },
+    {
+      "step": 6498,
+      "time_s": 12.99600000000101,
+      "phase": "all_six/closed_hold",
+      "steady_window": true,
+      "command": {
+        "phase": "all_six/closed_hold",
+        "fractions": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "steady": true
+      },
+      "robot_state_18": [
+        0.36934371503966335,
+        -0.9117694563153709,
+        -2.7001120507269616,
+        0.9778916201588564,
+        -1.4404979181283883,
+        -0.18153399859315764,
+        1.4847144233674432,
+        1.0035310269282878,
+        0.4297932377007295,
+        0.38314224303819605,
+        1.3926086590922904,
+        1.2930832449430754,
+        1.2696404965622776,
+        1.1794456771358763,
+        1.1860211592062335,
+        1.1024208199041805,
+        1.3926375913317908,
+        1.2931101047848117
+      ],
+      "full_qpos": [
+        0.36934371503966335,
+        -0.9117694563153709,
+        -2.7001120507269616,
+        0.9778916201588564,
+        -1.4404979181283883,
+        -0.18153399859315764,
+        1.4847144233674432,
+        1.0035310269282878,
+        0.4297932377007295,
+        0.38314224303819605,
+        1.3926086590922904,
+        1.2930832449430754,
+        1.2696404965622776,
+        1.1794456771358763,
+        1.1860211592062335,
+        1.1024208199041805,
+        1.3926375913317908,
+        1.2931101047848117
+      ],
+      "full_qvel": [
+        0.0009151199863884639,
+        -7.04050550923598e-05,
+        -0.0068983692460591085,
+        -0.00020223923607240316,
+        0.003242844410169793,
+        0.009332142894456061,
+        -0.016969777340184466,
+        0.007945002394209514,
+        0.03114553636966087,
+        0.028008841789353298,
+        0.031897205566473845,
+        0.02957707117117821,
+        0.061765264567371886,
+        0.057381705829202406,
+        0.06982872160630776,
+        0.06413140484137411,
+        0.031899537007223956,
+        0.029579482808291688
+      ],
+      "hand_target_rad": [
+        1.047198,
+        0.523599,
+        1.396263,
+        1.396263,
+        1.396263,
+        1.396263
+      ],
+      "active_tracking_error_rad": [
+        -0.0436669730717123,
+        -0.09380576229927051,
+        -0.0036543409077096634,
+        -0.1266225034377224,
+        -0.2102418407937665,
+        -0.0036254086682092623
+      ],
+      "arm_tracking_error_rad": [
+        -0.00024321017064216077,
+        1.4857765237907827e-05,
+        0.0017866715718652948,
+        6.254542116790329e-05,
+        -0.0010155846795829593,
+        -0.00220713690855584,
+        0.004489096743450327
+      ],
+      "mimic_residual_rad": {
+        "finger13": -1.164072860650265e-05,
+        "finger22": -2.4286617287068782e-05,
+        "finger32": -0.00045736399935639334,
+        "finger42": -0.0005022592610779714,
+        "finger52": -2.4061795234760555e-05
+      },
+      "actuator_force": [
+        0.00046243921864396354,
+        8.354556783593885,
+        0.628825774965121,
+        -2.523433517857177,
+        -0.20082027036272818,
+        0.0477328249351359,
+        0.07750823893082612,
+        2.167412024986973,
+        4.628008086770876,
+        0.11892252700897643,
+        6.207618745429933,
+        10.372319929740605,
+        0.11747122273735044
+      ],
+      "internal_actuator_ctrl_13": [
+        0.00046243921864396354,
+        8.354556783593885,
+        0.628825774965121,
+        -2.523433517857177,
+        -0.20082027036272818,
+        0.0477328249351359,
+        0.07750823893082612,
+        1.047198,
+        0.523599,
+        1.396263,
+        1.396263,
+        1.396263,
+        1.396263
+      ],
+      "selected_recorded_contacts": [
+        {
+          "geom_names": [
+            "gripper0_base_link_collision_0",
+            "gripper0_finger12_link_collision_0"
+          ],
+          "body_names": [
+            "gripper0_base_link",
+            "gripper0_finger12_link"
+          ],
+          "distance_m": -0.005563263777318299,
+          "normal_force_N": 57.34205149029158,
+          "contact_force_torque": [
+            57.34205149029158,
+            0.5784289619233829,
+            0.5230070912183469,
+            0.003948631612605294,
+            0.0,
+            0.0
+          ],
+          "position_world_m": [
+            -0.09259481471956248,
+            0.23431338952580083,
+            1.130893948863931
+          ],
+          "frame_world": [
+            0.6089295635523856,
+            0.6074086127842354,
+            -0.5101564110617764,
+            0.361185850782928,
+            0.3602837006327719,
+            0.8600816451085139,
+            0.7062220386154159,
+            -0.707990418137058,
+            0.0
+          ],
+          "filter_reasons": [],
+          "robot_external": false,
+          "right_hand_external": false,
+          "enabled_nonadjacent_robot_self": true,
+          "normal_world": [
+            0.6089295635523856,
+            0.6074086127842354,
+            -0.5101564110617764
+          ]
+        },
+        {
+          "geom_names": [
+            "gripper0_finger12_link_collision_0",
+            "gripper0_finger42_link_collision_0"
+          ],
+          "body_names": [
+            "gripper0_finger12_link",
+            "gripper0_finger42_link"
+          ],
+          "distance_m": -0.012420377495032577,
+          "normal_force_N": 66.63651902410457,
+          "contact_force_torque": [
+            66.63651902410457,
+            -9.797230657228031,
+            -27.968115782035902,
+            0.004552806144438631,
+            0.0,
+            0.0
+          ],
+          "position_world_m": [
+            -0.0663583708765843,
+            0.22419847712564883,
+            1.0965010069136885
+          ],
+          "frame_world": [
+            0.21511006336059654,
+            -0.7960877656308649,
+            -0.565660613843546,
+            0.14755476840840334,
+            -0.5460764785025993,
+            0.8246381448527242,
+            -0.965378294225089,
+            -0.260853884462274,
+            -2.7755575615628914e-17
+          ],
+          "filter_reasons": [],
+          "robot_external": false,
+          "right_hand_external": false,
+          "enabled_nonadjacent_robot_self": true,
+          "normal_world": [
+            0.21511006336059654,
+            -0.7960877656308649,
+            -0.565660613843546
+          ]
+        }
+      ],
+      "recorded_contact_count_all_pairs": 7
+    },
+    {
+      "step": 6511,
+      "time_s": 13.022000000001018,
+      "phase": "all_six/release_ramp",
+      "steady_window": false,
+      "command": {
+        "phase": "all_six/release_ramp",
+        "fractions": [
+          0.956,
+          0.956,
+          0.956,
+          0.956,
+          0.956,
+          0.956
+        ],
+        "steady": false
+      },
+      "robot_state_18": [
+        0.36935954001837484,
+        -0.9117710009665013,
+        -2.7002320121307752,
+        0.9778880154986654,
+        -1.440448460586236,
+        -0.18126394913349045,
+        1.4844702612616798,
+        1.0026760211422934,
+        0.429768775486522,
+        0.3831594220012399,
+        1.3885494103666833,
+        1.289597397670012,
+        1.2708713567532948,
+        1.180668529293017,
+        1.1878805686797373,
+        1.1041936800282777,
+        1.3885765934796206,
+        1.289622828659997
+      ],
+      "full_qpos": [
+        0.36935954001837484,
+        -0.9117710009665013,
+        -2.7002320121307752,
+        0.9778880154986654,
+        -1.440448460586236,
+        -0.18126394913349045,
+        1.4844702612616798,
+        1.0026760211422934,
+        0.429768775486522,
+        0.3831594220012399,
+        1.3885494103666833,
+        1.289597397670012,
+        1.2708713567532948,
+        1.180668529293017,
+        1.1878805686797373,
+        1.1041936800282777,
+        1.3885765934796206,
+        1.289622828659997
+      ],
+      "full_qvel": [
+        0.00017238578927052334,
+        -4.211375587092202e-05,
+        -0.0013681274082248634,
+        -6.517028872527944e-05,
+        0.00012780471439135065,
+        0.010094249057113253,
+        0.0014821453230635614,
+        -0.10413118618050698,
+        -0.04654649742620736,
+        -0.039637985414342054,
+        -0.4289420400148549,
+        -0.3824284468099697,
+        0.02338758408484662,
+        0.027292271101705148,
+        0.050235700106887576,
+        0.049661067695750995,
+        -0.4290273567302089,
+        -0.38250527785066135
+      ],
+      "hand_target_rad": [
+        1.001121288,
+        0.500560644,
+        1.3348274279999999,
+        1.3348274279999999,
+        1.3348274279999999,
+        1.3348274279999999
+      ],
+      "active_tracking_error_rad": [
+        0.0015547331422933741,
+        -0.07079186851347802,
+        0.05372198236668346,
+        -0.0639560712467051,
+        -0.14694685932026252,
+        0.05374916547962072
+      ],
+      "arm_tracking_error_rad": [
+        -0.00022738519193066242,
+        1.33131141074605e-05,
+        0.0016667101680516438,
+        5.894076097689993e-05,
+        -0.0009661271374306057,
+        -0.0019370874488886525,
+        0.004244934637686937
+      ],
+      "mimic_residual_rad": {
+        "finger13": 2.7084552711372466e-05,
+        "finger22": 0.0002268104864433223,
+        "finger32": -0.0003676417340661448,
+        "finger42": -0.0004411714982884025,
+        "finger52": 0.00022721670265820997
+      },
+      "actuator_force": [
+        -0.0017788166856741883,
+        8.350989714758578,
+        0.6273867858040691,
+        -2.5230964401176363,
+        -0.20071503037171817,
+        0.047793514498780464,
+        0.07696048138550855,
+        0.1305832740871864,
+        3.6327080880593385,
+        -1.8220085114148503,
+        3.1512430789378385,
+        7.247025696992118,
+        -1.8231744763040751
+      ],
+      "internal_actuator_ctrl_13": [
+        -0.0017788166856741883,
+        8.350989714758578,
+        0.6273867858040691,
+        -2.5230964401176363,
+        -0.20071503037171817,
+        0.047793514498780464,
+        0.07696048138550855,
+        1.001121288,
+        0.500560644,
+        1.3348274279999999,
+        1.3348274279999999,
+        1.3348274279999999,
+        1.3348274279999999
+      ],
+      "selected_recorded_contacts": [
+        {
+          "geom_names": [
+            "gripper0_base_link_collision_0",
+            "gripper0_finger12_link_collision_0"
+          ],
+          "body_names": [
+            "gripper0_base_link",
+            "gripper0_finger12_link"
+          ],
+          "distance_m": -0.005548283491831428,
+          "normal_force_N": 55.87652839330904,
+          "contact_force_torque": [
+            55.87652839330904,
+            -9.281192511420523,
+            -1.2362856560018245,
+            -0.014967413276869741,
+            0.0,
+            0.0
+          ],
+          "position_world_m": [
+            -0.0925689538818181,
+            0.23432087722135983,
+            1.1308933853205059
+          ],
+          "frame_world": [
+            0.6090399501904984,
+            0.6075282650137453,
+            -0.5098820905673621,
+            0.3609888068473343,
+            0.36009280416620604,
+            0.8602442988585605,
+            0.7062275981600359,
+            -0.7079848724352145,
+            -5.551115123125783e-17
+          ],
+          "filter_reasons": [],
+          "robot_external": false,
+          "right_hand_external": false,
+          "enabled_nonadjacent_robot_self": true,
+          "normal_world": [
+            0.6090399501904984,
+            0.6075282650137453,
+            -0.5098820905673621
+          ]
+        },
+        {
+          "geom_names": [
+            "gripper0_finger12_link_collision_0",
+            "gripper0_finger42_link_collision_0"
+          ],
+          "body_names": [
+            "gripper0_finger12_link",
+            "gripper0_finger42_link"
+          ],
+          "distance_m": -0.012477555021287268,
+          "normal_force_N": 64.96283197488472,
+          "contact_force_torque": [
+            64.96283197488472,
+            -18.204602288855565,
+            -33.2281840464677,
+            0.012877821814091112,
+            0.0,
+            0.0
+          ],
+          "position_world_m": [
+            -0.06633802540598925,
+            0.22426529139498527,
+            1.096488363131857
+          ],
+          "frame_world": [
+            0.19554304063630323,
+            -0.7793823572132839,
+            -0.595252938273617,
+            0.14485626495556359,
+            -0.5773584008451753,
+            0.8035383870585309,
+            -0.9699379267570853,
+            -0.24335245681555667,
+            -2.7755575615628914e-17
+          ],
+          "filter_reasons": [],
+          "robot_external": false,
+          "right_hand_external": false,
+          "enabled_nonadjacent_robot_self": true,
+          "normal_world": [
+            0.19554304063630323,
+            -0.7793823572132839,
+            -0.595252938273617
+          ]
+        }
+      ],
+      "recorded_contact_count_all_pairs": 7
+    }
+  ]
+}

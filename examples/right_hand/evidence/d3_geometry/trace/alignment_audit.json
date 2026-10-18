@@ -1,0 +1,944 @@
+{
+  "method": "Compare logged dynamic contact against offline collision detection at prior-row pre and same-row post qpos. No dynamics or constraint solve.",
+  "source": "https://github.com/google-deepmind/mujoco/blob/3.2.3/src/engine/engine_forward.c",
+  "source_line_ranges": {
+    "mj_step": [
+      973,
+      1005
+    ],
+    "RK4_stages": [
+      751,
+      829
+    ],
+    "RK4_final_update": [
+      831,
+      846
+    ],
+    "mj_advance": [
+      655,
+      676
+    ]
+  },
+  "geomDistance_source": "https://github.com/google-deepmind/mujoco/blob/3.2.3/src/engine/engine_support.c#L1284-L1321",
+  "geomDistance_source_interpretation": "mj_geomDistance passes distmax directly to the collision function and reconstructs fromto from returned contact position, frame and distance. At distmax=0 it is the zero-margin overlap query; returning 0 is a capped result for separated pairs.",
+  "timing_conclusion": "The formal model uses RK4. After mj_step, qpos is the final weighted update, but position-dependent contact caches/forces remain from the last internally solved RK4 stage X[3] (time t+h). Thus neither prior-row pre qpos nor same-row post qpos is an exact solver-pose identity. No X[3] qpos was logged. post is numerically much closer for these four checkpoints.",
+  "geomDistance_caveat": "mj_geomDistance with positive distmax and mj_collision can differ even at identical qpos in MuJoCo 3.2.3; distmax=0 matches the zero-margin collision query for these pairs. Multiple cutoff queries are stored; do not interpret cutoff sensitivity as timestamp displacement or physical depth change.",
+  "checks": [
+    {
+      "step": 229,
+      "phase": "finger11/close_ramp",
+      "time_s": 0.45800000000000035,
+      "pair_comparisons": [
+        {
+          "body_names": [
+            "gripper0_base_link",
+            "gripper0_finger12_link"
+          ],
+          "recorded_distance_m": -0.0020121855934654167,
+          "recorded_normal_force_N": 37.867395759614624,
+          "recorded_position_world_m": [
+            -0.09091823249275927,
+            0.23716430747911463,
+            1.1320733580635256
+          ],
+          "recorded_normal_world": [
+            0.7072618071787106,
+            0.6077750718097615,
+            -0.36109582965321524
+          ],
+          "offline_poses": [
+            {
+              "alignment": "pre",
+              "source_state_step": 228,
+              "geomDistance_m": -0.0030646487885730433,
+              "geomDistance_queries": [
+                {
+                  "cutoff_m": 0.0,
+                  "distance_m": -0.0019450660649513198,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.09019890476847589,
+                    0.23779092480404052,
+                    1.1317489968340844,
+                    -0.0915747112777889,
+                    0.2366087892493599,
+                    1.1324511321318134
+                  ]
+                },
+                {
+                  "cutoff_m": 0.01,
+                  "distance_m": -0.001992322413821317,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.08989831020870816,
+                    0.23691066909525055,
+                    1.130868453904846,
+                    -0.09118775455774218,
+                    0.23556512409225633,
+                    1.1315728618237937
+                  ]
+                },
+                {
+                  "cutoff_m": 0.1,
+                  "distance_m": -0.0025348684671777366,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.08797796872794805,
+                    0.23307618645226028,
+                    1.1277009181577768,
+                    -0.08955366189353009,
+                    0.23127655282370344,
+                    1.1285400057555859
+                  ]
+                },
+                {
+                  "cutoff_m": 1.0,
+                  "distance_m": -0.0030646487885730433,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.08597006819429145,
+                    0.2294524597221444,
+                    1.1248956728546615,
+                    -0.08785749661249279,
+                    0.22725949287771013,
+                    1.1259059117287304
+                  ]
+                }
+              ],
+              "geomDistance_minus_recorded_contact_m": -0.0010524631951076267,
+              "collision_distance_m": -0.0019450660649513198,
+              "collision_distance_minus_recorded_m": 6.711952851409689e-05,
+              "collision_position_error_m": 5.444722640576602e-05,
+              "collision_normal_angle_error_deg": 0.007652618523246675
+            },
+            {
+              "alignment": "post",
+              "source_state_step": 229,
+              "geomDistance_m": -0.003129513022267494,
+              "geomDistance_queries": [
+                {
+                  "cutoff_m": 0.0,
+                  "distance_m": -0.002012366942032706,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.09020659988676775,
+                    0.23777574496536183,
+                    1.131710077522822,
+                    -0.09162987407112029,
+                    0.2365526790960212,
+                    1.1324367281849668
+                  ]
+                },
+                {
+                  "cutoff_m": 0.01,
+                  "distance_m": -0.0020597671075404424,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.08990091978671995,
+                    0.23689099338230413,
+                    1.1308350973526993,
+                    -0.0912354254069893,
+                    0.23549931781630873,
+                    1.131559648528108
+                  ]
+                },
+                {
+                  "cutoff_m": 0.1,
+                  "distance_m": -0.0026112263807397396,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.08800413094789564,
+                    0.23306459095823953,
+                    1.1276346532513115,
+                    -0.08960947449550632,
+                    0.23120589393894128,
+                    1.1285215696487627
+                  ]
+                },
+                {
+                  "cutoff_m": 1.0,
+                  "distance_m": -0.003129513022267494,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.08601127548249654,
+                    0.2294483060814449,
+                    1.1248359233238043,
+                    -0.08793323116861129,
+                    0.2272080340149341,
+                    1.1258756921275126
+                  ]
+                }
+              ],
+              "geomDistance_minus_recorded_contact_m": -0.0011173274288020772,
+              "collision_distance_m": -0.002012366942032706,
+              "collision_distance_minus_recorded_m": -1.81348567289321e-07,
+              "collision_position_error_m": 1.0553058542584335e-07,
+              "collision_normal_angle_error_deg": 0.00022016437004412272
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 451,
+      "phase": "finger11/closed_hold",
+      "time_s": 0.9020000000000007,
+      "pair_comparisons": [
+        {
+          "body_names": [
+            "gripper0_base_link",
+            "gripper0_finger12_link"
+          ],
+          "recorded_distance_m": -0.00603230187546299,
+          "recorded_normal_force_N": 62.14638870298467,
+          "recorded_position_world_m": [
+            -0.09336133701921928,
+            0.23470063568564947,
+            1.1301140126236267
+          ],
+          "recorded_normal_world": [
+            0.6025256942195499,
+            0.6086682996595754,
+            -0.5162225186823711
+          ],
+          "offline_poses": [
+            {
+              "alignment": "pre",
+              "source_state_step": 450,
+              "geomDistance_m": -0.00695402696158709,
+              "geomDistance_queries": [
+                {
+                  "cutoff_m": 0.0,
+                  "distance_m": -0.006031769149878596,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.09154555913558399,
+                    0.23653590061347338,
+                    1.1285555803997487,
+                    -0.09517968330347906,
+                    0.23286460582440507,
+                    1.1316695770570218
+                  ]
+                },
+                {
+                  "cutoff_m": 0.01,
+                  "distance_m": -0.006147075286834251,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.0915862137054768,
+                    0.23581947502852504,
+                    1.1275821734348446,
+                    -0.09488721059008771,
+                    0.23151866782711214,
+                    1.1304792429138306
+                  ]
+                },
+                {
+                  "cutoff_m": 0.1,
+                  "distance_m": -0.006482659674177577,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.09061843024793464,
+                    0.23189137551539452,
+                    1.1237592709253612,
+                    -0.0940255116036009,
+                    0.22735104095170688,
+                    1.1268900911272992
+                  ]
+                },
+                {
+                  "cutoff_m": 1.0,
+                  "distance_m": -0.00695402696158709,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.08925997227050454,
+                    0.22859657119460455,
+                    1.1209428999676223,
+                    -0.09288459022303135,
+                    0.22364942660396955,
+                    1.1242210695910633
+                  ]
+                }
+              ],
+              "geomDistance_minus_recorded_contact_m": -0.0009217250861241,
+              "collision_distance_m": -0.006031769149878596,
+              "collision_distance_minus_recorded_m": 5.327255843939199e-07,
+              "collision_position_error_m": 1.9625256150718277e-06,
+              "collision_normal_angle_error_deg": 0.003013049574266174
+            },
+            {
+              "alignment": "post",
+              "source_state_step": 451,
+              "geomDistance_m": -0.006954596445984063,
+              "geomDistance_queries": [
+                {
+                  "cutoff_m": 0.0,
+                  "distance_m": -0.006032301849497677,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.0915440285005247,
+                    0.2365364711978353,
+                    1.1285570076421592,
+                    -0.09517864536678144,
+                    0.23286480028297182,
+                    1.1316710176825926
+                  ]
+                },
+                {
+                  "cutoff_m": 0.01,
+                  "distance_m": -0.006147615919697589,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.09158474088122742,
+                    0.23582009761342348,
+                    1.1275835197175317,
+                    -0.0948861907163413,
+                    0.2315188539905313,
+                    1.1304805723195526
+                  ]
+                },
+                {
+                  "cutoff_m": 0.1,
+                  "distance_m": -0.006483202867008139,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.09061707128770873,
+                    0.23189207056795544,
+                    1.1237603114312003,
+                    -0.09402461498024157,
+                    0.2273512955685,
+                    1.126891114491532
+                  ]
+                },
+                {
+                  "cutoff_m": 1.0,
+                  "distance_m": -0.006954596445984063,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.08925839161231848,
+                    0.22859740942136897,
+                    1.120944175780832,
+                    -0.09288358741370727,
+                    0.22364980390311917,
+                    1.1242222189110962
+                  ]
+                }
+              ],
+              "geomDistance_minus_recorded_contact_m": -0.0009222945705210728,
+              "collision_distance_m": -0.006032301849497677,
+              "collision_distance_minus_recorded_m": 2.5965312365483495e-11,
+              "collision_position_error_m": 1.0872483005541205e-10,
+              "collision_normal_angle_error_deg": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 6498,
+      "phase": "all_six/closed_hold",
+      "time_s": 12.99600000000101,
+      "pair_comparisons": [
+        {
+          "body_names": [
+            "gripper0_base_link",
+            "gripper0_finger12_link"
+          ],
+          "recorded_distance_m": -0.005563263777318299,
+          "recorded_normal_force_N": 57.34205149029158,
+          "recorded_position_world_m": [
+            -0.09259481471956248,
+            0.23431338952580083,
+            1.130893948863931
+          ],
+          "recorded_normal_world": [
+            0.6089295635523856,
+            0.6074086127842354,
+            -0.5101564110617764
+          ],
+          "offline_poses": [
+            {
+              "alignment": "pre",
+              "source_state_step": 6497,
+              "geomDistance_m": -0.0057134843989647965,
+              "geomDistance_queries": [
+                {
+                  "cutoff_m": 0.0,
+                  "distance_m": -0.005563027423493909,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.09090320653716147,
+                    0.23600290631257226,
+                    1.12947573819214,
+                    -0.09429068879605931,
+                    0.23262397975268623,
+                    1.1323138878293322
+                  ]
+                },
+                {
+                  "cutoff_m": 0.01,
+                  "distance_m": -0.005562981138210885,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.08999981814211473,
+                    0.2339130204269934,
+                    1.1286324639833267,
+                    -0.0933871698855616,
+                    0.23053412558225023,
+                    1.1314707164277766
+                  ]
+                },
+                {
+                  "cutoff_m": 0.1,
+                  "distance_m": -0.005685338221389877,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.08788812883048648,
+                    0.22751191510418445,
+                    1.1251973249371783,
+                    -0.09166609615884096,
+                    0.224053737108234,
+                    1.127665327875954
+                  ]
+                },
+                {
+                  "cutoff_m": 1.0,
+                  "distance_m": -0.0057134843989647965,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.08672908240151359,
+                    0.22368118269937529,
+                    1.1230509451184052,
+                    -0.090559881429401,
+                    0.22026218458827088,
+                    1.1255568051905993
+                  ]
+                }
+              ],
+              "geomDistance_minus_recorded_contact_m": -0.0001502206216464977,
+              "collision_distance_m": -0.005563027423493909,
+              "collision_distance_minus_recorded_m": 2.3635382438973868e-07,
+              "collision_position_error_m": 2.3019721524969686e-06,
+              "collision_normal_angle_error_deg": 0.0017636016816565507
+            },
+            {
+              "alignment": "post",
+              "source_state_step": 6498,
+              "geomDistance_m": -0.005713749284598002,
+              "geomDistance_queries": [
+                {
+                  "cutoff_m": 0.0,
+                  "distance_m": -0.0055632665249129845,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.09090099576992272,
+                    0.23600297556514915,
+                    1.1294748804091648,
+                    -0.09428863330984763,
+                    0.23262379952000722,
+                    1.1323130163434088
+                  ]
+                },
+                {
+                  "cutoff_m": 0.01,
+                  "distance_m": -0.005563220222480202,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.08999747469722429,
+                    0.23391293876060215,
+                    1.128631594704002,
+                    -0.09338498173227854,
+                    0.23053379448119232,
+                    1.1314698334660167
+                  ]
+                },
+                {
+                  "cutoff_m": 0.1,
+                  "distance_m": -0.005685576569261053,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.08788542610413838,
+                    0.22751140711624776,
+                    1.1251963497193729,
+                    -0.09166358553491158,
+                    0.22405298843533558,
+                    1.127664270396402
+                  ]
+                },
+                {
+                  "cutoff_m": 1.0,
+                  "distance_m": -0.005713749284598002,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.08672628496442339,
+                    0.22368070470394297,
+                    1.1230500829144698,
+                    -0.09055735906227014,
+                    0.2202614457393487,
+                    1.1255557705001624
+                  ]
+                }
+              ],
+              "geomDistance_minus_recorded_contact_m": -0.00015048550727970317,
+              "collision_distance_m": -0.0055632665249129845,
+              "collision_distance_minus_recorded_m": -2.7475946856245215e-09,
+              "collision_position_error_m": 2.0501835998822483e-09,
+              "collision_normal_angle_error_deg": 1.2074182697257333e-06
+            }
+          ]
+        },
+        {
+          "body_names": [
+            "gripper0_finger12_link",
+            "gripper0_finger42_link"
+          ],
+          "recorded_distance_m": -0.012420377495032577,
+          "recorded_normal_force_N": 66.63651902410457,
+          "recorded_position_world_m": [
+            -0.0663583708765843,
+            0.22419847712564883,
+            1.0965010069136885
+          ],
+          "recorded_normal_world": [
+            0.21511006336059654,
+            -0.7960877656308649,
+            -0.565660613843546
+          ],
+          "offline_poses": [
+            {
+              "alignment": "pre",
+              "source_state_step": 6497,
+              "geomDistance_m": -0.012464786450401721,
+              "geomDistance_queries": [
+                {
+                  "cutoff_m": 0.0,
+                  "distance_m": -0.012410388174227825,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.065023520510143,
+                    0.21925670936709496,
+                    1.0929871850956911,
+                    -0.06768397644885203,
+                    0.22914035087468915,
+                    1.1000052574366235
+                  ]
+                },
+                {
+                  "cutoff_m": 0.01,
+                  "distance_m": -0.012455126725617853,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.06541543978130472,
+                    0.2184641339076726,
+                    1.0937144308376976,
+                    -0.067980711647094,
+                    0.2283283124678922,
+                    1.1008731697865553
+                  ]
+                },
+                {
+                  "cutoff_m": 0.1,
+                  "distance_m": -0.012463532058375831,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.06628507204058882,
+                    0.21602105541869976,
+                    1.096111610301423,
+                    -0.06883057783321263,
+                    0.2258514732002302,
+                    1.1033381528959458
+                  ]
+                },
+                {
+                  "cutoff_m": 1.0,
+                  "distance_m": -0.012464786450401721,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.06678640546174762,
+                    0.21453281868740617,
+                    1.09758644912126,
+                    -0.06937630596465728,
+                    0.22435243588573653,
+                    1.1048140652370622
+                  ]
+                }
+              ],
+              "geomDistance_minus_recorded_contact_m": -4.440895536914416e-05,
+              "collision_distance_m": -0.012410388174227825,
+              "collision_distance_minus_recorded_m": 9.989320804752733e-06,
+              "collision_position_error_m": 6.653704653509949e-06,
+              "collision_normal_angle_error_deg": 0.04677864578663779
+            },
+            {
+              "alignment": "post",
+              "source_state_step": 6498,
+              "geomDistance_m": -0.012475017590506177,
+              "geomDistance_queries": [
+                {
+                  "cutoff_m": 0.0,
+                  "distance_m": -0.012420415594897061,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.06502249057316979,
+                    0.21925462177771257,
+                    1.0929881391022178,
+                    -0.06769427623014516,
+                    0.22914234399920505,
+                    1.1000138941665325
+                  ]
+                },
+                {
+                  "cutoff_m": 0.01,
+                  "distance_m": -0.012463709716966814,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.06543263597333573,
+                    0.21845951927014187,
+                    1.093712338040932,
+                    -0.06796996668512703,
+                    0.2283344980769739,
+                    1.1008810761678574
+                  ]
+                },
+                {
+                  "cutoff_m": 0.1,
+                  "distance_m": -0.012473550328775881,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.06627143004429417,
+                    0.21601360037194944,
+                    1.096122664438103,
+                    -0.06884516733326237,
+                    0.2258614161645226,
+                    1.1033327863710127
+                  ]
+                },
+                {
+                  "cutoff_m": 1.0,
+                  "distance_m": -0.012475017590506177,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.06678339732102655,
+                    0.21453126400146308,
+                    1.0975852215427968,
+                    -0.06937883181989969,
+                    0.22435780748224696,
+                    1.1048190882035642
+                  ]
+                }
+              ],
+              "geomDistance_minus_recorded_contact_m": -5.464009547359941e-05,
+              "collision_distance_m": -0.012420415594897061,
+              "collision_distance_minus_recorded_m": -3.8099864483817636e-08,
+              "collision_position_error_m": 1.6869474999747865e-08,
+              "collision_normal_angle_error_deg": 0.00017476519225800225
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 6511,
+      "phase": "all_six/release_ramp",
+      "time_s": 13.022000000001018,
+      "pair_comparisons": [
+        {
+          "body_names": [
+            "gripper0_base_link",
+            "gripper0_finger12_link"
+          ],
+          "recorded_distance_m": -0.005548283491831428,
+          "recorded_normal_force_N": 55.87652839330904,
+          "recorded_position_world_m": [
+            -0.0925689538818181,
+            0.23432087722135983,
+            1.1308933853205059
+          ],
+          "recorded_normal_world": [
+            0.6090399501904984,
+            0.6075282650137453,
+            -0.5098820905673621
+          ],
+          "offline_poses": [
+            {
+              "alignment": "pre",
+              "source_state_step": 6510,
+              "geomDistance_m": -0.005703980045035362,
+              "geomDistance_queries": [
+                {
+                  "cutoff_m": 0.0,
+                  "distance_m": -0.00555169057835116,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.09088027027578179,
+                    0.2360055547412362,
+                    1.129476934375266,
+                    -0.094261387337215,
+                    0.23263272703555127,
+                    1.1323077203018954
+                  ]
+                },
+                {
+                  "cutoff_m": 0.01,
+                  "distance_m": -0.00555164429324269,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.08997502395077005,
+                    0.2339153027132627,
+                    1.1286347776102366,
+                    -0.09335601089032065,
+                    0.23054250697882347,
+                    1.1314656662705396
+                  ]
+                },
+                {
+                  "cutoff_m": 0.1,
+                  "distance_m": -0.005673713882012918,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.08786150407974846,
+                    0.2275126162456616,
+                    1.1251974921050152,
+                    -0.09163238453759603,
+                    0.22406081040095888,
+                    1.1276584931610991
+                  ]
+                },
+                {
+                  "cutoff_m": 1.0,
+                  "distance_m": -0.005703980045035362,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.0866969111565006,
+                    0.22368114561974686,
+                    1.1230539392995036,
+                    -0.09052723871436816,
+                    0.22026854679503924,
+                    1.12554756084561
+                  ]
+                }
+              ],
+              "geomDistance_minus_recorded_contact_m": -0.0001556965532039335,
+              "collision_distance_m": -0.00555169057835116,
+              "collision_distance_minus_recorded_m": -3.407086519731893e-06,
+              "collision_position_error_m": 2.765776650406595e-06,
+              "collision_normal_angle_error_deg": 0.0012032218396313202
+            },
+            {
+              "alignment": "post",
+              "source_state_step": 6511,
+              "geomDistance_m": -0.0057003579029781815,
+              "geomDistance_queries": [
+                {
+                  "cutoff_m": 0.0,
+                  "distance_m": -0.005548272556546393,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.09087940324555739,
+                    0.23600625348685936,
+                    1.1294789204926867,
+                    -0.09425852385127419,
+                    0.23263552177287009,
+                    1.132307884968613
+                  ]
+                },
+                {
+                  "cutoff_m": 0.01,
+                  "distance_m": -0.005548226305428479,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.08997392912432373,
+                    0.23391618234467076,
+                    1.1286370915145758,
+                    -0.09335291968879883,
+                    0.2305454825698427,
+                    1.1314661586628443
+                  ]
+                },
+                {
+                  "cutoff_m": 0.1,
+                  "distance_m": -0.005670222195739608,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.08786064153470594,
+                    0.22751384943848646,
+                    1.1251994931788067,
+                    -0.09162927230522125,
+                    0.22406418978804438,
+                    1.1276589016769412
+                  ]
+                },
+                {
+                  "cutoff_m": 1.0,
+                  "distance_m": -0.0057003579029781815,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.08669757485926005,
+                    0.22368461925582653,
+                    1.123056410050112,
+                    -0.09052510639123418,
+                    0.22027440085706482,
+                    1.125549298548729
+                  ]
+                }
+              ],
+              "geomDistance_minus_recorded_contact_m": -0.00015207441114675323,
+              "collision_distance_m": -0.005548272556546393,
+              "collision_distance_minus_recorded_m": 1.0935285035124087e-08,
+              "collision_position_error_m": 2.2469828633414798e-08,
+              "collision_normal_angle_error_deg": 1.2692257719825012e-05
+            }
+          ]
+        },
+        {
+          "body_names": [
+            "gripper0_finger12_link",
+            "gripper0_finger42_link"
+          ],
+          "recorded_distance_m": -0.012477555021287268,
+          "recorded_normal_force_N": 64.96283197488472,
+          "recorded_position_world_m": [
+            -0.06633802540598925,
+            0.22426529139498527,
+            1.096488363131857
+          ],
+          "recorded_normal_world": [
+            0.19554304063630323,
+            -0.7793823572132839,
+            -0.595252938273617
+          ],
+          "offline_poses": [
+            {
+              "alignment": "pre",
+              "source_state_step": 6510,
+              "geomDistance_m": -0.012577830534359347,
+              "geomDistance_queries": [
+                {
+                  "cutoff_m": 0.0,
+                  "distance_m": -0.012475778062684944,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.06513150243220497,
+                    0.2193933129508353,
+                    1.092778195829363,
+                    -0.06755611856117114,
+                    0.2291250163021295,
+                    1.1001984535593166
+                  ]
+                },
+                {
+                  "cutoff_m": 0.01,
+                  "distance_m": -0.012564767913120922,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.06542860032489338,
+                    0.21845622481843496,
+                    1.0937235858710488,
+                    -0.06801745436134544,
+                    0.2283661261443964,
+                    1.101001297269438
+                  ]
+                },
+                {
+                  "cutoff_m": 0.1,
+                  "distance_m": -0.012575687454119286,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.06628703290441984,
+                    0.21600340247877847,
+                    1.0961262212660081,
+                    -0.06885090918544579,
+                    0.22592224781087378,
+                    1.1034194345932908
+                  ]
+                },
+                {
+                  "cutoff_m": 1.0,
+                  "distance_m": -0.012577830534359347,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.06678963484063619,
+                    0.21451983112146175,
+                    1.0975874922700402,
+                    -0.0693761761425156,
+                    0.22443093662523597,
+                    1.1048869177774203
+                  ]
+                }
+              ],
+              "geomDistance_minus_recorded_contact_m": -0.00010027551307207824,
+              "collision_distance_m": -0.012475778062684944,
+              "collision_distance_minus_recorded_m": 1.7769586023244632e-06,
+              "collision_position_error_m": 8.426508418309676e-06,
+              "collision_normal_angle_error_deg": 0.08315219324979595
+            },
+            {
+              "alignment": "post",
+              "source_state_step": 6511,
+              "geomDistance_m": -0.012579350596984007,
+              "geomDistance_queries": [
+                {
+                  "cutoff_m": 0.0,
+                  "distance_m": -0.012477518787358609,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.06511806351814803,
+                    0.21940292923480081,
+                    1.0927747217666441,
+                    -0.06755796930737046,
+                    0.22912768044523424,
+                    1.100202005841175
+                  ]
+                },
+                {
+                  "cutoff_m": 0.01,
+                  "distance_m": -0.012566303450748469,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.06542507484605589,
+                    0.21846150908769155,
+                    1.093725120441469,
+                    -0.06802114869936385,
+                    0.22836798462925542,
+                    1.1010075736894385
+                  ]
+                },
+                {
+                  "cutoff_m": 0.1,
+                  "distance_m": -0.012577154072453134,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.06628702922168556,
+                    0.21600580705168668,
+                    1.0961294517541151,
+                    -0.06884991704206592,
+                    0.225926274276432,
+                    1.1034233355361016
+                  ]
+                },
+                {
+                  "cutoff_m": 1.0,
+                  "distance_m": -0.012579350596984007,
+                  "distance_is_capped": false,
+                  "closest_segment_world_m": [
+                    -0.06678986225345249,
+                    0.2145217505892308,
+                    1.0975906355654672,
+                    -0.06937421911993841,
+                    0.22443509171453013,
+                    1.1048904183541493
+                  ]
+                }
+              ],
+              "geomDistance_minus_recorded_contact_m": -0.00010179557569673855,
+              "collision_distance_m": -0.012477518787358609,
+              "collision_distance_minus_recorded_m": 3.623392865956254e-08,
+              "collision_position_error_m": 1.6189463642658746e-08,
+              "collision_normal_angle_error_deg": 7.350391147496053e-05
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
