@@ -1,0 +1,45 @@
+{
+  "scope": "minimum diagnostic screening; not hardware limits or a grasp success predicate",
+  "threshold_origin": "right-hand screening bounds declared before its first run; 2mm overlap follows the existing diagnostic convention; angular bounds are new screening limits, not manufacturer certification",
+  "per_group_s": {
+    "close_ramp": 0.5,
+    "closed_hold": 0.5,
+    "release_ramp": 0.5,
+    "open_hold": 0.5
+  },
+  "steady_window": "last 0.1 s of each 0.5 s hold",
+  "groups": [
+    "finger11",
+    "finger12",
+    "finger21",
+    "finger31",
+    "finger41",
+    "finger51",
+    "all_six"
+  ],
+  "arm_controller": "stock robosuite1.4.1 JointPositionController; set_goal(zeros(7), set_qpos=keyframe_arm)",
+  "arm_controller_parameters": {
+    "kp": 50.0,
+    "damping_ratio": 1.0,
+    "policy_freq": 20
+  },
+  "hand_controller": "six native MJCF position servos, no runtime parameter changes",
+  "probe": {
+    "radius_m": 0.006,
+    "mass_kg": 0.004,
+    "surface_gap_m": 0.001,
+    "source_selection": "all right-hand source vertices in stable descending world-z order; first sphere placement separated from every formal group-0 collision geom",
+    "placement": "candidate center = source vertex + world (0,0,radius+1mm); reject any signed distance < 0; no physical stepping during selection",
+    "schedule": "open 2 s; all-six half-close ramp .5 s, hold .5 s, release .5 s, hold .5 s"
+  },
+  "thresholds": {
+    "arm_hold_tracking_rad": 0.1,
+    "active_steady_tracking_rad": 0.02,
+    "linear_mimic_residual_rad": 0.02,
+    "joint_limit_overshoot_rad": 0.01,
+    "enabled_nonadjacent_self_overlap_m": 0.002,
+    "external_contact_overlap_m": 0.002
+  },
+  "real_grasp_result": "UNKNOWN",
+  "libero_task_result": "NOT_RUN"
+}

@@ -1,0 +1,9 @@
+test_weld_neighbor_stays_eligible_and_its_distance_is_counted (test_internal_contact_analysis.ContactAnnotationTests.test_weld_neighbor_stays_eligible_and_its_distance_is_counted) ... /data_robot/verification/nero_dh116_right/.reference-env/lib/python3.11/site-packages/OpenGL/platform/egl.py:76: ResourceWarning: unclosed file <_io.TextIOWrapper name='/proc/cpuinfo' mode='r' encoding='UTF-8'>
+  info = open('/proc/cpuinfo').read()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+
+----------------------------------------------------------------------
+Ran 1 test in 1.348s
+
+OK

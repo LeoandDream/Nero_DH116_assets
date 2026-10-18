@@ -1,0 +1,35 @@
+{
+  "checks": {
+    "baseline_tracked_files_unchanged": true,
+    "main_head_status_and_readme_unchanged": true,
+    "raw_run_bytes_preserved": true,
+    "public_raw_gzip_lossless": true,
+    "steps_and_rows_7000": true,
+    "all_actions_targets_phase_and_time_equal": true,
+    "first_199_qpos_qvel_forces_equal": true,
+    "tracking_errors_match_actual_state": true,
+    "finite_and_no_numerical_warning": true,
+    "one_candidate_completed_7000": true,
+    "all_candidate_fields_frozen_during_run": true,
+    "only_two_effective_pairs_changed": true,
+    "xml_only_two_lines_added": true,
+    "corrected_annotation_333_and_state_understatements_163": true,
+    "corrected_peak_matches_independent_review": true,
+    "runtime_entry_matches_executed_commit": true
+  },
+  "baseline_files_checked": 408,
+  "physics_runs": {
+    "new_candidate": 1,
+    "new_control": 0,
+    "real_steps": 7000,
+    "postprocessing_real_steps": 0
+  },
+  "formal_model_sha256": "739d3d29bbfd4a6468fb8b75f4de09b719c0f96abb39508959c1dfc33a84b9cc",
+  "main_protection": {
+    "head": "9f4054f6197ecb1127202cee14cd75c3924a47e3",
+    "status": " M README.md\n",
+    "readme_sha256": "d68ec6d62a6f42b8c1636ad2774c8329073d973c2621cc7fe148c8c8c89d8f25"
+  },
+  "all_checks_passed": true,
+  "limits": "Historical integration/cache snapshot unavailable; geometry and real grasp not accepted."
+}

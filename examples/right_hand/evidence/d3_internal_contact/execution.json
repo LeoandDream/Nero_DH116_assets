@@ -1,0 +1,8 @@
+{
+  "diagnostic_only": true,
+  "preflight_only": false,
+  "baseline": "6b432737dbddc7e8917630382c582ac8704d637a",
+  "exit_code": 2,
+  "command": "examples/right_hand/internal_contact.py --output runs/d3_internal_filtered_001",
+  "meaning": "0 numeric screening PASS under diagnostic exclusions; 2 numeric FAIL; 1 preflight/runtime error; not geometry or grasp acceptance"
+}

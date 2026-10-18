@@ -1,0 +1,420 @@
+{
+  "scope": "Read-only stdlib source/evidence/environment parse and hash audit. No MuJoCo import/API/model compile/controller instantiation/forward/step/integration, no remote write. Only this JSON is written.",
+  "W": "/data_robot/projects/.worktrees/nero_dh116_right",
+  "C": "/data_robot/verification/nero_dh116_right",
+  "base_commit": "6b432737dbddc7e8917630382c582ac8704d637a",
+  "historical_implementation_commit": "160c8f4076ae39034c28d07c40be9c62c1aa69ac",
+  "C_head": "30216a660974fbfcd8344cbc7a734f5ab816a790",
+  "previous_audit_sha256": "a154d2f7044ab20f5e37d63f12df951f0531cca2d20765b9dd3f57b48f4f0fbb",
+  "historical_evidence": {
+    "hand-motion-state.jsonl.gz": {
+      "gzip_sha256": "57e37a567b9a9381e5dff9563dce5521b9d48be81554b20781e98ab75291c54b",
+      "uncompressed_sha256": "ad184353f23fc368f32884dbf8a15df3c96af31f41ded9e3ef7c18258be94079",
+      "index_hashes_match": true,
+      "C_runtime_raw_bytes_identical": true,
+      "uncompressed_bytes": 24037230,
+      "rows": 7000
+    },
+    "hand-motion-contacts.jsonl.gz": {
+      "gzip_sha256": "c48cd97035d6bf63296fcac199b1e898d92547d566623fae5513745dc20b5b04",
+      "uncompressed_sha256": "6fac9a84e29d6eb8a4d7e08d7938c76d1a18d4ab2d541d97804aed74fbf61aad",
+      "index_hashes_match": true,
+      "C_runtime_raw_bytes_identical": true,
+      "uncompressed_bytes": 2827964,
+      "rows": 7000
+    },
+    "frozen-commands.json.gz": {
+      "gzip_sha256": "d21df12fa6eb6419a248131d0ae3faddeeaeeb4e9a59f34c3cf17f3e43c0da37",
+      "uncompressed_sha256": "7f756fc5d6bb2bfef5ab3e97b02f4b09cc91ec469ab1d028bc92eaa4e5349fdb",
+      "index_hashes_match": true,
+      "C_runtime_raw_bytes_identical": true,
+      "uncompressed_bytes": 1668658
+    },
+    "hand-motion-result.json": {
+      "sha256": "693e68cade25de72c6bd35799cc5feb2b8930bc093ac97f451080ddb94d2e055",
+      "index_hash_matches": true,
+      "C_runtime_bytes_identical": true
+    },
+    "frozen-protocol.json": {
+      "sha256": "4c06875a89dec5fc12385bc3abcf8d058ca9e30d2a9811d3394811dc5d118bc7",
+      "index_hash_matches": true,
+      "C_runtime_bytes_identical": true
+    },
+    "source-preflight.json": {
+      "sha256": "ee4e0a36400030d3481e37858f5cc47be523eafcc07da5bef7726f844b62edb7",
+      "index_hash_matches": true,
+      "C_runtime_bytes_identical": true
+    },
+    "environment.json": {
+      "sha256": "2f4d68264f99c759035470a4fec3e8d3215cf6e2ec03d3c2e6510516366f3d6c",
+      "index_hash_matches": true
+    },
+    "artifact-index.json": {
+      "sha256": "b03b31d0a93e55fd962885d00c60fd929651bf52b75d3da4f1033fd5d3400bbb"
+    }
+  },
+  "full_7000_alignment": {
+    "command_rows": 7000,
+    "state_rows": 7000,
+    "contact_rows": 7000,
+    "source_plan_exactly_equals_frozen": true,
+    "source_protocol_exactly_equals_frozen": true,
+    "every_action_target_and_hand_ctrl_matches": true,
+    "state_contact_steps_times_dimensions_tracking_fields_consistent": true,
+    "all_saved_rows_finite_no_warnings": true,
+    "phase_counts": {
+      "finger11/close_ramp": 250,
+      "finger11/closed_hold": 250,
+      "finger11/release_ramp": 250,
+      "finger11/open_hold": 250,
+      "finger12/close_ramp": 250,
+      "finger12/closed_hold": 250,
+      "finger12/release_ramp": 250,
+      "finger12/open_hold": 250,
+      "finger21/close_ramp": 250,
+      "finger21/closed_hold": 250,
+      "finger21/release_ramp": 250,
+      "finger21/open_hold": 250,
+      "finger31/close_ramp": 250,
+      "finger31/closed_hold": 250,
+      "finger31/release_ramp": 250,
+      "finger31/open_hold": 250,
+      "finger41/close_ramp": 250,
+      "finger41/closed_hold": 250,
+      "finger41/release_ramp": 250,
+      "finger41/open_hold": 250,
+      "finger51/close_ramp": 250,
+      "finger51/closed_hold": 250,
+      "finger51/release_ramp": 250,
+      "finger51/open_hold": 250,
+      "all_six/close_ramp": 250,
+      "all_six/closed_hold": 250,
+      "all_six/release_ramp": 250,
+      "all_six/open_hold": 250
+    },
+    "contact_records": 3210,
+    "all_contact_geom_body_names_match_XML": true,
+    "contact_body_pairs": [
+      {
+        "body_pair": [
+          "gripper0_base_link",
+          "gripper0_finger12_link"
+        ],
+        "contact_records": 858,
+        "first_step": 200,
+        "last_step": 6630,
+        "minimum_distance_m": -0.006047435571495536,
+        "minimum_distance_step": 500,
+        "enabled_nonadjacent_robot_self": true,
+        "filter_reasons": [
+          []
+        ],
+        "steps_count": 858
+      },
+      {
+        "body_pair": [
+          "gripper0_finger12_link",
+          "gripper0_finger32_link"
+        ],
+        "contact_records": 333,
+        "first_step": 6282,
+        "last_step": 6614,
+        "minimum_distance_m": -0.0060279231520966895,
+        "minimum_distance_step": 6545,
+        "enabled_nonadjacent_robot_self": true,
+        "filter_reasons": [
+          []
+        ],
+        "steps_count": 333
+      },
+      {
+        "body_pair": [
+          "gripper0_finger12_link",
+          "gripper0_finger33_link"
+        ],
+        "contact_records": 337,
+        "first_step": 6278,
+        "last_step": 6614,
+        "minimum_distance_m": -0.005437798994295729,
+        "minimum_distance_step": 6549,
+        "enabled_nonadjacent_robot_self": true,
+        "filter_reasons": [
+          []
+        ],
+        "steps_count": 337
+      },
+      {
+        "body_pair": [
+          "gripper0_finger12_link",
+          "gripper0_finger42_link"
+        ],
+        "contact_records": 332,
+        "first_step": 6259,
+        "last_step": 6590,
+        "minimum_distance_m": -0.012477555021287268,
+        "minimum_distance_step": 6511,
+        "enabled_nonadjacent_robot_self": true,
+        "filter_reasons": [
+          []
+        ],
+        "steps_count": 332
+      },
+      {
+        "body_pair": [
+          "gripper0_finger12_link",
+          "gripper0_finger43_link"
+        ],
+        "contact_records": 332,
+        "first_step": 6256,
+        "last_step": 6587,
+        "minimum_distance_m": -0.012296654585360388,
+        "minimum_distance_step": 6490,
+        "enabled_nonadjacent_robot_self": true,
+        "filter_reasons": [
+          []
+        ],
+        "steps_count": 332
+      },
+      {
+        "body_pair": [
+          "gripper0_finger13_link",
+          "gripper0_finger32_link"
+        ],
+        "contact_records": 143,
+        "first_step": 6232,
+        "last_step": 6629,
+        "minimum_distance_m": -0.0024471499547484596,
+        "minimum_distance_step": 6603,
+        "enabled_nonadjacent_robot_self": true,
+        "filter_reasons": [
+          []
+        ],
+        "steps_count": 143
+      },
+      {
+        "body_pair": [
+          "gripper0_finger13_link",
+          "gripper0_finger33_link"
+        ],
+        "contact_records": 128,
+        "first_step": 6229,
+        "last_step": 6628,
+        "minimum_distance_m": -0.002012415863163125,
+        "minimum_distance_step": 6605,
+        "enabled_nonadjacent_robot_self": true,
+        "filter_reasons": [
+          []
+        ],
+        "steps_count": 128
+      },
+      {
+        "body_pair": [
+          "gripper0_finger13_link",
+          "gripper0_finger42_link"
+        ],
+        "contact_records": 343,
+        "first_step": 6233,
+        "last_step": 6575,
+        "minimum_distance_m": -0.00557130275852709,
+        "minimum_distance_step": 6315,
+        "enabled_nonadjacent_robot_self": true,
+        "filter_reasons": [
+          []
+        ],
+        "steps_count": 343
+      },
+      {
+        "body_pair": [
+          "gripper0_finger13_link",
+          "gripper0_finger43_link"
+        ],
+        "contact_records": 323,
+        "first_step": 6234,
+        "last_step": 6556,
+        "minimum_distance_m": -0.0037703091712122483,
+        "minimum_distance_step": 6300,
+        "enabled_nonadjacent_robot_self": true,
+        "filter_reasons": [
+          []
+        ],
+        "steps_count": 323
+      },
+      {
+        "body_pair": [
+          "gripper0_finger14_link",
+          "gripper0_finger32_link"
+        ],
+        "contact_records": 34,
+        "first_step": 6226,
+        "last_step": 6259,
+        "minimum_distance_m": -0.0014397932096484021,
+        "minimum_distance_step": 6237,
+        "enabled_nonadjacent_robot_self": true,
+        "filter_reasons": [
+          []
+        ],
+        "steps_count": 34
+      },
+      {
+        "body_pair": [
+          "gripper0_finger14_link",
+          "gripper0_finger33_link"
+        ],
+        "contact_records": 34,
+        "first_step": 6225,
+        "last_step": 6258,
+        "minimum_distance_m": -0.0013002989405176003,
+        "minimum_distance_step": 6235,
+        "enabled_nonadjacent_robot_self": true,
+        "filter_reasons": [
+          []
+        ],
+        "steps_count": 34
+      },
+      {
+        "body_pair": [
+          "gripper0_finger14_link",
+          "gripper0_finger42_link"
+        ],
+        "contact_records": 13,
+        "first_step": 6232,
+        "last_step": 6244,
+        "minimum_distance_m": -0.000805957652006274,
+        "minimum_distance_step": 6236,
+        "enabled_nonadjacent_robot_self": true,
+        "filter_reasons": [
+          []
+        ],
+        "steps_count": 13
+      }
+    ],
+    "recomputed_original_failures": {
+      "ENABLED_NONADJACENT_SELF_OVERLAP": {
+        "first_step": 229,
+        "count": 750
+      },
+      "ACTIVE_STEADY_TRACKING": {
+        "first_step": 451,
+        "count": 100
+      }
+    },
+    "recomputed_original_maxima": {
+      "max_active_tracking_error_rad": 0.3838362539158138,
+      "max_arm_tracking_error_rad": 0.027465711513562058,
+      "max_linear_mimic_residual_rad": 0.0006871639160716796,
+      "max_joint_limit_overshoot_rad": 0.00012328336512588847,
+      "max_enabled_nonadjacent_self_overlap_m": 0.012477555021287268,
+      "max_external_contact_normal_N": 0.0,
+      "max_external_contact_overlap_m": 0.0,
+      "max_right_hand_external_contact_normal_N": 0.0,
+      "max_active_steady_tracking_error_rad": 0.21534176278796124
+    },
+    "all_recomputed_original_result_fields_match": true,
+    "arm_ctrl_scope": "Saved arm torque ctrl is preserved and hash-verified for all 7000 steps; it is not recalculated from dynamics.",
+    "physics_options": {
+      "impratio": "20",
+      "cone": "elliptic",
+      "density": "1.2",
+      "viscosity": "0.00002",
+      "timestep": "0.002",
+      "integrator": "RK4"
+    }
+  },
+  "source_identity": {
+    "files_checked": 96,
+    "original_preflight_manifest_union_files": 96,
+    "W_C_base_and_historical_all_identical": true,
+    "key_sha256": {
+      "mjcf/nero_dh116_right.xml": "739d3d29bbfd4a6468fb8b75f4de09b719c0f96abb39508959c1dfc33a84b9cc",
+      "urdf/dh116_right.urdf": "1134b2e3ac3afb323dd1b5c11a793dab4c50d18445bec2ff47017c0c1c49a354",
+      "urdf/dh116_right.source.urdf": "c3ec0a6bd0e39477554e8a1a04b7a7e44004737a5a65f86b1c02bc4848911525",
+      "examples/right_hand/run.py": "da5d8eca983eba38ba6ad630588a9398ac2df3ff61544a975c5f74558531d172",
+      "RIGHT_SOURCE_MANIFEST.json": "aaa8cf5344d9ad91645dc5f1b433b651dfb9e8be46fa83deced63dc0a2e3bec0"
+    },
+    "lock_sha256_all_W_C_base_historical_identical": {
+      "requirements.txt": "12066b8a191f199a7296fddb5fe46241d7267833563140486d1350d5c024bf70",
+      "examples/libero_reference/env/requirements.lock": "641c7a459fad9d44aa01365f592d48bccef86f20aa51f45a7f887e94f589f603",
+      "examples/libero_reference/env/requirements.in": "ad7ba6333062e788e793c2607b5d8c4086a194927fd75d97183658b548eac2dd",
+      "examples/libero_reference/env/source-lock.json": "ad1ff693291f12b0d6a0c624668bb0ac9a342502f29cea628afbf2c3cc1205df",
+      "examples/libero_reference/env/build.lock": "2f0a66a24323cfaeae8796d1923bf51e0162d3949cb0cabcf1311c23e10cecc6"
+    },
+    "source_urdf_in_original_preflight_manifest_union": true
+  },
+  "environment_identity": {
+    "python": {
+      "version": "3.11.16",
+      "executable": "/data_robot/verification/nero_dh116_right/.reference-env/bin/python",
+      "base_executable": "/data_robot/verification/nero_dh116_right/.reference-deps/python/bin/python3.11",
+      "sim_modules_imported": [],
+      "sha256": "ec579de7512e84d960bc642a840de69c785c52d6adf89e3a15f51717b29be40f"
+    },
+    "distributions_count": 58,
+    "distribution_version_differences": {},
+    "editable_LIBERO_path_validated_by_pth": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO",
+    "venv_config": "home = /data_robot/verification/nero_dh116_right/.reference-deps/python/bin\ninclude-system-site-packages = false\nversion = 3.11.16\nexecutable = /data_robot/verification/nero_dh116_right/.reference-deps/python/bin/python3.11\ncommand = /data_robot/verification/nero_dh116_right/.reference-deps/python/bin/python3.11 -m venv /data_robot/verification/nero_dh116_right/.reference-env\n",
+    "core_wheels": {
+      "robosuite": {
+        "sha256": "62587cd5888d9d3d813f3ffcc7017f6f77efa618952527a0b9bb139ffd0a3741",
+        "wheel_hash_matches_prior_and_original_baseline": true,
+        "installed_package_files_checked": 1019,
+        "all_bytes_and_inventory_identical": true
+      },
+      "mujoco": {
+        "sha256": "4c6add7cb34dd194ffecab169dca296ef3280eeecb2d4fc647280b6484dac8c8",
+        "wheel_hash_matches_prior_and_original_baseline": true,
+        "installed_package_files_checked": 62,
+        "all_bytes_and_inventory_identical": true
+      },
+      "numpy": {
+        "sha256": "666dbfb6ec68962c033a450943ded891bed2d54e6755e35e5835d63f4f6931d5",
+        "wheel_hash_matches_prior_and_original_baseline": true,
+        "installed_package_files_checked": 909,
+        "all_bytes_and_inventory_identical": true
+      },
+      "numba": {
+        "sha256": "3945615cd73c2c7eba2a85ccc9c1730c21cd3958bfcf5a44302abae0fb07bb60",
+        "wheel_hash_matches_prior_and_original_baseline": true,
+        "installed_package_files_checked": 815,
+        "all_bytes_and_inventory_identical": true
+      },
+      "llvmlite": {
+        "sha256": "c5d22c3bfc842668168a786af4205ec8e3ad29fb1bc03fd11fd48460d0df64c1",
+        "wheel_hash_matches_prior_and_original_baseline": true,
+        "installed_package_files_checked": 40,
+        "all_bytes_and_inventory_identical": true
+      },
+      "scipy": {
+        "sha256": "39cb9c62e471b1bb3750066ecc3a3f3052b37751c7c3dfd0fd7e48900ed52982",
+        "wheel_hash_matches_prior_and_original_baseline": true,
+        "installed_package_files_checked": 1420,
+        "all_bytes_and_inventory_identical": true
+      }
+    },
+    "controller_source_sha256": {
+      "robosuite/controllers/joint_pos.py": "7a8fab0200c499722e238e39a3735347bdc518138105e4d823490a9575071793",
+      "robosuite/controllers/base_controller.py": "61f99a2daeb4eb6e39bfb996d94c5a5689ef3bc771d030d070193ea56d6a8332",
+      "robosuite/utils/binding_utils.py": "5ac3c9da0cb9f85d694c6147103268df65151f751612a6c575ae0da4eb4988e4",
+      "robosuite/utils/control_utils.py": "1d0f1a063894b1e8289339e223665e14e8aec492c31e9e00f42edea8dc735f43",
+      "robosuite/macros.py": "85041caa914fbee7c9976e610ef8e0e76036af796ea65f07abb45c57962c6b25"
+    },
+    "scope": "Wheel package files and .libs binaries read byte-for-byte; generated pycache/pyc excluded. No package imports, EGL/LIBERO/model smoke tests, or integration. LIBERO distribution metadata obtained from unchanged editable-source path; LIBERO was not loaded."
+  },
+  "initialization_boundary": {
+    "native_keyframe": "right_open",
+    "qpos_time_match_original_result": true,
+    "XML_qvel_ctrl_explicit_zero": true,
+    "original_full_pre_step_mjSTATE_INTEGRATION_saved": false,
+    "original_controller_cache_saved": false,
+    "original_qacc_warmstart_saved": false,
+    "source_initialization_unchanged": true,
+    "source_order": "Fresh MjSim/MjData -> resetDataKeyframe(0) -> forward -> save initial qpos/time -> stock JPC(kp=50,damping_ratio=1,policy_freq=20) -> set_goal(zeros(7),set_qpos=keyframe_arm) -> original per-step controls. Constructor behavior is source-based evidence.",
+    "limit": "Reuse supports a historical unmodified lambda0 control with identical source/model/runtime and original reset procedure. The missing original full integration snapshot prevents direct bytewise verification of hidden initial/cache state and does not establish empirical deterministic replay. No new lambda0 was run."
+  },
+  "conclusion": {
+    "historical_complete_7000_valid_for_control_reuse": true,
+    "recommendation": "Reuse original full 7000 saved lambda0 commands/state/contact records; zero new control integration.",
+    "historical_result": "FINISHED / FAIL; max steady tracking 0.21534176278796124 rad; max enabled self-overlap 0.012477555021287268 m; grasp UNKNOWN, LIBERO NOT_RUN.",
+    "candidate_comparison_boundary": "Candidate A base_link<->finger12_link and B finger12_link<->finger42_link exclusion comparison is supported only under unchanged command/reset/model/environment apart from those two exclusions. No direct hidden-state replay equivalence or broader physical validity is established.",
+    "audit_physics_steps": 0
+  }
+}
