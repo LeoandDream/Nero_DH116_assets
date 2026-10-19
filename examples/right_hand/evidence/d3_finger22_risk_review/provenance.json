@@ -1,0 +1,74 @@
+{
+  "baseline_commit": "f64134823ce1a888f624e96c005efa626fed017b",
+  "candidate_sha256": "7f9d84061c3e7d176763c688d2389f8b3d3e38386b8e990a0fa047ff2bc3329c",
+  "script_sha256": "b5e40163174f3ac501a1f347cb8a0af6abbc9ca6097f147d993ceb95d8b89362",
+  "python": "3.11.16",
+  "numpy": "1.26.4",
+  "scipy": "1.15.3",
+  "mujoco": "3.2.3",
+  "sources": [
+    {
+      "url": "https://github.com/google-deepmind/mujoco/blob/3.2.3/src/user/user_mesh.cc",
+      "git_blob_sha1": "64e6ae5f8d767f946e2f0b4fc7e4d1b13a7746de",
+      "sha256": "e125bc365f339fd0427a28600b23f10aa8b0f3b68fddb6c64538b882410cad7f"
+    },
+    {
+      "url": "https://github.com/google-deepmind/mujoco/blob/3.2.3/src/user/user_util.cc",
+      "git_blob_sha1": "803c22d4429826fe4083015e75d3d181238c8c6d",
+      "sha256": "327f60e26514d0981d0b964fba3b55280d422240c25bc8af8d0561f4c5f0c76d"
+    }
+  ],
+  "source_line_references": {
+    "user_mesh.cc": "917-935 OBJ load; 1425-1431 float recenter; 1509-1523 float principal rotation",
+    "user_util.cc": "197-235 quaternion matrix; 251-260 double matrix-vector product"
+  },
+  "inputs_sha256": {
+    "examples/right_hand/candidates/finger22_local/model.xml": "7f9d84061c3e7d176763c688d2389f8b3d3e38386b8e990a0fa047ff2bc3329c",
+    "meshes/dh116_right/source/finger22_link.STL": "5ebb8a2084495cb9e87b6ee531681500cfe5a37280320e97270d6e52c804081d",
+    "meshes/dh116_right/source/finger21_link.STL": "7162d86cefa849458536cbb77968560dbf4e6c7a8b1734777640f9da1f828886",
+    "meshes/dh116_right/source/finger23_link.STL": "ccbd2de17dac2fe356e4275240f5f00f8eee01dd2f32a44fc5b1e150f93d99f6",
+    "examples/right_hand/evidence/d3_finger22_local/compiled-quality.json.gz": "6d15c1440ba2334ded7b34d3a1adbf831bde7db0dfda56c7f4dd6b5618595834",
+    "examples/right_hand/evidence/d3_finger22_local/raw-quality.json.gz": "329c49047f693008063dbdd73409e3d6eb7e56d13c6364a13fe2530128702522",
+    "examples/right_hand/evidence/d3_finger22_local/serialization-audit.json": "5cf183b85a43a8c293ccf74d839e7e827304cdc445c8c23ad8c50c068e1325a4",
+    "examples/right_hand/evidence/d3_finger22_local/old-mesh-graph-audit.json": "675beff0c4a832e264d299ce0b5a77f8f78488954420036db72d4220a0e5a5a0",
+    "examples/right_hand/evidence/d3_finger22_local/verification.json": "32bfba06a657e40f61b660bbe3dfcc11c876ee68dbcf32ff50cafbeba4499bf2",
+    "examples/right_hand/evidence/d3_finger22_local/summary.json": "9e9894339dce08cceebc17335f825f58b5fe2f9f7757c28ecfb21c476dff8805",
+    "examples/right_hand/evidence/d3_finger22_local/input-audit.json": "08b06fea490373a8a64caf63ffd4cfc6c98b32129e59f914bf886a51c439ffff",
+    "examples/right_hand/evidence/d3_finger22_local/rk4-witnesses.json.gz": "f402a07e5153f47eabf03714c9e9cac5f4c2992d5253e0e143133049d2944118",
+    "examples/right_hand/evidence/d3_finger22_local/scene-resources.json": "ef710fedf12e25aa8d3a63526f2d2f60e2dbf4a1e4fc5b85ad42250e5a450b2f",
+    "examples/right_hand/evidence/d3_finger22_local/close-states.json.gz": "4be0923d3c753a076cafd625744e510426c107d12ccfe23e739606d79c100600",
+    "examples/right_hand/evidence/d3_finger22_local/unchanged-contact-differences.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "examples/right_hand/evidence/d3_finger22_local/raw-coverage.json.gz": "e80e2c78d310e8584c160202bf01e60031f4ae45a624aa50a9a5096657388392",
+    "examples/right_hand/evidence/d3_finger22_local/api-audit.json": "6f239f740caa5bee84ac1afa2e3df757c742b8fa5c5a61218894173031422355",
+    "examples/right_hand/evidence/d3_finger22_local/compiled-coverage.json.gz": "d87e8049913fe4475904fc92edcfeae66942bec6c6582085aff5f56633e81ec1",
+    "examples/right_hand/evidence/d3_finger22_local/scan-summary.json": "caf03061cbe3ce20006fd85f2676b578322c026c172b128e8df38ec97fc39442",
+    "examples/right_hand/evidence/d3_finger22_local/quality-summary.json.gz": "2e64c1889375f1be359a509c64fad0bc546925fe13666c4cef753f0b84c5f298",
+    "examples/right_hand/evidence/d3_finger22_local/native-contact-changes.json": "8208cf3ad6f87e7fdefae748d1d4565a6de3a26be88392c5d128b20b9209da8a",
+    "examples/right_hand/evidence/d3_finger22_local/working-face-patch.json": "dcadf00f1fad2f1800f19e67269ea10995b2b848402613658261ee2674211a3b",
+    "examples/right_hand/evidence/d3_wrist_conditional/run/state.jsonl.gz": "e7e791ef2b85eec34920cc2483cf2013286cf43a6bd6935e8c7b6579799d69f0",
+    "examples/right_hand/evidence/d3_wrist_conditional/run/contacts.jsonl.gz": "8d6d6054175a048dbe993d2cf90879b5bd78cf8541b011c07a865e412b41bb05",
+    "examples/right_hand/evidence/d3_wrist_conditional/run/model.xml": "d0f5c2fe79e52651b8167e9f26f7789a2742095ae0c17245fab353d65f7ce99c"
+  },
+  "full_742_collision_sweep_repeated": false,
+  "new_proxy_count": 0,
+  "post_FK_poses": [
+    4001,
+    4518,
+    4641,
+    4664,
+    4742
+  ],
+  "cached_transform_rows_reused": 80,
+  "physics_steps": 0,
+  "formal_numeric_status": "FAIL_UNCHANGED",
+  "recommendation": "A_REQUEST_EXPLORATORY_DYNAMICS_ONLY_NOT_APPROVED_OR_RUN",
+  "unknowns": [
+    "nonmanifold source material/void connectivity",
+    "arbitrary approach directions",
+    "full closure and unrun poses",
+    "lift/hold and grasp outcome"
+  ],
+  "user_readme_sha256": "d68ec6d62a6f42b8c1636ad2774c8329073d973c2621cc7fe148c8c8c89d8f25",
+  "evidence_assertions": "PASS: frozen hashes, same witnesses, all-vertex bitwise model, independent bound inequalities, continuous +X cover and finite saved-direction ray evidence verified.",
+  "same_reverse_witness_reprojection_verified": true
+}
