@@ -1,0 +1,20 @@
+{
+  "input_sha256": "ec1e11399c4326a6489ef6a4dc10c45cc91143bfcd51ae6e71630008b94c3326",
+  "method": "Independent 60-digit Decimal.from_float re-evaluation of every serialized unit halfspace at stored center and at half-margin ball radius. No optimizer or MuJoCo.",
+  "cases": {
+    "coarse17": {
+      "halfspaces_checked": 7636,
+      "minimum_center_plane_margin_mm": "0.08818180188922210516397403981269731167394033711570656470912",
+      "inner_ball_radius_mm": "0.044090900944611051415211733228716184385120868682861328125",
+      "minimum_remaining_ball_clearance_mm": "0.04409090094461105374876230658398112728881946843284523658412",
+      "strictly_positive": true
+    },
+    "proxy76": {
+      "halfspaces_checked": 7602,
+      "minimum_center_plane_margin_mm": "0.00133821610500905286626439254115826530948765947961507332788",
+      "inner_ball_radius_mm": "0.00066910805250452640678682225683360229595564305782318115234375",
+      "minimum_remaining_ball_clearance_mm": "0.00066910805250452645947757028432466301353201642179189217553625",
+      "strictly_positive": true
+    }
+  }
+}

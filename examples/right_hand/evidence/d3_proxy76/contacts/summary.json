@@ -1,0 +1,253 @@
+{
+  "schema": "d3-proxy76-static-contact-summary-v1",
+  "poses": 14,
+  "body_pair_comparisons": 56,
+  "robot_collision_geoms": {
+    "hand": 76,
+    "arm": 51,
+    "flange": 8,
+    "total": 135
+  },
+  "allowed_api_calls": {
+    "mj_id2name": 4669,
+    "mj_kinematics": 28,
+    "mj_name2id": 536,
+    "mj_geomDistance": 8792
+  },
+  "blocked_api_count": 106,
+  "forbidden_api_attempts": [],
+  "physics_steps": 0,
+  "resets": 0,
+  "forward_calls": 0,
+  "collision_calls": 0,
+  "constraint_solves": 0,
+  "source_certificates_reused": 15,
+  "inputs_unchanged": true,
+  "representative_post_results": [
+    {
+      "pose_id": "original17_step_229_post",
+      "pair": "base_link/finger12_link",
+      "source_surface": {
+        "status": "REUSED_EXACT_QPOS_AND_SOURCE_SHA256",
+        "certificate_index": 1,
+        "max_body_transform_abs_error": 0.0,
+        "surface_min_distance_m": 0.0,
+        "surface_intersection": true,
+        "strict_transverse_crossing": true,
+        "all_surface_search_complete": false,
+        "global_zero_certified_by_intersection": true
+      },
+      "coarse17": {
+        "minimum_distmax0_m": -0.002012366942032706,
+        "negative_geom_pair_count": 1,
+        "deepest_geom_names": [
+          "gripper0_base_link_collision_0",
+          "gripper0_finger12_link_collision_0"
+        ],
+        "queried_geom_pair_count": 1
+      },
+      "proxy76": {
+        "minimum_distmax0_m": -0.001978714947159847,
+        "negative_geom_pair_count": 1,
+        "deepest_geom_names": [
+          "gripper0_proxy76_base_link_07",
+          "gripper0_proxy76_finger12_link_04"
+        ],
+        "queried_geom_pair_count": 80
+      }
+    },
+    {
+      "pose_id": "original17_step_451_post",
+      "pair": "base_link/finger12_link",
+      "source_surface": {
+        "status": "REUSED_EXACT_QPOS_AND_SOURCE_SHA256",
+        "certificate_index": 3,
+        "max_body_transform_abs_error": 0.0,
+        "surface_min_distance_m": 0.0,
+        "surface_intersection": true,
+        "strict_transverse_crossing": true,
+        "all_surface_search_complete": false,
+        "global_zero_certified_by_intersection": true
+      },
+      "coarse17": {
+        "minimum_distmax0_m": -0.006032301849497677,
+        "negative_geom_pair_count": 1,
+        "deepest_geom_names": [
+          "gripper0_base_link_collision_0",
+          "gripper0_finger12_link_collision_0"
+        ],
+        "queried_geom_pair_count": 1
+      },
+      "proxy76": {
+        "minimum_distmax0_m": -0.006296760632889999,
+        "negative_geom_pair_count": 2,
+        "deepest_geom_names": [
+          "gripper0_proxy76_base_link_07",
+          "gripper0_proxy76_finger12_link_04"
+        ],
+        "queried_geom_pair_count": 80
+      }
+    },
+    {
+      "pose_id": "original17_step_6498_post",
+      "pair": "finger12_link/finger42_link",
+      "source_surface": {
+        "status": "REUSED_EXACT_QPOS_AND_SOURCE_SHA256",
+        "certificate_index": 5,
+        "max_body_transform_abs_error": 0.0,
+        "surface_min_distance_m": 0.0,
+        "surface_intersection": true,
+        "strict_transverse_crossing": true,
+        "all_surface_search_complete": false,
+        "global_zero_certified_by_intersection": true
+      },
+      "coarse17": {
+        "minimum_distmax0_m": -0.012420415594897061,
+        "negative_geom_pair_count": 1,
+        "deepest_geom_names": [
+          "gripper0_finger12_link_collision_0",
+          "gripper0_finger42_link_collision_0"
+        ],
+        "queried_geom_pair_count": 1
+      },
+      "proxy76": {
+        "minimum_distmax0_m": -0.012266876508315441,
+        "negative_geom_pair_count": 2,
+        "deepest_geom_names": [
+          "gripper0_proxy76_finger12_link_00",
+          "gripper0_proxy76_finger42_link_00"
+        ],
+        "queried_geom_pair_count": 8
+      }
+    },
+    {
+      "pose_id": "original17_step_6511_post",
+      "pair": "finger12_link/finger42_link",
+      "source_surface": {
+        "status": "REUSED_EXACT_QPOS_AND_SOURCE_SHA256",
+        "certificate_index": 7,
+        "max_body_transform_abs_error": 0.0,
+        "surface_min_distance_m": 0.0,
+        "surface_intersection": true,
+        "strict_transverse_crossing": true,
+        "all_surface_search_complete": false,
+        "global_zero_certified_by_intersection": true
+      },
+      "coarse17": {
+        "minimum_distmax0_m": -0.012477518787358609,
+        "negative_geom_pair_count": 1,
+        "deepest_geom_names": [
+          "gripper0_finger12_link_collision_0",
+          "gripper0_finger42_link_collision_0"
+        ],
+        "queried_geom_pair_count": 1
+      },
+      "proxy76": {
+        "minimum_distmax0_m": -0.012249151448891493,
+        "negative_geom_pair_count": 2,
+        "deepest_geom_names": [
+          "gripper0_proxy76_finger12_link_00",
+          "gripper0_proxy76_finger42_link_00"
+        ],
+        "queried_geom_pair_count": 8
+      }
+    },
+    {
+      "pose_id": "two_exclusion17_step_6242_post",
+      "pair": "finger13_link/finger42_link",
+      "source_surface": {
+        "status": "REUSED_EXACT_QPOS_AND_SOURCE_SHA256",
+        "certificate_index": 8,
+        "max_body_transform_abs_error": 0.0,
+        "surface_min_distance_m": 0.0,
+        "surface_intersection": true,
+        "strict_transverse_crossing": true,
+        "all_surface_search_complete": false,
+        "global_zero_certified_by_intersection": true
+      },
+      "coarse17": {
+        "minimum_distmax0_m": -0.0020087397643773278,
+        "negative_geom_pair_count": 1,
+        "deepest_geom_names": [
+          "gripper0_finger13_link_collision_0",
+          "gripper0_finger42_link_collision_0"
+        ],
+        "queried_geom_pair_count": 1
+      },
+      "proxy76": {
+        "minimum_distmax0_m": -0.0020154816544257228,
+        "negative_geom_pair_count": 1,
+        "deepest_geom_names": [
+          "gripper0_proxy76_finger13_link_00",
+          "gripper0_proxy76_finger42_link_00"
+        ],
+        "queried_geom_pair_count": 1
+      }
+    },
+    {
+      "pose_id": "two_exclusion17_step_6395_post",
+      "pair": "finger12_link/finger43_link",
+      "source_surface": {
+        "status": "REUSED_EXACT_QPOS_AND_SOURCE_SHA256",
+        "certificate_index": 11,
+        "max_body_transform_abs_error": 0.0,
+        "surface_min_distance_m": 0.0,
+        "surface_intersection": true,
+        "strict_transverse_crossing": true,
+        "all_surface_search_complete": false,
+        "global_zero_certified_by_intersection": true
+      },
+      "coarse17": {
+        "minimum_distmax0_m": -0.014197597635770557,
+        "negative_geom_pair_count": 1,
+        "deepest_geom_names": [
+          "gripper0_finger12_link_collision_0",
+          "gripper0_finger43_link_collision_0"
+        ],
+        "queried_geom_pair_count": 1
+      },
+      "proxy76": {
+        "minimum_distmax0_m": -0.014538333668876722,
+        "negative_geom_pair_count": 8,
+        "deepest_geom_names": [
+          "gripper0_proxy76_finger12_link_00",
+          "gripper0_proxy76_finger43_link_03"
+        ],
+        "queried_geom_pair_count": 64
+      }
+    },
+    {
+      "pose_id": "two_exclusion17_step_6451_post",
+      "pair": "finger13_link/finger42_link",
+      "source_surface": {
+        "status": "REUSED_EXACT_QPOS_AND_SOURCE_SHA256",
+        "certificate_index": 12,
+        "max_body_transform_abs_error": 0.0,
+        "surface_min_distance_m": 0.00022943454531752517,
+        "surface_intersection": false,
+        "strict_transverse_crossing": false,
+        "all_surface_search_complete": true,
+        "global_zero_certified_by_intersection": false
+      },
+      "coarse17": {
+        "minimum_distmax0_m": -0.00017641331279298262,
+        "negative_geom_pair_count": 1,
+        "deepest_geom_names": [
+          "gripper0_finger13_link_collision_0",
+          "gripper0_finger42_link_collision_0"
+        ],
+        "queried_geom_pair_count": 1
+      },
+      "proxy76": {
+        "minimum_distmax0_m": -2.677875652652117e-06,
+        "negative_geom_pair_count": 1,
+        "deepest_geom_names": [
+          "gripper0_proxy76_finger13_link_00",
+          "gripper0_proxy76_finger42_link_00"
+        ],
+        "queried_geom_pair_count": 1
+      }
+    }
+  ],
+  "interpretation": "Saved source crossings persist. 6451 finger13/finger42 source surfaces are separated by 0.229434545 mm, while candidate signed convex query remains negative and cutoff dependent. Geometry/contact diagnostics only; no dynamics, control or grasp acceptance."
+}

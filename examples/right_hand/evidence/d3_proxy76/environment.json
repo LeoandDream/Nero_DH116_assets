@@ -1,0 +1,14 @@
+{
+  "scope": "Static geometry only; no dependency installation or dynamics in this task.",
+  "interpreter_used": "/data_robot/verification/nero_dh116_right/.reference-env/bin/python",
+  "python": "3.11.16",
+  "versions": {
+    "mujoco": "3.2.3",
+    "numpy": "1.26.4",
+    "scipy": "1.15.3",
+    "matplotlib": "3.10.3"
+  },
+  "checkout_environment_created": false,
+  "rebuild_definition": "examples/libero_reference/env/README.md",
+  "runtime_paths": "All candidate resources and static input data resolve inside the checkout. Interpreter path is provenance only."
+}
