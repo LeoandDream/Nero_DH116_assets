@@ -1,0 +1,11 @@
+{
+  "dense_original_sha256": "e52c3467129885f8df887c75d1df5b190af1fa8138ee8b90784505a8a8fa1cf6",
+  "sparse_sha256": "4be0923d3c753a076cafd625744e510426c107d12ccfe23e739606d79c100600",
+  "saved_post_states": 742,
+  "certificates_compacted": 158,
+  "all_states_and_all_classifications_preserved": true,
+  "method": "Only zero-dual-weight plane equations omitted from repeated LP certificates. All nonzero terms and plane indices, primal witnesses, scalar verification residuals, source queries and old/new native contact sets retained. Full primal halfspaces reconstruct from frozen compiled geometries.",
+  "new_geometries": 0,
+  "new_pose_queries": 0,
+  "physics_steps": 0
+}

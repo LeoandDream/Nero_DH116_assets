@@ -1,0 +1,114 @@
+{
+  "quality": {
+    "raw": {
+      "continuous_source_coverage": "PASS",
+      "uncovered_area_m2": 0.0,
+      "uncovered_source_triangles": 0,
+      "source_convex_containment": "PASS",
+      "maximum_halfspace_outward_m": 6.938893903907228e-18,
+      "seams": [
+        {
+          "z_m": 0.0098,
+          "adjacent_part_ids": [
+            0,
+            1
+          ],
+          "exposed_coplanar_seam_area_m2": 0.0,
+          "note": "Only exactly coplanar exposed caps at original 1e-10m tolerance; tilted compiled seams also require distance/coverage checks."
+        },
+        {
+          "z_m": 0.0233,
+          "adjacent_part_ids": [
+            1,
+            2
+          ],
+          "exposed_coplanar_seam_area_m2": 0.0,
+          "note": "Only exactly coplanar exposed caps at original 1e-10m tolerance; tilted compiled seams also require distance/coverage checks."
+        },
+        {
+          "z_m": 0.032,
+          "adjacent_part_ids": [
+            2,
+            3
+          ],
+          "exposed_coplanar_seam_area_m2": 0.0,
+          "note": "Only exactly coplanar exposed caps at original 1e-10m tolerance; tilted compiled seams also require distance/coverage checks."
+        }
+      ]
+    },
+    "compiled": {
+      "continuous_source_coverage": "FAIL",
+      "uncovered_area_m2": 0.0002531098311066771,
+      "uncovered_source_triangles": 3602,
+      "source_convex_containment": "FAIL",
+      "maximum_halfspace_outward_m": 9.678462649376218e-10,
+      "seams": [
+        {
+          "z_m": 0.0098,
+          "adjacent_part_ids": [
+            0,
+            1
+          ],
+          "exposed_coplanar_seam_area_m2": 2.860570005933744e-14,
+          "note": "Only exactly coplanar exposed caps at original 1e-10m tolerance; tilted compiled seams also require distance/coverage checks."
+        },
+        {
+          "z_m": 0.0233,
+          "adjacent_part_ids": [
+            1,
+            2
+          ],
+          "exposed_coplanar_seam_area_m2": 5.600744177626697e-17,
+          "note": "Only exactly coplanar exposed caps at original 1e-10m tolerance; tilted compiled seams also require distance/coverage checks."
+        },
+        {
+          "z_m": 0.032,
+          "adjacent_part_ids": [
+            2,
+            3
+          ],
+          "exposed_coplanar_seam_area_m2": 0.0,
+          "note": "Only exactly coplanar exposed caps at original 1e-10m tolerance; tilted compiled seams also require distance/coverage checks."
+        }
+      ]
+    }
+  },
+  "scan": {
+    "saved_close_post_states": 742,
+    "state_range": [
+      4001,
+      4742
+    ],
+    "eligible_other_geoms_per_state": 507,
+    "all_qualified_hand_pairs_unchanged_outside_finger22": true,
+    "unchanged_native_contact_differences": 0,
+    "native_changed_geom_state_count": 80,
+    "counts": {
+      "eligible_other_geom_states": 376194,
+      "whole_geometry_AABB_separated_old_and_new": 375768,
+      "old_SEPARATED_AABB": 122,
+      "new_SEPARATED": 426,
+      "old_SEPARATED": 146,
+      "old_STRICT_OVERLAP": 158
+    },
+    "required_cached_states": [
+      4741,
+      4742
+    ],
+    "source_surface_assessment_counts": {
+      "SEPARATED_SURFACES_AND_PROXY": 426
+    },
+    "false_contact_interpretation": "Positive source surface gap + proxy overlap is a surface-based false-contact witness; solid containment remains UNKNOWN for nonmanifold source.",
+    "missed_contact_interpretation": "All eligible f22-source-vs-unchanged-other collision geometries checked with whole-source AABB exclusion or full triangle surface query, including when old/new proxies are separated. Other hand proxy approximation is frozen, not revalidated against its manufacturer STL.",
+    "cached_all_bowl_boxes_separated": true,
+    "step4518": "POST_STEP_FK_ONLY; no saved finger22 RK4 cache; original first positive force contact is finger13",
+    "source_solid_contacts": "UNKNOWN_NONMANIFOLD_SOURCE; surface crossings/gaps are reported without a solid-containment claim",
+    "dynamic_prediction": "UNKNOWN_NOT_RUN; saved poses are not a new trajectory or force counterfactual",
+    "physics_steps": 0
+  },
+  "contact_surface_regression": "PASS",
+  "static_status": "FAIL_BLOCKED",
+  "dynamics": "UNKNOWN_NOT_RUN",
+  "release": "NOT_APPROVED",
+  "physics_steps": 0
+}
