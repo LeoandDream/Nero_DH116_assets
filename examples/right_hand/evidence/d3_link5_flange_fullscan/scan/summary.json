@@ -1,0 +1,618 @@
+{
+  "schema": "d3-link5-flange-fullscan-v1",
+  "base_commit": "dcd6540d9103df83dc24c1eff3cb98f80ab619db",
+  "status": "COMPLETE_SURVEY_EXISTING_CANDIDATE_REMAINS_FAIL",
+  "candidate_acceptance": "FAIL_UNCHANGED",
+  "pose_count": 921,
+  "pair_case_count": 5526,
+  "every_pose_has_six_pairs": true,
+  "pair_status_counts": {
+    "SEPARATED": 4877,
+    "STRICT_CONVEX_OVERLAP": 649
+  },
+  "anomalous_pose_count": 435,
+  "anomaly_phase_counts": {
+    "approach_high": 38,
+    "descend": 178,
+    "lift": 99,
+    "hold": 120
+  },
+  "anomaly_source_classifications": {
+    "SOURCE_TRIANGLE_SURFACES_SEPARATED": 435
+  },
+  "anomaly_pair_counts": {
+    "robot0_link5_local_01 / robot0_flange_local_01": 435,
+    "robot0_link5_local_00 / robot0_flange_local_01": 214
+  },
+  "global_continuous_intervals": [
+    {
+      "start_index_one_based": 164,
+      "end_index_one_based": 379,
+      "first_pose_id": "m040_quarter3",
+      "last_pose_id": "m094_quarter2",
+      "pose_count": 216,
+      "pair_case_count": 277,
+      "phase_counts": {
+        "approach_high": 38,
+        "descend": 178
+      },
+      "pair_counts": {
+        "robot0_link5_local_01 / robot0_flange_local_01": 216,
+        "robot0_link5_local_00 / robot0_flange_local_01": 61
+      },
+      "maximum_common_ball_radius_mm": 1.5590282262851434,
+      "maximum_common_ball_pose_id": "m054_quarter3",
+      "overlap_center_body5_bounds_m": [
+        [
+          0.008877554019856636,
+          -0.023071356193225475,
+          -0.02539821986090947
+        ],
+        [
+          0.012053926808720947,
+          -0.020589767652983905,
+          -0.021943678993567084
+        ]
+      ],
+      "metric_limit": "Maximum LP common-ball radius of convex overlap; not physical penetration depth."
+    },
+    {
+      "start_index_one_based": 703,
+      "end_index_one_based": 921,
+      "first_pose_id": "m175_quarter2",
+      "last_pose_id": "m229_quarter4",
+      "pose_count": 219,
+      "pair_case_count": 372,
+      "phase_counts": {
+        "lift": 99,
+        "hold": 120
+      },
+      "pair_counts": {
+        "robot0_link5_local_01 / robot0_flange_local_01": 219,
+        "robot0_link5_local_00 / robot0_flange_local_01": 153
+      },
+      "maximum_common_ball_radius_mm": 1.5590282262851347,
+      "maximum_common_ball_pose_id": "m198_quarter2",
+      "overlap_center_body5_bounds_m": [
+        [
+          0.00887755401985665,
+          -0.023071356193225468,
+          -0.02539821986090947
+        ],
+        [
+          0.012045653422675785,
+          -0.02058976765298391,
+          -0.021956232547330767
+        ]
+      ],
+      "metric_limit": "Maximum LP common-ball radius of convex overlap; not physical penetration depth."
+    }
+  ],
+  "homogeneous_phase_pair_classification_clusters": [
+    {
+      "start_index_one_based": 164,
+      "end_index_one_based": 200,
+      "first_pose_id": "m040_quarter3",
+      "last_pose_id": "m049_quarter3",
+      "pose_count": 37,
+      "pair_case_count": 37,
+      "phase_counts": {
+        "approach_high": 37
+      },
+      "pair_counts": {
+        "robot0_link5_local_01 / robot0_flange_local_01": 37
+      },
+      "maximum_common_ball_radius_mm": 1.5160952094366997,
+      "maximum_common_ball_pose_id": "m049_quarter3",
+      "overlap_center_body5_bounds_m": [
+        [
+          0.010107566519661009,
+          -0.021532631038635074,
+          -0.025369920776478094
+        ],
+        [
+          0.012009993046886025,
+          -0.020616527997585885,
+          -0.022531101579011403
+        ]
+      ],
+      "metric_limit": "Maximum LP common-ball radius of convex overlap; not physical penetration depth."
+    },
+    {
+      "start_index_one_based": 201,
+      "end_index_one_based": 201,
+      "first_pose_id": "m049_quarter4",
+      "last_pose_id": "m049_quarter4",
+      "pose_count": 1,
+      "pair_case_count": 2,
+      "phase_counts": {
+        "approach_high": 1
+      },
+      "pair_counts": {
+        "robot0_link5_local_00 / robot0_flange_local_01": 1,
+        "robot0_link5_local_01 / robot0_flange_local_01": 1
+      },
+      "maximum_common_ball_radius_mm": 1.5590282262851238,
+      "maximum_common_ball_pose_id": "m049_quarter4",
+      "overlap_center_body5_bounds_m": [
+        [
+          0.008877554019856666,
+          -0.023071356193225468,
+          -0.02539821986090947
+        ],
+        [
+          0.0100524464918103,
+          -0.020589767652983912,
+          -0.02393538740573294
+        ]
+      ],
+      "metric_limit": "Maximum LP common-ball radius of convex overlap; not physical penetration depth."
+    },
+    {
+      "start_index_one_based": 202,
+      "end_index_one_based": 261,
+      "first_pose_id": "m050_quarter1",
+      "last_pose_id": "m064_quarter4",
+      "pose_count": 60,
+      "pair_case_count": 120,
+      "phase_counts": {
+        "descend": 60
+      },
+      "pair_counts": {
+        "robot0_link5_local_00 / robot0_flange_local_01": 60,
+        "robot0_link5_local_01 / robot0_flange_local_01": 60
+      },
+      "maximum_common_ball_radius_mm": 1.5590282262851434,
+      "maximum_common_ball_pose_id": "m054_quarter3",
+      "overlap_center_body5_bounds_m": [
+        [
+          0.008877554019856636,
+          -0.023071356193225475,
+          -0.02539821986090947
+        ],
+        [
+          0.010089618164987232,
+          -0.020589767652983905,
+          -0.023902447664030328
+        ]
+      ],
+      "metric_limit": "Maximum LP common-ball radius of convex overlap; not physical penetration depth."
+    },
+    {
+      "start_index_one_based": 262,
+      "end_index_one_based": 379,
+      "first_pose_id": "m065_quarter1",
+      "last_pose_id": "m094_quarter2",
+      "pose_count": 118,
+      "pair_case_count": 118,
+      "phase_counts": {
+        "descend": 118
+      },
+      "pair_counts": {
+        "robot0_link5_local_01 / robot0_flange_local_01": 118
+      },
+      "maximum_common_ball_radius_mm": 1.5161507619495753,
+      "maximum_common_ball_pose_id": "m065_quarter1",
+      "overlap_center_body5_bounds_m": [
+        [
+          0.01010765882441224,
+          -0.021575503179061734,
+          -0.025363414125678014
+        ],
+        [
+          0.012053926808720947,
+          -0.020616952342332327,
+          -0.021943678993567084
+        ]
+      ],
+      "metric_limit": "Maximum LP common-ball radius of convex overlap; not physical penetration depth."
+    },
+    {
+      "start_index_one_based": 703,
+      "end_index_one_based": 768,
+      "first_pose_id": "m175_quarter2",
+      "last_pose_id": "m191_quarter3",
+      "pose_count": 66,
+      "pair_case_count": 66,
+      "phase_counts": {
+        "lift": 66
+      },
+      "pair_counts": {
+        "robot0_link5_local_01 / robot0_flange_local_01": 66
+      },
+      "maximum_common_ball_radius_mm": 1.4968363071198136,
+      "maximum_common_ball_pose_id": "m191_quarter3",
+      "overlap_center_body5_bounds_m": [
+        [
+          0.010132625844211901,
+          -0.021573906264127966,
+          -0.025343887212389282
+        ],
+        [
+          0.012045653422675785,
+          -0.020629467820393554,
+          -0.021956232547330767
+        ]
+      ],
+      "metric_limit": "Maximum LP common-ball radius of convex overlap; not physical penetration depth."
+    },
+    {
+      "start_index_one_based": 769,
+      "end_index_one_based": 801,
+      "first_pose_id": "m191_quarter4",
+      "last_pose_id": "m199_quarter4",
+      "pose_count": 33,
+      "pair_case_count": 66,
+      "phase_counts": {
+        "lift": 33
+      },
+      "pair_counts": {
+        "robot0_link5_local_00 / robot0_flange_local_01": 33,
+        "robot0_link5_local_01 / robot0_flange_local_01": 33
+      },
+      "maximum_common_ball_radius_mm": 1.5590282262851347,
+      "maximum_common_ball_pose_id": "m198_quarter2",
+      "overlap_center_body5_bounds_m": [
+        [
+          0.00887755401985665,
+          -0.023071356193225468,
+          -0.02539821986090947
+        ],
+        [
+          0.010100720993715827,
+          -0.02058976765298391,
+          -0.023889709667350302
+        ]
+      ],
+      "metric_limit": "Maximum LP common-ball radius of convex overlap; not physical penetration depth."
+    },
+    {
+      "start_index_one_based": 802,
+      "end_index_one_based": 921,
+      "first_pose_id": "m200_quarter1",
+      "last_pose_id": "m229_quarter4",
+      "pose_count": 120,
+      "pair_case_count": 240,
+      "phase_counts": {
+        "hold": 120
+      },
+      "pair_counts": {
+        "robot0_link5_local_00 / robot0_flange_local_01": 120,
+        "robot0_link5_local_01 / robot0_flange_local_01": 120
+      },
+      "maximum_common_ball_radius_mm": 1.5590282262851238,
+      "maximum_common_ball_pose_id": "m200_quarter1",
+      "overlap_center_body5_bounds_m": [
+        [
+          0.008877554019856666,
+          -0.023071356193225468,
+          -0.02539821986090947
+        ],
+        [
+          0.0100524464918103,
+          -0.020589767652983912,
+          -0.02393538740573294
+        ]
+      ],
+      "metric_limit": "Maximum LP common-ball radius of convex overlap; not physical penetration depth."
+    }
+  ],
+  "continuous_intervals_by_pair": {
+    "robot0_link5_local_00 / robot0_flange_local_00": [],
+    "robot0_link5_local_00 / robot0_flange_local_01": [
+      {
+        "start_index_one_based": 201,
+        "end_index_one_based": 261,
+        "first_pose_id": "m049_quarter4",
+        "last_pose_id": "m064_quarter4",
+        "pose_count": 61,
+        "pair_case_count": 61,
+        "phase_counts": {
+          "approach_high": 1,
+          "descend": 60
+        },
+        "pair_counts": {
+          "robot0_link5_local_00 / robot0_flange_local_01": 61
+        },
+        "maximum_common_ball_radius_mm": 0.03936676902749614,
+        "maximum_common_ball_pose_id": "m054_quarter3",
+        "overlap_center_body5_bounds_m": [
+          [
+            0.008877554019856636,
+            -0.023071356193225475,
+            -0.023935387405732974
+          ],
+          [
+            0.008912768229212274,
+            -0.02306583519324984,
+            -0.023902447664030328
+          ]
+        ],
+        "metric_limit": "Maximum LP common-ball radius of convex overlap; not physical penetration depth."
+      },
+      {
+        "start_index_one_based": 769,
+        "end_index_one_based": 921,
+        "first_pose_id": "m191_quarter4",
+        "last_pose_id": "m229_quarter4",
+        "pose_count": 153,
+        "pair_case_count": 153,
+        "phase_counts": {
+          "lift": 33,
+          "hold": 120
+        },
+        "pair_counts": {
+          "robot0_link5_local_00 / robot0_flange_local_01": 153
+        },
+        "maximum_common_ball_radius_mm": 0.03936676902748504,
+        "maximum_common_ball_pose_id": "m198_quarter2",
+        "overlap_center_body5_bounds_m": [
+          [
+            0.00887755401985665,
+            -0.023071356193225468,
+            -0.023935387405733047
+          ],
+          [
+            0.008923892004167058,
+            -0.023064264625847486,
+            -0.023889709667350302
+          ]
+        ],
+        "metric_limit": "Maximum LP common-ball radius of convex overlap; not physical penetration depth."
+      }
+    ],
+    "robot0_link5_local_01 / robot0_flange_local_00": [],
+    "robot0_link5_local_01 / robot0_flange_local_01": [
+      {
+        "start_index_one_based": 164,
+        "end_index_one_based": 379,
+        "first_pose_id": "m040_quarter3",
+        "last_pose_id": "m094_quarter2",
+        "pose_count": 216,
+        "pair_case_count": 216,
+        "phase_counts": {
+          "approach_high": 38,
+          "descend": 178
+        },
+        "pair_counts": {
+          "robot0_link5_local_01 / robot0_flange_local_01": 216
+        },
+        "maximum_common_ball_radius_mm": 1.5590282262851434,
+        "maximum_common_ball_pose_id": "m054_quarter3",
+        "overlap_center_body5_bounds_m": [
+          [
+            0.010052446491810276,
+            -0.021575503179061734,
+            -0.02539821986090947
+          ],
+          [
+            0.012053926808720947,
+            -0.020589767652983905,
+            -0.021943678993567084
+          ]
+        ],
+        "metric_limit": "Maximum LP common-ball radius of convex overlap; not physical penetration depth."
+      },
+      {
+        "start_index_one_based": 703,
+        "end_index_one_based": 921,
+        "first_pose_id": "m175_quarter2",
+        "last_pose_id": "m229_quarter4",
+        "pose_count": 219,
+        "pair_case_count": 219,
+        "phase_counts": {
+          "lift": 99,
+          "hold": 120
+        },
+        "pair_counts": {
+          "robot0_link5_local_01 / robot0_flange_local_01": 219
+        },
+        "maximum_common_ball_radius_mm": 1.5590282262851347,
+        "maximum_common_ball_pose_id": "m198_quarter2",
+        "overlap_center_body5_bounds_m": [
+          [
+            0.010052446491810287,
+            -0.021573906264127966,
+            -0.02539821986090947
+          ],
+          [
+            0.012045653422675785,
+            -0.02058976765298391,
+            -0.021956232547330767
+          ]
+        ],
+        "metric_limit": "Maximum LP common-ball radius of convex overlap; not physical penetration depth."
+      }
+    ],
+    "robot0_link5_local_02 / robot0_flange_local_00": [],
+    "robot0_link5_local_02 / robot0_flange_local_01": []
+  },
+  "unique_exact_relative_transform_count": 588,
+  "exact_transform_reused_pose_count": 333,
+  "full_source_STL_queries_executed": 310,
+  "independent_common_ball_certificates": 485,
+  "physics_steps": 0,
+  "call_audit": {
+    "allowed_apis": [
+      "mj_id2name",
+      "mj_kinematics",
+      "mj_name2id"
+    ],
+    "blocked_apis": [
+      "mj_Euler",
+      "mj_RungeKutta",
+      "mj_addContact",
+      "mj_addM",
+      "mj_angmomMat",
+      "mj_applyFT",
+      "mj_camlight",
+      "mj_checkAcc",
+      "mj_checkPos",
+      "mj_checkVel",
+      "mj_collision",
+      "mj_comPos",
+      "mj_comVel",
+      "mj_compareFwdInv",
+      "mj_constraintUpdate",
+      "mj_contactForce",
+      "mj_crb",
+      "mj_defaultLROpt",
+      "mj_defaultOption",
+      "mj_defaultSolRefImp",
+      "mj_defaultVisual",
+      "mj_differentiatePos",
+      "mj_energyPos",
+      "mj_energyVel",
+      "mj_factorM",
+      "mj_flex",
+      "mj_forward",
+      "mj_forwardSkip",
+      "mj_fullM",
+      "mj_fwdAcceleration",
+      "mj_fwdActuation",
+      "mj_fwdConstraint",
+      "mj_fwdPosition",
+      "mj_fwdVelocity",
+      "mj_geomDistance",
+      "mj_getState",
+      "mj_getTotalmass",
+      "mj_implicit",
+      "mj_integratePos",
+      "mj_invConstraint",
+      "mj_invPosition",
+      "mj_invVelocity",
+      "mj_inverse",
+      "mj_inverseSkip",
+      "mj_isDual",
+      "mj_isPyramidal",
+      "mj_isSparse",
+      "mj_island",
+      "mj_jac",
+      "mj_jacBody",
+      "mj_jacBodyCom",
+      "mj_jacDot",
+      "mj_jacGeom",
+      "mj_jacPointAxis",
+      "mj_jacSite",
+      "mj_jacSubtreeCom",
+      "mj_loadAllPluginLibraries",
+      "mj_loadPluginLibrary",
+      "mj_local2Global",
+      "mj_makeConstraint",
+      "mj_mulJacTVec",
+      "mj_mulJacVec",
+      "mj_mulM",
+      "mj_mulM2",
+      "mj_multiRay",
+      "mj_normalizeQuat",
+      "mj_objectAcceleration",
+      "mj_objectVelocity",
+      "mj_passive",
+      "mj_printData",
+      "mj_printFormattedData",
+      "mj_printFormattedModel",
+      "mj_printModel",
+      "mj_printSchema",
+      "mj_projectConstraint",
+      "mj_ray",
+      "mj_rayHfield",
+      "mj_rayMesh",
+      "mj_referenceConstraint",
+      "mj_resetCallbacks",
+      "mj_resetData",
+      "mj_resetDataDebug",
+      "mj_resetDataKeyframe",
+      "mj_rne",
+      "mj_rnePostConstraint",
+      "mj_saveLastXML",
+      "mj_saveModel",
+      "mj_sensorAcc",
+      "mj_sensorPos",
+      "mj_sensorVel",
+      "mj_setConst",
+      "mj_setKeyframe",
+      "mj_setLengthRange",
+      "mj_setState",
+      "mj_setTotalmass",
+      "mj_sizeModel",
+      "mj_solveM",
+      "mj_solveM2",
+      "mj_stateSize",
+      "mj_step",
+      "mj_step1",
+      "mj_step2",
+      "mj_subtreeVel",
+      "mj_tendon",
+      "mj_transmission",
+      "mj_version",
+      "mj_versionString"
+    ],
+    "allowed_api_calls": {
+      "mj_name2id": 9,
+      "mj_id2name": 17,
+      "mj_kinematics": 921
+    },
+    "forbidden_api_attempts": [],
+    "physics_steps": 0,
+    "constraint_solves": 0,
+    "resets": 0,
+    "forward_calls": 0,
+    "collision_calls": 0,
+    "model_constructor_calls": 1,
+    "data_constructor_calls": 921,
+    "model_fields_unchanged": true,
+    "integration_state_unchanged_after_FK": true
+  },
+  "inputs_unchanged": true,
+  "input_sha256_before": {
+    "examples/right_hand/candidates/link5_flange_local/manifest.json": "373cbab3606677cc01610a74d00cb257adece2bb547c959fbf17499a37b779f7",
+    "examples/right_hand/candidates/link5_flange_local/meshes/robot0_flange_local_00.obj": "b86b2b38468b27b22ecbabb0880f65fc3eeac8495e4c22636cff764fe17db4ef",
+    "examples/right_hand/candidates/link5_flange_local/meshes/robot0_flange_local_01.obj": "4fd5ff0c3bf9788eed291e70867e6e9f0d2e7cd0592a0efcaef46317ca858c62",
+    "examples/right_hand/candidates/link5_flange_local/meshes/robot0_link5_local_00.obj": "631b2ae8b5b706b019c82d3049d248792292ae678b728ab5aa6a1202177c9548",
+    "examples/right_hand/candidates/link5_flange_local/meshes/robot0_link5_local_01.obj": "631e4f74493fea04724c2a566dc50e72f314cff5561c3a3b93c1d315cdba28da",
+    "examples/right_hand/candidates/link5_flange_local/meshes/robot0_link5_local_02.obj": "20847b190fe32c1b3eececc0959799f2dddd2dc893c006aaafff72c985a33e76",
+    "examples/right_hand/candidates/link5_flange_local/model.xml": "1b2530d923b446605492b43652dd5a3200fd755674ba17a54f0c961cde362b39",
+    "examples/right_hand/evidence/d3_geometry/triangle/surface_geometry.py": "21b91daa9ccfc7ddedc91ca4a95eb3f2f1b72b720a5619b2bb59144f39de71de",
+    "examples/right_hand/evidence/d3_link5_flange/geometry.py": "860099e2d2e99290044141db98c884bb1ef36eaa3eff3714bb78d76947e7f64d",
+    "examples/right_hand/evidence/d3_proxy76/gap_check/check_convex_gap.py": "05e359a05d9e40f2b21ba2495ca05ecb8d86a8e14bd53a5f21b593af38e01153",
+    "examples/right_hand/evidence/d3_white_bowl_001/candidate.json": "ba767b42f99d3562255909bde5c970d529ba254769029ec1cd7a98faf76af0fb",
+    "examples/right_hand/link5_flange_fullscan.py": "a8fd99c42ef7e6f5ef8ae448265669b8145cf36b5f594b732249fd5363e0a811",
+    "examples/right_hand/link5_flange_poses.py": "3e6804238de7402b8e9867035422dbc0aa690efe8bab648b153a095b68807290",
+    "examples/right_hand/proxy76_contacts.py": "97986d2c2f7138721c67cc3cb5adefc93c817d2429bef059bd69b4e89cfa9478",
+    "examples/right_hand/proxy76_validate.py": "aa9224ee4daf5f8d9355a40ab8b26f878d50ddd82ca0808d6e9d52855fc6948c",
+    "meshes/nero/source/gripper_flange-186697a7.stl": "186697a73e7cafd9fd41d96f1eea9b34b444c058b9561fb2e3ea439c835ae2e8",
+    "meshes/nero/source/link5-dc497f5a.stl": "dc497f5a9bab2d0d314250134d4ec86617abea7205d122db41b765acdb86ae7e",
+    "tools/build_right_proxy76.py": "ef858f59bf57b73657f27ed50e623ba361ae30bee588c9be46d7f88b53bf025c",
+    "urdf/nero_plus_manufacturer_flange.urdf": "4457f9c24b072ca26afd9c366e280bd2b18b757a7e4131b00f208056cd5e6cd4"
+  },
+  "input_sha256_after": {
+    "examples/right_hand/candidates/link5_flange_local/manifest.json": "373cbab3606677cc01610a74d00cb257adece2bb547c959fbf17499a37b779f7",
+    "examples/right_hand/candidates/link5_flange_local/meshes/robot0_flange_local_00.obj": "b86b2b38468b27b22ecbabb0880f65fc3eeac8495e4c22636cff764fe17db4ef",
+    "examples/right_hand/candidates/link5_flange_local/meshes/robot0_flange_local_01.obj": "4fd5ff0c3bf9788eed291e70867e6e9f0d2e7cd0592a0efcaef46317ca858c62",
+    "examples/right_hand/candidates/link5_flange_local/meshes/robot0_link5_local_00.obj": "631b2ae8b5b706b019c82d3049d248792292ae678b728ab5aa6a1202177c9548",
+    "examples/right_hand/candidates/link5_flange_local/meshes/robot0_link5_local_01.obj": "631e4f74493fea04724c2a566dc50e72f314cff5561c3a3b93c1d315cdba28da",
+    "examples/right_hand/candidates/link5_flange_local/meshes/robot0_link5_local_02.obj": "20847b190fe32c1b3eececc0959799f2dddd2dc893c006aaafff72c985a33e76",
+    "examples/right_hand/candidates/link5_flange_local/model.xml": "1b2530d923b446605492b43652dd5a3200fd755674ba17a54f0c961cde362b39",
+    "examples/right_hand/evidence/d3_geometry/triangle/surface_geometry.py": "21b91daa9ccfc7ddedc91ca4a95eb3f2f1b72b720a5619b2bb59144f39de71de",
+    "examples/right_hand/evidence/d3_link5_flange/geometry.py": "860099e2d2e99290044141db98c884bb1ef36eaa3eff3714bb78d76947e7f64d",
+    "examples/right_hand/evidence/d3_proxy76/gap_check/check_convex_gap.py": "05e359a05d9e40f2b21ba2495ca05ecb8d86a8e14bd53a5f21b593af38e01153",
+    "examples/right_hand/evidence/d3_white_bowl_001/candidate.json": "ba767b42f99d3562255909bde5c970d529ba254769029ec1cd7a98faf76af0fb",
+    "examples/right_hand/link5_flange_fullscan.py": "a8fd99c42ef7e6f5ef8ae448265669b8145cf36b5f594b732249fd5363e0a811",
+    "examples/right_hand/link5_flange_poses.py": "3e6804238de7402b8e9867035422dbc0aa690efe8bab648b153a095b68807290",
+    "examples/right_hand/proxy76_contacts.py": "97986d2c2f7138721c67cc3cb5adefc93c817d2429bef059bd69b4e89cfa9478",
+    "examples/right_hand/proxy76_validate.py": "aa9224ee4daf5f8d9355a40ab8b26f878d50ddd82ca0808d6e9d52855fc6948c",
+    "meshes/nero/source/gripper_flange-186697a7.stl": "186697a73e7cafd9fd41d96f1eea9b34b444c058b9561fb2e3ea439c835ae2e8",
+    "meshes/nero/source/link5-dc497f5a.stl": "dc497f5a9bab2d0d314250134d4ec86617abea7205d122db41b765acdb86ae7e",
+    "tools/build_right_proxy76.py": "ef858f59bf57b73657f27ed50e623ba361ae30bee588c9be46d7f88b53bf025c",
+    "urdf/nero_plus_manufacturer_flange.urdf": "4457f9c24b072ca26afd9c366e280bd2b18b757a7e4131b00f208056cd5e6cd4"
+  },
+  "wall_seconds": 191.57899347296916,
+  "limits": [
+    "Only the six authorized proxy pairs at the 921 original discrete planning poses.",
+    "Full source triangles can be non-watertight: surface gap is not source-solid separation.",
+    "LP common-ball radius is not physical penetration depth; no dynamics/force/root-cause claim.",
+    "Frozen first-failure acceptance entry, prior FAILs, geometry, physics and 1e-10 m threshold unchanged.",
+    "Certificates reuse only exactly identical relative R/t bytes; no rounded-pose merging.",
+    "The separately recorded nanometre compiled coverage FAIL is not reinterpreted by this survey."
+  ]
+}

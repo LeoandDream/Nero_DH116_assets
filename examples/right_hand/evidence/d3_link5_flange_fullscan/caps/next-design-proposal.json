@@ -1,0 +1,112 @@
+{
+  "schema": "d3-link5-flange-next-source-patch-design-v1",
+  "status": "PROPOSED_ONLY_NO_CANDIDATE_GENERATED",
+  "frozen_model_sha256": "1b2530d923b446605492b43652dd5a3200fd755674ba17a54f0c961cde362b39",
+  "single_proposal": "Joint source-concavity patch partition of arm01 and flange01; preserve all source surface fragments and separate the source support groups that currently bridge the notch.",
+  "parts_to_refine": [
+    "robot0_link5_local_01",
+    "robot0_flange_local_01"
+  ],
+  "parts_to_freeze": [
+    "robot0_link5_local_00",
+    "robot0_link5_local_02",
+    "robot0_flange_local_00",
+    "all other existing geoms, meshes, kinematics, filters, physics, actions and thresholds"
+  ],
+  "scope_reason": {
+    "arm01_refinement_is_necessary_for_a_source_preserving_solution": {
+      "pose_id": "m054_quarter3",
+      "pose_index_one_based": 220,
+      "unchanged_compiled_arm_face_id_zero_based": 53,
+      "actual_flange01_source_STL_face_id_zero_based": 505,
+      "strict_transverse_surface_crossing": true,
+      "flange01_source_vertices_strictly_inside_arm01": 8,
+      "minimum_maximum_outward_halfspace_residual_mm": -0.8228964840477221,
+      "interpretation": "Any flange01-only refinement that preserves the assigned source surface must retain the real source patch currently inside arm01. Therefore flange01-only refinement cannot remove this interference while arm01 stays fixed."
+    },
+    "flange01_refinement_is_a_design_choice_for_the_two_observed_pair_families": {
+      "shared_part_of_failed_pairs": "robot0_flange_local_01",
+      "arm00_flange01_anomalous_pose_count": 214,
+      "arm01_flange01_anomalous_pose_count": 435,
+      "arm00_vs_actual_flange01_source_gap_at_selected_representatives_mm": 1.21699573032644,
+      "arm00_vs_actual_flange01_source_inside_vertex_count_at_selected_representatives": 0,
+      "interpretation": "Refining the common flange01 is the chosen way to address the arm00/flange01 family while leaving arm00 fixed. The evidence does not establish that arm00 must change, that flange01 must change in every possible solution, or that either side is the unique root cause."
+    }
+  },
+  "arm01_source_patch_rule": {
+    "source_file": "meshes/nero/source/link5-dc497f5a.stl",
+    "source_sha256": "dc497f5a9bab2d0d314250134d4ec86617abea7205d122db41b765acdb86ae7e",
+    "existing_region": "The current middle_y clipped source region only; retain its existing y boundaries and every source fragment.",
+    "proximal_brace_seed_group": [
+      {
+        "source_STL_face_id_zero_based": 2963,
+        "support_point_native_m": [0.009999999776482582, -0.015800001099705696, -0.1065090149641037],
+        "role": "Long brace support of first-failure compiled cap54."
+      },
+      {
+        "source_STL_face_id_zero_based": 3957,
+        "support_point_native_m": [0.009999999776482582, -0.015800001099705696, -0.04129081964492798],
+        "role": "Shoulder support of maximum-overlap compiled cap53."
+      }
+    ],
+    "distal_head_seed_group": [
+      {
+        "source_STL_face_id_zero_based": 3330,
+        "support_points_native_m": [
+          [0.012531200423836708, -0.02290000021457672, -0.000009014748684421647],
+          [0.012531200423836708, -0.02290000021457672, -0.002559070475399494]
+        ],
+        "role": "Head-side supports of the unsupported cap53/cap54 bridge."
+      }
+    ],
+    "true_notch_contour_source_face_seeds_zero_based": [3770, 4623],
+    "partition_rule": "Grow separate connected source-surface patches from brace and head seed groups using the original triangle adjacency and true notch contour. The notch/transition surface must remain represented, possibly by additional connected patches. No resulting convex piece may contain both the shoulder support in face3957 and the near-zero-z support in face3330; likewise no piece may contain the long-brace face2963 support together with that head support. These forbidden support chords are observed witnesses, not arbitrary cut planes.",
+    "excluded_insufficient_rule": "A sole split at native z=-0.04129081964492798 m is insufficient: the cap53 source support chord from the shoulder to the head remains in the upper part and strictly crosses real flange source face505.",
+    "exact_patch_boundaries": "UNKNOWN_NOT_YET_FIXED",
+    "minimum_required_convex_part_count": "UNKNOWN"
+  },
+  "flange01_source_patch_rule": {
+    "source_file": "meshes/nero/source/gripper_flange-186697a7.stl",
+    "source_sha256": "186697a73e7cafd9fd41d96f1eea9b34b444c058b9561fb2e3ea439c835ae2e8",
+    "existing_region": "The currently assigned source_component_1 only; do not alter source_component_0 or the manufacturer source mesh.",
+    "negative_z_patch_seed_group": [
+      {
+        "assigned_source_STL_face_id_zero_based": 64,
+        "full_source_nearest_face_id_zero_based": 4048,
+        "support_point_native_m": [-0.016225531697273254, -0.02314128912985325, -0.03274267539381981]
+      },
+      {
+        "assigned_source_STL_face_id_zero_based": 4050,
+        "support_point_native_m": [-0.016231440007686615, -0.023153899237513542, -0.030739588662981987]
+      }
+    ],
+    "positive_z_patch_seed_group": [
+      {
+        "assigned_source_STL_face_id_zero_based": 4485,
+        "full_source_nearest_face_id_zero_based": 4113,
+        "support_point_native_m": [-0.008979125879704952, -0.022080183029174805, 0.005211994983255863]
+      }
+    ],
+    "partition_rule": "Use connected patches following the original component's concave/curved source contour; keep the negative-z cap45 support patch separate from the positive-z cap45 support patch. No resulting convex piece may contain the positive-z support together with either negative-z support, so the existing long cap45 support chords cannot recur unchanged. Retain all intermediate and curved source fragments in connected patches; the current single factory connected-component label is not sufficient as a convex partition.",
+    "support_face_ID_note": "At shared source vertices several original triangles can have exactly zero distance. Assigned and full-source nearest face IDs are both recorded; the exact native support coordinates identify the same source point without assuming a unique incident face.",
+    "exact_patch_boundaries": "UNKNOWN_NOT_YET_FIXED",
+    "minimum_required_convex_part_count": "UNKNOWN"
+  },
+  "falsifiable_expectation": "Removing the witnessed arm01 source support chords and the common flange01 cap45 chords may remove both observed anomaly families. This is a single next-design hypothesis; success is not guaranteed by the representatives or by merely removing these original faces.",
+  "future_review_for_this_proposal": [
+    "Fix and document one source-patch assignment before building one candidate; do not search cut planes or tune to successive poses.",
+    "Preserve complete assigned source-surface coverage and review continuous coverage, inward deviations and actual compiled graph drift using the existing methods and unchanged tolerances.",
+    "Re-evaluate all original 921 stored planning poses and all six replacement pairs: 5526 pair cases, with zero anomalous and zero UNKNOWN cases required for static-path acceptance.",
+    "Keep arm00, arm02, flange00, all other geoms, filtering and physics frozen; report arm00/flange01 and arm01/flange01 separately so either residual family falsifies this design.",
+    "Static success alone does not establish hardware readiness, physical source-solid collision status or dynamic grasp success."
+  ],
+  "supporting_evidence": [
+    "first-failure-cap-attribution.json",
+    "representative-pose-counterfactuals.json",
+    "../scan/summary.json"
+  ],
+  "new_candidate_count": 0,
+  "new_pose_count": 0,
+  "physics_steps": 0,
+  "new_geometry_run_for_this_proposal": false
+}

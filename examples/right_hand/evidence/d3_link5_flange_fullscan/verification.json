@@ -1,0 +1,64 @@
+{
+  "schema": "d3-fullscan-verification-v1",
+  "base_commit": "dcd6540d9103df83dc24c1eff3cb98f80ab619db",
+  "survey": "COMPLETE",
+  "candidate_acceptance": "FAIL_UNCHANGED",
+  "new_candidate_count": 0,
+  "new_physics_steps": 0,
+  "pose_count": 921,
+  "pair_case_count": 5526,
+  "strict_overlap_cases": 649,
+  "anomalous_poses": 435,
+  "source_surface_separated_anomaly_poses": 435,
+  "unknown_pair_cases": 0,
+  "representative_graph_cases": 24,
+  "all_representatives_strictly_cross": true,
+  "all_baseline_tracked_files_unchanged": 666,
+  "sha_checked_result_files": [
+    "examples/right_hand/evidence/d3_link5_flange_fullscan/distribution.json",
+    "examples/right_hand/evidence/d3_link5_flange_fullscan/caps/first-failure-cap-attribution.json",
+    "examples/right_hand/evidence/d3_link5_flange_fullscan/caps/representative-pose-counterfactuals.json",
+    "examples/right_hand/evidence/d3_link5_flange_fullscan/scan/summary.json",
+    "examples/right_hand/evidence/d3_link5_flange_fullscan/scan/frozen.json",
+    "examples/right_hand/evidence/d3_link5_flange_fullscan/numerics/numerics.json"
+  ],
+  "original_acceptance_entry_sha256": "3e6804238de7402b8e9867035422dbc0aa690efe8bab648b153a095b68807290",
+  "candidate_model_sha256": "1b2530d923b446605492b43652dd5a3200fd755674ba17a54f0c961cde362b39",
+  "plan_sha256": "ba767b42f99d3562255909bde5c970d529ba254769029ec1cd7a98faf76af0fb",
+  "main_worktree_head": "9f4054f6197ecb1127202cee14cd75c3924a47e3",
+  "main_worktree_status": " M README.md\n",
+  "protected_user_README_sha256": "d68ec6d62a6f42b8c1636ad2774c8329073d973c2621cc7fe148c8c8c89d8f25",
+  "unit_tests": {
+    "command": "python -m unittest discover -s tests -p test_link5_flange_fullscan.py -v",
+    "tests_run": 3,
+    "exit_code": 0,
+    "models_or_data_created": 0
+  },
+  "new_python_AST_checked": [
+    "examples/right_hand/link5_flange_fullscan.py",
+    "tests/test_link5_flange_fullscan.py",
+    "examples/right_hand/evidence/d3_link5_flange_fullscan/distribution.py",
+    "examples/right_hand/evidence/d3_link5_flange_fullscan/caps/check_representative_counterfactuals.py",
+    "examples/right_hand/evidence/d3_link5_flange_fullscan/caps/attribute_first_failure.py",
+    "examples/right_hand/evidence/d3_link5_flange_fullscan/numerics/verify_stored_coverage.py",
+    "examples/right_hand/evidence/d3_link5_flange_fullscan/numerics/analyze_numerics.py",
+    "examples/right_hand/evidence/d3_link5_flange_fullscan/numerics/verify_roundtrip.py"
+  ],
+  "numeric_roundtrip_exact_vertices": 5829,
+  "numeric_roundtrip_exact_max_witnesses": 5,
+  "scope": "Only added read-only diagnostic code/results. Frozen candidate, source meshes, old evidence, actions, controller, Mimic, masks/excludes, thresholds and formal left/right assets unchanged.",
+  "result_semantics": {
+    "old_candidate": "FAIL",
+    "old_1401_control": "FAIL",
+    "old_7000_full_range": "FAIL",
+    "grasp": "UNKNOWN_NOT_RUN",
+    "native_task_result": false,
+    "strict_grasp_success_claim": false
+  },
+  "limits": [
+    "Full source triangle separation is not source-solid/hardware separation.",
+    "Index intervals are discrete samples, not swept-volume certification.",
+    "Next source-patch partition exact boundaries/minimum convex count remain UNKNOWN; no new geometry was produced.",
+    "Numeric cause traced for five stored max witnesses; compiled coverage criterion remains FAIL."
+  ]
+}
