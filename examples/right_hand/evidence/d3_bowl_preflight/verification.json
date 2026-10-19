@@ -1,0 +1,24 @@
+{
+  "base_commit": "e7123c0b3fb8047deaf12237e0f9d5db304e3978",
+  "original_tracked_files_checked": 580,
+  "all_original_tracked_files_unchanged": true,
+  "main_readme_unchanged": true,
+  "frozen_robot_sha256": "b27f4f86fbaeacd2bb925463f39f67181ef7db12963c4d9f7fc01797a7924d1b",
+  "frozen_path_sha256": "ba767b42f99d3562255909bde5c970d529ba254769029ec1cd7a98faf76af0fb",
+  "new_physics_steps": 0,
+  "new_resets": 0,
+  "new_forward_calls": 0,
+  "new_collision_calls": 0,
+  "new_constraint_solves": 0,
+  "new_actions_generated": false,
+  "new_assets_generated": false,
+  "next_experiment_is_a_proposal_only": true,
+  "limits": [
+    "Finite frozen target path only, no tracked dynamics or continuous interval certification.",
+    "Planned pads are not observed dynamic contact positions.",
+    "Native bowl pose is explicitly an old settled planning reference, never injected into a new simulation."
+  ],
+  "upper_rim_probe_count": 16,
+  "upper_rim_selection": "Highest world-Z 4 of each native wall box after full transform; macros119/159",
+  "upper_rim_overall_fidelity": "UNKNOWN_FINITE_PROBES_ONLY"
+}

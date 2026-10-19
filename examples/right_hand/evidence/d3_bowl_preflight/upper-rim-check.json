@@ -1,0 +1,2388 @@
+{
+  "schema": "d3-bowl-precheck-corrected-world-upper-rim-16-point-check-v1",
+  "new_physics_steps": 0,
+  "new_fk_calls": 0,
+  "mujoco_imported": false,
+  "selection": "For each selected native wall box (index31 near planned finger14; index22 near planned finger23; geom indices include visual0), transform all8 corners by original box quaternion and explicit reference bowl pose, then choose highest world-Z4. At frozen macros119/159 (quarter4 endpoint);16 points total. Corrects old local+Z selection: geom31 old points were lower ends; geom22 old points were already the same world-upper set (ordering differs).",
+  "bowl_pose": [
+    -0.16644797538954098,
+    0.09230860264795701,
+    0.8994107101029007,
+    0.7071067802011682,
+    -6.847945175835458e-05,
+    4.830604442626382e-05,
+    0.7071067772059809
+  ],
+  "bowl_pose_semantics": "Explicit previous step250 planning reference only. Not dynamic state injection; object movement during future close UNKNOWN.",
+  "inputs_sha256": {
+    "examples/right_hand/candidates/finger13_local/model.xml": "b27f4f86fbaeacd2bb925463f39f67181ef7db12963c4d9f7fc01797a7924d1b",
+    "examples/right_hand/proxy76_geometry.py": "5c284fe872519406007bbab1fcf3d5b8b167ec9a377585f79e66a1b559170341",
+    "examples/right_hand/proxy76_validate.py": "aa9224ee4daf5f8d9355a40ab8b26f878d50ddd82ca0808d6e9d52855fc6948c",
+    "meshes/dh116/gripper0_moderate_finger14_link_0-2b2ddda5.obj": "2b2ddda55ee186117724461d4e1eb7fb257d191676319114d69fd76026ceacaf",
+    "meshes/dh116/gripper0_moderate_finger14_link_1-0e2d6afb.obj": "0e2d6afbd4e4a20a7f7aa039ee80776a89f39f304eccaa1ea9a322937f6c73db",
+    "meshes/dh116/gripper0_moderate_finger14_link_10-21c826aa.obj": "21c826aa07ef02987385785adc8b44235834cb9c4242e62a952ea89d1b4d22ca",
+    "meshes/dh116/gripper0_moderate_finger14_link_11-168acc8b.obj": "168acc8b6dd10290b92679dabf02f9d295c30317cecc7a3e1163386cc241f9bf",
+    "meshes/dh116/gripper0_moderate_finger14_link_2-a71fa24f.obj": "a71fa24ff8b93d0fad952ff2bfb8d85418fa7318b3552c626204b6675956c09b",
+    "meshes/dh116/gripper0_moderate_finger14_link_3-31cf7b29.obj": "31cf7b299a871be62338a48441ffff1c40de9443b08c1a66d0e0ac2c70d7e6ce",
+    "meshes/dh116/gripper0_moderate_finger14_link_4-c49b43ef.obj": "c49b43efea1ab9054834dc733b62109f71f3101e8573838fac412acfabf8b0ba",
+    "meshes/dh116/gripper0_moderate_finger14_link_5-c3a6773e.obj": "c3a6773e2340e69330c2de30484b3a473aca0a23b18074ca53a75911028ddf37",
+    "meshes/dh116/gripper0_moderate_finger14_link_6-1d98430c.obj": "1d98430c1c8b92e1b2e6a308a347fde69723d62ff68ee5f454bbca567ad44f14",
+    "meshes/dh116/gripper0_moderate_finger14_link_7-14d2570c.obj": "14d2570c3750dd1305b4c737cc449486ad0f2d5e67df99e6013088abc7e7430d",
+    "meshes/dh116/gripper0_moderate_finger14_link_8-fb373efd.obj": "fb373efd00b5bb56164851d7cbf74a85a8f4fa1252368c69a7b2e4a1770f3531",
+    "meshes/dh116/gripper0_moderate_finger14_link_9-d3124adb.obj": "d3124adbea53e6fb6a27b1a62f60ae3f0fd7459fd6679049637a41cc0c226844",
+    "meshes/dh116/gripper0_moderate_finger23_link_0-a6cc5f75.obj": "a6cc5f7500f773f248fe89c64bbad9f86a99f3419e1b8f655997030c1d269d4d",
+    "meshes/dh116/gripper0_moderate_finger23_link_1-c8663aa9.obj": "c8663aa97fb9936608d4365a4662bd5a9279d9958238f9334738ce88751b2e72",
+    "meshes/dh116/gripper0_moderate_finger23_link_10-251c3834.obj": "251c38347bbcf580d96dd7ece9aeab16195b08f3a7225da3022a42043d11162d",
+    "meshes/dh116/gripper0_moderate_finger23_link_11-fad1ae11.obj": "fad1ae11d1b703d56b111df28d2d4b171c86572c706a5990cd07fb59819671cb",
+    "meshes/dh116/gripper0_moderate_finger23_link_2-7cc9be61.obj": "7cc9be61c42363c904859ffc3f741df9e9d80761805b9fa41333e8510ee39331",
+    "meshes/dh116/gripper0_moderate_finger23_link_3-2f7c98b4.obj": "2f7c98b43d1da8bb87c0b1b9840b9942f8df6f7cb6a07b8bf3aae0a8f943ec91",
+    "meshes/dh116/gripper0_moderate_finger23_link_4-bab546af.obj": "bab546afe4a240ed41c8a82c9e7d57d175b91854aef912fadbac9e210734bfc0",
+    "meshes/dh116/gripper0_moderate_finger23_link_5-5d047287.obj": "5d047287b86fb6832c2efdcb4f5fb755ded0b63dc28f1aa4fac5b223bca24178",
+    "meshes/dh116/gripper0_moderate_finger23_link_6-a018289e.obj": "a018289e8a36f72a3ae897d377677fe7ff2721dc2e88d63ddb0118daa3ab78e2",
+    "meshes/dh116/gripper0_moderate_finger23_link_7-de354fdf.obj": "de354fdf0bea4434032984db408d004804363dc49bbbf36b8bbcc93e1a930ddd",
+    "meshes/dh116/gripper0_moderate_finger23_link_8-9174795a.obj": "9174795ac15a8735c73a8cf39c09bc793a2b67585a0d982f09f7b8a5f7b1880b",
+    "meshes/dh116/gripper0_moderate_finger23_link_9-1cc04f8d.obj": "1cc04f8dd6803c05636a655c1fd77960a319be6903fa01bf7b5e94662d89b132",
+    "meshes/dh116_right/source/finger14_link.STL": "c58b2a741f13cbe1da9b6bbffb0ce6acf97de28b829fe45ea65458313efff449",
+    "meshes/dh116_right/source/finger23_link.STL": "ccbd2de17dac2fe356e4275240f5f00f8eee01dd2f32a44fc5b1e150f93d99f6",
+    "mjcf/nero_dh116_right.xml": "739d3d29bbfd4a6468fb8b75f4de09b719c0f96abb39508959c1dfc33a84b9cc",
+    "runs/d3_bowl_precheck/internal/historical-pose-transforms.json": "8d72747c4a8b2a3f9279e225097f8fa763815dd1b7a5d5b60de1d632e46627df",
+    "runs/d3_bowl_precheck/left/check_upper_rim.py": "4bdd27177819c5399f102e919c973d24133bb8640e9d9dcdce0e6229ff43f882",
+    "runs/d3_bowl_precheck/pads/patch-and-native-bowl.json": "ca4da05fe4a72d9799d509883f561198bb203dbb0bcf28217c01dbb07fa98a76",
+    "tools/build_right_proxy76.py": "ef858f59bf57b73657f27ed50e623ba361ae30bee588c9be46d7f88b53bf025c",
+    "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/stable_scanned_objects/white_bowl/white_bowl.xml": "70d21ae151c9f67461ac6819c794b1539605418a3aca0f8f4345673dc7cd450b"
+  },
+  "records": [
+    {
+      "macro": 119,
+      "phase": "descend",
+      "saved_fk_sample_id": "m119_quarter4",
+      "saved_fk_qpos_18": [
+        0.11019389262209636,
+        -0.8491683387444487,
+        -2.6794726443590386,
+        1.6223902342637793,
+        -1.1355931845290113,
+        -0.5431275859185086,
+        1.4335265819905645,
+        0.12714413600034066,
+        0.0,
+        0.004592,
+        0.0,
+        0.011072,
+        0.0,
+        0.011072,
+        0.0,
+        0.011072,
+        0.0,
+        0.011072
+      ],
+      "link": "finger14_link",
+      "native_bowl_geom_index_including_visual": 31,
+      "native_bowl_geom_attributes": {
+        "solimp": "0.998 0.998 0.001",
+        "solref": "0.001 1",
+        "density": "100",
+        "friction": "0.95 0.3 0.1",
+        "type": "box",
+        "pos": "0.03572 0.00140 0.02264",
+        "quat": "0.00267 0.98951 0.01840 -0.14329",
+        "size": "0.00096 0.00709 0.01266",
+        "group": "0",
+        "rgba": "0.8 0.8 0.8 0.3"
+      },
+      "top_corner_index": 0,
+      "selected_from_eight_corner_index": 4,
+      "all_eight_corner_world_z_m": [
+        0.9344563663027179,
+        0.9101776543543318,
+        0.9344568382223679,
+        0.9101781262739818,
+        0.9339114144091002,
+        0.909632702460714,
+        0.9339118863287501,
+        0.9096331743803641
+      ],
+      "source_topology": {
+        "exact_weld_vertices": 3110,
+        "triangles": 6216,
+        "unique_edges": 9324,
+        "every_edge_has_two_faces": true,
+        "every_edge_has_opposite_directions": true
+      },
+      "source_solid_angle_winding": 1.0491413011772017e-16,
+      "corner_bowl_local_m": [
+        0.039965103010969845,
+        0.008652972036647506,
+        0.03450755227761244
+      ],
+      "corner_world_m": [
+        -0.17510193164263801,
+        0.13227940438475314,
+        0.9339114144091002
+      ],
+      "corner_link_local_m": [
+        -0.011036882364862997,
+        -0.005600947632155881,
+        0.0099305111658765
+      ],
+      "source_distance_m": 0.009400834097069337,
+      "proxy_exposed_union_distance_m": 0.009398633254363763,
+      "proxy_minus_source_distance_m": -2.2008427055745378e-06,
+      "proxy_membership_margin_m": 0.006487153161911629,
+      "source_nearest_triangle_index": 637,
+      "source_nearest_triangle_link_local_m": [
+        [
+          -0.0038543283008038998,
+          -0.0032628143671900034,
+          0.015529231168329716
+        ],
+        [
+          -0.0037046419456601143,
+          -0.0037297194357961416,
+          0.01551808137446642
+        ],
+        [
+          -0.0037822057493031025,
+          -0.003257784992456436,
+          0.016145573928952217
+        ]
+      ],
+      "source_nearest_point_link_local_m": [
+        -0.003805177377296337,
+        -0.003416127040815529,
+        0.015525570028576706
+      ],
+      "source_nearest_point_world_m": [
+        -0.17232420369150128,
+        0.14018001744590922,
+        0.9296405570703467
+      ],
+      "proxy_nearest_face_index": 6386,
+      "proxy_nearest_part": "gripper0_proxy76_finger14_link_09",
+      "proxy_nearest_triangle_link_local_m": [
+        [
+          -0.0036213858984410763,
+          -0.0037410359364002943,
+          0.01614372991025448
+        ],
+        [
+          -0.0037832194939255714,
+          -0.003495549550279975,
+          0.015523898415267467
+        ],
+        [
+          -0.0036151648964732885,
+          -0.003973105922341347,
+          0.015511407516896725
+        ]
+      ],
+      "proxy_nearest_point_link_local_m": [
+        -0.0037832194939255714,
+        -0.003495549550279975,
+        0.015523898415267467
+      ],
+      "proxy_nearest_point_world_m": [
+        -0.1724036122594186,
+        0.14020064965112441,
+        0.929632716828508
+      ],
+      "source_nearest_triangle_oriented_normal": [
+        -0.9453596548801148,
+        -0.30577668959878046,
+        0.1131182523864362
+      ],
+      "corner_signed_nearest_face_plane_m": 0.006871726058480237
+    },
+    {
+      "macro": 119,
+      "phase": "descend",
+      "saved_fk_sample_id": "m119_quarter4",
+      "saved_fk_qpos_18": [
+        0.11019389262209636,
+        -0.8491683387444487,
+        -2.6794726443590386,
+        1.6223902342637793,
+        -1.1355931845290113,
+        -0.5431275859185086,
+        1.4335265819905645,
+        0.12714413600034066,
+        0.0,
+        0.004592,
+        0.0,
+        0.011072,
+        0.0,
+        0.011072,
+        0.0,
+        0.011072,
+        0.0,
+        0.011072
+      ],
+      "link": "finger14_link",
+      "native_bowl_geom_index_including_visual": 31,
+      "native_bowl_geom_attributes": {
+        "solimp": "0.998 0.998 0.001",
+        "solref": "0.001 1",
+        "density": "100",
+        "friction": "0.95 0.3 0.1",
+        "type": "box",
+        "pos": "0.03572 0.00140 0.02264",
+        "quat": "0.00267 0.98951 0.01840 -0.14329",
+        "size": "0.00096 0.00709 0.01266",
+        "group": "0",
+        "rgba": "0.8 0.8 0.8 0.3"
+      },
+      "top_corner_index": 1,
+      "selected_from_eight_corner_index": 6,
+      "all_eight_corner_world_z_m": [
+        0.9344563663027179,
+        0.9101776543543318,
+        0.9344568382223679,
+        0.9101781262739818,
+        0.9339114144091002,
+        0.909632702460714,
+        0.9339118863287501,
+        0.9096331743803641
+      ],
+      "source_topology": {
+        "exact_weld_vertices": 3110,
+        "triangles": 6216,
+        "unique_edges": 9324,
+        "every_edge_has_two_faces": true,
+        "every_edge_has_opposite_directions": true
+      },
+      "source_solid_angle_winding": 3.3130777931911635e-17,
+      "corner_bowl_local_m": [
+        0.040492299080554,
+        -0.005517224302157265,
+        0.03450770700006486
+      ],
+      "corner_world_m": [
+        -0.160931735310539,
+        0.13280660044606268,
+        0.9339118863287501
+      ],
+      "corner_link_local_m": [
+        -0.01095015957500142,
+        0.008407595587214368,
+        0.012127235096814373
+      ],
+      "source_distance_m": 0.009145303449510657,
+      "proxy_exposed_union_distance_m": 0.009146185132673445,
+      "proxy_minus_source_distance_m": 8.81683162787944e-07,
+      "proxy_membership_margin_m": 0.006929454794855312,
+      "source_nearest_triangle_index": 2955,
+      "source_nearest_triangle_link_local_m": [
+        [
+          -0.002437668154016137,
+          0.004179960582405329,
+          0.015423701144754887
+        ],
+        [
+          -0.003297562710940838,
+          0.004695287439972162,
+          0.015487756580114365
+        ],
+        [
+          -0.0022372726816684008,
+          0.004561697598546743,
+          0.01540877390652895
+        ]
+      ],
+      "source_nearest_point_link_local_m": [
+        -0.003297562710940838,
+        0.004695287439972162,
+        0.015487756580114365
+      ],
+      "source_nearest_point_world_m": [
+        -0.16433026342411455,
+        0.1407750915250591,
+        0.9309810619108051
+      ],
+      "proxy_nearest_face_index": 7118,
+      "proxy_nearest_part": "gripper0_proxy76_finger14_link_10",
+      "proxy_nearest_triangle_link_local_m": [
+        [
+          -0.003251368645578623,
+          0.0047865440137684345,
+          0.015484213829040527
+        ],
+        [
+          -0.0035891152060653865,
+          0.004033356701123109,
+          0.015509463287557644
+        ],
+        [
+          -0.003590478080158996,
+          0.004033599056204373,
+          0.01550957018135375
+        ]
+      ],
+      "proxy_nearest_point_link_local_m": [
+        -0.003251368645578623,
+        0.0047865440137684345,
+        0.015484213829040527
+      ],
+      "proxy_nearest_point_world_m": [
+        -0.16424204393686884,
+        0.14082155800790588,
+        0.9310041355551391
+      ],
+      "source_nearest_triangle_oriented_normal": [
+        -0.07428558932393457,
+        1.313382949929811e-06,
+        -0.9972370085476525
+      ],
+      "corner_signed_nearest_face_plane_m": 0.003919718934753663
+    },
+    {
+      "macro": 119,
+      "phase": "descend",
+      "saved_fk_sample_id": "m119_quarter4",
+      "saved_fk_qpos_18": [
+        0.11019389262209636,
+        -0.8491683387444487,
+        -2.6794726443590386,
+        1.6223902342637793,
+        -1.1355931845290113,
+        -0.5431275859185086,
+        1.4335265819905645,
+        0.12714413600034066,
+        0.0,
+        0.004592,
+        0.0,
+        0.011072,
+        0.0,
+        0.011072,
+        0.0,
+        0.011072,
+        0.0,
+        0.011072
+      ],
+      "link": "finger14_link",
+      "native_bowl_geom_index_including_visual": 31,
+      "native_bowl_geom_attributes": {
+        "solimp": "0.998 0.998 0.001",
+        "solref": "0.001 1",
+        "density": "100",
+        "friction": "0.95 0.3 0.1",
+        "type": "box",
+        "pos": "0.03572 0.00140 0.02264",
+        "quat": "0.00267 0.98951 0.01840 -0.14329",
+        "size": "0.00096 0.00709 0.01266",
+        "group": "0",
+        "rgba": "0.8 0.8 0.8 0.3"
+      },
+      "top_corner_index": 2,
+      "selected_from_eight_corner_index": 0,
+      "all_eight_corner_world_z_m": [
+        0.9344563663027179,
+        0.9101776543543318,
+        0.9344568382223679,
+        0.9101781262739818,
+        0.9339114144091002,
+        0.909632702460714,
+        0.9339118863287501,
+        0.9096331743803641
+      ],
+      "source_topology": {
+        "exact_weld_vertices": 3110,
+        "triangles": 6216,
+        "unique_edges": 9324,
+        "every_edge_has_two_faces": true,
+        "every_edge_has_opposite_directions": true
+      },
+      "source_solid_angle_winding": -1.1043592643970545e-17,
+      "corner_bowl_local_m": [
+        0.03812524543256164,
+        0.008584526872461707,
+        0.03505219835597293
+      ],
+      "corner_world_m": [
+        -0.1750335020290915,
+        0.1304396367848557,
+        0.9344563663027179
+      ],
+      "corner_link_local_m": [
+        -0.012797719271621258,
+        -0.005471742787046081,
+        0.00917608456520673
+      ],
+      "source_distance_m": 0.011190432969330864,
+      "proxy_exposed_union_distance_m": 0.01119080285265535,
+      "proxy_minus_source_distance_m": 3.6988332448653627e-07,
+      "proxy_membership_margin_m": 0.007673702453094706,
+      "source_nearest_triangle_index": 2582,
+      "source_nearest_triangle_link_local_m": [
+        [
+          -0.0039179446175694466,
+          -0.00275749946013093,
+          0.01614696905016899
+        ],
+        [
+          -0.00398260448127985,
+          -0.002774822525680065,
+          0.015538787469267845
+        ],
+        [
+          -0.0038543283008038998,
+          -0.0032628143671900034,
+          0.015529231168329716
+        ]
+      ],
+      "source_nearest_point_link_local_m": [
+        -0.003858645978941951,
+        -0.003246388934987258,
+        0.015529552826111294
+      ],
+      "source_nearest_point_world_m": [
+        -0.172154232245637,
+        0.1401294853003685,
+        0.9296561130488169
+      ],
+      "proxy_nearest_face_index": 6266,
+      "proxy_nearest_part": "gripper0_proxy76_finger14_link_09",
+      "proxy_nearest_triangle_link_local_m": [
+        [
+          -0.0037832194939255714,
+          -0.003495549550279975,
+          0.015523898415267467
+        ],
+        [
+          -0.003928674850612879,
+          -0.0029929790180176497,
+          0.015534702688455582
+        ],
+        [
+          -0.0036151648964732885,
+          -0.003973105922341347,
+          0.015511407516896725
+        ]
+      ],
+      "proxy_nearest_point_link_local_m": [
+        -0.00391571280332819,
+        -0.003037764876382976,
+        0.015533739881013281
+      ],
+      "proxy_nearest_point_world_m": [
+        -0.1719456942954958,
+        0.14007587034442243,
+        0.9296769819623634
+      ],
+      "source_nearest_triangle_oriented_normal": [
+        -0.9608097280832351,
+        -0.25470612167586065,
+        0.10940501817312327
+      ],
+      "corner_signed_nearest_face_plane_m": 0.008460458518123026
+    },
+    {
+      "macro": 119,
+      "phase": "descend",
+      "saved_fk_sample_id": "m119_quarter4",
+      "saved_fk_qpos_18": [
+        0.11019389262209636,
+        -0.8491683387444487,
+        -2.6794726443590386,
+        1.6223902342637793,
+        -1.1355931845290113,
+        -0.5431275859185086,
+        1.4335265819905645,
+        0.12714413600034066,
+        0.0,
+        0.004592,
+        0.0,
+        0.011072,
+        0.0,
+        0.011072,
+        0.0,
+        0.011072,
+        0.0,
+        0.011072
+      ],
+      "link": "finger14_link",
+      "native_bowl_geom_index_including_visual": 31,
+      "native_bowl_geom_attributes": {
+        "solimp": "0.998 0.998 0.001",
+        "solref": "0.001 1",
+        "density": "100",
+        "friction": "0.95 0.3 0.1",
+        "type": "box",
+        "pos": "0.03572 0.00140 0.02264",
+        "quat": "0.00267 0.98951 0.01840 -0.14329",
+        "size": "0.00096 0.00709 0.01266",
+        "group": "0",
+        "rgba": "0.8 0.8 0.8 0.3"
+      },
+      "top_corner_index": 3,
+      "selected_from_eight_corner_index": 2,
+      "all_eight_corner_world_z_m": [
+        0.9344563663027179,
+        0.9101776543543318,
+        0.9344568382223679,
+        0.9101781262739818,
+        0.9339114144091002,
+        0.909632702460714,
+        0.9339118863287501,
+        0.9096331743803641
+      ],
+      "source_topology": {
+        "exact_weld_vertices": 3110,
+        "triangles": 6216,
+        "unique_edges": 9324,
+        "every_edge_has_two_faces": true,
+        "every_edge_has_opposite_directions": true
+      },
+      "source_solid_angle_winding": -4.417437057588218e-18,
+      "corner_bowl_local_m": [
+        0.03865244150214579,
+        -0.005585669466343063,
+        0.03505235307842535
+      ],
+      "corner_world_m": [
+        -0.16086330569699248,
+        0.13096683284616525,
+        0.9344568382223679
+      ],
+      "corner_link_local_m": [
+        -0.012710996481759667,
+        0.008536800432324186,
+        0.011372808496144493
+      ],
+      "source_distance_m": 0.010962528737984027,
+      "proxy_exposed_union_distance_m": 0.010960752829314774,
+      "proxy_minus_source_distance_m": -1.7759086692534232e-06,
+      "proxy_membership_margin_m": 0.008109579885092717,
+      "source_nearest_triangle_index": 2954,
+      "source_nearest_triangle_link_local_m": [
+        [
+          -0.002437668154016137,
+          0.004179960582405329,
+          0.015423701144754887
+        ],
+        [
+          -0.0034848812501877546,
+          0.004292260855436325,
+          0.015501710586249828
+        ],
+        [
+          -0.003297562710940838,
+          0.004695287439972162,
+          0.015487756580114365
+        ]
+      ],
+      "source_nearest_point_link_local_m": [
+        -0.0034469325460207163,
+        0.004373909669747448,
+        0.015498883655968881
+      ],
+      "source_nearest_point_world_m": [
+        -0.16464155836038466,
+        0.1406244877486169,
+        0.9309027497417801
+      ],
+      "proxy_nearest_face_index": 7108,
+      "proxy_nearest_part": "gripper0_proxy76_finger14_link_10",
+      "proxy_nearest_triangle_link_local_m": [
+        [
+          -0.0034356240648776293,
+          0.004206525161862373,
+          0.01614137552678585
+        ],
+        [
+          -0.0034481226466596127,
+          0.0043760198168456554,
+          0.015498965978622437
+        ],
+        [
+          -0.003590478080158996,
+          0.004033599056204373,
+          0.01550957018135375
+        ]
+      ],
+      "proxy_nearest_point_link_local_m": [
+        -0.0034481226466596127,
+        0.0043760198168456554,
+        0.015498965978622437
+      ],
+      "proxy_nearest_point_world_m": [
+        -0.16463942419944347,
+        0.1406233424303604,
+        0.9309028469039871
+      ],
+      "source_nearest_triangle_oriented_normal": [
+        -0.0742866448286209,
+        -4.5764670460628975e-07,
+        -0.99723692992182
+      ],
+      "corner_signed_nearest_face_plane_m": 0.004802868847140592
+    },
+    {
+      "macro": 159,
+      "phase": "close",
+      "saved_fk_sample_id": "m159_quarter4",
+      "saved_fk_qpos_18": [
+        0.11019389262209636,
+        -0.8491683387444487,
+        -2.6794726443590386,
+        1.6223902342637793,
+        -1.1355931845290113,
+        -0.5431275859185086,
+        1.4335265819905645,
+        0.12714413600034066,
+        0.16124850912489921,
+        0.14661968683721124,
+        0.429995716371229,
+        0.40692605649135344,
+        0.0,
+        0.011072,
+        0.0,
+        0.011072,
+        0.0,
+        0.011072
+      ],
+      "link": "finger14_link",
+      "native_bowl_geom_index_including_visual": 31,
+      "native_bowl_geom_attributes": {
+        "solimp": "0.998 0.998 0.001",
+        "solref": "0.001 1",
+        "density": "100",
+        "friction": "0.95 0.3 0.1",
+        "type": "box",
+        "pos": "0.03572 0.00140 0.02264",
+        "quat": "0.00267 0.98951 0.01840 -0.14329",
+        "size": "0.00096 0.00709 0.01266",
+        "group": "0",
+        "rgba": "0.8 0.8 0.8 0.3"
+      },
+      "top_corner_index": 0,
+      "selected_from_eight_corner_index": 4,
+      "all_eight_corner_world_z_m": [
+        0.9344563663027179,
+        0.9101776543543318,
+        0.9344568382223679,
+        0.9101781262739818,
+        0.9339114144091002,
+        0.909632702460714,
+        0.9339118863287501,
+        0.9096331743803641
+      ],
+      "source_topology": {
+        "exact_weld_vertices": 3110,
+        "triangles": 6216,
+        "unique_edges": 9324,
+        "every_edge_has_two_faces": true,
+        "every_edge_has_opposite_directions": true
+      },
+      "source_solid_angle_winding": -3.533949646070574e-17,
+      "corner_bowl_local_m": [
+        0.039965103010969845,
+        0.008652972036647506,
+        0.03450755227761244
+      ],
+      "corner_world_m": [
+        -0.17510193164263801,
+        0.13227940438475314,
+        0.9339114144091002
+      ],
+      "corner_link_local_m": [
+        -0.000505484840190502,
+        -0.005600947632155875,
+        0.011140464404524176
+      ],
+      "source_distance_m": 0.0042331397353473615,
+      "proxy_exposed_union_distance_m": 0.004189867088527042,
+      "proxy_minus_source_distance_m": -4.327264682031911e-05,
+      "proxy_membership_margin_m": 0.004128057260488028,
+      "source_nearest_triangle_index": 2859,
+      "source_nearest_triangle_link_local_m": [
+        [
+          -0.0014271953841671348,
+          -0.007107126526534557,
+          0.015348429791629314
+        ],
+        [
+          -0.0009664651588536799,
+          -0.006173816043883562,
+          0.015314108692109585
+        ],
+        [
+          -0.0006374696386046708,
+          -0.006462967488914728,
+          0.015289600938558578
+        ]
+      ],
+      "source_nearest_point_link_local_m": [
+        -0.0008155107613611772,
+        -0.0063064886168588095,
+        0.015302863696529138
+      ],
+      "source_nearest_point_world_m": [
+        -0.17516819056050917,
+        0.13122995630541026,
+        0.9298109582755045
+      ],
+      "proxy_nearest_face_index": 1138,
+      "proxy_nearest_part": "gripper0_proxy76_finger14_link_01",
+      "proxy_nearest_triangle_link_local_m": [
+        [
+          0.007686538156121969,
+          -0.008967379108071327,
+          0.014673007652163506
+        ],
+        [
+          0.007673793006688356,
+          -0.008966811001300812,
+          0.014672874473035336
+        ],
+        [
+          -0.0007671852585595749,
+          -0.0061680142686019405,
+          0.015299307209054305
+        ]
+      ],
+      "proxy_nearest_point_link_local_m": [
+        -0.0004244367969968403,
+        -0.006281660251829829,
+        0.015273870719373125
+      ],
+      "proxy_nearest_point_world_m": [
+        -0.17514201182375613,
+        0.13162026166299565,
+        0.9297739138748455
+      ],
+      "source_nearest_triangle_oriented_normal": [
+        -0.07428688676163203,
+        -5.702554165061094e-08,
+        -0.9972369118997056
+      ],
+      "corner_signed_nearest_face_plane_m": 0.0041278673153195165
+    },
+    {
+      "macro": 159,
+      "phase": "close",
+      "saved_fk_sample_id": "m159_quarter4",
+      "saved_fk_qpos_18": [
+        0.11019389262209636,
+        -0.8491683387444487,
+        -2.6794726443590386,
+        1.6223902342637793,
+        -1.1355931845290113,
+        -0.5431275859185086,
+        1.4335265819905645,
+        0.12714413600034066,
+        0.16124850912489921,
+        0.14661968683721124,
+        0.429995716371229,
+        0.40692605649135344,
+        0.0,
+        0.011072,
+        0.0,
+        0.011072,
+        0.0,
+        0.011072
+      ],
+      "link": "finger14_link",
+      "native_bowl_geom_index_including_visual": 31,
+      "native_bowl_geom_attributes": {
+        "solimp": "0.998 0.998 0.001",
+        "solref": "0.001 1",
+        "density": "100",
+        "friction": "0.95 0.3 0.1",
+        "type": "box",
+        "pos": "0.03572 0.00140 0.02264",
+        "quat": "0.00267 0.98951 0.01840 -0.14329",
+        "size": "0.00096 0.00709 0.01266",
+        "group": "0",
+        "rgba": "0.8 0.8 0.8 0.3"
+      },
+      "top_corner_index": 1,
+      "selected_from_eight_corner_index": 6,
+      "all_eight_corner_world_z_m": [
+        0.9344563663027179,
+        0.9101776543543318,
+        0.9344568382223679,
+        0.9101781262739818,
+        0.9339114144091002,
+        0.909632702460714,
+        0.9339118863287501,
+        0.9096331743803641
+      ],
+      "source_topology": {
+        "exact_weld_vertices": 3110,
+        "triangles": 6216,
+        "unique_edges": 9324,
+        "every_edge_has_two_faces": true,
+        "every_edge_has_opposite_directions": true
+      },
+      "source_solid_angle_winding": 1.766974823035287e-17,
+      "corner_bowl_local_m": [
+        0.040492299080554,
+        -0.005517224302157265,
+        0.03450770700006486
+      ],
+      "corner_world_m": [
+        -0.160931735310539,
+        0.13280660044606268,
+        0.9339118863287501
+      ],
+      "corner_link_local_m": [
+        0.00023332847060488575,
+        0.008407595587214371,
+        0.013211037214842151
+      ],
+      "source_distance_m": 0.0020097061603093005,
+      "proxy_exposed_union_distance_m": 0.0020097861816929115,
+      "proxy_minus_source_distance_m": 8.002138361098629e-08,
+      "proxy_membership_margin_m": 0.002008253161024631,
+      "source_nearest_triangle_index": 1989,
+      "source_nearest_triangle_link_local_m": [
+        [
+          0.0006967075169086456,
+          0.008477712981402874,
+          0.015190215781331062
+        ],
+        [
+          0.0002239648310933262,
+          0.00823817029595375,
+          0.015225430950522423
+        ],
+        [
+          0.0009221918298862875,
+          0.00834603887051344,
+          0.017074191942811012
+        ]
+      ],
+      "source_nearest_point_link_local_m": [
+        0.00041826650778917885,
+        0.008336624585823346,
+        0.01521095718577827
+      ],
+      "source_nearest_point_world_m": [
+        -0.16069354088261142,
+        0.1326341611098664,
+        0.9319238101379009
+      ],
+      "proxy_nearest_face_index": 776,
+      "proxy_nearest_part": "gripper0_proxy76_finger14_link_00",
+      "proxy_nearest_triangle_link_local_m": [
+        [
+          0.0005946361925452948,
+          0.008428658358752728,
+          0.015197919681668282
+        ],
+        [
+          0.00010995165939675644,
+          0.00817591417580843,
+          0.01523397583514452
+        ],
+        [
+          0.0009219591156579554,
+          0.00834592618048191,
+          0.017074190080165863
+        ]
+      ],
+      "proxy_nearest_point_link_local_m": [
+        0.00041890798275844406,
+        0.008337022913911267,
+        0.0152109922739811
+      ],
+      "proxy_nearest_point_world_m": [
+        -0.1606931319561101,
+        0.13263479095356617,
+        0.9319237237514776
+      ],
+      "source_nearest_triangle_oriented_normal": [
+        -0.44215595332491603,
+        0.8895237188586149,
+        0.11508981939022386
+      ],
+      "corner_signed_nearest_face_plane_m": -8.526858502421467e-05
+    },
+    {
+      "macro": 159,
+      "phase": "close",
+      "saved_fk_sample_id": "m159_quarter4",
+      "saved_fk_qpos_18": [
+        0.11019389262209636,
+        -0.8491683387444487,
+        -2.6794726443590386,
+        1.6223902342637793,
+        -1.1355931845290113,
+        -0.5431275859185086,
+        1.4335265819905645,
+        0.12714413600034066,
+        0.16124850912489921,
+        0.14661968683721124,
+        0.429995716371229,
+        0.40692605649135344,
+        0.0,
+        0.011072,
+        0.0,
+        0.011072,
+        0.0,
+        0.011072
+      ],
+      "link": "finger14_link",
+      "native_bowl_geom_index_including_visual": 31,
+      "native_bowl_geom_attributes": {
+        "solimp": "0.998 0.998 0.001",
+        "solref": "0.001 1",
+        "density": "100",
+        "friction": "0.95 0.3 0.1",
+        "type": "box",
+        "pos": "0.03572 0.00140 0.02264",
+        "quat": "0.00267 0.98951 0.01840 -0.14329",
+        "size": "0.00096 0.00709 0.01266",
+        "group": "0",
+        "rgba": "0.8 0.8 0.8 0.3"
+      },
+      "top_corner_index": 2,
+      "selected_from_eight_corner_index": 0,
+      "all_eight_corner_world_z_m": [
+        0.9344563663027179,
+        0.9101776543543318,
+        0.9344568382223679,
+        0.9101781262739818,
+        0.9339114144091002,
+        0.909632702460714,
+        0.9339118863287501,
+        0.9096331743803641
+      ],
+      "source_topology": {
+        "exact_weld_vertices": 3110,
+        "triangles": 6216,
+        "unique_edges": 9324,
+        "every_edge_has_two_faces": true,
+        "every_edge_has_opposite_directions": true
+      },
+      "source_solid_angle_winding": 1.766974823035287e-17,
+      "corner_bowl_local_m": [
+        0.03812524543256164,
+        0.008584526872461707,
+        0.03505219835597293
+      ],
+      "corner_world_m": [
+        -0.1750335020290915,
+        0.1304396367848557,
+        0.9344563663027179
+      ],
+      "corner_link_local_m": [
+        -0.002411271114074916,
+        -0.005471742787046074,
+        0.01094633870742588
+      ],
+      "source_distance_m": 0.004463030833638946,
+      "proxy_exposed_union_distance_m": 0.00446287157457933,
+      "proxy_minus_source_distance_m": -1.5925905961621661e-07,
+      "proxy_membership_margin_m": 0.004462871574579329,
+      "source_nearest_triangle_index": 2852,
+      "source_nearest_triangle_link_local_m": [
+        [
+          -0.0026664293836802244,
+          -0.005747112911194563,
+          0.0154407424852252
+        ],
+        [
+          -0.0018094471888616681,
+          -0.0052249315194785595,
+          0.015376904048025608
+        ],
+        [
+          -0.002391248242929578,
+          -0.0061095175333321095,
+          0.015420244075357914
+        ]
+      ],
+      "source_nearest_point_link_local_m": [
+        -0.002079731150073636,
+        -0.005471739243348604,
+        0.015397038143949247
+      ],
+      "source_nearest_point_world_m": [
+        -0.17434858483227061,
+        0.12997899549952438,
+        0.9300703268293707
+      ],
+      "proxy_nearest_face_index": 7680,
+      "proxy_nearest_part": "gripper0_proxy76_finger14_link_11",
+      "proxy_nearest_triangle_link_local_m": [
+        [
+          -0.0017030483070997245,
+          -0.006089986940616811,
+          0.01536881298981252
+        ],
+        [
+          -0.002600387204438448,
+          -0.005838367156684399,
+          0.015435555018484592
+        ],
+        [
+          -0.0021470028441399336,
+          -0.004716724157333374,
+          0.015401951968669891
+        ]
+      ],
+      "proxy_nearest_point_link_local_m": [
+        -0.0020803651438575693,
+        -0.005472165647379486,
+        0.015396925607066403
+      ],
+      "proxy_nearest_point_world_m": [
+        -0.1743490332146293,
+        0.12997838637936043,
+        0.9300704829029172
+      ],
+      "source_nearest_triangle_oriented_normal": [
+        -0.0742858331836704,
+        -7.94011424622405e-07,
+        -0.9972369903827162
+      ],
+      "corner_signed_nearest_face_plane_m": 0.004463030833638946
+    },
+    {
+      "macro": 159,
+      "phase": "close",
+      "saved_fk_sample_id": "m159_quarter4",
+      "saved_fk_qpos_18": [
+        0.11019389262209636,
+        -0.8491683387444487,
+        -2.6794726443590386,
+        1.6223902342637793,
+        -1.1355931845290113,
+        -0.5431275859185086,
+        1.4335265819905645,
+        0.12714413600034066,
+        0.16124850912489921,
+        0.14661968683721124,
+        0.429995716371229,
+        0.40692605649135344,
+        0.0,
+        0.011072,
+        0.0,
+        0.011072,
+        0.0,
+        0.011072
+      ],
+      "link": "finger14_link",
+      "native_bowl_geom_index_including_visual": 31,
+      "native_bowl_geom_attributes": {
+        "solimp": "0.998 0.998 0.001",
+        "solref": "0.001 1",
+        "density": "100",
+        "friction": "0.95 0.3 0.1",
+        "type": "box",
+        "pos": "0.03572 0.00140 0.02264",
+        "quat": "0.00267 0.98951 0.01840 -0.14329",
+        "size": "0.00096 0.00709 0.01266",
+        "group": "0",
+        "rgba": "0.8 0.8 0.8 0.3"
+      },
+      "top_corner_index": 3,
+      "selected_from_eight_corner_index": 2,
+      "all_eight_corner_world_z_m": [
+        0.9344563663027179,
+        0.9101776543543318,
+        0.9344568382223679,
+        0.9101781262739818,
+        0.9339114144091002,
+        0.909632702460714,
+        0.9339118863287501,
+        0.9096331743803641
+      ],
+      "source_topology": {
+        "exact_weld_vertices": 3110,
+        "triangles": 6216,
+        "unique_edges": 9324,
+        "every_edge_has_two_faces": true,
+        "every_edge_has_opposite_directions": true
+      },
+      "source_solid_angle_winding": -8.834874115176436e-18,
+      "corner_bowl_local_m": [
+        0.03865244150214579,
+        -0.005585669466343063,
+        0.03505235307842535
+      ],
+      "corner_world_m": [
+        -0.16086330569699248,
+        0.13096683284616525,
+        0.9344568382223679
+      ],
+      "corner_link_local_m": [
+        -0.0016724578032795477,
+        0.008536800432324188,
+        0.013016911517743746
+      ],
+      "source_distance_m": 0.002618785903640933,
+      "proxy_exposed_union_distance_m": 0.0026192864904428853,
+      "proxy_minus_source_distance_m": 5.005868019521478e-07,
+      "proxy_membership_margin_m": 0.0023434121732353146,
+      "source_nearest_triangle_index": 2880,
+      "source_nearest_triangle_link_local_m": [
+        [
+          -0.0009442383307032287,
+          0.007496202830225229,
+          0.015312452800571918
+        ],
+        [
+          -0.0007093892199918628,
+          0.007665710523724556,
+          0.015294958837330341
+        ],
+        [
+          -0.00021941821614746004,
+          0.006784631405025721,
+          0.015258459374308586
+        ]
+      ],
+      "source_nearest_point_link_local_m": [
+        -0.000817248268240391,
+        0.007587860799549485,
+        0.015302993282168628
+      ],
+      "source_nearest_point_world_m": [
+        -0.1614385575465696,
+        0.13139304524474688,
+        0.9319378170017424
+      ],
+      "proxy_nearest_face_index": 713,
+      "proxy_nearest_part": "gripper0_proxy76_finger14_link_00",
+      "proxy_nearest_triangle_link_local_m": [
+        [
+          -0.0010860076872631907,
+          0.007387981750071049,
+          0.015322995372116566
+        ],
+        [
+          -0.0007164523121900856,
+          0.0076607814989984035,
+          0.015295485034584999
+        ],
+        [
+          -0.0014504509745165706,
+          0.0070868805050849915,
+          0.015350090339779854
+        ]
+      ],
+      "proxy_nearest_point_link_local_m": [
+        -0.0008065687749338919,
+        0.007594258996367049,
+        0.015302193459017312
+      ],
+      "proxy_nearest_point_world_m": [
+        -0.1614321915169814,
+        0.1314037730331114,
+        0.9319376887794282
+      ],
+      "source_nearest_triangle_oriented_normal": [
+        -0.07428523507428601,
+        1.140737985602906e-06,
+        -0.997237034936357
+      ],
+      "corner_signed_nearest_face_plane_m": 0.002343295924216784
+    },
+    {
+      "macro": 119,
+      "phase": "descend",
+      "saved_fk_sample_id": "m119_quarter4",
+      "saved_fk_qpos_18": [
+        0.11019389262209636,
+        -0.8491683387444487,
+        -2.6794726443590386,
+        1.6223902342637793,
+        -1.1355931845290113,
+        -0.5431275859185086,
+        1.4335265819905645,
+        0.12714413600034066,
+        0.0,
+        0.004592,
+        0.0,
+        0.011072,
+        0.0,
+        0.011072,
+        0.0,
+        0.011072,
+        0.0,
+        0.011072
+      ],
+      "link": "finger23_link",
+      "native_bowl_geom_index_including_visual": 22,
+      "native_bowl_geom_attributes": {
+        "solimp": "0.998 0.998 0.001",
+        "solref": "0.001 1",
+        "density": "100",
+        "friction": "0.95 0.3 0.1",
+        "type": "box",
+        "pos": "-0.03558 0.00349 0.02264",
+        "quat": "0.04942 -0.14314 0.00715 0.98844",
+        "size": "0.00096 0.00709 0.01266",
+        "group": "0",
+        "rgba": "0.8 0.8 0.8 0.3"
+      },
+      "top_corner_index": 0,
+      "selected_from_eight_corner_index": 5,
+      "all_eight_corner_world_z_m": [
+        0.9101879447885078,
+        0.934468945580501,
+        0.9101883928109675,
+        0.9344693936029607,
+        0.9096435795903006,
+        0.9339245803822938,
+        0.9096440276127602,
+        0.9339250284047533
+      ],
+      "source_topology": {
+        "exact_weld_vertices": 2940,
+        "triangles": 5876,
+        "unique_edges": 8814,
+        "every_edge_has_two_faces": true,
+        "every_edge_has_opposite_directions": true
+      },
+      "source_solid_angle_winding": -2.208718528794109e-17,
+      "corner_bowl_local_m": [
+        -0.0393622563487482,
+        0.01099452717908913,
+        0.03450768337674487
+      ],
+      "corner_world_m": [
+        -0.17744348731077667,
+        0.052952046133023324,
+        0.9339245803822938
+      ],
+      "corner_link_local_m": [
+        0.030088015979271236,
+        -0.012321110799041987,
+        0.004851720506484539
+      ],
+      "source_distance_m": 0.027217630900719932,
+      "proxy_exposed_union_distance_m": 0.02721779233911126,
+      "proxy_minus_source_distance_m": 1.614383913287054e-07,
+      "proxy_membership_margin_m": 0.026660388159339073,
+      "source_nearest_triangle_index": 3038,
+      "source_nearest_triangle_link_local_m": [
+        [
+          0.005076371133327484,
+          -0.002503781346604228,
+          0.011613553389906883
+        ],
+        [
+          0.00510372081771493,
+          -0.0025982495862990618,
+          0.009547505527734756
+        ],
+        [
+          0.005239617079496384,
+          -0.002154743764549494,
+          0.009460363537073135
+        ]
+      ],
+      "source_nearest_point_link_local_m": [
+        0.00510372081771493,
+        -0.0025982495862990618,
+        0.009547505527734756
+      ],
+      "source_nearest_point_world_m": [
+        -0.16658707846163562,
+        0.03173472031379454,
+        0.9470685106860045
+      ],
+      "proxy_nearest_face_index": 5800,
+      "proxy_nearest_part": "gripper0_proxy76_finger23_link_06",
+      "proxy_nearest_triangle_link_local_m": [
+        [
+          0.005113891325891018,
+          -0.0025687289889901876,
+          0.009541322477161884
+        ],
+        [
+          0.0051705604419112206,
+          -0.0023938710801303387,
+          0.0095057999715209
+        ],
+        [
+          0.005076386965811253,
+          -0.002503749681636691,
+          0.011613592505455017
+        ]
+      ],
+      "proxy_nearest_point_link_local_m": [
+        0.005113891325891018,
+        -0.0025687289889901876,
+        0.009541322477161884
+      ],
+      "proxy_nearest_point_world_m": [
+        -0.16655845055563753,
+        0.03174860160181177,
+        0.947067568424063
+      ],
+      "source_nearest_triangle_oriented_normal": [
+        0.9572139317313108,
+        -0.28822432450799784,
+        0.025850099833345824
+      ],
+      "corner_signed_nearest_face_plane_m": 0.026596293996861472
+    },
+    {
+      "macro": 119,
+      "phase": "descend",
+      "saved_fk_sample_id": "m119_quarter4",
+      "saved_fk_qpos_18": [
+        0.11019389262209636,
+        -0.8491683387444487,
+        -2.6794726443590386,
+        1.6223902342637793,
+        -1.1355931845290113,
+        -0.5431275859185086,
+        1.4335265819905645,
+        0.12714413600034066,
+        0.0,
+        0.004592,
+        0.0,
+        0.011072,
+        0.0,
+        0.011072,
+        0.0,
+        0.011072,
+        0.0,
+        0.011072
+      ],
+      "link": "finger23_link",
+      "native_bowl_geom_index_including_visual": 22,
+      "native_bowl_geom_attributes": {
+        "solimp": "0.998 0.998 0.001",
+        "solref": "0.001 1",
+        "density": "100",
+        "friction": "0.95 0.3 0.1",
+        "type": "box",
+        "pos": "-0.03558 0.00349 0.02264",
+        "quat": "0.04942 -0.14314 0.00715 0.98844",
+        "size": "0.00096 0.00709 0.01266",
+        "group": "0",
+        "rgba": "0.8 0.8 0.8 0.3"
+      },
+      "top_corner_index": 1,
+      "selected_from_eight_corner_index": 7,
+      "all_eight_corner_world_z_m": [
+        0.9101879447885078,
+        0.934468945580501,
+        0.9101883928109675,
+        0.9344693936029607,
+        0.9096435795903006,
+        0.9339245803822938,
+        0.9096440276127602,
+        0.9339250284047533
+      ],
+      "source_topology": {
+        "exact_weld_vertices": 2940,
+        "triangles": 5876,
+        "unique_edges": 8814,
+        "every_edge_has_two_faces": true,
+        "every_edge_has_opposite_directions": true
+      },
+      "source_solid_angle_winding": -1.3252311172764653e-17,
+      "corner_bowl_local_m": [
+        -0.04077663612962816,
+        -0.003114758054403517,
+        0.034507495269813046
+      ],
+      "corner_world_m": [
+        -0.1633342020869827,
+        0.05153766631384254,
+        0.9339250284047533
+      ],
+      "corner_link_local_m": [
+        0.02855908311457663,
+        0.0016370478447785138,
+        0.006827719385329361
+      ],
+      "source_distance_m": 0.02322532935911435,
+      "proxy_exposed_union_distance_m": 0.023224051120018567,
+      "proxy_minus_source_distance_m": -1.278239095781758e-06,
+      "proxy_membership_margin_m": 0.023017873419924464,
+      "source_nearest_triangle_index": 5859,
+      "source_nearest_triangle_link_local_m": [
+        [
+          0.0054992143996059895,
+          0.0003303081903140992,
+          0.00926714763045311
+        ],
+        [
+          0.00550297973677516,
+          -0.00018466453184373677,
+          0.009264064021408558
+        ],
+        [
+          0.00527949957177043,
+          0.0007367044454440475,
+          0.009433026425540447
+        ]
+      ],
+      "source_nearest_point_link_local_m": [
+        0.0054992143996059895,
+        0.0003303081903140992,
+        0.00926714763045311
+      ],
+      "source_nearest_point_world_m": [
+        -0.16370216070521193,
+        0.03243152657052083,
+        0.9471248751615635
+      ],
+      "proxy_nearest_face_index": 5557,
+      "proxy_nearest_part": "gripper0_proxy76_finger23_link_06",
+      "proxy_nearest_triangle_link_local_m": [
+        [
+          0.005429006647318602,
+          0.0005554560339078307,
+          0.01161375641822815
+        ],
+        [
+          0.005444596521556377,
+          1.1518563880486e-15,
+          0.01161378063261509
+        ],
+        [
+          0.005492258816957474,
+          0.000497082422953099,
+          0.009272846393287182
+        ]
+      ],
+      "proxy_nearest_point_link_local_m": [
+        0.005492258816957474,
+        0.000497082422953099,
+        0.009272846393287182
+      ],
+      "proxy_nearest_point_world_m": [
+        -0.1635352896465344,
+        0.032434833705825526,
+        0.9471310081324643
+      ],
+      "source_nearest_triangle_oriented_normal": [
+        -0.602090985639649,
+        0.00037858774693722865,
+        -0.7984273928685023
+      ],
+      "corner_signed_nearest_face_plane_m": -0.01193593803385202
+    },
+    {
+      "macro": 119,
+      "phase": "descend",
+      "saved_fk_sample_id": "m119_quarter4",
+      "saved_fk_qpos_18": [
+        0.11019389262209636,
+        -0.8491683387444487,
+        -2.6794726443590386,
+        1.6223902342637793,
+        -1.1355931845290113,
+        -0.5431275859185086,
+        1.4335265819905645,
+        0.12714413600034066,
+        0.0,
+        0.004592,
+        0.0,
+        0.011072,
+        0.0,
+        0.011072,
+        0.0,
+        0.011072,
+        0.0,
+        0.011072
+      ],
+      "link": "finger23_link",
+      "native_bowl_geom_index_including_visual": 22,
+      "native_bowl_geom_attributes": {
+        "solimp": "0.998 0.998 0.001",
+        "solref": "0.001 1",
+        "density": "100",
+        "friction": "0.95 0.3 0.1",
+        "type": "box",
+        "pos": "-0.03558 0.00349 0.02264",
+        "quat": "0.04942 -0.14314 0.00715 0.98844",
+        "size": "0.00096 0.00709 0.01266",
+        "group": "0",
+        "rgba": "0.8 0.8 0.8 0.3"
+      },
+      "top_corner_index": 2,
+      "selected_from_eight_corner_index": 1,
+      "all_eight_corner_world_z_m": [
+        0.9101879447885078,
+        0.934468945580501,
+        0.9101883928109675,
+        0.9344693936029607,
+        0.9096435795903006,
+        0.9339245803822938,
+        0.9096440276127602,
+        0.9339250284047533
+      ],
+      "source_topology": {
+        "exact_weld_vertices": 2940,
+        "triangles": 5876,
+        "unique_edges": 8814,
+        "every_edge_has_two_faces": true,
+        "every_edge_has_opposite_directions": true
+      },
+      "source_solid_angle_winding": -2.4295903816735198e-17,
+      "corner_bowl_local_m": [
+        -0.03753031324822235,
+        0.010810877497831523,
+        0.03505234590621581
+      ],
+      "corner_world_m": [
+        -0.17725985315647078,
+        0.05478407916448131,
+        0.934468945580501
+      ],
+      "corner_link_local_m": [
+        0.031109952642909843,
+        -0.011984065920352307,
+        0.0032616116406328313
+      ],
+      "source_distance_m": 0.02835366120913253,
+      "proxy_exposed_union_distance_m": 0.028351610055554994,
+      "proxy_minus_source_distance_m": -2.051153577535547e-06,
+      "proxy_membership_margin_m": 0.027464534235480658,
+      "source_nearest_triangle_index": 3038,
+      "source_nearest_triangle_link_local_m": [
+        [
+          0.005076371133327484,
+          -0.002503781346604228,
+          0.011613553389906883
+        ],
+        [
+          0.00510372081771493,
+          -0.0025982495862990618,
+          0.009547505527734756
+        ],
+        [
+          0.005239617079496384,
+          -0.002154743764549494,
+          0.009460363537073135
+        ]
+      ],
+      "source_nearest_point_link_local_m": [
+        0.00510372081771493,
+        -0.0025982495862990618,
+        0.009547505527734756
+      ],
+      "source_nearest_point_world_m": [
+        -0.16658707846163562,
+        0.03173472031379454,
+        0.9470685106860045
+      ],
+      "proxy_nearest_face_index": 5624,
+      "proxy_nearest_part": "gripper0_proxy76_finger23_link_06",
+      "proxy_nearest_triangle_link_local_m": [
+        [
+          0.0051705604419112206,
+          -0.0023938710801303387,
+          0.0095057999715209
+        ],
+        [
+          0.003217614050249672,
+          -0.005105833071337102,
+          0.009966077080892146
+        ],
+        [
+          0.0031961050585750986,
+          -0.005101009128896953,
+          0.00996459582498216
+        ]
+      ],
+      "proxy_nearest_point_link_local_m": [
+        0.0051705604419112206,
+        -0.0023938710801303387,
+        0.0095057999715209
+      ],
+      "proxy_nearest_point_world_m": [
+        -0.16638868137419544,
+        0.03182740734352544,
+        0.9470634934377065
+      ],
+      "source_nearest_triangle_oriented_normal": [
+        0.9572139317313108,
+        -0.28822432450799784,
+        0.025850099833345824
+      ],
+      "corner_signed_nearest_face_plane_m": 0.02743625700322599
+    },
+    {
+      "macro": 119,
+      "phase": "descend",
+      "saved_fk_sample_id": "m119_quarter4",
+      "saved_fk_qpos_18": [
+        0.11019389262209636,
+        -0.8491683387444487,
+        -2.6794726443590386,
+        1.6223902342637793,
+        -1.1355931845290113,
+        -0.5431275859185086,
+        1.4335265819905645,
+        0.12714413600034066,
+        0.0,
+        0.004592,
+        0.0,
+        0.011072,
+        0.0,
+        0.011072,
+        0.0,
+        0.011072,
+        0.0,
+        0.011072
+      ],
+      "link": "finger23_link",
+      "native_bowl_geom_index_including_visual": 22,
+      "native_bowl_geom_attributes": {
+        "solimp": "0.998 0.998 0.001",
+        "solref": "0.001 1",
+        "density": "100",
+        "friction": "0.95 0.3 0.1",
+        "type": "box",
+        "pos": "-0.03558 0.00349 0.02264",
+        "quat": "0.04942 -0.14314 0.00715 0.98844",
+        "size": "0.00096 0.00709 0.01266",
+        "group": "0",
+        "rgba": "0.8 0.8 0.8 0.3"
+      },
+      "top_corner_index": 3,
+      "selected_from_eight_corner_index": 3,
+      "all_eight_corner_world_z_m": [
+        0.9101879447885078,
+        0.934468945580501,
+        0.9101883928109675,
+        0.9344693936029607,
+        0.9096435795903006,
+        0.9339245803822938,
+        0.9096440276127602,
+        0.9339250284047533
+      ],
+      "source_topology": {
+        "exact_weld_vertices": 2940,
+        "triangles": 5876,
+        "unique_edges": 8814,
+        "every_edge_has_two_faces": true,
+        "every_edge_has_opposite_directions": true
+      },
+      "source_solid_angle_winding": -1.5461029701558764e-17,
+      "corner_bowl_local_m": [
+        -0.038944693029102306,
+        -0.0032984077356611246,
+        0.035052157799283994
+      ],
+      "corner_world_m": [
+        -0.16315056793267685,
+        0.05336969934530053,
+        0.9344693936029607
+      ],
+      "corner_link_local_m": [
+        0.029581019778215173,
+        0.0019740927234681736,
+        0.0052376105194775644
+      ],
+      "source_distance_m": 0.024471872556851525,
+      "proxy_exposed_union_distance_m": 0.024469023123813514,
+      "proxy_minus_source_distance_m": -2.8494330380109123e-06,
+      "proxy_membership_margin_m": 0.02402242924345175,
+      "source_nearest_triangle_index": 5862,
+      "source_nearest_triangle_link_local_m": [
+        [
+          0.00527949957177043,
+          0.0007367044454440475,
+          0.009433026425540447
+        ],
+        [
+          0.005469244904816151,
+          0.0008290536934509873,
+          0.009291386231780052
+        ],
+        [
+          0.0054992143996059895,
+          0.0003303081903140992,
+          0.00926714763045311
+        ]
+      ],
+      "source_nearest_point_link_local_m": [
+        0.005499161671260789,
+        0.00033118568341970473,
+        0.00926719027586128
+      ],
+      "source_nearest_point_world_m": [
+        -0.1637012812294275,
+        0.03243152354179809,
+        0.9471249084216155
+      ],
+      "proxy_nearest_face_index": 5557,
+      "proxy_nearest_part": "gripper0_proxy76_finger23_link_06",
+      "proxy_nearest_triangle_link_local_m": [
+        [
+          0.005429006647318602,
+          0.0005554560339078307,
+          0.01161375641822815
+        ],
+        [
+          0.005444596521556377,
+          1.1518563880486e-15,
+          0.01161378063261509
+        ],
+        [
+          0.005492258816957474,
+          0.000497082422953099,
+          0.009272846393287182
+        ]
+      ],
+      "proxy_nearest_point_link_local_m": [
+        0.005492258816957474,
+        0.000497082422953099,
+        0.009272846393287182
+      ],
+      "proxy_nearest_point_world_m": [
+        -0.1635352896465344,
+        0.032434833705825526,
+        0.9471310081324643
+      ],
+      "source_nearest_triangle_oriented_normal": [
+        -0.5990980184041383,
+        0.002912237955843486,
+        -0.800670396114608
+      ],
+      "corner_signed_nearest_face_plane_m": -0.011196243715406898
+    },
+    {
+      "macro": 159,
+      "phase": "close",
+      "saved_fk_sample_id": "m159_quarter4",
+      "saved_fk_qpos_18": [
+        0.11019389262209636,
+        -0.8491683387444487,
+        -2.6794726443590386,
+        1.6223902342637793,
+        -1.1355931845290113,
+        -0.5431275859185086,
+        1.4335265819905645,
+        0.12714413600034066,
+        0.16124850912489921,
+        0.14661968683721124,
+        0.429995716371229,
+        0.40692605649135344,
+        0.0,
+        0.011072,
+        0.0,
+        0.011072,
+        0.0,
+        0.011072
+      ],
+      "link": "finger23_link",
+      "native_bowl_geom_index_including_visual": 22,
+      "native_bowl_geom_attributes": {
+        "solimp": "0.998 0.998 0.001",
+        "solref": "0.001 1",
+        "density": "100",
+        "friction": "0.95 0.3 0.1",
+        "type": "box",
+        "pos": "-0.03558 0.00349 0.02264",
+        "quat": "0.04942 -0.14314 0.00715 0.98844",
+        "size": "0.00096 0.00709 0.01266",
+        "group": "0",
+        "rgba": "0.8 0.8 0.8 0.3"
+      },
+      "top_corner_index": 0,
+      "selected_from_eight_corner_index": 5,
+      "all_eight_corner_world_z_m": [
+        0.9101879447885078,
+        0.934468945580501,
+        0.9101883928109675,
+        0.9344693936029607,
+        0.9096435795903006,
+        0.9339245803822938,
+        0.9096440276127602,
+        0.9339250284047533
+      ],
+      "source_topology": {
+        "exact_weld_vertices": 2940,
+        "triangles": 5876,
+        "unique_edges": 8814,
+        "every_edge_has_two_faces": true,
+        "every_edge_has_opposite_directions": true
+      },
+      "source_solid_angle_winding": 8.834874115176436e-18,
+      "corner_bowl_local_m": [
+        -0.0393622563487482,
+        0.01099452717908913,
+        0.03450768337674487
+      ],
+      "corner_world_m": [
+        -0.17744348731077667,
+        0.052952046133023324,
+        0.9339245803822938
+      ],
+      "corner_link_local_m": [
+        0.004693142452160201,
+        -0.012321110799041989,
+        0.016706917633008408
+      ],
+      "source_distance_m": 0.006994893451189349,
+      "proxy_exposed_union_distance_m": 0.0069373977536894265,
+      "proxy_minus_source_distance_m": -5.749569749992269e-05,
+      "proxy_membership_margin_m": 0.006937397753689427,
+      "source_nearest_triangle_index": 4767,
+      "source_nearest_triangle_link_local_m": [
+        [
+          0.0015583133790642023,
+          -0.006172711495310068,
+          0.01423553191125393
+        ],
+        [
+          0.0014853922184556723,
+          -0.005975029431283474,
+          0.01945585384964943
+        ],
+        [
+          0.0008334914455190301,
+          -0.006369437091052532,
+          0.016859855502843857
+        ]
+      ],
+      "source_nearest_point_link_local_m": [
+        0.0015277051396354296,
+        -0.006089735581377725,
+        0.016426732139723593
+      ],
+      "source_nearest_point_world_m": [
+        -0.1709963265120905,
+        0.05024247973778362,
+        0.9340691555501617
+      ],
+      "proxy_nearest_face_index": 75,
+      "proxy_nearest_part": "gripper0_proxy76_finger23_link_00",
+      "proxy_nearest_triangle_link_local_m": [
+        [
+          0.0011331266647802104,
+          -0.006155013551912946,
+          0.023359143706657072
+        ],
+        [
+          0.0015775993233546615,
+          -0.006267532240599394,
+          0.011623509228229523
+        ],
+        [
+          0.0022791766095906496,
+          -0.005906461272388697,
+          0.01161997765302658
+        ]
+      ],
+      "proxy_nearest_point_link_local_m": [
+        0.0015188783843790542,
+        -0.006155125672147276,
+        0.01652757819004679
+      ],
+      "proxy_nearest_point_world_m": [
+        -0.17105812034384762,
+        0.05024042583246346,
+        0.9339657098867692
+      ],
+      "source_nearest_triangle_oriented_normal": [
+        0.3949240795697818,
+        -0.9178306341761913,
+        0.0402727990545903
+      ],
+      "corner_signed_nearest_face_plane_m": 0.006980738338972352
+    },
+    {
+      "macro": 159,
+      "phase": "close",
+      "saved_fk_sample_id": "m159_quarter4",
+      "saved_fk_qpos_18": [
+        0.11019389262209636,
+        -0.8491683387444487,
+        -2.6794726443590386,
+        1.6223902342637793,
+        -1.1355931845290113,
+        -0.5431275859185086,
+        1.4335265819905645,
+        0.12714413600034066,
+        0.16124850912489921,
+        0.14661968683721124,
+        0.429995716371229,
+        0.40692605649135344,
+        0.0,
+        0.011072,
+        0.0,
+        0.011072,
+        0.0,
+        0.011072
+      ],
+      "link": "finger23_link",
+      "native_bowl_geom_index_including_visual": 22,
+      "native_bowl_geom_attributes": {
+        "solimp": "0.998 0.998 0.001",
+        "solref": "0.001 1",
+        "density": "100",
+        "friction": "0.95 0.3 0.1",
+        "type": "box",
+        "pos": "-0.03558 0.00349 0.02264",
+        "quat": "0.04942 -0.14314 0.00715 0.98844",
+        "size": "0.00096 0.00709 0.01266",
+        "group": "0",
+        "rgba": "0.8 0.8 0.8 0.3"
+      },
+      "top_corner_index": 1,
+      "selected_from_eight_corner_index": 7,
+      "all_eight_corner_world_z_m": [
+        0.9101879447885078,
+        0.934468945580501,
+        0.9101883928109675,
+        0.9344693936029607,
+        0.9096435795903006,
+        0.9339245803822938,
+        0.9096440276127602,
+        0.9339250284047533
+      ],
+      "source_topology": {
+        "exact_weld_vertices": 2940,
+        "triangles": 5876,
+        "unique_edges": 8814,
+        "every_edge_has_two_faces": true,
+        "every_edge_has_opposite_directions": true
+      },
+      "source_solid_angle_winding": 0.0,
+      "corner_bowl_local_m": [
+        -0.04077663612962816,
+        -0.003114758054403517,
+        0.034507495269813046
+      ],
+      "corner_world_m": [
+        -0.1633342020869827,
+        0.05153766631384254,
+        0.9339250284047533
+      ],
+      "corner_link_local_m": [
+        0.002204024670277693,
+        0.0016370478447785127,
+        0.01692255608471764
+      ],
+      "source_distance_m": 0.001629080374237612,
+      "proxy_exposed_union_distance_m": 0.0007518083701977837,
+      "proxy_minus_source_distance_m": -0.0008772720040398283,
+      "proxy_membership_margin_m": 0.000751808370197784,
+      "source_nearest_triangle_index": 2753,
+      "source_nearest_triangle_link_local_m": [
+        [
+          0.0035504077095538378,
+          0.0020373505540192127,
+          0.019443532451987267
+        ],
+        [
+          0.003664186457172036,
+          0.002434356138110161,
+          0.01687406562268734
+        ],
+        [
+          0.0037830183282494545,
+          0.002091631991788745,
+          0.016869811341166496
+        ]
+      ],
+      "source_nearest_point_link_local_m": [
+        0.0037372678660382123,
+        0.002166806537389133,
+        0.0170723021897879
+      ],
+      "source_nearest_point_world_m": [
+        -0.16292042376659494,
+        0.05311278129431707,
+        0.9339662978315478
+      ],
+      "proxy_nearest_face_index": 5336,
+      "proxy_nearest_part": "gripper0_proxy76_finger23_link_06",
+      "proxy_nearest_triangle_link_local_m": [
+        [
+          0.003327510816237754,
+          0.002387862994854659,
+          0.01479476326821881
+        ],
+        [
+          0.0015797693707042025,
+          -0.0029738086070966244,
+          0.019546892240954274
+        ],
+        [
+          0.0030715609852701355,
+          0.002617102666482511,
+          0.019468728880930784
+        ]
+      ],
+      "proxy_nearest_point_link_local_m": [
+        0.0029290361770616543,
+        0.0014442843042501816,
+        0.016971712548924094
+      ],
+      "proxy_nearest_point_world_m": [
+        -0.1635809088054715,
+        0.05224739009900472,
+        0.9339504010145326
+      ],
+      "source_nearest_triangle_oriented_normal": [
+        -0.941170994388817,
+        -0.32518880037367115,
+        -0.09192063659863212
+      ],
+      "corner_signed_nearest_face_plane_m": 0.0016290803742376118
+    },
+    {
+      "macro": 159,
+      "phase": "close",
+      "saved_fk_sample_id": "m159_quarter4",
+      "saved_fk_qpos_18": [
+        0.11019389262209636,
+        -0.8491683387444487,
+        -2.6794726443590386,
+        1.6223902342637793,
+        -1.1355931845290113,
+        -0.5431275859185086,
+        1.4335265819905645,
+        0.12714413600034066,
+        0.16124850912489921,
+        0.14661968683721124,
+        0.429995716371229,
+        0.40692605649135344,
+        0.0,
+        0.011072,
+        0.0,
+        0.011072,
+        0.0,
+        0.011072
+      ],
+      "link": "finger23_link",
+      "native_bowl_geom_index_including_visual": 22,
+      "native_bowl_geom_attributes": {
+        "solimp": "0.998 0.998 0.001",
+        "solref": "0.001 1",
+        "density": "100",
+        "friction": "0.95 0.3 0.1",
+        "type": "box",
+        "pos": "-0.03558 0.00349 0.02264",
+        "quat": "0.04942 -0.14314 0.00715 0.98844",
+        "size": "0.00096 0.00709 0.01266",
+        "group": "0",
+        "rgba": "0.8 0.8 0.8 0.3"
+      },
+      "top_corner_index": 2,
+      "selected_from_eight_corner_index": 1,
+      "all_eight_corner_world_z_m": [
+        0.9101879447885078,
+        0.934468945580501,
+        0.9101883928109675,
+        0.9344693936029607,
+        0.9096435795903006,
+        0.9339245803822938,
+        0.9096440276127602,
+        0.9339250284047533
+      ],
+      "source_topology": {
+        "exact_weld_vertices": 2940,
+        "triangles": 5876,
+        "unique_edges": 8814,
+        "every_edge_has_two_faces": true,
+        "every_edge_has_opposite_directions": true
+      },
+      "source_solid_angle_winding": -8.834874115176436e-18,
+      "corner_bowl_local_m": [
+        -0.03753031324822235,
+        0.010810877497831523,
+        0.03505234590621581
+      ],
+      "corner_world_m": [
+        -0.17725985315647078,
+        0.05478407916448131,
+        0.934468945580501
+      ],
+      "corner_link_local_m": [
+        0.006554873958359643,
+        -0.011984065920352307,
+        0.01638018142660732
+      ],
+      "source_distance_m": 0.007622538208980757,
+      "proxy_exposed_union_distance_m": 0.007569459093557904,
+      "proxy_minus_source_distance_m": -5.3079115422852846e-05,
+      "proxy_membership_margin_m": 0.007548834346556906,
+      "source_nearest_triangle_index": 4764,
+      "source_nearest_triangle_link_local_m": [
+        [
+          0.00223971507512033,
+          -0.005812535528093576,
+          0.014228404499590397
+        ],
+        [
+          0.0028775406535714865,
+          -0.005382800940424204,
+          0.014222498051822186
+        ],
+        [
+          0.0021732384338974953,
+          -0.005708886776119471,
+          0.016835153102874756
+        ]
+      ],
+      "source_nearest_point_link_local_m": [
+        0.0022981551219558496,
+        -0.005671052141470007,
+        0.01602061151293416
+      ],
+      "source_nearest_point_world_m": [
+        -0.17064930771184703,
+        0.05099028396638149,
+        0.9345733278913141
+      ],
+      "proxy_nearest_face_index": 14,
+      "proxy_nearest_part": "gripper0_proxy76_finger23_link_00",
+      "proxy_nearest_triangle_link_local_m": [
+        [
+          0.0017769738484030631,
+          -0.005829082461563338,
+          0.02273641387622158
+        ],
+        [
+          0.0022791766095906496,
+          -0.005906461272388697,
+          0.01161997765302658
+        ],
+        [
+          0.0029034464394168766,
+          -0.005496291466988481,
+          0.011617518280258915
+        ]
+      ],
+      "proxy_nearest_point_link_local_m": [
+        0.0023996625821475874,
+        -0.005661310916389927,
+        0.016148451955212206
+      ],
+      "proxy_nearest_point_world_m": [
+        -0.17064400595381735,
+        0.051106150660518795,
+        0.9344580515486675
+      ],
+      "source_nearest_triangle_oriented_normal": [
+        0.5584385043014403,
+        -0.8282036253284247,
+        0.0471719398204548
+      ],
+      "corner_signed_nearest_face_plane_m": 0.007622538208980757
+    },
+    {
+      "macro": 159,
+      "phase": "close",
+      "saved_fk_sample_id": "m159_quarter4",
+      "saved_fk_qpos_18": [
+        0.11019389262209636,
+        -0.8491683387444487,
+        -2.6794726443590386,
+        1.6223902342637793,
+        -1.1355931845290113,
+        -0.5431275859185086,
+        1.4335265819905645,
+        0.12714413600034066,
+        0.16124850912489921,
+        0.14661968683721124,
+        0.429995716371229,
+        0.40692605649135344,
+        0.0,
+        0.011072,
+        0.0,
+        0.011072,
+        0.0,
+        0.011072
+      ],
+      "link": "finger23_link",
+      "native_bowl_geom_index_including_visual": 22,
+      "native_bowl_geom_attributes": {
+        "solimp": "0.998 0.998 0.001",
+        "solref": "0.001 1",
+        "density": "100",
+        "friction": "0.95 0.3 0.1",
+        "type": "box",
+        "pos": "-0.03558 0.00349 0.02264",
+        "quat": "0.04942 -0.14314 0.00715 0.98844",
+        "size": "0.00096 0.00709 0.01266",
+        "group": "0",
+        "rgba": "0.8 0.8 0.8 0.3"
+      },
+      "top_corner_index": 3,
+      "selected_from_eight_corner_index": 3,
+      "all_eight_corner_world_z_m": [
+        0.9101879447885078,
+        0.934468945580501,
+        0.9101883928109675,
+        0.9344693936029607,
+        0.9096435795903006,
+        0.9339245803822938,
+        0.9096440276127602,
+        0.9339250284047533
+      ],
+      "source_topology": {
+        "exact_weld_vertices": 2940,
+        "triangles": 5876,
+        "unique_edges": 8814,
+        "every_edge_has_two_faces": true,
+        "every_edge_has_opposite_directions": true
+      },
+      "source_solid_angle_winding": 1.0,
+      "corner_bowl_local_m": [
+        -0.038944693029102306,
+        -0.0032984077356611246,
+        0.035052157799283994
+      ],
+      "corner_world_m": [
+        -0.16315056793267685,
+        0.05336969934530053,
+        0.9344693936029607
+      ],
+      "corner_link_local_m": [
+        0.004065756176477157,
+        0.0019740927234681723,
+        0.01659581987831644
+      ],
+      "source_distance_m": 0.00021863672010291604,
+      "proxy_exposed_union_distance_m": 0.0008339925505888133,
+      "proxy_minus_source_distance_m": 0.0006153558304858973,
+      "proxy_membership_margin_m": -0.0008339925505888119,
+      "source_nearest_triangle_index": 2001,
+      "source_nearest_triangle_link_local_m": [
+        [
+          0.003984879702329636,
+          0.0021441192366182804,
+          0.014315314590930939
+        ],
+        [
+          0.0038834402803331614,
+          0.0017253661062568426,
+          0.016866378486156464
+        ],
+        [
+          0.0037830183282494545,
+          0.002091631991788745,
+          0.016869811341166496
+        ]
+      ],
+      "source_nearest_point_link_local_m": [
+        0.0038555579871413933,
+        0.0019166278069137441,
+        0.01657802887096104
+      ],
+      "source_nearest_point_world_m": [
+        -0.16319210998568268,
+        0.0531551887960638,
+        0.9344615515703428
+      ],
+      "proxy_nearest_face_index": 5871,
+      "proxy_nearest_part": "gripper0_proxy76_finger23_link_06",
+      "proxy_nearest_triangle_link_local_m": [
+        [
+          0.005071090534329414,
+          0.002012826269492507,
+          0.014207717962563038
+        ],
+        [
+          0.004946554079651833,
+          0.002451906446367502,
+          0.014208299107849598
+        ],
+        [
+          0.00427476038649502,
+          0.0025589447549379026,
+          0.02456489638524443
+        ]
+      ],
+      "proxy_nearest_point_link_local_m": [
+        0.004866696797051231,
+        0.002201198117367597,
+        0.016645426700567408
+      ],
+      "proxy_nearest_point_world_m": [
+        -0.16298464869498863,
+        0.054185596691754094,
+        0.9345176211993409
+      ],
+      "source_nearest_triangle_oriented_normal": [
+        -0.9614038723084569,
+        -0.2628328696450369,
+        -0.08137245814438114
+      ],
+      "corner_signed_nearest_face_plane_m": -0.00021863672010291602
+    }
+  ],
+  "summary": [
+    {
+      "macro": 119,
+      "link": "finger14_link",
+      "source_range_mm": [
+        9.145303449510656,
+        11.190432969330864
+      ],
+      "proxy_range_mm": [
+        9.146185132673445,
+        11.19080285265535
+      ],
+      "proxy_minus_source_range_mm": [
+        -0.0022008427055745378,
+        0.000881683162787944
+      ],
+      "corner_inside_proxy_count_at_numerical_tolerance_1e10": 0
+    },
+    {
+      "macro": 119,
+      "link": "finger23_link",
+      "source_range_mm": [
+        23.225329359114347,
+        28.35366120913253
+      ],
+      "proxy_range_mm": [
+        23.22405112001857,
+        28.351610055554993
+      ],
+      "proxy_minus_source_range_mm": [
+        -0.0028494330380109123,
+        0.0001614383913287054
+      ],
+      "corner_inside_proxy_count_at_numerical_tolerance_1e10": 0
+    },
+    {
+      "macro": 159,
+      "link": "finger14_link",
+      "source_range_mm": [
+        2.0097061603093005,
+        4.463030833638946
+      ],
+      "proxy_range_mm": [
+        2.0097861816929115,
+        4.46287157457933
+      ],
+      "proxy_minus_source_range_mm": [
+        -0.04327264682031911,
+        0.0005005868019521478
+      ],
+      "corner_inside_proxy_count_at_numerical_tolerance_1e10": 0
+    },
+    {
+      "macro": 159,
+      "link": "finger23_link",
+      "source_range_mm": [
+        0.21863672010291604,
+        7.622538208980757
+      ],
+      "proxy_range_mm": [
+        0.7518083701977838,
+        7.569459093557904
+      ],
+      "proxy_minus_source_range_mm": [
+        -0.8772720040398283,
+        0.6153558304858974
+      ],
+      "corner_inside_proxy_count_at_numerical_tolerance_1e10": 1
+    }
+  ],
+  "limits": [
+    "Point-to-full-continuous-source/proxy-triangle distances, not rim-face-wide coverage proof.",
+    "Source topology and solid-angle winding are recorded; inside/outside interpretable for exactly welded closed consistently directed source surfaces. Proxy signed membership plus unsigned source distance alone is not a false-contact certificate.",
+    "No actual future contact point/force inferred; finite prescribed nominal poses only.",
+    "Oriented source nearest-face plane sign uses original STL winding only; it is not a watertight source-solid membership proof."
+  ]
+}

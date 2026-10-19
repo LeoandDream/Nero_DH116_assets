@@ -1,0 +1,1540 @@
+{
+  "schema": "frozen-white-bowl-78-internal-static-v1",
+  "candidate": "examples/right_hand/candidates/finger13_local/model.xml",
+  "candidate_sha256": "b27f4f86fbaeacd2bb925463f39f67181ef7db12963c4d9f7fc01797a7924d1b",
+  "path_sha256": "ba767b42f99d3562255909bde5c970d529ba254769029ec1cd7a98faf76af0fb",
+  "source_report_raw_sha256": "134ff717d4dcfe87ede149fbc24f6887b01e8b3a81a8db1da839b0e0403de1fd",
+  "method": "Original frozen 921 qpos; per-part raw mesh body-frame AABB conservatively transformed with 1e-12 m expansion; separated AABBs certify separation of their convex hulls; only overlapping AABBs query existing guarded mj_geomDistance at .01 m. Stop on first negative; source surface classification inherited solely after SHA/qpos/FK match.",
+  "scope": "All 115 contact-eligible nonadjacent internal right-hand body pairs; finite samples only; not arm/table/bowl, adjacent filtered pairs, or actual dynamic states.",
+  "candidate_parts": 78,
+  "eligible_body_pairs": 115,
+  "eligible_geom_pairs_per_pose": 2421,
+  "counts": {
+    "samples_complete": 921,
+    "body_pair_checks": 105915,
+    "part_pair_checks": 2229741,
+    "aabb_certified_separated": 2189856,
+    "positive_geom_distances": 39885,
+    "zero_geom_distances": 0,
+    "negative_geom_distances": 0
+  },
+  "phase_counts": {
+    "reset": 1,
+    "settle_preshape": 40,
+    "approach_high": 160,
+    "descend": 280,
+    "close": 160,
+    "lift": 160,
+    "hold": 120
+  },
+  "zero_dynamics_audit": {
+    "allowed_apis": [
+      "mj_geomDistance",
+      "mj_id2name",
+      "mj_kinematics",
+      "mj_name2id"
+    ],
+    "blocked_apis": [
+      "mj_Euler",
+      "mj_RungeKutta",
+      "mj_addContact",
+      "mj_addM",
+      "mj_angmomMat",
+      "mj_applyFT",
+      "mj_camlight",
+      "mj_checkAcc",
+      "mj_checkPos",
+      "mj_checkVel",
+      "mj_collision",
+      "mj_comPos",
+      "mj_comVel",
+      "mj_compareFwdInv",
+      "mj_constraintUpdate",
+      "mj_contactForce",
+      "mj_crb",
+      "mj_defaultLROpt",
+      "mj_defaultOption",
+      "mj_defaultSolRefImp",
+      "mj_defaultVisual",
+      "mj_differentiatePos",
+      "mj_energyPos",
+      "mj_energyVel",
+      "mj_factorM",
+      "mj_flex",
+      "mj_forward",
+      "mj_forwardSkip",
+      "mj_fullM",
+      "mj_fwdAcceleration",
+      "mj_fwdActuation",
+      "mj_fwdConstraint",
+      "mj_fwdPosition",
+      "mj_fwdVelocity",
+      "mj_getState",
+      "mj_getTotalmass",
+      "mj_implicit",
+      "mj_integratePos",
+      "mj_invConstraint",
+      "mj_invPosition",
+      "mj_invVelocity",
+      "mj_inverse",
+      "mj_inverseSkip",
+      "mj_isDual",
+      "mj_isPyramidal",
+      "mj_isSparse",
+      "mj_island",
+      "mj_jac",
+      "mj_jacBody",
+      "mj_jacBodyCom",
+      "mj_jacDot",
+      "mj_jacGeom",
+      "mj_jacPointAxis",
+      "mj_jacSite",
+      "mj_jacSubtreeCom",
+      "mj_loadAllPluginLibraries",
+      "mj_loadPluginLibrary",
+      "mj_local2Global",
+      "mj_makeConstraint",
+      "mj_mulJacTVec",
+      "mj_mulJacVec",
+      "mj_mulM",
+      "mj_mulM2",
+      "mj_multiRay",
+      "mj_normalizeQuat",
+      "mj_objectAcceleration",
+      "mj_objectVelocity",
+      "mj_passive",
+      "mj_printData",
+      "mj_printFormattedData",
+      "mj_printFormattedModel",
+      "mj_printModel",
+      "mj_printSchema",
+      "mj_projectConstraint",
+      "mj_ray",
+      "mj_rayHfield",
+      "mj_rayMesh",
+      "mj_referenceConstraint",
+      "mj_resetCallbacks",
+      "mj_resetData",
+      "mj_resetDataDebug",
+      "mj_resetDataKeyframe",
+      "mj_rne",
+      "mj_rnePostConstraint",
+      "mj_saveLastXML",
+      "mj_saveModel",
+      "mj_sensorAcc",
+      "mj_sensorPos",
+      "mj_sensorVel",
+      "mj_setConst",
+      "mj_setKeyframe",
+      "mj_setLengthRange",
+      "mj_setState",
+      "mj_setTotalmass",
+      "mj_sizeModel",
+      "mj_solveM",
+      "mj_solveM2",
+      "mj_stateSize",
+      "mj_step",
+      "mj_step1",
+      "mj_step2",
+      "mj_subtreeVel",
+      "mj_tendon",
+      "mj_transmission",
+      "mj_version",
+      "mj_versionString"
+    ],
+    "allowed_api_calls": {
+      "mj_id2name": 168,
+      "mj_kinematics": 921,
+      "mj_geomDistance": 39885
+    },
+    "forbidden_api_attempts": [],
+    "physics_steps": 0,
+    "constraint_solves": 0,
+    "resets": 0,
+    "forward_calls": 0,
+    "collision_calls": 0
+  },
+  "maximum_FK_delta_from_existing_source_certificates": 0.0,
+  "first_negative": null,
+  "first_unknown": null,
+  "minimum_returned_distance_on_overlapping_AABBs": {
+    "sample_index": 796,
+    "sample_id": "m198_quarter4",
+    "phase": "lift",
+    "time_s": 9.950000000000001,
+    "body_names": [
+      "finger21_link",
+      "finger31_link"
+    ],
+    "geom_names": [
+      "gripper0_proxy76_finger21_link_00",
+      "gripper0_proxy76_finger31_link_00"
+    ],
+    "cutoff_m": 0.01,
+    "distance_m": 0.0018704029351288617,
+    "closest_segment_m": [
+      -0.1749556130909517,
+      0.0547624992739691,
+      1.0779215345367061,
+      -0.1766790387789559,
+      0.05407842715969676,
+      1.0781670062868953
+    ]
+  },
+  "pair_minima": [
+    {
+      "sample_index": 115,
+      "sample_id": "m028_quarter3",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 1.9065259819484037e-07,
+      "query_min_if_aabb_overlap_m": 0.009680360506818397,
+      "body_names": [
+        "finger33_link",
+        "finger42_link"
+      ]
+    },
+    {
+      "sample_index": 257,
+      "sample_id": "m064_quarter1",
+      "phase": "descend",
+      "certified_lower_bound_or_geom_distance_m": 1.9924810609750487e-07,
+      "query_min_if_aabb_overlap_m": 0.008167811376811482,
+      "body_names": [
+        "base_link",
+        "finger12_link"
+      ]
+    },
+    {
+      "sample_index": 104,
+      "sample_id": "m025_quarter4",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 1.392566772562276e-06,
+      "query_min_if_aabb_overlap_m": 0.01,
+      "body_names": [
+        "finger23_link",
+        "finger33_link"
+      ]
+    },
+    {
+      "sample_index": 782,
+      "sample_id": "m195_quarter2",
+      "phase": "lift",
+      "certified_lower_bound_or_geom_distance_m": 1.4968063515308216e-06,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger21_link",
+        "finger31_link"
+      ]
+    },
+    {
+      "sample_index": 53,
+      "sample_id": "m013_quarter1",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 2.520870610478454e-06,
+      "query_min_if_aabb_overlap_m": 0.008357427356509971,
+      "body_names": [
+        "finger43_link",
+        "finger53_link"
+      ]
+    },
+    {
+      "sample_index": 161,
+      "sample_id": "m040_quarter1",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 2.9156304408861633e-06,
+      "query_min_if_aabb_overlap_m": 0.00938383191124751,
+      "body_names": [
+        "finger23_link",
+        "finger32_link"
+      ]
+    },
+    {
+      "sample_index": 87,
+      "sample_id": "m021_quarter3",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 3.6944008014877516e-06,
+      "query_min_if_aabb_overlap_m": 0.00976717154320771,
+      "body_names": [
+        "finger33_link",
+        "finger43_link"
+      ]
+    },
+    {
+      "sample_index": 151,
+      "sample_id": "m037_quarter3",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 4.450585463944279e-06,
+      "query_min_if_aabb_overlap_m": 0.01,
+      "body_names": [
+        "base_link",
+        "finger14_link"
+      ]
+    },
+    {
+      "sample_index": 80,
+      "sample_id": "m019_quarter4",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 5.551309395182558e-06,
+      "query_min_if_aabb_overlap_m": 0.008332216396731873,
+      "body_names": [
+        "finger43_link",
+        "finger52_link"
+      ]
+    },
+    {
+      "sample_index": 132,
+      "sample_id": "m032_quarter4",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 6.5867414805464986e-06,
+      "query_min_if_aabb_overlap_m": 0.00806719017669199,
+      "body_names": [
+        "finger42_link",
+        "finger53_link"
+      ]
+    },
+    {
+      "sample_index": 74,
+      "sample_id": "m018_quarter2",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 9.268310098953236e-06,
+      "query_min_if_aabb_overlap_m": 0.01,
+      "body_names": [
+        "finger22_link",
+        "finger43_link"
+      ]
+    },
+    {
+      "sample_index": 70,
+      "sample_id": "m017_quarter2",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 9.413219797520245e-06,
+      "query_min_if_aabb_overlap_m": 0.01,
+      "body_names": [
+        "base_link",
+        "finger13_link"
+      ]
+    },
+    {
+      "sample_index": 191,
+      "sample_id": "m047_quarter3",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 1.211198832085092e-05,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger31_link",
+        "finger42_link"
+      ]
+    },
+    {
+      "sample_index": 151,
+      "sample_id": "m037_quarter3",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 1.3450128791836491e-05,
+      "query_min_if_aabb_overlap_m": 0.0072017536486308955,
+      "body_names": [
+        "finger41_link",
+        "finger53_link"
+      ]
+    },
+    {
+      "sample_index": 161,
+      "sample_id": "m040_quarter1",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 1.5321353626251977e-05,
+      "query_min_if_aabb_overlap_m": 0.00960264593291205,
+      "body_names": [
+        "finger31_link",
+        "finger43_link"
+      ]
+    },
+    {
+      "sample_index": 103,
+      "sample_id": "m025_quarter3",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 1.940340276987418e-05,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger11_link",
+        "finger13_link"
+      ]
+    },
+    {
+      "sample_index": 156,
+      "sample_id": "m038_quarter4",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 1.9455240917676253e-05,
+      "query_min_if_aabb_overlap_m": 0.009201710755906384,
+      "body_names": [
+        "finger32_link",
+        "finger43_link"
+      ]
+    },
+    {
+      "sample_index": 147,
+      "sample_id": "m036_quarter3",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 2.0145712685160078e-05,
+      "query_min_if_aabb_overlap_m": 0.009885412143124227,
+      "body_names": [
+        "finger22_link",
+        "finger33_link"
+      ]
+    },
+    {
+      "sample_index": 149,
+      "sample_id": "m037_quarter1",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 2.3298816601791117e-05,
+      "query_min_if_aabb_overlap_m": 0.01,
+      "body_names": [
+        "base_link",
+        "finger52_link"
+      ]
+    },
+    {
+      "sample_index": 50,
+      "sample_id": "m012_quarter2",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 2.847346436978676e-05,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger23_link",
+        "finger31_link"
+      ]
+    },
+    {
+      "sample_index": 221,
+      "sample_id": "m055_quarter1",
+      "phase": "descend",
+      "certified_lower_bound_or_geom_distance_m": 2.9386280584464686e-05,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger21_link",
+        "finger32_link"
+      ]
+    },
+    {
+      "sample_index": 175,
+      "sample_id": "m043_quarter3",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 3.5139270510908815e-05,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger32_link",
+        "finger42_link"
+      ]
+    },
+    {
+      "sample_index": 164,
+      "sample_id": "m040_quarter4",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 4.535312310904871e-05,
+      "query_min_if_aabb_overlap_m": 0.01,
+      "body_names": [
+        "base_link",
+        "finger22_link"
+      ]
+    },
+    {
+      "sample_index": 75,
+      "sample_id": "m018_quarter3",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 4.8151249931065176e-05,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger23_link",
+        "finger42_link"
+      ]
+    },
+    {
+      "sample_index": 193,
+      "sample_id": "m048_quarter1",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 4.916901912022098e-05,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger31_link",
+        "finger41_link"
+      ]
+    },
+    {
+      "sample_index": 165,
+      "sample_id": "m041_quarter1",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 5.292964985584292e-05,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger22_link",
+        "finger31_link"
+      ]
+    },
+    {
+      "sample_index": 131,
+      "sample_id": "m032_quarter3",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 5.513352269370664e-05,
+      "query_min_if_aabb_overlap_m": 0.01,
+      "body_names": [
+        "base_link",
+        "finger42_link"
+      ]
+    },
+    {
+      "sample_index": 46,
+      "sample_id": "m011_quarter2",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 5.8314832107719816e-05,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger22_link",
+        "finger41_link"
+      ]
+    },
+    {
+      "sample_index": 45,
+      "sample_id": "m011_quarter1",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 5.906732533053627e-05,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "base_link",
+        "finger43_link"
+      ]
+    },
+    {
+      "sample_index": 109,
+      "sample_id": "m027_quarter1",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 6.0306564170192756e-05,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger31_link",
+        "finger51_link"
+      ]
+    },
+    {
+      "sample_index": 90,
+      "sample_id": "m022_quarter2",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 7.210885741182338e-05,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger21_link",
+        "finger42_link"
+      ]
+    },
+    {
+      "sample_index": 152,
+      "sample_id": "m037_quarter4",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 7.588930856172738e-05,
+      "query_min_if_aabb_overlap_m": 0.01,
+      "body_names": [
+        "base_link",
+        "finger32_link"
+      ]
+    },
+    {
+      "sample_index": 117,
+      "sample_id": "m029_quarter1",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 7.78405224944323e-05,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger21_link",
+        "finger41_link"
+      ]
+    },
+    {
+      "sample_index": 159,
+      "sample_id": "m039_quarter3",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 8.482424923403342e-05,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger42_link",
+        "finger51_link"
+      ]
+    },
+    {
+      "sample_index": 158,
+      "sample_id": "m039_quarter2",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 9.494007654387016e-05,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger32_link",
+        "finger41_link"
+      ]
+    },
+    {
+      "sample_index": 183,
+      "sample_id": "m045_quarter3",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 0.00011991711535863647,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger41_link",
+        "finger52_link"
+      ]
+    },
+    {
+      "sample_index": 73,
+      "sample_id": "m018_quarter1",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 0.0001329519710830951,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger31_link",
+        "finger52_link"
+      ]
+    },
+    {
+      "sample_index": 187,
+      "sample_id": "m046_quarter3",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 0.00014243641719249855,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger22_link",
+        "finger32_link"
+      ]
+    },
+    {
+      "sample_index": 189,
+      "sample_id": "m047_quarter1",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 0.00017185315179096827,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger41_link",
+        "finger51_link"
+      ]
+    },
+    {
+      "sample_index": 217,
+      "sample_id": "m054_quarter1",
+      "phase": "descend",
+      "certified_lower_bound_or_geom_distance_m": 0.00018119590360189187,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger21_link",
+        "finger33_link"
+      ]
+    },
+    {
+      "sample_index": 57,
+      "sample_id": "m014_quarter1",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 0.00018960036842288302,
+      "query_min_if_aabb_overlap_m": 0.01,
+      "body_names": [
+        "finger32_link",
+        "finger53_link"
+      ]
+    },
+    {
+      "sample_index": 86,
+      "sample_id": "m021_quarter2",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 0.00021409719899394275,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger32_link",
+        "finger52_link"
+      ]
+    },
+    {
+      "sample_index": 165,
+      "sample_id": "m041_quarter1",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 0.00021919159825445345,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger42_link",
+        "finger52_link"
+      ]
+    },
+    {
+      "sample_index": 111,
+      "sample_id": "m027_quarter3",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 0.0003150433325691815,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger22_link",
+        "finger42_link"
+      ]
+    },
+    {
+      "sample_index": 61,
+      "sample_id": "m015_quarter1",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 0.0006751761198098793,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger21_link",
+        "finger51_link"
+      ]
+    },
+    {
+      "sample_index": 0,
+      "sample_id": "native_formal_reset",
+      "phase": "reset",
+      "certified_lower_bound_or_geom_distance_m": 0.0009004624714571835,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger43_link",
+        "finger51_link"
+      ]
+    },
+    {
+      "sample_index": 0,
+      "sample_id": "native_formal_reset",
+      "phase": "reset",
+      "certified_lower_bound_or_geom_distance_m": 0.0016448853371127947,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger32_link",
+        "finger51_link"
+      ]
+    },
+    {
+      "sample_index": 0,
+      "sample_id": "native_formal_reset",
+      "phase": "reset",
+      "certified_lower_bound_or_geom_distance_m": 0.004696106719253981,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger33_link",
+        "finger41_link"
+      ]
+    },
+    {
+      "sample_index": 128,
+      "sample_id": "m031_quarter4",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 0.0050836345471288675,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger31_link",
+        "finger53_link"
+      ]
+    },
+    {
+      "sample_index": 128,
+      "sample_id": "m031_quarter4",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 0.005625239836001322,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "base_link",
+        "finger23_link"
+      ]
+    },
+    {
+      "sample_index": 0,
+      "sample_id": "native_formal_reset",
+      "phase": "reset",
+      "certified_lower_bound_or_geom_distance_m": 0.005971657555594145,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "base_link",
+        "finger53_link"
+      ]
+    },
+    {
+      "sample_index": 0,
+      "sample_id": "native_formal_reset",
+      "phase": "reset",
+      "certified_lower_bound_or_geom_distance_m": 0.0060204643607366035,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger33_link",
+        "finger52_link"
+      ]
+    },
+    {
+      "sample_index": 144,
+      "sample_id": "m035_quarter4",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 0.006478549059710797,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger21_link",
+        "finger43_link"
+      ]
+    },
+    {
+      "sample_index": 53,
+      "sample_id": "m013_quarter1",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 0.006512632015829034,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger22_link",
+        "finger52_link"
+      ]
+    },
+    {
+      "sample_index": 45,
+      "sample_id": "m011_quarter1",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 0.00808825059076868,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "base_link",
+        "finger33_link"
+      ]
+    },
+    {
+      "sample_index": 49,
+      "sample_id": "m012_quarter1",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 0.008208240921580904,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger23_link",
+        "finger43_link"
+      ]
+    },
+    {
+      "sample_index": 98,
+      "sample_id": "m024_quarter2",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 0.010498645166280593,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger21_link",
+        "finger52_link"
+      ]
+    },
+    {
+      "sample_index": 0,
+      "sample_id": "native_formal_reset",
+      "phase": "reset",
+      "certified_lower_bound_or_geom_distance_m": 0.011999785252188828,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger33_link",
+        "finger53_link"
+      ]
+    },
+    {
+      "sample_index": 0,
+      "sample_id": "native_formal_reset",
+      "phase": "reset",
+      "certified_lower_bound_or_geom_distance_m": 0.0144912084210801,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger23_link",
+        "finger41_link"
+      ]
+    },
+    {
+      "sample_index": 0,
+      "sample_id": "native_formal_reset",
+      "phase": "reset",
+      "certified_lower_bound_or_geom_distance_m": 0.015140582100282726,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger22_link",
+        "finger51_link"
+      ]
+    },
+    {
+      "sample_index": 66,
+      "sample_id": "m016_quarter2",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 0.017824231219084986,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger22_link",
+        "finger53_link"
+      ]
+    },
+    {
+      "sample_index": 0,
+      "sample_id": "native_formal_reset",
+      "phase": "reset",
+      "certified_lower_bound_or_geom_distance_m": 0.020200510685738596,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger33_link",
+        "finger51_link"
+      ]
+    },
+    {
+      "sample_index": 72,
+      "sample_id": "m017_quarter4",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 0.024279954056750222,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger11_link",
+        "finger14_link"
+      ]
+    },
+    {
+      "sample_index": 110,
+      "sample_id": "m027_quarter2",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 0.024454412180698874,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger21_link",
+        "finger53_link"
+      ]
+    },
+    {
+      "sample_index": 50,
+      "sample_id": "m012_quarter2",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 0.025069137914402993,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger23_link",
+        "finger52_link"
+      ]
+    },
+    {
+      "sample_index": 0,
+      "sample_id": "native_formal_reset",
+      "phase": "reset",
+      "certified_lower_bound_or_geom_distance_m": 0.029999930458880244,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger23_link",
+        "finger51_link"
+      ]
+    },
+    {
+      "sample_index": 95,
+      "sample_id": "m023_quarter3",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 0.03350146369043297,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger11_link",
+        "finger51_link"
+      ]
+    },
+    {
+      "sample_index": 557,
+      "sample_id": "m139_quarter1",
+      "phase": "close",
+      "certified_lower_bound_or_geom_distance_m": 0.0350304160430293,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger11_link",
+        "finger21_link"
+      ]
+    },
+    {
+      "sample_index": 0,
+      "sample_id": "native_formal_reset",
+      "phase": "reset",
+      "certified_lower_bound_or_geom_distance_m": 0.03573355972964906,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger23_link",
+        "finger53_link"
+      ]
+    },
+    {
+      "sample_index": 40,
+      "sample_id": "m009_quarter4",
+      "phase": "settle_preshape",
+      "certified_lower_bound_or_geom_distance_m": 0.036169953857961165,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger11_link",
+        "finger41_link"
+      ]
+    },
+    {
+      "sample_index": 40,
+      "sample_id": "m009_quarter4",
+      "phase": "settle_preshape",
+      "certified_lower_bound_or_geom_distance_m": 0.037182602090994915,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger11_link",
+        "finger31_link"
+      ]
+    },
+    {
+      "sample_index": 800,
+      "sample_id": "m199_quarter4",
+      "phase": "lift",
+      "certified_lower_bound_or_geom_distance_m": 0.04156789553843284,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger11_link",
+        "finger22_link"
+      ]
+    },
+    {
+      "sample_index": 800,
+      "sample_id": "m199_quarter4",
+      "phase": "lift",
+      "certified_lower_bound_or_geom_distance_m": 0.05343451564569153,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger11_link",
+        "finger23_link"
+      ]
+    },
+    {
+      "sample_index": 761,
+      "sample_id": "m190_quarter1",
+      "phase": "lift",
+      "certified_lower_bound_or_geom_distance_m": 0.05618510497120671,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger13_link",
+        "finger21_link"
+      ]
+    },
+    {
+      "sample_index": 40,
+      "sample_id": "m009_quarter4",
+      "phase": "settle_preshape",
+      "certified_lower_bound_or_geom_distance_m": 0.05644033087930265,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger11_link",
+        "finger32_link"
+      ]
+    },
+    {
+      "sample_index": 0,
+      "sample_id": "native_formal_reset",
+      "phase": "reset",
+      "certified_lower_bound_or_geom_distance_m": 0.05686792289371809,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger12_link",
+        "finger21_link"
+      ]
+    },
+    {
+      "sample_index": 56,
+      "sample_id": "m013_quarter4",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 0.05742107873620119,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger12_link",
+        "finger51_link"
+      ]
+    },
+    {
+      "sample_index": 67,
+      "sample_id": "m016_quarter3",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 0.05751595796050083,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger11_link",
+        "finger42_link"
+      ]
+    },
+    {
+      "sample_index": 130,
+      "sample_id": "m032_quarter2",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 0.05908363509063829,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger11_link",
+        "finger52_link"
+      ]
+    },
+    {
+      "sample_index": 0,
+      "sample_id": "native_formal_reset",
+      "phase": "reset",
+      "certified_lower_bound_or_geom_distance_m": 0.05915231318331714,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger12_link",
+        "finger31_link"
+      ]
+    },
+    {
+      "sample_index": 761,
+      "sample_id": "m190_quarter1",
+      "phase": "lift",
+      "certified_lower_bound_or_geom_distance_m": 0.059556033876100194,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger14_link",
+        "finger21_link"
+      ]
+    },
+    {
+      "sample_index": 0,
+      "sample_id": "native_formal_reset",
+      "phase": "reset",
+      "certified_lower_bound_or_geom_distance_m": 0.060296999024742705,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger12_link",
+        "finger41_link"
+      ]
+    },
+    {
+      "sample_index": 761,
+      "sample_id": "m190_quarter1",
+      "phase": "lift",
+      "certified_lower_bound_or_geom_distance_m": 0.06086485684723196,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger13_link",
+        "finger31_link"
+      ]
+    },
+    {
+      "sample_index": 604,
+      "sample_id": "m150_quarter4",
+      "phase": "close",
+      "certified_lower_bound_or_geom_distance_m": 0.06264352083506174,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger13_link",
+        "finger23_link"
+      ]
+    },
+    {
+      "sample_index": 800,
+      "sample_id": "m199_quarter4",
+      "phase": "lift",
+      "certified_lower_bound_or_geom_distance_m": 0.06288130554205694,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger13_link",
+        "finger22_link"
+      ]
+    },
+    {
+      "sample_index": 800,
+      "sample_id": "m199_quarter4",
+      "phase": "lift",
+      "certified_lower_bound_or_geom_distance_m": 0.0637188354876402,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger12_link",
+        "finger22_link"
+      ]
+    },
+    {
+      "sample_index": 800,
+      "sample_id": "m199_quarter4",
+      "phase": "lift",
+      "certified_lower_bound_or_geom_distance_m": 0.06526387825879533,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger14_link",
+        "finger23_link"
+      ]
+    },
+    {
+      "sample_index": 800,
+      "sample_id": "m199_quarter4",
+      "phase": "lift",
+      "certified_lower_bound_or_geom_distance_m": 0.06526990303236956,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger14_link",
+        "finger22_link"
+      ]
+    },
+    {
+      "sample_index": 761,
+      "sample_id": "m190_quarter1",
+      "phase": "lift",
+      "certified_lower_bound_or_geom_distance_m": 0.06545519616694916,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger14_link",
+        "finger31_link"
+      ]
+    },
+    {
+      "sample_index": 761,
+      "sample_id": "m190_quarter1",
+      "phase": "lift",
+      "certified_lower_bound_or_geom_distance_m": 0.06603137166376828,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger13_link",
+        "finger41_link"
+      ]
+    },
+    {
+      "sample_index": 800,
+      "sample_id": "m199_quarter4",
+      "phase": "lift",
+      "certified_lower_bound_or_geom_distance_m": 0.06742172540337966,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger12_link",
+        "finger23_link"
+      ]
+    },
+    {
+      "sample_index": 40,
+      "sample_id": "m009_quarter4",
+      "phase": "settle_preshape",
+      "certified_lower_bound_or_geom_distance_m": 0.06852766988424226,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger13_link",
+        "finger51_link"
+      ]
+    },
+    {
+      "sample_index": 761,
+      "sample_id": "m190_quarter1",
+      "phase": "lift",
+      "certified_lower_bound_or_geom_distance_m": 0.07132921095092229,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger14_link",
+        "finger41_link"
+      ]
+    },
+    {
+      "sample_index": 40,
+      "sample_id": "m009_quarter4",
+      "phase": "settle_preshape",
+      "certified_lower_bound_or_geom_distance_m": 0.07560121070848666,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger11_link",
+        "finger43_link"
+      ]
+    },
+    {
+      "sample_index": 40,
+      "sample_id": "m009_quarter4",
+      "phase": "settle_preshape",
+      "certified_lower_bound_or_geom_distance_m": 0.07622870849997945,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger11_link",
+        "finger33_link"
+      ]
+    },
+    {
+      "sample_index": 138,
+      "sample_id": "m034_quarter2",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 0.07685234078942753,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger11_link",
+        "finger53_link"
+      ]
+    },
+    {
+      "sample_index": 761,
+      "sample_id": "m190_quarter1",
+      "phase": "lift",
+      "certified_lower_bound_or_geom_distance_m": 0.07790788470251411,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger14_link",
+        "finger51_link"
+      ]
+    },
+    {
+      "sample_index": 55,
+      "sample_id": "m013_quarter3",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 0.07990084037033761,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger12_link",
+        "finger42_link"
+      ]
+    },
+    {
+      "sample_index": 0,
+      "sample_id": "native_formal_reset",
+      "phase": "reset",
+      "certified_lower_bound_or_geom_distance_m": 0.08059880543132245,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger12_link",
+        "finger32_link"
+      ]
+    },
+    {
+      "sample_index": 86,
+      "sample_id": "m021_quarter2",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 0.08139903189587658,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger12_link",
+        "finger52_link"
+      ]
+    },
+    {
+      "sample_index": 761,
+      "sample_id": "m190_quarter1",
+      "phase": "lift",
+      "certified_lower_bound_or_geom_distance_m": 0.08190372522606355,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger13_link",
+        "finger32_link"
+      ]
+    },
+    {
+      "sample_index": 761,
+      "sample_id": "m190_quarter1",
+      "phase": "lift",
+      "certified_lower_bound_or_geom_distance_m": 0.08464227768074693,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger14_link",
+        "finger32_link"
+      ]
+    },
+    {
+      "sample_index": 761,
+      "sample_id": "m190_quarter1",
+      "phase": "lift",
+      "certified_lower_bound_or_geom_distance_m": 0.08468047177226112,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger13_link",
+        "finger42_link"
+      ]
+    },
+    {
+      "sample_index": 761,
+      "sample_id": "m190_quarter1",
+      "phase": "lift",
+      "certified_lower_bound_or_geom_distance_m": 0.08804389704820471,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger14_link",
+        "finger42_link"
+      ]
+    },
+    {
+      "sample_index": 50,
+      "sample_id": "m012_quarter2",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 0.08823596459132971,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger13_link",
+        "finger52_link"
+      ]
+    },
+    {
+      "sample_index": 104,
+      "sample_id": "m025_quarter4",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 0.09620431871711879,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger12_link",
+        "finger43_link"
+      ]
+    },
+    {
+      "sample_index": 761,
+      "sample_id": "m190_quarter1",
+      "phase": "lift",
+      "certified_lower_bound_or_geom_distance_m": 0.09671272263481638,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger14_link",
+        "finger52_link"
+      ]
+    },
+    {
+      "sample_index": 96,
+      "sample_id": "m023_quarter4",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 0.09755867636540812,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger12_link",
+        "finger53_link"
+      ]
+    },
+    {
+      "sample_index": 761,
+      "sample_id": "m190_quarter1",
+      "phase": "lift",
+      "certified_lower_bound_or_geom_distance_m": 0.09801310864143312,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger13_link",
+        "finger43_link"
+      ]
+    },
+    {
+      "sample_index": 40,
+      "sample_id": "m009_quarter4",
+      "phase": "settle_preshape",
+      "certified_lower_bound_or_geom_distance_m": 0.0989920787190547,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger12_link",
+        "finger33_link"
+      ]
+    },
+    {
+      "sample_index": 761,
+      "sample_id": "m190_quarter1",
+      "phase": "lift",
+      "certified_lower_bound_or_geom_distance_m": 0.09912645184676144,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger13_link",
+        "finger33_link"
+      ]
+    },
+    {
+      "sample_index": 761,
+      "sample_id": "m190_quarter1",
+      "phase": "lift",
+      "certified_lower_bound_or_geom_distance_m": 0.1014410733172254,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger14_link",
+        "finger43_link"
+      ]
+    },
+    {
+      "sample_index": 761,
+      "sample_id": "m190_quarter1",
+      "phase": "lift",
+      "certified_lower_bound_or_geom_distance_m": 0.10184813722877527,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger14_link",
+        "finger33_link"
+      ]
+    },
+    {
+      "sample_index": 59,
+      "sample_id": "m014_quarter3",
+      "phase": "approach_high",
+      "certified_lower_bound_or_geom_distance_m": 0.10330470070085873,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger13_link",
+        "finger53_link"
+      ]
+    },
+    {
+      "sample_index": 761,
+      "sample_id": "m190_quarter1",
+      "phase": "lift",
+      "certified_lower_bound_or_geom_distance_m": 0.10854078753890994,
+      "query_min_if_aabb_overlap_m": null,
+      "body_names": [
+        "finger14_link",
+        "finger53_link"
+      ]
+    }
+  ],
+  "input_sha256_before": {
+    "examples/right_hand/candidates/finger13_local/meshes/central.obj": "8c20a825d74245599088b8c5d3a0130297883847185e2336850dd0157019db97",
+    "examples/right_hand/candidates/finger13_local/meshes/negative_wing.obj": "a4621dd53571679a9056c58762e80602d03131c098daa0a3716349b651efa838",
+    "examples/right_hand/candidates/finger13_local/meshes/positive_wing.obj": "6831b4df4dbdeae09f66d11dfa14a9af06c9a7b13e4af91f42f4b0163b7e58c4",
+    "examples/right_hand/candidates/finger13_local/model.xml": "b27f4f86fbaeacd2bb925463f39f67181ef7db12963c4d9f7fc01797a7924d1b",
+    "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_00.obj": "e478a799f59b9cfaee804a539ce2dd6be6e92787247bc33fba13d00e4b42c7ce",
+    "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_01.obj": "cb55e62f2f41a9110da46f5bacbf1f8c8dcfa9563cf35fc48b37194d73ebd6b3",
+    "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_02.obj": "1c09c54ad030db088a97b58a39e277b5d3be66f3202db25e98c6f3c67e7b6ee4",
+    "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_03.obj": "871033d55369543004f2ce77ec077d545eb1d02bd9a63608316976c5a7d52e0b",
+    "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_04.obj": "47fcfc5572ceed26c408a219cecb99ed111829f652d54124865de050e9a2df9a",
+    "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_05.obj": "8aaae9e5736c04e3615916958be9c0e6efc3bb1b493e99951492f769397f5991",
+    "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_06.obj": "ed60d794870bac2874bf566dfac9785725aea78ca04e7ba21846a0e133dba7ef",
+    "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_07.obj": "73bd010189e969c220e6c7c42a96ce3c1e560b08769f9d408780433e3d8630b5",
+    "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_08.obj": "a7d08ea7416a0832b78335aa479fcc380f5fb676068af529535c6fe2a4b79cba",
+    "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_09.obj": "e8c753c9b514ff3c02c37ff75c3e70c51e43e34400d1df05b6554320786b5d75",
+    "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger11_link_00.obj": "d24e4759bde556f178b3d14b78865650f676d95dc3b23dcd61738a7a2c52fcab",
+    "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_00.obj": "bb8d774edfe13bfeda53fbe690f5b67aba6515b1201de4c97d36ab458170fee6",
+    "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_01.obj": "8d2193c48155f8c2ce14b354b5992b6a7a25bbf14dba7198f5fc41153c518ad8",
+    "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_02.obj": "fe85046941dade3036a32bd01199d3a034817ce7ae312a9f9d43d154911f9254",
+    "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_03.obj": "0fe33a743ec8f5536175048ba395f0a4961811b29e50c27273de7c8a45bb3d69",
+    "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_04.obj": "e4f67bf071ec777def71b6435d91e61fcb0919f2b120af6798c01fb44cf84cc8",
+    "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_05.obj": "36a4988a972a7c47dee3ae2c325b8f75289158f297d71953b815971d6bfebde4",
+    "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_06.obj": "6baf13adbc8b82e2b69a18a1a4a24a5d8b65cf7216f6e97128959de0c17be50b",
+    "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_07.obj": "c1980f7eb8f9e7a0cb9f15a597f0e66ef312d8a9524e29d8e62e747b98ab6dde",
+    "examples/right_hand/evidence/d3_white_bowl_001/candidate.json": "ba767b42f99d3562255909bde5c970d529ba254769029ec1cd7a98faf76af0fb",
+    "examples/right_hand/proxy76_contacts.py": "97986d2c2f7138721c67cc3cb5adefc93c817d2429bef059bd69b4e89cfa9478",
+    "examples/right_hand/proxy76_validate.py": "aa9224ee4daf5f8d9355a40ab8b26f878d50ddd82ca0808d6e9d52855fc6948c",
+    "meshes/dh116/gripper0_finger21_link-1bb8e6bd.stl": "1bb8e6bd2d50d1b07c7077610fade1c71dd0923d8025f1589e3f904c856f28c1",
+    "meshes/dh116/gripper0_finger22_link-53c55c84.stl": "53c55c846f481d90248332d5a87319d11e0d96f0fb8cbb35717cc9ac9745f5e5",
+    "meshes/dh116/gripper0_finger31_link-7e3176cd.stl": "7e3176cd95983c3e84369fe1639f65dcab86d54cd49ca3ed8612807ba3bc7358",
+    "meshes/dh116/gripper0_finger32_link-68b0442e.stl": "68b0442e8c8e3e0e8e94ef55596378b85556bda1959c64debbdd48d21b3af931",
+    "meshes/dh116/gripper0_finger41_link-5f1647a2.stl": "5f1647a233765270e256bf1cb1deeca0ac29ad4241e2a8e95477756885b73857",
+    "meshes/dh116/gripper0_finger42_link-15a9090c.stl": "15a9090c995e1f29ab0bb4b0a4ede7a4f60f1d0e0bf809c3ada86c53d0b66bed",
+    "meshes/dh116/gripper0_finger51_link-dfabcfce.stl": "dfabcfce1fc923cc0745a2df5ec07efc657506c7ad50b8e883de7fc996ce9f59",
+    "meshes/dh116/gripper0_finger52_link-acf84396.stl": "acf84396741cf2d5fa50ad3a25e9ca4fdb0947387cb39c2697951761a5f7d22c",
+    "meshes/dh116/gripper0_moderate_finger14_link_0-2b2ddda5.obj": "2b2ddda55ee186117724461d4e1eb7fb257d191676319114d69fd76026ceacaf",
+    "meshes/dh116/gripper0_moderate_finger14_link_1-0e2d6afb.obj": "0e2d6afbd4e4a20a7f7aa039ee80776a89f39f304eccaa1ea9a322937f6c73db",
+    "meshes/dh116/gripper0_moderate_finger14_link_10-21c826aa.obj": "21c826aa07ef02987385785adc8b44235834cb9c4242e62a952ea89d1b4d22ca",
+    "meshes/dh116/gripper0_moderate_finger14_link_11-168acc8b.obj": "168acc8b6dd10290b92679dabf02f9d295c30317cecc7a3e1163386cc241f9bf",
+    "meshes/dh116/gripper0_moderate_finger14_link_2-a71fa24f.obj": "a71fa24ff8b93d0fad952ff2bfb8d85418fa7318b3552c626204b6675956c09b",
+    "meshes/dh116/gripper0_moderate_finger14_link_3-31cf7b29.obj": "31cf7b299a871be62338a48441ffff1c40de9443b08c1a66d0e0ac2c70d7e6ce",
+    "meshes/dh116/gripper0_moderate_finger14_link_4-c49b43ef.obj": "c49b43efea1ab9054834dc733b62109f71f3101e8573838fac412acfabf8b0ba",
+    "meshes/dh116/gripper0_moderate_finger14_link_5-c3a6773e.obj": "c3a6773e2340e69330c2de30484b3a473aca0a23b18074ca53a75911028ddf37",
+    "meshes/dh116/gripper0_moderate_finger14_link_6-1d98430c.obj": "1d98430c1c8b92e1b2e6a308a347fde69723d62ff68ee5f454bbca567ad44f14",
+    "meshes/dh116/gripper0_moderate_finger14_link_7-14d2570c.obj": "14d2570c3750dd1305b4c737cc449486ad0f2d5e67df99e6013088abc7e7430d",
+    "meshes/dh116/gripper0_moderate_finger14_link_8-fb373efd.obj": "fb373efd00b5bb56164851d7cbf74a85a8f4fa1252368c69a7b2e4a1770f3531",
+    "meshes/dh116/gripper0_moderate_finger14_link_9-d3124adb.obj": "d3124adbea53e6fb6a27b1a62f60ae3f0fd7459fd6679049637a41cc0c226844",
+    "meshes/dh116/gripper0_moderate_finger23_link_0-a6cc5f75.obj": "a6cc5f7500f773f248fe89c64bbad9f86a99f3419e1b8f655997030c1d269d4d",
+    "meshes/dh116/gripper0_moderate_finger23_link_1-c8663aa9.obj": "c8663aa97fb9936608d4365a4662bd5a9279d9958238f9334738ce88751b2e72",
+    "meshes/dh116/gripper0_moderate_finger23_link_10-251c3834.obj": "251c38347bbcf580d96dd7ece9aeab16195b08f3a7225da3022a42043d11162d",
+    "meshes/dh116/gripper0_moderate_finger23_link_11-fad1ae11.obj": "fad1ae11d1b703d56b111df28d2d4b171c86572c706a5990cd07fb59819671cb",
+    "meshes/dh116/gripper0_moderate_finger23_link_2-7cc9be61.obj": "7cc9be61c42363c904859ffc3f741df9e9d80761805b9fa41333e8510ee39331",
+    "meshes/dh116/gripper0_moderate_finger23_link_3-2f7c98b4.obj": "2f7c98b43d1da8bb87c0b1b9840b9942f8df6f7cb6a07b8bf3aae0a8f943ec91",
+    "meshes/dh116/gripper0_moderate_finger23_link_4-bab546af.obj": "bab546afe4a240ed41c8a82c9e7d57d175b91854aef912fadbac9e210734bfc0",
+    "meshes/dh116/gripper0_moderate_finger23_link_5-5d047287.obj": "5d047287b86fb6832c2efdcb4f5fb755ded0b63dc28f1aa4fac5b223bca24178",
+    "meshes/dh116/gripper0_moderate_finger23_link_6-a018289e.obj": "a018289e8a36f72a3ae897d377677fe7ff2721dc2e88d63ddb0118daa3ab78e2",
+    "meshes/dh116/gripper0_moderate_finger23_link_7-de354fdf.obj": "de354fdf0bea4434032984db408d004804363dc49bbbf36b8bbcc93e1a930ddd",
+    "meshes/dh116/gripper0_moderate_finger23_link_8-9174795a.obj": "9174795ac15a8735c73a8cf39c09bc793a2b67585a0d982f09f7b8a5f7b1880b",
+    "meshes/dh116/gripper0_moderate_finger23_link_9-1cc04f8d.obj": "1cc04f8dd6803c05636a655c1fd77960a319be6903fa01bf7b5e94662d89b132",
+    "meshes/dh116/gripper0_proxy_finger12_link_0-2a6bdf00.obj": "2a6bdf00ae7c1ea87a8b35cfa5755ea112dda7b5b180813e69ab552ce4d52aee",
+    "meshes/dh116/gripper0_proxy_finger12_link_1-74d9a1f6.obj": "74d9a1f6088dfd3ba6ce894762c8f63cd3fd5e6f3ba3badafc7475294f80ca72",
+    "meshes/dh116/gripper0_proxy_finger12_link_2-9be8c86a.obj": "9be8c86a32a28eb6cfccfc0d4ce3c0ce3f1e65615350517f8fb624f6334ab118",
+    "meshes/dh116/gripper0_proxy_finger12_link_3-a648891e.obj": "a648891e9b0097a5dc6df5f44a54a4fcbc4b522baeb915df66ebf96b0c653908",
+    "meshes/dh116/gripper0_proxy_finger12_link_4-c3d2e735.obj": "c3d2e735fe8c007812868afe5a413c2f85fb616d8af43bf208c82c441ba33792",
+    "meshes/dh116/gripper0_proxy_finger12_link_5-b8ec84e4.obj": "b8ec84e411668e9739fd702f45376b5bec5972e6f3ae334c9f789714696f4134",
+    "meshes/dh116/gripper0_proxy_finger12_link_6-6e9a388e.obj": "6e9a388e036622b035a0c6c3a57a7c59f1128444e6aff3ea15eee700a8cdd197",
+    "meshes/dh116/gripper0_proxy_finger12_link_7-3748cad4.obj": "3748cad4e9e316b359b5586674afbf3722ade675c9e240b95ea32cbd2ef1d918",
+    "meshes/dh116/gripper0_proxy_finger43_link_0-95b4cbb3.obj": "95b4cbb315cc1667311de693dcee6a7456ba742561ca01ff551958d4e519348b",
+    "meshes/dh116/gripper0_proxy_finger43_link_1-07a65f22.obj": "07a65f222145a2d805b53d22a5398b5b7ad94202af938f94b640f73ed1cdf183",
+    "meshes/dh116/gripper0_proxy_finger43_link_2-aab293f6.obj": "aab293f640735836c5ac0c594282d0bbbf8fc41a8eaa13bf6f1f1f1ba864c576",
+    "meshes/dh116/gripper0_proxy_finger43_link_3-f7eab61f.obj": "f7eab61f906cb36cd1063faad73822c846107bc6f174c4742b409375f5b04f63",
+    "meshes/dh116/gripper0_proxy_finger43_link_4-78532cbf.obj": "78532cbfb13ff856554cd396d2e5573beb69fe8b4d675ea7f669643dde8f7dd7",
+    "meshes/dh116/gripper0_proxy_finger43_link_5-13af1468.obj": "13af146867ef84f7051e45a515347bd29deff7ea5c8f0c15b100fbfe4a9b3cd7",
+    "meshes/dh116/gripper0_proxy_finger43_link_6-2a3fbea9.obj": "2a3fbea961a56cc9bfd5384d661e6c0957601ee07999f02d9b642b252463176c",
+    "meshes/dh116/gripper0_proxy_finger43_link_7-d800f7ad.obj": "d800f7adae660e6ceb80e34b8a7e33ba3dcfb60afc357baf4818265705f7d0b2",
+    "meshes/dh116/gripper0_proxy_finger53_link_0-f66430b1.obj": "f66430b17c3b0ee5d63cb097877e7d8faa12153df6725cb7ad9383607c09bb0a",
+    "meshes/dh116/gripper0_proxy_finger53_link_1-fce5027c.obj": "fce5027c124ece9666bc17a88a364dd24dd79e5ae6fb0c4bdfe8169e0ad0b8dc",
+    "meshes/dh116/gripper0_proxy_finger53_link_2-dd7921f7.obj": "dd7921f79cbac6ac32ea9142d4fa4c76df1dd885c47004aaeb4fca67327152b5",
+    "meshes/dh116/gripper0_proxy_finger53_link_3-49e71c08.obj": "49e71c0816ce5464fd8afe99b68e292cd88549525e9986adf9c3c1b53edae3d6",
+    "meshes/dh116/gripper0_proxy_finger53_link_4-84f78255.obj": "84f782558f32c9ea8067922918c95c221e617026a4e7a0d752d84b0ff828c007",
+    "meshes/dh116/gripper0_proxy_finger53_link_5-3134737f.obj": "3134737f88f7b977c10b8835d0f0b8ea8d1b0d90a91c9a862fffc5cd05930704",
+    "meshes/dh116/gripper0_proxy_finger53_link_6-8a45b6d5.obj": "8a45b6d5929a3338e58b416f7dbab7e43de69a2697206dbdc9eb48928e14b330",
+    "meshes/dh116/gripper0_proxy_finger53_link_7-8015cab7.obj": "8015cab75b38d79aa5d59486a2b6d68198e96fbfb4a892a86ee8d334ffd817f1",
+    "runs/d3_bowl_precheck/internal/check_candidate_path.py": "b2ecfca892104ec9f1ea940e3f1973499e66696bbd70f40c57f7855f14742e1d",
+    "runs/d3_bowl_precheck/internal/historical-pose-transforms.json": "8d72747c4a8b2a3f9279e225097f8fa763815dd1b7a5d5b60de1d632e46627df"
+  },
+  "inputs_unchanged": true,
+  "elapsed_s": 26.30161783308722,
+  "verdict": "SEPARATED_AT_ALL_FROZEN_FINITE_SAMPLES"
+}

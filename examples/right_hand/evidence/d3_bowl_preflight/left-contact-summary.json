@@ -1,0 +1,256 @@
+{
+  "schema": "d3-bowl-precheck-left-original-log-analysis-v1",
+  "new_physics_steps": 0,
+  "reset_calls": 0,
+  "forward_calls": 0,
+  "inputs": {
+    "examples/libero_reference/evidence/bounded_grasp.jsonl.gz": "8e208bce4d035b69b1c81239b365556f408472805cbda07086ef7d3d72f6b6e7",
+    "examples/libero_reference/evidence/contact-details.jsonl.gz": "c290e90f8180c64b1303225399a8e45dfdeb564f9d2180be3593a20fef5e8915",
+    "mjcf/nero_dh116.xml": "c446124b7d938aa6e00ba5914047001de66c2a2c162e7dea1644437e5a85cb33",
+    "examples/libero_reference/run.py": "0c555f246ac4d9261c4e9d8ac7545b66fde5b050cd09aff99c12e795485222cf"
+  },
+  "rows": 5750,
+  "first_positive_hand_contact": {
+    "row": 3637,
+    "step_one_based": 3638,
+    "time": 7.275999999999421,
+    "phase": "close",
+    "geoms": [
+      "gripper0_finger22_link_collision_0"
+    ]
+  },
+  "first_positive_hand_contact_without_other_bowl_support": {
+    "row": 4043,
+    "step_one_based": 4044,
+    "time": 8.08799999999937,
+    "phase": "lift",
+    "geoms": [
+      "gripper0_finger22_link_collision_0",
+      "gripper0_moderate_finger14_link_5",
+      "gripper0_moderate_finger14_link_9"
+    ],
+    "bowl_z_m": 0.8994743865361091
+  },
+  "per_geom": {
+    "gripper0_finger22_link_collision_0": {
+      "body": "gripper0_finger22_link",
+      "positive_contact_events": 2113,
+      "rows": 2113,
+      "phases": [
+        "close",
+        "hold",
+        "lift"
+      ],
+      "bowl_geoms": [
+        "white_bowl_1_g22"
+      ],
+      "dist_min_m": -0.0005797042681449684,
+      "normal_min_N": 0.029520887178393122,
+      "normal_max_N": 0.2948832030561538,
+      "normal_sum_N": 584.4320272807444,
+      "first_row": 3637,
+      "last_row": 5749
+    },
+    "gripper0_moderate_finger14_link_5": {
+      "body": "gripper0_finger14_link",
+      "positive_contact_events": 4218,
+      "rows": 2109,
+      "phases": [
+        "close",
+        "hold",
+        "lift"
+      ],
+      "bowl_geoms": [
+        "white_bowl_1_g31",
+        "white_bowl_1_g32"
+      ],
+      "dist_min_m": -0.00039205880522150317,
+      "normal_min_N": 0.006315724965959397,
+      "normal_max_N": 0.09072952306913669,
+      "normal_sum_N": 278.999360428995,
+      "first_row": 3641,
+      "last_row": 5749
+    },
+    "gripper0_moderate_finger14_link_9": {
+      "body": "gripper0_finger14_link",
+      "positive_contact_events": 4218,
+      "rows": 2109,
+      "phases": [
+        "close",
+        "hold",
+        "lift"
+      ],
+      "bowl_geoms": [
+        "white_bowl_1_g31",
+        "white_bowl_1_g32"
+      ],
+      "dist_min_m": -0.0003279270346214771,
+      "normal_min_N": 0.006546055911838901,
+      "normal_max_N": 0.08444862577747442,
+      "normal_sum_N": 282.6050571528541,
+      "first_row": 3641,
+      "last_row": 5749
+    }
+  },
+  "per_phase": {
+    "settle": {
+      "rows": 250,
+      "hand_contact_rows": 0,
+      "positive_bowl_external_support_rows": 189,
+      "by_hand_geom": {}
+    },
+    "approach_high": {
+      "rows": 1000,
+      "hand_contact_rows": 0,
+      "positive_bowl_external_support_rows": 1000,
+      "by_hand_geom": {}
+    },
+    "descend": {
+      "rows": 1750,
+      "hand_contact_rows": 0,
+      "positive_bowl_external_support_rows": 1750,
+      "by_hand_geom": {}
+    },
+    "close": {
+      "rows": 1000,
+      "hand_contact_rows": 363,
+      "positive_bowl_external_support_rows": 1000,
+      "by_hand_geom": {
+        "gripper0_finger22_link_collision_0": {
+          "positive_contact_events": 363,
+          "rows": 363,
+          "normal_max_N": 0.2948832030561538,
+          "normal_sum_N": 88.9169353146054,
+          "min_distance_m": -0.0005797042681449684
+        },
+        "gripper0_moderate_finger14_link_5": {
+          "positive_contact_events": 718,
+          "rows": 359,
+          "normal_max_N": 0.07174729865719746,
+          "normal_sum_N": 43.34776094594168,
+          "min_distance_m": -0.000210870536638823
+        },
+        "gripper0_moderate_finger14_link_9": {
+          "positive_contact_events": 718,
+          "rows": 359,
+          "normal_max_N": 0.07174626833577337,
+          "normal_sum_N": 43.34601729093318,
+          "min_distance_m": -0.0002108706157649082
+        }
+      }
+    },
+    "lift": {
+      "rows": 1000,
+      "hand_contact_rows": 1000,
+      "positive_bowl_external_support_rows": 43,
+      "by_hand_geom": {
+        "gripper0_moderate_finger14_link_5": {
+          "positive_contact_events": 2000,
+          "rows": 1000,
+          "normal_max_N": 0.09072952306913669,
+          "normal_sum_N": 141.6383063783648,
+          "min_distance_m": -0.00039205880522150317
+        },
+        "gripper0_moderate_finger14_link_9": {
+          "positive_contact_events": 2000,
+          "rows": 1000,
+          "normal_max_N": 0.08444862577747442,
+          "normal_sum_N": 141.0325446490537,
+          "min_distance_m": -0.0003279270346214771
+        },
+        "gripper0_finger22_link_collision_0": {
+          "positive_contact_events": 1000,
+          "rows": 1000,
+          "normal_max_N": 0.2915428174180214,
+          "normal_sum_N": 286.7275674500242,
+          "min_distance_m": -0.0005747676972574433
+        }
+      }
+    },
+    "hold": {
+      "rows": 750,
+      "hand_contact_rows": 750,
+      "positive_bowl_external_support_rows": 0,
+      "by_hand_geom": {
+        "gripper0_moderate_finger14_link_5": {
+          "positive_contact_events": 1500,
+          "rows": 750,
+          "normal_max_N": 0.0755735363163556,
+          "normal_sum_N": 94.01329310468888,
+          "min_distance_m": -0.0003635481203726157
+        },
+        "gripper0_moderate_finger14_link_9": {
+          "positive_contact_events": 1500,
+          "rows": 750,
+          "normal_max_N": 0.07587242723520214,
+          "normal_sum_N": 98.2264952128664,
+          "min_distance_m": -0.0003188822162270124
+        },
+        "gripper0_finger22_link_collision_0": {
+          "positive_contact_events": 750,
+          "rows": 750,
+          "normal_max_N": 0.28561959022770406,
+          "normal_sum_N": 208.78752451611476,
+          "min_distance_m": -0.0005660785454042886
+        }
+      }
+    }
+  },
+  "actual_load_proxy_regions": {
+    "gripper0_finger22_link_collision_0": {
+      "source_mesh": "meshes/dh116/gripper0_finger22_link-53c55c84.stl",
+      "mesh_sha256": "53c55c846f481d90248332d5a87319d11e0d96f0fb8cbb35717cc9ac9745f5e5",
+      "body": "gripper0_finger22_link",
+      "link_local_min_m": [
+        -0.008888347074389458,
+        -0.0074645415879786015,
+        -0.008926657028496265
+      ],
+      "link_local_max_m": [
+        0.007061350625008345,
+        0.007464541122317314,
+        0.047069333493709564
+      ],
+      "position_semantics": "Full actual proxy vertex AABB in body-local frame; bounds do not locate the actual contact point"
+    },
+    "gripper0_moderate_finger14_link_5": {
+      "source_mesh": "meshes/dh116/gripper0_moderate_finger14_link_5-c3a6773e.obj",
+      "mesh_sha256": "c3a6773e2340e69330c2de30484b3a473aca0a23b18074ca53a75911028ddf37",
+      "body": "gripper0_finger14_link",
+      "link_local_min_m": [
+        -0.004281900357455015,
+        -0.00013684172881767154,
+        0.01543472707271576
+      ],
+      "link_local_max_m": [
+        0.0013383571058511734,
+        0.004040108062326908,
+        0.02738567255437374
+      ],
+      "position_semantics": "Full actual proxy vertex AABB in body-local frame; bounds do not locate the actual contact point"
+    },
+    "gripper0_moderate_finger14_link_9": {
+      "source_mesh": "meshes/dh116/gripper0_moderate_finger14_link_9-d3124adb.obj",
+      "mesh_sha256": "d3124adbea53e6fb6a27b1a62f60ae3f0fd7459fd6679049637a41cc0c226844",
+      "body": "gripper0_finger14_link",
+      "link_local_min_m": [
+        -0.004281900357455015,
+        -0.0040208459831774235,
+        0.015432596206665039
+      ],
+      "link_local_max_m": [
+        0.0015320336678996682,
+        -1.0455808308051928e-07,
+        0.027701323851943016
+      ],
+      "position_semantics": "Full actual proxy vertex AABB in body-local frame; bounds do not locate the actual contact point"
+    }
+  },
+  "limitations": [
+    "Historical contact log does not save contact.pos or contact.frame; actual world/local points and world force vectors UNKNOWN.",
+    "force_contact_frame is RK4 final internal-stage contact cache; qpos and bowl_z are saved post-step; no exact simultaneous reconstruction asserted.",
+    "Normal sum is summed contact-cache scalar, not a world upward support force.",
+    "The accepted fixed diagnostic has native_task_result=false and strict_grasp_success_claim=false; it is not complete LIBERO task success.",
+    "Left actual contact link22 differs from planned right distal-link23; shared tip geometry does not transfer contact location or physical acceptance."
+  ]
+}

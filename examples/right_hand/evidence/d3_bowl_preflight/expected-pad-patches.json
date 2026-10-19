@@ -1,0 +1,514 @@
+{
+  "scope": "Finite planned exterior pad neighborhoods only. Not actual contact positions or forces; not a new trajectory.",
+  "candidate_model_sha256": "b27f4f86fbaeacd2bb925463f39f67181ef7db12963c4d9f7fc01797a7924d1b",
+  "path_sha256": "ba767b42f99d3562255909bde5c970d529ba254769029ec1cd7a98faf76af0fb",
+  "bowl_xml_sha256": "70d21ae151c9f67461ac6819c794b1539605418a3aca0f8f4345673dc7cd450b",
+  "bowl_pose_planning_reference_from_old_step250_only": [
+    -0.16644797538954098,
+    0.09230860264795701,
+    0.8994107101029007,
+    0.7071067802011682,
+    -6.847945175835458e-05,
+    4.830604442626382e-05,
+    0.7071067772059809
+  ],
+  "bowl_pose_is_not_injected_into_any_dynamic_environment": true,
+  "patch_selection": "Source/union face centroid within 3 mm of frozen feature, outward normal dot feature normal > 0.5; 256 area samples per direction; full continuous target surfaces; finite, not global maxima.",
+  "links": {
+    "finger14_link": {
+      "source_feature": {
+        "face_index_zero_based": 326,
+        "point_body_local_m": [
+          -0.00202282479343315,
+          -0.00016263120815788548,
+          0.02447035349905491
+        ],
+        "selection": "Triangle centroid nearest inward-X pad bounding-box face center",
+        "mesh": "meshes/dh116_right/source/finger14_link.STL",
+        "sha256": "c58b2a741f13cbe1da9b6bbffb0ce6acf97de28b829fe45ea65458313efff449"
+      },
+      "source_patch_triangles": 132,
+      "proxy_patch_triangles": 421,
+      "source_to_proxy": {
+        "points": 256,
+        "p95_m": 1.3662992308867166e-07,
+        "p99_m": 2.0789447072423197e-07,
+        "max_m": 2.226812730164216e-07,
+        "max_witness": {
+          "point_m": [
+            -0.002135622590140499,
+            -0.002115981048210968,
+            0.023612153070854222
+          ],
+          "nearest_m": [
+            -0.002135826040030315,
+            -0.002116028077523253,
+            0.023612230422877287
+          ]
+        },
+        "normal_acute_p95_deg": 0.06853002140768036,
+        "normal_acute_max_deg": 2.6456029766573255,
+        "source_samples_outside_proxy_numerical_1e10": 62
+      },
+      "proxy_to_source": {
+        "points": 256,
+        "p95_m": 1.6549047774203794e-07,
+        "p99_m": 2.397160472105129e-07,
+        "max_m": 3.251210878218239e-07,
+        "max_witness": {
+          "point_m": [
+            -0.002579844916683305,
+            -0.0017425488286526712,
+            0.02259824339854153
+          ],
+          "nearest_m": [
+            -0.0025795417771427858,
+            -0.0017424958240158757,
+            0.022598138514561827
+          ]
+        },
+        "normal_acute_p95_deg": 0.06317639751757323,
+        "normal_acute_max_deg": 0.08630305884812818
+      },
+      "feature_to_proxy_boundary_m": 3.630485020911257e-08,
+      "feature_proxy_margin_m": -3.6304850209445405e-08,
+      "feature_proxy_normal_acute_deg": 0.011039154268147196,
+      "feature_nearest_proxy_part": "gripper0_proxy76_finger14_link_09",
+      "source_point_m": [
+        -0.00202282479343315,
+        -0.00016263120815788548,
+        0.02447035349905491
+      ],
+      "proxy_boundary_near_feature_m": [
+        -0.0020228584671566087,
+        -0.000162631992604752,
+        0.02447036704553564
+      ]
+    },
+    "finger23_link": {
+      "source_feature": {
+        "face_index_zero_based": 5371,
+        "point_body_local_m": [
+          0.0055632032454013824,
+          -0.00028447624451256637,
+          0.029188795015215874
+        ],
+        "selection": "Triangle centroid nearest inward-X pad bounding-box face center",
+        "mesh": "meshes/dh116_right/source/finger23_link.STL",
+        "sha256": "ccbd2de17dac2fe356e4275240f5f00f8eee01dd2f32a44fc5b1e150f93d99f6"
+      },
+      "source_patch_triangles": 44,
+      "proxy_patch_triangles": 27,
+      "source_to_proxy": {
+        "points": 256,
+        "p95_m": 0.0003293428779579672,
+        "p99_m": 0.0003352042508466521,
+        "max_m": 0.00033668770802615394,
+        "max_witness": {
+          "point_m": [
+            0.005299752127769772,
+            -0.00047553567631029473,
+            0.028338481608103407
+          ],
+          "nearest_m": [
+            0.00562453382054312,
+            -0.0004909940287650899,
+            0.02825109451457944
+          ]
+        },
+        "normal_acute_p95_deg": 15.522477087458501,
+        "normal_acute_max_deg": 78.2550840591125,
+        "source_samples_outside_proxy_numerical_1e10": 0
+      },
+      "proxy_to_source": {
+        "points": 256,
+        "p95_m": 0.0003273657911626806,
+        "p99_m": 0.00033228539294895694,
+        "max_m": 0.00033660141651275437,
+        "max_witness": {
+          "point_m": [
+            0.005642516861308039,
+            0.0003700051613736532,
+            0.028296527686354676
+          ],
+          "nearest_m": [
+            0.005320535889889361,
+            0.000355310431876002,
+            0.02839354743984678
+          ]
+        },
+        "normal_acute_p95_deg": 8.828196444453976,
+        "normal_acute_max_deg": 15.522477087458501
+      },
+      "feature_to_proxy_boundary_m": 0.0003117835640958256,
+      "feature_proxy_margin_m": -0.0003117835640958273,
+      "feature_proxy_normal_acute_deg": 1.702933853017721,
+      "feature_nearest_proxy_part": "gripper0_proxy76_finger23_link_05",
+      "source_point_m": [
+        0.0055632032454013824,
+        -0.00028447624451256637,
+        0.029188795015215874
+      ],
+      "proxy_boundary_near_feature_m": [
+        0.005864040999078247,
+        -0.0002975090857259355,
+        0.02910795083266165
+      ]
+    }
+  },
+  "static_phases": [
+    {
+      "macro": 49,
+      "phase": "approach_high",
+      "expected": {
+        "finger14_link": {
+          "source_feature_world_m": [
+            -0.16158332414809523,
+            0.14533625997492686,
+            1.0236234761343337
+          ],
+          "source_feature_to_native_bowl_boxes_signed_distance_m": 0.09030772262239004,
+          "source_feature_nearest_native_geom_index": 30,
+          "proxy_correspondence_point_world_m": [
+            -0.16158332132899048,
+            0.14533622862222562,
+            1.0236234580483468
+          ],
+          "proxy_correspondence_to_native_bowl_boxes_signed_distance_m": 0.09030769978541482,
+          "proxy_correspondence_nearest_native_geom_index": 30
+        },
+        "finger23_link": {
+          "source_feature_world_m": [
+            -0.15860441784061893,
+            0.021440694655931486,
+            1.031480371302765
+          ],
+          "source_feature_to_native_bowl_boxes_signed_distance_m": 0.10220197400218288,
+          "source_feature_nearest_native_geom_index": 22,
+          "proxy_correspondence_point_world_m": [
+            -0.15862290258089976,
+            0.02172294462610891,
+            1.031349213918101
+          ],
+          "proxy_correspondence_to_native_bowl_boxes_signed_distance_m": 0.10199306787861721,
+          "proxy_correspondence_nearest_native_geom_index": 22
+        }
+      }
+    },
+    {
+      "macro": 119,
+      "phase": "descend",
+      "expected": {
+        "finger14_link": {
+          "source_feature_world_m": [
+            -0.1678188682832262,
+            0.14310652312652947,
+            0.9215839644555804
+          ],
+          "source_feature_to_native_bowl_boxes_signed_distance_m": 0.013613995961401726,
+          "source_feature_nearest_native_geom_index": 31,
+          "proxy_correspondence_point_world_m": [
+            -0.16781886598406429,
+            0.14310649140650647,
+            0.9215839469456935
+          ],
+          "proxy_correspondence_to_native_bowl_boxes_signed_distance_m": 0.013613970454758349,
+          "proxy_correspondence_nearest_native_geom_index": 31
+        },
+        "finger23_link": {
+          "source_feature_world_m": [
+            -0.16282654295873616,
+            0.019465780472774873,
+            0.9320127339933717
+          ],
+          "source_feature_to_native_bowl_boxes_signed_distance_m": 0.03213285622394576,
+          "source_feature_nearest_native_geom_index": 22,
+          "proxy_correspondence_point_world_m": [
+            -0.16285539013796174,
+            0.019744736016037955,
+            0.93187649656836
+          ],
+          "proxy_correspondence_to_native_bowl_boxes_signed_distance_m": 0.03186245691230201,
+          "proxy_correspondence_nearest_native_geom_index": 22
+        }
+      }
+    },
+    {
+      "macro": 130,
+      "phase": "close",
+      "expected": {
+        "finger14_link": {
+          "source_feature_world_m": [
+            -0.16772628497070544,
+            0.1382202366724936,
+            0.9213649521043318
+          ],
+          "source_feature_to_native_bowl_boxes_signed_distance_m": 0.008990758593323163,
+          "source_feature_nearest_native_geom_index": 31,
+          "proxy_correspondence_point_world_m": [
+            -0.1677262831562523,
+            0.13822020333270396,
+            0.9213649378492157
+          ],
+          "proxy_correspondence_to_native_bowl_boxes_signed_distance_m": 0.008990730628075967,
+          "proxy_correspondence_nearest_native_geom_index": 31
+        },
+        "finger23_link": {
+          "source_feature_world_m": [
+            -0.16345962353844506,
+            0.030979170770225606,
+            0.925886382254677
+          ],
+          "source_feature_to_native_bowl_boxes_signed_distance_m": 0.02199218501682323,
+          "source_feature_nearest_native_geom_index": 22,
+          "proxy_correspondence_point_world_m": [
+            -0.16349327499007899,
+            0.031284218733494865,
+            0.9258314067078538
+          ],
+          "proxy_correspondence_to_native_bowl_boxes_signed_distance_m": 0.021715404777678967,
+          "proxy_correspondence_nearest_native_geom_index": 22
+        }
+      }
+    },
+    {
+      "macro": 140,
+      "phase": "close",
+      "expected": {
+        "finger14_link": {
+          "source_feature_world_m": [
+            -0.16769190620603533,
+            0.13333858088232706,
+            0.9215213441455173
+          ],
+          "source_feature_to_native_bowl_boxes_signed_distance_m": 0.0042674821239630225,
+          "source_feature_nearest_native_geom_index": 31,
+          "proxy_correspondence_point_world_m": [
+            -0.16769190490273306,
+            0.1333385462631052,
+            0.9215213332895038
+          ],
+          "proxy_correspondence_to_native_bowl_boxes_signed_distance_m": 0.004267451986201551,
+          "proxy_correspondence_nearest_native_geom_index": 31
+        },
+        "finger23_link": {
+          "source_feature_world_m": [
+            -0.16425995787768766,
+            0.043431164050877484,
+            0.9225260154583558
+          ],
+          "source_feature_to_native_bowl_boxes_signed_distance_m": 0.010997170706808414,
+          "source_feature_nearest_native_geom_index": 23,
+          "proxy_correspondence_point_world_m": [
+            -0.1642968576740063,
+            0.04373926103235003,
+            0.9225564070012493
+          ],
+          "proxy_correspondence_to_native_bowl_boxes_signed_distance_m": 0.010694982758743697,
+          "proxy_correspondence_nearest_native_geom_index": 23
+        }
+      }
+    },
+    {
+      "macro": 150,
+      "phase": "close",
+      "expected": {
+        "finger14_link": {
+          "source_feature_world_m": [
+            -0.16771574159217198,
+            0.12849371558140926,
+            0.9220507101232512
+          ],
+          "source_feature_to_native_bowl_boxes_signed_distance_m": -0.0005243273303164775,
+          "source_feature_nearest_native_geom_index": 31,
+          "proxy_correspondence_point_world_m": [
+            -0.16771574082124352,
+            0.12849368003615377,
+            0.922050702775964
+          ],
+          "proxy_correspondence_to_native_bowl_boxes_signed_distance_m": -0.0005243593323194151,
+          "proxy_correspondence_nearest_native_geom_index": 31
+        },
+        "finger23_link": {
+          "source_feature_world_m": [
+            -0.1651802091661219,
+            0.05612348970786892,
+            0.9220507101216714
+          ],
+          "source_feature_to_native_bowl_boxes_signed_distance_m": -0.0008325126873556523,
+          "source_feature_nearest_native_geom_index": 22,
+          "proxy_correspondence_point_world_m": [
+            -0.16521855676762098,
+            0.05641136270394641,
+            0.9221641455236803
+          ],
+          "proxy_correspondence_to_native_bowl_boxes_signed_distance_m": -0.0007843096077453422,
+          "proxy_correspondence_nearest_native_geom_index": 22
+        }
+      }
+    },
+    {
+      "macro": 159,
+      "phase": "close",
+      "expected": {
+        "finger14_link": {
+          "source_feature_world_m": [
+            -0.16771574159217198,
+            0.12849371558140926,
+            0.9220507101232512
+          ],
+          "source_feature_to_native_bowl_boxes_signed_distance_m": -0.0005243273303164775,
+          "source_feature_nearest_native_geom_index": 31,
+          "proxy_correspondence_point_world_m": [
+            -0.16771574082124352,
+            0.12849368003615377,
+            0.922050702775964
+          ],
+          "proxy_correspondence_to_native_bowl_boxes_signed_distance_m": -0.0005243593323194151,
+          "proxy_correspondence_nearest_native_geom_index": 31
+        },
+        "finger23_link": {
+          "source_feature_world_m": [
+            -0.1651802091661219,
+            0.05612348970786892,
+            0.9220507101216714
+          ],
+          "source_feature_to_native_bowl_boxes_signed_distance_m": -0.0008325126873556523,
+          "source_feature_nearest_native_geom_index": 22,
+          "proxy_correspondence_point_world_m": [
+            -0.16521855676762098,
+            0.05641136270394641,
+            0.9221641455236803
+          ],
+          "proxy_correspondence_to_native_bowl_boxes_signed_distance_m": -0.0007843096077453422,
+          "proxy_correspondence_nearest_native_geom_index": 22
+        }
+      }
+    }
+  ],
+  "zero_physics_audit": {
+    "allowed_apis": [
+      "mj_geomDistance",
+      "mj_id2name",
+      "mj_kinematics",
+      "mj_name2id"
+    ],
+    "blocked_apis": [
+      "mj_Euler",
+      "mj_RungeKutta",
+      "mj_addContact",
+      "mj_addM",
+      "mj_angmomMat",
+      "mj_applyFT",
+      "mj_camlight",
+      "mj_checkAcc",
+      "mj_checkPos",
+      "mj_checkVel",
+      "mj_collision",
+      "mj_comPos",
+      "mj_comVel",
+      "mj_compareFwdInv",
+      "mj_constraintUpdate",
+      "mj_contactForce",
+      "mj_crb",
+      "mj_defaultLROpt",
+      "mj_defaultOption",
+      "mj_defaultSolRefImp",
+      "mj_defaultVisual",
+      "mj_differentiatePos",
+      "mj_energyPos",
+      "mj_energyVel",
+      "mj_factorM",
+      "mj_flex",
+      "mj_forward",
+      "mj_forwardSkip",
+      "mj_fullM",
+      "mj_fwdAcceleration",
+      "mj_fwdActuation",
+      "mj_fwdConstraint",
+      "mj_fwdPosition",
+      "mj_fwdVelocity",
+      "mj_getState",
+      "mj_getTotalmass",
+      "mj_implicit",
+      "mj_integratePos",
+      "mj_invConstraint",
+      "mj_invPosition",
+      "mj_invVelocity",
+      "mj_inverse",
+      "mj_inverseSkip",
+      "mj_isDual",
+      "mj_isPyramidal",
+      "mj_isSparse",
+      "mj_island",
+      "mj_jac",
+      "mj_jacBody",
+      "mj_jacBodyCom",
+      "mj_jacDot",
+      "mj_jacGeom",
+      "mj_jacPointAxis",
+      "mj_jacSite",
+      "mj_jacSubtreeCom",
+      "mj_loadAllPluginLibraries",
+      "mj_loadPluginLibrary",
+      "mj_local2Global",
+      "mj_makeConstraint",
+      "mj_mulJacTVec",
+      "mj_mulJacVec",
+      "mj_mulM",
+      "mj_mulM2",
+      "mj_multiRay",
+      "mj_normalizeQuat",
+      "mj_objectAcceleration",
+      "mj_objectVelocity",
+      "mj_passive",
+      "mj_printData",
+      "mj_printFormattedData",
+      "mj_printFormattedModel",
+      "mj_printModel",
+      "mj_printSchema",
+      "mj_projectConstraint",
+      "mj_ray",
+      "mj_rayHfield",
+      "mj_rayMesh",
+      "mj_referenceConstraint",
+      "mj_resetCallbacks",
+      "mj_resetData",
+      "mj_resetDataDebug",
+      "mj_resetDataKeyframe",
+      "mj_rne",
+      "mj_rnePostConstraint",
+      "mj_saveLastXML",
+      "mj_saveModel",
+      "mj_sensorAcc",
+      "mj_sensorPos",
+      "mj_sensorVel",
+      "mj_setConst",
+      "mj_setKeyframe",
+      "mj_setLengthRange",
+      "mj_setState",
+      "mj_setTotalmass",
+      "mj_sizeModel",
+      "mj_solveM",
+      "mj_solveM2",
+      "mj_stateSize",
+      "mj_step",
+      "mj_step1",
+      "mj_step2",
+      "mj_subtreeVel",
+      "mj_tendon",
+      "mj_transmission",
+      "mj_version",
+      "mj_versionString"
+    ],
+    "allowed_api_calls": {
+      "mj_kinematics": 6
+    },
+    "forbidden_api_attempts": [],
+    "physics_steps": 0,
+    "constraint_solves": 0,
+    "resets": 0,
+    "forward_calls": 0,
+    "collision_calls": 0
+  }
+}
