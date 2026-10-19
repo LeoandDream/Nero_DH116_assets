@@ -1,0 +1,11 @@
+{
+  "modules": [
+    "test_finger22_conditional",
+    "test_white_bowl_frozen78",
+    "test_wrist_conditional"
+  ],
+  "tests_run": 12,
+  "failures": 0,
+  "errors": 0,
+  "physics_steps": 0
+}

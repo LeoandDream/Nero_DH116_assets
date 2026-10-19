@@ -1,0 +1,24 @@
+{
+  "original_root": "/data_robot/verification/nero_dh116_right/runs/d3_finger22_four_once",
+  "sha256_before_lossless_packaging": {
+    "model.xml": "8576697c81a13d0e35149e880dec1b51f4a6b3f9041b61453e402fea68eaf98c",
+    "mount.xml": "011ebeaae8f339d448fb1105c5c979b93df484d640f6bd5d93df3eb4964b0645",
+    "result.json": "80980969479ab042113ab1a81e8196972d28b839feba31bdae61051df1b64a24",
+    "robot-physical-preflight.json": "99feb594de682455dfdd2e58b34e2037ecfbefe371c7fd3e3646fb2b93bd2aee",
+    "old-to-new-compiled-audit.json": "d77e156dbda62a21c8257e66ce8e711cb3fc568c9b6acb70525f8d05109a4b12",
+    "arm.xml": "f17aa71bbaad1eaf3389a20edce4198273349365e28f06107c6a576cd0bd47ef",
+    "state.jsonl.gz": "e2954ec2444726a875c729899a354d595d601b97cee9a04e2922ac24c74e2c28",
+    "finger22-risk-regions.json": "fbd0d0336fbaeb23e7b519f9f2759d74007bac0c179235180af153f7812b6090",
+    "hand.xml": "da89b33d1d624826336d24ebaeba2481dbc7c839f239d8119321b1ffeb6fb27f",
+    "contacts.jsonl.gz": "7d8a64e58d0dd46b924eb0e1e650afb049f239ab4bcc95ab74ec9d40e447f2d9",
+    "geometry-provenance.json": "f1897e079a2b0413b95132fbf915896ddd282b5df3eb8d8c7dbada3ea4b6b268",
+    "frozen-before-first-step.json": "dc5854e7347a94901a2e71040ac99c28fa23cbd9b317e4e3ad118e3ec86962ae",
+    "schedule.json": "4fcb72c06028ba405122c808d8ec90486f022199e1c01904d65b034c18be0b81",
+    "libero_config/config.yaml": "240eb6daffa78a796295f5214cd3a10402354f1a1af319b41a7472b52782c548"
+  },
+  "only_gzipped": [
+    "robot-physical-preflight.json",
+    "finger22-risk-regions.json"
+  ],
+  "other_files_copied_byte_for_byte": true
+}

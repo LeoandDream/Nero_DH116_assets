@@ -1,0 +1,26 @@
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /data_robot/verification/nero_dh116_right/.reference-env/lib/python3.11/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+usage: white_bowl_run.py [-h] [--candidate CANDIDATE] [--geometry GEOMETRY]
+                         [--frozen78] [--wrist-conditional WRIST_CONDITIONAL]
+                         [--finger22-conditional] --output OUTPUT
+
+One frozen formal-right native LIBERO trial, conditional on offline geometry.
+There is no planner, alternate action, tuning, object injection or retry here.
+The only simulator state initialization is the native constructor and one
+native seeded reset. Forward/reset refreshes are counted separately from real
+mj_step.
+
+options:
+  -h, --help            show this help message and exit
+  --candidate CANDIDATE
+  --geometry GEOMETRY
+  --frozen78            Approved fixed78 model and approach_high x2 schedule;
+                        one attempt only
+  --wrist-conditional WRIST_CONDITIONAL
+                        Completed external preflight summary; one approved
+                        wrist-reuse trial
+  --finger22-conditional
+                        Approved frozen81/306 model; one attempt, original
+                        schedule and extra risk stops
+  --output OUTPUT

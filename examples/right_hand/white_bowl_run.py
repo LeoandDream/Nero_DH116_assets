@@ -121,7 +121,7 @@ def robot_audit(formal, actual):
             'formal_snapshot': a, 'actual_snapshot': b}
 
 
-def execute(candidate_path, geometry_path, output, frozen78=False, wrist_conditional=None):
+def execute(candidate_path, geometry_path, output, frozen78=False, wrist_conditional=None, finger22=False):
     candidate = json.loads(candidate_path.read_text())
     geometry = None if frozen78 else json.loads(geometry_path.read_text())
     result = {'candidate_id': candidate['candidate_id'], 'A': 'PASS_FINITE_SAMPLED_INTERNAL_GEOMETRY',
@@ -148,7 +148,10 @@ def execute(candidate_path, geometry_path, output, frozen78=False, wrist_conditi
             model_path = ROOT / MODEL_REL
             geometry_path = ROOT / 'examples/right_hand/evidence/d3_bowl_preflight/internal-detail.json'
             if wrist_conditional is not None:
-                import wrist_conditional as wrist_policy
+                if finger22:
+                    import finger22_conditional as wrist_policy
+                else:
+                    import wrist_conditional as wrist_policy
                 external = wrist_policy.validate_external_preflight(ROOT, wrist_conditional)
                 model_path = ROOT / wrist_policy.MODEL
                 geometry_path = wrist_conditional
@@ -164,6 +167,9 @@ def execute(candidate_path, geometry_path, output, frozen78=False, wrist_conditi
             if wrist_conditional is not None:
                 result.update(robot_model=str(wrist_policy.MODEL), experiment='approved_wrist_conditional_once',
                               authorization=wrist_policy.AUTHORIZATION, external_preflight='PASS_FINITE_SAMPLES_REFERENCE_SCENE_ONLY')
+                if finger22:
+                    result.update(experiment='approved_finger22_four_piece_once',
+                                  A='PRIOR_STATIC_SURFACE_SCOPE_ONLY_NUMERICAL_FAIL_UNCHANGED')
         else:
             model_path = ROOT / result['formal_model']
             if sha(model_path) != FORMAL_MODEL_SHA256:
@@ -238,8 +244,12 @@ def execute(candidate_path, geometry_path, output, frozen78=False, wrist_conditi
         if not audit['passed'] or not np.array_equal(data.qpos[qadr], adapter['initial']):
             raise ValueError('Formal right robot physics or native reset differs')
         if wrist_conditional is not None:
-            mapping = json.loads((ROOT/wrist_policy.MODEL.parent/'manifest.json').read_text())
-            old_snapshot = wrist_policy.read(ROOT/'examples/right_hand/evidence/d3_bowl78_slow_001/robot-physical-preflight.json.gz')['actual_snapshot']
+            if finger22:
+                mapping = {'removed': [], 'meshes': []}  # Policy fixes the sole allowed 1->4 replacement.
+                old_snapshot = wrist_policy.read(ROOT/'examples/right_hand/evidence/d3_wrist_conditional/run/robot-physical-preflight.json.gz')['actual_snapshot']
+            else:
+                mapping = json.loads((ROOT/wrist_policy.MODEL.parent/'manifest.json').read_text())
+                old_snapshot = wrist_policy.read(ROOT/'examples/right_hand/evidence/d3_bowl78_slow_001/robot-physical-preflight.json.gz')['actual_snapshot']
             comparison = wrist_policy.compare_reset_snapshots(old_snapshot, audit['actual_snapshot'],
                 [r['geom']['name'] for r in mapping['removed']], [r['geom'] for r in mapping['meshes']])
             write(output/'old-to-new-compiled-audit.json', comparison)
@@ -251,8 +261,15 @@ def execute(candidate_path, geometry_path, output, frozen78=False, wrist_conditi
                 raise ValueError('Native full reset differs from frozen original bowl reset')
             hand = [i for i in range(model.ngeom) if model.body(int(model.geom_bodyid[i])).name.startswith('gripper0_')
                     and (model.geom_contype[i] or model.geom_conaffinity[i])]
-            if len(hand) != 78 or formal.nexclude != 1 or model.nexclude != 1:
-                raise ValueError('Expected exactly 78 enabled hand proxies and only original base-link1 exclusion')
+            expected_hand = 81 if finger22 else 78
+            if len(hand) != expected_hand or formal.nexclude != 1 or model.nexclude != 1:
+                raise ValueError('Enabled hand proxy count or original base-link1 exclusion differs')
+            if finger22:
+                wrist = [i for i in range(model.ngeom) if (model.geom(i).name or '').startswith('robot0_wrist_reuse_')]
+                if len(wrist) != 306:
+                    raise ValueError('Expected exactly 306 frozen wrist geoms')
+                regions = wrist_policy.prepare_regions(ROOT, model)
+                write(output/'finger22-risk-regions.json', regions)
             write(output / 'schedule.json', actions)
             write(output / 'geometry-provenance.json', preflight)
         backend = robot.controller.backend
@@ -281,6 +298,11 @@ def execute(candidate_path, geometry_path, output, frozen78=False, wrist_conditi
             files.update(ROOT/'examples/right_hand'/name for name in ('wrist_conditional.py', 'wrist_reuse.py', 'wrist_external_preflight.py'))
             files.update(wrist_conditional.parent/name for name in ('summary.json', 'inputs.json', 'input-audit.json'))
             files.add(ROOT/'examples/right_hand/evidence/d3_bowl78_slow_001/schedule.json.gz')
+        if finger22:
+            files.add(ROOT/'examples/right_hand/finger22_conditional.py')
+            files.add(ROOT/'examples/right_hand/evidence/d3_wrist_conditional/run/robot-physical-preflight.json.gz')
+            files.update(ROOT/wrist_policy.RISK_EVIDENCE/n for n in ('witnesses.json','numeric.json','working-cover.json.gz'))
+            files.add(model_path.parent/'manifest.json')
         before_sha = {str(p.relative_to(ROOT)): sha(p) for p in sorted(files)}
         criteria = candidate['proposed_trial_criteria']
         frozen = {'candidate_sha256': sha(candidate_path), 'geometry_sha256': sha(geometry_path),
@@ -318,8 +340,16 @@ def execute(candidate_path, geometry_path, output, frozen78=False, wrist_conditi
             frozen['additional_stop_protocol'] = external['protocol']
             initial = [{'geom': [model.geom(int(c.geom1)).name, model.geom(int(c.geom2)).name],
                         'body': [model.body(int(model.geom_bodyid[g])).name for g in (c.geom1,c.geom2)],
+                        'distance_m': float(c.dist), 'position_world_m': c.pos.tolist(),
+                        'cached_body_pose': [{'position_world_m': data.xpos[int(model.geom_bodyid[g])].tolist(),
+                                              'rotation_world': data.xmat[int(model.geom_bodyid[g])].tolist()}
+                                             for g in (c.geom1,c.geom2)],
                         'filter_reasons': filter_reasons(model, int(c.geom1), int(c.geom2))}
                        for c in data.contact]
+            if finger22:
+                for c in initial:
+                    c['finger22_region'] = wrist_policy.classify_contact(c, regions)
+                frozen['finger22_risk_regions_sha256'] = sha(output/'finger22-risk-regions.json')
             initial_stops = wrist_policy.extra_failures(initial, data.qpos[qadr].tolist(), external['protocol'])
             if initial_stops:
                 write(output/'initial-risk-block.json', {'reasons': initial_stops, 'contacts': initial})
@@ -370,6 +400,8 @@ def execute(candidate_path, geometry_path, output, frozen78=False, wrist_conditi
                                                 'rotation_world': d.xmat[int(m.geom_bodyid[g])].tolist()}
                                                for g in gids],
                           'force_contact_frame': force.tolist(), 'filter_reasons': reasons}
+                if finger22:
+                    record['finger22_region'] = wrist_policy.classify_contact(record, regions)
                 contacts.append(record)
                 if any(n.startswith(('robot0_', 'gripper0_', 'mount0_')) for n in bodies) and not reasons:
                     overlap = max(overlap, -float(c.dist))
@@ -429,10 +461,20 @@ def execute(candidate_path, geometry_path, output, frozen78=False, wrist_conditi
                         'cached_qfrc_bias_Nm': float(d.qfrc_bias[j6]),
                         'cached_qfrc_passive_Nm': float(d.qfrc_passive[j6]),
                         'timing': 'qpos/qvel post-step; forces and body/contact poses are final RK4 internal-stage cache, no additional forward.'})
+            if finger22:
+                state.update(full_qacc_cached=d.qacc.tolist(), qfrc_actuator_cached=d.qfrc_actuator.tolist(),
+                             qfrc_constraint_cached=d.qfrc_constraint.tolist(), qfrc_bias_cached=d.qfrc_bias.tolist(),
+                             qfrc_passive_cached=d.qfrc_passive.tolist(),
+                             mimic_residuals_rad=(q[[9,11,13,15,17]]-expected).tolist())
             trace.write(json.dumps(finite_json(state), allow_nan=False)+'\n')
-            contact_log.write(json.dumps(finite_json({'step': counts['mj_step'],
+            cache = {'step': counts['mj_step'],
                 'timing': 'final RK4 internal-stage cache; qpos/height in state row are post-integration; no post-step forward',
-                'bowl_center_cached_m': d.xpos[bowl_id].tolist(), 'contacts': contacts}), allow_nan=False)+'\n')
+                'bowl_center_cached_m': d.xpos[bowl_id].tolist(), 'contacts': contacts}
+            if finger22:
+                cache['body_poses'] = {m.body(b).name: {'position_world_m': d.xpos[b].tolist(),
+                    'rotation_world': d.xmat[b].tolist()} for b in range(m.nbody)
+                    if (m.body(b).name or '').startswith(('robot0_','gripper0_','mount0_')) or b==bowl_id}
+            contact_log.write(json.dumps(finite_json(cache), allow_nan=False)+'\n')
             if reasons:
                 raise StopTrial(','.join(reasons))
 
@@ -485,8 +527,13 @@ if __name__ == '__main__':
     parser.add_argument('--geometry', type=Path)
     parser.add_argument('--frozen78', action='store_true', help='Approved fixed78 model and approach_high x2 schedule; one attempt only')
     parser.add_argument('--wrist-conditional', type=Path, help='Completed external preflight summary; one approved wrist-reuse trial')
+    parser.add_argument('--finger22-conditional', action='store_true', help='Approved frozen81/306 model; one attempt, original schedule and extra risk stops')
     parser.add_argument('--output', required=True, type=Path)
     args = parser.parse_args()
+    if args.finger22_conditional:
+        if args.wrist_conditional is not None or args.frozen78 or args.candidate is not None or args.geometry is not None:
+            parser.error('--finger22-conditional selects all frozen inputs; do not combine overrides')
+        args.wrist_conditional = ROOT/'examples/right_hand/evidence/d3_wrist_conditional/preflight/summary.json'
     if args.wrist_conditional is not None:
         if args.frozen78 or args.candidate is not None or args.geometry is not None:
             parser.error('--wrist-conditional selects all frozen inputs; do not combine overrides')
@@ -502,4 +549,5 @@ if __name__ == '__main__':
         raise SystemExit('Use a NEW output directory inside this activated independent checkout')
     output.mkdir(parents=True)
     raise SystemExit(execute(args.candidate.resolve(), None if args.geometry is None else args.geometry.resolve(), output,
-                            args.frozen78, None if args.wrist_conditional is None else args.wrist_conditional.resolve()))
+                            args.frozen78, None if args.wrist_conditional is None else args.wrist_conditional.resolve(),
+                            args.finger22_conditional))
