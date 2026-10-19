@@ -1,0 +1,50 @@
+[
+  {
+    "name": "mujoco_collision",
+    "url": "https://raw.githubusercontent.com/google-deepmind/mujoco/3.2.3/src/engine/engine_collision_convex.c",
+    "sha256": "cf74626e3a00ab91dc2bc002bf60e9f619774546c68e90ff126c525685cde877",
+    "line_count": 1321,
+    "relevant_line_numbers": [
+      67,
+      340,
+      342,
+      507,
+      542
+    ],
+    "source_notes": "Line numbers and SHA refer to the actual downloaded Git source, not the web text cache.",
+    "git_blob_sha1": "00ff5515a50d347f02b291ebef3d6839f2ae6bdd",
+    "raw_download_matches_git_api_blob": true
+  },
+  {
+    "name": "mujoco_dependency_pin",
+    "url": "https://raw.githubusercontent.com/google-deepmind/mujoco/3.2.3/cmake/MujocoDependencies.cmake",
+    "sha256": "58ed7fe0bb60f955645fbe54107f085661d8fde1520e133fde22dea57c5863e6",
+    "line_count": 359,
+    "relevant_line_numbers": [
+      33,
+      34,
+      70,
+      220
+    ],
+    "source_notes": "Line numbers and SHA refer to the actual downloaded Git source, not the web text cache.",
+    "git_blob_sha1": "73d9f56d22f2c885b823d9d1f25220531196ffb9",
+    "raw_download_matches_git_api_blob": true
+  },
+  {
+    "name": "libccd_mpr",
+    "url": "https://raw.githubusercontent.com/danfis/libccd/7931e764a19ef6b21b443376c699bbc9c6d4fba8/src/mpr.c",
+    "sha256": "770971cfb36763082e93e9a3ab93fd2ff0ec57c136f4fcce5cb2bff033c01a08",
+    "line_count": 543,
+    "relevant_line_numbers": [
+      64,
+      117,
+      167,
+      343,
+      400,
+      410
+    ],
+    "source_notes": "Line numbers and SHA refer to the actual downloaded Git source, not the web text cache.",
+    "git_blob_sha1": "2ad6c8791c096fc5a6ec4d30778de0b6c6069d9b",
+    "raw_download_matches_git_api_blob": true
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "evidence_integrity": "PASS",
+  "offline_geometric_attribution": "PASS_THIS_CACHE",
+  "local_source_front_provenance": "PASS_FACE6175_CONTACT_PATCH",
+  "complete_material_or_all_front_semantics": "UNKNOWN",
+  "formal_numeric": "FAIL_UNCHANGED_1e-10m",
+  "new_physics_steps": 0,
+  "new_Reset_FK_collision_calls": 0,
+  "original_tracked_files_unchanged": 1147,
+  "old_runner_and_classifier_and_4731_evidence_unchanged": true,
+  "user_readme_unchanged": true,
+  "pairs_verified": 144,
+  "actual_native_pair_first_cache_regressions": 12,
+  "exact_common_ball_certificate_reverified": true,
+  "all_contact_face_candidates_reverified": [
+    285
+  ],
+  "all_frozen_geometric_synthetic_witnesses_passed": 3,
+  "unit_tests_passed": 7,
+  "complete_whole_facet_labels": 6844,
+  "source_Git_blobs_verified": 3,
+  "environment": {
+    "python": "3.11.16 (main, Sep 24 2026, 17:56:40) [Clang 22.1.3 ]",
+    "mujoco": "3.2.3",
+    "numpy": "1.26.4",
+    "scipy": "1.15.3"
+  },
+  "static_initial_prototype_block": "Rounded transformed box corners failed exact coplanar-support check. Preserved local offline_001; corrected to exact frozen affine box, not tolerance expansion. Zero physics.",
+  "release_approved": false
+}
