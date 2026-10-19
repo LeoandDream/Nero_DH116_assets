@@ -1,0 +1,22 @@
+{
+  "task_comment": "https://github.com/LeoandDream/Nero_DH116_assets/pull/4#issuecomment-6257751387",
+  "candidate_budget": 1,
+  "dynamics_budget": 1,
+  "candidate_definition": "Single bounded right source-pad geometry fit for thumb/index opposing pinch, equal normalized flex travel, no alternative seed. Formal reset hand0 -> thumb opposition -> approach high -> descend -> close -> lift100mm -> hold1.5s. Other three fingers0. Same native scene andseed20261007. Native settled historicalpose explicitplanningreference only.",
+  "collision_queries_during_planning": 0,
+  "geometry_stop": "First Decimal-confirmed strict crossing of eligible nonadjacent hand source surfaces stops A; no new candidate, no B. Convex-only overlap requires local-proxy review, not unauthorized change.",
+  "generation_code_sha256": "39c926dde80172a2b7ba86cc21c5b9185bb1c8095465af502d64ce7107b052b6",
+  "geometry_code_sha256": "1aef93fcd594a50360cd7c74a492939b9c3ff071b5be236ce1fd4e84c24178aa",
+  "no_change": [
+    "formal MJCF",
+    "Mesh",
+    "Mimic",
+    "controller",
+    "contact masks",
+    "physics parameters",
+    "left V1",
+    "main",
+    "dirty README"
+  ],
+  "B": "Conditional only; run must freeze nativeReset/controller andexactcount beforefirstmj_step; no repeatedControlEnvreset loop orhiddenprobe."
+}

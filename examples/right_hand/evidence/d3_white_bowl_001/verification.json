@@ -1,0 +1,16 @@
+{
+  "original_442_tracked_files_unchanged": true,
+  "protected_main_head_unchanged": true,
+  "protected_main_worktree_status_unchanged": true,
+  "protected_readme_sha256": "d68ec6d62a6f42b8c1636ad2774c8329073d973c2621cc7fe148c8c8c89d8f25",
+  "candidate_sha256": "ba767b42f99d3562255909bde5c970d529ba254769029ec1cd7a98faf76af0fb",
+  "geometry_archive_sha256": "570ae09d4599d9677e23184657337cdf2ec21ed16045d17715351ad4b26e3b3a",
+  "runtime_frozen_inputs_checked": 122,
+  "worktree_matching_frozen_inputs": 98,
+  "runtime_before_equals_after": true,
+  "physical_trial_count": 1,
+  "physical_steps": 501,
+  "source_syntax_valid": true,
+  "verification_did_not_call_simulator": true,
+  "left_main_and_old_full_range_results_not_modified": true
+}

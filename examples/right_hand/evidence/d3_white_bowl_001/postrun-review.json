@@ -1,0 +1,302 @@
+{
+  "schema": "right-white-bowl-001-postrun-independent-review-v1",
+  "method": "Standard-library-only read and arithmetic on frozen JSON/JSONL/XML, stored compiled snapshots and file SHA256. No project code import, environment, FK, geometric query, dynamics or retry.",
+  "trial_directory": "/data_robot/verification/nero_dh116_right/runs/d3_right_white_bowl_trial_001",
+  "recomputed_status": {
+    "B": "FAIL",
+    "control_health": "FAIL",
+    "grasp_result": "UNKNOWN_EARLY_STOP",
+    "native_task_result_recorded": false,
+    "strict_grasp_success_claim": false
+  },
+  "budget": {
+    "recorded_dynamic_attempts": 1,
+    "recorded_constructor_count": 1,
+    "recorded_explicit_native_reset_count": 1,
+    "physical_steps": 501,
+    "completed_commands": 20,
+    "partial_command_macro": 20,
+    "partial_command_steps": 1,
+    "planned_steps": 5750,
+    "commands_not_completed": 210
+  },
+  "frozen_criteria": {
+    "scope": "NEW fixed right white-bowl criteria; not left/manufacturer/full-range certification",
+    "lift_from_own_settled_baseline_m_min": 0.02,
+    "continuous_hold_s_min": 1.0,
+    "hold_requires": [
+      "height >= settled+20mm",
+      "no bowl-table or other environmental support contacts",
+      "positive-force thumb and index contacts on opposing bowl sides"
+    ],
+    "steady_active_error_rad_max": 0.02,
+    "arm_tracking_error_rad_max": 0.1,
+    "linear_mimic_error_rad_max": 0.02,
+    "joint_limit_overshoot_rad_max": 0.01,
+    "eligible_internal_and_external_overlap_m_max": 0.002,
+    "warnings_allowed": 0,
+    "nonfinite_states_allowed": 0,
+    "native_task_result": "record native cabinet-placement predicate separately",
+    "strict_grasp_success_claim": false,
+    "stop": "First numerical/physical bound violation; no automatic retry or edits"
+  },
+  "frozen_measurement_definitions": {
+    "settled_baseline": "post-step bowl free-joint Z at step250, final settle_preshape step",
+    "hold_window": "last30 macros; active steady error evaluated at every step of this window",
+    "no_support": "zero positive-normal-force bowl vs non-hand contacts (table, other environment, arm or mount)",
+    "opposed": "positive-normal-force thumb and index contacts with negative dot product of bowl-centered XY radial vectors",
+    "contact_alignment": "forces and contact geometry are final RK4 internal-stage cache; qpos and bowl Z are post-step state",
+    "sample_period_s": 0.002,
+    "planned_steps": 5750
+  },
+  "criteria_equal_frozen_candidate": true,
+  "complete_saved_trace_review": {
+    "state_rows": 501,
+    "contact_rows": 501,
+    "consecutive_matching_steps": true,
+    "phase_step_counts": {
+      "settle_preshape": 250,
+      "approach_high": 251
+    },
+    "time_increment_s": 0.002,
+    "maximum_absolute_time_increment_error_s": 1.0928757898653885e-16,
+    "all_recorded_numeric_states_finite": true,
+    "finite_state_scope": "qpos/qvel/ctrl/actuator_force independently checked. qacc was not stored; its finite status uses the original finite flag.",
+    "warning_steps": 0,
+    "recomputed_field_differences": [],
+    "recomputed_maxima": {
+      "arm_tracking_rad": 0.1013460045341246,
+      "active_tracking_rad": 0.02634468107933209,
+      "active_hold_tracking_rad": 0.0,
+      "mimic_rad": 6.713281205140975e-07,
+      "joint_overshoot_rad": 0.0,
+      "robot_overlap_m": 0.0,
+      "bowl_lift_m": 2.475089646569728e-07
+    },
+    "first_and_only_failure": {
+      "step": 501,
+      "macro": 20,
+      "phase": "approach_high",
+      "reasons": [
+        "ARM_TRACKING"
+      ]
+    },
+    "no_failure_steps_1_to_500": true,
+    "no_steps_after_first_failure": true
+  },
+  "contact_recount": {
+    "all_contact_records": 5627,
+    "robot_contact_records": 0,
+    "robot_contact_steps": 0,
+    "positive_force_robot_contact_steps": 0,
+    "hand_bowl_contact_records": 0,
+    "hand_bowl_contact_steps": 0,
+    "bowl_positive_force_nonhand_support_contact_records": 1760,
+    "bowl_positive_force_nonhand_support_steps": 440,
+    "opposed_thumb_index_steps": 0,
+    "body_pair_record_counts": [
+      {
+        "body_names": [
+          "chefmate_8_frypan_1_main",
+          "table"
+        ],
+        "count": 3092
+      },
+      {
+        "body_names": [
+          "table",
+          "white_bowl_1_main"
+        ],
+        "count": 2535
+      }
+    ],
+    "contact_filter_scope": "Robot contact count is zero independently of recorded eligibility reasons, so no simulator filter reconstruction was needed to establish zero observed eligible robot overlap.",
+    "timing_limit": "forces and contact geometry are final RK4 internal-stage cache; qpos and bowl Z are post-step state"
+  },
+  "settled_baseline": {
+    "step": 250,
+    "phase": "settle_preshape",
+    "time_s": 0.5000000000000003,
+    "own_post_step_free_joint_z_m": 0.8994107101029007,
+    "reset_free_joint_z_m": 0.97,
+    "final_z_m": 0.8994109576118654,
+    "final_lift_from_own_settled_m": 2.475089646569728e-07,
+    "hold_phase_steps_reached": 0,
+    "longest_valid_hold_s": 0.0,
+    "conclusion": "Approach stopped before descent/closure/lift/hold; grasp outcome is UNKNOWN, not a demonstrated failed lift."
+  },
+  "first_failure_target_change": {
+    "joint": "robot0_joint6",
+    "threshold_rad": 0.1,
+    "selected_steps": [
+      {
+        "step": 499,
+        "macro": 19,
+        "phase": "approach_high",
+        "time_s": 0.9980000000000008,
+        "q6_position_rad": -0.2186842709926828,
+        "q6_target_rad": -0.30640527821892444,
+        "q6_absolute_error_rad": 0.08772100722624163,
+        "q6_qvel_rad_s": -0.12349810841886179,
+        "q6_finite_difference_rate_rad_s": -0.1235701887803975,
+        "q6_ctrl_Nm": 0.0353159956806942,
+        "q6_actuator_force_Nm": 0.0353159956806942,
+        "failures": []
+      },
+      {
+        "step": 500,
+        "macro": 19,
+        "phase": "approach_high",
+        "time_s": 1.0000000000000007,
+        "q6_position_rad": -0.2189311339364644,
+        "q6_target_rad": -0.30640527821892444,
+        "q6_absolute_error_rad": 0.08747414428246003,
+        "q6_qvel_rad_s": -0.12335403650299787,
+        "q6_finite_difference_rate_rad_s": -0.1234314718907975,
+        "q6_ctrl_Nm": 0.03530452008124486,
+        "q6_actuator_force_Nm": 0.03530452008124486,
+        "failures": []
+      },
+      {
+        "step": 501,
+        "macro": 20,
+        "phase": "approach_high",
+        "time_s": 1.0020000000000007,
+        "q6_position_rad": -0.21917909774416897,
+        "q6_target_rad": -0.32052510227829356,
+        "q6_absolute_error_rad": 0.1013460045341246,
+        "q6_qvel_rad_s": -0.1245809137387953,
+        "q6_finite_difference_rate_rad_s": -0.12398190385227992,
+        "q6_ctrl_Nm": 0.03478142567814094,
+        "q6_actuator_force_Nm": 0.03478142567814094,
+        "failures": [
+          "ARM_TRACKING"
+        ]
+      }
+    ],
+    "command_target_jump_at_step501_rad": -0.014119824059369124,
+    "nominal_target_increment_per_0_05s_macro_rad_s": -0.2823964811873825,
+    "actual_q6_change_step500_to501_rad": -0.00024796380770455984,
+    "error_increase_rad": 0.013871860251664564,
+    "new_target_error_using_step500_position_rad": 0.10159396834182916,
+    "step501_error_if_prior_target_were_held_rad": 0.08722618047475547,
+    "q6_qvel_finite_difference_acceleration_rad_s2": -0.6134386178987191,
+    "interpretation": "The recorded command update makes the existing tracking lag exceed the fixed all-step 0.1rad bound; q6 position and velocity remain continuous. This identifies the threshold-crossing trigger, not a unique dynamical root cause."
+  },
+  "torque_clipping_evidence": {
+    "arm_channels": {
+      "robot0_joint1": {
+        "minimum_ctrl": -0.11829226945710335,
+        "maximum_ctrl": 0.011699399428964646,
+        "maximum_abs_actuator_force": 0.11829226945710335,
+        "ctrl_at_either_bound_steps": 0,
+        "actuator_force_at_either_bound_steps": 0,
+        "ctrl_range": [
+          -100.0,
+          100.0
+        ]
+      },
+      "robot0_joint2": {
+        "minimum_ctrl": 8.154491640589564,
+        "maximum_ctrl": 8.426811698835323,
+        "maximum_abs_actuator_force": 8.426811698835323,
+        "ctrl_at_either_bound_steps": 0,
+        "actuator_force_at_either_bound_steps": 0,
+        "ctrl_range": [
+          -100.0,
+          100.0
+        ]
+      },
+      "robot0_joint3": {
+        "minimum_ctrl": 0.5627384652233891,
+        "maximum_ctrl": 0.6207591551505611,
+        "maximum_abs_actuator_force": 0.6207591551505611,
+        "ctrl_at_either_bound_steps": 0,
+        "actuator_force_at_either_bound_steps": 0,
+        "ctrl_range": [
+          -100.0,
+          100.0
+        ]
+      },
+      "robot0_joint4": {
+        "minimum_ctrl": -2.5151960857049396,
+        "maximum_ctrl": -2.4809762234486246,
+        "maximum_abs_actuator_force": 2.5151960857049396,
+        "ctrl_at_either_bound_steps": 0,
+        "actuator_force_at_either_bound_steps": 0,
+        "ctrl_range": [
+          -100.0,
+          100.0
+        ]
+      },
+      "robot0_joint5": {
+        "minimum_ctrl": -0.24232964042760452,
+        "maximum_ctrl": -0.2285291147958306,
+        "maximum_abs_actuator_force": 0.24232964042760452,
+        "ctrl_at_either_bound_steps": 0,
+        "actuator_force_at_either_bound_steps": 0,
+        "ctrl_range": [
+          -100.0,
+          100.0
+        ]
+      },
+      "robot0_joint6": {
+        "minimum_ctrl": 0.03478142567814094,
+        "maximum_ctrl": 0.040101444973836387,
+        "maximum_abs_actuator_force": 0.040101444973836387,
+        "ctrl_at_either_bound_steps": 0,
+        "actuator_force_at_either_bound_steps": 0,
+        "ctrl_range": [
+          -100.0,
+          100.0
+        ]
+      },
+      "robot0_joint7": {
+        "minimum_ctrl": 0.09944094751690402,
+        "maximum_ctrl": 0.1205529819739855,
+        "maximum_abs_actuator_force": 0.1205529819739855,
+        "ctrl_at_either_bound_steps": 0,
+        "actuator_force_at_either_bound_steps": 0,
+        "ctrl_range": [
+          -100.0,
+          100.0
+        ]
+      }
+    },
+    "observed_arm_ctrl_bound_hits": 0,
+    "observed_arm_force_bound_hits": 0,
+    "conclusion": "No observed arm motor output reaches its +/-100Nm bound in any saved step. The trace does not support torque saturation as the cause of this stop.",
+    "limitations": "Raw pre-clip controller torque, solver-stage qpos and mass/bias terms were not logged. No controller, trajectory-speed, inertia, bias or interaction counterfactual was run; none is established as the unique cause."
+  },
+  "freeze_integrity": {
+    "input_manifest_entries": 122,
+    "before_equals_recorded_after": true,
+    "current_files_equal_frozen_manifest": true,
+    "manifest_mismatches": [],
+    "candidate_sha256": "ba767b42f99d3562255909bde5c970d529ba254769029ec1cd7a98faf76af0fb",
+    "geometry_sha256": "134ff717d4dcfe87ede149fbc24f6887b01e8b3a81a8db1da839b0e0403de1fd",
+    "formal_model_sha256": "739d3d29bbfd4a6468fb8b75f4de09b719c0f96abb39508959c1dfc33a84b9cc",
+    "model_xml_sha256": "a2a71733e98155edcf2f047ae3c8ee3a329a4a6baa432d8cb5c7358e2d0b22d5",
+    "candidate_bowl_xml_sha_matches_current": true,
+    "candidate_task_sha_matches_current": true,
+    "recorded_compiled_snapshot_fields_rechecked": 2716,
+    "recorded_compiled_snapshot_differences": [],
+    "initial_physics_steps_at_freeze": 0,
+    "engine_call_counts_recorded": {
+      "mj_step": 501,
+      "mj_step1_nonintegrating": 2,
+      "mj_forward_nonintegrating": 1007,
+      "mj_step2": 0,
+      "constructor": 1,
+      "explicit_native_reset": 1
+    },
+    "scope_limit": "Snapshot fields and manifest are independently re-read; no model was reconstructed and no attempt was made to infer unlogged internal state."
+  },
+  "review_input_sha256": {
+    "result.json": "a0d24efdccf7190db25e41a15cf0ef8c0efb32fc6f26c840c18410ba11c53456",
+    "frozen-before-first-step.json": "73a14419e0e623f77ab366f4d41c29d44e71d70b34bf1a6fd7b61e714da250c5",
+    "robot-physical-preflight.json": "6c6bd5243a9bff8ab3fd4fcb8d74f0171ca2f5d6e58ce63369b7720cb04537e9",
+    "state.jsonl.gz": "ae30f82dbb543bbd74f8d15d6cdf9b646e7c29d67d3ed1d50f4fb7f84998efb3",
+    "contacts.jsonl.gz": "45e461bca06dbb414e8dfc9fb62c24445967ad858d8f595c592bb26bf2dda648"
+  }
+}

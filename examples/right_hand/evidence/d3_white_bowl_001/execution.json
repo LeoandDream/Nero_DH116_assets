@@ -1,0 +1,10 @@
+{
+  "actual_process_exit_code": 2,
+  "observed_exec_session": 71020,
+  "command": "bwrap --ro-bind / / --bind /data_robot/verification/nero_dh116_right /data_robot/verification/nero_dh116_right --tmpfs /data_robot/projects --tmpfs /tmp --dev-bind /dev /dev --proc /proc --chdir /data_robot/verification/nero_dh116_right /bin/bash -c <activate then white_bowl_run.py>",
+  "inner_command": "source examples/libero_reference/env/activate.sh; export XDG_CACHE_HOME=\"$PWD/.reference-deps/xdg-cache\"; python -B examples/right_hand/white_bowl_run.py --candidate runs/d3_right_white_bowl_inputs_001/candidate.json --geometry runs/d3_right_white_bowl_inputs_001/geometry.json --output runs/d3_right_white_bowl_trial_001",
+  "historical_project_tree_hidden_during_actual_trial": true,
+  "physics_steps": 501,
+  "dynamic_attempts": 1,
+  "no_retries": true
+}
