@@ -1,0 +1,1752 @@
+{
+  "description": "Saved-record-only net internal equal-and-opposite contact virtual-work estimate for J6.",
+  "pair": [
+    "robot0_candidate_nero_link5_4",
+    "robot0_source_flange_part_2"
+  ],
+  "input_sha256_before": {
+    "state.jsonl.gz": "3a0fb1b74e89ec6df2e192546c38f59518d3ac4ff4b9c92c1d98d6d9ab02d615",
+    "contacts.jsonl.gz": "727a5b7d4b4016f7915cc38a4cc147c3ce89475ae171d6a339f570eefff99d89",
+    "model.xml": "cfea34f6f4ee4654af1af8369744ed454a194a18406206be97d1ffeba22b5873",
+    "arm.xml": "bb5a337c2514aad2bc574608f7276e10faf2d83fec5efc8eb50de7a3810e3960",
+    "frozen-before-first-step.json": "888b8040f2e032eeb97a2310d3091324874e6f16935c77e814e98e8c3a086884",
+    "schedule.json.gz": "e1c302d63ce5ebbef48c768d8a38602ab5b5fae9edb6dbef8da84040a217a6a3"
+  },
+  "input_sha256_after": {
+    "state.jsonl.gz": "3a0fb1b74e89ec6df2e192546c38f59518d3ac4ff4b9c92c1d98d6d9ab02d615",
+    "contacts.jsonl.gz": "727a5b7d4b4016f7915cc38a4cc147c3ce89475ae171d6a339f570eefff99d89",
+    "model.xml": "cfea34f6f4ee4654af1af8369744ed454a194a18406206be97d1ffeba22b5873",
+    "arm.xml": "bb5a337c2514aad2bc574608f7276e10faf2d83fec5efc8eb50de7a3810e3960",
+    "frozen-before-first-step.json": "888b8040f2e032eeb97a2310d3091324874e6f16935c77e814e98e8c3a086884",
+    "schedule.json.gz": "e1c302d63ce5ebbef48c768d8a38602ab5b5fae9edb6dbef8da84040a217a6a3"
+  },
+  "analysis_script_sha256": "eaadb6bfdbfe089ed35151d4a425b1d24b9989c5161b7100193806037b0aab85",
+  "primary_source_record_sha256": "fc021481668f58b6f20f8f06af9876cdd0930d40b4808c4b966c77ef78f33161",
+  "version": "MuJoCo 3.2.3",
+  "math": {
+    "world_wrench_on_geom2": "F = frame.T @ force_contact_frame[:3]; M = frame.T @ force_contact_frame[3:]",
+    "world_wrench_on_geom1": "-F, -M at the same recorded contact point",
+    "general_internal_pair": "tau6 = (Jp_flange6-Jp_link5_6).T F + (Jr_flange6-Jr_link5_6).T M",
+    "ancestry": "link5 is upstream of J6, so both link5 J6 Jacobian columns are zero; flange is downstream.",
+    "cached_axis": "a6 = R5_cached @ R_link6_fixed @ axis6_local",
+    "cached_pivot": "o6 = p5_cached + R5_cached @ pos_link6_fixed; joint6 pos is exactly zero.",
+    "point_column": "Jp_flange6 = a6 cross (p_contact_cached-o6); Jr_flange6 = a6",
+    "decomposition": "tau6_force = sum_i force_contact_frame[i] * dot(frame_row_i, Jp_flange6), i=0..2",
+    "fixed_link6_position_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "fixed_link6_quaternion_wxyz": [
+      0.5000000133974483,
+      0.49999999999999983,
+      -0.49999999999999983,
+      0.4999999866025518
+    ],
+    "joint6_local_axis": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "motor_gear": 1,
+    "moment_terms": "Recorded last three contact components are zero in all 87 rows; included explicitly."
+  },
+  "audit": {
+    "stdlib_only": true,
+    "simulator_import_guard_installed": true,
+    "simulator_modules_loaded": [],
+    "model_compilations": 0,
+    "new_dynamics_or_constraint_solves_or_forward_or_collision_or_reset": 0,
+    "qpos_writes": 0,
+    "fk_calls": 0,
+    "simulator_jacobian_calls": 0,
+    "static_vector_calculations": 87,
+    "static_rodrigues_finite_differences": 87,
+    "finite_difference_epsilon_rad": 1e-06,
+    "numeric_cross_checks_max_error": {
+      "axis_unit_error": 1.1102230246251565e-15,
+      "frame_orthonormal_error": 8.881784197001252e-16,
+      "cross_vs_frame_tau_error_Nm": 1.734723475976807e-18,
+      "finite_difference_jacobian_error_m_per_rad": 2.3492144816467484e-12,
+      "finite_difference_tau_error_Nm": 1.2423200489164454e-12
+    },
+    "all_input_hashes_unchanged": true,
+    "contact_force_positive_rows": 87,
+    "first_contact_step": 1315,
+    "last_contact_step": 1401,
+    "pair_absent_rows": 1314,
+    "positive_net_tau_count": 87,
+    "negative_net_tau_count": 0
+  },
+  "snapshots": [
+    {
+      "step": 1314,
+      "time_s": 2.627999999999932,
+      "phase": "approach_high",
+      "macro": 52,
+      "source_macro": 31,
+      "repeat_index": 0,
+      "target_rad": -0.4758431669313546,
+      "q6_rad": -0.3924850757132665,
+      "q6_velocity_rad_s": -0.13891548987175403,
+      "target_minus_q6_rad": -0.08335809121808807,
+      "absolute_error_rad": 0.08335809121808807,
+      "ctrl_Nm": 0.025372228275058768,
+      "actuator_force_Nm": 0.025372228275058768,
+      "pair_contact_count": 0,
+      "pair_tau6_estimate_Nm": 0.0,
+      "contact_estimate": null
+    },
+    {
+      "step": 1315,
+      "time_s": 2.629999999999932,
+      "phase": "approach_high",
+      "macro": 52,
+      "source_macro": 31,
+      "repeat_index": 0,
+      "target_rad": -0.4758431669313546,
+      "q6_rad": -0.3927630040185861,
+      "q6_velocity_rad_s": -0.13419712725475585,
+      "target_minus_q6_rad": -0.08308016291276848,
+      "absolute_error_rad": 0.08308016291276848,
+      "ctrl_Nm": 0.025370082686486415,
+      "actuator_force_Nm": 0.025370082686486415,
+      "pair_contact_count": 1,
+      "pair_tau6_estimate_Nm": 0.006061323623145707,
+      "contact_estimate": {
+        "step": 1315,
+        "cached_contact": {
+          "geom": [
+            "robot0_candidate_nero_link5_4",
+            "robot0_source_flange_part_2"
+          ],
+          "body": [
+            "robot0_link5",
+            "robot0_gripper_flange"
+          ],
+          "distance_m": -1.7074058854193656e-06,
+          "position_world_m": [
+            -0.1810967492470753,
+            0.19230398176809751,
+            1.1548131494983362
+          ],
+          "frame": [
+            -0.6060691967268969,
+            0.223274557807497,
+            -0.7634321191924536,
+            0.13882437039826143,
+            0.9747555959500137,
+            0.17486944372205118,
+            0.7832036280319059,
+            1.3877787807814457e-17,
+            -0.6217652909560485
+          ],
+          "normal_world": [
+            -0.6060691967268969,
+            0.223274557807497,
+            -0.7634321191924536
+          ],
+          "cached_body_pose": [
+            {
+              "position_world_m": [
+                -0.16716524682163372,
+                0.21674704329141448,
+                1.1707839780584137
+              ],
+              "rotation_world": [
+                -0.6303694229883647,
+                -0.3261024780364026,
+                0.7044796408554568,
+                0.29630015350744754,
+                0.7377143867274973,
+                0.6066166026797611,
+                -0.7175239435675849,
+                0.5911299835347467,
+                -0.3684083779902827
+              ]
+            },
+            {
+              "position_world_m": [
+                -0.15607849572274968,
+                0.19426450794523922,
+                1.1508937916783986
+              ],
+              "rotation_world": [
+                0.3924952479283026,
+                0.8520029949023032,
+                0.34646554955898,
+                0.7103934160028064,
+                -0.041557820131012016,
+                -0.702576787323508,
+                -0.5841991739583031,
+                0.521884895607704,
+                -0.6215685649089503
+              ]
+            }
+          ],
+          "force_contact_frame": [
+            0.1941070418166123,
+            0.09212069296505673,
+            0.1708546798025557,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "filter_reasons": []
+        },
+        "j6_pivot_world_m": [
+          -0.16716524682163372,
+          0.21674704329141448,
+          1.1707839780584137
+        ],
+        "j6_positive_axis_world": [
+          0.3261024949270863,
+          -0.7377143946668286,
+          -0.591129964308767
+        ],
+        "point_minus_pivot_world_m": [
+          -0.013931502425441583,
+          -0.02444306152331696,
+          -0.015970828560077477
+        ],
+        "point_distance_to_pivot_m": 0.032351466448340936,
+        "point_distance_to_axis_m": 0.0228220198597003,
+        "Jp_flange_minus_Jp_link5_column6_m_per_rad": [
+          -0.0026671159623500966,
+          0.013443455571012813,
+          -0.01824841322499402
+        ],
+        "Jr_flange_minus_Jr_link5_column6": [
+          0.3261024949270863,
+          -0.7377143946668286,
+          -0.591129964308767
+        ],
+        "contact_axes_dot_Jp_column6_signed_lever_m": [
+          0.018549463207158407,
+          0.009542732983032896,
+          0.009257335060230208
+        ],
+        "force_on_geom2_world_N": [
+          0.028960303376288382,
+          0.13313432489940755,
+          -0.23830996564878376
+        ],
+        "moment_on_geom2_world_Nm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "tau6_contact_components_Nm": [
+          0.0036005814304276083,
+          0.0008790831751774934,
+          0.0015816590175406048
+        ],
+        "tau6_normal_Nm": 0.0036005814304276083,
+        "tau6_tangential_Nm": 0.002460742192718098,
+        "tau6_contact_moment_Nm": 0.0,
+        "tau6_net_internal_estimate_Nm": 0.006061323623145707,
+        "tau6_over_recorded_actuator_force": 0.23891619503370093,
+        "tau6_normal_over_recorded_actuator_force": 0.1419223372238155,
+        "tau6_times_poststep_q6_velocity_W_alignment_limited": -0.0008134122175875423
+      }
+    },
+    {
+      "step": 1321,
+      "time_s": 2.6419999999999306,
+      "phase": "approach_high",
+      "macro": 52,
+      "source_macro": 31,
+      "repeat_index": 0,
+      "target_rad": -0.4758431669313546,
+      "q6_rad": -0.39366396971826945,
+      "q6_velocity_rad_s": -0.032699965500465535,
+      "target_minus_q6_rad": -0.08217919721308514,
+      "absolute_error_rad": 0.08217919721308514,
+      "ctrl_Nm": 0.02478718834929112,
+      "actuator_force_Nm": 0.02478718834929112,
+      "pair_contact_count": 1,
+      "pair_tau6_estimate_Nm": 0.0035670966888908776,
+      "contact_estimate": {
+        "step": 1321,
+        "cached_contact": {
+          "geom": [
+            "robot0_candidate_nero_link5_4",
+            "robot0_source_flange_part_2"
+          ],
+          "body": [
+            "robot0_link5",
+            "robot0_gripper_flange"
+          ],
+          "distance_m": -1.9979597274136128e-05,
+          "position_world_m": [
+            -0.1813087670523098,
+            0.19198508414786702,
+            1.1548127438206643
+          ],
+          "frame": [
+            -0.6070600266451376,
+            0.22409735109523202,
+            -0.762403109438639,
+            0.13959078943686615,
+            0.9745667638659244,
+            0.17531124970261375,
+            0.7822995178024832,
+            -1.3877787807814457e-17,
+            -0.6229024517900076
+          ],
+          "normal_world": [
+            -0.6070600266451376,
+            0.22409735109523202,
+            -0.762403109438639
+          ],
+          "cached_body_pose": [
+            {
+              "position_world_m": [
+                -0.16733751808707342,
+                0.2164160332485517,
+                1.1707603736264143
+              ],
+              "rotation_world": [
+                -0.6312088314557887,
+                -0.324676503002553,
+                0.704386669017984,
+                0.297043245839379,
+                0.737732780477312,
+                0.6062306942991424,
+                -0.7164779977036447,
+                0.5918914706322835,
+                -0.3692204839920567
+              ]
+            },
+            {
+              "position_world_m": [
+                -0.1563002602898893,
+                0.19392920357032878,
+                1.1508475287494728
+              ],
+              "rotation_world": [
+                0.3914486680277584,
+                0.8531113079221382,
+                0.34491888407953636,
+                0.7102473508403047,
+                -0.04178480557844738,
+                -0.702710986570653,
+                -0.5850783203329474,
+                0.520053003373839,
+                -0.6222766529110881
+              ]
+            }
+          ],
+          "force_contact_frame": [
+            0.4461089154188657,
+            -0.44297487313462025,
+            -0.05278660992679689,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "filter_reasons": []
+        },
+        "j6_pivot_world_m": [
+          -0.16733751808707342,
+          0.2164160332485517,
+          1.1707603736264143
+        ],
+        "j6_positive_axis_world": [
+          0.3246765199157286,
+          -0.7377327884365543,
+          -0.5918914514343298
+        ],
+        "point_minus_pivot_world_m": [
+          -0.013971248965236382,
+          -0.024430949100684662,
+          -0.01594762980574993
+        ],
+        "point_distance_to_pivot_m": 0.032348013355229514,
+        "point_distance_to_axis_m": 0.022820233986825172,
+        "Jp_flange_minus_Jp_link5_column6_m_per_rad": [
+          -0.0026953805175726764,
+          0.013447283774619375,
+          -0.01823920398931376
+        ],
+        "Jr_flange_minus_Jr_link5_column6": [
+          0.3246765199157286,
+          -0.7377327884365543,
+          -0.5918914514343298
+        ],
+        "contact_axes_dot_Jp_column6_signed_lever_m": [
+          0.018555384277272987,
+          0.009531487891789345,
+          0.009252650004450316
+        ],
+        "force_on_geom2_world_N": [
+          -0.37394504181452826,
+          -0.33173676233939053,
+          -0.38489239411464454
+        ],
+        "moment_on_geom2_world_Nm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "tau6_contact_components_Nm": [
+          0.008277722355114526,
+          -0.004222209639649554,
+          -0.0004884160265740944
+        ],
+        "tau6_normal_Nm": 0.008277722355114526,
+        "tau6_tangential_Nm": -0.004710625666223649,
+        "tau6_contact_moment_Nm": 0.0,
+        "tau6_net_internal_estimate_Nm": 0.0035670966888908776,
+        "tau6_over_recorded_actuator_force": 0.1439088870679797,
+        "tau6_normal_over_recorded_actuator_force": 0.3339516462483837,
+        "tau6_times_poststep_q6_velocity_W_alignment_limited": -0.00011664393866355654
+      }
+    },
+    {
+      "step": 1326,
+      "time_s": 2.6519999999999295,
+      "phase": "approach_high",
+      "macro": 53,
+      "source_macro": 31,
+      "repeat_index": 1,
+      "target_rad": -0.4758431669313546,
+      "q6_rad": -0.3937755488068149,
+      "q6_velocity_rad_s": 0.006184161282759454,
+      "target_minus_q6_rad": -0.08206761812453967,
+      "absolute_error_rad": 0.08206761812453967,
+      "ctrl_Nm": 0.024508396839071703,
+      "actuator_force_Nm": 0.024508396839071703,
+      "pair_contact_count": 1,
+      "pair_tau6_estimate_Nm": 0.0028685072439911187,
+      "contact_estimate": {
+        "step": 1326,
+        "cached_contact": {
+          "geom": [
+            "robot0_candidate_nero_link5_4",
+            "robot0_source_flange_part_2"
+          ],
+          "body": [
+            "robot0_link5",
+            "robot0_gripper_flange"
+          ],
+          "distance_m": -2.2837872636348362e-05,
+          "position_world_m": [
+            -0.1814905112220288,
+            0.19172131046223356,
+            1.154802215635741
+          ],
+          "frame": [
+            -0.6078668832208062,
+            0.22469962640377916,
+            -0.7615825169851425,
+            0.14017192724664396,
+            0.9744280773325459,
+            0.175618202125974,
+            0.7815687321633231,
+            1.3877787807814457e-17,
+            -0.623819137975596
+          ],
+          "normal_world": [
+            -0.6078668832208062,
+            0.22469962640377916,
+            -0.7615825169851425
+          ],
+          "cached_body_pose": [
+            {
+              "position_world_m": [
+                -0.16748411224444956,
+                0.2161397331008963,
+                1.1707378178370065
+              ],
+              "rotation_world": [
+                -0.6319165813619095,
+                -0.32348286986660146,
+                0.7043012616080884,
+                0.2976551972954694,
+                0.7377500699796019,
+                0.6059094138302259,
+                -0.7155996211030808,
+                0.5925231363819983,
+                -0.3699101446691716
+              ]
+            },
+            {
+              "position_world_m": [
+                -0.15648674635524534,
+                0.193650399584564,
+                1.1508057386368322
+              ],
+              "rotation_world": [
+                0.39109219690519337,
+                0.853777646179793,
+                0.3436722630698641,
+                0.7101335755105458,
+                -0.04239808073201052,
+                -0.7027892341825177,
+                -0.5854546937658605,
+                0.5189085985353628,
+                -0.6228777311106799
+              ]
+            }
+          ],
+          "force_contact_frame": [
+            0.39720028860576667,
+            -0.3874086648758196,
+            -0.08765041727019479,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "filter_reasons": []
+        },
+        "j6_pivot_world_m": [
+          -0.16748411224444956,
+          0.2161397331008963,
+          1.1707378178370065
+        ],
+        "j6_positive_axis_world": [
+          0.32348288679874115,
+          -0.7377500779552414,
+          -0.5925231172075806
+        ],
+        "point_minus_pivot_world_m": [
+          -0.014006398977579243,
+          -0.02441842263866273,
+          -0.015935602201265553
+        ],
+        "point_distance_to_pivot_m": 0.03234782827326232,
+        "point_distance_to_axis_m": 0.022820540203819076,
+        "Jp_flange_minus_Jp_link5_column6_m_per_rad": [
+          -0.0027119881329052166,
+          0.013454009785990078,
+          -0.018232163783807653
+        ],
+        "Jr_flange_minus_Jr_link5_column6": [
+          0.32348288679874115,
+          -0.7377500779552414,
+          -0.5925231172075806
+        ],
+        "contact_axes_dot_Jp_column6_signed_lever_m": [
+          0.01855693593078326,
+          0.009527920460337623,
+          0.009253967568368063
+        ],
+        "force_on_geom2_world_N": [
+          -0.3642535461363373,
+          -0.2882511239997244,
+          -0.31585880101242597
+        ],
+        "moment_on_geom2_world_Nm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "tau6_contact_components_Nm": [
+          0.007370820307345832,
+          -0.003691198944582403,
+          -0.0008111141187723105
+        ],
+        "tau6_normal_Nm": 0.007370820307345832,
+        "tau6_tangential_Nm": -0.004502313063354713,
+        "tau6_contact_moment_Nm": 0.0,
+        "tau6_net_internal_estimate_Nm": 0.0028685072439911187,
+        "tau6_over_recorded_actuator_force": 0.11704181480438965,
+        "tau6_normal_over_recorded_actuator_force": 0.30074673409870467,
+        "tau6_times_poststep_q6_velocity_W_alignment_limited": 1.7739311437604903e-05
+      }
+    },
+    {
+      "step": 1400,
+      "time_s": 2.7999999999999132,
+      "phase": "approach_high",
+      "macro": 55,
+      "source_macro": 32,
+      "repeat_index": 1,
+      "target_rad": -0.4899629909907238,
+      "q6_rad": -0.39249299895863593,
+      "q6_velocity_rad_s": 0.00019366737680165332,
+      "target_minus_q6_rad": -0.0974699920320879,
+      "absolute_error_rad": 0.0974699920320879,
+      "ctrl_Nm": 0.023841732370294792,
+      "actuator_force_Nm": 0.023841732370294792,
+      "pair_contact_count": 1,
+      "pair_tau6_estimate_Nm": 0.0020185362708458592,
+      "contact_estimate": {
+        "step": 1400,
+        "cached_contact": {
+          "geom": [
+            "robot0_candidate_nero_link5_4",
+            "robot0_source_flange_part_2"
+          ],
+          "body": [
+            "robot0_link5",
+            "robot0_gripper_flange"
+          ],
+          "distance_m": -4.026937553726616e-06,
+          "position_world_m": [
+            -0.18419243246010042,
+            0.18791332811461794,
+            1.154579511267348
+          ],
+          "frame": [
+            -0.619287358032734,
+            0.23300361740851872,
+            -0.7497949602760619,
+            0.14838023168716785,
+            0.9724758682222118,
+            0.17964963837959086,
+            0.771016520591679,
+            0.0,
+            -0.636815141916947
+          ],
+          "normal_world": [
+            -0.619287358032734,
+            0.23300361740851872,
+            -0.7497949602760619
+          ],
+          "cached_body_pose": [
+            {
+              "position_world_m": [
+                -0.16967521014461615,
+                0.21213785606482527,
+                1.1703691285764015
+              ],
+              "rotation_world": [
+                -0.6419689341177104,
+                -0.3061689494501443,
+                0.7029484063715953,
+                0.3063150052805931,
+                0.7380558280175449,
+                0.6012027214420158,
+                -0.7028847737486713,
+                0.6012771150824975,
+                -0.38002476986421296
+              ]
+            },
+            {
+              "position_world_m": [
+                -0.15924409547525115,
+                0.18962520597468374,
+                1.150160902716019
+              ],
+              "rotation_world": [
+                0.38814076568468825,
+                0.8620242375391628,
+                0.32597693155916485,
+                0.7086937028831831,
+                -0.05306382478053047,
+                -0.703517921586496,
+                -0.5891519171719853,
+                0.5040817834386457,
+                -0.6315073824571554
+              ]
+            }
+          ],
+          "force_contact_frame": [
+            0.12418494625623744,
+            -0.03641404506059039,
+            0.0064304537380820625,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "filter_reasons": []
+        },
+        "j6_pivot_world_m": [
+          -0.16967521014461615,
+          0.21213785606482527,
+          1.1703691285764015
+        ],
+        "j6_positive_axis_world": [
+          0.3061689666516357,
+          -0.7380558362252231,
+          -0.6012770962487728
+        ],
+        "point_minus_pivot_world_m": [
+          -0.014517222315484274,
+          -0.024224527950207325,
+          -0.015789617309053483
+        ],
+        "point_distance_to_pivot_m": 0.03235567203650593,
+        "point_distance_to_axis_m": 0.022829457003956312,
+        "Jp_flange_minus_Jp_link5_column6_m_per_rad": [
+          -0.002912034617188171,
+          0.013563164094789956,
+          -0.018131319345860857
+        ],
+        "Jr_flange_minus_Jr_link5_column6": [
+          0.3061689666516357,
+          -0.7380558362252231,
+          -0.6012770962487728
+        ],
+        "contact_axes_dot_Jp_column6_signed_lever_m": [
+          0.018558424390852056,
+          0.009500476443912975,
+          0.009301071903988921
+        ],
+        "force_on_geom2_world_N": [
+          -0.07735130565025794,
+          -0.006476238380394579,
+          -0.1037500271819607
+        ],
+        "moment_on_geom2_world_Nm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "tau6_contact_components_Nm": [
+          0.0023046769355784084,
+          -0.00034595077732572465,
+          5.9810112593175606e-05
+        ],
+        "tau6_normal_Nm": 0.0023046769355784084,
+        "tau6_tangential_Nm": -0.00028614066473254906,
+        "tau6_contact_moment_Nm": 0.0,
+        "tau6_net_internal_estimate_Nm": 0.0020185362708458592,
+        "tau6_over_recorded_actuator_force": 0.08466399334977943,
+        "tau6_normal_over_recorded_actuator_force": 0.09666566589137131,
+        "tau6_times_poststep_q6_velocity_W_alignment_limited": 3.9092462455370914e-07
+      }
+    },
+    {
+      "step": 1401,
+      "time_s": 2.801999999999913,
+      "phase": "approach_high",
+      "macro": 56,
+      "source_macro": 33,
+      "repeat_index": 0,
+      "target_rad": -0.504082815050093,
+      "q6_rad": -0.39249262789405087,
+      "q6_velocity_rad_s": 0.00017730360017148542,
+      "target_minus_q6_rad": -0.11159018715604213,
+      "absolute_error_rad": 0.11159018715604213,
+      "ctrl_Nm": 0.02332717603494779,
+      "actuator_force_Nm": 0.02332717603494779,
+      "pair_contact_count": 1,
+      "pair_tau6_estimate_Nm": 0.002315667902991765,
+      "contact_estimate": {
+        "step": 1401,
+        "cached_contact": {
+          "geom": [
+            "robot0_candidate_nero_link5_4",
+            "robot0_source_flange_part_2"
+          ],
+          "body": [
+            "robot0_link5",
+            "robot0_gripper_flange"
+          ],
+          "distance_m": -4.0217034673423884e-06,
+          "position_world_m": [
+            -0.1842279881297577,
+            0.18786364266212335,
+            1.1545766253951544
+          ],
+          "frame": [
+            -0.6194341300284407,
+            0.23311507218674146,
+            -0.749639060932179,
+            0.14849046953678524,
+            0.972449157087079,
+            0.17970313669319954,
+            0.770877382605466,
+            -1.3877787807814457e-17,
+            -0.6369835641422361
+          ],
+          "normal_world": [
+            -0.6194341300284407,
+            0.23311507218674146,
+            -0.749639060932179
+          ],
+          "cached_body_pose": [
+            {
+              "position_world_m": [
+                -0.16970425622632787,
+                0.21208564819605003,
+                1.1703641307528125
+              ],
+              "rotation_world": [
+                -0.6420962508268917,
+                -0.30594275689474465,
+                0.7029306040980813,
+                0.306426786485326,
+                0.7380604675519256,
+                0.6011400591886307,
+                -0.7027197373052266,
+                0.6013865443628392,
+                -0.380156803254916
+              ]
+            },
+            {
+              "position_world_m": [
+                -0.15928047648657134,
+                0.18957282165771913,
+                1.1501523169563495
+              ],
+              "rotation_world": [
+                0.38808738121057385,
+                0.8621349143709451,
+                0.32574771521489243,
+                0.7086786704181691,
+                -0.05319132382070911,
+                -0.7035234361160524,
+                -0.5892051651500142,
+                0.5038790256527895,
+                -0.6316195064021859
+              ]
+            }
+          ],
+          "force_contact_frame": [
+            0.12579855774934123,
+            -0.017875462359915585,
+            0.01621870835973704,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "filter_reasons": []
+        },
+        "j6_pivot_world_m": [
+          -0.16970425622632787,
+          0.21208564819605003,
+          1.1703641307528125
+        ],
+        "j6_positive_axis_world": [
+          0.3059427740996475,
+          -0.7380604757625989,
+          -0.6013865255335367
+        ],
+        "point_minus_pivot_world_m": [
+          -0.014523731903429843,
+          -0.02422200553392667,
+          -0.01578750535765816
+        ],
+        "point_distance_to_pivot_m": 0.032355674400425735,
+        "point_distance_to_axis_m": 0.022829459783397232,
+        "Jp_flange_minus_Jp_link5_column6_m_per_rad": [
+          -0.0029146540341244975,
+          0.013564449852419239,
+          -0.018129940045800402
+        ],
+        "Jr_flange_minus_Jr_link5_column6": [
+          0.3059427740996475,
+          -0.7380604757625989,
+          -0.6013865255335367
+        ],
+        "contact_axes_dot_Jp_column6_signed_lever_m": [
+          0.018558425123172462,
+          0.009499932384980628,
+          0.00930163295503264
+        ],
+        "force_on_geom2_world_N": [
+          -0.06807562052771125,
+          0.011942561566283927,
+          -0.1078468400105255
+        ],
+        "moment_on_geom2_world_Nm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "tau6_contact_components_Nm": [
+          0.002334623114594236,
+          -0.0001698156837694643,
+          0.00015086047216699344
+        ],
+        "tau6_normal_Nm": 0.002334623114594236,
+        "tau6_tangential_Nm": -1.8955211602470867e-05,
+        "tau6_contact_moment_Nm": 0.0,
+        "tau6_net_internal_estimate_Nm": 0.002315667902991765,
+        "tau6_over_recorded_actuator_force": 0.09926910567839542,
+        "tau6_normal_over_recorded_actuator_force": 0.1000816863171351,
+        "tau6_times_poststep_q6_velocity_W_alignment_limited": 4.10576256001994e-07
+      }
+    }
+  ],
+  "phase_onsets": [
+    {
+      "step": 1,
+      "time_s": 0.002,
+      "phase": "settle_preshape",
+      "macro": 0,
+      "source_macro": 0,
+      "repeat_index": 0,
+      "target_rad": -0.1793268616846018,
+      "q6_rad": -0.1792871320143539,
+      "q6_velocity_rad_s": 0.034572885308847064,
+      "target_minus_q6_rad": -3.972967024790108e-05,
+      "absolute_error_rad": 3.972967024790108e-05,
+      "ctrl_Nm": 0.040101444973836387,
+      "actuator_force_Nm": 0.040101444973836387,
+      "pair_contact_count": 0,
+      "pair_tau6_estimate_Nm": 0.0
+    },
+    {
+      "step": 251,
+      "time_s": 0.5020000000000003,
+      "phase": "approach_high",
+      "macro": 10,
+      "source_macro": 10,
+      "repeat_index": 0,
+      "target_rad": -0.1793268616846018,
+      "q6_rad": -0.17762102908848468,
+      "q6_velocity_rad_s": -0.031122716224433442,
+      "target_minus_q6_rad": -0.0017058325961171183,
+      "absolute_error_rad": 0.0017058325961171183,
+      "ctrl_Nm": 0.03977601559054943,
+      "actuator_force_Nm": 0.03977601559054943,
+      "pair_contact_count": 0,
+      "pair_tau6_estimate_Nm": 0.0
+    }
+  ],
+  "target_change_rows": [
+    {
+      "step": 1,
+      "time_s": 0.002,
+      "phase": "settle_preshape",
+      "macro": 0,
+      "source_macro": 0,
+      "repeat_index": 0,
+      "target_rad": -0.1793268616846018,
+      "q6_rad": -0.1792871320143539,
+      "q6_velocity_rad_s": 0.034572885308847064,
+      "target_minus_q6_rad": -3.972967024790108e-05,
+      "absolute_error_rad": 3.972967024790108e-05,
+      "ctrl_Nm": 0.040101444973836387,
+      "actuator_force_Nm": 0.040101444973836387,
+      "pair_contact_count": 0,
+      "pair_tau6_estimate_Nm": 0.0
+    },
+    {
+      "step": 301,
+      "time_s": 0.6020000000000004,
+      "phase": "approach_high",
+      "macro": 12,
+      "source_macro": 11,
+      "repeat_index": 0,
+      "target_rad": -0.19344668574397098,
+      "q6_rad": -0.18101373664474393,
+      "q6_velocity_rad_s": -0.027106937331005557,
+      "target_minus_q6_rad": -0.012432949099227042,
+      "absolute_error_rad": 0.012432949099227042,
+      "ctrl_Nm": 0.03924614053023781,
+      "actuator_force_Nm": 0.03924614053023781,
+      "pair_contact_count": 0,
+      "pair_tau6_estimate_Nm": 0.0
+    },
+    {
+      "step": 351,
+      "time_s": 0.7020000000000005,
+      "phase": "approach_high",
+      "macro": 14,
+      "source_macro": 12,
+      "repeat_index": 0,
+      "target_rad": -0.20756650980334015,
+      "q6_rad": -0.18447280969250046,
+      "q6_velocity_rad_s": -0.035064019776266546,
+      "target_minus_q6_rad": -0.023093700110839693,
+      "absolute_error_rad": 0.023093700110839693,
+      "ctrl_Nm": 0.038868949051201786,
+      "actuator_force_Nm": 0.038868949051201786,
+      "pair_contact_count": 0,
+      "pair_tau6_estimate_Nm": 0.0
+    },
+    {
+      "step": 401,
+      "time_s": 0.8020000000000006,
+      "phase": "approach_high",
+      "macro": 16,
+      "source_macro": 13,
+      "repeat_index": 0,
+      "target_rad": -0.22168633386270933,
+      "q6_rad": -0.18912865372077933,
+      "q6_velocity_rad_s": -0.049231341581319844,
+      "target_minus_q6_rad": -0.03255768014193,
+      "absolute_error_rad": 0.03255768014193,
+      "ctrl_Nm": 0.03844720843715815,
+      "actuator_force_Nm": 0.03844720843715815,
+      "pair_contact_count": 0,
+      "pair_tau6_estimate_Nm": 0.0
+    },
+    {
+      "step": 451,
+      "time_s": 0.9020000000000007,
+      "phase": "approach_high",
+      "macro": 18,
+      "source_macro": 14,
+      "repeat_index": 0,
+      "target_rad": -0.2358061579220785,
+      "q6_rad": -0.19512047440361088,
+      "q6_velocity_rad_s": -0.06168040563479686,
+      "target_minus_q6_rad": -0.04068568351846763,
+      "absolute_error_rad": 0.04068568351846763,
+      "ctrl_Nm": 0.03791583733394935,
+      "actuator_force_Nm": 0.03791583733394935,
+      "pair_contact_count": 0,
+      "pair_tau6_estimate_Nm": 0.0
+    },
+    {
+      "step": 501,
+      "time_s": 1.0020000000000007,
+      "phase": "approach_high",
+      "macro": 20,
+      "source_macro": 15,
+      "repeat_index": 0,
+      "target_rad": -0.2499259819814477,
+      "q6_rad": -0.2022284642697268,
+      "q6_velocity_rad_s": -0.07196815682126907,
+      "target_minus_q6_rad": -0.0476975177117209,
+      "absolute_error_rad": 0.0476975177117209,
+      "ctrl_Nm": 0.037294888641064845,
+      "actuator_force_Nm": 0.037294888641064845,
+      "pair_contact_count": 0,
+      "pair_tau6_estimate_Nm": 0.0
+    },
+    {
+      "step": 551,
+      "time_s": 1.1020000000000008,
+      "phase": "approach_high",
+      "macro": 22,
+      "source_macro": 16,
+      "repeat_index": 0,
+      "target_rad": -0.2640458060408169,
+      "q6_rad": -0.21027933398719093,
+      "q6_velocity_rad_s": -0.08084479556174229,
+      "target_minus_q6_rad": -0.053766472053625974,
+      "absolute_error_rad": 0.053766472053625974,
+      "ctrl_Nm": 0.03661445133534388,
+      "actuator_force_Nm": 0.03661445133534388,
+      "pair_contact_count": 0,
+      "pair_tau6_estimate_Nm": 0.0
+    },
+    {
+      "step": 601,
+      "time_s": 1.2020000000000008,
+      "phase": "approach_high",
+      "macro": 24,
+      "source_macro": 17,
+      "repeat_index": 0,
+      "target_rad": -0.2781656301001861,
+      "q6_rad": -0.21915448729830805,
+      "q6_velocity_rad_s": -0.08865446047186698,
+      "target_minus_q6_rad": -0.059011142801878025,
+      "absolute_error_rad": 0.059011142801878025,
+      "ctrl_Nm": 0.03589576776863499,
+      "actuator_force_Nm": 0.03589576776863499,
+      "pair_contact_count": 0,
+      "pair_tau6_estimate_Nm": 0.0
+    },
+    {
+      "step": 651,
+      "time_s": 1.302000000000001,
+      "phase": "approach_high",
+      "macro": 26,
+      "source_macro": 18,
+      "repeat_index": 0,
+      "target_rad": -0.2922854541595552,
+      "q6_rad": -0.22875551800547111,
+      "q6_velocity_rad_s": -0.09551161113419677,
+      "target_minus_q6_rad": -0.06352993615408409,
+      "absolute_error_rad": 0.06352993615408409,
+      "ctrl_Nm": 0.035152517041649164,
+      "actuator_force_Nm": 0.035152517041649164,
+      "pair_contact_count": 0,
+      "pair_tau6_estimate_Nm": 0.0
+    },
+    {
+      "step": 701,
+      "time_s": 1.402000000000001,
+      "phase": "approach_high",
+      "macro": 28,
+      "source_macro": 19,
+      "repeat_index": 0,
+      "target_rad": -0.30640527821892444,
+      "q6_rad": -0.23899183967364973,
+      "q6_velocity_rad_s": -0.10148335883498535,
+      "target_minus_q6_rad": -0.0674134385452747,
+      "absolute_error_rad": 0.0674134385452747,
+      "ctrl_Nm": 0.034393780695597814,
+      "actuator_force_Nm": 0.034393780695597814,
+      "pair_contact_count": 0,
+      "pair_tau6_estimate_Nm": 0.0
+    },
+    {
+      "step": 751,
+      "time_s": 1.5020000000000011,
+      "phase": "approach_high",
+      "macro": 30,
+      "source_macro": 20,
+      "repeat_index": 0,
+      "target_rad": -0.32052510227829356,
+      "q6_rad": -0.24977958594594263,
+      "q6_velocity_rad_s": -0.10664563581317074,
+      "target_minus_q6_rad": -0.07074551633235093,
+      "absolute_error_rad": 0.07074551633235093,
+      "ctrl_Nm": 0.03362587916813935,
+      "actuator_force_Nm": 0.03362587916813935,
+      "pair_contact_count": 0,
+      "pair_tau6_estimate_Nm": 0.0
+    },
+    {
+      "step": 801,
+      "time_s": 1.6020000000000012,
+      "phase": "approach_high",
+      "macro": 32,
+      "source_macro": 21,
+      "repeat_index": 0,
+      "target_rad": -0.3346449263376628,
+      "q6_rad": -0.2610429679205164,
+      "q6_velocity_rad_s": -0.1110869619352403,
+      "target_minus_q6_rad": -0.0736019584171464,
+      "absolute_error_rad": 0.0736019584171464,
+      "ctrl_Nm": 0.032853370462694015,
+      "actuator_force_Nm": 0.032853370462694015,
+      "pair_contact_count": 0,
+      "pair_tau6_estimate_Nm": 0.0
+    },
+    {
+      "step": 851,
+      "time_s": 1.7020000000000013,
+      "phase": "approach_high",
+      "macro": 34,
+      "source_macro": 22,
+      "repeat_index": 0,
+      "target_rad": -0.348764750397032,
+      "q6_rad": -0.27271517120218697,
+      "q6_velocity_rad_s": -0.11489973787138351,
+      "target_minus_q6_rad": -0.07604957919484501,
+      "absolute_error_rad": 0.07604957919484501,
+      "ctrl_Nm": 0.03207962072030503,
+      "actuator_force_Nm": 0.03207962072030503,
+      "pair_contact_count": 0,
+      "pair_tau6_estimate_Nm": 0.0
+    },
+    {
+      "step": 901,
+      "time_s": 1.8020000000000014,
+      "phase": "approach_high",
+      "macro": 36,
+      "source_macro": 23,
+      "repeat_index": 0,
+      "target_rad": -0.36288457445640115,
+      "q6_rad": -0.28473835602420866,
+      "q6_velocity_rad_s": -0.11817230464163282,
+      "target_minus_q6_rad": -0.0781462184321925,
+      "absolute_error_rad": 0.0781462184321925,
+      "ctrl_Nm": 0.031307165097165655,
+      "actuator_force_Nm": 0.031307165097165655,
+      "pair_contact_count": 0,
+      "pair_tau6_estimate_Nm": 0.0
+    },
+    {
+      "step": 951,
+      "time_s": 1.9020000000000015,
+      "phase": "approach_high",
+      "macro": 38,
+      "source_macro": 24,
+      "repeat_index": 0,
+      "target_rad": -0.37700439851577033,
+      "q6_rad": -0.29706302180934663,
+      "q6_velocity_rad_s": -0.12098441413958153,
+      "target_minus_q6_rad": -0.0799413767064237,
+      "absolute_error_rad": 0.0799413767064237,
+      "ctrl_Nm": 0.03053795539556575,
+      "actuator_force_Nm": 0.03053795539556575,
+      "pair_contact_count": 0,
+      "pair_tau6_estimate_Nm": 0.0
+    },
+    {
+      "step": 1001,
+      "time_s": 2.002000000000001,
+      "phase": "approach_high",
+      "macro": 40,
+      "source_macro": 25,
+      "repeat_index": 0,
+      "target_rad": -0.3911242225751395,
+      "q6_rad": -0.3096470634963524,
+      "q6_velocity_rad_s": -0.12340554606145654,
+      "target_minus_q6_rad": -0.08147715907878711,
+      "absolute_error_rad": 0.08147715907878711,
+      "ctrl_Nm": 0.02977353638285444,
+      "actuator_force_Nm": 0.02977353638285444,
+      "pair_contact_count": 0,
+      "pair_tau6_estimate_Nm": 0.0
+    },
+    {
+      "step": 1051,
+      "time_s": 2.10199999999999,
+      "phase": "approach_high",
+      "macro": 42,
+      "source_macro": 26,
+      "repeat_index": 0,
+      "target_rad": -0.40524404663450864,
+      "q6_rad": -0.3224547508185999,
+      "q6_velocity_rad_s": -0.12549496736622892,
+      "target_minus_q6_rad": -0.08278929581590871,
+      "absolute_error_rad": 0.08278929581590871,
+      "ctrl_Nm": 0.029015171739278728,
+      "actuator_force_Nm": 0.029015171739278728,
+      "pair_contact_count": 0,
+      "pair_tau6_estimate_Nm": 0.0
+    },
+    {
+      "step": 1101,
+      "time_s": 2.201999999999979,
+      "phase": "approach_high",
+      "macro": 44,
+      "source_macro": 27,
+      "repeat_index": 0,
+      "target_rad": -0.41936387069387787,
+      "q6_rad": -0.3354557593799887,
+      "q6_velocity_rad_s": -0.1273026556153506,
+      "target_minus_q6_rad": -0.08390811131388914,
+      "absolute_error_rad": 0.08390811131388914,
+      "ctrl_Nm": 0.028263932771000304,
+      "actuator_force_Nm": 0.028263932771000304,
+      "pair_contact_count": 0,
+      "pair_tau6_estimate_Nm": 0.0
+    },
+    {
+      "step": 1151,
+      "time_s": 2.301999999999968,
+      "phase": "approach_high",
+      "macro": 46,
+      "source_macro": 28,
+      "repeat_index": 0,
+      "target_rad": -0.4334836947532471,
+      "q6_rad": -0.3486243108247873,
+      "q6_velocity_rad_s": -0.12887053710304078,
+      "target_minus_q6_rad": -0.08485938392845982,
+      "absolute_error_rad": 0.08485938392845982,
+      "ctrl_Nm": 0.027520759602016817,
+      "actuator_force_Nm": 0.027520759602016817,
+      "pair_contact_count": 0,
+      "pair_tau6_estimate_Nm": 0.0
+    },
+    {
+      "step": 1201,
+      "time_s": 2.401999999999957,
+      "phase": "approach_high",
+      "macro": 48,
+      "source_macro": 29,
+      "repeat_index": 0,
+      "target_rad": -0.44760351881261623,
+      "q6_rad": -0.3619384377290836,
+      "q6_velocity_rad_s": -0.13023374456385464,
+      "target_minus_q6_rad": -0.08566508108353266,
+      "absolute_error_rad": 0.08566508108353266,
+      "ctrl_Nm": 0.026786502412457194,
+      "actuator_force_Nm": 0.026786502412457194,
+      "pair_contact_count": 0,
+      "pair_tau6_estimate_Nm": 0.0
+    },
+    {
+      "step": 1251,
+      "time_s": 2.501999999999946,
+      "phase": "approach_high",
+      "macro": 50,
+      "source_macro": 30,
+      "repeat_index": 0,
+      "target_rad": -0.4617233428719854,
+      "q6_rad": -0.3753793678301618,
+      "q6_velocity_rad_s": -0.13142175893642863,
+      "target_minus_q6_rad": -0.08634397504182362,
+      "absolute_error_rad": 0.08634397504182362,
+      "ctrl_Nm": 0.02606194855788528,
+      "actuator_force_Nm": 0.02606194855788528,
+      "pair_contact_count": 0,
+      "pair_tau6_estimate_Nm": 0.0
+    },
+    {
+      "step": 1301,
+      "time_s": 2.601999999999935,
+      "phase": "approach_high",
+      "macro": 52,
+      "source_macro": 31,
+      "repeat_index": 0,
+      "target_rad": -0.4758431669313546,
+      "q6_rad": -0.3889310134568271,
+      "q6_velocity_rad_s": -0.1324593886128046,
+      "target_minus_q6_rad": -0.08691215347452746,
+      "absolute_error_rad": 0.08691215347452746,
+      "ctrl_Nm": 0.025347839934276688,
+      "actuator_force_Nm": 0.025347839934276688,
+      "pair_contact_count": 0,
+      "pair_tau6_estimate_Nm": 0.0
+    },
+    {
+      "step": 1351,
+      "time_s": 2.701999999999924,
+      "phase": "approach_high",
+      "macro": 54,
+      "source_macro": 32,
+      "repeat_index": 0,
+      "target_rad": -0.4899629909907238,
+      "q6_rad": -0.39266661284121324,
+      "q6_velocity_rad_s": 0.012715662424603801,
+      "target_minus_q6_rad": -0.09729637814951059,
+      "absolute_error_rad": 0.09729637814951059,
+      "ctrl_Nm": 0.023786902214308257,
+      "actuator_force_Nm": 0.023786902214308257,
+      "pair_contact_count": 1,
+      "pair_tau6_estimate_Nm": 0.0017943262761388082
+    },
+    {
+      "step": 1401,
+      "time_s": 2.801999999999913,
+      "phase": "approach_high",
+      "macro": 56,
+      "source_macro": 33,
+      "repeat_index": 0,
+      "target_rad": -0.504082815050093,
+      "q6_rad": -0.39249262789405087,
+      "q6_velocity_rad_s": 0.00017730360017148542,
+      "target_minus_q6_rad": -0.11159018715604213,
+      "absolute_error_rad": 0.11159018715604213,
+      "ctrl_Nm": 0.02332717603494779,
+      "actuator_force_Nm": 0.02332717603494779,
+      "pair_contact_count": 1,
+      "pair_tau6_estimate_Nm": 0.002315667902991765
+    }
+  ],
+  "all_1401_summary": {
+    "count": 1401,
+    "first": {
+      "step": 1,
+      "time_s": 0.002,
+      "phase": "settle_preshape",
+      "macro": 0,
+      "source_macro": 0,
+      "repeat_index": 0,
+      "target_rad": -0.1793268616846018,
+      "q6_rad": -0.1792871320143539,
+      "q6_velocity_rad_s": 0.034572885308847064,
+      "target_minus_q6_rad": -3.972967024790108e-05,
+      "absolute_error_rad": 3.972967024790108e-05,
+      "ctrl_Nm": 0.040101444973836387,
+      "actuator_force_Nm": 0.040101444973836387,
+      "pair_contact_count": 0,
+      "pair_tau6_estimate_Nm": 0.0
+    },
+    "last": {
+      "step": 1401,
+      "time_s": 2.801999999999913,
+      "phase": "approach_high",
+      "macro": 56,
+      "source_macro": 33,
+      "repeat_index": 0,
+      "target_rad": -0.504082815050093,
+      "q6_rad": -0.39249262789405087,
+      "q6_velocity_rad_s": 0.00017730360017148542,
+      "target_minus_q6_rad": -0.11159018715604213,
+      "absolute_error_rad": 0.11159018715604213,
+      "ctrl_Nm": 0.02332717603494779,
+      "actuator_force_Nm": 0.02332717603494779,
+      "pair_contact_count": 1,
+      "pair_tau6_estimate_Nm": 0.002315667902991765
+    },
+    "statistics": {
+      "q6_velocity_rad_s": {
+        "min": -0.13891548987175403,
+        "min_step": 1314,
+        "max": 0.05596969517728263,
+        "max_step": 28,
+        "median": -0.09543903813968722
+      },
+      "absolute_error_rad": {
+        "min": 3.543475026376863e-05,
+        "min_step": 274,
+        "max": 0.11159018715604213,
+        "max_step": 1401,
+        "median": 0.060085343211975034
+      },
+      "ctrl_Nm": {
+        "min": 0.02332717603494779,
+        "min_step": 1401,
+        "max": 0.040101444973836387,
+        "max_step": 1,
+        "median": 0.03441377265065929
+      },
+      "actuator_force_Nm": {
+        "min": 0.02332717603494779,
+        "min_step": 1401,
+        "max": 0.040101444973836387,
+        "max_step": 1,
+        "median": 0.03441377265065929
+      },
+      "pair_tau6_estimate_Nm": {
+        "min": 0.0,
+        "min_step": 1,
+        "max": 0.006061323623145707,
+        "max_step": 1315,
+        "median": 0.0
+      }
+    }
+  },
+  "settle_1_250_summary": {
+    "count": 250,
+    "first": {
+      "step": 1,
+      "time_s": 0.002,
+      "phase": "settle_preshape",
+      "macro": 0,
+      "source_macro": 0,
+      "repeat_index": 0,
+      "target_rad": -0.1793268616846018,
+      "q6_rad": -0.1792871320143539,
+      "q6_velocity_rad_s": 0.034572885308847064,
+      "target_minus_q6_rad": -3.972967024790108e-05,
+      "absolute_error_rad": 3.972967024790108e-05,
+      "ctrl_Nm": 0.040101444973836387,
+      "actuator_force_Nm": 0.040101444973836387,
+      "pair_contact_count": 0,
+      "pair_tau6_estimate_Nm": 0.0
+    },
+    "last": {
+      "step": 250,
+      "time_s": 0.5000000000000003,
+      "phase": "settle_preshape",
+      "macro": 9,
+      "source_macro": 9,
+      "repeat_index": 0,
+      "target_rad": -0.1793268616846018,
+      "q6_rad": -0.17755980591953802,
+      "q6_velocity_rad_s": -0.03008916937434864,
+      "target_minus_q6_rad": -0.0017670557650637797,
+      "absolute_error_rad": 0.0017670557650637797,
+      "ctrl_Nm": 0.03976907575847287,
+      "actuator_force_Nm": 0.03976907575847287,
+      "pair_contact_count": 0,
+      "pair_tau6_estimate_Nm": 0.0
+    },
+    "statistics": {
+      "q6_velocity_rad_s": {
+        "min": -0.031758236019934924,
+        "min_step": 175,
+        "max": 0.05596969517728263,
+        "max_step": 28,
+        "median": 0.0018940259364056571
+      },
+      "absolute_error_rad": {
+        "min": 3.972967024790108e-05,
+        "min_step": 1,
+        "max": 0.0041288674116206625,
+        "max_step": 112,
+        "median": 0.003097160286006831
+      },
+      "ctrl_Nm": {
+        "min": 0.039493142237339414,
+        "min_step": 230,
+        "max": 0.040101444973836387,
+        "max_step": 1,
+        "median": 0.03979800215786994
+      },
+      "actuator_force_Nm": {
+        "min": 0.039493142237339414,
+        "min_step": 230,
+        "max": 0.040101444973836387,
+        "max_step": 1,
+        "median": 0.03979800215786994
+      },
+      "pair_tau6_estimate_Nm": {
+        "min": 0.0,
+        "min_step": 1,
+        "max": 0.0,
+        "max_step": 1,
+        "median": 0.0
+      }
+    }
+  },
+  "precontact_approach_251_1314_summary": {
+    "count": 1064,
+    "first": {
+      "step": 251,
+      "time_s": 0.5020000000000003,
+      "phase": "approach_high",
+      "macro": 10,
+      "source_macro": 10,
+      "repeat_index": 0,
+      "target_rad": -0.1793268616846018,
+      "q6_rad": -0.17762102908848468,
+      "q6_velocity_rad_s": -0.031122716224433442,
+      "target_minus_q6_rad": -0.0017058325961171183,
+      "absolute_error_rad": 0.0017058325961171183,
+      "ctrl_Nm": 0.03977601559054943,
+      "actuator_force_Nm": 0.03977601559054943,
+      "pair_contact_count": 0,
+      "pair_tau6_estimate_Nm": 0.0
+    },
+    "last": {
+      "step": 1314,
+      "time_s": 2.627999999999932,
+      "phase": "approach_high",
+      "macro": 52,
+      "source_macro": 31,
+      "repeat_index": 0,
+      "target_rad": -0.4758431669313546,
+      "q6_rad": -0.3924850757132665,
+      "q6_velocity_rad_s": -0.13891548987175403,
+      "target_minus_q6_rad": -0.08335809121808807,
+      "absolute_error_rad": 0.08335809121808807,
+      "ctrl_Nm": 0.025372228275058768,
+      "actuator_force_Nm": 0.025372228275058768,
+      "pair_contact_count": 0,
+      "pair_tau6_estimate_Nm": 0.0
+    },
+    "statistics": {
+      "q6_velocity_rad_s": {
+        "min": -0.13891548987175403,
+        "min_step": 1314,
+        "max": -0.02618208659201639,
+        "max_step": 300,
+        "median": -0.11351251732231703
+      },
+      "absolute_error_rad": {
+        "min": 3.543475026376863e-05,
+        "min_step": 274,
+        "max": 0.08691215347452746,
+        "max_step": 1301,
+        "median": 0.0651773869806957
+      },
+      "ctrl_Nm": {
+        "min": 0.025347839934276688,
+        "min_step": 1301,
+        "max": 0.03982488691194447,
+        "max_step": 268,
+        "median": 0.03352614104792504
+      },
+      "actuator_force_Nm": {
+        "min": 0.025347839934276688,
+        "min_step": 1301,
+        "max": 0.03982488691194447,
+        "max_step": 268,
+        "median": 0.03352614104792504
+      },
+      "pair_tau6_estimate_Nm": {
+        "min": 0.0,
+        "min_step": 251,
+        "max": 0.0,
+        "max_step": 251,
+        "median": 0.0
+      }
+    }
+  },
+  "contact_1315_1401_summary": {
+    "count": 87,
+    "first": {
+      "step": 1315,
+      "time_s": 2.629999999999932,
+      "phase": "approach_high",
+      "macro": 52,
+      "source_macro": 31,
+      "repeat_index": 0,
+      "target_rad": -0.4758431669313546,
+      "q6_rad": -0.3927630040185861,
+      "q6_velocity_rad_s": -0.13419712725475585,
+      "target_minus_q6_rad": -0.08308016291276848,
+      "absolute_error_rad": 0.08308016291276848,
+      "ctrl_Nm": 0.025370082686486415,
+      "actuator_force_Nm": 0.025370082686486415,
+      "pair_contact_count": 1,
+      "pair_tau6_estimate_Nm": 0.006061323623145707
+    },
+    "last": {
+      "step": 1401,
+      "time_s": 2.801999999999913,
+      "phase": "approach_high",
+      "macro": 56,
+      "source_macro": 33,
+      "repeat_index": 0,
+      "target_rad": -0.504082815050093,
+      "q6_rad": -0.39249262789405087,
+      "q6_velocity_rad_s": 0.00017730360017148542,
+      "target_minus_q6_rad": -0.11159018715604213,
+      "absolute_error_rad": 0.11159018715604213,
+      "ctrl_Nm": 0.02332717603494779,
+      "actuator_force_Nm": 0.02332717603494779,
+      "pair_contact_count": 1,
+      "pair_tau6_estimate_Nm": 0.002315667902991765
+    },
+    "statistics": {
+      "q6_velocity_rad_s": {
+        "min": -0.13419712725475585,
+        "min_step": 1315,
+        "max": 0.028861570583367017,
+        "max_step": 1336,
+        "median": 0.0007122911139398969
+      },
+      "absolute_error_rad": {
+        "min": 0.08206095954500575,
+        "min_step": 1325,
+        "max": 0.11159018715604213,
+        "max_step": 1401,
+        "median": 0.09740998863687417
+      },
+      "ctrl_Nm": {
+        "min": 0.02332717603494779,
+        "min_step": 1401,
+        "max": 0.025370082686486415,
+        "max_step": 1315,
+        "median": 0.023884844285110913
+      },
+      "actuator_force_Nm": {
+        "min": 0.02332717603494779,
+        "min_step": 1401,
+        "max": 0.025370082686486415,
+        "max_step": 1315,
+        "median": 0.023884844285110913
+      },
+      "pair_tau6_estimate_Nm": {
+        "min": 0.0015379903077793185,
+        "min_step": 1350,
+        "max": 0.006061323623145707,
+        "max_step": 1315,
+        "median": 0.002008614843663509
+      }
+    }
+  },
+  "contact_statistics": {
+    "tau6_net_internal_estimate_Nm": {
+      "min": 0.0015379903077793185,
+      "min_step": 1350,
+      "max": 0.006061323623145707,
+      "max_step": 1315,
+      "median": 0.002008614843663509
+    },
+    "tau6_normal_Nm": {
+      "min": 0.0023046769355784084,
+      "min_step": 1400,
+      "max": 0.008277722355114526,
+      "max_step": 1321,
+      "median": 0.002666707909665071
+    },
+    "tau6_tangential_Nm": {
+      "min": -0.0048356614441192915,
+      "min_step": 1323,
+      "max": 0.002460742192718098,
+      "max_step": 1315,
+      "median": -0.0006732695018550457
+    },
+    "tau6_over_recorded_actuator_force": {
+      "min": 0.06330854265886281,
+      "min_step": 1350,
+      "max": 0.23891619503370093,
+      "max_step": 1315,
+      "median": 0.08406734217384917
+    },
+    "tau6_normal_over_recorded_actuator_force": {
+      "min": 0.09666566589137131,
+      "min_step": 1400,
+      "max": 0.3339516462483837,
+      "max_step": 1321,
+      "median": 0.11040045772266686
+    },
+    "point_distance_to_pivot_m": {
+      "min": 0.03234769483193263,
+      "min_step": 1324,
+      "max": 0.032355674400425735,
+      "max_step": 1401,
+      "median": 0.03235529665347018
+    },
+    "point_distance_to_axis_m": {
+      "min": 0.022820180496739142,
+      "min_step": 1322,
+      "max": 0.022829459783397232,
+      "max_step": 1401,
+      "median": 0.0228290216526692
+    }
+  },
+  "first_absolute_error_above_rad": {
+    "0.01": {
+      "step": 301,
+      "time_s": 0.6020000000000004,
+      "phase": "approach_high",
+      "macro": 12,
+      "source_macro": 11,
+      "repeat_index": 0,
+      "target_rad": -0.19344668574397098,
+      "q6_rad": -0.18101373664474393,
+      "q6_velocity_rad_s": -0.027106937331005557,
+      "target_minus_q6_rad": -0.012432949099227042,
+      "absolute_error_rad": 0.012432949099227042,
+      "ctrl_Nm": 0.03924614053023781,
+      "actuator_force_Nm": 0.03924614053023781,
+      "pair_contact_count": 0,
+      "pair_tau6_estimate_Nm": 0.0
+    },
+    "0.05": {
+      "step": 551,
+      "time_s": 1.1020000000000008,
+      "phase": "approach_high",
+      "macro": 22,
+      "source_macro": 16,
+      "repeat_index": 0,
+      "target_rad": -0.2640458060408169,
+      "q6_rad": -0.21027933398719093,
+      "q6_velocity_rad_s": -0.08084479556174229,
+      "target_minus_q6_rad": -0.053766472053625974,
+      "absolute_error_rad": 0.053766472053625974,
+      "ctrl_Nm": 0.03661445133534388,
+      "actuator_force_Nm": 0.03661445133534388,
+      "pair_contact_count": 0,
+      "pair_tau6_estimate_Nm": 0.0
+    },
+    "0.08": {
+      "step": 1001,
+      "time_s": 2.002000000000001,
+      "phase": "approach_high",
+      "macro": 40,
+      "source_macro": 25,
+      "repeat_index": 0,
+      "target_rad": -0.3911242225751395,
+      "q6_rad": -0.3096470634963524,
+      "q6_velocity_rad_s": -0.12340554606145654,
+      "target_minus_q6_rad": -0.08147715907878711,
+      "absolute_error_rad": 0.08147715907878711,
+      "ctrl_Nm": 0.02977353638285444,
+      "actuator_force_Nm": 0.02977353638285444,
+      "pair_contact_count": 0,
+      "pair_tau6_estimate_Nm": 0.0
+    },
+    "0.1": {
+      "step": 1401,
+      "time_s": 2.801999999999913,
+      "phase": "approach_high",
+      "macro": 56,
+      "source_macro": 33,
+      "repeat_index": 0,
+      "target_rad": -0.504082815050093,
+      "q6_rad": -0.39249262789405087,
+      "q6_velocity_rad_s": 0.00017730360017148542,
+      "target_minus_q6_rad": -0.11159018715604213,
+      "absolute_error_rad": 0.11159018715604213,
+      "ctrl_Nm": 0.02332717603494779,
+      "actuator_force_Nm": 0.02332717603494779,
+      "pair_contact_count": 1,
+      "pair_tau6_estimate_Nm": 0.002315667902991765
+    }
+  },
+  "stop_arithmetic": {
+    "target_delta_rad": -0.01411982405936918,
+    "actual_q6_delta_rad": 3.710645850585337e-07,
+    "absolute_error_delta_rad": 0.014120195123954238,
+    "new_q6_vs_previous_target_error_rad": 0.09747036309667295,
+    "note": "Arithmetic identity on saved post-step states; not a dynamical counterfactual."
+  },
+  "interpretation": [
+    "All 87 net pair torque estimates are positive and oppose the requested decreasing-q6 direction.",
+    "Normal-only torque overstates net torque in most rows because tangential forces partly cancel it.",
+    "J6 tracking lag is present before the pair first appears; precontact max and checkpoints are retained.",
+    "The temporal coincidence of near-stall and contact supports interference as a contributor hypothesis, not a unique causal explanation.",
+    "The positive motor ctrl includes the existing controller/bias compensation; its sign alone does not identify desired acceleration."
+  ],
+  "limitations": [
+    "This is the contribution of the ONE specified internal contact pair, not recorded qfrc_constraint or a sum over all constraints.",
+    "Cached body poses, frame, position and solved contact force belong to the final RK4 internal stage.",
+    "State qpos/qvel are post-integration; no post-step forward was run. Force-versus-qvel and force-versus-error comparisons are descriptive and not exactly synchronous.",
+    "Recorded ctrl is the control used for the step and actuator_force is the saved last-stage value; the controller evaluated from a preceding state, so post-step error is not its exact input.",
+    "A force ratio to total recorded actuator output is not a ratio to net servo effort after bias compensation, nor to inertial, gravity, damping or Coriolis terms.",
+    "No cached qfrc_constraint, qfrc_bias, qacc, mass matrix or full constraint Jacobian was saved here, so acceleration causality and a solver-level counterfactual cannot be reconstructed.",
+    "No force, friction, filtering, threshold, controller, path or source-asset change is proposed or executed."
+  ]
+}
