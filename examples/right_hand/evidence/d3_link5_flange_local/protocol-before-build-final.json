@@ -1,0 +1,21 @@
+{
+  "base_commit": "849f10a51ece64e5de2236f6b6d7c7f11f783ff8",
+  "authorization": "https://github.com/LeoandDream/Nero_DH116_assets/pull/4#issuecomment-6263431193",
+  "candidate_budget": 1,
+  "new_physics_steps_budget": 0,
+  "model": "examples/right_hand/candidates/finger13_local/model.xml",
+  "model_sha256": "b27f4f86fbaeacd2bb925463f39f67181ef7db12963c4d9f7fc01797a7924d1b",
+  "native_y_planes_m": [
+    -0.02290000021457672,
+    -0.015800001099705696
+  ],
+  "new_parts": {
+    "robot0_candidate_nero_link5_4": 3,
+    "robot0_source_flange_part_2": 2
+  },
+  "builder_sha256_before_generation": "af3a0328538b92f8d37054cf45bbbd1b27ec8fc65f43678556e915402b6cf6e7",
+  "source_plan_uncompressed_sha256": "5b72712d7b2eb42dc20705ac21761404d5f7519693bedf6d2b080cd3e78d2370",
+  "scope": "Retain every original source-face fragment; no shrink/exclude/parameter or geometry sweep. One construction then static evidence; fail-stop if unable to preserve coverage and clear false contact.",
+  "pre_generation_code_correction": "First builder invocation stopped before output directory or any geometry was created: unchanged mount has two box and one cylinder collision geoms, not meshes. Record those exact primitive attributes in frozen manifest. Partition construction and source inputs unchanged.",
+  "generated_geometry_candidates_before_this_launch": 0
+}

@@ -1,0 +1,149 @@
+{
+  "schema": "d3-local-pair-final-verification-v1",
+  "base_commit": "849f10a51ece64e5de2236f6b6d7c7f11f783ff8",
+  "overall_candidate_acceptance": "FAIL",
+  "candidate_generation_count": 1,
+  "new_dynamics_attempts": 0,
+  "dynamics_not_run": true,
+  "primary_blocker": {
+    "pose": "m040_quarter3",
+    "source_STL_gap_m": 0.00353286288836401,
+    "new_strict_crossing": true,
+    "planning_coverage": {
+      "cached_RK4_completed": 87,
+      "saved_post_FK_completed": 13,
+      "planning_poses_fully_checked": 163,
+      "first_failed_planning_sample_index_one_based": 164,
+      "planning_poses_after_failure_not_checked": 757,
+      "planning_total": 921
+    }
+  },
+  "raw_source_preservation": "PASS",
+  "compiled_source_preservation": "FAIL_AT_UNCHANGED_NUMERICAL_TOLERANCE",
+  "compiled_invariants_passed": true,
+  "protected_fields": 4667,
+  "original_tracked_files_unchanged": 633,
+  "source_and_candidate_input_hashes_current_and_equal": true,
+  "static_api_audits": {
+    "invariants": {
+      "allowed_api_calls": {
+        "mj_id2name": 1646
+      },
+      "forbidden_api_attempts": [],
+      "physics_steps": 0,
+      "constraint_solves": 0,
+      "forward_calls": 0,
+      "collision_calls": 0
+    },
+    "poses": {
+      "allowed_api_calls": {
+        "mj_name2id": 15,
+        "mj_id2name": 31,
+        "mj_kinematics": 1868
+      },
+      "forbidden_api_attempts": [],
+      "physics_steps": 0,
+      "constraint_solves": 0,
+      "forward_calls": 0,
+      "collision_calls": 0
+    },
+    "first_failure_classification": {
+      "allowed_api_calls": {
+        "mj_name2id": 5,
+        "mj_id2name": 5
+      },
+      "forbidden_api_attempts": [],
+      "physics_steps": 0,
+      "constraint_solves": 0,
+      "forward_calls": 0,
+      "collision_calls": 0
+    },
+    "quality": {
+      "allowed_api_calls": {
+        "mj_name2id": 33,
+        "mj_id2name": 33
+      },
+      "forbidden_api_attempts": [],
+      "physics_steps": 0,
+      "constraint_solves": 0,
+      "forward_calls": 0,
+      "collision_calls": 0
+    }
+  },
+  "pose_FK_calls": 1868,
+  "FK_before_geometric_loop": "934 existing qpos x baseline/candidate; later geometry not certified",
+  "unit_tests": {
+    "command": "/data_robot/verification/nero_dh116_right/.reference-env/bin/python -m unittest discover -s tests -p test_link5_flange_local.py -v",
+    "exit_code": 0,
+    "tests_run": 7,
+    "failures": 0,
+    "expected_guard_probes": [
+      "MjData(None)",
+      "mj_step(None,None)"
+    ],
+    "guard_probes_executed_no_physics": true
+  },
+  "new_python_AST_checked": [
+    "tools/build_link5_flange_local.py",
+    "tests/test_link5_flange_local.py",
+    "examples/right_hand/link5_flange_audit.py",
+    "examples/right_hand/link5_flange_poses.py",
+    "examples/right_hand/link5_flange_quality.py",
+    "examples/right_hand/evidence/d3_link5_flange_local/plot_comparison.py",
+    "examples/right_hand/evidence/d3_link5_flange_local/poses/classify_first_failure.py"
+  ],
+  "environments": {
+    "invariants_poses_unit_tests": {
+      "executable": "/data_robot/verification/nero_dh116_right/.reference-env/bin/python",
+      "python": "3.11.16"
+    },
+    "quality": {
+      "quality_actual_environment": {
+        "sys_executable": "/data_robot/projects/nero_gripper_assets/.venv/bin/python",
+        "python": "3.11.9",
+        "mujoco": "3.2.3",
+        "numpy": "1.26.4",
+        "scipy": "1.15.3"
+      },
+      "poses_and_tests_environment_root_verified": {
+        "sys_executable": "/data_robot/verification/nero_dh116_right/.reference-env/bin/python",
+        "python": "3.11.16",
+        "mujoco": "3.2.3",
+        "numpy": "1.26.4",
+        "scipy": "1.15.3",
+        "verification_source": "Root agent read-only verification; no re-run or environment changes"
+      },
+      "comparison": {
+        "python_patch_version_identical": false,
+        "mujoco_numpy_scipy_declared_versions_identical": true,
+        "binary_build_identity_verified": false
+      },
+      "limits": [
+        "This quality calculation ran in quality_actual_environment, not the poses/tests interpreter.",
+        "No package installation, environment modification or recomputation was performed.",
+        "Compiled geometry residuals apply to the recorded quality environment."
+      ]
+    },
+    "common_packages": {
+      "mujoco": "3.2.3",
+      "numpy": "1.26.4",
+      "scipy": "1.15.3"
+    },
+    "both_mujoco_shared_library_sha256": "78f5455cbcbc2b4c1452f09a096aaa1d79893d63bbeb0bad93f610ddde19d264"
+  },
+  "independent_code_review": "Read-only graph/LP, first-failure stopping/counts, source coverage/subset dependency review; no material issue overturning FAIL; compiled volume is not an acceptance input.",
+  "scope": "Only added diagnostic candidate, reproducibility code and evidence. No changes to baseline tracked files, formal models, main, user README, controls, thresholds, filters, actions, or historical logs.",
+  "result_semantics": {
+    "old_1401_control": "FAIL_UNCHANGED",
+    "old_7000_full_range": "FAIL_UNCHANGED",
+    "grasp": "UNKNOWN_NOT_RUN",
+    "native_task_result": false,
+    "strict_grasp_success_claim": false
+  },
+  "limitations": [
+    "Source surfaces are not watertight; source-solid containment remains UNKNOWN.",
+    "Finite planning geometry coverage: 163 complete, one partial FAIL, 757 untested.",
+    "Compiled subset/coverage fails at unchanged numerical tolerance; raw source preservation is not compiled equivalence.",
+    "Audit counts cover instrumented analysis API calls; deliberate unit-test guard probes are separately disclosed."
+  ]
+}

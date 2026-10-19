@@ -1,0 +1,2970 @@
+{
+  "schema": "one-link5-flange-source-quality-v1",
+  "old_model_sha256": "b27f4f86fbaeacd2bb925463f39f67181ef7db12963c4d9f7fc01797a7924d1b",
+  "candidate_model_sha256": "1b2530d923b446605492b43652dd5a3200fd755674ba17a54f0c961cde362b39",
+  "numeric_plane_tolerance_m": 1e-10,
+  "tolerance_unchanged": true,
+  "physics_steps": 0,
+  "call_audit": {
+    "allowed_apis": [
+      "mj_id2name",
+      "mj_name2id"
+    ],
+    "blocked_apis": [
+      "mj_Euler",
+      "mj_RungeKutta",
+      "mj_addContact",
+      "mj_addM",
+      "mj_angmomMat",
+      "mj_applyFT",
+      "mj_camlight",
+      "mj_checkAcc",
+      "mj_checkPos",
+      "mj_checkVel",
+      "mj_collision",
+      "mj_comPos",
+      "mj_comVel",
+      "mj_compareFwdInv",
+      "mj_constraintUpdate",
+      "mj_contactForce",
+      "mj_crb",
+      "mj_defaultLROpt",
+      "mj_defaultOption",
+      "mj_defaultSolRefImp",
+      "mj_defaultVisual",
+      "mj_differentiatePos",
+      "mj_energyPos",
+      "mj_energyVel",
+      "mj_factorM",
+      "mj_flex",
+      "mj_forward",
+      "mj_forwardSkip",
+      "mj_fullM",
+      "mj_fwdAcceleration",
+      "mj_fwdActuation",
+      "mj_fwdConstraint",
+      "mj_fwdPosition",
+      "mj_fwdVelocity",
+      "mj_geomDistance",
+      "mj_getState",
+      "mj_getTotalmass",
+      "mj_implicit",
+      "mj_integratePos",
+      "mj_invConstraint",
+      "mj_invPosition",
+      "mj_invVelocity",
+      "mj_inverse",
+      "mj_inverseSkip",
+      "mj_isDual",
+      "mj_isPyramidal",
+      "mj_isSparse",
+      "mj_island",
+      "mj_jac",
+      "mj_jacBody",
+      "mj_jacBodyCom",
+      "mj_jacDot",
+      "mj_jacGeom",
+      "mj_jacPointAxis",
+      "mj_jacSite",
+      "mj_jacSubtreeCom",
+      "mj_kinematics",
+      "mj_loadAllPluginLibraries",
+      "mj_loadPluginLibrary",
+      "mj_local2Global",
+      "mj_makeConstraint",
+      "mj_mulJacTVec",
+      "mj_mulJacVec",
+      "mj_mulM",
+      "mj_mulM2",
+      "mj_multiRay",
+      "mj_normalizeQuat",
+      "mj_objectAcceleration",
+      "mj_objectVelocity",
+      "mj_passive",
+      "mj_printData",
+      "mj_printFormattedData",
+      "mj_printFormattedModel",
+      "mj_printModel",
+      "mj_printSchema",
+      "mj_projectConstraint",
+      "mj_ray",
+      "mj_rayHfield",
+      "mj_rayMesh",
+      "mj_referenceConstraint",
+      "mj_resetCallbacks",
+      "mj_resetData",
+      "mj_resetDataDebug",
+      "mj_resetDataKeyframe",
+      "mj_rne",
+      "mj_rnePostConstraint",
+      "mj_saveLastXML",
+      "mj_saveModel",
+      "mj_sensorAcc",
+      "mj_sensorPos",
+      "mj_sensorVel",
+      "mj_setConst",
+      "mj_setKeyframe",
+      "mj_setLengthRange",
+      "mj_setState",
+      "mj_setTotalmass",
+      "mj_sizeModel",
+      "mj_solveM",
+      "mj_solveM2",
+      "mj_stateSize",
+      "mj_step",
+      "mj_step1",
+      "mj_step2",
+      "mj_subtreeVel",
+      "mj_tendon",
+      "mj_transmission",
+      "mj_version",
+      "mj_versionString"
+    ],
+    "allowed_api_calls": {
+      "mj_name2id": 33,
+      "mj_id2name": 33
+    },
+    "forbidden_api_attempts": [],
+    "physics_steps": 0,
+    "constraint_solves": 0,
+    "resets": 0,
+    "forward_calls": 0,
+    "collision_calls": 0,
+    "model_constructor_calls": 2,
+    "data_constructor_calls": 0,
+    "forbidden_constructor_attempts": []
+  },
+  "input_sha256_before": {
+    "examples/right_hand/candidates/finger13_local/model.xml": "b27f4f86fbaeacd2bb925463f39f67181ef7db12963c4d9f7fc01797a7924d1b",
+    "examples/right_hand/candidates/link5_flange_local/manifest.json": "373cbab3606677cc01610a74d00cb257adece2bb547c959fbf17499a37b779f7",
+    "examples/right_hand/candidates/link5_flange_local/meshes/robot0_flange_local_00.obj": "b86b2b38468b27b22ecbabb0880f65fc3eeac8495e4c22636cff764fe17db4ef",
+    "examples/right_hand/candidates/link5_flange_local/meshes/robot0_flange_local_01.obj": "4fd5ff0c3bf9788eed291e70867e6e9f0d2e7cd0592a0efcaef46317ca858c62",
+    "examples/right_hand/candidates/link5_flange_local/meshes/robot0_link5_local_00.obj": "631b2ae8b5b706b019c82d3049d248792292ae678b728ab5aa6a1202177c9548",
+    "examples/right_hand/candidates/link5_flange_local/meshes/robot0_link5_local_01.obj": "631e4f74493fea04724c2a566dc50e72f314cff5561c3a3b93c1d315cdba28da",
+    "examples/right_hand/candidates/link5_flange_local/meshes/robot0_link5_local_02.obj": "20847b190fe32c1b3eececc0959799f2dddd2dc893c006aaafff72c985a33e76",
+    "examples/right_hand/candidates/link5_flange_local/model.xml": "1b2530d923b446605492b43652dd5a3200fd755674ba17a54f0c961cde362b39",
+    "examples/right_hand/evidence/d3_geometry/triangle/surface_geometry.py": "21b91daa9ccfc7ddedc91ca4a95eb3f2f1b72b720a5619b2bb59144f39de71de",
+    "examples/right_hand/evidence/d3_link5_flange/geometry-results.json.gz": "5802dea40513295413359cd340f39c4d37a04bc4662d98e027d6c594d50f4a45",
+    "examples/right_hand/evidence/d3_link5_flange_local/source-partition-plan.json.gz": "5ff15a6136f9f822ffc3d62d5b107d2f4f1a22e43017a0bc9fee226e96cfe45f",
+    "examples/right_hand/finger13_quality.py": "5dfb459f7277fad888352282147d5bf727977a3ac1f11c84ea54e08c3d292e9b",
+    "examples/right_hand/link5_flange_poses.py": "3e6804238de7402b8e9867035422dbc0aa690efe8bab648b153a095b68807290",
+    "examples/right_hand/link5_flange_quality.py": "c6b44c033c95bed6aac758d64ec2198fb5a74f0b0dc7e74b95aeaf750c431eab",
+    "examples/right_hand/proxy76_contacts.py": "97986d2c2f7138721c67cc3cb5adefc93c817d2429bef059bd69b4e89cfa9478",
+    "examples/right_hand/proxy76_geometry.py": "5c284fe872519406007bbab1fcf3d5b8b167ec9a377585f79e66a1b559170341",
+    "examples/right_hand/proxy76_validate.py": "aa9224ee4daf5f8d9355a40ab8b26f878d50ddd82ca0808d6e9d52855fc6948c",
+    "meshes/mount/robot0_source_flange_part_0-7c6df993.obj": "7c6df99313f122093d0632fd9956e21da9592c2a7b53e267bb1ca60a485afb90",
+    "meshes/mount/robot0_source_flange_part_1-24b510b6.obj": "24b510b6d7d21fb3ecedb42bb8b319eda76bc658cccc6564ebc897729632b0d6",
+    "meshes/mount/robot0_source_flange_part_2-c5005972.obj": "c500597223128b393b9ffc527bff96c8f9d7b782a258a2dcc27459b199310a0e",
+    "meshes/mount/robot0_source_flange_part_3-a1e2dbb0.obj": "a1e2dbb01a0dc3e71497b725e88fe799aa4658d3952c56a33c61424f72bc4b54",
+    "meshes/mount/robot0_source_flange_part_4-5bfdf6a3.obj": "5bfdf6a3094c061466d310f3abee69e801a366487b64fb88db3179a04f361279",
+    "meshes/mount/robot0_source_flange_part_5-6668a712.obj": "6668a7126ea4beb7012f249a7a037b3ed1edb254cae75957bb19aee1d3143d70",
+    "meshes/mount/robot0_source_flange_part_6-91ccc782.obj": "91ccc782f3402baa42be3f07ccb62534b85d1375fec76e170afa009e48cc6376",
+    "meshes/mount/robot0_source_flange_part_7-4853dcf0.obj": "4853dcf02b546afa7e65c663307078defec264e1cbb0fbcd77bed51ecf9cce96",
+    "meshes/nero/robot0_candidate_nero_link5_0-8e811e87.obj": "8e811e875673123e2bd95c3c781864f0ef43d0b011d867cc0c167a5851eaae2e",
+    "meshes/nero/robot0_candidate_nero_link5_1-e06d88f5.obj": "e06d88f549456d261db9641581cfa01d93601cbf7b06e9d050a3df23761c9798",
+    "meshes/nero/robot0_candidate_nero_link5_2-3d339924.obj": "3d33992483c63c40ead4a738ae1ca381586b3f98afaf4771b0266308eb53fd0f",
+    "meshes/nero/robot0_candidate_nero_link5_3-208022a5.obj": "208022a56ac77703f8734d7d499a1035365a31e565f48fca7a9fb2ac2be8b277",
+    "meshes/nero/robot0_candidate_nero_link5_4-384fc2f2.obj": "384fc2f28ced1c7d03201cea03eb3202ec717e4a91648cd2f753e8ce57e880a6",
+    "meshes/nero/robot0_candidate_nero_link5_5-6139f37c.obj": "6139f37c5ca00058845dc786d366b19e09d8c4a6a0303729d4f6b034adc107ec",
+    "meshes/nero/robot0_candidate_nero_link5_6-849a2feb.obj": "849a2feb5135bb01a681527a5d1309dbb8b6439a49bbdb4792816167a14a18c9",
+    "meshes/nero/source/gripper_flange-186697a7.stl": "186697a73e7cafd9fd41d96f1eea9b34b444c058b9561fb2e3ea439c835ae2e8",
+    "meshes/nero/source/link5-dc497f5a.stl": "dc497f5a9bab2d0d314250134d4ec86617abea7205d122db41b765acdb86ae7e",
+    "tools/build_right_proxy76.py": "ef858f59bf57b73657f27ed50e623ba361ae30bee588c9be46d7f88b53bf025c"
+  },
+  "links": {
+    "robot0_link5": {
+      "source_file": "meshes/nero/source/link5-dc497f5a.stl",
+      "source_sha256": "dc497f5a9bab2d0d314250134d4ec86617abea7205d122db41b765acdb86ae7e",
+      "source_triangle_count": 36200,
+      "original_assigned_source_triangle_count": 2570,
+      "old_part_count": 7,
+      "new_part_count": 9,
+      "raw_float64": {
+        "report": "robot0_link5-raw_float64.json.gz",
+        "old_full_source_coverage": {
+          "source_triangle_count": 36200,
+          "source_area_m2": 0.11876117993678077,
+          "wholly_covered_in_one_convex_part_triangles": 36200,
+          "triangles_checked_by_continuous_polygon_subtraction": 0,
+          "uncovered_source_triangle_count": 0,
+          "uncovered_fragments": 0,
+          "uncovered_area_m2": 0.0,
+          "uncovered_source_area_fraction": 0.0,
+          "largest_uncovered_fragment_witnesses": [],
+          "all_source_triangles_covered_with_numerical_tolerance": true,
+          "numeric_plane_tolerance_m": 1e-10,
+          "limits": [
+            "Float64 halfspace clipping uses the unchanged existing numerical tolerance, not a physical acceptance threshold.",
+            "Coverage is source triangle surface inclusion, not source-solid equivalence or a global Hausdorff bound."
+          ]
+        },
+        "new_full_source_coverage": {
+          "source_triangle_count": 36200,
+          "source_area_m2": 0.11876117993678077,
+          "wholly_covered_in_one_convex_part_triangles": 36154,
+          "triangles_checked_by_continuous_polygon_subtraction": 46,
+          "uncovered_source_triangle_count": 0,
+          "uncovered_fragments": 0,
+          "uncovered_area_m2": 0.0,
+          "uncovered_source_area_fraction": 0.0,
+          "largest_uncovered_fragment_witnesses": [],
+          "all_source_triangles_covered_with_numerical_tolerance": true,
+          "numeric_plane_tolerance_m": 1e-10,
+          "limits": [
+            "Float64 halfspace clipping uses the unchanged existing numerical tolerance, not a physical acceptance threshold.",
+            "Coverage is source triangle surface inclusion, not source-solid equivalence or a global Hausdorff bound."
+          ],
+          "newly_uncovered_previously_covered_source_area_m2": 0.0,
+          "newly_uncovered_previously_covered_source_area_fraction": 0.0,
+          "coverage_change_method": "continuous (source triangle outside repaired union) intersected with frozen old convex hull; numerical tolerance only"
+        },
+        "original_assigned_faces_new_local_coverage": {
+          "source_triangle_count": 2570,
+          "source_area_m2": 0.00793225469603154,
+          "wholly_covered_in_one_convex_part_triangles": 2454,
+          "triangles_checked_by_continuous_polygon_subtraction": 116,
+          "uncovered_source_triangle_count": 0,
+          "uncovered_fragments": 0,
+          "uncovered_area_m2": 0.0,
+          "uncovered_source_area_fraction": 0.0,
+          "largest_uncovered_fragment_witnesses": [],
+          "all_source_triangles_covered_with_numerical_tolerance": true,
+          "numeric_plane_tolerance_m": 1e-10,
+          "limits": [
+            "Float64 halfspace clipping uses the unchanged existing numerical tolerance, not a physical acceptance threshold.",
+            "Coverage is source triangle surface inclusion, not source-solid equivalence or a global Hausdorff bound."
+          ],
+          "newly_uncovered_previously_covered_source_area_m2": 0.0,
+          "newly_uncovered_previously_covered_source_area_fraction": 0.0,
+          "coverage_change_method": "continuous (source triangle outside repaired union) intersected with frozen old convex hull; numerical tolerance only"
+        },
+        "new_parts_within_old_replaced_hull": {
+          "reference": "robot0_candidate_nero_link5_4",
+          "all_parts_contained_with_numerical_tolerance": true,
+          "parts": [
+            {
+              "part": "robot0_link5_local_00",
+              "hull_vertex_count": 254,
+              "contained_with_numerical_tolerance": true,
+              "vertices_outside_numerical_tolerance": 0,
+              "max_reference_halfspace_violation_m": 6.938893903907228e-18,
+              "max_violation_witness": {
+                "point_m": [
+                  0.004857576452195644,
+                  -0.02776816487312317,
+                  -0.028834663331508636
+                ],
+                "reference_plane": [
+                  0.18194807422255868,
+                  -0.9735813323715319,
+                  -0.13796480545550296,
+                  -0.03189656235245998
+                ],
+                "reference_halfspace_violation_m": 6.938893903907228e-18,
+                "nearest_reference_boundary_distance_m": 0.0,
+                "nearest_reference_boundary_point_m": [
+                  0.004857576452195644,
+                  -0.02776816487312317,
+                  -0.028834663331508636
+                ],
+                "nearest_reference_boundary_triangle_id": 64
+              }
+            },
+            {
+              "part": "robot0_link5_local_01",
+              "hull_vertex_count": 48,
+              "contained_with_numerical_tolerance": true,
+              "vertices_outside_numerical_tolerance": 0,
+              "max_reference_halfspace_violation_m": 6.938893903907228e-18,
+              "max_violation_witness": {
+                "point_m": [
+                  0.009999999776482582,
+                  -0.015800001099705696,
+                  -0.1065090149641037
+                ],
+                "reference_plane": [
+                  0.18194807422255868,
+                  -0.9735813323715319,
+                  -0.13796480545550296,
+                  -0.03189656235245998
+                ],
+                "reference_halfspace_violation_m": 6.938893903907228e-18,
+                "nearest_reference_boundary_distance_m": 0.0,
+                "nearest_reference_boundary_point_m": [
+                  0.009999999776482582,
+                  -0.015800001099705696,
+                  -0.1065090149641037
+                ],
+                "nearest_reference_boundary_triangle_id": 307
+              }
+            },
+            {
+              "part": "robot0_link5_local_02",
+              "hull_vertex_count": 83,
+              "contained_with_numerical_tolerance": true,
+              "vertices_outside_numerical_tolerance": 0,
+              "max_reference_halfspace_violation_m": 1.3877787807814457e-17,
+              "max_violation_witness": {
+                "point_m": [
+                  -0.012761703692376614,
+                  -0.008038296364247799,
+                  -0.10674731433391571
+                ],
+                "reference_plane": [
+                  -0.707104264796786,
+                  -0.0,
+                  -0.7071092975673539,
+                  -0.08450587356280904
+                ],
+                "reference_halfspace_violation_m": 1.3877787807814457e-17,
+                "nearest_reference_boundary_distance_m": 0.0,
+                "nearest_reference_boundary_point_m": [
+                  -0.012761703692376614,
+                  -0.008038296364247799,
+                  -0.10674731433391571
+                ],
+                "nearest_reference_boundary_triangle_id": 76
+              }
+            }
+          ],
+          "numeric_plane_tolerance_m": 1e-10,
+          "method": "all vertices of each actual part convex hull against every reference convex halfspace",
+          "limits": [
+            "Positive plane violations witness noncontainment; negative violations are plane margins, not distances to the reference boundary.",
+            "Source convex-hull containment does not establish source-solid inclusion or absence of groove/cavity capping."
+          ]
+        },
+        "inherited_vs_new_source_gaps": {
+          "old_uncovered_area_m2": 0.0,
+          "new_uncovered_area_m2": 0.0,
+          "newly_uncovered_previously_covered_area_m2": 0.0,
+          "new_uncovered_inherited_area_m2": 0.0,
+          "method": "New full-union uncovered source polygons intersected with the old replaced hull. Since every frozen old part is present in new full union, all remaining old coverage can only come from that hull."
+        },
+        "local_proxy_volume": {
+          "old_m3": 3.875547646786297e-05,
+          "new_m3": 3.0160788747182374e-05,
+          "removed_convex_proxy_volume_m3": 8.594687720680597e-06,
+          "reduction_fraction": 0.22176705085299445,
+          "method": "Signed tetrahedra of exposed oriented convex-union boundary; source solid volume is not inferred."
+        }
+      },
+      "compiled_mesh_graph": {
+        "report": "robot0_link5-compiled_mesh_graph.json.gz",
+        "old_full_source_coverage": {
+          "source_triangle_count": 36200,
+          "source_area_m2": 0.11876117993678077,
+          "wholly_covered_in_one_convex_part_triangles": 33716,
+          "triangles_checked_by_continuous_polygon_subtraction": 2484,
+          "uncovered_source_triangle_count": 2435,
+          "uncovered_fragments": 10833,
+          "uncovered_area_m2": 0.0061906023080655435,
+          "uncovered_source_area_fraction": 0.05212648031419812,
+          "largest_uncovered_fragment_witnesses": [
+            {
+              "source_triangle_id": 27728,
+              "uncovered_triangle_vertices_m": [
+                [
+                  -0.029802914708852768,
+                  0.0139479273930192,
+                  -0.0969199612736702
+                ],
+                [
+                  -0.030142769786044275,
+                  0.007212552870423045,
+                  -0.09690968701845926
+                ],
+                [
+                  -0.027260426955101263,
+                  0.006496523420078783,
+                  -0.06355276275700146
+                ]
+              ],
+              "uncovered_area_m2": 0.0001129042838393944,
+              "centroid_m": [
+                -0.0290687038166661,
+                0.009219001227840341,
+                -0.08579413701637696
+              ],
+              "centroid_membership_margin_m": 6.653556039459829e-10,
+              "centroid_distance_to_union_m": 6.653555990715719e-10,
+              "nearest_proxy_point_m": [
+                -0.029068703154682955,
+                0.009219001194349602,
+                -0.08579413707429724
+              ],
+              "nearest_proxy_triangle_id": 78
+            },
+            {
+              "source_triangle_id": 27716,
+              "uncovered_triangle_vertices_m": [
+                [
+                  -0.02742406725883484,
+                  0.00046391450450755656,
+                  -0.06354384869337082
+                ],
+                [
+                  -0.030142761450356534,
+                  0.0072123971344189445,
+                  -0.09690953469583242
+                ],
+                [
+                  -0.030240536057918536,
+                  0.0004725271206683186,
+                  -0.09690148272829151
+                ]
+              ],
+              "uncovered_area_m2": 0.00011282498641144554,
+              "centroid_m": [
+                -0.029269121589036634,
+                0.0027162795865316065,
+                -0.08578495537249825
+              ],
+              "centroid_membership_margin_m": 6.88091972289584e-10,
+              "centroid_distance_to_union_m": 6.880919767500152e-10,
+              "nearest_proxy_point_m": [
+                -0.029269120903457114,
+                0.002716279576516784,
+                -0.08578495543038601
+              ],
+              "nearest_proxy_triangle_id": 291
+            },
+            {
+              "source_triangle_id": 29167,
+              "uncovered_triangle_vertices_m": [
+                [
+                  -0.034468259662389755,
+                  -0.013797597959637642,
+                  -0.16849541664123535
+                ],
+                [
+                  -0.03310418128967285,
+                  -0.0143906744197011,
+                  -0.14562910795211792
+                ],
+                [
+                  -0.033495742827653885,
+                  -0.006967662367969751,
+                  -0.1456340104341507
+                ]
+              ],
+              "uncovered_area_m2": 8.512864971698357e-05,
+              "centroid_m": [
+                -0.03368939459323883,
+                -0.011718644915769497,
+                -0.153252845009168
+              ],
+              "centroid_membership_margin_m": 5.52126212804982e-10,
+              "centroid_distance_to_union_m": 5.521262097422346e-10,
+              "nearest_proxy_point_m": [
+                -0.0336893940428097,
+                -0.011718644886755732,
+                -0.15325284504125106
+              ],
+              "nearest_proxy_triangle_id": 295
+            },
+            {
+              "source_triangle_id": 29266,
+              "uncovered_triangle_vertices_m": [
+                [
+                  -0.01435226605913653,
+                  -0.033237281989985976,
+                  -0.12214783093787795
+                ],
+                [
+                  -0.007185415092141977,
+                  -0.03387206297074214,
+                  -0.12214702945723979
+                ],
+                [
+                  -0.006880848559065619,
+                  -0.03228818661524928,
+                  -0.09873764134989177
+                ]
+              ],
+              "uncovered_area_m2": 8.441172881818902e-05,
+              "centroid_m": [
+                -0.009472843236781376,
+                -0.0331325105253258,
+                -0.11434416724833651
+              ],
+              "centroid_membership_margin_m": 1.1555634227278233e-09,
+              "centroid_distance_to_union_m": 1.1555634229681147e-09,
+              "nearest_proxy_point_m": [
+                -0.009472843135060463,
+                -0.03313250937696379,
+                -0.11434416732735787
+              ],
+              "nearest_proxy_triangle_id": 644
+            },
+            {
+              "source_triangle_id": 29267,
+              "uncovered_triangle_vertices_m": [
+                [
+                  -0.006880846340209246,
+                  -0.03228817507624626,
+                  -0.09873747080564499
+                ],
+                [
+                  -0.007185416761785746,
+                  -0.03387207165360451,
+                  -0.12214715778827667
+                ],
+                [
+                  4.855068339818403e-15,
+                  -0.03254041075706482,
+                  -0.09905771166086197
+                ]
+              ],
+              "uncovered_area_m2": 8.081969664068691e-05,
+              "centroid_m": [
+                -0.0046887543673300456,
+                -0.0329002191623052,
+                -0.10664744675159454
+              ],
+              "centroid_membership_margin_m": 1.7479240589646228e-09,
+              "centroid_distance_to_union_m": 1.747924050362787e-09,
+              "nearest_proxy_point_m": [
+                -0.00468875430896294,
+                -0.03290021741939219,
+                -0.10664744687027905
+              ],
+              "nearest_proxy_triangle_id": 805
+            },
+            {
+              "source_triangle_id": 29265,
+              "uncovered_triangle_vertices_m": [
+                [
+                  -0.014352267496636853,
+                  -0.03323728189431277,
+                  -0.12214783160779423
+                ],
+                [
+                  -0.006880846340209246,
+                  -0.03228817507624626,
+                  -0.09873747080564499
+                ],
+                [
+                  -0.013728708590059828,
+                  -0.0316006046266112,
+                  -0.09873484076085176
+                ]
+              ],
+              "uncovered_area_m2": 8.077795332953161e-05,
+              "centroid_m": [
+                -0.011653940808968642,
+                -0.03237535386572341,
+                -0.10654004772476366
+              ],
+              "centroid_membership_margin_m": 8.448723838594407e-10,
+              "centroid_distance_to_union_m": 8.448723795244984e-10,
+              "nearest_proxy_point_m": [
+                -0.011653940724804522,
+                -0.03237535302725904,
+                -0.10654004778561785
+              ],
+              "nearest_proxy_triangle_id": 643
+            },
+            {
+              "source_triangle_id": 29143,
+              "uncovered_triangle_vertices_m": [
+                [
+                  -0.0012641849461942911,
+                  -0.03081403486430645,
+                  -0.07589399814605713
+                ],
+                [
+                  -0.006880846340209246,
+                  -0.03228817507624626,
+                  -0.09873747080564499
+                ],
+                [
+                  4.855068339818403e-15,
+                  -0.03254041075706482,
+                  -0.09905771166086197
+                ]
+              ],
+              "uncovered_area_m2": 7.974429558342498e-05,
+              "centroid_m": [
+                -0.0027150104287995604,
+                -0.03188087356587251,
+                -0.09122972687085469
+              ],
+              "centroid_membership_margin_m": 9.37743344781028e-10,
+              "centroid_distance_to_union_m": 9.377433439027679e-10,
+              "nearest_proxy_point_m": [
+                -0.0027150103976969985,
+                -0.03188087263111299,
+                -0.09122972693882417
+              ],
+              "nearest_proxy_triangle_id": 914
+            },
+            {
+              "source_triangle_id": 29282,
+              "uncovered_triangle_vertices_m": [
+                [
+                  -0.03363240761017279,
+                  0.009017997295878028,
+                  -0.14721872194629965
+                ],
+                [
+                  -0.033984596382089824,
+                  0.015600440953842594,
+                  -0.15737866208943146
+                ],
+                [
+                  -0.034760121355981353,
+                  0.010800410686701633,
+                  -0.1676678390563773
+                ]
+              ],
+              "uncovered_area_m2": 5.838577013763139e-05,
+              "centroid_m": [
+                -0.034125708449414656,
+                0.011806282978807418,
+                -0.1574217410307028
+              ],
+              "centroid_membership_margin_m": 4.166512308778625e-10,
+              "centroid_distance_to_union_m": 4.166512302302178e-10,
+              "nearest_proxy_point_m": [
+                -0.03412570803374677,
+                0.01180628296362313,
+                -0.15742174105494927
+              ],
+              "nearest_proxy_triangle_id": 116
+            },
+            {
+              "source_triangle_id": 29350,
+              "uncovered_triangle_vertices_m": [
+                [
+                  -0.03358841970579703,
+                  0.00687196288399454,
+                  -0.14564766206153956
+                ],
+                [
+                  -0.03364749625325203,
+                  0.0004717992851510644,
+                  -0.14564049243927002
+                ],
+                [
+                  -0.032449184327551756,
+                  0.00047608416151245835,
+                  -0.127444212159073
+                ]
+              ],
+              "uncovered_area_m2": 5.8358237210253934e-05,
+              "centroid_m": [
+                -0.03322836676220028,
+                0.0026066154435526873,
+                -0.13957745555329418
+              ],
+              "centroid_membership_margin_m": 3.5391602495882246e-10,
+              "centroid_distance_to_union_m": 3.5391602264422346e-10,
+              "nearest_proxy_point_m": [
+                -0.033228366409064375,
+                0.0026066154402670833,
+                -0.13957745557654908
+              ],
+              "nearest_proxy_triangle_id": 293
+            },
+            {
+              "source_triangle_id": 29349,
+              "uncovered_triangle_vertices_m": [
+                [
+                  -0.03202982110679694,
+                  0.007714905947079597,
+                  -0.12218887758706178
+                ],
+                [
+                  -0.033335833301247786,
+                  0.007955992533066173,
+                  -0.14197928490998732
+                ],
+                [
+                  -0.032085626982900975,
+                  0.0021657426672784972,
+                  -0.12218318845071857
+                ]
+              ],
+              "uncovered_area_m2": 5.503210387581747e-05,
+              "centroid_m": [
+                -0.03248376046364857,
+                0.0059455470491414225,
+                -0.12878378364925588
+              ],
+              "centroid_membership_margin_m": 3.3636819371518634e-10,
+              "centroid_distance_to_union_m": 3.36368192112077e-10,
+              "nearest_proxy_point_m": [
+                -0.03248376012803028,
+                0.005945547045743424,
+                -0.12878378367144547
+              ],
+              "nearest_proxy_triangle_id": 206
+            }
+          ],
+          "all_source_triangles_covered_with_numerical_tolerance": false,
+          "numeric_plane_tolerance_m": 1e-10,
+          "limits": [
+            "Float64 halfspace clipping uses the unchanged existing numerical tolerance, not a physical acceptance threshold.",
+            "Coverage is source triangle surface inclusion, not source-solid equivalence or a global Hausdorff bound."
+          ]
+        },
+        "new_full_source_coverage": {
+          "source_triangle_count": 36200,
+          "source_area_m2": 0.11876117993678077,
+          "wholly_covered_in_one_convex_part_triangles": 33551,
+          "triangles_checked_by_continuous_polygon_subtraction": 2649,
+          "uncovered_source_triangle_count": 2551,
+          "uncovered_fragments": 11393,
+          "uncovered_area_m2": 0.006231248196177436,
+          "uncovered_source_area_fraction": 0.052468729255590665,
+          "largest_uncovered_fragment_witnesses": [
+            {
+              "source_triangle_id": 27728,
+              "uncovered_triangle_vertices_m": [
+                [
+                  -0.029802914708852768,
+                  0.0139479273930192,
+                  -0.0969199612736702
+                ],
+                [
+                  -0.030142769786044275,
+                  0.007212552870423045,
+                  -0.09690968701845926
+                ],
+                [
+                  -0.027260426955101263,
+                  0.006496523420078783,
+                  -0.06355276275700146
+                ]
+              ],
+              "uncovered_area_m2": 0.0001129042838393944,
+              "centroid_m": [
+                -0.0290687038166661,
+                0.009219001227840341,
+                -0.08579413701637696
+              ],
+              "centroid_membership_margin_m": 6.653556039459829e-10,
+              "centroid_distance_to_union_m": 6.653555990715719e-10,
+              "nearest_proxy_point_m": [
+                -0.029068703154682955,
+                0.009219001194349602,
+                -0.08579413707429724
+              ],
+              "nearest_proxy_triangle_id": 78
+            },
+            {
+              "source_triangle_id": 27716,
+              "uncovered_triangle_vertices_m": [
+                [
+                  -0.02742406725883484,
+                  0.00046391450450755656,
+                  -0.06354384869337082
+                ],
+                [
+                  -0.030142761450356534,
+                  0.0072123971344189445,
+                  -0.09690953469583242
+                ],
+                [
+                  -0.030240536057918536,
+                  0.0004725271206683186,
+                  -0.09690148272829151
+                ]
+              ],
+              "uncovered_area_m2": 0.00011282498641144554,
+              "centroid_m": [
+                -0.029269121589036634,
+                0.0027162795865316065,
+                -0.08578495537249825
+              ],
+              "centroid_membership_margin_m": 6.88091972289584e-10,
+              "centroid_distance_to_union_m": 6.880919767500152e-10,
+              "nearest_proxy_point_m": [
+                -0.029269120903457114,
+                0.002716279576516784,
+                -0.08578495543038601
+              ],
+              "nearest_proxy_triangle_id": 291
+            },
+            {
+              "source_triangle_id": 29167,
+              "uncovered_triangle_vertices_m": [
+                [
+                  -0.034468259662389755,
+                  -0.013797597959637642,
+                  -0.16849541664123535
+                ],
+                [
+                  -0.03310418128967285,
+                  -0.0143906744197011,
+                  -0.14562910795211792
+                ],
+                [
+                  -0.033495742827653885,
+                  -0.006967662367969751,
+                  -0.1456340104341507
+                ]
+              ],
+              "uncovered_area_m2": 8.512864971698357e-05,
+              "centroid_m": [
+                -0.03368939459323883,
+                -0.011718644915769497,
+                -0.153252845009168
+              ],
+              "centroid_membership_margin_m": 5.52126212804982e-10,
+              "centroid_distance_to_union_m": 5.521262097422346e-10,
+              "nearest_proxy_point_m": [
+                -0.0336893940428097,
+                -0.011718644886755732,
+                -0.15325284504125106
+              ],
+              "nearest_proxy_triangle_id": 295
+            },
+            {
+              "source_triangle_id": 29266,
+              "uncovered_triangle_vertices_m": [
+                [
+                  -0.01435226605913653,
+                  -0.033237281989985976,
+                  -0.12214783093787795
+                ],
+                [
+                  -0.007185415092141977,
+                  -0.03387206297074214,
+                  -0.12214702945723979
+                ],
+                [
+                  -0.006880848559065619,
+                  -0.03228818661524928,
+                  -0.09873764134989177
+                ]
+              ],
+              "uncovered_area_m2": 8.441172881818902e-05,
+              "centroid_m": [
+                -0.009472843236781376,
+                -0.0331325105253258,
+                -0.11434416724833651
+              ],
+              "centroid_membership_margin_m": 1.1555634227278233e-09,
+              "centroid_distance_to_union_m": 1.1555634229681147e-09,
+              "nearest_proxy_point_m": [
+                -0.009472843135060463,
+                -0.03313250937696379,
+                -0.11434416732735787
+              ],
+              "nearest_proxy_triangle_id": 644
+            },
+            {
+              "source_triangle_id": 29267,
+              "uncovered_triangle_vertices_m": [
+                [
+                  -0.006880846340209246,
+                  -0.03228817507624626,
+                  -0.09873747080564499
+                ],
+                [
+                  -0.007185416761785746,
+                  -0.03387207165360451,
+                  -0.12214715778827667
+                ],
+                [
+                  4.855068339818403e-15,
+                  -0.03254041075706482,
+                  -0.09905771166086197
+                ]
+              ],
+              "uncovered_area_m2": 8.081969664068691e-05,
+              "centroid_m": [
+                -0.0046887543673300456,
+                -0.0329002191623052,
+                -0.10664744675159454
+              ],
+              "centroid_membership_margin_m": 1.7479240589646228e-09,
+              "centroid_distance_to_union_m": 1.747924050362787e-09,
+              "nearest_proxy_point_m": [
+                -0.00468875430896294,
+                -0.03290021741939219,
+                -0.10664744687027905
+              ],
+              "nearest_proxy_triangle_id": 805
+            },
+            {
+              "source_triangle_id": 29265,
+              "uncovered_triangle_vertices_m": [
+                [
+                  -0.014352267496636853,
+                  -0.03323728189431277,
+                  -0.12214783160779423
+                ],
+                [
+                  -0.006880846340209246,
+                  -0.03228817507624626,
+                  -0.09873747080564499
+                ],
+                [
+                  -0.013728708590059828,
+                  -0.0316006046266112,
+                  -0.09873484076085176
+                ]
+              ],
+              "uncovered_area_m2": 8.077795332953161e-05,
+              "centroid_m": [
+                -0.011653940808968642,
+                -0.03237535386572341,
+                -0.10654004772476366
+              ],
+              "centroid_membership_margin_m": 8.448723838594407e-10,
+              "centroid_distance_to_union_m": 8.448723795244984e-10,
+              "nearest_proxy_point_m": [
+                -0.011653940724804522,
+                -0.03237535302725904,
+                -0.10654004778561785
+              ],
+              "nearest_proxy_triangle_id": 643
+            },
+            {
+              "source_triangle_id": 29143,
+              "uncovered_triangle_vertices_m": [
+                [
+                  -0.0012641849461942911,
+                  -0.03081403486430645,
+                  -0.07589399814605713
+                ],
+                [
+                  -0.006880846340209246,
+                  -0.03228817507624626,
+                  -0.09873747080564499
+                ],
+                [
+                  4.855068339818403e-15,
+                  -0.03254041075706482,
+                  -0.09905771166086197
+                ]
+              ],
+              "uncovered_area_m2": 7.974429558342498e-05,
+              "centroid_m": [
+                -0.0027150104287995604,
+                -0.03188087356587251,
+                -0.09122972687085469
+              ],
+              "centroid_membership_margin_m": 9.37743344781028e-10,
+              "centroid_distance_to_union_m": 9.377433439027679e-10,
+              "nearest_proxy_point_m": [
+                -0.0027150103976969985,
+                -0.03188087263111299,
+                -0.09122972693882417
+              ],
+              "nearest_proxy_triangle_id": 914
+            },
+            {
+              "source_triangle_id": 29282,
+              "uncovered_triangle_vertices_m": [
+                [
+                  -0.03363240761017279,
+                  0.009017997295878028,
+                  -0.14721872194629965
+                ],
+                [
+                  -0.033984596382089824,
+                  0.015600440953842594,
+                  -0.15737866208943146
+                ],
+                [
+                  -0.034760121355981353,
+                  0.010800410686701633,
+                  -0.1676678390563773
+                ]
+              ],
+              "uncovered_area_m2": 5.838577013763139e-05,
+              "centroid_m": [
+                -0.034125708449414656,
+                0.011806282978807418,
+                -0.1574217410307028
+              ],
+              "centroid_membership_margin_m": 4.166512308778625e-10,
+              "centroid_distance_to_union_m": 4.166512302302178e-10,
+              "nearest_proxy_point_m": [
+                -0.03412570803374677,
+                0.01180628296362313,
+                -0.15742174105494927
+              ],
+              "nearest_proxy_triangle_id": 116
+            },
+            {
+              "source_triangle_id": 29350,
+              "uncovered_triangle_vertices_m": [
+                [
+                  -0.03358841970579703,
+                  0.00687196288399454,
+                  -0.14564766206153956
+                ],
+                [
+                  -0.03364749625325203,
+                  0.0004717992851510644,
+                  -0.14564049243927002
+                ],
+                [
+                  -0.032449184327551756,
+                  0.00047608416151245835,
+                  -0.127444212159073
+                ]
+              ],
+              "uncovered_area_m2": 5.8358237210253934e-05,
+              "centroid_m": [
+                -0.03322836676220028,
+                0.0026066154435526873,
+                -0.13957745555329418
+              ],
+              "centroid_membership_margin_m": 3.5391602495882246e-10,
+              "centroid_distance_to_union_m": 3.5391602264422346e-10,
+              "nearest_proxy_point_m": [
+                -0.033228366409064375,
+                0.0026066154402670833,
+                -0.13957745557654908
+              ],
+              "nearest_proxy_triangle_id": 293
+            },
+            {
+              "source_triangle_id": 29349,
+              "uncovered_triangle_vertices_m": [
+                [
+                  -0.03202982110679694,
+                  0.007714905947079597,
+                  -0.12218887758706178
+                ],
+                [
+                  -0.033335833301247786,
+                  0.007955992533066173,
+                  -0.14197928490998732
+                ],
+                [
+                  -0.032085626982900975,
+                  0.0021657426672784972,
+                  -0.12218318845071857
+                ]
+              ],
+              "uncovered_area_m2": 5.503210387581747e-05,
+              "centroid_m": [
+                -0.03248376046364857,
+                0.0059455470491414225,
+                -0.12878378364925588
+              ],
+              "centroid_membership_margin_m": 3.3636819371518634e-10,
+              "centroid_distance_to_union_m": 3.36368192112077e-10,
+              "nearest_proxy_point_m": [
+                -0.03248376012803028,
+                0.005945547045743424,
+                -0.12878378367144547
+              ],
+              "nearest_proxy_triangle_id": 206
+            }
+          ],
+          "all_source_triangles_covered_with_numerical_tolerance": false,
+          "numeric_plane_tolerance_m": 1e-10,
+          "limits": [
+            "Float64 halfspace clipping uses the unchanged existing numerical tolerance, not a physical acceptance threshold.",
+            "Coverage is source triangle surface inclusion, not source-solid equivalence or a global Hausdorff bound."
+          ],
+          "newly_uncovered_previously_covered_source_area_m2": 8.082236540457203e-05,
+          "newly_uncovered_previously_covered_source_area_fraction": 0.0006805453216917816,
+          "coverage_change_method": "continuous (source triangle outside repaired union) intersected with frozen old convex hull; numerical tolerance only"
+        },
+        "original_assigned_faces_new_local_coverage": {
+          "source_triangle_count": 2570,
+          "source_area_m2": 0.00793225469603154,
+          "wholly_covered_in_one_convex_part_triangles": 1909,
+          "triangles_checked_by_continuous_polygon_subtraction": 661,
+          "uncovered_source_triangle_count": 567,
+          "uncovered_fragments": 2369,
+          "uncovered_area_m2": 0.000474554830726714,
+          "uncovered_source_area_fraction": 0.059825969905395376,
+          "largest_uncovered_fragment_witnesses": [
+            {
+              "source_triangle_id": 481,
+              "uncovered_triangle_vertices_m": [
+                [
+                  -0.012500000186264515,
+                  -0.012799999676644802,
+                  -0.10700901597738266
+                ],
+                [
+                  -0.012500000186264515,
+                  -0.008299999870359898,
+                  -0.10700901597738266
+                ],
+                [
+                  0.012500000186264515,
+                  -0.008299999870359898,
+                  -0.10700901597738266
+                ]
+              ],
+              "uncovered_area_m2": 5.624999841675159e-05,
+              "centroid_m": [
+                -0.004166666728754838,
+                -0.009799999805788199,
+                -0.10700901597738266
+              ],
+              "centroid_membership_margin_m": 2.6340975234351305e-10,
+              "centroid_distance_to_union_m": 2.634097523435145e-10,
+              "nearest_proxy_point_m": [
+                -0.004166666728754836,
+                -0.009799999805788226,
+                -0.10700901571397291
+              ],
+              "nearest_proxy_triangle_id": 988
+            },
+            {
+              "source_triangle_id": 487,
+              "uncovered_triangle_vertices_m": [
+                [
+                  -0.012500000186264515,
+                  -0.012799999676644802,
+                  -0.10700901597738266
+                ],
+                [
+                  0.012500000186264515,
+                  -0.008299999870359898,
+                  -0.10700901597738266
+                ],
+                [
+                  0.01145054756854808,
+                  -0.011238466809014415,
+                  -0.10700901597738266
+                ]
+              ],
+              "uncovered_area_m2": 3.436956899229902e-05,
+              "centroid_m": [
+                0.0038168491895160268,
+                -0.010779488785339705,
+                -0.10700901597738266
+              ],
+              "centroid_membership_margin_m": 1.0305009623401418e-10,
+              "centroid_distance_to_union_m": 1.0305009623401471e-10,
+              "nearest_proxy_point_m": [
+                0.0038168491895160276,
+                -0.010779488785339715,
+                -0.10700901587433256
+              ],
+              "nearest_proxy_triangle_id": 988
+            },
+            {
+              "source_triangle_id": 326,
+              "uncovered_triangle_vertices_m": [
+                [
+                  0.013000000268220901,
+                  -0.008299999870359898,
+                  -0.078062214752011
+                ],
+                [
+                  0.013000000268220901,
+                  -0.008300000096293643,
+                  -0.04382045926864016
+                ],
+                [
+                  0.013000000268220901,
+                  -0.010183673146950782,
+                  -0.042761567172768175
+                ]
+              ],
+              "uncovered_area_m2": 3.225013588598875e-05,
+              "centroid_m": [
+                0.013000000268220901,
+                -0.008927891037868107,
+                -0.05488141373113978
+              ],
+              "centroid_membership_margin_m": 6.121758829025215e-11,
+              "centroid_distance_to_union_m": 6.121759002497601e-11,
+              "nearest_proxy_point_m": [
+                0.013000000207003311,
+                -0.008927891037868113,
+                -0.05488141373113978
+              ],
+              "nearest_proxy_triangle_id": 1030
+            },
+            {
+              "source_triangle_id": 487,
+              "uncovered_triangle_vertices_m": [
+                [
+                  0.009999994878365668,
+                  -0.015299999542191432,
+                  -0.10700901597738266
+                ],
+                [
+                  0.0007744502339140681,
+                  -0.011934529256383799,
+                  -0.10700901597738266
+                ],
+                [
+                  0.01145054756854808,
+                  -0.011238466809014415,
+                  -0.10700901597738266
+                ]
+              ],
+              "uncovered_area_m2": 2.1175821765816666e-05,
+              "centroid_m": [
+                0.007408330893609272,
+                -0.01282433186919655,
+                -0.10700901597738266
+              ],
+              "centroid_membership_margin_m": 5.748979486908112e-10,
+              "centroid_distance_to_union_m": 5.748979486908179e-10,
+              "nearest_proxy_point_m": [
+                0.007408330893609233,
+                -0.012824331869196471,
+                -0.10700901540248471
+              ],
+              "nearest_proxy_triangle_id": 1048
+            },
+            {
+              "source_triangle_id": 1703,
+              "uncovered_triangle_vertices_m": [
+                [
+                  0.012598075903952122,
+                  -0.014299999922513962,
+                  -0.07446911285606862
+                ],
+                [
+                  0.012598075903952122,
+                  -0.014299999922513962,
+                  -0.04129081964492798
+                ],
+                [
+                  0.011854166488187922,
+                  -0.015043909338278162,
+                  -0.04129081964492798
+                ]
+              ],
+              "uncovered_area_m2": 1.7452558351467354e-05,
+              "centroid_m": [
+                0.012350106098697388,
+                -0.014547969727768695,
+                -0.05235025071530819
+              ],
+              "centroid_membership_margin_m": 1.0952648510365037e-10,
+              "centroid_distance_to_union_m": 1.095264852001735e-10,
+              "nearest_proxy_point_m": [
+                0.012350106021250444,
+                -0.014547969650321799,
+                -0.05235025071530819
+              ],
+              "nearest_proxy_triangle_id": 1111
+            },
+            {
+              "source_triangle_id": 487,
+              "uncovered_triangle_vertices_m": [
+                [
+                  0.009999994878365668,
+                  -0.015299999542191432,
+                  -0.10700901597738266
+                ],
+                [
+                  -0.0030701858832685065,
+                  -0.01384775699489767,
+                  -0.10700901597738266
+                ],
+                [
+                  0.0007744502339140681,
+                  -0.011934529256383799,
+                  -0.10700901597738266
+                ]
+              ],
+              "uncovered_area_m2": 1.5294788264391843e-05,
+              "centroid_m": [
+                0.00256808640967041,
+                -0.013694095264490967,
+                -0.10700901597738266
+              ],
+              "centroid_membership_margin_m": 3.6380116974488175e-10,
+              "centroid_distance_to_union_m": 3.638011558670983e-10,
+              "nearest_proxy_point_m": [
+                0.002568086409670385,
+                -0.013694095264490917,
+                -0.1070090156135815
+              ],
+              "nearest_proxy_triangle_id": 1048
+            },
+            {
+              "source_triangle_id": 1997,
+              "uncovered_triangle_vertices_m": [
+                [
+                  0.013000000233562323,
+                  -0.00829999983570132,
+                  -0.10650901435064691
+                ],
+                [
+                  0.012500000715178842,
+                  -0.007800000317317838,
+                  -0.09765902352718436
+                ],
+                [
+                  0.012500000186264515,
+                  -0.007799999788403511,
+                  -0.06275901198387146
+                ]
+              ],
+              "uncovered_area_m2": 1.233900221764655e-05,
+              "centroid_m": [
+                0.012666667045001892,
+                -0.007966666647140888,
+                -0.08897568328723425
+              ],
+              "centroid_membership_margin_m": 1.0093361476476437e-11,
+              "centroid_distance_to_union_m": 1.0093361450074147e-11,
+              "nearest_proxy_point_m": [
+                0.01266666703786481,
+                -0.007966666654277975,
+                -0.08897568328723425
+              ],
+              "nearest_proxy_triangle_id": 1171
+            },
+            {
+              "source_triangle_id": 1701,
+              "uncovered_triangle_vertices_m": [
+                [
+                  0.010944029894537952,
+                  -0.015547048085003562,
+                  -0.08853264991446588
+                ],
+                [
+                  0.011500000022351742,
+                  -0.015398075804114342,
+                  -0.1065090149641037
+                ],
+                [
+                  0.011500000022351742,
+                  -0.015398075804114342,
+                  -0.06613714046345531
+                ]
+              ],
+              "uncovered_area_m2": 1.1618677649071068e-05,
+              "centroid_m": [
+                0.011314676646413812,
+                -0.015447733231077414,
+                -0.08705960178067496
+              ],
+              "centroid_membership_margin_m": 7.061484383341643e-11,
+              "centroid_distance_to_union_m": 7.061484436799146e-11,
+              "nearest_proxy_point_m": [
+                0.01131467662813727,
+                -0.015447733162868732,
+                -0.08705960178067496
+              ],
+              "nearest_proxy_triangle_id": 1017
+            },
+            {
+              "source_triangle_id": 486,
+              "uncovered_triangle_vertices_m": [
+                [
+                  -0.003070185883268505,
+                  -0.01384775699489767,
+                  -0.10700901597738266
+                ],
+                [
+                  0.009999992847255872,
+                  -0.015300000086426735,
+                  -0.10700901597738266
+                ],
+                [
+                  -0.005988472116006095,
+                  -0.015300000086426735,
+                  -0.10700901597738266
+                ]
+              ],
+              "uncovered_area_m2": 1.1609568893525844e-05,
+              "centroid_m": [
+                0.0003137782826604241,
+                -0.014815919055917046,
+                -0.10700901597738266
+              ],
+              "centroid_membership_margin_m": 8.001162093984604e-10,
+              "centroid_distance_to_union_m": 8.001162093987217e-10,
+              "nearest_proxy_point_m": [
+                0.00031377828266031086,
+                -0.014815919055916409,
+                -0.10700901517726645
+              ],
+              "nearest_proxy_triangle_id": 1052
+            },
+            {
+              "source_triangle_id": 1702,
+              "uncovered_triangle_vertices_m": [
+                [
+                  0.011500000022351742,
+                  -0.015398075804114342,
+                  -0.06613714046345531
+                ],
+                [
+                  0.011500000321945722,
+                  -0.015398075504520362,
+                  -0.1065090149641037
+                ],
+                [
+                  0.011898890505884269,
+                  -0.014999185320581815,
+                  -0.1065090149641037
+                ]
+              ],
+              "uncovered_area_m2": 1.1387208321269851e-05,
+              "centroid_m": [
+                0.011632963616727244,
+                -0.01526511220973884,
+                -0.09305172346388757
+              ],
+              "centroid_membership_margin_m": 5.105141309691419e-11,
+              "centroid_distance_to_union_m": 5.10514115512073e-11,
+              "nearest_proxy_point_m": [
+                0.011632963580628456,
+                -0.015265112173640029,
+                -0.09305172346388757
+              ],
+              "nearest_proxy_triangle_id": 1110
+            }
+          ],
+          "all_source_triangles_covered_with_numerical_tolerance": false,
+          "numeric_plane_tolerance_m": 1e-10,
+          "limits": [
+            "Float64 halfspace clipping uses the unchanged existing numerical tolerance, not a physical acceptance threshold.",
+            "Coverage is source triangle surface inclusion, not source-solid equivalence or a global Hausdorff bound."
+          ],
+          "newly_uncovered_previously_covered_source_area_m2": 0.00025704509532338695,
+          "newly_uncovered_previously_covered_source_area_fraction": 0.03240504814501041,
+          "coverage_change_method": "continuous (source triangle outside repaired union) intersected with frozen old convex hull; numerical tolerance only"
+        },
+        "new_parts_within_old_replaced_hull": {
+          "reference": "robot0_candidate_nero_link5_4",
+          "all_parts_contained_with_numerical_tolerance": false,
+          "parts": [
+            {
+              "part": "robot0_link5_local_00",
+              "hull_vertex_count": 254,
+              "contained_with_numerical_tolerance": false,
+              "vertices_outside_numerical_tolerance": 58,
+              "max_reference_halfspace_violation_m": 6.877951359493539e-09,
+              "max_violation_witness": {
+                "point_m": [
+                  -0.005400395443325574,
+                  -0.024800000720604762,
+                  0.011816201220014165
+                ],
+                "reference_plane": [
+                  -0.362810380084163,
+                  -3.0654329163032495e-06,
+                  0.9318629878333984,
+                  -0.012970469241907954
+                ],
+                "reference_halfspace_violation_m": 6.877951359493539e-09,
+                "nearest_reference_boundary_distance_m": 6.878307082716286e-09,
+                "nearest_reference_boundary_point_m": [
+                  -0.005400392947933491,
+                  -0.024800000650630632,
+                  0.011816194810706067
+                ],
+                "nearest_reference_boundary_triangle_id": 313
+              }
+            },
+            {
+              "part": "robot0_link5_local_01",
+              "hull_vertex_count": 48,
+              "contained_with_numerical_tolerance": false,
+              "vertices_outside_numerical_tolerance": 6,
+              "max_reference_halfspace_violation_m": 1.2630455448886524e-09,
+              "max_violation_witness": {
+                "point_m": [
+                  -0.010541916568490758,
+                  -0.022900000345678764,
+                  0.006765864461743522
+                ],
+                "reference_plane": [
+                  -0.5458833611405052,
+                  0.6915726450048151,
+                  0.4730101824601548,
+                  0.006882035439897292
+                ],
+                "reference_halfspace_violation_m": 1.2630455448886524e-09,
+                "nearest_reference_boundary_distance_m": 1.2630455433917955e-09,
+                "nearest_reference_boundary_point_m": [
+                  -0.010541915879015212,
+                  -0.02290000121916651,
+                  0.006765863864310119
+                ],
+                "nearest_reference_boundary_triangle_id": 55
+              }
+            },
+            {
+              "part": "robot0_link5_local_02",
+              "hull_vertex_count": 83,
+              "contained_with_numerical_tolerance": false,
+              "vertices_outside_numerical_tolerance": 27,
+              "max_reference_halfspace_violation_m": 2.836765836122801e-09,
+              "max_violation_witness": {
+                "point_m": [
+                  -0.011250000169349739,
+                  -0.014965064069581462,
+                  -0.10700901619609338
+                ],
+                "reference_plane": [
+                  -2.1745100740425867e-06,
+                  -2.7457172240567292e-06,
+                  -0.9999999999938662,
+                  -0.10700907891174405
+                ],
+                "reference_halfspace_violation_m": 2.836765836122801e-09,
+                "nearest_reference_boundary_distance_m": 2.836765850017989e-09,
+                "nearest_reference_boundary_point_m": [
+                  -0.01125000016934357,
+                  -0.014965064069573673,
+                  -0.10700901335932753
+                ],
+                "nearest_reference_boundary_triangle_id": 45
+              }
+            }
+          ],
+          "numeric_plane_tolerance_m": 1e-10,
+          "method": "all vertices of each actual part convex hull against every reference convex halfspace",
+          "limits": [
+            "Positive plane violations witness noncontainment; negative violations are plane margins, not distances to the reference boundary.",
+            "Source convex-hull containment does not establish source-solid inclusion or absence of groove/cavity capping."
+          ]
+        },
+        "inherited_vs_new_source_gaps": {
+          "old_uncovered_area_m2": 0.0061906023080655435,
+          "new_uncovered_area_m2": 0.006231248196177436,
+          "newly_uncovered_previously_covered_area_m2": 8.082236540457203e-05,
+          "new_uncovered_inherited_area_m2": 0.006150425830772864,
+          "method": "New full-union uncovered source polygons intersected with the old replaced hull. Since every frozen old part is present in new full union, all remaining old coverage can only come from that hull."
+        },
+        "local_proxy_volume": {
+          "old_m3": 3.875547715910994e-05,
+          "new_m3": 3.0452521074549146e-05,
+          "removed_convex_proxy_volume_m3": 8.302956084560791e-06,
+          "reduction_fraction": 0.21423955252758595,
+          "method": "Signed tetrahedra of exposed oriented convex-union boundary; source solid volume is not inferred."
+        }
+      },
+      "source_point_and_scale_lineage": {
+        "old_input_points": 1275,
+        "old_input_max_source_coordinate_difference_m": 0.0,
+        "all_old_input_points_match_factory_coordinates_exactly": true,
+        "factory_source_bytes_unchanged": true,
+        "new_parts": [
+          {
+            "geom": "robot0_link5_local_00",
+            "vertices": 254,
+            "maximum_candidate_vertex_distance_to_source_or_CAD_edge_intersection_m": 0.0,
+            "all_vertices_have_source_lineage_at_unchanged_tolerance": true,
+            "scale_pos_quat_equal_old_target": true
+          },
+          {
+            "geom": "robot0_link5_local_01",
+            "vertices": 48,
+            "maximum_candidate_vertex_distance_to_source_or_CAD_edge_intersection_m": 0.0,
+            "all_vertices_have_source_lineage_at_unchanged_tolerance": true,
+            "scale_pos_quat_equal_old_target": true
+          },
+          {
+            "geom": "robot0_link5_local_02",
+            "vertices": 83,
+            "maximum_candidate_vertex_distance_to_source_or_CAD_edge_intersection_m": 0.0,
+            "all_vertices_have_source_lineage_at_unchanged_tolerance": true,
+            "scale_pos_quat_equal_old_target": true
+          }
+        ],
+        "new_clip_vertex_definition": "Only original triangle edges intersected by the two pre-frozen source-native y planes; source coordinates and geom/asset scale and pose are unchanged."
+      }
+    },
+    "robot0_gripper_flange": {
+      "source_file": "meshes/nero/source/gripper_flange-186697a7.stl",
+      "source_sha256": "186697a73e7cafd9fd41d96f1eea9b34b444c058b9561fb2e3ea439c835ae2e8",
+      "source_triangle_count": 13302,
+      "original_assigned_source_triangle_count": 6448,
+      "old_part_count": 8,
+      "new_part_count": 9,
+      "raw_float64": {
+        "report": "robot0_gripper_flange-raw_float64.json.gz",
+        "old_full_source_coverage": {
+          "source_triangle_count": 13302,
+          "source_area_m2": 0.013273296695662587,
+          "wholly_covered_in_one_convex_part_triangles": 13302,
+          "triangles_checked_by_continuous_polygon_subtraction": 0,
+          "uncovered_source_triangle_count": 0,
+          "uncovered_fragments": 0,
+          "uncovered_area_m2": 0.0,
+          "uncovered_source_area_fraction": 0.0,
+          "largest_uncovered_fragment_witnesses": [],
+          "all_source_triangles_covered_with_numerical_tolerance": true,
+          "numeric_plane_tolerance_m": 1e-10,
+          "limits": [
+            "Float64 halfspace clipping uses the unchanged existing numerical tolerance, not a physical acceptance threshold.",
+            "Coverage is source triangle surface inclusion, not source-solid equivalence or a global Hausdorff bound."
+          ]
+        },
+        "new_full_source_coverage": {
+          "source_triangle_count": 13302,
+          "source_area_m2": 0.013273296695662587,
+          "wholly_covered_in_one_convex_part_triangles": 13302,
+          "triangles_checked_by_continuous_polygon_subtraction": 0,
+          "uncovered_source_triangle_count": 0,
+          "uncovered_fragments": 0,
+          "uncovered_area_m2": 0.0,
+          "uncovered_source_area_fraction": 0.0,
+          "largest_uncovered_fragment_witnesses": [],
+          "all_source_triangles_covered_with_numerical_tolerance": true,
+          "numeric_plane_tolerance_m": 1e-10,
+          "limits": [
+            "Float64 halfspace clipping uses the unchanged existing numerical tolerance, not a physical acceptance threshold.",
+            "Coverage is source triangle surface inclusion, not source-solid equivalence or a global Hausdorff bound."
+          ],
+          "newly_uncovered_previously_covered_source_area_m2": 0.0,
+          "newly_uncovered_previously_covered_source_area_fraction": 0.0,
+          "coverage_change_method": "continuous (source triangle outside repaired union) intersected with frozen old convex hull; numerical tolerance only"
+        },
+        "original_assigned_faces_new_local_coverage": {
+          "source_triangle_count": 6448,
+          "source_area_m2": 0.004486236941892922,
+          "wholly_covered_in_one_convex_part_triangles": 6448,
+          "triangles_checked_by_continuous_polygon_subtraction": 0,
+          "uncovered_source_triangle_count": 0,
+          "uncovered_fragments": 0,
+          "uncovered_area_m2": 0.0,
+          "uncovered_source_area_fraction": 0.0,
+          "largest_uncovered_fragment_witnesses": [],
+          "all_source_triangles_covered_with_numerical_tolerance": true,
+          "numeric_plane_tolerance_m": 1e-10,
+          "limits": [
+            "Float64 halfspace clipping uses the unchanged existing numerical tolerance, not a physical acceptance threshold.",
+            "Coverage is source triangle surface inclusion, not source-solid equivalence or a global Hausdorff bound."
+          ],
+          "newly_uncovered_previously_covered_source_area_m2": 0.0,
+          "newly_uncovered_previously_covered_source_area_fraction": 0.0,
+          "coverage_change_method": "continuous (source triangle outside repaired union) intersected with frozen old convex hull; numerical tolerance only"
+        },
+        "new_parts_within_old_replaced_hull": {
+          "reference": "robot0_source_flange_part_2",
+          "all_parts_contained_with_numerical_tolerance": true,
+          "parts": [
+            {
+              "part": "robot0_flange_local_00",
+              "hull_vertex_count": 94,
+              "contained_with_numerical_tolerance": true,
+              "vertices_outside_numerical_tolerance": 0,
+              "max_reference_halfspace_violation_m": 3.469446951953614e-18,
+              "max_violation_witness": {
+                "point_m": [
+                  -0.012808604165911674,
+                  -0.017814988270401955,
+                  -0.00030509172938764095
+                ],
+                "reference_plane": [
+                  -0.028627919456993507,
+                  0.992934611474288,
+                  -0.11515771604182087,
+                  0.017287301101532804
+                ],
+                "reference_halfspace_violation_m": 3.469446951953614e-18,
+                "nearest_reference_boundary_distance_m": 0.0,
+                "nearest_reference_boundary_point_m": [
+                  -0.012808604165911674,
+                  -0.017814988270401955,
+                  -0.00030509172938764095
+                ],
+                "nearest_reference_boundary_triangle_id": 122
+              }
+            },
+            {
+              "part": "robot0_flange_local_01",
+              "hull_vertex_count": 831,
+              "contained_with_numerical_tolerance": true,
+              "vertices_outside_numerical_tolerance": 0,
+              "max_reference_halfspace_violation_m": 6.938893903907228e-18,
+              "max_violation_witness": {
+                "point_m": [
+                  -0.016381068155169487,
+                  -0.025813374668359756,
+                  -0.03464533016085625
+                ],
+                "reference_plane": [
+                  -0.8851056310138552,
+                  -0.42105554723227,
+                  -0.19824290174555745,
+                  -0.03223603104608111
+                ],
+                "reference_halfspace_violation_m": 6.938893903907228e-18,
+                "nearest_reference_boundary_distance_m": 0.0,
+                "nearest_reference_boundary_point_m": [
+                  -0.016381068155169487,
+                  -0.025813374668359756,
+                  -0.03464533016085625
+                ],
+                "nearest_reference_boundary_triangle_id": 479
+              }
+            }
+          ],
+          "numeric_plane_tolerance_m": 1e-10,
+          "method": "all vertices of each actual part convex hull against every reference convex halfspace",
+          "limits": [
+            "Positive plane violations witness noncontainment; negative violations are plane margins, not distances to the reference boundary.",
+            "Source convex-hull containment does not establish source-solid inclusion or absence of groove/cavity capping."
+          ]
+        },
+        "inherited_vs_new_source_gaps": {
+          "old_uncovered_area_m2": 0.0,
+          "new_uncovered_area_m2": 0.0,
+          "newly_uncovered_previously_covered_area_m2": 0.0,
+          "new_uncovered_inherited_area_m2": 0.0,
+          "method": "New full-union uncovered source polygons intersected with the old replaced hull. Since every frozen old part is present in new full union, all remaining old coverage can only come from that hull."
+        },
+        "local_proxy_volume": {
+          "old_m3": 1.1640230199311458e-05,
+          "new_m3": 9.021636822697183e-06,
+          "removed_convex_proxy_volume_m3": 2.6185933766142754e-06,
+          "reduction_fraction": 0.22496061776932644,
+          "method": "Signed tetrahedra of exposed oriented convex-union boundary; source solid volume is not inferred."
+        }
+      },
+      "compiled_mesh_graph": {
+        "report": "robot0_gripper_flange-compiled_mesh_graph.json.gz",
+        "old_full_source_coverage": {
+          "source_triangle_count": 13302,
+          "source_area_m2": 0.013273296695662587,
+          "wholly_covered_in_one_convex_part_triangles": 10352,
+          "triangles_checked_by_continuous_polygon_subtraction": 2950,
+          "uncovered_source_triangle_count": 2756,
+          "uncovered_fragments": 12197,
+          "uncovered_area_m2": 0.0005045366339323802,
+          "uncovered_source_area_fraction": 0.03801140330851275,
+          "largest_uncovered_fragment_witnesses": [
+            {
+              "source_triangle_id": 6375,
+              "uncovered_triangle_vertices_m": [
+                [
+                  0.02077385038137436,
+                  -0.006739690434187651,
+                  0.0001464175875298679
+                ],
+                [
+                  0.020692480728030205,
+                  -0.006660585291683674,
+                  0.011646808125078678
+                ],
+                [
+                  0.01988155048764633,
+                  -0.008793877671875857,
+                  0.011624168612010918
+                ]
+              ],
+              "uncovered_area_m2": 1.3123259600546447e-05,
+              "centroid_m": [
+                0.020449293865683633,
+                -0.007398051132582395,
+                0.007805798108206488
+              ],
+              "centroid_membership_margin_m": 1.2686440439835245e-10,
+              "centroid_distance_to_union_m": 1.268644031773459e-10,
+              "nearest_proxy_point_m": [
+                0.020449293747106943,
+                -0.007398051087495535,
+                0.007805798107057383
+              ],
+              "nearest_proxy_triangle_id": 3433
+            },
+            {
+              "source_triangle_id": 6046,
+              "uncovered_triangle_vertices_m": [
+                [
+                  -0.020377574488520622,
+                  -0.008790994994342327,
+                  0.011166473850607872
+                ],
+                [
+                  -0.020160239823997995,
+                  -0.008912590798059835,
+                  -0.0003325089927609399
+                ],
+                [
+                  -0.019349999742604936,
+                  -0.010828917806381684,
+                  0.011165334604886919
+                ]
+              ],
+              "uncovered_area_m2": 1.312309356400394e-05,
+              "centroid_m": [
+                -0.019962604685041182,
+                -0.00951083453292795,
+                0.0073330998209112834
+              ],
+              "centroid_membership_margin_m": 3.902194192773045e-11,
+              "centroid_distance_to_union_m": 3.902194560730393e-11,
+              "nearest_proxy_point_m": [
+                -0.019962604650200447,
+                -0.009510834515360594,
+                0.00733309982138402
+              ],
+              "nearest_proxy_triangle_id": 3154
+            },
+            {
+              "source_triangle_id": 6399,
+              "uncovered_triangle_vertices_m": [
+                [
+                  0.01885162299708344,
+                  0.011292484167810687,
+                  0.00023807756111455185
+                ],
+                [
+                  0.01763856888388437,
+                  0.012883148875927735,
+                  0.011735104834564367
+                ],
+                [
+                  0.01885397292883111,
+                  0.01099031708929831,
+                  0.01173700764670624
+                ]
+              ],
+              "uncovered_area_m2": 1.2934155351375271e-05,
+              "centroid_m": [
+                0.018448054936599637,
+                0.011721983377678913,
+                0.007903396680795052
+              ],
+              "centroid_membership_margin_m": 6.211292591373763e-11,
+              "centroid_distance_to_union_m": 6.211292716081677e-11,
+              "nearest_proxy_point_m": [
+                0.018448054884339333,
+                0.011721983344121239,
+                0.007903396679923909
+              ],
+              "nearest_proxy_triangle_id": 3645
+            },
+            {
+              "source_triangle_id": 6052,
+              "uncovered_triangle_vertices_m": [
+                [
+                  -0.01921926811337471,
+                  -0.010756539180874825,
+                  -0.00033354898914694786
+                ],
+                [
+                  -0.01934999972311017,
+                  -0.010828917844584118,
+                  0.011165334604868078
+                ],
+                [
+                  -0.020160237311151838,
+                  -0.008912592232973282,
+                  -0.00033264086716226077
+                ]
+              ],
+              "uncovered_area_m2": 1.1903271855142552e-05,
+              "centroid_m": [
+                -0.019576501715878904,
+                -0.01016601641947741,
+                0.0034997149161862897
+              ],
+              "centroid_membership_margin_m": 4.306255005359638e-11,
+              "centroid_distance_to_union_m": 4.3062547700678e-11,
+              "nearest_proxy_point_m": [
+                -0.019576501677525067,
+                -0.010166016399905659,
+                0.00349971491674553
+              ],
+              "nearest_proxy_triangle_id": 3153
+            },
+            {
+              "source_triangle_id": 6401,
+              "uncovered_triangle_vertices_m": [
+                [
+                  0.018853976403535335,
+                  0.01099031510748102,
+                  0.011736848112371984
+                ],
+                [
+                  0.019925670698285103,
+                  0.009218748658895493,
+                  0.00023722142213955522
+                ],
+                [
+                  0.01898470438704785,
+                  0.011062692675536643,
+                  0.00023812930057534574
+                ]
+              ],
+              "uncovered_area_m2": 1.1903078699682997e-05,
+              "centroid_m": [
+                0.019254783829622764,
+                0.010423918813971053,
+                0.004070732945028962
+              ],
+              "centroid_membership_margin_m": 7.96842002104281e-11,
+              "centroid_distance_to_union_m": 7.96842040129875e-11,
+              "nearest_proxy_point_m": [
+                0.019254783758651677,
+                0.010423918777754946,
+                0.004070732943994139
+              ],
+              "nearest_proxy_triangle_id": 3642
+            },
+            {
+              "source_triangle_id": 6398,
+              "uncovered_triangle_vertices_m": [
+                [
+                  0.01775153912603855,
+                  0.012983200140297413,
+                  0.00023619913554284722
+                ],
+                [
+                  0.01762080006513834,
+                  0.01291082147626464,
+                  0.011735076829216207
+                ],
+                [
+                  0.01885161141892532,
+                  0.011292502362983703,
+                  0.0002380606812038865
+                ]
+              ],
+              "uncovered_area_m2": 1.159807129929732e-05,
+              "centroid_m": [
+                0.018074650203367404,
+                0.012395507993181919,
+                0.004069778881987647
+              ],
+              "centroid_membership_margin_m": 8.301408518929243e-11,
+              "centroid_distance_to_union_m": 8.301408506689594e-11,
+              "nearest_proxy_point_m": [
+                0.018074650133792208,
+                0.012395507947910818,
+                0.004069778880911643
+              ],
+              "nearest_proxy_triangle_id": 3646
+            },
+            {
+              "source_triangle_id": 6395,
+              "uncovered_triangle_vertices_m": [
+                [
+                  0.019881550258136944,
+                  0.008952398067456046,
+                  0.011735858456500808
+                ],
+                [
+                  0.019925670698285103,
+                  0.009218748658895493,
+                  0.00023722142213955522
+                ],
+                [
+                  0.019180073301985526,
+                  0.010451257388884586,
+                  0.00823781287642507
+                ]
+              ],
+              "uncovered_area_m2": 9.130039979840408e-06,
+              "centroid_m": [
+                0.01966243141946919,
+                0.009540801371745376,
+                0.006736964251688478
+              ],
+              "centroid_membership_margin_m": 7.222050388278056e-11,
+              "centroid_distance_to_union_m": 7.22205053512089e-11,
+              "nearest_proxy_point_m": [
+                0.019662431354988612,
+                0.009540801339232985,
+                0.006736964250687958
+              ],
+              "nearest_proxy_triangle_id": 3625
+            },
+            {
+              "source_triangle_id": 6378,
+              "uncovered_triangle_vertices_m": [
+                [
+                  0.020692481053561446,
+                  -0.006660584271982592,
+                  0.011646802741657941
+                ],
+                [
+                  0.02134155284840564,
+                  -0.004473168897897655,
+                  0.004940451192231025
+                ],
+                [
+                  0.021278033033013344,
+                  -0.004454741254448891,
+                  0.011667358689010143
+                ]
+              ],
+              "uncovered_area_m2": 7.6765603798173e-06,
+              "centroid_m": [
+                0.021104022311660142,
+                -0.0051961648081097125,
+                0.009418204207633037
+              ],
+              "centroid_membership_margin_m": 4.0429500025584986e-11,
+              "centroid_distance_to_union_m": 4.042950003343769e-11,
+              "nearest_proxy_point_m": [
+                0.02110402227258679,
+                -0.005196164797733793,
+                0.009418204207235657
+              ],
+              "nearest_proxy_triangle_id": 3456
+            },
+            {
+              "source_triangle_id": 6020,
+              "uncovered_triangle_vertices_m": [
+                [
+                  -0.01811683366542946,
+                  0.012913382573266158,
+                  0.011328791922491489
+                ],
+                [
+                  -0.018591970687968282,
+                  0.012120221830516708,
+                  0.005681197389928238
+                ],
+                [
+                  -0.019349999725818634,
+                  0.010993057861924171,
+                  0.01130268257111311
+                ]
+              ],
+              "uncovered_area_m2": 6.432433156186771e-06,
+              "centroid_m": [
+                -0.018686268026405457,
+                0.012008887421902347,
+                0.009437557294510944
+              ],
+              "centroid_membership_margin_m": 6.219493323134095e-11,
+              "centroid_distance_to_union_m": 6.21949339310335e-11,
+              "nearest_proxy_point_m": [
+                -0.0186862679740746,
+                0.012008887388292965,
+                0.009437557294828479
+              ],
+              "nearest_proxy_triangle_id": 3315
+            },
+            {
+              "source_triangle_id": 6019,
+              "uncovered_triangle_vertices_m": [
+                [
+                  -0.018116832535135942,
+                  0.012913383225063264,
+                  0.011328694828292104
+                ],
+                [
+                  -0.017986105754971504,
+                  0.012985761277377605,
+                  -0.00017008370195981115
+                ],
+                [
+                  -0.018591281967310743,
+                  0.012121371531154172,
+                  0.005689383531425669
+                ]
+              ],
+              "uncovered_area_m2": 5.676641368776085e-06,
+              "centroid_m": [
+                -0.01823140675247273,
+                0.01267350534453168,
+                0.005615998219252654
+              ],
+              "centroid_membership_margin_m": 3.283415900279252e-11,
+              "centroid_distance_to_union_m": 3.283416008256626e-11,
+              "nearest_proxy_point_m": [
+                -0.018231406724954005,
+                0.012673505326621854,
+                0.005615998219452775
+              ],
+              "nearest_proxy_triangle_id": 3386
+            }
+          ],
+          "all_source_triangles_covered_with_numerical_tolerance": false,
+          "numeric_plane_tolerance_m": 1e-10,
+          "limits": [
+            "Float64 halfspace clipping uses the unchanged existing numerical tolerance, not a physical acceptance threshold.",
+            "Coverage is source triangle surface inclusion, not source-solid equivalence or a global Hausdorff bound."
+          ]
+        },
+        "new_full_source_coverage": {
+          "source_triangle_count": 13302,
+          "source_area_m2": 0.013273296695662587,
+          "wholly_covered_in_one_convex_part_triangles": 10420,
+          "triangles_checked_by_continuous_polygon_subtraction": 2882,
+          "uncovered_source_triangle_count": 2709,
+          "uncovered_fragments": 11280,
+          "uncovered_area_m2": 0.0004430928917500788,
+          "uncovered_source_area_fraction": 0.033382278864818225,
+          "largest_uncovered_fragment_witnesses": [
+            {
+              "source_triangle_id": 6375,
+              "uncovered_triangle_vertices_m": [
+                [
+                  0.02077385038137436,
+                  -0.006739690434187651,
+                  0.0001464175875298679
+                ],
+                [
+                  0.020692480728030205,
+                  -0.006660585291683674,
+                  0.011646808125078678
+                ],
+                [
+                  0.01988155048764633,
+                  -0.008793877671875857,
+                  0.011624168612010918
+                ]
+              ],
+              "uncovered_area_m2": 1.3123259600546447e-05,
+              "centroid_m": [
+                0.020449293865683633,
+                -0.007398051132582395,
+                0.007805798108206488
+              ],
+              "centroid_membership_margin_m": 1.2686440439835245e-10,
+              "centroid_distance_to_union_m": 1.268644031773459e-10,
+              "nearest_proxy_point_m": [
+                0.020449293747106943,
+                -0.007398051087495535,
+                0.007805798107057383
+              ],
+              "nearest_proxy_triangle_id": 2013
+            },
+            {
+              "source_triangle_id": 6046,
+              "uncovered_triangle_vertices_m": [
+                [
+                  -0.020377574488520622,
+                  -0.008790994994342327,
+                  0.011166473850607872
+                ],
+                [
+                  -0.020160239823997995,
+                  -0.008912590798059835,
+                  -0.0003325089927609399
+                ],
+                [
+                  -0.019349999742604936,
+                  -0.010828917806381684,
+                  0.011165334604886919
+                ]
+              ],
+              "uncovered_area_m2": 1.312309356400394e-05,
+              "centroid_m": [
+                -0.019962604685041182,
+                -0.00951083453292795,
+                0.0073330998209112834
+              ],
+              "centroid_membership_margin_m": 3.902194192773045e-11,
+              "centroid_distance_to_union_m": 3.902194560730393e-11,
+              "nearest_proxy_point_m": [
+                -0.019962604650200447,
+                -0.009510834515360594,
+                0.00733309982138402
+              ],
+              "nearest_proxy_triangle_id": 1734
+            },
+            {
+              "source_triangle_id": 6399,
+              "uncovered_triangle_vertices_m": [
+                [
+                  0.01885162299708344,
+                  0.011292484167810687,
+                  0.00023807756111455185
+                ],
+                [
+                  0.01763856888388437,
+                  0.012883148875927735,
+                  0.011735104834564367
+                ],
+                [
+                  0.01885397292883111,
+                  0.01099031708929831,
+                  0.01173700764670624
+                ]
+              ],
+              "uncovered_area_m2": 1.2934155351375271e-05,
+              "centroid_m": [
+                0.018448054936599637,
+                0.011721983377678913,
+                0.007903396680795052
+              ],
+              "centroid_membership_margin_m": 6.211292591373763e-11,
+              "centroid_distance_to_union_m": 6.211292716081677e-11,
+              "nearest_proxy_point_m": [
+                0.018448054884339333,
+                0.011721983344121239,
+                0.007903396679923909
+              ],
+              "nearest_proxy_triangle_id": 2225
+            },
+            {
+              "source_triangle_id": 6052,
+              "uncovered_triangle_vertices_m": [
+                [
+                  -0.01921926811337471,
+                  -0.010756539180874825,
+                  -0.00033354898914694786
+                ],
+                [
+                  -0.01934999972311017,
+                  -0.010828917844584118,
+                  0.011165334604868078
+                ],
+                [
+                  -0.020160237311151838,
+                  -0.008912592232973282,
+                  -0.00033264086716226077
+                ]
+              ],
+              "uncovered_area_m2": 1.1903271855142552e-05,
+              "centroid_m": [
+                -0.019576501715878904,
+                -0.01016601641947741,
+                0.0034997149161862897
+              ],
+              "centroid_membership_margin_m": 4.306255005359638e-11,
+              "centroid_distance_to_union_m": 4.3062547700678e-11,
+              "nearest_proxy_point_m": [
+                -0.019576501677525067,
+                -0.010166016399905659,
+                0.00349971491674553
+              ],
+              "nearest_proxy_triangle_id": 1733
+            },
+            {
+              "source_triangle_id": 6401,
+              "uncovered_triangle_vertices_m": [
+                [
+                  0.018853976403535335,
+                  0.01099031510748102,
+                  0.011736848112371984
+                ],
+                [
+                  0.019925670698285103,
+                  0.009218748658895493,
+                  0.00023722142213955522
+                ],
+                [
+                  0.01898470438704785,
+                  0.011062692675536643,
+                  0.00023812930057534574
+                ]
+              ],
+              "uncovered_area_m2": 1.1903078699682997e-05,
+              "centroid_m": [
+                0.019254783829622764,
+                0.010423918813971053,
+                0.004070732945028962
+              ],
+              "centroid_membership_margin_m": 7.96842002104281e-11,
+              "centroid_distance_to_union_m": 7.96842040129875e-11,
+              "nearest_proxy_point_m": [
+                0.019254783758651677,
+                0.010423918777754946,
+                0.004070732943994139
+              ],
+              "nearest_proxy_triangle_id": 2222
+            },
+            {
+              "source_triangle_id": 6398,
+              "uncovered_triangle_vertices_m": [
+                [
+                  0.01775153912603855,
+                  0.012983200140297413,
+                  0.00023619913554284722
+                ],
+                [
+                  0.01762080006513834,
+                  0.01291082147626464,
+                  0.011735076829216207
+                ],
+                [
+                  0.01885161141892532,
+                  0.011292502362983703,
+                  0.0002380606812038865
+                ]
+              ],
+              "uncovered_area_m2": 1.159807129929732e-05,
+              "centroid_m": [
+                0.018074650203367404,
+                0.012395507993181919,
+                0.004069778881987647
+              ],
+              "centroid_membership_margin_m": 8.301408518929243e-11,
+              "centroid_distance_to_union_m": 8.301408506689594e-11,
+              "nearest_proxy_point_m": [
+                0.018074650133792208,
+                0.012395507947910818,
+                0.004069778880911643
+              ],
+              "nearest_proxy_triangle_id": 2226
+            },
+            {
+              "source_triangle_id": 6395,
+              "uncovered_triangle_vertices_m": [
+                [
+                  0.019881550258136944,
+                  0.008952398067456046,
+                  0.011735858456500808
+                ],
+                [
+                  0.019925670698285103,
+                  0.009218748658895493,
+                  0.00023722142213955522
+                ],
+                [
+                  0.019180073301985526,
+                  0.010451257388884586,
+                  0.00823781287642507
+                ]
+              ],
+              "uncovered_area_m2": 9.130039979840408e-06,
+              "centroid_m": [
+                0.01966243141946919,
+                0.009540801371745376,
+                0.006736964251688478
+              ],
+              "centroid_membership_margin_m": 7.222050388278056e-11,
+              "centroid_distance_to_union_m": 7.22205053512089e-11,
+              "nearest_proxy_point_m": [
+                0.019662431354988612,
+                0.009540801339232985,
+                0.006736964250687958
+              ],
+              "nearest_proxy_triangle_id": 2205
+            },
+            {
+              "source_triangle_id": 6378,
+              "uncovered_triangle_vertices_m": [
+                [
+                  0.020692481053561446,
+                  -0.006660584271982592,
+                  0.011646802741657941
+                ],
+                [
+                  0.02134155284840564,
+                  -0.004473168897897655,
+                  0.004940451192231025
+                ],
+                [
+                  0.021278033033013344,
+                  -0.004454741254448891,
+                  0.011667358689010143
+                ]
+              ],
+              "uncovered_area_m2": 7.6765603798173e-06,
+              "centroid_m": [
+                0.021104022311660142,
+                -0.0051961648081097125,
+                0.009418204207633037
+              ],
+              "centroid_membership_margin_m": 4.0429500025584986e-11,
+              "centroid_distance_to_union_m": 4.042950003343769e-11,
+              "nearest_proxy_point_m": [
+                0.02110402227258679,
+                -0.005196164797733793,
+                0.009418204207235657
+              ],
+              "nearest_proxy_triangle_id": 2036
+            },
+            {
+              "source_triangle_id": 6020,
+              "uncovered_triangle_vertices_m": [
+                [
+                  -0.01811683366542946,
+                  0.012913382573266158,
+                  0.011328791922491489
+                ],
+                [
+                  -0.018591970687968282,
+                  0.012120221830516708,
+                  0.005681197389928238
+                ],
+                [
+                  -0.019349999725818634,
+                  0.010993057861924171,
+                  0.01130268257111311
+                ]
+              ],
+              "uncovered_area_m2": 6.432433156186771e-06,
+              "centroid_m": [
+                -0.018686268026405457,
+                0.012008887421902347,
+                0.009437557294510944
+              ],
+              "centroid_membership_margin_m": 6.219493323134095e-11,
+              "centroid_distance_to_union_m": 6.21949339310335e-11,
+              "nearest_proxy_point_m": [
+                -0.0186862679740746,
+                0.012008887388292965,
+                0.009437557294828479
+              ],
+              "nearest_proxy_triangle_id": 1895
+            },
+            {
+              "source_triangle_id": 6019,
+              "uncovered_triangle_vertices_m": [
+                [
+                  -0.018116832535135942,
+                  0.012913383225063264,
+                  0.011328694828292104
+                ],
+                [
+                  -0.017986105754971504,
+                  0.012985761277377605,
+                  -0.00017008370195981115
+                ],
+                [
+                  -0.018591281967310743,
+                  0.012121371531154172,
+                  0.005689383531425669
+                ]
+              ],
+              "uncovered_area_m2": 5.676641368776085e-06,
+              "centroid_m": [
+                -0.01823140675247273,
+                0.01267350534453168,
+                0.005615998219252654
+              ],
+              "centroid_membership_margin_m": 3.283415900279252e-11,
+              "centroid_distance_to_union_m": 3.283416008256626e-11,
+              "nearest_proxy_point_m": [
+                -0.018231406724954005,
+                0.012673505326621854,
+                0.005615998219452775
+              ],
+              "nearest_proxy_triangle_id": 1966
+            }
+          ],
+          "all_source_triangles_covered_with_numerical_tolerance": false,
+          "numeric_plane_tolerance_m": 1e-10,
+          "limits": [
+            "Float64 halfspace clipping uses the unchanged existing numerical tolerance, not a physical acceptance threshold.",
+            "Coverage is source triangle surface inclusion, not source-solid equivalence or a global Hausdorff bound."
+          ],
+          "newly_uncovered_previously_covered_source_area_m2": 6.0046313267674924e-05,
+          "newly_uncovered_previously_covered_source_area_fraction": 0.00452384322029784,
+          "coverage_change_method": "continuous (source triangle outside repaired union) intersected with frozen old convex hull; numerical tolerance only"
+        },
+        "original_assigned_faces_new_local_coverage": {
+          "source_triangle_count": 6448,
+          "source_area_m2": 0.004486236941892922,
+          "wholly_covered_in_one_convex_part_triangles": 5200,
+          "triangles_checked_by_continuous_polygon_subtraction": 1248,
+          "uncovered_source_triangle_count": 1213,
+          "uncovered_fragments": 4543,
+          "uncovered_area_m2": 0.00010525337027590715,
+          "uncovered_source_area_fraction": 0.023461393510681706,
+          "largest_uncovered_fragment_witnesses": [
+            {
+              "source_triangle_id": 2494,
+              "uncovered_triangle_vertices_m": [
+                [
+                  -0.006032605189830065,
+                  -0.02728908509016037,
+                  0.009897077456116676
+                ],
+                [
+                  0.005566493142396212,
+                  -0.027289915829896927,
+                  0.010028939694166183
+                ],
+                [
+                  0.005562902428209782,
+                  -0.027144577354192734,
+                  0.010345805436372757
+                ]
+              ],
+              "uncovered_area_m2": 2.0220040848111957e-06,
+              "centroid_m": [
+                0.0016989301269253094,
+                -0.027241192758083344,
+                0.010090607528885206
+              ],
+              "centroid_membership_margin_m": 2.5496444538974927e-10,
+              "centroid_distance_to_union_m": 2.54964443768925e-10,
+              "nearest_proxy_point_m": [
+                0.0016989301281501949,
+                -0.027241192526331625,
+                0.010090607422600173
+              ],
+              "nearest_proxy_triangle_id": 2181
+            },
+            {
+              "source_triangle_id": 2491,
+              "uncovered_triangle_vertices_m": [
+                [
+                  0.004104511346668005,
+                  -0.027406122535467148,
+                  0.00932750478386879
+                ],
+                [
+                  0.0055386782261600655,
+                  -0.027378022267077317,
+                  0.009691306146277183
+                ],
+                [
+                  -0.006028776988387108,
+                  -0.027377193793654442,
+                  0.009559801779687405
+                ]
+              ],
+              "uncovered_area_m2": 2.016437878134777e-06,
+              "centroid_m": [
+                0.001204804194813654,
+                -0.027387112865399636,
+                0.009526204236611125
+              ],
+              "centroid_membership_margin_m": 6.883226280618437e-11,
+              "centroid_distance_to_union_m": 6.883226397968557e-11,
+              "nearest_proxy_point_m": [
+                0.0012048041948818685,
+                -0.02738711279679299,
+                0.009526204231042982
+              ],
+              "nearest_proxy_triangle_id": 1619
+            },
+            {
+              "source_triangle_id": 602,
+              "uncovered_triangle_vertices_m": [
+                [
+                  -0.015224682167172432,
+                  -0.023603463545441628,
+                  -0.03875325247645378
+                ],
+                [
+                  -0.015754887834191322,
+                  -0.025111602619290352,
+                  -0.037460923194885254
+                ],
+                [
+                  -0.015965963699731866,
+                  -0.023615588615476427,
+                  -0.03682718337314186
+                ]
+              ],
+              "uncovered_area_m2": 1.5480996250952176e-06,
+              "centroid_m": [
+                -0.01564851123369854,
+                -0.02411021826006947,
+                -0.03768045301482697
+              ],
+              "centroid_membership_margin_m": 2.5328914660116553e-10,
+              "centroid_distance_to_union_m": 2.5328914719782233e-10,
+              "nearest_proxy_point_m": [
+                -0.015648510997350578,
+                -0.024110218265242282,
+                -0.037680452923896914
+              ],
+              "nearest_proxy_triangle_id": 611
+            },
+            {
+              "source_triangle_id": 2501,
+              "uncovered_triangle_vertices_m": [
+                [
+                  0.002531125847824483,
+                  -0.026491062833735098,
+                  0.010995412757051905
+                ],
+                [
+                  -0.00604451464965775,
+                  -0.026416325942036377,
+                  0.010950517896957522
+                ],
+                [
+                  -0.006042495766420641,
+                  -0.026667431580809624,
+                  0.010772348276719957
+                ]
+              ],
+              "uncovered_area_m2": 1.3202142661101223e-06,
+              "centroid_m": [
+                -0.003185294856084636,
+                -0.026524940118860366,
+                0.010906092976909795
+              ],
+              "centroid_membership_margin_m": 4.4391167824953115e-10,
+              "centroid_distance_to_union_m": 4.439116791007874e-10,
+              "nearest_proxy_point_m": [
+                -0.0031852948519506537,
+                -0.026524939861968976,
+                0.010906092614905234
+              ],
+              "nearest_proxy_triangle_id": 1910
+            },
+            {
+              "source_triangle_id": 2500,
+              "uncovered_triangle_vertices_m": [
+                [
+                  0.003391893202369262,
+                  -0.02670130681469674,
+                  0.01085603707367842
+                ],
+                [
+                  0.002531125847824483,
+                  -0.026491062833735098,
+                  0.010995412757051905
+                ],
+                [
+                  -0.006042064547265238,
+                  -0.02670062820530637,
+                  0.010748795803671357
+                ]
+              ],
+              "uncovered_area_m2": 1.2157652489202482e-06,
+              "centroid_m": [
+                -3.9681832357164416e-05,
+                -0.026630999284579404,
+                0.010866748544800561
+              ],
+              "centroid_membership_margin_m": 3.672100713780768e-10,
+              "centroid_distance_to_union_m": 3.672100720675362e-10,
+              "nearest_proxy_point_m": [
+                -3.9681828937812016e-05,
+                -0.026630999072067674,
+                0.01086674824535055
+              ],
+              "nearest_proxy_triangle_id": 1909
+            },
+            {
+              "source_triangle_id": 530,
+              "uncovered_triangle_vertices_m": [
+                [
+                  0.01701681592623342,
+                  -0.023630589309490305,
+                  -0.03444480627336863
+                ],
+                [
+                  0.016763838869575488,
+                  -0.025122666790207936,
+                  -0.03570276124442051
+                ],
+                [
+                  0.016616514303564797,
+                  -0.024034879544898014,
+                  -0.03624829288389753
+                ]
+              ],
+              "uncovered_area_m2": 1.11914885927025e-06,
+              "centroid_m": [
+                0.016799056366457902,
+                -0.024262711881532086,
+                -0.03546528680056222
+              ],
+              "centroid_membership_margin_m": 4.2380483150639137e-10,
+              "centroid_distance_to_union_m": 4.2380482671403244e-10,
+              "nearest_proxy_point_m": [
+                0.01679905595324388,
+                -0.024262711890491746,
+                -0.03546528670683694
+              ],
+              "nearest_proxy_triangle_id": 1679
+            },
+            {
+              "source_triangle_id": 608,
+              "uncovered_triangle_vertices_m": [
+                [
+                  -0.016499840063963774,
+                  -0.02512922334666153,
+                  -0.03466199171306027
+                ],
+                [
+                  -0.01669088378548622,
+                  -0.025138262659311295,
+                  -0.033225156366825104
+                ],
+                [
+                  -0.0164683813966653,
+                  -0.023628277230134588,
+                  -0.0348254515452835
+                ]
+              ],
+              "uncovered_area_m2": 1.0870673856032955e-06,
+              "centroid_m": [
+                -0.01655303508203843,
+                -0.024631921078702473,
+                -0.034237533208389626
+              ],
+              "centroid_membership_margin_m": 5.023336815956903e-10,
+              "centroid_distance_to_union_m": 5.023336820932721e-10,
+              "nearest_proxy_point_m": [
+                -0.016553034584094708,
+                -0.02463192108193082,
+                -0.03423753314220234
+              ],
+              "nearest_proxy_triangle_id": 720
+            },
+            {
+              "source_triangle_id": 604,
+              "uncovered_triangle_vertices_m": [
+                [
+                  -0.016288748624075037,
+                  -0.024581020644186057,
+                  -0.0356248963408279
+                ],
+                [
+                  -0.01646837778389454,
+                  -0.023628180846571922,
+                  -0.03482547402381897
+                ],
+                [
+                  -0.015965964645147324,
+                  -0.023615581914782524,
+                  -0.03682718053460121
+                ]
+              ],
+              "uncovered_area_m2": 9.88616562919751e-07,
+              "centroid_m": [
+                -0.016241030351038965,
+                -0.023941594468513502,
+                -0.03575918363308269
+              ],
+              "centroid_membership_margin_m": 2.9451617533649e-10,
+              "centroid_distance_to_union_m": 2.945161752883094e-10,
+              "nearest_proxy_point_m": [
+                -0.016241030065438505,
+                -0.02394159447478093,
+                -0.03575918356143861
+              ],
+              "nearest_proxy_triangle_id": 606
+            },
+            {
+              "source_triangle_id": 529,
+              "uncovered_triangle_vertices_m": [
+                [
+                  0.01701681688427925,
+                  -0.02363058365881443,
+                  -0.03444480150938034
+                ],
+                [
+                  0.01701681688427925,
+                  -0.025130532681941986,
+                  -0.03445424139499664
+                ],
+                [
+                  0.0167638398706913,
+                  -0.02512267418205738,
+                  -0.03570275753736496
+                ]
+              ],
+              "uncovered_area_m2": 9.554204208499179e-07,
+              "centroid_m": [
+                0.016932491213083267,
+                -0.024627930174271267,
+                -0.03486726681391398
+              ],
+              "centroid_membership_margin_m": 7.026121941200447e-10,
+              "centroid_distance_to_union_m": 7.026121915566766e-10,
+              "nearest_proxy_point_m": [
+                0.016932490524464196,
+                -0.024627930175149245,
+                -0.03486726667439016
+              ],
+              "nearest_proxy_triangle_id": 1985
+            },
+            {
+              "source_triangle_id": 609,
+              "uncovered_triangle_vertices_m": [
+                [
+                  -0.01646837964065333,
+                  -0.02362819344783957,
+                  -0.03482546066955501
+                ],
+                [
+                  -0.01669088378548622,
+                  -0.025138262659311295,
+                  -0.033225156366825104
+                ],
+                [
+                  -0.016612298720780787,
+                  -0.02363542545595239,
+                  -0.03367481194143086
+                ]
+              ],
+              "uncovered_area_m2": 8.698020624498663e-07,
+              "centroid_m": [
+                -0.01659052071564011,
+                -0.02413396052103442,
+                -0.03390847632593699
+              ],
+              "centroid_membership_margin_m": 2.5322296343111006e-10,
+              "centroid_distance_to_union_m": 2.532229607894352e-10,
+              "nearest_proxy_point_m": [
+                -0.016590520464399496,
+                -0.024133960524776794,
+                -0.033908476294536104
+              ],
+              "nearest_proxy_triangle_id": 719
+            }
+          ],
+          "all_source_triangles_covered_with_numerical_tolerance": false,
+          "numeric_plane_tolerance_m": 1e-10,
+          "limits": [
+            "Float64 halfspace clipping uses the unchanged existing numerical tolerance, not a physical acceptance threshold.",
+            "Coverage is source triangle surface inclusion, not source-solid equivalence or a global Hausdorff bound."
+          ],
+          "newly_uncovered_previously_covered_source_area_m2": 6.004631328078599e-05,
+          "newly_uncovered_previously_covered_source_area_fraction": 0.013384561283437263,
+          "coverage_change_method": "continuous (source triangle outside repaired union) intersected with frozen old convex hull; numerical tolerance only"
+        },
+        "new_parts_within_old_replaced_hull": {
+          "reference": "robot0_source_flange_part_2",
+          "all_parts_contained_with_numerical_tolerance": false,
+          "parts": [
+            {
+              "part": "robot0_flange_local_00",
+              "hull_vertex_count": 94,
+              "contained_with_numerical_tolerance": false,
+              "vertices_outside_numerical_tolerance": 9,
+              "max_reference_halfspace_violation_m": 8.323518506381244e-10,
+              "max_violation_witness": {
+                "point_m": [
+                  -0.00884942069871804,
+                  -0.02144591143614899,
+                  0.011217894276372372
+                ],
+                "reference_plane": [
+                  -0.011368867177640277,
+                  -0.006295201257854359,
+                  0.9999155560847227,
+                  -0.011452560378278123
+                ],
+                "reference_halfspace_violation_m": 8.323518506381244e-10,
+                "nearest_reference_boundary_distance_m": 8.32351850160054e-10,
+                "nearest_reference_boundary_point_m": [
+                  -0.008849420689255143,
+                  -0.021445911430909168,
+                  0.011217893444090809
+                ],
+                "nearest_reference_boundary_triangle_id": 21
+              }
+            },
+            {
+              "part": "robot0_flange_local_01",
+              "hull_vertex_count": 830,
+              "contained_with_numerical_tolerance": false,
+              "vertices_outside_numerical_tolerance": 408,
+              "max_reference_halfspace_violation_m": 3.054648631262147e-09,
+              "max_violation_witness": {
+                "point_m": [
+                  0.0011569558678672688,
+                  -0.025388469916133246,
+                  -0.04865162957624625
+                ],
+                "reference_plane": [
+                  0.011325408557359029,
+                  -0.08082601524313646,
+                  -0.9966638803432805,
+                  -0.05055447071816459
+                ],
+                "reference_halfspace_violation_m": 3.054648631262147e-09,
+                "nearest_reference_boundary_distance_m": 3.0555094450637262e-09,
+                "nearest_reference_boundary_point_m": [
+                  0.0011569557607541254,
+                  -0.02538846966896427,
+                  -0.04865162653263454
+                ],
+                "nearest_reference_boundary_triangle_id": 959
+              }
+            }
+          ],
+          "numeric_plane_tolerance_m": 1e-10,
+          "method": "all vertices of each actual part convex hull against every reference convex halfspace",
+          "limits": [
+            "Positive plane violations witness noncontainment; negative violations are plane margins, not distances to the reference boundary.",
+            "Source convex-hull containment does not establish source-solid inclusion or absence of groove/cavity capping."
+          ]
+        },
+        "inherited_vs_new_source_gaps": {
+          "old_uncovered_area_m2": 0.0005045366339323802,
+          "new_uncovered_area_m2": 0.0004430928917500788,
+          "newly_uncovered_previously_covered_area_m2": 6.0046313267674924e-05,
+          "new_uncovered_inherited_area_m2": 0.00038304657848240386,
+          "method": "New full-union uncovered source polygons intersected with the old replaced hull. Since every frozen old part is present in new full union, all remaining old coverage can only come from that hull."
+        },
+        "local_proxy_volume": {
+          "old_m3": 1.16402298580907e-05,
+          "new_m3": 9.02163699349456e-06,
+          "removed_convex_proxy_volume_m3": 2.6185928645961403e-06,
+          "reduction_fraction": 0.22496058037686015,
+          "method": "Signed tetrahedra of exposed oriented convex-union boundary; source solid volume is not inferred."
+        }
+      },
+      "source_point_and_scale_lineage": {
+        "old_input_points": 3244,
+        "old_input_max_source_coordinate_difference_m": 0.0,
+        "all_old_input_points_match_factory_coordinates_exactly": true,
+        "factory_source_bytes_unchanged": true,
+        "new_parts": [
+          {
+            "geom": "robot0_flange_local_00",
+            "vertices": 94,
+            "maximum_candidate_vertex_distance_to_source_or_CAD_edge_intersection_m": 0.0,
+            "all_vertices_have_source_lineage_at_unchanged_tolerance": true,
+            "scale_pos_quat_equal_old_target": true
+          },
+          {
+            "geom": "robot0_flange_local_01",
+            "vertices": 831,
+            "maximum_candidate_vertex_distance_to_source_or_CAD_edge_intersection_m": 0.0,
+            "all_vertices_have_source_lineage_at_unchanged_tolerance": true,
+            "scale_pos_quat_equal_old_target": true
+          }
+        ],
+        "new_clip_vertex_definition": "Only original triangle edges intersected by the two pre-frozen source-native y planes; source coordinates and geom/asset scale and pose are unchanged."
+      }
+    }
+  },
+  "limits": [
+    "Coverage means supplied source triangle surface inclusion, not solid equivalence.",
+    "Link5 source is not watertight; no source interior, physical penetration or grasp claim.",
+    "Raw float64 geometry and rounded compiled mesh geometry are reported separately.",
+    "No candidate regeneration, threshold increase, decomposition search or repair occurs."
+  ],
+  "input_sha256_after": {
+    "examples/right_hand/candidates/finger13_local/model.xml": "b27f4f86fbaeacd2bb925463f39f67181ef7db12963c4d9f7fc01797a7924d1b",
+    "examples/right_hand/candidates/link5_flange_local/manifest.json": "373cbab3606677cc01610a74d00cb257adece2bb547c959fbf17499a37b779f7",
+    "examples/right_hand/candidates/link5_flange_local/meshes/robot0_flange_local_00.obj": "b86b2b38468b27b22ecbabb0880f65fc3eeac8495e4c22636cff764fe17db4ef",
+    "examples/right_hand/candidates/link5_flange_local/meshes/robot0_flange_local_01.obj": "4fd5ff0c3bf9788eed291e70867e6e9f0d2e7cd0592a0efcaef46317ca858c62",
+    "examples/right_hand/candidates/link5_flange_local/meshes/robot0_link5_local_00.obj": "631b2ae8b5b706b019c82d3049d248792292ae678b728ab5aa6a1202177c9548",
+    "examples/right_hand/candidates/link5_flange_local/meshes/robot0_link5_local_01.obj": "631e4f74493fea04724c2a566dc50e72f314cff5561c3a3b93c1d315cdba28da",
+    "examples/right_hand/candidates/link5_flange_local/meshes/robot0_link5_local_02.obj": "20847b190fe32c1b3eececc0959799f2dddd2dc893c006aaafff72c985a33e76",
+    "examples/right_hand/candidates/link5_flange_local/model.xml": "1b2530d923b446605492b43652dd5a3200fd755674ba17a54f0c961cde362b39",
+    "examples/right_hand/evidence/d3_geometry/triangle/surface_geometry.py": "21b91daa9ccfc7ddedc91ca4a95eb3f2f1b72b720a5619b2bb59144f39de71de",
+    "examples/right_hand/evidence/d3_link5_flange/geometry-results.json.gz": "5802dea40513295413359cd340f39c4d37a04bc4662d98e027d6c594d50f4a45",
+    "examples/right_hand/evidence/d3_link5_flange_local/source-partition-plan.json.gz": "5ff15a6136f9f822ffc3d62d5b107d2f4f1a22e43017a0bc9fee226e96cfe45f",
+    "examples/right_hand/finger13_quality.py": "5dfb459f7277fad888352282147d5bf727977a3ac1f11c84ea54e08c3d292e9b",
+    "examples/right_hand/link5_flange_poses.py": "3e6804238de7402b8e9867035422dbc0aa690efe8bab648b153a095b68807290",
+    "examples/right_hand/link5_flange_quality.py": "c6b44c033c95bed6aac758d64ec2198fb5a74f0b0dc7e74b95aeaf750c431eab",
+    "examples/right_hand/proxy76_contacts.py": "97986d2c2f7138721c67cc3cb5adefc93c817d2429bef059bd69b4e89cfa9478",
+    "examples/right_hand/proxy76_geometry.py": "5c284fe872519406007bbab1fcf3d5b8b167ec9a377585f79e66a1b559170341",
+    "examples/right_hand/proxy76_validate.py": "aa9224ee4daf5f8d9355a40ab8b26f878d50ddd82ca0808d6e9d52855fc6948c",
+    "meshes/mount/robot0_source_flange_part_0-7c6df993.obj": "7c6df99313f122093d0632fd9956e21da9592c2a7b53e267bb1ca60a485afb90",
+    "meshes/mount/robot0_source_flange_part_1-24b510b6.obj": "24b510b6d7d21fb3ecedb42bb8b319eda76bc658cccc6564ebc897729632b0d6",
+    "meshes/mount/robot0_source_flange_part_2-c5005972.obj": "c500597223128b393b9ffc527bff96c8f9d7b782a258a2dcc27459b199310a0e",
+    "meshes/mount/robot0_source_flange_part_3-a1e2dbb0.obj": "a1e2dbb01a0dc3e71497b725e88fe799aa4658d3952c56a33c61424f72bc4b54",
+    "meshes/mount/robot0_source_flange_part_4-5bfdf6a3.obj": "5bfdf6a3094c061466d310f3abee69e801a366487b64fb88db3179a04f361279",
+    "meshes/mount/robot0_source_flange_part_5-6668a712.obj": "6668a7126ea4beb7012f249a7a037b3ed1edb254cae75957bb19aee1d3143d70",
+    "meshes/mount/robot0_source_flange_part_6-91ccc782.obj": "91ccc782f3402baa42be3f07ccb62534b85d1375fec76e170afa009e48cc6376",
+    "meshes/mount/robot0_source_flange_part_7-4853dcf0.obj": "4853dcf02b546afa7e65c663307078defec264e1cbb0fbcd77bed51ecf9cce96",
+    "meshes/nero/robot0_candidate_nero_link5_0-8e811e87.obj": "8e811e875673123e2bd95c3c781864f0ef43d0b011d867cc0c167a5851eaae2e",
+    "meshes/nero/robot0_candidate_nero_link5_1-e06d88f5.obj": "e06d88f549456d261db9641581cfa01d93601cbf7b06e9d050a3df23761c9798",
+    "meshes/nero/robot0_candidate_nero_link5_2-3d339924.obj": "3d33992483c63c40ead4a738ae1ca381586b3f98afaf4771b0266308eb53fd0f",
+    "meshes/nero/robot0_candidate_nero_link5_3-208022a5.obj": "208022a56ac77703f8734d7d499a1035365a31e565f48fca7a9fb2ac2be8b277",
+    "meshes/nero/robot0_candidate_nero_link5_4-384fc2f2.obj": "384fc2f28ced1c7d03201cea03eb3202ec717e4a91648cd2f753e8ce57e880a6",
+    "meshes/nero/robot0_candidate_nero_link5_5-6139f37c.obj": "6139f37c5ca00058845dc786d366b19e09d8c4a6a0303729d4f6b034adc107ec",
+    "meshes/nero/robot0_candidate_nero_link5_6-849a2feb.obj": "849a2feb5135bb01a681527a5d1309dbb8b6439a49bbdb4792816167a14a18c9",
+    "meshes/nero/source/gripper_flange-186697a7.stl": "186697a73e7cafd9fd41d96f1eea9b34b444c058b9561fb2e3ea439c835ae2e8",
+    "meshes/nero/source/link5-dc497f5a.stl": "dc497f5a9bab2d0d314250134d4ec86617abea7205d122db41b765acdb86ae7e",
+    "tools/build_right_proxy76.py": "ef858f59bf57b73657f27ed50e623ba361ae30bee588c9be46d7f88b53bf025c"
+  },
+  "inputs_unchanged": true,
+  "wall_seconds": 311.16462791804224,
+  "raw_source_preservation_status": "PASS",
+  "compiled_source_preservation_status": "FAIL_AT_UNCHANGED_NUMERICAL_TOLERANCE",
+  "post_run_interpretation": {
+    "annotation_only_no_recomputation": true,
+    "environment_metadata": "environment.json",
+    "compiled_volume_usage": "DIAGNOSTIC_ONLY_NOT_FOR_ACCEPTANCE",
+    "compiled_volume_limit": "The reused exposed-union clipping and oriented-tetrahedron volume calculation is sensitive to rounded near-coplanar interfaces. The roughly one-percent compiled/raw link5 union-volume discrepancy cannot be interpreted as a one-percent change in represented physical geometry. Compiled union volume is not used by either source-preservation or convex-containment status.",
+    "strict_compiled_coverage_status": "FAIL at the unchanged 1e-10 m numerical tolerance; uncovered source triangle areas are retained verbatim and are not described as tiny holes. Area is a surface-set metric: even nanometre normal displacement can uncover a finite planar source area.",
+    "source_solid_claim": "NONE: no watertight source-solid or source equivalence claim; no geometry repair or tolerance increase."
+  }
+}

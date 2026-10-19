@@ -1,0 +1,351 @@
+{
+  "schema": "d3-link5-flange-local-first-failure-point-to-full-source-v1",
+  "pose_id": "m040_quarter3",
+  "candidate_model_sha256": "1b2530d923b446605492b43652dd5a3200fd755674ba17a54f0c961cde362b39",
+  "candidate_pair": [
+    "robot0_link5_local_01",
+    "robot0_flange_local_01"
+  ],
+  "candidate_crossing_face_ids_zero_based": [
+    54,
+    45
+  ],
+  "existing_crossing_witness_point_body5_m": [
+    0.011998464841120195,
+    -0.021405679367365538,
+    -0.02242383198307979
+  ],
+  "existing_crossing_witness_point_world_m": [
+    -0.2058351079540615,
+    0.1613324764559774,
+    1.1567482733911942
+  ],
+  "body_world_transforms": {
+    "robot0_link5": {
+      "rotation": [
+        [
+          -0.697296274482056,
+          -0.1780661375422869,
+          0.6943128662600295
+        ],
+        [
+          0.3763711306075835,
+          0.7334135694894325,
+          0.5660824216789812
+        ],
+        [
+          -0.6100185879451672,
+          0.6560464821562128,
+          -0.44438759614985146
+        ]
+      ],
+      "translation_m": [
+        -0.18571109471055441,
+        0.1852095535026399,
+        1.168145807826779
+      ]
+    },
+    "robot0_gripper_flange": {
+      "rotation": [
+        [
+          0.1760395835284267,
+          0.9674320403521104,
+          0.18189368414349022
+        ],
+        [
+          0.6953279494643676,
+          0.008590847494487616,
+          -0.7186412457081806
+        ],
+        [
+          -0.6967991875173343,
+          0.25298506801683013,
+          -0.6711702076490761
+        ]
+      ],
+      "translation_m": [
+        -0.1798906313367517,
+        0.16221295136168454,
+        1.146668413762447
+      ]
+    }
+  },
+  "source_stl_point_queries": [
+    {
+      "body": "robot0_link5",
+      "source_stl": {
+        "file": "meshes/nero/source/link5-dc497f5a.stl",
+        "sha256": "dc497f5a9bab2d0d314250134d4ec86617abea7205d122db41b765acdb86ae7e"
+      },
+      "source_full_triangle_count": 36200,
+      "witness_point_body_local_m": [
+        0.011998464841120195,
+        -0.021405679367365538,
+        -0.02242383198307979
+      ],
+      "continuous_distance_to_full_source_surface_m": 0.004855110396502342,
+      "nearest_source_triangle_face_id_zero_based": 3770,
+      "nearest_source_point_body_local_m": [
+        0.007393773746609935,
+        -0.022771527740944347,
+        -0.021714342654932314
+      ],
+      "nearest_source_triangle_body_local_m": [
+        [
+          0.007379967253655195,
+          -0.024800000712275505,
+          -0.021654222160577774
+        ],
+        [
+          0.00712589779868722,
+          -0.022572457790374756,
+          -0.02306966483592987
+        ],
+        [
+          0.0075065139681100845,
+          -0.022855309769511223,
+          -0.02114393189549446
+        ]
+      ],
+      "full_surface_query": {
+        "surface_min_distance_m": 0.004855110396502342,
+        "surface_intersection": false,
+        "strict_transverse_witness": null,
+        "nearest_face_ids_zero_based": [
+          0,
+          3770
+        ],
+        "closest_points": [
+          [
+            0.011998464841120195,
+            -0.021405679367365538,
+            -0.02242383198307979
+          ],
+          [
+            0.007393773746609935,
+            -0.022771527740944347,
+            -0.021714342654932314
+          ]
+        ],
+        "visited_node_pairs": 51,
+        "leaf_pairs": 10,
+        "triangle_pairs_evaluated": 47,
+        "all_surface_search_complete": true,
+        "global_zero_certified_by_intersection": false,
+        "numerical_absolute_bound_tolerance_m": 1e-12
+      }
+    },
+    {
+      "body": "robot0_gripper_flange",
+      "source_stl": {
+        "file": "meshes/nero/source/gripper_flange-186697a7.stl",
+        "sha256": "186697a73e7cafd9fd41d96f1eea9b34b444c058b9561fb2e3ea439c835ae2e8"
+      },
+      "source_full_triangle_count": 13302,
+      "witness_point_body_local_m": [
+        -0.01220311166891426,
+        -0.02255702800161058,
+        -0.010851692332144773
+      ],
+      "continuous_distance_to_full_source_surface_m": 0.0014705516105856914,
+      "nearest_source_triangle_face_id_zero_based": 4062,
+      "nearest_source_point_body_local_m": [
+        -0.011173709409162362,
+        -0.023595654855740965,
+        -0.011006957540395292
+      ],
+      "nearest_source_triangle_body_local_m": [
+        [
+          -0.011191274970769882,
+          -0.023785360157489777,
+          -0.009854407049715519
+        ],
+        [
+          -0.010694442316889763,
+          -0.023285018280148506,
+          -0.00990739930421114
+        ],
+        [
+          -0.011634059250354767,
+          -0.02376607246696949,
+          -0.012919072061777115
+        ]
+      ],
+      "full_surface_query": {
+        "surface_min_distance_m": 0.0014705516105856914,
+        "surface_intersection": false,
+        "strict_transverse_witness": null,
+        "nearest_face_ids_zero_based": [
+          0,
+          4062
+        ],
+        "closest_points": [
+          [
+            -0.01220311166891426,
+            -0.02255702800161058,
+            -0.010851692332144773
+          ],
+          [
+            -0.011173709409162362,
+            -0.023595654855740965,
+            -0.011006957540395292
+          ]
+        ],
+        "visited_node_pairs": 54,
+        "leaf_pairs": 10,
+        "triangle_pairs_evaluated": 67,
+        "all_surface_search_complete": true,
+        "global_zero_certified_by_intersection": false,
+        "numerical_absolute_bound_tolerance_m": 1e-12
+      }
+    }
+  ],
+  "method": "Existing unchanged continuous full-triangle BVH, with the one stored crossing witness represented as a degenerate point-triangle; source STL vertices remain in their own native body coordinates. Stored body transforms only; no new pose, FK, candidate generation or simulation.",
+  "physics_steps": 0,
+  "call_audit": {
+    "allowed_apis": [],
+    "blocked_apis": [
+      "mj_Euler",
+      "mj_RungeKutta",
+      "mj_addContact",
+      "mj_addM",
+      "mj_angmomMat",
+      "mj_applyFT",
+      "mj_camlight",
+      "mj_checkAcc",
+      "mj_checkPos",
+      "mj_checkVel",
+      "mj_collision",
+      "mj_comPos",
+      "mj_comVel",
+      "mj_compareFwdInv",
+      "mj_constraintUpdate",
+      "mj_contactForce",
+      "mj_crb",
+      "mj_defaultLROpt",
+      "mj_defaultOption",
+      "mj_defaultSolRefImp",
+      "mj_defaultVisual",
+      "mj_differentiatePos",
+      "mj_energyPos",
+      "mj_energyVel",
+      "mj_factorM",
+      "mj_flex",
+      "mj_forward",
+      "mj_forwardSkip",
+      "mj_fullM",
+      "mj_fwdAcceleration",
+      "mj_fwdActuation",
+      "mj_fwdConstraint",
+      "mj_fwdPosition",
+      "mj_fwdVelocity",
+      "mj_geomDistance",
+      "mj_getState",
+      "mj_getTotalmass",
+      "mj_id2name",
+      "mj_implicit",
+      "mj_integratePos",
+      "mj_invConstraint",
+      "mj_invPosition",
+      "mj_invVelocity",
+      "mj_inverse",
+      "mj_inverseSkip",
+      "mj_isDual",
+      "mj_isPyramidal",
+      "mj_isSparse",
+      "mj_island",
+      "mj_jac",
+      "mj_jacBody",
+      "mj_jacBodyCom",
+      "mj_jacDot",
+      "mj_jacGeom",
+      "mj_jacPointAxis",
+      "mj_jacSite",
+      "mj_jacSubtreeCom",
+      "mj_kinematics",
+      "mj_loadAllPluginLibraries",
+      "mj_loadPluginLibrary",
+      "mj_local2Global",
+      "mj_makeConstraint",
+      "mj_mulJacTVec",
+      "mj_mulJacVec",
+      "mj_mulM",
+      "mj_mulM2",
+      "mj_multiRay",
+      "mj_name2id",
+      "mj_normalizeQuat",
+      "mj_objectAcceleration",
+      "mj_objectVelocity",
+      "mj_passive",
+      "mj_printData",
+      "mj_printFormattedData",
+      "mj_printFormattedModel",
+      "mj_printModel",
+      "mj_printSchema",
+      "mj_projectConstraint",
+      "mj_ray",
+      "mj_rayHfield",
+      "mj_rayMesh",
+      "mj_referenceConstraint",
+      "mj_resetCallbacks",
+      "mj_resetData",
+      "mj_resetDataDebug",
+      "mj_resetDataKeyframe",
+      "mj_rne",
+      "mj_rnePostConstraint",
+      "mj_saveLastXML",
+      "mj_saveModel",
+      "mj_sensorAcc",
+      "mj_sensorPos",
+      "mj_sensorVel",
+      "mj_setConst",
+      "mj_setKeyframe",
+      "mj_setLengthRange",
+      "mj_setState",
+      "mj_setTotalmass",
+      "mj_sizeModel",
+      "mj_solveM",
+      "mj_solveM2",
+      "mj_stateSize",
+      "mj_step",
+      "mj_step1",
+      "mj_step2",
+      "mj_subtreeVel",
+      "mj_tendon",
+      "mj_transmission",
+      "mj_version",
+      "mj_versionString"
+    ],
+    "allowed_api_calls": {},
+    "forbidden_api_attempts": [],
+    "physics_steps": 0,
+    "constraint_solves": 0,
+    "resets": 0,
+    "forward_calls": 0,
+    "collision_calls": 0,
+    "model_constructor_calls": 0,
+    "data_constructor_calls": 0
+  },
+  "inputs_unchanged": true,
+  "input_sha256_before": {
+    "examples/right_hand/evidence/d3_geometry/triangle/surface_geometry.py": "21b91daa9ccfc7ddedc91ca4a95eb3f2f1b72b720a5619b2bb59144f39de71de",
+    "examples/right_hand/evidence/d3_link5_flange/geometry.py": "860099e2d2e99290044141db98c884bb1ef36eaa3eff3714bb78d76947e7f64d",
+    "examples/right_hand/evidence/d3_link5_flange_local/poses/first-failure-classification.json": "345584f8f036003d5a37f93374e4ffee50431a27af2d7fccf50b76575baa01af",
+    "examples/right_hand/link5_flange_poses.py": "3e6804238de7402b8e9867035422dbc0aa690efe8bab648b153a095b68807290",
+    "examples/right_hand/proxy76_validate.py": "aa9224ee4daf5f8d9355a40ab8b26f878d50ddd82ca0808d6e9d52855fc6948c",
+    "meshes/nero/source/gripper_flange-186697a7.stl": "186697a73e7cafd9fd41d96f1eea9b34b444c058b9561fb2e3ea439c835ae2e8",
+    "meshes/nero/source/link5-dc497f5a.stl": "dc497f5a9bab2d0d314250134d4ec86617abea7205d122db41b765acdb86ae7e",
+    "tools/build_right_proxy76.py": "ef858f59bf57b73657f27ed50e623ba361ae30bee588c9be46d7f88b53bf025c"
+  },
+  "input_sha256_after": {
+    "examples/right_hand/evidence/d3_geometry/triangle/surface_geometry.py": "21b91daa9ccfc7ddedc91ca4a95eb3f2f1b72b720a5619b2bb59144f39de71de",
+    "examples/right_hand/evidence/d3_link5_flange/geometry.py": "860099e2d2e99290044141db98c884bb1ef36eaa3eff3714bb78d76947e7f64d",
+    "examples/right_hand/evidence/d3_link5_flange_local/poses/first-failure-classification.json": "345584f8f036003d5a37f93374e4ffee50431a27af2d7fccf50b76575baa01af",
+    "examples/right_hand/link5_flange_poses.py": "3e6804238de7402b8e9867035422dbc0aa690efe8bab648b153a095b68807290",
+    "examples/right_hand/proxy76_validate.py": "aa9224ee4daf5f8d9355a40ab8b26f878d50ddd82ca0808d6e9d52855fc6948c",
+    "meshes/nero/source/gripper_flange-186697a7.stl": "186697a73e7cafd9fd41d96f1eea9b34b444c058b9561fb2e3ea439c835ae2e8",
+    "meshes/nero/source/link5-dc497f5a.stl": "dc497f5a9bab2d0d314250134d4ec86617abea7205d122db41b765acdb86ae7e",
+    "tools/build_right_proxy76.py": "ef858f59bf57b73657f27ed50e623ba361ae30bee588c9be46d7f88b53bf025c"
+  },
+  "limitation": "Positive point-to-surface distances locate this proxy witness away from both source triangle surfaces. They do not uniquely attribute proxy overfill to one component or establish source-solid containment."
+}
