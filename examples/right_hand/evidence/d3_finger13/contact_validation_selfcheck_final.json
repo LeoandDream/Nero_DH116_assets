@@ -1,0 +1,1653 @@
+{
+  "status": "PASS",
+  "physics_steps": 0,
+  "analytic_tests": [
+    {
+      "case": "separate",
+      "expected_robust_classification": "SEPARATED_CONVEX_SOLIDS",
+      "actual": {
+        "classification": "SEPARATED_CONVEX_SOLIDS",
+        "all_tolerances_agree": true,
+        "tolerance_runs": [
+          {
+            "feasibility_tolerance": 1e-07,
+            "radius_lp_mm": -0.5,
+            "independent_center_min_margin_mm": -0.5,
+            "conservative_dual_radius_upper_bound_mm": -0.5,
+            "classification": "SEPARATED_CONVEX_SOLIDS",
+            "center_conditioned_mm": [
+              -0.0,
+              -1.0,
+              -1.0
+            ],
+            "dual_normal_residual": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "dual_weight_sum": 1.0
+          },
+          {
+            "feasibility_tolerance": 1e-08,
+            "radius_lp_mm": -0.5,
+            "independent_center_min_margin_mm": -0.5,
+            "conservative_dual_radius_upper_bound_mm": -0.5,
+            "classification": "SEPARATED_CONVEX_SOLIDS",
+            "center_conditioned_mm": [
+              -0.0,
+              -1.0,
+              -1.0
+            ],
+            "dual_normal_residual": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "dual_weight_sum": 1.0
+          },
+          {
+            "feasibility_tolerance": 1e-09,
+            "radius_lp_mm": -0.5,
+            "independent_center_min_margin_mm": -0.5,
+            "conservative_dual_radius_upper_bound_mm": -0.5,
+            "classification": "SEPARATED_CONVEX_SOLIDS",
+            "center_conditioned_mm": [
+              -0.0,
+              -1.0,
+              -1.0
+            ],
+            "dual_normal_residual": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "dual_weight_sum": 1.0
+          }
+        ],
+        "certificate": {
+          "normals": [
+            [
+              -0.0,
+              -0.0,
+              -1.0
+            ],
+            [
+              -0.0,
+              -0.0,
+              -1.0
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              1.0,
+              -0.0,
+              -0.0
+            ],
+            [
+              1.0,
+              -0.0,
+              -0.0
+            ],
+            [
+              -1.0,
+              -0.0,
+              -0.0
+            ],
+            [
+              -1.0,
+              -0.0,
+              -0.0
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0
+            ],
+            [
+              -0.0,
+              -0.0,
+              1.0
+            ],
+            [
+              -0.0,
+              -0.0,
+              1.0
+            ],
+            [
+              -0.0,
+              -0.0,
+              -1.0
+            ],
+            [
+              -0.0,
+              -0.0,
+              -1.0
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              1.0,
+              -0.0,
+              -0.0
+            ],
+            [
+              1.0,
+              -0.0,
+              -0.0
+            ],
+            [
+              -1.0,
+              -0.0,
+              -0.0
+            ],
+            [
+              -1.0,
+              -0.0,
+              -0.0
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0
+            ],
+            [
+              -0.0,
+              -0.0,
+              1.0
+            ],
+            [
+              -0.0,
+              -0.0,
+              1.0
+            ]
+          ],
+          "offsets_mm": [
+            -0.5,
+            -0.5,
+            -0.5,
+            -0.5,
+            0.5,
+            0.5,
+            -1.5,
+            -1.5,
+            -0.5,
+            -0.5,
+            -0.5,
+            -0.5,
+            -0.5,
+            -0.5,
+            -0.5,
+            -0.5,
+            -1.5,
+            -1.5,
+            0.5,
+            0.5,
+            -0.5,
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "dual_weights": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "center_conditioned_mm": [
+            -0.0,
+            -1.0,
+            -1.0
+          ],
+          "conditioned_aabb_abs_bounds_mm": [
+            1.5,
+            0.5,
+            0.5
+          ],
+          "conditioning_origin_body13_mm": [
+            1.5,
+            0.5,
+            0.5
+          ],
+          "decimal": {
+            "precision": 60,
+            "planes_checked": 24,
+            "minimum_center_plane_margin_mm": "-0.5",
+            "dual_radius_upper_bound_mm": "-0.5",
+            "all_dual_weights_nonnegative": true,
+            "strict_overlap_certified": false,
+            "strict_separation_certified": true
+          }
+        },
+        "geoms": [
+          "a",
+          "b"
+        ],
+        "hulls": [
+          {
+            "geom": "a",
+            "raw_vertices": 8,
+            "halfspaces": 12,
+            "max_plane_numerical_padding_mm": 1e-10,
+            "max_raw_vertex_plane_residual_mm": 0.0,
+            "min_padded_raw_vertex_enclosure_margin_mm": 1e-10
+          },
+          {
+            "geom": "b",
+            "raw_vertices": 8,
+            "halfspaces": 12,
+            "max_plane_numerical_padding_mm": 1e-10,
+            "max_raw_vertex_plane_residual_mm": 0.0,
+            "min_padded_raw_vertex_enclosure_margin_mm": 1e-10
+          }
+        ],
+        "primary_geometry": "UNEXPANDED_ORIGINAL_CONVEX_HALFSPACES",
+        "numerical_expansion_check": {
+          "classification": "SEPARATED_CONVEX_SOLIDS",
+          "all_tolerances_agree": true,
+          "tolerance_runs": [
+            {
+              "feasibility_tolerance": 1e-07,
+              "radius_lp_mm": -0.4999999999,
+              "independent_center_min_margin_mm": -0.4999999999,
+              "conservative_dual_radius_upper_bound_mm": -0.4999999999,
+              "classification": "SEPARATED_CONVEX_SOLIDS",
+              "center_conditioned_mm": [
+                -0.0,
+                -1.0,
+                -1.0
+              ],
+              "dual_normal_residual": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "dual_weight_sum": 1.0
+            },
+            {
+              "feasibility_tolerance": 1e-08,
+              "radius_lp_mm": -0.4999999999,
+              "independent_center_min_margin_mm": -0.4999999999,
+              "conservative_dual_radius_upper_bound_mm": -0.4999999999,
+              "classification": "SEPARATED_CONVEX_SOLIDS",
+              "center_conditioned_mm": [
+                -0.0,
+                -1.0,
+                -1.0
+              ],
+              "dual_normal_residual": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "dual_weight_sum": 1.0
+            },
+            {
+              "feasibility_tolerance": 1e-09,
+              "radius_lp_mm": -0.4999999999,
+              "independent_center_min_margin_mm": -0.4999999999,
+              "conservative_dual_radius_upper_bound_mm": -0.4999999999,
+              "classification": "SEPARATED_CONVEX_SOLIDS",
+              "center_conditioned_mm": [
+                -0.0,
+                -1.0,
+                -1.0
+              ],
+              "dual_normal_residual": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "dual_weight_sum": 1.0
+            }
+          ],
+          "certificate": {
+            "normals": [
+              [
+                -0.0,
+                -0.0,
+                -1.0
+              ],
+              [
+                -0.0,
+                -0.0,
+                -1.0
+              ],
+              [
+                0.0,
+                -1.0,
+                0.0
+              ],
+              [
+                0.0,
+                -1.0,
+                0.0
+              ],
+              [
+                1.0,
+                -0.0,
+                -0.0
+              ],
+              [
+                1.0,
+                -0.0,
+                -0.0
+              ],
+              [
+                -1.0,
+                -0.0,
+                -0.0
+              ],
+              [
+                -1.0,
+                -0.0,
+                -0.0
+              ],
+              [
+                0.0,
+                1.0,
+                -0.0
+              ],
+              [
+                0.0,
+                1.0,
+                -0.0
+              ],
+              [
+                -0.0,
+                -0.0,
+                1.0
+              ],
+              [
+                -0.0,
+                -0.0,
+                1.0
+              ],
+              [
+                -0.0,
+                -0.0,
+                -1.0
+              ],
+              [
+                -0.0,
+                -0.0,
+                -1.0
+              ],
+              [
+                0.0,
+                -1.0,
+                0.0
+              ],
+              [
+                0.0,
+                -1.0,
+                0.0
+              ],
+              [
+                1.0,
+                -0.0,
+                -0.0
+              ],
+              [
+                1.0,
+                -0.0,
+                -0.0
+              ],
+              [
+                -1.0,
+                -0.0,
+                -0.0
+              ],
+              [
+                -1.0,
+                -0.0,
+                -0.0
+              ],
+              [
+                0.0,
+                1.0,
+                -0.0
+              ],
+              [
+                0.0,
+                1.0,
+                -0.0
+              ],
+              [
+                -0.0,
+                -0.0,
+                1.0
+              ],
+              [
+                -0.0,
+                -0.0,
+                1.0
+              ]
+            ],
+            "offsets_mm": [
+              -0.5000000001,
+              -0.5000000001,
+              -0.5000000001,
+              -0.5000000001,
+              0.4999999999,
+              0.4999999999,
+              -1.5000000001,
+              -1.5000000001,
+              -0.5000000001,
+              -0.5000000001,
+              -0.5000000001,
+              -0.5000000001,
+              -0.5000000001,
+              -0.5000000001,
+              -0.5000000001,
+              -0.5000000001,
+              -1.5000000001,
+              -1.5000000001,
+              0.4999999999,
+              0.4999999999,
+              -0.5000000001,
+              -0.5000000001,
+              -0.5000000001,
+              -0.5000000001
+            ],
+            "dual_weights": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.5,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.5,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "center_conditioned_mm": [
+              -0.0,
+              -1.0,
+              -1.0
+            ],
+            "conditioned_aabb_abs_bounds_mm": [
+              1.5,
+              0.5,
+              0.5
+            ],
+            "conditioning_origin_body13_mm": [
+              1.5,
+              0.5,
+              0.5
+            ],
+            "decimal": {
+              "precision": 60,
+              "planes_checked": 24,
+              "minimum_center_plane_margin_mm": "-0.4999999998999999917259629000909626483917236328125",
+              "dual_radius_upper_bound_mm": "-0.4999999998999999917259629000909626483917236328125",
+              "all_dual_weights_nonnegative": true,
+              "strict_overlap_certified": false,
+              "strict_separation_certified": true
+            }
+          }
+        },
+        "raw_and_expanded_classifications_agree": true,
+        "robust_classification": "SEPARATED_CONVEX_SOLIDS"
+      }
+    },
+    {
+      "case": "overlap",
+      "expected_robust_classification": "STRICT_CONVEX_INTERIOR_OVERLAP",
+      "actual": {
+        "classification": "STRICT_CONVEX_INTERIOR_OVERLAP",
+        "all_tolerances_agree": true,
+        "tolerance_runs": [
+          {
+            "feasibility_tolerance": 1e-07,
+            "radius_lp_mm": 0.25,
+            "independent_center_min_margin_mm": 0.25,
+            "conservative_dual_radius_upper_bound_mm": 0.25,
+            "classification": "STRICT_CONVEX_INTERIOR_OVERLAP",
+            "center_conditioned_mm": [
+              -0.0,
+              -0.25,
+              -0.25
+            ],
+            "dual_normal_residual": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "dual_weight_sum": 1.0
+          },
+          {
+            "feasibility_tolerance": 1e-08,
+            "radius_lp_mm": 0.25,
+            "independent_center_min_margin_mm": 0.25,
+            "conservative_dual_radius_upper_bound_mm": 0.25,
+            "classification": "STRICT_CONVEX_INTERIOR_OVERLAP",
+            "center_conditioned_mm": [
+              -0.0,
+              -0.25,
+              -0.25
+            ],
+            "dual_normal_residual": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "dual_weight_sum": 1.0
+          },
+          {
+            "feasibility_tolerance": 1e-09,
+            "radius_lp_mm": 0.25,
+            "independent_center_min_margin_mm": 0.25,
+            "conservative_dual_radius_upper_bound_mm": 0.25,
+            "classification": "STRICT_CONVEX_INTERIOR_OVERLAP",
+            "center_conditioned_mm": [
+              -0.0,
+              -0.25,
+              -0.25
+            ],
+            "dual_normal_residual": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "dual_weight_sum": 1.0
+          }
+        ],
+        "certificate": {
+          "normals": [
+            [
+              -0.0,
+              -0.0,
+              -1.0
+            ],
+            [
+              -0.0,
+              -0.0,
+              -1.0
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              1.0,
+              -0.0,
+              -0.0
+            ],
+            [
+              1.0,
+              -0.0,
+              -0.0
+            ],
+            [
+              -1.0,
+              -0.0,
+              -0.0
+            ],
+            [
+              -1.0,
+              -0.0,
+              -0.0
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0
+            ],
+            [
+              -0.0,
+              -0.0,
+              1.0
+            ],
+            [
+              -0.0,
+              -0.0,
+              1.0
+            ],
+            [
+              -0.0,
+              -0.0,
+              -1.0
+            ],
+            [
+              -0.0,
+              -0.0,
+              -1.0
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              1.0,
+              -0.0,
+              -0.0
+            ],
+            [
+              1.0,
+              -0.0,
+              -0.0
+            ],
+            [
+              -1.0,
+              -0.0,
+              -0.0
+            ],
+            [
+              -1.0,
+              -0.0,
+              -0.0
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0
+            ],
+            [
+              -0.0,
+              -0.0,
+              1.0
+            ],
+            [
+              -0.0,
+              -0.0,
+              1.0
+            ]
+          ],
+          "offsets_mm": [
+            -0.5,
+            -0.5,
+            -0.5,
+            -0.5,
+            -0.25,
+            -0.25,
+            -0.75,
+            -0.75,
+            -0.5,
+            -0.5,
+            -0.5,
+            -0.5,
+            -0.5,
+            -0.5,
+            -0.5,
+            -0.5,
+            -0.75,
+            -0.75,
+            -0.25,
+            -0.25,
+            -0.5,
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "dual_weights": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "center_conditioned_mm": [
+            -0.0,
+            -0.25,
+            -0.25
+          ],
+          "conditioned_aabb_abs_bounds_mm": [
+            0.75,
+            0.5,
+            0.5
+          ],
+          "conditioning_origin_body13_mm": [
+            0.75,
+            0.5,
+            0.5
+          ],
+          "decimal": {
+            "precision": 60,
+            "planes_checked": 24,
+            "minimum_center_plane_margin_mm": "0.25",
+            "dual_radius_upper_bound_mm": "0.25",
+            "all_dual_weights_nonnegative": true,
+            "strict_overlap_certified": true,
+            "strict_separation_certified": false
+          }
+        },
+        "geoms": [
+          "a",
+          "b"
+        ],
+        "hulls": [
+          {
+            "geom": "a",
+            "raw_vertices": 8,
+            "halfspaces": 12,
+            "max_plane_numerical_padding_mm": 1e-10,
+            "max_raw_vertex_plane_residual_mm": 0.0,
+            "min_padded_raw_vertex_enclosure_margin_mm": 1e-10
+          },
+          {
+            "geom": "b",
+            "raw_vertices": 8,
+            "halfspaces": 12,
+            "max_plane_numerical_padding_mm": 1e-10,
+            "max_raw_vertex_plane_residual_mm": 0.0,
+            "min_padded_raw_vertex_enclosure_margin_mm": 1e-10
+          }
+        ],
+        "primary_geometry": "UNEXPANDED_ORIGINAL_CONVEX_HALFSPACES",
+        "numerical_expansion_check": {
+          "classification": "STRICT_CONVEX_INTERIOR_OVERLAP",
+          "all_tolerances_agree": true,
+          "tolerance_runs": [
+            {
+              "feasibility_tolerance": 1e-07,
+              "radius_lp_mm": 0.2500000001,
+              "independent_center_min_margin_mm": 0.2500000001,
+              "conservative_dual_radius_upper_bound_mm": 0.2500000001,
+              "classification": "STRICT_CONVEX_INTERIOR_OVERLAP",
+              "center_conditioned_mm": [
+                -0.0,
+                -0.25,
+                -0.25
+              ],
+              "dual_normal_residual": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "dual_weight_sum": 1.0
+            },
+            {
+              "feasibility_tolerance": 1e-08,
+              "radius_lp_mm": 0.2500000001,
+              "independent_center_min_margin_mm": 0.2500000001,
+              "conservative_dual_radius_upper_bound_mm": 0.2500000001,
+              "classification": "STRICT_CONVEX_INTERIOR_OVERLAP",
+              "center_conditioned_mm": [
+                -0.0,
+                -0.25,
+                -0.25
+              ],
+              "dual_normal_residual": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "dual_weight_sum": 1.0
+            },
+            {
+              "feasibility_tolerance": 1e-09,
+              "radius_lp_mm": 0.2500000001,
+              "independent_center_min_margin_mm": 0.2500000001,
+              "conservative_dual_radius_upper_bound_mm": 0.2500000001,
+              "classification": "STRICT_CONVEX_INTERIOR_OVERLAP",
+              "center_conditioned_mm": [
+                -0.0,
+                -0.25,
+                -0.25
+              ],
+              "dual_normal_residual": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "dual_weight_sum": 1.0
+            }
+          ],
+          "certificate": {
+            "normals": [
+              [
+                -0.0,
+                -0.0,
+                -1.0
+              ],
+              [
+                -0.0,
+                -0.0,
+                -1.0
+              ],
+              [
+                0.0,
+                -1.0,
+                0.0
+              ],
+              [
+                0.0,
+                -1.0,
+                0.0
+              ],
+              [
+                1.0,
+                -0.0,
+                -0.0
+              ],
+              [
+                1.0,
+                -0.0,
+                -0.0
+              ],
+              [
+                -1.0,
+                -0.0,
+                -0.0
+              ],
+              [
+                -1.0,
+                -0.0,
+                -0.0
+              ],
+              [
+                0.0,
+                1.0,
+                -0.0
+              ],
+              [
+                0.0,
+                1.0,
+                -0.0
+              ],
+              [
+                -0.0,
+                -0.0,
+                1.0
+              ],
+              [
+                -0.0,
+                -0.0,
+                1.0
+              ],
+              [
+                -0.0,
+                -0.0,
+                -1.0
+              ],
+              [
+                -0.0,
+                -0.0,
+                -1.0
+              ],
+              [
+                0.0,
+                -1.0,
+                0.0
+              ],
+              [
+                0.0,
+                -1.0,
+                0.0
+              ],
+              [
+                1.0,
+                -0.0,
+                -0.0
+              ],
+              [
+                1.0,
+                -0.0,
+                -0.0
+              ],
+              [
+                -1.0,
+                -0.0,
+                -0.0
+              ],
+              [
+                -1.0,
+                -0.0,
+                -0.0
+              ],
+              [
+                0.0,
+                1.0,
+                -0.0
+              ],
+              [
+                0.0,
+                1.0,
+                -0.0
+              ],
+              [
+                -0.0,
+                -0.0,
+                1.0
+              ],
+              [
+                -0.0,
+                -0.0,
+                1.0
+              ]
+            ],
+            "offsets_mm": [
+              -0.5000000001,
+              -0.5000000001,
+              -0.5000000001,
+              -0.5000000001,
+              -0.2500000001,
+              -0.2500000001,
+              -0.7500000001,
+              -0.7500000001,
+              -0.5000000001,
+              -0.5000000001,
+              -0.5000000001,
+              -0.5000000001,
+              -0.5000000001,
+              -0.5000000001,
+              -0.5000000001,
+              -0.5000000001,
+              -0.7500000001,
+              -0.7500000001,
+              -0.2500000001,
+              -0.2500000001,
+              -0.5000000001,
+              -0.5000000001,
+              -0.5000000001,
+              -0.5000000001
+            ],
+            "dual_weights": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.5,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.5,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "center_conditioned_mm": [
+              -0.0,
+              -0.25,
+              -0.25
+            ],
+            "conditioned_aabb_abs_bounds_mm": [
+              0.75,
+              0.5,
+              0.5
+            ],
+            "conditioning_origin_body13_mm": [
+              0.75,
+              0.5,
+              0.5
+            ],
+            "decimal": {
+              "precision": 60,
+              "planes_checked": 24,
+              "minimum_center_plane_margin_mm": "0.2500000001000000082740370999090373516082763671875",
+              "dual_radius_upper_bound_mm": "0.2500000001000000082740370999090373516082763671875",
+              "all_dual_weights_nonnegative": true,
+              "strict_overlap_certified": true,
+              "strict_separation_certified": false
+            }
+          }
+        },
+        "raw_and_expanded_classifications_agree": true,
+        "robust_classification": "STRICT_CONVEX_INTERIOR_OVERLAP"
+      }
+    },
+    {
+      "case": "exact_touching",
+      "expected_robust_classification": "UNKNOWN",
+      "actual": {
+        "classification": "UNKNOWN",
+        "all_tolerances_agree": true,
+        "tolerance_runs": [
+          {
+            "feasibility_tolerance": 1e-07,
+            "radius_lp_mm": -0.0,
+            "independent_center_min_margin_mm": -0.0,
+            "conservative_dual_radius_upper_bound_mm": 0.0,
+            "classification": "UNKNOWN",
+            "center_conditioned_mm": [
+              -0.0,
+              -0.5,
+              -0.5
+            ],
+            "dual_normal_residual": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "dual_weight_sum": 1.0
+          },
+          {
+            "feasibility_tolerance": 1e-08,
+            "radius_lp_mm": -0.0,
+            "independent_center_min_margin_mm": -0.0,
+            "conservative_dual_radius_upper_bound_mm": 0.0,
+            "classification": "UNKNOWN",
+            "center_conditioned_mm": [
+              -0.0,
+              -0.5,
+              -0.5
+            ],
+            "dual_normal_residual": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "dual_weight_sum": 1.0
+          },
+          {
+            "feasibility_tolerance": 1e-09,
+            "radius_lp_mm": -0.0,
+            "independent_center_min_margin_mm": -0.0,
+            "conservative_dual_radius_upper_bound_mm": 0.0,
+            "classification": "UNKNOWN",
+            "center_conditioned_mm": [
+              -0.0,
+              -0.5,
+              -0.5
+            ],
+            "dual_normal_residual": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "dual_weight_sum": 1.0
+          }
+        ],
+        "certificate": {
+          "normals": [
+            [
+              -0.0,
+              -0.0,
+              -1.0
+            ],
+            [
+              -0.0,
+              -0.0,
+              -1.0
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              1.0,
+              -0.0,
+              -0.0
+            ],
+            [
+              1.0,
+              -0.0,
+              -0.0
+            ],
+            [
+              -1.0,
+              -0.0,
+              -0.0
+            ],
+            [
+              -1.0,
+              -0.0,
+              -0.0
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0
+            ],
+            [
+              -0.0,
+              -0.0,
+              1.0
+            ],
+            [
+              -0.0,
+              -0.0,
+              1.0
+            ],
+            [
+              -0.0,
+              -0.0,
+              -1.0
+            ],
+            [
+              -0.0,
+              -0.0,
+              -1.0
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              1.0,
+              -0.0,
+              -0.0
+            ],
+            [
+              1.0,
+              -0.0,
+              -0.0
+            ],
+            [
+              -1.0,
+              -0.0,
+              -0.0
+            ],
+            [
+              -1.0,
+              -0.0,
+              -0.0
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0
+            ],
+            [
+              -0.0,
+              -0.0,
+              1.0
+            ],
+            [
+              -0.0,
+              -0.0,
+              1.0
+            ]
+          ],
+          "offsets_mm": [
+            -0.5,
+            -0.5,
+            -0.5,
+            -0.5,
+            -0.0,
+            -0.0,
+            -1.0,
+            -1.0,
+            -0.5,
+            -0.5,
+            -0.5,
+            -0.5,
+            -0.5,
+            -0.5,
+            -0.5,
+            -0.5,
+            -1.0,
+            -1.0,
+            -0.0,
+            -0.0,
+            -0.5,
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "dual_weights": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "center_conditioned_mm": [
+            -0.0,
+            -0.5,
+            -0.5
+          ],
+          "conditioned_aabb_abs_bounds_mm": [
+            1.0,
+            0.5,
+            0.5
+          ],
+          "conditioning_origin_body13_mm": [
+            1.0,
+            0.5,
+            0.5
+          ],
+          "decimal": {
+            "precision": 60,
+            "planes_checked": 24,
+            "minimum_center_plane_margin_mm": "0.0",
+            "dual_radius_upper_bound_mm": "0.0",
+            "all_dual_weights_nonnegative": true,
+            "strict_overlap_certified": false,
+            "strict_separation_certified": false
+          }
+        },
+        "geoms": [
+          "a",
+          "b"
+        ],
+        "hulls": [
+          {
+            "geom": "a",
+            "raw_vertices": 8,
+            "halfspaces": 12,
+            "max_plane_numerical_padding_mm": 1e-10,
+            "max_raw_vertex_plane_residual_mm": 0.0,
+            "min_padded_raw_vertex_enclosure_margin_mm": 1e-10
+          },
+          {
+            "geom": "b",
+            "raw_vertices": 8,
+            "halfspaces": 12,
+            "max_plane_numerical_padding_mm": 1e-10,
+            "max_raw_vertex_plane_residual_mm": 0.0,
+            "min_padded_raw_vertex_enclosure_margin_mm": 1e-10
+          }
+        ],
+        "primary_geometry": "UNEXPANDED_ORIGINAL_CONVEX_HALFSPACES",
+        "numerical_expansion_check": {
+          "classification": "STRICT_CONVEX_INTERIOR_OVERLAP",
+          "all_tolerances_agree": true,
+          "tolerance_runs": [
+            {
+              "feasibility_tolerance": 1e-07,
+              "radius_lp_mm": 1e-10,
+              "independent_center_min_margin_mm": 1e-10,
+              "conservative_dual_radius_upper_bound_mm": 1e-10,
+              "classification": "STRICT_CONVEX_INTERIOR_OVERLAP",
+              "center_conditioned_mm": [
+                -0.0,
+                -0.5,
+                -0.5
+              ],
+              "dual_normal_residual": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "dual_weight_sum": 1.0
+            },
+            {
+              "feasibility_tolerance": 1e-08,
+              "radius_lp_mm": 1e-10,
+              "independent_center_min_margin_mm": 1e-10,
+              "conservative_dual_radius_upper_bound_mm": 1e-10,
+              "classification": "STRICT_CONVEX_INTERIOR_OVERLAP",
+              "center_conditioned_mm": [
+                -0.0,
+                -0.5,
+                -0.5
+              ],
+              "dual_normal_residual": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "dual_weight_sum": 1.0
+            },
+            {
+              "feasibility_tolerance": 1e-09,
+              "radius_lp_mm": 1e-10,
+              "independent_center_min_margin_mm": 1e-10,
+              "conservative_dual_radius_upper_bound_mm": 1e-10,
+              "classification": "STRICT_CONVEX_INTERIOR_OVERLAP",
+              "center_conditioned_mm": [
+                -0.0,
+                -0.5,
+                -0.5
+              ],
+              "dual_normal_residual": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "dual_weight_sum": 1.0
+            }
+          ],
+          "certificate": {
+            "normals": [
+              [
+                -0.0,
+                -0.0,
+                -1.0
+              ],
+              [
+                -0.0,
+                -0.0,
+                -1.0
+              ],
+              [
+                0.0,
+                -1.0,
+                0.0
+              ],
+              [
+                0.0,
+                -1.0,
+                0.0
+              ],
+              [
+                1.0,
+                -0.0,
+                -0.0
+              ],
+              [
+                1.0,
+                -0.0,
+                -0.0
+              ],
+              [
+                -1.0,
+                -0.0,
+                -0.0
+              ],
+              [
+                -1.0,
+                -0.0,
+                -0.0
+              ],
+              [
+                0.0,
+                1.0,
+                -0.0
+              ],
+              [
+                0.0,
+                1.0,
+                -0.0
+              ],
+              [
+                -0.0,
+                -0.0,
+                1.0
+              ],
+              [
+                -0.0,
+                -0.0,
+                1.0
+              ],
+              [
+                -0.0,
+                -0.0,
+                -1.0
+              ],
+              [
+                -0.0,
+                -0.0,
+                -1.0
+              ],
+              [
+                0.0,
+                -1.0,
+                0.0
+              ],
+              [
+                0.0,
+                -1.0,
+                0.0
+              ],
+              [
+                1.0,
+                -0.0,
+                -0.0
+              ],
+              [
+                1.0,
+                -0.0,
+                -0.0
+              ],
+              [
+                -1.0,
+                -0.0,
+                -0.0
+              ],
+              [
+                -1.0,
+                -0.0,
+                -0.0
+              ],
+              [
+                0.0,
+                1.0,
+                -0.0
+              ],
+              [
+                0.0,
+                1.0,
+                -0.0
+              ],
+              [
+                -0.0,
+                -0.0,
+                1.0
+              ],
+              [
+                -0.0,
+                -0.0,
+                1.0
+              ]
+            ],
+            "offsets_mm": [
+              -0.5000000001,
+              -0.5000000001,
+              -0.5000000001,
+              -0.5000000001,
+              -1e-10,
+              -1e-10,
+              -1.0000000001,
+              -1.0000000001,
+              -0.5000000001,
+              -0.5000000001,
+              -0.5000000001,
+              -0.5000000001,
+              -0.5000000001,
+              -0.5000000001,
+              -0.5000000001,
+              -0.5000000001,
+              -1.0000000001,
+              -1.0000000001,
+              -1e-10,
+              -1e-10,
+              -0.5000000001,
+              -0.5000000001,
+              -0.5000000001,
+              -0.5000000001
+            ],
+            "dual_weights": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.5,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.5,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "center_conditioned_mm": [
+              -0.0,
+              -0.5,
+              -0.5
+            ],
+            "conditioned_aabb_abs_bounds_mm": [
+              1.0,
+              0.5,
+              0.5
+            ],
+            "conditioning_origin_body13_mm": [
+              1.0,
+              0.5,
+              0.5
+            ],
+            "decimal": {
+              "precision": 60,
+              "planes_checked": 24,
+              "minimum_center_plane_margin_mm": "1.00000000000000003643219731549774157916554706559963960899040E-10",
+              "dual_radius_upper_bound_mm": "1.0000000000000000364321973154977415791655470655996396089904E-10",
+              "all_dual_weights_nonnegative": true,
+              "strict_overlap_certified": true,
+              "strict_separation_certified": false
+            }
+          }
+        },
+        "raw_and_expanded_classifications_agree": false,
+        "robust_classification": "UNKNOWN_NUMERICAL_EXPANSION_DEPENDENT"
+      }
+    }
+  ]
+}

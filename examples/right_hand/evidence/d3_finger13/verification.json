@@ -1,0 +1,23 @@
+{
+  "baseline_commit": "c61f97777c42ea421d0460252abc7dbeb48b282b",
+  "baseline_tracked_files_checked": 548,
+  "baseline_tracked_files_unchanged": true,
+  "main_head_unchanged": true,
+  "main_worktree_status_unchanged": true,
+  "main_readme_sha256": "d68ec6d62a6f42b8c1636ad2774c8329073d973c2621cc7fe148c8c8c89d8f25",
+  "candidate_sha256": "b27f4f86fbaeacd2bb925463f39f67181ef7db12963c4d9f7fc01797a7924d1b",
+  "frozen_other_proxy_count": 75,
+  "new_finger13_proxy_count": 3,
+  "new_hand_proxy_count": 78,
+  "protected_compiled_fields_checked": 3762,
+  "new_physics_steps": 0,
+  "new_resets": 0,
+  "new_forward_calls": 0,
+  "new_contact_solves": 0,
+  "single_geometry_design": true,
+  "geometry_candidates_evaluated": 1,
+  "static_target_6451": "PASS_LOCAL_GEOMETRY_ONLY",
+  "entire_right_hand_fidelity": "UNKNOWN_NOT_ACCEPTED",
+  "dynamics": "NOT_RUN",
+  "portable_continuous_surface_recheck_matches": true
+}

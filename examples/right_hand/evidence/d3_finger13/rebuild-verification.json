@@ -1,0 +1,15 @@
+{
+  "same_fixed_design_rebuilt": true,
+  "distinct_geometry_designs": 1,
+  "new_obj_files_byte_identical": 3,
+  "normalized_resource_bytes_xml_exact": true,
+  "syntax_checked": [
+    "tools/build_finger13_local.py",
+    "examples/right_hand/finger13_contacts.py",
+    "examples/right_hand/finger13_quality.py",
+    "examples/right_hand/finger13_audit.py",
+    "examples/right_hand/evidence/d3_finger13/convex_surface_check.py",
+    "examples/right_hand/evidence/d3_finger13/visual/plot_comparison.py"
+  ],
+  "physics_steps": 0
+}
