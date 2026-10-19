@@ -1,0 +1,610 @@
+{
+  "schema": "right-bowl78-independent-compile-only-audit-v1",
+  "python": "3.11.16 (main, Sep 24 2026, 17:56:40) [Clang 22.1.3 ]",
+  "mujoco": "3.2.3",
+  "numpy": "1.26.4",
+  "prefix": "/data_robot/verification/nero_dh116_right/.reference-env",
+  "source_sha256": {
+    "mjcf/nero_dh116_right.xml": "739d3d29bbfd4a6468fb8b75f4de09b719c0f96abb39508959c1dfc33a84b9cc",
+    "examples/right_hand/candidates/finger13_local/model.xml": "b27f4f86fbaeacd2bb925463f39f67181ef7db12963c4d9f7fc01797a7924d1b",
+    "examples/right_hand/evidence/d3_white_bowl_001/candidate.json": "ba767b42f99d3562255909bde5c970d529ba254769029ec1cd7a98faf76af0fb"
+  },
+  "compiled_noncollision_fields": {
+    "passed": true,
+    "checked": 2454,
+    "differences": [],
+    "removed_formal17_hand_collision_geoms": [
+      "gripper0_base_link_collision_0",
+      "gripper0_finger11_link_collision_0",
+      "gripper0_finger12_link_collision_0",
+      "gripper0_finger13_link_collision_0",
+      "gripper0_finger14_link_collision_0",
+      "gripper0_finger21_link_collision_0",
+      "gripper0_finger22_link_collision_0",
+      "gripper0_finger23_link_collision_0",
+      "gripper0_finger31_link_collision_0",
+      "gripper0_finger32_link_collision_0",
+      "gripper0_finger33_link_collision_0",
+      "gripper0_finger41_link_collision_0",
+      "gripper0_finger42_link_collision_0",
+      "gripper0_finger43_link_collision_0",
+      "gripper0_finger51_link_collision_0",
+      "gripper0_finger52_link_collision_0",
+      "gripper0_finger53_link_collision_0"
+    ]
+  },
+  "xml_outside_hand_collision_and_unused_collision_assets_exact": true,
+  "dimensions": {
+    "formal17": {
+      "nq": 18,
+      "nv": 18,
+      "nu": 13,
+      "na": 0,
+      "nbody": 33,
+      "njnt": 18,
+      "ngeom": 107,
+      "neq": 5,
+      "nexclude": 1,
+      "nsensor": 2
+    },
+    "fixed78": {
+      "nq": 18,
+      "nv": 18,
+      "nu": 13,
+      "na": 0,
+      "nbody": 33,
+      "njnt": 18,
+      "ngeom": 168,
+      "neq": 5,
+      "nexclude": 1,
+      "nsensor": 2
+    }
+  },
+  "collision_inventory": {
+    "formal17": {
+      "collision_total": 79,
+      "by_category": {
+        "arm": 51,
+        "flange": 8,
+        "hand": 17,
+        "mount": 3
+      },
+      "by_body": {
+        "robot0_base_link": [
+          "robot0_candidate_nero_base_link_0",
+          "robot0_candidate_nero_base_link_1",
+          "robot0_candidate_nero_base_link_2",
+          "robot0_candidate_nero_base_link_3",
+          "robot0_candidate_nero_base_link_4",
+          "robot0_candidate_nero_base_link_5",
+          "robot0_candidate_nero_base_link_6",
+          "robot0_candidate_nero_base_link_7"
+        ],
+        "robot0_link1": [
+          "robot0_candidate_nero_link1_0",
+          "robot0_candidate_nero_link1_1",
+          "robot0_candidate_nero_link1_2",
+          "robot0_candidate_nero_link1_3",
+          "robot0_candidate_nero_link1_4",
+          "robot0_candidate_nero_link1_5",
+          "robot0_candidate_nero_link1_6",
+          "robot0_candidate_nero_link1_7"
+        ],
+        "robot0_link2": [
+          "robot0_candidate_nero_link2_0",
+          "robot0_candidate_nero_link2_1",
+          "robot0_candidate_nero_link2_2",
+          "robot0_candidate_nero_link2_3",
+          "robot0_candidate_nero_link2_4"
+        ],
+        "robot0_link3": [
+          "robot0_candidate_nero_link3_0",
+          "robot0_candidate_nero_link3_1",
+          "robot0_candidate_nero_link3_2",
+          "robot0_candidate_nero_link3_3",
+          "robot0_candidate_nero_link3_4",
+          "robot0_candidate_nero_link3_5",
+          "robot0_candidate_nero_link3_6",
+          "robot0_candidate_nero_link3_7"
+        ],
+        "robot0_link4": [
+          "robot0_candidate_nero_link4_0",
+          "robot0_candidate_nero_link4_1",
+          "robot0_candidate_nero_link4_2",
+          "robot0_candidate_nero_link4_3",
+          "robot0_candidate_nero_link4_4",
+          "robot0_candidate_nero_link4_5"
+        ],
+        "robot0_link5": [
+          "robot0_candidate_nero_link5_0",
+          "robot0_candidate_nero_link5_1",
+          "robot0_candidate_nero_link5_2",
+          "robot0_candidate_nero_link5_3",
+          "robot0_candidate_nero_link5_4",
+          "robot0_candidate_nero_link5_5",
+          "robot0_candidate_nero_link5_6"
+        ],
+        "robot0_link6": [
+          "robot0_candidate_nero_link6_0",
+          "robot0_candidate_nero_link6_1",
+          "robot0_candidate_nero_link6_2",
+          "robot0_candidate_nero_link6_3",
+          "robot0_candidate_nero_link6_4"
+        ],
+        "robot0_link7": [
+          "robot0_candidate_nero_link7_0",
+          "robot0_candidate_nero_link7_1",
+          "robot0_candidate_nero_link7_2",
+          "robot0_candidate_nero_link7_3"
+        ],
+        "robot0_gripper_flange": [
+          "robot0_source_flange_part_0",
+          "robot0_source_flange_part_1",
+          "robot0_source_flange_part_2",
+          "robot0_source_flange_part_3",
+          "robot0_source_flange_part_4",
+          "robot0_source_flange_part_5",
+          "robot0_source_flange_part_6",
+          "robot0_source_flange_part_7"
+        ],
+        "gripper0_base_link": [
+          "gripper0_base_link_collision_0"
+        ],
+        "gripper0_finger11_link": [
+          "gripper0_finger11_link_collision_0"
+        ],
+        "gripper0_finger12_link": [
+          "gripper0_finger12_link_collision_0"
+        ],
+        "gripper0_finger13_link": [
+          "gripper0_finger13_link_collision_0"
+        ],
+        "gripper0_finger14_link": [
+          "gripper0_finger14_link_collision_0"
+        ],
+        "gripper0_finger21_link": [
+          "gripper0_finger21_link_collision_0"
+        ],
+        "gripper0_finger22_link": [
+          "gripper0_finger22_link_collision_0"
+        ],
+        "gripper0_finger23_link": [
+          "gripper0_finger23_link_collision_0"
+        ],
+        "gripper0_finger31_link": [
+          "gripper0_finger31_link_collision_0"
+        ],
+        "gripper0_finger32_link": [
+          "gripper0_finger32_link_collision_0"
+        ],
+        "gripper0_finger33_link": [
+          "gripper0_finger33_link_collision_0"
+        ],
+        "gripper0_finger41_link": [
+          "gripper0_finger41_link_collision_0"
+        ],
+        "gripper0_finger42_link": [
+          "gripper0_finger42_link_collision_0"
+        ],
+        "gripper0_finger43_link": [
+          "gripper0_finger43_link_collision_0"
+        ],
+        "gripper0_finger51_link": [
+          "gripper0_finger51_link_collision_0"
+        ],
+        "gripper0_finger52_link": [
+          "gripper0_finger52_link_collision_0"
+        ],
+        "gripper0_finger53_link": [
+          "gripper0_finger53_link_collision_0"
+        ],
+        "mount0_controller_box": [
+          "mount0_controller_box_col"
+        ],
+        "mount0_pedestal_feet": [
+          "mount0_pedestal_feet_col"
+        ],
+        "mount0_pedestal": [
+          "mount0_pedestal_col"
+        ]
+      }
+    },
+    "fixed78": {
+      "collision_total": 140,
+      "by_category": {
+        "arm": 51,
+        "flange": 8,
+        "hand": 78,
+        "mount": 3
+      },
+      "by_body": {
+        "robot0_base_link": [
+          "robot0_candidate_nero_base_link_0",
+          "robot0_candidate_nero_base_link_1",
+          "robot0_candidate_nero_base_link_2",
+          "robot0_candidate_nero_base_link_3",
+          "robot0_candidate_nero_base_link_4",
+          "robot0_candidate_nero_base_link_5",
+          "robot0_candidate_nero_base_link_6",
+          "robot0_candidate_nero_base_link_7"
+        ],
+        "robot0_link1": [
+          "robot0_candidate_nero_link1_0",
+          "robot0_candidate_nero_link1_1",
+          "robot0_candidate_nero_link1_2",
+          "robot0_candidate_nero_link1_3",
+          "robot0_candidate_nero_link1_4",
+          "robot0_candidate_nero_link1_5",
+          "robot0_candidate_nero_link1_6",
+          "robot0_candidate_nero_link1_7"
+        ],
+        "robot0_link2": [
+          "robot0_candidate_nero_link2_0",
+          "robot0_candidate_nero_link2_1",
+          "robot0_candidate_nero_link2_2",
+          "robot0_candidate_nero_link2_3",
+          "robot0_candidate_nero_link2_4"
+        ],
+        "robot0_link3": [
+          "robot0_candidate_nero_link3_0",
+          "robot0_candidate_nero_link3_1",
+          "robot0_candidate_nero_link3_2",
+          "robot0_candidate_nero_link3_3",
+          "robot0_candidate_nero_link3_4",
+          "robot0_candidate_nero_link3_5",
+          "robot0_candidate_nero_link3_6",
+          "robot0_candidate_nero_link3_7"
+        ],
+        "robot0_link4": [
+          "robot0_candidate_nero_link4_0",
+          "robot0_candidate_nero_link4_1",
+          "robot0_candidate_nero_link4_2",
+          "robot0_candidate_nero_link4_3",
+          "robot0_candidate_nero_link4_4",
+          "robot0_candidate_nero_link4_5"
+        ],
+        "robot0_link5": [
+          "robot0_candidate_nero_link5_0",
+          "robot0_candidate_nero_link5_1",
+          "robot0_candidate_nero_link5_2",
+          "robot0_candidate_nero_link5_3",
+          "robot0_candidate_nero_link5_4",
+          "robot0_candidate_nero_link5_5",
+          "robot0_candidate_nero_link5_6"
+        ],
+        "robot0_link6": [
+          "robot0_candidate_nero_link6_0",
+          "robot0_candidate_nero_link6_1",
+          "robot0_candidate_nero_link6_2",
+          "robot0_candidate_nero_link6_3",
+          "robot0_candidate_nero_link6_4"
+        ],
+        "robot0_link7": [
+          "robot0_candidate_nero_link7_0",
+          "robot0_candidate_nero_link7_1",
+          "robot0_candidate_nero_link7_2",
+          "robot0_candidate_nero_link7_3"
+        ],
+        "robot0_gripper_flange": [
+          "robot0_source_flange_part_0",
+          "robot0_source_flange_part_1",
+          "robot0_source_flange_part_2",
+          "robot0_source_flange_part_3",
+          "robot0_source_flange_part_4",
+          "robot0_source_flange_part_5",
+          "robot0_source_flange_part_6",
+          "robot0_source_flange_part_7"
+        ],
+        "gripper0_base_link": [
+          "gripper0_proxy76_base_link_00",
+          "gripper0_proxy76_base_link_01",
+          "gripper0_proxy76_base_link_02",
+          "gripper0_proxy76_base_link_03",
+          "gripper0_proxy76_base_link_04",
+          "gripper0_proxy76_base_link_05",
+          "gripper0_proxy76_base_link_06",
+          "gripper0_proxy76_base_link_07",
+          "gripper0_proxy76_base_link_08",
+          "gripper0_proxy76_base_link_09"
+        ],
+        "gripper0_finger11_link": [
+          "gripper0_proxy76_finger11_link_00"
+        ],
+        "gripper0_finger12_link": [
+          "gripper0_proxy76_finger12_link_00",
+          "gripper0_proxy76_finger12_link_01",
+          "gripper0_proxy76_finger12_link_02",
+          "gripper0_proxy76_finger12_link_03",
+          "gripper0_proxy76_finger12_link_04",
+          "gripper0_proxy76_finger12_link_05",
+          "gripper0_proxy76_finger12_link_06",
+          "gripper0_proxy76_finger12_link_07"
+        ],
+        "gripper0_finger13_link": [
+          "gripper0_finger13_local_00",
+          "gripper0_finger13_local_01",
+          "gripper0_finger13_local_02"
+        ],
+        "gripper0_finger14_link": [
+          "gripper0_proxy76_finger14_link_00",
+          "gripper0_proxy76_finger14_link_01",
+          "gripper0_proxy76_finger14_link_02",
+          "gripper0_proxy76_finger14_link_03",
+          "gripper0_proxy76_finger14_link_04",
+          "gripper0_proxy76_finger14_link_05",
+          "gripper0_proxy76_finger14_link_06",
+          "gripper0_proxy76_finger14_link_07",
+          "gripper0_proxy76_finger14_link_08",
+          "gripper0_proxy76_finger14_link_09",
+          "gripper0_proxy76_finger14_link_10",
+          "gripper0_proxy76_finger14_link_11"
+        ],
+        "gripper0_finger21_link": [
+          "gripper0_proxy76_finger21_link_00"
+        ],
+        "gripper0_finger22_link": [
+          "gripper0_proxy76_finger22_link_00"
+        ],
+        "gripper0_finger23_link": [
+          "gripper0_proxy76_finger23_link_00",
+          "gripper0_proxy76_finger23_link_01",
+          "gripper0_proxy76_finger23_link_02",
+          "gripper0_proxy76_finger23_link_03",
+          "gripper0_proxy76_finger23_link_04",
+          "gripper0_proxy76_finger23_link_05",
+          "gripper0_proxy76_finger23_link_06",
+          "gripper0_proxy76_finger23_link_07",
+          "gripper0_proxy76_finger23_link_08",
+          "gripper0_proxy76_finger23_link_09",
+          "gripper0_proxy76_finger23_link_10",
+          "gripper0_proxy76_finger23_link_11"
+        ],
+        "gripper0_finger31_link": [
+          "gripper0_proxy76_finger31_link_00"
+        ],
+        "gripper0_finger32_link": [
+          "gripper0_proxy76_finger32_link_00"
+        ],
+        "gripper0_finger33_link": [
+          "gripper0_proxy76_finger33_link_00",
+          "gripper0_proxy76_finger33_link_01",
+          "gripper0_proxy76_finger33_link_02",
+          "gripper0_proxy76_finger33_link_03",
+          "gripper0_proxy76_finger33_link_04",
+          "gripper0_proxy76_finger33_link_05",
+          "gripper0_proxy76_finger33_link_06",
+          "gripper0_proxy76_finger33_link_07"
+        ],
+        "gripper0_finger41_link": [
+          "gripper0_proxy76_finger41_link_00"
+        ],
+        "gripper0_finger42_link": [
+          "gripper0_proxy76_finger42_link_00"
+        ],
+        "gripper0_finger43_link": [
+          "gripper0_proxy76_finger43_link_00",
+          "gripper0_proxy76_finger43_link_01",
+          "gripper0_proxy76_finger43_link_02",
+          "gripper0_proxy76_finger43_link_03",
+          "gripper0_proxy76_finger43_link_04",
+          "gripper0_proxy76_finger43_link_05",
+          "gripper0_proxy76_finger43_link_06",
+          "gripper0_proxy76_finger43_link_07"
+        ],
+        "gripper0_finger51_link": [
+          "gripper0_proxy76_finger51_link_00"
+        ],
+        "gripper0_finger52_link": [
+          "gripper0_proxy76_finger52_link_00"
+        ],
+        "gripper0_finger53_link": [
+          "gripper0_proxy76_finger53_link_00",
+          "gripper0_proxy76_finger53_link_01",
+          "gripper0_proxy76_finger53_link_02",
+          "gripper0_proxy76_finger53_link_03",
+          "gripper0_proxy76_finger53_link_04",
+          "gripper0_proxy76_finger53_link_05",
+          "gripper0_proxy76_finger53_link_06",
+          "gripper0_proxy76_finger53_link_07"
+        ],
+        "mount0_controller_box": [
+          "mount0_controller_box_col"
+        ],
+        "mount0_pedestal_feet": [
+          "mount0_pedestal_feet_col"
+        ],
+        "mount0_pedestal": [
+          "mount0_pedestal_col"
+        ]
+      }
+    }
+  },
+  "excludes": {
+    "formal17": [
+      [
+        "robot0_base_link",
+        "robot0_link1"
+      ]
+    ],
+    "fixed78": [
+      [
+        "robot0_base_link",
+        "robot0_link1"
+      ]
+    ],
+    "exact": true,
+    "npair": 0
+  },
+  "native_roles_based_on_actual_candidate_collision_geoms": {
+    "left_finger": [
+      "finger13_local_00",
+      "finger13_local_01",
+      "finger13_local_02",
+      "proxy76_finger14_link_00",
+      "proxy76_finger14_link_01",
+      "proxy76_finger14_link_02",
+      "proxy76_finger14_link_03",
+      "proxy76_finger14_link_04",
+      "proxy76_finger14_link_05",
+      "proxy76_finger14_link_06",
+      "proxy76_finger14_link_07",
+      "proxy76_finger14_link_08",
+      "proxy76_finger14_link_09",
+      "proxy76_finger14_link_10",
+      "proxy76_finger14_link_11"
+    ],
+    "right_finger": [
+      "proxy76_finger22_link_00",
+      "proxy76_finger23_link_00",
+      "proxy76_finger23_link_01",
+      "proxy76_finger23_link_02",
+      "proxy76_finger23_link_03",
+      "proxy76_finger23_link_04",
+      "proxy76_finger23_link_05",
+      "proxy76_finger23_link_06",
+      "proxy76_finger23_link_07",
+      "proxy76_finger23_link_08",
+      "proxy76_finger23_link_09",
+      "proxy76_finger23_link_10",
+      "proxy76_finger23_link_11",
+      "proxy76_finger32_link_00",
+      "proxy76_finger33_link_00",
+      "proxy76_finger33_link_01",
+      "proxy76_finger33_link_02",
+      "proxy76_finger33_link_03",
+      "proxy76_finger33_link_04",
+      "proxy76_finger33_link_05",
+      "proxy76_finger33_link_06",
+      "proxy76_finger33_link_07",
+      "proxy76_finger42_link_00",
+      "proxy76_finger43_link_00",
+      "proxy76_finger43_link_01",
+      "proxy76_finger43_link_02",
+      "proxy76_finger43_link_03",
+      "proxy76_finger43_link_04",
+      "proxy76_finger43_link_05",
+      "proxy76_finger43_link_06",
+      "proxy76_finger43_link_07",
+      "proxy76_finger52_link_00",
+      "proxy76_finger53_link_00",
+      "proxy76_finger53_link_01",
+      "proxy76_finger53_link_02",
+      "proxy76_finger53_link_03",
+      "proxy76_finger53_link_04",
+      "proxy76_finger53_link_05",
+      "proxy76_finger53_link_06",
+      "proxy76_finger53_link_07"
+    ],
+    "left_fingerpad": [
+      "proxy76_finger14_link_00",
+      "proxy76_finger14_link_01",
+      "proxy76_finger14_link_02",
+      "proxy76_finger14_link_03",
+      "proxy76_finger14_link_04",
+      "proxy76_finger14_link_05",
+      "proxy76_finger14_link_06",
+      "proxy76_finger14_link_07",
+      "proxy76_finger14_link_08",
+      "proxy76_finger14_link_09",
+      "proxy76_finger14_link_10",
+      "proxy76_finger14_link_11"
+    ],
+    "right_fingerpad": [
+      "proxy76_finger23_link_00",
+      "proxy76_finger23_link_01",
+      "proxy76_finger23_link_02",
+      "proxy76_finger23_link_03",
+      "proxy76_finger23_link_04",
+      "proxy76_finger23_link_05",
+      "proxy76_finger23_link_06",
+      "proxy76_finger23_link_07",
+      "proxy76_finger23_link_08",
+      "proxy76_finger23_link_09",
+      "proxy76_finger23_link_10",
+      "proxy76_finger23_link_11",
+      "proxy76_finger33_link_00",
+      "proxy76_finger33_link_01",
+      "proxy76_finger33_link_02",
+      "proxy76_finger33_link_03",
+      "proxy76_finger33_link_04",
+      "proxy76_finger33_link_05",
+      "proxy76_finger33_link_06",
+      "proxy76_finger33_link_07",
+      "proxy76_finger43_link_00",
+      "proxy76_finger43_link_01",
+      "proxy76_finger43_link_02",
+      "proxy76_finger43_link_03",
+      "proxy76_finger43_link_04",
+      "proxy76_finger43_link_05",
+      "proxy76_finger43_link_06",
+      "proxy76_finger43_link_07",
+      "proxy76_finger53_link_00",
+      "proxy76_finger53_link_01",
+      "proxy76_finger53_link_02",
+      "proxy76_finger53_link_03",
+      "proxy76_finger53_link_04",
+      "proxy76_finger53_link_05",
+      "proxy76_finger53_link_06",
+      "proxy76_finger53_link_07"
+    ]
+  },
+  "native_role_counts": {
+    "left_finger": 15,
+    "right_finger": 40,
+    "left_fingerpad": 12,
+    "right_fingerpad": 36
+  },
+  "commands": {
+    "frozen_original_rows": 230,
+    "original_phase_counts": {
+      "settle_preshape": 10,
+      "approach_high": 40,
+      "descend": 70,
+      "close": 40,
+      "lift": 40,
+      "hold": 30
+    },
+    "expanded_commands": 270,
+    "expanded_phase_counts": {
+      "settle_preshape": 10,
+      "approach_high": 80,
+      "descend": 70,
+      "close": 40,
+      "lift": 40,
+      "hold": 30
+    },
+    "expanded_steps": 6750,
+    "native_seed": 20261007,
+    "criteria": {
+      "scope": "NEW fixed right white-bowl criteria; not left/manufacturer/full-range certification",
+      "lift_from_own_settled_baseline_m_min": 0.02,
+      "continuous_hold_s_min": 1.0,
+      "hold_requires": [
+        "height >= settled+20mm",
+        "no bowl-table or other environmental support contacts",
+        "positive-force thumb and index contacts on opposing bowl sides"
+      ],
+      "steady_active_error_rad_max": 0.02,
+      "arm_tracking_error_rad_max": 0.1,
+      "linear_mimic_error_rad_max": 0.02,
+      "joint_limit_overshoot_rad_max": 0.01,
+      "eligible_internal_and_external_overlap_m_max": 0.002,
+      "warnings_allowed": 0,
+      "nonfinite_states_allowed": 0,
+      "native_task_result": "record native cabinet-placement predicate separately",
+      "strict_grasp_success_claim": false,
+      "stop": "First numerical/physical bound violation; no automatic retry or edits"
+    }
+  },
+  "static_api_audit": {
+    "model_compiles": 2,
+    "forbidden_api_attempts": 0,
+    "MjData_attempts": 0,
+    "physics_steps": 0,
+    "resets": 0,
+    "forwards": 0,
+    "environment_constructors": 0,
+    "mj_id2name": 1115
+  },
+  "dynamics_or_runtime_state_created": false
+}

@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="nero"><compiler angle="radian" inertiagrouprange="0 0" autolimits="true" />
+  <option impratio="20" cone="elliptic" density="1.2" viscosity="0.00002" timestep="0.002" integrator="RK4" />
+  <size nconmax="5000" njmax="5000" />
+  <asset><material name="original_urdf_visual_base_link_material" texture="original_urdf_visual_base_link_texture" texuniform="false" texrepeat="1 1" rgba="1 1 1 1" />
+    <material name="original_urdf_visual_gripper_flange_material" texture="original_urdf_visual_gripper_flange_texture" texuniform="false" texrepeat="1 1" rgba="1 1 1 1" />
+    <material name="original_urdf_visual_link1_material" texture="original_urdf_visual_link1_texture" texuniform="false" texrepeat="1 1" rgba="1 1 1 1" />
+    <material name="original_urdf_visual_link2_material" texture="original_urdf_visual_link2_texture" texuniform="false" texrepeat="1 1" rgba="1 1 1 1" />
+    <material name="original_urdf_visual_link3_material" texture="original_urdf_visual_link3_texture" texuniform="false" texrepeat="1 1" rgba="1 1 1 1" />
+    <material name="original_urdf_visual_link4_material" texture="original_urdf_visual_link4_texture" texuniform="false" texrepeat="1 1" rgba="1 1 1 1" />
+    <material name="original_urdf_visual_link5_material" texture="original_urdf_visual_link5_texture" texuniform="false" texrepeat="1 1" rgba="1 1 1 1" />
+    <material name="original_urdf_visual_link6_material" texture="original_urdf_visual_link6_texture" texuniform="false" texrepeat="1 1" rgba="1 1 1 1" />
+    <material name="original_urdf_visual_link7_material" texture="original_urdf_visual_link7_texture" texuniform="false" texrepeat="1 1" rgba="1 1 1 1" />
+    <mesh name="candidate_nero_base_link_0" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_base_link_0-9b755fcc.obj" />
+    <mesh name="candidate_nero_base_link_1" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_base_link_1-9050d662.obj" />
+    <mesh name="candidate_nero_base_link_2" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_base_link_2-840973e3.obj" />
+    <mesh name="candidate_nero_base_link_3" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_base_link_3-694f85c0.obj" />
+    <mesh name="candidate_nero_base_link_4" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_base_link_4-eb7627e7.obj" />
+    <mesh name="candidate_nero_base_link_5" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_base_link_5-bfa96b97.obj" />
+    <mesh name="candidate_nero_base_link_6" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_base_link_6-1dd4555c.obj" />
+    <mesh name="candidate_nero_base_link_7" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_base_link_7-41070495.obj" />
+    <mesh name="candidate_nero_link1_0" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link1_0-64d58a3f.obj" />
+    <mesh name="candidate_nero_link1_1" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link1_1-7b2c529b.obj" />
+    <mesh name="candidate_nero_link1_2" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link1_2-ee80fad0.obj" />
+    <mesh name="candidate_nero_link1_3" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link1_3-fa81492e.obj" />
+    <mesh name="candidate_nero_link1_4" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link1_4-9687d613.obj" />
+    <mesh name="candidate_nero_link1_5" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link1_5-0bebb03b.obj" />
+    <mesh name="candidate_nero_link1_6" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link1_6-8b8756ee.obj" />
+    <mesh name="candidate_nero_link1_7" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link1_7-82b447f9.obj" />
+    <mesh name="candidate_nero_link2_0" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link2_0-488533e9.obj" />
+    <mesh name="candidate_nero_link2_1" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link2_1-1bab92d0.obj" />
+    <mesh name="candidate_nero_link2_2" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link2_2-a26e60e1.obj" />
+    <mesh name="candidate_nero_link2_3" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link2_3-6461873d.obj" />
+    <mesh name="candidate_nero_link2_4" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link2_4-a688faa7.obj" />
+    <mesh name="candidate_nero_link3_0" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link3_0-c42d7ac7.obj" />
+    <mesh name="candidate_nero_link3_1" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link3_1-89b20fd9.obj" />
+    <mesh name="candidate_nero_link3_2" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link3_2-7b6481a2.obj" />
+    <mesh name="candidate_nero_link3_3" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link3_3-0cd99a08.obj" />
+    <mesh name="candidate_nero_link3_4" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link3_4-a50f3d4d.obj" />
+    <mesh name="candidate_nero_link3_5" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link3_5-30d354b7.obj" />
+    <mesh name="candidate_nero_link3_6" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link3_6-b0e55916.obj" />
+    <mesh name="candidate_nero_link3_7" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link3_7-57de8162.obj" />
+    <mesh name="candidate_nero_link4_0" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link4_0-b10bbb1b.obj" />
+    <mesh name="candidate_nero_link4_1" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link4_1-3510fe63.obj" />
+    <mesh name="candidate_nero_link4_2" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link4_2-6fe5f5ba.obj" />
+    <mesh name="candidate_nero_link4_3" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link4_3-160b1bca.obj" />
+    <mesh name="candidate_nero_link4_4" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link4_4-6ceb0377.obj" />
+    <mesh name="candidate_nero_link4_5" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link4_5-61a31fef.obj" />
+    <mesh name="candidate_nero_link5_0" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link5_0-8e811e87.obj" />
+    <mesh name="candidate_nero_link5_1" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link5_1-e06d88f5.obj" />
+    <mesh name="candidate_nero_link5_2" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link5_2-3d339924.obj" />
+    <mesh name="candidate_nero_link5_3" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link5_3-208022a5.obj" />
+    <mesh name="candidate_nero_link5_4" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link5_4-384fc2f2.obj" />
+    <mesh name="candidate_nero_link5_5" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link5_5-6139f37c.obj" />
+    <mesh name="candidate_nero_link5_6" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link5_6-849a2feb.obj" />
+    <mesh name="candidate_nero_link6_0" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link6_0-4c346805.obj" />
+    <mesh name="candidate_nero_link6_1" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link6_1-407a43b8.obj" />
+    <mesh name="candidate_nero_link6_2" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link6_2-8101f8fb.obj" />
+    <mesh name="candidate_nero_link6_3" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link6_3-98a9a1fd.obj" />
+    <mesh name="candidate_nero_link6_4" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link6_4-40ded262.obj" />
+    <mesh name="candidate_nero_link7_0" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link7_0-cf4e07dc.obj" />
+    <mesh name="candidate_nero_link7_1" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link7_1-521ec845.obj" />
+    <mesh name="candidate_nero_link7_2" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link7_2-3eb2079f.obj" />
+    <mesh name="candidate_nero_link7_3" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link7_3-bd0414fc.obj" />
+    <mesh name="original_urdf_visual_base_link" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_original_urdf_visual_base_link-e85d4a73.obj" />
+    <mesh name="original_urdf_visual_gripper_flange" file="/data_robot/verification/nero_dh116_right/meshes/mount/robot0_original_urdf_visual_gripper_flange-adfe6fc7.obj" />
+    <mesh name="original_urdf_visual_link1" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_original_urdf_visual_link1-f8b3c3c7.obj" />
+    <mesh name="original_urdf_visual_link2" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_original_urdf_visual_link2-11605e3d.obj" />
+    <mesh name="original_urdf_visual_link3" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_original_urdf_visual_link3-dd965e89.obj" />
+    <mesh name="original_urdf_visual_link4" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_original_urdf_visual_link4-1bd0fb75.obj" />
+    <mesh name="original_urdf_visual_link5" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_original_urdf_visual_link5-f1f9b607.obj" />
+    <mesh name="original_urdf_visual_link6" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_original_urdf_visual_link6-bc53aecd.obj" />
+    <mesh name="original_urdf_visual_link7" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_original_urdf_visual_link7-94e2407a.obj" />
+    <mesh name="source_flange_part_0" file="/data_robot/verification/nero_dh116_right/meshes/mount/robot0_source_flange_part_0-7c6df993.obj" />
+    <mesh name="source_flange_part_1" file="/data_robot/verification/nero_dh116_right/meshes/mount/robot0_source_flange_part_1-24b510b6.obj" />
+    <mesh name="source_flange_part_2" file="/data_robot/verification/nero_dh116_right/meshes/mount/robot0_source_flange_part_2-c5005972.obj" />
+    <mesh name="source_flange_part_3" file="/data_robot/verification/nero_dh116_right/meshes/mount/robot0_source_flange_part_3-a1e2dbb0.obj" />
+    <mesh name="source_flange_part_4" file="/data_robot/verification/nero_dh116_right/meshes/mount/robot0_source_flange_part_4-5bfdf6a3.obj" />
+    <mesh name="source_flange_part_5" file="/data_robot/verification/nero_dh116_right/meshes/mount/robot0_source_flange_part_5-6668a712.obj" />
+    <mesh name="source_flange_part_6" file="/data_robot/verification/nero_dh116_right/meshes/mount/robot0_source_flange_part_6-91ccc782.obj" />
+    <mesh name="source_flange_part_7" file="/data_robot/verification/nero_dh116_right/meshes/mount/robot0_source_flange_part_7-4853dcf0.obj" />
+    <texture name="original_urdf_visual_base_link_texture" type="2d" file="/data_robot/verification/nero_dh116_right/meshes/textures/robot0_original_urdf_visual_base_link_texture-d550d51b.png" />
+    <texture name="original_urdf_visual_gripper_flange_texture" type="2d" file="/data_robot/verification/nero_dh116_right/meshes/textures/robot0_original_urdf_visual_gripper_flange_texture-abc58d51.png" />
+    <texture name="original_urdf_visual_link1_texture" type="2d" file="/data_robot/verification/nero_dh116_right/meshes/textures/robot0_original_urdf_visual_base_link_texture-d550d51b.png" />
+    <texture name="original_urdf_visual_link2_texture" type="2d" file="/data_robot/verification/nero_dh116_right/meshes/textures/robot0_original_urdf_visual_link2_texture-4b4174f9.png" />
+    <texture name="original_urdf_visual_link3_texture" type="2d" file="/data_robot/verification/nero_dh116_right/meshes/textures/robot0_original_urdf_visual_base_link_texture-d550d51b.png" />
+    <texture name="original_urdf_visual_link4_texture" type="2d" file="/data_robot/verification/nero_dh116_right/meshes/textures/robot0_original_urdf_visual_link4_texture-7311991b.png" />
+    <texture name="original_urdf_visual_link5_texture" type="2d" file="/data_robot/verification/nero_dh116_right/meshes/textures/robot0_original_urdf_visual_link5_texture-4cd94b0a.png" />
+    <texture name="original_urdf_visual_link6_texture" type="2d" file="/data_robot/verification/nero_dh116_right/meshes/textures/robot0_original_urdf_visual_base_link_texture-d550d51b.png" />
+    <texture name="original_urdf_visual_link7_texture" type="2d" file="/data_robot/verification/nero_dh116_right/meshes/textures/robot0_original_urdf_visual_base_link_texture-d550d51b.png" />
+    </asset><worldbody><body name="base_link" pos="0 0 0" quat="1 0 0 0">
+      <inertial mass="1.0645843500000001" pos="-0.0031946599699999999 -5.4676080000000002e-05 0.04321758463" quat="0.71268121727555078 0.0076393100482395476 0.010006676020680186 0.70137507078569916" diaginertia="0.0011440254867757401 0.0010266423265759999 0.00090865306346825934" />
+      <body name="link1" pos="0 0 0.13800000000000001" quat="1 0 0 0">
+        <inertial mass="0.76710504000000002" pos="-0.00076810577999999997 -5.7180309999999999e-05 -0.00686372765" quat="0.99849578893227442 0.024328388993132104 -0.047403399402686563 0.012930842918518485" diaginertia="0.00066836103418731804 0.00054502205798592275 0.00051361904344676028" />
+        <joint name="joint1" pos="0 0 0" axis="0 0 1" range="-2.70526 2.70526" actuatorfrcrange="-100 100" damping="0" frictionloss="0" armature="0" />
+        <body name="link2" quat="1.8946853330305491e-08 1.8946852822626527e-08 0.70710679065997373 -0.70710677171312075" pos="0 0 0">
+          <inertial mass="0.69381908000000003" pos="0.00079686657000000002 -0.0789032593 0.00111849422" quat="0.72417267020692999 0.6895457152648039 -0.002811549415971721 -0.0096304452232175639" diaginertia="0.002011373076880207 0.0018222857339309729 0.00063216198722881791" />
+          <joint name="joint2" pos="0 0 0" axis="0 0 1" range="-1.74 1.74" actuatorfrcrange="-100 100" damping="0" frictionloss="0" armature="0" />
+          <body name="link3" pos="0 -0.31 0" quat="-1.3792191116934761e-08 1.3792190747374434e-08 -0.70710677171312086 0.70710679065997384">
+            <inertial mass="0.67246543999999997" pos="0.00014513363000000001 -0.00121378766 -0.048611367949999998" quat="0.99997782099329902 -0.0057269943951746656 -0.0005038918733854806 -0.0033623131429595336" diaginertia="0.0034323046236521891 0.00338702999817118 0.00028812606334663288" />
+            <joint name="joint3" pos="0 0 0" axis="0 0 1" range="-2.75 2.75" actuatorfrcrange="-100 100" damping="0" frictionloss="0" armature="0" />
+            <body name="link4" quat="-1.3792191116934761e-08 1.3792190747374434e-08 -0.70710677171312086 0.70710679065997384" pos="0 0 0">
+              <inertial mass="0.48451413999999998" pos="-0.00031334622999999999 -0.05675192422 0.00076056132999999997" quat="0.7439672129212298 0.66814052015801373 -0.0055562067353144085 -0.0083761559149855332" diaginertia="0.00050397211673768971 0.00040345050270899278 0.00023296022880331738" />
+              <joint name="joint4" pos="0 0 0" axis="0 0 1" range="-1.01 2.1400000000000001" actuatorfrcrange="-100 100" damping="0" frictionloss="0" armature="0" />
+              <body name="link5" pos="0 -0.27000999999999997 0" quat="0.50000001339744826 0.49999999999999983 -0.49999999999999983 0.49999998660255179">
+                <inertial mass="0.58368405000000001" pos="0.0026559135700000001 0.00201195753 -0.11620855434000001" quat="0.99438256287021631 -0.029976697650160537 0.013524381542499591 0.10060719338866533" diaginertia="0.00089718777503660426 0.00085967721540455399 0.00021492257182884284" />
+                <joint name="joint5" pos="0 0 0" axis="0 0 1" range="-2.75 2.75" actuatorfrcrange="-100 100" damping="0" frictionloss="0" armature="0" />
+                <body name="link6" quat="0.50000001339744826 0.49999999999999983 -0.49999999999999983 0.49999998660255179" pos="0 0 0">
+                  <inertial mass="0.3140406" pos="9.5015050000000001e-05 0.0010783117400000001 -0.0001911099" quat="0.70846336109342301 0.70510397676649705 -0.026814749140251309 0.01374835134946354" diaginertia="6.0285670519264918e-05 5.7558927504871335e-05 4.6990384425863791e-05" />
+                  <joint name="joint6" pos="0 0 0" axis="0 0 1" range="-0.72999999999999998 0.94999999999999996" actuatorfrcrange="-100 100" damping="0" frictionloss="0" armature="0" />
+                  <body name="link7" pos="0 -0.0235 0" quat="0.70710679065997395 0.70710677171312097 0 0">
+                    <inertial mass="9.9999999999999995e-07" pos="-0.00013999999999999999 -0.0001 -0.0027499999999999998" quat="0.50000000000000067 0.50000000000000067 -0.50000000000000067 0.50000000000000067" diaginertia="1.9999999999999999e-07 1.1000000000000001e-07 1.1000000000000001e-07" />
+                    <joint name="joint7" pos="0 0 0" axis="0 0 1" range="-1.5707963 1.5707963" actuatorfrcrange="-100 100" damping="0" frictionloss="0" armature="0" />
+                    <body name="gripper_flange" pos="0.032000000000000001 0 -0.0235" quat="0.49999816339744829 -0.49999999999662686 0.5000018366025516 -0.49999999999662686">
+                      <inertial mass="0.047710959999999997" pos="0 0 -0.00032000000000000003" quat="0.70710678118654802 0 0 0.70710678118654802" diaginertia="4.3109999999999999e-05 2.6970000000000001e-05 2.4790000000000002e-05" />
+                      <geom name="original_urdf_visual_gripper_flange" type="mesh" mesh="original_urdf_visual_gripper_flange" material="original_urdf_visual_gripper_flange_material" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" />
+                      <camera name="eye_in_hand" pos="0.073112770314158165 0.011437720170160318 0.043550025005932705" quat="0.12348849872428057 0.69681196684691538 0.69570306957671757 0.12329198077445876" />
+                      <geom type="mesh" mesh="source_flange_part_0" name="source_flange_part_0" group="0" rgba="0 0.5 0 1" />
+                      <geom type="mesh" mesh="source_flange_part_1" name="source_flange_part_1" group="0" rgba="0 0.5 0 1" />
+                      <geom type="mesh" mesh="source_flange_part_2" name="source_flange_part_2" group="0" rgba="0 0.5 0 1" />
+                      <geom type="mesh" mesh="source_flange_part_3" name="source_flange_part_3" group="0" rgba="0 0.5 0 1" />
+                      <geom type="mesh" mesh="source_flange_part_4" name="source_flange_part_4" group="0" rgba="0 0.5 0 1" />
+                      <geom type="mesh" mesh="source_flange_part_5" name="source_flange_part_5" group="0" rgba="0 0.5 0 1" />
+                      <geom type="mesh" mesh="source_flange_part_6" name="source_flange_part_6" group="0" rgba="0 0.5 0 1" />
+                      <geom type="mesh" mesh="source_flange_part_7" name="source_flange_part_7" group="0" rgba="0 0.5 0 1" />
+                      </body>
+                    <geom name="original_urdf_visual_link7" type="mesh" mesh="original_urdf_visual_link7" material="original_urdf_visual_link7_material" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" />
+                    <geom type="mesh" mesh="candidate_nero_link7_0" name="candidate_nero_link7_0" group="0" rgba="0 0.5 0 1" />
+                    <geom type="mesh" mesh="candidate_nero_link7_1" name="candidate_nero_link7_1" group="0" rgba="0 0.5 0 1" />
+                    <geom type="mesh" mesh="candidate_nero_link7_2" name="candidate_nero_link7_2" group="0" rgba="0 0.5 0 1" />
+                    <geom type="mesh" mesh="candidate_nero_link7_3" name="candidate_nero_link7_3" group="0" rgba="0 0.5 0 1" />
+                  </body>
+                  <geom name="original_urdf_visual_link6" type="mesh" mesh="original_urdf_visual_link6" material="original_urdf_visual_link6_material" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" />
+                  <geom type="mesh" mesh="candidate_nero_link6_0" name="candidate_nero_link6_0" group="0" rgba="0 0.5 0 1" />
+                  <geom type="mesh" mesh="candidate_nero_link6_1" name="candidate_nero_link6_1" group="0" rgba="0 0.5 0 1" />
+                  <geom type="mesh" mesh="candidate_nero_link6_2" name="candidate_nero_link6_2" group="0" rgba="0 0.5 0 1" />
+                  <geom type="mesh" mesh="candidate_nero_link6_3" name="candidate_nero_link6_3" group="0" rgba="0 0.5 0 1" />
+                  <geom type="mesh" mesh="candidate_nero_link6_4" name="candidate_nero_link6_4" group="0" rgba="0 0.5 0 1" />
+                </body>
+                <geom name="original_urdf_visual_link5" type="mesh" mesh="original_urdf_visual_link5" material="original_urdf_visual_link5_material" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" mesh="candidate_nero_link5_0" name="candidate_nero_link5_0" group="0" rgba="0 0.5 0 1" />
+                <geom type="mesh" mesh="candidate_nero_link5_1" name="candidate_nero_link5_1" group="0" rgba="0 0.5 0 1" />
+                <geom type="mesh" mesh="candidate_nero_link5_2" name="candidate_nero_link5_2" group="0" rgba="0 0.5 0 1" />
+                <geom type="mesh" mesh="candidate_nero_link5_3" name="candidate_nero_link5_3" group="0" rgba="0 0.5 0 1" />
+                <geom type="mesh" mesh="candidate_nero_link5_4" name="candidate_nero_link5_4" group="0" rgba="0 0.5 0 1" />
+                <geom type="mesh" mesh="candidate_nero_link5_5" name="candidate_nero_link5_5" group="0" rgba="0 0.5 0 1" />
+                <geom type="mesh" mesh="candidate_nero_link5_6" name="candidate_nero_link5_6" group="0" rgba="0 0.5 0 1" />
+              </body>
+              <geom name="original_urdf_visual_link4" type="mesh" mesh="original_urdf_visual_link4" material="original_urdf_visual_link4_material" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" />
+              <geom type="mesh" mesh="candidate_nero_link4_0" name="candidate_nero_link4_0" group="0" rgba="0 0.5 0 1" />
+              <geom type="mesh" mesh="candidate_nero_link4_1" name="candidate_nero_link4_1" group="0" rgba="0 0.5 0 1" />
+              <geom type="mesh" mesh="candidate_nero_link4_2" name="candidate_nero_link4_2" group="0" rgba="0 0.5 0 1" />
+              <geom type="mesh" mesh="candidate_nero_link4_3" name="candidate_nero_link4_3" group="0" rgba="0 0.5 0 1" />
+              <geom type="mesh" mesh="candidate_nero_link4_4" name="candidate_nero_link4_4" group="0" rgba="0 0.5 0 1" />
+              <geom type="mesh" mesh="candidate_nero_link4_5" name="candidate_nero_link4_5" group="0" rgba="0 0.5 0 1" />
+            </body>
+            <geom name="original_urdf_visual_link3" type="mesh" mesh="original_urdf_visual_link3" material="original_urdf_visual_link3_material" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" />
+            <geom type="mesh" mesh="candidate_nero_link3_0" name="candidate_nero_link3_0" group="0" rgba="0 0.5 0 1" />
+            <geom type="mesh" mesh="candidate_nero_link3_1" name="candidate_nero_link3_1" group="0" rgba="0 0.5 0 1" />
+            <geom type="mesh" mesh="candidate_nero_link3_2" name="candidate_nero_link3_2" group="0" rgba="0 0.5 0 1" />
+            <geom type="mesh" mesh="candidate_nero_link3_3" name="candidate_nero_link3_3" group="0" rgba="0 0.5 0 1" />
+            <geom type="mesh" mesh="candidate_nero_link3_4" name="candidate_nero_link3_4" group="0" rgba="0 0.5 0 1" />
+            <geom type="mesh" mesh="candidate_nero_link3_5" name="candidate_nero_link3_5" group="0" rgba="0 0.5 0 1" />
+            <geom type="mesh" mesh="candidate_nero_link3_6" name="candidate_nero_link3_6" group="0" rgba="0 0.5 0 1" />
+            <geom type="mesh" mesh="candidate_nero_link3_7" name="candidate_nero_link3_7" group="0" rgba="0 0.5 0 1" />
+          </body>
+          <geom name="original_urdf_visual_link2" type="mesh" mesh="original_urdf_visual_link2" material="original_urdf_visual_link2_material" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" />
+          <geom type="mesh" mesh="candidate_nero_link2_0" name="candidate_nero_link2_0" group="0" rgba="0 0.5 0 1" />
+          <geom type="mesh" mesh="candidate_nero_link2_1" name="candidate_nero_link2_1" group="0" rgba="0 0.5 0 1" />
+          <geom type="mesh" mesh="candidate_nero_link2_2" name="candidate_nero_link2_2" group="0" rgba="0 0.5 0 1" />
+          <geom type="mesh" mesh="candidate_nero_link2_3" name="candidate_nero_link2_3" group="0" rgba="0 0.5 0 1" />
+          <geom type="mesh" mesh="candidate_nero_link2_4" name="candidate_nero_link2_4" group="0" rgba="0 0.5 0 1" />
+        </body>
+        <geom name="original_urdf_visual_link1" type="mesh" mesh="original_urdf_visual_link1" material="original_urdf_visual_link1_material" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" />
+        <geom type="mesh" mesh="candidate_nero_link1_0" name="candidate_nero_link1_0" group="0" rgba="0 0.5 0 1" />
+        <geom type="mesh" mesh="candidate_nero_link1_1" name="candidate_nero_link1_1" group="0" rgba="0 0.5 0 1" />
+        <geom type="mesh" mesh="candidate_nero_link1_2" name="candidate_nero_link1_2" group="0" rgba="0 0.5 0 1" />
+        <geom type="mesh" mesh="candidate_nero_link1_3" name="candidate_nero_link1_3" group="0" rgba="0 0.5 0 1" />
+        <geom type="mesh" mesh="candidate_nero_link1_4" name="candidate_nero_link1_4" group="0" rgba="0 0.5 0 1" />
+        <geom type="mesh" mesh="candidate_nero_link1_5" name="candidate_nero_link1_5" group="0" rgba="0 0.5 0 1" />
+        <geom type="mesh" mesh="candidate_nero_link1_6" name="candidate_nero_link1_6" group="0" rgba="0 0.5 0 1" />
+        <geom type="mesh" mesh="candidate_nero_link1_7" name="candidate_nero_link1_7" group="0" rgba="0 0.5 0 1" />
+      </body>
+      <geom name="original_urdf_visual_base_link" type="mesh" mesh="original_urdf_visual_base_link" material="original_urdf_visual_base_link_material" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" />
+      <geom type="mesh" mesh="candidate_nero_base_link_0" name="candidate_nero_base_link_0" group="0" rgba="0 0.5 0 1" />
+      <geom type="mesh" mesh="candidate_nero_base_link_1" name="candidate_nero_base_link_1" group="0" rgba="0 0.5 0 1" />
+      <geom type="mesh" mesh="candidate_nero_base_link_2" name="candidate_nero_base_link_2" group="0" rgba="0 0.5 0 1" />
+      <geom type="mesh" mesh="candidate_nero_base_link_3" name="candidate_nero_base_link_3" group="0" rgba="0 0.5 0 1" />
+      <geom type="mesh" mesh="candidate_nero_base_link_4" name="candidate_nero_base_link_4" group="0" rgba="0 0.5 0 1" />
+      <geom type="mesh" mesh="candidate_nero_base_link_5" name="candidate_nero_base_link_5" group="0" rgba="0 0.5 0 1" />
+      <geom type="mesh" mesh="candidate_nero_base_link_6" name="candidate_nero_base_link_6" group="0" rgba="0 0.5 0 1" />
+      <geom type="mesh" mesh="candidate_nero_base_link_7" name="candidate_nero_base_link_7" group="0" rgba="0 0.5 0 1" />
+      </body>
+  </worldbody><actuator><motor name="urdf_motor_joint1" joint="joint1" ctrllimited="true" ctrlrange="-100 100" />
+    <motor name="urdf_motor_joint2" joint="joint2" ctrllimited="true" ctrlrange="-100 100" />
+    <motor name="urdf_motor_joint3" joint="joint3" ctrllimited="true" ctrlrange="-100 100" />
+    <motor name="urdf_motor_joint4" joint="joint4" ctrllimited="true" ctrlrange="-100 100" />
+    <motor name="urdf_motor_joint5" joint="joint5" ctrllimited="true" ctrlrange="-100 100" />
+    <motor name="urdf_motor_joint6" joint="joint6" ctrllimited="true" ctrlrange="-100 100" />
+    <motor name="urdf_motor_joint7" joint="joint7" ctrllimited="true" ctrlrange="-100 100" />
+    </actuator><equality /><sensor /><contact><exclude body1="base_link" body2="link1" />
+  </contact></mujoco>

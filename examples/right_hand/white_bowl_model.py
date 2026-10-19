@@ -8,7 +8,30 @@ from pathlib import Path
 import xml.etree.ElementTree as ET
 
 
-def register(root, out):
+def _contact_roles(official):
+    """Keep native finger roles while allowing multiple collision parts per body."""
+    thumb = ['gripper0_finger13_link', 'gripper0_finger14_link']
+    opposed = [f'gripper0_finger{finger}{link}_link'
+               for finger in range(2, 6) for link in (2, 3)]
+    role_bodies = {'left_finger': thumb, 'right_finger': opposed,
+                   'left_fingerpad': thumb[-1:], 'right_fingerpad': opposed[1::2]}
+    body_geoms = {}
+    for name in thumb + opposed:
+        body = official.find(f'.//worldbody//body[@name="{name}"]')
+        if body is None:
+            raise ValueError(f'Right native contact role body is absent: {name}')
+        # Frozen sources use explicit collision bits and no MJCF default classes.
+        geoms = [geom for geom in body.findall('geom')
+                 if int(geom.get('contype', '1')) or int(geom.get('conaffinity', '1'))]
+        if not geoms or any(not geom.get('name') for geom in geoms):
+            raise ValueError(f'Right native contact role body needs named collision geoms: {name}')
+        body_geoms[name] = [geom.get('name').removeprefix('gripper0_') for geom in geoms]
+    roles = {role: [geom for body in bodies for geom in body_geoms[body]]
+             for role, bodies in role_bodies.items()}
+    return roles, role_bodies
+
+
+def register(root, out, source=None):
     """Register the delivered right model; never construct or reset a simulator."""
     import numpy as np
     from robosuite.models.robots.manipulators.manipulator_model import ManipulatorModel
@@ -19,7 +42,7 @@ def register(root, out):
     from robosuite.robots import SingleArm, ROBOT_CLASS_MAPPING
 
     root, out = Path(root).resolve(), Path(out)
-    source = root / 'mjcf/nero_dh116_right.xml'
+    source = (root / (source if source is not None else 'mjcf/nero_dh116_right.xml')).resolve()
     official = ET.parse(source).getroot()
     spec = importlib.util.spec_from_file_location('frozen_bowl_xml_splitter', root / 'examples/libero_reference/model.py')
     splitter = importlib.util.module_from_spec(spec)
@@ -40,13 +63,7 @@ def register(root, out):
     world_base = np.fromstring(base.get('pos'), sep=' ')
     mount_pos = np.fromstring(base.find('body[@name="mount0_base"]').get('pos'), sep=' ')
     clearance = -.5-world_base[0]  # Native kitchen table's frozen 1 m x dimension.
-    thumb = ['finger13_link_collision_0', 'finger14_link_collision_0']
-    opposed = [f'finger{finger}{link}_link_collision_0' for finger in range(2, 6) for link in (2, 3)]
-    roles = {'left_finger': thumb, 'right_finger': opposed,
-             'left_fingerpad': thumb[-1:], 'right_fingerpad': opposed[1::2]}
-    names = {g.get('name').removeprefix('gripper0_') for g in official.findall('.//geom')}
-    if any(name not in names for values in roles.values() for name in values):
-        raise ValueError('Right native contact role names are absent from the formal source')
+    roles, role_bodies = _contact_roles(official)
 
     class RightDeliveryMount(MountModel):
         def __init__(self, idn=0):
@@ -139,15 +156,17 @@ def register(root, out):
     MOUNT_MAPPING['RightDeliveryMount'] = RightDeliveryMount
     for name in ('RightNeroURDF', 'MountedRightNeroURDF'):
         ROBOT_CLASS_MAPPING[name] = RightNeroURDFArm
-    return {'paths': paths, 'lower': lower, 'upper': upper, 'initial': initial, 'roles': roles}
+    return {'paths': paths, 'lower': lower, 'upper': upper, 'initial': initial,
+            'roles': roles, 'role_bodies': role_bodies, 'source': str(source)}
 
 
-def configure_scene(root):
+def configure_scene(root, source=None):
     """Carry explicit right options into the unchanged native task and predicate."""
     from libero.libero.envs import env_wrapper
     key = 'libero_kitchen_tabletop_manipulation'
     native = env_wrapper.TASK_MAPPING[key]
-    official = ET.parse(Path(root) / 'mjcf/nero_dh116_right.xml').getroot()
+    source = (Path(root).resolve() / (source if source is not None else 'mjcf/nero_dh116_right.xml')).resolve()
+    official = ET.parse(source).getroot()
 
     def load_model(self):
         native._load_model(self)

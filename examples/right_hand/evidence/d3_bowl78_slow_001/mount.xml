@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="delivery_mount"><compiler angle="radian" inertiagrouprange="0 0" autolimits="true" />
+  <option impratio="20" cone="elliptic" density="1.2" viscosity="0.00002" timestep="0.002" integrator="RK4" />
+  <size nconmax="5000" njmax="5000" />
+  <asset><mesh name="pedestal" file="/data_robot/verification/nero_dh116_right/meshes/nero/mount0_pedestal-f96ff12b.stl" />
+    </asset><worldbody><body name="base" pos="0 0 0" quat="1 0 0 0">
+        <inertial mass="0" pos="0 0 0.01" quat="1 0 0 0" diaginertia="0 0 0" />
+        <body name="controller_box" pos="0 0 0" quat="1 0 0 0">
+          <inertial mass="46.640000000000001" pos="-0.32500000000000001 0 -0.38" quat="1 0 0 0" diaginertia="1.71363 1.2798799999999999 0.80998099999999995" />
+          <geom pos="-0.325 0 -0.38" size="0.11 0.2 0.265" type="box" name="controller_box_col" rgba="0.5 0.5 0 1" />
+        </body>
+        <body name="pedestal_feet" pos="0 0 0" quat="1 0 0 0">
+          <inertial mass="167.09" pos="-0.1225 0 -0.75800000000000001" quat="1 0 0 0" diaginertia="8.1609499999999997 9.59375 15.0785" />
+          <geom pos="-0.1225 0 -0.758" size="0.385 0.35 0.155" type="box" name="pedestal_feet_col" rgba="0.5 0.5 0 1" />
+        </body>
+        <body name="torso" pos="0 0 0" quat="1 0 0 0">
+          <inertial mass="0.0001" pos="0 0 0" quat="1 0 0 0" diaginertia="1e-08 1e-08 1e-08" />
+          <geom conaffinity="0" contype="0" group="1" pos="0 0 -0.05" size="0.05 0.05 0.05" type="box" name="torso_vis" rgba="0.2 0.2 0.2 1" />
+        </body>
+        <body name="pedestal" pos="0 0 0" quat="1 0 0 0">
+          <inertial mass="60.863999999999997" pos="0 0 0" quat="0.65926696235486859 -0.25950498518187648 -0.26094498509965031 0.65569196255900652" diaginertia="6.0869 5.8163499999999999 4.2091500000000002" />
+          <geom conaffinity="0" contype="0" group="1" mesh="pedestal" type="mesh" name="pedestal_vis" rgba="0.2 0.2 0.2 1" />
+          <geom pos="-0.02 0 -0.29" rgba="0.5 0.5 0 1" size="0.18 0.31" type="cylinder" name="pedestal_col" />
+        </body>
+      </body>
+    </worldbody><actuator /><equality /><sensor /><contact /></mujoco>
