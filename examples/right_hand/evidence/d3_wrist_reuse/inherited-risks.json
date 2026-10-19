@@ -1,0 +1,120 @@
+{
+  "near125": {
+    "raw_near_states": 763,
+    "candidate_contact_states": 125,
+    "maximum_raw_positive_gap_mm": 0.08532194328802585,
+    "minimum_contact_dist_mm": -0.09020129428922123,
+    "interpretation": "UNKNOWN engineering boundary. Native contact.dist of convex proxies is not source/CAD penetration depth, nor a force measurement.",
+    "q6_q7_min_rad": [
+      0.88109375,
+      -1.5708
+    ],
+    "q6_q7_max_rad": [
+      0.95,
+      1.5708
+    ],
+    "new_DH_contact_queries": 0
+  },
+  "external_217mm": {
+    "risk": {
+      "samples": 3816,
+      "method": "Up to 24 deterministic hull face-centroid probes per flange piece; strict complete-source triangle nearest distance and complete closed-source winding union membership. Not an exhaustive error maximum or all external-object test.",
+      "exterior_probe_count": 1454,
+      "maximum_sampled_exterior_mm": 2.170511622411895,
+      "maximum_piece_index": 103,
+      "maximum_piece_label": "profile_2_011",
+      "maximum_point_feature_mm": [
+        -6.913727814000019,
+        20.9859445213334,
+        -36.046236524666746
+      ],
+      "original_face": 10998,
+      "over_025mm": 111,
+      "over_1mm": 15,
+      "no_new_tolerance_or_gate": true,
+      "interpretation": "Conservative recess/counterbore filling can cause early external contacts. This risk is separate from the registered root_arc_1 exception and from the PASS wrist regression; it remains a delivery limitation. Open link5 source is not assigned a solid-exterior error certificate.",
+      "physics_steps": 0
+    },
+    "point_DH_flange_local_m": [
+      -0.006503490575758754,
+      0.02121278333171959,
+      -0.03598976383617036
+    ],
+    "point_DH_robot0_link7_local_m": [
+      -0.003989817865933991,
+      0.006503622773785281,
+      -0.04471265113379229
+    ],
+    "feature_to_native_rotation": [
+      [
+        0.9999353768905684,
+        1.3552527156068805e-20,
+        -0.01136846703460256
+      ],
+      [
+        -7.152136637515929e-05,
+        0.9999802101686236,
+        -0.006290799298128372
+      ],
+      [
+        0.011368242054556938,
+        0.006291205855412823,
+        0.9999155883380725
+      ]
+    ],
+    "recorded_source_face_in_old_flange_part2_source_ids": false,
+    "source_face_mapping": {
+      "source_raw_face": 10998,
+      "DH_STL_face": 10998,
+      "triangle_vertex_set_bound_m": 1.0862472174836594e-16,
+      "old_DH_flange_proxy_vertex_correspondence": {
+        "robot0_source_flange_part_0": 0.0,
+        "robot0_source_flange_part_1": 0.03553314670629139,
+        "robot0_source_flange_part_2": 0.046257933443410705,
+        "robot0_source_flange_part_3": 0.04562820693975387,
+        "robot0_source_flange_part_4": 0.03609416056904291,
+        "robot0_source_flange_part_5": 0.045759746006842746,
+        "robot0_source_flange_part_6": 0.05285089369498764,
+        "robot0_source_flange_part_7": 0.038565290105233636
+      }
+    }
+  },
+  "root_0300mm": {
+    "points": 303,
+    "maximum_recorded_outward_m": 0.0002998888207524339,
+    "point_native_bounds_m": [
+      [
+        0.009924055746574309,
+        0.019064013647856776,
+        0.00901977625879693
+      ],
+      [
+        0.011382825340293758,
+        0.020845339106411304,
+        0.011190768425162869
+      ]
+    ]
+  },
+  "DH_planned_wrist_range_rad": [
+    [
+      -0.73,
+      1.4335265819905645
+    ],
+    [
+      -0.1793268616846018,
+      1.5707962999999998
+    ]
+  ],
+  "scope": "Inherited risk evidence, read only; NO new Gripper scan or DH116 full-domain/external-object certification.",
+  "DH116_approximation_exceptions_approved": false,
+  "source_comments": [
+    "https://github.com/LeoandDream/Nero_Gripper_assets/issues/7#issuecomment-6267876191",
+    "https://github.com/LeoandDream/Nero_Gripper_assets/issues/7#issuecomment-6268107317",
+    "https://github.com/LeoandDream/Nero_DH116_assets/pull/4#issuecomment-6268576685"
+  ],
+  "source_evidence_sha256": {
+    "construction.json": "6a82ec6e4b4dc60a4909ca27cecca0037f5a7d88cb6ce40d77d98b44cc997c20",
+    "external-risk-probes.json": "2829f83416f1610ccd938d9e6517b6e0c25663a7bacc787ed21f7b0f25162b15",
+    "near-zero-boundary.json": "b6e87ca2e5021f44170ef09a74c890af9d466db76c83ff6c98506bafc859240d"
+  }
+}

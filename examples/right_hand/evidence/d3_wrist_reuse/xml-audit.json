@@ -1,0 +1,12 @@
+{
+  "removed_counts": [
+    7,
+    8
+  ],
+  "replacement_counts": [
+    147,
+    159
+  ],
+  "hand_collision_count": 78,
+  "unauthorized_xml_fields_identical": true
+}

@@ -1,0 +1,54 @@
+[
+  {
+    "path": "examples/right_hand/candidates/finger13_local/model.xml",
+    "sha256": "b27f4f86fbaeacd2bb925463f39f67181ef7db12963c4d9f7fc01797a7924d1b"
+  },
+  {
+    "path": "examples/right_hand/candidates/wrist_reuse/model.xml",
+    "sha256": "9604a4a6935a34496f93e223219f687b4df8b7aa83037dc208fc9f3499eb05c9"
+  },
+  {
+    "path": "examples/right_hand/evidence/d3_white_bowl_001/candidate.json",
+    "sha256": "ba767b42f99d3562255909bde5c970d529ba254769029ec1cd7a98faf76af0fb"
+  },
+  {
+    "path": "examples/right_hand/evidence/d3_bowl78_slow_001/state.jsonl.gz",
+    "sha256": "3a0fb1b74e89ec6df2e192546c38f59518d3ac4ff4b9c92c1d98d6d9ab02d615"
+  },
+  {
+    "path": "examples/right_hand/evidence/d3_bowl78_slow_001/contacts.jsonl.gz",
+    "sha256": "727a5b7d4b4016f7915cc38a4cc147c3ce89475ae171d6a339f570eefff99d89"
+  },
+  {
+    "path": "examples/right_hand/evidence/d3_bowl78_slow_001/model.xml",
+    "sha256": "cfea34f6f4ee4654af1af8369744ed454a194a18406206be97d1ffeba22b5873"
+  },
+  {
+    "path": "examples/right_hand/wrist_reuse.py",
+    "sha256": "55fc12bbf049c3429e7c624005f862d888fa853a22e79f2e936ecffb530bf8bf"
+  },
+  {
+    "path": "examples/right_hand/link5_flange_fullscan.py",
+    "sha256": "a8fd99c42ef7e6f5ef8ae448265669b8145cf36b5f594b732249fd5363e0a811"
+  },
+  {
+    "path": "examples/right_hand/link5_flange_poses.py",
+    "sha256": "3e6804238de7402b8e9867035422dbc0aa690efe8bab648b153a095b68807290"
+  },
+  {
+    "path": "examples/right_hand/proxy76_contacts.py",
+    "sha256": "97986d2c2f7138721c67cc3cb5adefc93c817d2429bef059bd69b4e89cfa9478"
+  },
+  {
+    "path": "examples/right_hand/proxy76_validate.py",
+    "sha256": "aa9224ee4daf5f8d9355a40ab8b26f878d50ddd82ca0808d6e9d52855fc6948c"
+  },
+  {
+    "path": "tools/build_right_proxy76.py",
+    "sha256": "ef858f59bf57b73657f27ed50e623ba361ae30bee588c9be46d7f88b53bf025c"
+  },
+  {
+    "path": "examples/right_hand/evidence/d3_proxy76/gap_check/check_convex_gap.py",
+    "sha256": "05e359a05d9e40f2b21ba2495ca05ecb8d86a8e14bd53a5f21b593af38e01153"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "exact_old_new_relative_transform_matches": 921,
+  "protected_SHA256": {
+    "mjcf/nero_dh116.xml": "c446124b7d938aa6e00ba5914047001de66c2a2c162e7dea1644437e5a85cb33",
+    "mjcf/nero_dh116_right.xml": "739d3d29bbfd4a6468fb8b75f4de09b719c0f96abb39508959c1dfc33a84b9cc",
+    "examples/right_hand/candidates/finger13_local/model.xml": "b27f4f86fbaeacd2bb925463f39f67181ef7db12963c4d9f7fc01797a7924d1b",
+    "examples/right_hand/candidates/link5_flange_local/model.xml": "1b2530d923b446605492b43652dd5a3200fd755674ba17a54f0c961cde362b39",
+    "/data_robot/projects/nero_dh116_assets/README.md": "d68ec6d62a6f42b8c1636ad2774c8329073d973c2621cc7fe148c8c8c89d8f25"
+  },
+  "targeted_unit_tests": {
+    "wrist_reuse": 4,
+    "original_fullscan": 3,
+    "passed": 7
+  },
+  "LIBERO_fixture_commit": "f78abd68ee283de9f9be3c8f7e2a9ad60246e95c",
+  "first_checker_attempt": "Completed plan scan; stopped before state queries on unnamed environment geom sorting. Checker corrected; identical candidate reused. No dynamics or geometry retry.",
+  "completed_checker_attempts": "Two complete static checks (002 and final), same candidate and frozen inputs. Final evidence binds current script; counts agree. No geometry/physics/criteria changes."
+}
