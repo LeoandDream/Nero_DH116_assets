@@ -121,7 +121,7 @@ def robot_audit(formal, actual):
             'formal_snapshot': a, 'actual_snapshot': b}
 
 
-def execute(candidate_path, geometry_path, output, frozen78=False):
+def execute(candidate_path, geometry_path, output, frozen78=False, wrist_conditional=None):
     candidate = json.loads(candidate_path.read_text())
     geometry = None if frozen78 else json.loads(geometry_path.read_text())
     result = {'candidate_id': candidate['candidate_id'], 'A': 'PASS_FINITE_SAMPLED_INTERNAL_GEOMETRY',
@@ -147,6 +147,12 @@ def execute(candidate_path, geometry_path, output, frozen78=False):
                 raise ValueError('78 trial must use the exact approved candidate path and bytes')
             model_path = ROOT / MODEL_REL
             geometry_path = ROOT / 'examples/right_hand/evidence/d3_bowl_preflight/internal-detail.json'
+            if wrist_conditional is not None:
+                import wrist_conditional as wrist_policy
+                external = wrist_policy.validate_external_preflight(ROOT, wrist_conditional)
+                model_path = ROOT / wrist_policy.MODEL
+                geometry_path = wrist_conditional
+                preflight = dict(preflight, external=external)
             actions = build_schedule(candidate)
             schedule_info = schedule_summary(actions)
             planned_steps = schedule_info['physics_steps_max']
@@ -155,6 +161,9 @@ def execute(candidate_path, geometry_path, output, frozen78=False):
                           experiment='approved_78_slow_approach_once',
                           authorization='https://github.com/LeoandDream/Nero_DH116_assets/pull/4#issuecomment-6260545305',
                           planned_commands=len(actions), planned_physics_steps=planned_steps)
+            if wrist_conditional is not None:
+                result.update(robot_model=str(wrist_policy.MODEL), experiment='approved_wrist_conditional_once',
+                              authorization=wrist_policy.AUTHORIZATION, external_preflight='PASS_FINITE_SAMPLES_REFERENCE_SCENE_ONLY')
         else:
             model_path = ROOT / result['formal_model']
             if sha(model_path) != FORMAL_MODEL_SHA256:
@@ -228,6 +237,12 @@ def execute(candidate_path, geometry_path, output, frozen78=False):
         qadr, vadr = model.jnt_qposadr[jids], model.jnt_dofadr[jids]
         if not audit['passed'] or not np.array_equal(data.qpos[qadr], adapter['initial']):
             raise ValueError('Formal right robot physics or native reset differs')
+        if wrist_conditional is not None:
+            mapping = json.loads((ROOT/wrist_policy.MODEL.parent/'manifest.json').read_text())
+            old_snapshot = wrist_policy.read(ROOT/'examples/right_hand/evidence/d3_bowl78_slow_001/robot-physical-preflight.json.gz')['actual_snapshot']
+            comparison = wrist_policy.compare_reset_snapshots(old_snapshot, audit['actual_snapshot'],
+                [r['geom']['name'] for r in mapping['removed']], [r['geom'] for r in mapping['meshes']])
+            write(output/'old-to-new-compiled-audit.json', comparison)
         if np.any(data.qvel) or np.any(data.ctrl) or data.time != 0:
             raise ValueError('Native reset must start with zero velocities/control/time')
         if frozen78:
@@ -262,6 +277,10 @@ def execute(candidate_path, geometry_path, output, frozen78=False):
             files.update(ROOT / 'examples/right_hand/evidence/d3_bowl_preflight' / name
                          for name in ('internal-summary.json', 'verification.json'))
             files.add(ROOT / 'examples/right_hand/evidence/d3_white_bowl_001/frozen-before-first-step.json')
+        if wrist_conditional is not None:
+            files.update(ROOT/'examples/right_hand'/name for name in ('wrist_conditional.py', 'wrist_reuse.py', 'wrist_external_preflight.py'))
+            files.update(wrist_conditional.parent/name for name in ('summary.json', 'inputs.json', 'input-audit.json'))
+            files.add(ROOT/'examples/right_hand/evidence/d3_bowl78_slow_001/schedule.json.gz')
         before_sha = {str(p.relative_to(ROOT)): sha(p) for p in sorted(files)}
         criteria = candidate['proposed_trial_criteria']
         frozen = {'candidate_sha256': sha(candidate_path), 'geometry_sha256': sha(geometry_path),
@@ -295,6 +314,16 @@ def execute(candidate_path, geometry_path, output, frozen78=False):
                                         'native_reset_count': counts['explicit_native_reset']})
             if any(w.number for w in data.warning):
                 raise ValueError('MuJoCo warning before integration')
+        if wrist_conditional is not None:
+            frozen['additional_stop_protocol'] = external['protocol']
+            initial = [{'geom': [model.geom(int(c.geom1)).name, model.geom(int(c.geom2)).name],
+                        'body': [model.body(int(model.geom_bodyid[g])).name for g in (c.geom1,c.geom2)],
+                        'filter_reasons': filter_reasons(model, int(c.geom1), int(c.geom2))}
+                       for c in data.contact]
+            initial_stops = wrist_policy.extra_failures(initial, data.qpos[qadr].tolist(), external['protocol'])
+            if initial_stops:
+                write(output/'initial-risk-block.json', {'reasons': initial_stops, 'contacts': initial})
+                raise ValueError('Initial state violates registered diagnostic stops')
         write(output / 'frozen-before-first-step.json', frozen)
         setup_allowed, integrating = False, True
         result.update(B='RUNNING', execution='RUNNING', dynamic_attempts=1)
@@ -367,6 +396,8 @@ def execute(candidate_path, geometry_path, output, frozen78=False):
             if mimic > criteria['linear_mimic_error_rad_max']: reasons.append('MIMIC')
             if overshoot > criteria['joint_limit_overshoot_rad_max']: reasons.append('JOINT_LIMIT')
             if overlap > criteria['eligible_internal_and_external_overlap_m_max']: reasons.append('ROBOT_CONTACT_OVERLAP')
+            if wrist_conditional is not None:
+                reasons.extend(wrist_policy.extra_failures(contacts, q.tolist(), external['protocol']))
             if reasons:
                 result['first_failure'] = {'step': counts['mj_step'], 'macro': current['macro'],
                                            'source_macro': current.get('source_macro', current['macro']),
@@ -385,6 +416,19 @@ def execute(candidate_path, geometry_path, output, frozen78=False):
                      'environment_support': support, 'opposed_thumb_index_contact': opposed,
                      'continuous_valid_hold_steps': hold_count, 'robot_overlap_m': overlap,
                      'warnings': warnings, 'finite': finite, 'failures': reasons}
+            if wrist_conditional is not None:
+                j6 = int(vadr[5])
+                state.update(contact_count=len(contacts),
+                    wrist_external_contact_count=sum(
+                        any((name or '').startswith('robot0_wrist_reuse_') for name in c['geom'])
+                        and not set(c['body']).issubset(wrist_policy.WRIST_BODIES) and not c['filter_reasons'] for c in contacts),
+                    j6={'target_rad': current['action_13'][5], 'actual_post_qpos_rad': float(q[5]),
+                        'post_qvel_rad_s': float(d.qvel[j6]), 'raw_qacc_rad_s2': float(d.qacc[j6]),
+                        'cached_qfrc_actuator_Nm': float(d.qfrc_actuator[j6]),
+                        'cached_qfrc_constraint_Nm': float(d.qfrc_constraint[j6]),
+                        'cached_qfrc_bias_Nm': float(d.qfrc_bias[j6]),
+                        'cached_qfrc_passive_Nm': float(d.qfrc_passive[j6]),
+                        'timing': 'qpos/qvel post-step; forces and body/contact poses are final RK4 internal-stage cache, no additional forward.'})
             trace.write(json.dumps(finite_json(state), allow_nan=False)+'\n')
             contact_log.write(json.dumps(finite_json({'step': counts['mj_step'],
                 'timing': 'final RK4 internal-stage cache; qpos/height in state row are post-integration; no post-step forward',
@@ -440,8 +484,13 @@ if __name__ == '__main__':
     parser.add_argument('--candidate', type=Path)
     parser.add_argument('--geometry', type=Path)
     parser.add_argument('--frozen78', action='store_true', help='Approved fixed78 model and approach_high x2 schedule; one attempt only')
+    parser.add_argument('--wrist-conditional', type=Path, help='Completed external preflight summary; one approved wrist-reuse trial')
     parser.add_argument('--output', required=True, type=Path)
     args = parser.parse_args()
+    if args.wrist_conditional is not None:
+        if args.frozen78 or args.candidate is not None or args.geometry is not None:
+            parser.error('--wrist-conditional selects all frozen inputs; do not combine overrides')
+        args.frozen78 = True
     if args.frozen78:
         if args.candidate is not None or args.geometry is not None:
             parser.error('--frozen78 selects exact bundled inputs; do not override them')
@@ -452,4 +501,5 @@ if __name__ == '__main__':
     if output.exists() or not output.is_relative_to(ROOT) or os.environ.get('PYTHONPATH') or os.environ.get('PYTHONHOME'):
         raise SystemExit('Use a NEW output directory inside this activated independent checkout')
     output.mkdir(parents=True)
-    raise SystemExit(execute(args.candidate.resolve(), None if args.geometry is None else args.geometry.resolve(), output, args.frozen78))
+    raise SystemExit(execute(args.candidate.resolve(), None if args.geometry is None else args.geometry.resolve(), output,
+                            args.frozen78, None if args.wrist_conditional is None else args.wrist_conditional.resolve()))

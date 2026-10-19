@@ -1,0 +1,1190 @@
+[
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/scenes/../textures/gray_ceramic_tile.png",
+    "resolved": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/scenes/../textures/gray_ceramic_tile.png",
+    "sha256": "93a1c2b647f31aded62b4125439e17aa1a55c8f4e77820909d9a1c235f6c7315",
+    "kind": "explicit_LIBERO_fixture"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/scenes/../textures/martin_novak_wood_table.png",
+    "resolved": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/scenes/../textures/martin_novak_wood_table.png",
+    "sha256": "9d714fbf44d4d44f279761c0ddd0b2fd7271446cdbb85fcbef8677fe5f929850",
+    "kind": "explicit_LIBERO_fixture"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/scenes/../textures/martin_novak_wood_table.png",
+    "resolved": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/scenes/../textures/martin_novak_wood_table.png",
+    "sha256": "9d714fbf44d4d44f279761c0ddd0b2fd7271446cdbb85fcbef8677fe5f929850",
+    "kind": "explicit_LIBERO_fixture"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/scenes/../textures/yellow_linen_wall_texture.png",
+    "resolved": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/scenes/../textures/yellow_linen_wall_texture.png",
+    "sha256": "292d1bb3a8536b2faf73c91b9d6b11ac90c58136cbaade2af0d7b941f70904aa",
+    "kind": "explicit_LIBERO_fixture"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/scenes/kitchen_background/kitchen_background.png",
+    "resolved": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/scenes/kitchen_background/kitchen_background.png",
+    "sha256": "cb9379766b531eb8e6f44a1fa3df92430e0c73c6c3856a88521510e689bca15a",
+    "kind": "explicit_LIBERO_fixture"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/scenes/kitchen_background/visual/kitchen_background_vis.msh",
+    "resolved": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/scenes/kitchen_background/visual/kitchen_background_vis.msh",
+    "sha256": "6b2487166e07650ba787129919fb3c4f77bfd912fdd4e265f5bf68992175417a",
+    "kind": "explicit_LIBERO_fixture"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/scenes/kitchen_background_pot/kitchen_background_pot.png",
+    "resolved": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/scenes/kitchen_background_pot/kitchen_background_pot.png",
+    "sha256": "d953b50c28c2e7c42e5a31bee757984ea398ce464917edb4d02cb188dfc9b44f",
+    "kind": "explicit_LIBERO_fixture"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/scenes/kitchen_background_pot/visual/kitchen_background_pot_vis.msh",
+    "resolved": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/scenes/kitchen_background_pot/visual/kitchen_background_pot_vis.msh",
+    "sha256": "f3348ee8738bcaf84b6f9df6cae65d764bbc159410aea32d5d40c09dc58b69ec",
+    "kind": "explicit_LIBERO_fixture"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/scenes/kitchen_background_hot_pot/visual/kitchen_background_hot_pot_vis.msh",
+    "resolved": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/scenes/kitchen_background_hot_pot/visual/kitchen_background_hot_pot_vis.msh",
+    "sha256": "05c173fb9ae96f7ed2fdccbeb14abb38e8db601f7802e9b78db04d9a5e2b0ce2",
+    "kind": "explicit_LIBERO_fixture"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/scenes/kitchen_background_stove/kitchen_background_stove.png",
+    "resolved": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/scenes/kitchen_background_stove/kitchen_background_stove.png",
+    "sha256": "05be4ff65b6f9f4e89332b97628e9b9f1a176562afca6e14f5d325bd41f36e72",
+    "kind": "explicit_LIBERO_fixture"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/scenes/kitchen_background_stove/visual/kitchen_background_stove_vis.msh",
+    "resolved": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/scenes/kitchen_background_stove/visual/kitchen_background_stove_vis.msh",
+    "sha256": "0efe7517df5bb76730dd0b951dcf40644e7c494005a89421229b422217998702",
+    "kind": "explicit_LIBERO_fixture"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/scenes/fridge/metal.png",
+    "resolved": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/scenes/fridge/metal.png",
+    "sha256": "93784216a66b52be9c8ccc3732e50f511815291e32f34f97bd139ed7229061fa",
+    "kind": "explicit_LIBERO_fixture"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/scenes/fridge/visual/fridge_vis.msh",
+    "resolved": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/scenes/fridge/visual/fridge_vis.msh",
+    "sha256": "41edbedd182c3c27ffe8bc2c2808f61bc575c80bc37d717a17af71d10a04a208",
+    "kind": "explicit_LIBERO_fixture"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_base_link_0-9b755fcc.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_base_link_0-9b755fcc.obj",
+    "sha256": "9b755fcc0c0fc1a1b1e0736f2d09a5e2db149b30f2ce713d82949a3b1f3e6fe2",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_base_link_1-9050d662.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_base_link_1-9050d662.obj",
+    "sha256": "9050d662cba0a31f627fc6cfe9b474205e999630ffc667db779120f807b5aa3a",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_base_link_2-840973e3.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_base_link_2-840973e3.obj",
+    "sha256": "840973e30bb9c02d12ee66c1797e314af7d276e9faa03d609d7cae153a387586",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_base_link_3-694f85c0.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_base_link_3-694f85c0.obj",
+    "sha256": "694f85c0d797332e9b9964d134626c0a13592ff1ca45b344ce42c12b45d070c6",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_base_link_4-eb7627e7.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_base_link_4-eb7627e7.obj",
+    "sha256": "eb7627e75e3210c52a0db9fb5f8c911b681af10f9ac76db806f67705a422a0e5",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_base_link_5-bfa96b97.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_base_link_5-bfa96b97.obj",
+    "sha256": "bfa96b97d713b4a31d4229a399179db38cdd1b99d2a810265f53546866f1ee6d",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_base_link_6-1dd4555c.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_base_link_6-1dd4555c.obj",
+    "sha256": "1dd4555c303d188db55803760c5d9a720f869610c08c9cf6833d2457c763b3f9",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_base_link_7-41070495.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_base_link_7-41070495.obj",
+    "sha256": "41070495a20f2b2f7b4ec0b2bd45654a496d48dbfd480850c4a999f31cd0d1eb",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link1_0-64d58a3f.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_link1_0-64d58a3f.obj",
+    "sha256": "64d58a3fe8b73b90b9b7c0a8b86dd60af829abbba7fb4df6e9c0fcabe135ed9a",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link1_1-7b2c529b.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_link1_1-7b2c529b.obj",
+    "sha256": "7b2c529b61b96ffc4eb81a7b1fed20eb3bd58bc854cb04a83f75eefbb2e27a09",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link1_2-ee80fad0.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_link1_2-ee80fad0.obj",
+    "sha256": "ee80fad09a62aa67c9b6adb464918b8c02d209f35332252ad8f10f549ccc3bd8",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link1_3-fa81492e.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_link1_3-fa81492e.obj",
+    "sha256": "fa81492edfdb88b27bea2e6b17a8351aa8bde6fbffcd0aa396278726d2737972",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link1_4-9687d613.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_link1_4-9687d613.obj",
+    "sha256": "9687d6136442210287287ad950aee9b9bbd67b9fb41228a99ab9b85d53b10609",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link1_5-0bebb03b.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_link1_5-0bebb03b.obj",
+    "sha256": "0bebb03b65a19b1df2d14f897082df2a3bbc2dee207b1b4c7f398833d304215c",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link1_6-8b8756ee.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_link1_6-8b8756ee.obj",
+    "sha256": "8b8756eefdb6c92b43a9bd3ae10529c02c1f620c26af63b36ffdcaf0b35c6a84",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link1_7-82b447f9.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_link1_7-82b447f9.obj",
+    "sha256": "82b447f9246138fe899786f1d5111a4a44738a2789351f80a924bd5a085346a8",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link2_0-488533e9.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_link2_0-488533e9.obj",
+    "sha256": "488533e997702e2c9dfcd76accbaab0e2c477d345859f0133900a60d745170f6",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link2_1-1bab92d0.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_link2_1-1bab92d0.obj",
+    "sha256": "1bab92d0ee381b91852c929d5b9ab5c98f9f37f7394c1d0dfaf36bfd750b6842",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link2_2-a26e60e1.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_link2_2-a26e60e1.obj",
+    "sha256": "a26e60e118061267a04548ad5b7cfbb0d5d37ddba84a1c02553631c478153e39",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link2_3-6461873d.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_link2_3-6461873d.obj",
+    "sha256": "6461873d7f81c64407a1b55c90cbeedeb606d5ed79b470acb5ba8d1955ee24da",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link2_4-a688faa7.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_link2_4-a688faa7.obj",
+    "sha256": "a688faa745249c7345baf0991ee19852f198795dbba0ce507480a752b99442ae",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link3_0-c42d7ac7.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_link3_0-c42d7ac7.obj",
+    "sha256": "c42d7ac7801f587dcbb4f344a52f66b6cccefe711e2c3de984ba67bd9ecb4df9",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link3_1-89b20fd9.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_link3_1-89b20fd9.obj",
+    "sha256": "89b20fd9fb7d2167e8a63a3fe66dd3fc4df6eb16da83c233c21ad558d644e6a2",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link3_2-7b6481a2.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_link3_2-7b6481a2.obj",
+    "sha256": "7b6481a25f8b79ae12baec6ef3aef08e60851cb766b4b16cdfc74a4cab7a98d2",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link3_3-0cd99a08.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_link3_3-0cd99a08.obj",
+    "sha256": "0cd99a08311544c0395ab396a3fd4174f9b05573eceb00942cd34db901d84c43",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link3_4-a50f3d4d.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_link3_4-a50f3d4d.obj",
+    "sha256": "a50f3d4d74ecfbf179c96835161edb6d9461d5f041c173649450f32ba9216c02",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link3_5-30d354b7.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_link3_5-30d354b7.obj",
+    "sha256": "30d354b7d0f72b7999a04fff3131feafd516a206d938a4e6729c1d1761d3bcb0",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link3_6-b0e55916.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_link3_6-b0e55916.obj",
+    "sha256": "b0e559169ec7b88b14fcdb51794921d5365ff206fe299416e0206b71f2008338",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link3_7-57de8162.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_link3_7-57de8162.obj",
+    "sha256": "57de8162ef5f3bfc6e830e1df69c7cd937adee7a0e88e0519bd7fd32162a84f9",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link4_0-b10bbb1b.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_link4_0-b10bbb1b.obj",
+    "sha256": "b10bbb1b389c8023583cd60ba5d4b07d55f2360a46a603104b05437a8ae777af",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link4_1-3510fe63.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_link4_1-3510fe63.obj",
+    "sha256": "3510fe633836557aa4731bda53add70d222b0925317c255571bf3d4d7f6d4623",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link4_2-6fe5f5ba.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_link4_2-6fe5f5ba.obj",
+    "sha256": "6fe5f5bab68a024c5df9c80c08cc484b722bb0936168eaf04be9b26facf9031b",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link4_3-160b1bca.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_link4_3-160b1bca.obj",
+    "sha256": "160b1bca9c21faa58859e6ef995bd0289dc52ceb67d59678e7d53cb87adcaa72",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link4_4-6ceb0377.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_link4_4-6ceb0377.obj",
+    "sha256": "6ceb03776a36c23cab1c605208c0193dabe6fad662d3a76a14eb0f1a24b14a6c",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link4_5-61a31fef.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_link4_5-61a31fef.obj",
+    "sha256": "61a31fef8a5bf2e6c79be2d617d8510bbd18fdb08114a9562fa43f5c748182f6",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link5_0-8e811e87.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_link5_0-8e811e87.obj",
+    "sha256": "8e811e875673123e2bd95c3c781864f0ef43d0b011d867cc0c167a5851eaae2e",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link5_1-e06d88f5.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_link5_1-e06d88f5.obj",
+    "sha256": "e06d88f549456d261db9641581cfa01d93601cbf7b06e9d050a3df23761c9798",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link5_2-3d339924.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_link5_2-3d339924.obj",
+    "sha256": "3d33992483c63c40ead4a738ae1ca381586b3f98afaf4771b0266308eb53fd0f",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link5_3-208022a5.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_link5_3-208022a5.obj",
+    "sha256": "208022a56ac77703f8734d7d499a1035365a31e565f48fca7a9fb2ac2be8b277",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link5_4-384fc2f2.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_link5_4-384fc2f2.obj",
+    "sha256": "384fc2f28ced1c7d03201cea03eb3202ec717e4a91648cd2f753e8ce57e880a6",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link5_5-6139f37c.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_link5_5-6139f37c.obj",
+    "sha256": "6139f37c5ca00058845dc786d366b19e09d8c4a6a0303729d4f6b034adc107ec",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link5_6-849a2feb.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_link5_6-849a2feb.obj",
+    "sha256": "849a2feb5135bb01a681527a5d1309dbb8b6439a49bbdb4792816167a14a18c9",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link6_0-4c346805.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_link6_0-4c346805.obj",
+    "sha256": "4c34680552ab1c32ca52a1b9a8c082cfb51e039c4d35a2d6de60b9bc8591a01f",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link6_1-407a43b8.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_link6_1-407a43b8.obj",
+    "sha256": "407a43b83e0ec64dc9a6231e2d2dc3a09680ff210b84df39d41809c0b614d3fa",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link6_2-8101f8fb.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_link6_2-8101f8fb.obj",
+    "sha256": "8101f8fbba1436c80c7c322d2b7baf586937fbc82eee8e1d4fedfebc8932a3ed",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link6_3-98a9a1fd.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_link6_3-98a9a1fd.obj",
+    "sha256": "98a9a1fd33fc4118ec379e4c3c3a76410a98e6eca798a90f60c0d9b8a886d3a5",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link6_4-40ded262.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_link6_4-40ded262.obj",
+    "sha256": "40ded2622bca88755535091d7ee531c67513210d19f5c9701b868a42f5dbf0d1",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link7_0-cf4e07dc.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_link7_0-cf4e07dc.obj",
+    "sha256": "cf4e07dc22738c6226230ab80f3b25f816fbce0548c869d617a9f47d34a39f95",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link7_1-521ec845.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_link7_1-521ec845.obj",
+    "sha256": "521ec8457806102731a4e36c3ad77392257a1fdc2a54b6ec3c96a7ccfb83bbcc",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link7_2-3eb2079f.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_link7_2-3eb2079f.obj",
+    "sha256": "3eb2079f00f95b9ed4c5637e351179035b09cb7fc5ede941758f549cbf41caed",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link7_3-bd0414fc.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_candidate_nero_link7_3-bd0414fc.obj",
+    "sha256": "bd0414fcdd0cf95fdee6903904c6f74550a1987250ab000c3fa06ec38353a4ad",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_original_urdf_visual_base_link-e85d4a73.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_original_urdf_visual_base_link-e85d4a73.obj",
+    "sha256": "e85d4a73ba7b9aec640780d1c4c053cdba03951e82dffae5b72038f796b5a571",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/mount/robot0_original_urdf_visual_gripper_flange-adfe6fc7.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/mount/robot0_original_urdf_visual_gripper_flange-adfe6fc7.obj",
+    "sha256": "adfe6fc7b74ac2a3bc253a86a7720b2612053a4e906cb9f5bb0141d246085ab7",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_original_urdf_visual_link1-f8b3c3c7.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_original_urdf_visual_link1-f8b3c3c7.obj",
+    "sha256": "f8b3c3c76eb65df29fc3fcb18701f81be39f60f1b9a44285462b210416abcc8d",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_original_urdf_visual_link2-11605e3d.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_original_urdf_visual_link2-11605e3d.obj",
+    "sha256": "11605e3d08b4ff8f29953609ce6edd6ba4e067a588813c22e854051f178a3790",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_original_urdf_visual_link3-dd965e89.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_original_urdf_visual_link3-dd965e89.obj",
+    "sha256": "dd965e89354e6e296f38cada5d4642f4a69f0c17c71ab9120ea2c76052076631",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_original_urdf_visual_link4-1bd0fb75.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_original_urdf_visual_link4-1bd0fb75.obj",
+    "sha256": "1bd0fb7502da58a03ef779c5853e63f6c93303e0858808aa858b107db9859e7a",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_original_urdf_visual_link5-f1f9b607.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_original_urdf_visual_link5-f1f9b607.obj",
+    "sha256": "f1f9b607289edef1db3d9b08443f4048607074bc96c20ab9f186884c0b10637a",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_original_urdf_visual_link6-bc53aecd.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_original_urdf_visual_link6-bc53aecd.obj",
+    "sha256": "bc53aecdb367106d63546953f8b15a1624b573f2a2f4bfb015e62bd60266080c",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_original_urdf_visual_link7-94e2407a.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/robot0_original_urdf_visual_link7-94e2407a.obj",
+    "sha256": "94e2407ab38217c4158026ee81352dc14023c0f1b411c7170f175b8ce54745cc",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/mount/robot0_source_flange_part_0-7c6df993.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/mount/robot0_source_flange_part_0-7c6df993.obj",
+    "sha256": "7c6df99313f122093d0632fd9956e21da9592c2a7b53e267bb1ca60a485afb90",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/mount/robot0_source_flange_part_1-24b510b6.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/mount/robot0_source_flange_part_1-24b510b6.obj",
+    "sha256": "24b510b6d7d21fb3ecedb42bb8b319eda76bc658cccc6564ebc897729632b0d6",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/mount/robot0_source_flange_part_2-c5005972.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/mount/robot0_source_flange_part_2-c5005972.obj",
+    "sha256": "c500597223128b393b9ffc527bff96c8f9d7b782a258a2dcc27459b199310a0e",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/mount/robot0_source_flange_part_3-a1e2dbb0.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/mount/robot0_source_flange_part_3-a1e2dbb0.obj",
+    "sha256": "a1e2dbb01a0dc3e71497b725e88fe799aa4658d3952c56a33c61424f72bc4b54",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/mount/robot0_source_flange_part_4-5bfdf6a3.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/mount/robot0_source_flange_part_4-5bfdf6a3.obj",
+    "sha256": "5bfdf6a3094c061466d310f3abee69e801a366487b64fb88db3179a04f361279",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/mount/robot0_source_flange_part_5-6668a712.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/mount/robot0_source_flange_part_5-6668a712.obj",
+    "sha256": "6668a7126ea4beb7012f249a7a037b3ed1edb254cae75957bb19aee1d3143d70",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/mount/robot0_source_flange_part_6-91ccc782.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/mount/robot0_source_flange_part_6-91ccc782.obj",
+    "sha256": "91ccc782f3402baa42be3f07ccb62534b85d1375fec76e170afa009e48cc6376",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/mount/robot0_source_flange_part_7-4853dcf0.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/mount/robot0_source_flange_part_7-4853dcf0.obj",
+    "sha256": "4853dcf02b546afa7e65c663307078defec264e1cbb0fbcd77bed51ecf9cce96",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/textures/robot0_original_urdf_visual_base_link_texture-d550d51b.png",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/textures/robot0_original_urdf_visual_base_link_texture-d550d51b.png",
+    "sha256": "d550d51b829f93c390d4af50006acbf016d6fc466fc5d8883b8ee2223881f0c0",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/textures/robot0_original_urdf_visual_gripper_flange_texture-abc58d51.png",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/textures/robot0_original_urdf_visual_gripper_flange_texture-abc58d51.png",
+    "sha256": "abc58d5127d7cdf313beb9ec8ee839860a9c6bfbc48c8b8eb6a3f7d8bb63de6f",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/textures/robot0_original_urdf_visual_base_link_texture-d550d51b.png",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/textures/robot0_original_urdf_visual_base_link_texture-d550d51b.png",
+    "sha256": "d550d51b829f93c390d4af50006acbf016d6fc466fc5d8883b8ee2223881f0c0",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/textures/robot0_original_urdf_visual_link2_texture-4b4174f9.png",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/textures/robot0_original_urdf_visual_link2_texture-4b4174f9.png",
+    "sha256": "4b4174f97f436eb5dccd31148983e6ed15b4ceec7ddce6f0cdb2bda9aa1f7ad3",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/textures/robot0_original_urdf_visual_base_link_texture-d550d51b.png",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/textures/robot0_original_urdf_visual_base_link_texture-d550d51b.png",
+    "sha256": "d550d51b829f93c390d4af50006acbf016d6fc466fc5d8883b8ee2223881f0c0",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/textures/robot0_original_urdf_visual_link4_texture-7311991b.png",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/textures/robot0_original_urdf_visual_link4_texture-7311991b.png",
+    "sha256": "7311991bbb4163306ccd448d3cb5dce960831e712913ed7b782cf209479f5c90",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/textures/robot0_original_urdf_visual_link5_texture-4cd94b0a.png",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/textures/robot0_original_urdf_visual_link5_texture-4cd94b0a.png",
+    "sha256": "4cd94b0adf5e8a471116c6e74aba956ef5e08f2a383bbbf59ac65b4552417c9c",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/textures/robot0_original_urdf_visual_base_link_texture-d550d51b.png",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/textures/robot0_original_urdf_visual_base_link_texture-d550d51b.png",
+    "sha256": "d550d51b829f93c390d4af50006acbf016d6fc466fc5d8883b8ee2223881f0c0",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/textures/robot0_original_urdf_visual_base_link_texture-d550d51b.png",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/textures/robot0_original_urdf_visual_base_link_texture-d550d51b.png",
+    "sha256": "d550d51b829f93c390d4af50006acbf016d6fc466fc5d8883b8ee2223881f0c0",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/nero/mount0_pedestal-f96ff12b.stl",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/nero/mount0_pedestal-f96ff12b.stl",
+    "sha256": "f96ff12bfb347c77580e4392556b15e47ef7228711c45b0f1193b100af22866a",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/base_link.STL",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116_right/source/base_link.STL",
+    "sha256": "094504fed409afe137eafa6643c36f081934df873ef1cf9924ebb9725436b161",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger11_link.STL",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116_right/source/finger11_link.STL",
+    "sha256": "5659ee7dd15833a86f30c2138685baf48671fa7458a79cbb1d611ddb7f3648c8",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger12_link.STL",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116_right/source/finger12_link.STL",
+    "sha256": "8807c48538b9396e1d132df7c5cf6ee0a44c28c4dcb759b5b00a74003b715e67",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger13_link.STL",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116_right/source/finger13_link.STL",
+    "sha256": "594501a21c86d1d19b73cf17572b7a04ae488c5fee4b623e25c618dd15eb3419",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger14_link.STL",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116_right/source/finger14_link.STL",
+    "sha256": "c58b2a741f13cbe1da9b6bbffb0ce6acf97de28b829fe45ea65458313efff449",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger21_link.STL",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116_right/source/finger21_link.STL",
+    "sha256": "7162d86cefa849458536cbb77968560dbf4e6c7a8b1734777640f9da1f828886",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger22_link.STL",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116_right/source/finger22_link.STL",
+    "sha256": "5ebb8a2084495cb9e87b6ee531681500cfe5a37280320e97270d6e52c804081d",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger23_link.STL",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116_right/source/finger23_link.STL",
+    "sha256": "ccbd2de17dac2fe356e4275240f5f00f8eee01dd2f32a44fc5b1e150f93d99f6",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger31_link.STL",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116_right/source/finger31_link.STL",
+    "sha256": "2d4ec902f4b2d06872cfbda2e5a63f387aa82dfd522fd44da5e38b83f90cf2b6",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger32_link.STL",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116_right/source/finger32_link.STL",
+    "sha256": "f3cf0d1634338d331bc58ae7838023925a1654003f5728423de25808f490821e",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger33_link.STL",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116_right/source/finger33_link.STL",
+    "sha256": "2082e780c44d9e2ac91a9c355c3751f084fcbb42c39e33961178b81e5b3ce147",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger41_link.STL",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116_right/source/finger41_link.STL",
+    "sha256": "5366f649baa0c5c29cc1afdbcc6163b2bcb9001f0b9b8ae69a213f5209860289",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger42_link.STL",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116_right/source/finger42_link.STL",
+    "sha256": "4382f6f699a2cb342f00f5bf4ddbe20b7d2b664b522c5abcd49cfee551e748ae",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger43_link.STL",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116_right/source/finger43_link.STL",
+    "sha256": "4e0b20fc9c464825b466d3ca51ff4557f70d4a3ea935a00b09ad5639722251df",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger51_link.STL",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116_right/source/finger51_link.STL",
+    "sha256": "f1b5983e1cd4b29f5e4609001c525e93ff80bb1d921711a6327fd8e688fad1db",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger52_link.STL",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116_right/source/finger52_link.STL",
+    "sha256": "7c5f953a3cde495eae505dfa3ea248e768c69ab911c21f61825ddb42b4531994",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger53_link.STL",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116_right/source/finger53_link.STL",
+    "sha256": "63eb67492fce45f80b798d9ead4d194a9eafdae1ed6c0893820222ef3ffedbf1",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_00.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_00.obj",
+    "sha256": "e478a799f59b9cfaee804a539ce2dd6be6e92787247bc33fba13d00e4b42c7ce",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_01.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_01.obj",
+    "sha256": "cb55e62f2f41a9110da46f5bacbf1f8c8dcfa9563cf35fc48b37194d73ebd6b3",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_02.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_02.obj",
+    "sha256": "1c09c54ad030db088a97b58a39e277b5d3be66f3202db25e98c6f3c67e7b6ee4",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_03.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_03.obj",
+    "sha256": "871033d55369543004f2ce77ec077d545eb1d02bd9a63608316976c5a7d52e0b",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_04.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_04.obj",
+    "sha256": "47fcfc5572ceed26c408a219cecb99ed111829f652d54124865de050e9a2df9a",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_05.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_05.obj",
+    "sha256": "8aaae9e5736c04e3615916958be9c0e6efc3bb1b493e99951492f769397f5991",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_06.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_06.obj",
+    "sha256": "ed60d794870bac2874bf566dfac9785725aea78ca04e7ba21846a0e133dba7ef",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_07.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_07.obj",
+    "sha256": "73bd010189e969c220e6c7c42a96ce3c1e560b08769f9d408780433e3d8630b5",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_08.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_08.obj",
+    "sha256": "a7d08ea7416a0832b78335aa479fcc380f5fb676068af529535c6fe2a4b79cba",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_09.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_09.obj",
+    "sha256": "e8c753c9b514ff3c02c37ff75c3e70c51e43e34400d1df05b6554320786b5d75",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger11_link_00.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger11_link_00.obj",
+    "sha256": "d24e4759bde556f178b3d14b78865650f676d95dc3b23dcd61738a7a2c52fcab",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger12_link_0-2a6bdf00.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_proxy_finger12_link_0-2a6bdf00.obj",
+    "sha256": "2a6bdf00ae7c1ea87a8b35cfa5755ea112dda7b5b180813e69ab552ce4d52aee",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger12_link_1-74d9a1f6.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_proxy_finger12_link_1-74d9a1f6.obj",
+    "sha256": "74d9a1f6088dfd3ba6ce894762c8f63cd3fd5e6f3ba3badafc7475294f80ca72",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger12_link_2-9be8c86a.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_proxy_finger12_link_2-9be8c86a.obj",
+    "sha256": "9be8c86a32a28eb6cfccfc0d4ce3c0ce3f1e65615350517f8fb624f6334ab118",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger12_link_3-a648891e.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_proxy_finger12_link_3-a648891e.obj",
+    "sha256": "a648891e9b0097a5dc6df5f44a54a4fcbc4b522baeb915df66ebf96b0c653908",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger12_link_4-c3d2e735.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_proxy_finger12_link_4-c3d2e735.obj",
+    "sha256": "c3d2e735fe8c007812868afe5a413c2f85fb616d8af43bf208c82c441ba33792",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger12_link_5-b8ec84e4.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_proxy_finger12_link_5-b8ec84e4.obj",
+    "sha256": "b8ec84e411668e9739fd702f45376b5bec5972e6f3ae334c9f789714696f4134",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger12_link_6-6e9a388e.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_proxy_finger12_link_6-6e9a388e.obj",
+    "sha256": "6e9a388e036622b035a0c6c3a57a7c59f1128444e6aff3ea15eee700a8cdd197",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger12_link_7-3748cad4.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_proxy_finger12_link_7-3748cad4.obj",
+    "sha256": "3748cad4e9e316b359b5586674afbf3722ade675c9e240b95ea32cbd2ef1d918",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_finger13_link-f34ca4cb.stl",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_finger13_link-f34ca4cb.stl",
+    "sha256": "f34ca4cbc816d42643c532cf102b1583e1d8d39e156072f65f4bfa1e55fae7a5",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger14_link_0-2b2ddda5.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_moderate_finger14_link_0-2b2ddda5.obj",
+    "sha256": "2b2ddda55ee186117724461d4e1eb7fb257d191676319114d69fd76026ceacaf",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger14_link_1-0e2d6afb.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_moderate_finger14_link_1-0e2d6afb.obj",
+    "sha256": "0e2d6afbd4e4a20a7f7aa039ee80776a89f39f304eccaa1ea9a322937f6c73db",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger14_link_2-a71fa24f.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_moderate_finger14_link_2-a71fa24f.obj",
+    "sha256": "a71fa24ff8b93d0fad952ff2bfb8d85418fa7318b3552c626204b6675956c09b",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger14_link_3-31cf7b29.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_moderate_finger14_link_3-31cf7b29.obj",
+    "sha256": "31cf7b299a871be62338a48441ffff1c40de9443b08c1a66d0e0ac2c70d7e6ce",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger14_link_4-c49b43ef.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_moderate_finger14_link_4-c49b43ef.obj",
+    "sha256": "c49b43efea1ab9054834dc733b62109f71f3101e8573838fac412acfabf8b0ba",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger14_link_5-c3a6773e.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_moderate_finger14_link_5-c3a6773e.obj",
+    "sha256": "c3a6773e2340e69330c2de30484b3a473aca0a23b18074ca53a75911028ddf37",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger14_link_6-1d98430c.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_moderate_finger14_link_6-1d98430c.obj",
+    "sha256": "1d98430c1c8b92e1b2e6a308a347fde69723d62ff68ee5f454bbca567ad44f14",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger14_link_7-14d2570c.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_moderate_finger14_link_7-14d2570c.obj",
+    "sha256": "14d2570c3750dd1305b4c737cc449486ad0f2d5e67df99e6013088abc7e7430d",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger14_link_8-fb373efd.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_moderate_finger14_link_8-fb373efd.obj",
+    "sha256": "fb373efd00b5bb56164851d7cbf74a85a8f4fa1252368c69a7b2e4a1770f3531",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger14_link_9-d3124adb.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_moderate_finger14_link_9-d3124adb.obj",
+    "sha256": "d3124adbea53e6fb6a27b1a62f60ae3f0fd7459fd6679049637a41cc0c226844",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger14_link_10-21c826aa.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_moderate_finger14_link_10-21c826aa.obj",
+    "sha256": "21c826aa07ef02987385785adc8b44235834cb9c4242e62a952ea89d1b4d22ca",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger14_link_11-168acc8b.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_moderate_finger14_link_11-168acc8b.obj",
+    "sha256": "168acc8b6dd10290b92679dabf02f9d295c30317cecc7a3e1163386cc241f9bf",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_finger21_link-1bb8e6bd.stl",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_finger21_link-1bb8e6bd.stl",
+    "sha256": "1bb8e6bd2d50d1b07c7077610fade1c71dd0923d8025f1589e3f904c856f28c1",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_finger22_link-53c55c84.stl",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_finger22_link-53c55c84.stl",
+    "sha256": "53c55c846f481d90248332d5a87319d11e0d96f0fb8cbb35717cc9ac9745f5e5",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger23_link_0-a6cc5f75.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_moderate_finger23_link_0-a6cc5f75.obj",
+    "sha256": "a6cc5f7500f773f248fe89c64bbad9f86a99f3419e1b8f655997030c1d269d4d",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger23_link_1-c8663aa9.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_moderate_finger23_link_1-c8663aa9.obj",
+    "sha256": "c8663aa97fb9936608d4365a4662bd5a9279d9958238f9334738ce88751b2e72",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger23_link_2-7cc9be61.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_moderate_finger23_link_2-7cc9be61.obj",
+    "sha256": "7cc9be61c42363c904859ffc3f741df9e9d80761805b9fa41333e8510ee39331",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger23_link_3-2f7c98b4.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_moderate_finger23_link_3-2f7c98b4.obj",
+    "sha256": "2f7c98b43d1da8bb87c0b1b9840b9942f8df6f7cb6a07b8bf3aae0a8f943ec91",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger23_link_4-bab546af.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_moderate_finger23_link_4-bab546af.obj",
+    "sha256": "bab546afe4a240ed41c8a82c9e7d57d175b91854aef912fadbac9e210734bfc0",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger23_link_5-5d047287.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_moderate_finger23_link_5-5d047287.obj",
+    "sha256": "5d047287b86fb6832c2efdcb4f5fb755ded0b63dc28f1aa4fac5b223bca24178",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger23_link_6-a018289e.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_moderate_finger23_link_6-a018289e.obj",
+    "sha256": "a018289e8a36f72a3ae897d377677fe7ff2721dc2e88d63ddb0118daa3ab78e2",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger23_link_7-de354fdf.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_moderate_finger23_link_7-de354fdf.obj",
+    "sha256": "de354fdf0bea4434032984db408d004804363dc49bbbf36b8bbcc93e1a930ddd",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger23_link_8-9174795a.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_moderate_finger23_link_8-9174795a.obj",
+    "sha256": "9174795ac15a8735c73a8cf39c09bc793a2b67585a0d982f09f7b8a5f7b1880b",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger23_link_9-1cc04f8d.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_moderate_finger23_link_9-1cc04f8d.obj",
+    "sha256": "1cc04f8dd6803c05636a655c1fd77960a319be6903fa01bf7b5e94662d89b132",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger23_link_10-251c3834.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_moderate_finger23_link_10-251c3834.obj",
+    "sha256": "251c38347bbcf580d96dd7ece9aeab16195b08f3a7225da3022a42043d11162d",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger23_link_11-fad1ae11.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_moderate_finger23_link_11-fad1ae11.obj",
+    "sha256": "fad1ae11d1b703d56b111df28d2d4b171c86572c706a5990cd07fb59819671cb",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_finger31_link-7e3176cd.stl",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_finger31_link-7e3176cd.stl",
+    "sha256": "7e3176cd95983c3e84369fe1639f65dcab86d54cd49ca3ed8612807ba3bc7358",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_finger32_link-68b0442e.stl",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_finger32_link-68b0442e.stl",
+    "sha256": "68b0442e8c8e3e0e8e94ef55596378b85556bda1959c64debbdd48d21b3af931",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_00.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_00.obj",
+    "sha256": "bb8d774edfe13bfeda53fbe690f5b67aba6515b1201de4c97d36ab458170fee6",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_01.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_01.obj",
+    "sha256": "8d2193c48155f8c2ce14b354b5992b6a7a25bbf14dba7198f5fc41153c518ad8",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_02.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_02.obj",
+    "sha256": "fe85046941dade3036a32bd01199d3a034817ce7ae312a9f9d43d154911f9254",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_03.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_03.obj",
+    "sha256": "0fe33a743ec8f5536175048ba395f0a4961811b29e50c27273de7c8a45bb3d69",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_04.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_04.obj",
+    "sha256": "e4f67bf071ec777def71b6435d91e61fcb0919f2b120af6798c01fb44cf84cc8",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_05.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_05.obj",
+    "sha256": "36a4988a972a7c47dee3ae2c325b8f75289158f297d71953b815971d6bfebde4",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_06.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_06.obj",
+    "sha256": "6baf13adbc8b82e2b69a18a1a4a24a5d8b65cf7216f6e97128959de0c17be50b",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_07.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_07.obj",
+    "sha256": "c1980f7eb8f9e7a0cb9f15a597f0e66ef312d8a9524e29d8e62e747b98ab6dde",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_finger41_link-5f1647a2.stl",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_finger41_link-5f1647a2.stl",
+    "sha256": "5f1647a233765270e256bf1cb1deeca0ac29ad4241e2a8e95477756885b73857",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_finger42_link-15a9090c.stl",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_finger42_link-15a9090c.stl",
+    "sha256": "15a9090c995e1f29ab0bb4b0a4ede7a4f60f1d0e0bf809c3ada86c53d0b66bed",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger43_link_0-95b4cbb3.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_proxy_finger43_link_0-95b4cbb3.obj",
+    "sha256": "95b4cbb315cc1667311de693dcee6a7456ba742561ca01ff551958d4e519348b",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger43_link_1-07a65f22.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_proxy_finger43_link_1-07a65f22.obj",
+    "sha256": "07a65f222145a2d805b53d22a5398b5b7ad94202af938f94b640f73ed1cdf183",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger43_link_2-aab293f6.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_proxy_finger43_link_2-aab293f6.obj",
+    "sha256": "aab293f640735836c5ac0c594282d0bbbf8fc41a8eaa13bf6f1f1f1ba864c576",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger43_link_3-f7eab61f.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_proxy_finger43_link_3-f7eab61f.obj",
+    "sha256": "f7eab61f906cb36cd1063faad73822c846107bc6f174c4742b409375f5b04f63",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger43_link_4-78532cbf.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_proxy_finger43_link_4-78532cbf.obj",
+    "sha256": "78532cbfb13ff856554cd396d2e5573beb69fe8b4d675ea7f669643dde8f7dd7",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger43_link_5-13af1468.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_proxy_finger43_link_5-13af1468.obj",
+    "sha256": "13af146867ef84f7051e45a515347bd29deff7ea5c8f0c15b100fbfe4a9b3cd7",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger43_link_6-2a3fbea9.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_proxy_finger43_link_6-2a3fbea9.obj",
+    "sha256": "2a3fbea961a56cc9bfd5384d661e6c0957601ee07999f02d9b642b252463176c",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger43_link_7-d800f7ad.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_proxy_finger43_link_7-d800f7ad.obj",
+    "sha256": "d800f7adae660e6ceb80e34b8a7e33ba3dcfb60afc357baf4818265705f7d0b2",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_finger51_link-dfabcfce.stl",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_finger51_link-dfabcfce.stl",
+    "sha256": "dfabcfce1fc923cc0745a2df5ec07efc657506c7ad50b8e883de7fc996ce9f59",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_finger52_link-acf84396.stl",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_finger52_link-acf84396.stl",
+    "sha256": "acf84396741cf2d5fa50ad3a25e9ca4fdb0947387cb39c2697951761a5f7d22c",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger53_link_0-f66430b1.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_proxy_finger53_link_0-f66430b1.obj",
+    "sha256": "f66430b17c3b0ee5d63cb097877e7d8faa12153df6725cb7ad9383607c09bb0a",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger53_link_1-fce5027c.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_proxy_finger53_link_1-fce5027c.obj",
+    "sha256": "fce5027c124ece9666bc17a88a364dd24dd79e5ae6fb0c4bdfe8169e0ad0b8dc",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger53_link_2-dd7921f7.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_proxy_finger53_link_2-dd7921f7.obj",
+    "sha256": "dd7921f79cbac6ac32ea9142d4fa4c76df1dd885c47004aaeb4fca67327152b5",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger53_link_3-49e71c08.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_proxy_finger53_link_3-49e71c08.obj",
+    "sha256": "49e71c0816ce5464fd8afe99b68e292cd88549525e9986adf9c3c1b53edae3d6",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger53_link_4-84f78255.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_proxy_finger53_link_4-84f78255.obj",
+    "sha256": "84f782558f32c9ea8067922918c95c221e617026a4e7a0d752d84b0ff828c007",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger53_link_5-3134737f.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_proxy_finger53_link_5-3134737f.obj",
+    "sha256": "3134737f88f7b977c10b8835d0f0b8ea8d1b0d90a91c9a862fffc5cd05930704",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger53_link_6-8a45b6d5.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_proxy_finger53_link_6-8a45b6d5.obj",
+    "sha256": "8a45b6d5929a3338e58b416f7dbab7e43de69a2697206dbdc9eb48928e14b330",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger53_link_7-8015cab7.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/meshes/dh116/gripper0_proxy_finger53_link_7-8015cab7.obj",
+    "sha256": "8015cab75b38d79aa5d59486a2b6d68198e96fbfb4a892a86ee8d334ffd817f1",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/finger13_local/meshes/negative_wing.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/examples/right_hand/candidates/finger13_local/meshes/negative_wing.obj",
+    "sha256": "a4621dd53571679a9056c58762e80602d03131c098daa0a3716349b651efa838",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/finger13_local/meshes/central.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/examples/right_hand/candidates/finger13_local/meshes/central.obj",
+    "sha256": "8c20a825d74245599088b8c5d3a0130297883847185e2336850dd0157019db97",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/finger13_local/meshes/positive_wing.obj",
+    "resolved": "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse/examples/right_hand/candidates/finger13_local/meshes/positive_wing.obj",
+    "sha256": "6831b4df4dbdeae09f66d11dfa14a9af06c9a7b13e4af91f42f4b0163b7e58c4",
+    "kind": "checkout"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/stable_scanned_objects/white_bowl/texture.png",
+    "resolved": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/stable_scanned_objects/white_bowl/texture.png",
+    "sha256": "a850aaf925421f49a7399f6fc80444a1ab5de7b1110f4294598c5dc2231ea3fd",
+    "kind": "explicit_LIBERO_fixture"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/stable_scanned_objects/white_bowl/visual/model_vis.msh",
+    "resolved": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/stable_scanned_objects/white_bowl/visual/model_vis.msh",
+    "sha256": "260756fe40301b42f948d644f072eccf57b1ba57d20d3d26e5261383bdace350",
+    "kind": "explicit_LIBERO_fixture"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/stable_scanned_objects/chefmate_8_frypan/texture.png",
+    "resolved": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/stable_scanned_objects/chefmate_8_frypan/texture.png",
+    "sha256": "7b6adc65fc2f18030a1aa0c3dde2c1719e7b74431e0e5279bea9b6416af7deb6",
+    "kind": "explicit_LIBERO_fixture"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/stable_scanned_objects/chefmate_8_frypan/visual/chefmate_8_frypan_vis.msh",
+    "resolved": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/stable_scanned_objects/chefmate_8_frypan/visual/chefmate_8_frypan_vis.msh",
+    "sha256": "65e0483c19250107aef692fa80a8d597ef89bcf7ea28e6e9c2a4adcfa775acd2",
+    "kind": "explicit_LIBERO_fixture"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/articulated_objects/flat_stove/metal.png",
+    "resolved": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/articulated_objects/flat_stove/metal.png",
+    "sha256": "93784216a66b52be9c8ccc3732e50f511815291e32f34f97bd139ed7229061fa",
+    "kind": "explicit_LIBERO_fixture"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/articulated_objects/flat_stove/stove_knob_base/visual/stove_knob_base_vis.msh",
+    "resolved": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/articulated_objects/flat_stove/stove_knob_base/visual/stove_knob_base_vis.msh",
+    "sha256": "d65ed847f007e5f3e1a01edb45c63ccb9f881f92479ec516028fb654f4077ddc",
+    "kind": "explicit_LIBERO_fixture"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/articulated_objects/flat_stove/stove_knob_button/visual/stove_knob_button_vis.msh",
+    "resolved": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/articulated_objects/flat_stove/stove_knob_button/visual/stove_knob_button_vis.msh",
+    "sha256": "b7cff7b5899505d5abcfed347a86fe7ef837203560838b9d9453196a91f8a743",
+    "kind": "explicit_LIBERO_fixture"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/articulated_objects/flat_stove/metal.png",
+    "resolved": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/articulated_objects/flat_stove/metal.png",
+    "sha256": "93784216a66b52be9c8ccc3732e50f511815291e32f34f97bd139ed7229061fa",
+    "kind": "explicit_LIBERO_fixture"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/articulated_objects/./flat_stove/stove_burner/burnerplate.stl",
+    "resolved": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/articulated_objects/flat_stove/stove_burner/burnerplate.stl",
+    "sha256": "93526fc3f2585e828c115f0f20d5ff43129ce7dc46c9fcc8216c4015c717bd00",
+    "kind": "explicit_LIBERO_fixture"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/turbosquid_objects/wooden_two_layer_shelf/dark_fine_wood.png",
+    "resolved": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/turbosquid_objects/wooden_two_layer_shelf/dark_fine_wood.png",
+    "sha256": "9aaa94ef4cd61592b566569bba3569276a38ea5ff22ed4b978b77b038b38a11f",
+    "kind": "explicit_LIBERO_fixture"
+  },
+  {
+    "historical": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/turbosquid_objects/wooden_two_layer_shelf/visual/wooden_two_layer_shelf_vis.msh",
+    "resolved": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets/turbosquid_objects/wooden_two_layer_shelf/visual/wooden_two_layer_shelf_vis.msh",
+    "sha256": "ec0b5b2360f4c773aa17d40903f7aabb1499376e7a12813d033a54f7cec0817e",
+    "kind": "explicit_LIBERO_fixture"
+  }
+]

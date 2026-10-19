@@ -1,0 +1,784 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="nero"><compiler angle="radian" inertiagrouprange="0 0" autolimits="true" />
+  <option impratio="20" cone="elliptic" density="1.2" viscosity="0.00002" timestep="0.002" integrator="RK4" />
+  <size nconmax="5000" njmax="5000" />
+  <asset><material name="original_urdf_visual_base_link_material" texture="original_urdf_visual_base_link_texture" texuniform="false" texrepeat="1 1" rgba="1 1 1 1" />
+    <material name="original_urdf_visual_gripper_flange_material" texture="original_urdf_visual_gripper_flange_texture" texuniform="false" texrepeat="1 1" rgba="1 1 1 1" />
+    <material name="original_urdf_visual_link1_material" texture="original_urdf_visual_link1_texture" texuniform="false" texrepeat="1 1" rgba="1 1 1 1" />
+    <material name="original_urdf_visual_link2_material" texture="original_urdf_visual_link2_texture" texuniform="false" texrepeat="1 1" rgba="1 1 1 1" />
+    <material name="original_urdf_visual_link3_material" texture="original_urdf_visual_link3_texture" texuniform="false" texrepeat="1 1" rgba="1 1 1 1" />
+    <material name="original_urdf_visual_link4_material" texture="original_urdf_visual_link4_texture" texuniform="false" texrepeat="1 1" rgba="1 1 1 1" />
+    <material name="original_urdf_visual_link5_material" texture="original_urdf_visual_link5_texture" texuniform="false" texrepeat="1 1" rgba="1 1 1 1" />
+    <material name="original_urdf_visual_link6_material" texture="original_urdf_visual_link6_texture" texuniform="false" texrepeat="1 1" rgba="1 1 1 1" />
+    <material name="original_urdf_visual_link7_material" texture="original_urdf_visual_link7_texture" texuniform="false" texrepeat="1 1" rgba="1 1 1 1" />
+    <mesh name="candidate_nero_base_link_0" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_base_link_0-9b755fcc.obj" />
+    <mesh name="candidate_nero_base_link_1" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_base_link_1-9050d662.obj" />
+    <mesh name="candidate_nero_base_link_2" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_base_link_2-840973e3.obj" />
+    <mesh name="candidate_nero_base_link_3" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_base_link_3-694f85c0.obj" />
+    <mesh name="candidate_nero_base_link_4" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_base_link_4-eb7627e7.obj" />
+    <mesh name="candidate_nero_base_link_5" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_base_link_5-bfa96b97.obj" />
+    <mesh name="candidate_nero_base_link_6" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_base_link_6-1dd4555c.obj" />
+    <mesh name="candidate_nero_base_link_7" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_base_link_7-41070495.obj" />
+    <mesh name="candidate_nero_link1_0" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link1_0-64d58a3f.obj" />
+    <mesh name="candidate_nero_link1_1" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link1_1-7b2c529b.obj" />
+    <mesh name="candidate_nero_link1_2" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link1_2-ee80fad0.obj" />
+    <mesh name="candidate_nero_link1_3" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link1_3-fa81492e.obj" />
+    <mesh name="candidate_nero_link1_4" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link1_4-9687d613.obj" />
+    <mesh name="candidate_nero_link1_5" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link1_5-0bebb03b.obj" />
+    <mesh name="candidate_nero_link1_6" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link1_6-8b8756ee.obj" />
+    <mesh name="candidate_nero_link1_7" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link1_7-82b447f9.obj" />
+    <mesh name="candidate_nero_link2_0" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link2_0-488533e9.obj" />
+    <mesh name="candidate_nero_link2_1" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link2_1-1bab92d0.obj" />
+    <mesh name="candidate_nero_link2_2" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link2_2-a26e60e1.obj" />
+    <mesh name="candidate_nero_link2_3" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link2_3-6461873d.obj" />
+    <mesh name="candidate_nero_link2_4" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link2_4-a688faa7.obj" />
+    <mesh name="candidate_nero_link3_0" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link3_0-c42d7ac7.obj" />
+    <mesh name="candidate_nero_link3_1" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link3_1-89b20fd9.obj" />
+    <mesh name="candidate_nero_link3_2" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link3_2-7b6481a2.obj" />
+    <mesh name="candidate_nero_link3_3" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link3_3-0cd99a08.obj" />
+    <mesh name="candidate_nero_link3_4" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link3_4-a50f3d4d.obj" />
+    <mesh name="candidate_nero_link3_5" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link3_5-30d354b7.obj" />
+    <mesh name="candidate_nero_link3_6" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link3_6-b0e55916.obj" />
+    <mesh name="candidate_nero_link3_7" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link3_7-57de8162.obj" />
+    <mesh name="candidate_nero_link4_0" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link4_0-b10bbb1b.obj" />
+    <mesh name="candidate_nero_link4_1" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link4_1-3510fe63.obj" />
+    <mesh name="candidate_nero_link4_2" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link4_2-6fe5f5ba.obj" />
+    <mesh name="candidate_nero_link4_3" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link4_3-160b1bca.obj" />
+    <mesh name="candidate_nero_link4_4" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link4_4-6ceb0377.obj" />
+    <mesh name="candidate_nero_link4_5" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link4_5-61a31fef.obj" />
+    <mesh name="candidate_nero_link6_0" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link6_0-4c346805.obj" />
+    <mesh name="candidate_nero_link6_1" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link6_1-407a43b8.obj" />
+    <mesh name="candidate_nero_link6_2" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link6_2-8101f8fb.obj" />
+    <mesh name="candidate_nero_link6_3" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link6_3-98a9a1fd.obj" />
+    <mesh name="candidate_nero_link6_4" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link6_4-40ded262.obj" />
+    <mesh name="candidate_nero_link7_0" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link7_0-cf4e07dc.obj" />
+    <mesh name="candidate_nero_link7_1" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link7_1-521ec845.obj" />
+    <mesh name="candidate_nero_link7_2" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link7_2-3eb2079f.obj" />
+    <mesh name="candidate_nero_link7_3" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link7_3-bd0414fc.obj" />
+    <mesh name="original_urdf_visual_base_link" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_original_urdf_visual_base_link-e85d4a73.obj" />
+    <mesh name="original_urdf_visual_gripper_flange" file="/data_robot/verification/nero_dh116_right/meshes/mount/robot0_original_urdf_visual_gripper_flange-adfe6fc7.obj" />
+    <mesh name="original_urdf_visual_link1" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_original_urdf_visual_link1-f8b3c3c7.obj" />
+    <mesh name="original_urdf_visual_link2" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_original_urdf_visual_link2-11605e3d.obj" />
+    <mesh name="original_urdf_visual_link3" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_original_urdf_visual_link3-dd965e89.obj" />
+    <mesh name="original_urdf_visual_link4" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_original_urdf_visual_link4-1bd0fb75.obj" />
+    <mesh name="original_urdf_visual_link5" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_original_urdf_visual_link5-f1f9b607.obj" />
+    <mesh name="original_urdf_visual_link6" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_original_urdf_visual_link6-bc53aecd.obj" />
+    <mesh name="original_urdf_visual_link7" file="/data_robot/verification/nero_dh116_right/meshes/nero/robot0_original_urdf_visual_link7-94e2407a.obj" />
+    <texture name="original_urdf_visual_base_link_texture" type="2d" file="/data_robot/verification/nero_dh116_right/meshes/textures/robot0_original_urdf_visual_base_link_texture-d550d51b.png" />
+    <texture name="original_urdf_visual_gripper_flange_texture" type="2d" file="/data_robot/verification/nero_dh116_right/meshes/textures/robot0_original_urdf_visual_gripper_flange_texture-abc58d51.png" />
+    <texture name="original_urdf_visual_link1_texture" type="2d" file="/data_robot/verification/nero_dh116_right/meshes/textures/robot0_original_urdf_visual_base_link_texture-d550d51b.png" />
+    <texture name="original_urdf_visual_link2_texture" type="2d" file="/data_robot/verification/nero_dh116_right/meshes/textures/robot0_original_urdf_visual_link2_texture-4b4174f9.png" />
+    <texture name="original_urdf_visual_link3_texture" type="2d" file="/data_robot/verification/nero_dh116_right/meshes/textures/robot0_original_urdf_visual_base_link_texture-d550d51b.png" />
+    <texture name="original_urdf_visual_link4_texture" type="2d" file="/data_robot/verification/nero_dh116_right/meshes/textures/robot0_original_urdf_visual_link4_texture-7311991b.png" />
+    <texture name="original_urdf_visual_link5_texture" type="2d" file="/data_robot/verification/nero_dh116_right/meshes/textures/robot0_original_urdf_visual_link5_texture-4cd94b0a.png" />
+    <texture name="original_urdf_visual_link6_texture" type="2d" file="/data_robot/verification/nero_dh116_right/meshes/textures/robot0_original_urdf_visual_base_link_texture-d550d51b.png" />
+    <texture name="original_urdf_visual_link7_texture" type="2d" file="/data_robot/verification/nero_dh116_right/meshes/textures/robot0_original_urdf_visual_base_link_texture-d550d51b.png" />
+    <mesh name="wrist_reuse_link5_000" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_000.obj" />
+    <mesh name="wrist_reuse_link5_001" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_001.obj" />
+    <mesh name="wrist_reuse_link5_002" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_002.obj" />
+    <mesh name="wrist_reuse_link5_003" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_003.obj" />
+    <mesh name="wrist_reuse_link5_004" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_004.obj" />
+    <mesh name="wrist_reuse_link5_005" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_005.obj" />
+    <mesh name="wrist_reuse_link5_006" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_006.obj" />
+    <mesh name="wrist_reuse_link5_007" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_007.obj" />
+    <mesh name="wrist_reuse_link5_008" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_008.obj" />
+    <mesh name="wrist_reuse_link5_009" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_009.obj" />
+    <mesh name="wrist_reuse_link5_010" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_010.obj" />
+    <mesh name="wrist_reuse_link5_011" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_011.obj" />
+    <mesh name="wrist_reuse_link5_012" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_012.obj" />
+    <mesh name="wrist_reuse_link5_013" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_013.obj" />
+    <mesh name="wrist_reuse_link5_014" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_014.obj" />
+    <mesh name="wrist_reuse_link5_015" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_015.obj" />
+    <mesh name="wrist_reuse_link5_016" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_016.obj" />
+    <mesh name="wrist_reuse_link5_017" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_017.obj" />
+    <mesh name="wrist_reuse_link5_018" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_018.obj" />
+    <mesh name="wrist_reuse_link5_019" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_019.obj" />
+    <mesh name="wrist_reuse_link5_020" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_020.obj" />
+    <mesh name="wrist_reuse_link5_021" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_021.obj" />
+    <mesh name="wrist_reuse_link5_022" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_022.obj" />
+    <mesh name="wrist_reuse_link5_023" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_023.obj" />
+    <mesh name="wrist_reuse_link5_024" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_024.obj" />
+    <mesh name="wrist_reuse_link5_025" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_025.obj" />
+    <mesh name="wrist_reuse_link5_026" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_026.obj" />
+    <mesh name="wrist_reuse_link5_027" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_027.obj" />
+    <mesh name="wrist_reuse_link5_028" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_028.obj" />
+    <mesh name="wrist_reuse_link5_029" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_029.obj" />
+    <mesh name="wrist_reuse_link5_030" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_030.obj" />
+    <mesh name="wrist_reuse_link5_031" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_031.obj" />
+    <mesh name="wrist_reuse_link5_032" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_032.obj" />
+    <mesh name="wrist_reuse_link5_033" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_033.obj" />
+    <mesh name="wrist_reuse_link5_034" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_034.obj" />
+    <mesh name="wrist_reuse_link5_035" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_035.obj" />
+    <mesh name="wrist_reuse_link5_036" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_036.obj" />
+    <mesh name="wrist_reuse_link5_037" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_037.obj" />
+    <mesh name="wrist_reuse_link5_038" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_038.obj" />
+    <mesh name="wrist_reuse_link5_039" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_039.obj" />
+    <mesh name="wrist_reuse_link5_040" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_040.obj" />
+    <mesh name="wrist_reuse_link5_041" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_041.obj" />
+    <mesh name="wrist_reuse_link5_042" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_042.obj" />
+    <mesh name="wrist_reuse_link5_043" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_043.obj" />
+    <mesh name="wrist_reuse_link5_044" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_044.obj" />
+    <mesh name="wrist_reuse_link5_045" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_045.obj" />
+    <mesh name="wrist_reuse_link5_046" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_046.obj" />
+    <mesh name="wrist_reuse_link5_047" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_047.obj" />
+    <mesh name="wrist_reuse_link5_048" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_048.obj" />
+    <mesh name="wrist_reuse_link5_049" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_049.obj" />
+    <mesh name="wrist_reuse_link5_050" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_050.obj" />
+    <mesh name="wrist_reuse_link5_051" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_051.obj" />
+    <mesh name="wrist_reuse_link5_052" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_052.obj" />
+    <mesh name="wrist_reuse_link5_053" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_053.obj" />
+    <mesh name="wrist_reuse_link5_054" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_054.obj" />
+    <mesh name="wrist_reuse_link5_055" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_055.obj" />
+    <mesh name="wrist_reuse_link5_056" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_056.obj" />
+    <mesh name="wrist_reuse_link5_057" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_057.obj" />
+    <mesh name="wrist_reuse_link5_058" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_058.obj" />
+    <mesh name="wrist_reuse_link5_059" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_059.obj" />
+    <mesh name="wrist_reuse_link5_060" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_060.obj" />
+    <mesh name="wrist_reuse_link5_061" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_061.obj" />
+    <mesh name="wrist_reuse_link5_062" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_062.obj" />
+    <mesh name="wrist_reuse_link5_063" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_063.obj" />
+    <mesh name="wrist_reuse_link5_064" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_064.obj" />
+    <mesh name="wrist_reuse_link5_065" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_065.obj" />
+    <mesh name="wrist_reuse_link5_066" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_066.obj" />
+    <mesh name="wrist_reuse_link5_067" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_067.obj" />
+    <mesh name="wrist_reuse_link5_068" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_068.obj" />
+    <mesh name="wrist_reuse_link5_069" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_069.obj" />
+    <mesh name="wrist_reuse_link5_070" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_070.obj" />
+    <mesh name="wrist_reuse_link5_071" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_071.obj" />
+    <mesh name="wrist_reuse_link5_072" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_072.obj" />
+    <mesh name="wrist_reuse_link5_073" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_073.obj" />
+    <mesh name="wrist_reuse_link5_074" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_074.obj" />
+    <mesh name="wrist_reuse_link5_075" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_075.obj" />
+    <mesh name="wrist_reuse_link5_076" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_076.obj" />
+    <mesh name="wrist_reuse_link5_077" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_077.obj" />
+    <mesh name="wrist_reuse_link5_078" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_078.obj" />
+    <mesh name="wrist_reuse_link5_079" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_079.obj" />
+    <mesh name="wrist_reuse_link5_080" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_080.obj" />
+    <mesh name="wrist_reuse_link5_081" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_081.obj" />
+    <mesh name="wrist_reuse_link5_082" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_082.obj" />
+    <mesh name="wrist_reuse_link5_083" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_083.obj" />
+    <mesh name="wrist_reuse_link5_084" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_084.obj" />
+    <mesh name="wrist_reuse_link5_085" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_085.obj" />
+    <mesh name="wrist_reuse_link5_086" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_086.obj" />
+    <mesh name="wrist_reuse_link5_087" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_087.obj" />
+    <mesh name="wrist_reuse_link5_088" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_088.obj" />
+    <mesh name="wrist_reuse_link5_089" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_089.obj" />
+    <mesh name="wrist_reuse_link5_090" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_090.obj" />
+    <mesh name="wrist_reuse_link5_091" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_091.obj" />
+    <mesh name="wrist_reuse_link5_092" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_092.obj" />
+    <mesh name="wrist_reuse_link5_093" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_093.obj" />
+    <mesh name="wrist_reuse_link5_094" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_094.obj" />
+    <mesh name="wrist_reuse_link5_095" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_095.obj" />
+    <mesh name="wrist_reuse_link5_096" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_096.obj" />
+    <mesh name="wrist_reuse_link5_097" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_097.obj" />
+    <mesh name="wrist_reuse_link5_098" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_098.obj" />
+    <mesh name="wrist_reuse_link5_099" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_099.obj" />
+    <mesh name="wrist_reuse_link5_100" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_100.obj" />
+    <mesh name="wrist_reuse_link5_101" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_101.obj" />
+    <mesh name="wrist_reuse_link5_102" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_102.obj" />
+    <mesh name="wrist_reuse_link5_103" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_103.obj" />
+    <mesh name="wrist_reuse_link5_104" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_104.obj" />
+    <mesh name="wrist_reuse_link5_105" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_105.obj" />
+    <mesh name="wrist_reuse_link5_106" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_106.obj" />
+    <mesh name="wrist_reuse_link5_107" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_107.obj" />
+    <mesh name="wrist_reuse_link5_108" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_108.obj" />
+    <mesh name="wrist_reuse_link5_109" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_109.obj" />
+    <mesh name="wrist_reuse_link5_110" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_110.obj" />
+    <mesh name="wrist_reuse_link5_111" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_111.obj" />
+    <mesh name="wrist_reuse_link5_112" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_112.obj" />
+    <mesh name="wrist_reuse_link5_113" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_113.obj" />
+    <mesh name="wrist_reuse_link5_114" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_114.obj" />
+    <mesh name="wrist_reuse_link5_115" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_115.obj" />
+    <mesh name="wrist_reuse_link5_116" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_116.obj" />
+    <mesh name="wrist_reuse_link5_117" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_117.obj" />
+    <mesh name="wrist_reuse_link5_118" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_118.obj" />
+    <mesh name="wrist_reuse_link5_119" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_119.obj" />
+    <mesh name="wrist_reuse_link5_120" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_120.obj" />
+    <mesh name="wrist_reuse_link5_121" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_121.obj" />
+    <mesh name="wrist_reuse_link5_122" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_122.obj" />
+    <mesh name="wrist_reuse_link5_123" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_123.obj" />
+    <mesh name="wrist_reuse_link5_124" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_124.obj" />
+    <mesh name="wrist_reuse_link5_125" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_125.obj" />
+    <mesh name="wrist_reuse_link5_126" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_126.obj" />
+    <mesh name="wrist_reuse_link5_127" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_127.obj" />
+    <mesh name="wrist_reuse_link5_128" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_128.obj" />
+    <mesh name="wrist_reuse_link5_129" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_129.obj" />
+    <mesh name="wrist_reuse_link5_130" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_130.obj" />
+    <mesh name="wrist_reuse_link5_131" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_131.obj" />
+    <mesh name="wrist_reuse_link5_132" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_132.obj" />
+    <mesh name="wrist_reuse_link5_133" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_133.obj" />
+    <mesh name="wrist_reuse_link5_134" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_134.obj" />
+    <mesh name="wrist_reuse_link5_135" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_135.obj" />
+    <mesh name="wrist_reuse_link5_136" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_136.obj" />
+    <mesh name="wrist_reuse_link5_137" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_137.obj" />
+    <mesh name="wrist_reuse_link5_138" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_138.obj" />
+    <mesh name="wrist_reuse_link5_139" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_139.obj" />
+    <mesh name="wrist_reuse_link5_140" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_140.obj" />
+    <mesh name="wrist_reuse_link5_141" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_141.obj" />
+    <mesh name="wrist_reuse_link5_142" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_142.obj" />
+    <mesh name="wrist_reuse_link5_143" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_143.obj" />
+    <mesh name="wrist_reuse_link5_144" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_144.obj" />
+    <mesh name="wrist_reuse_link5_145" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_145.obj" />
+    <mesh name="wrist_reuse_link5_146" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_146.obj" />
+    <mesh name="wrist_reuse_gripper_flange_000" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_000.obj" />
+    <mesh name="wrist_reuse_gripper_flange_001" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_001.obj" />
+    <mesh name="wrist_reuse_gripper_flange_002" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_002.obj" />
+    <mesh name="wrist_reuse_gripper_flange_003" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_003.obj" />
+    <mesh name="wrist_reuse_gripper_flange_004" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_004.obj" />
+    <mesh name="wrist_reuse_gripper_flange_005" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_005.obj" />
+    <mesh name="wrist_reuse_gripper_flange_006" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_006.obj" />
+    <mesh name="wrist_reuse_gripper_flange_007" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_007.obj" />
+    <mesh name="wrist_reuse_gripper_flange_008" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_008.obj" />
+    <mesh name="wrist_reuse_gripper_flange_009" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_009.obj" />
+    <mesh name="wrist_reuse_gripper_flange_010" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_010.obj" />
+    <mesh name="wrist_reuse_gripper_flange_011" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_011.obj" />
+    <mesh name="wrist_reuse_gripper_flange_012" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_012.obj" />
+    <mesh name="wrist_reuse_gripper_flange_013" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_013.obj" />
+    <mesh name="wrist_reuse_gripper_flange_014" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_014.obj" />
+    <mesh name="wrist_reuse_gripper_flange_015" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_015.obj" />
+    <mesh name="wrist_reuse_gripper_flange_016" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_016.obj" />
+    <mesh name="wrist_reuse_gripper_flange_017" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_017.obj" />
+    <mesh name="wrist_reuse_gripper_flange_018" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_018.obj" />
+    <mesh name="wrist_reuse_gripper_flange_019" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_019.obj" />
+    <mesh name="wrist_reuse_gripper_flange_020" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_020.obj" />
+    <mesh name="wrist_reuse_gripper_flange_021" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_021.obj" />
+    <mesh name="wrist_reuse_gripper_flange_022" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_022.obj" />
+    <mesh name="wrist_reuse_gripper_flange_023" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_023.obj" />
+    <mesh name="wrist_reuse_gripper_flange_024" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_024.obj" />
+    <mesh name="wrist_reuse_gripper_flange_025" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_025.obj" />
+    <mesh name="wrist_reuse_gripper_flange_026" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_026.obj" />
+    <mesh name="wrist_reuse_gripper_flange_027" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_027.obj" />
+    <mesh name="wrist_reuse_gripper_flange_028" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_028.obj" />
+    <mesh name="wrist_reuse_gripper_flange_029" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_029.obj" />
+    <mesh name="wrist_reuse_gripper_flange_030" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_030.obj" />
+    <mesh name="wrist_reuse_gripper_flange_031" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_031.obj" />
+    <mesh name="wrist_reuse_gripper_flange_032" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_032.obj" />
+    <mesh name="wrist_reuse_gripper_flange_033" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_033.obj" />
+    <mesh name="wrist_reuse_gripper_flange_034" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_034.obj" />
+    <mesh name="wrist_reuse_gripper_flange_035" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_035.obj" />
+    <mesh name="wrist_reuse_gripper_flange_036" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_036.obj" />
+    <mesh name="wrist_reuse_gripper_flange_037" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_037.obj" />
+    <mesh name="wrist_reuse_gripper_flange_038" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_038.obj" />
+    <mesh name="wrist_reuse_gripper_flange_039" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_039.obj" />
+    <mesh name="wrist_reuse_gripper_flange_040" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_040.obj" />
+    <mesh name="wrist_reuse_gripper_flange_041" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_041.obj" />
+    <mesh name="wrist_reuse_gripper_flange_042" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_042.obj" />
+    <mesh name="wrist_reuse_gripper_flange_043" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_043.obj" />
+    <mesh name="wrist_reuse_gripper_flange_044" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_044.obj" />
+    <mesh name="wrist_reuse_gripper_flange_045" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_045.obj" />
+    <mesh name="wrist_reuse_gripper_flange_046" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_046.obj" />
+    <mesh name="wrist_reuse_gripper_flange_047" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_047.obj" />
+    <mesh name="wrist_reuse_gripper_flange_048" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_048.obj" />
+    <mesh name="wrist_reuse_gripper_flange_049" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_049.obj" />
+    <mesh name="wrist_reuse_gripper_flange_050" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_050.obj" />
+    <mesh name="wrist_reuse_gripper_flange_051" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_051.obj" />
+    <mesh name="wrist_reuse_gripper_flange_052" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_052.obj" />
+    <mesh name="wrist_reuse_gripper_flange_053" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_053.obj" />
+    <mesh name="wrist_reuse_gripper_flange_054" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_054.obj" />
+    <mesh name="wrist_reuse_gripper_flange_055" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_055.obj" />
+    <mesh name="wrist_reuse_gripper_flange_056" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_056.obj" />
+    <mesh name="wrist_reuse_gripper_flange_057" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_057.obj" />
+    <mesh name="wrist_reuse_gripper_flange_058" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_058.obj" />
+    <mesh name="wrist_reuse_gripper_flange_059" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_059.obj" />
+    <mesh name="wrist_reuse_gripper_flange_060" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_060.obj" />
+    <mesh name="wrist_reuse_gripper_flange_061" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_061.obj" />
+    <mesh name="wrist_reuse_gripper_flange_062" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_062.obj" />
+    <mesh name="wrist_reuse_gripper_flange_063" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_063.obj" />
+    <mesh name="wrist_reuse_gripper_flange_064" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_064.obj" />
+    <mesh name="wrist_reuse_gripper_flange_065" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_065.obj" />
+    <mesh name="wrist_reuse_gripper_flange_066" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_066.obj" />
+    <mesh name="wrist_reuse_gripper_flange_067" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_067.obj" />
+    <mesh name="wrist_reuse_gripper_flange_068" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_068.obj" />
+    <mesh name="wrist_reuse_gripper_flange_069" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_069.obj" />
+    <mesh name="wrist_reuse_gripper_flange_070" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_070.obj" />
+    <mesh name="wrist_reuse_gripper_flange_071" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_071.obj" />
+    <mesh name="wrist_reuse_gripper_flange_072" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_072.obj" />
+    <mesh name="wrist_reuse_gripper_flange_073" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_073.obj" />
+    <mesh name="wrist_reuse_gripper_flange_074" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_074.obj" />
+    <mesh name="wrist_reuse_gripper_flange_075" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_075.obj" />
+    <mesh name="wrist_reuse_gripper_flange_076" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_076.obj" />
+    <mesh name="wrist_reuse_gripper_flange_077" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_077.obj" />
+    <mesh name="wrist_reuse_gripper_flange_078" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_078.obj" />
+    <mesh name="wrist_reuse_gripper_flange_079" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_079.obj" />
+    <mesh name="wrist_reuse_gripper_flange_080" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_080.obj" />
+    <mesh name="wrist_reuse_gripper_flange_081" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_081.obj" />
+    <mesh name="wrist_reuse_gripper_flange_082" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_082.obj" />
+    <mesh name="wrist_reuse_gripper_flange_083" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_083.obj" />
+    <mesh name="wrist_reuse_gripper_flange_084" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_084.obj" />
+    <mesh name="wrist_reuse_gripper_flange_085" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_085.obj" />
+    <mesh name="wrist_reuse_gripper_flange_086" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_086.obj" />
+    <mesh name="wrist_reuse_gripper_flange_087" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_087.obj" />
+    <mesh name="wrist_reuse_gripper_flange_088" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_088.obj" />
+    <mesh name="wrist_reuse_gripper_flange_089" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_089.obj" />
+    <mesh name="wrist_reuse_gripper_flange_090" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_090.obj" />
+    <mesh name="wrist_reuse_gripper_flange_091" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_091.obj" />
+    <mesh name="wrist_reuse_gripper_flange_092" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_092.obj" />
+    <mesh name="wrist_reuse_gripper_flange_093" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_093.obj" />
+    <mesh name="wrist_reuse_gripper_flange_094" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_094.obj" />
+    <mesh name="wrist_reuse_gripper_flange_095" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_095.obj" />
+    <mesh name="wrist_reuse_gripper_flange_096" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_096.obj" />
+    <mesh name="wrist_reuse_gripper_flange_097" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_097.obj" />
+    <mesh name="wrist_reuse_gripper_flange_098" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_098.obj" />
+    <mesh name="wrist_reuse_gripper_flange_099" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_099.obj" />
+    <mesh name="wrist_reuse_gripper_flange_100" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_100.obj" />
+    <mesh name="wrist_reuse_gripper_flange_101" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_101.obj" />
+    <mesh name="wrist_reuse_gripper_flange_102" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_102.obj" />
+    <mesh name="wrist_reuse_gripper_flange_103" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_103.obj" />
+    <mesh name="wrist_reuse_gripper_flange_104" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_104.obj" />
+    <mesh name="wrist_reuse_gripper_flange_105" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_105.obj" />
+    <mesh name="wrist_reuse_gripper_flange_106" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_106.obj" />
+    <mesh name="wrist_reuse_gripper_flange_107" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_107.obj" />
+    <mesh name="wrist_reuse_gripper_flange_108" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_108.obj" />
+    <mesh name="wrist_reuse_gripper_flange_109" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_109.obj" />
+    <mesh name="wrist_reuse_gripper_flange_110" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_110.obj" />
+    <mesh name="wrist_reuse_gripper_flange_111" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_111.obj" />
+    <mesh name="wrist_reuse_gripper_flange_112" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_112.obj" />
+    <mesh name="wrist_reuse_gripper_flange_113" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_113.obj" />
+    <mesh name="wrist_reuse_gripper_flange_114" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_114.obj" />
+    <mesh name="wrist_reuse_gripper_flange_115" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_115.obj" />
+    <mesh name="wrist_reuse_gripper_flange_116" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_116.obj" />
+    <mesh name="wrist_reuse_gripper_flange_117" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_117.obj" />
+    <mesh name="wrist_reuse_gripper_flange_118" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_118.obj" />
+    <mesh name="wrist_reuse_gripper_flange_119" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_119.obj" />
+    <mesh name="wrist_reuse_gripper_flange_120" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_120.obj" />
+    <mesh name="wrist_reuse_gripper_flange_121" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_121.obj" />
+    <mesh name="wrist_reuse_gripper_flange_122" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_122.obj" />
+    <mesh name="wrist_reuse_gripper_flange_123" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_123.obj" />
+    <mesh name="wrist_reuse_gripper_flange_124" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_124.obj" />
+    <mesh name="wrist_reuse_gripper_flange_125" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_125.obj" />
+    <mesh name="wrist_reuse_gripper_flange_126" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_126.obj" />
+    <mesh name="wrist_reuse_gripper_flange_127" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_127.obj" />
+    <mesh name="wrist_reuse_gripper_flange_128" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_128.obj" />
+    <mesh name="wrist_reuse_gripper_flange_129" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_129.obj" />
+    <mesh name="wrist_reuse_gripper_flange_130" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_130.obj" />
+    <mesh name="wrist_reuse_gripper_flange_131" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_131.obj" />
+    <mesh name="wrist_reuse_gripper_flange_132" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_132.obj" />
+    <mesh name="wrist_reuse_gripper_flange_133" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_133.obj" />
+    <mesh name="wrist_reuse_gripper_flange_134" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_134.obj" />
+    <mesh name="wrist_reuse_gripper_flange_135" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_135.obj" />
+    <mesh name="wrist_reuse_gripper_flange_136" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_136.obj" />
+    <mesh name="wrist_reuse_gripper_flange_137" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_137.obj" />
+    <mesh name="wrist_reuse_gripper_flange_138" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_138.obj" />
+    <mesh name="wrist_reuse_gripper_flange_139" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_139.obj" />
+    <mesh name="wrist_reuse_gripper_flange_140" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_140.obj" />
+    <mesh name="wrist_reuse_gripper_flange_141" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_141.obj" />
+    <mesh name="wrist_reuse_gripper_flange_142" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_142.obj" />
+    <mesh name="wrist_reuse_gripper_flange_143" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_143.obj" />
+    <mesh name="wrist_reuse_gripper_flange_144" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_144.obj" />
+    <mesh name="wrist_reuse_gripper_flange_145" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_145.obj" />
+    <mesh name="wrist_reuse_gripper_flange_146" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_146.obj" />
+    <mesh name="wrist_reuse_gripper_flange_147" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_147.obj" />
+    <mesh name="wrist_reuse_gripper_flange_148" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_148.obj" />
+    <mesh name="wrist_reuse_gripper_flange_149" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_149.obj" />
+    <mesh name="wrist_reuse_gripper_flange_150" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_150.obj" />
+    <mesh name="wrist_reuse_gripper_flange_151" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_151.obj" />
+    <mesh name="wrist_reuse_gripper_flange_152" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_152.obj" />
+    <mesh name="wrist_reuse_gripper_flange_153" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_153.obj" />
+    <mesh name="wrist_reuse_gripper_flange_154" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_154.obj" />
+    <mesh name="wrist_reuse_gripper_flange_155" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_155.obj" />
+    <mesh name="wrist_reuse_gripper_flange_156" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_156.obj" />
+    <mesh name="wrist_reuse_gripper_flange_157" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_157.obj" />
+    <mesh name="wrist_reuse_gripper_flange_158" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_158.obj" />
+  </asset><worldbody><body name="base_link" pos="0 0 0" quat="1 0 0 0">
+      <inertial mass="1.0645843500000001" pos="-0.0031946599699999999 -5.4676080000000002e-05 0.04321758463" quat="0.71268121727555078 0.0076393100482395476 0.010006676020680186 0.70137507078569916" diaginertia="0.0011440254867757401 0.0010266423265759999 0.00090865306346825934" />
+      <body name="link1" pos="0 0 0.13800000000000001" quat="1 0 0 0">
+        <inertial mass="0.76710504000000002" pos="-0.00076810577999999997 -5.7180309999999999e-05 -0.00686372765" quat="0.99849578893227442 0.024328388993132104 -0.047403399402686563 0.012930842918518485" diaginertia="0.00066836103418731804 0.00054502205798592275 0.00051361904344676028" />
+        <joint name="joint1" pos="0 0 0" axis="0 0 1" range="-2.70526 2.70526" actuatorfrcrange="-100 100" damping="0" frictionloss="0" armature="0" />
+        <body name="link2" quat="1.8946853330305491e-08 1.8946852822626527e-08 0.70710679065997373 -0.70710677171312075" pos="0 0 0">
+          <inertial mass="0.69381908000000003" pos="0.00079686657000000002 -0.0789032593 0.00111849422" quat="0.72417267020692999 0.6895457152648039 -0.002811549415971721 -0.0096304452232175639" diaginertia="0.002011373076880207 0.0018222857339309729 0.00063216198722881791" />
+          <joint name="joint2" pos="0 0 0" axis="0 0 1" range="-1.74 1.74" actuatorfrcrange="-100 100" damping="0" frictionloss="0" armature="0" />
+          <body name="link3" pos="0 -0.31 0" quat="-1.3792191116934761e-08 1.3792190747374434e-08 -0.70710677171312086 0.70710679065997384">
+            <inertial mass="0.67246543999999997" pos="0.00014513363000000001 -0.00121378766 -0.048611367949999998" quat="0.99997782099329902 -0.0057269943951746656 -0.0005038918733854806 -0.0033623131429595336" diaginertia="0.0034323046236521891 0.00338702999817118 0.00028812606334663288" />
+            <joint name="joint3" pos="0 0 0" axis="0 0 1" range="-2.75 2.75" actuatorfrcrange="-100 100" damping="0" frictionloss="0" armature="0" />
+            <body name="link4" quat="-1.3792191116934761e-08 1.3792190747374434e-08 -0.70710677171312086 0.70710679065997384" pos="0 0 0">
+              <inertial mass="0.48451413999999998" pos="-0.00031334622999999999 -0.05675192422 0.00076056132999999997" quat="0.7439672129212298 0.66814052015801373 -0.0055562067353144085 -0.0083761559149855332" diaginertia="0.00050397211673768971 0.00040345050270899278 0.00023296022880331738" />
+              <joint name="joint4" pos="0 0 0" axis="0 0 1" range="-1.01 2.1400000000000001" actuatorfrcrange="-100 100" damping="0" frictionloss="0" armature="0" />
+              <body name="link5" pos="0 -0.27000999999999997 0" quat="0.50000001339744826 0.49999999999999983 -0.49999999999999983 0.49999998660255179">
+                <inertial mass="0.58368405000000001" pos="0.0026559135700000001 0.00201195753 -0.11620855434000001" quat="0.99438256287021631 -0.029976697650160537 0.013524381542499591 0.10060719338866533" diaginertia="0.00089718777503660426 0.00085967721540455399 0.00021492257182884284" />
+                <joint name="joint5" pos="0 0 0" axis="0 0 1" range="-2.75 2.75" actuatorfrcrange="-100 100" damping="0" frictionloss="0" armature="0" />
+                <body name="link6" quat="0.50000001339744826 0.49999999999999983 -0.49999999999999983 0.49999998660255179" pos="0 0 0">
+                  <inertial mass="0.3140406" pos="9.5015050000000001e-05 0.0010783117400000001 -0.0001911099" quat="0.70846336109342301 0.70510397676649705 -0.026814749140251309 0.01374835134946354" diaginertia="6.0285670519264918e-05 5.7558927504871335e-05 4.6990384425863791e-05" />
+                  <joint name="joint6" pos="0 0 0" axis="0 0 1" range="-0.72999999999999998 0.94999999999999996" actuatorfrcrange="-100 100" damping="0" frictionloss="0" armature="0" />
+                  <body name="link7" pos="0 -0.0235 0" quat="0.70710679065997395 0.70710677171312097 0 0">
+                    <inertial mass="9.9999999999999995e-07" pos="-0.00013999999999999999 -0.0001 -0.0027499999999999998" quat="0.50000000000000067 0.50000000000000067 -0.50000000000000067 0.50000000000000067" diaginertia="1.9999999999999999e-07 1.1000000000000001e-07 1.1000000000000001e-07" />
+                    <joint name="joint7" pos="0 0 0" axis="0 0 1" range="-1.5707963 1.5707963" actuatorfrcrange="-100 100" damping="0" frictionloss="0" armature="0" />
+                    <body name="gripper_flange" pos="0.032000000000000001 0 -0.0235" quat="0.49999816339744829 -0.49999999999662686 0.5000018366025516 -0.49999999999662686">
+                      <inertial mass="0.047710959999999997" pos="0 0 -0.00032000000000000003" quat="0.70710678118654802 0 0 0.70710678118654802" diaginertia="4.3109999999999999e-05 2.6970000000000001e-05 2.4790000000000002e-05" />
+                      <geom name="original_urdf_visual_gripper_flange" type="mesh" mesh="original_urdf_visual_gripper_flange" material="original_urdf_visual_gripper_flange_material" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" />
+                      <camera name="eye_in_hand" pos="0.073112770314158165 0.011437720170160318 0.043550025005932705" quat="0.12348849872428057 0.69681196684691538 0.69570306957671757 0.12329198077445876" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_000" mesh="wrist_reuse_gripper_flange_000" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_001" mesh="wrist_reuse_gripper_flange_001" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_002" mesh="wrist_reuse_gripper_flange_002" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_003" mesh="wrist_reuse_gripper_flange_003" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_004" mesh="wrist_reuse_gripper_flange_004" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_005" mesh="wrist_reuse_gripper_flange_005" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_006" mesh="wrist_reuse_gripper_flange_006" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_007" mesh="wrist_reuse_gripper_flange_007" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_008" mesh="wrist_reuse_gripper_flange_008" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_009" mesh="wrist_reuse_gripper_flange_009" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_010" mesh="wrist_reuse_gripper_flange_010" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_011" mesh="wrist_reuse_gripper_flange_011" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_012" mesh="wrist_reuse_gripper_flange_012" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_013" mesh="wrist_reuse_gripper_flange_013" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_014" mesh="wrist_reuse_gripper_flange_014" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_015" mesh="wrist_reuse_gripper_flange_015" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_016" mesh="wrist_reuse_gripper_flange_016" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_017" mesh="wrist_reuse_gripper_flange_017" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_018" mesh="wrist_reuse_gripper_flange_018" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_019" mesh="wrist_reuse_gripper_flange_019" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_020" mesh="wrist_reuse_gripper_flange_020" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_021" mesh="wrist_reuse_gripper_flange_021" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_022" mesh="wrist_reuse_gripper_flange_022" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_023" mesh="wrist_reuse_gripper_flange_023" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_024" mesh="wrist_reuse_gripper_flange_024" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_025" mesh="wrist_reuse_gripper_flange_025" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_026" mesh="wrist_reuse_gripper_flange_026" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_027" mesh="wrist_reuse_gripper_flange_027" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_028" mesh="wrist_reuse_gripper_flange_028" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_029" mesh="wrist_reuse_gripper_flange_029" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_030" mesh="wrist_reuse_gripper_flange_030" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_031" mesh="wrist_reuse_gripper_flange_031" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_032" mesh="wrist_reuse_gripper_flange_032" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_033" mesh="wrist_reuse_gripper_flange_033" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_034" mesh="wrist_reuse_gripper_flange_034" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_035" mesh="wrist_reuse_gripper_flange_035" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_036" mesh="wrist_reuse_gripper_flange_036" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_037" mesh="wrist_reuse_gripper_flange_037" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_038" mesh="wrist_reuse_gripper_flange_038" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_039" mesh="wrist_reuse_gripper_flange_039" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_040" mesh="wrist_reuse_gripper_flange_040" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_041" mesh="wrist_reuse_gripper_flange_041" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_042" mesh="wrist_reuse_gripper_flange_042" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_043" mesh="wrist_reuse_gripper_flange_043" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_044" mesh="wrist_reuse_gripper_flange_044" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_045" mesh="wrist_reuse_gripper_flange_045" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_046" mesh="wrist_reuse_gripper_flange_046" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_047" mesh="wrist_reuse_gripper_flange_047" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_048" mesh="wrist_reuse_gripper_flange_048" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_049" mesh="wrist_reuse_gripper_flange_049" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_050" mesh="wrist_reuse_gripper_flange_050" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_051" mesh="wrist_reuse_gripper_flange_051" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_052" mesh="wrist_reuse_gripper_flange_052" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_053" mesh="wrist_reuse_gripper_flange_053" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_054" mesh="wrist_reuse_gripper_flange_054" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_055" mesh="wrist_reuse_gripper_flange_055" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_056" mesh="wrist_reuse_gripper_flange_056" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_057" mesh="wrist_reuse_gripper_flange_057" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_058" mesh="wrist_reuse_gripper_flange_058" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_059" mesh="wrist_reuse_gripper_flange_059" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_060" mesh="wrist_reuse_gripper_flange_060" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_061" mesh="wrist_reuse_gripper_flange_061" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_062" mesh="wrist_reuse_gripper_flange_062" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_063" mesh="wrist_reuse_gripper_flange_063" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_064" mesh="wrist_reuse_gripper_flange_064" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_065" mesh="wrist_reuse_gripper_flange_065" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_066" mesh="wrist_reuse_gripper_flange_066" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_067" mesh="wrist_reuse_gripper_flange_067" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_068" mesh="wrist_reuse_gripper_flange_068" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_069" mesh="wrist_reuse_gripper_flange_069" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_070" mesh="wrist_reuse_gripper_flange_070" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_071" mesh="wrist_reuse_gripper_flange_071" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_072" mesh="wrist_reuse_gripper_flange_072" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_073" mesh="wrist_reuse_gripper_flange_073" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_074" mesh="wrist_reuse_gripper_flange_074" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_075" mesh="wrist_reuse_gripper_flange_075" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_076" mesh="wrist_reuse_gripper_flange_076" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_077" mesh="wrist_reuse_gripper_flange_077" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_078" mesh="wrist_reuse_gripper_flange_078" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_079" mesh="wrist_reuse_gripper_flange_079" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_080" mesh="wrist_reuse_gripper_flange_080" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_081" mesh="wrist_reuse_gripper_flange_081" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_082" mesh="wrist_reuse_gripper_flange_082" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_083" mesh="wrist_reuse_gripper_flange_083" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_084" mesh="wrist_reuse_gripper_flange_084" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_085" mesh="wrist_reuse_gripper_flange_085" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_086" mesh="wrist_reuse_gripper_flange_086" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_087" mesh="wrist_reuse_gripper_flange_087" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_088" mesh="wrist_reuse_gripper_flange_088" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_089" mesh="wrist_reuse_gripper_flange_089" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_090" mesh="wrist_reuse_gripper_flange_090" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_091" mesh="wrist_reuse_gripper_flange_091" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_092" mesh="wrist_reuse_gripper_flange_092" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_093" mesh="wrist_reuse_gripper_flange_093" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_094" mesh="wrist_reuse_gripper_flange_094" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_095" mesh="wrist_reuse_gripper_flange_095" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_096" mesh="wrist_reuse_gripper_flange_096" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_097" mesh="wrist_reuse_gripper_flange_097" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_098" mesh="wrist_reuse_gripper_flange_098" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_099" mesh="wrist_reuse_gripper_flange_099" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_100" mesh="wrist_reuse_gripper_flange_100" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_101" mesh="wrist_reuse_gripper_flange_101" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_102" mesh="wrist_reuse_gripper_flange_102" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_103" mesh="wrist_reuse_gripper_flange_103" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_104" mesh="wrist_reuse_gripper_flange_104" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_105" mesh="wrist_reuse_gripper_flange_105" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_106" mesh="wrist_reuse_gripper_flange_106" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_107" mesh="wrist_reuse_gripper_flange_107" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_108" mesh="wrist_reuse_gripper_flange_108" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_109" mesh="wrist_reuse_gripper_flange_109" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_110" mesh="wrist_reuse_gripper_flange_110" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_111" mesh="wrist_reuse_gripper_flange_111" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_112" mesh="wrist_reuse_gripper_flange_112" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_113" mesh="wrist_reuse_gripper_flange_113" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_114" mesh="wrist_reuse_gripper_flange_114" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_115" mesh="wrist_reuse_gripper_flange_115" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_116" mesh="wrist_reuse_gripper_flange_116" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_117" mesh="wrist_reuse_gripper_flange_117" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_118" mesh="wrist_reuse_gripper_flange_118" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_119" mesh="wrist_reuse_gripper_flange_119" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_120" mesh="wrist_reuse_gripper_flange_120" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_121" mesh="wrist_reuse_gripper_flange_121" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_122" mesh="wrist_reuse_gripper_flange_122" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_123" mesh="wrist_reuse_gripper_flange_123" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_124" mesh="wrist_reuse_gripper_flange_124" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_125" mesh="wrist_reuse_gripper_flange_125" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_126" mesh="wrist_reuse_gripper_flange_126" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_127" mesh="wrist_reuse_gripper_flange_127" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_128" mesh="wrist_reuse_gripper_flange_128" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_129" mesh="wrist_reuse_gripper_flange_129" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_130" mesh="wrist_reuse_gripper_flange_130" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_131" mesh="wrist_reuse_gripper_flange_131" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_132" mesh="wrist_reuse_gripper_flange_132" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_133" mesh="wrist_reuse_gripper_flange_133" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_134" mesh="wrist_reuse_gripper_flange_134" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_135" mesh="wrist_reuse_gripper_flange_135" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_136" mesh="wrist_reuse_gripper_flange_136" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_137" mesh="wrist_reuse_gripper_flange_137" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_138" mesh="wrist_reuse_gripper_flange_138" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_139" mesh="wrist_reuse_gripper_flange_139" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_140" mesh="wrist_reuse_gripper_flange_140" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_141" mesh="wrist_reuse_gripper_flange_141" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_142" mesh="wrist_reuse_gripper_flange_142" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_143" mesh="wrist_reuse_gripper_flange_143" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_144" mesh="wrist_reuse_gripper_flange_144" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_145" mesh="wrist_reuse_gripper_flange_145" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_146" mesh="wrist_reuse_gripper_flange_146" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_147" mesh="wrist_reuse_gripper_flange_147" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_148" mesh="wrist_reuse_gripper_flange_148" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_149" mesh="wrist_reuse_gripper_flange_149" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_150" mesh="wrist_reuse_gripper_flange_150" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_151" mesh="wrist_reuse_gripper_flange_151" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_152" mesh="wrist_reuse_gripper_flange_152" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_153" mesh="wrist_reuse_gripper_flange_153" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_154" mesh="wrist_reuse_gripper_flange_154" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_155" mesh="wrist_reuse_gripper_flange_155" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_156" mesh="wrist_reuse_gripper_flange_156" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_157" mesh="wrist_reuse_gripper_flange_157" pos="0 0 0" quat="1 0 0 0" />
+                      <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_gripper_flange_158" mesh="wrist_reuse_gripper_flange_158" pos="0 0 0" quat="1 0 0 0" />
+                    </body>
+                    <geom name="original_urdf_visual_link7" type="mesh" mesh="original_urdf_visual_link7" material="original_urdf_visual_link7_material" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" />
+                    <geom type="mesh" mesh="candidate_nero_link7_0" name="candidate_nero_link7_0" group="0" rgba="0 0.5 0 1" />
+                    <geom type="mesh" mesh="candidate_nero_link7_1" name="candidate_nero_link7_1" group="0" rgba="0 0.5 0 1" />
+                    <geom type="mesh" mesh="candidate_nero_link7_2" name="candidate_nero_link7_2" group="0" rgba="0 0.5 0 1" />
+                    <geom type="mesh" mesh="candidate_nero_link7_3" name="candidate_nero_link7_3" group="0" rgba="0 0.5 0 1" />
+                  </body>
+                  <geom name="original_urdf_visual_link6" type="mesh" mesh="original_urdf_visual_link6" material="original_urdf_visual_link6_material" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" />
+                  <geom type="mesh" mesh="candidate_nero_link6_0" name="candidate_nero_link6_0" group="0" rgba="0 0.5 0 1" />
+                  <geom type="mesh" mesh="candidate_nero_link6_1" name="candidate_nero_link6_1" group="0" rgba="0 0.5 0 1" />
+                  <geom type="mesh" mesh="candidate_nero_link6_2" name="candidate_nero_link6_2" group="0" rgba="0 0.5 0 1" />
+                  <geom type="mesh" mesh="candidate_nero_link6_3" name="candidate_nero_link6_3" group="0" rgba="0 0.5 0 1" />
+                  <geom type="mesh" mesh="candidate_nero_link6_4" name="candidate_nero_link6_4" group="0" rgba="0 0.5 0 1" />
+                </body>
+                <geom name="original_urdf_visual_link5" type="mesh" mesh="original_urdf_visual_link5" material="original_urdf_visual_link5_material" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_000" mesh="wrist_reuse_link5_000" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_001" mesh="wrist_reuse_link5_001" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_002" mesh="wrist_reuse_link5_002" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_003" mesh="wrist_reuse_link5_003" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_004" mesh="wrist_reuse_link5_004" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_005" mesh="wrist_reuse_link5_005" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_006" mesh="wrist_reuse_link5_006" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_007" mesh="wrist_reuse_link5_007" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_008" mesh="wrist_reuse_link5_008" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_009" mesh="wrist_reuse_link5_009" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_010" mesh="wrist_reuse_link5_010" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_011" mesh="wrist_reuse_link5_011" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_012" mesh="wrist_reuse_link5_012" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_013" mesh="wrist_reuse_link5_013" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_014" mesh="wrist_reuse_link5_014" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_015" mesh="wrist_reuse_link5_015" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_016" mesh="wrist_reuse_link5_016" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_017" mesh="wrist_reuse_link5_017" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_018" mesh="wrist_reuse_link5_018" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_019" mesh="wrist_reuse_link5_019" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_020" mesh="wrist_reuse_link5_020" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_021" mesh="wrist_reuse_link5_021" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_022" mesh="wrist_reuse_link5_022" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_023" mesh="wrist_reuse_link5_023" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_024" mesh="wrist_reuse_link5_024" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_025" mesh="wrist_reuse_link5_025" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_026" mesh="wrist_reuse_link5_026" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_027" mesh="wrist_reuse_link5_027" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_028" mesh="wrist_reuse_link5_028" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_029" mesh="wrist_reuse_link5_029" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_030" mesh="wrist_reuse_link5_030" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_031" mesh="wrist_reuse_link5_031" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_032" mesh="wrist_reuse_link5_032" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_033" mesh="wrist_reuse_link5_033" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_034" mesh="wrist_reuse_link5_034" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_035" mesh="wrist_reuse_link5_035" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_036" mesh="wrist_reuse_link5_036" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_037" mesh="wrist_reuse_link5_037" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_038" mesh="wrist_reuse_link5_038" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_039" mesh="wrist_reuse_link5_039" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_040" mesh="wrist_reuse_link5_040" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_041" mesh="wrist_reuse_link5_041" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_042" mesh="wrist_reuse_link5_042" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_043" mesh="wrist_reuse_link5_043" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_044" mesh="wrist_reuse_link5_044" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_045" mesh="wrist_reuse_link5_045" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_046" mesh="wrist_reuse_link5_046" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_047" mesh="wrist_reuse_link5_047" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_048" mesh="wrist_reuse_link5_048" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_049" mesh="wrist_reuse_link5_049" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_050" mesh="wrist_reuse_link5_050" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_051" mesh="wrist_reuse_link5_051" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_052" mesh="wrist_reuse_link5_052" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_053" mesh="wrist_reuse_link5_053" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_054" mesh="wrist_reuse_link5_054" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_055" mesh="wrist_reuse_link5_055" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_056" mesh="wrist_reuse_link5_056" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_057" mesh="wrist_reuse_link5_057" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_058" mesh="wrist_reuse_link5_058" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_059" mesh="wrist_reuse_link5_059" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_060" mesh="wrist_reuse_link5_060" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_061" mesh="wrist_reuse_link5_061" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_062" mesh="wrist_reuse_link5_062" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_063" mesh="wrist_reuse_link5_063" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_064" mesh="wrist_reuse_link5_064" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_065" mesh="wrist_reuse_link5_065" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_066" mesh="wrist_reuse_link5_066" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_067" mesh="wrist_reuse_link5_067" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_068" mesh="wrist_reuse_link5_068" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_069" mesh="wrist_reuse_link5_069" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_070" mesh="wrist_reuse_link5_070" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_071" mesh="wrist_reuse_link5_071" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_072" mesh="wrist_reuse_link5_072" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_073" mesh="wrist_reuse_link5_073" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_074" mesh="wrist_reuse_link5_074" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_075" mesh="wrist_reuse_link5_075" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_076" mesh="wrist_reuse_link5_076" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_077" mesh="wrist_reuse_link5_077" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_078" mesh="wrist_reuse_link5_078" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_079" mesh="wrist_reuse_link5_079" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_080" mesh="wrist_reuse_link5_080" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_081" mesh="wrist_reuse_link5_081" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_082" mesh="wrist_reuse_link5_082" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_083" mesh="wrist_reuse_link5_083" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_084" mesh="wrist_reuse_link5_084" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_085" mesh="wrist_reuse_link5_085" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_086" mesh="wrist_reuse_link5_086" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_087" mesh="wrist_reuse_link5_087" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_088" mesh="wrist_reuse_link5_088" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_089" mesh="wrist_reuse_link5_089" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_090" mesh="wrist_reuse_link5_090" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_091" mesh="wrist_reuse_link5_091" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_092" mesh="wrist_reuse_link5_092" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_093" mesh="wrist_reuse_link5_093" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_094" mesh="wrist_reuse_link5_094" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_095" mesh="wrist_reuse_link5_095" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_096" mesh="wrist_reuse_link5_096" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_097" mesh="wrist_reuse_link5_097" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_098" mesh="wrist_reuse_link5_098" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_099" mesh="wrist_reuse_link5_099" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_100" mesh="wrist_reuse_link5_100" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_101" mesh="wrist_reuse_link5_101" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_102" mesh="wrist_reuse_link5_102" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_103" mesh="wrist_reuse_link5_103" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_104" mesh="wrist_reuse_link5_104" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_105" mesh="wrist_reuse_link5_105" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_106" mesh="wrist_reuse_link5_106" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_107" mesh="wrist_reuse_link5_107" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_108" mesh="wrist_reuse_link5_108" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_109" mesh="wrist_reuse_link5_109" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_110" mesh="wrist_reuse_link5_110" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_111" mesh="wrist_reuse_link5_111" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_112" mesh="wrist_reuse_link5_112" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_113" mesh="wrist_reuse_link5_113" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_114" mesh="wrist_reuse_link5_114" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_115" mesh="wrist_reuse_link5_115" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_116" mesh="wrist_reuse_link5_116" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_117" mesh="wrist_reuse_link5_117" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_118" mesh="wrist_reuse_link5_118" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_119" mesh="wrist_reuse_link5_119" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_120" mesh="wrist_reuse_link5_120" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_121" mesh="wrist_reuse_link5_121" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_122" mesh="wrist_reuse_link5_122" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_123" mesh="wrist_reuse_link5_123" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_124" mesh="wrist_reuse_link5_124" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_125" mesh="wrist_reuse_link5_125" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_126" mesh="wrist_reuse_link5_126" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_127" mesh="wrist_reuse_link5_127" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_128" mesh="wrist_reuse_link5_128" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_129" mesh="wrist_reuse_link5_129" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_130" mesh="wrist_reuse_link5_130" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_131" mesh="wrist_reuse_link5_131" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_132" mesh="wrist_reuse_link5_132" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_133" mesh="wrist_reuse_link5_133" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_134" mesh="wrist_reuse_link5_134" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_135" mesh="wrist_reuse_link5_135" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_136" mesh="wrist_reuse_link5_136" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_137" mesh="wrist_reuse_link5_137" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_138" mesh="wrist_reuse_link5_138" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_139" mesh="wrist_reuse_link5_139" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_140" mesh="wrist_reuse_link5_140" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_141" mesh="wrist_reuse_link5_141" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_142" mesh="wrist_reuse_link5_142" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_143" mesh="wrist_reuse_link5_143" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_144" mesh="wrist_reuse_link5_144" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_145" mesh="wrist_reuse_link5_145" pos="0 0 0" quat="1 0 0 0" />
+                <geom type="mesh" group="0" rgba="0 0.5 0 1" name="wrist_reuse_link5_146" mesh="wrist_reuse_link5_146" pos="0 0 0" quat="1 0 0 0" />
+              </body>
+              <geom name="original_urdf_visual_link4" type="mesh" mesh="original_urdf_visual_link4" material="original_urdf_visual_link4_material" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" />
+              <geom type="mesh" mesh="candidate_nero_link4_0" name="candidate_nero_link4_0" group="0" rgba="0 0.5 0 1" />
+              <geom type="mesh" mesh="candidate_nero_link4_1" name="candidate_nero_link4_1" group="0" rgba="0 0.5 0 1" />
+              <geom type="mesh" mesh="candidate_nero_link4_2" name="candidate_nero_link4_2" group="0" rgba="0 0.5 0 1" />
+              <geom type="mesh" mesh="candidate_nero_link4_3" name="candidate_nero_link4_3" group="0" rgba="0 0.5 0 1" />
+              <geom type="mesh" mesh="candidate_nero_link4_4" name="candidate_nero_link4_4" group="0" rgba="0 0.5 0 1" />
+              <geom type="mesh" mesh="candidate_nero_link4_5" name="candidate_nero_link4_5" group="0" rgba="0 0.5 0 1" />
+            </body>
+            <geom name="original_urdf_visual_link3" type="mesh" mesh="original_urdf_visual_link3" material="original_urdf_visual_link3_material" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" />
+            <geom type="mesh" mesh="candidate_nero_link3_0" name="candidate_nero_link3_0" group="0" rgba="0 0.5 0 1" />
+            <geom type="mesh" mesh="candidate_nero_link3_1" name="candidate_nero_link3_1" group="0" rgba="0 0.5 0 1" />
+            <geom type="mesh" mesh="candidate_nero_link3_2" name="candidate_nero_link3_2" group="0" rgba="0 0.5 0 1" />
+            <geom type="mesh" mesh="candidate_nero_link3_3" name="candidate_nero_link3_3" group="0" rgba="0 0.5 0 1" />
+            <geom type="mesh" mesh="candidate_nero_link3_4" name="candidate_nero_link3_4" group="0" rgba="0 0.5 0 1" />
+            <geom type="mesh" mesh="candidate_nero_link3_5" name="candidate_nero_link3_5" group="0" rgba="0 0.5 0 1" />
+            <geom type="mesh" mesh="candidate_nero_link3_6" name="candidate_nero_link3_6" group="0" rgba="0 0.5 0 1" />
+            <geom type="mesh" mesh="candidate_nero_link3_7" name="candidate_nero_link3_7" group="0" rgba="0 0.5 0 1" />
+          </body>
+          <geom name="original_urdf_visual_link2" type="mesh" mesh="original_urdf_visual_link2" material="original_urdf_visual_link2_material" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" />
+          <geom type="mesh" mesh="candidate_nero_link2_0" name="candidate_nero_link2_0" group="0" rgba="0 0.5 0 1" />
+          <geom type="mesh" mesh="candidate_nero_link2_1" name="candidate_nero_link2_1" group="0" rgba="0 0.5 0 1" />
+          <geom type="mesh" mesh="candidate_nero_link2_2" name="candidate_nero_link2_2" group="0" rgba="0 0.5 0 1" />
+          <geom type="mesh" mesh="candidate_nero_link2_3" name="candidate_nero_link2_3" group="0" rgba="0 0.5 0 1" />
+          <geom type="mesh" mesh="candidate_nero_link2_4" name="candidate_nero_link2_4" group="0" rgba="0 0.5 0 1" />
+        </body>
+        <geom name="original_urdf_visual_link1" type="mesh" mesh="original_urdf_visual_link1" material="original_urdf_visual_link1_material" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" />
+        <geom type="mesh" mesh="candidate_nero_link1_0" name="candidate_nero_link1_0" group="0" rgba="0 0.5 0 1" />
+        <geom type="mesh" mesh="candidate_nero_link1_1" name="candidate_nero_link1_1" group="0" rgba="0 0.5 0 1" />
+        <geom type="mesh" mesh="candidate_nero_link1_2" name="candidate_nero_link1_2" group="0" rgba="0 0.5 0 1" />
+        <geom type="mesh" mesh="candidate_nero_link1_3" name="candidate_nero_link1_3" group="0" rgba="0 0.5 0 1" />
+        <geom type="mesh" mesh="candidate_nero_link1_4" name="candidate_nero_link1_4" group="0" rgba="0 0.5 0 1" />
+        <geom type="mesh" mesh="candidate_nero_link1_5" name="candidate_nero_link1_5" group="0" rgba="0 0.5 0 1" />
+        <geom type="mesh" mesh="candidate_nero_link1_6" name="candidate_nero_link1_6" group="0" rgba="0 0.5 0 1" />
+        <geom type="mesh" mesh="candidate_nero_link1_7" name="candidate_nero_link1_7" group="0" rgba="0 0.5 0 1" />
+      </body>
+      <geom name="original_urdf_visual_base_link" type="mesh" mesh="original_urdf_visual_base_link" material="original_urdf_visual_base_link_material" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" />
+      <geom type="mesh" mesh="candidate_nero_base_link_0" name="candidate_nero_base_link_0" group="0" rgba="0 0.5 0 1" />
+      <geom type="mesh" mesh="candidate_nero_base_link_1" name="candidate_nero_base_link_1" group="0" rgba="0 0.5 0 1" />
+      <geom type="mesh" mesh="candidate_nero_base_link_2" name="candidate_nero_base_link_2" group="0" rgba="0 0.5 0 1" />
+      <geom type="mesh" mesh="candidate_nero_base_link_3" name="candidate_nero_base_link_3" group="0" rgba="0 0.5 0 1" />
+      <geom type="mesh" mesh="candidate_nero_base_link_4" name="candidate_nero_base_link_4" group="0" rgba="0 0.5 0 1" />
+      <geom type="mesh" mesh="candidate_nero_base_link_5" name="candidate_nero_base_link_5" group="0" rgba="0 0.5 0 1" />
+      <geom type="mesh" mesh="candidate_nero_base_link_6" name="candidate_nero_base_link_6" group="0" rgba="0 0.5 0 1" />
+      <geom type="mesh" mesh="candidate_nero_base_link_7" name="candidate_nero_base_link_7" group="0" rgba="0 0.5 0 1" />
+      </body>
+  </worldbody><actuator><motor name="urdf_motor_joint1" joint="joint1" ctrllimited="true" ctrlrange="-100 100" />
+    <motor name="urdf_motor_joint2" joint="joint2" ctrllimited="true" ctrlrange="-100 100" />
+    <motor name="urdf_motor_joint3" joint="joint3" ctrllimited="true" ctrlrange="-100 100" />
+    <motor name="urdf_motor_joint4" joint="joint4" ctrllimited="true" ctrlrange="-100 100" />
+    <motor name="urdf_motor_joint5" joint="joint5" ctrllimited="true" ctrlrange="-100 100" />
+    <motor name="urdf_motor_joint6" joint="joint6" ctrllimited="true" ctrlrange="-100 100" />
+    <motor name="urdf_motor_joint7" joint="joint7" ctrllimited="true" ctrlrange="-100 100" />
+    </actuator><equality /><sensor /><contact><exclude body1="base_link" body2="link1" />
+  </contact></mujoco>

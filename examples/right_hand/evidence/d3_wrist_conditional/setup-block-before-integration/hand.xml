@@ -1,0 +1,277 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="dh116_urdf_right"><compiler angle="radian" inertiagrouprange="0 0" autolimits="true" />
+  <option impratio="20" cone="elliptic" density="1.2" viscosity="0.00002" timestep="0.002" integrator="RK4" />
+  <size nconmax="5000" njmax="5000" />
+  <asset><mesh name="base_link" file="/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/base_link.STL" />
+    <mesh name="finger11_link" file="/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger11_link.STL" />
+    <mesh name="finger12_link" file="/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger12_link.STL" />
+    <mesh name="finger13_link" file="/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger13_link.STL" />
+    <mesh name="finger14_link" file="/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger14_link.STL" />
+    <mesh name="finger21_link" file="/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger21_link.STL" />
+    <mesh name="finger22_link" file="/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger22_link.STL" />
+    <mesh name="finger23_link" file="/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger23_link.STL" />
+    <mesh name="finger31_link" file="/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger31_link.STL" />
+    <mesh name="finger32_link" file="/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger32_link.STL" />
+    <mesh name="finger33_link" file="/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger33_link.STL" />
+    <mesh name="finger41_link" file="/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger41_link.STL" />
+    <mesh name="finger42_link" file="/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger42_link.STL" />
+    <mesh name="finger43_link" file="/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger43_link.STL" />
+    <mesh name="finger51_link" file="/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger51_link.STL" />
+    <mesh name="finger52_link" file="/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger52_link.STL" />
+    <mesh name="finger53_link" file="/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger53_link.STL" />
+    <mesh name="proxy76_base_link_00" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_00.obj" />
+    <mesh name="proxy76_base_link_01" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_01.obj" />
+    <mesh name="proxy76_base_link_02" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_02.obj" />
+    <mesh name="proxy76_base_link_03" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_03.obj" />
+    <mesh name="proxy76_base_link_04" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_04.obj" />
+    <mesh name="proxy76_base_link_05" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_05.obj" />
+    <mesh name="proxy76_base_link_06" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_06.obj" />
+    <mesh name="proxy76_base_link_07" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_07.obj" />
+    <mesh name="proxy76_base_link_08" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_08.obj" />
+    <mesh name="proxy76_base_link_09" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_09.obj" />
+    <mesh name="proxy76_finger11_link_00" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger11_link_00.obj" />
+    <mesh name="proxy76_finger12_link_00" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger12_link_0-2a6bdf00.obj" />
+    <mesh name="proxy76_finger12_link_01" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger12_link_1-74d9a1f6.obj" />
+    <mesh name="proxy76_finger12_link_02" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger12_link_2-9be8c86a.obj" />
+    <mesh name="proxy76_finger12_link_03" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger12_link_3-a648891e.obj" />
+    <mesh name="proxy76_finger12_link_04" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger12_link_4-c3d2e735.obj" />
+    <mesh name="proxy76_finger12_link_05" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger12_link_5-b8ec84e4.obj" />
+    <mesh name="proxy76_finger12_link_06" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger12_link_6-6e9a388e.obj" />
+    <mesh name="proxy76_finger12_link_07" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger12_link_7-3748cad4.obj" />
+    <mesh name="proxy76_finger13_link_00" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_finger13_link-f34ca4cb.stl" />
+    <mesh name="proxy76_finger14_link_00" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger14_link_0-2b2ddda5.obj" />
+    <mesh name="proxy76_finger14_link_01" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger14_link_1-0e2d6afb.obj" />
+    <mesh name="proxy76_finger14_link_02" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger14_link_2-a71fa24f.obj" />
+    <mesh name="proxy76_finger14_link_03" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger14_link_3-31cf7b29.obj" />
+    <mesh name="proxy76_finger14_link_04" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger14_link_4-c49b43ef.obj" />
+    <mesh name="proxy76_finger14_link_05" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger14_link_5-c3a6773e.obj" />
+    <mesh name="proxy76_finger14_link_06" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger14_link_6-1d98430c.obj" />
+    <mesh name="proxy76_finger14_link_07" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger14_link_7-14d2570c.obj" />
+    <mesh name="proxy76_finger14_link_08" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger14_link_8-fb373efd.obj" />
+    <mesh name="proxy76_finger14_link_09" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger14_link_9-d3124adb.obj" />
+    <mesh name="proxy76_finger14_link_10" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger14_link_10-21c826aa.obj" />
+    <mesh name="proxy76_finger14_link_11" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger14_link_11-168acc8b.obj" />
+    <mesh name="proxy76_finger21_link_00" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_finger21_link-1bb8e6bd.stl" />
+    <mesh name="proxy76_finger22_link_00" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_finger22_link-53c55c84.stl" />
+    <mesh name="proxy76_finger23_link_00" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger23_link_0-a6cc5f75.obj" />
+    <mesh name="proxy76_finger23_link_01" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger23_link_1-c8663aa9.obj" />
+    <mesh name="proxy76_finger23_link_02" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger23_link_2-7cc9be61.obj" />
+    <mesh name="proxy76_finger23_link_03" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger23_link_3-2f7c98b4.obj" />
+    <mesh name="proxy76_finger23_link_04" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger23_link_4-bab546af.obj" />
+    <mesh name="proxy76_finger23_link_05" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger23_link_5-5d047287.obj" />
+    <mesh name="proxy76_finger23_link_06" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger23_link_6-a018289e.obj" />
+    <mesh name="proxy76_finger23_link_07" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger23_link_7-de354fdf.obj" />
+    <mesh name="proxy76_finger23_link_08" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger23_link_8-9174795a.obj" />
+    <mesh name="proxy76_finger23_link_09" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger23_link_9-1cc04f8d.obj" />
+    <mesh name="proxy76_finger23_link_10" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger23_link_10-251c3834.obj" />
+    <mesh name="proxy76_finger23_link_11" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger23_link_11-fad1ae11.obj" />
+    <mesh name="proxy76_finger31_link_00" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_finger31_link-7e3176cd.stl" />
+    <mesh name="proxy76_finger32_link_00" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_finger32_link-68b0442e.stl" />
+    <mesh name="proxy76_finger33_link_00" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_00.obj" />
+    <mesh name="proxy76_finger33_link_01" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_01.obj" />
+    <mesh name="proxy76_finger33_link_02" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_02.obj" />
+    <mesh name="proxy76_finger33_link_03" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_03.obj" />
+    <mesh name="proxy76_finger33_link_04" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_04.obj" />
+    <mesh name="proxy76_finger33_link_05" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_05.obj" />
+    <mesh name="proxy76_finger33_link_06" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_06.obj" />
+    <mesh name="proxy76_finger33_link_07" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_07.obj" />
+    <mesh name="proxy76_finger41_link_00" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_finger41_link-5f1647a2.stl" />
+    <mesh name="proxy76_finger42_link_00" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_finger42_link-15a9090c.stl" />
+    <mesh name="proxy76_finger43_link_00" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger43_link_0-95b4cbb3.obj" />
+    <mesh name="proxy76_finger43_link_01" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger43_link_1-07a65f22.obj" />
+    <mesh name="proxy76_finger43_link_02" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger43_link_2-aab293f6.obj" />
+    <mesh name="proxy76_finger43_link_03" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger43_link_3-f7eab61f.obj" />
+    <mesh name="proxy76_finger43_link_04" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger43_link_4-78532cbf.obj" />
+    <mesh name="proxy76_finger43_link_05" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger43_link_5-13af1468.obj" />
+    <mesh name="proxy76_finger43_link_06" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger43_link_6-2a3fbea9.obj" />
+    <mesh name="proxy76_finger43_link_07" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger43_link_7-d800f7ad.obj" />
+    <mesh name="proxy76_finger51_link_00" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_finger51_link-dfabcfce.stl" />
+    <mesh name="proxy76_finger52_link_00" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_finger52_link-acf84396.stl" />
+    <mesh name="proxy76_finger53_link_00" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger53_link_0-f66430b1.obj" />
+    <mesh name="proxy76_finger53_link_01" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger53_link_1-fce5027c.obj" />
+    <mesh name="proxy76_finger53_link_02" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger53_link_2-dd7921f7.obj" />
+    <mesh name="proxy76_finger53_link_03" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger53_link_3-49e71c08.obj" />
+    <mesh name="proxy76_finger53_link_04" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger53_link_4-84f78255.obj" />
+    <mesh name="proxy76_finger53_link_05" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger53_link_5-3134737f.obj" />
+    <mesh name="proxy76_finger53_link_06" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger53_link_6-8a45b6d5.obj" />
+    <mesh name="proxy76_finger53_link_07" file="/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger53_link_7-8015cab7.obj" />
+    <mesh name="finger13_local_00" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/finger13_local/meshes/negative_wing.obj" />
+    <mesh name="finger13_local_01" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/finger13_local/meshes/central.obj" />
+    <mesh name="finger13_local_02" file="/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/finger13_local/meshes/positive_wing.obj" />
+    </asset><worldbody><body name="base_link" pos="0 0 0" quat="1 0 0 0">
+                        <inertial mass="0.10866" pos="-0.0052741 0.002479 0.057207" fullinertia="8.6558E-05 5.5287E-05 4.1066E-05 1.592E-07 2.7057E-06 -4.058E-07" />
+                        <geom name="base_link_visual_0" type="mesh" mesh="base_link" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" rgba="1 1 1 1" />
+                        <body name="finger11_link" pos="0.018 0.021747 0.043279" quat="0.99904823167098911 -0.043619156285622802 0 0">
+                          <inertial mass="0.010254" pos="0.0078225 0.0020462 -0.0025622" fullinertia="7.2142E-07 1.1141E-06 1.144E-06 -1.1025E-07 1.8578E-07 4.8596E-08" />
+                          <joint name="finger11" type="hinge" pos="0 0 0" axis="0 0 -1" range="0 1.047198" damping="2.0" armature="0.01" frictionloss="0" />
+                          <geom name="finger11_link_visual_0" type="mesh" mesh="finger11_link" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" rgba="1 1 1 1" />
+                          <body name="finger12_link" pos="0.018876 0.0049375 -0.0056093" quat="0.88168791042395422 -0.058430086915037989 0.45425840376001447 0.11340924198999838">
+                            <inertial mass="0.010145" pos="0.0014182 -1.2893E-06 0.024329" fullinertia="2.4795E-06 2.2943E-06 8.8906E-07 2.3633E-11 -9.1895E-08 4.4162E-11" />
+                            <joint name="finger12" type="hinge" pos="0 0 0" axis="0 -1 0" range="0 0.523599" damping="2.0" armature="0.01" frictionloss="0" />
+                            <geom name="finger12_link_visual_0" type="mesh" mesh="finger12_link" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" rgba="1 1 1 1" />
+                            <body name="finger13_link" pos="0 0 0.045" quat="1 0 0 0">
+                              <inertial mass="0.020548" pos="0.0064864 -1.72E-06 0.014709" fullinertia="2.4642E-06 2.3555E-06 8.7678E-07 2.2654E-10 -1.276E-07 3.4328E-10" />
+                              <joint name="finger13" type="hinge" pos="0 0 0" axis="0 -1 0" range="0.004592 0.594583" damping="2.0" armature="0.01" frictionloss="0" />
+                              <geom name="finger13_link_visual_0" type="mesh" mesh="finger13_link" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" rgba="1 1 1 1" />
+                              <body name="finger14_link" pos="0 0 0" quat="1 0 0 0">
+                                <inertial mass="0.00064654" pos="0.0030983 8.624E-07 0.024752" fullinertia="4.6206E-08 3.0972E-08 3.328E-08 -1.7511E-11 -7.0078E-09 3.3703E-12" />
+                                <geom name="finger14_link_visual_0" type="mesh" mesh="finger14_link" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" rgba="0.2 0.2 0.2 1" />
+                                <geom name="proxy76_finger14_link_00" type="mesh" mesh="proxy76_finger14_link_00" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                                <geom name="proxy76_finger14_link_01" type="mesh" mesh="proxy76_finger14_link_01" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                                <geom name="proxy76_finger14_link_02" type="mesh" mesh="proxy76_finger14_link_02" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                                <geom name="proxy76_finger14_link_03" type="mesh" mesh="proxy76_finger14_link_03" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                                <geom name="proxy76_finger14_link_04" type="mesh" mesh="proxy76_finger14_link_04" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                                <geom name="proxy76_finger14_link_05" type="mesh" mesh="proxy76_finger14_link_05" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                                <geom name="proxy76_finger14_link_06" type="mesh" mesh="proxy76_finger14_link_06" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                                <geom name="proxy76_finger14_link_07" type="mesh" mesh="proxy76_finger14_link_07" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                                <geom name="proxy76_finger14_link_08" type="mesh" mesh="proxy76_finger14_link_08" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                                <geom name="proxy76_finger14_link_09" type="mesh" mesh="proxy76_finger14_link_09" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                                <geom name="proxy76_finger14_link_10" type="mesh" mesh="proxy76_finger14_link_10" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                                <geom name="proxy76_finger14_link_11" type="mesh" mesh="proxy76_finger14_link_11" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                              </body>
+                              <geom name="finger13_local_00" type="mesh" mesh="finger13_local_00" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                              <geom name="finger13_local_01" type="mesh" mesh="finger13_local_01" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                              <geom name="finger13_local_02" type="mesh" mesh="finger13_local_02" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                            </body>
+                            <geom name="proxy76_finger12_link_00" type="mesh" mesh="proxy76_finger12_link_00" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                            <geom name="proxy76_finger12_link_01" type="mesh" mesh="proxy76_finger12_link_01" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                            <geom name="proxy76_finger12_link_02" type="mesh" mesh="proxy76_finger12_link_02" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                            <geom name="proxy76_finger12_link_03" type="mesh" mesh="proxy76_finger12_link_03" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                            <geom name="proxy76_finger12_link_04" type="mesh" mesh="proxy76_finger12_link_04" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                            <geom name="proxy76_finger12_link_05" type="mesh" mesh="proxy76_finger12_link_05" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                            <geom name="proxy76_finger12_link_06" type="mesh" mesh="proxy76_finger12_link_06" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                            <geom name="proxy76_finger12_link_07" type="mesh" mesh="proxy76_finger12_link_07" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                          </body>
+                          <geom name="proxy76_finger11_link_00" type="mesh" mesh="proxy76_finger11_link_00" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                        </body>
+                        <body name="finger21_link" pos="-0.011581 0.031971 0.10003" quat="0.99824312139773297 -0.026139868701238692 0.053154872156489515 -0.0013919096307386831">
+                          <inertial mass="0.0067143" pos="-0.0017978 3.2789E-07 0.018686" fullinertia="1.1951E-06 1.0688E-06 3.7304E-07 6.7451E-12 -4.4967E-09 -2.4168E-12" />
+                          <joint name="finger21" type="hinge" pos="0 0 0" axis="0 1 0" range="0 1.396263" damping="2.0" armature="0.01" frictionloss="0" />
+                          <geom name="finger21_link_visual_0" type="mesh" mesh="finger21_link" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" rgba="1 1 1 1" />
+                          <body name="finger22_link" pos="0 0 0.035" quat="1 0 0 0">
+                            <inertial mass="0.014789" pos="-0.0019337 7.2998E-07 0.02175" fullinertia="1.4665E-06 1.4889E-06 3.5281E-07 1.1416E-11 -1.6584E-07 -9.2753E-11" />
+                            <joint name="finger22" type="hinge" pos="0 0 0" axis="0 1 0" range="0.011072 1.687426" damping="2.0" armature="0.01" frictionloss="0" />
+                            <geom name="finger22_link_visual_0" type="mesh" mesh="finger22_link" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" rgba="1 1 1 1" />
+                            <body name="finger23_link" pos="0 0 0" quat="1 0 0 0">
+                              <inertial mass="0.00083419" pos="0.0027534 -5.1038E-07 0.027456" fullinertia="1.0852E-07 9.6252E-08 2.404E-08 -2.4081E-13 -9.2843E-09 -2.9524E-12" />
+                              <geom name="finger23_link_visual_0" type="mesh" mesh="finger23_link" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" rgba="0.2 0.2 0.2 1" />
+                              <geom name="proxy76_finger23_link_00" type="mesh" mesh="proxy76_finger23_link_00" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                              <geom name="proxy76_finger23_link_01" type="mesh" mesh="proxy76_finger23_link_01" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                              <geom name="proxy76_finger23_link_02" type="mesh" mesh="proxy76_finger23_link_02" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                              <geom name="proxy76_finger23_link_03" type="mesh" mesh="proxy76_finger23_link_03" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                              <geom name="proxy76_finger23_link_04" type="mesh" mesh="proxy76_finger23_link_04" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                              <geom name="proxy76_finger23_link_05" type="mesh" mesh="proxy76_finger23_link_05" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                              <geom name="proxy76_finger23_link_06" type="mesh" mesh="proxy76_finger23_link_06" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                              <geom name="proxy76_finger23_link_07" type="mesh" mesh="proxy76_finger23_link_07" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                              <geom name="proxy76_finger23_link_08" type="mesh" mesh="proxy76_finger23_link_08" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                              <geom name="proxy76_finger23_link_09" type="mesh" mesh="proxy76_finger23_link_09" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                              <geom name="proxy76_finger23_link_10" type="mesh" mesh="proxy76_finger23_link_10" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                              <geom name="proxy76_finger23_link_11" type="mesh" mesh="proxy76_finger23_link_11" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                            </body>
+                            <geom name="proxy76_finger22_link_00" type="mesh" mesh="proxy76_finger22_link_00" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                          </body>
+                          <geom name="proxy76_finger21_link_00" type="mesh" mesh="proxy76_finger21_link_00" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                        </body>
+                        <body name="finger31_link" pos="-0.013501 0.0105 0.10286" quat="0.99869621095951899 0 0.051047803234809563 0">
+                          <inertial mass="0.0067141" pos="-0.0017978 3.3269E-07 0.018686" fullinertia="1.1951E-06 1.0688E-06 3.7303E-07 1.1431E-11 -4.4917E-09 8.2241E-12" />
+                          <joint name="finger31" type="hinge" pos="0 0 0" axis="0 1 0" range="0 1.396263" damping="2.0" armature="0.01" frictionloss="0" />
+                          <geom name="finger31_link_visual_0" type="mesh" mesh="finger31_link" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" rgba="1 1 1 1" />
+                          <body name="finger32_link" pos="0 0 0.035" quat="1 0 0 0">
+                            <inertial mass="0.017444" pos="-0.0021242 6.6141E-08 0.024943" fullinertia="4.1711E-06 4.1927E-06 4.4322E-07 1.8194E-11 -2.6488E-07 -1.6389E-11" />
+                            <joint name="finger32" type="hinge" pos="0 0 0" axis="0 1 0" range="0.011072 1.687426" damping="2.0" armature="0.01" frictionloss="0" />
+                            <geom name="finger32_link_visual_0" type="mesh" mesh="finger32_link" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" rgba="1 1 1 1" />
+                            <body name="finger33_link" pos="0 0 0" quat="1 0 0 0">
+                              <inertial mass="0.00083416" pos="0.0025776 -4.8031E-07 0.03447" fullinertia="1.0861E-07 9.6246E-08 2.3939E-08 1.3942E-12 -8.8309E-09 -5.9916E-13" />
+                              <geom name="finger33_link_visual_0" type="mesh" mesh="finger33_link" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" rgba="0.2 0.2 0.2 1" />
+                              <geom name="proxy76_finger33_link_00" type="mesh" mesh="proxy76_finger33_link_00" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                              <geom name="proxy76_finger33_link_01" type="mesh" mesh="proxy76_finger33_link_01" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                              <geom name="proxy76_finger33_link_02" type="mesh" mesh="proxy76_finger33_link_02" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                              <geom name="proxy76_finger33_link_03" type="mesh" mesh="proxy76_finger33_link_03" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                              <geom name="proxy76_finger33_link_04" type="mesh" mesh="proxy76_finger33_link_04" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                              <geom name="proxy76_finger33_link_05" type="mesh" mesh="proxy76_finger33_link_05" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                              <geom name="proxy76_finger33_link_06" type="mesh" mesh="proxy76_finger33_link_06" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                              <geom name="proxy76_finger33_link_07" type="mesh" mesh="proxy76_finger33_link_07" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                            </body>
+                            <geom name="proxy76_finger32_link_00" type="mesh" mesh="proxy76_finger32_link_00" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                          </body>
+                          <geom name="proxy76_finger31_link_00" type="mesh" mesh="proxy76_finger31_link_00" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                        </body>
+                        <body name="finger41_link" pos="-0.015081 -0.010971 0.10183" quat="0.99715023839905703 0.026111386467041704 0.0707542540177757 0.0018528615330230757">
+                          <inertial mass="0.006714" pos="-0.0017978 2.8835E-07 0.018686" fullinertia="1.1951E-06 1.0688E-06 3.7303E-07 1.5194E-11 -4.4902E-09 1.057E-11" />
+                          <joint name="finger41" type="hinge" pos="0 0 0" axis="0 1 0" range="0 1.396263" damping="2.0" armature="0.01" frictionloss="0" />
+                          <geom name="finger41_link_visual_0" type="mesh" mesh="finger41_link" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" rgba="1 1 1 1" />
+                          <body name="finger42_link" pos="0 0 0.035" quat="1 0 0 0">
+                            <inertial mass="0.014788" pos="-0.00099481 6.0006E-07 0.021813" fullinertia="1.4501E-06 1.4888E-06 3.6915E-07 2.324E-11 -2.1315E-07 -8.582E-11" />
+                            <joint name="finger42" type="hinge" pos="0 0 0" axis="0 1 0" range="0.011072 1.687426" damping="2.0" armature="0.01" frictionloss="0" />
+                            <geom name="finger42_link_visual_0" type="mesh" mesh="finger42_link" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" rgba="1 1 1 1" />
+                            <body name="finger43_link" pos="0 0 0" quat="1 0 0 0">
+                              <inertial mass="0.0008342" pos="0.0039336 -3.2576E-07 0.027311" fullinertia="1.0756E-07 9.6251E-08 2.4997E-08 5.2726E-13 -1.2886E-08 -6.5627E-13" />
+                              <geom name="finger43_link_visual_0" type="mesh" mesh="finger43_link" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" rgba="0.2 0.2 0.2 1" />
+                              <geom name="proxy76_finger43_link_00" type="mesh" mesh="proxy76_finger43_link_00" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                              <geom name="proxy76_finger43_link_01" type="mesh" mesh="proxy76_finger43_link_01" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                              <geom name="proxy76_finger43_link_02" type="mesh" mesh="proxy76_finger43_link_02" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                              <geom name="proxy76_finger43_link_03" type="mesh" mesh="proxy76_finger43_link_03" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                              <geom name="proxy76_finger43_link_04" type="mesh" mesh="proxy76_finger43_link_04" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                              <geom name="proxy76_finger43_link_05" type="mesh" mesh="proxy76_finger43_link_05" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                              <geom name="proxy76_finger43_link_06" type="mesh" mesh="proxy76_finger43_link_06" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                              <geom name="proxy76_finger43_link_07" type="mesh" mesh="proxy76_finger43_link_07" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                            </body>
+                            <geom name="proxy76_finger42_link_00" type="mesh" mesh="proxy76_finger42_link_00" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                          </body>
+                          <geom name="proxy76_finger41_link_00" type="mesh" mesh="proxy76_finger41_link_00" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                        </body>
+                        <body name="finger51_link" pos="-0.013081 -0.032156 0.097798" quat="0.99854635674640846 0.039232954310970194 0.036930250575102956 0.0014509710431255109">
+                          <inertial mass="0.0067142" pos="-0.0017978 4.0336E-07 0.018686" fullinertia="1.1951E-06 1.0688E-06 3.7303E-07 9.6674E-12 -4.4947E-09 3.902E-12" />
+                          <joint name="finger51" type="hinge" pos="0 0 0" axis="0 1 0" range="0 1.396263" damping="2.0" armature="0.01" frictionloss="0" />
+                          <geom name="finger51_link_visual_0" type="mesh" mesh="finger51_link" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" rgba="1 1 1 1" />
+                          <body name="finger52_link" pos="0 0 0.035" quat="1 0 0 0">
+                            <inertial mass="0.010445" pos="-0.0024432 3.1795E-07 0.016659" fullinertia="1.336E-06 1.3478E-06 2.4659E-07 2.6011E-11 -1.1818E-07 -5.5233E-12" />
+                            <joint name="finger52" type="hinge" pos="0 0 0" axis="0 1 0" range="0.011072 1.687426" damping="2.0" armature="0.01" frictionloss="0" />
+                            <geom name="finger52_link_visual_0" type="mesh" mesh="finger52_link" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" rgba="1 1 1 1" />
+                            <body name="finger53_link" pos="0 0 0" quat="1 0 0 0">
+                              <inertial mass="0.00059177" pos="0.0021833 1.5926E-06 0.02278" fullinertia="4.5328E-08 3.6598E-08 1.5894E-08 2.1034E-12 -3.5665E-09 -2.539E-12" />
+                              <geom name="finger53_link_visual_0" type="mesh" mesh="finger53_link" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" rgba="0.2 0.2 0.2 1" />
+                              <geom name="proxy76_finger53_link_00" type="mesh" mesh="proxy76_finger53_link_00" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                              <geom name="proxy76_finger53_link_01" type="mesh" mesh="proxy76_finger53_link_01" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                              <geom name="proxy76_finger53_link_02" type="mesh" mesh="proxy76_finger53_link_02" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                              <geom name="proxy76_finger53_link_03" type="mesh" mesh="proxy76_finger53_link_03" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                              <geom name="proxy76_finger53_link_04" type="mesh" mesh="proxy76_finger53_link_04" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                              <geom name="proxy76_finger53_link_05" type="mesh" mesh="proxy76_finger53_link_05" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                              <geom name="proxy76_finger53_link_06" type="mesh" mesh="proxy76_finger53_link_06" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                              <geom name="proxy76_finger53_link_07" type="mesh" mesh="proxy76_finger53_link_07" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                            </body>
+                            <geom name="proxy76_finger52_link_00" type="mesh" mesh="proxy76_finger52_link_00" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                          </body>
+                          <geom name="proxy76_finger51_link_00" type="mesh" mesh="proxy76_finger51_link_00" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                        </body>
+                        <body name="eef" pos="0 0 0" quat="1 0 0 0">
+                          <inertial mass="0" pos="0 0 0" quat="1 0 0 0" diaginertia="0 0 0" />
+                          <site name="grip_site" pos="0 0 0" size="0.001" rgba="0 0 0 0" group="1" />
+                          <site name="grip_site_cylinder" pos="0 0 0" size="0.001" rgba="0 0 0 0" group="1" />
+                          <site name="ft_frame" pos="0 0 0" size="0.001" rgba="0 0 0 0" group="1" />
+                        </body>
+                        <geom name="proxy76_base_link_00" type="mesh" mesh="proxy76_base_link_00" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                        <geom name="proxy76_base_link_01" type="mesh" mesh="proxy76_base_link_01" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                        <geom name="proxy76_base_link_02" type="mesh" mesh="proxy76_base_link_02" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                        <geom name="proxy76_base_link_03" type="mesh" mesh="proxy76_base_link_03" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                        <geom name="proxy76_base_link_04" type="mesh" mesh="proxy76_base_link_04" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                        <geom name="proxy76_base_link_05" type="mesh" mesh="proxy76_base_link_05" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                        <geom name="proxy76_base_link_06" type="mesh" mesh="proxy76_base_link_06" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                        <geom name="proxy76_base_link_07" type="mesh" mesh="proxy76_base_link_07" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                        <geom name="proxy76_base_link_08" type="mesh" mesh="proxy76_base_link_08" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                        <geom name="proxy76_base_link_09" type="mesh" mesh="proxy76_base_link_09" group="0" contype="1" conaffinity="1" rgba="0 0 0.5 1" pos="0 0 0" quat="1 0 0 0" condim="4" friction="1.0 0.005 0.001" />
+                      </body>
+                      </worldbody><actuator><position name="urdf_act_finger11" joint="finger11" ctrllimited="true" ctrlrange="0 1.047198" kp="50" kv="2.0" />
+    <position name="urdf_act_finger12" joint="finger12" ctrllimited="true" ctrlrange="0 0.523599" kp="50" kv="2.0" />
+    <position name="urdf_act_finger21" joint="finger21" ctrllimited="true" ctrlrange="0 1.396263" kp="50" kv="2.0" />
+    <position name="urdf_act_finger31" joint="finger31" ctrllimited="true" ctrlrange="0 1.396263" kp="50" kv="2.0" />
+    <position name="urdf_act_finger41" joint="finger41" ctrllimited="true" ctrlrange="0 1.396263" kp="50" kv="2.0" />
+    <position name="urdf_act_finger51" joint="finger51" ctrllimited="true" ctrlrange="0 1.396263" kp="50" kv="2.0" />
+  </actuator><equality><joint name="urdf_mimic_finger13" joint1="finger13" joint2="finger12" polycoef="0.004592 0.8808 0 0 0" solref="0.004 1" solimp="0.9 0.99 0.001 0.5 2" />
+    <joint name="urdf_mimic_finger22" joint1="finger22" joint2="finger21" polycoef="0.011072 0.9206 0 0 0" solref="0.004 1" solimp="0.9 0.99 0.001 0.5 2" />
+    <joint name="urdf_mimic_finger32" joint1="finger32" joint2="finger31" polycoef="0.011072 0.9206 0 0 0" solref="0.004 1" solimp="0.9 0.99 0.001 0.5 2" />
+    <joint name="urdf_mimic_finger42" joint1="finger42" joint2="finger41" polycoef="0.011072 0.9206 0 0 0" solref="0.004 1" solimp="0.9 0.99 0.001 0.5 2" />
+    <joint name="urdf_mimic_finger52" joint1="finger52" joint2="finger51" polycoef="0.011072 0.9206 0 0 0" solref="0.004 1" solimp="0.9 0.99 0.001 0.5 2" />
+  </equality><sensor><force name="force_ee" site="ft_frame" />
+    <torque name="torque_ee" site="ft_frame" />
+  </sensor><contact /></mujoco>

@@ -1,0 +1,12 @@
+{
+  "unchanged_physical_stop_statements": 7,
+  "support_and_opposition_AST_identical": true,
+  "old_270_schedule_exact": true,
+  "preflight_gate_validated": true,
+  "robot_model_sha256": "9604a4a6935a34496f93e223219f687b4df8b7aa83037dc208fc9f3499eb05c9",
+  "source_sha256": {
+    "examples/right_hand/white_bowl_run.py": "c518aa6b1df4c3725b3c568a21528d23a295753762619295c6cb608ec819b990",
+    "examples/right_hand/wrist_conditional.py": "c6118daa9d14a97a94c4f6025368f4dae443f78454820777395235e2dd0e402c",
+    "examples/right_hand/wrist_external_preflight.py": "5e2acb678fcd2922400e7f1fc2197df02040b0e53e97e1092f5bbd3feb98fa6b"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "candidate_id": "right_white_bowl_001",
+  "A": "PASS_FINITE_SAMPLED_INTERNAL_GEOMETRY_ONLY",
+  "B": "NOT_RUN",
+  "execution": "SETUP_OR_RECORDING_ERROR",
+  "physics_steps": 0,
+  "completed_commands": 0,
+  "native_task_result": null,
+  "strict_grasp_success_claim": false,
+  "formal_model": null,
+  "model_modified": false,
+  "original_7000_step_result": "FAIL (unchanged)",
+  "dynamic_attempts": 0,
+  "grasp_result": "UNKNOWN",
+  "control_health": "UNKNOWN",
+  "robot_model": "examples/right_hand/candidates/wrist_reuse/model.xml",
+  "experiment": "approved_wrist_conditional_once",
+  "authorization": "https://github.com/LeoandDream/Nero_DH116_assets/pull/4#issuecomment-6269815750",
+  "planned_commands": 270,
+  "planned_physics_steps": 6750,
+  "external_preflight": "PASS_FINITE_SAMPLES_REFERENCE_SCENE_ONLY",
+  "error": "Traceback (most recent call last):\n  File \"/data_robot/verification/nero_dh116_right/examples/right_hand/white_bowl_run.py\", line 245, in execute\n    comparison = reuse.compiled_audit(original_compiled, model,\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data_robot/verification/nero_dh116_right/examples/right_hand/wrist_reuse.py\", line 269, in compiled_audit\n    raise ValueError('Unexpected compiled changes: '+str(changed[:30]))\nValueError: Unexpected compiled changes: ['body_pos', 'body_quat']\n",
+  "counts": {
+    "mj_step": 0,
+    "mj_step1_nonintegrating": 2,
+    "mj_forward_nonintegrating": 6,
+    "mj_step2": 0,
+    "constructor": 1,
+    "explicit_native_reset": 1
+  }
+}

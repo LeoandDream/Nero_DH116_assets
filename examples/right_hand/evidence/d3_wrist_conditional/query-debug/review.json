@@ -1,0 +1,65 @@
+{
+  "records": [
+    {
+      "pose_index_one_based": 1,
+      "geoms": [
+        "robot0_wrist_reuse_link5_008",
+        "gripper0_proxy76_base_link_06"
+      ],
+      "full_compiled_geometry_projection": {
+        "classification": "CERTIFIED_CONVEX_SOLIDS_SEPARATED",
+        "separation_lower_bound_m": 0.004411421210681596,
+        "tested_axis_count": 232,
+        "axis_body5": [
+          0.0161298120456893,
+          -0.9959009181724927,
+          0.08900106935625418
+        ],
+        "first_support_max_m": 0.027588578120439404,
+        "second_support_min_m": 0.031999999331121,
+        "first_support_vertex_local_index": 22,
+        "second_support_vertex_local_index": 55,
+        "positive_separation_threshold_m": 1e-10
+      },
+      "distance_query_by_cutoff_m": {
+        "0.001": 0.001,
+        "0.01": 0.004411469240733615,
+        "0.1": -0.011822467838646461,
+        "1.0": -0.013232938014075435,
+        "10.0": -0.013381231550646078
+      }
+    },
+    {
+      "pose_index_one_based": 355,
+      "geoms": [
+        "robot0_wrist_reuse_link5_132",
+        "robot0_candidate_nero_link7_0"
+      ],
+      "full_compiled_geometry_projection": {
+        "classification": "CERTIFIED_CONVEX_SOLIDS_SEPARATED",
+        "separation_lower_bound_m": 0.012014402103561896,
+        "tested_axis_count": 523,
+        "axis_body5": [
+          -0.6850103161531395,
+          -0.005462953740001112,
+          0.7285128845121482
+        ],
+        "first_support_max_m": -0.037438723731578236,
+        "second_support_min_m": -0.02542432162801634,
+        "first_support_vertex_local_index": 103,
+        "second_support_vertex_local_index": 69,
+        "positive_separation_threshold_m": 1e-10
+      },
+      "AABB_lower_bound_m": 9.107323006851686e-09
+    }
+  ],
+  "scope": "Two offline saved-pose query diagnostics only; no model or tolerance change.",
+  "conclusion": "Large inflated-margin native MPR query can have a wrong sign for these small convex pieces. Final preflight uses complete compiled-hull projection/verified LP certificates instead. The 9.107nm AABB lower bound is not a measured physical clearance: full hull projection for that pair certifies 12.014mm.",
+  "official_sources": [
+    "https://raw.githubusercontent.com/google-deepmind/mujoco/3.2.3/src/engine/engine_support.c",
+    "https://raw.githubusercontent.com/google-deepmind/mujoco/3.2.3/src/engine/engine_collision_convex.c"
+  ],
+  "precision_threshold_m_unchanged": 1e-10,
+  "physics_steps": 0,
+  "numeric_FAIL_reclassified": false
+}

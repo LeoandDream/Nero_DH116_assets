@@ -1,0 +1,11 @@
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /data_robot/verification/nero_dh116_right/.reference-env/lib/python3.11/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+Traceback (most recent call last):
+  File "/data_robot/verification/nero_dh116_right/examples/right_hand/white_bowl_run.py", line 245, in execute
+    comparison = reuse.compiled_audit(original_compiled, model,
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data_robot/verification/nero_dh116_right/examples/right_hand/wrist_reuse.py", line 269, in compiled_audit
+    raise ValueError('Unexpected compiled changes: '+str(changed[:30]))
+ValueError: Unexpected compiled changes: ['body_pos', 'body_quat']
+
