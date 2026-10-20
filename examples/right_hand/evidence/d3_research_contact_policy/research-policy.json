@@ -1,0 +1,145 @@
+{
+  "version": "DH116_RESEARCH_CONTACT_V1",
+  "status": "RESEARCH_ONLY_NOT_APPROVED",
+  "base_commit": "54b5a480221b8f86c15d33dbe84bad397e960f3a",
+  "task": "https://github.com/LeoandDream/Nero_DH116_assets/pull/4#issuecomment-6291982663",
+  "designed_and_frozen_utc": "2026-10-20T13:52:45.788799+00:00",
+  "design_order": "Constants frozen before this task first evaluates contact-series outcomes. Historical 4769 result was already known: post-hoc design, not independent prospective validation. No rule selected from sensitivity results.",
+  "scope": {
+    "target_body": "white_bowl_1_main",
+    "hand_bodies": [
+      "gripper0_base_link",
+      "gripper0_eef",
+      "gripper0_finger11_link",
+      "gripper0_finger12_link",
+      "gripper0_finger13_link",
+      "gripper0_finger14_link",
+      "gripper0_finger21_link",
+      "gripper0_finger22_link",
+      "gripper0_finger23_link",
+      "gripper0_finger31_link",
+      "gripper0_finger32_link",
+      "gripper0_finger33_link",
+      "gripper0_finger41_link",
+      "gripper0_finger42_link",
+      "gripper0_finger43_link",
+      "gripper0_finger51_link",
+      "gripper0_finger52_link",
+      "gripper0_finger53_link"
+    ],
+    "phases": [
+      "close",
+      "lift",
+      "hold"
+    ],
+    "eligibility": "Use original recorded filter_reasons==[]; do not resimulate or alter collision qualification. All other robot contacts retain original 2mm immediate stop.",
+    "tracking": [
+      "unordered_geom_pair",
+      "unordered_body_pair"
+    ],
+    "aggregation": "depth=max(0,-dist), normal_force=sum(max(force_contact_frame[0],0)) over all native contact points once per group; scalar load, not net wrench."
+  },
+  "scales": {
+    "dt_s": 0.002,
+    "hand_body_mass_kg": {
+      "gripper0_base_link": 0.10866,
+      "gripper0_finger11_link": 0.010254,
+      "gripper0_finger12_link": 0.010145,
+      "gripper0_finger13_link": 0.020548,
+      "gripper0_finger14_link": 0.00064654,
+      "gripper0_finger21_link": 0.0067143,
+      "gripper0_finger22_link": 0.014789,
+      "gripper0_finger23_link": 0.00083419,
+      "gripper0_finger31_link": 0.0067141,
+      "gripper0_finger32_link": 0.017444,
+      "gripper0_finger33_link": 0.00083416,
+      "gripper0_finger41_link": 0.006714,
+      "gripper0_finger42_link": 0.014788,
+      "gripper0_finger43_link": 0.0008342,
+      "gripper0_finger51_link": 0.0067142,
+      "gripper0_finger52_link": 0.010445,
+      "gripper0_finger53_link": 0.00059177,
+      "gripper0_eef": 0.0
+    },
+    "hand_mass_kg": 0.23767046,
+    "gravity_m_s2": 9.81,
+    "force_reference_N": 2.3315472126000003,
+    "mixed_solref_timeconst_s": 0.0105,
+    "hand_solref_s": 0.02,
+    "bowl_solref_s": 0.001,
+    "meaning": "F_ref=m_hand*|g| is a transparent simulation load scale, not a force capacity, bowl damage limit or calibrated safety bound. tau is a solver reference time scale affected by impedance, not an actual settling guarantee."
+  },
+  "thresholds": {
+    "depth_warning_gt_m": 0.002,
+    "short_timeconst_multiple": 1,
+    "long_timeconst_multiple": 3,
+    "short_intervals": 6,
+    "long_intervals": 16,
+    "short_observed_span_s": 0.012,
+    "long_observed_span_s": 0.032,
+    "force_warning_multiple": 1,
+    "force_window_mean_multiple": 3,
+    "force_immediate_multiple": 10
+  },
+  "warning_rules": [
+    "Any in-scope depth>2mm: MPR_DEPTH_WARNING.",
+    "Any in-scope aggregate Fn>=F_ref: SAMPLED_LOAD_WARNING."
+  ],
+  "immediate_stop_rules": [
+    "All original independent state/control/limit/Mimic/warning/clock/wrist/path-envelope protections remain unchanged.",
+    "Any out-of-scope eligible robot contact depth>2mm retains ROBOT_CONTACT_OVERLAP.",
+    "Any in-scope geom/body aggregate Fn>=10*F_ref: SAMPLED_LOAD_EXTREME.",
+    "Missing, duplicate or malformed samples/identity/timing or nonfinite contact data: LOG_INVALID_UNKNOWN."
+  ],
+  "persistent_stop_rules": [
+    "DEEP_CONTACT_PERSISTENT: depth>2mm at every consecutive cached observation for observed span>=ceil(3*tau/dt)*dt, regardless of force.",
+    "LOADED_DEPTH_GROWTH: depth>2mm at every observation for span>=ceil(tau/dt)*dt, short-window trapezoidal sampled Fn exposure>=F_ref*short_span, AND depth_end>depth_start over that same short window.",
+    "SAMPLED_LOAD_EXPOSURE: full long-window trapezoidal sampled Fn exposure>=3*F_ref*long_span, regardless of depth; absent contact at an observed frame contributes measured-zero force and resets depth persistence, but does not erase previous rolling load history."
+  ],
+  "time_semantics": "Duration is (last_step-first_step)*dt, requiring 7 samples for12ms and17 for32ms. This certifies sampled persistence only; substep/inter-sample gaps and force peaks are unobserved. Force-time is trapezoidal on final RK4-stage samples; actual integrated constraint impulse UNKNOWN, no full-stage reconstruction.",
+  "constant_rationale": "Original2mm is unchanged as the warning and persistence boundary. 1 and3 nominal time constants distinguish a transient observation from unresolved contact, rounded upward to whole sample intervals. Load factors1/3/10 are explicit uncalibrated research runtime insurance levels around the frozen whole-hand gravity scale; not manufacturer limits, not fitted to step4769, no physical safety claim.",
+  "sensitivity": {
+    "type": "one_factor_offline_only_not_alternate_recommendations",
+    "variants": [
+      {
+        "name": "long_2tau",
+        "long_timeconst_multiple": 2
+      },
+      {
+        "name": "long_4tau",
+        "long_timeconst_multiple": 4
+      },
+      {
+        "name": "load_half",
+        "force_scale_factor": 0.5
+      },
+      {
+        "name": "load_double",
+        "force_scale_factor": 2.0
+      }
+    ]
+  },
+  "history": {
+    "legacy_2mm_stop": "FAIL_AT4769_UNCHANGED",
+    "formal_numeric": "FAIL_UNCHANGED_1e-10m",
+    "grasp_after4769": "UNKNOWN_NO_REAL_TRAJECTORY",
+    "prior_compiler_self_test_deviation": "FAIL_UNCHANGED_SEE_FROZEN_DISCLOSURE"
+  },
+  "not_authorized": [
+    "MuJoCo import/compile/Reset/forward/step/solver",
+    "online runner changes",
+    "model/geometry/control/filter/criteria changes",
+    "new physics or continuation beyond saved4769"
+  ],
+  "input_sha256": {
+    "examples/right_hand/evidence/d3_finger22_exploratory/run/state.jsonl.gz": "e02535e6ade6092e0328a8147cd471040fd1ae01de9f46aed291d3523949fe3a",
+    "examples/right_hand/evidence/d3_finger22_exploratory/run/contacts.jsonl.gz": "f48ae08657831661c6880891e3220754feedb954067f3202dc476509d1468040",
+    "examples/right_hand/evidence/d3_finger22_exploratory/run/frozen-before-first-step.json": "d05f6aa6a120547cf7149f649a8ecf8f2ffe25c6fa04b658aa48bee0e711ea0a",
+    "examples/right_hand/evidence/d3_finger22_exploratory/run/robot-physical-preflight.json.gz": "892234b2f623dae5801d17a3675c0b25e9cd0f98636b7f95199b0f4a3cd5230a",
+    "examples/right_hand/evidence/d3_finger22_exploratory/run/schedule.json": "4fcb72c06028ba405122c808d8ec90486f022199e1c01904d65b034c18be0b81",
+    "examples/right_hand/evidence/d3_finger22_exploratory/run/result.json": "2615e9d37101d80a0f5d6f8e5dc9928bf116990b495db66b30e38a186b73504c",
+    "examples/right_hand/evidence/d3_finger23_contact_diagnostic/geometry.json.gz": "040c9e9700556e259a4f6197d129f385eea02a9d0b0f9beb2d901e851b970f0a",
+    "examples/right_hand/evidence/d3_finger23_contact_diagnostic/extraction-disclosure.json": "ffccfcb0a98fd184253a2a75901c32c1a00ade790a31ec9f84d4cb576a535513"
+  },
+  "primary_time_scale_reference": "https://mujoco.readthedocs.io/en/3.2.3/modeling.html#solver-parameters"
+}
