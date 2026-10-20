@@ -1,0 +1,46 @@
+{
+  "status": "EXECUTION_CONSTRAINT_VIOLATED_COMPILER_INTERNAL_SELF_TEST",
+  "scope": "Three successful MjModel.from_xml_string extraction calls occurred before discovering internal native self-tests. No new LIBERO rollout or saved-cache integration was run.",
+  "successful_model_compilations": 3,
+  "compiler_mj_step_calls_inferred_from_pinned_source": 3,
+  "compiler_mj_step_calls_instrumented_natively": false,
+  "native_internal_behavior": "MuJoCo 3.2.3 compiles with CONTACT disabled, calls mj_resetData and mj_setConst/kinematics, and invokes mj_step once per successful compilation. Default MUSCLE-only length-range mode excludes the model's 7 motor / 6 position actuators, so no extra length-range simulation is expected.",
+  "previous_zero_counter": "Python guard did not intercept native compiler calls. It cannot certify task-wide zero mj_step; obsolete counter in geometry.json.gz is explicitly invalidated.",
+  "corrective_action": "Stopped all model compilation and native API use. Delivered diagnose.py rechecks exported vertices, historical support SHA, original RK4 records and exact arithmetic without importing MuJoCo. Ignored original extraction outputs are retained locally.",
+  "saved_cache_or_model_mutated": false,
+  "physics_thresholds_or_old_results_changed": false,
+  "compiler_sources": [
+    "https://github.com/google-deepmind/mujoco/blob/3.2.3/src/user/user_model.cc#L3736-L3791",
+    "https://github.com/google-deepmind/mujoco/blob/3.2.3/src/engine/engine_setconst.c#L78-L97",
+    "https://github.com/google-deepmind/mujoco/blob/3.2.3/src/engine/engine_io.c#L67-L81",
+    "https://github.com/google-deepmind/mujoco/blob/3.2.3/src/engine/engine_setconst.c#L555-L618"
+  ],
+  "extractions": [
+    {
+      "local_output": "runs/finger23_contact_diagnostic_001/geometry.json.gz",
+      "original_output_sha256": "6ddc82b13ec13d7f73b3f110f1a11c9bf592eb9fbdedba2bd74321b159c7987e",
+      "executed_prototype_sha256": "161a221e5a997f52e5b091500e4b0038b8dc7593eb0b129cebef5d2a6d3524a9",
+      "successful_model_compilations": 1,
+      "python_guard_native_steps_observed": 0,
+      "python_guard_does_not_cover_compiler_native_calls": true
+    },
+    {
+      "local_output": "runs/finger23_contact_diagnostic_002/geometry.json.gz",
+      "original_output_sha256": "a4db1d4ebf82b6f4c58933a6406173988f3309c278446ae226ec409fa9114264",
+      "executed_prototype_sha256": "43f39e79649677309cf94b524ee2c424eb8a0ce535f5747eb257b3476a4b8e09",
+      "successful_model_compilations": 1,
+      "python_guard_native_steps_observed": 0,
+      "python_guard_does_not_cover_compiler_native_calls": true
+    },
+    {
+      "local_output": "runs/finger23_contact_diagnostic_003/geometry.json.gz",
+      "original_output_sha256": "e4fc64560cb05854eee01072d300d9f238eccc761ebb8d5746d70d182fa77da8",
+      "executed_prototype_sha256": "97f398a26d20c5860463ee20919d84758a06e38efa14d72f96fec3e29fd4ac84",
+      "successful_model_compilations": 1,
+      "python_guard_native_steps_observed": 0,
+      "python_guard_does_not_cover_compiler_native_calls": true
+    }
+  ],
+  "formal_task_zero_new_mj_step_requirement": "FAIL; cannot report complete execution-constraint compliance",
+  "geometric_evidence_scope": "Offline conclusions use only original saved RK4 poses and exported geometry; no new simulated poses or controller state used."
+}

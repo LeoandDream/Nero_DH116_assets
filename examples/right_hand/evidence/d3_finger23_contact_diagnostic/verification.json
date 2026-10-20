@@ -1,0 +1,250 @@
+{
+  "status": "OFFLINE_GEOMETRY_RECHECK_PASS",
+  "saved_steps": [
+    4768,
+    4769
+  ],
+  "surface_crossing_certificates": 16,
+  "results": [
+    {
+      "step": 4768,
+      "box": "white_bowl_1_g22",
+      "surfaces": {
+        "manufacturer": {
+          "minimum_surface_distance_m": 0.0,
+          "exact_crossing": true,
+          "original_face_ids_zero_based": [
+            5307,
+            3
+          ]
+        },
+        "delivery_raw": {
+          "minimum_surface_distance_m": 0.0,
+          "exact_crossing": true,
+          "original_face_ids_zero_based": [
+            3207,
+            3
+          ]
+        },
+        "proxy_raw": {
+          "minimum_surface_distance_m": 0.0,
+          "exact_crossing": true,
+          "original_face_ids_zero_based": [
+            151,
+            3
+          ]
+        },
+        "proxy_compiled": {
+          "minimum_surface_distance_m": 0.0,
+          "exact_crossing": true,
+          "original_face_ids_zero_based": [
+            110,
+            3
+          ]
+        }
+      },
+      "convex_translation_upper_bound_m": 0.0018578831919321558,
+      "exact_support_separation_verified": true,
+      "source_boundary_point_inside_box_clearance_m": 0.00037167525146211206,
+      "compiled_boundary_patch_count": 21
+    },
+    {
+      "step": 4768,
+      "box": "white_bowl_1_g23",
+      "surfaces": {
+        "manufacturer": {
+          "minimum_surface_distance_m": 0.0,
+          "exact_crossing": true,
+          "original_face_ids_zero_based": [
+            5327,
+            7
+          ]
+        },
+        "delivery_raw": {
+          "minimum_surface_distance_m": 0.0,
+          "exact_crossing": true,
+          "original_face_ids_zero_based": [
+            4992,
+            8
+          ]
+        },
+        "proxy_raw": {
+          "minimum_surface_distance_m": 0.0,
+          "exact_crossing": true,
+          "original_face_ids_zero_based": [
+            29,
+            8
+          ]
+        },
+        "proxy_compiled": {
+          "minimum_surface_distance_m": 0.0,
+          "exact_crossing": true,
+          "original_face_ids_zero_based": [
+            41,
+            8
+          ]
+        }
+      },
+      "convex_translation_upper_bound_m": 0.001758616012702166,
+      "exact_support_separation_verified": true,
+      "source_boundary_point_inside_box_clearance_m": 0.000426490975200837,
+      "compiled_boundary_patch_count": 14
+    },
+    {
+      "step": 4769,
+      "box": "white_bowl_1_g22",
+      "surfaces": {
+        "manufacturer": {
+          "minimum_surface_distance_m": 0.0,
+          "exact_crossing": true,
+          "original_face_ids_zero_based": [
+            5307,
+            6
+          ]
+        },
+        "delivery_raw": {
+          "minimum_surface_distance_m": 0.0,
+          "exact_crossing": true,
+          "original_face_ids_zero_based": [
+            3207,
+            6
+          ]
+        },
+        "proxy_raw": {
+          "minimum_surface_distance_m": 0.0,
+          "exact_crossing": true,
+          "original_face_ids_zero_based": [
+            151,
+            6
+          ]
+        },
+        "proxy_compiled": {
+          "minimum_surface_distance_m": 0.0,
+          "exact_crossing": true,
+          "original_face_ids_zero_based": [
+            110,
+            6
+          ]
+        }
+      },
+      "convex_translation_upper_bound_m": 0.0018773719247401905,
+      "exact_support_separation_verified": true,
+      "source_boundary_point_inside_box_clearance_m": 0.0003760634283817387,
+      "compiled_boundary_patch_count": 21
+    },
+    {
+      "step": 4769,
+      "box": "white_bowl_1_g23",
+      "surfaces": {
+        "manufacturer": {
+          "minimum_surface_distance_m": 0.0,
+          "exact_crossing": true,
+          "original_face_ids_zero_based": [
+            5327,
+            3
+          ]
+        },
+        "delivery_raw": {
+          "minimum_surface_distance_m": 0.0,
+          "exact_crossing": true,
+          "original_face_ids_zero_based": [
+            4992,
+            7
+          ]
+        },
+        "proxy_raw": {
+          "minimum_surface_distance_m": 0.0,
+          "exact_crossing": true,
+          "original_face_ids_zero_based": [
+            29,
+            7
+          ]
+        },
+        "proxy_compiled": {
+          "minimum_surface_distance_m": 0.0,
+          "exact_crossing": true,
+          "original_face_ids_zero_based": [
+            41,
+            7
+          ]
+        }
+      },
+      "convex_translation_upper_bound_m": 0.0017775614960176733,
+      "exact_support_separation_verified": true,
+      "source_boundary_point_inside_box_clearance_m": 0.0004345644688714081,
+      "compiled_boundary_patch_count": 14
+    }
+  ],
+  "historical_compiled_support_vertices_sha256": "b9a5625563c077f12b2494a22f88fdc0a8b1899d5eac6f4d16cd80dfff1ee737",
+  "historical_compiled_graph_face_ids_sha256": "20fbaa98a312d712b6c33adae730e7155d7432a22ff3e721cc2aac88aedaf1a3",
+  "raw_compiled_convex_Hausdorff_upper_bound_m": 8.615556039156856e-10,
+  "raw_compiled_bound_scope": "Float64 matching-distance estimate, without outward rounding; not a formal 0.1 nm acceptance certificate.",
+  "mujoco_imported_in_this_recheck": false,
+  "this_entry_model_compilations_or_native_API_calls": 0,
+  "task_wide_execution_deviation": {
+    "status": "EXECUTION_CONSTRAINT_VIOLATED_COMPILER_INTERNAL_SELF_TEST",
+    "scope": "Three successful MjModel.from_xml_string extraction calls occurred before discovering internal native self-tests. No new LIBERO rollout or saved-cache integration was run.",
+    "successful_model_compilations": 3,
+    "compiler_mj_step_calls_inferred_from_pinned_source": 3,
+    "compiler_mj_step_calls_instrumented_natively": false,
+    "native_internal_behavior": "MuJoCo 3.2.3 compiles with CONTACT disabled, calls mj_resetData and mj_setConst/kinematics, and invokes mj_step once per successful compilation. Default MUSCLE-only length-range mode excludes the model's 7 motor / 6 position actuators, so no extra length-range simulation is expected.",
+    "previous_zero_counter": "Python guard did not intercept native compiler calls. It cannot certify task-wide zero mj_step; obsolete counter in geometry.json.gz is explicitly invalidated.",
+    "corrective_action": "Stopped all model compilation and native API use. Delivered diagnose.py rechecks exported vertices, historical support SHA, original RK4 records and exact arithmetic without importing MuJoCo. Ignored original extraction outputs are retained locally.",
+    "saved_cache_or_model_mutated": false,
+    "physics_thresholds_or_old_results_changed": false,
+    "compiler_sources": [
+      "https://github.com/google-deepmind/mujoco/blob/3.2.3/src/user/user_model.cc#L3736-L3791",
+      "https://github.com/google-deepmind/mujoco/blob/3.2.3/src/engine/engine_setconst.c#L78-L97",
+      "https://github.com/google-deepmind/mujoco/blob/3.2.3/src/engine/engine_io.c#L67-L81",
+      "https://github.com/google-deepmind/mujoco/blob/3.2.3/src/engine/engine_setconst.c#L555-L618"
+    ],
+    "extractions": [
+      {
+        "local_output": "runs/finger23_contact_diagnostic_001/geometry.json.gz",
+        "original_output_sha256": "6ddc82b13ec13d7f73b3f110f1a11c9bf592eb9fbdedba2bd74321b159c7987e",
+        "executed_prototype_sha256": "161a221e5a997f52e5b091500e4b0038b8dc7593eb0b129cebef5d2a6d3524a9",
+        "successful_model_compilations": 1,
+        "python_guard_native_steps_observed": 0,
+        "python_guard_does_not_cover_compiler_native_calls": true
+      },
+      {
+        "local_output": "runs/finger23_contact_diagnostic_002/geometry.json.gz",
+        "original_output_sha256": "a4db1d4ebf82b6f4c58933a6406173988f3309c278446ae226ec409fa9114264",
+        "executed_prototype_sha256": "43f39e79649677309cf94b524ee2c424eb8a0ce535f5747eb257b3476a4b8e09",
+        "successful_model_compilations": 1,
+        "python_guard_native_steps_observed": 0,
+        "python_guard_does_not_cover_compiler_native_calls": true
+      },
+      {
+        "local_output": "runs/finger23_contact_diagnostic_003/geometry.json.gz",
+        "original_output_sha256": "e4fc64560cb05854eee01072d300d9f238eccc761ebb8d5746d70d182fa77da8",
+        "executed_prototype_sha256": "97f398a26d20c5860463ee20919d84758a06e38efa14d72f96fec3e29fd4ac84",
+        "successful_model_compilations": 1,
+        "python_guard_native_steps_observed": 0,
+        "python_guard_does_not_cover_compiler_native_calls": true
+      }
+    ],
+    "formal_task_zero_new_mj_step_requirement": "FAIL; cannot report complete execution-constraint compliance",
+    "geometric_evidence_scope": "Offline conclusions use only original saved RK4 poses and exported geometry; no new simulated poses or controller state used."
+  },
+  "source_code_sha256": {
+    "examples/right_hand/evidence/d3_finger23_contact_diagnostic/diagnose.py": "d9f1918c065c9b2924b9747de49269281e562d2b7f077882e4a7a75f33c17a09",
+    "examples/right_hand/finger22_contact_regions.py": "2b7a339540e1bd22ea0a6f3af794d7263b708953c3eb59bf6f91860410e10c51",
+    "examples/right_hand/proxy76_geometry.py": "5c284fe872519406007bbab1fcf3d5b8b167ec9a377585f79e66a1b559170341",
+    "tools/build_right_proxy76.py": "ef858f59bf57b73657f27ed50e623ba361ae30bee588c9be46d7f88b53bf025c",
+    "examples/right_hand/evidence/d3_geometry/triangle/surface_geometry.py": "21b91daa9ccfc7ddedc91ca4a95eb3f2f1b72b720a5619b2bb59144f39de71de",
+    "examples/right_hand/evidence/d3_geometry/triangle/enrich_results.py": "7dbf4faf00e92ab8add608c6d8aa8c5b3611f1655293591541000038a8fc6629"
+  },
+  "evidence_sha256": {
+    "geometry.json.gz": "040c9e9700556e259a4f6197d129f385eea02a9d0b0f9beb2d901e851b970f0a",
+    "extraction-disclosure.json": "ffccfcb0a98fd184253a2a75901c32c1a00ade790a31ec9f84d4cb576a535513"
+  },
+  "preservation_check": {
+    "baseline": "f0b37997e38ed34c46a3dd7f223168eff2d3126b",
+    "existing_tracked_files": 1206,
+    "changed_existing_tracked_files": [],
+    "user_readme_sha256": "d68ec6d62a6f42b8c1636ad2774c8329073d973c2621cc7fe148c8c8c89d8f25",
+    "user_readme_unchanged": true,
+    "main_checkout_head": "9f4054f6197ecb1127202cee14cd75c3924a47e3"
+  }
+}
