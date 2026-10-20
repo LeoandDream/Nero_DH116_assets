@@ -1,0 +1,146 @@
+{
+  "schema": "nero-dh116-close149-runtime-file-preflight-v1",
+  "recorded_utc": "2026-10-20T16:32:23.832813+00:00",
+  "scope": "Read-only runtime and duplicate-attempt inspection only; one report written to /tmp. No native imports, model, render context, reset, forward, or step.",
+  "checkout": {
+    "path": "/data_robot/projects/.worktrees/nero_dh116_finger22_risk_review",
+    "head": "c9de3e45e1f4dbccb7e8ebf659e5102aaec328ea"
+  },
+  "authorization_reference": "https://github.com/LeoandDream/Nero_DH116_assets/issues/5#issuecomment-6295728385",
+  "authorized_candidate": {
+    "name": "close_end_source_macro149",
+    "expected_spec_sha256": "ebf188b0bf49ad3b74a042c52b5fa4ad5df02dcb8f84caea565fcdaf9fdc7e32",
+    "schedule_transform": "old[:190] + old[200:]; renumber macros; for rows from new190 onward lock action_13[7:] and target_qpos_18[7:] to old189; preserve original lift/hold arm trajectory",
+    "macro_count": 260,
+    "maximum_physics_steps": 6500,
+    "attempt_budget": 1,
+    "automatic_retries": 0,
+    "spec_bytes_validation": "Parent task responsibility; this runtime-only preflight does not claim to have validated or generated candidate spec bytes."
+  },
+  "previous_issue5_run": {
+    "baseline": "85a265ac96f0be141f82d10667b9ea8e8ce02e99",
+    "started_utc": "2026-10-20T14:42:35.136934+00:00",
+    "ended_utc": "2026-10-20T14:43:28.973962+00:00",
+    "actual_process_exit_code": 2,
+    "physics_steps": 4775,
+    "execution": "STOPPED_AT_FIRST_FAILURE",
+    "native_task_result": false,
+    "first_failure": {
+      "step": 4775,
+      "macro": 190,
+      "source_macro": 150,
+      "repeat_index": 0,
+      "phase": "close",
+      "reasons": [
+        "LOADED_DEPTH_GROWTH"
+      ]
+    }
+  },
+  "previous_issue5_run_is_distinct_from_new_candidate": true,
+  "duplicate_attempt_inspection": {
+    "planned_parent": "/data_robot/verification/nero_dh116_right/runs/issue5_close149",
+    "planned_output": "/data_robot/verification/nero_dh116_right/runs/issue5_close149/close149_once",
+    "planned_parent_exists": false,
+    "planned_output_exists": false,
+    "claim_execution_record_files_checked": [
+      "/data_robot/verification/nero_dh116_right/runs/d3_bowl78_launch_001/execution.json",
+      "/data_robot/verification/nero_dh116_right/runs/d3_finger22_exploratory_once/attempt-claim.json",
+      "/data_robot/verification/nero_dh116_right/runs/d3_internal_filtered_001/execution.json",
+      "/data_robot/verification/nero_dh116_right/runs/d3_internal_preflight_001/execution.json",
+      "/data_robot/verification/nero_dh116_right/runs/d3_thumb_lambda1_001/execution.json",
+      "/data_robot/verification/nero_dh116_right/runs/issue5/execution-claim.json",
+      "/data_robot/verification/nero_dh116_right/runs/issue5/execution.json",
+      "/data_robot/verification/nero_dh116_right/runs/issue5/right_research_once/attempt-claim.json",
+      "/data_robot/verification/nero_dh116_right/runs/right-hand-acceptance/execution.json"
+    ],
+    "candidate_matches": [],
+    "active_related_native_launcher_processes": [],
+    "result": "NO_SAVED_OR_ACTIVE_NEW_CANDIDATE_ATTEMPT_FOUND"
+  },
+  "reused_historical_file_preflight": {
+    "path": "/data_robot/projects/.worktrees/nero_dh116_finger22_risk_review/examples/libero_eval/evidence/runtime-preflight.json",
+    "sha256": "7d3ea501b2171f77c21e7028813fdd6381c1966deb675374132860148f6b8712",
+    "recorded_utc": "2026-10-20T14:36:11.333414+00:00",
+    "full_frozen_resource_or_geometry_rescan_executed": false,
+    "reused_historical_package_file_and_resource_checks": "57 locked versions, 1116 LIBERO source files, stock robosuite/mujoco installed file checks and frozen resources are historical evidence; not rerun."
+  },
+  "current_selected_runtime_file_checks": {
+    "python_version_from_pyvenv_cfg": "3.11.16",
+    "python_base_executable": "/data_robot/verification/nero_dh116_right/.reference-deps/python/bin/python3.11",
+    "python_base_executable_sha256": "ec579de7512e84d960bc642a840de69c785c52d6adf89e3a15f51717b29be40f",
+    "packages": {
+      "numpy": "1.26.4",
+      "mujoco": "3.2.3",
+      "robosuite": "1.4.1",
+      "pyopengl": "3.1.9"
+    },
+    "libero_version_from_egg_metadata": "0.1.0",
+    "libero_commit": "f78abd68ee283de9f9be3c8f7e2a9ad60246e95c",
+    "libero_git_status_porcelain": "",
+    "libero_link": "/data_robot/verification/nero_dh116_right/.reference-deps/LIBERO\n.",
+    "bwrap_exists": true,
+    "ffmpeg_exists": true,
+    "device_presence": {
+      "/dev/nvidia0": true,
+      "/dev/nvidiactl": true,
+      "/dev/dri": true
+    },
+    "egl_library_files": {
+      "/usr/lib/x86_64-linux-gnu/libEGL.so.1": {
+        "exists": true,
+        "resolved": "/usr/lib/x86_64-linux-gnu/libEGL.so.1.1.0"
+      },
+      "/usr/lib/x86_64-linux-gnu/libEGL_nvidia.so.0": {
+        "exists": true,
+        "resolved": "/usr/lib/x86_64-linux-gnu/libEGL_nvidia.so.580.178.04"
+      },
+      "/usr/lib/x86_64-linux-gnu/libGLdispatch.so.0": {
+        "exists": true,
+        "resolved": "/usr/lib/x86_64-linux-gnu/libGLdispatch.so.0.0.0"
+      },
+      "/usr/lib/x86_64-linux-gnu/libGLESv2.so.2": {
+        "exists": true,
+        "resolved": "/usr/lib/x86_64-linux-gnu/libGLESv2.so.2.1.0"
+      }
+    }
+  },
+  "launcher_reuse": {
+    "historical_launcher": "/tmp/nero-issue5-launch.json",
+    "sha256": "ee847ca4ebcc4cdc642d5acab6b4e80388f3651b53cc2996d3b7892f8dabe3ed",
+    "reuse": "Reuse reviewed bwrap overlay structure and env activation; replace sole writable runs/issue5 bind with runs/issue5_close149 and output with runs/issue5_close149/close149_once; candidate entry command must be reviewed before launch. Do not rerun old argv unchanged.",
+    "old_runs_hidden_by_tmpfs": true,
+    "source_and_fixed_environment_read_only": true,
+    "new_parent_must_be_created_by_parent_launcher_only": true,
+    "old_entry_only_supports_output_argument_at_snapshot": true,
+    "launcher_executed_by_this_subtask": false
+  },
+  "main_worktree_user_change": {
+    "path": "/data_robot/projects/nero_dh116_assets",
+    "status_short": " M README.md\n",
+    "readme_sha256": "d68ec6d62a6f42b8c1636ad2774c8329073d973c2621cc7fe148c8c8c89d8f25",
+    "preserved": true
+  },
+  "execution_boundaries": {
+    "mujoco_imports": 0,
+    "robosuite_imports": 0,
+    "native_model_constructors": 0,
+    "native_compilations": 0,
+    "Reset": 0,
+    "forward": 0,
+    "mj_step": 0,
+    "egl_contexts_created": 0,
+    "repository_or_run_files_written": 0,
+    "only_output": "/tmp/nero-close149-runtime-preflight.json"
+  },
+  "runtime_blockers": [],
+  "pending_parent_checks": [
+    "Verify canonical candidate specification bytes hash and reviewed candidate execution entry before any launch.",
+    "Refresh exclusive attempt claim immediately at authorized launch; this snapshot is not a lock."
+  ],
+  "limitations": [
+    "Device/library presence is file-level EGL availability only; no new rendering test was performed.",
+    "Package versions and historical resource evidence do not establish candidate control health or grasp success.",
+    "An initial broad text search accidentally matched historical geometry.json content; it only read existing text and performed no geometry calculation or generation."
+  ],
+  "result": "PASS_FILE_ONLY_RUNTIME_PREFLIGHT_NO_RUNTIME_BLOCKER_IDENTIFIED"
+}

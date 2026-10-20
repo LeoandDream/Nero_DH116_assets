@@ -1,0 +1,13 @@
+test_exact_mapping_prefix_arm_targets_and_hand_lock (__main__.Close149OfflineTests.test_exact_mapping_prefix_arm_targets_and_hand_lock) ... ok
+test_executor_uses_candidate_without_changing_original_executor_or_frozen_module (__main__.Close149OfflineTests.test_executor_uses_candidate_without_changing_original_executor_or_frozen_module) ... ok
+test_existing_output_rejection_does_not_write_or_replace_evidence (__main__.Close149OfflineTests.test_existing_output_rejection_does_not_write_or_replace_evidence) ... ok
+test_frozen_research_policy_keeps_contact_history_across_close_lift (__main__.Close149OfflineTests.test_frozen_research_policy_keeps_contact_history_across_close_lift) ... ok
+test_import_and_schedule_are_stdlib_only_in_fresh_process (__main__.Close149OfflineTests.test_import_and_schedule_are_stdlib_only_in_fresh_process) ... ok
+test_phase_boundaries_budget_and_first_command_changes (__main__.Close149OfflineTests.test_phase_boundaries_budget_and_first_command_changes) ... ok
+test_prepared_entry_is_independent_and_retains_frozen_policy_dependencies (__main__.Close149OfflineTests.test_prepared_entry_is_independent_and_retains_frozen_policy_dependencies) ... ok
+test_run_once_passes_through_exit_code_without_retry (__main__.Close149OfflineTests.test_run_once_passes_through_exit_code_without_retry) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.305s
+
+OK

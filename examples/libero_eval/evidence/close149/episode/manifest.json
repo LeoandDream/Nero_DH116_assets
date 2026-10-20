@@ -1,0 +1,80 @@
+{
+  "schema": "nero_dh116_libero_episode_v1",
+  "episode_id": "episode",
+  "hand": "R",
+  "mode": "research",
+  "record_kind": "saved_real_dynamics_export",
+  "export_integrates_physics": false,
+  "model": {
+    "path": "examples/right_hand/candidates/finger22_local/model.xml",
+    "sha256": "7f9d84061c3e7d176763c688d2389f8b3d3e38386b8e990a0fa047ff2bc3329c",
+    "hand_collision_proxies": 81,
+    "wrist_collision_proxies": 306
+  },
+  "task": {
+    "suite": "libero_90",
+    "name": "KITCHEN_SCENE9_put_the_white_bowl_on_top_of_the_cabinet",
+    "bddl_sha256": "a595358c840e6dca31d2d914726bb49d58944252ae868796bd603345a444b627",
+    "goal": "On white_bowl_1 wooden_two_layer_shelf_1_top_side",
+    "native_success_predicate_preserved": true
+  },
+  "initialization": {
+    "kind": "native_seeded_reset",
+    "seed": 20261007,
+    "official_panda_init_state_supported": false,
+    "full_reset_source": {
+      "path": "/data_robot/verification/nero_dh116_right/runs/issue5_close149/close149_once/frozen-before-first-step.json",
+      "sha256": "78f84fc1a73fee88fe920d33d26af114a8ceb78b26080a3fbf99593eebfbb1ab",
+      "bytes": 105760
+    },
+    "reset_qpos_sha256": "ed3fe239a8bfed5e5eda6f65bb563bda1e458ec965648ed948ae0e5580e53feb"
+  },
+  "contract": {
+    "state": "7 arm + 11 hand joint positions [rad]",
+    "action": "7 absolute arm [rad] + 6 normalized absolute hand [-1,1]",
+    "ctrl": "7 arm torques + 6 hand actuator joint angles"
+  },
+  "environment": {
+    "python": "3.11.16",
+    "mujoco": "3.2.3",
+    "robosuite": "1.4.1",
+    "libero_commit": "f78abd68ee283de9f9be3c8f7e2a9ad60246e95c"
+  },
+  "research_policy_sha256": "48632dfa4bbe0630ef7d61b9e706240d7769ad6361d588e1d02025bde4bc6454",
+  "expanded_actions_13_sha256": "19af15d43bcd365ed67870e1be852caf8f107c2f94a794b3bf3cdc51afe64b1f",
+  "exporter_sha256": "8829122e86919c2e50621ad788f167a7ecedbdd7bf747d0f8c883eabe2e7abfc",
+  "source_files": [
+    {
+      "path": "/data_robot/verification/nero_dh116_right/runs/issue5_close149/close149_once/state.jsonl.gz",
+      "sha256": "76bbd6b7a6197892cf68093b438204dbce733d87c4d82aed6f8dac127cbbbcc3",
+      "bytes": 9519319
+    },
+    {
+      "path": "/data_robot/verification/nero_dh116_right/runs/issue5_close149/close149_once/contacts.jsonl.gz",
+      "sha256": "7e5635833a5a2bd7da260dfeef05658def3e18cee9ab7cd23d9261c82303ddf5",
+      "bytes": 11721733
+    },
+    {
+      "path": "/data_robot/verification/nero_dh116_right/runs/issue5_close149/close149_once/result.json",
+      "sha256": "1522b670f0dfcef0a558e73889d309b3c813a36a259898e89f6484c40a3becc1",
+      "bytes": 76703
+    },
+    {
+      "path": "/data_robot/verification/nero_dh116_right/runs/issue5_close149/close149_once/observations.jsonl.gz",
+      "sha256": "a00891e421e1cefb9a769a9906591e3333fe3d8f53921b7237aea360dbb82c9e",
+      "bytes": 7242
+    },
+    {
+      "path": "/data_robot/verification/nero_dh116_right/runs/issue5_close149/close149_once/frozen-before-first-step.json",
+      "sha256": "78f84fc1a73fee88fe920d33d26af114a8ceb78b26080a3fbf99593eebfbb1ab",
+      "bytes": 105760
+    }
+  ],
+  "steps_sha256": "1d311cf187c0ea8b35bf46053615ac818711e55aa74eb3ddaaa46dccef6fc3ae",
+  "limitations": [
+    "No official Panda init-state conversion or multi-seed benchmark implemented.",
+    "Only saved native success measurements are reported; missing per-step signals remain null.",
+    "Left historical contacts lack saved position/frame/RK4 body poses.",
+    "Scripted white-bowl grasp lacks the native cabinet placement phase."
+  ]
+}

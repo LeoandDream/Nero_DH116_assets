@@ -1,0 +1,169 @@
+{
+  "raw_source": "/data_robot/verification/nero_dh116_right/runs/issue5_close149/close149_once",
+  "files": [
+    {
+      "source": "/data_robot/verification/nero_dh116_right/runs/issue5_close149/close149_once/arm.xml",
+      "source_sha256": "f17aa71bbaad1eaf3389a20edce4198273349365e28f06107c6a576cd0bd47ef",
+      "stored_file": "arm.xml",
+      "stored_sha256": "f17aa71bbaad1eaf3389a20edce4198273349365e28f06107c6a576cd0bd47ef",
+      "lossless_gzip": false
+    },
+    {
+      "source": "/data_robot/verification/nero_dh116_right/runs/issue5_close149/close149_once/attempt-claim.json",
+      "source_sha256": "0192abf323d85a0b2ac665178114233fcbc90950c43a6d58a053c90ddb466139",
+      "stored_file": "attempt-claim.json",
+      "stored_sha256": "0192abf323d85a0b2ac665178114233fcbc90950c43a6d58a053c90ddb466139",
+      "lossless_gzip": false
+    },
+    {
+      "source": "/data_robot/verification/nero_dh116_right/runs/issue5_close149/close149_once/close149-entry.diff",
+      "source_sha256": "9bd4c3d20abb81f6ef2e163ddee345a25fcf65f6fb8ff5d7b1c869d4d161a5fd",
+      "stored_file": "close149-entry.diff",
+      "stored_sha256": "9bd4c3d20abb81f6ef2e163ddee345a25fcf65f6fb8ff5d7b1c869d4d161a5fd",
+      "lossless_gzip": false
+    },
+    {
+      "source": "/data_robot/verification/nero_dh116_right/runs/issue5_close149/close149_once/close149-entry.executed.py",
+      "source_sha256": "251952d61ba483efee65bf94064c1fb0496b7adf6b72cf12570763b679ab3b51",
+      "stored_file": "close149-entry.executed.py",
+      "stored_sha256": "251952d61ba483efee65bf94064c1fb0496b7adf6b72cf12570763b679ab3b51",
+      "lossless_gzip": false
+    },
+    {
+      "source": "/data_robot/verification/nero_dh116_right/runs/issue5_close149/close149_once/close149-executor.diff",
+      "source_sha256": "271a2feefdcec0e4e7e86d36d5a9161045044c54172561c8ce2ef91bf6e71ef0",
+      "stored_file": "close149-executor.diff",
+      "stored_sha256": "271a2feefdcec0e4e7e86d36d5a9161045044c54172561c8ce2ef91bf6e71ef0",
+      "lossless_gzip": false
+    },
+    {
+      "source": "/data_robot/verification/nero_dh116_right/runs/issue5_close149/close149_once/contacts.jsonl.gz",
+      "source_sha256": "7e5635833a5a2bd7da260dfeef05658def3e18cee9ab7cd23d9261c82303ddf5",
+      "stored_file": "contacts.jsonl.gz",
+      "stored_sha256": "7e5635833a5a2bd7da260dfeef05658def3e18cee9ab7cd23d9261c82303ddf5",
+      "lossless_gzip": false
+    },
+    {
+      "source": "/data_robot/verification/nero_dh116_right/runs/issue5_close149/close149_once/executor.diff",
+      "source_sha256": "1d1406f4907002c9d3a6dfa0b1499618d96f096e4080a46d09a42123b4c6f99a",
+      "stored_file": "executor.diff",
+      "stored_sha256": "1d1406f4907002c9d3a6dfa0b1499618d96f096e4080a46d09a42123b4c6f99a",
+      "lossless_gzip": false
+    },
+    {
+      "source": "/data_robot/verification/nero_dh116_right/runs/issue5_close149/close149_once/executor.executed.py",
+      "source_sha256": "8bef21b250c54a617311475bea09a0c87c6f1f9b416ad7291b26ecc27024970b",
+      "stored_file": "executor.executed.py",
+      "stored_sha256": "8bef21b250c54a617311475bea09a0c87c6f1f9b416ad7291b26ecc27024970b",
+      "lossless_gzip": false
+    },
+    {
+      "source": "/data_robot/verification/nero_dh116_right/runs/issue5_close149/close149_once/finger22-risk-regions.json",
+      "source_sha256": "3e6da08b2c9c63f2d2728fa3bfe9b4b2a1ca09cd30acd06addb161a9323aadac",
+      "stored_file": "finger22-risk-regions.json",
+      "stored_sha256": "3e6da08b2c9c63f2d2728fa3bfe9b4b2a1ca09cd30acd06addb161a9323aadac",
+      "lossless_gzip": false
+    },
+    {
+      "source": "/data_robot/verification/nero_dh116_right/runs/issue5_close149/close149_once/frozen-before-first-step.json",
+      "source_sha256": "78f84fc1a73fee88fe920d33d26af114a8ceb78b26080a3fbf99593eebfbb1ab",
+      "stored_file": "frozen-before-first-step.json",
+      "stored_sha256": "78f84fc1a73fee88fe920d33d26af114a8ceb78b26080a3fbf99593eebfbb1ab",
+      "lossless_gzip": false
+    },
+    {
+      "source": "/data_robot/verification/nero_dh116_right/runs/issue5_close149/close149_once/geometry-provenance.json",
+      "source_sha256": "6ca52cafb5d610371f937bead3a6cda160659ff8af9f80be26873b85d9e47c61",
+      "stored_file": "geometry-provenance.json",
+      "stored_sha256": "6ca52cafb5d610371f937bead3a6cda160659ff8af9f80be26873b85d9e47c61",
+      "lossless_gzip": false
+    },
+    {
+      "source": "/data_robot/verification/nero_dh116_right/runs/issue5_close149/close149_once/hand.xml",
+      "source_sha256": "da89b33d1d624826336d24ebaeba2481dbc7c839f239d8119321b1ffeb6fb27f",
+      "stored_file": "hand.xml",
+      "stored_sha256": "da89b33d1d624826336d24ebaeba2481dbc7c839f239d8119321b1ffeb6fb27f",
+      "lossless_gzip": false
+    },
+    {
+      "source": "/data_robot/verification/nero_dh116_right/runs/issue5_close149/close149_once/input-audit.json",
+      "source_sha256": "8f67da4f395ed4fcdc4f6fa48db56c8a7dab3c5ec31410898d3c3118b0bab8d2",
+      "stored_file": "input-audit.json",
+      "stored_sha256": "8f67da4f395ed4fcdc4f6fa48db56c8a7dab3c5ec31410898d3c3118b0bab8d2",
+      "lossless_gzip": false
+    },
+    {
+      "source": "/data_robot/verification/nero_dh116_right/runs/issue5_close149/close149_once/model.xml",
+      "source_sha256": "8576697c81a13d0e35149e880dec1b51f4a6b3f9041b61453e402fea68eaf98c",
+      "stored_file": "model.xml",
+      "stored_sha256": "8576697c81a13d0e35149e880dec1b51f4a6b3f9041b61453e402fea68eaf98c",
+      "lossless_gzip": false
+    },
+    {
+      "source": "/data_robot/verification/nero_dh116_right/runs/issue5_close149/close149_once/mount.xml",
+      "source_sha256": "011ebeaae8f339d448fb1105c5c979b93df484d640f6bd5d93df3eb4964b0645",
+      "stored_file": "mount.xml",
+      "stored_sha256": "011ebeaae8f339d448fb1105c5c979b93df484d640f6bd5d93df3eb4964b0645",
+      "lossless_gzip": false
+    },
+    {
+      "source": "/data_robot/verification/nero_dh116_right/runs/issue5_close149/close149_once/observations.jsonl.gz",
+      "source_sha256": "a00891e421e1cefb9a769a9906591e3333fe3d8f53921b7237aea360dbb82c9e",
+      "stored_file": "observations.jsonl.gz",
+      "stored_sha256": "a00891e421e1cefb9a769a9906591e3333fe3d8f53921b7237aea360dbb82c9e",
+      "lossless_gzip": false
+    },
+    {
+      "source": "/data_robot/verification/nero_dh116_right/runs/issue5_close149/close149_once/old-to-new-compiled-audit.json",
+      "source_sha256": "34486ff08e51bf3da1c43f235548a56251812dfc5a1efb1d391629207c4022b7",
+      "stored_file": "old-to-new-compiled-audit.json",
+      "stored_sha256": "34486ff08e51bf3da1c43f235548a56251812dfc5a1efb1d391629207c4022b7",
+      "lossless_gzip": false
+    },
+    {
+      "source": "/data_robot/verification/nero_dh116_right/runs/issue5_close149/close149_once/registered-protocol.json",
+      "source_sha256": "0207248bc2c7c5de24b6b2a6bbb71a06c58167ecdca176ead8ce6690d6d20cda",
+      "stored_file": "registered-protocol.json",
+      "stored_sha256": "0207248bc2c7c5de24b6b2a6bbb71a06c58167ecdca176ead8ce6690d6d20cda",
+      "lossless_gzip": false
+    },
+    {
+      "source": "/data_robot/verification/nero_dh116_right/runs/issue5_close149/close149_once/research-base-executor.diff",
+      "source_sha256": "1d1406f4907002c9d3a6dfa0b1499618d96f096e4080a46d09a42123b4c6f99a",
+      "stored_file": "research-base-executor.diff",
+      "stored_sha256": "1d1406f4907002c9d3a6dfa0b1499618d96f096e4080a46d09a42123b4c6f99a",
+      "lossless_gzip": false
+    },
+    {
+      "source": "/data_robot/verification/nero_dh116_right/runs/issue5_close149/close149_once/result.json",
+      "source_sha256": "1522b670f0dfcef0a558e73889d309b3c813a36a259898e89f6484c40a3becc1",
+      "stored_file": "result.json",
+      "stored_sha256": "1522b670f0dfcef0a558e73889d309b3c813a36a259898e89f6484c40a3becc1",
+      "lossless_gzip": false
+    },
+    {
+      "source": "/data_robot/verification/nero_dh116_right/runs/issue5_close149/close149_once/robot-physical-preflight.json",
+      "source_sha256": "99feb594de682455dfdd2e58b34e2037ecfbefe371c7fd3e3646fb2b93bd2aee",
+      "stored_file": "robot-physical-preflight.json.gz",
+      "stored_sha256": "412b0f69c6c0dd6e1898894f0fb9bbb076984dce225ec6cf641474e38441728d",
+      "lossless_gzip": true
+    },
+    {
+      "source": "/data_robot/verification/nero_dh116_right/runs/issue5_close149/close149_once/schedule.json",
+      "source_sha256": "019173fae82db3b0b30b58572fb64e0c3ff400f0ad98912ff17c41dc69b1ecbf",
+      "stored_file": "schedule.json",
+      "stored_sha256": "019173fae82db3b0b30b58572fb64e0c3ff400f0ad98912ff17c41dc69b1ecbf",
+      "lossless_gzip": false
+    },
+    {
+      "source": "/data_robot/verification/nero_dh116_right/runs/issue5_close149/close149_once/state.jsonl.gz",
+      "source_sha256": "76bbd6b7a6197892cf68093b438204dbce733d87c4d82aed6f8dac127cbbbcc3",
+      "stored_file": "state.jsonl.gz",
+      "stored_sha256": "76bbd6b7a6197892cf68093b438204dbce733d87c4d82aed6f8dac127cbbbcc3",
+      "lossless_gzip": false
+    }
+  ],
+  "media": "../episode/frames and ../episode/videos: original bytes, no new simulation; observations index preserved",
+  "attempts": 1,
+  "automatic_retries": 0
+}

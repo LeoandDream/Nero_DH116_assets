@@ -1,0 +1,20 @@
+{
+  "previous_inputs": {
+    "frozen_source_resources_checked": 514,
+    "all_frozen_source_resources_exact": true,
+    "prior_generated_outputs_provenance_only": {
+      "runs/d3_finger22_four_once/arm.xml": "f17aa71bbaad1eaf3389a20edce4198273349365e28f06107c6a576cd0bd47ef",
+      "runs/d3_finger22_four_once/hand.xml": "da89b33d1d624826336d24ebaeba2481dbc7c839f239d8119321b1ffeb6fb27f",
+      "runs/d3_finger22_four_once/model.xml": "8576697c81a13d0e35149e880dec1b51f4a6b3f9041b61453e402fea68eaf98c",
+      "runs/d3_finger22_four_once/mount.xml": "011ebeaae8f339d448fb1105c5c979b93df484d640f6bd5d93df3eb4964b0645"
+    },
+    "private_runs_not_runtime_dependencies": true
+  },
+  "new_source_sha256": {
+    "examples/right_hand/close149.py": "bfc34723de1bcd1741e19a9b7d29ac354477d244fa9b389556f4a3ce811b3e87",
+    "examples/right_hand/libero_research.py": "7f15b06b5cf1333362a580f6841f90ca8bdde19d3e70ce97d16c342f79ff0b73",
+    "examples/right_hand/evidence/d3_research_contact_policy/research-policy.json": "48632dfa4bbe0630ef7d61b9e706240d7769ad6361d588e1d02025bde4bc6454",
+    "examples/right_hand/evidence/d3_research_contact_policy/shadow.py": "76abc56586d03579f1063d973a1cc63548daa85839e08f320248a8aa2e9999ec",
+    "examples/right_hand/white_bowl_run.py": "67afdd0ebd03ed37b8ef874d5985e4e2b0fbe62912a8a201d09b4a1ffeb4b2e5"
+  }
+}

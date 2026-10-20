@@ -1,0 +1,1138 @@
+{
+  "mode": "PURE_STDLIB_READ_ONLY_NO_NATIVE_IMPORT_OR_EXECUTION",
+  "new_run": "/data_robot/verification/nero_dh116_right/runs/issue5_close149/close149_once",
+  "baseline_run": "/data_robot/projects/.worktrees/nero_dh116_finger22_risk_review/examples/libero_eval/evidence/right_raw",
+  "state_comparison": {
+    "new_rows": 4793,
+    "old_rows": 4775,
+    "prefix_steps_compared": 4750,
+    "prefix_exact_rows": 4750,
+    "prefix_raw_line_exact_rows": 4750,
+    "prefix_excluded_fields": [
+      "failures",
+      "legacy_failures",
+      "research"
+    ],
+    "prefix_first_differences": [],
+    "first_difference_in_common_steps": {
+      "step": 4751,
+      "fields": [
+        "action_13",
+        "active_error_rad",
+        "actuator_force",
+        "arm_error_rad",
+        "bowl_position_m",
+        "ctrl",
+        "full_qacc_cached",
+        "full_qpos",
+        "full_qvel",
+        "j6",
+        "lift_from_own_settled_m",
+        "lift_from_reset_m",
+        "mimic_rad",
+        "mimic_residuals_rad",
+        "phase",
+        "qfrc_actuator_cached",
+        "qfrc_bias_cached",
+        "qfrc_constraint_cached",
+        "qfrc_passive_cached",
+        "robot_overlap_m",
+        "robot_state_18",
+        "source_macro",
+        "target_qpos_18"
+      ]
+    },
+    "prefix_sha256_new": "1c1ed3f9fbcc54ab50f43ff09bb7b488f355ee20ea649ada13616ded4e6afb68",
+    "prefix_sha256_old": "1c1ed3f9fbcc54ab50f43ff09bb7b488f355ee20ea649ada13616ded4e6afb68"
+  },
+  "contacts_comparison": {
+    "new_rows": 4793,
+    "old_rows": 4775,
+    "prefix_steps_compared": 4750,
+    "prefix_exact_rows": 4750,
+    "prefix_raw_line_exact_rows": 4750,
+    "prefix_excluded_fields": [],
+    "prefix_first_differences": [],
+    "first_difference_in_common_steps": {
+      "step": 4751,
+      "fields": [
+        "body_poses",
+        "bowl_center_cached_m",
+        "contacts"
+      ]
+    },
+    "prefix_sha256_new": "72ff6b117d14e9f7c45924ce836d22917539206bfc5445a60868b3fabb8cc325",
+    "prefix_sha256_old": "72ff6b117d14e9f7c45924ce836d22917539206bfc5445a60868b3fabb8cc325"
+  },
+  "reset_and_snapshot": {
+    "critical_fields_equal": {
+      "qpos": true,
+      "qvel": true,
+      "ctrl": true,
+      "controller": true,
+      "criteria": true,
+      "native_scene": true,
+      "setup_counts": true,
+      "warning_before_integration": true,
+      "initial_contact_cache": true,
+      "robot_model_sha256": true,
+      "model_xml_sha256": true,
+      "generated_model_sha256": true,
+      "role_bodies": true,
+      "role_geoms": true,
+      "runtime": true,
+      "research_policy_sha256": true,
+      "finger22_risk_regions_sha256": true
+    },
+    "full_actual_compiled_snapshot_exact": true,
+    "full_formal_compiled_snapshot_exact": true,
+    "new_robot_physical_preflight": {
+      "passed": true,
+      "fields_checked": 9671,
+      "differences": []
+    },
+    "old_to_new_audit": {
+      "passed": true,
+      "objects_checked": 674,
+      "differences": [],
+      "comparison": "Original saved actual_snapshot vs new native actual_snapshot; all body poses included.",
+      "removed_geom_count": 1,
+      "added_geom_count": 4,
+      "same81_306_native_Reset_snapshot_exact": true
+    },
+    "all_equal_frozen_fields": [
+      "candidate_sha256",
+      "geometry_sha256",
+      "model_xml_sha256",
+      "criteria",
+      "runtime",
+      "qpos",
+      "qvel",
+      "ctrl",
+      "controller",
+      "setup_counts",
+      "robot_model",
+      "robot_model_sha256",
+      "role_bodies",
+      "role_geoms",
+      "old_reset_exact_match",
+      "warning_before_integration",
+      "initial_contact_cache",
+      "generated_model_sha256",
+      "native_scene",
+      "finger22_risk_regions_sha256",
+      "research_policy_sha256"
+    ],
+    "different_frozen_fields": [
+      "measurement",
+      "input_sha256_before",
+      "schedule",
+      "schedule_sha256",
+      "geometry_preflight",
+      "additional_stop_protocol",
+      "online_use_authorized_by",
+      "new_source_sha256",
+      "baseline_commit"
+    ],
+    "measurement_difference": {
+      "planned_steps": {
+        "new": 6500,
+        "old": 6750
+      }
+    }
+  },
+  "schedule": {
+    "commands": 260,
+    "prefix190_exact": true,
+    "full_unique_mapping_exact": true,
+    "canonical_sha256": "ebf188b0bf49ad3b74a042c52b5fa4ad5df02dcb8f84caea565fcdaf9fdc7e32",
+    "canonical_sha256_expected": "ebf188b0bf49ad3b74a042c52b5fa4ad5df02dcb8f84caea565fcdaf9fdc7e32",
+    "saved_schedule_bytes_sha256": "019173fae82db3b0b30b58572fb64e0c3ff400f0ad98912ff17c41dc69b1ecbf",
+    "frozen_saved_sha256_matches": true,
+    "phases": {
+      "settle_preshape": 10,
+      "approach_high": 80,
+      "descend": 70,
+      "close": 30,
+      "lift": 40,
+      "hold": 30
+    },
+    "physics_steps_max": 6500
+  },
+  "stop_detail": {
+    "force_reference_N": 2.3315472126000003,
+    "short_window_intervals": 6,
+    "short_window_duration_s": 0.012,
+    "4787_to_4793_finger23_body_window": [
+      {
+        "step": 4787,
+        "max_depth_mm": 2.0173798092895057,
+        "normal_force_N": 3.9961287132001555,
+        "short_mean_N_independent": 3.9317887973119254,
+        "short_exposure_Ns_independent": 0.04718146556774311,
+        "depth_change_12ms_mm_independent": 0.11265273408593958,
+        "saved_deep_samples": 1,
+        "saved_short_exposure_Ns": 0.04718146556774311,
+        "saved_depth_change_mm": 0.11265273408593958,
+        "computed_matches_saved": true
+      },
+      {
+        "step": 4788,
+        "max_depth_mm": 2.0221189212967072,
+        "normal_force_N": 4.004716863761814,
+        "short_mean_N_independent": 3.947877995863346,
+        "short_exposure_Ns_independent": 0.047374535950360154,
+        "depth_change_12ms_mm_independent": 0.10893180705840387,
+        "saved_deep_samples": 2,
+        "saved_short_exposure_Ns": 0.04737453595036016,
+        "saved_depth_change_mm": 0.10893180705840387,
+        "computed_matches_saved": true
+      },
+      {
+        "step": 4789,
+        "max_depth_mm": 2.0266884072226983,
+        "normal_force_N": 4.012389806537623,
+        "short_mean_N_independent": 3.964307092702693,
+        "short_exposure_Ns_independent": 0.047571685112432316,
+        "depth_change_12ms_mm_independent": 0.10446075242645665,
+        "saved_deep_samples": 3,
+        "saved_short_exposure_Ns": 0.047571685112432316,
+        "saved_depth_change_mm": 0.10446075242645665,
+        "computed_matches_saved": true
+      },
+      {
+        "step": 4790,
+        "max_depth_mm": 2.0311217029246698,
+        "normal_force_N": 4.019686615706771,
+        "short_mean_N_independent": 3.97909000775978,
+        "short_exposure_Ns_independent": 0.04774908009311736,
+        "depth_change_12ms_mm_independent": 0.0999274262542297,
+        "saved_deep_samples": 4,
+        "saved_short_exposure_Ns": 0.04774908009311736,
+        "saved_depth_change_mm": 0.0999274262542297,
+        "computed_matches_saved": true
+      },
+      {
+        "step": 4791,
+        "max_depth_mm": 2.0354328067549106,
+        "normal_force_N": 4.026724584471604,
+        "short_mean_N_independent": 3.9937921603252624,
+        "short_exposure_Ns_independent": 0.04792550592390315,
+        "depth_change_12ms_mm_independent": 0.09531434745103842,
+        "saved_deep_samples": 5,
+        "saved_short_exposure_Ns": 0.04792550592390315,
+        "saved_depth_change_mm": 0.09531434745103842,
+        "computed_matches_saved": true
+      },
+      {
+        "step": 4792,
+        "max_depth_mm": 2.03963123284929,
+        "normal_force_N": 4.033574417413216,
+        "short_mean_N_independent": 4.008316238718262,
+        "short_exposure_Ns_independent": 0.04809979486461914,
+        "depth_change_12ms_mm_independent": 0.09040927910907468,
+        "saved_deep_samples": 6,
+        "saved_short_exposure_Ns": 0.04809979486461914,
+        "saved_depth_change_mm": 0.09040927910907468,
+        "computed_matches_saved": true
+      },
+      {
+        "step": 4793,
+        "max_depth_mm": 2.043723915085087,
+        "normal_force_N": 4.040278609852014,
+        "short_mean_N_independent": 4.019215991569519,
+        "short_exposure_Ns_independent": 0.048230591898834226,
+        "depth_change_12ms_mm_independent": 0.026344105795581257,
+        "saved_deep_samples": 7,
+        "saved_short_exposure_Ns": 0.048230591898834226,
+        "saved_depth_change_mm": 0.026344105795581257,
+        "computed_matches_saved": true
+      }
+    ],
+    "4793_contact_events": [
+      {
+        "reason": "LOADED_DEPTH_GROWTH",
+        "level": "body",
+        "key": [
+          "gripper0_finger23_link",
+          "white_bowl_1_main"
+        ]
+      }
+    ],
+    "4793_groups": [
+      {
+        "level": "geom",
+        "key": [
+          "gripper0_finger13_local_01",
+          "white_bowl_1_g31"
+        ],
+        "contact_points": 1,
+        "depth_m": 0.0014037202288531218,
+        "normal_force_N": 1.0212662605776746,
+        "deep_samples": 0,
+        "deep_observed_span_s": 0.0,
+        "contact_samples": 276,
+        "contact_observed_span_s": 0.55,
+        "short_exposure_Ns": 0.012207873532234454,
+        "long_exposure_Ns": 0.03279676901178061,
+        "short_window_complete": true,
+        "long_window_complete": true,
+        "short_depth_change_m": 9.963607101476932e-06,
+        "short_force_change_N": 0.00817271143757159
+      },
+      {
+        "level": "body",
+        "key": [
+          "gripper0_finger13_link",
+          "white_bowl_1_main"
+        ],
+        "contact_points": 6,
+        "depth_m": 0.0014037202288531218,
+        "normal_force_N": 3.1230391508156607,
+        "deep_samples": 0,
+        "deep_observed_span_s": 0.0,
+        "contact_samples": 276,
+        "contact_observed_span_s": 0.55,
+        "short_exposure_Ns": 0.03720413370877913,
+        "long_exposure_Ns": 0.0989530153487629,
+        "short_window_complete": true,
+        "long_window_complete": true,
+        "short_depth_change_m": 9.963607101476932e-06,
+        "short_force_change_N": 0.04707608695021426
+      },
+      {
+        "level": "geom",
+        "key": [
+          "gripper0_finger13_local_01",
+          "white_bowl_1_g32"
+        ],
+        "contact_points": 1,
+        "depth_m": 0.0014037202288531218,
+        "normal_force_N": 1.0212662605776746,
+        "deep_samples": 0,
+        "deep_observed_span_s": 0.0,
+        "contact_samples": 276,
+        "contact_observed_span_s": 0.55,
+        "short_exposure_Ns": 0.012207873532234454,
+        "long_exposure_Ns": 0.03279676901178061,
+        "short_window_complete": true,
+        "long_window_complete": true,
+        "short_depth_change_m": 9.963607101476932e-06,
+        "short_force_change_N": 0.00817271143757159
+      },
+      {
+        "level": "geom",
+        "key": [
+          "gripper0_proxy76_finger23_link_06",
+          "white_bowl_1_g22"
+        ],
+        "contact_points": 1,
+        "depth_m": 0.002008982915597235,
+        "normal_force_N": 1.4983184537501377,
+        "deep_samples": 2,
+        "deep_observed_span_s": 0.002,
+        "contact_samples": 111,
+        "contact_observed_span_s": 0.22,
+        "short_exposure_Ns": 0.017827708796327644,
+        "long_exposure_Ns": 0.04675206157181078,
+        "short_window_complete": true,
+        "long_window_complete": true,
+        "short_depth_change_m": 5.0711993489649214e-05,
+        "short_force_change_N": 0.026067310316303605
+      },
+      {
+        "level": "body",
+        "key": [
+          "gripper0_finger23_link",
+          "white_bowl_1_main"
+        ],
+        "contact_points": 3,
+        "depth_m": 0.002043723915085087,
+        "normal_force_N": 4.040278609852014,
+        "deep_samples": 7,
+        "deep_observed_span_s": 0.012,
+        "contact_samples": 111,
+        "contact_observed_span_s": 0.22,
+        "short_exposure_Ns": 0.048230591898834226,
+        "long_exposure_Ns": 0.12638030225753394,
+        "short_window_complete": true,
+        "long_window_complete": true,
+        "short_depth_change_m": 2.6344105795581257e-05,
+        "short_force_change_N": 0.04414989665185853
+      },
+      {
+        "level": "geom",
+        "key": [
+          "gripper0_proxy76_finger23_link_06",
+          "white_bowl_1_g23"
+        ],
+        "contact_points": 1,
+        "depth_m": 0.002043723915085087,
+        "normal_force_N": 1.516039784047005,
+        "deep_samples": 7,
+        "deep_observed_span_s": 0.012,
+        "contact_samples": 109,
+        "contact_observed_span_s": 0.216,
+        "short_exposure_Ns": 0.018200411875863028,
+        "long_exposure_Ns": 0.04761732637820606,
+        "short_window_complete": true,
+        "long_window_complete": true,
+        "short_depth_change_m": 2.6344105795581257e-05,
+        "short_force_change_N": -0.0007690823385269052
+      },
+      {
+        "level": "geom",
+        "key": [
+          "gripper0_finger13_local_02",
+          "white_bowl_1_g31"
+        ],
+        "contact_points": 1,
+        "depth_m": 0.0006319764675474657,
+        "normal_force_N": 0.3827845058790364,
+        "deep_samples": 0,
+        "deep_observed_span_s": 0.0,
+        "contact_samples": 83,
+        "contact_observed_span_s": 0.164,
+        "short_exposure_Ns": 0.0045297562370399,
+        "long_exposure_Ns": 0.011796787708922132,
+        "short_window_complete": true,
+        "long_window_complete": true,
+        "short_depth_change_m": 1.254260584886255e-05,
+        "short_force_change_N": 0.010968700759154126
+      },
+      {
+        "level": "geom",
+        "key": [
+          "gripper0_finger13_local_02",
+          "white_bowl_1_g32"
+        ],
+        "contact_points": 1,
+        "depth_m": 0.0006319764675474657,
+        "normal_force_N": 0.3827845058790364,
+        "deep_samples": 0,
+        "deep_observed_span_s": 0.0,
+        "contact_samples": 83,
+        "contact_observed_span_s": 0.164,
+        "short_exposure_Ns": 0.0045297562370399,
+        "long_exposure_Ns": 0.011796787708922132,
+        "short_window_complete": true,
+        "long_window_complete": true,
+        "short_depth_change_m": 1.254260584886255e-05,
+        "short_force_change_N": 0.010968700759154126
+      },
+      {
+        "level": "geom",
+        "key": [
+          "gripper0_proxy76_finger14_link_05",
+          "white_bowl_1_g31"
+        ],
+        "contact_points": 1,
+        "depth_m": 0.0006358367247060659,
+        "normal_force_N": 0.3864228657817286,
+        "deep_samples": 0,
+        "deep_observed_span_s": 0.0,
+        "contact_samples": 83,
+        "contact_observed_span_s": 0.164,
+        "short_exposure_Ns": 0.004578582154389829,
+        "long_exposure_Ns": 0.011929425389102574,
+        "short_window_complete": true,
+        "long_window_complete": true,
+        "short_depth_change_m": 1.1813430417136235e-05,
+        "short_force_change_N": 0.010208437966275685
+      },
+      {
+        "level": "body",
+        "key": [
+          "gripper0_finger14_link",
+          "white_bowl_1_main"
+        ],
+        "contact_points": 6,
+        "depth_m": 0.0006358367247060659,
+        "normal_force_N": 1.77237695232705,
+        "deep_samples": 0,
+        "deep_observed_span_s": 0.0,
+        "contact_samples": 83,
+        "contact_observed_span_s": 0.164,
+        "short_exposure_Ns": 0.020987428771991713,
+        "long_exposure_Ns": 0.05466391623097385,
+        "short_window_complete": true,
+        "long_window_complete": true,
+        "short_depth_change_m": 1.1813430417136235e-05,
+        "short_force_change_N": 0.04908804879005446
+      },
+      {
+        "level": "geom",
+        "key": [
+          "gripper0_proxy76_finger14_link_05",
+          "white_bowl_1_g32"
+        ],
+        "contact_points": 1,
+        "depth_m": 0.0006358367247060659,
+        "normal_force_N": 0.3864228657817286,
+        "deep_samples": 0,
+        "deep_observed_span_s": 0.0,
+        "contact_samples": 83,
+        "contact_observed_span_s": 0.164,
+        "short_exposure_Ns": 0.004578582154389829,
+        "long_exposure_Ns": 0.011929425389102574,
+        "short_window_complete": true,
+        "long_window_complete": true,
+        "short_depth_change_m": 1.1813430417136235e-05,
+        "short_force_change_N": 0.010208437966275685
+      },
+      {
+        "level": "geom",
+        "key": [
+          "gripper0_proxy76_finger23_link_01",
+          "white_bowl_1_g23"
+        ],
+        "contact_points": 1,
+        "depth_m": 0.0013502562724815794,
+        "normal_force_N": 1.025920372054871,
+        "deep_samples": 0,
+        "deep_observed_span_s": 0.0,
+        "contact_samples": 83,
+        "contact_observed_span_s": 0.164,
+        "short_exposure_Ns": 0.012202471226643556,
+        "long_exposure_Ns": 0.03201091430751711,
+        "short_window_complete": true,
+        "long_window_complete": true,
+        "short_depth_change_m": 5.1125593288435045e-05,
+        "short_force_change_N": 0.018851668674081834
+      },
+      {
+        "level": "geom",
+        "key": [
+          "gripper0_proxy76_finger14_link_09",
+          "white_bowl_1_g31"
+        ],
+        "contact_points": 1,
+        "depth_m": 0.0006034654860618706,
+        "normal_force_N": 0.3547253583578357,
+        "deep_samples": 0,
+        "deep_observed_span_s": 0.0,
+        "contact_samples": 81,
+        "contact_observed_span_s": 0.16,
+        "short_exposure_Ns": 0.004200073300410817,
+        "long_exposure_Ns": 0.010930206826247032,
+        "short_window_complete": true,
+        "long_window_complete": true,
+        "short_depth_change_m": 1.1854504196787022e-05,
+        "short_force_change_N": 0.00988235933524878
+      },
+      {
+        "level": "geom",
+        "key": [
+          "gripper0_proxy76_finger14_link_09",
+          "white_bowl_1_g32"
+        ],
+        "contact_points": 1,
+        "depth_m": 0.0006034654860618706,
+        "normal_force_N": 0.3547253583578357,
+        "deep_samples": 0,
+        "deep_observed_span_s": 0.0,
+        "contact_samples": 81,
+        "contact_observed_span_s": 0.16,
+        "short_exposure_Ns": 0.004200073300410817,
+        "long_exposure_Ns": 0.010930206826247032,
+        "short_window_complete": true,
+        "long_window_complete": true,
+        "short_depth_change_m": 1.1854504196787022e-05,
+        "short_force_change_N": 0.00988235933524878
+      },
+      {
+        "level": "geom",
+        "key": [
+          "gripper0_finger22_local_01",
+          "white_bowl_1_g22"
+        ],
+        "contact_points": 1,
+        "depth_m": 0.0009216028142235542,
+        "normal_force_N": 0.7248868075450429,
+        "deep_samples": 0,
+        "deep_observed_span_s": 0.0,
+        "contact_samples": 63,
+        "contact_observed_span_s": 0.124,
+        "short_exposure_Ns": 0.008524374857829503,
+        "long_exposure_Ns": 0.021795656941914897,
+        "short_window_complete": true,
+        "long_window_complete": true,
+        "short_depth_change_m": 4.91199111952174e-05,
+        "short_force_change_N": 0.030911909341264976
+      },
+      {
+        "level": "body",
+        "key": [
+          "gripper0_finger22_link",
+          "white_bowl_1_main"
+        ],
+        "contact_points": 2,
+        "depth_m": 0.0009216028142235542,
+        "normal_force_N": 1.2797528806561624,
+        "deep_samples": 0,
+        "deep_observed_span_s": 0.0,
+        "contact_samples": 63,
+        "contact_observed_span_s": 0.124,
+        "short_exposure_Ns": 0.014967659090039593,
+        "long_exposure_Ns": 0.037940561876529014,
+        "short_window_complete": true,
+        "long_window_complete": true,
+        "short_depth_change_m": 4.91199111952174e-05,
+        "short_force_change_N": 0.06818408190133285
+      },
+      {
+        "level": "geom",
+        "key": [
+          "gripper0_finger22_local_01",
+          "white_bowl_1_g23"
+        ],
+        "contact_points": 1,
+        "depth_m": 0.0007561291814584858,
+        "normal_force_N": 0.5548660731111195,
+        "deep_samples": 0,
+        "deep_observed_span_s": 0.0,
+        "contact_samples": 60,
+        "contact_observed_span_s": 0.11800000000000001,
+        "short_exposure_Ns": 0.006443284232210089,
+        "long_exposure_Ns": 0.016144904934614113,
+        "short_window_complete": true,
+        "long_window_complete": true,
+        "short_depth_change_m": 4.7172467975174835e-05,
+        "short_force_change_N": 0.03727217256006787
+      },
+      {
+        "level": "geom",
+        "key": [
+          "gripper0_finger13_local_00",
+          "white_bowl_1_g31"
+        ],
+        "contact_points": 1,
+        "depth_m": 0.00033672694941465836,
+        "normal_force_N": 0.1574688089511193,
+        "deep_samples": 0,
+        "deep_observed_span_s": 0.0,
+        "contact_samples": 58,
+        "contact_observed_span_s": 0.114,
+        "short_exposure_Ns": 0.0018644370851152114,
+        "long_exposure_Ns": 0.004882950953678716,
+        "short_window_complete": true,
+        "long_window_complete": true,
+        "short_depth_change_m": 1.0367612790081594e-05,
+        "short_force_change_N": 0.004396631278381274
+      },
+      {
+        "level": "geom",
+        "key": [
+          "gripper0_finger13_local_00",
+          "white_bowl_1_g32"
+        ],
+        "contact_points": 1,
+        "depth_m": 0.00033672694941465836,
+        "normal_force_N": 0.1574688089511193,
+        "deep_samples": 0,
+        "deep_observed_span_s": 0.0,
+        "contact_samples": 58,
+        "contact_observed_span_s": 0.114,
+        "short_exposure_Ns": 0.0018644370851152114,
+        "long_exposure_Ns": 0.004882950953678716,
+        "short_window_complete": true,
+        "long_window_complete": true,
+        "short_depth_change_m": 1.0367612790081594e-05,
+        "short_force_change_N": 0.004396631278381274
+      },
+      {
+        "level": "geom",
+        "key": [
+          "gripper0_proxy76_finger14_link_10",
+          "white_bowl_1_g31"
+        ],
+        "contact_points": 1,
+        "depth_m": 0.00030928367232175663,
+        "normal_force_N": 0.14504025202396076,
+        "deep_samples": 0,
+        "deep_observed_span_s": 0.0,
+        "contact_samples": 57,
+        "contact_observed_span_s": 0.112,
+        "short_exposure_Ns": 0.0017150589311952097,
+        "long_exposure_Ns": 0.0044723259001373215,
+        "short_window_complete": true,
+        "long_window_complete": true,
+        "short_depth_change_m": 1.161811715407428e-05,
+        "short_force_change_N": 0.004453227093502737
+      },
+      {
+        "level": "geom",
+        "key": [
+          "gripper0_proxy76_finger14_link_10",
+          "white_bowl_1_g32"
+        ],
+        "contact_points": 1,
+        "depth_m": 0.00030928367232175663,
+        "normal_force_N": 0.14504025202396076,
+        "deep_samples": 0,
+        "deep_observed_span_s": 0.0,
+        "contact_samples": 57,
+        "contact_observed_span_s": 0.112,
+        "short_exposure_Ns": 0.0017150589311952097,
+        "long_exposure_Ns": 0.0044723259001373215,
+        "short_window_complete": true,
+        "long_window_complete": true,
+        "short_depth_change_m": 1.161811715407428e-05,
+        "short_force_change_N": 0.004453227093502737
+      }
+    ],
+    "4793_positive_environment_support_contacts": [
+      {
+        "body": [
+          "table",
+          "white_bowl_1_main"
+        ],
+        "geom": [
+          "table_collision",
+          "white_bowl_1_g1"
+        ],
+        "distance_m": -4.442965791343729e-05,
+        "force_contact_frame": [
+          0.0032729212516385687,
+          -0.0025207262746765966,
+          -0.00208757097306473,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "independent_trigger_confirmation": true
+  },
+  "altered43_steps": {
+    "range": [
+      4751,
+      4793
+    ],
+    "steps": 43,
+    "same_arm_target_repeated_pose_steps": [
+      4751,
+      4775
+    ],
+    "changed_lift_arm_target_steps": [
+      4776,
+      4793
+    ],
+    "steps_later_than_old_stop": 18,
+    "landmarks": {
+      "new_4750": {
+        "step": 4750,
+        "macro": 189,
+        "source_macro": 149,
+        "phase": "close",
+        "lift_from_own_settled_mm": 0.40680257273251197,
+        "robot_overlap_mm": 1.6747072783921355,
+        "environment_support_saved": true,
+        "positive_bowl_environment_contacts": 2,
+        "positive_bowl_environment_normal_force_N": 0.0440238527332711,
+        "positive_bowl_environment_bodies": [
+          [
+            "table",
+            "white_bowl_1_main"
+          ]
+        ],
+        "opposed_thumb_index_contact": true,
+        "legacy_failures": [],
+        "research_failures": [],
+        "body_groups": {
+          "gripper0_finger13_link": {
+            "depth_m": 0.0012166199439166447,
+            "normal_force_N": 2.7482880167075345,
+            "contact_points": 6
+          },
+          "gripper0_finger14_link": {
+            "depth_m": 0.00043523531532495534,
+            "normal_force_N": 1.2854489493170531,
+            "contact_points": 6
+          },
+          "gripper0_finger22_link": {
+            "depth_m": 0.00043292339728843337,
+            "normal_force_N": 0.6352821008721949,
+            "contact_points": 2
+          },
+          "gripper0_finger23_link": {
+            "depth_m": 0.0016747072783921354,
+            "normal_force_N": 3.70851933111198,
+            "contact_points": 3
+          }
+        }
+      },
+      "new_4751": {
+        "step": 4751,
+        "macro": 190,
+        "source_macro": 160,
+        "phase": "lift",
+        "lift_from_own_settled_mm": 0.4163291782648404,
+        "robot_overlap_mm": 1.6833501776653264,
+        "environment_support_saved": true,
+        "positive_bowl_environment_contacts": 2,
+        "positive_bowl_environment_normal_force_N": 0.0581267992178147,
+        "positive_bowl_environment_bodies": [
+          [
+            "table",
+            "white_bowl_1_main"
+          ]
+        ],
+        "opposed_thumb_index_contact": true,
+        "legacy_failures": [],
+        "research_failures": [],
+        "body_groups": {
+          "gripper0_finger13_link": {
+            "depth_m": 0.0014756333852298474,
+            "normal_force_N": 3.1652183804985015,
+            "contact_points": 6
+          },
+          "gripper0_finger14_link": {
+            "depth_m": 0.00044157028862887017,
+            "normal_force_N": 1.3149780226883325,
+            "contact_points": 6
+          },
+          "gripper0_finger22_link": {
+            "depth_m": 0.000451077115306841,
+            "normal_force_N": 0.5847645385219381,
+            "contact_points": 2
+          },
+          "gripper0_finger23_link": {
+            "depth_m": 0.0016833501776653264,
+            "normal_force_N": 3.6115799878591823,
+            "contact_points": 3
+          }
+        }
+      },
+      "new_4775": {
+        "step": 4775,
+        "macro": 190,
+        "source_macro": 160,
+        "phase": "lift",
+        "lift_from_own_settled_mm": 0.5725843517681017,
+        "robot_overlap_mm": 1.8633101068576436,
+        "environment_support_saved": true,
+        "positive_bowl_environment_contacts": 2,
+        "positive_bowl_environment_normal_force_N": 0.04315432369314046,
+        "positive_bowl_environment_bodies": [
+          [
+            "table",
+            "white_bowl_1_main"
+          ]
+        ],
+        "opposed_thumb_index_contact": true,
+        "legacy_failures": [],
+        "research_failures": [],
+        "body_groups": {
+          "gripper0_finger13_link": {
+            "depth_m": 0.0013704368112455643,
+            "normal_force_N": 3.0476851369172957,
+            "contact_points": 6
+          },
+          "gripper0_finger14_link": {
+            "depth_m": 0.0005844931340713552,
+            "normal_force_N": 1.6363520731774874,
+            "contact_points": 6
+          },
+          "gripper0_finger22_link": {
+            "depth_m": 0.0007768026543181644,
+            "normal_force_N": 1.06303954857059,
+            "contact_points": 2
+          },
+          "gripper0_finger23_link": {
+            "depth_m": 0.0018633101068576436,
+            "normal_force_N": 3.8545065980274957,
+            "contact_points": 3
+          }
+        }
+      },
+      "new_4776": {
+        "step": 4776,
+        "macro": 191,
+        "source_macro": 161,
+        "phase": "lift",
+        "lift_from_own_settled_mm": 0.5766249563403658,
+        "robot_overlap_mm": 1.8689464343696445,
+        "environment_support_saved": true,
+        "positive_bowl_environment_contacts": 2,
+        "positive_bowl_environment_normal_force_N": 0.028725242689911473,
+        "positive_bowl_environment_bodies": [
+          [
+            "table",
+            "white_bowl_1_main"
+          ]
+        ],
+        "opposed_thumb_index_contact": true,
+        "legacy_failures": [],
+        "research_failures": [],
+        "body_groups": {
+          "gripper0_finger13_link": {
+            "depth_m": 0.0017262590932166783,
+            "normal_force_N": 3.536718927081954,
+            "contact_points": 6
+          },
+          "gripper0_finger14_link": {
+            "depth_m": 0.0005888924159013695,
+            "normal_force_N": 1.5743460693034212,
+            "contact_points": 6
+          },
+          "gripper0_finger22_link": {
+            "depth_m": 0.0007849030074243246,
+            "normal_force_N": 1.014594005406087,
+            "contact_points": 2
+          },
+          "gripper0_finger23_link": {
+            "depth_m": 0.0018689464343696444,
+            "normal_force_N": 3.779968300321982,
+            "contact_points": 3
+          }
+        }
+      },
+      "new_4787": {
+        "step": 4787,
+        "macro": 191,
+        "source_macro": 161,
+        "phase": "lift",
+        "lift_from_own_settled_mm": 0.6376982167221046,
+        "robot_overlap_mm": 2.0173798092895057,
+        "environment_support_saved": true,
+        "positive_bowl_environment_contacts": 1,
+        "positive_bowl_environment_normal_force_N": 0.0037972463419031727,
+        "positive_bowl_environment_bodies": [
+          [
+            "table",
+            "white_bowl_1_main"
+          ]
+        ],
+        "opposed_thumb_index_contact": true,
+        "legacy_failures": [
+          "ROBOT_CONTACT_OVERLAP"
+        ],
+        "research_failures": [],
+        "body_groups": {
+          "gripper0_finger13_link": {
+            "depth_m": 0.0013937566217516449,
+            "normal_force_N": 3.0759630638654465,
+            "contact_points": 6
+          },
+          "gripper0_finger14_link": {
+            "depth_m": 0.0006240232942889296,
+            "normal_force_N": 1.7232889035369956,
+            "contact_points": 6
+          },
+          "gripper0_finger22_link": {
+            "depth_m": 0.0008724829030283368,
+            "normal_force_N": 1.2115687987548296,
+            "contact_points": 2
+          },
+          "gripper0_finger23_link": {
+            "depth_m": 0.0020173798092895058,
+            "normal_force_N": 3.9961287132001555,
+            "contact_points": 3
+          }
+        }
+      },
+      "new_4793": {
+        "step": 4793,
+        "macro": 191,
+        "source_macro": 161,
+        "phase": "lift",
+        "lift_from_own_settled_mm": 0.6803441816495281,
+        "robot_overlap_mm": 2.043723915085087,
+        "environment_support_saved": true,
+        "positive_bowl_environment_contacts": 1,
+        "positive_bowl_environment_normal_force_N": 0.0032729212516385687,
+        "positive_bowl_environment_bodies": [
+          [
+            "table",
+            "white_bowl_1_main"
+          ]
+        ],
+        "opposed_thumb_index_contact": true,
+        "legacy_failures": [
+          "ROBOT_CONTACT_OVERLAP"
+        ],
+        "research_failures": [
+          "LOADED_DEPTH_GROWTH"
+        ],
+        "body_groups": {
+          "gripper0_finger13_link": {
+            "depth_m": 0.0014037202288531218,
+            "normal_force_N": 3.1230391508156607,
+            "contact_points": 6
+          },
+          "gripper0_finger14_link": {
+            "depth_m": 0.0006358367247060659,
+            "normal_force_N": 1.77237695232705,
+            "contact_points": 6
+          },
+          "gripper0_finger22_link": {
+            "depth_m": 0.0009216028142235542,
+            "normal_force_N": 1.2797528806561624,
+            "contact_points": 2
+          },
+          "gripper0_finger23_link": {
+            "depth_m": 0.002043723915085087,
+            "normal_force_N": 4.040278609852014,
+            "contact_points": 3
+          }
+        }
+      }
+    },
+    "old_endpoint": {
+      "step": 4775,
+      "macro": 190,
+      "source_macro": 150,
+      "phase": "close",
+      "lift_from_own_settled_mm": 0.6267526256384937,
+      "robot_overlap_mm": 2.614641614307225,
+      "environment_support_saved": true,
+      "positive_bowl_environment_contacts": 2,
+      "positive_bowl_environment_normal_force_N": 0.07602490203894426,
+      "positive_bowl_environment_bodies": [
+        [
+          "table",
+          "white_bowl_1_main"
+        ]
+      ],
+      "opposed_thumb_index_contact": true,
+      "legacy_failures": [
+        "ROBOT_CONTACT_OVERLAP"
+      ],
+      "research_failures": [
+        "LOADED_DEPTH_GROWTH"
+      ],
+      "body_groups": {
+        "gripper0_finger13_link": {
+          "depth_m": 0.001428042292234344,
+          "normal_force_N": 3.6796334167862064,
+          "contact_points": 6
+        },
+        "gripper0_finger14_link": {
+          "depth_m": 0.000662899985178276,
+          "normal_force_N": 2.4165824488384358,
+          "contact_points": 6
+        },
+        "gripper0_finger22_link": {
+          "depth_m": 0.0010875492923507304,
+          "normal_force_N": 1.7661423953767557,
+          "contact_points": 2
+        },
+        "gripper0_finger23_link": {
+          "depth_m": 0.002614641614307225,
+          "normal_force_N": 5.152555984206995,
+          "contact_points": 5
+        }
+      }
+    },
+    "new_final_minus_old_final_lift_mm": 0.05359155601103449,
+    "all43_steps_have_positive_bowl_environment_support": true
+  },
+  "other_independent_protections": {
+    "other_stop_reasons": {},
+    "numerical_warning_rows": 0,
+    "nonfinite_rows": 0,
+    "unexpected_wrist_external_contact_rows": 0,
+    "arm_tracking_max_rad": 0.08880659361068322,
+    "active_tracking_max_rad": 0.04241502691027216,
+    "mimic_max_rad": 0.0002459474607633405,
+    "joint_overshoot_max_rad": 0.0,
+    "arm_limit_rad": 0.1,
+    "mimic_limit_rad": 0.02,
+    "joint_limit_overshoot_limit_rad": 0.01,
+    "active_hold_validation": "NOT_REACHED_NO_HOLD_SAMPLES",
+    "action_or_target_mismatch_steps": []
+  },
+  "result": {
+    "execution": "STOPPED_AT_FIRST_FAILURE",
+    "physics_steps": 4793,
+    "completed_commands": 191,
+    "native_task_result": false,
+    "grasp_result": "UNKNOWN_EARLY_STOP",
+    "control_health": "FAIL",
+    "first_failure": {
+      "step": 4793,
+      "macro": 191,
+      "source_macro": 161,
+      "repeat_index": 0,
+      "phase": "lift",
+      "reasons": [
+        "LOADED_DEPTH_GROWTH"
+      ]
+    },
+    "legacy_first_failure": {
+      "step": 4787,
+      "reasons": [
+        "ROBOT_CONTACT_OVERLAP"
+      ]
+    },
+    "research_first_failure": {
+      "step": 4793,
+      "reasons": [
+        "LOADED_DEPTH_GROWTH"
+      ]
+    },
+    "lift_from_own_settled_m": 0.0006803441816495281,
+    "longest_continuous_valid_hold_s": 0.0,
+    "inputs_unchanged": true
+  },
+  "source_sha256": {
+    "/data_robot/projects/.worktrees/nero_dh116_finger22_risk_review/examples/right_hand/close149.py": "bfc34723de1bcd1741e19a9b7d29ac354477d244fa9b389556f4a3ce811b3e87",
+    "/data_robot/projects/.worktrees/nero_dh116_finger22_risk_review/examples/right_hand/libero_research.py": "7f15b06b5cf1333362a580f6841f90ca8bdde19d3e70ce97d16c342f79ff0b73",
+    "/data_robot/projects/.worktrees/nero_dh116_finger22_risk_review/examples/right_hand/evidence/d3_research_contact_policy/shadow.py": "76abc56586d03579f1063d973a1cc63548daa85839e08f320248a8aa2e9999ec",
+    "/data_robot/projects/.worktrees/nero_dh116_finger22_risk_review/examples/right_hand/evidence/d3_research_contact_policy/research-policy.json": "48632dfa4bbe0630ef7d61b9e706240d7769ad6361d588e1d02025bde4bc6454",
+    "/data_robot/verification/nero_dh116_right/runs/issue5_close149/close149_once/state.jsonl.gz": "76bbd6b7a6197892cf68093b438204dbce733d87c4d82aed6f8dac127cbbbcc3",
+    "/data_robot/verification/nero_dh116_right/runs/issue5_close149/close149_once/contacts.jsonl.gz": "7e5635833a5a2bd7da260dfeef05658def3e18cee9ab7cd23d9261c82303ddf5",
+    "/data_robot/projects/.worktrees/nero_dh116_finger22_risk_review/examples/libero_eval/evidence/right_raw/state.jsonl.gz": "2cfa4dcc1d5a40d385a4ac7cb5c946937edc287f46b78cc57c92202581c651c9",
+    "/data_robot/projects/.worktrees/nero_dh116_finger22_risk_review/examples/libero_eval/evidence/right_raw/contacts.jsonl.gz": "d08ed047845577c18e1383caafea4e5f4da90a57dc7f11aedca8ae021a9caff0",
+    "/data_robot/verification/nero_dh116_right/runs/issue5_close149/close149_once/frozen-before-first-step.json": "78f84fc1a73fee88fe920d33d26af114a8ceb78b26080a3fbf99593eebfbb1ab",
+    "/data_robot/projects/.worktrees/nero_dh116_finger22_risk_review/examples/libero_eval/evidence/right_raw/frozen-before-first-step.json": "dca208b23645ae3dd9091c324d681d5f0969df120032da54b9f9ae5a72c4892c",
+    "/data_robot/verification/nero_dh116_right/runs/issue5_close149/close149_once/robot-physical-preflight.json": "99feb594de682455dfdd2e58b34e2037ecfbefe371c7fd3e3646fb2b93bd2aee",
+    "/data_robot/projects/.worktrees/nero_dh116_finger22_risk_review/examples/libero_eval/evidence/right_raw/robot-physical-preflight.json.gz": "c594a3b7e920c10945ffeb3d8d3907a5b3258e608700f87dff28c0766d1d4d21"
+  },
+  "limitations": [
+    "Only saved serialized evidence examined; no native compile, Reset, forward, step, renderer, or engine import.",
+    "State qpos/height is post-integration, while contact/force/body poses are final RK4 internal-stage caches; no post-step forward.",
+    "43 altered steps are 4751-4793; only 18 steps extend beyond historical endpoint4775.",
+    "Single frozen paired trajectory; no general grasp, final asset, counterfactual population, or hardware claim.",
+    "Positive bowl-table cached contact forces remain; small bowl height increase does not establish unsupported lifting."
+  ],
+  "executed_source_integrity": [
+    {
+      "source": "examples/right_hand/close149.py",
+      "declared_sha256": "bfc34723de1bcd1741e19a9b7d29ac354477d244fa9b389556f4a3ce811b3e87",
+      "current_checkout_sha256": "bfc34723de1bcd1741e19a9b7d29ac354477d244fa9b389556f4a3ce811b3e87",
+      "matches": true,
+      "after_record_matches": true
+    },
+    {
+      "source": "examples/right_hand/libero_research.py",
+      "declared_sha256": "7f15b06b5cf1333362a580f6841f90ca8bdde19d3e70ce97d16c342f79ff0b73",
+      "current_checkout_sha256": "7f15b06b5cf1333362a580f6841f90ca8bdde19d3e70ce97d16c342f79ff0b73",
+      "matches": true,
+      "after_record_matches": true
+    },
+    {
+      "source": "examples/right_hand/evidence/d3_research_contact_policy/research-policy.json",
+      "declared_sha256": "48632dfa4bbe0630ef7d61b9e706240d7769ad6361d588e1d02025bde4bc6454",
+      "current_checkout_sha256": "48632dfa4bbe0630ef7d61b9e706240d7769ad6361d588e1d02025bde4bc6454",
+      "matches": true,
+      "after_record_matches": true
+    },
+    {
+      "source": "examples/right_hand/evidence/d3_research_contact_policy/shadow.py",
+      "declared_sha256": "76abc56586d03579f1063d973a1cc63548daa85839e08f320248a8aa2e9999ec",
+      "current_checkout_sha256": "76abc56586d03579f1063d973a1cc63548daa85839e08f320248a8aa2e9999ec",
+      "matches": true,
+      "after_record_matches": true
+    },
+    {
+      "source": "examples/right_hand/white_bowl_run.py",
+      "declared_sha256": "67afdd0ebd03ed37b8ef874d5985e4e2b0fbe62912a8a201d09b4a1ffeb4b2e5",
+      "current_checkout_sha256": "67afdd0ebd03ed37b8ef874d5985e4e2b0fbe62912a8a201d09b4a1ffeb4b2e5",
+      "matches": true,
+      "after_record_matches": true
+    }
+  ],
+  "evidence_limitations_note": "Prefix equality is established from serialized files including raw line equality, not a new native simulation. No model compilation was performed."
+}

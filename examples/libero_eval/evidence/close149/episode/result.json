@@ -1,0 +1,84 @@
+{
+  "schema": "nero_dh116_libero_episode_v1",
+  "hand": "R",
+  "mode": "research",
+  "episode_status": "TRUNCATED",
+  "physics_steps": 4793,
+  "planned_physics_steps": 6500,
+  "recorded_commands": 191,
+  "native_task_success": false,
+  "native_task_success_source": "actual saved env.check_success() terminal result; not inferred",
+  "schedule_completed": false,
+  "new_physics_steps": 0,
+  "source_execution": "STOPPED_AT_FIRST_FAILURE",
+  "stop_reason": {
+    "step": 4793,
+    "macro": 191,
+    "source_macro": 161,
+    "repeat_index": 0,
+    "phase": "lift",
+    "reasons": [
+      "LOADED_DEPTH_GROWTH"
+    ]
+  },
+  "control_health": "FAIL",
+  "simulator_health": {
+    "status": "PASS",
+    "checks": {
+      "recorded_finite_arrays": "PASS",
+      "monotonic_time": "PASS",
+      "warnings": "PASS",
+      "source_finite_check_including_qacc": "PASS"
+    },
+    "original_protection_thresholds": {
+      "scope": "NEW fixed right white-bowl criteria; not left/manufacturer/full-range certification",
+      "lift_from_own_settled_baseline_m_min": 0.02,
+      "continuous_hold_s_min": 1.0,
+      "hold_requires": [
+        "height >= settled+20mm",
+        "no bowl-table or other environmental support contacts",
+        "positive-force thumb and index contacts on opposing bowl sides"
+      ],
+      "steady_active_error_rad_max": 0.02,
+      "arm_tracking_error_rad_max": 0.1,
+      "linear_mimic_error_rad_max": 0.02,
+      "joint_limit_overshoot_rad_max": 0.01,
+      "eligible_internal_and_external_overlap_m_max": 0.002,
+      "warnings_allowed": 0,
+      "nonfinite_states_allowed": 0,
+      "native_task_result": "record native cabinet-placement predicate separately",
+      "strict_grasp_success_claim": false,
+      "stop": "First numerical/physical bound violation; no automatic retry or edits"
+    },
+    "scope": "Numerical health of saved fields; control, limits, Mimic and contact protection remain separate source-run results.",
+    "missing_evidence_is_not_pass": true
+  },
+  "limited_grasp_result": "UNKNOWN_EARLY_STOP",
+  "strict_grasp_success_claim": false,
+  "phase_steps": {
+    "settle_preshape": 250,
+    "approach_high": 2000,
+    "descend": 1750,
+    "close": 750,
+    "lift": 43
+  },
+  "metrics": {
+    "reset_bowl_z_m": 0.97,
+    "own_settled_bowl_z_m": 0.8994107101029007,
+    "final_bowl_z_m": 0.9000910542845503,
+    "lift_from_reset_m": -0.0699089457154497,
+    "lift_from_own_settled_m": 0.0006803441816495281,
+    "longest_continuous_valid_hold_s": 0.0,
+    "maxima": {
+      "arm_tracking_rad": 0.08880659361068322,
+      "active_tracking_rad": 0.04241502691027216,
+      "active_hold_tracking_rad": 0.0,
+      "mimic_rad": 0.0002459474607633405,
+      "joint_overshoot_rad": 0.0,
+      "robot_overlap_m": 0.002043723915085087,
+      "bowl_lift_m": 0.0006803441816495281
+    }
+  },
+  "formal_acceptance": "UNCHANGED; no model or formal threshold acceptance claimed",
+  "scope": "custom NERO + DH116 in native LIBERO; not an official leaderboard result"
+}

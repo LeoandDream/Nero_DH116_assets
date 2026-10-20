@@ -1,0 +1,57 @@
+{
+  "baseline_commit": "c9de3e45e1f4dbccb7e8ebf659e5102aaec328ea",
+  "authorization": "https://github.com/LeoandDream/Nero_DH116_assets/issues/5#issuecomment-6295728385",
+  "native_attempts": 1,
+  "automatic_retries": 0,
+  "left_new_attempts": 0,
+  "actual_physical_steps": 4793,
+  "planned_max_steps": 6500,
+  "actual_process_exit_code": 2,
+  "new_entry_sha256": "bfc34723de1bcd1741e19a9b7d29ac354477d244fa9b389556f4a3ce811b3e87",
+  "frozen_research_entry_sha256": "7f15b06b5cf1333362a580f6841f90ca8bdde19d3e70ce97d16c342f79ff0b73",
+  "candidate_canonical_json_sha256": "ebf188b0bf49ad3b74a042c52b5fa4ad5df02dcb8f84caea565fcdaf9fdc7e32",
+  "offline_tests": {
+    "count": 8,
+    "command": "python -I -B examples/right_hand/test_close149.py",
+    "log": "tests.log",
+    "native_engine_operations": 0,
+    "test_source_sha256": "608bfc064f6a487854cffd99997babd11fd73d65675185d8379f0a9425f106b9"
+  },
+  "protected_old_tracked_files": {
+    "count": 1655,
+    "changed": []
+  },
+  "user_readme_sha256_before_and_after": "d68ec6d62a6f42b8c1636ad2774c8329073d973c2621cc7fe148c8c8c89d8f25",
+  "independent_review": "independent-review.json",
+  "raw_files_exact_or_lossless": 23,
+  "uniform_rows": 4793,
+  "uniform_steps_sha256": "1d311cf187c0ea8b35bf46053615ac818711e55aa74eb3ddaaa46dccef6fc3ae",
+  "exporter_sha256": "8829122e86919c2e50621ad788f167a7ecedbdd7bf747d0f8c883eabe2e7abfc",
+  "media_original_bytes_exact": true,
+  "camera_jpegs": 384,
+  "matching_old_camera_prefix_jpegs": 380,
+  "videos": {
+    "agentview.mp4": {
+      "codec_name": "h264",
+      "width": 256,
+      "height": 256,
+      "r_frame_rate": "20/1",
+      "duration": "9.600000",
+      "nb_read_frames": "192"
+    },
+    "robot0_eye_in_hand.mp4": {
+      "codec_name": "h264",
+      "width": 256,
+      "height": 256,
+      "r_frame_rate": "20/1",
+      "duration": "9.600000",
+      "nb_read_frames": "192"
+    }
+  },
+  "numeric_and_independent_joint_health": "PASS_OBSERVED_PREFIX_ONLY",
+  "research_contact_policy": "FAIL_LOADED_DEPTH_GROWTH_STEP4793",
+  "limited_grasp": "UNKNOWN_EARLY_STOP",
+  "native_task_success": false,
+  "full_1_5s_hold": "NOT_REACHED",
+  "wrist306": "Frozen action-isolation condition; no endorsement as final asset design"
+}
