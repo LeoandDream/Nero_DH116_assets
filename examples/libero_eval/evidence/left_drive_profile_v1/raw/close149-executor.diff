@@ -1,0 +1,13 @@
+--- frozen_research_execute
++++ close149_execute
+@@ -33,8 +33,8 @@
+                 model_path = ROOT / wrist_policy.MODEL
+                 geometry_path = wrist_conditional
+                 preflight = dict(preflight, external=external)
+-            actions = build_schedule(candidate)
+-            schedule_info = schedule_summary(actions)
++            actions = deepcopy(_close149_schedule)
++            schedule_info = deepcopy(_close149_summary)
+             planned_steps = schedule_info['physics_steps_max']
+             result.update(robot_model=MODEL_REL, formal_model=None,
+                           A='PASS_FINITE_SAMPLED_INTERNAL_GEOMETRY_ONLY',

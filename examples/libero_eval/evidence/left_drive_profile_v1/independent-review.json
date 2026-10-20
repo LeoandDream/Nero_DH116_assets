@@ -1,0 +1,2540 @@
+{
+  "mode": "PURE_STDLIB_READ_ONLY_NO_ENGINE_IMPORT_OR_OPERATIONS",
+  "A": "/data_robot/projects/.worktrees/nero_dh116_finger22_risk_review/examples/libero_eval/evidence/close149/raw",
+  "B": "/data_robot/verification/nero_dh116_right/runs/issue5_left_drive_v1/close149_B_once",
+  "rows": {
+    "B_state": 245,
+    "B_contacts": 245,
+    "A_prefix_state": 245,
+    "A_prefix_contacts": 245
+  },
+  "envelope": {
+    "joint_order": [
+      "robot0_joint1",
+      "robot0_joint2",
+      "robot0_joint3",
+      "robot0_joint4",
+      "robot0_joint5",
+      "robot0_joint6",
+      "robot0_joint7",
+      "gripper0_finger11",
+      "gripper0_finger12",
+      "gripper0_finger13",
+      "gripper0_finger21",
+      "gripper0_finger22",
+      "gripper0_finger31",
+      "gripper0_finger32",
+      "gripper0_finger41",
+      "gripper0_finger42",
+      "gripper0_finger51",
+      "gripper0_finger52"
+    ],
+    "same_A_limits": true,
+    "outside_rows": [
+      {
+        "step": 245,
+        "violations": [
+          {
+            "joint": "gripper0_finger11",
+            "robot_state_index": 7,
+            "qpos_rad": 0.14716427280610606,
+            "lower_rad": -0.02,
+            "upper_rad": 0.14714413600034068,
+            "side": "UPPER",
+            "excess_rad": 2.013680576537502e-05
+          }
+        ]
+      }
+    ],
+    "first244_all_inside": true,
+    "only245_single_joint": true,
+    "244_finger11_upper_margin_rad": 0.0003312351145606518,
+    "245_finger11_upper_excess_rad": 2.013680576537502e-05,
+    "is_URDF_joint_limit_failure": false,
+    "finger11_URDF_joint_range_rad": [
+      0.0,
+      1.047198
+    ],
+    "245_value_inside_URDF_joint_range": true
+  },
+  "compiled_full_inventory": {
+    "formal_snapshot": {
+      "expected_B_equals_full_saved_B": true,
+      "allowed_field_array_changes": 34,
+      "changed_objects": 17,
+      "allowed_changes": [
+        {
+          "category": "JOINT",
+          "name": "gripper0_finger11",
+          "section": "dofs",
+          "field": "dof_damping",
+          "A": [
+            2.0
+          ],
+          "B": [
+            0.0
+          ]
+        },
+        {
+          "category": "JOINT",
+          "name": "gripper0_finger11",
+          "section": "dofs",
+          "field": "dof_armature",
+          "A": [
+            0.01
+          ],
+          "B": [
+            0.0
+          ]
+        },
+        {
+          "category": "JOINT",
+          "name": "gripper0_finger12",
+          "section": "dofs",
+          "field": "dof_damping",
+          "A": [
+            2.0
+          ],
+          "B": [
+            0.0
+          ]
+        },
+        {
+          "category": "JOINT",
+          "name": "gripper0_finger12",
+          "section": "dofs",
+          "field": "dof_armature",
+          "A": [
+            0.01
+          ],
+          "B": [
+            0.0
+          ]
+        },
+        {
+          "category": "JOINT",
+          "name": "gripper0_finger13",
+          "section": "dofs",
+          "field": "dof_damping",
+          "A": [
+            2.0
+          ],
+          "B": [
+            0.0
+          ]
+        },
+        {
+          "category": "JOINT",
+          "name": "gripper0_finger13",
+          "section": "dofs",
+          "field": "dof_armature",
+          "A": [
+            0.01
+          ],
+          "B": [
+            0.0
+          ]
+        },
+        {
+          "category": "JOINT",
+          "name": "gripper0_finger21",
+          "section": "dofs",
+          "field": "dof_damping",
+          "A": [
+            2.0
+          ],
+          "B": [
+            0.0
+          ]
+        },
+        {
+          "category": "JOINT",
+          "name": "gripper0_finger21",
+          "section": "dofs",
+          "field": "dof_armature",
+          "A": [
+            0.01
+          ],
+          "B": [
+            0.0
+          ]
+        },
+        {
+          "category": "JOINT",
+          "name": "gripper0_finger22",
+          "section": "dofs",
+          "field": "dof_damping",
+          "A": [
+            2.0
+          ],
+          "B": [
+            0.0
+          ]
+        },
+        {
+          "category": "JOINT",
+          "name": "gripper0_finger22",
+          "section": "dofs",
+          "field": "dof_armature",
+          "A": [
+            0.01
+          ],
+          "B": [
+            0.0
+          ]
+        },
+        {
+          "category": "JOINT",
+          "name": "gripper0_finger31",
+          "section": "dofs",
+          "field": "dof_damping",
+          "A": [
+            2.0
+          ],
+          "B": [
+            0.0
+          ]
+        },
+        {
+          "category": "JOINT",
+          "name": "gripper0_finger31",
+          "section": "dofs",
+          "field": "dof_armature",
+          "A": [
+            0.01
+          ],
+          "B": [
+            0.0
+          ]
+        },
+        {
+          "category": "JOINT",
+          "name": "gripper0_finger32",
+          "section": "dofs",
+          "field": "dof_damping",
+          "A": [
+            2.0
+          ],
+          "B": [
+            0.0
+          ]
+        },
+        {
+          "category": "JOINT",
+          "name": "gripper0_finger32",
+          "section": "dofs",
+          "field": "dof_armature",
+          "A": [
+            0.01
+          ],
+          "B": [
+            0.0
+          ]
+        },
+        {
+          "category": "JOINT",
+          "name": "gripper0_finger41",
+          "section": "dofs",
+          "field": "dof_damping",
+          "A": [
+            2.0
+          ],
+          "B": [
+            0.0
+          ]
+        },
+        {
+          "category": "JOINT",
+          "name": "gripper0_finger41",
+          "section": "dofs",
+          "field": "dof_armature",
+          "A": [
+            0.01
+          ],
+          "B": [
+            0.0
+          ]
+        },
+        {
+          "category": "JOINT",
+          "name": "gripper0_finger42",
+          "section": "dofs",
+          "field": "dof_damping",
+          "A": [
+            2.0
+          ],
+          "B": [
+            0.0
+          ]
+        },
+        {
+          "category": "JOINT",
+          "name": "gripper0_finger42",
+          "section": "dofs",
+          "field": "dof_armature",
+          "A": [
+            0.01
+          ],
+          "B": [
+            0.0
+          ]
+        },
+        {
+          "category": "JOINT",
+          "name": "gripper0_finger51",
+          "section": "dofs",
+          "field": "dof_damping",
+          "A": [
+            2.0
+          ],
+          "B": [
+            0.0
+          ]
+        },
+        {
+          "category": "JOINT",
+          "name": "gripper0_finger51",
+          "section": "dofs",
+          "field": "dof_armature",
+          "A": [
+            0.01
+          ],
+          "B": [
+            0.0
+          ]
+        },
+        {
+          "category": "JOINT",
+          "name": "gripper0_finger52",
+          "section": "dofs",
+          "field": "dof_damping",
+          "A": [
+            2.0
+          ],
+          "B": [
+            0.0
+          ]
+        },
+        {
+          "category": "JOINT",
+          "name": "gripper0_finger52",
+          "section": "dofs",
+          "field": "dof_armature",
+          "A": [
+            0.01
+          ],
+          "B": [
+            0.0
+          ]
+        },
+        {
+          "category": "ACTUATOR",
+          "name": "gripper0_urdf_act_finger11",
+          "section": "fields",
+          "field": "actuator_gainprm",
+          "A": [
+            50.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.6528657407748308,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "category": "ACTUATOR",
+          "name": "gripper0_urdf_act_finger11",
+          "section": "fields",
+          "field": "actuator_biasprm",
+          "A": [
+            0.0,
+            -50.0,
+            -2.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            -0.6528657407748308,
+            -0.026114629630993234,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "category": "ACTUATOR",
+          "name": "gripper0_urdf_act_finger12",
+          "section": "fields",
+          "field": "actuator_gainprm",
+          "A": [
+            50.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.6599147309727501,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "category": "ACTUATOR",
+          "name": "gripper0_urdf_act_finger12",
+          "section": "fields",
+          "field": "actuator_biasprm",
+          "A": [
+            0.0,
+            -50.0,
+            -2.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            -0.6599147309727501,
+            -0.026396589238910004,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "category": "ACTUATOR",
+          "name": "gripper0_urdf_act_finger21",
+          "section": "fields",
+          "field": "actuator_gainprm",
+          "A": [
+            50.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.5098435598707074,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "category": "ACTUATOR",
+          "name": "gripper0_urdf_act_finger21",
+          "section": "fields",
+          "field": "actuator_biasprm",
+          "A": [
+            0.0,
+            -50.0,
+            -2.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            -0.5098435598707074,
+            -0.020393742394828294,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "category": "ACTUATOR",
+          "name": "gripper0_urdf_act_finger31",
+          "section": "fields",
+          "field": "actuator_gainprm",
+          "A": [
+            50.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.6930717097179387,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "category": "ACTUATOR",
+          "name": "gripper0_urdf_act_finger31",
+          "section": "fields",
+          "field": "actuator_biasprm",
+          "A": [
+            0.0,
+            -50.0,
+            -2.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            -0.6930717097179387,
+            -0.02772286838871755,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "category": "ACTUATOR",
+          "name": "gripper0_urdf_act_finger41",
+          "section": "fields",
+          "field": "actuator_gainprm",
+          "A": [
+            50.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.5102700365962061,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "category": "ACTUATOR",
+          "name": "gripper0_urdf_act_finger41",
+          "section": "fields",
+          "field": "actuator_biasprm",
+          "A": [
+            0.0,
+            -50.0,
+            -2.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            -0.5102700365962061,
+            -0.020410801463848244,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "category": "ACTUATOR",
+          "name": "gripper0_urdf_act_finger51",
+          "section": "fields",
+          "field": "actuator_gainprm",
+          "A": [
+            50.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.2945133102985352,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "category": "ACTUATOR",
+          "name": "gripper0_urdf_act_finger51",
+          "section": "fields",
+          "field": "actuator_biasprm",
+          "A": [
+            0.0,
+            -50.0,
+            -2.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            -0.2945133102985352,
+            -0.011780532411941408,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "A_dimensions": {
+        "nq": 18,
+        "nv": 18,
+        "nu": 13,
+        "na": 0,
+        "nbody": 33,
+        "njnt": 18,
+        "ngeom": 462,
+        "neq": 5,
+        "nexclude": 1,
+        "nsensor": 2
+      },
+      "B_dimensions": {
+        "nq": 18,
+        "nv": 18,
+        "nu": 13,
+        "na": 0,
+        "nbody": 33,
+        "njnt": 18,
+        "ngeom": 462,
+        "neq": 5,
+        "nexclude": 1,
+        "nsensor": 2
+      },
+      "same_full_options": true,
+      "same_exclusions": true
+    },
+    "actual_snapshot": {
+      "expected_B_equals_full_saved_B": true,
+      "allowed_field_array_changes": 34,
+      "changed_objects": 17,
+      "allowed_changes": [
+        {
+          "category": "JOINT",
+          "name": "gripper0_finger11",
+          "section": "dofs",
+          "field": "dof_damping",
+          "A": [
+            2.0
+          ],
+          "B": [
+            0.0
+          ]
+        },
+        {
+          "category": "JOINT",
+          "name": "gripper0_finger11",
+          "section": "dofs",
+          "field": "dof_armature",
+          "A": [
+            0.01
+          ],
+          "B": [
+            0.0
+          ]
+        },
+        {
+          "category": "JOINT",
+          "name": "gripper0_finger12",
+          "section": "dofs",
+          "field": "dof_damping",
+          "A": [
+            2.0
+          ],
+          "B": [
+            0.0
+          ]
+        },
+        {
+          "category": "JOINT",
+          "name": "gripper0_finger12",
+          "section": "dofs",
+          "field": "dof_armature",
+          "A": [
+            0.01
+          ],
+          "B": [
+            0.0
+          ]
+        },
+        {
+          "category": "JOINT",
+          "name": "gripper0_finger13",
+          "section": "dofs",
+          "field": "dof_damping",
+          "A": [
+            2.0
+          ],
+          "B": [
+            0.0
+          ]
+        },
+        {
+          "category": "JOINT",
+          "name": "gripper0_finger13",
+          "section": "dofs",
+          "field": "dof_armature",
+          "A": [
+            0.01
+          ],
+          "B": [
+            0.0
+          ]
+        },
+        {
+          "category": "JOINT",
+          "name": "gripper0_finger21",
+          "section": "dofs",
+          "field": "dof_damping",
+          "A": [
+            2.0
+          ],
+          "B": [
+            0.0
+          ]
+        },
+        {
+          "category": "JOINT",
+          "name": "gripper0_finger21",
+          "section": "dofs",
+          "field": "dof_armature",
+          "A": [
+            0.01
+          ],
+          "B": [
+            0.0
+          ]
+        },
+        {
+          "category": "JOINT",
+          "name": "gripper0_finger22",
+          "section": "dofs",
+          "field": "dof_damping",
+          "A": [
+            2.0
+          ],
+          "B": [
+            0.0
+          ]
+        },
+        {
+          "category": "JOINT",
+          "name": "gripper0_finger22",
+          "section": "dofs",
+          "field": "dof_armature",
+          "A": [
+            0.01
+          ],
+          "B": [
+            0.0
+          ]
+        },
+        {
+          "category": "JOINT",
+          "name": "gripper0_finger31",
+          "section": "dofs",
+          "field": "dof_damping",
+          "A": [
+            2.0
+          ],
+          "B": [
+            0.0
+          ]
+        },
+        {
+          "category": "JOINT",
+          "name": "gripper0_finger31",
+          "section": "dofs",
+          "field": "dof_armature",
+          "A": [
+            0.01
+          ],
+          "B": [
+            0.0
+          ]
+        },
+        {
+          "category": "JOINT",
+          "name": "gripper0_finger32",
+          "section": "dofs",
+          "field": "dof_damping",
+          "A": [
+            2.0
+          ],
+          "B": [
+            0.0
+          ]
+        },
+        {
+          "category": "JOINT",
+          "name": "gripper0_finger32",
+          "section": "dofs",
+          "field": "dof_armature",
+          "A": [
+            0.01
+          ],
+          "B": [
+            0.0
+          ]
+        },
+        {
+          "category": "JOINT",
+          "name": "gripper0_finger41",
+          "section": "dofs",
+          "field": "dof_damping",
+          "A": [
+            2.0
+          ],
+          "B": [
+            0.0
+          ]
+        },
+        {
+          "category": "JOINT",
+          "name": "gripper0_finger41",
+          "section": "dofs",
+          "field": "dof_armature",
+          "A": [
+            0.01
+          ],
+          "B": [
+            0.0
+          ]
+        },
+        {
+          "category": "JOINT",
+          "name": "gripper0_finger42",
+          "section": "dofs",
+          "field": "dof_damping",
+          "A": [
+            2.0
+          ],
+          "B": [
+            0.0
+          ]
+        },
+        {
+          "category": "JOINT",
+          "name": "gripper0_finger42",
+          "section": "dofs",
+          "field": "dof_armature",
+          "A": [
+            0.01
+          ],
+          "B": [
+            0.0
+          ]
+        },
+        {
+          "category": "JOINT",
+          "name": "gripper0_finger51",
+          "section": "dofs",
+          "field": "dof_damping",
+          "A": [
+            2.0
+          ],
+          "B": [
+            0.0
+          ]
+        },
+        {
+          "category": "JOINT",
+          "name": "gripper0_finger51",
+          "section": "dofs",
+          "field": "dof_armature",
+          "A": [
+            0.01
+          ],
+          "B": [
+            0.0
+          ]
+        },
+        {
+          "category": "JOINT",
+          "name": "gripper0_finger52",
+          "section": "dofs",
+          "field": "dof_damping",
+          "A": [
+            2.0
+          ],
+          "B": [
+            0.0
+          ]
+        },
+        {
+          "category": "JOINT",
+          "name": "gripper0_finger52",
+          "section": "dofs",
+          "field": "dof_armature",
+          "A": [
+            0.01
+          ],
+          "B": [
+            0.0
+          ]
+        },
+        {
+          "category": "ACTUATOR",
+          "name": "gripper0_urdf_act_finger11",
+          "section": "fields",
+          "field": "actuator_gainprm",
+          "A": [
+            50.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.6528657407748308,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "category": "ACTUATOR",
+          "name": "gripper0_urdf_act_finger11",
+          "section": "fields",
+          "field": "actuator_biasprm",
+          "A": [
+            0.0,
+            -50.0,
+            -2.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            -0.6528657407748308,
+            -0.026114629630993234,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "category": "ACTUATOR",
+          "name": "gripper0_urdf_act_finger12",
+          "section": "fields",
+          "field": "actuator_gainprm",
+          "A": [
+            50.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.6599147309727501,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "category": "ACTUATOR",
+          "name": "gripper0_urdf_act_finger12",
+          "section": "fields",
+          "field": "actuator_biasprm",
+          "A": [
+            0.0,
+            -50.0,
+            -2.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            -0.6599147309727501,
+            -0.026396589238910004,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "category": "ACTUATOR",
+          "name": "gripper0_urdf_act_finger21",
+          "section": "fields",
+          "field": "actuator_gainprm",
+          "A": [
+            50.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.5098435598707074,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "category": "ACTUATOR",
+          "name": "gripper0_urdf_act_finger21",
+          "section": "fields",
+          "field": "actuator_biasprm",
+          "A": [
+            0.0,
+            -50.0,
+            -2.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            -0.5098435598707074,
+            -0.020393742394828294,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "category": "ACTUATOR",
+          "name": "gripper0_urdf_act_finger31",
+          "section": "fields",
+          "field": "actuator_gainprm",
+          "A": [
+            50.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.6930717097179387,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "category": "ACTUATOR",
+          "name": "gripper0_urdf_act_finger31",
+          "section": "fields",
+          "field": "actuator_biasprm",
+          "A": [
+            0.0,
+            -50.0,
+            -2.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            -0.6930717097179387,
+            -0.02772286838871755,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "category": "ACTUATOR",
+          "name": "gripper0_urdf_act_finger41",
+          "section": "fields",
+          "field": "actuator_gainprm",
+          "A": [
+            50.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.5102700365962061,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "category": "ACTUATOR",
+          "name": "gripper0_urdf_act_finger41",
+          "section": "fields",
+          "field": "actuator_biasprm",
+          "A": [
+            0.0,
+            -50.0,
+            -2.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            -0.5102700365962061,
+            -0.020410801463848244,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "category": "ACTUATOR",
+          "name": "gripper0_urdf_act_finger51",
+          "section": "fields",
+          "field": "actuator_gainprm",
+          "A": [
+            50.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.2945133102985352,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "category": "ACTUATOR",
+          "name": "gripper0_urdf_act_finger51",
+          "section": "fields",
+          "field": "actuator_biasprm",
+          "A": [
+            0.0,
+            -50.0,
+            -2.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            -0.2945133102985352,
+            -0.011780532411941408,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "A_dimensions": {
+        "nq": 33,
+        "nv": 31,
+        "nu": 13,
+        "na": 0,
+        "nbody": 42,
+        "njnt": 21,
+        "ngeom": 571,
+        "neq": 5,
+        "nexclude": 1,
+        "nsensor": 2
+      },
+      "B_dimensions": {
+        "nq": 33,
+        "nv": 31,
+        "nu": 13,
+        "na": 0,
+        "nbody": 42,
+        "njnt": 21,
+        "ngeom": 571,
+        "neq": 5,
+        "nexclude": 1,
+        "nsensor": 2
+      },
+      "same_full_options": true,
+      "same_exclusions": true
+    }
+  },
+  "reset": {
+    "critical_fields_exact": {
+      "qpos": true,
+      "qvel": true,
+      "ctrl": true,
+      "controller": true,
+      "criteria": true,
+      "native_scene": true,
+      "setup_counts": true,
+      "warning_before_integration": true
+    },
+    "B_reset_cache": {
+      "timing": "Native Reset cache before first episode step; no extra live forward or cache writes.",
+      "comparison_to_historical_A": "UNKNOWN: these caches were not saved at A Reset; never copied from A.",
+      "time_s": 0.0,
+      "cache": {
+        "qacc": [
+          -3.699304456771758,
+          -22.602646462300264,
+          13.650090625383777,
+          8.503378560102597,
+          -25.924649384217883,
+          39.16979143472325,
+          24.98104230025413,
+          3.4616060956081705,
+          -30.03998854098642,
+          -26.000950664178067,
+          38.324604367036805,
+          28.390230940483768,
+          33.50906495438082,
+          24.761239888136856,
+          32.187960954940735,
+          24.12402021201875,
+          28.88785098312534,
+          22.155611316255687,
+          3.1987991878773234e-18,
+          -1.1026074638241795e-17,
+          -9.81,
+          -2.0485200748789513e-16,
+          7.060682693066708e-16,
+          -1.1238822050875653e-19,
+          -5.744006021343787e-19,
+          2.204868236347854e-20,
+          -9.81,
+          3.740140792353845e-17,
+          -1.4315179559385573e-18,
+          2.2301863201245777e-18,
+          0.0
+        ],
+        "qacc_warmstart": [
+          -3.699304456771758,
+          -22.602646462300264,
+          13.650090625383777,
+          8.503378560102597,
+          -25.924649384217883,
+          39.16979143472325,
+          24.98104230025413,
+          3.4616060956081705,
+          -30.03998854098642,
+          -26.000950664178067,
+          38.324604367036805,
+          28.390230940483768,
+          33.50906495438082,
+          24.761239888136856,
+          32.187960954940735,
+          24.12402021201875,
+          28.88785098312534,
+          22.155611316255687,
+          3.1987991878773234e-18,
+          -1.1026074638241795e-17,
+          -9.81,
+          -2.0485200748789513e-16,
+          7.060682693066708e-16,
+          -1.1238822050875653e-19,
+          -5.744006021343787e-19,
+          2.204868236347854e-20,
+          -9.81,
+          3.740140792353845e-17,
+          -1.4315179559385573e-18,
+          2.2301863201245777e-18,
+          0.0
+        ],
+        "actuator_force": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "qfrc_actuator": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "qfrc_constraint": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          7.646332897993569e-06,
+          -8.681122727059002e-06,
+          -5.3702800273002226e-05,
+          5.8334564711060426e-05,
+          -8.138833436261815e-05,
+          8.840792348752786e-05,
+          -4.2443139067911836e-05,
+          4.610377913090576e-05,
+          -3.2181304358977626e-05,
+          3.495688068539825e-05,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "qfrc_passive": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "qfrc_bias": [
+          0.0,
+          8.357407249018394,
+          0.5898261341072525,
+          -2.514650305382447,
+          -0.24232964042760452,
+          0.040101444973836387,
+          0.10050979709896318,
+          -0.017808568856918117,
+          -0.0043936984140307556,
+          -0.0012748114682972905,
+          -0.003234920899974361,
+          -0.0011474321740182099,
+          -0.003899713748367145,
+          -0.0015438501434885399,
+          -0.0028961417858028374,
+          -0.0009883103071138336,
+          -0.0023584452431661303,
+          -0.0007058386918407482,
+          0.0,
+          0.0,
+          0.020461803100416,
+          7.329909315041026e-06,
+          -3.47255395116826e-05,
+          0.0,
+          0.0,
+          0.0,
+          0.4929239200011842,
+          -0.00043548179069114416,
+          -0.011746421128118877,
+          0.0,
+          0.0
+        ]
+      },
+      "warning_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "limitation": "A Reset acceleration/warmstart/force caches were not saved; no cache equality claim. B caches remain native, not replaced."
+  },
+  "timing_and_actions": {
+    "all245_timing_action_fields_exact": true,
+    "full_schedule_rows_equal": true,
+    "schedule_file_sha256_A": "019173fae82db3b0b30b58572fb64e0c3ff400f0ad98912ff17c41dc69b1ecbf",
+    "schedule_file_sha256_B": "019173fae82db3b0b30b58572fb64e0c3ff400f0ad98912ff17c41dc69b1ecbf",
+    "canonical_schedule_sha256_B": "ebf188b0bf49ad3b74a042c52b5fa4ad5df02dcb8f84caea565fcdaf9fdc7e32",
+    "all245_actions_match_saved_schedule": true,
+    "last_time_s": 0.4900000000000004,
+    "phase_counts": {
+      "settle_preshape": 245
+    }
+  },
+  "contacts": {
+    "A_prefix245": {
+      "hand_bowl_contact_records": 0,
+      "all_robot_contact_records": 0,
+      "min_hand_bowl_distance_m": null,
+      "all_steps_have_positive_environment_bowl_support": false,
+      "environment_bowl_contact_counts": [
+        0,
+        4
+      ]
+    },
+    "B245": {
+      "hand_bowl_contact_records": 0,
+      "all_robot_contact_records": 0,
+      "min_hand_bowl_distance_m": null,
+      "all_steps_have_positive_environment_bowl_support": false,
+      "environment_bowl_contact_counts": [
+        0,
+        4
+      ]
+    },
+    "timing_labels_exact": true,
+    "245_B_positive_environment_bowl_contacts": 4
+  },
+  "health": {
+    "all_failures": {
+      "OUTSIDE_REGISTERED_PATH_ENVELOPE": 1
+    },
+    "all_legacy_failures": {
+      "OUTSIDE_REGISTERED_PATH_ENVELOPE": 1
+    },
+    "no_failures_first244": true,
+    "numerical_warning_rows": 0,
+    "nonfinite_rows": 0,
+    "wrist_external_contact_rows": 0,
+    "max_arm_tracking_rad": 0.005560534305965398,
+    "max_active_tracking_rad": 0.021999293930495954,
+    "max_mimic_rad": 0.0007770589071400772,
+    "max_joint_overshoot_rad": 5.216192554211494e-06,
+    "max_robot_overlap_m": 0.0,
+    "hold_tracking": "NOT_REACHED",
+    "settled_baseline": "NOT_REACHED: stop245 precedes definition at250",
+    "limits": {
+      "arm_tracking_error_rad_max": 0.1,
+      "steady_active_error_rad_max": 0.02,
+      "linear_mimic_error_rad_max": 0.02,
+      "joint_limit_overshoot_rad_max": 0.01
+    },
+    "interpretation": "Overall control_health remains FAIL due to envelope stop; other reached independent channels are within their bounds. Active steady tracking is a hold-only criterion and hold was not reached."
+  },
+  "same_step_245_comparison": {
+    "A": {
+      "step": 245,
+      "phase": "settle_preshape",
+      "macro": 9,
+      "source_macro": 9,
+      "time_s": 0.4900000000000004,
+      "arm_error_rad": [
+        6.097337298394123e-07,
+        1.5312277574786037e-06,
+        1.7253807000905397e-06,
+        9.254614811271544e-06,
+        1.936816765568672e-05,
+        0.002036719674659987,
+        3.856874898278129e-05
+      ],
+      "active_error_rad": [
+        0.016114689037503002,
+        9.72480852799096e-05,
+        8.407007846245543e-05,
+        0.00010434058161292574,
+        7.465606739029148e-05,
+        5.912722152556317e-05
+      ],
+      "mimic_rad": 5.825635707966403e-07,
+      "joint_overshoot_rad": 0.0,
+      "failures": [],
+      "hand_channels": [
+        {
+          "joint": "gripper0_finger11",
+          "qpos_post_rad": 0.11102944696283766,
+          "target_rad": 0.12714413600034066,
+          "error_abs_rad": 0.016114689037503002,
+          "qvel_post_rad_s": 0.2127080121898891,
+          "actuator_force_cached_Nm": 0.3803176081463526,
+          "qfrc_passive_cached_Nm": -0.42541565621241484,
+          "qfrc_bias_cached_Nm": -0.01741588102888786,
+          "qfrc_constraint_cached_Nm": 0.0
+        },
+        {
+          "joint": "gripper0_finger12",
+          "qpos_post_rad": 9.72480852799096e-05,
+          "target_rad": 0.0,
+          "error_abs_rad": 9.72480852799096e-05,
+          "qvel_post_rad_s": -2.2390855032300873e-05,
+          "actuator_force_cached_Nm": -0.004817604032604484,
+          "qfrc_passive_cached_Nm": 4.48021744909985e-05,
+          "qfrc_bias_cached_Nm": -0.0036619651097077946,
+          "qfrc_constraint_cached_Nm": 0.001095631305827837
+        },
+        {
+          "joint": "gripper0_finger21",
+          "qpos_post_rad": 8.407007846245543e-05,
+          "target_rad": 0.0,
+          "error_abs_rad": 8.407007846245543e-05,
+          "qvel_post_rad_s": 5.2209982900806375e-06,
+          "actuator_force_cached_Nm": -0.004213974834127098,
+          "qfrc_passive_cached_Nm": -1.0473838973513122e-05,
+          "qfrc_bias_cached_Nm": -0.003218211184671395,
+          "qfrc_constraint_cached_Nm": 0.0010328090861344546
+        },
+        {
+          "joint": "gripper0_finger31",
+          "qpos_post_rad": 0.00010434058161292574,
+          "target_rad": 0.0,
+          "error_abs_rad": 0.00010434058161292574,
+          "qvel_post_rad_s": 1.2167186239015497e-05,
+          "actuator_force_cached_Nm": -0.005241380607922818,
+          "qfrc_passive_cached_Nm": -2.4353075357253314e-05,
+          "qfrc_bias_cached_Nm": -0.003879224036211458,
+          "qfrc_constraint_cached_Nm": 0.0013916866896947998
+        },
+        {
+          "joint": "gripper0_finger41",
+          "qpos_post_rad": 7.465606739029148e-05,
+          "target_rad": 0.0,
+          "error_abs_rad": 7.465606739029148e-05,
+          "qvel_post_rad_s": 1.320930373794597e-05,
+          "actuator_force_cached_Nm": -0.0037592202976486325,
+          "qfrc_passive_cached_Nm": -2.6416466258125207e-05,
+          "qfrc_bias_cached_Nm": -0.0028794569575749385,
+          "qfrc_constraint_cached_Nm": 0.0008887551909201478
+        },
+        {
+          "joint": "gripper0_finger51",
+          "qpos_post_rad": 5.912722152556317e-05,
+          "target_rad": 0.0,
+          "error_abs_rad": 5.912722152556317e-05,
+          "qvel_post_rad_s": 1.2534298372345982e-05,
+          "actuator_force_cached_Nm": -0.0029814190638634826,
+          "qfrc_passive_cached_Nm": -2.505650835883825e-05,
+          "qfrc_bias_cached_Nm": -0.002346911856813176,
+          "qfrc_constraint_cached_Nm": 0.0006337005732806935
+        }
+      ]
+    },
+    "B": {
+      "step": 245,
+      "phase": "settle_preshape",
+      "macro": 9,
+      "source_macro": 9,
+      "time_s": 0.4900000000000004,
+      "arm_error_rad": [
+        8.053404006447273e-07,
+        1.392582300363543e-06,
+        9.698317650741473e-06,
+        4.7026311817965905e-06,
+        3.259130763688667e-05,
+        0.0003335293484592605,
+        0.00013037747307564906
+      ],
+      "active_error_rad": [
+        0.020020136805765393,
+        0.006778395474598555,
+        0.008206790942945798,
+        0.007522044680833501,
+        0.007321458216890965,
+        0.010058978105009105
+      ],
+      "mimic_rad": 0.0006438186475236016,
+      "joint_overshoot_rad": 0.0,
+      "failures": [
+        "OUTSIDE_REGISTERED_PATH_ENVELOPE"
+      ],
+      "hand_channels": [
+        {
+          "joint": "gripper0_finger11",
+          "qpos_post_rad": 0.14716427280610606,
+          "target_rad": 0.12714413600034066,
+          "error_abs_rad": 0.020020136805765393,
+          "qvel_post_rad_s": 0.1711749509859345,
+          "actuator_force_cached_Nm": -0.01754265634628914,
+          "qfrc_passive_cached_Nm": -2.246273614667884e-08,
+          "qfrc_bias_cached_Nm": -0.01718119720090952,
+          "qfrc_constraint_cached_Nm": 0.0
+        },
+        {
+          "joint": "gripper0_finger12",
+          "qpos_post_rad": 0.006778395474598555,
+          "target_rad": 0.0,
+          "error_abs_rad": 0.006778395474598555,
+          "qvel_post_rad_s": -0.002000308690709825,
+          "actuator_force_cached_Nm": -0.004419955938925251,
+          "qfrc_passive_cached_Nm": 3.3056519777079276e-10,
+          "qfrc_bias_cached_Nm": -0.003367211214922436,
+          "qfrc_constraint_cached_Nm": 0.0010269542667642867
+        },
+        {
+          "joint": "gripper0_finger21",
+          "qpos_post_rad": 0.008206790942945798,
+          "target_rad": 0.0,
+          "error_abs_rad": 0.008206790942945798,
+          "qvel_post_rad_s": -0.00197043169888044,
+          "actuator_force_cached_Nm": -0.00414466686387597,
+          "qfrc_passive_cached_Nm": -4.176848539385294e-10,
+          "qfrc_bias_cached_Nm": -0.0031803160464036265,
+          "qfrc_constraint_cached_Nm": 0.0010149839349484196
+        },
+        {
+          "joint": "gripper0_finger31",
+          "qpos_post_rad": 0.007522044680833501,
+          "target_rad": 0.0,
+          "error_abs_rad": 0.007522044680833501,
+          "qvel_post_rad_s": -0.00032048461958773594,
+          "actuator_force_cached_Nm": -0.0052047329007262905,
+          "qfrc_passive_cached_Nm": -3.909832589252196e-11,
+          "qfrc_bias_cached_Nm": -0.0038321272035054185,
+          "qfrc_constraint_cached_Nm": 0.0013840141501137019
+        },
+        {
+          "joint": "gripper0_finger41",
+          "qpos_post_rad": 0.007321458216890965,
+          "target_rad": 0.0,
+          "error_abs_rad": 0.007321458216890965,
+          "qvel_post_rad_s": 0.0012692573306408493,
+          "actuator_force_cached_Nm": -0.003761647715786374,
+          "qfrc_passive_cached_Nm": 3.29973064003421e-10,
+          "qfrc_bias_cached_Nm": -0.0028371576908965968,
+          "qfrc_constraint_cached_Nm": 0.0008932108014066234
+        },
+        {
+          "joint": "gripper0_finger51",
+          "qpos_post_rad": 0.010058978105009105,
+          "target_rad": 0.0,
+          "error_abs_rad": 0.010058978105009105,
+          "qvel_post_rad_s": 0.0031150377360581404,
+          "actuator_force_cached_Nm": -0.0029988410892612294,
+          "qfrc_passive_cached_Nm": 6.224954101760191e-10,
+          "qfrc_bias_cached_Nm": -0.002307834333323315,
+          "qfrc_constraint_cached_Nm": 0.0006439264159723082
+        }
+      ]
+    },
+    "timing_limitation": "qpos/qvel are post-step; force and body/contact fields are final RK4 internal-stage cached values. Do not infer an exact synchronous torque balance."
+  },
+  "result": {
+    "execution": "STOPPED_AT_FIRST_FAILURE",
+    "physics_steps": 245,
+    "completed_commands": 9,
+    "native_task_result": false,
+    "grasp_result": "UNKNOWN_EARLY_STOP",
+    "control_health": "FAIL",
+    "first_failure": {
+      "step": 245,
+      "macro": 9,
+      "source_macro": 9,
+      "repeat_index": 0,
+      "phase": "settle_preshape",
+      "reasons": [
+        "OUTSIDE_REGISTERED_PATH_ENVELOPE"
+      ]
+    },
+    "own_settled_bowl_z_m": null,
+    "lift_from_own_settled_m": null,
+    "longest_continuous_valid_hold_s": 0.0,
+    "dynamic_attempts": 1,
+    "inputs_unchanged": true,
+    "baseline_commit": "43bc90b8932cb2199ad7b19ca00611259d3f7d49"
+  },
+  "derived_preflight_summary": {
+    "saved_audit": {
+      "A_reference": "One reverse-34-attributes scene compilation; no A Reset/forward/episode.",
+      "constant_pose": "compiler qpos0; not the seeded native Reset posture",
+      "extra_A_scene_compilations": 1,
+      "extra_A_episode_steps": 0,
+      "body_pose_source": "Only two fixture roots assigned to independent A model AFTER compilation, as native Reset does; original XML/constant context and quaternion tokens preserved. No A forward/setConst/Reset/step, no live B write.",
+      "A_model_fixture_assignments_after_compilation": {
+        "flat_stove_1_main": {
+          "body_pos": [
+            -0.1914352667267948,
+            0.29950489649814477,
+            0.905
+          ],
+          "body_quat": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "wooden_two_layer_shelf_1_main": {
+          "body_pos": [
+            -0.0009951050280496455,
+            -0.25100458328248065,
+            0.9199999999999999
+          ],
+          "body_quat": [
+            6.123233995736766e-17,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "fields": {
+        "dof_M0": {
+          "changed": [
+            {
+              "name": "gripper0_finger11",
+              "A": 0.010132451353584261,
+              "B": 0.00013245135358426154
+            },
+            {
+              "name": "gripper0_finger12",
+              "A": 0.010087979376606653,
+              "B": 8.797937660665273e-05
+            },
+            {
+              "name": "gripper0_finger13",
+              "A": 0.010008098968504879,
+              "B": 8.098968504878038e-06
+            },
+            {
+              "name": "gripper0_finger21",
+              "A": 0.010055964552668674,
+              "B": 5.5964552668673875e-05
+            },
+            {
+              "name": "gripper0_finger22",
+              "A": 0.010009271735511112,
+              "B": 9.27173551111144e-06
+            },
+            {
+              "name": "gripper0_finger31",
+              "A": 0.0100745129027834,
+              "B": 7.451290278340144e-05
+            },
+            {
+              "name": "gripper0_finger32",
+              "A": 0.010016217173696367,
+              "B": 1.6217173696367054e-05
+            },
+            {
+              "name": "gripper0_finger41",
+              "A": 0.010056017792503985,
+              "B": 5.601779250398372e-05
+            },
+            {
+              "name": "gripper0_finger42",
+              "A": 0.010009271049146829,
+              "B": 9.27104914682891e-06
+            },
+            {
+              "name": "gripper0_finger51",
+              "A": 0.010034734156665875,
+              "B": 3.4734156665873664e-05
+            },
+            {
+              "name": "gripper0_finger52",
+              "A": 0.010004655373900979,
+              "B": 4.655373900978207e-06
+            }
+          ],
+          "all_other_entries_exact": true
+        },
+        "dof_invweight0": {
+          "changed": [
+            {
+              "name": "robot0_joint1",
+              "A": 867.9486942330348,
+              "B": 867.9491442868758
+            },
+            {
+              "name": "robot0_joint2",
+              "A": 11.114510061517512,
+              "B": 11.156328370148568
+            },
+            {
+              "name": "robot0_joint3",
+              "A": 2774.3927415864255,
+              "B": 2774.3935633324213
+            },
+            {
+              "name": "robot0_joint4",
+              "A": 93.32035628922338,
+              "B": 95.78556637262996
+            },
+            {
+              "name": "robot0_joint5",
+              "A": 3391.0850272564094,
+              "B": 4581.338885462035
+            },
+            {
+              "name": "robot0_joint6",
+              "A": 231.303996274625,
+              "B": 255.07231444612856
+            },
+            {
+              "name": "robot0_joint7",
+              "A": 473.0360014508297,
+              "B": 1185.930133631095
+            },
+            {
+              "name": "gripper0_finger11",
+              "A": 99.22406664625379,
+              "B": 13434.035803229262
+            },
+            {
+              "name": "gripper0_finger12",
+              "A": 99.22248669794755,
+              "B": 45845.81696853714
+            },
+            {
+              "name": "gripper0_finger13",
+              "A": 99.92415844039044,
+              "B": 429258.765028569
+            },
+            {
+              "name": "gripper0_finger21",
+              "A": 99.53787782775971,
+              "B": 167929.18802531707
+            },
+            {
+              "name": "gripper0_finger22",
+              "A": 99.919484563618,
+              "B": 895292.9147794213
+            },
+            {
+              "name": "gripper0_finger31",
+              "A": 99.3939824087283,
+              "B": 125042.99155966607
+            },
+            {
+              "name": "gripper0_finger32",
+              "A": 99.86017435204914,
+              "B": 494639.5619789184
+            },
+            {
+              "name": "gripper0_finger41",
+              "A": 99.5334911117827,
+              "B": 169346.3486330317
+            },
+            {
+              "name": "gripper0_finger42",
+              "A": 99.91903982433696,
+              "B": 905922.3326422782
+            },
+            {
+              "name": "gripper0_finger51",
+              "A": 99.70398604702666,
+              "B": 154408.6668057412
+            },
+            {
+              "name": "gripper0_finger52",
+              "A": 99.9576311376905,
+              "B": 988339.1386634024
+            }
+          ],
+          "all_other_entries_exact": true
+        },
+        "body_invweight0": {
+          "changed": [
+            {
+              "name": "robot0_link1",
+              "A": [
+                0.00017163861249434615,
+                289.3162314110116
+              ],
+              "B": [
+                0.0001716387014934049,
+                289.3163814289586
+              ]
+            },
+            {
+              "name": "robot0_link2",
+              "A": [
+                0.0235454633536778,
+                293.0210680775862
+              ],
+              "B": [
+                0.02363200033231659,
+                293.0351575316661
+              ]
+            },
+            {
+              "name": "robot0_link3",
+              "A": [
+                0.25303891968361786,
+                639.5264642048998
+              ],
+              "B": [
+                0.2539906452858024,
+                639.5407477496809
+              ]
+            },
+            {
+              "name": "robot0_link4",
+              "A": [
+                0.20830470133180481,
+                651.893966605811
+              ],
+              "B": [
+                0.20850161008591805,
+                652.5222156712272
+              ]
+            },
+            {
+              "name": "robot0_link5",
+              "A": [
+                0.20112559923007722,
+                511.5380058343905
+              ],
+              "B": [
+                0.2111617670610597,
+                909.6167890139253
+              ]
+            },
+            {
+              "name": "robot0_link6",
+              "A": [
+                0.5804738252413307,
+                588.6393379727799
+              ],
+              "B": [
+                0.6142607658749365,
+                994.6408938351242
+              ]
+            },
+            {
+              "name": "robot0_link7",
+              "A": [
+                0.8303768662258707,
+                678.260493108325
+              ],
+              "B": [
+                1.0142072316730737,
+                1298.6550443773301
+              ]
+            },
+            {
+              "name": "robot0_gripper_flange",
+              "A": [
+                0.5070901004093824,
+                678.260493108325
+              ],
+              "B": [
+                0.6060219009082961,
+                1298.6550443773301
+              ]
+            },
+            {
+              "name": "gripper0_base_link",
+              "A": [
+                1.3296151745321758,
+                678.260493108325
+              ],
+              "B": [
+                2.6623075007501344,
+                1298.6550443773301
+              ]
+            },
+            {
+              "name": "gripper0_finger11_link",
+              "A": [
+                1.5759888831256081,
+                694.2073326388839
+              ],
+              "B": [
+                2.6492470524194096,
+                3269.306012568793
+              ]
+            },
+            {
+              "name": "gripper0_finger12_link",
+              "A": [
+                3.5314616775543257,
+                723.8723256605243
+              ],
+              "B": [
+                12.511956728763701,
+                16935.322826486514
+              ]
+            },
+            {
+              "name": "gripper0_finger13_link",
+              "A": [
+                7.000243631001418,
+                756.2650490039426
+              ],
+              "B": [
+                30.265328704288788,
+                85032.67075561998
+              ]
+            },
+            {
+              "name": "gripper0_finger14_link",
+              "A": [
+                8.02720829854592,
+                756.2650490039426
+              ],
+              "B": [
+                41.85015066662657,
+                85032.67075561998
+              ]
+            },
+            {
+              "name": "gripper0_finger21_link",
+              "A": [
+                4.034724873001939,
+                708.2856647255472
+              ],
+              "B": [
+                19.95320455048026,
+                54401.7707531577
+              ]
+            },
+            {
+              "name": "gripper0_finger22_link",
+              "A": [
+                6.119042244717768,
+                740.349377562599
+              ],
+              "B": [
+                22.89549659956315,
+                118888.54568995508
+              ]
+            },
+            {
+              "name": "gripper0_finger23_link",
+              "A": [
+                6.424824092966717,
+                740.349377562599
+              ],
+              "B": [
+                31.46116474669381,
+                118888.54568995508
+              ]
+            },
+            {
+              "name": "gripper0_finger31_link",
+              "A": [
+                3.780800891717505,
+                707.418064285706
+              ],
+              "B": [
+                15.194963608807571,
+                40133.95380283992
+              ]
+            },
+            {
+              "name": "gripper0_finger32_link",
+              "A": [
+                6.079655638047807,
+                738.92818879958
+              ],
+              "B": [
+                19.916256586332874,
+                56447.569737302816
+              ]
+            },
+            {
+              "name": "gripper0_finger33_link",
+              "A": [
+                6.649511361198698,
+                738.92818879958
+              ],
+              "B": [
+                28.481828891183067,
+                56447.569737302816
+              ]
+            },
+            {
+              "name": "gripper0_finger41_link",
+              "A": [
+                3.9040993912335424,
+                708.1079670341484
+              ],
+              "B": [
+                20.138847733322923,
+                54723.981377960976
+              ]
+            },
+            {
+              "name": "gripper0_finger42_link",
+              "A": [
+                6.009677261214105,
+                740.1115295943824
+              ],
+              "B": [
+                22.69428724872837,
+                120198.81973814631
+              ]
+            },
+            {
+              "name": "gripper0_finger43_link",
+              "A": [
+                6.294214934820224,
+                740.1115295943824
+              ],
+              "B": [
+                32.17610856391929,
+                120198.81973814631
+              ]
+            },
+            {
+              "name": "gripper0_finger51_link",
+              "A": [
+                4.396068248886728,
+                709.0905651896556
+              ],
+              "B": [
+                18.197146694223942,
+                49674.76683488825
+              ]
+            },
+            {
+              "name": "gripper0_finger52_link",
+              "A": [
+                6.318121394146268,
+                741.6517067255663
+              ],
+              "B": [
+                29.594772805291157,
+                158583.07942679137
+              ]
+            },
+            {
+              "name": "gripper0_finger53_link",
+              "A": [
+                6.651097558927959,
+                741.6517067255663
+              ],
+              "B": [
+                41.454392058600156,
+                158583.07942679137
+              ]
+            },
+            {
+              "name": "gripper0_eef",
+              "A": [
+                0.5082307902538444,
+                678.260493108325
+              ],
+              "B": [
+                0.6101210130808327,
+                1298.6550443773301
+              ]
+            }
+          ],
+          "all_other_entries_exact": true
+        },
+        "actuator_acc0": {
+          "changed": [
+            {
+              "name": "robot0_urdf_motor_joint1",
+              "A": 1227.1106753694444,
+              "B": 1227.130623496519
+            },
+            {
+              "name": "robot0_urdf_motor_joint2",
+              "A": 39.3637003164209,
+              "B": 77.50227120501782
+            },
+            {
+              "name": "robot0_urdf_motor_joint3",
+              "A": 3475.9455611179114,
+              "B": 3475.4491128507684
+            },
+            {
+              "name": "robot0_urdf_motor_joint4",
+              "A": 160.2882969599306,
+              "B": 549.3445190019087
+            },
+            {
+              "name": "robot0_urdf_motor_joint5",
+              "A": 3890.5851720820956,
+              "B": 9175.26558116711
+            },
+            {
+              "name": "robot0_urdf_motor_joint6",
+              "A": 232.04723867634593,
+              "B": 680.866823794222
+            },
+            {
+              "name": "robot0_urdf_motor_joint7",
+              "A": 494.52841682607715,
+              "B": 12334.535167177402
+            },
+            {
+              "name": "gripper0_urdf_act_finger11",
+              "A": 102.58761645778584,
+              "B": 16696.996995824753
+            },
+            {
+              "name": "gripper0_urdf_act_finger12",
+              "A": 99.39835845145133,
+              "B": 127515.84649337572
+            },
+            {
+              "name": "gripper0_urdf_act_finger21",
+              "A": 99.73576722917484,
+              "B": 395436.2925304284
+            },
+            {
+              "name": "gripper0_urdf_act_finger31",
+              "A": 99.59581181119243,
+              "B": 263574.4374990067
+            },
+            {
+              "name": "gripper0_urdf_act_finger41",
+              "A": 99.71465899977234,
+              "B": 400114.04858407064
+            },
+            {
+              "name": "gripper0_urdf_act_finger51",
+              "A": 99.86306067344418,
+              "B": 371997.17388698907
+            }
+          ],
+          "all_other_entries_exact": true
+        }
+      },
+      "meaninertia": {
+        "A": 0.059723922458560764,
+        "B": 0.05617553536178657
+      },
+      "origin_verification": "Same native scene/resources; reversed A inventory matches saved A exactly; B differs by frozen drive package only."
+    },
+    "limitation": "Saved compiler-derived audit read only; no independent native recomputation performed."
+  },
+  "evidence_sha256": {
+    "/data_robot/projects/.worktrees/nero_dh116_finger22_risk_review/examples/right_hand/close149_drive.py": "7ba5a51c70e97f34be588771d908db1fbd009255c7b790984fac719c9aa6cbeb",
+    "/data_robot/projects/.worktrees/nero_dh116_finger22_risk_review/examples/right_hand/close149.py": "bfc34723de1bcd1741e19a9b7d29ac354477d244fa9b389556f4a3ce811b3e87",
+    "/data_robot/projects/.worktrees/nero_dh116_finger22_risk_review/examples/right_hand/libero_research.py": "7f15b06b5cf1333362a580f6841f90ca8bdde19d3e70ce97d16c342f79ff0b73",
+    "/data_robot/projects/.worktrees/nero_dh116_finger22_risk_review/examples/right_hand/wrist_conditional.py": "c6118daa9d14a97a94c4f6025368f4dae443f78454820777395235e2dd0e402c",
+    "/data_robot/projects/.worktrees/nero_dh116_finger22_risk_review/examples/right_hand/candidates/left_drive_profile_v1/profile.json": "59192bdd26d1020576ca854387bfd33444e0cff6f378bebb5307e3c330ca6a0e",
+    "/data_robot/verification/nero_dh116_right/runs/issue5_left_drive_v1/close149_B_once/state.jsonl.gz": "9fcf6944319346bbb73ee6f4fe62b073bb2b4c15e94a867be563d2db6ef5cce1",
+    "/data_robot/verification/nero_dh116_right/runs/issue5_left_drive_v1/close149_B_once/contacts.jsonl.gz": "5c057c9d6a9cf1cfe24deaf2700b8f2a3b988fc8b63ac5d5ed2c50f554bba9b5",
+    "/data_robot/verification/nero_dh116_right/runs/issue5_left_drive_v1/close149_B_once/robot-physical-preflight.json": "50a9484240a7215d8885a161cf9736f7b0292331a6fc83c088d8a0f39d733445",
+    "/data_robot/projects/.worktrees/nero_dh116_finger22_risk_review/examples/libero_eval/evidence/close149/raw/robot-physical-preflight.json.gz": "412b0f69c6c0dd6e1898894f0fb9bbb076984dce225ec6cf641474e38441728d",
+    "/data_robot/verification/nero_dh116_right/runs/issue5_left_drive_v1/close149_B_once/frozen-before-first-step.json": "2e8b8fc4b443644f3283dc98189c408c4ba0ec2da341c3ea086c40adc85c392b",
+    "/data_robot/projects/.worktrees/nero_dh116_finger22_risk_review/examples/libero_eval/evidence/close149/raw/frozen-before-first-step.json": "78f84fc1a73fee88fe920d33d26af114a8ceb78b26080a3fbf99593eebfbb1ab",
+    "/data_robot/verification/nero_dh116_right/runs/issue5_left_drive_v1/close149_B_once/registered-protocol.json": "5dc22ea17d3ba242f8af081dc2dfc176614232f4793f08a55dc75ead0ce95c7a",
+    "/data_robot/projects/.worktrees/nero_dh116_finger22_risk_review/examples/libero_eval/evidence/close149/raw/registered-protocol.json": "0207248bc2c7c5de24b6b2a6bbb71a06c58167ecdca176ead8ce6690d6d20cda"
+  },
+  "limitations": [
+    "Only saved evidence and source text inspected, with standard library. No engine import, compile, Reset, forward, step, or new experiment.",
+    "B stops during settle_preshape before approach/contact and before settled baseline250. Grasp and load-limited lift comparison remain UNKNOWN.",
+    "B drive package changes 34 attributes together; no single-parameter attribution or hardware claim.",
+    "Path envelope is a frozen finite-domain diagnostic bound; this event is not a URDF joint range exceedance."
+  ],
+  "executed_source_integrity": [
+    {
+      "source": "examples/right_hand/close149_drive.py",
+      "declared_sha256": "7ba5a51c70e97f34be588771d908db1fbd009255c7b790984fac719c9aa6cbeb",
+      "current_checkout_sha256": "7ba5a51c70e97f34be588771d908db1fbd009255c7b790984fac719c9aa6cbeb",
+      "matches": true,
+      "result_after_matches": true
+    },
+    {
+      "source": "examples/right_hand/close149.py",
+      "declared_sha256": "bfc34723de1bcd1741e19a9b7d29ac354477d244fa9b389556f4a3ce811b3e87",
+      "current_checkout_sha256": "bfc34723de1bcd1741e19a9b7d29ac354477d244fa9b389556f4a3ce811b3e87",
+      "matches": true,
+      "result_after_matches": true
+    },
+    {
+      "source": "examples/right_hand/candidates/left_drive_profile_v1/profile.json",
+      "declared_sha256": "59192bdd26d1020576ca854387bfd33444e0cff6f378bebb5307e3c330ca6a0e",
+      "current_checkout_sha256": "59192bdd26d1020576ca854387bfd33444e0cff6f378bebb5307e3c330ca6a0e",
+      "matches": true,
+      "result_after_matches": true
+    },
+    {
+      "source": "examples/right_hand/candidates/left_drive_profile_v1/model.patch",
+      "declared_sha256": "0d4c4c78a8aa4080809a739845dfa49268653cafb8de744bcfde7ded549e5c12",
+      "current_checkout_sha256": "0d4c4c78a8aa4080809a739845dfa49268653cafb8de744bcfde7ded549e5c12",
+      "matches": true,
+      "result_after_matches": true
+    },
+    {
+      "source": "examples/right_hand/libero_research.py",
+      "declared_sha256": "7f15b06b5cf1333362a580f6841f90ca8bdde19d3e70ce97d16c342f79ff0b73",
+      "current_checkout_sha256": "7f15b06b5cf1333362a580f6841f90ca8bdde19d3e70ce97d16c342f79ff0b73",
+      "matches": true,
+      "result_after_matches": true
+    },
+    {
+      "source": "examples/right_hand/evidence/d3_research_contact_policy/research-policy.json",
+      "declared_sha256": "48632dfa4bbe0630ef7d61b9e706240d7769ad6361d588e1d02025bde4bc6454",
+      "current_checkout_sha256": "48632dfa4bbe0630ef7d61b9e706240d7769ad6361d588e1d02025bde4bc6454",
+      "matches": true,
+      "result_after_matches": true
+    },
+    {
+      "source": "examples/right_hand/evidence/d3_research_contact_policy/shadow.py",
+      "declared_sha256": "76abc56586d03579f1063d973a1cc63548daa85839e08f320248a8aa2e9999ec",
+      "current_checkout_sha256": "76abc56586d03579f1063d973a1cc63548daa85839e08f320248a8aa2e9999ec",
+      "matches": true,
+      "result_after_matches": true
+    },
+    {
+      "source": "examples/right_hand/white_bowl_run.py",
+      "declared_sha256": "67afdd0ebd03ed37b8ef874d5985e4e2b0fbe62912a8a201d09b4a1ffeb4b2e5",
+      "current_checkout_sha256": "67afdd0ebd03ed37b8ef874d5985e4e2b0fbe62912a8a201d09b4a1ffeb4b2e5",
+      "matches": true,
+      "result_after_matches": true
+    }
+  ]
+}

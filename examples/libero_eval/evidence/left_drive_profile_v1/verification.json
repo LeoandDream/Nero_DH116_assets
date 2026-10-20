@@ -1,0 +1,50 @@
+{
+  "baseline": "43bc90b8932cb2199ad7b19ca00611259d3f7d49",
+  "original_tracked_files_checked": 2088,
+  "changed_old_files": [],
+  "main_head_unchanged": "9f4054f6197ecb1127202cee14cd75c3924a47e3",
+  "user_readme_sha256_unchanged": "d68ec6d62a6f42b8c1636ad2774c8329073d973c2621cc7fe148c8c8c89d8f25",
+  "source_hashes_match_executed_entry_and_tests": true,
+  "archived_original_artifacts_verified": 55,
+  "one_experiment": {
+    "claims": 1,
+    "actual_process_exit_code": 2,
+    "explicit_episode_steps": 245,
+    "retries": 0,
+    "A_episode_steps": 0,
+    "left_episode_steps": 0
+  },
+  "targeted_tests": {
+    "new_B": 8,
+    "original_close149": 8,
+    "native_tests": 0
+  },
+  "video_probe": {
+    "agentview": {
+      "programs": [],
+      "streams": [
+        {
+          "width": 256,
+          "height": 256,
+          "r_frame_rate": "20/1",
+          "nb_frames": "10"
+        }
+      ]
+    },
+    "robot0_eye_in_hand": {
+      "programs": [],
+      "streams": [
+        {
+          "width": 256,
+          "height": 256,
+          "r_frame_rate": "20/1",
+          "nb_frames": "10"
+        }
+      ]
+    }
+  },
+  "export_steps": 245,
+  "exported_model_identity": "Actual B XML/profile; generic exporter unchanged; explicit per-manifest correction retained.",
+  "postprocessing_engine_calls": 0,
+  "historical_early_stops_and_fidelity_FAIL": "UNCHANGED"
+}

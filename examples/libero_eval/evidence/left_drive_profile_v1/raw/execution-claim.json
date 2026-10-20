@@ -1,0 +1,14 @@
+{
+  "authorization": "https://github.com/LeoandDream/Nero_DH116_assets/issues/5#issuecomment-6297636306",
+  "baseline": "43bc90b8932cb2199ad7b19ca00611259d3f7d49",
+  "profile": "R_close149_left_drive_profile_v1",
+  "attempt_budget": 1,
+  "automatic_retries": 0,
+  "prepared_utc": "2026-10-20T18:17:35.255180+00:00",
+  "launcher_pid": 4119537,
+  "native_attempt_started": false,
+  "entry_sha256": "7ba5a51c70e97f34be588771d908db1fbd009255c7b790984fac719c9aa6cbeb",
+  "test_sha256": "1491d59a066d6aafa9ed3571f5f55e58b1f72ece4542117b5000c928010bee63",
+  "only_new_parent_writable": true,
+  "old_runs_hidden": true
+}
