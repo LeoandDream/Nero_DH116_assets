@@ -1,0 +1,83 @@
+{
+  "status": "EXPLORATORY_STOPPED_AT_FIRST_ORIGINAL_PHYSICAL_BOUND",
+  "authorization": "https://github.com/LeoandDream/Nero_DH116_assets/pull/4#issuecomment-6290062555",
+  "baseline_commit": "16b851f76cd04f535e96dacaf2e0d7b86af17f0a",
+  "actual_physics_steps": 4769,
+  "dynamic_attempts": 1,
+  "crossed4731": true,
+  "crossed4742": true,
+  "phase_physics_steps": {
+    "settle_preshape": 250,
+    "approach_high": 2000,
+    "descend": 1750,
+    "close": 769
+  },
+  "first_failure": {
+    "step": 4769,
+    "macro": 190,
+    "source_macro": 150,
+    "repeat_index": 0,
+    "phase": "close",
+    "reasons": [
+      "ROBOT_CONTACT_OVERLAP"
+    ]
+  },
+  "prior_step_max_overlap_m": 0.0019464053936827008,
+  "state_control_force_prefix_identical_to_old_run": 4731,
+  "native_RK4_contact_cache_prefix_identical_to_old_run": 4731,
+  "first_state_difference": {},
+  "first_native_cache_difference": null,
+  "Reset_controller_criteria_and270actions_exact": true,
+  "first_positive_hand_bowl_step": 4518,
+  "original_physical_health": "FAIL",
+  "grasp_result": "UNKNOWN_EARLY_STOP",
+  "native_task_result": false,
+  "strict_grasp_success_claim": false,
+  "lift_from_Reset_m": -0.07001050485701388,
+  "lift_from_own_settled_m": 0.00057878504008535,
+  "longest_continuous_valid_hold_s": 0.0,
+  "final_environment_support": true,
+  "maxima": {
+    "arm_tracking_rad": 0.08880659361068322,
+    "active_tracking_rad": 0.04666121456570388,
+    "active_hold_tracking_rad": 0.0,
+    "mimic_rad": 0.00027890900694577114,
+    "joint_overshoot_rad": 0.0,
+    "robot_overlap_m": 0.002029397980521897,
+    "bowl_lift_m": 0.00057878504008535
+  },
+  "numerical_warnings_seen": false,
+  "all_states_finite": true,
+  "wrist_external_contact_steps": 0,
+  "posthoc_finger22_event_counts": {
+    "REGISTERED_LOCAL_FUNCTIONAL_APPROXIMATION": 1,
+    "STOP_UNKNOWN_SEMANTICS": 74
+  },
+  "posthoc_finger22_events": 75,
+  "other_contacts_not_reclassified": 40513,
+  "posthoc_decisions_never_used_online": true,
+  "posthoc_forbidden_API_attempts": {},
+  "posthoc_new_physics_Reset_FK_collision_calls": 0,
+  "independent_physical_validation": {
+    "steps_independently_recomputed": 4769,
+    "failures_recomputed": [
+      {
+        "step": 4769,
+        "reasons": [
+          "ROBOT_CONTACT_OVERLAP"
+        ]
+      }
+    ],
+    "support_gaps_after_settle_steps": [],
+    "tracking_mimic_limits_overlap_finite_clock_wrist_envelope_and_support_exact": true,
+    "new_physics_Reset_FK_collision_calls": 0
+  },
+  "old_files_unchanged": 1170,
+  "user_readme_unchanged": true,
+  "all_runtime_inputs_unchanged": true,
+  "model_sha256": "7f9d84061c3e7d176763c688d2389f8b3d3e38386b8e990a0fa047ff2bc3329c",
+  "formal_numeric_status": "FAIL_UNCHANGED_1e-10m",
+  "full_geometry_material_fidelity": "UNKNOWN_UNCHANGED",
+  "release_approved": false,
+  "limit": "Native proxy overlap is a measured threshold violation, not proof of true manufacturer-STL material penetration. No lift/hold was attempted."
+}

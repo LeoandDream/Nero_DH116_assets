@@ -1,0 +1,158 @@
+{
+  "authorization": "https://github.com/LeoandDream/Nero_DH116_assets/pull/4#issuecomment-6290062555",
+  "model": "examples/right_hand/candidates/finger22_local/model.xml",
+  "model_sha256": "7f9d84061c3e7d176763c688d2389f8b3d3e38386b8e990a0fa047ff2bc3329c",
+  "schedule": {
+    "commands": 270,
+    "phase_counts": {
+      "settle_preshape": 10,
+      "approach_high": 80,
+      "descend": 70,
+      "close": 40,
+      "lift": 40,
+      "hold": 30
+    },
+    "phase_boundaries": {
+      "settle_preshape": {
+        "macro_first": 0,
+        "macro_last": 9,
+        "physical_step_first": 1,
+        "physical_step_last": 250
+      },
+      "approach_high": {
+        "macro_first": 10,
+        "macro_last": 89,
+        "physical_step_first": 251,
+        "physical_step_last": 2250
+      },
+      "descend": {
+        "macro_first": 90,
+        "macro_last": 159,
+        "physical_step_first": 2251,
+        "physical_step_last": 4000
+      },
+      "close": {
+        "macro_first": 160,
+        "macro_last": 199,
+        "physical_step_first": 4001,
+        "physical_step_last": 5000
+      },
+      "lift": {
+        "macro_first": 200,
+        "macro_last": 239,
+        "physical_step_first": 5001,
+        "physical_step_last": 6000
+      },
+      "hold": {
+        "macro_first": 240,
+        "macro_last": 269,
+        "physical_step_first": 6001,
+        "physical_step_last": 6750
+      }
+    },
+    "physics_steps_per_command": 25,
+    "expected_physics_steps": 6750,
+    "physics_steps_max": 6750,
+    "physical_dt_s": 0.002,
+    "duration_if_completed_s": 13.5
+  },
+  "maximum_physics_steps": 6750,
+  "original_criteria": {
+    "scope": "NEW fixed right white-bowl criteria; not left/manufacturer/full-range certification",
+    "lift_from_own_settled_baseline_m_min": 0.02,
+    "continuous_hold_s_min": 1.0,
+    "hold_requires": [
+      "height >= settled+20mm",
+      "no bowl-table or other environmental support contacts",
+      "positive-force thumb and index contacts on opposing bowl sides"
+    ],
+    "steady_active_error_rad_max": 0.02,
+    "arm_tracking_error_rad_max": 0.1,
+    "linear_mimic_error_rad_max": 0.02,
+    "joint_limit_overshoot_rad_max": 0.01,
+    "eligible_internal_and_external_overlap_m_max": 0.002,
+    "warnings_allowed": 0,
+    "nonfinite_states_allowed": 0,
+    "native_task_result": "record native cabinet-placement predicate separately",
+    "strict_grasp_success_claim": false,
+    "stop": "First numerical/physical bound violation; no automatic retry or edits"
+  },
+  "additional_stops": [
+    "Any eligible actual new wrist geom contact with any body outside the two wrist bodies, regardless of positive force.",
+    "Any actual robot qpos outside target/sample envelope padded by original .1rad arm / .02rad hand bounds."
+  ],
+  "qpos_envelope_lower_rad": [
+    -0.00031842318389821433,
+    -1.0117843140806089,
+    -2.801898722298827,
+    0.8778290747376886,
+    -1.5394823334488055,
+    -0.83,
+    1.3335265819905644,
+    -0.02,
+    -0.02,
+    -0.015408000000000002,
+    -0.02,
+    -0.008928,
+    -0.02,
+    -0.008928,
+    -0.02,
+    -0.008928,
+    -0.02,
+    -0.008928
+  ],
+  "qpos_envelope_upper_rad": [
+    0.46958692521030554,
+    -0.5273438565137334,
+    -2.563465332281639,
+    1.7223902342637794,
+    -0.8644504552986636,
+    -0.07932686168460179,
+    1.6707963,
+    0.14714413600034068,
+    0.1812485091248992,
+    0.16661968683721123,
+    0.44999571637122904,
+    0.42692605649135346,
+    0.02,
+    0.031072000000000002,
+    0.02,
+    0.031072000000000002,
+    0.02,
+    0.031072000000000002
+  ],
+  "envelope_padding_rad": [
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02
+  ],
+  "envelope_limit": "Conservative finite-domain stop only, not continuous-path or all-domain clearance proof.",
+  "numerical_appendix": "FAIL_UNCHANGED",
+  "fill_exceptions_approved": false,
+  "dynamic_attempt_budget": 1,
+  "automatic_retry_or_completion_run": false,
+  "native_and_strict_semantics_unchanged": true,
+  "baseline_commit": "16b851f76cd04f535e96dacaf2e0d7b86af17f0a",
+  "hand_collision_count": 81,
+  "wrist_collision_count": 306,
+  "strict_region_online_stop": false,
+  "classification": "Deferred offline only; no RISK/UNKNOWN classification stops this experiment.",
+  "experiment": "frozen_finger22_white_bowl_exploratory_once",
+  "historical4731_stop": "UNKNOWN_UNCHANGED",
+  "fidelity_status": "FORMAL_NUMERIC_FAIL_AND_GEOMETRY_UNKNOWN_UNCHANGED"
+}

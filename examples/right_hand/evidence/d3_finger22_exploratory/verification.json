@@ -1,0 +1,53 @@
+{
+  "status": "ONE_ATTEMPT_COMPLETED_PHYSICAL_THRESHOLD_FAIL_GRASP_UNKNOWN",
+  "execution_status": "STOPPED_AT_FIRST_FAILURE",
+  "dynamic_attempts": 1,
+  "physics_steps": 4769,
+  "first_failure": {
+    "step": 4769,
+    "macro": 190,
+    "source_macro": 150,
+    "repeat_index": 0,
+    "phase": "close",
+    "reasons": [
+      "ROBOT_CONTACT_OVERLAP"
+    ]
+  },
+  "original_stop_checks_independently_recomputed_steps": 4769,
+  "strict_region_online_stop": false,
+  "posthoc_strict_classifications": {
+    "REGISTERED_LOCAL_FUNCTIONAL_APPROXIMATION": 1,
+    "STOP_UNKNOWN_SEMANTICS": 74
+  },
+  "no_posthoc_decision_used_to_change_runtime_result": true,
+  "pre_step_resources_checked": 518,
+  "native_Reset_controller_and270_actions_exact": true,
+  "full_compiled_snapshot_exact": true,
+  "hand_collision_count": 81,
+  "wrist_collision_count": 306,
+  "state_force_control_and_native_contact_prefix_exact_steps": 4731,
+  "raw_files_integrity_verified": 16,
+  "old_files_unchanged": 1170,
+  "user_readme_unchanged": true,
+  "nonintegrating_forward_count_matches_original_environment_pattern": true,
+  "posthoc_physics_Reset_FK_collision_calls": 0,
+  "posthoc_forbidden_API_attempts": {},
+  "targeted_zero_physics_tests_passed": 7,
+  "formal_numeric_status": "FAIL_UNCHANGED_1e-10m",
+  "full_fidelity_material": "UNKNOWN_UNCHANGED",
+  "native_task_result": false,
+  "strict_grasp_success_claim": false,
+  "release_approved": false,
+  "source_sha256": {
+    "examples/right_hand/white_bowl_exploratory.py": "94cdf33bcc77dba84614fa5e363cb02896fca1f5e4c5418adff5f8f07fc5c8e8",
+    "tests/test_white_bowl_exploratory.py": "1a124f02e0b02f4242a96407218059e838046276f2fbb1081a5ed1089a7e2d46",
+    "examples/right_hand/white_bowl_run.py": "67afdd0ebd03ed37b8ef874d5985e4e2b0fbe62912a8a201d09b4a1ffeb4b2e5",
+    "examples/right_hand/finger22_conditional.py": "d38d576d475e2f5fa07d74143aa6df24d3516b7d7b99a42ef10737fffa2be705",
+    "examples/right_hand/wrist_conditional.py": "c6118daa9d14a97a94c4f6025368f4dae443f78454820777395235e2dd0e402c",
+    "examples/right_hand/finger22_contact_adapter.py": "f71e47d1c1f754bf1d5683a83b0f6b0309b36ca7b7e9ee3cd85843091bd2b177",
+    "examples/right_hand/finger22_contact_regions.py": "2b7a339540e1bd22ea0a6f3af794d7263b708953c3eb59bf6f91860410e10c51",
+    "examples/right_hand/evidence/d3_finger22_exploratory/review.py": "0471d8d52c58cb2fd1d01ea183c963a2e0eb5ef1e242e1e568bd5fc43300a8a1"
+  },
+  "registered_protocol_sha256": "52985111e4cde0f280dc2fac02cb0515f73ebee6327526889cf22a836179ebf2",
+  "raw_native_XML_whitespace": "Original bytes retained; Git whitespace notices limited to generated run/model.xml; implementation diff check passed without rewriting evidence."
+}

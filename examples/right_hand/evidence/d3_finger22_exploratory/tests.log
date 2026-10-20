@@ -1,0 +1,12 @@
+test_binding_is_explicit_and_restores_the_historical_module (test_white_bowl_exploratory.ExploratoryTests.test_binding_is_explicit_and_restores_the_historical_module) ... ok
+test_evidence_boundary_preserves_reset_and_serializes_new_policy (test_white_bowl_exploratory.ExploratoryTests.test_evidence_boundary_preserves_reset_and_serializes_new_policy) ... ok
+test_protocol_retains_schedule_bounds_and_only_wrist_extra_stops (test_white_bowl_exploratory.ExploratoryTests.test_protocol_retains_schedule_bounds_and_only_wrist_extra_stops) ... ok
+test_registered_inputs_keep_old_runner_and_strict_tools_immutable (test_white_bowl_exploratory.ExploratoryTests.test_registered_inputs_keep_old_runner_and_strict_tools_immutable) ... ok
+test_reset_difference_rejected_at_preintegration_write (test_white_bowl_exploratory.ExploratoryTests.test_reset_difference_rejected_at_preintegration_write) ... ok
+test_saved4731_unknown_is_deferred_without_strict_calls (test_white_bowl_exploratory.ExploratoryTests.test_saved4731_unknown_is_deferred_without_strict_calls) ... ok
+test_wrist_zero_force_contact_and_path_envelope_still_stop (test_white_bowl_exploratory.ExploratoryTests.test_wrist_zero_force_contact_and_path_envelope_still_stop) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 3.662s
+
+OK
