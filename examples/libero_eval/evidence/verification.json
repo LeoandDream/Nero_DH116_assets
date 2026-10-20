@@ -1,0 +1,80 @@
+{
+  "baseline_commit": "85a265ac96f0be141f82d10667b9ea8e8ce02e99",
+  "right_attempts": 1,
+  "right_automatic_retries": 0,
+  "left_new_attempts": 0,
+  "trajectory_steps": {
+    "L_reused": 5750,
+    "R_actual_new": 4775
+  },
+  "offline_tests": {
+    "right_policy_and_runner": {
+      "passed": 17,
+      "command": "python -B -m unittest discover -s examples/right_hand -p test_libero_research.py -v",
+      "log": "right-integration-tests.log"
+    },
+    "unified_evaluator": {
+      "passed": 10,
+      "command": "python -B -m unittest discover -s examples/libero_eval -p 'test_*.py' -v",
+      "log": "tests.log"
+    },
+    "tests_and_exporter_native_operations": 0
+  },
+  "protected_old_files": {
+    "checked": 1220,
+    "changed": [],
+    "comparison": "SHA256 against pre-task manifest and original baseline Git tree"
+  },
+  "main_worktree_head": "9f4054f6197ecb1127202cee14cd75c3924a47e3",
+  "user_readme_sha256_before_and_after": "d68ec6d62a6f42b8c1636ad2774c8329073d973c2621cc7fe148c8c8c89d8f25",
+  "right_entry_matches_executed_sha256": true,
+  "new_runtime_sources_unchanged_during_and_after_execution": {
+    "examples/right_hand/libero_research.py": "7f15b06b5cf1333362a580f6841f90ca8bdde19d3e70ce97d16c342f79ff0b73",
+    "examples/right_hand/evidence/d3_research_contact_policy/research-policy.json": "48632dfa4bbe0630ef7d61b9e706240d7769ad6361d588e1d02025bde4bc6454",
+    "examples/right_hand/evidence/d3_research_contact_policy/shadow.py": "76abc56586d03579f1063d973a1cc63548daa85839e08f320248a8aa2e9999ec",
+    "examples/right_hand/white_bowl_run.py": "67afdd0ebd03ed37b8ef874d5985e4e2b0fbe62912a8a201d09b4a1ffeb4b2e5"
+  },
+  "raw_archived_files_original_SHA_matches": 19,
+  "raw_archives_lossless": true,
+  "media_original_bytes_exact": true,
+  "media": {
+    "right_001/videos/robot0_eye_in_hand.mp4": {
+      "codec_name": "h264",
+      "width": 256,
+      "height": 256,
+      "r_frame_rate": "20/1",
+      "duration": "9.550000",
+      "nb_read_frames": "191"
+    },
+    "right_001/videos/agentview.mp4": {
+      "codec_name": "h264",
+      "width": 256,
+      "height": 256,
+      "r_frame_rate": "20/1",
+      "duration": "9.550000",
+      "nb_read_frames": "191"
+    },
+    "right_jpeg_files": 382
+  },
+  "exported_steps_match_previous_verified_export_SHA": true,
+  "independent_prefix_and_research_review": "right-independent-review.json",
+  "current_exporter_sha256": "8829122e86919c2e50621ad788f167a7ecedbdd7bf747d0f8c883eabe2e7abfc",
+  "native_task_success": {
+    "L": false,
+    "R": false
+  },
+  "scope": "Minimum common interface plus one real research attempt; no complete native cabinet-placement success or independent-repeat success-rate claim.",
+  "whitespace_check": {
+    "implementation_and_other_new_files": "PASS",
+    "raw_byte_preserved_exceptions": [
+      "right_raw/model.xml",
+      "right_raw/executor.diff"
+    ],
+    "reason": "Original generated scene and source diff whitespace retained to preserve source SHA; not reformatted."
+  },
+  "independent_code_review": {
+    "critical": 0,
+    "important": 0,
+    "scope": "Static review of frozen policy scope, executor adapter, terminal native success, early-stop exit code and duplicate episode accounting; no native imports or simulation."
+  }
+}

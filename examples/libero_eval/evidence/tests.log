@@ -1,0 +1,15 @@
+test_aggregate_allows_distinct_declared_run_sources_with_identical_trace_sha (test_episode.EpisodeTest.test_aggregate_allows_distinct_declared_run_sources_with_identical_trace_sha) ... ok
+test_aggregate_keeps_truncation_out_of_completed_only_denominator (test_episode.EpisodeTest.test_aggregate_keeps_truncation_out_of_completed_only_denominator) ... ok
+test_aggregate_rejects_same_actual_trace_exported_under_different_names (test_episode.EpisodeTest.test_aggregate_rejects_same_actual_trace_exported_under_different_names) ... ok
+test_default_cli_exports_without_engine_or_scientific_imports (test_episode.EpisodeTest.test_default_cli_exports_without_engine_or_scientific_imports) ... ok
+test_execute_preserves_backend_stop_exit_code_after_export (test_episode.EpisodeTest.test_execute_preserves_backend_stop_exit_code_after_export) ... ok
+test_existing_output_is_not_overwritten (test_episode.EpisodeTest.test_existing_output_is_not_overwritten) ... ok
+test_explicit_left_source_uses_its_images_and_no_historical_fallback (test_episode.EpisodeTest.test_explicit_left_source_uses_its_images_and_no_historical_fallback) ... ok
+test_left_export_preserves_missing_native_signal_and_recorded_actions (test_episode.EpisodeTest.test_left_export_preserves_missing_native_signal_and_recorded_actions) ... ok
+test_research_requires_correct_hand_and_raw_source (test_episode.EpisodeTest.test_research_requires_correct_hand_and_raw_source) ... ok
+test_right_partial_episode_is_truncated_and_preserves_rk4_cache (test_episode.EpisodeTest.test_right_partial_episode_is_truncated_and_preserves_rk4_cache) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 14.374s
+
+OK

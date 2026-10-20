@@ -1,0 +1,16 @@
+{
+  "agentview": {
+    "exit_code": 0,
+    "stderr": "",
+    "frames": 191,
+    "fps": 20,
+    "step_timestamps_authoritative": true
+  },
+  "robot0_eye_in_hand": {
+    "exit_code": 0,
+    "stderr": "",
+    "frames": 191,
+    "fps": 20,
+    "step_timestamps_authoritative": true
+  }
+}

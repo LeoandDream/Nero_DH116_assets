@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "objects_checked": 674,
+  "differences": [],
+  "comparison": "Original saved actual_snapshot vs new native actual_snapshot; all body poses included.",
+  "removed_geom_count": 1,
+  "added_geom_count": 4,
+  "same81_306_native_Reset_snapshot_exact": true
+}

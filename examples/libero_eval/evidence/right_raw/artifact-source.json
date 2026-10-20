@@ -1,0 +1,140 @@
+{
+  "raw_source": "/data_robot/verification/nero_dh116_right/runs/issue5/right_research_once",
+  "files": [
+    {
+      "source": "/data_robot/verification/nero_dh116_right/runs/issue5/right_research_once/arm.xml",
+      "source_sha256": "f17aa71bbaad1eaf3389a20edce4198273349365e28f06107c6a576cd0bd47ef",
+      "stored_file": "arm.xml",
+      "stored_sha256": "f17aa71bbaad1eaf3389a20edce4198273349365e28f06107c6a576cd0bd47ef",
+      "lossless_gzip": false
+    },
+    {
+      "source": "/data_robot/verification/nero_dh116_right/runs/issue5/right_research_once/attempt-claim.json",
+      "source_sha256": "bbb2a2c55bd82a6f50622a15867eaa67854b492e354cb60cc69f328bddb23d94",
+      "stored_file": "attempt-claim.json",
+      "stored_sha256": "bbb2a2c55bd82a6f50622a15867eaa67854b492e354cb60cc69f328bddb23d94",
+      "lossless_gzip": false
+    },
+    {
+      "source": "/data_robot/verification/nero_dh116_right/runs/issue5/right_research_once/contacts.jsonl.gz",
+      "source_sha256": "d08ed047845577c18e1383caafea4e5f4da90a57dc7f11aedca8ae021a9caff0",
+      "stored_file": "contacts.jsonl.gz",
+      "stored_sha256": "d08ed047845577c18e1383caafea4e5f4da90a57dc7f11aedca8ae021a9caff0",
+      "lossless_gzip": false
+    },
+    {
+      "source": "/data_robot/verification/nero_dh116_right/runs/issue5/right_research_once/executor.diff",
+      "source_sha256": "1d1406f4907002c9d3a6dfa0b1499618d96f096e4080a46d09a42123b4c6f99a",
+      "stored_file": "executor.diff",
+      "stored_sha256": "1d1406f4907002c9d3a6dfa0b1499618d96f096e4080a46d09a42123b4c6f99a",
+      "lossless_gzip": false
+    },
+    {
+      "source": "/data_robot/verification/nero_dh116_right/runs/issue5/right_research_once/executor.executed.py",
+      "source_sha256": "d45876bfe6d853c4bcb71b8811f01a3769a5a7c68875c65cc90fb9d95384f573",
+      "stored_file": "executor.executed.py",
+      "stored_sha256": "d45876bfe6d853c4bcb71b8811f01a3769a5a7c68875c65cc90fb9d95384f573",
+      "lossless_gzip": false
+    },
+    {
+      "source": "/data_robot/verification/nero_dh116_right/runs/issue5/right_research_once/finger22-risk-regions.json",
+      "source_sha256": "3e6da08b2c9c63f2d2728fa3bfe9b4b2a1ca09cd30acd06addb161a9323aadac",
+      "stored_file": "finger22-risk-regions.json",
+      "stored_sha256": "3e6da08b2c9c63f2d2728fa3bfe9b4b2a1ca09cd30acd06addb161a9323aadac",
+      "lossless_gzip": false
+    },
+    {
+      "source": "/data_robot/verification/nero_dh116_right/runs/issue5/right_research_once/frozen-before-first-step.json",
+      "source_sha256": "dca208b23645ae3dd9091c324d681d5f0969df120032da54b9f9ae5a72c4892c",
+      "stored_file": "frozen-before-first-step.json",
+      "stored_sha256": "dca208b23645ae3dd9091c324d681d5f0969df120032da54b9f9ae5a72c4892c",
+      "lossless_gzip": false
+    },
+    {
+      "source": "/data_robot/verification/nero_dh116_right/runs/issue5/right_research_once/geometry-provenance.json",
+      "source_sha256": "a6a6273cda6ffaca54357fd86dfdfef19b77ff271fe40bb471eecca434a15474",
+      "stored_file": "geometry-provenance.json",
+      "stored_sha256": "a6a6273cda6ffaca54357fd86dfdfef19b77ff271fe40bb471eecca434a15474",
+      "lossless_gzip": false
+    },
+    {
+      "source": "/data_robot/verification/nero_dh116_right/runs/issue5/right_research_once/hand.xml",
+      "source_sha256": "da89b33d1d624826336d24ebaeba2481dbc7c839f239d8119321b1ffeb6fb27f",
+      "stored_file": "hand.xml",
+      "stored_sha256": "da89b33d1d624826336d24ebaeba2481dbc7c839f239d8119321b1ffeb6fb27f",
+      "lossless_gzip": false
+    },
+    {
+      "source": "/data_robot/verification/nero_dh116_right/runs/issue5/right_research_once/input-audit.json",
+      "source_sha256": "5e1201f97ec4c7cef785adff2dd86bfaf47070764ba698984670a1e36ac6f35b",
+      "stored_file": "input-audit.json",
+      "stored_sha256": "5e1201f97ec4c7cef785adff2dd86bfaf47070764ba698984670a1e36ac6f35b",
+      "lossless_gzip": false
+    },
+    {
+      "source": "/data_robot/verification/nero_dh116_right/runs/issue5/right_research_once/model.xml",
+      "source_sha256": "8576697c81a13d0e35149e880dec1b51f4a6b3f9041b61453e402fea68eaf98c",
+      "stored_file": "model.xml",
+      "stored_sha256": "8576697c81a13d0e35149e880dec1b51f4a6b3f9041b61453e402fea68eaf98c",
+      "lossless_gzip": false
+    },
+    {
+      "source": "/data_robot/verification/nero_dh116_right/runs/issue5/right_research_once/mount.xml",
+      "source_sha256": "011ebeaae8f339d448fb1105c5c979b93df484d640f6bd5d93df3eb4964b0645",
+      "stored_file": "mount.xml",
+      "stored_sha256": "011ebeaae8f339d448fb1105c5c979b93df484d640f6bd5d93df3eb4964b0645",
+      "lossless_gzip": false
+    },
+    {
+      "source": "/data_robot/verification/nero_dh116_right/runs/issue5/right_research_once/observations.jsonl.gz",
+      "source_sha256": "8c2d14c435f094336b33c761c36f300990c779ebb9a70b81938f2a55f4a34fa9",
+      "stored_file": "observations.jsonl.gz",
+      "stored_sha256": "8c2d14c435f094336b33c761c36f300990c779ebb9a70b81938f2a55f4a34fa9",
+      "lossless_gzip": false
+    },
+    {
+      "source": "/data_robot/verification/nero_dh116_right/runs/issue5/right_research_once/old-to-new-compiled-audit.json",
+      "source_sha256": "34486ff08e51bf3da1c43f235548a56251812dfc5a1efb1d391629207c4022b7",
+      "stored_file": "old-to-new-compiled-audit.json",
+      "stored_sha256": "34486ff08e51bf3da1c43f235548a56251812dfc5a1efb1d391629207c4022b7",
+      "lossless_gzip": false
+    },
+    {
+      "source": "/data_robot/verification/nero_dh116_right/runs/issue5/right_research_once/registered-protocol.json",
+      "source_sha256": "2f55a844c78d1d031696559f68bc6e22b149de674a20e54cb8032a2dc44adb28",
+      "stored_file": "registered-protocol.json",
+      "stored_sha256": "2f55a844c78d1d031696559f68bc6e22b149de674a20e54cb8032a2dc44adb28",
+      "lossless_gzip": false
+    },
+    {
+      "source": "/data_robot/verification/nero_dh116_right/runs/issue5/right_research_once/result.json",
+      "source_sha256": "66d08f82064cb4b741d92cd657cf1cce34062cb515225c4a8c6eb752467cd614",
+      "stored_file": "result.json",
+      "stored_sha256": "66d08f82064cb4b741d92cd657cf1cce34062cb515225c4a8c6eb752467cd614",
+      "lossless_gzip": false
+    },
+    {
+      "source": "/data_robot/verification/nero_dh116_right/runs/issue5/right_research_once/robot-physical-preflight.json",
+      "source_sha256": "99feb594de682455dfdd2e58b34e2037ecfbefe371c7fd3e3646fb2b93bd2aee",
+      "stored_file": "robot-physical-preflight.json.gz",
+      "stored_sha256": "c594a3b7e920c10945ffeb3d8d3907a5b3258e608700f87dff28c0766d1d4d21",
+      "lossless_gzip": true
+    },
+    {
+      "source": "/data_robot/verification/nero_dh116_right/runs/issue5/right_research_once/schedule.json",
+      "source_sha256": "4fcb72c06028ba405122c808d8ec90486f022199e1c01904d65b034c18be0b81",
+      "stored_file": "schedule.json",
+      "stored_sha256": "4fcb72c06028ba405122c808d8ec90486f022199e1c01904d65b034c18be0b81",
+      "lossless_gzip": false
+    },
+    {
+      "source": "/data_robot/verification/nero_dh116_right/runs/issue5/right_research_once/state.jsonl.gz",
+      "source_sha256": "2cfa4dcc1d5a40d385a4ac7cb5c946937edc287f46b78cc57c92202581c651c9",
+      "stored_file": "state.jsonl.gz",
+      "stored_sha256": "2cfa4dcc1d5a40d385a4ac7cb5c946937edc287f46b78cc57c92202581c651c9",
+      "lossless_gzip": false
+    }
+  ],
+  "media": "../right_001/frames and ../right_001/videos are byte-for-byte copies of original run media; original observations.jsonl.gz remains unchanged.",
+  "not_a_second_run": true
+}

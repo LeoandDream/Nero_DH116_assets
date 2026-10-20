@@ -1,0 +1,85 @@
+{
+  "schema": "nero_dh116_libero_episode_v1",
+  "episode_id": "left_001",
+  "hand": "L",
+  "mode": "baseline",
+  "record_kind": "saved_real_dynamics_export",
+  "export_integrates_physics": false,
+  "model": {
+    "path": "mjcf/nero_dh116.xml",
+    "sha256": "c446124b7d938aa6e00ba5914047001de66c2a2c162e7dea1644437e5a85cb33",
+    "hand_collision_proxies": 76,
+    "wrist_collision_proxies": 15
+  },
+  "task": {
+    "suite": "libero_90",
+    "name": "KITCHEN_SCENE9_put_the_white_bowl_on_top_of_the_cabinet",
+    "bddl_sha256": "a595358c840e6dca31d2d914726bb49d58944252ae868796bd603345a444b627",
+    "goal": "On white_bowl_1 wooden_two_layer_shelf_1_top_side",
+    "native_success_predicate_preserved": true
+  },
+  "initialization": {
+    "kind": "native_seeded_reset",
+    "seed": 20261007,
+    "official_panda_init_state_supported": false,
+    "full_reset_source": {
+      "path": "examples/libero_reference/evidence/full-reset-state.json",
+      "sha256": "c54b0c18930cf9cf4f3c7a8d6a9a9d94d32fd232d3b905d0b6f5a9e1a5c2062c",
+      "bytes": 7578
+    },
+    "reset_qpos_sha256": "6006d699807892e5ebfd03ee9f7abc0ede010584e376f5abf39986de2563d37d"
+  },
+  "contract": {
+    "state": "7 arm + 11 hand joint positions [rad]",
+    "action": "7 absolute arm [rad] + 6 normalized absolute hand [-1,1]",
+    "ctrl": "7 arm torques + 6 hand actuator joint angles"
+  },
+  "environment": {
+    "python": "3.11.16",
+    "mujoco": "3.2.3",
+    "robosuite": "1.4.1",
+    "libero_commit": "f78abd68ee283de9f9be3c8f7e2a9ad60246e95c"
+  },
+  "research_policy_sha256": null,
+  "expanded_actions_13_sha256": "9a72ecddc7a36c0ec16d744c753465ac8739d939f530d24e88984059a1813ffd",
+  "exporter_sha256": "8829122e86919c2e50621ad788f167a7ecedbdd7bf747d0f8c883eabe2e7abfc",
+  "source_files": [
+    {
+      "path": "examples/libero_reference/evidence/bounded_grasp.jsonl.gz",
+      "sha256": "8e208bce4d035b69b1c81239b365556f408472805cbda07086ef7d3d72f6b6e7",
+      "bytes": 3682739
+    },
+    {
+      "path": "examples/libero_reference/evidence/contact-details.jsonl.gz",
+      "sha256": "c290e90f8180c64b1303225399a8e45dfdeb564f9d2180be3593a20fef5e8915",
+      "bytes": 2157467
+    },
+    {
+      "path": "examples/libero_reference/evidence/run-result.json",
+      "sha256": "0c90c3db6b441d0e3f2b570e3b3c7f8eb8d19d98a9bd2df6a1582c163c8412c3",
+      "bytes": 2071
+    },
+    {
+      "path": "examples/libero_reference/evidence/full-reset-state.json",
+      "sha256": "c54b0c18930cf9cf4f3c7a8d6a9a9d94d32fd232d3b905d0b6f5a9e1a5c2062c",
+      "bytes": 7578
+    },
+    {
+      "path": "examples/libero_reference/evidence/metrics.json",
+      "sha256": "4f42547e38612b71895f9f78cd71a55dc348f554858656ed29a279d38330564b",
+      "bytes": 3437
+    },
+    {
+      "path": "examples/libero_reference/evidence/dynamic-results.json",
+      "sha256": "aec5a0ac22a03d465d4d66a207072a5aa217181c6389485c23d53f91f1cbaef5",
+      "bytes": 2781
+    }
+  ],
+  "steps_sha256": "33515c81801afe6780f49b0f94cbf162dab2bf59be54200bf1771bea4bde6197",
+  "limitations": [
+    "No official Panda init-state conversion or multi-seed benchmark implemented.",
+    "Only saved native success measurements are reported; missing per-step signals remain null.",
+    "Left historical contacts lack saved position/frame/RK4 body poses.",
+    "Scripted white-bowl grasp lacks the native cabinet placement phase."
+  ]
+}
