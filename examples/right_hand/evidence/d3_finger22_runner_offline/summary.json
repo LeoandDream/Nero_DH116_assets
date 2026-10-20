@@ -1,0 +1,31 @@
+{
+  "status": "OFFLINE_INTEGRATION_PASS_READY_TO_APPLY_ONLY",
+  "rules_sha256": "f5e837f43332366af3ac964accd6107b4d58772cd185fbc16979fb1acf6f5800",
+  "saved_RK4_rows": 4731,
+  "all_contact_event_counts": {
+    "NOT_APPLICABLE": 39733,
+    "REGISTERED_LOCAL_FUNCTIONAL_APPROXIMATION": 1
+  },
+  "other_contact_records_preserved": 39733,
+  "relevant_finger22_events": 1,
+  "replay_stops": 0,
+  "negative_cases": 21,
+  "negative_cases_matched": 21,
+  "prepare_seconds": 9.464297533966601,
+  "relevant_event_latency_seconds": [
+    0.6998331330250949
+  ],
+  "wall_seconds": 20.31065600598231,
+  "forbidden_API_attempts": {},
+  "new_physics_steps": 0,
+  "new_Reset_FK_collision_calls": 0,
+  "protected_old_files": 1159,
+  "changed_old_files": [],
+  "user_readme_unchanged": true,
+  "historical4731_stop": "UNKNOWN_UNCHANGED",
+  "formal_numeric": "FAIL_UNCHANGED_1e-10m",
+  "geometry_material_all_front": "UNKNOWN",
+  "new_dynamics_authorized": false,
+  "release_approved": false,
+  "scope": "Offline classification/integration only. No native contact solve, no re-integrated motion, no grasp result."
+}
