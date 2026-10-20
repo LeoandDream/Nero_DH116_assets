@@ -1,0 +1,561 @@
+{
+  "status": "PASS_OFFLINE_MAPPING_AND_ALLOWED_FIELD_DIFF",
+  "candidate_compilation": "NOT_PERFORMED",
+  "candidate_dynamics": "NOT_PERFORMED",
+  "new_native_operations": {
+    "compile": 0,
+    "Reset": 0,
+    "forward": 0,
+    "step": 0
+  },
+  "active_channels": 6,
+  "hand_hinges": 11,
+  "changed_elements": 17,
+  "changed_attributes": 34,
+  "xml_semantic_changes": [
+    {
+      "element_index": 518,
+      "tag": "joint",
+      "name": "gripper0_finger11",
+      "attribute": "damping",
+      "before": "2.0",
+      "after": "0"
+    },
+    {
+      "element_index": 518,
+      "tag": "joint",
+      "name": "gripper0_finger11",
+      "attribute": "armature",
+      "before": "0.01",
+      "after": "0"
+    },
+    {
+      "element_index": 522,
+      "tag": "joint",
+      "name": "gripper0_finger12",
+      "attribute": "damping",
+      "before": "2.0",
+      "after": "0"
+    },
+    {
+      "element_index": 522,
+      "tag": "joint",
+      "name": "gripper0_finger12",
+      "attribute": "armature",
+      "before": "0.01",
+      "after": "0"
+    },
+    {
+      "element_index": 526,
+      "tag": "joint",
+      "name": "gripper0_finger13",
+      "attribute": "damping",
+      "before": "2.0",
+      "after": "0"
+    },
+    {
+      "element_index": 526,
+      "tag": "joint",
+      "name": "gripper0_finger13",
+      "attribute": "armature",
+      "before": "0.01",
+      "after": "0"
+    },
+    {
+      "element_index": 557,
+      "tag": "joint",
+      "name": "gripper0_finger21",
+      "attribute": "damping",
+      "before": "2.0",
+      "after": "0"
+    },
+    {
+      "element_index": 557,
+      "tag": "joint",
+      "name": "gripper0_finger21",
+      "attribute": "armature",
+      "before": "0.01",
+      "after": "0"
+    },
+    {
+      "element_index": 561,
+      "tag": "joint",
+      "name": "gripper0_finger22",
+      "attribute": "damping",
+      "before": "2.0",
+      "after": "0"
+    },
+    {
+      "element_index": 561,
+      "tag": "joint",
+      "name": "gripper0_finger22",
+      "attribute": "armature",
+      "before": "0.01",
+      "after": "0"
+    },
+    {
+      "element_index": 585,
+      "tag": "joint",
+      "name": "gripper0_finger31",
+      "attribute": "damping",
+      "before": "2.0",
+      "after": "0"
+    },
+    {
+      "element_index": 585,
+      "tag": "joint",
+      "name": "gripper0_finger31",
+      "attribute": "armature",
+      "before": "0.01",
+      "after": "0"
+    },
+    {
+      "element_index": 589,
+      "tag": "joint",
+      "name": "gripper0_finger32",
+      "attribute": "damping",
+      "before": "2.0",
+      "after": "0"
+    },
+    {
+      "element_index": 589,
+      "tag": "joint",
+      "name": "gripper0_finger32",
+      "attribute": "armature",
+      "before": "0.01",
+      "after": "0"
+    },
+    {
+      "element_index": 606,
+      "tag": "joint",
+      "name": "gripper0_finger41",
+      "attribute": "damping",
+      "before": "2.0",
+      "after": "0"
+    },
+    {
+      "element_index": 606,
+      "tag": "joint",
+      "name": "gripper0_finger41",
+      "attribute": "armature",
+      "before": "0.01",
+      "after": "0"
+    },
+    {
+      "element_index": 610,
+      "tag": "joint",
+      "name": "gripper0_finger42",
+      "attribute": "damping",
+      "before": "2.0",
+      "after": "0"
+    },
+    {
+      "element_index": 610,
+      "tag": "joint",
+      "name": "gripper0_finger42",
+      "attribute": "armature",
+      "before": "0.01",
+      "after": "0"
+    },
+    {
+      "element_index": 627,
+      "tag": "joint",
+      "name": "gripper0_finger51",
+      "attribute": "damping",
+      "before": "2.0",
+      "after": "0"
+    },
+    {
+      "element_index": 627,
+      "tag": "joint",
+      "name": "gripper0_finger51",
+      "attribute": "armature",
+      "before": "0.01",
+      "after": "0"
+    },
+    {
+      "element_index": 631,
+      "tag": "joint",
+      "name": "gripper0_finger52",
+      "attribute": "damping",
+      "before": "2.0",
+      "after": "0"
+    },
+    {
+      "element_index": 631,
+      "tag": "joint",
+      "name": "gripper0_finger52",
+      "attribute": "armature",
+      "before": "0.01",
+      "after": "0"
+    },
+    {
+      "element_index": 1042,
+      "tag": "position",
+      "name": "gripper0_urdf_act_finger11",
+      "attribute": "kp",
+      "before": "50",
+      "after": "0.65286574077483084"
+    },
+    {
+      "element_index": 1042,
+      "tag": "position",
+      "name": "gripper0_urdf_act_finger11",
+      "attribute": "kv",
+      "before": "2.0",
+      "after": "0.026114629630993234"
+    },
+    {
+      "element_index": 1043,
+      "tag": "position",
+      "name": "gripper0_urdf_act_finger12",
+      "attribute": "kp",
+      "before": "50",
+      "after": "0.65991473097275011"
+    },
+    {
+      "element_index": 1043,
+      "tag": "position",
+      "name": "gripper0_urdf_act_finger12",
+      "attribute": "kv",
+      "before": "2.0",
+      "after": "0.026396589238910004"
+    },
+    {
+      "element_index": 1044,
+      "tag": "position",
+      "name": "gripper0_urdf_act_finger21",
+      "attribute": "kp",
+      "before": "50",
+      "after": "0.5098435598707074"
+    },
+    {
+      "element_index": 1044,
+      "tag": "position",
+      "name": "gripper0_urdf_act_finger21",
+      "attribute": "kv",
+      "before": "2.0",
+      "after": "0.020393742394828294"
+    },
+    {
+      "element_index": 1045,
+      "tag": "position",
+      "name": "gripper0_urdf_act_finger31",
+      "attribute": "kp",
+      "before": "50",
+      "after": "0.69307170971793874"
+    },
+    {
+      "element_index": 1045,
+      "tag": "position",
+      "name": "gripper0_urdf_act_finger31",
+      "attribute": "kv",
+      "before": "2.0",
+      "after": "0.027722868388717549"
+    },
+    {
+      "element_index": 1046,
+      "tag": "position",
+      "name": "gripper0_urdf_act_finger41",
+      "attribute": "kp",
+      "before": "50",
+      "after": "0.51027003659620607"
+    },
+    {
+      "element_index": 1046,
+      "tag": "position",
+      "name": "gripper0_urdf_act_finger41",
+      "attribute": "kv",
+      "before": "2.0",
+      "after": "0.020410801463848244"
+    },
+    {
+      "element_index": 1047,
+      "tag": "position",
+      "name": "gripper0_urdf_act_finger51",
+      "attribute": "kp",
+      "before": "50",
+      "after": "0.29451331029853522"
+    },
+    {
+      "element_index": 1047,
+      "tag": "position",
+      "name": "gripper0_urdf_act_finger51",
+      "attribute": "kv",
+      "before": "2.0",
+      "after": "0.011780532411941408"
+    }
+  ],
+  "all_other_xml_tokens_byte_identical_after_restoring_allowed_attributes": true,
+  "tmp_only_git_apply_check_exit_code": 0,
+  "tmp_only_git_apply_exit_code": 0,
+  "patch_applied_matches_candidate_sha256": "e24d17904b9b1d4a55ae031a08bb1457f0f46c4170f987767d0acd161eb3e84b",
+  "patch_sha256": "0d4c4c78a8aa4080809a739845dfa49268653cafb8de744bcfde7ded549e5c12",
+  "source_and_saved_A_snapshots_consistent": true,
+  "saved_snapshot_audit_checks": 86,
+  "predicted_actuator_fields_B_not_new_compiled_result": [
+    {
+      "joint": "gripper0_finger11",
+      "actuator": "gripper0_urdf_act_finger11",
+      "status": "PREDICTED_NOT_COMPILED",
+      "actuator_gainprm": [
+        0.6528657407748308,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "actuator_biasprm": [
+        0.0,
+        -0.6528657407748308,
+        -0.026114629630993234,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "gear_and_force_limits": "UNCHANGED_RIGHT_ORIGINAL"
+    },
+    {
+      "joint": "gripper0_finger12",
+      "actuator": "gripper0_urdf_act_finger12",
+      "status": "PREDICTED_NOT_COMPILED",
+      "actuator_gainprm": [
+        0.6599147309727501,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "actuator_biasprm": [
+        0.0,
+        -0.6599147309727501,
+        -0.026396589238910004,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "gear_and_force_limits": "UNCHANGED_RIGHT_ORIGINAL"
+    },
+    {
+      "joint": "gripper0_finger21",
+      "actuator": "gripper0_urdf_act_finger21",
+      "status": "PREDICTED_NOT_COMPILED",
+      "actuator_gainprm": [
+        0.5098435598707074,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "actuator_biasprm": [
+        0.0,
+        -0.5098435598707074,
+        -0.020393742394828294,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "gear_and_force_limits": "UNCHANGED_RIGHT_ORIGINAL"
+    },
+    {
+      "joint": "gripper0_finger31",
+      "actuator": "gripper0_urdf_act_finger31",
+      "status": "PREDICTED_NOT_COMPILED",
+      "actuator_gainprm": [
+        0.6930717097179387,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "actuator_biasprm": [
+        0.0,
+        -0.6930717097179387,
+        -0.02772286838871755,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "gear_and_force_limits": "UNCHANGED_RIGHT_ORIGINAL"
+    },
+    {
+      "joint": "gripper0_finger41",
+      "actuator": "gripper0_urdf_act_finger41",
+      "status": "PREDICTED_NOT_COMPILED",
+      "actuator_gainprm": [
+        0.5102700365962061,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "actuator_biasprm": [
+        0.0,
+        -0.5102700365962061,
+        -0.020410801463848244,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "gear_and_force_limits": "UNCHANGED_RIGHT_ORIGINAL"
+    },
+    {
+      "joint": "gripper0_finger51",
+      "actuator": "gripper0_urdf_act_finger51",
+      "status": "PREDICTED_NOT_COMPILED",
+      "actuator_gainprm": [
+        0.2945133102985352,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "actuator_biasprm": [
+        0.0,
+        -0.2945133102985352,
+        -0.011780532411941408,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "gear_and_force_limits": "UNCHANGED_RIGHT_ORIGINAL"
+    }
+  ],
+  "predicted_hand_dof_fields_B_not_new_compiled_result": {
+    "names": [
+      "gripper0_finger11",
+      "gripper0_finger12",
+      "gripper0_finger13",
+      "gripper0_finger21",
+      "gripper0_finger22",
+      "gripper0_finger31",
+      "gripper0_finger32",
+      "gripper0_finger41",
+      "gripper0_finger42",
+      "gripper0_finger51",
+      "gripper0_finger52"
+    ],
+    "dof_damping": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "dof_armature": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "dof_frictionloss": "UNCHANGED 0"
+  },
+  "schedule": {
+    "commands": 260,
+    "canonical_sha256_before_and_after": "ebf188b0bf49ad3b74a042c52b5fa4ad5df02dcb8f84caea565fcdaf9fdc7e32",
+    "saved_file_sha256_before_and_after": "019173fae82db3b0b30b58572fb64e0c3ff400f0ad98912ff17c41dc69b1ecbf",
+    "initial_repeat_lift_source160": "PRESERVED",
+    "first_lift_arm_target_change_step": 4776
+  },
+  "research_rules_sha256_before_and_after": "48632dfa4bbe0630ef7d61b9e706240d7769ad6361d588e1d02025bde4bc6454",
+  "resources": "No resource copied/changed. Patch applies in the original base-model XML context; do not use patch directory as a model/mesh root.",
+  "limits_and_other_fields": "gear, ctrllimited, ctrlrange, actuator/joint force flags/ranges, frictionloss, right body mass/full inertia, axes/ranges, Mimic, geometry/contact, NERO/wrist, Reset, solver/integrator unchanged",
+  "runtime_readiness": "NOT_ESTABLISHED; existing exact-baseline robot audits will require an explicit allowlist for these fields before any later authorized B trial. Do not weaken other checks or reuse A compiled-state equality assertions as B physics equality.",
+  "unknowns": [
+    "Actual B compiled fields and dynamics untested.",
+    "Initial tuning derivation of left gains not established; no same-bandwidth or same-damping-ratio claim.",
+    "Saved post-step q/qvel are not time-aligned with RK4 force cache; no exact torque identity test."
+  ],
+  "protected_files": {
+    "original_tracked_files_checked": 2081,
+    "changed_original_files": [],
+    "baseline_commit": "24c0d44dcaab3eeac52d2b0c8f02dfd0fec15773",
+    "original_hash_map_sha256": "bab239432db8007686d843bf4e3e008874927ded112feb6501fe23e789b7c793",
+    "main_head_unchanged": "9f4054f6197ecb1127202cee14cd75c3924a47e3",
+    "main_readme_sha256_unchanged": "d68ec6d62a6f42b8c1636ad2774c8329073d973c2621cc7fe148c8c8c89d8f25",
+    "independent_in_memory_patch_review": "PASS_17_ELEMENTS_34_ATTRIBUTES_NO_OTHER_BYTE_DIFFERENCES",
+    "readme_reproduction_command": "PASS_TEMPORARY_XML_ONLY"
+  },
+  "additional_duplicate_candidate_search": {
+    "registered_worktrees": [
+      "/data_robot/projects/nero_dh116_assets",
+      "/data_robot/projects/.worktrees/nero_dh116_d1a",
+      "/data_robot/projects/.worktrees/nero_dh116_d1b",
+      "/data_robot/projects/.worktrees/nero_dh116_finger22_risk_review",
+      "/data_robot/projects/.worktrees/nero_dh116_right",
+      "/data_robot/projects/.worktrees/nero_dh116_right_finger13",
+      "/data_robot/projects/.worktrees/nero_dh116_right_proxy76",
+      "/data_robot/projects/.worktrees/nero_dh116_wrist_reuse"
+    ],
+    "scope": "existing examples/right_hand/candidates JSON/XML/Python in the other registered worktrees",
+    "same_profile_hits_outside_current_worktree": [],
+    "limitation": "Point-in-time scoped candidate search, not a global process or filesystem exclusivity claim."
+  }
+}

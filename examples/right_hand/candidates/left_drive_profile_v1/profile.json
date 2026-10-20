@@ -1,0 +1,284 @@
+{
+  "profile": "R_close149_left_drive_profile_v1",
+  "status": "OFFLINE_CANDIDATE_ONLY_NOT_COMPILED_NOT_RUN",
+  "baseline_commit": "24c0d44dcaab3eeac52d2b0c8f02dfd0fec15773",
+  "authorization": "https://github.com/LeoandDream/Nero_DH116_assets/issues/5#issuecomment-6296626303",
+  "base_model": "examples/right_hand/candidates/finger22_local/model.xml",
+  "source_xml_for_B": "mjcf/nero_dh116.xml",
+  "source_sha256": {
+    "examples/right_hand/candidates/finger22_local/model.xml": "7f9d84061c3e7d176763c688d2389f8b3d3e38386b8e990a0fa047ff2bc3329c",
+    "mjcf/nero_dh116.xml": "c446124b7d938aa6e00ba5914047001de66c2a2c162e7dea1644437e5a85cb33",
+    "examples/libero_eval/evidence/close149/raw/schedule.json": "019173fae82db3b0b30b58572fb64e0c3ff400f0ad98912ff17c41dc69b1ecbf",
+    "examples/libero_eval/evidence/close149/raw/hand.xml": "da89b33d1d624826336d24ebaeba2481dbc7c839f239d8119321b1ffeb6fb27f",
+    "examples/libero_eval/evidence/close149/raw/robot-physical-preflight.json.gz": "412b0f69c6c0dd6e1898894f0fb9bbb076984dce225ec6cf641474e38441728d",
+    "examples/libero_reference/fixtures/compiled-model.json": "910700d6223d1a4a20b5e1baff79dced07c9aa55b520093fa105d6ed83564bd7",
+    "examples/right_hand/evidence/d3_research_contact_policy/research-policy.json": "48632dfa4bbe0630ef7d61b9e706240d7769ad6361d588e1d02025bde4bc6454"
+  },
+  "changes": [
+    {
+      "tag": "joint",
+      "name": "gripper0_finger11",
+      "source_joint": "gripper0_finger11",
+      "attribute_changes": {
+        "damping": {
+          "before": "2.0",
+          "after": "0"
+        },
+        "armature": {
+          "before": "0.01",
+          "after": "0"
+        }
+      }
+    },
+    {
+      "tag": "joint",
+      "name": "gripper0_finger12",
+      "source_joint": "gripper0_finger12",
+      "attribute_changes": {
+        "damping": {
+          "before": "2.0",
+          "after": "0"
+        },
+        "armature": {
+          "before": "0.01",
+          "after": "0"
+        }
+      }
+    },
+    {
+      "tag": "joint",
+      "name": "gripper0_finger13",
+      "source_joint": "gripper0_finger13",
+      "attribute_changes": {
+        "damping": {
+          "before": "2.0",
+          "after": "0"
+        },
+        "armature": {
+          "before": "0.01",
+          "after": "0"
+        }
+      }
+    },
+    {
+      "tag": "joint",
+      "name": "gripper0_finger21",
+      "source_joint": "gripper0_finger21",
+      "attribute_changes": {
+        "damping": {
+          "before": "2.0",
+          "after": "0"
+        },
+        "armature": {
+          "before": "0.01",
+          "after": "0"
+        }
+      }
+    },
+    {
+      "tag": "joint",
+      "name": "gripper0_finger22",
+      "source_joint": "gripper0_finger22",
+      "attribute_changes": {
+        "damping": {
+          "before": "2.0",
+          "after": "0"
+        },
+        "armature": {
+          "before": "0.01",
+          "after": "0"
+        }
+      }
+    },
+    {
+      "tag": "joint",
+      "name": "gripper0_finger31",
+      "source_joint": "gripper0_finger31",
+      "attribute_changes": {
+        "damping": {
+          "before": "2.0",
+          "after": "0"
+        },
+        "armature": {
+          "before": "0.01",
+          "after": "0"
+        }
+      }
+    },
+    {
+      "tag": "joint",
+      "name": "gripper0_finger32",
+      "source_joint": "gripper0_finger32",
+      "attribute_changes": {
+        "damping": {
+          "before": "2.0",
+          "after": "0"
+        },
+        "armature": {
+          "before": "0.01",
+          "after": "0"
+        }
+      }
+    },
+    {
+      "tag": "joint",
+      "name": "gripper0_finger41",
+      "source_joint": "gripper0_finger41",
+      "attribute_changes": {
+        "damping": {
+          "before": "2.0",
+          "after": "0"
+        },
+        "armature": {
+          "before": "0.01",
+          "after": "0"
+        }
+      }
+    },
+    {
+      "tag": "joint",
+      "name": "gripper0_finger42",
+      "source_joint": "gripper0_finger42",
+      "attribute_changes": {
+        "damping": {
+          "before": "2.0",
+          "after": "0"
+        },
+        "armature": {
+          "before": "0.01",
+          "after": "0"
+        }
+      }
+    },
+    {
+      "tag": "joint",
+      "name": "gripper0_finger51",
+      "source_joint": "gripper0_finger51",
+      "attribute_changes": {
+        "damping": {
+          "before": "2.0",
+          "after": "0"
+        },
+        "armature": {
+          "before": "0.01",
+          "after": "0"
+        }
+      }
+    },
+    {
+      "tag": "joint",
+      "name": "gripper0_finger52",
+      "source_joint": "gripper0_finger52",
+      "attribute_changes": {
+        "damping": {
+          "before": "2.0",
+          "after": "0"
+        },
+        "armature": {
+          "before": "0.01",
+          "after": "0"
+        }
+      }
+    },
+    {
+      "tag": "position",
+      "name": "gripper0_urdf_act_finger11",
+      "source_joint": "gripper0_finger11",
+      "attribute_changes": {
+        "kp": {
+          "before": "50",
+          "after": "0.65286574077483084"
+        },
+        "kv": {
+          "before": "2.0",
+          "after": "0.026114629630993234"
+        }
+      }
+    },
+    {
+      "tag": "position",
+      "name": "gripper0_urdf_act_finger12",
+      "source_joint": "gripper0_finger12",
+      "attribute_changes": {
+        "kp": {
+          "before": "50",
+          "after": "0.65991473097275011"
+        },
+        "kv": {
+          "before": "2.0",
+          "after": "0.026396589238910004"
+        }
+      }
+    },
+    {
+      "tag": "position",
+      "name": "gripper0_urdf_act_finger21",
+      "source_joint": "gripper0_finger21",
+      "attribute_changes": {
+        "kp": {
+          "before": "50",
+          "after": "0.5098435598707074"
+        },
+        "kv": {
+          "before": "2.0",
+          "after": "0.020393742394828294"
+        }
+      }
+    },
+    {
+      "tag": "position",
+      "name": "gripper0_urdf_act_finger31",
+      "source_joint": "gripper0_finger31",
+      "attribute_changes": {
+        "kp": {
+          "before": "50",
+          "after": "0.69307170971793874"
+        },
+        "kv": {
+          "before": "2.0",
+          "after": "0.027722868388717549"
+        }
+      }
+    },
+    {
+      "tag": "position",
+      "name": "gripper0_urdf_act_finger41",
+      "source_joint": "gripper0_finger41",
+      "attribute_changes": {
+        "kp": {
+          "before": "50",
+          "after": "0.51027003659620607"
+        },
+        "kv": {
+          "before": "2.0",
+          "after": "0.020410801463848244"
+        }
+      }
+    },
+    {
+      "tag": "position",
+      "name": "gripper0_urdf_act_finger51",
+      "source_joint": "gripper0_finger51",
+      "attribute_changes": {
+        "kp": {
+          "before": "50",
+          "after": "0.29451331029853522"
+        },
+        "kv": {
+          "before": "2.0",
+          "after": "0.011780532411941408"
+        }
+      }
+    }
+  ],
+  "derived_patch": "model.patch",
+  "candidate_xml_sha256_in_original_base_context": "e24d17904b9b1d4a55ae031a08bb1457f0f46c4170f987767d0acd161eb3e84b",
+  "candidate_xml_is_not_materialized_or_compiled": true,
+  "resource_resolution_context": "examples/right_hand/candidates/finger22_local",
+  "schedule_canonical_json_sha256": "ebf188b0bf49ad3b74a042c52b5fa4ad5df02dcb8f84caea565fcdaf9fdc7e32",
+  "schedule_commands": 260,
+  "physics_steps_per_command": 25,
+  "physics_steps_max": 6500,
+  "physical_dt_s": 0.002,
+  "interpretation": "Predefined multi-parameter drive package A/B, not a single-kp causal test; not hardware calibration or bandwidth/damping-ratio equivalence."
+}

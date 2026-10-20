@@ -1,0 +1,1286 @@
+{
+  "scope": {
+    "worktree": "/data_robot/projects/.worktrees/nero_dh116_finger22_risk_review",
+    "head": "24c0d44dcaab3eeac52d2b0c8f02dfd0fec15773",
+    "read_only_stdlib_audit": true,
+    "native_import_compile_reset_forward_step": false,
+    "repository_writes": false,
+    "profile_b_dynamic_authorization": false
+  },
+  "timestamp_utc": "2026-10-20T17:24:53.200036+00:00",
+  "conclusion": "No hand actuator parameter or DOF damping/armature runtime override found in the inspected close149 -> libero_research -> white_bowl_run/white_bowl_model -> splitter -> stock robosuite 1.4.1 chain. Static source audit plus existing preflight evidence only; no candidate execution or dynamic validation.",
+  "runtime_location": {
+    "workspace_env": "worktree .reference-env is an empty placeholder, not the historical runtime environment",
+    "historical_frozen_prefix": "/data_robot/verification/nero_dh116_right/.reference-env",
+    "stock_source_read": "/data_robot/verification/nero_dh116_right/.reference-env/lib/python3.11/site-packages/robosuite",
+    "stock_version_source": "__init__.py:21 reports 1.4.1",
+    "mount_context": "Parent audit confirms prior bwrap mapping from workspace into /data_robot/verification/nero_dh116_right; no environment activated or imported here."
+  },
+  "chain_findings": [
+    {
+      "source": "examples/right_hand/close149.py:75-126",
+      "finding": "Adapter replaces frozen schedule and updates provenance/schedule checks; no actuator/DOF parameter assignment."
+    },
+    {
+      "source": "examples/right_hand/libero_research.py:188-230,244-311",
+      "finding": "Adapter adds rendering, policy evaluation, observation hooks; selected policy supplies same model/mechanics. No inspected actuator/DOF field write."
+    },
+    {
+      "source": "examples/right_hand/white_bowl_run.py:224-245,275-277,373-450",
+      "finding": "Loads passed model, native env/reset; compares compiled physical fields. kp50/kd2sqrt50 check applies to 7D NERO JointPositionController, distinct from 6D hand position servos."
+    },
+    {
+      "source": "examples/right_hand/white_bowl_model.py:34-61,81-91,127-150,163-179",
+      "finding": "Loads explicit right source and splitter; gripper format_action returns six normalized commands unchanged. Scene adapter copies option/compiler/size only. Arm wrapper only translates absolute 7D qpos goals into stock JPC."
+    },
+    {
+      "source": "examples/libero_reference/model.py:16-58",
+      "finding": "Deep-copies bodies including joint damping/armature, copies every hand actuator element, only normalizes namespace and mounting frames/resource paths."
+    },
+    {
+      "source": "/data_robot/verification/nero_dh116_right/.reference-env/lib/python3.11/site-packages/robosuite/robots/manipulator.py:16-31",
+      "finding": "Reads actuator_ctrlrange; maps normalized hand commands using midpoint + half-span*action; writes data.ctrl. Does not write model ranges, gains, bias, gear or force limits."
+    },
+    {
+      "source": "/data_robot/verification/nero_dh116_right/.reference-env/lib/python3.11/site-packages/robosuite/robots/single_arm.py:218-261",
+      "finding": "Splits arm/gripper commands; runs JPC, clips arm torques to arm limits, delegates grip_action, writes arm ctrl. No hand model parameter override."
+    },
+    {
+      "source": "/data_robot/verification/nero_dh116_right/.reference-env/lib/python3.11/site-packages/robosuite/models/robots/robot_model.py:61-75,97-116 and models/grippers/gripper_model.py:11-24",
+      "finding": "RobotModel fills absent frictionloss/damping/armature with force=False, preserving explicit attributes including zero. Hand GripperModel inherits MujocoXMLModel directly, not RobotModel, so those robot default setters do not apply to hand."
+    },
+    {
+      "source": "/data_robot/verification/nero_dh116_right/.reference-env/lib/python3.11/site-packages/robosuite/models/base.py:228-254",
+      "finding": "Class defaults are inlined only when the element has a class and lacks an explicit attribute; no inspected gain/range/damping/armature override."
+    }
+  ],
+  "right_parameter_provenance": {
+    "source": "docs/RIGHT_HAND.md:7-13,33",
+    "upstream_commit": "14275cfe32cce1fe13a16df712e8a0e610a0227e",
+    "finding": "Right damping=2, armature=.01, frictionloss=0, position kp50/kv2 are simulation declarations selected from fixed right MJCF, not measured URDF drive specifications. URDF effort/velocity=0 cannot establish actual hardware torque/speed limits. Native JPC converts 7D arm qpos targets into torques; hand servo consumes 6D joint angles.",
+    "limits": "Static provenance does not establish hardware correctness, optimal gains, dynamic equivalence of left/right models, grasp performance, or the causal source of the 4793 failure."
+  },
+  "existing_preflight": {
+    "path": "examples/libero_eval/evidence/close149/raw/robot-physical-preflight.json.gz",
+    "sha256": "412b0f69c6c0dd6e1898894f0fb9bbb076984dce225ec6cf641474e38441728d",
+    "historical_only": true,
+    "passed": true,
+    "fields_checked": 9671,
+    "differences": [],
+    "hand_actuators_actual": [
+      {
+        "name": "gripper0_urdf_act_finger11",
+        "actuator_gainprm": [
+          50.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actuator_biasprm": [
+          0.0,
+          -50.0,
+          -2.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actuator_gear": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actuator_ctrllimited": 1,
+        "actuator_ctrlrange": [
+          0.0,
+          1.047198
+        ],
+        "actuator_forcelimited": 0,
+        "actuator_forcerange": [
+          0.0,
+          0.0
+        ],
+        "joint": "gripper0_finger11"
+      },
+      {
+        "name": "gripper0_urdf_act_finger12",
+        "actuator_gainprm": [
+          50.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actuator_biasprm": [
+          0.0,
+          -50.0,
+          -2.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actuator_gear": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actuator_ctrllimited": 1,
+        "actuator_ctrlrange": [
+          0.0,
+          0.523599
+        ],
+        "actuator_forcelimited": 0,
+        "actuator_forcerange": [
+          0.0,
+          0.0
+        ],
+        "joint": "gripper0_finger12"
+      },
+      {
+        "name": "gripper0_urdf_act_finger21",
+        "actuator_gainprm": [
+          50.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actuator_biasprm": [
+          0.0,
+          -50.0,
+          -2.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actuator_gear": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actuator_ctrllimited": 1,
+        "actuator_ctrlrange": [
+          0.0,
+          1.396263
+        ],
+        "actuator_forcelimited": 0,
+        "actuator_forcerange": [
+          0.0,
+          0.0
+        ],
+        "joint": "gripper0_finger21"
+      },
+      {
+        "name": "gripper0_urdf_act_finger31",
+        "actuator_gainprm": [
+          50.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actuator_biasprm": [
+          0.0,
+          -50.0,
+          -2.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actuator_gear": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actuator_ctrllimited": 1,
+        "actuator_ctrlrange": [
+          0.0,
+          1.396263
+        ],
+        "actuator_forcelimited": 0,
+        "actuator_forcerange": [
+          0.0,
+          0.0
+        ],
+        "joint": "gripper0_finger31"
+      },
+      {
+        "name": "gripper0_urdf_act_finger41",
+        "actuator_gainprm": [
+          50.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actuator_biasprm": [
+          0.0,
+          -50.0,
+          -2.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actuator_gear": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actuator_ctrllimited": 1,
+        "actuator_ctrlrange": [
+          0.0,
+          1.396263
+        ],
+        "actuator_forcelimited": 0,
+        "actuator_forcerange": [
+          0.0,
+          0.0
+        ],
+        "joint": "gripper0_finger41"
+      },
+      {
+        "name": "gripper0_urdf_act_finger51",
+        "actuator_gainprm": [
+          50.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actuator_biasprm": [
+          0.0,
+          -50.0,
+          -2.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actuator_gear": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actuator_ctrllimited": 1,
+        "actuator_ctrlrange": [
+          0.0,
+          1.396263
+        ],
+        "actuator_forcelimited": 0,
+        "actuator_forcerange": [
+          0.0,
+          0.0
+        ],
+        "joint": "gripper0_finger51"
+      }
+    ],
+    "hand_dofs_actual": [
+      {
+        "name": "gripper0_finger11",
+        "dof_damping": [
+          2.0
+        ],
+        "dof_armature": [
+          0.01
+        ],
+        "dof_frictionloss": [
+          0.0
+        ],
+        "jnt_actfrclimited": 0,
+        "jnt_actfrcrange": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "gripper0_finger12",
+        "dof_damping": [
+          2.0
+        ],
+        "dof_armature": [
+          0.01
+        ],
+        "dof_frictionloss": [
+          0.0
+        ],
+        "jnt_actfrclimited": 0,
+        "jnt_actfrcrange": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "gripper0_finger13",
+        "dof_damping": [
+          2.0
+        ],
+        "dof_armature": [
+          0.01
+        ],
+        "dof_frictionloss": [
+          0.0
+        ],
+        "jnt_actfrclimited": 0,
+        "jnt_actfrcrange": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "gripper0_finger21",
+        "dof_damping": [
+          2.0
+        ],
+        "dof_armature": [
+          0.01
+        ],
+        "dof_frictionloss": [
+          0.0
+        ],
+        "jnt_actfrclimited": 0,
+        "jnt_actfrcrange": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "gripper0_finger22",
+        "dof_damping": [
+          2.0
+        ],
+        "dof_armature": [
+          0.01
+        ],
+        "dof_frictionloss": [
+          0.0
+        ],
+        "jnt_actfrclimited": 0,
+        "jnt_actfrcrange": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "gripper0_finger31",
+        "dof_damping": [
+          2.0
+        ],
+        "dof_armature": [
+          0.01
+        ],
+        "dof_frictionloss": [
+          0.0
+        ],
+        "jnt_actfrclimited": 0,
+        "jnt_actfrcrange": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "gripper0_finger32",
+        "dof_damping": [
+          2.0
+        ],
+        "dof_armature": [
+          0.01
+        ],
+        "dof_frictionloss": [
+          0.0
+        ],
+        "jnt_actfrclimited": 0,
+        "jnt_actfrcrange": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "gripper0_finger41",
+        "dof_damping": [
+          2.0
+        ],
+        "dof_armature": [
+          0.01
+        ],
+        "dof_frictionloss": [
+          0.0
+        ],
+        "jnt_actfrclimited": 0,
+        "jnt_actfrcrange": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "gripper0_finger42",
+        "dof_damping": [
+          2.0
+        ],
+        "dof_armature": [
+          0.01
+        ],
+        "dof_frictionloss": [
+          0.0
+        ],
+        "jnt_actfrclimited": 0,
+        "jnt_actfrcrange": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "gripper0_finger51",
+        "dof_damping": [
+          2.0
+        ],
+        "dof_armature": [
+          0.01
+        ],
+        "dof_frictionloss": [
+          0.0
+        ],
+        "jnt_actfrclimited": 0,
+        "jnt_actfrcrange": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "gripper0_finger52",
+        "dof_damping": [
+          2.0
+        ],
+        "dof_armature": [
+          0.01
+        ],
+        "dof_frictionloss": [
+          0.0
+        ],
+        "jnt_actfrclimited": 0,
+        "jnt_actfrcrange": [
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "frozen_arm_controller": {
+      "kp": [
+        50.0,
+        50.0,
+        50.0,
+        50.0,
+        50.0,
+        50.0,
+        50.0
+      ],
+      "kd": [
+        14.142135623730951,
+        14.142135623730951,
+        14.142135623730951,
+        14.142135623730951,
+        14.142135623730951,
+        14.142135623730951,
+        14.142135623730951
+      ],
+      "initial_joint": [
+        0.3695869252103055,
+        -0.9117843140806088,
+        -2.701898722298827,
+        0.9778290747376885,
+        -1.4394823334488054,
+        -0.1793268616846018,
+        1.4802253266239929
+      ],
+      "goal_qpos": null
+    }
+  },
+  "duplicate_check": {
+    "scope": "Only existing examples/right_hand/candidates/*/model.xml in this worktree, plus targeted current Python process check",
+    "candidate_paths": [
+      "examples/right_hand/candidates/finger13_local/model.xml",
+      "examples/right_hand/candidates/finger22_local/model.xml",
+      "examples/right_hand/candidates/link5_flange_local/model.xml",
+      "examples/right_hand/candidates/proxy76/model.xml",
+      "examples/right_hand/candidates/wrist_reuse/model.xml"
+    ],
+    "existing_exact_driver_profile_b_candidates": [],
+    "all_existing_candidates_use_right_hand_kp50_kv2_damping2_armature_point01": true,
+    "matching_running_python_processes": [],
+    "limitation": "Point-in-time and scoped search; no unrelated worktrees or historical caches scanned."
+  },
+  "left_exact_xml_gains_for_profile_b": [
+    {
+      "name": "gripper0_urdf_act_finger11",
+      "joint": "gripper0_finger11",
+      "ctrllimited": "true",
+      "ctrlrange": "0 1.047198",
+      "kp": "0.65286574077483084",
+      "kv": "0.026114629630993234"
+    },
+    {
+      "name": "gripper0_urdf_act_finger12",
+      "joint": "gripper0_finger12",
+      "ctrllimited": "true",
+      "ctrlrange": "0 0.523599",
+      "kp": "0.65991473097275011",
+      "kv": "0.026396589238910004"
+    },
+    {
+      "name": "gripper0_urdf_act_finger21",
+      "joint": "gripper0_finger21",
+      "ctrllimited": "true",
+      "ctrlrange": "0 1.396263",
+      "kp": "0.5098435598707074",
+      "kv": "0.020393742394828294"
+    },
+    {
+      "name": "gripper0_urdf_act_finger31",
+      "joint": "gripper0_finger31",
+      "ctrllimited": "true",
+      "ctrlrange": "0 1.396263",
+      "kp": "0.69307170971793874",
+      "kv": "0.027722868388717549"
+    },
+    {
+      "name": "gripper0_urdf_act_finger41",
+      "joint": "gripper0_finger41",
+      "ctrllimited": "true",
+      "ctrlrange": "0 1.396263",
+      "kp": "0.51027003659620607",
+      "kv": "0.020410801463848244"
+    },
+    {
+      "name": "gripper0_urdf_act_finger51",
+      "joint": "gripper0_finger51",
+      "ctrllimited": "true",
+      "ctrlrange": "0 1.396263",
+      "kp": "0.29451331029853522",
+      "kv": "0.011780532411941408"
+    }
+  ],
+  "five_saved_frames": {
+    "source": "examples/libero_eval/evidence/close149/raw/state.jsonl.gz",
+    "source_sha256": "76bbd6b7a6197892cf68093b438204dbce733d87c4d82aed6f8dac127cbbbcc3",
+    "selected_steps": [
+      4750,
+      4751,
+      4775,
+      4776,
+      4793
+    ],
+    "timing": "qpos/qvel are post-step; actuator_force and qfrc/body/contact derived caches are final RK4 internal-stage values without extra forward. Do not demand exact f=kp*(ctrl-post_qpos)-kv*post_qvel equality or diagnose an override from its residual.",
+    "rows": [
+      {
+        "step": 4750,
+        "macro": 189,
+        "source_macro": 149,
+        "phase": "close",
+        "robot_state_18": [
+          0.10954004614754802,
+          -0.8489759151070162,
+          -2.67647891313449,
+          1.6218512038986552,
+          -1.135901223334031,
+          -0.5414163338157244,
+          1.4346905198141675,
+          0.12791339403566637,
+          0.1438807273546215,
+          0.13125933827617117,
+          0.38299664802634514,
+          0.3634347523585157,
+          0.00022635463932566108,
+          0.011281644792169851,
+          0.00017043419296429975,
+          0.011229761760825277,
+          0.00012523132764147087,
+          0.01118784183351085
+        ],
+        "action_13": [
+          0.11019389262209636,
+          -0.8491683387444487,
+          -2.6794726443590386,
+          1.6223902342637793,
+          -1.1355931845290113,
+          -0.5431275859185086,
+          1.4335265819905645,
+          -0.7571726913146498,
+          -0.40460711796341897,
+          -0.40460711796341897,
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        "ctrl": [
+          -0.007641002481456782,
+          6.975278616276277,
+          0.773662149850695,
+          -1.642102661497887,
+          -0.10244081325573877,
+          0.015332613479264165,
+          0.20627364964916742,
+          0.1271441360003407,
+          0.1558735588207359,
+          0.4156625258255214,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actuator_force": [
+          -0.007641002481456782,
+          6.975278616276277,
+          0.773662149850695,
+          -1.642102661497887,
+          -0.10244081325573877,
+          0.015332613479264165,
+          0.20627364964916742,
+          -0.03860304497821154,
+          0.4827699466892099,
+          1.338090255492947,
+          -0.011156121309253031,
+          -0.008427490074358687,
+          -0.006218112251725678
+        ],
+        "target_qpos_18": [
+          0.11019389262209636,
+          -0.8491683387444487,
+          -2.6794726443590386,
+          1.6223902342637793,
+          -1.1355931845290113,
+          -0.5431275859185086,
+          1.4335265819905645,
+          0.12714413600034066,
+          0.15587355882073592,
+          0.14188543060930423,
+          0.4156625258255214,
+          0.393730921274975,
+          0.0,
+          0.011072,
+          0.0,
+          0.011072,
+          0.0,
+          0.011072
+        ],
+        "mimic_rad": 0.0002239618145376543,
+        "failures": [],
+        "j6": {
+          "target_rad": -0.5431275859185086,
+          "actual_post_qpos_rad": -0.5414163338157244,
+          "post_qvel_rad_s": 0.020052298393516674,
+          "raw_qacc_rad_s2": -1.8725685550899527,
+          "cached_qfrc_actuator_Nm": 0.015332613479264165,
+          "cached_qfrc_constraint_Nm": -0.0006040901374843033,
+          "cached_qfrc_bias_Nm": 0.015575518289836943,
+          "cached_qfrc_passive_Nm": -1.1776534478711256e-05,
+          "timing": "qpos/qvel post-step; forces and body/contact poses are final RK4 internal-stage cache, no additional forward."
+        },
+        "robot_qvel_18_poststep": [
+          -0.002237986736686885,
+          0.00017936669604721198,
+          0.01169230370459834,
+          -0.0020985131895135687,
+          0.017084594641447005,
+          0.020052298393516674,
+          0.07743111319298757,
+          0.0001373088362365926,
+          0.0583085918582044,
+          0.052069851616089485,
+          0.14757326371979657,
+          0.13655753794439843,
+          -7.931245920621612e-05,
+          -7.229032060647925e-05,
+          -4.6496923259351055e-05,
+          -4.223315538000767e-05,
+          -2.169924486251299e-05,
+          -1.9712698415491805e-05
+        ]
+      },
+      {
+        "step": 4751,
+        "macro": 190,
+        "source_macro": 160,
+        "phase": "lift",
+        "robot_state_18": [
+          0.10953563492551928,
+          -0.8489755694893752,
+          -2.676455843144682,
+          1.6218470769937854,
+          -1.1358677301908295,
+          -0.5413752318629274,
+          1.4348437314945777,
+          0.12791533491195953,
+          0.14399272207992103,
+          0.13135928201865882,
+          0.38328690541741967,
+          0.36370327862844193,
+          0.00022622766279138004,
+          0.011281526205244093,
+          0.0001703559910659798,
+          0.011229689206443124,
+          0.0001251908883777929,
+          0.011187804646604814
+        ],
+        "action_13": [
+          0.11019389262209636,
+          -0.8491683387444487,
+          -2.6794726443590386,
+          1.6223902342637793,
+          -1.1355931845290113,
+          -0.5431275859185086,
+          1.4335265819905645,
+          -0.7571726913146498,
+          -0.40460711796341897,
+          -0.40460711796341897,
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        "ctrl": [
+          -0.007813257979628245,
+          6.975614094849304,
+          0.7735454887317657,
+          -1.6422430011656908,
+          -0.10254959145935774,
+          0.015370137357762608,
+          0.20643797186909735,
+          0.1271441360003407,
+          0.1558735588207359,
+          0.4156625258255214,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actuator_force": [
+          -0.007813257979628245,
+          6.975614094849304,
+          0.7735454887317657,
+          -1.6422430011656908,
+          -0.10254959145935774,
+          0.015370137357762608,
+          0.20643797186909735,
+          -0.054262535413878155,
+          0.5060098381722469,
+          1.3411907774190475,
+          -0.0113231556568556,
+          -0.00850899140352691,
+          -0.006238111762601357
+        ],
+        "target_qpos_18": [
+          0.11019389262209636,
+          -0.8491683387444487,
+          -2.6794726443590386,
+          1.6223902342637793,
+          -1.1355931845290113,
+          -0.5431275859185086,
+          1.4335265819905645,
+          0.12714413600034066,
+          0.15587355882073592,
+          0.14188543060930423,
+          0.4156625258255214,
+          0.393730921274975,
+          0.0,
+          0.011072,
+          0.0,
+          0.011072,
+          0.0,
+          0.011072
+        ],
+        "mimic_rad": 0.00022264649883463328,
+        "failures": [],
+        "j6": {
+          "target_rad": -0.5431275859185086,
+          "actual_post_qpos_rad": -0.5413752318629274,
+          "post_qvel_rad_s": 0.022568342352767758,
+          "raw_qacc_rad_s2": 2.659641917310905,
+          "cached_qfrc_actuator_Nm": 0.015370137357762608,
+          "cached_qfrc_constraint_Nm": 0.0016775971044738491,
+          "cached_qfrc_bias_Nm": 0.015574908969601342,
+          "cached_qfrc_passive_Nm": -2.577997567058418e-05,
+          "timing": "qpos/qvel post-step; forces and body/contact poses are final RK4 internal-stage cache, no additional forward."
+        },
+        "robot_qvel_18_poststep": [
+          -0.002167974565327001,
+          0.00015994105493119236,
+          0.01136898958896845,
+          -0.001995523976260516,
+          0.01617600835761982,
+          0.022568342352767758,
+          0.07619529003619382,
+          0.0027262593726076543,
+          0.05242231094323705,
+          0.04664825769041398,
+          0.14214298506019887,
+          0.13143043216229805,
+          -4.590056833269249e-05,
+          -4.384685715968006e-05,
+          -3.0311218525011293e-05,
+          -2.8656974183539018e-05,
+          -1.782079905971e-05,
+          -1.657303385649481e-05
+        ]
+      },
+      {
+        "step": 4775,
+        "macro": 190,
+        "source_macro": 160,
+        "phase": "lift",
+        "robot_state_18": [
+          0.10946495098576485,
+          -0.8489733084719447,
+          -2.6760761052018065,
+          1.6217826954783858,
+          -1.1354264090944775,
+          -0.5406487664628599,
+          1.4375503432478685,
+          0.12800394188846342,
+          0.14576560145707437,
+          0.1329333676910511,
+          0.3883276442353805,
+          0.3683640856733133,
+          0.0002250174131575254,
+          0.011280397025764045,
+          0.0001695526761359648,
+          0.011228939899072336,
+          0.0001246842502620239,
+          0.01118733262896579
+        ],
+        "action_13": [
+          0.11019389262209636,
+          -0.8491683387444487,
+          -2.6794726443590386,
+          1.6223902342637793,
+          -1.1355931845290113,
+          -0.5431275859185086,
+          1.4335265819905645,
+          -0.7571726913146498,
+          -0.40460711796341897,
+          -0.40460711796341897,
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        "ctrl": [
+          -0.0066224674181799585,
+          6.981348379187217,
+          0.7753606342583521,
+          -1.6433517436077174,
+          -0.10292197686247749,
+          0.01541102317246346,
+          0.2079705527525055,
+          0.1271441360003407,
+          0.1558735588207359,
+          0.4156625258255214,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actuator_force": [
+          -0.0066224674181799585,
+          6.981348379187217,
+          0.7753606342583521,
+          -1.6433517436077174,
+          -0.10292197686247749,
+          0.01541102317246346,
+          0.2079705527525055,
+          -0.035381456865803074,
+          0.4392377694198917,
+          1.2104588608529276,
+          -0.011186773732520465,
+          -0.00844505377224521,
+          -0.006222252001764149
+        ],
+        "target_qpos_18": [
+          0.11019389262209636,
+          -0.8491683387444487,
+          -2.6794726443590386,
+          1.6223902342637793,
+          -1.1355931845290113,
+          -0.5431275859185086,
+          1.4335265819905645,
+          0.12714413600034066,
+          0.15587355882073592,
+          0.14188543060930423,
+          0.4156625258255214,
+          0.393730921274975,
+          0.0,
+          0.011072,
+          0.0,
+          0.011072,
+          0.0,
+          0.011072
+        ],
+        "mimic_rad": 0.0002023436097779996,
+        "failures": [],
+        "j6": {
+          "target_rad": -0.5431275859185086,
+          "actual_post_qpos_rad": -0.5406487664628599,
+          "post_qvel_rad_s": 0.007422657747029172,
+          "raw_qacc_rad_s2": -0.7738241361960909,
+          "cached_qfrc_actuator_Nm": 0.01541102317246346,
+          "cached_qfrc_constraint_Nm": -0.0002070695915398213,
+          "cached_qfrc_bias_Nm": 0.015590382920632972,
+          "cached_qfrc_passive_Nm": -4.000263644311474e-07,
+          "timing": "qpos/qvel post-step; forces and body/contact poses are final RK4 internal-stage cache, no additional forward."
+        },
+        "robot_qvel_18_poststep": [
+          -0.0008744902809320619,
+          -3.90908985042045e-05,
+          0.0048973428858479955,
+          -0.0008182242901883895,
+          0.004061257744612252,
+          0.007422657747029172,
+          0.03838147062090807,
+          0.00015329059831499937,
+          0.02442634772603605,
+          0.021642909001961048,
+          0.07578035393334295,
+          0.0700813092830013,
+          -1.1358349527384338e-05,
+          -1.0679971793174837e-05,
+          -7.077306002474062e-06,
+          -6.69137779560707e-06,
+          -4.791185060423175e-06,
+          -4.539746174156388e-06
+        ]
+      },
+      {
+        "step": 4776,
+        "macro": 191,
+        "source_macro": 161,
+        "phase": "lift",
+        "robot_state_18": [
+          0.10946320472191207,
+          -0.8489727729360896,
+          -2.6760665194858846,
+          1.6217810415746738,
+          -1.135418007614585,
+          -0.5406358085107846,
+          1.437626010608979,
+          0.12800327228177732,
+          0.145814945708652,
+          0.13297715203221466,
+          0.38847772227066296,
+          0.3685028976009047,
+          0.00022500627317958736,
+          0.011280385640844838,
+          0.00016954780464718271,
+          0.01122893448544722,
+          0.00012468187193988316,
+          0.011187329694421178
+        ],
+        "action_13": [
+          0.1096177116613639,
+          -0.8429269873124722,
+          -2.6785760112963866,
+          1.6217955586500956,
+          -1.1312523335632187,
+          -0.5487122832778879,
+          1.43715346393777,
+          -0.7571726913146498,
+          -0.40460711796341897,
+          -0.40460711796341897,
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        "ctrl": [
+          -0.0071285006221857425,
+          7.0641154200042955,
+          0.7852496696382335,
+          -1.660533459326112,
+          -0.10435759423226962,
+          0.01562698858144068,
+          0.21077283050560303,
+          0.1271441360003407,
+          0.1558735588207359,
+          0.4156625258255214,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actuator_force": [
+          -0.0071285006221857425,
+          7.0641154200042955,
+          0.7852496696382335,
+          -1.660533459326112,
+          -0.10435759423226962,
+          0.01562698858144068,
+          0.21077283050560303,
+          -0.05030153165232765,
+          0.4725160872171692,
+          1.2162255740275576,
+          -0.011285219695578731,
+          -0.008495035360039422,
+          -0.006238080012107671
+        ],
+        "target_qpos_18": [
+          0.1096177116613639,
+          -0.8429269873124722,
+          -2.6785760112963866,
+          1.6217955586500956,
+          -1.1312523335632187,
+          -0.5487122832778879,
+          1.43715346393777,
+          0.12714413600034066,
+          0.15587355882073592,
+          0.14188543060930423,
+          0.4156625258255214,
+          0.393730921274975,
+          0.0,
+          0.011072,
+          0.0,
+          0.011072,
+          0.0,
+          0.011072
+        ],
+        "mimic_rad": 0.00020169352146764963,
+        "failures": [],
+        "j6": {
+          "target_rad": -0.5487122832778879,
+          "actual_post_qpos_rad": -0.5406358085107846,
+          "post_qvel_rad_s": 0.006325633269077308,
+          "raw_qacc_rad_s2": 0.16692190820933003,
+          "cached_qfrc_actuator_Nm": 0.01562698858144068,
+          "cached_qfrc_constraint_Nm": 0.00040692624174698544,
+          "cached_qfrc_bias_Nm": 0.015590145822582446,
+          "cached_qfrc_passive_Nm": -2.982437022777686e-06,
+          "timing": "qpos/qvel post-step; forces and body/contact poses are final RK4 internal-stage cache, no additional forward."
+        },
+        "robot_qvel_18_poststep": [
+          -0.0008659255105720839,
+          0.0005717008038099368,
+          0.004665564262288599,
+          -0.0008150471625623971,
+          0.004166137584674941,
+          0.006325633269077308,
+          0.03732846372409595,
+          4.417478250850282e-05,
+          0.02323245866706826,
+          0.02056759037099176,
+          0.07380199030232656,
+          0.06824852281080275,
+          4.87534509417808e-07,
+          -2.1087896770253633e-07,
+          1.8070012803753823e-06,
+          1.090905291263489e-06,
+          1.622993420287371e-06,
+          1.0110310912830746e-06
+        ]
+      },
+      {
+        "step": 4793,
+        "macro": 191,
+        "source_macro": 161,
+        "phase": "lift",
+        "robot_state_18": [
+          0.10944401710345675,
+          -0.8488071668278818,
+          -2.676003056220545,
+          1.6217607172152526,
+          -1.1352518054780099,
+          -0.5408103102089565,
+          1.4385000886859476,
+          0.12794526292378325,
+          0.14669083242753828,
+          0.1337614326406197,
+          0.39065567935716744,
+          0.37052120513093056,
+          0.0002251347266401061,
+          0.011280503197146829,
+          0.00016971198292025134,
+          0.011229084660942624,
+          0.0001248201152749082,
+          0.011187455635047153
+        ],
+        "action_13": [
+          0.1096177116613639,
+          -0.8429269873124722,
+          -2.6785760112963866,
+          1.6217955586500956,
+          -1.1312523335632187,
+          -0.5487122832778879,
+          1.43715346393777,
+          -0.7571726913146498,
+          -0.40460711796341897,
+          -0.40460711796341897,
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        "ctrl": [
+          -0.0045704100408958705,
+          7.037839419065498,
+          0.7837655857540233,
+          -1.6563263260121983,
+          -0.1043592758772868,
+          0.015648530019522964,
+          0.2107752125283244,
+          0.1271441360003407,
+          0.1558735588207359,
+          0.4156625258255214,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actuator_force": [
+          -0.0045704100408958705,
+          7.037839419065498,
+          0.7837655857540233,
+          -1.6563263260121983,
+          -0.1043592758772868,
+          0.015648530019522964,
+          0.2107752125283244,
+          -0.03739782786202017,
+          0.4119483053308315,
+          1.1418676504900809,
+          -0.011269631529788134,
+          -0.00849857533410721,
+          -0.006249930695616035
+        ],
+        "target_qpos_18": [
+          0.1096177116613639,
+          -0.8429269873124722,
+          -2.6785760112963866,
+          1.6217955586500956,
+          -1.1312523335632187,
+          -0.5487122832778879,
+          1.43715346393777,
+          0.12714413600034066,
+          0.15587355882073592,
+          0.14188543060930423,
+          0.4156625258255214,
+          0.393730921274975,
+          0.0,
+          0.011072,
+          0.0,
+          0.011072,
+          0.0,
+          0.011072
+        ],
+        "mimic_rad": 0.00018841328527779977,
+        "failures": [
+          "LOADED_DEPTH_GROWTH"
+        ],
+        "j6": {
+          "target_rad": -0.5487122832778879,
+          "actual_post_qpos_rad": -0.5408103102089565,
+          "post_qvel_rad_s": -0.014021752406577433,
+          "raw_qacc_rad_s2": -0.5152509037780213,
+          "cached_qfrc_actuator_Nm": 0.015648530019522964,
+          "cached_qfrc_constraint_Nm": -0.00017728831288627012,
+          "cached_qfrc_bias_Nm": 0.015585779839525138,
+          "cached_qfrc_passive_Nm": 1.3949900838416123e-06,
+          "timing": "qpos/qvel post-step; forces and body/contact poses are final RK4 internal-stage cache, no additional forward."
+        },
+        "robot_qvel_18_poststep": [
+          -0.0001009884089833516,
+          0.008415957390758915,
+          -0.0014215748862384438,
+          -0.0002021834334239662,
+          0.005951682803095858,
+          -0.014021752406577433,
+          0.015432747610815119,
+          -0.001329654102244162,
+          0.023594086458242368,
+          0.02102208487752668,
+          0.054239086751391205,
+          0.050237408674341705,
+          6.43611371029223e-06,
+          5.984577078276242e-06,
+          6.480867648510322e-06,
+          6.007443453803235e-06,
+          4.459647825182374e-06,
+          4.120217353890214e-06
+        ]
+      }
+    ]
+  },
+  "evidence_hashes": {
+    "examples/right_hand/close149.py": "bfc34723de1bcd1741e19a9b7d29ac354477d244fa9b389556f4a3ce811b3e87",
+    "examples/right_hand/libero_research.py": "7f15b06b5cf1333362a580f6841f90ca8bdde19d3e70ce97d16c342f79ff0b73",
+    "examples/right_hand/white_bowl_run.py": "67afdd0ebd03ed37b8ef874d5985e4e2b0fbe62912a8a201d09b4a1ffeb4b2e5",
+    "examples/right_hand/white_bowl_model.py": "e698a563491269e76cbe5269294cee3a585ddee44b1b3cbe4e115ac059e3ab37",
+    "examples/libero_reference/model.py": "2219583396b83f7c5a5bc403272fd6197aa8e0957ed34183789aca0abaa0d250",
+    "examples/libero_reference/checks.py": "1bab366c1103351f3f4aecc3116d17047460ffe3c6975bd282a547da7e72d938",
+    "docs/RIGHT_HAND.md": "025e1e80174fa1582e7f70e7a59fb945f7b12c9600a68d3739c0d85058b8657e"
+  },
+  "stock_source_hashes": {
+    "/data_robot/verification/nero_dh116_right/.reference-env/lib/python3.11/site-packages/robosuite/__init__.py": "2284b710dbfa04b1e0087d8e5f590277ba4300962df5b9c011161567b02cd981",
+    "/data_robot/verification/nero_dh116_right/.reference-env/lib/python3.11/site-packages/robosuite/robots/manipulator.py": "d37ff4c00112cfba9bf4b96bf48ad5664422fd824dd4fbcd1eebda650a451b64",
+    "/data_robot/verification/nero_dh116_right/.reference-env/lib/python3.11/site-packages/robosuite/robots/single_arm.py": "38237d7b68c876b413f0df811b135ca3b2fb91061c011696baab07db5e87fa14",
+    "/data_robot/verification/nero_dh116_right/.reference-env/lib/python3.11/site-packages/robosuite/models/robots/robot_model.py": "baa86c64ae55ebbbabda9b6fc47c8e9bf1ed07e557315e999712b3082728dddc",
+    "/data_robot/verification/nero_dh116_right/.reference-env/lib/python3.11/site-packages/robosuite/models/grippers/gripper_model.py": "0543b5a9e1d8b41e21880d8445c5d8fbf8535a4ac6fd55c5e70a3b1f323c3735",
+    "/data_robot/verification/nero_dh116_right/.reference-env/lib/python3.11/site-packages/robosuite/models/base.py": "a5d7bc8c7f317735b76347c0038d3c0888e592da0ee059d0f937eb9f1b272b34"
+  },
+  "worktree_status_after_readonly_audit": ""
+}
