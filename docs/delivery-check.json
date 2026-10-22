@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "main_base": "9b5ee0d38442dcf12bc9f41ec5a0111fb0bd6a7c",
+  "frozen": "5fc2ea346ba7bccb80052024d9c16c3ee2b5a526",
+  "models": {
+    "dh116_left": {
+      "file": "mjcf/dh116_left.xml",
+      "sha256": "dc0c11196db0d22a84d0a9b7e97c496b1e694c24dc73eed6883dc615b82ec872",
+      "frozen_bytes_equal": true
+    },
+    "dh116_right": {
+      "file": "mjcf/dh116_right.xml",
+      "sha256": "cac325e716d55890857278b54ed14101116748ea68fffbcc544f2e51bf724aec",
+      "frozen_bytes_equal": true
+    },
+    "nero_dh116_left": {
+      "file": "mjcf/nero_dh116.xml",
+      "sha256": "c446124b7d938aa6e00ba5914047001de66c2a2c162e7dea1644437e5a85cb33",
+      "frozen_bytes_equal": true
+    },
+    "nero_dh116_right": {
+      "file": "mjcf/nero_dh116_right_research.xml",
+      "sha256": "ea335674996894488f30bae5f29e6271f662f320dbcb44f9b32817dd1b5fc93a",
+      "frozen_bytes_equal": true
+    }
+  },
+  "runtime_resources_checked": 506,
+  "frozen_files_byte_compared": 513,
+  "frozen_differences": [],
+  "runtime_files_exact": {
+    "examples/control_asset.py": "f06c0d211f6a69d4ecb347ac18d4e932648dabb1fdfe3e7c5c79615afcaffb91",
+    "examples/requirements-control.txt": "b05e1c72a7e4851175a0fbc6da1770e5af3bdc924595036a910cc5bf05341a13",
+    "requirements.txt": "12066b8a191f199a7296fddb5fe46241d7267833563140486d1350d5c024bf70"
+  },
+  "tests": {
+    "static_contract_tests": 7,
+    "isolated_bundle_exit_code": 0,
+    "passed": true
+  },
+  "clean_bundle_file_count": 521,
+  "clean_bundle_bytes": 74967643,
+  "no_research_directories_in_bundle": true,
+  "new_simulation_steps": 0,
+  "mujoco_compiled": false,
+  "license_record": "licenses/flange-provenance.json",
+  "flange_redistribution_basis": "Exact MIT-licensed source files and documented derivative hashes; original notice retained.",
+  "historical_evidence_base_url": "https://github.com/LeoandDream/Nero_DH116_assets/blob/5fc2ea346ba7bccb80052024d9c16c3ee2b5a526/",
+  "review_url": "https://github.com/LeoandDream/Nero_DH116_assets/pull/7#pullrequestreview-5620312019",
+  "cli_help_check": {
+    "exit_code": 0,
+    "python": "3.11.16",
+    "mujoco_imported": false,
+    "robosuite_imported": false,
+    "scope": "Argument parser only, no native model compilation/reset/forward/step."
+  },
+  "main_existing_files_reviewed": 297,
+  "main_existing_file_differences_allowed": [
+    "README.md",
+    "SHA256SUMS",
+    "licenses/SOURCES.md"
+  ],
+  "original_left_V1_unchanged": true,
+  "user_main_worktree_head_unchanged": true,
+  "user_main_readme_sha256": "d68ec6d62a6f42b8c1636ad2774c8329073d973c2621cc7fe148c8c8c89d8f25",
+  "user_main_readme_unchanged": true
+}
