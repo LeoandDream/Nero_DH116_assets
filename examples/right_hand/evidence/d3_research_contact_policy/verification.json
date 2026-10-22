@@ -1,0 +1,77 @@
+{
+  "status": "OFFLINE_REPLAY_AND_BOUNDARIES_VERIFIED_RESEARCH_ONLY_NOT_APPROVED",
+  "baseline": "54b5a480221b8f86c15d33dbe84bad397e960f3a",
+  "policy_sha256": "48632dfa4bbe0630ef7d61b9e706240d7769ad6361d588e1d02025bde4bc6454",
+  "python": "3.14.7 | packaged by Anaconda, Inc. | (main, Aug 14 2026, 10:21:40) [GCC 14.3.0]",
+  "tests": {
+    "command": [
+      "/home/robot/miniconda3/bin/python",
+      "-B",
+      "examples/right_hand/evidence/d3_research_contact_policy/test_shadow.py"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "..........................\n----------------------------------------------------------------------\nRan 26 tests in 0.223s\n\nOK\n",
+    "count": 26
+  },
+  "replay": {
+    "command": [
+      "/home/robot/miniconda3/bin/python",
+      "-B",
+      "examples/right_hand/evidence/d3_research_contact_policy/shadow.py",
+      "--output",
+      "runs/research-contact-shadow-final"
+    ],
+    "exit_code": 0,
+    "actual_saved_rows": 4769,
+    "original_decisions_exact": true,
+    "engine_modules_loaded": false,
+    "blocked_engine_import_attempts": [],
+    "two_offline_evaluations_same_shadow_bytes": true
+  },
+  "new_physics": "No model/engine import, compilation, Reset, forward, solver or integration. Stdlib-only entry; no native simulation call path. Prior task compiler-self-test deviation unchanged.",
+  "post_stop_tail_note": "load_half first shadow stop4751; saved4752\u20134769 are original real data analyzed counterfactually, not a run authorized by that variant. No data beyond4769.",
+  "protected_existing_files": 1212,
+  "changed_existing_files": [],
+  "user_readme_sha256": "d68ec6d62a6f42b8c1636ad2774c8329073d973c2621cc7fe148c8c8c89d8f25",
+  "user_readme_unchanged": true,
+  "main_checkout_head": "9f4054f6197ecb1127202cee14cd75c3924a47e3",
+  "file_sha256": {
+    "shadow.py": "76abc56586d03579f1063d973a1cc63548daa85839e08f320248a8aa2e9999ec",
+    "shadow.jsonl.gz": "b41a02538ad4838f282574cb6ff962e70fdc82d99a57970cb817bb2e442ff681",
+    "summary.json": "29d2454757d1886ea6a1e63255ab22e0a2fb2c7f09dcf1d01071fcce29c92b68",
+    "test_shadow.py": "c0e4f8a7dbcb0508be3b6b37427cb97a788e902741529e453a63ae3d40eaee41",
+    "research-policy.sha256": "b208d273294777e0dc8e377fbfd1d2d24201d131da9bc721773c688377896600",
+    "research-policy.json": "48632dfa4bbe0630ef7d61b9e706240d7769ad6361d588e1d02025bde4bc6454",
+    "RESULTS.md": "94138e9964445bc16fcf3938febb3e500f61ec25b00a9dbf84b4dc447a4025d1"
+  },
+  "historical_status": {
+    "legacy_2mm_stop": "FAIL_AT4769_UNCHANGED",
+    "formal_numeric": "FAIL_UNCHANGED_1e-10m",
+    "grasp_after4769": "UNKNOWN_NO_REAL_TRAJECTORY",
+    "prior_compiler_self_test_deviation": "FAIL_UNCHANGED_SEE_FROZEN_DISCLOSURE"
+  },
+  "static_import_modules": {
+    "shadow.py": [
+      "argparse",
+      "collections",
+      "fractions",
+      "gzip",
+      "hashlib",
+      "itertools",
+      "json",
+      "math",
+      "pathlib",
+      "sys"
+    ],
+    "test_shadow.py": [
+      "copy",
+      "gzip",
+      "json",
+      "math",
+      "pathlib",
+      "shadow",
+      "unittest"
+    ]
+  }
+}

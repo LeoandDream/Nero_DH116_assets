@@ -1,0 +1,3441 @@
+{
+  "verdict": "SEPARATED_AT_ALL_FROZEN_FINITE_SAMPLES",
+  "candidate_parts": 78,
+  "finite_sample_count": 921,
+  "scope": "All 115 contact-eligible nonadjacent internal right-hand body pairs; finite samples only; not arm/table/bowl, adjacent filtered pairs, or actual dynamic states.",
+  "dynamic_control_or_grasp_certified": false,
+  "input_sha256": {
+    "examples/right_hand/candidates/finger13_local/model.xml": "b27f4f86fbaeacd2bb925463f39f67181ef7db12963c4d9f7fc01797a7924d1b",
+    "examples/right_hand/evidence/d3_white_bowl_001/candidate.json": "ba767b42f99d3562255909bde5c970d529ba254769029ec1cd7a98faf76af0fb",
+    "examples/right_hand/evidence/d3_bowl_preflight/internal-detail.json": "78efd06cd1f7bc7e5597ba0674687bd77e5b4db151ff66519d389bdd44094ccd",
+    "examples/right_hand/evidence/d3_bowl_preflight/internal-summary.json": "05ff6ff370dadf8a8b8e7762103eb346df75629027445394ed565546f8b8201e",
+    "examples/right_hand/evidence/d3_bowl_preflight/verification.json": "5723d7f9087285ef1607bd75d76897f945fe006201c3a2041ac8cb638a1c9b15"
+  },
+  "external": {
+    "summary": {
+      "status": "PASS_FINITE_SAMPLES_REFERENCE_SCENE_ONLY",
+      "supplied_poses": 921,
+      "poses_checked": 921,
+      "eligible_pairs_per_pose": 60357,
+      "pair_categories": {
+        "other_environment": 16218,
+        "table": 306,
+        "other_robot_or_mount": 11334,
+        "hand": 21483,
+        "white_bowl": 11016
+      },
+      "first_block": null,
+      "minimum_certified_clearance_by_category_m": {
+        "hand": 6.407019998988517e-07,
+        "other_environment": 0.110206566619785,
+        "other_robot_or_mount": 9.107323006851686e-09,
+        "table": 0.1187580093192161,
+        "white_bowl": 0.08428856193229517
+      },
+      "risk_piece_minimum_clearances_m": {
+        "root_0300mm_entire_piece / hand": 0.019071044965170772,
+        "root_0300mm_entire_piece / other_environment": 0.12012326264664519,
+        "root_0300mm_entire_piece / other_robot_or_mount": 0.08462282076417305,
+        "root_0300mm_entire_piece / table": 0.12612400386691547,
+        "root_0300mm_entire_piece / white_bowl": 0.09165455647999454,
+        "outer_fill_217mm_entire_piece / hand": 0.03284423189835339,
+        "outer_fill_217mm_entire_piece / other_environment": 0.11267734453259257,
+        "outer_fill_217mm_entire_piece / other_robot_or_mount": 0.06204496853950267,
+        "outer_fill_217mm_entire_piece / table": 0.14756553806727346,
+        "outer_fill_217mm_entire_piece / white_bowl": 0.11309609068035253
+      },
+      "narrowphase_queries": 68736,
+      "whole_geometry_AABB_certificates": 55520061,
+      "wrist_wrist_queries": 0,
+      "dynamic_attempts": 0,
+      "physics_steps": 0,
+      "numerical_appendix": "FAIL_UNCHANGED",
+      "precision_or_external_fill_exceptions": "NOT_APPROVED",
+      "elapsed_s": 106.18474307702854
+    },
+    "summary_sha256": "c170c79de54aaf344734cd59ba0192706ace3481463e72157d2b8f271330acac",
+    "input_audit_sha256": "334170f4c9e9b285c3959183b01b87d26f3b05a60aebab3d7efd6baedcec6a86",
+    "protocol": {
+      "authorization": "https://github.com/LeoandDream/Nero_DH116_assets/issues/5#issuecomment-6297636306",
+      "model": "runs/issue5_left_drive_v1/close149_B_once/drive-model/model.xml",
+      "model_sha256": null,
+      "schedule": {
+        "commands": 260,
+        "phase_counts": {
+          "settle_preshape": 10,
+          "approach_high": 80,
+          "descend": 70,
+          "close": 30,
+          "lift": 40,
+          "hold": 30
+        },
+        "phase_boundaries": {
+          "settle_preshape": {
+            "macro_first": 0,
+            "macro_last": 9,
+            "physical_step_first": 1,
+            "physical_step_last": 250
+          },
+          "approach_high": {
+            "macro_first": 10,
+            "macro_last": 89,
+            "physical_step_first": 251,
+            "physical_step_last": 2250
+          },
+          "descend": {
+            "macro_first": 90,
+            "macro_last": 159,
+            "physical_step_first": 2251,
+            "physical_step_last": 4000
+          },
+          "close": {
+            "macro_first": 160,
+            "macro_last": 189,
+            "physical_step_first": 4001,
+            "physical_step_last": 4750
+          },
+          "lift": {
+            "macro_first": 190,
+            "macro_last": 229,
+            "physical_step_first": 4751,
+            "physical_step_last": 5750
+          },
+          "hold": {
+            "macro_first": 230,
+            "macro_last": 259,
+            "physical_step_first": 5751,
+            "physical_step_last": 6500
+          }
+        },
+        "physics_steps_per_command": 25,
+        "expected_physics_steps": 6500,
+        "physics_steps_max": 6500,
+        "physical_dt_s": 0.002,
+        "duration_if_completed_s": 13.0
+      },
+      "maximum_physics_steps": 6500,
+      "original_criteria": {
+        "scope": "NEW fixed right white-bowl criteria; not left/manufacturer/full-range certification",
+        "lift_from_own_settled_baseline_m_min": 0.02,
+        "continuous_hold_s_min": 1.0,
+        "hold_requires": [
+          "height >= settled+20mm",
+          "no bowl-table or other environmental support contacts",
+          "positive-force thumb and index contacts on opposing bowl sides"
+        ],
+        "steady_active_error_rad_max": 0.02,
+        "arm_tracking_error_rad_max": 0.1,
+        "linear_mimic_error_rad_max": 0.02,
+        "joint_limit_overshoot_rad_max": 0.01,
+        "eligible_internal_and_external_overlap_m_max": 0.002,
+        "warnings_allowed": 0,
+        "nonfinite_states_allowed": 0,
+        "native_task_result": "record native cabinet-placement predicate separately",
+        "strict_grasp_success_claim": false,
+        "stop": "First numerical/physical bound violation; no automatic retry or edits"
+      },
+      "additional_stops": [
+        "Any eligible actual new wrist geom contact with any body outside the two wrist bodies, regardless of positive force.",
+        "Any actual robot qpos outside target/sample envelope padded by original .1rad arm / .02rad hand bounds."
+      ],
+      "qpos_envelope_lower_rad": [
+        -0.00031842318389821433,
+        -1.0117843140806089,
+        -2.801898722298827,
+        0.8778290747376886,
+        -1.5394823334488055,
+        -0.83,
+        1.3335265819905644,
+        -0.02,
+        -0.02,
+        -0.015408000000000002,
+        -0.02,
+        -0.008928,
+        -0.02,
+        -0.008928,
+        -0.02,
+        -0.008928,
+        -0.02,
+        -0.008928
+      ],
+      "qpos_envelope_upper_rad": [
+        0.46958692521030554,
+        -0.5273438565137334,
+        -2.563465332281639,
+        1.7223902342637794,
+        -0.8644504552986636,
+        -0.07932686168460179,
+        1.6707963,
+        0.14714413600034068,
+        0.1812485091248992,
+        0.16661968683721123,
+        0.44999571637122904,
+        0.42692605649135346,
+        0.02,
+        0.031072000000000002,
+        0.02,
+        0.031072000000000002,
+        0.02,
+        0.031072000000000002
+      ],
+      "envelope_padding_rad": [
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.02,
+        0.02,
+        0.02,
+        0.02,
+        0.02,
+        0.02,
+        0.02,
+        0.02,
+        0.02,
+        0.02,
+        0.02
+      ],
+      "envelope_limit": "Conservative finite-domain stop only, not continuous-path or all-domain clearance proof.",
+      "numerical_appendix": "FAIL_UNCHANGED",
+      "fill_exceptions_approved": false,
+      "dynamic_attempt_budget": 1,
+      "automatic_retry_or_completion_run": false,
+      "native_and_strict_semantics_unchanged": true,
+      "baseline_commit": "43bc90b8932cb2199ad7b19ca00611259d3f7d49",
+      "hand_collision_count": 81,
+      "wrist_collision_count": 306,
+      "strict_region_online_stop": false,
+      "classification": "Deferred offline only; no RISK/UNKNOWN classification stops this experiment.",
+      "experiment": "issue5_close149_left_drive_profile_v1_once",
+      "historical4731_stop": "UNKNOWN_UNCHANGED",
+      "fidelity_status": "FORMAL_NUMERIC_FAIL_AND_GEOMETRY_UNKNOWN_UNCHANGED",
+      "candidate_canonical_json_sha256": "ebf188b0bf49ad3b74a042c52b5fa4ad5df02dcb8f84caea565fcdaf9fdc7e32",
+      "close_end_source_macro": 149,
+      "first_action_difference_step": 4751,
+      "first_lift_arm_target_change_step": 4776,
+      "policy_history_reset_on_phase_transition": false,
+      "wrist306_role": "Frozen for action isolation only, not final asset endorsement",
+      "drive_profile": "R_close149_left_drive_profile_v1",
+      "drive_attributes": 34,
+      "actual_model_sha256_record": "drive-materialization.json:resolved_sha256",
+      "base_model": "examples/right_hand/candidates/finger22_local/model.xml",
+      "base_model_sha256": "7f9d84061c3e7d176763c688d2389f8b3d3e38386b8e990a0fa047ff2bc3329c",
+      "A": "Reuse saved close149; do not run A or left",
+      "physics_prefix_equality_to_A": "NOT_REQUIRED_DRIVE_CHANGED_FROM_RESET",
+      "research_policy_sha256": "48632dfa4bbe0630ef7d61b9e706240d7769ad6361d588e1d02025bde4bc6454",
+      "research_rule_version": "DH116_RESEARCH_CONTACT_V1",
+      "prior_proposal_status_unchanged": "RESEARCH_ONLY_NOT_APPROVED",
+      "online_use_authorized_by": "https://github.com/LeoandDream/Nero_DH116_assets/issues/5#issuecomment-6297636306",
+      "formal_2mm_and_historical_FAIL": "UNCHANGED_SEPARATE_CHANNEL",
+      "compiler_step_scope": "Native compiler self-tests are setup of this authorized attempt, not included in recorded trajectory-step count; no claim of absolute native mj_step instrumentation."
+    },
+    "finger22_model_sha256": "7f9d84061c3e7d176763c688d2389f8b3d3e38386b8e990a0fa047ff2bc3329c",
+    "xml_and_resource_equivalence_except_finger22": true,
+    "prior_static_result": {
+      "quality": {
+        "raw": {
+          "continuous_source_coverage": "PASS",
+          "uncovered_area_m2": 0.0,
+          "uncovered_source_triangles": 0,
+          "source_convex_containment": "PASS",
+          "maximum_halfspace_outward_m": 6.938893903907228e-18,
+          "seams": [
+            {
+              "z_m": 0.0098,
+              "adjacent_part_ids": [
+                0,
+                1
+              ],
+              "exposed_coplanar_seam_area_m2": 0.0,
+              "note": "Only exactly coplanar exposed caps at original 1e-10m tolerance; tilted compiled seams also require distance/coverage checks."
+            },
+            {
+              "z_m": 0.0233,
+              "adjacent_part_ids": [
+                1,
+                2
+              ],
+              "exposed_coplanar_seam_area_m2": 0.0,
+              "note": "Only exactly coplanar exposed caps at original 1e-10m tolerance; tilted compiled seams also require distance/coverage checks."
+            },
+            {
+              "z_m": 0.032,
+              "adjacent_part_ids": [
+                2,
+                3
+              ],
+              "exposed_coplanar_seam_area_m2": 0.0,
+              "note": "Only exactly coplanar exposed caps at original 1e-10m tolerance; tilted compiled seams also require distance/coverage checks."
+            }
+          ]
+        },
+        "compiled": {
+          "continuous_source_coverage": "FAIL",
+          "uncovered_area_m2": 0.0002531098311066771,
+          "uncovered_source_triangles": 3602,
+          "source_convex_containment": "FAIL",
+          "maximum_halfspace_outward_m": 9.678462649376218e-10,
+          "seams": [
+            {
+              "z_m": 0.0098,
+              "adjacent_part_ids": [
+                0,
+                1
+              ],
+              "exposed_coplanar_seam_area_m2": 2.860570005933744e-14,
+              "note": "Only exactly coplanar exposed caps at original 1e-10m tolerance; tilted compiled seams also require distance/coverage checks."
+            },
+            {
+              "z_m": 0.0233,
+              "adjacent_part_ids": [
+                1,
+                2
+              ],
+              "exposed_coplanar_seam_area_m2": 5.600744177626697e-17,
+              "note": "Only exactly coplanar exposed caps at original 1e-10m tolerance; tilted compiled seams also require distance/coverage checks."
+            },
+            {
+              "z_m": 0.032,
+              "adjacent_part_ids": [
+                2,
+                3
+              ],
+              "exposed_coplanar_seam_area_m2": 0.0,
+              "note": "Only exactly coplanar exposed caps at original 1e-10m tolerance; tilted compiled seams also require distance/coverage checks."
+            }
+          ]
+        }
+      },
+      "scan": {
+        "saved_close_post_states": 742,
+        "state_range": [
+          4001,
+          4742
+        ],
+        "eligible_other_geoms_per_state": 507,
+        "all_qualified_hand_pairs_unchanged_outside_finger22": true,
+        "unchanged_native_contact_differences": 0,
+        "native_changed_geom_state_count": 80,
+        "counts": {
+          "eligible_other_geom_states": 376194,
+          "whole_geometry_AABB_separated_old_and_new": 375768,
+          "old_SEPARATED_AABB": 122,
+          "new_SEPARATED": 426,
+          "old_SEPARATED": 146,
+          "old_STRICT_OVERLAP": 158
+        },
+        "required_cached_states": [
+          4741,
+          4742
+        ],
+        "source_surface_assessment_counts": {
+          "SEPARATED_SURFACES_AND_PROXY": 426
+        },
+        "false_contact_interpretation": "Positive source surface gap + proxy overlap is a surface-based false-contact witness; solid containment remains UNKNOWN for nonmanifold source.",
+        "missed_contact_interpretation": "All eligible f22-source-vs-unchanged-other collision geometries checked with whole-source AABB exclusion or full triangle surface query, including when old/new proxies are separated. Other hand proxy approximation is frozen, not revalidated against its manufacturer STL.",
+        "cached_all_bowl_boxes_separated": true,
+        "step4518": "POST_STEP_FK_ONLY; no saved finger22 RK4 cache; original first positive force contact is finger13",
+        "source_solid_contacts": "UNKNOWN_NONMANIFOLD_SOURCE; surface crossings/gaps are reported without a solid-containment claim",
+        "dynamic_prediction": "UNKNOWN_NOT_RUN; saved poses are not a new trajectory or force counterfactual",
+        "physics_steps": 0
+      },
+      "contact_surface_regression": "PASS",
+      "static_status": "FAIL_BLOCKED",
+      "dynamics": "UNKNOWN_NOT_RUN",
+      "release": "NOT_APPROVED",
+      "physics_steps": 0
+    },
+    "risk_evidence_sha256": {
+      "witnesses.json": "7824f33d0abffda5d094244f962b569220b0ba26b460abf790abb93181aee06b",
+      "numeric.json": "b7a38a2dfb40adf21fec9098f893ae1eb37ebbb33e0b8e4cd28df9e161f62dbf",
+      "working-cover.json.gz": "b496866be2b36a14a7604c2875e7bfd2fac539ca8b2b680e6d8cce172d0fac91"
+    },
+    "drive_profile": {
+      "profile": "R_close149_left_drive_profile_v1",
+      "base_model": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/finger22_local/model.xml",
+      "base_sha256": "7f9d84061c3e7d176763c688d2389f8b3d3e38386b8e990a0fa047ff2bc3329c",
+      "raw_copy": "/data_robot/verification/nero_dh116_right/runs/issue5_left_drive_v1/close149_B_once/drive-model/original-context.xml",
+      "raw_sha256": "e24d17904b9b1d4a55ae031a08bb1457f0f46c4170f987767d0acd161eb3e84b",
+      "resolved_model": "/data_robot/verification/nero_dh116_right/runs/issue5_left_drive_v1/close149_B_once/drive-model/model.xml",
+      "resolved_sha256": "d9cd16d2ecfc2f78c77a09cbccf91c0fee105572b28bd3fd5134483f72b2b68e",
+      "resource_rule": "Only file attributes rebound to the original finger22_local context; no asset bytes changed.",
+      "attribute_count": 34,
+      "changes": [
+        {
+          "tag": "joint",
+          "name": "gripper0_finger11",
+          "source_joint": "gripper0_finger11",
+          "attribute_changes": {
+            "damping": {
+              "before": "2.0",
+              "after": "0"
+            },
+            "armature": {
+              "before": "0.01",
+              "after": "0"
+            }
+          }
+        },
+        {
+          "tag": "joint",
+          "name": "gripper0_finger12",
+          "source_joint": "gripper0_finger12",
+          "attribute_changes": {
+            "damping": {
+              "before": "2.0",
+              "after": "0"
+            },
+            "armature": {
+              "before": "0.01",
+              "after": "0"
+            }
+          }
+        },
+        {
+          "tag": "joint",
+          "name": "gripper0_finger13",
+          "source_joint": "gripper0_finger13",
+          "attribute_changes": {
+            "damping": {
+              "before": "2.0",
+              "after": "0"
+            },
+            "armature": {
+              "before": "0.01",
+              "after": "0"
+            }
+          }
+        },
+        {
+          "tag": "joint",
+          "name": "gripper0_finger21",
+          "source_joint": "gripper0_finger21",
+          "attribute_changes": {
+            "damping": {
+              "before": "2.0",
+              "after": "0"
+            },
+            "armature": {
+              "before": "0.01",
+              "after": "0"
+            }
+          }
+        },
+        {
+          "tag": "joint",
+          "name": "gripper0_finger22",
+          "source_joint": "gripper0_finger22",
+          "attribute_changes": {
+            "damping": {
+              "before": "2.0",
+              "after": "0"
+            },
+            "armature": {
+              "before": "0.01",
+              "after": "0"
+            }
+          }
+        },
+        {
+          "tag": "joint",
+          "name": "gripper0_finger31",
+          "source_joint": "gripper0_finger31",
+          "attribute_changes": {
+            "damping": {
+              "before": "2.0",
+              "after": "0"
+            },
+            "armature": {
+              "before": "0.01",
+              "after": "0"
+            }
+          }
+        },
+        {
+          "tag": "joint",
+          "name": "gripper0_finger32",
+          "source_joint": "gripper0_finger32",
+          "attribute_changes": {
+            "damping": {
+              "before": "2.0",
+              "after": "0"
+            },
+            "armature": {
+              "before": "0.01",
+              "after": "0"
+            }
+          }
+        },
+        {
+          "tag": "joint",
+          "name": "gripper0_finger41",
+          "source_joint": "gripper0_finger41",
+          "attribute_changes": {
+            "damping": {
+              "before": "2.0",
+              "after": "0"
+            },
+            "armature": {
+              "before": "0.01",
+              "after": "0"
+            }
+          }
+        },
+        {
+          "tag": "joint",
+          "name": "gripper0_finger42",
+          "source_joint": "gripper0_finger42",
+          "attribute_changes": {
+            "damping": {
+              "before": "2.0",
+              "after": "0"
+            },
+            "armature": {
+              "before": "0.01",
+              "after": "0"
+            }
+          }
+        },
+        {
+          "tag": "joint",
+          "name": "gripper0_finger51",
+          "source_joint": "gripper0_finger51",
+          "attribute_changes": {
+            "damping": {
+              "before": "2.0",
+              "after": "0"
+            },
+            "armature": {
+              "before": "0.01",
+              "after": "0"
+            }
+          }
+        },
+        {
+          "tag": "joint",
+          "name": "gripper0_finger52",
+          "source_joint": "gripper0_finger52",
+          "attribute_changes": {
+            "damping": {
+              "before": "2.0",
+              "after": "0"
+            },
+            "armature": {
+              "before": "0.01",
+              "after": "0"
+            }
+          }
+        },
+        {
+          "tag": "position",
+          "name": "gripper0_urdf_act_finger11",
+          "source_joint": "gripper0_finger11",
+          "attribute_changes": {
+            "kp": {
+              "before": "50",
+              "after": "0.65286574077483084"
+            },
+            "kv": {
+              "before": "2.0",
+              "after": "0.026114629630993234"
+            }
+          }
+        },
+        {
+          "tag": "position",
+          "name": "gripper0_urdf_act_finger12",
+          "source_joint": "gripper0_finger12",
+          "attribute_changes": {
+            "kp": {
+              "before": "50",
+              "after": "0.65991473097275011"
+            },
+            "kv": {
+              "before": "2.0",
+              "after": "0.026396589238910004"
+            }
+          }
+        },
+        {
+          "tag": "position",
+          "name": "gripper0_urdf_act_finger21",
+          "source_joint": "gripper0_finger21",
+          "attribute_changes": {
+            "kp": {
+              "before": "50",
+              "after": "0.5098435598707074"
+            },
+            "kv": {
+              "before": "2.0",
+              "after": "0.020393742394828294"
+            }
+          }
+        },
+        {
+          "tag": "position",
+          "name": "gripper0_urdf_act_finger31",
+          "source_joint": "gripper0_finger31",
+          "attribute_changes": {
+            "kp": {
+              "before": "50",
+              "after": "0.69307170971793874"
+            },
+            "kv": {
+              "before": "2.0",
+              "after": "0.027722868388717549"
+            }
+          }
+        },
+        {
+          "tag": "position",
+          "name": "gripper0_urdf_act_finger41",
+          "source_joint": "gripper0_finger41",
+          "attribute_changes": {
+            "kp": {
+              "before": "50",
+              "after": "0.51027003659620607"
+            },
+            "kv": {
+              "before": "2.0",
+              "after": "0.020410801463848244"
+            }
+          }
+        },
+        {
+          "tag": "position",
+          "name": "gripper0_urdf_act_finger51",
+          "source_joint": "gripper0_finger51",
+          "attribute_changes": {
+            "kp": {
+              "before": "50",
+              "after": "0.29451331029853522"
+            },
+            "kv": {
+              "before": "2.0",
+              "after": "0.011780532411941408"
+            }
+          }
+        }
+      ],
+      "resources": [
+        {
+          "asset": "mount0_pedestal",
+          "original": "../../../../meshes/nero/mount0_pedestal-f96ff12b.stl",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/mount0_pedestal-f96ff12b.stl",
+          "sha256": "f96ff12bfb347c77580e4392556b15e47ef7228711c45b0f1193b100af22866a"
+        },
+        {
+          "asset": "robot0_candidate_nero_base_link_0",
+          "original": "../../../../meshes/nero/robot0_candidate_nero_base_link_0-9b755fcc.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_base_link_0-9b755fcc.obj",
+          "sha256": "9b755fcc0c0fc1a1b1e0736f2d09a5e2db149b30f2ce713d82949a3b1f3e6fe2"
+        },
+        {
+          "asset": "robot0_candidate_nero_base_link_1",
+          "original": "../../../../meshes/nero/robot0_candidate_nero_base_link_1-9050d662.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_base_link_1-9050d662.obj",
+          "sha256": "9050d662cba0a31f627fc6cfe9b474205e999630ffc667db779120f807b5aa3a"
+        },
+        {
+          "asset": "robot0_candidate_nero_base_link_2",
+          "original": "../../../../meshes/nero/robot0_candidate_nero_base_link_2-840973e3.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_base_link_2-840973e3.obj",
+          "sha256": "840973e30bb9c02d12ee66c1797e314af7d276e9faa03d609d7cae153a387586"
+        },
+        {
+          "asset": "robot0_candidate_nero_base_link_3",
+          "original": "../../../../meshes/nero/robot0_candidate_nero_base_link_3-694f85c0.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_base_link_3-694f85c0.obj",
+          "sha256": "694f85c0d797332e9b9964d134626c0a13592ff1ca45b344ce42c12b45d070c6"
+        },
+        {
+          "asset": "robot0_candidate_nero_base_link_4",
+          "original": "../../../../meshes/nero/robot0_candidate_nero_base_link_4-eb7627e7.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_base_link_4-eb7627e7.obj",
+          "sha256": "eb7627e75e3210c52a0db9fb5f8c911b681af10f9ac76db806f67705a422a0e5"
+        },
+        {
+          "asset": "robot0_candidate_nero_base_link_5",
+          "original": "../../../../meshes/nero/robot0_candidate_nero_base_link_5-bfa96b97.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_base_link_5-bfa96b97.obj",
+          "sha256": "bfa96b97d713b4a31d4229a399179db38cdd1b99d2a810265f53546866f1ee6d"
+        },
+        {
+          "asset": "robot0_candidate_nero_base_link_6",
+          "original": "../../../../meshes/nero/robot0_candidate_nero_base_link_6-1dd4555c.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_base_link_6-1dd4555c.obj",
+          "sha256": "1dd4555c303d188db55803760c5d9a720f869610c08c9cf6833d2457c763b3f9"
+        },
+        {
+          "asset": "robot0_candidate_nero_base_link_7",
+          "original": "../../../../meshes/nero/robot0_candidate_nero_base_link_7-41070495.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_base_link_7-41070495.obj",
+          "sha256": "41070495a20f2b2f7b4ec0b2bd45654a496d48dbfd480850c4a999f31cd0d1eb"
+        },
+        {
+          "asset": "robot0_candidate_nero_link1_0",
+          "original": "../../../../meshes/nero/robot0_candidate_nero_link1_0-64d58a3f.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link1_0-64d58a3f.obj",
+          "sha256": "64d58a3fe8b73b90b9b7c0a8b86dd60af829abbba7fb4df6e9c0fcabe135ed9a"
+        },
+        {
+          "asset": "robot0_candidate_nero_link1_1",
+          "original": "../../../../meshes/nero/robot0_candidate_nero_link1_1-7b2c529b.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link1_1-7b2c529b.obj",
+          "sha256": "7b2c529b61b96ffc4eb81a7b1fed20eb3bd58bc854cb04a83f75eefbb2e27a09"
+        },
+        {
+          "asset": "robot0_candidate_nero_link1_2",
+          "original": "../../../../meshes/nero/robot0_candidate_nero_link1_2-ee80fad0.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link1_2-ee80fad0.obj",
+          "sha256": "ee80fad09a62aa67c9b6adb464918b8c02d209f35332252ad8f10f549ccc3bd8"
+        },
+        {
+          "asset": "robot0_candidate_nero_link1_3",
+          "original": "../../../../meshes/nero/robot0_candidate_nero_link1_3-fa81492e.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link1_3-fa81492e.obj",
+          "sha256": "fa81492edfdb88b27bea2e6b17a8351aa8bde6fbffcd0aa396278726d2737972"
+        },
+        {
+          "asset": "robot0_candidate_nero_link1_4",
+          "original": "../../../../meshes/nero/robot0_candidate_nero_link1_4-9687d613.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link1_4-9687d613.obj",
+          "sha256": "9687d6136442210287287ad950aee9b9bbd67b9fb41228a99ab9b85d53b10609"
+        },
+        {
+          "asset": "robot0_candidate_nero_link1_5",
+          "original": "../../../../meshes/nero/robot0_candidate_nero_link1_5-0bebb03b.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link1_5-0bebb03b.obj",
+          "sha256": "0bebb03b65a19b1df2d14f897082df2a3bbc2dee207b1b4c7f398833d304215c"
+        },
+        {
+          "asset": "robot0_candidate_nero_link1_6",
+          "original": "../../../../meshes/nero/robot0_candidate_nero_link1_6-8b8756ee.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link1_6-8b8756ee.obj",
+          "sha256": "8b8756eefdb6c92b43a9bd3ae10529c02c1f620c26af63b36ffdcaf0b35c6a84"
+        },
+        {
+          "asset": "robot0_candidate_nero_link1_7",
+          "original": "../../../../meshes/nero/robot0_candidate_nero_link1_7-82b447f9.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link1_7-82b447f9.obj",
+          "sha256": "82b447f9246138fe899786f1d5111a4a44738a2789351f80a924bd5a085346a8"
+        },
+        {
+          "asset": "robot0_candidate_nero_link2_0",
+          "original": "../../../../meshes/nero/robot0_candidate_nero_link2_0-488533e9.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link2_0-488533e9.obj",
+          "sha256": "488533e997702e2c9dfcd76accbaab0e2c477d345859f0133900a60d745170f6"
+        },
+        {
+          "asset": "robot0_candidate_nero_link2_1",
+          "original": "../../../../meshes/nero/robot0_candidate_nero_link2_1-1bab92d0.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link2_1-1bab92d0.obj",
+          "sha256": "1bab92d0ee381b91852c929d5b9ab5c98f9f37f7394c1d0dfaf36bfd750b6842"
+        },
+        {
+          "asset": "robot0_candidate_nero_link2_2",
+          "original": "../../../../meshes/nero/robot0_candidate_nero_link2_2-a26e60e1.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link2_2-a26e60e1.obj",
+          "sha256": "a26e60e118061267a04548ad5b7cfbb0d5d37ddba84a1c02553631c478153e39"
+        },
+        {
+          "asset": "robot0_candidate_nero_link2_3",
+          "original": "../../../../meshes/nero/robot0_candidate_nero_link2_3-6461873d.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link2_3-6461873d.obj",
+          "sha256": "6461873d7f81c64407a1b55c90cbeedeb606d5ed79b470acb5ba8d1955ee24da"
+        },
+        {
+          "asset": "robot0_candidate_nero_link2_4",
+          "original": "../../../../meshes/nero/robot0_candidate_nero_link2_4-a688faa7.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link2_4-a688faa7.obj",
+          "sha256": "a688faa745249c7345baf0991ee19852f198795dbba0ce507480a752b99442ae"
+        },
+        {
+          "asset": "robot0_candidate_nero_link3_0",
+          "original": "../../../../meshes/nero/robot0_candidate_nero_link3_0-c42d7ac7.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link3_0-c42d7ac7.obj",
+          "sha256": "c42d7ac7801f587dcbb4f344a52f66b6cccefe711e2c3de984ba67bd9ecb4df9"
+        },
+        {
+          "asset": "robot0_candidate_nero_link3_1",
+          "original": "../../../../meshes/nero/robot0_candidate_nero_link3_1-89b20fd9.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link3_1-89b20fd9.obj",
+          "sha256": "89b20fd9fb7d2167e8a63a3fe66dd3fc4df6eb16da83c233c21ad558d644e6a2"
+        },
+        {
+          "asset": "robot0_candidate_nero_link3_2",
+          "original": "../../../../meshes/nero/robot0_candidate_nero_link3_2-7b6481a2.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link3_2-7b6481a2.obj",
+          "sha256": "7b6481a25f8b79ae12baec6ef3aef08e60851cb766b4b16cdfc74a4cab7a98d2"
+        },
+        {
+          "asset": "robot0_candidate_nero_link3_3",
+          "original": "../../../../meshes/nero/robot0_candidate_nero_link3_3-0cd99a08.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link3_3-0cd99a08.obj",
+          "sha256": "0cd99a08311544c0395ab396a3fd4174f9b05573eceb00942cd34db901d84c43"
+        },
+        {
+          "asset": "robot0_candidate_nero_link3_4",
+          "original": "../../../../meshes/nero/robot0_candidate_nero_link3_4-a50f3d4d.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link3_4-a50f3d4d.obj",
+          "sha256": "a50f3d4d74ecfbf179c96835161edb6d9461d5f041c173649450f32ba9216c02"
+        },
+        {
+          "asset": "robot0_candidate_nero_link3_5",
+          "original": "../../../../meshes/nero/robot0_candidate_nero_link3_5-30d354b7.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link3_5-30d354b7.obj",
+          "sha256": "30d354b7d0f72b7999a04fff3131feafd516a206d938a4e6729c1d1761d3bcb0"
+        },
+        {
+          "asset": "robot0_candidate_nero_link3_6",
+          "original": "../../../../meshes/nero/robot0_candidate_nero_link3_6-b0e55916.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link3_6-b0e55916.obj",
+          "sha256": "b0e559169ec7b88b14fcdb51794921d5365ff206fe299416e0206b71f2008338"
+        },
+        {
+          "asset": "robot0_candidate_nero_link3_7",
+          "original": "../../../../meshes/nero/robot0_candidate_nero_link3_7-57de8162.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link3_7-57de8162.obj",
+          "sha256": "57de8162ef5f3bfc6e830e1df69c7cd937adee7a0e88e0519bd7fd32162a84f9"
+        },
+        {
+          "asset": "robot0_candidate_nero_link4_0",
+          "original": "../../../../meshes/nero/robot0_candidate_nero_link4_0-b10bbb1b.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link4_0-b10bbb1b.obj",
+          "sha256": "b10bbb1b389c8023583cd60ba5d4b07d55f2360a46a603104b05437a8ae777af"
+        },
+        {
+          "asset": "robot0_candidate_nero_link4_1",
+          "original": "../../../../meshes/nero/robot0_candidate_nero_link4_1-3510fe63.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link4_1-3510fe63.obj",
+          "sha256": "3510fe633836557aa4731bda53add70d222b0925317c255571bf3d4d7f6d4623"
+        },
+        {
+          "asset": "robot0_candidate_nero_link4_2",
+          "original": "../../../../meshes/nero/robot0_candidate_nero_link4_2-6fe5f5ba.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link4_2-6fe5f5ba.obj",
+          "sha256": "6fe5f5bab68a024c5df9c80c08cc484b722bb0936168eaf04be9b26facf9031b"
+        },
+        {
+          "asset": "robot0_candidate_nero_link4_3",
+          "original": "../../../../meshes/nero/robot0_candidate_nero_link4_3-160b1bca.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link4_3-160b1bca.obj",
+          "sha256": "160b1bca9c21faa58859e6ef995bd0289dc52ceb67d59678e7d53cb87adcaa72"
+        },
+        {
+          "asset": "robot0_candidate_nero_link4_4",
+          "original": "../../../../meshes/nero/robot0_candidate_nero_link4_4-6ceb0377.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link4_4-6ceb0377.obj",
+          "sha256": "6ceb03776a36c23cab1c605208c0193dabe6fad662d3a76a14eb0f1a24b14a6c"
+        },
+        {
+          "asset": "robot0_candidate_nero_link4_5",
+          "original": "../../../../meshes/nero/robot0_candidate_nero_link4_5-61a31fef.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link4_5-61a31fef.obj",
+          "sha256": "61a31fef8a5bf2e6c79be2d617d8510bbd18fdb08114a9562fa43f5c748182f6"
+        },
+        {
+          "asset": "robot0_candidate_nero_link6_0",
+          "original": "../../../../meshes/nero/robot0_candidate_nero_link6_0-4c346805.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link6_0-4c346805.obj",
+          "sha256": "4c34680552ab1c32ca52a1b9a8c082cfb51e039c4d35a2d6de60b9bc8591a01f"
+        },
+        {
+          "asset": "robot0_candidate_nero_link6_1",
+          "original": "../../../../meshes/nero/robot0_candidate_nero_link6_1-407a43b8.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link6_1-407a43b8.obj",
+          "sha256": "407a43b83e0ec64dc9a6231e2d2dc3a09680ff210b84df39d41809c0b614d3fa"
+        },
+        {
+          "asset": "robot0_candidate_nero_link6_2",
+          "original": "../../../../meshes/nero/robot0_candidate_nero_link6_2-8101f8fb.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link6_2-8101f8fb.obj",
+          "sha256": "8101f8fbba1436c80c7c322d2b7baf586937fbc82eee8e1d4fedfebc8932a3ed"
+        },
+        {
+          "asset": "robot0_candidate_nero_link6_3",
+          "original": "../../../../meshes/nero/robot0_candidate_nero_link6_3-98a9a1fd.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link6_3-98a9a1fd.obj",
+          "sha256": "98a9a1fd33fc4118ec379e4c3c3a76410a98e6eca798a90f60c0d9b8a886d3a5"
+        },
+        {
+          "asset": "robot0_candidate_nero_link6_4",
+          "original": "../../../../meshes/nero/robot0_candidate_nero_link6_4-40ded262.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link6_4-40ded262.obj",
+          "sha256": "40ded2622bca88755535091d7ee531c67513210d19f5c9701b868a42f5dbf0d1"
+        },
+        {
+          "asset": "robot0_candidate_nero_link7_0",
+          "original": "../../../../meshes/nero/robot0_candidate_nero_link7_0-cf4e07dc.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link7_0-cf4e07dc.obj",
+          "sha256": "cf4e07dc22738c6226230ab80f3b25f816fbce0548c869d617a9f47d34a39f95"
+        },
+        {
+          "asset": "robot0_candidate_nero_link7_1",
+          "original": "../../../../meshes/nero/robot0_candidate_nero_link7_1-521ec845.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link7_1-521ec845.obj",
+          "sha256": "521ec8457806102731a4e36c3ad77392257a1fdc2a54b6ec3c96a7ccfb83bbcc"
+        },
+        {
+          "asset": "robot0_candidate_nero_link7_2",
+          "original": "../../../../meshes/nero/robot0_candidate_nero_link7_2-3eb2079f.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link7_2-3eb2079f.obj",
+          "sha256": "3eb2079f00f95b9ed4c5637e351179035b09cb7fc5ede941758f549cbf41caed"
+        },
+        {
+          "asset": "robot0_candidate_nero_link7_3",
+          "original": "../../../../meshes/nero/robot0_candidate_nero_link7_3-bd0414fc.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_candidate_nero_link7_3-bd0414fc.obj",
+          "sha256": "bd0414fcdd0cf95fdee6903904c6f74550a1987250ab000c3fa06ec38353a4ad"
+        },
+        {
+          "asset": "robot0_original_urdf_visual_base_link",
+          "original": "../../../../meshes/nero/robot0_original_urdf_visual_base_link-e85d4a73.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_original_urdf_visual_base_link-e85d4a73.obj",
+          "sha256": "e85d4a73ba7b9aec640780d1c4c053cdba03951e82dffae5b72038f796b5a571"
+        },
+        {
+          "asset": "robot0_original_urdf_visual_gripper_flange",
+          "original": "../../../../meshes/mount/robot0_original_urdf_visual_gripper_flange-adfe6fc7.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/mount/robot0_original_urdf_visual_gripper_flange-adfe6fc7.obj",
+          "sha256": "adfe6fc7b74ac2a3bc253a86a7720b2612053a4e906cb9f5bb0141d246085ab7"
+        },
+        {
+          "asset": "robot0_original_urdf_visual_link1",
+          "original": "../../../../meshes/nero/robot0_original_urdf_visual_link1-f8b3c3c7.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_original_urdf_visual_link1-f8b3c3c7.obj",
+          "sha256": "f8b3c3c76eb65df29fc3fcb18701f81be39f60f1b9a44285462b210416abcc8d"
+        },
+        {
+          "asset": "robot0_original_urdf_visual_link2",
+          "original": "../../../../meshes/nero/robot0_original_urdf_visual_link2-11605e3d.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_original_urdf_visual_link2-11605e3d.obj",
+          "sha256": "11605e3d08b4ff8f29953609ce6edd6ba4e067a588813c22e854051f178a3790"
+        },
+        {
+          "asset": "robot0_original_urdf_visual_link3",
+          "original": "../../../../meshes/nero/robot0_original_urdf_visual_link3-dd965e89.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_original_urdf_visual_link3-dd965e89.obj",
+          "sha256": "dd965e89354e6e296f38cada5d4642f4a69f0c17c71ab9120ea2c76052076631"
+        },
+        {
+          "asset": "robot0_original_urdf_visual_link4",
+          "original": "../../../../meshes/nero/robot0_original_urdf_visual_link4-1bd0fb75.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_original_urdf_visual_link4-1bd0fb75.obj",
+          "sha256": "1bd0fb7502da58a03ef779c5853e63f6c93303e0858808aa858b107db9859e7a"
+        },
+        {
+          "asset": "robot0_original_urdf_visual_link5",
+          "original": "../../../../meshes/nero/robot0_original_urdf_visual_link5-f1f9b607.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_original_urdf_visual_link5-f1f9b607.obj",
+          "sha256": "f1f9b607289edef1db3d9b08443f4048607074bc96c20ab9f186884c0b10637a"
+        },
+        {
+          "asset": "robot0_original_urdf_visual_link6",
+          "original": "../../../../meshes/nero/robot0_original_urdf_visual_link6-bc53aecd.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_original_urdf_visual_link6-bc53aecd.obj",
+          "sha256": "bc53aecdb367106d63546953f8b15a1624b573f2a2f4bfb015e62bd60266080c"
+        },
+        {
+          "asset": "robot0_original_urdf_visual_link7",
+          "original": "../../../../meshes/nero/robot0_original_urdf_visual_link7-94e2407a.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/nero/robot0_original_urdf_visual_link7-94e2407a.obj",
+          "sha256": "94e2407ab38217c4158026ee81352dc14023c0f1b411c7170f175b8ce54745cc"
+        },
+        {
+          "asset": "robot0_original_urdf_visual_base_link_texture",
+          "original": "../../../../meshes/textures/robot0_original_urdf_visual_base_link_texture-d550d51b.png",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/textures/robot0_original_urdf_visual_base_link_texture-d550d51b.png",
+          "sha256": "d550d51b829f93c390d4af50006acbf016d6fc466fc5d8883b8ee2223881f0c0"
+        },
+        {
+          "asset": "robot0_original_urdf_visual_gripper_flange_texture",
+          "original": "../../../../meshes/textures/robot0_original_urdf_visual_gripper_flange_texture-abc58d51.png",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/textures/robot0_original_urdf_visual_gripper_flange_texture-abc58d51.png",
+          "sha256": "abc58d5127d7cdf313beb9ec8ee839860a9c6bfbc48c8b8eb6a3f7d8bb63de6f"
+        },
+        {
+          "asset": "robot0_original_urdf_visual_link1_texture",
+          "original": "../../../../meshes/textures/robot0_original_urdf_visual_base_link_texture-d550d51b.png",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/textures/robot0_original_urdf_visual_base_link_texture-d550d51b.png",
+          "sha256": "d550d51b829f93c390d4af50006acbf016d6fc466fc5d8883b8ee2223881f0c0"
+        },
+        {
+          "asset": "robot0_original_urdf_visual_link2_texture",
+          "original": "../../../../meshes/textures/robot0_original_urdf_visual_link2_texture-4b4174f9.png",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/textures/robot0_original_urdf_visual_link2_texture-4b4174f9.png",
+          "sha256": "4b4174f97f436eb5dccd31148983e6ed15b4ceec7ddce6f0cdb2bda9aa1f7ad3"
+        },
+        {
+          "asset": "robot0_original_urdf_visual_link3_texture",
+          "original": "../../../../meshes/textures/robot0_original_urdf_visual_base_link_texture-d550d51b.png",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/textures/robot0_original_urdf_visual_base_link_texture-d550d51b.png",
+          "sha256": "d550d51b829f93c390d4af50006acbf016d6fc466fc5d8883b8ee2223881f0c0"
+        },
+        {
+          "asset": "robot0_original_urdf_visual_link4_texture",
+          "original": "../../../../meshes/textures/robot0_original_urdf_visual_link4_texture-7311991b.png",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/textures/robot0_original_urdf_visual_link4_texture-7311991b.png",
+          "sha256": "7311991bbb4163306ccd448d3cb5dce960831e712913ed7b782cf209479f5c90"
+        },
+        {
+          "asset": "robot0_original_urdf_visual_link5_texture",
+          "original": "../../../../meshes/textures/robot0_original_urdf_visual_link5_texture-4cd94b0a.png",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/textures/robot0_original_urdf_visual_link5_texture-4cd94b0a.png",
+          "sha256": "4cd94b0adf5e8a471116c6e74aba956ef5e08f2a383bbbf59ac65b4552417c9c"
+        },
+        {
+          "asset": "robot0_original_urdf_visual_link6_texture",
+          "original": "../../../../meshes/textures/robot0_original_urdf_visual_base_link_texture-d550d51b.png",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/textures/robot0_original_urdf_visual_base_link_texture-d550d51b.png",
+          "sha256": "d550d51b829f93c390d4af50006acbf016d6fc466fc5d8883b8ee2223881f0c0"
+        },
+        {
+          "asset": "robot0_original_urdf_visual_link7_texture",
+          "original": "../../../../meshes/textures/robot0_original_urdf_visual_base_link_texture-d550d51b.png",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/textures/robot0_original_urdf_visual_base_link_texture-d550d51b.png",
+          "sha256": "d550d51b829f93c390d4af50006acbf016d6fc466fc5d8883b8ee2223881f0c0"
+        },
+        {
+          "asset": "gripper0_base_link",
+          "original": "../../../../meshes/dh116_right/source/base_link.STL",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/base_link.STL",
+          "sha256": "094504fed409afe137eafa6643c36f081934df873ef1cf9924ebb9725436b161"
+        },
+        {
+          "asset": "gripper0_finger11_link",
+          "original": "../../../../meshes/dh116_right/source/finger11_link.STL",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger11_link.STL",
+          "sha256": "5659ee7dd15833a86f30c2138685baf48671fa7458a79cbb1d611ddb7f3648c8"
+        },
+        {
+          "asset": "gripper0_finger12_link",
+          "original": "../../../../meshes/dh116_right/source/finger12_link.STL",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger12_link.STL",
+          "sha256": "8807c48538b9396e1d132df7c5cf6ee0a44c28c4dcb759b5b00a74003b715e67"
+        },
+        {
+          "asset": "gripper0_finger13_link",
+          "original": "../../../../meshes/dh116_right/source/finger13_link.STL",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger13_link.STL",
+          "sha256": "594501a21c86d1d19b73cf17572b7a04ae488c5fee4b623e25c618dd15eb3419"
+        },
+        {
+          "asset": "gripper0_finger14_link",
+          "original": "../../../../meshes/dh116_right/source/finger14_link.STL",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger14_link.STL",
+          "sha256": "c58b2a741f13cbe1da9b6bbffb0ce6acf97de28b829fe45ea65458313efff449"
+        },
+        {
+          "asset": "gripper0_finger21_link",
+          "original": "../../../../meshes/dh116_right/source/finger21_link.STL",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger21_link.STL",
+          "sha256": "7162d86cefa849458536cbb77968560dbf4e6c7a8b1734777640f9da1f828886"
+        },
+        {
+          "asset": "gripper0_finger22_link",
+          "original": "../../../../meshes/dh116_right/source/finger22_link.STL",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger22_link.STL",
+          "sha256": "5ebb8a2084495cb9e87b6ee531681500cfe5a37280320e97270d6e52c804081d"
+        },
+        {
+          "asset": "gripper0_finger23_link",
+          "original": "../../../../meshes/dh116_right/source/finger23_link.STL",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger23_link.STL",
+          "sha256": "ccbd2de17dac2fe356e4275240f5f00f8eee01dd2f32a44fc5b1e150f93d99f6"
+        },
+        {
+          "asset": "gripper0_finger31_link",
+          "original": "../../../../meshes/dh116_right/source/finger31_link.STL",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger31_link.STL",
+          "sha256": "2d4ec902f4b2d06872cfbda2e5a63f387aa82dfd522fd44da5e38b83f90cf2b6"
+        },
+        {
+          "asset": "gripper0_finger32_link",
+          "original": "../../../../meshes/dh116_right/source/finger32_link.STL",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger32_link.STL",
+          "sha256": "f3cf0d1634338d331bc58ae7838023925a1654003f5728423de25808f490821e"
+        },
+        {
+          "asset": "gripper0_finger33_link",
+          "original": "../../../../meshes/dh116_right/source/finger33_link.STL",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger33_link.STL",
+          "sha256": "2082e780c44d9e2ac91a9c355c3751f084fcbb42c39e33961178b81e5b3ce147"
+        },
+        {
+          "asset": "gripper0_finger41_link",
+          "original": "../../../../meshes/dh116_right/source/finger41_link.STL",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger41_link.STL",
+          "sha256": "5366f649baa0c5c29cc1afdbcc6163b2bcb9001f0b9b8ae69a213f5209860289"
+        },
+        {
+          "asset": "gripper0_finger42_link",
+          "original": "../../../../meshes/dh116_right/source/finger42_link.STL",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger42_link.STL",
+          "sha256": "4382f6f699a2cb342f00f5bf4ddbe20b7d2b664b522c5abcd49cfee551e748ae"
+        },
+        {
+          "asset": "gripper0_finger43_link",
+          "original": "../../../../meshes/dh116_right/source/finger43_link.STL",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger43_link.STL",
+          "sha256": "4e0b20fc9c464825b466d3ca51ff4557f70d4a3ea935a00b09ad5639722251df"
+        },
+        {
+          "asset": "gripper0_finger51_link",
+          "original": "../../../../meshes/dh116_right/source/finger51_link.STL",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger51_link.STL",
+          "sha256": "f1b5983e1cd4b29f5e4609001c525e93ff80bb1d921711a6327fd8e688fad1db"
+        },
+        {
+          "asset": "gripper0_finger52_link",
+          "original": "../../../../meshes/dh116_right/source/finger52_link.STL",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger52_link.STL",
+          "sha256": "7c5f953a3cde495eae505dfa3ea248e768c69ab911c21f61825ddb42b4531994"
+        },
+        {
+          "asset": "gripper0_finger53_link",
+          "original": "../../../../meshes/dh116_right/source/finger53_link.STL",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116_right/source/finger53_link.STL",
+          "sha256": "63eb67492fce45f80b798d9ead4d194a9eafdae1ed6c0893820222ef3ffedbf1"
+        },
+        {
+          "asset": "gripper0_proxy76_base_link_00",
+          "original": "../proxy76/meshes/gripper0_proxy76_base_link_00.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_00.obj",
+          "sha256": "e478a799f59b9cfaee804a539ce2dd6be6e92787247bc33fba13d00e4b42c7ce"
+        },
+        {
+          "asset": "gripper0_proxy76_base_link_01",
+          "original": "../proxy76/meshes/gripper0_proxy76_base_link_01.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_01.obj",
+          "sha256": "cb55e62f2f41a9110da46f5bacbf1f8c8dcfa9563cf35fc48b37194d73ebd6b3"
+        },
+        {
+          "asset": "gripper0_proxy76_base_link_02",
+          "original": "../proxy76/meshes/gripper0_proxy76_base_link_02.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_02.obj",
+          "sha256": "1c09c54ad030db088a97b58a39e277b5d3be66f3202db25e98c6f3c67e7b6ee4"
+        },
+        {
+          "asset": "gripper0_proxy76_base_link_03",
+          "original": "../proxy76/meshes/gripper0_proxy76_base_link_03.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_03.obj",
+          "sha256": "871033d55369543004f2ce77ec077d545eb1d02bd9a63608316976c5a7d52e0b"
+        },
+        {
+          "asset": "gripper0_proxy76_base_link_04",
+          "original": "../proxy76/meshes/gripper0_proxy76_base_link_04.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_04.obj",
+          "sha256": "47fcfc5572ceed26c408a219cecb99ed111829f652d54124865de050e9a2df9a"
+        },
+        {
+          "asset": "gripper0_proxy76_base_link_05",
+          "original": "../proxy76/meshes/gripper0_proxy76_base_link_05.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_05.obj",
+          "sha256": "8aaae9e5736c04e3615916958be9c0e6efc3bb1b493e99951492f769397f5991"
+        },
+        {
+          "asset": "gripper0_proxy76_base_link_06",
+          "original": "../proxy76/meshes/gripper0_proxy76_base_link_06.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_06.obj",
+          "sha256": "ed60d794870bac2874bf566dfac9785725aea78ca04e7ba21846a0e133dba7ef"
+        },
+        {
+          "asset": "gripper0_proxy76_base_link_07",
+          "original": "../proxy76/meshes/gripper0_proxy76_base_link_07.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_07.obj",
+          "sha256": "73bd010189e969c220e6c7c42a96ce3c1e560b08769f9d408780433e3d8630b5"
+        },
+        {
+          "asset": "gripper0_proxy76_base_link_08",
+          "original": "../proxy76/meshes/gripper0_proxy76_base_link_08.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_08.obj",
+          "sha256": "a7d08ea7416a0832b78335aa479fcc380f5fb676068af529535c6fe2a4b79cba"
+        },
+        {
+          "asset": "gripper0_proxy76_base_link_09",
+          "original": "../proxy76/meshes/gripper0_proxy76_base_link_09.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_09.obj",
+          "sha256": "e8c753c9b514ff3c02c37ff75c3e70c51e43e34400d1df05b6554320786b5d75"
+        },
+        {
+          "asset": "gripper0_proxy76_finger11_link_00",
+          "original": "../proxy76/meshes/gripper0_proxy76_finger11_link_00.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger11_link_00.obj",
+          "sha256": "d24e4759bde556f178b3d14b78865650f676d95dc3b23dcd61738a7a2c52fcab"
+        },
+        {
+          "asset": "gripper0_proxy76_finger12_link_00",
+          "original": "../../../../meshes/dh116/gripper0_proxy_finger12_link_0-2a6bdf00.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger12_link_0-2a6bdf00.obj",
+          "sha256": "2a6bdf00ae7c1ea87a8b35cfa5755ea112dda7b5b180813e69ab552ce4d52aee"
+        },
+        {
+          "asset": "gripper0_proxy76_finger12_link_01",
+          "original": "../../../../meshes/dh116/gripper0_proxy_finger12_link_1-74d9a1f6.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger12_link_1-74d9a1f6.obj",
+          "sha256": "74d9a1f6088dfd3ba6ce894762c8f63cd3fd5e6f3ba3badafc7475294f80ca72"
+        },
+        {
+          "asset": "gripper0_proxy76_finger12_link_02",
+          "original": "../../../../meshes/dh116/gripper0_proxy_finger12_link_2-9be8c86a.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger12_link_2-9be8c86a.obj",
+          "sha256": "9be8c86a32a28eb6cfccfc0d4ce3c0ce3f1e65615350517f8fb624f6334ab118"
+        },
+        {
+          "asset": "gripper0_proxy76_finger12_link_03",
+          "original": "../../../../meshes/dh116/gripper0_proxy_finger12_link_3-a648891e.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger12_link_3-a648891e.obj",
+          "sha256": "a648891e9b0097a5dc6df5f44a54a4fcbc4b522baeb915df66ebf96b0c653908"
+        },
+        {
+          "asset": "gripper0_proxy76_finger12_link_04",
+          "original": "../../../../meshes/dh116/gripper0_proxy_finger12_link_4-c3d2e735.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger12_link_4-c3d2e735.obj",
+          "sha256": "c3d2e735fe8c007812868afe5a413c2f85fb616d8af43bf208c82c441ba33792"
+        },
+        {
+          "asset": "gripper0_proxy76_finger12_link_05",
+          "original": "../../../../meshes/dh116/gripper0_proxy_finger12_link_5-b8ec84e4.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger12_link_5-b8ec84e4.obj",
+          "sha256": "b8ec84e411668e9739fd702f45376b5bec5972e6f3ae334c9f789714696f4134"
+        },
+        {
+          "asset": "gripper0_proxy76_finger12_link_06",
+          "original": "../../../../meshes/dh116/gripper0_proxy_finger12_link_6-6e9a388e.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger12_link_6-6e9a388e.obj",
+          "sha256": "6e9a388e036622b035a0c6c3a57a7c59f1128444e6aff3ea15eee700a8cdd197"
+        },
+        {
+          "asset": "gripper0_proxy76_finger12_link_07",
+          "original": "../../../../meshes/dh116/gripper0_proxy_finger12_link_7-3748cad4.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger12_link_7-3748cad4.obj",
+          "sha256": "3748cad4e9e316b359b5586674afbf3722ade675c9e240b95ea32cbd2ef1d918"
+        },
+        {
+          "asset": "gripper0_proxy76_finger13_link_00",
+          "original": "../../../../meshes/dh116/gripper0_finger13_link-f34ca4cb.stl",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_finger13_link-f34ca4cb.stl",
+          "sha256": "f34ca4cbc816d42643c532cf102b1583e1d8d39e156072f65f4bfa1e55fae7a5"
+        },
+        {
+          "asset": "gripper0_proxy76_finger14_link_00",
+          "original": "../../../../meshes/dh116/gripper0_moderate_finger14_link_0-2b2ddda5.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger14_link_0-2b2ddda5.obj",
+          "sha256": "2b2ddda55ee186117724461d4e1eb7fb257d191676319114d69fd76026ceacaf"
+        },
+        {
+          "asset": "gripper0_proxy76_finger14_link_01",
+          "original": "../../../../meshes/dh116/gripper0_moderate_finger14_link_1-0e2d6afb.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger14_link_1-0e2d6afb.obj",
+          "sha256": "0e2d6afbd4e4a20a7f7aa039ee80776a89f39f304eccaa1ea9a322937f6c73db"
+        },
+        {
+          "asset": "gripper0_proxy76_finger14_link_02",
+          "original": "../../../../meshes/dh116/gripper0_moderate_finger14_link_2-a71fa24f.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger14_link_2-a71fa24f.obj",
+          "sha256": "a71fa24ff8b93d0fad952ff2bfb8d85418fa7318b3552c626204b6675956c09b"
+        },
+        {
+          "asset": "gripper0_proxy76_finger14_link_03",
+          "original": "../../../../meshes/dh116/gripper0_moderate_finger14_link_3-31cf7b29.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger14_link_3-31cf7b29.obj",
+          "sha256": "31cf7b299a871be62338a48441ffff1c40de9443b08c1a66d0e0ac2c70d7e6ce"
+        },
+        {
+          "asset": "gripper0_proxy76_finger14_link_04",
+          "original": "../../../../meshes/dh116/gripper0_moderate_finger14_link_4-c49b43ef.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger14_link_4-c49b43ef.obj",
+          "sha256": "c49b43efea1ab9054834dc733b62109f71f3101e8573838fac412acfabf8b0ba"
+        },
+        {
+          "asset": "gripper0_proxy76_finger14_link_05",
+          "original": "../../../../meshes/dh116/gripper0_moderate_finger14_link_5-c3a6773e.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger14_link_5-c3a6773e.obj",
+          "sha256": "c3a6773e2340e69330c2de30484b3a473aca0a23b18074ca53a75911028ddf37"
+        },
+        {
+          "asset": "gripper0_proxy76_finger14_link_06",
+          "original": "../../../../meshes/dh116/gripper0_moderate_finger14_link_6-1d98430c.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger14_link_6-1d98430c.obj",
+          "sha256": "1d98430c1c8b92e1b2e6a308a347fde69723d62ff68ee5f454bbca567ad44f14"
+        },
+        {
+          "asset": "gripper0_proxy76_finger14_link_07",
+          "original": "../../../../meshes/dh116/gripper0_moderate_finger14_link_7-14d2570c.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger14_link_7-14d2570c.obj",
+          "sha256": "14d2570c3750dd1305b4c737cc449486ad0f2d5e67df99e6013088abc7e7430d"
+        },
+        {
+          "asset": "gripper0_proxy76_finger14_link_08",
+          "original": "../../../../meshes/dh116/gripper0_moderate_finger14_link_8-fb373efd.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger14_link_8-fb373efd.obj",
+          "sha256": "fb373efd00b5bb56164851d7cbf74a85a8f4fa1252368c69a7b2e4a1770f3531"
+        },
+        {
+          "asset": "gripper0_proxy76_finger14_link_09",
+          "original": "../../../../meshes/dh116/gripper0_moderate_finger14_link_9-d3124adb.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger14_link_9-d3124adb.obj",
+          "sha256": "d3124adbea53e6fb6a27b1a62f60ae3f0fd7459fd6679049637a41cc0c226844"
+        },
+        {
+          "asset": "gripper0_proxy76_finger14_link_10",
+          "original": "../../../../meshes/dh116/gripper0_moderate_finger14_link_10-21c826aa.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger14_link_10-21c826aa.obj",
+          "sha256": "21c826aa07ef02987385785adc8b44235834cb9c4242e62a952ea89d1b4d22ca"
+        },
+        {
+          "asset": "gripper0_proxy76_finger14_link_11",
+          "original": "../../../../meshes/dh116/gripper0_moderate_finger14_link_11-168acc8b.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger14_link_11-168acc8b.obj",
+          "sha256": "168acc8b6dd10290b92679dabf02f9d295c30317cecc7a3e1163386cc241f9bf"
+        },
+        {
+          "asset": "gripper0_proxy76_finger21_link_00",
+          "original": "../../../../meshes/dh116/gripper0_finger21_link-1bb8e6bd.stl",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_finger21_link-1bb8e6bd.stl",
+          "sha256": "1bb8e6bd2d50d1b07c7077610fade1c71dd0923d8025f1589e3f904c856f28c1"
+        },
+        {
+          "asset": "gripper0_proxy76_finger22_link_00",
+          "original": "../../../../meshes/dh116/gripper0_finger22_link-53c55c84.stl",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_finger22_link-53c55c84.stl",
+          "sha256": "53c55c846f481d90248332d5a87319d11e0d96f0fb8cbb35717cc9ac9745f5e5"
+        },
+        {
+          "asset": "gripper0_proxy76_finger23_link_00",
+          "original": "../../../../meshes/dh116/gripper0_moderate_finger23_link_0-a6cc5f75.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger23_link_0-a6cc5f75.obj",
+          "sha256": "a6cc5f7500f773f248fe89c64bbad9f86a99f3419e1b8f655997030c1d269d4d"
+        },
+        {
+          "asset": "gripper0_proxy76_finger23_link_01",
+          "original": "../../../../meshes/dh116/gripper0_moderate_finger23_link_1-c8663aa9.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger23_link_1-c8663aa9.obj",
+          "sha256": "c8663aa97fb9936608d4365a4662bd5a9279d9958238f9334738ce88751b2e72"
+        },
+        {
+          "asset": "gripper0_proxy76_finger23_link_02",
+          "original": "../../../../meshes/dh116/gripper0_moderate_finger23_link_2-7cc9be61.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger23_link_2-7cc9be61.obj",
+          "sha256": "7cc9be61c42363c904859ffc3f741df9e9d80761805b9fa41333e8510ee39331"
+        },
+        {
+          "asset": "gripper0_proxy76_finger23_link_03",
+          "original": "../../../../meshes/dh116/gripper0_moderate_finger23_link_3-2f7c98b4.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger23_link_3-2f7c98b4.obj",
+          "sha256": "2f7c98b43d1da8bb87c0b1b9840b9942f8df6f7cb6a07b8bf3aae0a8f943ec91"
+        },
+        {
+          "asset": "gripper0_proxy76_finger23_link_04",
+          "original": "../../../../meshes/dh116/gripper0_moderate_finger23_link_4-bab546af.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger23_link_4-bab546af.obj",
+          "sha256": "bab546afe4a240ed41c8a82c9e7d57d175b91854aef912fadbac9e210734bfc0"
+        },
+        {
+          "asset": "gripper0_proxy76_finger23_link_05",
+          "original": "../../../../meshes/dh116/gripper0_moderate_finger23_link_5-5d047287.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger23_link_5-5d047287.obj",
+          "sha256": "5d047287b86fb6832c2efdcb4f5fb755ded0b63dc28f1aa4fac5b223bca24178"
+        },
+        {
+          "asset": "gripper0_proxy76_finger23_link_06",
+          "original": "../../../../meshes/dh116/gripper0_moderate_finger23_link_6-a018289e.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger23_link_6-a018289e.obj",
+          "sha256": "a018289e8a36f72a3ae897d377677fe7ff2721dc2e88d63ddb0118daa3ab78e2"
+        },
+        {
+          "asset": "gripper0_proxy76_finger23_link_07",
+          "original": "../../../../meshes/dh116/gripper0_moderate_finger23_link_7-de354fdf.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger23_link_7-de354fdf.obj",
+          "sha256": "de354fdf0bea4434032984db408d004804363dc49bbbf36b8bbcc93e1a930ddd"
+        },
+        {
+          "asset": "gripper0_proxy76_finger23_link_08",
+          "original": "../../../../meshes/dh116/gripper0_moderate_finger23_link_8-9174795a.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger23_link_8-9174795a.obj",
+          "sha256": "9174795ac15a8735c73a8cf39c09bc793a2b67585a0d982f09f7b8a5f7b1880b"
+        },
+        {
+          "asset": "gripper0_proxy76_finger23_link_09",
+          "original": "../../../../meshes/dh116/gripper0_moderate_finger23_link_9-1cc04f8d.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger23_link_9-1cc04f8d.obj",
+          "sha256": "1cc04f8dd6803c05636a655c1fd77960a319be6903fa01bf7b5e94662d89b132"
+        },
+        {
+          "asset": "gripper0_proxy76_finger23_link_10",
+          "original": "../../../../meshes/dh116/gripper0_moderate_finger23_link_10-251c3834.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger23_link_10-251c3834.obj",
+          "sha256": "251c38347bbcf580d96dd7ece9aeab16195b08f3a7225da3022a42043d11162d"
+        },
+        {
+          "asset": "gripper0_proxy76_finger23_link_11",
+          "original": "../../../../meshes/dh116/gripper0_moderate_finger23_link_11-fad1ae11.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_moderate_finger23_link_11-fad1ae11.obj",
+          "sha256": "fad1ae11d1b703d56b111df28d2d4b171c86572c706a5990cd07fb59819671cb"
+        },
+        {
+          "asset": "gripper0_proxy76_finger31_link_00",
+          "original": "../../../../meshes/dh116/gripper0_finger31_link-7e3176cd.stl",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_finger31_link-7e3176cd.stl",
+          "sha256": "7e3176cd95983c3e84369fe1639f65dcab86d54cd49ca3ed8612807ba3bc7358"
+        },
+        {
+          "asset": "gripper0_proxy76_finger32_link_00",
+          "original": "../../../../meshes/dh116/gripper0_finger32_link-68b0442e.stl",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_finger32_link-68b0442e.stl",
+          "sha256": "68b0442e8c8e3e0e8e94ef55596378b85556bda1959c64debbdd48d21b3af931"
+        },
+        {
+          "asset": "gripper0_proxy76_finger33_link_00",
+          "original": "../proxy76/meshes/gripper0_proxy76_finger33_link_00.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_00.obj",
+          "sha256": "bb8d774edfe13bfeda53fbe690f5b67aba6515b1201de4c97d36ab458170fee6"
+        },
+        {
+          "asset": "gripper0_proxy76_finger33_link_01",
+          "original": "../proxy76/meshes/gripper0_proxy76_finger33_link_01.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_01.obj",
+          "sha256": "8d2193c48155f8c2ce14b354b5992b6a7a25bbf14dba7198f5fc41153c518ad8"
+        },
+        {
+          "asset": "gripper0_proxy76_finger33_link_02",
+          "original": "../proxy76/meshes/gripper0_proxy76_finger33_link_02.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_02.obj",
+          "sha256": "fe85046941dade3036a32bd01199d3a034817ce7ae312a9f9d43d154911f9254"
+        },
+        {
+          "asset": "gripper0_proxy76_finger33_link_03",
+          "original": "../proxy76/meshes/gripper0_proxy76_finger33_link_03.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_03.obj",
+          "sha256": "0fe33a743ec8f5536175048ba395f0a4961811b29e50c27273de7c8a45bb3d69"
+        },
+        {
+          "asset": "gripper0_proxy76_finger33_link_04",
+          "original": "../proxy76/meshes/gripper0_proxy76_finger33_link_04.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_04.obj",
+          "sha256": "e4f67bf071ec777def71b6435d91e61fcb0919f2b120af6798c01fb44cf84cc8"
+        },
+        {
+          "asset": "gripper0_proxy76_finger33_link_05",
+          "original": "../proxy76/meshes/gripper0_proxy76_finger33_link_05.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_05.obj",
+          "sha256": "36a4988a972a7c47dee3ae2c325b8f75289158f297d71953b815971d6bfebde4"
+        },
+        {
+          "asset": "gripper0_proxy76_finger33_link_06",
+          "original": "../proxy76/meshes/gripper0_proxy76_finger33_link_06.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_06.obj",
+          "sha256": "6baf13adbc8b82e2b69a18a1a4a24a5d8b65cf7216f6e97128959de0c17be50b"
+        },
+        {
+          "asset": "gripper0_proxy76_finger33_link_07",
+          "original": "../proxy76/meshes/gripper0_proxy76_finger33_link_07.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_07.obj",
+          "sha256": "c1980f7eb8f9e7a0cb9f15a597f0e66ef312d8a9524e29d8e62e747b98ab6dde"
+        },
+        {
+          "asset": "gripper0_proxy76_finger41_link_00",
+          "original": "../../../../meshes/dh116/gripper0_finger41_link-5f1647a2.stl",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_finger41_link-5f1647a2.stl",
+          "sha256": "5f1647a233765270e256bf1cb1deeca0ac29ad4241e2a8e95477756885b73857"
+        },
+        {
+          "asset": "gripper0_proxy76_finger42_link_00",
+          "original": "../../../../meshes/dh116/gripper0_finger42_link-15a9090c.stl",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_finger42_link-15a9090c.stl",
+          "sha256": "15a9090c995e1f29ab0bb4b0a4ede7a4f60f1d0e0bf809c3ada86c53d0b66bed"
+        },
+        {
+          "asset": "gripper0_proxy76_finger43_link_00",
+          "original": "../../../../meshes/dh116/gripper0_proxy_finger43_link_0-95b4cbb3.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger43_link_0-95b4cbb3.obj",
+          "sha256": "95b4cbb315cc1667311de693dcee6a7456ba742561ca01ff551958d4e519348b"
+        },
+        {
+          "asset": "gripper0_proxy76_finger43_link_01",
+          "original": "../../../../meshes/dh116/gripper0_proxy_finger43_link_1-07a65f22.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger43_link_1-07a65f22.obj",
+          "sha256": "07a65f222145a2d805b53d22a5398b5b7ad94202af938f94b640f73ed1cdf183"
+        },
+        {
+          "asset": "gripper0_proxy76_finger43_link_02",
+          "original": "../../../../meshes/dh116/gripper0_proxy_finger43_link_2-aab293f6.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger43_link_2-aab293f6.obj",
+          "sha256": "aab293f640735836c5ac0c594282d0bbbf8fc41a8eaa13bf6f1f1f1ba864c576"
+        },
+        {
+          "asset": "gripper0_proxy76_finger43_link_03",
+          "original": "../../../../meshes/dh116/gripper0_proxy_finger43_link_3-f7eab61f.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger43_link_3-f7eab61f.obj",
+          "sha256": "f7eab61f906cb36cd1063faad73822c846107bc6f174c4742b409375f5b04f63"
+        },
+        {
+          "asset": "gripper0_proxy76_finger43_link_04",
+          "original": "../../../../meshes/dh116/gripper0_proxy_finger43_link_4-78532cbf.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger43_link_4-78532cbf.obj",
+          "sha256": "78532cbfb13ff856554cd396d2e5573beb69fe8b4d675ea7f669643dde8f7dd7"
+        },
+        {
+          "asset": "gripper0_proxy76_finger43_link_05",
+          "original": "../../../../meshes/dh116/gripper0_proxy_finger43_link_5-13af1468.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger43_link_5-13af1468.obj",
+          "sha256": "13af146867ef84f7051e45a515347bd29deff7ea5c8f0c15b100fbfe4a9b3cd7"
+        },
+        {
+          "asset": "gripper0_proxy76_finger43_link_06",
+          "original": "../../../../meshes/dh116/gripper0_proxy_finger43_link_6-2a3fbea9.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger43_link_6-2a3fbea9.obj",
+          "sha256": "2a3fbea961a56cc9bfd5384d661e6c0957601ee07999f02d9b642b252463176c"
+        },
+        {
+          "asset": "gripper0_proxy76_finger43_link_07",
+          "original": "../../../../meshes/dh116/gripper0_proxy_finger43_link_7-d800f7ad.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger43_link_7-d800f7ad.obj",
+          "sha256": "d800f7adae660e6ceb80e34b8a7e33ba3dcfb60afc357baf4818265705f7d0b2"
+        },
+        {
+          "asset": "gripper0_proxy76_finger51_link_00",
+          "original": "../../../../meshes/dh116/gripper0_finger51_link-dfabcfce.stl",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_finger51_link-dfabcfce.stl",
+          "sha256": "dfabcfce1fc923cc0745a2df5ec07efc657506c7ad50b8e883de7fc996ce9f59"
+        },
+        {
+          "asset": "gripper0_proxy76_finger52_link_00",
+          "original": "../../../../meshes/dh116/gripper0_finger52_link-acf84396.stl",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_finger52_link-acf84396.stl",
+          "sha256": "acf84396741cf2d5fa50ad3a25e9ca4fdb0947387cb39c2697951761a5f7d22c"
+        },
+        {
+          "asset": "gripper0_proxy76_finger53_link_00",
+          "original": "../../../../meshes/dh116/gripper0_proxy_finger53_link_0-f66430b1.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger53_link_0-f66430b1.obj",
+          "sha256": "f66430b17c3b0ee5d63cb097877e7d8faa12153df6725cb7ad9383607c09bb0a"
+        },
+        {
+          "asset": "gripper0_proxy76_finger53_link_01",
+          "original": "../../../../meshes/dh116/gripper0_proxy_finger53_link_1-fce5027c.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger53_link_1-fce5027c.obj",
+          "sha256": "fce5027c124ece9666bc17a88a364dd24dd79e5ae6fb0c4bdfe8169e0ad0b8dc"
+        },
+        {
+          "asset": "gripper0_proxy76_finger53_link_02",
+          "original": "../../../../meshes/dh116/gripper0_proxy_finger53_link_2-dd7921f7.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger53_link_2-dd7921f7.obj",
+          "sha256": "dd7921f79cbac6ac32ea9142d4fa4c76df1dd885c47004aaeb4fca67327152b5"
+        },
+        {
+          "asset": "gripper0_proxy76_finger53_link_03",
+          "original": "../../../../meshes/dh116/gripper0_proxy_finger53_link_3-49e71c08.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger53_link_3-49e71c08.obj",
+          "sha256": "49e71c0816ce5464fd8afe99b68e292cd88549525e9986adf9c3c1b53edae3d6"
+        },
+        {
+          "asset": "gripper0_proxy76_finger53_link_04",
+          "original": "../../../../meshes/dh116/gripper0_proxy_finger53_link_4-84f78255.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger53_link_4-84f78255.obj",
+          "sha256": "84f782558f32c9ea8067922918c95c221e617026a4e7a0d752d84b0ff828c007"
+        },
+        {
+          "asset": "gripper0_proxy76_finger53_link_05",
+          "original": "../../../../meshes/dh116/gripper0_proxy_finger53_link_5-3134737f.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger53_link_5-3134737f.obj",
+          "sha256": "3134737f88f7b977c10b8835d0f0b8ea8d1b0d90a91c9a862fffc5cd05930704"
+        },
+        {
+          "asset": "gripper0_proxy76_finger53_link_06",
+          "original": "../../../../meshes/dh116/gripper0_proxy_finger53_link_6-8a45b6d5.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger53_link_6-8a45b6d5.obj",
+          "sha256": "8a45b6d5929a3338e58b416f7dbab7e43de69a2697206dbdc9eb48928e14b330"
+        },
+        {
+          "asset": "gripper0_proxy76_finger53_link_07",
+          "original": "../../../../meshes/dh116/gripper0_proxy_finger53_link_7-8015cab7.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/meshes/dh116/gripper0_proxy_finger53_link_7-8015cab7.obj",
+          "sha256": "8015cab75b38d79aa5d59486a2b6d68198e96fbfb4a892a86ee8d334ffd817f1"
+        },
+        {
+          "asset": "gripper0_finger13_local_00",
+          "original": "../finger13_local/meshes/negative_wing.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/finger13_local/meshes/negative_wing.obj",
+          "sha256": "a4621dd53571679a9056c58762e80602d03131c098daa0a3716349b651efa838"
+        },
+        {
+          "asset": "gripper0_finger13_local_01",
+          "original": "../finger13_local/meshes/central.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/finger13_local/meshes/central.obj",
+          "sha256": "8c20a825d74245599088b8c5d3a0130297883847185e2336850dd0157019db97"
+        },
+        {
+          "asset": "gripper0_finger13_local_02",
+          "original": "../finger13_local/meshes/positive_wing.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/finger13_local/meshes/positive_wing.obj",
+          "sha256": "6831b4df4dbdeae09f66d11dfa14a9af06c9a7b13e4af91f42f4b0163b7e58c4"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_000",
+          "original": "../wrist_reuse/meshes/link5_000.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_000.obj",
+          "sha256": "8ebe41b8228ca61fae79429b8494f9effd97a8a8213e8309d57e5ae94084a3c8"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_001",
+          "original": "../wrist_reuse/meshes/link5_001.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_001.obj",
+          "sha256": "0c53e21de301af60665c485282adb22138bf81a492753816a08389ee036a635a"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_002",
+          "original": "../wrist_reuse/meshes/link5_002.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_002.obj",
+          "sha256": "c7c10dd2e482af6dd8a9acd3295f69d93f91fc4563c3888d4e8e44313fb2bdb9"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_003",
+          "original": "../wrist_reuse/meshes/link5_003.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_003.obj",
+          "sha256": "364bc9a308fb05478d4c90012adff8134ff053616bbfdd8e74868e2b1e2dd856"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_004",
+          "original": "../wrist_reuse/meshes/link5_004.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_004.obj",
+          "sha256": "97c2649300e4437ba8bf42e189ed156e7eed61304b0a9ad117ab859a8b3fdb00"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_005",
+          "original": "../wrist_reuse/meshes/link5_005.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_005.obj",
+          "sha256": "b24ec50da40df3a6a243d8f697c423140ff15ca202ba39cc847fb1606d1ef883"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_006",
+          "original": "../wrist_reuse/meshes/link5_006.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_006.obj",
+          "sha256": "3662ee1cf60400d349bd66655f2b98b7086f766a1a640884bbe73c6dda62f264"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_007",
+          "original": "../wrist_reuse/meshes/link5_007.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_007.obj",
+          "sha256": "8ca6a55ffee04050ea859cd30cb00a867e8003c7696faa07d33a27e55f45c939"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_008",
+          "original": "../wrist_reuse/meshes/link5_008.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_008.obj",
+          "sha256": "6c95967435077e23d17a79665db2197a0948fb5a51235dcb98ac7c84ed29c9d0"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_009",
+          "original": "../wrist_reuse/meshes/link5_009.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_009.obj",
+          "sha256": "8ceb76a01c1ca4693a073a6413f2a724486651ec2bf6e0c0ddb5042f08096c24"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_010",
+          "original": "../wrist_reuse/meshes/link5_010.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_010.obj",
+          "sha256": "58d972c059efc88373bc98eca1aee56c81dfcae1c1b0e7e05cc26ae039034328"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_011",
+          "original": "../wrist_reuse/meshes/link5_011.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_011.obj",
+          "sha256": "bd6ded851809e36e9c94a4dbfce26fe2a01e716e44c49971b04efe8daf233d58"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_012",
+          "original": "../wrist_reuse/meshes/link5_012.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_012.obj",
+          "sha256": "40817290c6f247358c7a7cf54b0d673c286d7fb812ef1821b3aadd8c5bc56e9d"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_013",
+          "original": "../wrist_reuse/meshes/link5_013.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_013.obj",
+          "sha256": "0b6fecd282d6be1db6f5fb905c489dfcd84a442b89251be47452447601a94538"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_014",
+          "original": "../wrist_reuse/meshes/link5_014.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_014.obj",
+          "sha256": "cf00a391e1d6b87cdd7844e3f1a3e873bfa503bbc647e981d81673d607745611"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_015",
+          "original": "../wrist_reuse/meshes/link5_015.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_015.obj",
+          "sha256": "a5cf05b4019798fada8f13a65bcae1f8d1b8191206704b36dea2c5277726b729"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_016",
+          "original": "../wrist_reuse/meshes/link5_016.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_016.obj",
+          "sha256": "04998fa04cbbbbca8d44770d938f759656078328be826ee65419cb2594f530f7"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_017",
+          "original": "../wrist_reuse/meshes/link5_017.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_017.obj",
+          "sha256": "f50dc119a5a29fc441257d3f154d564e8f7e18c820b09fdea1d625be4252035d"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_018",
+          "original": "../wrist_reuse/meshes/link5_018.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_018.obj",
+          "sha256": "5384364a0e01a925f5da9c79803e00a51ef8420bf9db18e82fc610865d88986d"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_019",
+          "original": "../wrist_reuse/meshes/link5_019.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_019.obj",
+          "sha256": "0eeb7ea4041a81cdc05efee175e085e71cf4c098f6e39481d22484cafe9e5a47"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_020",
+          "original": "../wrist_reuse/meshes/link5_020.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_020.obj",
+          "sha256": "4358e4a761a5f834dbc412092523115f0df64c7ae57f47026e2beed4a405dcd3"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_021",
+          "original": "../wrist_reuse/meshes/link5_021.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_021.obj",
+          "sha256": "48bb999c5726bd0d8cff4333ad2d871abcaafe3e14216e23c3c5045f0867f6be"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_022",
+          "original": "../wrist_reuse/meshes/link5_022.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_022.obj",
+          "sha256": "b4272d37fe4cbebec9e821fed6b956a2ce587e7f4d94fda6461c9b61c14869cc"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_023",
+          "original": "../wrist_reuse/meshes/link5_023.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_023.obj",
+          "sha256": "4e239661a329359fb5a71086a5f363a8b9d4e989334705a2bcbe732420d568c8"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_024",
+          "original": "../wrist_reuse/meshes/link5_024.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_024.obj",
+          "sha256": "6ece7a8cd11f08d3d2a2090398766b7625139b7b41b0445d63f6f08abc34e77e"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_025",
+          "original": "../wrist_reuse/meshes/link5_025.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_025.obj",
+          "sha256": "157ede2c82724af6af0ba9452c854d6825779746d12ae78aa4c1f8d192e62bde"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_026",
+          "original": "../wrist_reuse/meshes/link5_026.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_026.obj",
+          "sha256": "2bde1ac0323eee7fb9f1a706d15989a094fdcfa4914a49c355e16cc6d1bca3df"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_027",
+          "original": "../wrist_reuse/meshes/link5_027.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_027.obj",
+          "sha256": "dfb2c4d6c800351e01b3896a46220bc6572bd6107a3ed7b989e6d1c116bfa742"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_028",
+          "original": "../wrist_reuse/meshes/link5_028.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_028.obj",
+          "sha256": "40f09e706209592fd8cd9662961f679b87a24231a6daad883eff76a1e643307f"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_029",
+          "original": "../wrist_reuse/meshes/link5_029.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_029.obj",
+          "sha256": "5f4b513f4247b00ec33c2db3b951d6497267c72dcdae1d9d5c8caf4a9705ef0f"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_030",
+          "original": "../wrist_reuse/meshes/link5_030.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_030.obj",
+          "sha256": "d0fdda509fffaec5779d07d357221b3dbecc6cf827517f400e63d271a3e2be98"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_031",
+          "original": "../wrist_reuse/meshes/link5_031.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_031.obj",
+          "sha256": "a1fb05da6dbe7598ec53ce720f09a8d4a0c7043a41be8ed6f6810b04099b9b4e"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_032",
+          "original": "../wrist_reuse/meshes/link5_032.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_032.obj",
+          "sha256": "65b0de21979b1ea6dfbf380ad2ec21a9277d813652d8847f5130c6e0882551a0"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_033",
+          "original": "../wrist_reuse/meshes/link5_033.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_033.obj",
+          "sha256": "3a0a3805452ed470fa39ad35c275cc4e1932a8b5ad1ac07b724f1cbddcc9cdc9"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_034",
+          "original": "../wrist_reuse/meshes/link5_034.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_034.obj",
+          "sha256": "c407420fe7da43fb42c5f8d6180b3665cd8787cd2dff7ae1838f3d8561788fbf"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_035",
+          "original": "../wrist_reuse/meshes/link5_035.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_035.obj",
+          "sha256": "a4fd1e406f1f4417bbf09c7a7c923d0c3495bd3425f5d262d26c16ac99005bbf"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_036",
+          "original": "../wrist_reuse/meshes/link5_036.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_036.obj",
+          "sha256": "dc1c1a5faddde759d9d6c7ac8435ba663cf335d115be94daf485359903a0d0bb"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_037",
+          "original": "../wrist_reuse/meshes/link5_037.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_037.obj",
+          "sha256": "b934b2b83e14612c0b505ed180859f119a3403adfd65ee5e6a88c61de335bbd9"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_038",
+          "original": "../wrist_reuse/meshes/link5_038.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_038.obj",
+          "sha256": "b4b3d9d3c7d5502b4f1f2f58e1a5cca5176659aa4ab239772dd106b34cc30ba8"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_039",
+          "original": "../wrist_reuse/meshes/link5_039.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_039.obj",
+          "sha256": "a6bda1f78330cdaf8f685b31a0a01f80efa4755550496c4c3d238a15f5128f90"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_040",
+          "original": "../wrist_reuse/meshes/link5_040.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_040.obj",
+          "sha256": "aaf7cc0bf472f09612e1f550bb2f2346d4f5109f348682c4c032dda7f3833a38"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_041",
+          "original": "../wrist_reuse/meshes/link5_041.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_041.obj",
+          "sha256": "835287f204fd9949609069487177d8e84543c84cb570a0f3abe45458993fa05f"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_042",
+          "original": "../wrist_reuse/meshes/link5_042.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_042.obj",
+          "sha256": "063aa0118479d75302859a8808790d23f8e59e0b300867c0b694e1cc3bd2447f"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_043",
+          "original": "../wrist_reuse/meshes/link5_043.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_043.obj",
+          "sha256": "7363a3166eddc10cbcb63d077a7760fa076b5664507231723ef6e6061e6f299e"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_044",
+          "original": "../wrist_reuse/meshes/link5_044.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_044.obj",
+          "sha256": "e6183bd47fb7111e178ef030d1a3a8755c78c525967c060fab73b9de375e1462"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_045",
+          "original": "../wrist_reuse/meshes/link5_045.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_045.obj",
+          "sha256": "a8e27eb5e8cb2881a8d0b45f92a46929673b92de7055ceefbba449f962867912"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_046",
+          "original": "../wrist_reuse/meshes/link5_046.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_046.obj",
+          "sha256": "d8b23ff18891fe303528fdabcabd792315a99a460c6d95e6bfbadaea7dec751e"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_047",
+          "original": "../wrist_reuse/meshes/link5_047.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_047.obj",
+          "sha256": "404f0b728b2da7bd6db89fab48982c81cbaf2774eacfe7db6ca69cc435b3c383"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_048",
+          "original": "../wrist_reuse/meshes/link5_048.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_048.obj",
+          "sha256": "b90093600e5f58519d964608b692546b7f32f4664d0256a6498be3a3196899f1"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_049",
+          "original": "../wrist_reuse/meshes/link5_049.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_049.obj",
+          "sha256": "4f547ee38612429a904ea135a19360377f99a40c755f572ab53a119eb7345253"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_050",
+          "original": "../wrist_reuse/meshes/link5_050.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_050.obj",
+          "sha256": "eb7689e9b3f0981edc8ef554e8a8afc526b5fccc247dd67664a41dacdb9c83dc"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_051",
+          "original": "../wrist_reuse/meshes/link5_051.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_051.obj",
+          "sha256": "e4410ab9473745179d1a62cce944a12aa1d9d8cf21fb78b0ca232bd9cb03c176"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_052",
+          "original": "../wrist_reuse/meshes/link5_052.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_052.obj",
+          "sha256": "4d2b3ab090b8e1244519f5c5f71ed365b8ee4b1c4ea1fde75d56b7d793353726"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_053",
+          "original": "../wrist_reuse/meshes/link5_053.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_053.obj",
+          "sha256": "f1526a57c006a1c29100f21459da62e8bf6eae9346e8798837d79670968db927"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_054",
+          "original": "../wrist_reuse/meshes/link5_054.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_054.obj",
+          "sha256": "46116c680749e8d7e7682f9d3d4a14cd27170b79b9e2df1ca6b453d028deba47"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_055",
+          "original": "../wrist_reuse/meshes/link5_055.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_055.obj",
+          "sha256": "7f5040cfc6bf9583cc051e894c3bf0b475fee80b74ec2ae957a757165e94ea91"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_056",
+          "original": "../wrist_reuse/meshes/link5_056.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_056.obj",
+          "sha256": "c96d97928104491f6d892615b85757aeabcc72ab08b85c199a22ce1fea13f65f"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_057",
+          "original": "../wrist_reuse/meshes/link5_057.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_057.obj",
+          "sha256": "130c5640a7de5245505fc2dc4248c44651ddcfe83c75640b87e84791d2830b8e"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_058",
+          "original": "../wrist_reuse/meshes/link5_058.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_058.obj",
+          "sha256": "32556abe6790d28e029470b1ef88e1d106e9594b9f1d42e5e45f617658d64c14"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_059",
+          "original": "../wrist_reuse/meshes/link5_059.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_059.obj",
+          "sha256": "5d88d07c47737bc47973a6920fe4c94c2b9ee3a8bcee036c093b04210e5510e5"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_060",
+          "original": "../wrist_reuse/meshes/link5_060.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_060.obj",
+          "sha256": "57617ad75a7d53485617082db658cbeab23dc9d6a6e05ef267d3d1ff49aba02c"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_061",
+          "original": "../wrist_reuse/meshes/link5_061.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_061.obj",
+          "sha256": "ff4f2af274d68c989f53ee3088b85f45787a396c8a899d14f57194d59ee130bc"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_062",
+          "original": "../wrist_reuse/meshes/link5_062.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_062.obj",
+          "sha256": "52d4eeb17d230467820ed961e78a8d8263d6171672c73487eba8d71765700700"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_063",
+          "original": "../wrist_reuse/meshes/link5_063.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_063.obj",
+          "sha256": "7b936706256b08b28286f88a93e12ca9fd628f1025c1d3568e0522d4a9449474"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_064",
+          "original": "../wrist_reuse/meshes/link5_064.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_064.obj",
+          "sha256": "4e3209de3988839743148dba13ce20cf440c920c0e642c6773569a56aec3f94a"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_065",
+          "original": "../wrist_reuse/meshes/link5_065.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_065.obj",
+          "sha256": "6b636dcdddfb084d8dd1c2e47a0116fa1c109e0cdabeddc32d0c49e3d42b176f"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_066",
+          "original": "../wrist_reuse/meshes/link5_066.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_066.obj",
+          "sha256": "fa71a538fc664368b6dfc6800faf3e0cd2264e7dc53a1afbd622ce1aa163c5b0"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_067",
+          "original": "../wrist_reuse/meshes/link5_067.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_067.obj",
+          "sha256": "2e1f879e1e014c4705b67423d1ac299151cdc67a8d05576b29227fe1dc604b70"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_068",
+          "original": "../wrist_reuse/meshes/link5_068.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_068.obj",
+          "sha256": "8ea0280e862a280485d6aead8c90ecaeade23a23f6d7e3e34abbe781d4be7aba"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_069",
+          "original": "../wrist_reuse/meshes/link5_069.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_069.obj",
+          "sha256": "50b1f9f76843d4e32e314bfa1ab2fc428aa6a148c0eee50e0e663c78b56af8b5"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_070",
+          "original": "../wrist_reuse/meshes/link5_070.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_070.obj",
+          "sha256": "8ef0c33d3cc187b1401bbdf30a24cfa52d7d029550c7eb55567ec2b217da3ee9"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_071",
+          "original": "../wrist_reuse/meshes/link5_071.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_071.obj",
+          "sha256": "4aae650803fa04070ccd524a3846d9a23066e316075f28fd31a1ce4cb1200e21"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_072",
+          "original": "../wrist_reuse/meshes/link5_072.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_072.obj",
+          "sha256": "7307b020e2ba6dc6829fae30472f58c46dd09bf10351a17edccb6d4a6f7768df"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_073",
+          "original": "../wrist_reuse/meshes/link5_073.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_073.obj",
+          "sha256": "e797f732c207eb29fa5fa1d9dd7a4ef11219ab6e38da7762cdb4edd3c595311b"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_074",
+          "original": "../wrist_reuse/meshes/link5_074.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_074.obj",
+          "sha256": "4e6e636c19a15a41b0417d9aeece1d689ffefebf2ba949484866dff28a0d119d"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_075",
+          "original": "../wrist_reuse/meshes/link5_075.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_075.obj",
+          "sha256": "dbe618dd2d801ed7fa453be3e0583b49aadcf117b2e12c7b72aca0dc8252bcc4"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_076",
+          "original": "../wrist_reuse/meshes/link5_076.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_076.obj",
+          "sha256": "6a43c127406508417b701215add6d28d6d6e1a24c02639fcf223485d76f99a85"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_077",
+          "original": "../wrist_reuse/meshes/link5_077.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_077.obj",
+          "sha256": "7286169d6a952b8c70f070e26d90158234468196c935b51321b46ac6a46655c7"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_078",
+          "original": "../wrist_reuse/meshes/link5_078.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_078.obj",
+          "sha256": "e59e26e9af1d48478dbbb87a55ee238ab71954ad5102fdddb269126c3cbdf14f"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_079",
+          "original": "../wrist_reuse/meshes/link5_079.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_079.obj",
+          "sha256": "719865aa6cde4b6d0f1ac3f57c2868f7eca1f54f455457b46956c7ccbefc51eb"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_080",
+          "original": "../wrist_reuse/meshes/link5_080.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_080.obj",
+          "sha256": "8469267ee1c06a3c99a306187ebf4f9a6e61cc0560b1b5ceb6243bdbaffeae02"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_081",
+          "original": "../wrist_reuse/meshes/link5_081.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_081.obj",
+          "sha256": "4753fc531c97f6d1f0e4c73c3081df640e1619f7439d167279e6a1051835ada1"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_082",
+          "original": "../wrist_reuse/meshes/link5_082.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_082.obj",
+          "sha256": "bce23477d5a516ce29929daecf1ea676f233b2c8a833eaef3e8eb6de18436baa"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_083",
+          "original": "../wrist_reuse/meshes/link5_083.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_083.obj",
+          "sha256": "ab6f5a2e038026f74bdd0b642059c6ba6f971e2ad651e18dd77bd944ab7e3bbf"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_084",
+          "original": "../wrist_reuse/meshes/link5_084.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_084.obj",
+          "sha256": "4661de2e20accad0a07984311be78375293b2f9bccffc5aa4af2dd89e68a5698"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_085",
+          "original": "../wrist_reuse/meshes/link5_085.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_085.obj",
+          "sha256": "7f13c947466ed0cce470c8479b658a32ee24315c465db4981a92ac72d2639ed9"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_086",
+          "original": "../wrist_reuse/meshes/link5_086.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_086.obj",
+          "sha256": "cde9f5a4919e7b281191db2e6ab1c16bbdb1182b6a82bebe8ed0d3a8048bb0bd"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_087",
+          "original": "../wrist_reuse/meshes/link5_087.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_087.obj",
+          "sha256": "e51b434236404f17eb90cc15f341cd34f62b3fadc1f4a2996a41726b7660ac82"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_088",
+          "original": "../wrist_reuse/meshes/link5_088.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_088.obj",
+          "sha256": "ccd119e4947a6223952b14260f7da0e1a688f9b3c746ac08bb8247c02e94ab30"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_089",
+          "original": "../wrist_reuse/meshes/link5_089.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_089.obj",
+          "sha256": "88d21a5e9b00d9fad2f472b8cd09680336ea31d1d09ae1d4c5fc10057bc7712c"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_090",
+          "original": "../wrist_reuse/meshes/link5_090.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_090.obj",
+          "sha256": "25ad5bf00ad13d3801f5afc7944502e3a729c5a085bf54f153a8023320abcbc2"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_091",
+          "original": "../wrist_reuse/meshes/link5_091.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_091.obj",
+          "sha256": "8fc2d27691e5c092e340dce3c3bb02f8fe30020aa647e04e5d5547129ebd2d4f"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_092",
+          "original": "../wrist_reuse/meshes/link5_092.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_092.obj",
+          "sha256": "8b59e28422f284b3360e1d0b58342ca58a6a8e718f9023fe33ca96ee0021759b"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_093",
+          "original": "../wrist_reuse/meshes/link5_093.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_093.obj",
+          "sha256": "8f08d717ff2c03f42eb1cdc77d9682c122799599a5f744b7de287ada5da27edf"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_094",
+          "original": "../wrist_reuse/meshes/link5_094.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_094.obj",
+          "sha256": "35d085a4579763b1f610a45699cc5056472b0f1b7680c8898ee9b0ee9575d8f7"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_095",
+          "original": "../wrist_reuse/meshes/link5_095.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_095.obj",
+          "sha256": "5ab4551ed7b0fc03a4206beb2f1a42c783dab8a9d5b2449e66661462827a79f7"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_096",
+          "original": "../wrist_reuse/meshes/link5_096.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_096.obj",
+          "sha256": "53874cb79408b48ad59250ab7c52653b34fbd41e62f8f619258b09b3456a7134"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_097",
+          "original": "../wrist_reuse/meshes/link5_097.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_097.obj",
+          "sha256": "e6686f1ccfa263f3fed1eb260becbb3a0de71068c64da2746139ab6dc92df737"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_098",
+          "original": "../wrist_reuse/meshes/link5_098.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_098.obj",
+          "sha256": "c9e4915ce3f8fb3b69d5b0f4c194222650681efec1ef289cfe0d1e934e3d2025"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_099",
+          "original": "../wrist_reuse/meshes/link5_099.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_099.obj",
+          "sha256": "f17a22bca448a8dea09d940d5dfaaba44d809c0424796d8c9d55787fdc76b0ea"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_100",
+          "original": "../wrist_reuse/meshes/link5_100.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_100.obj",
+          "sha256": "b4c3b41dd9ad682376b520cffa8e87834dd1e12ac10683bb9be85b3cd8a6e440"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_101",
+          "original": "../wrist_reuse/meshes/link5_101.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_101.obj",
+          "sha256": "616ce9198406003f2f33a067a82f81c2528ff51117ff9d8ab5f466c20f5772e1"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_102",
+          "original": "../wrist_reuse/meshes/link5_102.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_102.obj",
+          "sha256": "89113d2b70ffea12b22dfeeb1eb48df7a8675c9e6b1a2de16d5f49a96b57690e"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_103",
+          "original": "../wrist_reuse/meshes/link5_103.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_103.obj",
+          "sha256": "a8c14d5cc2648662b7025e78d8e916bccf1ade02d7a5355ec3b1a2b48fd845aa"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_104",
+          "original": "../wrist_reuse/meshes/link5_104.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_104.obj",
+          "sha256": "50b080a4127df8827686233fed9263dcf9c37b34f17d9bcebd27e30802b1429c"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_105",
+          "original": "../wrist_reuse/meshes/link5_105.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_105.obj",
+          "sha256": "4ff78328c771945f6b7ed6b67e03b0cbe0bf77440f41511724e88186c7c953e0"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_106",
+          "original": "../wrist_reuse/meshes/link5_106.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_106.obj",
+          "sha256": "a86c9fab54b2a6476f561f40f573e8c4462c731dee669b05cf9bfe6495bcb047"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_107",
+          "original": "../wrist_reuse/meshes/link5_107.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_107.obj",
+          "sha256": "58d40442928c75014edf08234b1bd07ebadd4a7bc8ce5a69326765cb2303868d"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_108",
+          "original": "../wrist_reuse/meshes/link5_108.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_108.obj",
+          "sha256": "16f8f1cfa2cea5957272b2e045586537c6248900a14aefa5b1b4ca6ac59949a4"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_109",
+          "original": "../wrist_reuse/meshes/link5_109.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_109.obj",
+          "sha256": "4d177413763471c22161efbfa3a9af4b5bbdf7504f7c68af8451af3a32f7163e"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_110",
+          "original": "../wrist_reuse/meshes/link5_110.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_110.obj",
+          "sha256": "ebe227d7500311570dd7fc02ca4c85883573db3a678489d3654350e074971d0c"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_111",
+          "original": "../wrist_reuse/meshes/link5_111.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_111.obj",
+          "sha256": "983c1d6aa4c7c07155e2bcea946ce50e49a17a59f5ae5678e8d7c9b1cd96d93b"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_112",
+          "original": "../wrist_reuse/meshes/link5_112.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_112.obj",
+          "sha256": "67debcf37fa91dc4439865a4d20bb7932596911504774a9b4d4102445b726361"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_113",
+          "original": "../wrist_reuse/meshes/link5_113.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_113.obj",
+          "sha256": "1480149c869a232c5dd74f82b8e238eaa3dd7c100b72080dc375fdee6f0e6077"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_114",
+          "original": "../wrist_reuse/meshes/link5_114.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_114.obj",
+          "sha256": "c830a733c8b7289d2d098191ec8a50dbd5d93a7d6e225c7583414b58ab6bc2b5"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_115",
+          "original": "../wrist_reuse/meshes/link5_115.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_115.obj",
+          "sha256": "26f79eafe32b37028a500e16e468c112d0bca17aa2581133914dd17679a1a57c"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_116",
+          "original": "../wrist_reuse/meshes/link5_116.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_116.obj",
+          "sha256": "99e89151676ae59c655d005802e752e1dff192f9318fda1df0f142d9a6e4e4f4"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_117",
+          "original": "../wrist_reuse/meshes/link5_117.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_117.obj",
+          "sha256": "0109dac7a01d6926ef675ba4ef3cae14a6c555a0fc6c9dcdda907b1126dc13a6"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_118",
+          "original": "../wrist_reuse/meshes/link5_118.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_118.obj",
+          "sha256": "3fe094a271ebd3b846d2e56a05c197993ec69907c86832527630b9994e709633"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_119",
+          "original": "../wrist_reuse/meshes/link5_119.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_119.obj",
+          "sha256": "5bb8afb96e11a49a2267b8a378cf9b90187aac92fa579b9385b928eb029c2c9d"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_120",
+          "original": "../wrist_reuse/meshes/link5_120.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_120.obj",
+          "sha256": "df3d5f38b45ad8811aef7c1654a4f0c4dced16ec48df0a7eb93e0b8caa2835fc"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_121",
+          "original": "../wrist_reuse/meshes/link5_121.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_121.obj",
+          "sha256": "827a4edde044d60a42eca03684231707adb341f4555f76341ac669bd8f460d7b"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_122",
+          "original": "../wrist_reuse/meshes/link5_122.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_122.obj",
+          "sha256": "072f8de4b0f4501f6c870be5245277691424bb23f3e2bbfca0f3e161d847c5fa"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_123",
+          "original": "../wrist_reuse/meshes/link5_123.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_123.obj",
+          "sha256": "4cad9be56fddb67bde07618ff74ba43165e3ae362c4bc7eb328b32cf8a15a0f2"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_124",
+          "original": "../wrist_reuse/meshes/link5_124.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_124.obj",
+          "sha256": "69b603e6fdefb25709e45515c19b5b5bc862713b33207149b5ec141671138013"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_125",
+          "original": "../wrist_reuse/meshes/link5_125.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_125.obj",
+          "sha256": "dbe0e01dac090ebc8abde83aafed6e6bac47e99478924aed5b1cfcd02ce049b0"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_126",
+          "original": "../wrist_reuse/meshes/link5_126.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_126.obj",
+          "sha256": "977d844b83a8789c0087ea84e0a4f1aaa81f2b3750df9c57f7c9963cd9fa8e0e"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_127",
+          "original": "../wrist_reuse/meshes/link5_127.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_127.obj",
+          "sha256": "92fa532b79fab0d00a1d821b1eda038d28ffd8d7a62320e167865a218bba61a1"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_128",
+          "original": "../wrist_reuse/meshes/link5_128.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_128.obj",
+          "sha256": "92173c6453b34e6ec852c2f2f683aa300bf7effa46eb786d8fdd482df8e0a9fb"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_129",
+          "original": "../wrist_reuse/meshes/link5_129.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_129.obj",
+          "sha256": "4b05e770fc066b9a7b9d547da5e8e31796593008bb6c4a56f420d8f189f19a26"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_130",
+          "original": "../wrist_reuse/meshes/link5_130.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_130.obj",
+          "sha256": "ada4292f00762a564085ba2216375f3b279c2264db0619fd9d7687bb0ec2a210"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_131",
+          "original": "../wrist_reuse/meshes/link5_131.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_131.obj",
+          "sha256": "3a5ff1e04da8e329f74b77faf63a78b7dde9e6a033e6d1dcae93b0b3ae1b9bd6"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_132",
+          "original": "../wrist_reuse/meshes/link5_132.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_132.obj",
+          "sha256": "ebba2dcabfa3a0c1ad355fe1d1aacfeaee6f3e7a609e3cd49a3e6fe1627cbd8b"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_133",
+          "original": "../wrist_reuse/meshes/link5_133.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_133.obj",
+          "sha256": "555ea39c5f74d4249da2e735c88f85c101ddd87b3fe327c3d538f0b9acf517de"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_134",
+          "original": "../wrist_reuse/meshes/link5_134.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_134.obj",
+          "sha256": "20842ab5327d0661242082f923d0248ec7891ffdd841fe83904a70c94ac721b6"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_135",
+          "original": "../wrist_reuse/meshes/link5_135.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_135.obj",
+          "sha256": "07ed2078aa2dd2717865c138157dfb6ee4e30683a7f998c16870e415fb2911f6"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_136",
+          "original": "../wrist_reuse/meshes/link5_136.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_136.obj",
+          "sha256": "e718fe936782e0c9296b462fd2a9babefdb0edbd3926ebb1cdf5d1f3c40e7854"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_137",
+          "original": "../wrist_reuse/meshes/link5_137.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_137.obj",
+          "sha256": "6c187fc25aeaa807422e8b1f64e05eb0e4571c3dca4033dc28d896262e45465b"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_138",
+          "original": "../wrist_reuse/meshes/link5_138.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_138.obj",
+          "sha256": "0e21c0baa5b5f7669850a6bdb4185a42abf0f5b638ffea28ccd99d300c79d211"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_139",
+          "original": "../wrist_reuse/meshes/link5_139.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_139.obj",
+          "sha256": "824c55156fc3be6c98babcf57585051d4f180b224f54340d9770b127994093bf"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_140",
+          "original": "../wrist_reuse/meshes/link5_140.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_140.obj",
+          "sha256": "2366b81494de59c6cbdb5e3d580c35e27d02fa2850b65c0883a08ecd77d61023"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_141",
+          "original": "../wrist_reuse/meshes/link5_141.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_141.obj",
+          "sha256": "6a060be3f20f1d477c44d1986eeddf96d5ce9d461744a9caaccf589d4197196e"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_142",
+          "original": "../wrist_reuse/meshes/link5_142.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_142.obj",
+          "sha256": "49fc5f135130b85c2bacac5a3e404a137353367e5347141a143cbd1728f6afaa"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_143",
+          "original": "../wrist_reuse/meshes/link5_143.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_143.obj",
+          "sha256": "1a48ab8dc1d87330a253806d4d6cec03a2b19b7763c7c29205893f687979ae0b"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_144",
+          "original": "../wrist_reuse/meshes/link5_144.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_144.obj",
+          "sha256": "d33762d41d3aac74cbfba83c770d8e4a76f220abada3f0abfae6f9f014b92533"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_145",
+          "original": "../wrist_reuse/meshes/link5_145.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_145.obj",
+          "sha256": "875a5823ff650aafc9bbbe8c7bfef928814b86b267182ba05bd336ec93c73491"
+        },
+        {
+          "asset": "robot0_wrist_reuse_link5_146",
+          "original": "../wrist_reuse/meshes/link5_146.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/link5_146.obj",
+          "sha256": "f7f249f608f1b29d09f489b118914aa6e1c9cd3732009b1225201750fb351ac4"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_000",
+          "original": "../wrist_reuse/meshes/gripper_flange_000.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_000.obj",
+          "sha256": "f717a5ef7ffc3123b2890cd0c7e8f461aea3252574d64b4e144903755fe982c8"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_001",
+          "original": "../wrist_reuse/meshes/gripper_flange_001.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_001.obj",
+          "sha256": "e91c5fa5dcff8f681f855bbe59e2d61ff5efa767fb69bfbe28bb4dfa86582bbe"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_002",
+          "original": "../wrist_reuse/meshes/gripper_flange_002.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_002.obj",
+          "sha256": "acfc4a8cc5c143861ed83ae730888717556f3cd4acf9caabe87f6f80fe9d9637"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_003",
+          "original": "../wrist_reuse/meshes/gripper_flange_003.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_003.obj",
+          "sha256": "702d593c21906f64123797d75efba6c3715e12dc230267936522a2b504b4f422"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_004",
+          "original": "../wrist_reuse/meshes/gripper_flange_004.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_004.obj",
+          "sha256": "88d11a84f27f6aaee641232d3675ea30a97cd59405d76dcfd567799b0542191b"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_005",
+          "original": "../wrist_reuse/meshes/gripper_flange_005.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_005.obj",
+          "sha256": "64b8932879b53425db379e3e34ed4d0c9647cff63cbd962cbe68b3b6ef32be56"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_006",
+          "original": "../wrist_reuse/meshes/gripper_flange_006.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_006.obj",
+          "sha256": "8f5d4b1f96e88ce6672c481824175e8b1ced47b66d00553e4d524f7539544c7c"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_007",
+          "original": "../wrist_reuse/meshes/gripper_flange_007.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_007.obj",
+          "sha256": "ba9610e8ae5214032ae781dd8914ecdf6642a7e316f83d1cf07d0ed1a23cfef7"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_008",
+          "original": "../wrist_reuse/meshes/gripper_flange_008.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_008.obj",
+          "sha256": "3e60f3fd598dd131c75f92e2517df192f51f893c5a0e32c548af8aa0a087fc2c"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_009",
+          "original": "../wrist_reuse/meshes/gripper_flange_009.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_009.obj",
+          "sha256": "98c70a5d56f861d7a5c6158a47dcc1482747a8f97fd005864af0b8901fa7213b"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_010",
+          "original": "../wrist_reuse/meshes/gripper_flange_010.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_010.obj",
+          "sha256": "f47b82a05134246ba7e073a7eda3f7f7220ddf968b24360b002b1df6ae590928"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_011",
+          "original": "../wrist_reuse/meshes/gripper_flange_011.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_011.obj",
+          "sha256": "e38be074087054f65a8ad5e3848d2db82c2596a706b5ad48a583f75cb86bea8f"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_012",
+          "original": "../wrist_reuse/meshes/gripper_flange_012.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_012.obj",
+          "sha256": "39a8a753004d15d17d240d85423075841fdc765ac84fb094bc15177d04130974"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_013",
+          "original": "../wrist_reuse/meshes/gripper_flange_013.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_013.obj",
+          "sha256": "0c790a815818b7645601132b3a1e2edff245b34b0ac6a7da9c9700905ebe17c4"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_014",
+          "original": "../wrist_reuse/meshes/gripper_flange_014.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_014.obj",
+          "sha256": "a32df9946bdac8f98d97c1722cff0a1d6a0c2ae7dba3ee7f2e01c109b2eeb520"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_015",
+          "original": "../wrist_reuse/meshes/gripper_flange_015.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_015.obj",
+          "sha256": "a469ef4d3120a6445cc654229c42fc23dfcf92f1f88710ecc95023d093aa8527"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_016",
+          "original": "../wrist_reuse/meshes/gripper_flange_016.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_016.obj",
+          "sha256": "ce643996772dfad8b10b2125df00727ca9c9d0b930053101caa21d5df83c1936"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_017",
+          "original": "../wrist_reuse/meshes/gripper_flange_017.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_017.obj",
+          "sha256": "5f7a76c03629489235ac347127de096888e5e4ba2bf1b35b6990eb711bd53a06"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_018",
+          "original": "../wrist_reuse/meshes/gripper_flange_018.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_018.obj",
+          "sha256": "de1e6570fd83ad084bc6805ad4f6f207b7ef65b91739605dc10618d517a8bf13"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_019",
+          "original": "../wrist_reuse/meshes/gripper_flange_019.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_019.obj",
+          "sha256": "cff8aa1ca6145c0d44d744596582689b2907a5561b1841641c1a58bab2a4ca75"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_020",
+          "original": "../wrist_reuse/meshes/gripper_flange_020.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_020.obj",
+          "sha256": "043850ccc035c9bb0dced1e31930685816c7c8eba2badd4c0d793f0431c9a63f"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_021",
+          "original": "../wrist_reuse/meshes/gripper_flange_021.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_021.obj",
+          "sha256": "a9ba15e3ba52cab14e3ed2f366cf37ff5235af1170f5d5e47c4e6a2e79c9f4ee"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_022",
+          "original": "../wrist_reuse/meshes/gripper_flange_022.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_022.obj",
+          "sha256": "db7643cb70e036aa8adb602b3604b135c36fbf5bfc63ba973df29fef41880d15"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_023",
+          "original": "../wrist_reuse/meshes/gripper_flange_023.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_023.obj",
+          "sha256": "3915bdac87c5f010dbd383e3e61fdadbb644f141b832a4feafdac7a8441b4f5f"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_024",
+          "original": "../wrist_reuse/meshes/gripper_flange_024.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_024.obj",
+          "sha256": "8da6cfe8322e60ae742f4e18dac2da425f564abf77b9de4a5867398cf79777be"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_025",
+          "original": "../wrist_reuse/meshes/gripper_flange_025.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_025.obj",
+          "sha256": "427dd163294c515b431e639e8dde80cc3ccaf8fce0b70ad8fbacce8556712e2d"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_026",
+          "original": "../wrist_reuse/meshes/gripper_flange_026.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_026.obj",
+          "sha256": "dab1f03cd7bce7a61f66af6352e739cfaada61392997e35121552b9564dc7f49"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_027",
+          "original": "../wrist_reuse/meshes/gripper_flange_027.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_027.obj",
+          "sha256": "bea7a936e25b8bda233e51d5b6130543c1c20a6cfc7ef30c27aa2283afc71591"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_028",
+          "original": "../wrist_reuse/meshes/gripper_flange_028.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_028.obj",
+          "sha256": "cc12ce7818efbbd7fca84873b7c980e74da44ad32888be78daabd2cd2220670c"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_029",
+          "original": "../wrist_reuse/meshes/gripper_flange_029.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_029.obj",
+          "sha256": "0c6d6a249000cb9c92614c77a7fa4e4030c5819361ac8255ced72c66b4f1702a"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_030",
+          "original": "../wrist_reuse/meshes/gripper_flange_030.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_030.obj",
+          "sha256": "6ee01234ff26359ddc0e0da907d303e7c96abe48ab350e96017074901025d468"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_031",
+          "original": "../wrist_reuse/meshes/gripper_flange_031.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_031.obj",
+          "sha256": "5aaadc44164f7e7692e1638832afcef0cfc121cd2ff9e744fed49f3207a96510"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_032",
+          "original": "../wrist_reuse/meshes/gripper_flange_032.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_032.obj",
+          "sha256": "00f163855dc8efe9e6f0ee3f629748f4abfeef4fed9cd0e2ad262286112890c3"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_033",
+          "original": "../wrist_reuse/meshes/gripper_flange_033.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_033.obj",
+          "sha256": "15104389b30dbaf9c961228d6e451171a23491c7c83d40ca6050de072c7148d1"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_034",
+          "original": "../wrist_reuse/meshes/gripper_flange_034.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_034.obj",
+          "sha256": "1e2dc32d44e9091d67efb518f9be4a591d944952a2311dc0bcc115e3c3102c7a"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_035",
+          "original": "../wrist_reuse/meshes/gripper_flange_035.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_035.obj",
+          "sha256": "fa9600841737f7948b46c7f9c59285aeeb840ca87a22fbc4f1cf6217926b2e98"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_036",
+          "original": "../wrist_reuse/meshes/gripper_flange_036.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_036.obj",
+          "sha256": "77160bc78e4fdc65171911de1558fcc9bbffc11bca2f375bbf23f2e30936f164"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_037",
+          "original": "../wrist_reuse/meshes/gripper_flange_037.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_037.obj",
+          "sha256": "0a314d491aed2b3b165147f8190ef7025340cf144d18775860ddff223e9ce816"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_038",
+          "original": "../wrist_reuse/meshes/gripper_flange_038.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_038.obj",
+          "sha256": "c4eff3a4cb89be372349c0fa598811da58f6adc882048ffea22f7e3e41383278"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_039",
+          "original": "../wrist_reuse/meshes/gripper_flange_039.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_039.obj",
+          "sha256": "5c533e7473335b16dcab7e5ca1d8b85201809dd3505fa4f9e3d81277bca581cf"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_040",
+          "original": "../wrist_reuse/meshes/gripper_flange_040.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_040.obj",
+          "sha256": "9ee5692926ecd257d34f9079297262f112f9370765d2cae70466de694e1670cb"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_041",
+          "original": "../wrist_reuse/meshes/gripper_flange_041.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_041.obj",
+          "sha256": "ff96a82433f755adfdcef4f1a55a6aa40c2b5beaebc05d8f7a56e3a56b1f8b49"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_042",
+          "original": "../wrist_reuse/meshes/gripper_flange_042.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_042.obj",
+          "sha256": "a619d23a61bd75f0f9cd29b12fe18bda5d7b3edb940a52b200c4be96eacc71de"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_043",
+          "original": "../wrist_reuse/meshes/gripper_flange_043.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_043.obj",
+          "sha256": "84fc7775765e3a845664d48130f1b12d61dabe74462f476899a01587c9707da5"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_044",
+          "original": "../wrist_reuse/meshes/gripper_flange_044.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_044.obj",
+          "sha256": "4241c41895e3d17e64d511d2ffc824ae5ea3c107e71861f72f16932cc0bf4a1c"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_045",
+          "original": "../wrist_reuse/meshes/gripper_flange_045.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_045.obj",
+          "sha256": "37f676e39a3da04b952516d41a40d4ff403285ec389a72c86c7c366959d95f71"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_046",
+          "original": "../wrist_reuse/meshes/gripper_flange_046.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_046.obj",
+          "sha256": "b6a11f917ebac37cc4c742b15f395918112abf67ec1a43f56d4889bdb65c82d1"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_047",
+          "original": "../wrist_reuse/meshes/gripper_flange_047.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_047.obj",
+          "sha256": "e15347e8836c5f624d6f2e9832195af266151c9ad21a49e217129f59c923191c"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_048",
+          "original": "../wrist_reuse/meshes/gripper_flange_048.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_048.obj",
+          "sha256": "795854605c83d2f05697d246c78d94223b4a0c38044c038b12ca5bb481b41793"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_049",
+          "original": "../wrist_reuse/meshes/gripper_flange_049.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_049.obj",
+          "sha256": "2b55a50081a536d80f98d1411bb9e6a3e8685ebaa19183f1e6d30217c4ef9c19"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_050",
+          "original": "../wrist_reuse/meshes/gripper_flange_050.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_050.obj",
+          "sha256": "e7a92e284c973c3ec3e3e9a6359f0152036295245b17429b1f2aaca1a4c3d1e4"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_051",
+          "original": "../wrist_reuse/meshes/gripper_flange_051.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_051.obj",
+          "sha256": "f717e558abb6d739cde0cef797f1741c5b7f073f1b86db614cfb0ee42b73e982"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_052",
+          "original": "../wrist_reuse/meshes/gripper_flange_052.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_052.obj",
+          "sha256": "3b143ea9632d8b701926543abbac465f3afab9839fb7962df7e90de580329189"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_053",
+          "original": "../wrist_reuse/meshes/gripper_flange_053.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_053.obj",
+          "sha256": "918a9959c28b067b6f8fcd55cfae08b5e6f0fcd66fddca636aebfe515e4dc39b"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_054",
+          "original": "../wrist_reuse/meshes/gripper_flange_054.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_054.obj",
+          "sha256": "eec3c9cae42d3b2e43d0304201fe09d8f8dae4bba5c57bfb3ee4cb04af589e7f"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_055",
+          "original": "../wrist_reuse/meshes/gripper_flange_055.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_055.obj",
+          "sha256": "396beaeeb961dd34a033d9271391f05357bde84140475de73cda4de638ed054a"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_056",
+          "original": "../wrist_reuse/meshes/gripper_flange_056.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_056.obj",
+          "sha256": "9c52b8bb26efaddd3bad48735883af128ff3d7e7c80d2d2c4cd16655e8ff0564"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_057",
+          "original": "../wrist_reuse/meshes/gripper_flange_057.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_057.obj",
+          "sha256": "c366502a75d24a5b4dd0e0cae4e6c34340a4a814403ecf281a750cf12dbbdff7"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_058",
+          "original": "../wrist_reuse/meshes/gripper_flange_058.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_058.obj",
+          "sha256": "e21e1c4e36bd38c89066033696a42582165bf1c099c6489caa2a3717bb13e64a"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_059",
+          "original": "../wrist_reuse/meshes/gripper_flange_059.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_059.obj",
+          "sha256": "ec295ecef78f25d8c536666beefd613e78b2d041f46a0827e3109b1dc8bceba0"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_060",
+          "original": "../wrist_reuse/meshes/gripper_flange_060.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_060.obj",
+          "sha256": "bd946175a0cd26b8ef7d6bc920bc56a383c855348402e27d0ed83c586b166240"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_061",
+          "original": "../wrist_reuse/meshes/gripper_flange_061.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_061.obj",
+          "sha256": "ae258fa93b8e586f9b9fb90952d30cc99d58cb3eed1b573ab6162c294e2a113d"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_062",
+          "original": "../wrist_reuse/meshes/gripper_flange_062.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_062.obj",
+          "sha256": "1e5575a5858048074cf4844d004c3f9a820f23ce0a038b712ac4adcdac1c03b8"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_063",
+          "original": "../wrist_reuse/meshes/gripper_flange_063.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_063.obj",
+          "sha256": "2c6cd5fb91c1b55e3f1d7914546fa53b182429050dd0fd062165ec7865d5ead8"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_064",
+          "original": "../wrist_reuse/meshes/gripper_flange_064.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_064.obj",
+          "sha256": "7c28b92a2df9662c46cf18f616edd89a0b2e75038320c05753fbc424c1f51f51"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_065",
+          "original": "../wrist_reuse/meshes/gripper_flange_065.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_065.obj",
+          "sha256": "cbf5577f15116710c0163785657c9704dbdf983609a63455b7874e4ac48db517"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_066",
+          "original": "../wrist_reuse/meshes/gripper_flange_066.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_066.obj",
+          "sha256": "fe622b692d5cbf099e1cda3733d6ff5aa2bbf6c988af509a7779d41bf8a2ad6a"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_067",
+          "original": "../wrist_reuse/meshes/gripper_flange_067.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_067.obj",
+          "sha256": "e5068b7f81ceeb687a53b3246b39d9917182743c2a52eaa7f5aab700411c101b"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_068",
+          "original": "../wrist_reuse/meshes/gripper_flange_068.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_068.obj",
+          "sha256": "aa5cc9ffef5ef6040b2710550627ffd54b379e3f83675dee06d9a0061908c27d"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_069",
+          "original": "../wrist_reuse/meshes/gripper_flange_069.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_069.obj",
+          "sha256": "5819f4c60885f0c56c82ffa8f41e64abaf56231ecb006ec5be0cb936556f422c"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_070",
+          "original": "../wrist_reuse/meshes/gripper_flange_070.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_070.obj",
+          "sha256": "bb919a5a83114db32962ceb3600e3cbea13c729cfb5f0da135884d5e4565125d"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_071",
+          "original": "../wrist_reuse/meshes/gripper_flange_071.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_071.obj",
+          "sha256": "ea479acca31da0d70b068ecce1a4983f8cf14cebf483a8b4ded9273dac4e504c"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_072",
+          "original": "../wrist_reuse/meshes/gripper_flange_072.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_072.obj",
+          "sha256": "db58297691944212b890bfd927d9ad920fd789dd79a66eb06d69b107e60bbdd6"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_073",
+          "original": "../wrist_reuse/meshes/gripper_flange_073.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_073.obj",
+          "sha256": "5a288e7504805f185685ea4d43bd9a3b3a6298f0619a453fee43d3bcc0093aa2"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_074",
+          "original": "../wrist_reuse/meshes/gripper_flange_074.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_074.obj",
+          "sha256": "3778d91e954dc639b8658132b7facb3d4441d69fed4728789cfe68e22cac5523"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_075",
+          "original": "../wrist_reuse/meshes/gripper_flange_075.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_075.obj",
+          "sha256": "8743ec923ad97b255a6ac2ef5cf275b786c5d94f8d9f51e176ed3b765d8877ef"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_076",
+          "original": "../wrist_reuse/meshes/gripper_flange_076.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_076.obj",
+          "sha256": "a8d00a906995eac7f622cd9b6cf03f9c719a1d198d0becacb664930b4f6fd623"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_077",
+          "original": "../wrist_reuse/meshes/gripper_flange_077.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_077.obj",
+          "sha256": "542c10ae6eecd7b2e3078694550cb6990c51f969bae2360d8d4171dfbfd8fb31"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_078",
+          "original": "../wrist_reuse/meshes/gripper_flange_078.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_078.obj",
+          "sha256": "71929cf42f035defebab22ed0113ca400531e41b6dc4067a673c8ce6bd1b9f93"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_079",
+          "original": "../wrist_reuse/meshes/gripper_flange_079.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_079.obj",
+          "sha256": "587afbee5755a2012b79f318b6375a9948087c0c925cb5e7a6641334e35f6b84"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_080",
+          "original": "../wrist_reuse/meshes/gripper_flange_080.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_080.obj",
+          "sha256": "d41bc8ccd5c764c6b55e894001fc3ae538cb7b1164fdc344c3825b5d4bfe27ba"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_081",
+          "original": "../wrist_reuse/meshes/gripper_flange_081.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_081.obj",
+          "sha256": "ed268a9799eb2fd9d8b61aedacd84402f66cf2874ae94b7406feb27873cef378"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_082",
+          "original": "../wrist_reuse/meshes/gripper_flange_082.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_082.obj",
+          "sha256": "a88e21b56ab778500754f438c4e03b3f17869951dc6ed8d770f09d2b34bad5ea"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_083",
+          "original": "../wrist_reuse/meshes/gripper_flange_083.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_083.obj",
+          "sha256": "6ca42ace81f06fabed03cf8692818fdd16fe51df78218d9949e540177256b29a"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_084",
+          "original": "../wrist_reuse/meshes/gripper_flange_084.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_084.obj",
+          "sha256": "002d18f36a24871853aa6220f5eb8a7763fd1cf12385827ad8b182693dad5a46"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_085",
+          "original": "../wrist_reuse/meshes/gripper_flange_085.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_085.obj",
+          "sha256": "3400ef7a295a82b67ffb6d2714011a0d4f119cc6134e0d725b073a7a413dcdd3"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_086",
+          "original": "../wrist_reuse/meshes/gripper_flange_086.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_086.obj",
+          "sha256": "afce6755cea4a8f223e95695b2b5ed2d8ad2f94e45cce8a9167c040159c425d6"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_087",
+          "original": "../wrist_reuse/meshes/gripper_flange_087.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_087.obj",
+          "sha256": "6a3d9eab2e9283980e86c97f139d2e3ee96881badb48dfaa3f7fd3767086caf3"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_088",
+          "original": "../wrist_reuse/meshes/gripper_flange_088.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_088.obj",
+          "sha256": "7124a1634d0351ac0066c4888312d5cee48abd6dd2881d06c4b2fd328472b3ae"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_089",
+          "original": "../wrist_reuse/meshes/gripper_flange_089.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_089.obj",
+          "sha256": "97024384fe2de56e5b7d6406872b0c18e13457a575629a1505c1535b97958a0c"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_090",
+          "original": "../wrist_reuse/meshes/gripper_flange_090.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_090.obj",
+          "sha256": "cf837b5e11a3e0df23b465e751f731b633a85beabc29d7b9fa1dc7a78c18a74b"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_091",
+          "original": "../wrist_reuse/meshes/gripper_flange_091.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_091.obj",
+          "sha256": "cefd8a621140380f9414ec80e2b52c5457a00dd79cc95bd365b2fcdca0d30ead"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_092",
+          "original": "../wrist_reuse/meshes/gripper_flange_092.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_092.obj",
+          "sha256": "e4ea31324cef374d2c7d73e948453b51cdf9e70f494d61ff01e51f5ef957ef02"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_093",
+          "original": "../wrist_reuse/meshes/gripper_flange_093.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_093.obj",
+          "sha256": "a38b2705768249bde39bf7d0796880168fd94a1d5603ebf2d34e017ea3090495"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_094",
+          "original": "../wrist_reuse/meshes/gripper_flange_094.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_094.obj",
+          "sha256": "bf8f951d36fd56554846fd12b69e186ee19cf79599149298d21c1a223443b765"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_095",
+          "original": "../wrist_reuse/meshes/gripper_flange_095.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_095.obj",
+          "sha256": "f274231542206b42889b5fb3d787b74a4f786a27caa86bf395dc1e339ef69b70"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_096",
+          "original": "../wrist_reuse/meshes/gripper_flange_096.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_096.obj",
+          "sha256": "10450da93c1703a6f8b050c2a3acd34c298637c39abcffec1b9273492554cae2"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_097",
+          "original": "../wrist_reuse/meshes/gripper_flange_097.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_097.obj",
+          "sha256": "4b102e61bd34cb9742206e91b5869a992307237c8993fdc39c3313b286b69cf2"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_098",
+          "original": "../wrist_reuse/meshes/gripper_flange_098.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_098.obj",
+          "sha256": "b33ee2d47e650d9781f092746d4eff9be68a0e5e3c1a991ce16efe4f09dcb2a8"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_099",
+          "original": "../wrist_reuse/meshes/gripper_flange_099.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_099.obj",
+          "sha256": "247c634a4904f7dc50d0d75a4a504ae72ca8d7739a1c81d8f0f1d4659ab75722"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_100",
+          "original": "../wrist_reuse/meshes/gripper_flange_100.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_100.obj",
+          "sha256": "204fb027595db7335a85915cc4c35cc2cc2a46455690fc164fba4a68958a9102"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_101",
+          "original": "../wrist_reuse/meshes/gripper_flange_101.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_101.obj",
+          "sha256": "6372ccb9464b69ca159e2e01902a1d0aaf03ebff4e6ec10f7376d84276906e69"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_102",
+          "original": "../wrist_reuse/meshes/gripper_flange_102.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_102.obj",
+          "sha256": "81293d04a1b4f385e372b1a5cd6b230d3aca8802616b56d10ea589eb744acb14"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_103",
+          "original": "../wrist_reuse/meshes/gripper_flange_103.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_103.obj",
+          "sha256": "4d8d46347543a99523aa1f27a0863bfb4d244f09844dbff68fc232108e393f7e"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_104",
+          "original": "../wrist_reuse/meshes/gripper_flange_104.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_104.obj",
+          "sha256": "43fd9a69978334c07883d7979a5bf083b11ace1e1531fc54f8ae49df5d4fbe98"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_105",
+          "original": "../wrist_reuse/meshes/gripper_flange_105.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_105.obj",
+          "sha256": "6c109174bbd70695970423b2a5d332e262d8e03661d6fafaa8779c7598fa1371"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_106",
+          "original": "../wrist_reuse/meshes/gripper_flange_106.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_106.obj",
+          "sha256": "7f3aa14870e3d2b362aa4dc5ce69fb8fa87508b30d9f15f9a4990dacb6deecfe"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_107",
+          "original": "../wrist_reuse/meshes/gripper_flange_107.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_107.obj",
+          "sha256": "1c36d39ac53e1bbbef3785a0519263a73b1fb9d0ddbd53c2f00adef0fd9bef9f"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_108",
+          "original": "../wrist_reuse/meshes/gripper_flange_108.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_108.obj",
+          "sha256": "dab2dbc9212ea7af591070682638716414cf7baa85a5f3c0cb2b1233c3a2b1d9"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_109",
+          "original": "../wrist_reuse/meshes/gripper_flange_109.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_109.obj",
+          "sha256": "bbf468dcf2801cce064b01a6cfc84dd782a5cef4631d9b9919e23b82dc021d82"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_110",
+          "original": "../wrist_reuse/meshes/gripper_flange_110.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_110.obj",
+          "sha256": "c591ab15a801b769d06c2bda9c6cd30b2a939ecec8f5ebcc13fab15c9ca3c1ea"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_111",
+          "original": "../wrist_reuse/meshes/gripper_flange_111.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_111.obj",
+          "sha256": "a57898d0c7f1f0679129047f9c6c8b1529ff1988e340bb04354deeda5b9b623a"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_112",
+          "original": "../wrist_reuse/meshes/gripper_flange_112.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_112.obj",
+          "sha256": "290824b50687f466e420f47da71674fc09b27dab5a85ba5a8ee3b154fc454a30"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_113",
+          "original": "../wrist_reuse/meshes/gripper_flange_113.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_113.obj",
+          "sha256": "cf12f1cdf190a8b038766a20ddfa09764a846f468327ee3e0255e40fc653ab01"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_114",
+          "original": "../wrist_reuse/meshes/gripper_flange_114.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_114.obj",
+          "sha256": "05840fcc6491c4cdf91fdb856d92361f59394c4259f5c7773317faeb5b2cf259"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_115",
+          "original": "../wrist_reuse/meshes/gripper_flange_115.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_115.obj",
+          "sha256": "aa0457573f8a5e41be0194f62f0678c2a8948e31ed4ed44cecc39bcc3492472a"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_116",
+          "original": "../wrist_reuse/meshes/gripper_flange_116.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_116.obj",
+          "sha256": "ce1ba194e251f22c9994a74eb0432435b20553e42b5533762348b7228edb3476"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_117",
+          "original": "../wrist_reuse/meshes/gripper_flange_117.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_117.obj",
+          "sha256": "bf504d1b8a86ce08f2c91c3e27d515cd5e53296f153dcda76ceed5c9631d745b"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_118",
+          "original": "../wrist_reuse/meshes/gripper_flange_118.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_118.obj",
+          "sha256": "e116a5a719835c5f39d04533d39b8e5cafc19f1fc83fd997fc987766f5a51feb"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_119",
+          "original": "../wrist_reuse/meshes/gripper_flange_119.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_119.obj",
+          "sha256": "3cf237787c41c93a5760fce4f66bb45aae56ee3fe222e51934b28cfb7905e4e2"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_120",
+          "original": "../wrist_reuse/meshes/gripper_flange_120.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_120.obj",
+          "sha256": "7c9f6024f3bd8497197398eb135a25dba69c8469a42839c3593f481ec0e23b1f"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_121",
+          "original": "../wrist_reuse/meshes/gripper_flange_121.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_121.obj",
+          "sha256": "aa9ab2e9f475b7b11ef845dc68bf7eeb145e68fed6fb30aecd1b242af9c13e7b"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_122",
+          "original": "../wrist_reuse/meshes/gripper_flange_122.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_122.obj",
+          "sha256": "8d895a7452f81b90b25ef6d657b995b3a2e5b34baeba17b6a516fd176acbca2c"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_123",
+          "original": "../wrist_reuse/meshes/gripper_flange_123.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_123.obj",
+          "sha256": "27f601fd0981c8f5c8891885d3de8c36ad2a83716188c70498fd344631b89d8e"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_124",
+          "original": "../wrist_reuse/meshes/gripper_flange_124.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_124.obj",
+          "sha256": "93d815759e6731bd5c36f0d4932221a59293366ca070f543db63670d997f6189"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_125",
+          "original": "../wrist_reuse/meshes/gripper_flange_125.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_125.obj",
+          "sha256": "3c601e6a11ccbc1b5ffa781d7ed3e5a1dddcf2c6a246daa54896af86d8c13caf"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_126",
+          "original": "../wrist_reuse/meshes/gripper_flange_126.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_126.obj",
+          "sha256": "ea83a02276ebbc76e5d5c674f6558dfc2c44b6089c058e40286a5e338de2b0dc"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_127",
+          "original": "../wrist_reuse/meshes/gripper_flange_127.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_127.obj",
+          "sha256": "2f879e476f940881fbee871d9cf2d15ec996784e132321861f75804e80f48b46"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_128",
+          "original": "../wrist_reuse/meshes/gripper_flange_128.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_128.obj",
+          "sha256": "4e420687c38606a1caf18cdbc4f729aaaf2601903b30fbe634a0bbf5e3528bc7"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_129",
+          "original": "../wrist_reuse/meshes/gripper_flange_129.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_129.obj",
+          "sha256": "95d64f06c8cfa0b5231ff44c75b058f09a0df13602a60becdc723729454506ab"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_130",
+          "original": "../wrist_reuse/meshes/gripper_flange_130.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_130.obj",
+          "sha256": "a118862542f9baa69ec36fd1421a871a22d73eb5092ce6f42d0c66aed6bd3fec"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_131",
+          "original": "../wrist_reuse/meshes/gripper_flange_131.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_131.obj",
+          "sha256": "776de77cd1c49cbb3487a35d2e883bd504ff1a71d9daa42fbc760c8c16f0dc83"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_132",
+          "original": "../wrist_reuse/meshes/gripper_flange_132.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_132.obj",
+          "sha256": "a93fe27bfb20c79715d26d18a54d5f083dea411a43f9a46d87f04e83df2c4fde"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_133",
+          "original": "../wrist_reuse/meshes/gripper_flange_133.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_133.obj",
+          "sha256": "2428c808f35f97e422640e386be61be7999be1f44d53ef49ecb977c9f0d570ed"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_134",
+          "original": "../wrist_reuse/meshes/gripper_flange_134.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_134.obj",
+          "sha256": "6e8b82ec0b7c0eb286819720ddda66520c0086efcc93fa47e45434fb0b345e51"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_135",
+          "original": "../wrist_reuse/meshes/gripper_flange_135.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_135.obj",
+          "sha256": "3d8002a44fbadb3509e036ac4cb04470672911255fa83d6ffb275c07989e3c0c"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_136",
+          "original": "../wrist_reuse/meshes/gripper_flange_136.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_136.obj",
+          "sha256": "8dde75e99642fd10ed1199ccdb3ee37df80c8a4564db50f46c5e0b915f217f2d"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_137",
+          "original": "../wrist_reuse/meshes/gripper_flange_137.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_137.obj",
+          "sha256": "0289f92e2bb4a24a6c4573044aa1020a09ea53f1ee038d3085469fe952b81467"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_138",
+          "original": "../wrist_reuse/meshes/gripper_flange_138.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_138.obj",
+          "sha256": "9ddde67f69bc5bee73ba5c3eb107e051e982878dc1c176cfff0e00742ce79e0c"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_139",
+          "original": "../wrist_reuse/meshes/gripper_flange_139.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_139.obj",
+          "sha256": "7e4c799a7d4bce998201087ffa3889ad30b3f4ad0f8f76b0505de515ef8c2669"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_140",
+          "original": "../wrist_reuse/meshes/gripper_flange_140.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_140.obj",
+          "sha256": "5282b853bf5c6b354122370d86a37d4dfa4c8fa040a0f5717ea3145a8bc27016"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_141",
+          "original": "../wrist_reuse/meshes/gripper_flange_141.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_141.obj",
+          "sha256": "3fccb58de3955ec9c0a059284565cca545e82b36b518c505ad831f09a4fe0037"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_142",
+          "original": "../wrist_reuse/meshes/gripper_flange_142.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_142.obj",
+          "sha256": "ff2180985bceefdd8485ee3faaec7ba4618f4657791b31cc2e6ae79f30a2c5bb"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_143",
+          "original": "../wrist_reuse/meshes/gripper_flange_143.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_143.obj",
+          "sha256": "55ba2c32388f3855bfe9c8b8866bde7b8610e402e5e37b440c2c9876c8c7382c"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_144",
+          "original": "../wrist_reuse/meshes/gripper_flange_144.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_144.obj",
+          "sha256": "a5f1f0e7bba6068b2b1e7b192d36c0e8a38ba8ed7c8f533c6bd795e9f52986b3"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_145",
+          "original": "../wrist_reuse/meshes/gripper_flange_145.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_145.obj",
+          "sha256": "c49475da5ecd58995c3514abcfc85b6089ccab2204d43be8abc7d492081fcf28"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_146",
+          "original": "../wrist_reuse/meshes/gripper_flange_146.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_146.obj",
+          "sha256": "801c89515d50e51a3b0e3fe84864b7410e0b07047dfbe934252c5e68f030b67d"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_147",
+          "original": "../wrist_reuse/meshes/gripper_flange_147.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_147.obj",
+          "sha256": "9c0c14482a42398f78c8d7c77faf0bcb4f3530cc8c9b51a84fb836795db35496"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_148",
+          "original": "../wrist_reuse/meshes/gripper_flange_148.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_148.obj",
+          "sha256": "99ea7655aa6c0f57a3a0ce1d771501d02c8d20a82151d5db5162c59aa8518a55"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_149",
+          "original": "../wrist_reuse/meshes/gripper_flange_149.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_149.obj",
+          "sha256": "de65d27ebc6bb395184e2f80cc89512ff84ca5f98fd739590e3ba89a5b2beb79"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_150",
+          "original": "../wrist_reuse/meshes/gripper_flange_150.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_150.obj",
+          "sha256": "c29e95584297d2c6ac470daf28974a660b792f068e2fb3b62f6a608f6a740807"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_151",
+          "original": "../wrist_reuse/meshes/gripper_flange_151.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_151.obj",
+          "sha256": "d208f999bdaa262fc9bdc2c46c19ad72a234fde1535759bea062f8a89376ebf0"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_152",
+          "original": "../wrist_reuse/meshes/gripper_flange_152.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_152.obj",
+          "sha256": "5e4c879034ec220bc9b05862b8bfb6b2e036442282087790028517e451dd3e30"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_153",
+          "original": "../wrist_reuse/meshes/gripper_flange_153.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_153.obj",
+          "sha256": "17941ff382466eca43c477a82e5fe9fe4a04db1d432390721772ee02f8be7078"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_154",
+          "original": "../wrist_reuse/meshes/gripper_flange_154.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_154.obj",
+          "sha256": "74bf711aa2ceae5de2b4990f9403f99ffcc2d9b077a171fea28d04ee2d688e99"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_155",
+          "original": "../wrist_reuse/meshes/gripper_flange_155.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_155.obj",
+          "sha256": "ce4843773aa26cb6253a50234b221e9cf5bffd119ba6b779c005016ce9258fec"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_156",
+          "original": "../wrist_reuse/meshes/gripper_flange_156.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_156.obj",
+          "sha256": "be20780453bb45173a88ff400be728ddcff2e7232e251d3fdd362d72f458a652"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_157",
+          "original": "../wrist_reuse/meshes/gripper_flange_157.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_157.obj",
+          "sha256": "4b3ce7f84d923873ce0c55d9205d1711ff0341b4a4160837b440dfe270ae90e2"
+        },
+        {
+          "asset": "robot0_wrist_reuse_gripper_flange_158",
+          "original": "../wrist_reuse/meshes/gripper_flange_158.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/wrist_reuse/meshes/gripper_flange_158.obj",
+          "sha256": "330ac319815573d146ff8b8ad05041702e027c6f2ea51804f4468ca0d01ee6ac"
+        },
+        {
+          "asset": "gripper0_finger22_local_00",
+          "original": "meshes/root.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/finger22_local/meshes/root.obj",
+          "sha256": "dd72c35fe31fb8d6553f3ea70b23a98c1673a868afde696a496d208066b940de"
+        },
+        {
+          "asset": "gripper0_finger22_local_01",
+          "original": "meshes/lower_waist.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/finger22_local/meshes/lower_waist.obj",
+          "sha256": "9b7f59eb6a18d22e1eee82115c686e3655aed6dd5da7e1e6a880f2844981c285"
+        },
+        {
+          "asset": "gripper0_finger22_local_02",
+          "original": "meshes/upper_waist.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/finger22_local/meshes/upper_waist.obj",
+          "sha256": "6639dd84429969ab14d155b75a9f9919bb17f156493f123e4556ba98f0003dfc"
+        },
+        {
+          "asset": "gripper0_finger22_local_03",
+          "original": "meshes/distal.obj",
+          "resolved": "/data_robot/verification/nero_dh116_right/examples/right_hand/candidates/finger22_local/meshes/distal.obj",
+          "sha256": "c33e769c2fdd97eda3c3204b392573062d2df857e997c8f34034f79f8dc97d45"
+        }
+      ]
+    }
+  }
+}

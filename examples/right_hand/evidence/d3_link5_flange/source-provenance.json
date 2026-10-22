@@ -1,0 +1,223 @@
+{
+  "scope": "Only supplied source surfaces; does not certify hardware CAD or watertight solids",
+  "inputs_sha256": {
+    "SOURCE_MANIFEST.json": "eaefa95a30b5e3a13802e74ff737a3fdf52c7ea8c4620c6afcbacae97bf9018d",
+    "URDF_SOURCES.json": "50ba51b039f52e4c5a4927aa1ace110c2dbc13846ba0ab0427579fbacd5cabf3",
+    "examples/right_hand/candidates/finger13_local/model.xml": "b27f4f86fbaeacd2bb925463f39f67181ef7db12963c4d9f7fc01797a7924d1b",
+    "examples/right_hand/evidence/d3_link5_flange/source_provenance.py": "404785902f0eb894c2568cc3ba559c5c7d27d5b91962d702c225c4ea6517884f",
+    "meshes/mount/robot0_original_urdf_visual_gripper_flange-adfe6fc7.obj": "adfe6fc7b74ac2a3bc253a86a7720b2612053a4e906cb9f5bb0141d246085ab7",
+    "meshes/nero/robot0_original_urdf_visual_link5-f1f9b607.obj": "f1f9b607289edef1db3d9b08443f4048607074bc96c20ab9f186884c0b10637a",
+    "meshes/nero/source/gripper_flange-186697a7.stl": "186697a73e7cafd9fd41d96f1eea9b34b444c058b9561fb2e3ea439c835ae2e8",
+    "meshes/nero/source/gripper_flange-58e5a5fd.dae": "58e5a5fd582a6a9bda58fe3946cf8b7c3994e19ff4c1c1a75f61677f797fff42",
+    "meshes/nero/source/link5-7733ac4a.dae": "7733ac4afd30e38360e7a7e833b0ed6192d6fd20c99062b636a236f06b8bfb97",
+    "meshes/nero/source/link5-dc497f5a.stl": "dc497f5a9bab2d0d314250134d4ec86617abea7205d122db41b765acdb86ae7e",
+    "urdf/nero_plus_manufacturer_flange.urdf": "4457f9c24b072ca26afd9c366e280bd2b18b757a7e4131b00f208056cd5e6cd4"
+  },
+  "links": {
+    "link5": {
+      "urdf_origin": {
+        "visual": {
+          "xyz": "0 0 0",
+          "rpy": "0 0 0"
+        },
+        "collision": {
+          "xyz": "0 0 0",
+          "rpy": "0 0 0"
+        }
+      },
+      "visual_geom": {
+        "name": "robot0_original_urdf_visual_link5",
+        "type": "mesh",
+        "mesh": "robot0_original_urdf_visual_link5",
+        "material": "robot0_original_urdf_visual_link5_material",
+        "group": "1",
+        "contype": "0",
+        "conaffinity": "0",
+        "density": "0",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0"
+      },
+      "mesh_scale": "1 1 1",
+      "source_visual": "meshes/nero/source/link5-7733ac4a.dae",
+      "source_collision": "meshes/nero/source/link5-dc497f5a.stl",
+      "delivered_visual": "meshes/nero/robot0_original_urdf_visual_link5-f1f9b607.obj",
+      "source_DAE": {
+        "unit_meter": 1.0,
+        "up_axis": "Z_UP",
+        "instances": [
+          {
+            "geometry": "Link5_008-mesh",
+            "matrix_rows": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "geometry": "Link5_001-mesh",
+            "matrix_rows": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          }
+        ]
+      },
+      "DAE_to_OBJ": {
+        "triangle_counts": [
+          36200,
+          36200
+        ],
+        "directional_max_triangle_bound_m": [
+          7.617092374660056e-09,
+          7.617092374660056e-09
+        ],
+        "symmetric_surface_deviation_upper_bound_m": 7.617092374660056e-09,
+        "method": "Full triangle coverage with actual matched triangle vertex-set distance; no mesh sampling or geometry modification"
+      },
+      "STL_to_OBJ": {
+        "triangle_counts": [
+          36200,
+          36200
+        ],
+        "directional_max_triangle_bound_m": [
+          1.46771237388938e-07,
+          1.46771237388938e-07
+        ],
+        "symmetric_surface_deviation_upper_bound_m": 1.46771237388938e-07,
+        "method": "Full triangle coverage with actual matched triangle vertex-set distance; no mesh sampling or geometry modification"
+      }
+    },
+    "gripper_flange": {
+      "urdf_origin": {
+        "visual": {
+          "rpy": "0 0 0",
+          "xyz": "0 0 0"
+        },
+        "collision": {
+          "rpy": "0 0 0",
+          "xyz": "0 0 0"
+        }
+      },
+      "visual_geom": {
+        "name": "robot0_original_urdf_visual_gripper_flange",
+        "type": "mesh",
+        "mesh": "robot0_original_urdf_visual_gripper_flange",
+        "material": "robot0_original_urdf_visual_gripper_flange_material",
+        "group": "1",
+        "contype": "0",
+        "conaffinity": "0",
+        "density": "0",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0"
+      },
+      "mesh_scale": "1 1 1",
+      "source_visual": "meshes/nero/source/gripper_flange-58e5a5fd.dae",
+      "source_collision": "meshes/nero/source/gripper_flange-186697a7.stl",
+      "delivered_visual": "meshes/mount/robot0_original_urdf_visual_gripper_flange-adfe6fc7.obj",
+      "source_DAE": {
+        "unit_meter": 1.0,
+        "up_axis": "Z_UP",
+        "instances": [
+          {
+            "geometry": "gripper_003-mesh",
+            "matrix_rows": [
+              [
+                7.54969e-11,
+                0.000999987,
+                0.0,
+                0.0
+              ],
+              [
+                -0.000999987,
+                7.54969e-11,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.000999987,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          }
+        ]
+      },
+      "DAE_to_OBJ": {
+        "triangle_counts": [
+          13302,
+          13302
+        ],
+        "directional_max_triangle_bound_m": [
+          4.361680795740819e-09,
+          4.361680795740819e-09
+        ],
+        "symmetric_surface_deviation_upper_bound_m": 4.361680795740819e-09,
+        "method": "Full triangle coverage with actual matched triangle vertex-set distance; no mesh sampling or geometry modification"
+      },
+      "STL_to_OBJ": {
+        "triangle_counts": [
+          13302,
+          13302
+        ],
+        "directional_max_triangle_bound_m": [
+          8.535712389193177e-09,
+          8.535712389193177e-09
+        ],
+        "symmetric_surface_deviation_upper_bound_m": 8.535712389193177e-09,
+        "method": "Full triangle coverage with actual matched triangle vertex-set distance; no mesh sampling or geometry modification"
+      }
+    }
+  },
+  "new_physics_steps": 0,
+  "simulator_imports": 0
+}

@@ -1,0 +1,130 @@
+{
+  "candidate_vertices_checked": 40,
+  "source_vertex_index": 22136,
+  "minimum_initial_collision_distance_m": 0.0006700757124331602,
+  "source_vertices_available": 179042,
+  "candidate_order": "stable descending world-z; model geom order then compiled source vertex order breaks ties",
+  "rejection_counts_by_geom": {
+    "robot0_candidate_nero_link5_4": 12,
+    "gripper0_base_link_collision_0": 27
+  },
+  "rejected_candidate_examples": [
+    {
+      "candidate_ordinal": 1,
+      "geom": "robot0_candidate_nero_link5_4",
+      "distance_m": -0.006227317713270564,
+      "sphere_center_world_m": [
+        -0.12235433091979467,
+        0.2350681025895563,
+        1.1844182315106297
+      ]
+    },
+    {
+      "candidate_ordinal": 2,
+      "geom": "robot0_candidate_nero_link5_4",
+      "distance_m": -0.006154330591405799,
+      "sphere_center_world_m": [
+        -0.12227858357414337,
+        0.23513239075679632,
+        1.1844182021617031
+      ]
+    },
+    {
+      "candidate_ordinal": 3,
+      "geom": "robot0_candidate_nero_link5_4",
+      "distance_m": -0.003593547187819457,
+      "sphere_center_world_m": [
+        -0.11951403945168823,
+        0.23767200264702867,
+        1.1841526081638298
+      ]
+    },
+    {
+      "candidate_ordinal": 4,
+      "geom": "robot0_candidate_nero_link5_4",
+      "distance_m": -0.0091796587517603,
+      "sphere_center_world_m": [
+        -0.12538954292845975,
+        0.2326956232034461,
+        1.1841408748397444
+      ]
+    },
+    {
+      "candidate_ordinal": 5,
+      "geom": "robot0_candidate_nero_link5_4",
+      "distance_m": -0.0012508066809282514,
+      "sphere_center_world_m": [
+        -0.11694222462748494,
+        0.24043987228776142,
+        1.18335088738866
+      ]
+    },
+    {
+      "candidate_ordinal": 6,
+      "geom": "robot0_candidate_nero_link5_4",
+      "distance_m": -0.012413345514861174,
+      "sphere_center_world_m": [
+        -0.12854106313026864,
+        0.2306160054684615,
+        1.1833277275499754
+      ]
+    },
+    {
+      "candidate_ordinal": 7,
+      "geom": "robot0_candidate_nero_link5_4",
+      "distance_m": -0.005062062523217614,
+      "sphere_center_world_m": [
+        -0.12065892489494226,
+        0.23306981297289006,
+        1.1829579487488375
+      ]
+    },
+    {
+      "candidate_ordinal": 8,
+      "geom": "robot0_candidate_nero_link5_4",
+      "distance_m": -0.005500643450258469,
+      "sphere_center_world_m": [
+        -0.1211355808624807,
+        0.2326712334892829,
+        1.1829499739755873
+      ]
+    },
+    {
+      "candidate_ordinal": 9,
+      "geom": "gripper0_base_link_collision_0",
+      "distance_m": -0.004085477777833857,
+      "sphere_center_world_m": [
+        -0.10728184379445346,
+        0.21383041100425848,
+        1.1828742034119784
+      ]
+    },
+    {
+      "candidate_ordinal": 10,
+      "geom": "gripper0_base_link_collision_0",
+      "distance_m": -0.005377751856600943,
+      "sphere_center_world_m": [
+        -0.10890803615012114,
+        0.21729553066183893,
+        1.1828114330933102
+      ]
+    }
+  ],
+  "source_geom": "gripper0_base_link_visual_0",
+  "source_body": "gripper0_base_link",
+  "source_mesh": "gripper0_base_link",
+  "source_surface_vertex_world_m": [
+    -0.09967332680607557,
+    0.2067575100579618,
+    1.1750350604446842
+  ],
+  "sphere_center_world_m": [
+    -0.09967332680607557,
+    0.2067575100579618,
+    1.182035060444684
+  ],
+  "sphere_radius_m": 0.006,
+  "initial_contacts": [],
+  "initial_robot_overlap_m": 0.0,
+  "placement_limitations": "Mesh vertex lies on the source surface; physical mesh contact uses its convex hull. No collision filter is added."
+}

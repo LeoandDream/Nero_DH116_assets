@@ -1,0 +1,585 @@
+{
+  "schema": "right-bowl78-independent-final-runner-static-v1",
+  "runner_sha256": "41d248f10867a946f214e7681d4575f9943c2502573f7f58ce371d14a15f9dab",
+  "adapter_sha256": "e698a563491269e76cbe5269294cee3a585ddee44b1b3cbe4e115ac059e3ab37",
+  "helper_sha256": "f4b931bc76b5f7e4cd55160ad99f8cd9f964e9fbb0536cff85ae319d10bbf7a9",
+  "syntax_compile": true,
+  "candidate_self_robot_audit": {
+    "passed": true,
+    "fields_checked": 4083,
+    "differences": []
+  },
+  "all_78_candidate_geom_mesh_bindings_bytes_contact_templates_exact": true,
+  "mesh_inventory": [
+    {
+      "geom": "gripper0_proxy76_base_link_00",
+      "mesh": "gripper0_proxy76_base_link_00",
+      "file": "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_00.obj",
+      "sha256": "e478a799f59b9cfaee804a539ce2dd6be6e92787247bc33fba13d00e4b42c7ce"
+    },
+    {
+      "geom": "gripper0_proxy76_base_link_01",
+      "mesh": "gripper0_proxy76_base_link_01",
+      "file": "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_01.obj",
+      "sha256": "cb55e62f2f41a9110da46f5bacbf1f8c8dcfa9563cf35fc48b37194d73ebd6b3"
+    },
+    {
+      "geom": "gripper0_proxy76_base_link_02",
+      "mesh": "gripper0_proxy76_base_link_02",
+      "file": "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_02.obj",
+      "sha256": "1c09c54ad030db088a97b58a39e277b5d3be66f3202db25e98c6f3c67e7b6ee4"
+    },
+    {
+      "geom": "gripper0_proxy76_base_link_03",
+      "mesh": "gripper0_proxy76_base_link_03",
+      "file": "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_03.obj",
+      "sha256": "871033d55369543004f2ce77ec077d545eb1d02bd9a63608316976c5a7d52e0b"
+    },
+    {
+      "geom": "gripper0_proxy76_base_link_04",
+      "mesh": "gripper0_proxy76_base_link_04",
+      "file": "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_04.obj",
+      "sha256": "47fcfc5572ceed26c408a219cecb99ed111829f652d54124865de050e9a2df9a"
+    },
+    {
+      "geom": "gripper0_proxy76_base_link_05",
+      "mesh": "gripper0_proxy76_base_link_05",
+      "file": "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_05.obj",
+      "sha256": "8aaae9e5736c04e3615916958be9c0e6efc3bb1b493e99951492f769397f5991"
+    },
+    {
+      "geom": "gripper0_proxy76_base_link_06",
+      "mesh": "gripper0_proxy76_base_link_06",
+      "file": "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_06.obj",
+      "sha256": "ed60d794870bac2874bf566dfac9785725aea78ca04e7ba21846a0e133dba7ef"
+    },
+    {
+      "geom": "gripper0_proxy76_base_link_07",
+      "mesh": "gripper0_proxy76_base_link_07",
+      "file": "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_07.obj",
+      "sha256": "73bd010189e969c220e6c7c42a96ce3c1e560b08769f9d408780433e3d8630b5"
+    },
+    {
+      "geom": "gripper0_proxy76_base_link_08",
+      "mesh": "gripper0_proxy76_base_link_08",
+      "file": "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_08.obj",
+      "sha256": "a7d08ea7416a0832b78335aa479fcc380f5fb676068af529535c6fe2a4b79cba"
+    },
+    {
+      "geom": "gripper0_proxy76_base_link_09",
+      "mesh": "gripper0_proxy76_base_link_09",
+      "file": "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_09.obj",
+      "sha256": "e8c753c9b514ff3c02c37ff75c3e70c51e43e34400d1df05b6554320786b5d75"
+    },
+    {
+      "geom": "gripper0_proxy76_finger11_link_00",
+      "mesh": "gripper0_proxy76_finger11_link_00",
+      "file": "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger11_link_00.obj",
+      "sha256": "d24e4759bde556f178b3d14b78865650f676d95dc3b23dcd61738a7a2c52fcab"
+    },
+    {
+      "geom": "gripper0_proxy76_finger12_link_00",
+      "mesh": "gripper0_proxy76_finger12_link_00",
+      "file": "meshes/dh116/gripper0_proxy_finger12_link_0-2a6bdf00.obj",
+      "sha256": "2a6bdf00ae7c1ea87a8b35cfa5755ea112dda7b5b180813e69ab552ce4d52aee"
+    },
+    {
+      "geom": "gripper0_proxy76_finger12_link_01",
+      "mesh": "gripper0_proxy76_finger12_link_01",
+      "file": "meshes/dh116/gripper0_proxy_finger12_link_1-74d9a1f6.obj",
+      "sha256": "74d9a1f6088dfd3ba6ce894762c8f63cd3fd5e6f3ba3badafc7475294f80ca72"
+    },
+    {
+      "geom": "gripper0_proxy76_finger12_link_02",
+      "mesh": "gripper0_proxy76_finger12_link_02",
+      "file": "meshes/dh116/gripper0_proxy_finger12_link_2-9be8c86a.obj",
+      "sha256": "9be8c86a32a28eb6cfccfc0d4ce3c0ce3f1e65615350517f8fb624f6334ab118"
+    },
+    {
+      "geom": "gripper0_proxy76_finger12_link_03",
+      "mesh": "gripper0_proxy76_finger12_link_03",
+      "file": "meshes/dh116/gripper0_proxy_finger12_link_3-a648891e.obj",
+      "sha256": "a648891e9b0097a5dc6df5f44a54a4fcbc4b522baeb915df66ebf96b0c653908"
+    },
+    {
+      "geom": "gripper0_proxy76_finger12_link_04",
+      "mesh": "gripper0_proxy76_finger12_link_04",
+      "file": "meshes/dh116/gripper0_proxy_finger12_link_4-c3d2e735.obj",
+      "sha256": "c3d2e735fe8c007812868afe5a413c2f85fb616d8af43bf208c82c441ba33792"
+    },
+    {
+      "geom": "gripper0_proxy76_finger12_link_05",
+      "mesh": "gripper0_proxy76_finger12_link_05",
+      "file": "meshes/dh116/gripper0_proxy_finger12_link_5-b8ec84e4.obj",
+      "sha256": "b8ec84e411668e9739fd702f45376b5bec5972e6f3ae334c9f789714696f4134"
+    },
+    {
+      "geom": "gripper0_proxy76_finger12_link_06",
+      "mesh": "gripper0_proxy76_finger12_link_06",
+      "file": "meshes/dh116/gripper0_proxy_finger12_link_6-6e9a388e.obj",
+      "sha256": "6e9a388e036622b035a0c6c3a57a7c59f1128444e6aff3ea15eee700a8cdd197"
+    },
+    {
+      "geom": "gripper0_proxy76_finger12_link_07",
+      "mesh": "gripper0_proxy76_finger12_link_07",
+      "file": "meshes/dh116/gripper0_proxy_finger12_link_7-3748cad4.obj",
+      "sha256": "3748cad4e9e316b359b5586674afbf3722ade675c9e240b95ea32cbd2ef1d918"
+    },
+    {
+      "geom": "gripper0_proxy76_finger14_link_00",
+      "mesh": "gripper0_proxy76_finger14_link_00",
+      "file": "meshes/dh116/gripper0_moderate_finger14_link_0-2b2ddda5.obj",
+      "sha256": "2b2ddda55ee186117724461d4e1eb7fb257d191676319114d69fd76026ceacaf"
+    },
+    {
+      "geom": "gripper0_proxy76_finger14_link_01",
+      "mesh": "gripper0_proxy76_finger14_link_01",
+      "file": "meshes/dh116/gripper0_moderate_finger14_link_1-0e2d6afb.obj",
+      "sha256": "0e2d6afbd4e4a20a7f7aa039ee80776a89f39f304eccaa1ea9a322937f6c73db"
+    },
+    {
+      "geom": "gripper0_proxy76_finger14_link_02",
+      "mesh": "gripper0_proxy76_finger14_link_02",
+      "file": "meshes/dh116/gripper0_moderate_finger14_link_2-a71fa24f.obj",
+      "sha256": "a71fa24ff8b93d0fad952ff2bfb8d85418fa7318b3552c626204b6675956c09b"
+    },
+    {
+      "geom": "gripper0_proxy76_finger14_link_03",
+      "mesh": "gripper0_proxy76_finger14_link_03",
+      "file": "meshes/dh116/gripper0_moderate_finger14_link_3-31cf7b29.obj",
+      "sha256": "31cf7b299a871be62338a48441ffff1c40de9443b08c1a66d0e0ac2c70d7e6ce"
+    },
+    {
+      "geom": "gripper0_proxy76_finger14_link_04",
+      "mesh": "gripper0_proxy76_finger14_link_04",
+      "file": "meshes/dh116/gripper0_moderate_finger14_link_4-c49b43ef.obj",
+      "sha256": "c49b43efea1ab9054834dc733b62109f71f3101e8573838fac412acfabf8b0ba"
+    },
+    {
+      "geom": "gripper0_proxy76_finger14_link_05",
+      "mesh": "gripper0_proxy76_finger14_link_05",
+      "file": "meshes/dh116/gripper0_moderate_finger14_link_5-c3a6773e.obj",
+      "sha256": "c3a6773e2340e69330c2de30484b3a473aca0a23b18074ca53a75911028ddf37"
+    },
+    {
+      "geom": "gripper0_proxy76_finger14_link_06",
+      "mesh": "gripper0_proxy76_finger14_link_06",
+      "file": "meshes/dh116/gripper0_moderate_finger14_link_6-1d98430c.obj",
+      "sha256": "1d98430c1c8b92e1b2e6a308a347fde69723d62ff68ee5f454bbca567ad44f14"
+    },
+    {
+      "geom": "gripper0_proxy76_finger14_link_07",
+      "mesh": "gripper0_proxy76_finger14_link_07",
+      "file": "meshes/dh116/gripper0_moderate_finger14_link_7-14d2570c.obj",
+      "sha256": "14d2570c3750dd1305b4c737cc449486ad0f2d5e67df99e6013088abc7e7430d"
+    },
+    {
+      "geom": "gripper0_proxy76_finger14_link_08",
+      "mesh": "gripper0_proxy76_finger14_link_08",
+      "file": "meshes/dh116/gripper0_moderate_finger14_link_8-fb373efd.obj",
+      "sha256": "fb373efd00b5bb56164851d7cbf74a85a8f4fa1252368c69a7b2e4a1770f3531"
+    },
+    {
+      "geom": "gripper0_proxy76_finger14_link_09",
+      "mesh": "gripper0_proxy76_finger14_link_09",
+      "file": "meshes/dh116/gripper0_moderate_finger14_link_9-d3124adb.obj",
+      "sha256": "d3124adbea53e6fb6a27b1a62f60ae3f0fd7459fd6679049637a41cc0c226844"
+    },
+    {
+      "geom": "gripper0_proxy76_finger14_link_10",
+      "mesh": "gripper0_proxy76_finger14_link_10",
+      "file": "meshes/dh116/gripper0_moderate_finger14_link_10-21c826aa.obj",
+      "sha256": "21c826aa07ef02987385785adc8b44235834cb9c4242e62a952ea89d1b4d22ca"
+    },
+    {
+      "geom": "gripper0_proxy76_finger14_link_11",
+      "mesh": "gripper0_proxy76_finger14_link_11",
+      "file": "meshes/dh116/gripper0_moderate_finger14_link_11-168acc8b.obj",
+      "sha256": "168acc8b6dd10290b92679dabf02f9d295c30317cecc7a3e1163386cc241f9bf"
+    },
+    {
+      "geom": "gripper0_proxy76_finger21_link_00",
+      "mesh": "gripper0_proxy76_finger21_link_00",
+      "file": "meshes/dh116/gripper0_finger21_link-1bb8e6bd.stl",
+      "sha256": "1bb8e6bd2d50d1b07c7077610fade1c71dd0923d8025f1589e3f904c856f28c1"
+    },
+    {
+      "geom": "gripper0_proxy76_finger22_link_00",
+      "mesh": "gripper0_proxy76_finger22_link_00",
+      "file": "meshes/dh116/gripper0_finger22_link-53c55c84.stl",
+      "sha256": "53c55c846f481d90248332d5a87319d11e0d96f0fb8cbb35717cc9ac9745f5e5"
+    },
+    {
+      "geom": "gripper0_proxy76_finger23_link_00",
+      "mesh": "gripper0_proxy76_finger23_link_00",
+      "file": "meshes/dh116/gripper0_moderate_finger23_link_0-a6cc5f75.obj",
+      "sha256": "a6cc5f7500f773f248fe89c64bbad9f86a99f3419e1b8f655997030c1d269d4d"
+    },
+    {
+      "geom": "gripper0_proxy76_finger23_link_01",
+      "mesh": "gripper0_proxy76_finger23_link_01",
+      "file": "meshes/dh116/gripper0_moderate_finger23_link_1-c8663aa9.obj",
+      "sha256": "c8663aa97fb9936608d4365a4662bd5a9279d9958238f9334738ce88751b2e72"
+    },
+    {
+      "geom": "gripper0_proxy76_finger23_link_02",
+      "mesh": "gripper0_proxy76_finger23_link_02",
+      "file": "meshes/dh116/gripper0_moderate_finger23_link_2-7cc9be61.obj",
+      "sha256": "7cc9be61c42363c904859ffc3f741df9e9d80761805b9fa41333e8510ee39331"
+    },
+    {
+      "geom": "gripper0_proxy76_finger23_link_03",
+      "mesh": "gripper0_proxy76_finger23_link_03",
+      "file": "meshes/dh116/gripper0_moderate_finger23_link_3-2f7c98b4.obj",
+      "sha256": "2f7c98b43d1da8bb87c0b1b9840b9942f8df6f7cb6a07b8bf3aae0a8f943ec91"
+    },
+    {
+      "geom": "gripper0_proxy76_finger23_link_04",
+      "mesh": "gripper0_proxy76_finger23_link_04",
+      "file": "meshes/dh116/gripper0_moderate_finger23_link_4-bab546af.obj",
+      "sha256": "bab546afe4a240ed41c8a82c9e7d57d175b91854aef912fadbac9e210734bfc0"
+    },
+    {
+      "geom": "gripper0_proxy76_finger23_link_05",
+      "mesh": "gripper0_proxy76_finger23_link_05",
+      "file": "meshes/dh116/gripper0_moderate_finger23_link_5-5d047287.obj",
+      "sha256": "5d047287b86fb6832c2efdcb4f5fb755ded0b63dc28f1aa4fac5b223bca24178"
+    },
+    {
+      "geom": "gripper0_proxy76_finger23_link_06",
+      "mesh": "gripper0_proxy76_finger23_link_06",
+      "file": "meshes/dh116/gripper0_moderate_finger23_link_6-a018289e.obj",
+      "sha256": "a018289e8a36f72a3ae897d377677fe7ff2721dc2e88d63ddb0118daa3ab78e2"
+    },
+    {
+      "geom": "gripper0_proxy76_finger23_link_07",
+      "mesh": "gripper0_proxy76_finger23_link_07",
+      "file": "meshes/dh116/gripper0_moderate_finger23_link_7-de354fdf.obj",
+      "sha256": "de354fdf0bea4434032984db408d004804363dc49bbbf36b8bbcc93e1a930ddd"
+    },
+    {
+      "geom": "gripper0_proxy76_finger23_link_08",
+      "mesh": "gripper0_proxy76_finger23_link_08",
+      "file": "meshes/dh116/gripper0_moderate_finger23_link_8-9174795a.obj",
+      "sha256": "9174795ac15a8735c73a8cf39c09bc793a2b67585a0d982f09f7b8a5f7b1880b"
+    },
+    {
+      "geom": "gripper0_proxy76_finger23_link_09",
+      "mesh": "gripper0_proxy76_finger23_link_09",
+      "file": "meshes/dh116/gripper0_moderate_finger23_link_9-1cc04f8d.obj",
+      "sha256": "1cc04f8dd6803c05636a655c1fd77960a319be6903fa01bf7b5e94662d89b132"
+    },
+    {
+      "geom": "gripper0_proxy76_finger23_link_10",
+      "mesh": "gripper0_proxy76_finger23_link_10",
+      "file": "meshes/dh116/gripper0_moderate_finger23_link_10-251c3834.obj",
+      "sha256": "251c38347bbcf580d96dd7ece9aeab16195b08f3a7225da3022a42043d11162d"
+    },
+    {
+      "geom": "gripper0_proxy76_finger23_link_11",
+      "mesh": "gripper0_proxy76_finger23_link_11",
+      "file": "meshes/dh116/gripper0_moderate_finger23_link_11-fad1ae11.obj",
+      "sha256": "fad1ae11d1b703d56b111df28d2d4b171c86572c706a5990cd07fb59819671cb"
+    },
+    {
+      "geom": "gripper0_proxy76_finger31_link_00",
+      "mesh": "gripper0_proxy76_finger31_link_00",
+      "file": "meshes/dh116/gripper0_finger31_link-7e3176cd.stl",
+      "sha256": "7e3176cd95983c3e84369fe1639f65dcab86d54cd49ca3ed8612807ba3bc7358"
+    },
+    {
+      "geom": "gripper0_proxy76_finger32_link_00",
+      "mesh": "gripper0_proxy76_finger32_link_00",
+      "file": "meshes/dh116/gripper0_finger32_link-68b0442e.stl",
+      "sha256": "68b0442e8c8e3e0e8e94ef55596378b85556bda1959c64debbdd48d21b3af931"
+    },
+    {
+      "geom": "gripper0_proxy76_finger33_link_00",
+      "mesh": "gripper0_proxy76_finger33_link_00",
+      "file": "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_00.obj",
+      "sha256": "bb8d774edfe13bfeda53fbe690f5b67aba6515b1201de4c97d36ab458170fee6"
+    },
+    {
+      "geom": "gripper0_proxy76_finger33_link_01",
+      "mesh": "gripper0_proxy76_finger33_link_01",
+      "file": "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_01.obj",
+      "sha256": "8d2193c48155f8c2ce14b354b5992b6a7a25bbf14dba7198f5fc41153c518ad8"
+    },
+    {
+      "geom": "gripper0_proxy76_finger33_link_02",
+      "mesh": "gripper0_proxy76_finger33_link_02",
+      "file": "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_02.obj",
+      "sha256": "fe85046941dade3036a32bd01199d3a034817ce7ae312a9f9d43d154911f9254"
+    },
+    {
+      "geom": "gripper0_proxy76_finger33_link_03",
+      "mesh": "gripper0_proxy76_finger33_link_03",
+      "file": "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_03.obj",
+      "sha256": "0fe33a743ec8f5536175048ba395f0a4961811b29e50c27273de7c8a45bb3d69"
+    },
+    {
+      "geom": "gripper0_proxy76_finger33_link_04",
+      "mesh": "gripper0_proxy76_finger33_link_04",
+      "file": "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_04.obj",
+      "sha256": "e4f67bf071ec777def71b6435d91e61fcb0919f2b120af6798c01fb44cf84cc8"
+    },
+    {
+      "geom": "gripper0_proxy76_finger33_link_05",
+      "mesh": "gripper0_proxy76_finger33_link_05",
+      "file": "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_05.obj",
+      "sha256": "36a4988a972a7c47dee3ae2c325b8f75289158f297d71953b815971d6bfebde4"
+    },
+    {
+      "geom": "gripper0_proxy76_finger33_link_06",
+      "mesh": "gripper0_proxy76_finger33_link_06",
+      "file": "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_06.obj",
+      "sha256": "6baf13adbc8b82e2b69a18a1a4a24a5d8b65cf7216f6e97128959de0c17be50b"
+    },
+    {
+      "geom": "gripper0_proxy76_finger33_link_07",
+      "mesh": "gripper0_proxy76_finger33_link_07",
+      "file": "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_07.obj",
+      "sha256": "c1980f7eb8f9e7a0cb9f15a597f0e66ef312d8a9524e29d8e62e747b98ab6dde"
+    },
+    {
+      "geom": "gripper0_proxy76_finger41_link_00",
+      "mesh": "gripper0_proxy76_finger41_link_00",
+      "file": "meshes/dh116/gripper0_finger41_link-5f1647a2.stl",
+      "sha256": "5f1647a233765270e256bf1cb1deeca0ac29ad4241e2a8e95477756885b73857"
+    },
+    {
+      "geom": "gripper0_proxy76_finger42_link_00",
+      "mesh": "gripper0_proxy76_finger42_link_00",
+      "file": "meshes/dh116/gripper0_finger42_link-15a9090c.stl",
+      "sha256": "15a9090c995e1f29ab0bb4b0a4ede7a4f60f1d0e0bf809c3ada86c53d0b66bed"
+    },
+    {
+      "geom": "gripper0_proxy76_finger43_link_00",
+      "mesh": "gripper0_proxy76_finger43_link_00",
+      "file": "meshes/dh116/gripper0_proxy_finger43_link_0-95b4cbb3.obj",
+      "sha256": "95b4cbb315cc1667311de693dcee6a7456ba742561ca01ff551958d4e519348b"
+    },
+    {
+      "geom": "gripper0_proxy76_finger43_link_01",
+      "mesh": "gripper0_proxy76_finger43_link_01",
+      "file": "meshes/dh116/gripper0_proxy_finger43_link_1-07a65f22.obj",
+      "sha256": "07a65f222145a2d805b53d22a5398b5b7ad94202af938f94b640f73ed1cdf183"
+    },
+    {
+      "geom": "gripper0_proxy76_finger43_link_02",
+      "mesh": "gripper0_proxy76_finger43_link_02",
+      "file": "meshes/dh116/gripper0_proxy_finger43_link_2-aab293f6.obj",
+      "sha256": "aab293f640735836c5ac0c594282d0bbbf8fc41a8eaa13bf6f1f1f1ba864c576"
+    },
+    {
+      "geom": "gripper0_proxy76_finger43_link_03",
+      "mesh": "gripper0_proxy76_finger43_link_03",
+      "file": "meshes/dh116/gripper0_proxy_finger43_link_3-f7eab61f.obj",
+      "sha256": "f7eab61f906cb36cd1063faad73822c846107bc6f174c4742b409375f5b04f63"
+    },
+    {
+      "geom": "gripper0_proxy76_finger43_link_04",
+      "mesh": "gripper0_proxy76_finger43_link_04",
+      "file": "meshes/dh116/gripper0_proxy_finger43_link_4-78532cbf.obj",
+      "sha256": "78532cbfb13ff856554cd396d2e5573beb69fe8b4d675ea7f669643dde8f7dd7"
+    },
+    {
+      "geom": "gripper0_proxy76_finger43_link_05",
+      "mesh": "gripper0_proxy76_finger43_link_05",
+      "file": "meshes/dh116/gripper0_proxy_finger43_link_5-13af1468.obj",
+      "sha256": "13af146867ef84f7051e45a515347bd29deff7ea5c8f0c15b100fbfe4a9b3cd7"
+    },
+    {
+      "geom": "gripper0_proxy76_finger43_link_06",
+      "mesh": "gripper0_proxy76_finger43_link_06",
+      "file": "meshes/dh116/gripper0_proxy_finger43_link_6-2a3fbea9.obj",
+      "sha256": "2a3fbea961a56cc9bfd5384d661e6c0957601ee07999f02d9b642b252463176c"
+    },
+    {
+      "geom": "gripper0_proxy76_finger43_link_07",
+      "mesh": "gripper0_proxy76_finger43_link_07",
+      "file": "meshes/dh116/gripper0_proxy_finger43_link_7-d800f7ad.obj",
+      "sha256": "d800f7adae660e6ceb80e34b8a7e33ba3dcfb60afc357baf4818265705f7d0b2"
+    },
+    {
+      "geom": "gripper0_proxy76_finger51_link_00",
+      "mesh": "gripper0_proxy76_finger51_link_00",
+      "file": "meshes/dh116/gripper0_finger51_link-dfabcfce.stl",
+      "sha256": "dfabcfce1fc923cc0745a2df5ec07efc657506c7ad50b8e883de7fc996ce9f59"
+    },
+    {
+      "geom": "gripper0_proxy76_finger52_link_00",
+      "mesh": "gripper0_proxy76_finger52_link_00",
+      "file": "meshes/dh116/gripper0_finger52_link-acf84396.stl",
+      "sha256": "acf84396741cf2d5fa50ad3a25e9ca4fdb0947387cb39c2697951761a5f7d22c"
+    },
+    {
+      "geom": "gripper0_proxy76_finger53_link_00",
+      "mesh": "gripper0_proxy76_finger53_link_00",
+      "file": "meshes/dh116/gripper0_proxy_finger53_link_0-f66430b1.obj",
+      "sha256": "f66430b17c3b0ee5d63cb097877e7d8faa12153df6725cb7ad9383607c09bb0a"
+    },
+    {
+      "geom": "gripper0_proxy76_finger53_link_01",
+      "mesh": "gripper0_proxy76_finger53_link_01",
+      "file": "meshes/dh116/gripper0_proxy_finger53_link_1-fce5027c.obj",
+      "sha256": "fce5027c124ece9666bc17a88a364dd24dd79e5ae6fb0c4bdfe8169e0ad0b8dc"
+    },
+    {
+      "geom": "gripper0_proxy76_finger53_link_02",
+      "mesh": "gripper0_proxy76_finger53_link_02",
+      "file": "meshes/dh116/gripper0_proxy_finger53_link_2-dd7921f7.obj",
+      "sha256": "dd7921f79cbac6ac32ea9142d4fa4c76df1dd885c47004aaeb4fca67327152b5"
+    },
+    {
+      "geom": "gripper0_proxy76_finger53_link_03",
+      "mesh": "gripper0_proxy76_finger53_link_03",
+      "file": "meshes/dh116/gripper0_proxy_finger53_link_3-49e71c08.obj",
+      "sha256": "49e71c0816ce5464fd8afe99b68e292cd88549525e9986adf9c3c1b53edae3d6"
+    },
+    {
+      "geom": "gripper0_proxy76_finger53_link_04",
+      "mesh": "gripper0_proxy76_finger53_link_04",
+      "file": "meshes/dh116/gripper0_proxy_finger53_link_4-84f78255.obj",
+      "sha256": "84f782558f32c9ea8067922918c95c221e617026a4e7a0d752d84b0ff828c007"
+    },
+    {
+      "geom": "gripper0_proxy76_finger53_link_05",
+      "mesh": "gripper0_proxy76_finger53_link_05",
+      "file": "meshes/dh116/gripper0_proxy_finger53_link_5-3134737f.obj",
+      "sha256": "3134737f88f7b977c10b8835d0f0b8ea8d1b0d90a91c9a862fffc5cd05930704"
+    },
+    {
+      "geom": "gripper0_proxy76_finger53_link_06",
+      "mesh": "gripper0_proxy76_finger53_link_06",
+      "file": "meshes/dh116/gripper0_proxy_finger53_link_6-8a45b6d5.obj",
+      "sha256": "8a45b6d5929a3338e58b416f7dbab7e43de69a2697206dbdc9eb48928e14b330"
+    },
+    {
+      "geom": "gripper0_proxy76_finger53_link_07",
+      "mesh": "gripper0_proxy76_finger53_link_07",
+      "file": "meshes/dh116/gripper0_proxy_finger53_link_7-8015cab7.obj",
+      "sha256": "8015cab75b38d79aa5d59486a2b6d68198e96fbfb4a892a86ee8d334ffd817f1"
+    },
+    {
+      "geom": "gripper0_finger13_local_00",
+      "mesh": "gripper0_finger13_local_00",
+      "file": "examples/right_hand/candidates/finger13_local/meshes/negative_wing.obj",
+      "sha256": "a4621dd53571679a9056c58762e80602d03131c098daa0a3716349b651efa838"
+    },
+    {
+      "geom": "gripper0_finger13_local_01",
+      "mesh": "gripper0_finger13_local_01",
+      "file": "examples/right_hand/candidates/finger13_local/meshes/central.obj",
+      "sha256": "8c20a825d74245599088b8c5d3a0130297883847185e2336850dd0157019db97"
+    },
+    {
+      "geom": "gripper0_finger13_local_02",
+      "mesh": "gripper0_finger13_local_02",
+      "file": "examples/right_hand/candidates/finger13_local/meshes/positive_wing.obj",
+      "sha256": "6831b4df4dbdeae09f66d11dfa14a9af06c9a7b13e4af91f42f4b0163b7e58c4"
+    }
+  ],
+  "roles_equal_independent_inventory": true,
+  "schedule": {
+    "commands": 270,
+    "phase_counts": {
+      "settle_preshape": 10,
+      "approach_high": 80,
+      "descend": 70,
+      "close": 40,
+      "lift": 40,
+      "hold": 30
+    },
+    "phase_boundaries": {
+      "settle_preshape": {
+        "macro_first": 0,
+        "macro_last": 9,
+        "physical_step_first": 1,
+        "physical_step_last": 250
+      },
+      "approach_high": {
+        "macro_first": 10,
+        "macro_last": 89,
+        "physical_step_first": 251,
+        "physical_step_last": 2250
+      },
+      "descend": {
+        "macro_first": 90,
+        "macro_last": 159,
+        "physical_step_first": 2251,
+        "physical_step_last": 4000
+      },
+      "close": {
+        "macro_first": 160,
+        "macro_last": 199,
+        "physical_step_first": 4001,
+        "physical_step_last": 5000
+      },
+      "lift": {
+        "macro_first": 200,
+        "macro_last": 239,
+        "physical_step_first": 5001,
+        "physical_step_last": 6000
+      },
+      "hold": {
+        "macro_first": 240,
+        "macro_last": 269,
+        "physical_step_first": 6001,
+        "physical_step_last": 6750
+      }
+    },
+    "physics_steps_per_command": 25,
+    "expected_physics_steps": 6750,
+    "physics_steps_max": 6750,
+    "physical_dt_s": 0.002,
+    "duration_if_completed_s": 13.5
+  },
+  "frozen_preflight_loaded": {
+    "verdict": "SEPARATED_AT_ALL_FROZEN_FINITE_SAMPLES",
+    "candidate_parts": 78,
+    "finite_sample_count": 921,
+    "scope": "All 115 contact-eligible nonadjacent internal right-hand body pairs; finite samples only; not arm/table/bowl, adjacent filtered pairs, or actual dynamic states.",
+    "dynamic_control_or_grasp_certified": false,
+    "input_sha256": {
+      "examples/right_hand/candidates/finger13_local/model.xml": "b27f4f86fbaeacd2bb925463f39f67181ef7db12963c4d9f7fc01797a7924d1b",
+      "examples/right_hand/evidence/d3_white_bowl_001/candidate.json": "ba767b42f99d3562255909bde5c970d529ba254769029ec1cd7a98faf76af0fb",
+      "examples/right_hand/evidence/d3_bowl_preflight/internal-detail.json": "78efd06cd1f7bc7e5597ba0674687bd77e5b4db151ff66519d389bdd44094ccd",
+      "examples/right_hand/evidence/d3_bowl_preflight/internal-summary.json": "05ff6ff370dadf8a8b8e7762103eb346df75629027445394ed565546f8b8201e",
+      "examples/right_hand/evidence/d3_bowl_preflight/verification.json": "5723d7f9087285ef1607bd75d76897f945fe006201c3a2041ac8cb638a1c9b15"
+    }
+  },
+  "static_api_audit": {
+    "model_compiles": 1,
+    "MjData_attempts": 0,
+    "forbidden_api_attempts": 0,
+    "physics_steps": 0,
+    "resets": 0,
+    "forwards": 0,
+    "environment_constructors": 0,
+    "mj_id2name": 1298,
+    "mj_name2id": 165
+  },
+  "critical_existing_issue": null,
+  "no_runtime_environment_or_state_created": true,
+  "freeze_integrity_acceptance": {
+    "passed_static_review": true,
+    "runner_sha256": "41d248f10867a946f214e7681d4575f9943c2502573f7f58ce371d14a15f9dab",
+    "matches_actual_executed_runner": true,
+    "source_lines": [
+      419,
+      420,
+      421,
+      422
+    ],
+    "before_after_manifest_comparison": "before_sha == result['input_sha256_after']",
+    "mismatch_behavior": "result.update(B='FAIL', input_integrity='FAIL_CHANGED_FROZEN_INPUT') executes before selecting return code",
+    "actual_trial_inputs_unchanged": true
+  },
+  "assessment_correction": {
+    "previous_assessment": "B computed before inputs_unchanged; root notified to require freeze integrity for acceptance",
+    "correction": "The previous critical_existing_issue string was stale and incorrect for the runner SHA already recorded in this audit. The actual audited/executed runner explicitly changes B to FAIL when inputs_unchanged is false before returning. The fix was already present before launch.",
+    "correction_method": "Read current runner acceptance block and verify its SHA equals both this audit runner SHA and actual frozen-before-first-step input manifest. No simulator, dynamics or raw output modification.",
+    "remaining_critical_issues": []
+  }
+}

@@ -1,0 +1,352 @@
+{
+  "verdict": "SEPARATED_AT_ALL_FROZEN_FINITE_SAMPLES",
+  "candidate_parts": 78,
+  "finite_sample_count": 921,
+  "scope": "All 115 contact-eligible nonadjacent internal right-hand body pairs; finite samples only; not arm/table/bowl, adjacent filtered pairs, or actual dynamic states.",
+  "dynamic_control_or_grasp_certified": false,
+  "input_sha256": {
+    "examples/right_hand/candidates/finger13_local/model.xml": "b27f4f86fbaeacd2bb925463f39f67181ef7db12963c4d9f7fc01797a7924d1b",
+    "examples/right_hand/evidence/d3_white_bowl_001/candidate.json": "ba767b42f99d3562255909bde5c970d529ba254769029ec1cd7a98faf76af0fb",
+    "examples/right_hand/evidence/d3_bowl_preflight/internal-detail.json": "78efd06cd1f7bc7e5597ba0674687bd77e5b4db151ff66519d389bdd44094ccd",
+    "examples/right_hand/evidence/d3_bowl_preflight/internal-summary.json": "05ff6ff370dadf8a8b8e7762103eb346df75629027445394ed565546f8b8201e",
+    "examples/right_hand/evidence/d3_bowl_preflight/verification.json": "5723d7f9087285ef1607bd75d76897f945fe006201c3a2041ac8cb638a1c9b15"
+  },
+  "external": {
+    "summary": {
+      "status": "PASS_FINITE_SAMPLES_REFERENCE_SCENE_ONLY",
+      "supplied_poses": 921,
+      "poses_checked": 921,
+      "eligible_pairs_per_pose": 60357,
+      "pair_categories": {
+        "other_environment": 16218,
+        "table": 306,
+        "other_robot_or_mount": 11334,
+        "hand": 21483,
+        "white_bowl": 11016
+      },
+      "first_block": null,
+      "minimum_certified_clearance_by_category_m": {
+        "hand": 6.407019998988517e-07,
+        "other_environment": 0.110206566619785,
+        "other_robot_or_mount": 9.107323006851686e-09,
+        "table": 0.1187580093192161,
+        "white_bowl": 0.08428856193229517
+      },
+      "risk_piece_minimum_clearances_m": {
+        "root_0300mm_entire_piece / hand": 0.019071044965170772,
+        "root_0300mm_entire_piece / other_environment": 0.12012326264664519,
+        "root_0300mm_entire_piece / other_robot_or_mount": 0.08462282076417305,
+        "root_0300mm_entire_piece / table": 0.12612400386691547,
+        "root_0300mm_entire_piece / white_bowl": 0.09165455647999454,
+        "outer_fill_217mm_entire_piece / hand": 0.03284423189835339,
+        "outer_fill_217mm_entire_piece / other_environment": 0.11267734453259257,
+        "outer_fill_217mm_entire_piece / other_robot_or_mount": 0.06204496853950267,
+        "outer_fill_217mm_entire_piece / table": 0.14756553806727346,
+        "outer_fill_217mm_entire_piece / white_bowl": 0.11309609068035253
+      },
+      "narrowphase_queries": 68736,
+      "whole_geometry_AABB_certificates": 55520061,
+      "wrist_wrist_queries": 0,
+      "dynamic_attempts": 0,
+      "physics_steps": 0,
+      "numerical_appendix": "FAIL_UNCHANGED",
+      "precision_or_external_fill_exceptions": "NOT_APPROVED",
+      "elapsed_s": 106.18474307702854
+    },
+    "summary_sha256": "c170c79de54aaf344734cd59ba0192706ace3481463e72157d2b8f271330acac",
+    "input_audit_sha256": "334170f4c9e9b285c3959183b01b87d26f3b05a60aebab3d7efd6baedcec6a86",
+    "protocol": {
+      "authorization": "https://github.com/LeoandDream/Nero_DH116_assets/pull/4#issuecomment-6290062555",
+      "model": "examples/right_hand/candidates/finger22_local/model.xml",
+      "model_sha256": "7f9d84061c3e7d176763c688d2389f8b3d3e38386b8e990a0fa047ff2bc3329c",
+      "schedule": {
+        "commands": 270,
+        "phase_counts": {
+          "settle_preshape": 10,
+          "approach_high": 80,
+          "descend": 70,
+          "close": 40,
+          "lift": 40,
+          "hold": 30
+        },
+        "phase_boundaries": {
+          "settle_preshape": {
+            "macro_first": 0,
+            "macro_last": 9,
+            "physical_step_first": 1,
+            "physical_step_last": 250
+          },
+          "approach_high": {
+            "macro_first": 10,
+            "macro_last": 89,
+            "physical_step_first": 251,
+            "physical_step_last": 2250
+          },
+          "descend": {
+            "macro_first": 90,
+            "macro_last": 159,
+            "physical_step_first": 2251,
+            "physical_step_last": 4000
+          },
+          "close": {
+            "macro_first": 160,
+            "macro_last": 199,
+            "physical_step_first": 4001,
+            "physical_step_last": 5000
+          },
+          "lift": {
+            "macro_first": 200,
+            "macro_last": 239,
+            "physical_step_first": 5001,
+            "physical_step_last": 6000
+          },
+          "hold": {
+            "macro_first": 240,
+            "macro_last": 269,
+            "physical_step_first": 6001,
+            "physical_step_last": 6750
+          }
+        },
+        "physics_steps_per_command": 25,
+        "expected_physics_steps": 6750,
+        "physics_steps_max": 6750,
+        "physical_dt_s": 0.002,
+        "duration_if_completed_s": 13.5
+      },
+      "maximum_physics_steps": 6750,
+      "original_criteria": {
+        "scope": "NEW fixed right white-bowl criteria; not left/manufacturer/full-range certification",
+        "lift_from_own_settled_baseline_m_min": 0.02,
+        "continuous_hold_s_min": 1.0,
+        "hold_requires": [
+          "height >= settled+20mm",
+          "no bowl-table or other environmental support contacts",
+          "positive-force thumb and index contacts on opposing bowl sides"
+        ],
+        "steady_active_error_rad_max": 0.02,
+        "arm_tracking_error_rad_max": 0.1,
+        "linear_mimic_error_rad_max": 0.02,
+        "joint_limit_overshoot_rad_max": 0.01,
+        "eligible_internal_and_external_overlap_m_max": 0.002,
+        "warnings_allowed": 0,
+        "nonfinite_states_allowed": 0,
+        "native_task_result": "record native cabinet-placement predicate separately",
+        "strict_grasp_success_claim": false,
+        "stop": "First numerical/physical bound violation; no automatic retry or edits"
+      },
+      "additional_stops": [
+        "Any eligible actual new wrist geom contact with any body outside the two wrist bodies, regardless of positive force.",
+        "Any actual robot qpos outside target/sample envelope padded by original .1rad arm / .02rad hand bounds."
+      ],
+      "qpos_envelope_lower_rad": [
+        -0.00031842318389821433,
+        -1.0117843140806089,
+        -2.801898722298827,
+        0.8778290747376886,
+        -1.5394823334488055,
+        -0.83,
+        1.3335265819905644,
+        -0.02,
+        -0.02,
+        -0.015408000000000002,
+        -0.02,
+        -0.008928,
+        -0.02,
+        -0.008928,
+        -0.02,
+        -0.008928,
+        -0.02,
+        -0.008928
+      ],
+      "qpos_envelope_upper_rad": [
+        0.46958692521030554,
+        -0.5273438565137334,
+        -2.563465332281639,
+        1.7223902342637794,
+        -0.8644504552986636,
+        -0.07932686168460179,
+        1.6707963,
+        0.14714413600034068,
+        0.1812485091248992,
+        0.16661968683721123,
+        0.44999571637122904,
+        0.42692605649135346,
+        0.02,
+        0.031072000000000002,
+        0.02,
+        0.031072000000000002,
+        0.02,
+        0.031072000000000002
+      ],
+      "envelope_padding_rad": [
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.02,
+        0.02,
+        0.02,
+        0.02,
+        0.02,
+        0.02,
+        0.02,
+        0.02,
+        0.02,
+        0.02,
+        0.02
+      ],
+      "envelope_limit": "Conservative finite-domain stop only, not continuous-path or all-domain clearance proof.",
+      "numerical_appendix": "FAIL_UNCHANGED",
+      "fill_exceptions_approved": false,
+      "dynamic_attempt_budget": 1,
+      "automatic_retry_or_completion_run": false,
+      "native_and_strict_semantics_unchanged": true,
+      "baseline_commit": "16b851f76cd04f535e96dacaf2e0d7b86af17f0a",
+      "hand_collision_count": 81,
+      "wrist_collision_count": 306,
+      "strict_region_online_stop": false,
+      "classification": "Deferred offline only; no RISK/UNKNOWN classification stops this experiment.",
+      "experiment": "frozen_finger22_white_bowl_exploratory_once",
+      "historical4731_stop": "UNKNOWN_UNCHANGED",
+      "fidelity_status": "FORMAL_NUMERIC_FAIL_AND_GEOMETRY_UNKNOWN_UNCHANGED"
+    },
+    "finger22_model_sha256": "7f9d84061c3e7d176763c688d2389f8b3d3e38386b8e990a0fa047ff2bc3329c",
+    "xml_and_resource_equivalence_except_finger22": true,
+    "prior_static_result": {
+      "quality": {
+        "raw": {
+          "continuous_source_coverage": "PASS",
+          "uncovered_area_m2": 0.0,
+          "uncovered_source_triangles": 0,
+          "source_convex_containment": "PASS",
+          "maximum_halfspace_outward_m": 6.938893903907228e-18,
+          "seams": [
+            {
+              "z_m": 0.0098,
+              "adjacent_part_ids": [
+                0,
+                1
+              ],
+              "exposed_coplanar_seam_area_m2": 0.0,
+              "note": "Only exactly coplanar exposed caps at original 1e-10m tolerance; tilted compiled seams also require distance/coverage checks."
+            },
+            {
+              "z_m": 0.0233,
+              "adjacent_part_ids": [
+                1,
+                2
+              ],
+              "exposed_coplanar_seam_area_m2": 0.0,
+              "note": "Only exactly coplanar exposed caps at original 1e-10m tolerance; tilted compiled seams also require distance/coverage checks."
+            },
+            {
+              "z_m": 0.032,
+              "adjacent_part_ids": [
+                2,
+                3
+              ],
+              "exposed_coplanar_seam_area_m2": 0.0,
+              "note": "Only exactly coplanar exposed caps at original 1e-10m tolerance; tilted compiled seams also require distance/coverage checks."
+            }
+          ]
+        },
+        "compiled": {
+          "continuous_source_coverage": "FAIL",
+          "uncovered_area_m2": 0.0002531098311066771,
+          "uncovered_source_triangles": 3602,
+          "source_convex_containment": "FAIL",
+          "maximum_halfspace_outward_m": 9.678462649376218e-10,
+          "seams": [
+            {
+              "z_m": 0.0098,
+              "adjacent_part_ids": [
+                0,
+                1
+              ],
+              "exposed_coplanar_seam_area_m2": 2.860570005933744e-14,
+              "note": "Only exactly coplanar exposed caps at original 1e-10m tolerance; tilted compiled seams also require distance/coverage checks."
+            },
+            {
+              "z_m": 0.0233,
+              "adjacent_part_ids": [
+                1,
+                2
+              ],
+              "exposed_coplanar_seam_area_m2": 5.600744177626697e-17,
+              "note": "Only exactly coplanar exposed caps at original 1e-10m tolerance; tilted compiled seams also require distance/coverage checks."
+            },
+            {
+              "z_m": 0.032,
+              "adjacent_part_ids": [
+                2,
+                3
+              ],
+              "exposed_coplanar_seam_area_m2": 0.0,
+              "note": "Only exactly coplanar exposed caps at original 1e-10m tolerance; tilted compiled seams also require distance/coverage checks."
+            }
+          ]
+        }
+      },
+      "scan": {
+        "saved_close_post_states": 742,
+        "state_range": [
+          4001,
+          4742
+        ],
+        "eligible_other_geoms_per_state": 507,
+        "all_qualified_hand_pairs_unchanged_outside_finger22": true,
+        "unchanged_native_contact_differences": 0,
+        "native_changed_geom_state_count": 80,
+        "counts": {
+          "eligible_other_geom_states": 376194,
+          "whole_geometry_AABB_separated_old_and_new": 375768,
+          "old_SEPARATED_AABB": 122,
+          "new_SEPARATED": 426,
+          "old_SEPARATED": 146,
+          "old_STRICT_OVERLAP": 158
+        },
+        "required_cached_states": [
+          4741,
+          4742
+        ],
+        "source_surface_assessment_counts": {
+          "SEPARATED_SURFACES_AND_PROXY": 426
+        },
+        "false_contact_interpretation": "Positive source surface gap + proxy overlap is a surface-based false-contact witness; solid containment remains UNKNOWN for nonmanifold source.",
+        "missed_contact_interpretation": "All eligible f22-source-vs-unchanged-other collision geometries checked with whole-source AABB exclusion or full triangle surface query, including when old/new proxies are separated. Other hand proxy approximation is frozen, not revalidated against its manufacturer STL.",
+        "cached_all_bowl_boxes_separated": true,
+        "step4518": "POST_STEP_FK_ONLY; no saved finger22 RK4 cache; original first positive force contact is finger13",
+        "source_solid_contacts": "UNKNOWN_NONMANIFOLD_SOURCE; surface crossings/gaps are reported without a solid-containment claim",
+        "dynamic_prediction": "UNKNOWN_NOT_RUN; saved poses are not a new trajectory or force counterfactual",
+        "physics_steps": 0
+      },
+      "contact_surface_regression": "PASS",
+      "static_status": "FAIL_BLOCKED",
+      "dynamics": "UNKNOWN_NOT_RUN",
+      "release": "NOT_APPROVED",
+      "physics_steps": 0
+    },
+    "risk_evidence_sha256": {
+      "witnesses.json": "7824f33d0abffda5d094244f962b569220b0ba26b460abf790abb93181aee06b",
+      "numeric.json": "b7a38a2dfb40adf21fec9098f893ae1eb37ebbb33e0b8e4cd28df9e161f62dbf",
+      "working-cover.json.gz": "b496866be2b36a14a7604c2875e7bfd2fac539ca8b2b680e6d8cce172d0fac91"
+    },
+    "exploratory_input_audit": {
+      "old_run_inputs_checked": 518,
+      "all_prior_resources_exact": true,
+      "schedule_sha256": "4fcb72c06028ba405122c808d8ec90486f022199e1c01904d65b034c18be0b81",
+      "strict_rules_sha256": "f5e837f43332366af3ac964accd6107b4d58772cd185fbc16979fb1acf6f5800",
+      "model_sha256": "7f9d84061c3e7d176763c688d2389f8b3d3e38386b8e990a0fa047ff2bc3329c",
+      "fixed_source_sha256": {
+        "examples/right_hand/white_bowl_run.py": "67afdd0ebd03ed37b8ef874d5985e4e2b0fbe62912a8a201d09b4a1ffeb4b2e5",
+        "examples/right_hand/finger22_conditional.py": "d38d576d475e2f5fa07d74143aa6df24d3516b7d7b99a42ef10737fffa2be705",
+        "examples/right_hand/finger22_contact_adapter.py": "f71e47d1c1f754bf1d5683a83b0f6b0309b36ca7b7e9ee3cd85843091bd2b177",
+        "examples/right_hand/evidence/d3_finger22_runner_offline/frozen-rules.json": "f5e837f43332366af3ac964accd6107b4d58772cd185fbc16979fb1acf6f5800",
+        "examples/right_hand/evidence/d3_finger22_dynamic/run/schedule.json": "4fcb72c06028ba405122c808d8ec90486f022199e1c01904d65b034c18be0b81"
+      }
+    }
+  }
+}

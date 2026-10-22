@@ -1,0 +1,9 @@
+{
+  "continuous_triangle_interior_and_edges": "PASS",
+  "overlap_hidden_interface": "PASS",
+  "coincident_surface_tie": "PASS",
+  "touching_internal_interface": "PASS",
+  "contained_part": "PASS",
+  "oblique_overlap": "PASS",
+  "nearly_parallel_distinct_planes": "PASS"
+}

@@ -1,0 +1,1070 @@
+{
+  "physics_steps": 0,
+  "poses": [
+    {
+      "pose_id": "original17_step_229_pre",
+      "source_surface": {
+        "status": "NOT_QUERIED_AT_THIS_EXACT_SAVED_POSE"
+      },
+      "models": {
+        "proxy76": {
+          "union_pair_classification": "SEPARATED_CONVEX_SOLIDS",
+          "individual_part_pair_classifications": [
+            "SEPARATED_CONVEX_SOLIDS"
+          ],
+          "common_ball_radii_mm_in_part_pair_order": [
+            -45.2204527138401
+          ],
+          "convex_query": [
+            {
+              "cutoff_m": 0.0,
+              "minimum_distance_m": 0.0,
+              "eligible_negative_geom_pairs": 0
+            },
+            {
+              "cutoff_m": 0.01,
+              "minimum_distance_m": 0.01,
+              "eligible_negative_geom_pairs": 0
+            },
+            {
+              "cutoff_m": 0.1,
+              "minimum_distance_m": 0.09197042596105688,
+              "eligible_negative_geom_pairs": 0
+            },
+            {
+              "cutoff_m": 1.0,
+              "minimum_distance_m": 0.09188598991444497,
+              "eligible_negative_geom_pairs": 0
+            }
+          ]
+        },
+        "finger13_repair": {
+          "union_pair_classification": "SEPARATED_CONVEX_SOLIDS",
+          "individual_part_pair_classifications": [
+            "SEPARATED_CONVEX_SOLIDS",
+            "SEPARATED_CONVEX_SOLIDS",
+            "SEPARATED_CONVEX_SOLIDS"
+          ],
+          "common_ball_radii_mm_in_part_pair_order": [
+            -46.67318805712928,
+            -44.83430597035301,
+            -35.84820779860879
+          ],
+          "convex_query": [
+            {
+              "cutoff_m": 0.0,
+              "minimum_distance_m": 0.0,
+              "eligible_negative_geom_pairs": 0
+            },
+            {
+              "cutoff_m": 0.01,
+              "minimum_distance_m": 0.01,
+              "eligible_negative_geom_pairs": 0
+            },
+            {
+              "cutoff_m": 0.1,
+              "minimum_distance_m": 0.09197031049245198,
+              "eligible_negative_geom_pairs": 0
+            },
+            {
+              "cutoff_m": 1.0,
+              "minimum_distance_m": 0.0919003595267085,
+              "eligible_negative_geom_pairs": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pose_id": "original17_step_229_post",
+      "source_surface": {
+        "status": "NOT_QUERIED_AT_THIS_EXACT_SAVED_POSE"
+      },
+      "models": {
+        "proxy76": {
+          "union_pair_classification": "SEPARATED_CONVEX_SOLIDS",
+          "individual_part_pair_classifications": [
+            "SEPARATED_CONVEX_SOLIDS"
+          ],
+          "common_ball_radii_mm_in_part_pair_order": [
+            -45.18375151563782
+          ],
+          "convex_query": [
+            {
+              "cutoff_m": 0.0,
+              "minimum_distance_m": 0.0,
+              "eligible_negative_geom_pairs": 0
+            },
+            {
+              "cutoff_m": 0.01,
+              "minimum_distance_m": 0.01,
+              "eligible_negative_geom_pairs": 0
+            },
+            {
+              "cutoff_m": 0.1,
+              "minimum_distance_m": 0.09186734474586071,
+              "eligible_negative_geom_pairs": 0
+            },
+            {
+              "cutoff_m": 1.0,
+              "minimum_distance_m": 0.09176565603995646,
+              "eligible_negative_geom_pairs": 0
+            }
+          ]
+        },
+        "finger13_repair": {
+          "union_pair_classification": "SEPARATED_CONVEX_SOLIDS",
+          "individual_part_pair_classifications": [
+            "SEPARATED_CONVEX_SOLIDS",
+            "SEPARATED_CONVEX_SOLIDS",
+            "SEPARATED_CONVEX_SOLIDS"
+          ],
+          "common_ball_radii_mm_in_part_pair_order": [
+            -46.61627142640939,
+            -44.79887817888745,
+            -35.802444887889024
+          ],
+          "convex_query": [
+            {
+              "cutoff_m": 0.0,
+              "minimum_distance_m": 0.0,
+              "eligible_negative_geom_pairs": 0
+            },
+            {
+              "cutoff_m": 0.01,
+              "minimum_distance_m": 0.01,
+              "eligible_negative_geom_pairs": 0
+            },
+            {
+              "cutoff_m": 0.1,
+              "minimum_distance_m": 0.09186781843216549,
+              "eligible_negative_geom_pairs": 0
+            },
+            {
+              "cutoff_m": 1.0,
+              "minimum_distance_m": 0.09177971247824246,
+              "eligible_negative_geom_pairs": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pose_id": "original17_step_451_pre",
+      "source_surface": {
+        "status": "NOT_QUERIED_AT_THIS_EXACT_SAVED_POSE"
+      },
+      "models": {
+        "proxy76": {
+          "union_pair_classification": "SEPARATED_CONVEX_SOLIDS",
+          "individual_part_pair_classifications": [
+            "SEPARATED_CONVEX_SOLIDS"
+          ],
+          "common_ball_radii_mm_in_part_pair_order": [
+            -42.51809792736165
+          ],
+          "convex_query": [
+            {
+              "cutoff_m": 0.0,
+              "minimum_distance_m": 0.0,
+              "eligible_negative_geom_pairs": 0
+            },
+            {
+              "cutoff_m": 0.01,
+              "minimum_distance_m": 0.01,
+              "eligible_negative_geom_pairs": 0
+            },
+            {
+              "cutoff_m": 0.1,
+              "minimum_distance_m": 0.085047587984479,
+              "eligible_negative_geom_pairs": 0
+            },
+            {
+              "cutoff_m": 1.0,
+              "minimum_distance_m": 0.08473707261990082,
+              "eligible_negative_geom_pairs": 0
+            }
+          ]
+        },
+        "finger13_repair": {
+          "union_pair_classification": "SEPARATED_CONVEX_SOLIDS",
+          "individual_part_pair_classifications": [
+            "SEPARATED_CONVEX_SOLIDS",
+            "SEPARATED_CONVEX_SOLIDS",
+            "SEPARATED_CONVEX_SOLIDS"
+          ],
+          "common_ball_radii_mm_in_part_pair_order": [
+            -42.743197176384996,
+            -42.066243534716534,
+            -32.97843614423624
+          ],
+          "convex_query": [
+            {
+              "cutoff_m": 0.0,
+              "minimum_distance_m": 0.0,
+              "eligible_negative_geom_pairs": 0
+            },
+            {
+              "cutoff_m": 0.01,
+              "minimum_distance_m": 0.01,
+              "eligible_negative_geom_pairs": 0
+            },
+            {
+              "cutoff_m": 0.1,
+              "minimum_distance_m": 0.08505957792459025,
+              "eligible_negative_geom_pairs": 0
+            },
+            {
+              "cutoff_m": 1.0,
+              "minimum_distance_m": 0.08476430861412665,
+              "eligible_negative_geom_pairs": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pose_id": "original17_step_451_post",
+      "source_surface": {
+        "status": "NOT_QUERIED_AT_THIS_EXACT_SAVED_POSE"
+      },
+      "models": {
+        "proxy76": {
+          "union_pair_classification": "SEPARATED_CONVEX_SOLIDS",
+          "individual_part_pair_classifications": [
+            "SEPARATED_CONVEX_SOLIDS"
+          ],
+          "common_ball_radii_mm_in_part_pair_order": [
+            -42.51765931676716
+          ],
+          "convex_query": [
+            {
+              "cutoff_m": 0.0,
+              "minimum_distance_m": 0.0,
+              "eligible_negative_geom_pairs": 0
+            },
+            {
+              "cutoff_m": 0.01,
+              "minimum_distance_m": 0.01,
+              "eligible_negative_geom_pairs": 0
+            },
+            {
+              "cutoff_m": 0.1,
+              "minimum_distance_m": 0.08504663116773915,
+              "eligible_negative_geom_pairs": 0
+            },
+            {
+              "cutoff_m": 1.0,
+              "minimum_distance_m": 0.0847361849544277,
+              "eligible_negative_geom_pairs": 0
+            }
+          ]
+        },
+        "finger13_repair": {
+          "union_pair_classification": "SEPARATED_CONVEX_SOLIDS",
+          "individual_part_pair_classifications": [
+            "SEPARATED_CONVEX_SOLIDS",
+            "SEPARATED_CONVEX_SOLIDS",
+            "SEPARATED_CONVEX_SOLIDS"
+          ],
+          "common_ball_radii_mm_in_part_pair_order": [
+            -42.74270192266532,
+            -42.06583152806226,
+            -32.978060539068665
+          ],
+          "convex_query": [
+            {
+              "cutoff_m": 0.0,
+              "minimum_distance_m": 0.0,
+              "eligible_negative_geom_pairs": 0
+            },
+            {
+              "cutoff_m": 0.01,
+              "minimum_distance_m": 0.01,
+              "eligible_negative_geom_pairs": 0
+            },
+            {
+              "cutoff_m": 0.1,
+              "minimum_distance_m": 0.08505886414391423,
+              "eligible_negative_geom_pairs": 0
+            },
+            {
+              "cutoff_m": 1.0,
+              "minimum_distance_m": 0.08476345344294567,
+              "eligible_negative_geom_pairs": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pose_id": "original17_step_6498_pre",
+      "source_surface": {
+        "status": "NOT_QUERIED_AT_THIS_EXACT_SAVED_POSE"
+      },
+      "models": {
+        "proxy76": {
+          "union_pair_classification": "STRICT_CONVEX_INTERIOR_OVERLAP",
+          "individual_part_pair_classifications": [
+            "STRICT_CONVEX_INTERIOR_OVERLAP"
+          ],
+          "common_ball_radii_mm_in_part_pair_order": [
+            2.1262918212024937
+          ],
+          "convex_query": [
+            {
+              "cutoff_m": 0.0,
+              "minimum_distance_m": -0.004767234532107542,
+              "eligible_negative_geom_pairs": 1
+            },
+            {
+              "cutoff_m": 0.01,
+              "minimum_distance_m": -0.005576664860427174,
+              "eligible_negative_geom_pairs": 1
+            },
+            {
+              "cutoff_m": 0.1,
+              "minimum_distance_m": -0.0074566048968087995,
+              "eligible_negative_geom_pairs": 1
+            },
+            {
+              "cutoff_m": 1.0,
+              "minimum_distance_m": -0.008102635320783369,
+              "eligible_negative_geom_pairs": 1
+            }
+          ]
+        },
+        "finger13_repair": {
+          "union_pair_classification": "STRICT_CONVEX_INTERIOR_OVERLAP",
+          "individual_part_pair_classifications": [
+            "STRICT_CONVEX_INTERIOR_OVERLAP",
+            "STRICT_CONVEX_INTERIOR_OVERLAP",
+            "SEPARATED_CONVEX_SOLIDS"
+          ],
+          "common_ball_radii_mm_in_part_pair_order": [
+            1.4925264840190007,
+            1.6468695060168743,
+            -3.5098807290252854
+          ],
+          "convex_query": [
+            {
+              "cutoff_m": 0.0,
+              "minimum_distance_m": -0.0033535316389486703,
+              "eligible_negative_geom_pairs": 2
+            },
+            {
+              "cutoff_m": 0.01,
+              "minimum_distance_m": -0.005654210711018173,
+              "eligible_negative_geom_pairs": 2
+            },
+            {
+              "cutoff_m": 0.1,
+              "minimum_distance_m": -0.007463133003568517,
+              "eligible_negative_geom_pairs": 2
+            },
+            {
+              "cutoff_m": 1.0,
+              "minimum_distance_m": -0.008512744393828875,
+              "eligible_negative_geom_pairs": 2
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pose_id": "original17_step_6498_post",
+      "source_surface": {
+        "status": "NOT_QUERIED_AT_THIS_EXACT_SAVED_POSE"
+      },
+      "models": {
+        "proxy76": {
+          "union_pair_classification": "STRICT_CONVEX_INTERIOR_OVERLAP",
+          "individual_part_pair_classifications": [
+            "STRICT_CONVEX_INTERIOR_OVERLAP"
+          ],
+          "common_ball_radii_mm_in_part_pair_order": [
+            2.122885915768645
+          ],
+          "convex_query": [
+            {
+              "cutoff_m": 0.0,
+              "minimum_distance_m": -0.004763359432114983,
+              "eligible_negative_geom_pairs": 1
+            },
+            {
+              "cutoff_m": 0.01,
+              "minimum_distance_m": -0.0055743690513132774,
+              "eligible_negative_geom_pairs": 1
+            },
+            {
+              "cutoff_m": 0.1,
+              "minimum_distance_m": -0.007455008296856205,
+              "eligible_negative_geom_pairs": 1
+            },
+            {
+              "cutoff_m": 1.0,
+              "minimum_distance_m": -0.008114714275640145,
+              "eligible_negative_geom_pairs": 1
+            }
+          ]
+        },
+        "finger13_repair": {
+          "union_pair_classification": "STRICT_CONVEX_INTERIOR_OVERLAP",
+          "individual_part_pair_classifications": [
+            "STRICT_CONVEX_INTERIOR_OVERLAP",
+            "STRICT_CONVEX_INTERIOR_OVERLAP",
+            "SEPARATED_CONVEX_SOLIDS"
+          ],
+          "common_ball_radii_mm_in_part_pair_order": [
+            1.4896424430022488,
+            1.6453149733840906,
+            -3.512584121585274
+          ],
+          "convex_query": [
+            {
+              "cutoff_m": 0.0,
+              "minimum_distance_m": -0.0037878959343429137,
+              "eligible_negative_geom_pairs": 2
+            },
+            {
+              "cutoff_m": 0.01,
+              "minimum_distance_m": -0.00558353792253425,
+              "eligible_negative_geom_pairs": 2
+            },
+            {
+              "cutoff_m": 0.1,
+              "minimum_distance_m": -0.007479564812124265,
+              "eligible_negative_geom_pairs": 2
+            },
+            {
+              "cutoff_m": 1.0,
+              "minimum_distance_m": -0.008507881865109423,
+              "eligible_negative_geom_pairs": 2
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pose_id": "original17_step_6511_pre",
+      "source_surface": {
+        "status": "NOT_QUERIED_AT_THIS_EXACT_SAVED_POSE"
+      },
+      "models": {
+        "proxy76": {
+          "union_pair_classification": "STRICT_CONVEX_INTERIOR_OVERLAP",
+          "individual_part_pair_classifications": [
+            "STRICT_CONVEX_INTERIOR_OVERLAP"
+          ],
+          "common_ball_radii_mm_in_part_pair_order": [
+            2.0566083407819686
+          ],
+          "convex_query": [
+            {
+              "cutoff_m": 0.0,
+              "minimum_distance_m": -0.004663923305057382,
+              "eligible_negative_geom_pairs": 1
+            },
+            {
+              "cutoff_m": 0.01,
+              "minimum_distance_m": -0.005330756843896606,
+              "eligible_negative_geom_pairs": 1
+            },
+            {
+              "cutoff_m": 0.1,
+              "minimum_distance_m": -0.007255119099573326,
+              "eligible_negative_geom_pairs": 1
+            },
+            {
+              "cutoff_m": 1.0,
+              "minimum_distance_m": -0.007923772488195757,
+              "eligible_negative_geom_pairs": 1
+            }
+          ]
+        },
+        "finger13_repair": {
+          "union_pair_classification": "STRICT_CONVEX_INTERIOR_OVERLAP",
+          "individual_part_pair_classifications": [
+            "STRICT_CONVEX_INTERIOR_OVERLAP",
+            "STRICT_CONVEX_INTERIOR_OVERLAP",
+            "SEPARATED_CONVEX_SOLIDS"
+          ],
+          "common_ball_radii_mm_in_part_pair_order": [
+            1.428971512895295,
+            1.6072816376950572,
+            -3.5646396650558207
+          ],
+          "convex_query": [
+            {
+              "cutoff_m": 0.0,
+              "minimum_distance_m": -0.004223840991453343,
+              "eligible_negative_geom_pairs": 2
+            },
+            {
+              "cutoff_m": 0.01,
+              "minimum_distance_m": -0.005157985482618307,
+              "eligible_negative_geom_pairs": 2
+            },
+            {
+              "cutoff_m": 0.1,
+              "minimum_distance_m": -0.00738529338329251,
+              "eligible_negative_geom_pairs": 2
+            },
+            {
+              "cutoff_m": 1.0,
+              "minimum_distance_m": -0.008321966433830763,
+              "eligible_negative_geom_pairs": 2
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pose_id": "original17_step_6511_post",
+      "source_surface": {
+        "status": "NOT_QUERIED_AT_THIS_EXACT_SAVED_POSE"
+      },
+      "models": {
+        "proxy76": {
+          "union_pair_classification": "STRICT_CONVEX_INTERIOR_OVERLAP",
+          "individual_part_pair_classifications": [
+            "STRICT_CONVEX_INTERIOR_OVERLAP"
+          ],
+          "common_ball_radii_mm_in_part_pair_order": [
+            2.0492481762734283
+          ],
+          "convex_query": [
+            {
+              "cutoff_m": 0.0,
+              "minimum_distance_m": -0.004649832066611077,
+              "eligible_negative_geom_pairs": 1
+            },
+            {
+              "cutoff_m": 0.01,
+              "minimum_distance_m": -0.005317512657118434,
+              "eligible_negative_geom_pairs": 1
+            },
+            {
+              "cutoff_m": 0.1,
+              "minimum_distance_m": -0.007241797182448162,
+              "eligible_negative_geom_pairs": 1
+            },
+            {
+              "cutoff_m": 1.0,
+              "minimum_distance_m": -0.007912818757003004,
+              "eligible_negative_geom_pairs": 1
+            }
+          ]
+        },
+        "finger13_repair": {
+          "union_pair_classification": "STRICT_CONVEX_INTERIOR_OVERLAP",
+          "individual_part_pair_classifications": [
+            "STRICT_CONVEX_INTERIOR_OVERLAP",
+            "STRICT_CONVEX_INTERIOR_OVERLAP",
+            "SEPARATED_CONVEX_SOLIDS"
+          ],
+          "common_ball_radii_mm_in_part_pair_order": [
+            1.4219363451142453,
+            1.6019125982486755,
+            -3.5705528329524525
+          ],
+          "convex_query": [
+            {
+              "cutoff_m": 0.0,
+              "minimum_distance_m": -0.004210562430178602,
+              "eligible_negative_geom_pairs": 2
+            },
+            {
+              "cutoff_m": 0.01,
+              "minimum_distance_m": -0.0051460520465229555,
+              "eligible_negative_geom_pairs": 2
+            },
+            {
+              "cutoff_m": 0.1,
+              "minimum_distance_m": -0.007353481911958781,
+              "eligible_negative_geom_pairs": 2
+            },
+            {
+              "cutoff_m": 1.0,
+              "minimum_distance_m": -0.008302153079208008,
+              "eligible_negative_geom_pairs": 2
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pose_id": "two_exclusion17_step_6242_pre",
+      "source_surface": {
+        "status": "NOT_QUERIED_AT_THIS_EXACT_SAVED_POSE"
+      },
+      "models": {
+        "proxy76": {
+          "union_pair_classification": "STRICT_CONVEX_INTERIOR_OVERLAP",
+          "individual_part_pair_classifications": [
+            "STRICT_CONVEX_INTERIOR_OVERLAP"
+          ],
+          "common_ball_radii_mm_in_part_pair_order": [
+            0.8929540501753254
+          ],
+          "convex_query": [
+            {
+              "cutoff_m": 0.0,
+              "minimum_distance_m": -0.001911528662989287,
+              "eligible_negative_geom_pairs": 1
+            },
+            {
+              "cutoff_m": 0.01,
+              "minimum_distance_m": -0.0022958585827486926,
+              "eligible_negative_geom_pairs": 1
+            },
+            {
+              "cutoff_m": 0.1,
+              "minimum_distance_m": -0.002737294991113623,
+              "eligible_negative_geom_pairs": 1
+            },
+            {
+              "cutoff_m": 1.0,
+              "minimum_distance_m": -0.0030636619371937623,
+              "eligible_negative_geom_pairs": 1
+            }
+          ]
+        },
+        "finger13_repair": {
+          "union_pair_classification": "STRICT_CONVEX_INTERIOR_OVERLAP",
+          "individual_part_pair_classifications": [
+            "STRICT_CONVEX_INTERIOR_OVERLAP",
+            "SEPARATED_CONVEX_SOLIDS",
+            "SEPARATED_CONVEX_SOLIDS"
+          ],
+          "common_ball_radii_mm_in_part_pair_order": [
+            0.8914948652647284,
+            -0.6769358282846382,
+            -5.675076105044874
+          ],
+          "convex_query": [
+            {
+              "cutoff_m": 0.0,
+              "minimum_distance_m": -0.0019035996837377374,
+              "eligible_negative_geom_pairs": 1
+            },
+            {
+              "cutoff_m": 0.01,
+              "minimum_distance_m": -0.0028081832202074223,
+              "eligible_negative_geom_pairs": 2
+            },
+            {
+              "cutoff_m": 0.1,
+              "minimum_distance_m": -0.003563535978388821,
+              "eligible_negative_geom_pairs": 2
+            },
+            {
+              "cutoff_m": 1.0,
+              "minimum_distance_m": -0.0037518232265840723,
+              "eligible_negative_geom_pairs": 2
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pose_id": "two_exclusion17_step_6242_post",
+      "source_surface": {
+        "status": "REUSED_EXACT_QPOS_AND_SOURCE_SHA256",
+        "certificate_index": 8,
+        "max_body_transform_abs_error": 0.0,
+        "surface_min_distance_m": 0.0,
+        "surface_intersection": true,
+        "strict_transverse_crossing": true,
+        "all_surface_search_complete": false,
+        "global_zero_certified_by_intersection": true
+      },
+      "models": {
+        "proxy76": {
+          "union_pair_classification": "STRICT_CONVEX_INTERIOR_OVERLAP",
+          "individual_part_pair_classifications": [
+            "STRICT_CONVEX_INTERIOR_OVERLAP"
+          ],
+          "common_ball_radii_mm_in_part_pair_order": [
+            0.9468758584508891
+          ],
+          "convex_query": [
+            {
+              "cutoff_m": 0.0,
+              "minimum_distance_m": -0.0020154816544257228,
+              "eligible_negative_geom_pairs": 1
+            },
+            {
+              "cutoff_m": 0.01,
+              "minimum_distance_m": -0.0024122321715542,
+              "eligible_negative_geom_pairs": 1
+            },
+            {
+              "cutoff_m": 0.1,
+              "minimum_distance_m": -0.0028818317162402907,
+              "eligible_negative_geom_pairs": 1
+            },
+            {
+              "cutoff_m": 1.0,
+              "minimum_distance_m": -0.0031862001003708507,
+              "eligible_negative_geom_pairs": 1
+            }
+          ]
+        },
+        "finger13_repair": {
+          "union_pair_classification": "STRICT_CONVEX_INTERIOR_OVERLAP",
+          "individual_part_pair_classifications": [
+            "STRICT_CONVEX_INTERIOR_OVERLAP",
+            "SEPARATED_CONVEX_SOLIDS",
+            "SEPARATED_CONVEX_SOLIDS"
+          ],
+          "common_ball_radii_mm_in_part_pair_order": [
+            0.9454444031336358,
+            -0.6248729899084882,
+            -5.622812455074024
+          ],
+          "convex_query": [
+            {
+              "cutoff_m": 0.0,
+              "minimum_distance_m": -0.0019989169965721,
+              "eligible_negative_geom_pairs": 1
+            },
+            {
+              "cutoff_m": 0.01,
+              "minimum_distance_m": -0.002892563559337164,
+              "eligible_negative_geom_pairs": 2
+            },
+            {
+              "cutoff_m": 0.1,
+              "minimum_distance_m": -0.0037228154191191465,
+              "eligible_negative_geom_pairs": 2
+            },
+            {
+              "cutoff_m": 1.0,
+              "minimum_distance_m": -0.003890372275616061,
+              "eligible_negative_geom_pairs": 2
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pose_id": "two_exclusion17_step_6395_pre",
+      "source_surface": {
+        "status": "NOT_QUERIED_AT_THIS_EXACT_SAVED_POSE"
+      },
+      "models": {
+        "proxy76": {
+          "union_pair_classification": "STRICT_CONVEX_INTERIOR_OVERLAP",
+          "individual_part_pair_classifications": [
+            "STRICT_CONVEX_INTERIOR_OVERLAP"
+          ],
+          "common_ball_radii_mm_in_part_pair_order": [
+            2.320025729637514
+          ],
+          "convex_query": [
+            {
+              "cutoff_m": 0.0,
+              "minimum_distance_m": -0.005187795707895462,
+              "eligible_negative_geom_pairs": 1
+            },
+            {
+              "cutoff_m": 0.01,
+              "minimum_distance_m": -0.006113162810426171,
+              "eligible_negative_geom_pairs": 1
+            },
+            {
+              "cutoff_m": 0.1,
+              "minimum_distance_m": -0.007811492473577292,
+              "eligible_negative_geom_pairs": 1
+            },
+            {
+              "cutoff_m": 1.0,
+              "minimum_distance_m": -0.00839722189378489,
+              "eligible_negative_geom_pairs": 1
+            }
+          ]
+        },
+        "finger13_repair": {
+          "union_pair_classification": "STRICT_CONVEX_INTERIOR_OVERLAP",
+          "individual_part_pair_classifications": [
+            "STRICT_CONVEX_INTERIOR_OVERLAP",
+            "STRICT_CONVEX_INTERIOR_OVERLAP",
+            "SEPARATED_CONVEX_SOLIDS"
+          ],
+          "common_ball_radii_mm_in_part_pair_order": [
+            1.6704040069477424,
+            1.969088722431609,
+            -3.2760688980611716
+          ],
+          "convex_query": [
+            {
+              "cutoff_m": 0.0,
+              "minimum_distance_m": -0.0047432835868871995,
+              "eligible_negative_geom_pairs": 2
+            },
+            {
+              "cutoff_m": 0.01,
+              "minimum_distance_m": -0.005880285692420996,
+              "eligible_negative_geom_pairs": 2
+            },
+            {
+              "cutoff_m": 0.1,
+              "minimum_distance_m": -0.007738373555689931,
+              "eligible_negative_geom_pairs": 2
+            },
+            {
+              "cutoff_m": 1.0,
+              "minimum_distance_m": -0.008799597912019008,
+              "eligible_negative_geom_pairs": 2
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pose_id": "two_exclusion17_step_6395_post",
+      "source_surface": {
+        "status": "REUSED_EXACT_QPOS_AND_SOURCE_SHA256",
+        "certificate_index": 10,
+        "max_body_transform_abs_error": 0.0,
+        "surface_min_distance_m": 0.0,
+        "surface_intersection": true,
+        "strict_transverse_crossing": true,
+        "all_surface_search_complete": false,
+        "global_zero_certified_by_intersection": true
+      },
+      "models": {
+        "proxy76": {
+          "union_pair_classification": "STRICT_CONVEX_INTERIOR_OVERLAP",
+          "individual_part_pair_classifications": [
+            "STRICT_CONVEX_INTERIOR_OVERLAP"
+          ],
+          "common_ball_radii_mm_in_part_pair_order": [
+            2.311708501162806
+          ],
+          "convex_query": [
+            {
+              "cutoff_m": 0.0,
+              "minimum_distance_m": -0.0051883473160296584,
+              "eligible_negative_geom_pairs": 1
+            },
+            {
+              "cutoff_m": 0.01,
+              "minimum_distance_m": -0.006038204761055989,
+              "eligible_negative_geom_pairs": 1
+            },
+            {
+              "cutoff_m": 0.1,
+              "minimum_distance_m": -0.007812108206984955,
+              "eligible_negative_geom_pairs": 1
+            },
+            {
+              "cutoff_m": 1.0,
+              "minimum_distance_m": -0.008361342695337948,
+              "eligible_negative_geom_pairs": 1
+            }
+          ]
+        },
+        "finger13_repair": {
+          "union_pair_classification": "STRICT_CONVEX_INTERIOR_OVERLAP",
+          "individual_part_pair_classifications": [
+            "STRICT_CONVEX_INTERIOR_OVERLAP",
+            "STRICT_CONVEX_INTERIOR_OVERLAP",
+            "SEPARATED_CONVEX_SOLIDS"
+          ],
+          "common_ball_radii_mm_in_part_pair_order": [
+            1.6652188194848927,
+            1.9624074096457935,
+            -3.282874275300071
+          ],
+          "convex_query": [
+            {
+              "cutoff_m": 0.0,
+              "minimum_distance_m": -0.004729428712647758,
+              "eligible_negative_geom_pairs": 2
+            },
+            {
+              "cutoff_m": 0.01,
+              "minimum_distance_m": -0.005882182602003327,
+              "eligible_negative_geom_pairs": 2
+            },
+            {
+              "cutoff_m": 0.1,
+              "minimum_distance_m": -0.00771279739390994,
+              "eligible_negative_geom_pairs": 2
+            },
+            {
+              "cutoff_m": 1.0,
+              "minimum_distance_m": -0.008771971979264048,
+              "eligible_negative_geom_pairs": 2
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pose_id": "two_exclusion17_step_6451_pre",
+      "source_surface": {
+        "status": "REUSED_EXACT_QPOS_AND_SOURCE_SHA256",
+        "certificate_index": 14,
+        "max_body_transform_abs_error": 0.0,
+        "surface_min_distance_m": 0.00017517419752901322,
+        "surface_intersection": false,
+        "strict_transverse_crossing": false,
+        "all_surface_search_complete": true,
+        "global_zero_certified_by_intersection": false
+      },
+      "models": {
+        "proxy76": {
+          "union_pair_classification": "STRICT_CONVEX_INTERIOR_OVERLAP",
+          "individual_part_pair_classifications": [
+            "STRICT_CONVEX_INTERIOR_OVERLAP"
+          ],
+          "common_ball_radii_mm_in_part_pair_order": [
+            0.03227584484792123
+          ],
+          "convex_query": [
+            {
+              "cutoff_m": 0.0,
+              "minimum_distance_m": -6.45916467570941e-05,
+              "eligible_negative_geom_pairs": 1
+            },
+            {
+              "cutoff_m": 0.01,
+              "minimum_distance_m": -0.0002320271909455416,
+              "eligible_negative_geom_pairs": 1
+            },
+            {
+              "cutoff_m": 0.1,
+              "minimum_distance_m": -0.0011652092877719733,
+              "eligible_negative_geom_pairs": 1
+            },
+            {
+              "cutoff_m": 1.0,
+              "minimum_distance_m": -0.0014678010683975007,
+              "eligible_negative_geom_pairs": 1
+            }
+          ]
+        },
+        "finger13_repair": {
+          "union_pair_classification": "SEPARATED_CONVEX_SOLIDS",
+          "individual_part_pair_classifications": [
+            "SEPARATED_CONVEX_SOLIDS",
+            "SEPARATED_CONVEX_SOLIDS",
+            "SEPARATED_CONVEX_SOLIDS"
+          ],
+          "common_ball_radii_mm_in_part_pair_order": [
+            -0.4478253113022954,
+            -0.07644384099614321,
+            -5.185335784471053
+          ],
+          "convex_query": [
+            {
+              "cutoff_m": 0.0,
+              "minimum_distance_m": 0.0,
+              "eligible_negative_geom_pairs": 0
+            },
+            {
+              "cutoff_m": 0.01,
+              "minimum_distance_m": 5.008961387732713e-05,
+              "eligible_negative_geom_pairs": 0
+            },
+            {
+              "cutoff_m": 0.1,
+              "minimum_distance_m": -0.0013845228851835506,
+              "eligible_negative_geom_pairs": 2
+            },
+            {
+              "cutoff_m": 1.0,
+              "minimum_distance_m": -0.0017361096284662647,
+              "eligible_negative_geom_pairs": 2
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pose_id": "two_exclusion17_step_6451_post",
+      "source_surface": {
+        "status": "REUSED_EXACT_QPOS_AND_SOURCE_SHA256",
+        "certificate_index": 12,
+        "max_body_transform_abs_error": 0.0,
+        "surface_min_distance_m": 0.00022943454531752517,
+        "surface_intersection": false,
+        "strict_transverse_crossing": false,
+        "all_surface_search_complete": true,
+        "global_zero_certified_by_intersection": false
+      },
+      "models": {
+        "proxy76": {
+          "union_pair_classification": "STRICT_CONVEX_INTERIOR_OVERLAP",
+          "individual_part_pair_classifications": [
+            "STRICT_CONVEX_INTERIOR_OVERLAP"
+          ],
+          "common_ball_radii_mm_in_part_pair_order": [
+            0.0013382161050095043
+          ],
+          "convex_query": [
+            {
+              "cutoff_m": 0.0,
+              "minimum_distance_m": -2.677875652652117e-06,
+              "eligible_negative_geom_pairs": 1
+            },
+            {
+              "cutoff_m": 0.01,
+              "minimum_distance_m": -3.707065170643897e-05,
+              "eligible_negative_geom_pairs": 1
+            },
+            {
+              "cutoff_m": 0.1,
+              "minimum_distance_m": -0.0010506017284341446,
+              "eligible_negative_geom_pairs": 1
+            },
+            {
+              "cutoff_m": 1.0,
+              "minimum_distance_m": -0.0013675893330045152,
+              "eligible_negative_geom_pairs": 1
+            }
+          ]
+        },
+        "finger13_repair": {
+          "union_pair_classification": "SEPARATED_CONVEX_SOLIDS",
+          "individual_part_pair_classifications": [
+            "SEPARATED_CONVEX_SOLIDS",
+            "SEPARATED_CONVEX_SOLIDS",
+            "SEPARATED_CONVEX_SOLIDS"
+          ],
+          "common_ball_radii_mm_in_part_pair_order": [
+            -0.48011528445293394,
+            -0.10459157305631717,
+            -5.212352747634499
+          ],
+          "convex_query": [
+            {
+              "cutoff_m": 0.0,
+              "minimum_distance_m": 0.0,
+              "eligible_negative_geom_pairs": 0
+            },
+            {
+              "cutoff_m": 0.01,
+              "minimum_distance_m": 0.00010755326625218158,
+              "eligible_negative_geom_pairs": 0
+            },
+            {
+              "cutoff_m": 0.1,
+              "minimum_distance_m": -0.0012244768626057112,
+              "eligible_negative_geom_pairs": 2
+            },
+            {
+              "cutoff_m": 1.0,
+              "minimum_distance_m": -0.0016340452995449173,
+              "eligible_negative_geom_pairs": 2
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "new_negative_query_pairs": []
+}

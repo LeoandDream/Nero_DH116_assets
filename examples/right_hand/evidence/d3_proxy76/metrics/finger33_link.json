@@ -1,0 +1,1850 @@
+{
+  "units": "m",
+  "samples_per_direction": 4096,
+  "seed": 770,
+  "sampling": "stratified by triangle area, uniform barycentric draw; deterministic PCG64 seed",
+  "distance_query": "continuous triangles; BVH exhausts every node within nearest-distance bound",
+  "source_triangle_count": 5876,
+  "source_area_m2": 0.0017439551145491514,
+  "proxy_union": {
+    "part_count": 8,
+    "independent_convex_hull_faces": 2950,
+    "exposed_boundary_triangles": 6409,
+    "exposed_boundary_area_m2": 0.0019651216373014068,
+    "discarded_degenerate_fragment_area_m2": 0.0,
+    "clipping_tolerance_m": 1e-10,
+    "coplanar_unit_normal_component_tolerance": 1e-10,
+    "hidden_overlap_faces_excluded": true,
+    "boundary_method": "convex-face polygon subtraction by all other convex halfspaces; float64",
+    "parts": [
+      {
+        "name": "gripper0_proxy76_finger33_link_00",
+        "input_unique_vertices": 239,
+        "convex_hull_triangles": 474,
+        "volume_m3": 3.74338984981689e-07
+      },
+      {
+        "name": "gripper0_proxy76_finger33_link_01",
+        "input_unique_vertices": 141,
+        "convex_hull_triangles": 278,
+        "volume_m3": 3.557704102073824e-07
+      },
+      {
+        "name": "gripper0_proxy76_finger33_link_02",
+        "input_unique_vertices": 346,
+        "convex_hull_triangles": 688,
+        "volume_m3": 1.2260718630293286e-07
+      },
+      {
+        "name": "gripper0_proxy76_finger33_link_03",
+        "input_unique_vertices": 147,
+        "convex_hull_triangles": 290,
+        "volume_m3": 1.947319753888999e-07
+      },
+      {
+        "name": "gripper0_proxy76_finger33_link_04",
+        "input_unique_vertices": 72,
+        "convex_hull_triangles": 140,
+        "volume_m3": 5.313982973024698e-08
+      },
+      {
+        "name": "gripper0_proxy76_finger33_link_05",
+        "input_unique_vertices": 303,
+        "convex_hull_triangles": 602,
+        "volume_m3": 2.712234526472137e-07
+      },
+      {
+        "name": "gripper0_proxy76_finger33_link_06",
+        "input_unique_vertices": 67,
+        "convex_hull_triangles": 130,
+        "volume_m3": 1.5436902782294523e-07
+      },
+      {
+        "name": "gripper0_proxy76_finger33_link_07",
+        "input_unique_vertices": 176,
+        "convex_hull_triangles": 348,
+        "volume_m3": 5.3475590123806885e-08
+      }
+    ]
+  },
+  "source_to_proxy_union": {
+    "sample_count": 4096,
+    "p95_m": 0.0010305812784333407,
+    "p99_m": 0.0011364510971567483,
+    "max_m": 0.0012740238084031621,
+    "max_witness": {
+      "query_point_m": [
+        0.0028262229603591817,
+        -0.0030491745490221107,
+        0.028854161204723575
+      ],
+      "nearest_surface_point_m": [
+        0.003946710040057188,
+        -0.0036527560009560044,
+        0.0289119089275298
+      ],
+      "nearest_triangle_id": 969,
+      "distance_m": 0.0012740238084031621,
+      "nearest_triangle_vertices_m": [
+        [
+          0.003632841416092659,
+          -0.0038592536748160698,
+          0.032843623652061685
+        ],
+        [
+          0.004452091808442428,
+          -0.003697345141510515,
+          0.0186398689030696
+        ],
+        [
+          0.003975948541837668,
+          -0.0032221799202700146,
+          0.032844988215103385
+        ]
+      ],
+      "nearest_proxy_part": "gripper0_proxy76_finger33_link_01",
+      "proxy_membership": "strictly_inside",
+      "signed_distance_to_proxy_union_m": -0.0012740238084031621
+    },
+    "status": "FINITE_SAMPLE_ONLY",
+    "source_points_strictly_inside_proxy_count": 3465,
+    "source_points_outside_proxy_count": 631,
+    "source_points_boundary_band_count": 0,
+    "source_points_inside_or_boundary_fraction": 0.845947265625,
+    "source_points_outside_fraction": 0.154052734375,
+    "signed_distance_min_m": -0.0012740238084031621,
+    "signed_distance_p05_m": -0.0010305812784333407,
+    "signed_distance_p50_m": -0.00017597335624298902,
+    "signed_distance_p95_m": 9.585956396945636e-07,
+    "signed_distance_max_m": 8.239013925637192e-06,
+    "signed_distance_convention": "negative inside proxy union, positive outside; zero within exposed-boundary tolerance band",
+    "buried_source_max_witness": {
+      "query_point_m": [
+        0.0028262229603591817,
+        -0.0030491745490221107,
+        0.028854161204723575
+      ],
+      "nearest_surface_point_m": [
+        0.003946710040057188,
+        -0.0036527560009560044,
+        0.0289119089275298
+      ],
+      "nearest_triangle_id": 969,
+      "distance_m": 0.0012740238084031621,
+      "signed_distance_m": -0.0012740238084031621,
+      "nearest_triangle_vertices_m": [
+        [
+          0.003632841416092659,
+          -0.0038592536748160698,
+          0.032843623652061685
+        ],
+        [
+          0.004452091808442428,
+          -0.003697345141510515,
+          0.0186398689030696
+        ],
+        [
+          0.003975948541837668,
+          -0.0032221799202700146,
+          0.032844988215103385
+        ]
+      ]
+    },
+    "uncovered_source_max_witness": {
+      "query_point_m": [
+        0.0037036775198702188,
+        0.006097511422761563,
+        0.04534526366617176
+      ],
+      "nearest_surface_point_m": [
+        0.0037007541936310037,
+        0.006089813915423025,
+        0.04534497401994078
+      ],
+      "nearest_triangle_id": 550,
+      "distance_m": 8.239013925637192e-06,
+      "signed_distance_m": 8.239013925637192e-06,
+      "nearest_triangle_vertices_m": [
+        [
+          0.0032502348289369927,
+          0.00625889432012828,
+          0.045398547732985066
+        ],
+        [
+          0.0033748687746298738,
+          0.0061874932191905655,
+          0.046038172195142474
+        ],
+        [
+          0.0039934920076030766,
+          0.00598007936344557,
+          0.04530670107704797
+        ]
+      ]
+    }
+  },
+  "proxy_union_to_source": {
+    "sample_count": 4096,
+    "p95_m": 0.0015532522025146138,
+    "p99_m": 0.0019244792781320614,
+    "max_m": 0.002177774104103114,
+    "max_witness": {
+      "query_point_m": [
+        0.0037783855255991592,
+        -0.0003727046108094815,
+        0.049019105955925436
+      ],
+      "nearest_surface_point_m": [
+        0.0055915191303188274,
+        -0.0005621775262980764,
+        0.050210469290191954
+      ],
+      "nearest_triangle_id": 1552,
+      "distance_m": 0.002177774104103114,
+      "nearest_triangle_vertices_m": [
+        [
+          0.0058358050882816315,
+          -0.00047655729576945305,
+          0.04985230788588524
+        ],
+        [
+          0.005491172894835472,
+          -0.0008817907073535025,
+          0.050312355160713196
+        ],
+        [
+          0.005533518735319376,
+          -0.0004469606501515955,
+          0.05031706392765045
+        ]
+      ]
+    },
+    "status": "FINITE_SAMPLE_ONLY"
+  },
+  "source_interior_classification": "UNKNOWN; no source watertightness/embedded-solid assumption",
+  "global_hausdorff_distance": "UNKNOWN; maxima are observed finite-query lower bounds",
+  "interpretation": "Negative source-to-proxy distance marks source surface buried by proxy (including possible groove/gap capping); positive marks uncovered source. Reverse unsigned deviation alone does not classify outside-source volume.",
+  "source_vertices_to_proxy_union": {
+    "sample_count": 2940,
+    "p95_m": 0.0009987273886060163,
+    "p99_m": 0.0011358350678375396,
+    "max_m": 0.0012733039229489214,
+    "max_witness": {
+      "query_point_m": [
+        0.0027351074386388063,
+        -0.0031921369954943657,
+        0.029111193493008614
+      ],
+      "nearest_surface_point_m": [
+        0.003809702471861469,
+        -0.0038730251200152126,
+        0.02916541301584662
+      ],
+      "nearest_triangle_id": 1193,
+      "distance_m": 0.0012733039229489214,
+      "nearest_triangle_vertices_m": [
+        [
+          0.004230082277217986,
+          -0.004047796604150549,
+          0.01863898546573602
+        ],
+        [
+          0.004452091808442428,
+          -0.003697345141510515,
+          0.0186398689030696
+        ],
+        [
+          0.003632841416092659,
+          -0.0038592536748160698,
+          0.032843623652061685
+        ]
+      ],
+      "nearest_proxy_part": "gripper0_proxy76_finger33_link_01",
+      "proxy_membership": "strictly_inside",
+      "signed_distance_to_proxy_union_m": -0.0012733039229489214
+    },
+    "status": "FINITE_SAMPLE_ONLY",
+    "source_points_strictly_inside_proxy_count": 1908,
+    "source_points_outside_proxy_count": 1032,
+    "source_points_boundary_band_count": 0,
+    "source_points_inside_or_boundary_fraction": 0.6489795918367347,
+    "source_points_outside_fraction": 0.3510204081632653,
+    "signed_distance_min_m": -0.0012733039229489214,
+    "signed_distance_p05_m": -0.0009987273886060163,
+    "signed_distance_p50_m": -0.00018664611503159905,
+    "signed_distance_p95_m": 3.1138102600572485e-06,
+    "signed_distance_max_m": 1.205909523860464e-05,
+    "signed_distance_convention": "negative inside proxy union, positive outside; zero within exposed-boundary tolerance band",
+    "buried_source_max_witness": {
+      "query_point_m": [
+        0.0027351074386388063,
+        -0.0031921369954943657,
+        0.029111193493008614
+      ],
+      "nearest_surface_point_m": [
+        0.003809702471861469,
+        -0.0038730251200152126,
+        0.02916541301584662
+      ],
+      "nearest_triangle_id": 1193,
+      "distance_m": 0.0012733039229489214,
+      "signed_distance_m": -0.0012733039229489214,
+      "nearest_triangle_vertices_m": [
+        [
+          0.004230082277217986,
+          -0.004047796604150549,
+          0.01863898546573602
+        ],
+        [
+          0.004452091808442428,
+          -0.003697345141510515,
+          0.0186398689030696
+        ],
+        [
+          0.003632841416092659,
+          -0.0038592536748160698,
+          0.032843623652061685
+        ]
+      ]
+    },
+    "uncovered_source_max_witness": {
+      "query_point_m": [
+        0.004105861764401197,
+        -0.005909472703933716,
+        0.04595423862338066
+      ],
+      "nearest_surface_point_m": [
+        0.0041007529023300016,
+        -0.005898561724202163,
+        0.04595371725248689
+      ],
+      "nearest_triangle_id": 4791,
+      "distance_m": 1.205909523860464e-05,
+      "signed_distance_m": 1.205909523860464e-05,
+      "nearest_triangle_vertices_m": [
+        [
+          0.004195437046912112,
+          -0.005823299400537438,
+          0.04660096752497122
+        ],
+        [
+          0.00399297026494752,
+          -0.00597972263161493,
+          0.045311375319475454
+        ],
+        [
+          0.004338127638694169,
+          -0.005819756824772926,
+          0.04527689364942392
+        ]
+      ]
+    }
+  },
+  "proxy_union_vertices_to_source": {
+    "sample_count": 4754,
+    "p95_m": 0.0002886058007710568,
+    "p99_m": 0.0010181190683902683,
+    "max_m": 0.00208886368905028,
+    "max_witness": {
+      "query_point_m": [
+        0.0014298789868893494,
+        -0.003543351734156709,
+        0.045109274230832136
+      ],
+      "nearest_surface_point_m": [
+        0.0018216581920288532,
+        -0.005593648901424626,
+        0.04518764572913453
+      ],
+      "nearest_triangle_id": 1331,
+      "distance_m": 0.00208886368905028,
+      "nearest_triangle_vertices_m": [
+        [
+          0.001928804675117135,
+          -0.005607410799711943,
+          0.044291991740465164
+        ],
+        [
+          0.001415605889633298,
+          -0.005652721039950848,
+          0.04567210003733635
+        ],
+        [
+          0.0022209943272173405,
+          -0.00550432875752449,
+          0.04552809149026871
+        ]
+      ]
+    },
+    "status": "FINITE_SAMPLE_ONLY"
+  },
+  "vertex_extrema_note": "All unique source and exposed-union vertices checked separately; vertex quantiles are not surface-area quantiles.",
+  "regions": {
+    "proximal_z_low20pct": {
+      "definition_link_frame_m": {
+        "axis": 2,
+        "min": 0.016293594613671303,
+        "max": 0.023821016401052476
+      },
+      "source_to_proxy_union": {
+        "sample_count": 896,
+        "p95_m": 0.001029220570245174,
+        "p99_m": 0.0010653273760931996,
+        "max_m": 0.001109678027852191,
+        "max_witness": {
+          "query_point_m": [
+            0.0031084661807132324,
+            -0.003347439680256283,
+            0.023603809918765605
+          ],
+          "nearest_surface_point_m": [
+            0.004044970400730561,
+            -0.003940830289983149,
+            0.023651061962908077
+          ],
+          "nearest_triangle_id": 1193,
+          "distance_m": 0.001109678027852191,
+          "nearest_triangle_vertices_m": [
+            [
+              0.004230082277217986,
+              -0.004047796604150549,
+              0.01863898546573602
+            ],
+            [
+              0.004452091808442428,
+              -0.003697345141510515,
+              0.0186398689030696
+            ],
+            [
+              0.003632841416092659,
+              -0.0038592536748160698,
+              0.032843623652061685
+            ]
+          ],
+          "nearest_proxy_part": "gripper0_proxy76_finger33_link_01",
+          "proxy_membership": "strictly_inside",
+          "signed_distance_to_proxy_union_m": -0.001109678027852191
+        },
+        "status": "FINITE_SAMPLE_ONLY",
+        "source_points_strictly_inside_proxy_count": 830,
+        "source_points_outside_proxy_count": 66,
+        "source_points_boundary_band_count": 0,
+        "source_points_inside_or_boundary_fraction": 0.9263392857142857,
+        "source_points_outside_fraction": 0.07366071428571429,
+        "signed_distance_min_m": -0.001109678027852191,
+        "signed_distance_p05_m": -0.001029220570245174,
+        "signed_distance_p50_m": -0.00010927406891394313,
+        "signed_distance_p95_m": 4.6182687422407223e-07,
+        "signed_distance_max_m": 6.570875781260325e-06,
+        "signed_distance_convention": "negative inside proxy union, positive outside; zero within exposed-boundary tolerance band",
+        "buried_source_max_witness": {
+          "query_point_m": [
+            0.0031084661807132324,
+            -0.003347439680256283,
+            0.023603809918765605
+          ],
+          "nearest_surface_point_m": [
+            0.004044970400730561,
+            -0.003940830289983149,
+            0.023651061962908077
+          ],
+          "nearest_triangle_id": 1193,
+          "distance_m": 0.001109678027852191,
+          "signed_distance_m": -0.001109678027852191,
+          "nearest_triangle_vertices_m": [
+            [
+              0.004230082277217986,
+              -0.004047796604150549,
+              0.01863898546573602
+            ],
+            [
+              0.004452091808442428,
+              -0.003697345141510515,
+              0.0186398689030696
+            ],
+            [
+              0.003632841416092659,
+              -0.0038592536748160698,
+              0.032843623652061685
+            ]
+          ]
+        },
+        "uncovered_source_max_witness": {
+          "query_point_m": [
+            -0.0022443917874519406,
+            0.007029108686062562,
+            0.01661295963136698
+          ],
+          "nearest_surface_point_m": [
+            -0.0022423223453956966,
+            0.0070291117608257455,
+            0.016619196121457923
+          ],
+          "nearest_triangle_id": 338,
+          "distance_m": 6.570875781260325e-06,
+          "signed_distance_m": 6.570875781260325e-06,
+          "nearest_triangle_vertices_m": [
+            [
+              -0.0020864118395590592,
+              0.007218067017583358,
+              0.016567367489368063
+            ],
+            [
+              -0.002377804152738649,
+              0.0062434840901866885,
+              0.01666454011541699
+            ],
+            [
+              -0.0023478787015428046,
+              0.007245869995069271,
+              0.016654115808541606
+            ]
+          ]
+        }
+      },
+      "proxy_union_to_source": {
+        "sample_count": 879,
+        "p95_m": 0.0015033320603184805,
+        "p99_m": 0.0018874685570427114,
+        "max_m": 0.0019244263705823063,
+        "max_witness": {
+          "query_point_m": [
+            0.0007998563049254408,
+            -0.0031484453899316366,
+            0.021807936480239282
+          ],
+          "nearest_surface_point_m": [
+            0.0018752451279505232,
+            -0.004741359434828505,
+            0.021905816920959647
+          ],
+          "nearest_triangle_id": 1867,
+          "distance_m": 0.0019244263705823063,
+          "nearest_triangle_vertices_m": [
+            [
+              0.001616864581592381,
+              -0.004948696121573448,
+              0.02137036807835102
+            ],
+            [
+              0.0015173235442489386,
+              -0.004856800194829702,
+              0.02395952306687832
+            ],
+            [
+              0.0021600506734102964,
+              -0.004582488909363747,
+              0.021362198516726494
+            ]
+          ]
+        },
+        "status": "FINITE_SAMPLE_ONLY"
+      },
+      "source_vertices_to_proxy_union": {
+        "sample_count": 463,
+        "p95_m": 0.0009986556532068007,
+        "p99_m": 0.0010334011567680915,
+        "max_m": 0.0010364674877886375,
+        "max_witness": {
+          "query_point_m": [
+            -0.0009577205637469888,
+            -0.005902032367885113,
+            0.021407078951597214
+          ],
+          "nearest_surface_point_m": [
+            -0.00072140293805808,
+            -0.006911003510926142,
+            0.021426980347079048
+          ],
+          "nearest_triangle_id": 1285,
+          "distance_m": 0.0010364674877886375,
+          "nearest_triangle_vertices_m": [
+            [
+              -0.0007769883145482391,
+              -0.006979025365108877,
+              0.018638417915766228
+            ],
+            [
+              -0.0003891619299217959,
+              -0.006627858976378287,
+              0.031836816112535915
+            ],
+            [
+              -0.0010937880204072306,
+              -0.0067929494415725124,
+              0.031834004718215944
+            ]
+          ],
+          "nearest_proxy_part": "gripper0_proxy76_finger33_link_01",
+          "proxy_membership": "strictly_inside",
+          "signed_distance_to_proxy_union_m": -0.0010364674877886375
+        },
+        "status": "FINITE_SAMPLE_ONLY",
+        "source_points_strictly_inside_proxy_count": 265,
+        "source_points_outside_proxy_count": 198,
+        "source_points_boundary_band_count": 0,
+        "source_points_inside_or_boundary_fraction": 0.572354211663067,
+        "source_points_outside_fraction": 0.42764578833693306,
+        "signed_distance_min_m": -0.0010364674877886375,
+        "signed_distance_p05_m": -0.0009986556532068007,
+        "signed_distance_p50_m": -2.371266858953315e-05,
+        "signed_distance_p95_m": 4.896000885985358e-06,
+        "signed_distance_max_m": 7.487025124486492e-06,
+        "signed_distance_convention": "negative inside proxy union, positive outside; zero within exposed-boundary tolerance band",
+        "buried_source_max_witness": {
+          "query_point_m": [
+            -0.0009577205637469888,
+            -0.005902032367885113,
+            0.021407078951597214
+          ],
+          "nearest_surface_point_m": [
+            -0.00072140293805808,
+            -0.006911003510926142,
+            0.021426980347079048
+          ],
+          "nearest_triangle_id": 1285,
+          "distance_m": 0.0010364674877886375,
+          "signed_distance_m": -0.0010364674877886375,
+          "nearest_triangle_vertices_m": [
+            [
+              -0.0007769883145482391,
+              -0.006979025365108877,
+              0.018638417915766228
+            ],
+            [
+              -0.0003891619299217959,
+              -0.006627858976378287,
+              0.031836816112535915
+            ],
+            [
+              -0.0010937880204072306,
+              -0.0067929494415725124,
+              0.031834004718215944
+            ]
+          ]
+        },
+        "uncovered_source_max_witness": {
+          "query_point_m": [
+            -0.0029675813857465982,
+            0.0072913081385195255,
+            0.017009401693940163
+          ],
+          "nearest_surface_point_m": [
+            -0.0029629664830285,
+            0.00729028237825751,
+            0.017015207383735704
+          ],
+          "nearest_triangle_id": 652,
+          "distance_m": 7.487025124486492e-06,
+          "signed_distance_m": 7.487025124486492e-06,
+          "nearest_triangle_vertices_m": [
+            [
+              -0.003060730693847745,
+              0.007294939702975544,
+              0.01709374234459696
+            ],
+            [
+              -0.0028432352689661466,
+              0.00728457858196948,
+              0.016919026111146672
+            ],
+            [
+              -0.0028761070875554856,
+              0.00628382834317699,
+              0.016943484551496236
+            ]
+          ]
+        }
+      },
+      "proxy_union_vertices_to_source": {
+        "sample_count": 222,
+        "p95_m": 4.14544638132018e-06,
+        "p99_m": 0.0002877052436587156,
+        "max_m": 0.0003190827764894128,
+        "max_witness": {
+          "query_point_m": [
+            0.003145415976788451,
+            0.004516667666187443,
+            0.0225248553492721
+          ],
+          "nearest_surface_point_m": [
+            0.0033756676577994904,
+            0.004736609655467857,
+            0.022545434537670998
+          ],
+          "nearest_triangle_id": 3564,
+          "distance_m": 0.0003190827764894128,
+          "nearest_triangle_vertices_m": [
+            [
+              0.003626540768891573,
+              0.00459651555866003,
+              0.021235791966319084
+            ],
+            [
+              0.0033573561813682318,
+              0.004878264386206865,
+              0.021236365661025047
+            ],
+            [
+              0.0032209584023803473,
+              0.004777971655130386,
+              0.0238343495875597
+            ]
+          ]
+        },
+        "status": "FINITE_SAMPLE_ONLY"
+      }
+    },
+    "distal_z_high25pct": {
+      "definition_link_frame_m": {
+        "axis": 2,
+        "min": 0.0445214263163507,
+        "max": 0.053930703550577164
+      },
+      "source_to_proxy_union": {
+        "sample_count": 895,
+        "p95_m": 0.000998731236071806,
+        "p99_m": 0.0009996784688057884,
+        "max_m": 0.0010030832093851907,
+        "max_witness": {
+          "query_point_m": [
+            0.002902530875390874,
+            -0.005240728692779941,
+            0.0465143313508767
+          ],
+          "nearest_surface_point_m": [
+            0.003204276211155348,
+            -0.006195267241032055,
+            0.046577433151133316
+          ],
+          "nearest_triangle_id": 4720,
+          "distance_m": 0.0010030832093851907,
+          "nearest_triangle_vertices_m": [
+            [
+              0.0030966201767104002,
+              -0.006218272270555496,
+              0.0467442353459052
+            ],
+            [
+              0.003250426852576102,
+              -0.00625857360971158,
+              0.04539911320236253
+            ],
+            [
+              0.003480984467789512,
+              -0.006100571370616,
+              0.046686707891909214
+            ]
+          ],
+          "nearest_proxy_part": "gripper0_proxy76_finger33_link_05",
+          "proxy_membership": "strictly_inside",
+          "signed_distance_to_proxy_union_m": -0.0010030832093851907
+        },
+        "status": "FINITE_SAMPLE_ONLY",
+        "source_points_strictly_inside_proxy_count": 490,
+        "source_points_outside_proxy_count": 405,
+        "source_points_boundary_band_count": 0,
+        "source_points_inside_or_boundary_fraction": 0.547486033519553,
+        "source_points_outside_fraction": 0.45251396648044695,
+        "signed_distance_min_m": -0.0010030832093851907,
+        "signed_distance_p05_m": -0.000998731236071806,
+        "signed_distance_p50_m": -3.028200408236851e-07,
+        "signed_distance_p95_m": 1.4114842962178236e-06,
+        "signed_distance_max_m": 8.239013925637192e-06,
+        "signed_distance_convention": "negative inside proxy union, positive outside; zero within exposed-boundary tolerance band",
+        "buried_source_max_witness": {
+          "query_point_m": [
+            0.002902530875390874,
+            -0.005240728692779941,
+            0.0465143313508767
+          ],
+          "nearest_surface_point_m": [
+            0.003204276211155348,
+            -0.006195267241032055,
+            0.046577433151133316
+          ],
+          "nearest_triangle_id": 4720,
+          "distance_m": 0.0010030832093851907,
+          "signed_distance_m": -0.0010030832093851907,
+          "nearest_triangle_vertices_m": [
+            [
+              0.0030966201767104002,
+              -0.006218272270555496,
+              0.0467442353459052
+            ],
+            [
+              0.003250426852576102,
+              -0.00625857360971158,
+              0.04539911320236253
+            ],
+            [
+              0.003480984467789512,
+              -0.006100571370616,
+              0.046686707891909214
+            ]
+          ]
+        },
+        "uncovered_source_max_witness": {
+          "query_point_m": [
+            0.0037036775198702188,
+            0.006097511422761563,
+            0.04534526366617176
+          ],
+          "nearest_surface_point_m": [
+            0.0037007541936310037,
+            0.006089813915423025,
+            0.04534497401994078
+          ],
+          "nearest_triangle_id": 550,
+          "distance_m": 8.239013925637192e-06,
+          "signed_distance_m": 8.239013925637192e-06,
+          "nearest_triangle_vertices_m": [
+            [
+              0.0032502348289369927,
+              0.00625889432012828,
+              0.045398547732985066
+            ],
+            [
+              0.0033748687746298738,
+              0.0061874932191905655,
+              0.046038172195142474
+            ],
+            [
+              0.0039934920076030766,
+              0.00598007936344557,
+              0.04530670107704797
+            ]
+          ]
+        }
+      },
+      "proxy_union_to_source": {
+        "sample_count": 795,
+        "p95_m": 0.0019008452875612892,
+        "p99_m": 0.0020546608654060917,
+        "max_m": 0.002177774104103114,
+        "max_witness": {
+          "query_point_m": [
+            0.0037783855255991592,
+            -0.0003727046108094815,
+            0.049019105955925436
+          ],
+          "nearest_surface_point_m": [
+            0.0055915191303188274,
+            -0.0005621775262980764,
+            0.050210469290191954
+          ],
+          "nearest_triangle_id": 1552,
+          "distance_m": 0.002177774104103114,
+          "nearest_triangle_vertices_m": [
+            [
+              0.0058358050882816315,
+              -0.00047655729576945305,
+              0.04985230788588524
+            ],
+            [
+              0.005491172894835472,
+              -0.0008817907073535025,
+              0.050312355160713196
+            ],
+            [
+              0.005533518735319376,
+              -0.0004469606501515955,
+              0.05031706392765045
+            ]
+          ]
+        },
+        "status": "FINITE_SAMPLE_ONLY"
+      },
+      "source_vertices_to_proxy_union": {
+        "sample_count": 1228,
+        "p95_m": 0.0009970954943133597,
+        "p99_m": 0.0009981011534030107,
+        "max_m": 0.0009987228007764008,
+        "max_witness": {
+          "query_point_m": [
+            0.0033277934417128563,
+            -0.0010792982066050172,
+            0.0521850548684597
+          ],
+          "nearest_surface_point_m": [
+            0.003779859217288373,
+            -0.0011651538904108368,
+            0.05307145916047447
+          ],
+          "nearest_triangle_id": 2249,
+          "distance_m": 0.0009987228007764008,
+          "nearest_triangle_vertices_m": [
+            [
+              0.003344020168790837,
+              -0.0007300626127040849,
+              0.0533358791083042
+            ],
+            [
+              0.003245223960093866,
+              -0.0010303894244661838,
+              0.053357175960191676
+            ],
+            [
+              0.0038229861346178585,
+              -0.0011940678898352069,
+              0.05304666388960217
+            ]
+          ],
+          "nearest_proxy_part": "gripper0_proxy76_finger33_link_02",
+          "proxy_membership": "strictly_inside",
+          "signed_distance_to_proxy_union_m": -0.0009987228007764008
+        },
+        "status": "FINITE_SAMPLE_ONLY",
+        "source_points_strictly_inside_proxy_count": 560,
+        "source_points_outside_proxy_count": 668,
+        "source_points_boundary_band_count": 0,
+        "source_points_inside_or_boundary_fraction": 0.4560260586319218,
+        "source_points_outside_fraction": 0.5439739413680782,
+        "signed_distance_min_m": -0.0009987228007764008,
+        "signed_distance_p05_m": -0.0009970954943133597,
+        "signed_distance_p50_m": 2.472559793998308e-07,
+        "signed_distance_p95_m": 2.566496902206359e-06,
+        "signed_distance_max_m": 1.205909523860464e-05,
+        "signed_distance_convention": "negative inside proxy union, positive outside; zero within exposed-boundary tolerance band",
+        "buried_source_max_witness": {
+          "query_point_m": [
+            0.0033277934417128563,
+            -0.0010792982066050172,
+            0.0521850548684597
+          ],
+          "nearest_surface_point_m": [
+            0.003779859217288373,
+            -0.0011651538904108368,
+            0.05307145916047447
+          ],
+          "nearest_triangle_id": 2249,
+          "distance_m": 0.0009987228007764008,
+          "signed_distance_m": -0.0009987228007764008,
+          "nearest_triangle_vertices_m": [
+            [
+              0.003344020168790837,
+              -0.0007300626127040849,
+              0.0533358791083042
+            ],
+            [
+              0.003245223960093866,
+              -0.0010303894244661838,
+              0.053357175960191676
+            ],
+            [
+              0.0038229861346178585,
+              -0.0011940678898352069,
+              0.05304666388960217
+            ]
+          ]
+        },
+        "uncovered_source_max_witness": {
+          "query_point_m": [
+            0.004105861764401197,
+            -0.005909472703933716,
+            0.04595423862338066
+          ],
+          "nearest_surface_point_m": [
+            0.0041007529023300016,
+            -0.005898561724202163,
+            0.04595371725248689
+          ],
+          "nearest_triangle_id": 4791,
+          "distance_m": 1.205909523860464e-05,
+          "signed_distance_m": 1.205909523860464e-05,
+          "nearest_triangle_vertices_m": [
+            [
+              0.004195437046912112,
+              -0.005823299400537438,
+              0.04660096752497122
+            ],
+            [
+              0.00399297026494752,
+              -0.00597972263161493,
+              0.045311375319475454
+            ],
+            [
+              0.004338127638694169,
+              -0.005819756824772926,
+              0.04527689364942392
+            ]
+          ]
+        }
+      },
+      "proxy_union_vertices_to_source": {
+        "sample_count": 3031,
+        "p95_m": 0.0001260906564054276,
+        "p99_m": 0.0004675492968612588,
+        "max_m": 0.00208886368905028,
+        "max_witness": {
+          "query_point_m": [
+            0.0014298789868893494,
+            -0.003543351734156709,
+            0.045109274230832136
+          ],
+          "nearest_surface_point_m": [
+            0.0018216581920288532,
+            -0.005593648901424626,
+            0.04518764572913453
+          ],
+          "nearest_triangle_id": 1331,
+          "distance_m": 0.00208886368905028,
+          "nearest_triangle_vertices_m": [
+            [
+              0.001928804675117135,
+              -0.005607410799711943,
+              0.044291991740465164
+            ],
+            [
+              0.001415605889633298,
+              -0.005652721039950848,
+              0.04567210003733635
+            ],
+            [
+              0.0022209943272173405,
+              -0.00550432875752449,
+              0.04552809149026871
+            ]
+          ]
+        },
+        "status": "FINITE_SAMPLE_ONLY"
+      }
+    },
+    "x_low25pct": {
+      "definition_link_frame_m": {
+        "axis": 0,
+        "min": -0.0036015440709888935,
+        "max": -0.0007454344304278493
+      },
+      "source_to_proxy_union": {
+        "sample_count": 680,
+        "p95_m": 0.0009587496485973207,
+        "p99_m": 0.0010723704121407935,
+        "max_m": 0.0010804114585181677,
+        "max_witness": {
+          "query_point_m": [
+            -0.0011605268298257381,
+            -0.005822451578544082,
+            0.025550464065146716
+          ],
+          "nearest_surface_point_m": [
+            -0.0009796884789475737,
+            -0.00688744529799487,
+            0.025569823509338015
+          ],
+          "nearest_triangle_id": 1280,
+          "distance_m": 0.0010804114585181677,
+          "nearest_triangle_vertices_m": [
+            [
+              -0.0007769883145482391,
+              -0.006979025365108877,
+              0.018638417915766228
+            ],
+            [
+              -0.0010937880204072306,
+              -0.0067929494415725124,
+              0.031834004718215944
+            ],
+            [
+              -0.0015509679368430418,
+              -0.007110358115905402,
+              0.018643409988454204
+            ]
+          ],
+          "nearest_proxy_part": "gripper0_proxy76_finger33_link_01",
+          "proxy_membership": "strictly_inside",
+          "signed_distance_to_proxy_union_m": -0.0010804114585181677
+        },
+        "status": "FINITE_SAMPLE_ONLY",
+        "source_points_strictly_inside_proxy_count": 559,
+        "source_points_outside_proxy_count": 121,
+        "source_points_boundary_band_count": 0,
+        "source_points_inside_or_boundary_fraction": 0.8220588235294117,
+        "source_points_outside_fraction": 0.17794117647058824,
+        "signed_distance_min_m": -0.0010804114585181677,
+        "signed_distance_p05_m": -0.000958749648597321,
+        "signed_distance_p50_m": -8.231075775366853e-05,
+        "signed_distance_p95_m": 1.6804982332055005e-06,
+        "signed_distance_max_m": 6.570875781260325e-06,
+        "signed_distance_convention": "negative inside proxy union, positive outside; zero within exposed-boundary tolerance band",
+        "buried_source_max_witness": {
+          "query_point_m": [
+            -0.0011605268298257381,
+            -0.005822451578544082,
+            0.025550464065146716
+          ],
+          "nearest_surface_point_m": [
+            -0.0009796884789475737,
+            -0.00688744529799487,
+            0.025569823509338015
+          ],
+          "nearest_triangle_id": 1280,
+          "distance_m": 0.0010804114585181677,
+          "signed_distance_m": -0.0010804114585181677,
+          "nearest_triangle_vertices_m": [
+            [
+              -0.0007769883145482391,
+              -0.006979025365108877,
+              0.018638417915766228
+            ],
+            [
+              -0.0010937880204072306,
+              -0.0067929494415725124,
+              0.031834004718215944
+            ],
+            [
+              -0.0015509679368430418,
+              -0.007110358115905402,
+              0.018643409988454204
+            ]
+          ]
+        },
+        "uncovered_source_max_witness": {
+          "query_point_m": [
+            -0.0022443917874519406,
+            0.007029108686062562,
+            0.01661295963136698
+          ],
+          "nearest_surface_point_m": [
+            -0.0022423223453956966,
+            0.0070291117608257455,
+            0.016619196121457923
+          ],
+          "nearest_triangle_id": 338,
+          "distance_m": 6.570875781260325e-06,
+          "signed_distance_m": 6.570875781260325e-06,
+          "nearest_triangle_vertices_m": [
+            [
+              -0.0020864118395590592,
+              0.007218067017583358,
+              0.016567367489368063
+            ],
+            [
+              -0.002377804152738649,
+              0.0062434840901866885,
+              0.01666454011541699
+            ],
+            [
+              -0.0023478787015428046,
+              0.007245869995069271,
+              0.016654115808541606
+            ]
+          ]
+        }
+      },
+      "proxy_union_to_source": {
+        "sample_count": 675,
+        "p95_m": 0.0011655782747319989,
+        "p99_m": 0.0014612531219435699,
+        "max_m": 0.0015508310013142305,
+        "max_witness": {
+          "query_point_m": [
+            -0.0008232550974117483,
+            -0.004174752059288275,
+            0.024369789409168938
+          ],
+          "nearest_surface_point_m": [
+            -0.0004373760175019871,
+            -0.005676383892875922,
+            0.024405510084995374
+          ],
+          "nearest_triangle_id": 1767,
+          "distance_m": 0.0015508310013142305,
+          "nearest_triangle_vertices_m": [
+            [
+              -0.0002830121957231313,
+              -0.00564616359770298,
+              0.02400837279856205
+            ],
+            [
+              -0.000942320330068469,
+              -0.005815198179334402,
+              0.024024764075875282
+            ],
+            [
+              -0.0009150546393357217,
+              -0.005745789501816034,
+              0.026648035272955894
+            ]
+          ]
+        },
+        "status": "FINITE_SAMPLE_ONLY"
+      },
+      "source_vertices_to_proxy_union": {
+        "sample_count": 344,
+        "p95_m": 0.000776538694507544,
+        "p99_m": 0.001047103207656133,
+        "max_m": 0.0010782049173465509,
+        "max_witness": {
+          "query_point_m": [
+            -0.0009150546393357217,
+            -0.005745789501816034,
+            0.026648035272955894
+          ],
+          "nearest_surface_point_m": [
+            -0.0006692207573515691,
+            -0.0067953908262228975,
+            0.026668738076201903
+          ],
+          "nearest_triangle_id": 1285,
+          "distance_m": 0.0010782049173465509,
+          "nearest_triangle_vertices_m": [
+            [
+              -0.0007769883145482391,
+              -0.006979025365108877,
+              0.018638417915766228
+            ],
+            [
+              -0.0003891619299217959,
+              -0.006627858976378287,
+              0.031836816112535915
+            ],
+            [
+              -0.0010937880204072306,
+              -0.0067929494415725124,
+              0.031834004718215944
+            ]
+          ],
+          "nearest_proxy_part": "gripper0_proxy76_finger33_link_01",
+          "proxy_membership": "strictly_inside",
+          "signed_distance_to_proxy_union_m": -0.0010782049173465509
+        },
+        "status": "FINITE_SAMPLE_ONLY",
+        "source_points_strictly_inside_proxy_count": 165,
+        "source_points_outside_proxy_count": 179,
+        "source_points_boundary_band_count": 0,
+        "source_points_inside_or_boundary_fraction": 0.4796511627906977,
+        "source_points_outside_fraction": 0.5203488372093024,
+        "signed_distance_min_m": -0.0010782049173465509,
+        "signed_distance_p05_m": -0.0007765386945075466,
+        "signed_distance_p50_m": 2.592535983348726e-07,
+        "signed_distance_p95_m": 5.101475134037842e-06,
+        "signed_distance_max_m": 7.487025124486492e-06,
+        "signed_distance_convention": "negative inside proxy union, positive outside; zero within exposed-boundary tolerance band",
+        "buried_source_max_witness": {
+          "query_point_m": [
+            -0.0009150546393357217,
+            -0.005745789501816034,
+            0.026648035272955894
+          ],
+          "nearest_surface_point_m": [
+            -0.0006692207573515691,
+            -0.0067953908262228975,
+            0.026668738076201903
+          ],
+          "nearest_triangle_id": 1285,
+          "distance_m": 0.0010782049173465509,
+          "signed_distance_m": -0.0010782049173465509,
+          "nearest_triangle_vertices_m": [
+            [
+              -0.0007769883145482391,
+              -0.006979025365108877,
+              0.018638417915766228
+            ],
+            [
+              -0.0003891619299217959,
+              -0.006627858976378287,
+              0.031836816112535915
+            ],
+            [
+              -0.0010937880204072306,
+              -0.0067929494415725124,
+              0.031834004718215944
+            ]
+          ]
+        },
+        "uncovered_source_max_witness": {
+          "query_point_m": [
+            -0.0029675813857465982,
+            0.0072913081385195255,
+            0.017009401693940163
+          ],
+          "nearest_surface_point_m": [
+            -0.0029629664830285,
+            0.00729028237825751,
+            0.017015207383735704
+          ],
+          "nearest_triangle_id": 652,
+          "distance_m": 7.487025124486492e-06,
+          "signed_distance_m": 7.487025124486492e-06,
+          "nearest_triangle_vertices_m": [
+            [
+              -0.003060730693847745,
+              0.007294939702975544,
+              0.01709374234459696
+            ],
+            [
+              -0.0028432352689661466,
+              0.00728457858196948,
+              0.016919026111146672
+            ],
+            [
+              -0.0028761070875554856,
+              0.00628382834317699,
+              0.016943484551496236
+            ]
+          ]
+        }
+      },
+      "proxy_union_vertices_to_source": {
+        "sample_count": 298,
+        "p95_m": 3.237675073450371e-06,
+        "p99_m": 4.126246234524559e-06,
+        "max_m": 1.0224207213302144e-05,
+        "max_witness": {
+          "query_point_m": [
+            -0.003091116329161896,
+            -0.006068588641101296,
+            0.03182784568840361
+          ],
+          "nearest_surface_point_m": [
+            -0.0031013299768122534,
+            -0.006068589173470483,
+            0.031828310246829944
+          ],
+          "nearest_triangle_id": 5455,
+          "distance_m": 1.0224207213302144e-05,
+          "nearest_triangle_vertices_m": [
+            [
+              -0.003132009645923972,
+              -0.006998002063483,
+              0.03115273080766201
+            ],
+            [
+              -0.003051500301808119,
+              -0.005997033324092627,
+              0.03292393311858177
+            ],
+            [
+              -0.0031501585617661476,
+              -0.0059991502203047276,
+              0.030754858627915382
+            ]
+          ]
+        },
+        "status": "FINITE_SAMPLE_ONLY"
+      }
+    },
+    "x_high25pct": {
+      "definition_link_frame_m": {
+        "axis": 0,
+        "min": 0.004966784850694239,
+        "max": 0.007822894491255283
+      },
+      "source_to_proxy_union": {
+        "sample_count": 736,
+        "p95_m": 0.0009993943487870824,
+        "p99_m": 0.0010546581995253467,
+        "max_m": 0.0011447615112085644,
+        "max_witness": {
+          "query_point_m": [
+            0.005024023751265054,
+            -0.0004787187743749371,
+            0.038387286280698533
+          ],
+          "nearest_surface_point_m": [
+            0.003943389697361325,
+            -0.00019195265091942064,
+            0.038633201204048874
+          ],
+          "nearest_triangle_id": 2917,
+          "distance_m": 0.0011447615112085644,
+          "nearest_triangle_vertices_m": [
+            [
+              0.003597467289835088,
+              0.0020928384401667443,
+              0.03444876130240162
+            ],
+            [
+              0.0042486575776161896,
+              -0.002865165774272047,
+              0.043091937650712495
+            ],
+            [
+              0.0037438943278728836,
+              0.0020928414882823627,
+              0.03509220809881329
+            ]
+          ],
+          "nearest_proxy_part": "gripper0_proxy76_finger33_link_03",
+          "proxy_membership": "strictly_inside",
+          "signed_distance_to_proxy_union_m": -0.0011447615112085644
+        },
+        "status": "FINITE_SAMPLE_ONLY",
+        "source_points_strictly_inside_proxy_count": 526,
+        "source_points_outside_proxy_count": 210,
+        "source_points_boundary_band_count": 0,
+        "source_points_inside_or_boundary_fraction": 0.7146739130434783,
+        "source_points_outside_fraction": 0.28532608695652173,
+        "signed_distance_min_m": -0.0011447615112085644,
+        "signed_distance_p05_m": -0.0009993943487870824,
+        "signed_distance_p50_m": -1.4015498670113414e-05,
+        "signed_distance_p95_m": 9.329611301148313e-07,
+        "signed_distance_max_m": 6.908306491981718e-06,
+        "signed_distance_convention": "negative inside proxy union, positive outside; zero within exposed-boundary tolerance band",
+        "buried_source_max_witness": {
+          "query_point_m": [
+            0.005024023751265054,
+            -0.0004787187743749371,
+            0.038387286280698533
+          ],
+          "nearest_surface_point_m": [
+            0.003943389697361325,
+            -0.00019195265091942064,
+            0.038633201204048874
+          ],
+          "nearest_triangle_id": 2917,
+          "distance_m": 0.0011447615112085644,
+          "signed_distance_m": -0.0011447615112085644,
+          "nearest_triangle_vertices_m": [
+            [
+              0.003597467289835088,
+              0.0020928384401667443,
+              0.03444876130240162
+            ],
+            [
+              0.0042486575776161896,
+              -0.002865165774272047,
+              0.043091937650712495
+            ],
+            [
+              0.0037438943278728836,
+              0.0020928414882823627,
+              0.03509220809881329
+            ]
+          ]
+        },
+        "uncovered_source_max_witness": {
+          "query_point_m": [
+            0.0062320004746015305,
+            0.0042646699367236696,
+            0.043870516715298916
+          ],
+          "nearest_surface_point_m": [
+            0.006226655871649542,
+            0.004260372902181146,
+            0.04387135062897137
+          ],
+          "nearest_triangle_id": 3749,
+          "distance_m": 6.908306491981718e-06,
+          "signed_distance_m": 6.908306491981718e-06,
+          "nearest_triangle_vertices_m": [
+            [
+              0.006369421743740353,
+              0.003972134230156211,
+              0.04330109420499075
+            ],
+            [
+              0.006077073074735892,
+              0.004456304790534279,
+              0.0439222736869409
+            ],
+            [
+              0.006501422147353496,
+              0.003931572994422937,
+              0.04393808665795941
+            ]
+          ]
+        }
+      },
+      "proxy_union_to_source": {
+        "sample_count": 657,
+        "p95_m": 0.000996135376562142,
+        "p99_m": 0.0015087429745716415,
+        "max_m": 0.0016879642079025094,
+        "max_witness": {
+          "query_point_m": [
+            0.004997839307195757,
+            0.00035521834349106396,
+            0.04732279316943372
+          ],
+          "nearest_surface_point_m": [
+            0.006661132690496643,
+            0.00042155655188921853,
+            0.04760257438812783
+          ],
+          "nearest_triangle_id": 2180,
+          "distance_m": 0.0016879642079025094,
+          "nearest_triangle_vertices_m": [
+            [
+              0.006721833720803261,
+              0.0005807671695947647,
+              0.04720395803451538
+            ],
+            [
+              0.006649155635386705,
+              8.057052802712406e-09,
+              0.047773730009794235
+            ],
+            [
+              0.006627656985074282,
+              0.0005640076706185937,
+              0.04776781052350998
+            ]
+          ]
+        },
+        "status": "FINITE_SAMPLE_ONLY"
+      },
+      "source_vertices_to_proxy_union": {
+        "sample_count": 651,
+        "p95_m": 0.0009969331598097125,
+        "p99_m": 0.001022160282494024,
+        "max_m": 0.0011141573321657556,
+        "max_witness": {
+          "query_point_m": [
+            0.004991048015654087,
+            -0.0003814158553723246,
+            0.038271378725767136
+          ],
+          "nearest_surface_point_m": [
+            0.003939303750358389,
+            -0.00010231616872457535,
+            0.038510719332746926
+          ],
+          "nearest_triangle_id": 2917,
+          "distance_m": 0.0011141573321657556,
+          "nearest_triangle_vertices_m": [
+            [
+              0.003597467289835088,
+              0.0020928384401667443,
+              0.03444876130240162
+            ],
+            [
+              0.0042486575776161896,
+              -0.002865165774272047,
+              0.043091937650712495
+            ],
+            [
+              0.0037438943278728836,
+              0.0020928414882823627,
+              0.03509220809881329
+            ]
+          ],
+          "nearest_proxy_part": "gripper0_proxy76_finger33_link_03",
+          "proxy_membership": "strictly_inside",
+          "signed_distance_to_proxy_union_m": -0.0011141573321657556
+        },
+        "status": "FINITE_SAMPLE_ONLY",
+        "source_points_strictly_inside_proxy_count": 331,
+        "source_points_outside_proxy_count": 320,
+        "source_points_boundary_band_count": 0,
+        "source_points_inside_or_boundary_fraction": 0.5084485407066052,
+        "source_points_outside_fraction": 0.4915514592933948,
+        "signed_distance_min_m": -0.0011141573321657556,
+        "signed_distance_p05_m": -0.0009969331598097125,
+        "signed_distance_p50_m": -2.432990349365202e-07,
+        "signed_distance_p95_m": 1.5041486485447002e-06,
+        "signed_distance_max_m": 1.1630785963595856e-05,
+        "signed_distance_convention": "negative inside proxy union, positive outside; zero within exposed-boundary tolerance band",
+        "buried_source_max_witness": {
+          "query_point_m": [
+            0.004991048015654087,
+            -0.0003814158553723246,
+            0.038271378725767136
+          ],
+          "nearest_surface_point_m": [
+            0.003939303750358389,
+            -0.00010231616872457535,
+            0.038510719332746926
+          ],
+          "nearest_triangle_id": 2917,
+          "distance_m": 0.0011141573321657556,
+          "signed_distance_m": -0.0011141573321657556,
+          "nearest_triangle_vertices_m": [
+            [
+              0.003597467289835088,
+              0.0020928384401667443,
+              0.03444876130240162
+            ],
+            [
+              0.0042486575776161896,
+              -0.002865165774272047,
+              0.043091937650712495
+            ],
+            [
+              0.0037438943278728836,
+              0.0020928414882823627,
+              0.03509220809881329
+            ]
+          ]
+        },
+        "uncovered_source_max_witness": {
+          "query_point_m": [
+            0.005711565259844065,
+            -0.004888384137302637,
+            0.044559579342603683
+          ],
+          "nearest_surface_point_m": [
+            0.005703698589369739,
+            -0.004879845508838544,
+            0.044560273966049536
+          ],
+          "nearest_triangle_id": 4187,
+          "distance_m": 1.1630785963595856e-05,
+          "signed_distance_m": 1.1630785963595856e-05,
+          "nearest_triangle_vertices_m": [
+            [
+              0.005584218833880231,
+              -0.004937774910703907,
+              0.04391925007350441
+            ],
+            [
+              0.00583896936871673,
+              -0.004703154860997606,
+              0.043920265121372454
+            ],
+            [
+              0.005811775295082125,
+              -0.004832700508951572,
+              0.04520472412748348
+            ]
+          ]
+        }
+      },
+      "proxy_union_vertices_to_source": {
+        "sample_count": 2239,
+        "p95_m": 2.181321218950063e-05,
+        "p99_m": 0.0004953882206892318,
+        "max_m": 0.001408822642307473,
+        "max_witness": {
+          "query_point_m": [
+            0.005191861460722747,
+            0.004660097404249089,
+            0.034844211953049015
+          ],
+          "nearest_surface_point_m": [
+            0.004054721161272042,
+            0.003871269998179933,
+            0.03510773519733228
+          ],
+          "nearest_triangle_id": 4969,
+          "distance_m": 0.001408822642307473,
+          "nearest_triangle_vertices_m": [
+            [
+              0.004188998602330685,
+              0.0037569005507975817,
+              0.03534480929374695
+            ],
+            [
+              0.0038761228788644075,
+              0.003807209199294448,
+              0.0341452993452549
+            ],
+            [
+              0.0037890870589762926,
+              0.0043303570710122585,
+              0.035335712134838104
+            ]
+          ]
+        },
+        "status": "FINITE_SAMPLE_ONLY"
+      }
+    }
+  },
+  "link": "finger33_link",
+  "source_binding": {
+    "name": "gripper0_finger33_link_visual_0",
+    "mesh": "gripper0_finger33_link",
+    "file": "/data_robot/projects/.worktrees/nero_dh116_right_proxy76/meshes/dh116_right/source/finger33_link.STL",
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "pos": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "quat": [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "candidate_collision_bindings": [
+    {
+      "name": "gripper0_proxy76_finger33_link_00",
+      "mesh": "gripper0_proxy76_finger33_link_00",
+      "file": "/data_robot/projects/.worktrees/nero_dh116_right_proxy76/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_00.obj",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "pos": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quat": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "gripper0_proxy76_finger33_link_01",
+      "mesh": "gripper0_proxy76_finger33_link_01",
+      "file": "/data_robot/projects/.worktrees/nero_dh116_right_proxy76/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_01.obj",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "pos": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quat": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "gripper0_proxy76_finger33_link_02",
+      "mesh": "gripper0_proxy76_finger33_link_02",
+      "file": "/data_robot/projects/.worktrees/nero_dh116_right_proxy76/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_02.obj",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "pos": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quat": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "gripper0_proxy76_finger33_link_03",
+      "mesh": "gripper0_proxy76_finger33_link_03",
+      "file": "/data_robot/projects/.worktrees/nero_dh116_right_proxy76/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_03.obj",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "pos": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quat": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "gripper0_proxy76_finger33_link_04",
+      "mesh": "gripper0_proxy76_finger33_link_04",
+      "file": "/data_robot/projects/.worktrees/nero_dh116_right_proxy76/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_04.obj",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "pos": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quat": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "gripper0_proxy76_finger33_link_05",
+      "mesh": "gripper0_proxy76_finger33_link_05",
+      "file": "/data_robot/projects/.worktrees/nero_dh116_right_proxy76/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_05.obj",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "pos": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quat": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "gripper0_proxy76_finger33_link_06",
+      "mesh": "gripper0_proxy76_finger33_link_06",
+      "file": "/data_robot/projects/.worktrees/nero_dh116_right_proxy76/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_06.obj",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "pos": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quat": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "gripper0_proxy76_finger33_link_07",
+      "mesh": "gripper0_proxy76_finger33_link_07",
+      "file": "/data_robot/projects/.worktrees/nero_dh116_right_proxy76/examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_07.obj",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "pos": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quat": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "source_aabb_link_frame_m": {
+    "min": [
+      -0.0036015440709888935,
+      -0.007301102392375469,
+      0.016293594613671303
+    ],
+    "max": [
+      0.007822894491255283,
+      0.007301060948520899,
+      0.053930703550577164
+    ]
+  },
+  "region_interpretation": "Coordinate bands of formal-right source AABB only; z bands are descriptive and X bands do not establish anatomical inward contact, grooves or gap preservation.",
+  "wall_seconds": 8.932767000980675
+}

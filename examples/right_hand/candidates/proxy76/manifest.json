@@ -1,0 +1,3751 @@
+{
+  "schema": "right-proxy76-migration-v1",
+  "baseline_commit": "a564d2841c20e6012d0ce605ea8f619ae9a219a5",
+  "candidate_model": "examples/right_hand/candidates/proxy76/model.xml",
+  "candidate_model_sha256": "56949ed130a54b1d8b5fbd76e51b1262b45b7346e29130e42e8db156dd7d15d6",
+  "formal_right_model": "mjcf/nero_dh116_right.xml",
+  "formal_right_sha256": "739d3d29bbfd4a6468fb8b75f4de09b719c0f96abb39508959c1dfc33a84b9cc",
+  "formal_left_model": "mjcf/nero_dh116.xml",
+  "formal_left_sha256": "c446124b7d938aa6e00ba5914047001de66c2a2c162e7dea1644437e5a85cb33",
+  "builder_sha256": "ef858f59bf57b73657f27ed50e623ba361ae30bee588c9be46d7f88b53bf025c",
+  "alignment_sha256": "f25a28172adb25639ad4ac084d238f6815bd001d91402ea80d9766cd6275eeaa",
+  "no_decomposition": true,
+  "no_model_mechanics_control_or_filter_edits": true,
+  "hand_collision_geoms_removed": 17,
+  "hand_collision_geoms_added": 76,
+  "direct_file_references": 57,
+  "transformed_files": 19,
+  "source_inputs_unchanged": true,
+  "input_sha256": {
+    "mjcf/nero_dh116.xml": "c446124b7d938aa6e00ba5914047001de66c2a2c162e7dea1644437e5a85cb33",
+    "mjcf/nero_dh116_right.xml": "739d3d29bbfd4a6468fb8b75f4de09b719c0f96abb39508959c1dfc33a84b9cc",
+    "runs/d3_proxy76/alignment/transforms.json": "f25a28172adb25639ad4ac084d238f6815bd001d91402ea80d9766cd6275eeaa",
+    "meshes/dh116/gripper0_proxy_base_link_0-b6201105.obj": "b62011053253549820237dd9bcd6e4fa5aa395a9b20c0f5013081357bde6163d",
+    "meshes/dh116/gripper0_proxy_base_link_1-d5d01f7a.obj": "d5d01f7ad0324a13077df2ab2be613e0486d5a2fe9ef0e0ae9bd2719717f22ff",
+    "meshes/dh116/gripper0_proxy_base_link_2-28926ea0.obj": "28926ea04aaba25ef8cf8287baa5169807b7412a42e3480a17c261b401c90bce",
+    "meshes/dh116/gripper0_proxy_base_link_3-f0401ef7.obj": "f0401ef72c46652c02a47ac13e0605a1de889c50fba784b09f46793574a0c77a",
+    "meshes/dh116/gripper0_proxy_base_link_4-b17bb2bf.obj": "b17bb2bf43d3910b603f39d1f375f5e62183e4d5ed42ed0929d5f4f73023c8fe",
+    "meshes/dh116/gripper0_proxy_base_link_5-c3ec3427.obj": "c3ec3427e5f6b215b34633b3e33d7f241c5f43b40ba1ccf7bc5dcfe589dfaf26",
+    "meshes/dh116/gripper0_proxy_base_link_6-d557eda8.obj": "d557eda8c52b780dbd408c8e0fecdf5c561dc300435b8b513063dbfda526f3a3",
+    "meshes/dh116/gripper0_proxy_base_link_7-bb374ff6.obj": "bb374ff68592ac7fc07655d98b65f23a5a0a82ea894dc749205b928ba162a317",
+    "meshes/dh116/gripper0_proxy_base_link_8-f1f6bbdb.obj": "f1f6bbdb592e1dae9b8c43c02b4123c0db07eb274234074f7739c3324933c259",
+    "meshes/dh116/gripper0_proxy_base_link_9-41570f8d.obj": "41570f8dc791a0be2a04494e5cf3fc0fe032751605a5a49b8bbc393a7d91da07",
+    "meshes/dh116/gripper0_finger11_link-f4e9f3fe.stl": "f4e9f3fe79d699b3b76f2ac1e29d7067d48f354e8a40f5264ef6efe6353461f9",
+    "meshes/dh116/gripper0_proxy_finger12_link_0-2a6bdf00.obj": "2a6bdf00ae7c1ea87a8b35cfa5755ea112dda7b5b180813e69ab552ce4d52aee",
+    "meshes/dh116/gripper0_proxy_finger12_link_1-74d9a1f6.obj": "74d9a1f6088dfd3ba6ce894762c8f63cd3fd5e6f3ba3badafc7475294f80ca72",
+    "meshes/dh116/gripper0_proxy_finger12_link_2-9be8c86a.obj": "9be8c86a32a28eb6cfccfc0d4ce3c0ce3f1e65615350517f8fb624f6334ab118",
+    "meshes/dh116/gripper0_proxy_finger12_link_3-a648891e.obj": "a648891e9b0097a5dc6df5f44a54a4fcbc4b522baeb915df66ebf96b0c653908",
+    "meshes/dh116/gripper0_proxy_finger12_link_4-c3d2e735.obj": "c3d2e735fe8c007812868afe5a413c2f85fb616d8af43bf208c82c441ba33792",
+    "meshes/dh116/gripper0_proxy_finger12_link_5-b8ec84e4.obj": "b8ec84e411668e9739fd702f45376b5bec5972e6f3ae334c9f789714696f4134",
+    "meshes/dh116/gripper0_proxy_finger12_link_6-6e9a388e.obj": "6e9a388e036622b035a0c6c3a57a7c59f1128444e6aff3ea15eee700a8cdd197",
+    "meshes/dh116/gripper0_proxy_finger12_link_7-3748cad4.obj": "3748cad4e9e316b359b5586674afbf3722ade675c9e240b95ea32cbd2ef1d918",
+    "meshes/dh116/gripper0_finger13_link-f34ca4cb.stl": "f34ca4cbc816d42643c532cf102b1583e1d8d39e156072f65f4bfa1e55fae7a5",
+    "meshes/dh116/gripper0_moderate_finger14_link_0-2b2ddda5.obj": "2b2ddda55ee186117724461d4e1eb7fb257d191676319114d69fd76026ceacaf",
+    "meshes/dh116/gripper0_moderate_finger14_link_1-0e2d6afb.obj": "0e2d6afbd4e4a20a7f7aa039ee80776a89f39f304eccaa1ea9a322937f6c73db",
+    "meshes/dh116/gripper0_moderate_finger14_link_2-a71fa24f.obj": "a71fa24ff8b93d0fad952ff2bfb8d85418fa7318b3552c626204b6675956c09b",
+    "meshes/dh116/gripper0_moderate_finger14_link_3-31cf7b29.obj": "31cf7b299a871be62338a48441ffff1c40de9443b08c1a66d0e0ac2c70d7e6ce",
+    "meshes/dh116/gripper0_moderate_finger14_link_4-c49b43ef.obj": "c49b43efea1ab9054834dc733b62109f71f3101e8573838fac412acfabf8b0ba",
+    "meshes/dh116/gripper0_moderate_finger14_link_5-c3a6773e.obj": "c3a6773e2340e69330c2de30484b3a473aca0a23b18074ca53a75911028ddf37",
+    "meshes/dh116/gripper0_moderate_finger14_link_6-1d98430c.obj": "1d98430c1c8b92e1b2e6a308a347fde69723d62ff68ee5f454bbca567ad44f14",
+    "meshes/dh116/gripper0_moderate_finger14_link_7-14d2570c.obj": "14d2570c3750dd1305b4c737cc449486ad0f2d5e67df99e6013088abc7e7430d",
+    "meshes/dh116/gripper0_moderate_finger14_link_8-fb373efd.obj": "fb373efd00b5bb56164851d7cbf74a85a8f4fa1252368c69a7b2e4a1770f3531",
+    "meshes/dh116/gripper0_moderate_finger14_link_9-d3124adb.obj": "d3124adbea53e6fb6a27b1a62f60ae3f0fd7459fd6679049637a41cc0c226844",
+    "meshes/dh116/gripper0_moderate_finger14_link_10-21c826aa.obj": "21c826aa07ef02987385785adc8b44235834cb9c4242e62a952ea89d1b4d22ca",
+    "meshes/dh116/gripper0_moderate_finger14_link_11-168acc8b.obj": "168acc8b6dd10290b92679dabf02f9d295c30317cecc7a3e1163386cc241f9bf",
+    "meshes/dh116/gripper0_finger21_link-1bb8e6bd.stl": "1bb8e6bd2d50d1b07c7077610fade1c71dd0923d8025f1589e3f904c856f28c1",
+    "meshes/dh116/gripper0_finger22_link-53c55c84.stl": "53c55c846f481d90248332d5a87319d11e0d96f0fb8cbb35717cc9ac9745f5e5",
+    "meshes/dh116/gripper0_moderate_finger23_link_0-a6cc5f75.obj": "a6cc5f7500f773f248fe89c64bbad9f86a99f3419e1b8f655997030c1d269d4d",
+    "meshes/dh116/gripper0_moderate_finger23_link_1-c8663aa9.obj": "c8663aa97fb9936608d4365a4662bd5a9279d9958238f9334738ce88751b2e72",
+    "meshes/dh116/gripper0_moderate_finger23_link_2-7cc9be61.obj": "7cc9be61c42363c904859ffc3f741df9e9d80761805b9fa41333e8510ee39331",
+    "meshes/dh116/gripper0_moderate_finger23_link_3-2f7c98b4.obj": "2f7c98b43d1da8bb87c0b1b9840b9942f8df6f7cb6a07b8bf3aae0a8f943ec91",
+    "meshes/dh116/gripper0_moderate_finger23_link_4-bab546af.obj": "bab546afe4a240ed41c8a82c9e7d57d175b91854aef912fadbac9e210734bfc0",
+    "meshes/dh116/gripper0_moderate_finger23_link_5-5d047287.obj": "5d047287b86fb6832c2efdcb4f5fb755ded0b63dc28f1aa4fac5b223bca24178",
+    "meshes/dh116/gripper0_moderate_finger23_link_6-a018289e.obj": "a018289e8a36f72a3ae897d377677fe7ff2721dc2e88d63ddb0118daa3ab78e2",
+    "meshes/dh116/gripper0_moderate_finger23_link_7-de354fdf.obj": "de354fdf0bea4434032984db408d004804363dc49bbbf36b8bbcc93e1a930ddd",
+    "meshes/dh116/gripper0_moderate_finger23_link_8-9174795a.obj": "9174795ac15a8735c73a8cf39c09bc793a2b67585a0d982f09f7b8a5f7b1880b",
+    "meshes/dh116/gripper0_moderate_finger23_link_9-1cc04f8d.obj": "1cc04f8dd6803c05636a655c1fd77960a319be6903fa01bf7b5e94662d89b132",
+    "meshes/dh116/gripper0_moderate_finger23_link_10-251c3834.obj": "251c38347bbcf580d96dd7ece9aeab16195b08f3a7225da3022a42043d11162d",
+    "meshes/dh116/gripper0_moderate_finger23_link_11-fad1ae11.obj": "fad1ae11d1b703d56b111df28d2d4b171c86572c706a5990cd07fb59819671cb",
+    "meshes/dh116/gripper0_finger31_link-7e3176cd.stl": "7e3176cd95983c3e84369fe1639f65dcab86d54cd49ca3ed8612807ba3bc7358",
+    "meshes/dh116/gripper0_finger32_link-68b0442e.stl": "68b0442e8c8e3e0e8e94ef55596378b85556bda1959c64debbdd48d21b3af931",
+    "meshes/dh116/gripper0_proxy_finger33_link_0-766046d8.obj": "766046d8b8b6c831fe9982e6e793a913e0d722cd9dd573576eb1dcd437b43bd7",
+    "meshes/dh116/gripper0_proxy_finger33_link_1-3157618f.obj": "3157618f011017aef1fd0195a6e37d4c115e4f622fa260f9d9b55b658e145d93",
+    "meshes/dh116/gripper0_proxy_finger33_link_2-e6bfb653.obj": "e6bfb653704941708c1617ee5c217027be98aa23ee1a24b1bf04bce8d527bac5",
+    "meshes/dh116/gripper0_proxy_finger33_link_3-b780e3de.obj": "b780e3decc6b3167bfaf70939edfd017afb02dfdd069502e5f5d3ef6831132f4",
+    "meshes/dh116/gripper0_proxy_finger33_link_4-abbb8319.obj": "abbb83191e86009a5e4ca8df768fe6679c1d6261cf55f5b7263714483c2fa7df",
+    "meshes/dh116/gripper0_proxy_finger33_link_5-efd967af.obj": "efd967af03781bc920aa654dc3d0622f6187a0c795671128026c01e4a76afd7e",
+    "meshes/dh116/gripper0_proxy_finger33_link_6-09abc110.obj": "09abc110026cafb4b30009c4e384e8876522eed2020c12d1191c913d780f90a7",
+    "meshes/dh116/gripper0_proxy_finger33_link_7-10a6dd15.obj": "10a6dd150321cff17d4702d552f9d492ab14006a1caf194d16d9c7943deddfe0",
+    "meshes/dh116/gripper0_finger41_link-5f1647a2.stl": "5f1647a233765270e256bf1cb1deeca0ac29ad4241e2a8e95477756885b73857",
+    "meshes/dh116/gripper0_finger42_link-15a9090c.stl": "15a9090c995e1f29ab0bb4b0a4ede7a4f60f1d0e0bf809c3ada86c53d0b66bed",
+    "meshes/dh116/gripper0_proxy_finger43_link_0-95b4cbb3.obj": "95b4cbb315cc1667311de693dcee6a7456ba742561ca01ff551958d4e519348b",
+    "meshes/dh116/gripper0_proxy_finger43_link_1-07a65f22.obj": "07a65f222145a2d805b53d22a5398b5b7ad94202af938f94b640f73ed1cdf183",
+    "meshes/dh116/gripper0_proxy_finger43_link_2-aab293f6.obj": "aab293f640735836c5ac0c594282d0bbbf8fc41a8eaa13bf6f1f1f1ba864c576",
+    "meshes/dh116/gripper0_proxy_finger43_link_3-f7eab61f.obj": "f7eab61f906cb36cd1063faad73822c846107bc6f174c4742b409375f5b04f63",
+    "meshes/dh116/gripper0_proxy_finger43_link_4-78532cbf.obj": "78532cbfb13ff856554cd396d2e5573beb69fe8b4d675ea7f669643dde8f7dd7",
+    "meshes/dh116/gripper0_proxy_finger43_link_5-13af1468.obj": "13af146867ef84f7051e45a515347bd29deff7ea5c8f0c15b100fbfe4a9b3cd7",
+    "meshes/dh116/gripper0_proxy_finger43_link_6-2a3fbea9.obj": "2a3fbea961a56cc9bfd5384d661e6c0957601ee07999f02d9b642b252463176c",
+    "meshes/dh116/gripper0_proxy_finger43_link_7-d800f7ad.obj": "d800f7adae660e6ceb80e34b8a7e33ba3dcfb60afc357baf4818265705f7d0b2",
+    "meshes/dh116/gripper0_finger51_link-dfabcfce.stl": "dfabcfce1fc923cc0745a2df5ec07efc657506c7ad50b8e883de7fc996ce9f59",
+    "meshes/dh116/gripper0_finger52_link-acf84396.stl": "acf84396741cf2d5fa50ad3a25e9ca4fdb0947387cb39c2697951761a5f7d22c",
+    "meshes/dh116/gripper0_proxy_finger53_link_0-f66430b1.obj": "f66430b17c3b0ee5d63cb097877e7d8faa12153df6725cb7ad9383607c09bb0a",
+    "meshes/dh116/gripper0_proxy_finger53_link_1-fce5027c.obj": "fce5027c124ece9666bc17a88a364dd24dd79e5ae6fb0c4bdfe8169e0ad0b8dc",
+    "meshes/dh116/gripper0_proxy_finger53_link_2-dd7921f7.obj": "dd7921f79cbac6ac32ea9142d4fa4c76df1dd885c47004aaeb4fca67327152b5",
+    "meshes/dh116/gripper0_proxy_finger53_link_3-49e71c08.obj": "49e71c0816ce5464fd8afe99b68e292cd88549525e9986adf9c3c1b53edae3d6",
+    "meshes/dh116/gripper0_proxy_finger53_link_4-84f78255.obj": "84f782558f32c9ea8067922918c95c221e617026a4e7a0d752d84b0ff828c007",
+    "meshes/dh116/gripper0_proxy_finger53_link_5-3134737f.obj": "3134737f88f7b977c10b8835d0f0b8ea8d1b0d90a91c9a862fffc5cd05930704",
+    "meshes/dh116/gripper0_proxy_finger53_link_6-8a45b6d5.obj": "8a45b6d5929a3338e58b416f7dbab7e43de69a2697206dbdc9eb48928e14b330",
+    "meshes/dh116/gripper0_proxy_finger53_link_7-8015cab7.obj": "8015cab75b38d79aa5d59486a2b6d68198e96fbfb4a892a86ee8d334ffd817f1"
+  },
+  "geoms": [
+    {
+      "link": "base_link",
+      "candidate_geom": "gripper0_proxy76_base_link_00",
+      "candidate_mesh": "gripper0_proxy76_base_link_00",
+      "left_geom": "gripper0_proxy_base_link_0",
+      "left_mesh": "gripper0_proxy_base_link_0",
+      "left_file": "meshes/dh116/gripper0_proxy_base_link_0-b6201105.obj",
+      "left_sha256": "b62011053253549820237dd9bcd6e4fa5aa395a9b20c0f5013081357bde6163d",
+      "candidate_file": "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_00.obj",
+      "candidate_sha256": "e478a799f59b9cfaee804a539ce2dd6be6e92787247bc33fba13d00e4b42c7ce",
+      "operation": "baked_local_transform",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": true,
+      "right_contact_template": {
+        "name": "gripper0_base_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_base_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "base_link",
+      "candidate_geom": "gripper0_proxy76_base_link_01",
+      "candidate_mesh": "gripper0_proxy76_base_link_01",
+      "left_geom": "gripper0_proxy_base_link_1",
+      "left_mesh": "gripper0_proxy_base_link_1",
+      "left_file": "meshes/dh116/gripper0_proxy_base_link_1-d5d01f7a.obj",
+      "left_sha256": "d5d01f7ad0324a13077df2ab2be613e0486d5a2fe9ef0e0ae9bd2719717f22ff",
+      "candidate_file": "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_01.obj",
+      "candidate_sha256": "cb55e62f2f41a9110da46f5bacbf1f8c8dcfa9563cf35fc48b37194d73ebd6b3",
+      "operation": "baked_local_transform",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": true,
+      "right_contact_template": {
+        "name": "gripper0_base_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_base_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "base_link",
+      "candidate_geom": "gripper0_proxy76_base_link_02",
+      "candidate_mesh": "gripper0_proxy76_base_link_02",
+      "left_geom": "gripper0_proxy_base_link_2",
+      "left_mesh": "gripper0_proxy_base_link_2",
+      "left_file": "meshes/dh116/gripper0_proxy_base_link_2-28926ea0.obj",
+      "left_sha256": "28926ea04aaba25ef8cf8287baa5169807b7412a42e3480a17c261b401c90bce",
+      "candidate_file": "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_02.obj",
+      "candidate_sha256": "1c09c54ad030db088a97b58a39e277b5d3be66f3202db25e98c6f3c67e7b6ee4",
+      "operation": "baked_local_transform",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": true,
+      "right_contact_template": {
+        "name": "gripper0_base_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_base_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "base_link",
+      "candidate_geom": "gripper0_proxy76_base_link_03",
+      "candidate_mesh": "gripper0_proxy76_base_link_03",
+      "left_geom": "gripper0_proxy_base_link_3",
+      "left_mesh": "gripper0_proxy_base_link_3",
+      "left_file": "meshes/dh116/gripper0_proxy_base_link_3-f0401ef7.obj",
+      "left_sha256": "f0401ef72c46652c02a47ac13e0605a1de889c50fba784b09f46793574a0c77a",
+      "candidate_file": "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_03.obj",
+      "candidate_sha256": "871033d55369543004f2ce77ec077d545eb1d02bd9a63608316976c5a7d52e0b",
+      "operation": "baked_local_transform",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": true,
+      "right_contact_template": {
+        "name": "gripper0_base_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_base_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "base_link",
+      "candidate_geom": "gripper0_proxy76_base_link_04",
+      "candidate_mesh": "gripper0_proxy76_base_link_04",
+      "left_geom": "gripper0_proxy_base_link_4",
+      "left_mesh": "gripper0_proxy_base_link_4",
+      "left_file": "meshes/dh116/gripper0_proxy_base_link_4-b17bb2bf.obj",
+      "left_sha256": "b17bb2bf43d3910b603f39d1f375f5e62183e4d5ed42ed0929d5f4f73023c8fe",
+      "candidate_file": "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_04.obj",
+      "candidate_sha256": "47fcfc5572ceed26c408a219cecb99ed111829f652d54124865de050e9a2df9a",
+      "operation": "baked_local_transform",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": true,
+      "right_contact_template": {
+        "name": "gripper0_base_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_base_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "base_link",
+      "candidate_geom": "gripper0_proxy76_base_link_05",
+      "candidate_mesh": "gripper0_proxy76_base_link_05",
+      "left_geom": "gripper0_proxy_base_link_5",
+      "left_mesh": "gripper0_proxy_base_link_5",
+      "left_file": "meshes/dh116/gripper0_proxy_base_link_5-c3ec3427.obj",
+      "left_sha256": "c3ec3427e5f6b215b34633b3e33d7f241c5f43b40ba1ccf7bc5dcfe589dfaf26",
+      "candidate_file": "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_05.obj",
+      "candidate_sha256": "8aaae9e5736c04e3615916958be9c0e6efc3bb1b493e99951492f769397f5991",
+      "operation": "baked_local_transform",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": true,
+      "right_contact_template": {
+        "name": "gripper0_base_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_base_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "base_link",
+      "candidate_geom": "gripper0_proxy76_base_link_06",
+      "candidate_mesh": "gripper0_proxy76_base_link_06",
+      "left_geom": "gripper0_proxy_base_link_6",
+      "left_mesh": "gripper0_proxy_base_link_6",
+      "left_file": "meshes/dh116/gripper0_proxy_base_link_6-d557eda8.obj",
+      "left_sha256": "d557eda8c52b780dbd408c8e0fecdf5c561dc300435b8b513063dbfda526f3a3",
+      "candidate_file": "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_06.obj",
+      "candidate_sha256": "ed60d794870bac2874bf566dfac9785725aea78ca04e7ba21846a0e133dba7ef",
+      "operation": "baked_local_transform",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": true,
+      "right_contact_template": {
+        "name": "gripper0_base_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_base_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "base_link",
+      "candidate_geom": "gripper0_proxy76_base_link_07",
+      "candidate_mesh": "gripper0_proxy76_base_link_07",
+      "left_geom": "gripper0_proxy_base_link_7",
+      "left_mesh": "gripper0_proxy_base_link_7",
+      "left_file": "meshes/dh116/gripper0_proxy_base_link_7-bb374ff6.obj",
+      "left_sha256": "bb374ff68592ac7fc07655d98b65f23a5a0a82ea894dc749205b928ba162a317",
+      "candidate_file": "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_07.obj",
+      "candidate_sha256": "73bd010189e969c220e6c7c42a96ce3c1e560b08769f9d408780433e3d8630b5",
+      "operation": "baked_local_transform",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": true,
+      "right_contact_template": {
+        "name": "gripper0_base_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_base_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "base_link",
+      "candidate_geom": "gripper0_proxy76_base_link_08",
+      "candidate_mesh": "gripper0_proxy76_base_link_08",
+      "left_geom": "gripper0_proxy_base_link_8",
+      "left_mesh": "gripper0_proxy_base_link_8",
+      "left_file": "meshes/dh116/gripper0_proxy_base_link_8-f1f6bbdb.obj",
+      "left_sha256": "f1f6bbdb592e1dae9b8c43c02b4123c0db07eb274234074f7739c3324933c259",
+      "candidate_file": "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_08.obj",
+      "candidate_sha256": "a7d08ea7416a0832b78335aa479fcc380f5fb676068af529535c6fe2a4b79cba",
+      "operation": "baked_local_transform",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": true,
+      "right_contact_template": {
+        "name": "gripper0_base_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_base_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "base_link",
+      "candidate_geom": "gripper0_proxy76_base_link_09",
+      "candidate_mesh": "gripper0_proxy76_base_link_09",
+      "left_geom": "gripper0_proxy_base_link_9",
+      "left_mesh": "gripper0_proxy_base_link_9",
+      "left_file": "meshes/dh116/gripper0_proxy_base_link_9-41570f8d.obj",
+      "left_sha256": "41570f8dc791a0be2a04494e5cf3fc0fe032751605a5a49b8bbc393a7d91da07",
+      "candidate_file": "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_base_link_09.obj",
+      "candidate_sha256": "e8c753c9b514ff3c02c37ff75c3e70c51e43e34400d1df05b6554320786b5d75",
+      "operation": "baked_local_transform",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": true,
+      "right_contact_template": {
+        "name": "gripper0_base_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_base_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger11_link",
+      "candidate_geom": "gripper0_proxy76_finger11_link_00",
+      "candidate_mesh": "gripper0_proxy76_finger11_link_00",
+      "left_geom": "gripper0_finger11_link_collision_0",
+      "left_mesh": "gripper0_finger11_link",
+      "left_file": "meshes/dh116/gripper0_finger11_link-f4e9f3fe.stl",
+      "left_sha256": "f4e9f3fe79d699b3b76f2ac1e29d7067d48f354e8a40f5264ef6efe6353461f9",
+      "candidate_file": "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger11_link_00.obj",
+      "candidate_sha256": "d24e4759bde556f178b3d14b78865650f676d95dc3b23dcd61738a7a2c52fcab",
+      "operation": "baked_local_transform",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        -0.00325
+      ],
+      "flip_winding": true,
+      "right_contact_template": {
+        "name": "gripper0_finger11_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger11_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger12_link",
+      "candidate_geom": "gripper0_proxy76_finger12_link_00",
+      "candidate_mesh": "gripper0_proxy76_finger12_link_00",
+      "left_geom": "gripper0_proxy_finger12_link_0",
+      "left_mesh": "gripper0_proxy_finger12_link_0",
+      "left_file": "meshes/dh116/gripper0_proxy_finger12_link_0-2a6bdf00.obj",
+      "left_sha256": "2a6bdf00ae7c1ea87a8b35cfa5755ea112dda7b5b180813e69ab552ce4d52aee",
+      "candidate_file": "meshes/dh116/gripper0_proxy_finger12_link_0-2a6bdf00.obj",
+      "candidate_sha256": "2a6bdf00ae7c1ea87a8b35cfa5755ea112dda7b5b180813e69ab552ce4d52aee",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger12_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger12_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger12_link",
+      "candidate_geom": "gripper0_proxy76_finger12_link_01",
+      "candidate_mesh": "gripper0_proxy76_finger12_link_01",
+      "left_geom": "gripper0_proxy_finger12_link_1",
+      "left_mesh": "gripper0_proxy_finger12_link_1",
+      "left_file": "meshes/dh116/gripper0_proxy_finger12_link_1-74d9a1f6.obj",
+      "left_sha256": "74d9a1f6088dfd3ba6ce894762c8f63cd3fd5e6f3ba3badafc7475294f80ca72",
+      "candidate_file": "meshes/dh116/gripper0_proxy_finger12_link_1-74d9a1f6.obj",
+      "candidate_sha256": "74d9a1f6088dfd3ba6ce894762c8f63cd3fd5e6f3ba3badafc7475294f80ca72",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger12_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger12_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger12_link",
+      "candidate_geom": "gripper0_proxy76_finger12_link_02",
+      "candidate_mesh": "gripper0_proxy76_finger12_link_02",
+      "left_geom": "gripper0_proxy_finger12_link_2",
+      "left_mesh": "gripper0_proxy_finger12_link_2",
+      "left_file": "meshes/dh116/gripper0_proxy_finger12_link_2-9be8c86a.obj",
+      "left_sha256": "9be8c86a32a28eb6cfccfc0d4ce3c0ce3f1e65615350517f8fb624f6334ab118",
+      "candidate_file": "meshes/dh116/gripper0_proxy_finger12_link_2-9be8c86a.obj",
+      "candidate_sha256": "9be8c86a32a28eb6cfccfc0d4ce3c0ce3f1e65615350517f8fb624f6334ab118",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger12_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger12_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger12_link",
+      "candidate_geom": "gripper0_proxy76_finger12_link_03",
+      "candidate_mesh": "gripper0_proxy76_finger12_link_03",
+      "left_geom": "gripper0_proxy_finger12_link_3",
+      "left_mesh": "gripper0_proxy_finger12_link_3",
+      "left_file": "meshes/dh116/gripper0_proxy_finger12_link_3-a648891e.obj",
+      "left_sha256": "a648891e9b0097a5dc6df5f44a54a4fcbc4b522baeb915df66ebf96b0c653908",
+      "candidate_file": "meshes/dh116/gripper0_proxy_finger12_link_3-a648891e.obj",
+      "candidate_sha256": "a648891e9b0097a5dc6df5f44a54a4fcbc4b522baeb915df66ebf96b0c653908",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger12_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger12_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger12_link",
+      "candidate_geom": "gripper0_proxy76_finger12_link_04",
+      "candidate_mesh": "gripper0_proxy76_finger12_link_04",
+      "left_geom": "gripper0_proxy_finger12_link_4",
+      "left_mesh": "gripper0_proxy_finger12_link_4",
+      "left_file": "meshes/dh116/gripper0_proxy_finger12_link_4-c3d2e735.obj",
+      "left_sha256": "c3d2e735fe8c007812868afe5a413c2f85fb616d8af43bf208c82c441ba33792",
+      "candidate_file": "meshes/dh116/gripper0_proxy_finger12_link_4-c3d2e735.obj",
+      "candidate_sha256": "c3d2e735fe8c007812868afe5a413c2f85fb616d8af43bf208c82c441ba33792",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger12_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger12_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger12_link",
+      "candidate_geom": "gripper0_proxy76_finger12_link_05",
+      "candidate_mesh": "gripper0_proxy76_finger12_link_05",
+      "left_geom": "gripper0_proxy_finger12_link_5",
+      "left_mesh": "gripper0_proxy_finger12_link_5",
+      "left_file": "meshes/dh116/gripper0_proxy_finger12_link_5-b8ec84e4.obj",
+      "left_sha256": "b8ec84e411668e9739fd702f45376b5bec5972e6f3ae334c9f789714696f4134",
+      "candidate_file": "meshes/dh116/gripper0_proxy_finger12_link_5-b8ec84e4.obj",
+      "candidate_sha256": "b8ec84e411668e9739fd702f45376b5bec5972e6f3ae334c9f789714696f4134",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger12_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger12_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger12_link",
+      "candidate_geom": "gripper0_proxy76_finger12_link_06",
+      "candidate_mesh": "gripper0_proxy76_finger12_link_06",
+      "left_geom": "gripper0_proxy_finger12_link_6",
+      "left_mesh": "gripper0_proxy_finger12_link_6",
+      "left_file": "meshes/dh116/gripper0_proxy_finger12_link_6-6e9a388e.obj",
+      "left_sha256": "6e9a388e036622b035a0c6c3a57a7c59f1128444e6aff3ea15eee700a8cdd197",
+      "candidate_file": "meshes/dh116/gripper0_proxy_finger12_link_6-6e9a388e.obj",
+      "candidate_sha256": "6e9a388e036622b035a0c6c3a57a7c59f1128444e6aff3ea15eee700a8cdd197",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger12_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger12_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger12_link",
+      "candidate_geom": "gripper0_proxy76_finger12_link_07",
+      "candidate_mesh": "gripper0_proxy76_finger12_link_07",
+      "left_geom": "gripper0_proxy_finger12_link_7",
+      "left_mesh": "gripper0_proxy_finger12_link_7",
+      "left_file": "meshes/dh116/gripper0_proxy_finger12_link_7-3748cad4.obj",
+      "left_sha256": "3748cad4e9e316b359b5586674afbf3722ade675c9e240b95ea32cbd2ef1d918",
+      "candidate_file": "meshes/dh116/gripper0_proxy_finger12_link_7-3748cad4.obj",
+      "candidate_sha256": "3748cad4e9e316b359b5586674afbf3722ade675c9e240b95ea32cbd2ef1d918",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger12_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger12_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger13_link",
+      "candidate_geom": "gripper0_proxy76_finger13_link_00",
+      "candidate_mesh": "gripper0_proxy76_finger13_link_00",
+      "left_geom": "gripper0_finger13_link_collision_0",
+      "left_mesh": "gripper0_finger13_link",
+      "left_file": "meshes/dh116/gripper0_finger13_link-f34ca4cb.stl",
+      "left_sha256": "f34ca4cbc816d42643c532cf102b1583e1d8d39e156072f65f4bfa1e55fae7a5",
+      "candidate_file": "meshes/dh116/gripper0_finger13_link-f34ca4cb.stl",
+      "candidate_sha256": "f34ca4cbc816d42643c532cf102b1583e1d8d39e156072f65f4bfa1e55fae7a5",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger13_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger13_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger14_link",
+      "candidate_geom": "gripper0_proxy76_finger14_link_00",
+      "candidate_mesh": "gripper0_proxy76_finger14_link_00",
+      "left_geom": "gripper0_moderate_finger14_link_0",
+      "left_mesh": "gripper0_moderate_finger14_link_0",
+      "left_file": "meshes/dh116/gripper0_moderate_finger14_link_0-2b2ddda5.obj",
+      "left_sha256": "2b2ddda55ee186117724461d4e1eb7fb257d191676319114d69fd76026ceacaf",
+      "candidate_file": "meshes/dh116/gripper0_moderate_finger14_link_0-2b2ddda5.obj",
+      "candidate_sha256": "2b2ddda55ee186117724461d4e1eb7fb257d191676319114d69fd76026ceacaf",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger14_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger14_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger14_link",
+      "candidate_geom": "gripper0_proxy76_finger14_link_01",
+      "candidate_mesh": "gripper0_proxy76_finger14_link_01",
+      "left_geom": "gripper0_moderate_finger14_link_1",
+      "left_mesh": "gripper0_moderate_finger14_link_1",
+      "left_file": "meshes/dh116/gripper0_moderate_finger14_link_1-0e2d6afb.obj",
+      "left_sha256": "0e2d6afbd4e4a20a7f7aa039ee80776a89f39f304eccaa1ea9a322937f6c73db",
+      "candidate_file": "meshes/dh116/gripper0_moderate_finger14_link_1-0e2d6afb.obj",
+      "candidate_sha256": "0e2d6afbd4e4a20a7f7aa039ee80776a89f39f304eccaa1ea9a322937f6c73db",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger14_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger14_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger14_link",
+      "candidate_geom": "gripper0_proxy76_finger14_link_02",
+      "candidate_mesh": "gripper0_proxy76_finger14_link_02",
+      "left_geom": "gripper0_moderate_finger14_link_2",
+      "left_mesh": "gripper0_moderate_finger14_link_2",
+      "left_file": "meshes/dh116/gripper0_moderate_finger14_link_2-a71fa24f.obj",
+      "left_sha256": "a71fa24ff8b93d0fad952ff2bfb8d85418fa7318b3552c626204b6675956c09b",
+      "candidate_file": "meshes/dh116/gripper0_moderate_finger14_link_2-a71fa24f.obj",
+      "candidate_sha256": "a71fa24ff8b93d0fad952ff2bfb8d85418fa7318b3552c626204b6675956c09b",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger14_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger14_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger14_link",
+      "candidate_geom": "gripper0_proxy76_finger14_link_03",
+      "candidate_mesh": "gripper0_proxy76_finger14_link_03",
+      "left_geom": "gripper0_moderate_finger14_link_3",
+      "left_mesh": "gripper0_moderate_finger14_link_3",
+      "left_file": "meshes/dh116/gripper0_moderate_finger14_link_3-31cf7b29.obj",
+      "left_sha256": "31cf7b299a871be62338a48441ffff1c40de9443b08c1a66d0e0ac2c70d7e6ce",
+      "candidate_file": "meshes/dh116/gripper0_moderate_finger14_link_3-31cf7b29.obj",
+      "candidate_sha256": "31cf7b299a871be62338a48441ffff1c40de9443b08c1a66d0e0ac2c70d7e6ce",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger14_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger14_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger14_link",
+      "candidate_geom": "gripper0_proxy76_finger14_link_04",
+      "candidate_mesh": "gripper0_proxy76_finger14_link_04",
+      "left_geom": "gripper0_moderate_finger14_link_4",
+      "left_mesh": "gripper0_moderate_finger14_link_4",
+      "left_file": "meshes/dh116/gripper0_moderate_finger14_link_4-c49b43ef.obj",
+      "left_sha256": "c49b43efea1ab9054834dc733b62109f71f3101e8573838fac412acfabf8b0ba",
+      "candidate_file": "meshes/dh116/gripper0_moderate_finger14_link_4-c49b43ef.obj",
+      "candidate_sha256": "c49b43efea1ab9054834dc733b62109f71f3101e8573838fac412acfabf8b0ba",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger14_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger14_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger14_link",
+      "candidate_geom": "gripper0_proxy76_finger14_link_05",
+      "candidate_mesh": "gripper0_proxy76_finger14_link_05",
+      "left_geom": "gripper0_moderate_finger14_link_5",
+      "left_mesh": "gripper0_moderate_finger14_link_5",
+      "left_file": "meshes/dh116/gripper0_moderate_finger14_link_5-c3a6773e.obj",
+      "left_sha256": "c3a6773e2340e69330c2de30484b3a473aca0a23b18074ca53a75911028ddf37",
+      "candidate_file": "meshes/dh116/gripper0_moderate_finger14_link_5-c3a6773e.obj",
+      "candidate_sha256": "c3a6773e2340e69330c2de30484b3a473aca0a23b18074ca53a75911028ddf37",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger14_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger14_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger14_link",
+      "candidate_geom": "gripper0_proxy76_finger14_link_06",
+      "candidate_mesh": "gripper0_proxy76_finger14_link_06",
+      "left_geom": "gripper0_moderate_finger14_link_6",
+      "left_mesh": "gripper0_moderate_finger14_link_6",
+      "left_file": "meshes/dh116/gripper0_moderate_finger14_link_6-1d98430c.obj",
+      "left_sha256": "1d98430c1c8b92e1b2e6a308a347fde69723d62ff68ee5f454bbca567ad44f14",
+      "candidate_file": "meshes/dh116/gripper0_moderate_finger14_link_6-1d98430c.obj",
+      "candidate_sha256": "1d98430c1c8b92e1b2e6a308a347fde69723d62ff68ee5f454bbca567ad44f14",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger14_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger14_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger14_link",
+      "candidate_geom": "gripper0_proxy76_finger14_link_07",
+      "candidate_mesh": "gripper0_proxy76_finger14_link_07",
+      "left_geom": "gripper0_moderate_finger14_link_7",
+      "left_mesh": "gripper0_moderate_finger14_link_7",
+      "left_file": "meshes/dh116/gripper0_moderate_finger14_link_7-14d2570c.obj",
+      "left_sha256": "14d2570c3750dd1305b4c737cc449486ad0f2d5e67df99e6013088abc7e7430d",
+      "candidate_file": "meshes/dh116/gripper0_moderate_finger14_link_7-14d2570c.obj",
+      "candidate_sha256": "14d2570c3750dd1305b4c737cc449486ad0f2d5e67df99e6013088abc7e7430d",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger14_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger14_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger14_link",
+      "candidate_geom": "gripper0_proxy76_finger14_link_08",
+      "candidate_mesh": "gripper0_proxy76_finger14_link_08",
+      "left_geom": "gripper0_moderate_finger14_link_8",
+      "left_mesh": "gripper0_moderate_finger14_link_8",
+      "left_file": "meshes/dh116/gripper0_moderate_finger14_link_8-fb373efd.obj",
+      "left_sha256": "fb373efd00b5bb56164851d7cbf74a85a8f4fa1252368c69a7b2e4a1770f3531",
+      "candidate_file": "meshes/dh116/gripper0_moderate_finger14_link_8-fb373efd.obj",
+      "candidate_sha256": "fb373efd00b5bb56164851d7cbf74a85a8f4fa1252368c69a7b2e4a1770f3531",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger14_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger14_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger14_link",
+      "candidate_geom": "gripper0_proxy76_finger14_link_09",
+      "candidate_mesh": "gripper0_proxy76_finger14_link_09",
+      "left_geom": "gripper0_moderate_finger14_link_9",
+      "left_mesh": "gripper0_moderate_finger14_link_9",
+      "left_file": "meshes/dh116/gripper0_moderate_finger14_link_9-d3124adb.obj",
+      "left_sha256": "d3124adbea53e6fb6a27b1a62f60ae3f0fd7459fd6679049637a41cc0c226844",
+      "candidate_file": "meshes/dh116/gripper0_moderate_finger14_link_9-d3124adb.obj",
+      "candidate_sha256": "d3124adbea53e6fb6a27b1a62f60ae3f0fd7459fd6679049637a41cc0c226844",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger14_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger14_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger14_link",
+      "candidate_geom": "gripper0_proxy76_finger14_link_10",
+      "candidate_mesh": "gripper0_proxy76_finger14_link_10",
+      "left_geom": "gripper0_moderate_finger14_link_10",
+      "left_mesh": "gripper0_moderate_finger14_link_10",
+      "left_file": "meshes/dh116/gripper0_moderate_finger14_link_10-21c826aa.obj",
+      "left_sha256": "21c826aa07ef02987385785adc8b44235834cb9c4242e62a952ea89d1b4d22ca",
+      "candidate_file": "meshes/dh116/gripper0_moderate_finger14_link_10-21c826aa.obj",
+      "candidate_sha256": "21c826aa07ef02987385785adc8b44235834cb9c4242e62a952ea89d1b4d22ca",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger14_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger14_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger14_link",
+      "candidate_geom": "gripper0_proxy76_finger14_link_11",
+      "candidate_mesh": "gripper0_proxy76_finger14_link_11",
+      "left_geom": "gripper0_moderate_finger14_link_11",
+      "left_mesh": "gripper0_moderate_finger14_link_11",
+      "left_file": "meshes/dh116/gripper0_moderate_finger14_link_11-168acc8b.obj",
+      "left_sha256": "168acc8b6dd10290b92679dabf02f9d295c30317cecc7a3e1163386cc241f9bf",
+      "candidate_file": "meshes/dh116/gripper0_moderate_finger14_link_11-168acc8b.obj",
+      "candidate_sha256": "168acc8b6dd10290b92679dabf02f9d295c30317cecc7a3e1163386cc241f9bf",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger14_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger14_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger21_link",
+      "candidate_geom": "gripper0_proxy76_finger21_link_00",
+      "candidate_mesh": "gripper0_proxy76_finger21_link_00",
+      "left_geom": "gripper0_finger21_link_collision_0",
+      "left_mesh": "gripper0_finger21_link",
+      "left_file": "meshes/dh116/gripper0_finger21_link-1bb8e6bd.stl",
+      "left_sha256": "1bb8e6bd2d50d1b07c7077610fade1c71dd0923d8025f1589e3f904c856f28c1",
+      "candidate_file": "meshes/dh116/gripper0_finger21_link-1bb8e6bd.stl",
+      "candidate_sha256": "1bb8e6bd2d50d1b07c7077610fade1c71dd0923d8025f1589e3f904c856f28c1",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger21_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger21_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger22_link",
+      "candidate_geom": "gripper0_proxy76_finger22_link_00",
+      "candidate_mesh": "gripper0_proxy76_finger22_link_00",
+      "left_geom": "gripper0_finger22_link_collision_0",
+      "left_mesh": "gripper0_finger22_link",
+      "left_file": "meshes/dh116/gripper0_finger22_link-53c55c84.stl",
+      "left_sha256": "53c55c846f481d90248332d5a87319d11e0d96f0fb8cbb35717cc9ac9745f5e5",
+      "candidate_file": "meshes/dh116/gripper0_finger22_link-53c55c84.stl",
+      "candidate_sha256": "53c55c846f481d90248332d5a87319d11e0d96f0fb8cbb35717cc9ac9745f5e5",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger22_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger22_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger23_link",
+      "candidate_geom": "gripper0_proxy76_finger23_link_00",
+      "candidate_mesh": "gripper0_proxy76_finger23_link_00",
+      "left_geom": "gripper0_moderate_finger23_link_0",
+      "left_mesh": "gripper0_moderate_finger23_link_0",
+      "left_file": "meshes/dh116/gripper0_moderate_finger23_link_0-a6cc5f75.obj",
+      "left_sha256": "a6cc5f7500f773f248fe89c64bbad9f86a99f3419e1b8f655997030c1d269d4d",
+      "candidate_file": "meshes/dh116/gripper0_moderate_finger23_link_0-a6cc5f75.obj",
+      "candidate_sha256": "a6cc5f7500f773f248fe89c64bbad9f86a99f3419e1b8f655997030c1d269d4d",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger23_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger23_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger23_link",
+      "candidate_geom": "gripper0_proxy76_finger23_link_01",
+      "candidate_mesh": "gripper0_proxy76_finger23_link_01",
+      "left_geom": "gripper0_moderate_finger23_link_1",
+      "left_mesh": "gripper0_moderate_finger23_link_1",
+      "left_file": "meshes/dh116/gripper0_moderate_finger23_link_1-c8663aa9.obj",
+      "left_sha256": "c8663aa97fb9936608d4365a4662bd5a9279d9958238f9334738ce88751b2e72",
+      "candidate_file": "meshes/dh116/gripper0_moderate_finger23_link_1-c8663aa9.obj",
+      "candidate_sha256": "c8663aa97fb9936608d4365a4662bd5a9279d9958238f9334738ce88751b2e72",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger23_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger23_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger23_link",
+      "candidate_geom": "gripper0_proxy76_finger23_link_02",
+      "candidate_mesh": "gripper0_proxy76_finger23_link_02",
+      "left_geom": "gripper0_moderate_finger23_link_2",
+      "left_mesh": "gripper0_moderate_finger23_link_2",
+      "left_file": "meshes/dh116/gripper0_moderate_finger23_link_2-7cc9be61.obj",
+      "left_sha256": "7cc9be61c42363c904859ffc3f741df9e9d80761805b9fa41333e8510ee39331",
+      "candidate_file": "meshes/dh116/gripper0_moderate_finger23_link_2-7cc9be61.obj",
+      "candidate_sha256": "7cc9be61c42363c904859ffc3f741df9e9d80761805b9fa41333e8510ee39331",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger23_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger23_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger23_link",
+      "candidate_geom": "gripper0_proxy76_finger23_link_03",
+      "candidate_mesh": "gripper0_proxy76_finger23_link_03",
+      "left_geom": "gripper0_moderate_finger23_link_3",
+      "left_mesh": "gripper0_moderate_finger23_link_3",
+      "left_file": "meshes/dh116/gripper0_moderate_finger23_link_3-2f7c98b4.obj",
+      "left_sha256": "2f7c98b43d1da8bb87c0b1b9840b9942f8df6f7cb6a07b8bf3aae0a8f943ec91",
+      "candidate_file": "meshes/dh116/gripper0_moderate_finger23_link_3-2f7c98b4.obj",
+      "candidate_sha256": "2f7c98b43d1da8bb87c0b1b9840b9942f8df6f7cb6a07b8bf3aae0a8f943ec91",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger23_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger23_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger23_link",
+      "candidate_geom": "gripper0_proxy76_finger23_link_04",
+      "candidate_mesh": "gripper0_proxy76_finger23_link_04",
+      "left_geom": "gripper0_moderate_finger23_link_4",
+      "left_mesh": "gripper0_moderate_finger23_link_4",
+      "left_file": "meshes/dh116/gripper0_moderate_finger23_link_4-bab546af.obj",
+      "left_sha256": "bab546afe4a240ed41c8a82c9e7d57d175b91854aef912fadbac9e210734bfc0",
+      "candidate_file": "meshes/dh116/gripper0_moderate_finger23_link_4-bab546af.obj",
+      "candidate_sha256": "bab546afe4a240ed41c8a82c9e7d57d175b91854aef912fadbac9e210734bfc0",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger23_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger23_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger23_link",
+      "candidate_geom": "gripper0_proxy76_finger23_link_05",
+      "candidate_mesh": "gripper0_proxy76_finger23_link_05",
+      "left_geom": "gripper0_moderate_finger23_link_5",
+      "left_mesh": "gripper0_moderate_finger23_link_5",
+      "left_file": "meshes/dh116/gripper0_moderate_finger23_link_5-5d047287.obj",
+      "left_sha256": "5d047287b86fb6832c2efdcb4f5fb755ded0b63dc28f1aa4fac5b223bca24178",
+      "candidate_file": "meshes/dh116/gripper0_moderate_finger23_link_5-5d047287.obj",
+      "candidate_sha256": "5d047287b86fb6832c2efdcb4f5fb755ded0b63dc28f1aa4fac5b223bca24178",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger23_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger23_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger23_link",
+      "candidate_geom": "gripper0_proxy76_finger23_link_06",
+      "candidate_mesh": "gripper0_proxy76_finger23_link_06",
+      "left_geom": "gripper0_moderate_finger23_link_6",
+      "left_mesh": "gripper0_moderate_finger23_link_6",
+      "left_file": "meshes/dh116/gripper0_moderate_finger23_link_6-a018289e.obj",
+      "left_sha256": "a018289e8a36f72a3ae897d377677fe7ff2721dc2e88d63ddb0118daa3ab78e2",
+      "candidate_file": "meshes/dh116/gripper0_moderate_finger23_link_6-a018289e.obj",
+      "candidate_sha256": "a018289e8a36f72a3ae897d377677fe7ff2721dc2e88d63ddb0118daa3ab78e2",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger23_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger23_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger23_link",
+      "candidate_geom": "gripper0_proxy76_finger23_link_07",
+      "candidate_mesh": "gripper0_proxy76_finger23_link_07",
+      "left_geom": "gripper0_moderate_finger23_link_7",
+      "left_mesh": "gripper0_moderate_finger23_link_7",
+      "left_file": "meshes/dh116/gripper0_moderate_finger23_link_7-de354fdf.obj",
+      "left_sha256": "de354fdf0bea4434032984db408d004804363dc49bbbf36b8bbcc93e1a930ddd",
+      "candidate_file": "meshes/dh116/gripper0_moderate_finger23_link_7-de354fdf.obj",
+      "candidate_sha256": "de354fdf0bea4434032984db408d004804363dc49bbbf36b8bbcc93e1a930ddd",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger23_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger23_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger23_link",
+      "candidate_geom": "gripper0_proxy76_finger23_link_08",
+      "candidate_mesh": "gripper0_proxy76_finger23_link_08",
+      "left_geom": "gripper0_moderate_finger23_link_8",
+      "left_mesh": "gripper0_moderate_finger23_link_8",
+      "left_file": "meshes/dh116/gripper0_moderate_finger23_link_8-9174795a.obj",
+      "left_sha256": "9174795ac15a8735c73a8cf39c09bc793a2b67585a0d982f09f7b8a5f7b1880b",
+      "candidate_file": "meshes/dh116/gripper0_moderate_finger23_link_8-9174795a.obj",
+      "candidate_sha256": "9174795ac15a8735c73a8cf39c09bc793a2b67585a0d982f09f7b8a5f7b1880b",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger23_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger23_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger23_link",
+      "candidate_geom": "gripper0_proxy76_finger23_link_09",
+      "candidate_mesh": "gripper0_proxy76_finger23_link_09",
+      "left_geom": "gripper0_moderate_finger23_link_9",
+      "left_mesh": "gripper0_moderate_finger23_link_9",
+      "left_file": "meshes/dh116/gripper0_moderate_finger23_link_9-1cc04f8d.obj",
+      "left_sha256": "1cc04f8dd6803c05636a655c1fd77960a319be6903fa01bf7b5e94662d89b132",
+      "candidate_file": "meshes/dh116/gripper0_moderate_finger23_link_9-1cc04f8d.obj",
+      "candidate_sha256": "1cc04f8dd6803c05636a655c1fd77960a319be6903fa01bf7b5e94662d89b132",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger23_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger23_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger23_link",
+      "candidate_geom": "gripper0_proxy76_finger23_link_10",
+      "candidate_mesh": "gripper0_proxy76_finger23_link_10",
+      "left_geom": "gripper0_moderate_finger23_link_10",
+      "left_mesh": "gripper0_moderate_finger23_link_10",
+      "left_file": "meshes/dh116/gripper0_moderate_finger23_link_10-251c3834.obj",
+      "left_sha256": "251c38347bbcf580d96dd7ece9aeab16195b08f3a7225da3022a42043d11162d",
+      "candidate_file": "meshes/dh116/gripper0_moderate_finger23_link_10-251c3834.obj",
+      "candidate_sha256": "251c38347bbcf580d96dd7ece9aeab16195b08f3a7225da3022a42043d11162d",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger23_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger23_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger23_link",
+      "candidate_geom": "gripper0_proxy76_finger23_link_11",
+      "candidate_mesh": "gripper0_proxy76_finger23_link_11",
+      "left_geom": "gripper0_moderate_finger23_link_11",
+      "left_mesh": "gripper0_moderate_finger23_link_11",
+      "left_file": "meshes/dh116/gripper0_moderate_finger23_link_11-fad1ae11.obj",
+      "left_sha256": "fad1ae11d1b703d56b111df28d2d4b171c86572c706a5990cd07fb59819671cb",
+      "candidate_file": "meshes/dh116/gripper0_moderate_finger23_link_11-fad1ae11.obj",
+      "candidate_sha256": "fad1ae11d1b703d56b111df28d2d4b171c86572c706a5990cd07fb59819671cb",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger23_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger23_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger31_link",
+      "candidate_geom": "gripper0_proxy76_finger31_link_00",
+      "candidate_mesh": "gripper0_proxy76_finger31_link_00",
+      "left_geom": "gripper0_finger31_link_collision_0",
+      "left_mesh": "gripper0_finger31_link",
+      "left_file": "meshes/dh116/gripper0_finger31_link-7e3176cd.stl",
+      "left_sha256": "7e3176cd95983c3e84369fe1639f65dcab86d54cd49ca3ed8612807ba3bc7358",
+      "candidate_file": "meshes/dh116/gripper0_finger31_link-7e3176cd.stl",
+      "candidate_sha256": "7e3176cd95983c3e84369fe1639f65dcab86d54cd49ca3ed8612807ba3bc7358",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger31_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger31_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger32_link",
+      "candidate_geom": "gripper0_proxy76_finger32_link_00",
+      "candidate_mesh": "gripper0_proxy76_finger32_link_00",
+      "left_geom": "gripper0_finger32_link_collision_0",
+      "left_mesh": "gripper0_finger32_link",
+      "left_file": "meshes/dh116/gripper0_finger32_link-68b0442e.stl",
+      "left_sha256": "68b0442e8c8e3e0e8e94ef55596378b85556bda1959c64debbdd48d21b3af931",
+      "candidate_file": "meshes/dh116/gripper0_finger32_link-68b0442e.stl",
+      "candidate_sha256": "68b0442e8c8e3e0e8e94ef55596378b85556bda1959c64debbdd48d21b3af931",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger32_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger32_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger33_link",
+      "candidate_geom": "gripper0_proxy76_finger33_link_00",
+      "candidate_mesh": "gripper0_proxy76_finger33_link_00",
+      "left_geom": "gripper0_proxy_finger33_link_0",
+      "left_mesh": "gripper0_proxy_finger33_link_0",
+      "left_file": "meshes/dh116/gripper0_proxy_finger33_link_0-766046d8.obj",
+      "left_sha256": "766046d8b8b6c831fe9982e6e793a913e0d722cd9dd573576eb1dcd437b43bd7",
+      "candidate_file": "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_00.obj",
+      "candidate_sha256": "bb8d774edfe13bfeda53fbe690f5b67aba6515b1201de4c97d36ab458170fee6",
+      "operation": "baked_local_transform",
+      "R": [
+        [
+          0.9999920329164701,
+          1.3701700115722325e-05,
+          -0.003991730933875163
+        ],
+        [
+          -1.3670235036534277e-05,
+          0.9999999998752794,
+          7.909849112230013e-06
+        ],
+        [
+          0.003991731041755693,
+          -7.855218193732747e-06,
+          0.9999920329790563
+        ]
+      ],
+      "t": [
+        -1.8694091017756555e-05,
+        4.3338451472964154e-05,
+        0.0003961935691029333
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger33_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger33_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger33_link",
+      "candidate_geom": "gripper0_proxy76_finger33_link_01",
+      "candidate_mesh": "gripper0_proxy76_finger33_link_01",
+      "left_geom": "gripper0_proxy_finger33_link_1",
+      "left_mesh": "gripper0_proxy_finger33_link_1",
+      "left_file": "meshes/dh116/gripper0_proxy_finger33_link_1-3157618f.obj",
+      "left_sha256": "3157618f011017aef1fd0195a6e37d4c115e4f622fa260f9d9b55b658e145d93",
+      "candidate_file": "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_01.obj",
+      "candidate_sha256": "8d2193c48155f8c2ce14b354b5992b6a7a25bbf14dba7198f5fc41153c518ad8",
+      "operation": "baked_local_transform",
+      "R": [
+        [
+          0.9999920329164701,
+          1.3701700115722325e-05,
+          -0.003991730933875163
+        ],
+        [
+          -1.3670235036534277e-05,
+          0.9999999998752794,
+          7.909849112230013e-06
+        ],
+        [
+          0.003991731041755693,
+          -7.855218193732747e-06,
+          0.9999920329790563
+        ]
+      ],
+      "t": [
+        -1.8694091017756555e-05,
+        4.3338451472964154e-05,
+        0.0003961935691029333
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger33_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger33_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger33_link",
+      "candidate_geom": "gripper0_proxy76_finger33_link_02",
+      "candidate_mesh": "gripper0_proxy76_finger33_link_02",
+      "left_geom": "gripper0_proxy_finger33_link_2",
+      "left_mesh": "gripper0_proxy_finger33_link_2",
+      "left_file": "meshes/dh116/gripper0_proxy_finger33_link_2-e6bfb653.obj",
+      "left_sha256": "e6bfb653704941708c1617ee5c217027be98aa23ee1a24b1bf04bce8d527bac5",
+      "candidate_file": "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_02.obj",
+      "candidate_sha256": "fe85046941dade3036a32bd01199d3a034817ce7ae312a9f9d43d154911f9254",
+      "operation": "baked_local_transform",
+      "R": [
+        [
+          0.9999920329164701,
+          1.3701700115722325e-05,
+          -0.003991730933875163
+        ],
+        [
+          -1.3670235036534277e-05,
+          0.9999999998752794,
+          7.909849112230013e-06
+        ],
+        [
+          0.003991731041755693,
+          -7.855218193732747e-06,
+          0.9999920329790563
+        ]
+      ],
+      "t": [
+        -1.8694091017756555e-05,
+        4.3338451472964154e-05,
+        0.0003961935691029333
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger33_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger33_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger33_link",
+      "candidate_geom": "gripper0_proxy76_finger33_link_03",
+      "candidate_mesh": "gripper0_proxy76_finger33_link_03",
+      "left_geom": "gripper0_proxy_finger33_link_3",
+      "left_mesh": "gripper0_proxy_finger33_link_3",
+      "left_file": "meshes/dh116/gripper0_proxy_finger33_link_3-b780e3de.obj",
+      "left_sha256": "b780e3decc6b3167bfaf70939edfd017afb02dfdd069502e5f5d3ef6831132f4",
+      "candidate_file": "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_03.obj",
+      "candidate_sha256": "0fe33a743ec8f5536175048ba395f0a4961811b29e50c27273de7c8a45bb3d69",
+      "operation": "baked_local_transform",
+      "R": [
+        [
+          0.9999920329164701,
+          1.3701700115722325e-05,
+          -0.003991730933875163
+        ],
+        [
+          -1.3670235036534277e-05,
+          0.9999999998752794,
+          7.909849112230013e-06
+        ],
+        [
+          0.003991731041755693,
+          -7.855218193732747e-06,
+          0.9999920329790563
+        ]
+      ],
+      "t": [
+        -1.8694091017756555e-05,
+        4.3338451472964154e-05,
+        0.0003961935691029333
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger33_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger33_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger33_link",
+      "candidate_geom": "gripper0_proxy76_finger33_link_04",
+      "candidate_mesh": "gripper0_proxy76_finger33_link_04",
+      "left_geom": "gripper0_proxy_finger33_link_4",
+      "left_mesh": "gripper0_proxy_finger33_link_4",
+      "left_file": "meshes/dh116/gripper0_proxy_finger33_link_4-abbb8319.obj",
+      "left_sha256": "abbb83191e86009a5e4ca8df768fe6679c1d6261cf55f5b7263714483c2fa7df",
+      "candidate_file": "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_04.obj",
+      "candidate_sha256": "e4f67bf071ec777def71b6435d91e61fcb0919f2b120af6798c01fb44cf84cc8",
+      "operation": "baked_local_transform",
+      "R": [
+        [
+          0.9999920329164701,
+          1.3701700115722325e-05,
+          -0.003991730933875163
+        ],
+        [
+          -1.3670235036534277e-05,
+          0.9999999998752794,
+          7.909849112230013e-06
+        ],
+        [
+          0.003991731041755693,
+          -7.855218193732747e-06,
+          0.9999920329790563
+        ]
+      ],
+      "t": [
+        -1.8694091017756555e-05,
+        4.3338451472964154e-05,
+        0.0003961935691029333
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger33_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger33_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger33_link",
+      "candidate_geom": "gripper0_proxy76_finger33_link_05",
+      "candidate_mesh": "gripper0_proxy76_finger33_link_05",
+      "left_geom": "gripper0_proxy_finger33_link_5",
+      "left_mesh": "gripper0_proxy_finger33_link_5",
+      "left_file": "meshes/dh116/gripper0_proxy_finger33_link_5-efd967af.obj",
+      "left_sha256": "efd967af03781bc920aa654dc3d0622f6187a0c795671128026c01e4a76afd7e",
+      "candidate_file": "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_05.obj",
+      "candidate_sha256": "36a4988a972a7c47dee3ae2c325b8f75289158f297d71953b815971d6bfebde4",
+      "operation": "baked_local_transform",
+      "R": [
+        [
+          0.9999920329164701,
+          1.3701700115722325e-05,
+          -0.003991730933875163
+        ],
+        [
+          -1.3670235036534277e-05,
+          0.9999999998752794,
+          7.909849112230013e-06
+        ],
+        [
+          0.003991731041755693,
+          -7.855218193732747e-06,
+          0.9999920329790563
+        ]
+      ],
+      "t": [
+        -1.8694091017756555e-05,
+        4.3338451472964154e-05,
+        0.0003961935691029333
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger33_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger33_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger33_link",
+      "candidate_geom": "gripper0_proxy76_finger33_link_06",
+      "candidate_mesh": "gripper0_proxy76_finger33_link_06",
+      "left_geom": "gripper0_proxy_finger33_link_6",
+      "left_mesh": "gripper0_proxy_finger33_link_6",
+      "left_file": "meshes/dh116/gripper0_proxy_finger33_link_6-09abc110.obj",
+      "left_sha256": "09abc110026cafb4b30009c4e384e8876522eed2020c12d1191c913d780f90a7",
+      "candidate_file": "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_06.obj",
+      "candidate_sha256": "6baf13adbc8b82e2b69a18a1a4a24a5d8b65cf7216f6e97128959de0c17be50b",
+      "operation": "baked_local_transform",
+      "R": [
+        [
+          0.9999920329164701,
+          1.3701700115722325e-05,
+          -0.003991730933875163
+        ],
+        [
+          -1.3670235036534277e-05,
+          0.9999999998752794,
+          7.909849112230013e-06
+        ],
+        [
+          0.003991731041755693,
+          -7.855218193732747e-06,
+          0.9999920329790563
+        ]
+      ],
+      "t": [
+        -1.8694091017756555e-05,
+        4.3338451472964154e-05,
+        0.0003961935691029333
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger33_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger33_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger33_link",
+      "candidate_geom": "gripper0_proxy76_finger33_link_07",
+      "candidate_mesh": "gripper0_proxy76_finger33_link_07",
+      "left_geom": "gripper0_proxy_finger33_link_7",
+      "left_mesh": "gripper0_proxy_finger33_link_7",
+      "left_file": "meshes/dh116/gripper0_proxy_finger33_link_7-10a6dd15.obj",
+      "left_sha256": "10a6dd150321cff17d4702d552f9d492ab14006a1caf194d16d9c7943deddfe0",
+      "candidate_file": "examples/right_hand/candidates/proxy76/meshes/gripper0_proxy76_finger33_link_07.obj",
+      "candidate_sha256": "c1980f7eb8f9e7a0cb9f15a597f0e66ef312d8a9524e29d8e62e747b98ab6dde",
+      "operation": "baked_local_transform",
+      "R": [
+        [
+          0.9999920329164701,
+          1.3701700115722325e-05,
+          -0.003991730933875163
+        ],
+        [
+          -1.3670235036534277e-05,
+          0.9999999998752794,
+          7.909849112230013e-06
+        ],
+        [
+          0.003991731041755693,
+          -7.855218193732747e-06,
+          0.9999920329790563
+        ]
+      ],
+      "t": [
+        -1.8694091017756555e-05,
+        4.3338451472964154e-05,
+        0.0003961935691029333
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger33_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger33_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger41_link",
+      "candidate_geom": "gripper0_proxy76_finger41_link_00",
+      "candidate_mesh": "gripper0_proxy76_finger41_link_00",
+      "left_geom": "gripper0_finger41_link_collision_0",
+      "left_mesh": "gripper0_finger41_link",
+      "left_file": "meshes/dh116/gripper0_finger41_link-5f1647a2.stl",
+      "left_sha256": "5f1647a233765270e256bf1cb1deeca0ac29ad4241e2a8e95477756885b73857",
+      "candidate_file": "meshes/dh116/gripper0_finger41_link-5f1647a2.stl",
+      "candidate_sha256": "5f1647a233765270e256bf1cb1deeca0ac29ad4241e2a8e95477756885b73857",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger41_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger41_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger42_link",
+      "candidate_geom": "gripper0_proxy76_finger42_link_00",
+      "candidate_mesh": "gripper0_proxy76_finger42_link_00",
+      "left_geom": "gripper0_finger42_link_collision_0",
+      "left_mesh": "gripper0_finger42_link",
+      "left_file": "meshes/dh116/gripper0_finger42_link-15a9090c.stl",
+      "left_sha256": "15a9090c995e1f29ab0bb4b0a4ede7a4f60f1d0e0bf809c3ada86c53d0b66bed",
+      "candidate_file": "meshes/dh116/gripper0_finger42_link-15a9090c.stl",
+      "candidate_sha256": "15a9090c995e1f29ab0bb4b0a4ede7a4f60f1d0e0bf809c3ada86c53d0b66bed",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger42_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger42_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger43_link",
+      "candidate_geom": "gripper0_proxy76_finger43_link_00",
+      "candidate_mesh": "gripper0_proxy76_finger43_link_00",
+      "left_geom": "gripper0_proxy_finger43_link_0",
+      "left_mesh": "gripper0_proxy_finger43_link_0",
+      "left_file": "meshes/dh116/gripper0_proxy_finger43_link_0-95b4cbb3.obj",
+      "left_sha256": "95b4cbb315cc1667311de693dcee6a7456ba742561ca01ff551958d4e519348b",
+      "candidate_file": "meshes/dh116/gripper0_proxy_finger43_link_0-95b4cbb3.obj",
+      "candidate_sha256": "95b4cbb315cc1667311de693dcee6a7456ba742561ca01ff551958d4e519348b",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger43_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger43_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger43_link",
+      "candidate_geom": "gripper0_proxy76_finger43_link_01",
+      "candidate_mesh": "gripper0_proxy76_finger43_link_01",
+      "left_geom": "gripper0_proxy_finger43_link_1",
+      "left_mesh": "gripper0_proxy_finger43_link_1",
+      "left_file": "meshes/dh116/gripper0_proxy_finger43_link_1-07a65f22.obj",
+      "left_sha256": "07a65f222145a2d805b53d22a5398b5b7ad94202af938f94b640f73ed1cdf183",
+      "candidate_file": "meshes/dh116/gripper0_proxy_finger43_link_1-07a65f22.obj",
+      "candidate_sha256": "07a65f222145a2d805b53d22a5398b5b7ad94202af938f94b640f73ed1cdf183",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger43_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger43_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger43_link",
+      "candidate_geom": "gripper0_proxy76_finger43_link_02",
+      "candidate_mesh": "gripper0_proxy76_finger43_link_02",
+      "left_geom": "gripper0_proxy_finger43_link_2",
+      "left_mesh": "gripper0_proxy_finger43_link_2",
+      "left_file": "meshes/dh116/gripper0_proxy_finger43_link_2-aab293f6.obj",
+      "left_sha256": "aab293f640735836c5ac0c594282d0bbbf8fc41a8eaa13bf6f1f1f1ba864c576",
+      "candidate_file": "meshes/dh116/gripper0_proxy_finger43_link_2-aab293f6.obj",
+      "candidate_sha256": "aab293f640735836c5ac0c594282d0bbbf8fc41a8eaa13bf6f1f1f1ba864c576",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger43_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger43_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger43_link",
+      "candidate_geom": "gripper0_proxy76_finger43_link_03",
+      "candidate_mesh": "gripper0_proxy76_finger43_link_03",
+      "left_geom": "gripper0_proxy_finger43_link_3",
+      "left_mesh": "gripper0_proxy_finger43_link_3",
+      "left_file": "meshes/dh116/gripper0_proxy_finger43_link_3-f7eab61f.obj",
+      "left_sha256": "f7eab61f906cb36cd1063faad73822c846107bc6f174c4742b409375f5b04f63",
+      "candidate_file": "meshes/dh116/gripper0_proxy_finger43_link_3-f7eab61f.obj",
+      "candidate_sha256": "f7eab61f906cb36cd1063faad73822c846107bc6f174c4742b409375f5b04f63",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger43_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger43_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger43_link",
+      "candidate_geom": "gripper0_proxy76_finger43_link_04",
+      "candidate_mesh": "gripper0_proxy76_finger43_link_04",
+      "left_geom": "gripper0_proxy_finger43_link_4",
+      "left_mesh": "gripper0_proxy_finger43_link_4",
+      "left_file": "meshes/dh116/gripper0_proxy_finger43_link_4-78532cbf.obj",
+      "left_sha256": "78532cbfb13ff856554cd396d2e5573beb69fe8b4d675ea7f669643dde8f7dd7",
+      "candidate_file": "meshes/dh116/gripper0_proxy_finger43_link_4-78532cbf.obj",
+      "candidate_sha256": "78532cbfb13ff856554cd396d2e5573beb69fe8b4d675ea7f669643dde8f7dd7",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger43_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger43_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger43_link",
+      "candidate_geom": "gripper0_proxy76_finger43_link_05",
+      "candidate_mesh": "gripper0_proxy76_finger43_link_05",
+      "left_geom": "gripper0_proxy_finger43_link_5",
+      "left_mesh": "gripper0_proxy_finger43_link_5",
+      "left_file": "meshes/dh116/gripper0_proxy_finger43_link_5-13af1468.obj",
+      "left_sha256": "13af146867ef84f7051e45a515347bd29deff7ea5c8f0c15b100fbfe4a9b3cd7",
+      "candidate_file": "meshes/dh116/gripper0_proxy_finger43_link_5-13af1468.obj",
+      "candidate_sha256": "13af146867ef84f7051e45a515347bd29deff7ea5c8f0c15b100fbfe4a9b3cd7",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger43_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger43_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger43_link",
+      "candidate_geom": "gripper0_proxy76_finger43_link_06",
+      "candidate_mesh": "gripper0_proxy76_finger43_link_06",
+      "left_geom": "gripper0_proxy_finger43_link_6",
+      "left_mesh": "gripper0_proxy_finger43_link_6",
+      "left_file": "meshes/dh116/gripper0_proxy_finger43_link_6-2a3fbea9.obj",
+      "left_sha256": "2a3fbea961a56cc9bfd5384d661e6c0957601ee07999f02d9b642b252463176c",
+      "candidate_file": "meshes/dh116/gripper0_proxy_finger43_link_6-2a3fbea9.obj",
+      "candidate_sha256": "2a3fbea961a56cc9bfd5384d661e6c0957601ee07999f02d9b642b252463176c",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger43_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger43_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger43_link",
+      "candidate_geom": "gripper0_proxy76_finger43_link_07",
+      "candidate_mesh": "gripper0_proxy76_finger43_link_07",
+      "left_geom": "gripper0_proxy_finger43_link_7",
+      "left_mesh": "gripper0_proxy_finger43_link_7",
+      "left_file": "meshes/dh116/gripper0_proxy_finger43_link_7-d800f7ad.obj",
+      "left_sha256": "d800f7adae660e6ceb80e34b8a7e33ba3dcfb60afc357baf4818265705f7d0b2",
+      "candidate_file": "meshes/dh116/gripper0_proxy_finger43_link_7-d800f7ad.obj",
+      "candidate_sha256": "d800f7adae660e6ceb80e34b8a7e33ba3dcfb60afc357baf4818265705f7d0b2",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger43_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger43_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger51_link",
+      "candidate_geom": "gripper0_proxy76_finger51_link_00",
+      "candidate_mesh": "gripper0_proxy76_finger51_link_00",
+      "left_geom": "gripper0_finger51_link_collision_0",
+      "left_mesh": "gripper0_finger51_link",
+      "left_file": "meshes/dh116/gripper0_finger51_link-dfabcfce.stl",
+      "left_sha256": "dfabcfce1fc923cc0745a2df5ec07efc657506c7ad50b8e883de7fc996ce9f59",
+      "candidate_file": "meshes/dh116/gripper0_finger51_link-dfabcfce.stl",
+      "candidate_sha256": "dfabcfce1fc923cc0745a2df5ec07efc657506c7ad50b8e883de7fc996ce9f59",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger51_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger51_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger52_link",
+      "candidate_geom": "gripper0_proxy76_finger52_link_00",
+      "candidate_mesh": "gripper0_proxy76_finger52_link_00",
+      "left_geom": "gripper0_finger52_link_collision_0",
+      "left_mesh": "gripper0_finger52_link",
+      "left_file": "meshes/dh116/gripper0_finger52_link-acf84396.stl",
+      "left_sha256": "acf84396741cf2d5fa50ad3a25e9ca4fdb0947387cb39c2697951761a5f7d22c",
+      "candidate_file": "meshes/dh116/gripper0_finger52_link-acf84396.stl",
+      "candidate_sha256": "acf84396741cf2d5fa50ad3a25e9ca4fdb0947387cb39c2697951761a5f7d22c",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger52_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger52_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger53_link",
+      "candidate_geom": "gripper0_proxy76_finger53_link_00",
+      "candidate_mesh": "gripper0_proxy76_finger53_link_00",
+      "left_geom": "gripper0_proxy_finger53_link_0",
+      "left_mesh": "gripper0_proxy_finger53_link_0",
+      "left_file": "meshes/dh116/gripper0_proxy_finger53_link_0-f66430b1.obj",
+      "left_sha256": "f66430b17c3b0ee5d63cb097877e7d8faa12153df6725cb7ad9383607c09bb0a",
+      "candidate_file": "meshes/dh116/gripper0_proxy_finger53_link_0-f66430b1.obj",
+      "candidate_sha256": "f66430b17c3b0ee5d63cb097877e7d8faa12153df6725cb7ad9383607c09bb0a",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger53_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger53_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger53_link",
+      "candidate_geom": "gripper0_proxy76_finger53_link_01",
+      "candidate_mesh": "gripper0_proxy76_finger53_link_01",
+      "left_geom": "gripper0_proxy_finger53_link_1",
+      "left_mesh": "gripper0_proxy_finger53_link_1",
+      "left_file": "meshes/dh116/gripper0_proxy_finger53_link_1-fce5027c.obj",
+      "left_sha256": "fce5027c124ece9666bc17a88a364dd24dd79e5ae6fb0c4bdfe8169e0ad0b8dc",
+      "candidate_file": "meshes/dh116/gripper0_proxy_finger53_link_1-fce5027c.obj",
+      "candidate_sha256": "fce5027c124ece9666bc17a88a364dd24dd79e5ae6fb0c4bdfe8169e0ad0b8dc",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger53_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger53_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger53_link",
+      "candidate_geom": "gripper0_proxy76_finger53_link_02",
+      "candidate_mesh": "gripper0_proxy76_finger53_link_02",
+      "left_geom": "gripper0_proxy_finger53_link_2",
+      "left_mesh": "gripper0_proxy_finger53_link_2",
+      "left_file": "meshes/dh116/gripper0_proxy_finger53_link_2-dd7921f7.obj",
+      "left_sha256": "dd7921f79cbac6ac32ea9142d4fa4c76df1dd885c47004aaeb4fca67327152b5",
+      "candidate_file": "meshes/dh116/gripper0_proxy_finger53_link_2-dd7921f7.obj",
+      "candidate_sha256": "dd7921f79cbac6ac32ea9142d4fa4c76df1dd885c47004aaeb4fca67327152b5",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger53_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger53_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger53_link",
+      "candidate_geom": "gripper0_proxy76_finger53_link_03",
+      "candidate_mesh": "gripper0_proxy76_finger53_link_03",
+      "left_geom": "gripper0_proxy_finger53_link_3",
+      "left_mesh": "gripper0_proxy_finger53_link_3",
+      "left_file": "meshes/dh116/gripper0_proxy_finger53_link_3-49e71c08.obj",
+      "left_sha256": "49e71c0816ce5464fd8afe99b68e292cd88549525e9986adf9c3c1b53edae3d6",
+      "candidate_file": "meshes/dh116/gripper0_proxy_finger53_link_3-49e71c08.obj",
+      "candidate_sha256": "49e71c0816ce5464fd8afe99b68e292cd88549525e9986adf9c3c1b53edae3d6",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger53_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger53_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger53_link",
+      "candidate_geom": "gripper0_proxy76_finger53_link_04",
+      "candidate_mesh": "gripper0_proxy76_finger53_link_04",
+      "left_geom": "gripper0_proxy_finger53_link_4",
+      "left_mesh": "gripper0_proxy_finger53_link_4",
+      "left_file": "meshes/dh116/gripper0_proxy_finger53_link_4-84f78255.obj",
+      "left_sha256": "84f782558f32c9ea8067922918c95c221e617026a4e7a0d752d84b0ff828c007",
+      "candidate_file": "meshes/dh116/gripper0_proxy_finger53_link_4-84f78255.obj",
+      "candidate_sha256": "84f782558f32c9ea8067922918c95c221e617026a4e7a0d752d84b0ff828c007",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger53_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger53_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger53_link",
+      "candidate_geom": "gripper0_proxy76_finger53_link_05",
+      "candidate_mesh": "gripper0_proxy76_finger53_link_05",
+      "left_geom": "gripper0_proxy_finger53_link_5",
+      "left_mesh": "gripper0_proxy_finger53_link_5",
+      "left_file": "meshes/dh116/gripper0_proxy_finger53_link_5-3134737f.obj",
+      "left_sha256": "3134737f88f7b977c10b8835d0f0b8ea8d1b0d90a91c9a862fffc5cd05930704",
+      "candidate_file": "meshes/dh116/gripper0_proxy_finger53_link_5-3134737f.obj",
+      "candidate_sha256": "3134737f88f7b977c10b8835d0f0b8ea8d1b0d90a91c9a862fffc5cd05930704",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger53_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger53_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger53_link",
+      "candidate_geom": "gripper0_proxy76_finger53_link_06",
+      "candidate_mesh": "gripper0_proxy76_finger53_link_06",
+      "left_geom": "gripper0_proxy_finger53_link_6",
+      "left_mesh": "gripper0_proxy_finger53_link_6",
+      "left_file": "meshes/dh116/gripper0_proxy_finger53_link_6-8a45b6d5.obj",
+      "left_sha256": "8a45b6d5929a3338e58b416f7dbab7e43de69a2697206dbdc9eb48928e14b330",
+      "candidate_file": "meshes/dh116/gripper0_proxy_finger53_link_6-8a45b6d5.obj",
+      "candidate_sha256": "8a45b6d5929a3338e58b416f7dbab7e43de69a2697206dbdc9eb48928e14b330",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger53_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger53_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    },
+    {
+      "link": "finger53_link",
+      "candidate_geom": "gripper0_proxy76_finger53_link_07",
+      "candidate_mesh": "gripper0_proxy76_finger53_link_07",
+      "left_geom": "gripper0_proxy_finger53_link_7",
+      "left_mesh": "gripper0_proxy_finger53_link_7",
+      "left_file": "meshes/dh116/gripper0_proxy_finger53_link_7-8015cab7.obj",
+      "left_sha256": "8015cab75b38d79aa5d59486a2b6d68198e96fbfb4a892a86ee8d334ffd817f1",
+      "candidate_file": "meshes/dh116/gripper0_proxy_finger53_link_7-8015cab7.obj",
+      "candidate_sha256": "8015cab75b38d79aa5d59486a2b6d68198e96fbfb4a892a86ee8d334ffd817f1",
+      "operation": "direct_existing_mesh_reference",
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "flip_winding": false,
+      "right_contact_template": {
+        "name": "gripper0_finger53_link_collision_0",
+        "type": "mesh",
+        "mesh": "gripper0_finger53_link",
+        "group": "0",
+        "contype": "1",
+        "conaffinity": "1",
+        "rgba": "0 0 0.5 1",
+        "pos": "0 0 0",
+        "quat": "1 0 0 0",
+        "condim": "4",
+        "friction": "1.0 0.005 0.001"
+      }
+    }
+  ],
+  "scope": "Static migration candidate only; geometry quality and physical behavior require separate evidence; original full-range FAIL remains."
+}

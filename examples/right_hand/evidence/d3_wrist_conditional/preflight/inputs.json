@@ -1,0 +1,34 @@
+[
+  {
+    "path": "examples/right_hand/wrist_external_preflight.py",
+    "sha256": "5e2acb678fcd2922400e7f1fc2197df02040b0e53e97e1092f5bbd3feb98fa6b"
+  },
+  {
+    "path": "examples/right_hand/candidates/wrist_reuse/model.xml",
+    "sha256": "9604a4a6935a34496f93e223219f687b4df8b7aa83037dc208fc9f3499eb05c9"
+  },
+  {
+    "path": "examples/right_hand/evidence/d3_white_bowl_001/candidate.json",
+    "sha256": "ba767b42f99d3562255909bde5c970d529ba254769029ec1cd7a98faf76af0fb"
+  },
+  {
+    "path": "examples/right_hand/evidence/d3_bowl78_slow_001/state.jsonl.gz",
+    "sha256": "3a0fb1b74e89ec6df2e192546c38f59518d3ac4ff4b9c92c1d98d6d9ab02d615"
+  },
+  {
+    "path": "examples/right_hand/evidence/d3_bowl78_slow_001/model.xml",
+    "sha256": "cfea34f6f4ee4654af1af8369744ed454a194a18406206be97d1ffeba22b5873"
+  },
+  {
+    "path": "examples/right_hand/evidence/d3_bowl78_slow_001/schedule.json.gz",
+    "sha256": "e1c302d63ce5ebbef48c768d8a38602ab5b5fae9edb6dbef8da84040a217a6a3"
+  },
+  {
+    "path": "examples/right_hand/wrist_reuse.py",
+    "sha256": "55fc12bbf049c3429e7c624005f862d888fa853a22e79f2e936ecffb530bf8bf"
+  },
+  {
+    "path": "examples/right_hand/candidates/wrist_reuse/manifest.json",
+    "sha256": "60a6a25386632f63b3f7481f3b3f6ade9592d5c5822b9f485233b0da8ad66e92"
+  }
+]

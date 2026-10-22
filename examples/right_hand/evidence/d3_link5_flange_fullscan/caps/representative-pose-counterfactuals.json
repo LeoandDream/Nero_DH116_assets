@@ -1,0 +1,4008 @@
+{
+  "schema": "d3-link5-flange-representative-mixed-source-counterfactuals-v1",
+  "candidate_model_sha256": "1b2530d923b446605492b43652dd5a3200fd755674ba17a54f0c961cde362b39",
+  "selection": "Exactly first / maximum LP common-ball radius / last anomalous pose for each of the two failed pairs; duplicate pose IDs reused. No pose or design-parameter search.",
+  "pair_role_count": 6,
+  "stored_pose_count": 4,
+  "representative_roles": [
+    {
+      "pair": [
+        "robot0_link5_local_00",
+        "robot0_flange_local_01"
+      ],
+      "role": "first",
+      "pose_id": "m049_quarter4",
+      "pose_index_one_based": 201,
+      "common_ball_radius_lp_mm": 0.03936676902747527
+    },
+    {
+      "pair": [
+        "robot0_link5_local_00",
+        "robot0_flange_local_01"
+      ],
+      "role": "maximum_LP_radius",
+      "pose_id": "m054_quarter3",
+      "pose_index_one_based": 220,
+      "common_ball_radius_lp_mm": 0.03936676902749614
+    },
+    {
+      "pair": [
+        "robot0_link5_local_00",
+        "robot0_flange_local_01"
+      ],
+      "role": "last",
+      "pose_id": "m229_quarter4",
+      "pose_index_one_based": 921,
+      "common_ball_radius_lp_mm": 0.03936676902747527
+    },
+    {
+      "pair": [
+        "robot0_link5_local_01",
+        "robot0_flange_local_01"
+      ],
+      "role": "first",
+      "pose_id": "m040_quarter3",
+      "pose_index_one_based": 164,
+      "common_ball_radius_lp_mm": 0.031772090640675356
+    },
+    {
+      "pair": [
+        "robot0_link5_local_01",
+        "robot0_flange_local_01"
+      ],
+      "role": "maximum_LP_radius",
+      "pose_id": "m054_quarter3",
+      "pose_index_one_based": 220,
+      "common_ball_radius_lp_mm": 1.5590282262851434
+    },
+    {
+      "pair": [
+        "robot0_link5_local_01",
+        "robot0_flange_local_01"
+      ],
+      "role": "last",
+      "pose_id": "m229_quarter4",
+      "pose_index_one_based": 921,
+      "common_ball_radius_lp_mm": 1.5590282262851238
+    }
+  ],
+  "poses": {
+    "m040_quarter3": {
+      "pose_index_one_based": 164,
+      "body_world_transforms": {
+        "robot0_link5": {
+          "rotation": [
+            [
+              -0.697296274482056,
+              -0.1780661375422869,
+              0.6943128662600295
+            ],
+            [
+              0.3763711306075835,
+              0.7334135694894325,
+              0.5660824216789812
+            ],
+            [
+              -0.6100185879451672,
+              0.6560464821562128,
+              -0.44438759614985146
+            ]
+          ],
+          "translation_m": [
+            -0.18571109471055441,
+            0.1852095535026399,
+            1.168145807826779
+          ]
+        },
+        "robot0_gripper_flange": {
+          "rotation": [
+            [
+              0.1760395835284267,
+              0.9674320403521104,
+              0.18189368414349022
+            ],
+            [
+              0.6953279494643676,
+              0.008590847494487616,
+              -0.7186412457081806
+            ],
+            [
+              -0.6967991875173343,
+              0.25298506801683013,
+              -0.6711702076490761
+            ]
+          ],
+          "translation_m": [
+            -0.1798906313367517,
+            0.16221295136168454,
+            1.146668413762447
+          ]
+        }
+      },
+      "relative_rotation_flange_to_link5": [
+        [
+          0.5640100771778761,
+          -0.8256790045305618,
+          0.012116695887452369
+        ],
+        [
+          0.021483608948915458,
+          3.7212762089755566e-06,
+          -0.9997692006321682
+        ],
+        [
+          0.825488393248711,
+          0.5641402143648109,
+          0.017740663687946197
+        ]
+      ],
+      "relative_translation_flange_to_link5_m": [
+        0.00038776502562970315,
+        -0.03199261631579354,
+        0.000567537897498021
+      ],
+      "existing_full_source_STL_query": {
+        "surface_min_distance_m": 0.00353286288836401,
+        "surface_intersection": false,
+        "strict_transverse_witness": null,
+        "nearest_face_ids_zero_based": [
+          3285,
+          6454
+        ],
+        "closest_points": [
+          [
+            0.009135454893112183,
+            -0.027799999341368675,
+            0.004058351740241051
+          ],
+          [
+            0.009173963970876158,
+            -0.03133261156162931,
+            0.004075326432423803
+          ]
+        ],
+        "visited_node_pairs": 3609,
+        "leaf_pairs": 1005,
+        "triangle_pairs_evaluated": 31940,
+        "all_surface_search_complete": true,
+        "global_zero_certified_by_intersection": false,
+        "numerical_absolute_bound_tolerance_m": 1e-12,
+        "coordinate_frame": "robot0_link5",
+        "relative_rotation_b_to_a": [
+          [
+            0.5640100771778761,
+            -0.8256790045305618,
+            0.012116695887452369
+          ],
+          [
+            0.021483608948915458,
+            3.7212762089755566e-06,
+            -0.9997692006321682
+          ],
+          [
+            0.825488393248711,
+            0.5641402143648109,
+            0.017740663687946197
+          ]
+        ],
+        "relative_translation_b_to_a_m": [
+          0.00038776502562970315,
+          -0.03199261631579354,
+          0.000567537897498021
+        ],
+        "closest_face_triangles_body5_m": [
+          [
+            [
+              0.0019052558345720172,
+              -0.027799999341368675,
+              0.001090985257178545
+            ],
+            [
+              0.009135454893112183,
+              -0.027799999341368675,
+              0.004058351740241051
+            ],
+            [
+              0.008090170100331306,
+              -0.027799999341368675,
+              0.005868837703019381
+            ]
+          ],
+          [
+            [
+              0.01578804622673216,
+              -0.031206346472380905,
+              0.015347600903329752
+            ],
+            [
+              -0.0035464732073256303,
+              -0.03158993396964333,
+              -0.02061837487875538
+            ],
+            [
+              -0.005769696088468124,
+              -0.031611692670410044,
+              -0.02010294811891262
+            ]
+          ]
+        ]
+      },
+      "full_source_link5_vs_compiled_flange01": {
+        "continuous_surface_query": {
+          "surface_min_distance_m": 0.004708862392381732,
+          "surface_intersection": false,
+          "strict_transverse_witness": null,
+          "nearest_face_ids_zero_based": [
+            4623,
+            45
+          ],
+          "closest_points": [
+            [
+              0.007664818996189744,
+              -0.0229065289720501,
+              -0.020675355574108344
+            ],
+            [
+              0.012128656316564228,
+              -0.022753883007855746,
+              -0.02216674439572199
+            ]
+          ],
+          "visited_node_pairs": 2310,
+          "leaf_pairs": 609,
+          "triangle_pairs_evaluated": 18397,
+          "all_surface_search_complete": true,
+          "global_zero_certified_by_intersection": false,
+          "numerical_absolute_bound_tolerance_m": 1e-12
+        },
+        "source_vertex_membership": {
+          "method": "Every exact unique source-STL vertex, transformed only by stored body transforms, against normalized ConvexHull halfspaces of actual compiled graph supports. Negative maximum residual is inside.",
+          "source_triangle_count": 36200,
+          "all_unique_source_vertices_tested": 18027,
+          "strictly_inside_vertex_count": 0,
+          "strictly_exterior_vertex_count": 18027,
+          "boundary_or_numerically_unknown_vertex_count": 0,
+          "existing_geometric_tolerance_m": 1e-10,
+          "minimum_of_maximum_outward_halfspace_residual_m": 0.004723615333677581,
+          "maximum_of_maximum_outward_halfspace_residual_m": 0.14896926270445854,
+          "opposite_compiled_support_max_halfspace_residual_m": 2.42861286636753e-17,
+          "least_exterior_or_deepest_inside_source_vertices": [
+            {
+              "unique_source_vertex_id_zero_based": 11562,
+              "point_source_body_local_m": [
+                0.0075065139681100845,
+                -0.022855309769511223,
+                -0.02114393189549446
+              ],
+              "point_opposite_hull_body_local_m": [
+                -0.013711217853340311,
+                -0.01812608076108262,
+                -0.00943411782944107
+              ],
+              "maximum_outward_halfspace_residual_m": 0.004723615333677581,
+              "source_face_ids_zero_based": [
+                3762,
+                3770,
+                3771,
+                3772,
+                4623,
+                4624,
+                4625
+              ]
+            },
+            {
+              "unique_source_vertex_id_zero_based": 11587,
+              "point_source_body_local_m": [
+                0.007615172304213047,
+                -0.024800000712275505,
+                -0.020757341757416725
+              ],
+              "point_opposite_hull_body_local_m": [
+                -0.013372586764622118,
+                -0.017997713861235703,
+                -0.007481700774478097
+              ],
+              "maximum_outward_halfspace_residual_m": 0.004809408276521451,
+              "source_face_ids_zero_based": [
+                3771,
+                3772,
+                3996,
+                3997,
+                3998
+              ]
+            },
+            {
+              "unique_source_vertex_id_zero_based": 11738,
+              "point_source_body_local_m": [
+                0.008036557585000992,
+                -0.024800000712275505,
+                -0.019529756158590317
+              ],
+              "point_opposite_hull_body_local_m": [
+                -0.012121563556332818,
+                -0.01765311243752744,
+                -0.007454816793922393
+              ],
+              "maximum_outward_halfspace_residual_m": 0.004834174768249412,
+              "source_face_ids_zero_based": [
+                3761,
+                3762,
+                3772,
+                3998,
+                3999
+              ]
+            },
+            {
+              "unique_source_vertex_id_zero_based": 11801,
+              "point_source_body_local_m": [
+                0.00813204050064087,
+                -0.02305769734084606,
+                -0.019292399287223816
+              ],
+              "point_opposite_hull_body_local_m": [
+                -0.011834343923040561,
+                -0.017598041636376908,
+                -0.00919135023695495
+              ],
+              "maximum_outward_halfspace_residual_m": 0.004866435872888247,
+              "source_face_ids_zero_based": [
+                3760,
+                3761,
+                3762,
+                4621,
+                4622,
+                4623
+              ]
+            },
+            {
+              "unique_source_vertex_id_zero_based": 11524,
+              "point_source_body_local_m": [
+                0.007379967253655195,
+                -0.024800000712275505,
+                -0.021654222160577774
+              ],
+              "point_opposite_hull_body_local_m": [
+                -0.014245609146281549,
+                -0.01830947629212941,
+                -0.007500461936147687
+              ],
+              "maximum_outward_halfspace_residual_m": 0.004881346372459055,
+              "source_face_ids_zero_based": [
+                3769,
+                3770,
+                3771,
+                3994,
+                3995,
+                3996
+              ]
+            }
+          ],
+          "whole_source_component_containment_in_opposite_hull": "EXCLUDED_NO_SOURCE_VERTEX_INSIDE_OR_BOUNDARY"
+        },
+        "strict_source_surface_crossing_or_strict_vertex_inside_opposite_hull": false,
+        "source_surface_exterior_to_opposite_convex_solid": true
+      },
+      "arm_pair_counterfactuals": {
+        "robot0_link5_local_01": {
+          "arm_hull_vs_full_source_flange": {
+            "continuous_surface_query": {
+              "surface_min_distance_m": 0.0013180352035067097,
+              "surface_intersection": false,
+              "strict_transverse_witness": null,
+              "nearest_face_ids_zero_based": [
+                54,
+                4063
+              ],
+              "closest_points": [
+                [
+                  0.012066021290555382,
+                  -0.021595175280487613,
+                  -0.02166280364714537
+                ],
+                [
+                  0.013377725300963032,
+                  -0.02146825869165263,
+                  -0.021686075222982673
+                ]
+              ],
+              "visited_node_pairs": 583,
+              "leaf_pairs": 104,
+              "triangle_pairs_evaluated": 4114,
+              "all_surface_search_complete": true,
+              "global_zero_certified_by_intersection": false,
+              "numerical_absolute_bound_tolerance_m": 1e-12
+            },
+            "source_vertex_membership": {
+              "method": "Every exact unique source-STL vertex, transformed only by stored body transforms, against normalized ConvexHull halfspaces of actual compiled graph supports. Negative maximum residual is inside.",
+              "source_triangle_count": 13302,
+              "all_unique_source_vertices_tested": 6621,
+              "strictly_inside_vertex_count": 0,
+              "strictly_exterior_vertex_count": 6621,
+              "boundary_or_numerically_unknown_vertex_count": 0,
+              "existing_geometric_tolerance_m": 1e-10,
+              "minimum_of_maximum_outward_halfspace_residual_m": 0.0015625192656287638,
+              "maximum_of_maximum_outward_halfspace_residual_m": 0.03870874318137372,
+              "opposite_compiled_support_max_halfspace_residual_m": 3.469446951953614e-18,
+              "least_exterior_or_deepest_inside_source_vertices": [
+                {
+                  "unique_source_vertex_id_zero_based": 1183,
+                  "point_source_body_local_m": [
+                    -0.010694442316889763,
+                    -0.023285018280148506,
+                    -0.00990739930421114
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.013461897558730632,
+                    -0.022317345499726013,
+                    -0.021572379150492052
+                  ],
+                  "maximum_outward_halfspace_residual_m": 0.0015625192656287638,
+                  "source_face_ids_zero_based": [
+                    0,
+                    262,
+                    4061,
+                    4062,
+                    4063
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 988,
+                  "point_source_body_local_m": [
+                    -0.011191274970769882,
+                    -0.023785360157489777,
+                    -0.009854407049715519
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.013595442809511422,
+                    -0.022381001144002134,
+                    -0.02226383159583097
+                  ],
+                  "maximum_outward_halfspace_residual_m": 0.001747926367380543,
+                  "source_face_ids_zero_based": [
+                    2209,
+                    2210,
+                    2212,
+                    2213,
+                    2214,
+                    4060,
+                    4061,
+                    4062
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 1016,
+                  "point_source_body_local_m": [
+                    -0.011141655966639519,
+                    -0.0232655368745327,
+                    -0.013002711348235607
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.013156074211310343,
+                    -0.0192323555424367,
+                    -0.02198547147330493
+                  ],
+                  "maximum_outward_halfspace_residual_m": 0.0018202024368125557,
+                  "source_face_ids_zero_based": [
+                    0,
+                    506,
+                    507,
+                    4063,
+                    4064,
+                    4065
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 870,
+                  "point_source_body_local_m": [
+                    -0.011634059250354767,
+                    -0.02376607246696949,
+                    -0.012919072061777115
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.013292648958753052,
+                    -0.019326555987224443,
+                    -0.022672833108771766
+                  ],
+                  "maximum_outward_halfspace_residual_m": 0.0019172134633972425,
+                  "source_face_ids_zero_based": [
+                    2210,
+                    2211,
+                    4062,
+                    4063,
+                    4064
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 1460,
+                  "point_source_body_local_m": [
+                    -0.009698327630758286,
+                    -0.02329101599752903,
+                    -0.008954820223152637
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.014040210580083803,
+                    -0.02324830461006884,
+                    -0.020736582207201454
+                  ],
+                  "maximum_outward_halfspace_residual_m": 0.0024815733312508123,
+                  "source_face_ids_zero_based": [
+                    0,
+                    242,
+                    243,
+                    244,
+                    245,
+                    246,
+                    247,
+                    259,
+                    260,
+                    261,
+                    262,
+                    263,
+                    264,
+                    504,
+                    505,
+                    506
+                  ]
+                }
+              ],
+              "whole_source_component_containment_in_opposite_hull": "EXCLUDED_NO_SOURCE_VERTEX_INSIDE_OR_BOUNDARY"
+            },
+            "strict_source_surface_crossing_or_strict_vertex_inside_opposite_hull": false,
+            "source_surface_exterior_to_opposite_convex_solid": true
+          },
+          "arm_hull_vs_assigned_source_flange01_component": {
+            "continuous_surface_query": {
+              "surface_min_distance_m": 0.0013180352035067097,
+              "surface_intersection": false,
+              "strict_transverse_witness": null,
+              "nearest_face_ids_zero_based": [
+                54,
+                4063
+              ],
+              "closest_points": [
+                [
+                  0.012066021290555382,
+                  -0.021595175280487613,
+                  -0.02166280364714537
+                ],
+                [
+                  0.013377725300963032,
+                  -0.02146825869165263,
+                  -0.021686075222982673
+                ]
+              ],
+              "visited_node_pairs": 449,
+              "leaf_pairs": 141,
+              "triangle_pairs_evaluated": 4104,
+              "all_surface_search_complete": true,
+              "global_zero_certified_by_intersection": false,
+              "numerical_absolute_bound_tolerance_m": 1e-12
+            },
+            "source_vertex_membership": {
+              "method": "Every exact unique source-STL vertex, transformed only by stored body transforms, against normalized ConvexHull halfspaces of actual compiled graph supports. Negative maximum residual is inside.",
+              "source_triangle_count": 4864,
+              "all_unique_source_vertices_tested": 2418,
+              "strictly_inside_vertex_count": 0,
+              "strictly_exterior_vertex_count": 2418,
+              "boundary_or_numerically_unknown_vertex_count": 0,
+              "existing_geometric_tolerance_m": 1e-10,
+              "minimum_of_maximum_outward_halfspace_residual_m": 0.0015625192656287638,
+              "maximum_of_maximum_outward_halfspace_residual_m": 0.0383919253080133,
+              "opposite_compiled_support_max_halfspace_residual_m": 3.469446951953614e-18,
+              "least_exterior_or_deepest_inside_source_vertices": [
+                {
+                  "unique_source_vertex_id_zero_based": 294,
+                  "point_source_body_local_m": [
+                    -0.010694442316889763,
+                    -0.023285018280148506,
+                    -0.00990739930421114
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.013461897558730632,
+                    -0.022317345499726013,
+                    -0.021572379150492052
+                  ],
+                  "maximum_outward_halfspace_residual_m": 0.0015625192656287638,
+                  "source_face_ids_zero_based": [
+                    0,
+                    262,
+                    4061,
+                    4062,
+                    4063
+                  ],
+                  "original_full_source_STL_face_ids_zero_based": [
+                    0,
+                    262,
+                    4061,
+                    4062,
+                    4063
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 249,
+                  "point_source_body_local_m": [
+                    -0.011191274970769882,
+                    -0.023785360157489777,
+                    -0.009854407049715519
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.013595442809511422,
+                    -0.022381001144002134,
+                    -0.02226383159583097
+                  ],
+                  "maximum_outward_halfspace_residual_m": 0.001747926367380543,
+                  "source_face_ids_zero_based": [
+                    2209,
+                    2210,
+                    2212,
+                    2213,
+                    2214,
+                    4060,
+                    4061,
+                    4062
+                  ],
+                  "original_full_source_STL_face_ids_zero_based": [
+                    2209,
+                    2210,
+                    2212,
+                    2213,
+                    2214,
+                    4060,
+                    4061,
+                    4062
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 250,
+                  "point_source_body_local_m": [
+                    -0.011141655966639519,
+                    -0.0232655368745327,
+                    -0.013002711348235607
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.013156074211310343,
+                    -0.0192323555424367,
+                    -0.02198547147330493
+                  ],
+                  "maximum_outward_halfspace_residual_m": 0.0018202024368125557,
+                  "source_face_ids_zero_based": [
+                    0,
+                    506,
+                    507,
+                    4063,
+                    4064,
+                    4065
+                  ],
+                  "original_full_source_STL_face_ids_zero_based": [
+                    0,
+                    506,
+                    507,
+                    4063,
+                    4064,
+                    4065
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 223,
+                  "point_source_body_local_m": [
+                    -0.011634059250354767,
+                    -0.02376607246696949,
+                    -0.012919072061777115
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.013292648958753052,
+                    -0.019326555987224443,
+                    -0.022672833108771766
+                  ],
+                  "maximum_outward_halfspace_residual_m": 0.0019172134633972425,
+                  "source_face_ids_zero_based": [
+                    2210,
+                    2211,
+                    4062,
+                    4063,
+                    4064
+                  ],
+                  "original_full_source_STL_face_ids_zero_based": [
+                    2210,
+                    2211,
+                    4062,
+                    4063,
+                    4064
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 398,
+                  "point_source_body_local_m": [
+                    -0.009698327630758286,
+                    -0.02329101599752903,
+                    -0.008954820223152637
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.014040210580083803,
+                    -0.02324830461006884,
+                    -0.020736582207201454
+                  ],
+                  "maximum_outward_halfspace_residual_m": 0.0024815733312508123,
+                  "source_face_ids_zero_based": [
+                    0,
+                    242,
+                    243,
+                    244,
+                    245,
+                    246,
+                    247,
+                    259,
+                    260,
+                    261,
+                    262,
+                    263,
+                    264,
+                    504,
+                    505,
+                    506
+                  ],
+                  "original_full_source_STL_face_ids_zero_based": [
+                    0,
+                    242,
+                    243,
+                    244,
+                    245,
+                    246,
+                    247,
+                    259,
+                    260,
+                    261,
+                    262,
+                    263,
+                    264,
+                    504,
+                    505,
+                    506
+                  ]
+                }
+              ],
+              "whole_source_component_containment_in_opposite_hull": "EXCLUDED_NO_SOURCE_VERTEX_INSIDE_OR_BOUNDARY"
+            },
+            "strict_source_surface_crossing_or_strict_vertex_inside_opposite_hull": false,
+            "source_surface_exterior_to_opposite_convex_solid": true,
+            "source_component_triangle_count": 4864,
+            "nearest_original_source_STL_face_id_zero_based": 4063
+          }
+        }
+      }
+    },
+    "m049_quarter4": {
+      "pose_index_one_based": 201,
+      "body_world_transforms": {
+        "robot0_link5": {
+          "rotation": [
+            [
+              -0.7290532074201311,
+              -0.05171609757401416,
+              0.682500451283466
+            ],
+            [
+              0.4440402841056492,
+              0.7230909794514758,
+              0.5291197043460774
+            ],
+            [
+              -0.5208739260529309,
+              0.688814111852843,
+              -0.5042077671660617
+            ]
+          ],
+          "translation_m": [
+            -0.20365453208218848,
+            0.16099701875359898,
+            1.164831612432337
+          ]
+        },
+        "robot0_gripper_flange": {
+          "rotation": [
+            [
+              0.022398202376627957,
+              0.9984104231649534,
+              0.0517198941015421
+            ],
+            [
+              0.6904061035661097,
+              0.02196911914934699,
+              -0.7230883555710634
+            ],
+            [
+              -0.723075191587264,
+              0.051903609887761215,
+              -0.6888165812403626
+            ]
+          ],
+          "translation_m": [
+            -0.20199961549198858,
+            0.13785810809654342,
+            1.1427895611579035
+          ]
+        }
+      },
+      "relative_rotation_flange_to_link5": [
+        [
+          0.6668696549661772,
+          -0.7451743844800307,
+          -3.1652239519758233e-07
+        ],
+        [
+          3.682131297532656e-06,
+          3.719966870667621e-06,
+          -0.9999999999863024
+        ],
+        [
+          0.7451743844710009,
+          0.6668696549558768,
+          5.224562946598281e-06
+        ]
+      ],
+      "relative_translation_flange_to_link5_m": [
+        -9.245780291763498e-10,
+        -0.03199999937031986,
+        1.2107383380686558e-09
+      ],
+      "existing_full_source_STL_query": {
+        "surface_min_distance_m": 0.0031360535011181532,
+        "surface_intersection": false,
+        "strict_transverse_witness": null,
+        "nearest_face_ids_zero_based": [
+          4619,
+          4061
+        ],
+        "closest_points": [
+          [
+            0.0071099948310436294,
+            -0.022530631277656393,
+            -0.0232887209839957
+          ],
+          [
+            0.010235222914614501,
+            -0.022356629512090196,
+            -0.023482381442311826
+          ]
+        ],
+        "visited_node_pairs": 2920,
+        "leaf_pairs": 716,
+        "triangle_pairs_evaluated": 22445,
+        "all_surface_search_complete": true,
+        "global_zero_certified_by_intersection": false,
+        "numerical_absolute_bound_tolerance_m": 1e-12,
+        "coordinate_frame": "robot0_link5",
+        "relative_rotation_b_to_a": [
+          [
+            0.6668696549661772,
+            -0.7451743844800307,
+            -3.1652239519758233e-07
+          ],
+          [
+            3.682131297532656e-06,
+            3.719966870667621e-06,
+            -0.9999999999863024
+          ],
+          [
+            0.7451743844710009,
+            0.6668696549558768,
+            5.224562946598281e-06
+          ]
+        ],
+        "relative_translation_b_to_a_m": [
+          -9.245780291763498e-10,
+          -0.03199999937031986,
+          1.2107383380686558e-09
+        ],
+        "closest_face_triangles_body5_m": [
+          [
+            [
+              0.007001752965152264,
+              -0.022245943546295166,
+              -0.024779703468084335
+            ],
+            [
+              0.0065312013030052185,
+              -0.02172110602259636,
+              -0.02491159737110138
+            ],
+            [
+              0.00712589779868722,
+              -0.022572457790374756,
+              -0.02306966483592987
+            ]
+          ],
+          [
+            [
+              0.010261121631166858,
+              -0.022145722009234946,
+              -0.024201236633247226
+            ],
+            [
+              0.010404103048706004,
+              -0.025209788747417392,
+              -0.02332058179718035
+            ],
+            [
+              0.010219602317931694,
+              -0.022092726064081775,
+              -0.023497347127965834
+            ]
+          ]
+        ]
+      },
+      "full_source_link5_vs_compiled_flange01": {
+        "continuous_surface_query": {
+          "surface_min_distance_m": 0.0016480108140948361,
+          "surface_intersection": false,
+          "strict_transverse_witness": null,
+          "nearest_face_ids_zero_based": [
+            3151,
+            266
+          ],
+          "closest_points": [
+            [
+              0.007117841616529978,
+              -0.02290000021457672,
+              -0.026081045257900257
+            ],
+            [
+              0.008744201772051432,
+              -0.02270336028397327,
+              -0.025901531955891666
+            ]
+          ],
+          "visited_node_pairs": 1091,
+          "leaf_pairs": 266,
+          "triangle_pairs_evaluated": 8123,
+          "all_surface_search_complete": true,
+          "global_zero_certified_by_intersection": false,
+          "numerical_absolute_bound_tolerance_m": 1e-12
+        },
+        "source_vertex_membership": {
+          "method": "Every exact unique source-STL vertex, transformed only by stored body transforms, against normalized ConvexHull halfspaces of actual compiled graph supports. Negative maximum residual is inside.",
+          "source_triangle_count": 36200,
+          "all_unique_source_vertices_tested": 18027,
+          "strictly_inside_vertex_count": 0,
+          "strictly_exterior_vertex_count": 18027,
+          "boundary_or_numerically_unknown_vertex_count": 0,
+          "existing_geometric_tolerance_m": 1e-10,
+          "minimum_of_maximum_outward_halfspace_residual_m": 0.0016579700406690826,
+          "maximum_of_maximum_outward_halfspace_residual_m": 0.14730137626158557,
+          "opposite_compiled_support_max_halfspace_residual_m": 2.42861286636753e-17,
+          "least_exterior_or_deepest_inside_source_vertices": [
+            {
+              "unique_source_vertex_id_zero_based": 11414,
+              "point_source_body_local_m": [
+                0.007000000681728125,
+                -0.022194908931851387,
+                -0.025013426318764687
+              ],
+              "point_opposite_hull_body_local_m": [
+                -0.013971240703216956,
+                -0.02189688119959033,
+                -0.00980522333821808
+              ],
+              "maximum_outward_halfspace_residual_m": 0.0016579700406690826,
+              "source_face_ids_zero_based": [
+                3759,
+                4588,
+                4608,
+                4613,
+                4618
+              ]
+            },
+            {
+              "unique_source_vertex_id_zero_based": 11415,
+              "point_source_body_local_m": [
+                0.007001752965152264,
+                -0.022245943546295166,
+                -0.024779703468084335
+              ],
+              "point_opposite_hull_body_local_m": [
+                -0.013795908065098108,
+                -0.021742324469370914,
+                -0.009754187503229893
+              ],
+              "maximum_outward_halfspace_residual_m": 0.001678351730100034,
+              "source_face_ids_zero_based": [
+                3759,
+                3766,
+                3767,
+                3768,
+                4618,
+                4619
+              ]
+            },
+            {
+              "unique_source_vertex_id_zero_based": 11413,
+              "point_source_body_local_m": [
+                0.007000000681728125,
+                -0.02290000021457672,
+                -0.025013426318764687
+              ],
+              "point_opposite_hull_body_local_m": [
+                -0.013971243299455635,
+                -0.021896883822506544,
+                -0.009100132055502405
+              ],
+              "maximum_outward_halfspace_residual_m": 0.001728180460024124,
+              "source_face_ids_zero_based": [
+                3151,
+                3759,
+                3764,
+                3765,
+                3766,
+                4588,
+                4589
+              ]
+            },
+            {
+              "unique_source_vertex_id_zero_based": 11271,
+              "point_source_body_local_m": [
+                0.006885811220854521,
+                -0.02208119072020054,
+                -0.025680137798190117
+              ],
+              "point_opposite_hull_body_local_m": [
+                -0.014544206087165718,
+                -0.022256399369581317,
+                -0.009918944996999943
+              ],
+              "maximum_outward_halfspace_residual_m": 0.0017626341618868823,
+              "source_face_ids_zero_based": [
+                4588,
+                4589,
+                4590,
+                4613,
+                4614
+              ]
+            },
+            {
+              "unique_source_vertex_id_zero_based": 11250,
+              "point_source_body_local_m": [
+                0.006814060267060995,
+                -0.02204984985291958,
+                -0.025856144726276398
+              ],
+              "point_opposite_hull_body_local_m": [
+                -0.01472321035986364,
+                -0.022320305959568125,
+                -0.009950286761128965
+              ],
+              "maximum_outward_halfspace_residual_m": 0.0018390242157881077,
+              "source_face_ids_zero_based": [
+                4590,
+                4591,
+                4614,
+                4615,
+                4616
+              ]
+            }
+          ],
+          "whole_source_component_containment_in_opposite_hull": "EXCLUDED_NO_SOURCE_VERTEX_INSIDE_OR_BOUNDARY"
+        },
+        "strict_source_surface_crossing_or_strict_vertex_inside_opposite_hull": false,
+        "source_surface_exterior_to_opposite_convex_solid": true
+      },
+      "arm_pair_counterfactuals": {
+        "robot0_link5_local_00": {
+          "arm_hull_vs_full_source_flange": {
+            "continuous_surface_query": {
+              "surface_min_distance_m": 0.0012169957303264888,
+              "surface_intersection": false,
+              "strict_transverse_witness": null,
+              "nearest_face_ids_zero_based": [
+                117,
+                4061
+              ],
+              "closest_points": [
+                [
+                  0.009088491975105629,
+                  -0.02307989772341898,
+                  -0.023178441675412942
+                ],
+                [
+                  0.010274770454007962,
+                  -0.023024768650313426,
+                  -0.023444491977845757
+                ]
+              ],
+              "visited_node_pairs": 786,
+              "leaf_pairs": 239,
+              "triangle_pairs_evaluated": 12402,
+              "all_surface_search_complete": true,
+              "global_zero_certified_by_intersection": false,
+              "numerical_absolute_bound_tolerance_m": 1e-12
+            },
+            "source_vertex_membership": {
+              "method": "Every exact unique source-STL vertex, transformed only by stored body transforms, against normalized ConvexHull halfspaces of actual compiled graph supports. Negative maximum residual is inside.",
+              "source_triangle_count": 13302,
+              "all_unique_source_vertices_tested": 6621,
+              "strictly_inside_vertex_count": 0,
+              "strictly_exterior_vertex_count": 6621,
+              "boundary_or_numerically_unknown_vertex_count": 0,
+              "existing_geometric_tolerance_m": 1e-10,
+              "minimum_of_maximum_outward_halfspace_residual_m": 0.0013169222604152136,
+              "maximum_of_maximum_outward_halfspace_residual_m": 0.03959616530372104,
+              "opposite_compiled_support_max_halfspace_residual_m": 2.7755575615628914e-17,
+              "least_exterior_or_deepest_inside_source_vertices": [
+                {
+                  "unique_source_vertex_id_zero_based": 1275,
+                  "point_source_body_local_m": [
+                    -0.010439694859087467,
+                    -0.023304635658860207,
+                    -0.00679033575579524
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.010404103048706004,
+                    -0.025209788747417392,
+                    -0.02332058179718035
+                  ],
+                  "maximum_outward_halfspace_residual_m": 0.0013169222604152136,
+                  "source_face_ids_zero_based": [
+                    262,
+                    263,
+                    4059,
+                    4060,
+                    4061
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 1092,
+                  "point_source_body_local_m": [
+                    -0.01093904860317707,
+                    -0.02380478009581566,
+                    -0.006768211256712675
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.010443794005635394,
+                    -0.02523191694570644,
+                    -0.024026218448575356
+                  ],
+                  "maximum_outward_halfspace_residual_m": 0.0015105432173537475,
+                  "source_face_ids_zero_based": [
+                    2214,
+                    2216,
+                    2217,
+                    2218,
+                    4058,
+                    4059,
+                    4060
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 1183,
+                  "point_source_body_local_m": [
+                    -0.010694442316889763,
+                    -0.023285018280148506,
+                    -0.00990739930421114
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.010219602317931694,
+                    -0.022092726064081775,
+                    -0.023497347127965834
+                  ],
+                  "maximum_outward_halfspace_residual_m": 0.0015176422572796954,
+                  "source_face_ids_zero_based": [
+                    0,
+                    262,
+                    4061,
+                    4062,
+                    4063
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 988,
+                  "point_source_body_local_m": [
+                    -0.011191274970769882,
+                    -0.023785360157489777,
+                    -0.009854407049715519
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.010261121631166858,
+                    -0.022145722009234946,
+                    -0.024201236633247226
+                  ],
+                  "maximum_outward_halfspace_residual_m": 0.0016348189269299249,
+                  "source_face_ids_zero_based": [
+                    2209,
+                    2210,
+                    2212,
+                    2213,
+                    2214,
+                    4060,
+                    4061,
+                    4062
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 1460,
+                  "point_source_body_local_m": [
+                    -0.009698327630758286,
+                    -0.02329101599752903,
+                    -0.008954820223152637
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.010888350018823639,
+                    -0.02304530149961348,
+                    -0.022759062698775992
+                  ],
+                  "maximum_outward_halfspace_residual_m": 0.0016636260994538962,
+                  "source_face_ids_zero_based": [
+                    0,
+                    242,
+                    243,
+                    244,
+                    245,
+                    246,
+                    247,
+                    259,
+                    260,
+                    261,
+                    262,
+                    263,
+                    264,
+                    504,
+                    505,
+                    506
+                  ]
+                }
+              ],
+              "whole_source_component_containment_in_opposite_hull": "EXCLUDED_NO_SOURCE_VERTEX_INSIDE_OR_BOUNDARY"
+            },
+            "strict_source_surface_crossing_or_strict_vertex_inside_opposite_hull": false,
+            "source_surface_exterior_to_opposite_convex_solid": true
+          },
+          "arm_hull_vs_assigned_source_flange01_component": {
+            "continuous_surface_query": {
+              "surface_min_distance_m": 0.0012169957303264888,
+              "surface_intersection": false,
+              "strict_transverse_witness": null,
+              "nearest_face_ids_zero_based": [
+                117,
+                4061
+              ],
+              "closest_points": [
+                [
+                  0.009088491975105629,
+                  -0.02307989772341898,
+                  -0.023178441675412942
+                ],
+                [
+                  0.010274770454007962,
+                  -0.023024768650313426,
+                  -0.023444491977845757
+                ]
+              ],
+              "visited_node_pairs": 623,
+              "leaf_pairs": 188,
+              "triangle_pairs_evaluated": 7184,
+              "all_surface_search_complete": true,
+              "global_zero_certified_by_intersection": false,
+              "numerical_absolute_bound_tolerance_m": 1e-12
+            },
+            "source_vertex_membership": {
+              "method": "Every exact unique source-STL vertex, transformed only by stored body transforms, against normalized ConvexHull halfspaces of actual compiled graph supports. Negative maximum residual is inside.",
+              "source_triangle_count": 4864,
+              "all_unique_source_vertices_tested": 2418,
+              "strictly_inside_vertex_count": 0,
+              "strictly_exterior_vertex_count": 2418,
+              "boundary_or_numerically_unknown_vertex_count": 0,
+              "existing_geometric_tolerance_m": 1e-10,
+              "minimum_of_maximum_outward_halfspace_residual_m": 0.0013169222604152136,
+              "maximum_of_maximum_outward_halfspace_residual_m": 0.03959616530372104,
+              "opposite_compiled_support_max_halfspace_residual_m": 2.7755575615628914e-17,
+              "least_exterior_or_deepest_inside_source_vertices": [
+                {
+                  "unique_source_vertex_id_zero_based": 315,
+                  "point_source_body_local_m": [
+                    -0.010439694859087467,
+                    -0.023304635658860207,
+                    -0.00679033575579524
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.010404103048706004,
+                    -0.025209788747417392,
+                    -0.02332058179718035
+                  ],
+                  "maximum_outward_halfspace_residual_m": 0.0013169222604152136,
+                  "source_face_ids_zero_based": [
+                    262,
+                    263,
+                    4059,
+                    4060,
+                    4061
+                  ],
+                  "original_full_source_STL_face_ids_zero_based": [
+                    262,
+                    263,
+                    4059,
+                    4060,
+                    4061
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 263,
+                  "point_source_body_local_m": [
+                    -0.01093904860317707,
+                    -0.02380478009581566,
+                    -0.006768211256712675
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.010443794005635394,
+                    -0.02523191694570644,
+                    -0.024026218448575356
+                  ],
+                  "maximum_outward_halfspace_residual_m": 0.0015105432173537475,
+                  "source_face_ids_zero_based": [
+                    2214,
+                    2216,
+                    2217,
+                    2218,
+                    4058,
+                    4059,
+                    4060
+                  ],
+                  "original_full_source_STL_face_ids_zero_based": [
+                    2214,
+                    2216,
+                    2217,
+                    2218,
+                    4058,
+                    4059,
+                    4060
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 294,
+                  "point_source_body_local_m": [
+                    -0.010694442316889763,
+                    -0.023285018280148506,
+                    -0.00990739930421114
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.010219602317931694,
+                    -0.022092726064081775,
+                    -0.023497347127965834
+                  ],
+                  "maximum_outward_halfspace_residual_m": 0.0015176422572796954,
+                  "source_face_ids_zero_based": [
+                    0,
+                    262,
+                    4061,
+                    4062,
+                    4063
+                  ],
+                  "original_full_source_STL_face_ids_zero_based": [
+                    0,
+                    262,
+                    4061,
+                    4062,
+                    4063
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 249,
+                  "point_source_body_local_m": [
+                    -0.011191274970769882,
+                    -0.023785360157489777,
+                    -0.009854407049715519
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.010261121631166858,
+                    -0.022145722009234946,
+                    -0.024201236633247226
+                  ],
+                  "maximum_outward_halfspace_residual_m": 0.0016348189269299249,
+                  "source_face_ids_zero_based": [
+                    2209,
+                    2210,
+                    2212,
+                    2213,
+                    2214,
+                    4060,
+                    4061,
+                    4062
+                  ],
+                  "original_full_source_STL_face_ids_zero_based": [
+                    2209,
+                    2210,
+                    2212,
+                    2213,
+                    2214,
+                    4060,
+                    4061,
+                    4062
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 398,
+                  "point_source_body_local_m": [
+                    -0.009698327630758286,
+                    -0.02329101599752903,
+                    -0.008954820223152637
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.010888350018823639,
+                    -0.02304530149961348,
+                    -0.022759062698775992
+                  ],
+                  "maximum_outward_halfspace_residual_m": 0.0016636260994538962,
+                  "source_face_ids_zero_based": [
+                    0,
+                    242,
+                    243,
+                    244,
+                    245,
+                    246,
+                    247,
+                    259,
+                    260,
+                    261,
+                    262,
+                    263,
+                    264,
+                    504,
+                    505,
+                    506
+                  ],
+                  "original_full_source_STL_face_ids_zero_based": [
+                    0,
+                    242,
+                    243,
+                    244,
+                    245,
+                    246,
+                    247,
+                    259,
+                    260,
+                    261,
+                    262,
+                    263,
+                    264,
+                    504,
+                    505,
+                    506
+                  ]
+                }
+              ],
+              "whole_source_component_containment_in_opposite_hull": "EXCLUDED_NO_SOURCE_VERTEX_INSIDE_OR_BOUNDARY"
+            },
+            "strict_source_surface_crossing_or_strict_vertex_inside_opposite_hull": false,
+            "source_surface_exterior_to_opposite_convex_solid": true,
+            "source_component_triangle_count": 4864,
+            "nearest_original_source_STL_face_id_zero_based": 4061
+          }
+        }
+      }
+    },
+    "m054_quarter3": {
+      "pose_index_one_based": 220,
+      "body_world_transforms": {
+        "robot0_link5": {
+          "rotation": [
+            [
+              -0.7379679779909492,
+              -0.04431052721821427,
+              0.6733794180382954
+            ],
+            [
+              0.4382700828804687,
+              0.7272963102211758,
+              0.5281660833398996
+            ],
+            [
+              -0.5131496837297053,
+              0.6848917099193905,
+              -0.5173014090177954
+            ]
+          ],
+          "translation_m": [
+            -0.2033810787764759,
+            0.16113680937713654,
+            1.159270051238365
+          ]
+        },
+        "robot0_gripper_flange": {
+          "rotation": [
+            [
+              0.009656479336036985,
+              0.9989709690932718,
+              0.044314278914155736
+            ],
+            [
+              0.685847533004271,
+              0.02563300002798931,
+              -0.7272936894965609
+            ],
+            [
+              -0.7276811897244476,
+              0.037415935353990515,
+              -0.6848942501604156
+            ]
+          ],
+          "translation_m": [
+            -0.20196314043579924,
+            0.13786332814227897,
+            1.1373535168003375
+          ]
+        }
+      },
+      "relative_rotation_flange_to_link5": [
+        [
+          0.6668696549661762,
+          -0.7451743844800301,
+          -3.165223952045741e-07
+        ],
+        [
+          3.68213129746458e-06,
+          3.719966870552245e-06,
+          -0.9999999999863014
+        ],
+        [
+          0.7451743844710003,
+          0.6668696549558759,
+          5.224562946728027e-06
+        ]
+      ],
+      "relative_translation_flange_to_link5_m": [
+        -9.245780820548661e-10,
+        -0.031999999370319804,
+        1.2107382978849171e-09
+      ],
+      "existing_full_source_STL_query": {
+        "surface_min_distance_m": 0.0031360535011181016,
+        "surface_intersection": false,
+        "strict_transverse_witness": null,
+        "nearest_face_ids_zero_based": [
+          3768,
+          4061
+        ],
+        "closest_points": [
+          [
+            0.007109994831043629,
+            -0.02253063127765639,
+            -0.023288720983995717
+          ],
+          [
+            0.010235222914614449,
+            -0.0223566295120902,
+            -0.02348238144231184
+          ]
+        ],
+        "visited_node_pairs": 2920,
+        "leaf_pairs": 716,
+        "triangle_pairs_evaluated": 22445,
+        "all_surface_search_complete": true,
+        "global_zero_certified_by_intersection": false,
+        "numerical_absolute_bound_tolerance_m": 1e-12,
+        "coordinate_frame": "robot0_link5",
+        "relative_rotation_b_to_a": [
+          [
+            0.6668696549661762,
+            -0.7451743844800301,
+            -3.165223952045741e-07
+          ],
+          [
+            3.68213129746458e-06,
+            3.719966870552245e-06,
+            -0.9999999999863014
+          ],
+          [
+            0.7451743844710003,
+            0.6668696549558759,
+            5.224562946728027e-06
+          ]
+        ],
+        "relative_translation_b_to_a_m": [
+          -9.245780820548661e-10,
+          -0.031999999370319804,
+          1.2107382978849171e-09
+        ],
+        "closest_face_triangles_body5_m": [
+          [
+            [
+              0.007044657599180937,
+              -0.024800000712275505,
+              -0.023852409794926643
+            ],
+            [
+              0.007001752965152264,
+              -0.022245943546295166,
+              -0.024779703468084335
+            ],
+            [
+              0.00712589779868722,
+              -0.022572457790374756,
+              -0.02306966483592987
+            ]
+          ],
+          [
+            [
+              0.010261121631166803,
+              -0.022145722009234897,
+              -0.02420123663324724
+            ],
+            [
+              0.010404103048705947,
+              -0.02520978874741734,
+              -0.023320581797180367
+            ],
+            [
+              0.010219602317931639,
+              -0.022092726064081726,
+              -0.02349734712796585
+            ]
+          ]
+        ]
+      },
+      "full_source_link5_vs_compiled_flange01": {
+        "continuous_surface_query": {
+          "surface_min_distance_m": 0.001648010814094789,
+          "surface_intersection": false,
+          "strict_transverse_witness": null,
+          "nearest_face_ids_zero_based": [
+            3151,
+            266
+          ],
+          "closest_points": [
+            [
+              0.007117841616529978,
+              -0.02290000021457672,
+              -0.02608104525790026
+            ],
+            [
+              0.008744201772051385,
+              -0.022703360283973274,
+              -0.025901531955891673
+            ]
+          ],
+          "visited_node_pairs": 1091,
+          "leaf_pairs": 266,
+          "triangle_pairs_evaluated": 8123,
+          "all_surface_search_complete": true,
+          "global_zero_certified_by_intersection": false,
+          "numerical_absolute_bound_tolerance_m": 1e-12
+        },
+        "source_vertex_membership": {
+          "method": "Every exact unique source-STL vertex, transformed only by stored body transforms, against normalized ConvexHull halfspaces of actual compiled graph supports. Negative maximum residual is inside.",
+          "source_triangle_count": 36200,
+          "all_unique_source_vertices_tested": 18027,
+          "strictly_inside_vertex_count": 0,
+          "strictly_exterior_vertex_count": 18027,
+          "boundary_or_numerically_unknown_vertex_count": 0,
+          "existing_geometric_tolerance_m": 1e-10,
+          "minimum_of_maximum_outward_halfspace_residual_m": 0.0016579700406690514,
+          "maximum_of_maximum_outward_halfspace_residual_m": 0.14730137626158535,
+          "opposite_compiled_support_max_halfspace_residual_m": 2.42861286636753e-17,
+          "least_exterior_or_deepest_inside_source_vertices": [
+            {
+              "unique_source_vertex_id_zero_based": 11414,
+              "point_source_body_local_m": [
+                0.007000000681728125,
+                -0.022194908931851387,
+                -0.025013426318764687
+              ],
+              "point_opposite_hull_body_local_m": [
+                -0.013971240703216882,
+                -0.02189688119959032,
+                -0.009805223338218025
+              ],
+              "maximum_outward_halfspace_residual_m": 0.0016579700406690514,
+              "source_face_ids_zero_based": [
+                3759,
+                4588,
+                4608,
+                4613,
+                4618
+              ]
+            },
+            {
+              "unique_source_vertex_id_zero_based": 11415,
+              "point_source_body_local_m": [
+                0.007001752965152264,
+                -0.022245943546295166,
+                -0.024779703468084335
+              ],
+              "point_opposite_hull_body_local_m": [
+                -0.013795908065098035,
+                -0.021742324469370904,
+                -0.009754187503229834
+              ],
+              "maximum_outward_halfspace_residual_m": 0.0016783517301000028,
+              "source_face_ids_zero_based": [
+                3759,
+                3766,
+                3767,
+                3768,
+                4618,
+                4619
+              ]
+            },
+            {
+              "unique_source_vertex_id_zero_based": 11413,
+              "point_source_body_local_m": [
+                0.007000000681728125,
+                -0.02290000021457672,
+                -0.025013426318764687
+              ],
+              "point_opposite_hull_body_local_m": [
+                -0.013971243299455562,
+                -0.021896883822506534,
+                -0.00910013205550235
+              ],
+              "maximum_outward_halfspace_residual_m": 0.0017281804600240945,
+              "source_face_ids_zero_based": [
+                3151,
+                3759,
+                3764,
+                3765,
+                3766,
+                4588,
+                4589
+              ]
+            },
+            {
+              "unique_source_vertex_id_zero_based": 11271,
+              "point_source_body_local_m": [
+                0.006885811220854521,
+                -0.02208119072020054,
+                -0.025680137798190117
+              ],
+              "point_opposite_hull_body_local_m": [
+                -0.014544206087165645,
+                -0.022256399369581303,
+                -0.009918944996999884
+              ],
+              "maximum_outward_halfspace_residual_m": 0.0017626341618868484,
+              "source_face_ids_zero_based": [
+                4588,
+                4589,
+                4590,
+                4613,
+                4614
+              ]
+            },
+            {
+              "unique_source_vertex_id_zero_based": 11250,
+              "point_source_body_local_m": [
+                0.006814060267060995,
+                -0.02204984985291958,
+                -0.025856144726276398
+              ],
+              "point_opposite_hull_body_local_m": [
+                -0.014723210359863565,
+                -0.02232030595956811,
+                -0.009950286761128902
+              ],
+              "maximum_outward_halfspace_residual_m": 0.001839024215788073,
+              "source_face_ids_zero_based": [
+                4590,
+                4591,
+                4614,
+                4615,
+                4616
+              ]
+            }
+          ],
+          "whole_source_component_containment_in_opposite_hull": "EXCLUDED_NO_SOURCE_VERTEX_INSIDE_OR_BOUNDARY"
+        },
+        "strict_source_surface_crossing_or_strict_vertex_inside_opposite_hull": false,
+        "source_surface_exterior_to_opposite_convex_solid": true
+      },
+      "arm_pair_counterfactuals": {
+        "robot0_link5_local_00": {
+          "arm_hull_vs_full_source_flange": {
+            "continuous_surface_query": {
+              "surface_min_distance_m": 0.00121699573032644,
+              "surface_intersection": false,
+              "strict_transverse_witness": null,
+              "nearest_face_ids_zero_based": [
+                25,
+                4061
+              ],
+              "closest_points": [
+                [
+                  0.009088491975105622,
+                  -0.02307989772341898,
+                  -0.023178441675412977
+                ],
+                [
+                  0.01027477045400791,
+                  -0.02302476865031343,
+                  -0.02344449197784577
+                ]
+              ],
+              "visited_node_pairs": 786,
+              "leaf_pairs": 239,
+              "triangle_pairs_evaluated": 12402,
+              "all_surface_search_complete": true,
+              "global_zero_certified_by_intersection": false,
+              "numerical_absolute_bound_tolerance_m": 1e-12
+            },
+            "source_vertex_membership": {
+              "method": "Every exact unique source-STL vertex, transformed only by stored body transforms, against normalized ConvexHull halfspaces of actual compiled graph supports. Negative maximum residual is inside.",
+              "source_triangle_count": 13302,
+              "all_unique_source_vertices_tested": 6621,
+              "strictly_inside_vertex_count": 0,
+              "strictly_exterior_vertex_count": 6621,
+              "boundary_or_numerically_unknown_vertex_count": 0,
+              "existing_geometric_tolerance_m": 1e-10,
+              "minimum_of_maximum_outward_halfspace_residual_m": 0.0013169222604151615,
+              "maximum_of_maximum_outward_halfspace_residual_m": 0.039596165303721044,
+              "opposite_compiled_support_max_halfspace_residual_m": 2.7755575615628914e-17,
+              "least_exterior_or_deepest_inside_source_vertices": [
+                {
+                  "unique_source_vertex_id_zero_based": 1275,
+                  "point_source_body_local_m": [
+                    -0.010439694859087467,
+                    -0.023304635658860207,
+                    -0.00679033575579524
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.010404103048705947,
+                    -0.02520978874741734,
+                    -0.023320581797180367
+                  ],
+                  "maximum_outward_halfspace_residual_m": 0.0013169222604151615,
+                  "source_face_ids_zero_based": [
+                    262,
+                    263,
+                    4059,
+                    4060,
+                    4061
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 1092,
+                  "point_source_body_local_m": [
+                    -0.01093904860317707,
+                    -0.02380478009581566,
+                    -0.006768211256712675
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.010443794005635337,
+                    -0.02523191694570639,
+                    -0.02402621844857537
+                  ],
+                  "maximum_outward_halfspace_residual_m": 0.001510543217353692,
+                  "source_face_ids_zero_based": [
+                    2214,
+                    2216,
+                    2217,
+                    2218,
+                    4058,
+                    4059,
+                    4060
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 1183,
+                  "point_source_body_local_m": [
+                    -0.010694442316889763,
+                    -0.023285018280148506,
+                    -0.00990739930421114
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.010219602317931639,
+                    -0.022092726064081726,
+                    -0.02349734712796585
+                  ],
+                  "maximum_outward_halfspace_residual_m": 0.0015176422572796954,
+                  "source_face_ids_zero_based": [
+                    0,
+                    262,
+                    4061,
+                    4062,
+                    4063
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 988,
+                  "point_source_body_local_m": [
+                    -0.011191274970769882,
+                    -0.023785360157489777,
+                    -0.009854407049715519
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.010261121631166803,
+                    -0.022145722009234897,
+                    -0.02420123663324724
+                  ],
+                  "maximum_outward_halfspace_residual_m": 0.0016348189269299006,
+                  "source_face_ids_zero_based": [
+                    2209,
+                    2210,
+                    2212,
+                    2213,
+                    2214,
+                    4060,
+                    4061,
+                    4062
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 1460,
+                  "point_source_body_local_m": [
+                    -0.009698327630758286,
+                    -0.02329101599752903,
+                    -0.008954820223152637
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.010888350018823583,
+                    -0.02304530149961343,
+                    -0.022759062698776006
+                  ],
+                  "maximum_outward_halfspace_residual_m": 0.0016636260994538441,
+                  "source_face_ids_zero_based": [
+                    0,
+                    242,
+                    243,
+                    244,
+                    245,
+                    246,
+                    247,
+                    259,
+                    260,
+                    261,
+                    262,
+                    263,
+                    264,
+                    504,
+                    505,
+                    506
+                  ]
+                }
+              ],
+              "whole_source_component_containment_in_opposite_hull": "EXCLUDED_NO_SOURCE_VERTEX_INSIDE_OR_BOUNDARY"
+            },
+            "strict_source_surface_crossing_or_strict_vertex_inside_opposite_hull": false,
+            "source_surface_exterior_to_opposite_convex_solid": true
+          },
+          "arm_hull_vs_assigned_source_flange01_component": {
+            "continuous_surface_query": {
+              "surface_min_distance_m": 0.00121699573032644,
+              "surface_intersection": false,
+              "strict_transverse_witness": null,
+              "nearest_face_ids_zero_based": [
+                25,
+                4061
+              ],
+              "closest_points": [
+                [
+                  0.009088491975105622,
+                  -0.02307989772341898,
+                  -0.023178441675412977
+                ],
+                [
+                  0.01027477045400791,
+                  -0.02302476865031343,
+                  -0.02344449197784577
+                ]
+              ],
+              "visited_node_pairs": 623,
+              "leaf_pairs": 188,
+              "triangle_pairs_evaluated": 7184,
+              "all_surface_search_complete": true,
+              "global_zero_certified_by_intersection": false,
+              "numerical_absolute_bound_tolerance_m": 1e-12
+            },
+            "source_vertex_membership": {
+              "method": "Every exact unique source-STL vertex, transformed only by stored body transforms, against normalized ConvexHull halfspaces of actual compiled graph supports. Negative maximum residual is inside.",
+              "source_triangle_count": 4864,
+              "all_unique_source_vertices_tested": 2418,
+              "strictly_inside_vertex_count": 0,
+              "strictly_exterior_vertex_count": 2418,
+              "boundary_or_numerically_unknown_vertex_count": 0,
+              "existing_geometric_tolerance_m": 1e-10,
+              "minimum_of_maximum_outward_halfspace_residual_m": 0.0013169222604151615,
+              "maximum_of_maximum_outward_halfspace_residual_m": 0.039596165303721044,
+              "opposite_compiled_support_max_halfspace_residual_m": 2.7755575615628914e-17,
+              "least_exterior_or_deepest_inside_source_vertices": [
+                {
+                  "unique_source_vertex_id_zero_based": 315,
+                  "point_source_body_local_m": [
+                    -0.010439694859087467,
+                    -0.023304635658860207,
+                    -0.00679033575579524
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.010404103048705947,
+                    -0.02520978874741734,
+                    -0.023320581797180367
+                  ],
+                  "maximum_outward_halfspace_residual_m": 0.0013169222604151615,
+                  "source_face_ids_zero_based": [
+                    262,
+                    263,
+                    4059,
+                    4060,
+                    4061
+                  ],
+                  "original_full_source_STL_face_ids_zero_based": [
+                    262,
+                    263,
+                    4059,
+                    4060,
+                    4061
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 263,
+                  "point_source_body_local_m": [
+                    -0.01093904860317707,
+                    -0.02380478009581566,
+                    -0.006768211256712675
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.010443794005635337,
+                    -0.02523191694570639,
+                    -0.02402621844857537
+                  ],
+                  "maximum_outward_halfspace_residual_m": 0.001510543217353692,
+                  "source_face_ids_zero_based": [
+                    2214,
+                    2216,
+                    2217,
+                    2218,
+                    4058,
+                    4059,
+                    4060
+                  ],
+                  "original_full_source_STL_face_ids_zero_based": [
+                    2214,
+                    2216,
+                    2217,
+                    2218,
+                    4058,
+                    4059,
+                    4060
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 294,
+                  "point_source_body_local_m": [
+                    -0.010694442316889763,
+                    -0.023285018280148506,
+                    -0.00990739930421114
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.010219602317931639,
+                    -0.022092726064081726,
+                    -0.02349734712796585
+                  ],
+                  "maximum_outward_halfspace_residual_m": 0.0015176422572796954,
+                  "source_face_ids_zero_based": [
+                    0,
+                    262,
+                    4061,
+                    4062,
+                    4063
+                  ],
+                  "original_full_source_STL_face_ids_zero_based": [
+                    0,
+                    262,
+                    4061,
+                    4062,
+                    4063
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 249,
+                  "point_source_body_local_m": [
+                    -0.011191274970769882,
+                    -0.023785360157489777,
+                    -0.009854407049715519
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.010261121631166803,
+                    -0.022145722009234897,
+                    -0.02420123663324724
+                  ],
+                  "maximum_outward_halfspace_residual_m": 0.0016348189269299006,
+                  "source_face_ids_zero_based": [
+                    2209,
+                    2210,
+                    2212,
+                    2213,
+                    2214,
+                    4060,
+                    4061,
+                    4062
+                  ],
+                  "original_full_source_STL_face_ids_zero_based": [
+                    2209,
+                    2210,
+                    2212,
+                    2213,
+                    2214,
+                    4060,
+                    4061,
+                    4062
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 398,
+                  "point_source_body_local_m": [
+                    -0.009698327630758286,
+                    -0.02329101599752903,
+                    -0.008954820223152637
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.010888350018823583,
+                    -0.02304530149961343,
+                    -0.022759062698776006
+                  ],
+                  "maximum_outward_halfspace_residual_m": 0.0016636260994538441,
+                  "source_face_ids_zero_based": [
+                    0,
+                    242,
+                    243,
+                    244,
+                    245,
+                    246,
+                    247,
+                    259,
+                    260,
+                    261,
+                    262,
+                    263,
+                    264,
+                    504,
+                    505,
+                    506
+                  ],
+                  "original_full_source_STL_face_ids_zero_based": [
+                    0,
+                    242,
+                    243,
+                    244,
+                    245,
+                    246,
+                    247,
+                    259,
+                    260,
+                    261,
+                    262,
+                    263,
+                    264,
+                    504,
+                    505,
+                    506
+                  ]
+                }
+              ],
+              "whole_source_component_containment_in_opposite_hull": "EXCLUDED_NO_SOURCE_VERTEX_INSIDE_OR_BOUNDARY"
+            },
+            "strict_source_surface_crossing_or_strict_vertex_inside_opposite_hull": false,
+            "source_surface_exterior_to_opposite_convex_solid": true,
+            "source_component_triangle_count": 4864,
+            "nearest_original_source_STL_face_id_zero_based": 4061
+          }
+        },
+        "robot0_link5_local_01": {
+          "arm_hull_vs_full_source_flange": {
+            "continuous_surface_query": {
+              "surface_min_distance_m": 0.0,
+              "surface_intersection": true,
+              "strict_transverse_witness": {
+                "edge_from_triangle": 0,
+                "edge_vertices": [
+                  0,
+                  1
+                ],
+                "edge_parameter": 0.38080209499951395,
+                "other_triangle_barycentric": [
+                  0.026811136617860498,
+                  0.06671728530728277,
+                  0.9064715780748567
+                ],
+                "edge_endpoint_signed_plane_distances_m": [
+                  0.01161978519036827,
+                  -0.018894188716164734
+                ],
+                "point": [
+                  0.010963886590172951,
+                  -0.0185036956951024,
+                  -0.02557062243984369
+                ],
+                "strict_transverse_crossing": true,
+                "face_ids_zero_based": [
+                  53,
+                  2208
+                ],
+                "triangle_a": [
+                  [
+                    0.009999999843674452,
+                    -0.01580000116540955,
+                    -0.041290819461035834
+                  ],
+                  [
+                    0.012531201113719278,
+                    -0.02290000025994263,
+                    -9.016583317401905e-06
+                  ],
+                  [
+                    0.009999999761206002,
+                    -0.015800001144195365,
+                    -0.10650901287493772
+                  ]
+                ],
+                "triangle_b": [
+                  [
+                    0.009516022776216188,
+                    -0.016049680336177666,
+                    -0.024976324577971398
+                  ],
+                  [
+                    0.010688295723087642,
+                    -0.016375061799179844,
+                    -0.02591880602996156
+                  ],
+                  [
+                    0.011026994524730542,
+                    -0.018732949012057822,
+                    -0.025562573579922077
+                  ]
+                ]
+              },
+              "nearest_face_ids_zero_based": [
+                53,
+                2208
+              ],
+              "closest_points": [
+                [
+                  0.010963886590172951,
+                  -0.0185036956951024,
+                  -0.02557062243984369
+                ],
+                [
+                  0.010963886590172951,
+                  -0.0185036956951024,
+                  -0.02557062243984369
+                ]
+              ],
+              "visited_node_pairs": 460,
+              "leaf_pairs": 105,
+              "triangle_pairs_evaluated": 4103,
+              "all_surface_search_complete": false,
+              "global_zero_certified_by_intersection": true
+            },
+            "source_vertex_membership": {
+              "method": "Every exact unique source-STL vertex, transformed only by stored body transforms, against normalized ConvexHull halfspaces of actual compiled graph supports. Negative maximum residual is inside.",
+              "source_triangle_count": 13302,
+              "all_unique_source_vertices_tested": 6621,
+              "strictly_inside_vertex_count": 8,
+              "strictly_exterior_vertex_count": 6613,
+              "boundary_or_numerically_unknown_vertex_count": 0,
+              "existing_geometric_tolerance_m": 1e-10,
+              "minimum_of_maximum_outward_halfspace_residual_m": -0.0008228964840477221,
+              "maximum_of_maximum_outward_halfspace_residual_m": 0.0385703511512763,
+              "opposite_compiled_support_max_halfspace_residual_m": 3.469446951953614e-18,
+              "least_exterior_or_deepest_inside_source_vertices": [
+                {
+                  "unique_source_vertex_id_zero_based": 870,
+                  "point_source_body_local_m": [
+                    -0.011634059250354767,
+                    -0.02376607246696949,
+                    -0.012919072061777115
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.009951470508539199,
+                    -0.019081058555855564,
+                    -0.02451834177225345
+                  ],
+                  "maximum_outward_halfspace_residual_m": -0.0008228964840477221,
+                  "source_face_ids_zero_based": [
+                    2210,
+                    2211,
+                    4062,
+                    4063,
+                    4064
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 1016,
+                  "point_source_body_local_m": [
+                    -0.011141655966639519,
+                    -0.0232655368745327,
+                    -0.013002711348235607
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.009906853040923872,
+                    -0.018997415594328854,
+                    -0.0238176238975567
+                  ],
+                  "maximum_outward_halfspace_residual_m": -0.000648832156352943,
+                  "source_face_ids_zero_based": [
+                    0,
+                    506,
+                    507,
+                    4063,
+                    4064,
+                    4065
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 945,
+                  "point_source_body_local_m": [
+                    -0.011317763477563858,
+                    -0.025278862565755844,
+                    -0.010888378135859966
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.011289690349358032,
+                    -0.021111756944631382,
+                    -0.025291469466163282
+                  ],
+                  "maximum_outward_halfspace_residual_m": -0.0005689162097425936,
+                  "source_face_ids_zero_based": [
+                    2209,
+                    2212,
+                    2634,
+                    2637
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 953,
+                  "point_source_body_local_m": [
+                    -0.01128765381872654,
+                    -0.02562611736357212,
+                    -0.010894598439335823
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.011568534949347368,
+                    -0.021105537822064237,
+                    -0.025500606239372434
+                  ],
+                  "maximum_outward_halfspace_residual_m": -0.0003041753125087817,
+                  "source_face_ids_zero_based": [
+                    2540,
+                    2541,
+                    2632,
+                    2633,
+                    2634,
+                    2635,
+                    2636,
+                    2637
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 1183,
+                  "point_source_body_local_m": [
+                    -0.010694442316889763,
+                    -0.023285018280148506,
+                    -0.00990739930421114
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.010219602317931639,
+                    -0.022092726064081726,
+                    -0.02349734712796585
+                  ],
+                  "maximum_outward_halfspace_residual_m": -0.00024504770897928324,
+                  "source_face_ids_zero_based": [
+                    0,
+                    262,
+                    4061,
+                    4062,
+                    4063
+                  ]
+                }
+              ],
+              "whole_source_component_containment_in_opposite_hull": "UNKNOWN_SOURCE_VERTEX_INSIDE_OR_BOUNDARY_REQUIRES_COMPONENT_INTERPRETATION"
+            },
+            "strict_source_surface_crossing_or_strict_vertex_inside_opposite_hull": true,
+            "source_surface_exterior_to_opposite_convex_solid": false
+          },
+          "arm_hull_vs_assigned_source_flange01_component": {
+            "continuous_surface_query": {
+              "surface_min_distance_m": 0.0,
+              "surface_intersection": true,
+              "strict_transverse_witness": {
+                "edge_from_triangle": 0,
+                "edge_vertices": [
+                  0,
+                  1
+                ],
+                "edge_parameter": 0.4570943932817231,
+                "other_triangle_barycentric": [
+                  0.739107411841453,
+                  0.11507019814047707,
+                  0.14582239001807
+                ],
+                "edge_endpoint_signed_plane_distances_m": [
+                  -0.011741638167784544,
+                  0.013945918582769968
+                ],
+                "point": [
+                  0.011156997752479518,
+                  -0.019045370943825933,
+                  -0.02242113882106944
+                ],
+                "strict_transverse_crossing": true,
+                "face_ids_zero_based": [
+                  53,
+                  505
+                ],
+                "triangle_a": [
+                  [
+                    0.009999999843674452,
+                    -0.01580000116540955,
+                    -0.041290819461035834
+                  ],
+                  [
+                    0.012531201113719278,
+                    -0.02290000025994263,
+                    -9.016583317401905e-06
+                  ],
+                  [
+                    0.009999999761206002,
+                    -0.015800001144195365,
+                    -0.10650901287493772
+                  ]
+                ],
+                "triangle_b": [
+                  [
+                    0.010888350018823583,
+                    -0.02304530149961343,
+                    -0.022759062698776006
+                  ],
+                  [
+                    0.013166750754173555,
+                    -0.0077348637846314135,
+                    -0.020068706989838158
+                  ],
+                  [
+                    0.01093273078637926,
+                    -0.00769679806314022,
+                    -0.022564688479513702
+                  ]
+                ]
+              },
+              "nearest_face_ids_zero_based": [
+                53,
+                505
+              ],
+              "closest_points": [
+                [
+                  0.011156997752479518,
+                  -0.019045370943825933,
+                  -0.02242113882106944
+                ],
+                [
+                  0.011156997752479518,
+                  -0.019045370943825933,
+                  -0.02242113882106944
+                ]
+              ],
+              "visited_node_pairs": 435,
+              "leaf_pairs": 143,
+              "triangle_pairs_evaluated": 4104,
+              "all_surface_search_complete": false,
+              "global_zero_certified_by_intersection": true
+            },
+            "source_vertex_membership": {
+              "method": "Every exact unique source-STL vertex, transformed only by stored body transforms, against normalized ConvexHull halfspaces of actual compiled graph supports. Negative maximum residual is inside.",
+              "source_triangle_count": 4864,
+              "all_unique_source_vertices_tested": 2418,
+              "strictly_inside_vertex_count": 8,
+              "strictly_exterior_vertex_count": 2410,
+              "boundary_or_numerically_unknown_vertex_count": 0,
+              "existing_geometric_tolerance_m": 1e-10,
+              "minimum_of_maximum_outward_halfspace_residual_m": -0.0008228964840477221,
+              "maximum_of_maximum_outward_halfspace_residual_m": 0.03752301021843211,
+              "opposite_compiled_support_max_halfspace_residual_m": 3.469446951953614e-18,
+              "least_exterior_or_deepest_inside_source_vertices": [
+                {
+                  "unique_source_vertex_id_zero_based": 223,
+                  "point_source_body_local_m": [
+                    -0.011634059250354767,
+                    -0.02376607246696949,
+                    -0.012919072061777115
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.009951470508539199,
+                    -0.019081058555855564,
+                    -0.02451834177225345
+                  ],
+                  "maximum_outward_halfspace_residual_m": -0.0008228964840477221,
+                  "source_face_ids_zero_based": [
+                    2210,
+                    2211,
+                    4062,
+                    4063,
+                    4064
+                  ],
+                  "original_full_source_STL_face_ids_zero_based": [
+                    2210,
+                    2211,
+                    4062,
+                    4063,
+                    4064
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 250,
+                  "point_source_body_local_m": [
+                    -0.011141655966639519,
+                    -0.0232655368745327,
+                    -0.013002711348235607
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.009906853040923872,
+                    -0.018997415594328854,
+                    -0.0238176238975567
+                  ],
+                  "maximum_outward_halfspace_residual_m": -0.000648832156352943,
+                  "source_face_ids_zero_based": [
+                    0,
+                    506,
+                    507,
+                    4063,
+                    4064,
+                    4065
+                  ],
+                  "original_full_source_STL_face_ids_zero_based": [
+                    0,
+                    506,
+                    507,
+                    4063,
+                    4064,
+                    4065
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 239,
+                  "point_source_body_local_m": [
+                    -0.011317763477563858,
+                    -0.025278862565755844,
+                    -0.010888378135859966
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.011289690349358032,
+                    -0.021111756944631382,
+                    -0.025291469466163282
+                  ],
+                  "maximum_outward_halfspace_residual_m": -0.0005689162097425936,
+                  "source_face_ids_zero_based": [
+                    2209,
+                    2212,
+                    2634,
+                    2637
+                  ],
+                  "original_full_source_STL_face_ids_zero_based": [
+                    2209,
+                    2212,
+                    2634,
+                    2637
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 241,
+                  "point_source_body_local_m": [
+                    -0.01128765381872654,
+                    -0.02562611736357212,
+                    -0.010894598439335823
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.011568534949347368,
+                    -0.021105537822064237,
+                    -0.025500606239372434
+                  ],
+                  "maximum_outward_halfspace_residual_m": -0.0003041753125087817,
+                  "source_face_ids_zero_based": [
+                    2540,
+                    2541,
+                    2632,
+                    2633,
+                    2634,
+                    2635,
+                    2636,
+                    2637
+                  ],
+                  "original_full_source_STL_face_ids_zero_based": [
+                    2540,
+                    2541,
+                    2632,
+                    2633,
+                    2634,
+                    2635,
+                    2636,
+                    2637
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 294,
+                  "point_source_body_local_m": [
+                    -0.010694442316889763,
+                    -0.023285018280148506,
+                    -0.00990739930421114
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.010219602317931639,
+                    -0.022092726064081726,
+                    -0.02349734712796585
+                  ],
+                  "maximum_outward_halfspace_residual_m": -0.00024504770897928324,
+                  "source_face_ids_zero_based": [
+                    0,
+                    262,
+                    4061,
+                    4062,
+                    4063
+                  ],
+                  "original_full_source_STL_face_ids_zero_based": [
+                    0,
+                    262,
+                    4061,
+                    4062,
+                    4063
+                  ]
+                }
+              ],
+              "whole_source_component_containment_in_opposite_hull": "UNKNOWN_SOURCE_VERTEX_INSIDE_OR_BOUNDARY_REQUIRES_COMPONENT_INTERPRETATION"
+            },
+            "strict_source_surface_crossing_or_strict_vertex_inside_opposite_hull": true,
+            "source_surface_exterior_to_opposite_convex_solid": false,
+            "source_component_triangle_count": 4864,
+            "nearest_original_source_STL_face_id_zero_based": 505
+          }
+        }
+      }
+    },
+    "m229_quarter4": {
+      "pose_index_one_based": 921,
+      "body_world_transforms": {
+        "robot0_link5": {
+          "rotation": [
+            [
+              -0.7290532074201311,
+              -0.05171609757401416,
+              0.682500451283466
+            ],
+            [
+              0.4440402841056492,
+              0.7230909794514758,
+              0.5291197043460774
+            ],
+            [
+              -0.5208739260529309,
+              0.688814111852843,
+              -0.5042077671660617
+            ]
+          ],
+          "translation_m": [
+            -0.20365453208218848,
+            0.16099701875359898,
+            1.164831612432337
+          ]
+        },
+        "robot0_gripper_flange": {
+          "rotation": [
+            [
+              0.022398202376627957,
+              0.9984104231649534,
+              0.0517198941015421
+            ],
+            [
+              0.6904061035661097,
+              0.02196911914934699,
+              -0.7230883555710634
+            ],
+            [
+              -0.723075191587264,
+              0.051903609887761215,
+              -0.6888165812403626
+            ]
+          ],
+          "translation_m": [
+            -0.20199961549198858,
+            0.13785810809654342,
+            1.1427895611579035
+          ]
+        }
+      },
+      "relative_rotation_flange_to_link5": [
+        [
+          0.6668696549661772,
+          -0.7451743844800307,
+          -3.1652239519758233e-07
+        ],
+        [
+          3.682131297532656e-06,
+          3.719966870667621e-06,
+          -0.9999999999863024
+        ],
+        [
+          0.7451743844710009,
+          0.6668696549558768,
+          5.224562946598281e-06
+        ]
+      ],
+      "relative_translation_flange_to_link5_m": [
+        -9.245780291763498e-10,
+        -0.03199999937031986,
+        1.2107383380686558e-09
+      ],
+      "existing_full_source_STL_query": {
+        "surface_min_distance_m": 0.0031360535011181532,
+        "surface_intersection": false,
+        "strict_transverse_witness": null,
+        "nearest_face_ids_zero_based": [
+          4619,
+          4061
+        ],
+        "closest_points": [
+          [
+            0.0071099948310436294,
+            -0.022530631277656393,
+            -0.0232887209839957
+          ],
+          [
+            0.010235222914614501,
+            -0.022356629512090196,
+            -0.023482381442311826
+          ]
+        ],
+        "visited_node_pairs": 2920,
+        "leaf_pairs": 716,
+        "triangle_pairs_evaluated": 22445,
+        "all_surface_search_complete": true,
+        "global_zero_certified_by_intersection": false,
+        "numerical_absolute_bound_tolerance_m": 1e-12,
+        "coordinate_frame": "robot0_link5",
+        "relative_rotation_b_to_a": [
+          [
+            0.6668696549661772,
+            -0.7451743844800307,
+            -3.1652239519758233e-07
+          ],
+          [
+            3.682131297532656e-06,
+            3.719966870667621e-06,
+            -0.9999999999863024
+          ],
+          [
+            0.7451743844710009,
+            0.6668696549558768,
+            5.224562946598281e-06
+          ]
+        ],
+        "relative_translation_b_to_a_m": [
+          -9.245780291763498e-10,
+          -0.03199999937031986,
+          1.2107383380686558e-09
+        ],
+        "closest_face_triangles_body5_m": [
+          [
+            [
+              0.007001752965152264,
+              -0.022245943546295166,
+              -0.024779703468084335
+            ],
+            [
+              0.0065312013030052185,
+              -0.02172110602259636,
+              -0.02491159737110138
+            ],
+            [
+              0.00712589779868722,
+              -0.022572457790374756,
+              -0.02306966483592987
+            ]
+          ],
+          [
+            [
+              0.010261121631166858,
+              -0.022145722009234946,
+              -0.024201236633247226
+            ],
+            [
+              0.010404103048706004,
+              -0.025209788747417392,
+              -0.02332058179718035
+            ],
+            [
+              0.010219602317931694,
+              -0.022092726064081775,
+              -0.023497347127965834
+            ]
+          ]
+        ]
+      },
+      "full_source_link5_vs_compiled_flange01": {
+        "continuous_surface_query": {
+          "surface_min_distance_m": 0.0016480108140948361,
+          "surface_intersection": false,
+          "strict_transverse_witness": null,
+          "nearest_face_ids_zero_based": [
+            3151,
+            266
+          ],
+          "closest_points": [
+            [
+              0.007117841616529978,
+              -0.02290000021457672,
+              -0.026081045257900257
+            ],
+            [
+              0.008744201772051432,
+              -0.02270336028397327,
+              -0.025901531955891666
+            ]
+          ],
+          "visited_node_pairs": 1091,
+          "leaf_pairs": 266,
+          "triangle_pairs_evaluated": 8123,
+          "all_surface_search_complete": true,
+          "global_zero_certified_by_intersection": false,
+          "numerical_absolute_bound_tolerance_m": 1e-12
+        },
+        "source_vertex_membership": {
+          "method": "Every exact unique source-STL vertex, transformed only by stored body transforms, against normalized ConvexHull halfspaces of actual compiled graph supports. Negative maximum residual is inside.",
+          "source_triangle_count": 36200,
+          "all_unique_source_vertices_tested": 18027,
+          "strictly_inside_vertex_count": 0,
+          "strictly_exterior_vertex_count": 18027,
+          "boundary_or_numerically_unknown_vertex_count": 0,
+          "existing_geometric_tolerance_m": 1e-10,
+          "minimum_of_maximum_outward_halfspace_residual_m": 0.0016579700406690826,
+          "maximum_of_maximum_outward_halfspace_residual_m": 0.14730137626158557,
+          "opposite_compiled_support_max_halfspace_residual_m": 2.42861286636753e-17,
+          "least_exterior_or_deepest_inside_source_vertices": [
+            {
+              "unique_source_vertex_id_zero_based": 11414,
+              "point_source_body_local_m": [
+                0.007000000681728125,
+                -0.022194908931851387,
+                -0.025013426318764687
+              ],
+              "point_opposite_hull_body_local_m": [
+                -0.013971240703216956,
+                -0.02189688119959033,
+                -0.00980522333821808
+              ],
+              "maximum_outward_halfspace_residual_m": 0.0016579700406690826,
+              "source_face_ids_zero_based": [
+                3759,
+                4588,
+                4608,
+                4613,
+                4618
+              ]
+            },
+            {
+              "unique_source_vertex_id_zero_based": 11415,
+              "point_source_body_local_m": [
+                0.007001752965152264,
+                -0.022245943546295166,
+                -0.024779703468084335
+              ],
+              "point_opposite_hull_body_local_m": [
+                -0.013795908065098108,
+                -0.021742324469370914,
+                -0.009754187503229893
+              ],
+              "maximum_outward_halfspace_residual_m": 0.001678351730100034,
+              "source_face_ids_zero_based": [
+                3759,
+                3766,
+                3767,
+                3768,
+                4618,
+                4619
+              ]
+            },
+            {
+              "unique_source_vertex_id_zero_based": 11413,
+              "point_source_body_local_m": [
+                0.007000000681728125,
+                -0.02290000021457672,
+                -0.025013426318764687
+              ],
+              "point_opposite_hull_body_local_m": [
+                -0.013971243299455635,
+                -0.021896883822506544,
+                -0.009100132055502405
+              ],
+              "maximum_outward_halfspace_residual_m": 0.001728180460024124,
+              "source_face_ids_zero_based": [
+                3151,
+                3759,
+                3764,
+                3765,
+                3766,
+                4588,
+                4589
+              ]
+            },
+            {
+              "unique_source_vertex_id_zero_based": 11271,
+              "point_source_body_local_m": [
+                0.006885811220854521,
+                -0.02208119072020054,
+                -0.025680137798190117
+              ],
+              "point_opposite_hull_body_local_m": [
+                -0.014544206087165718,
+                -0.022256399369581317,
+                -0.009918944996999943
+              ],
+              "maximum_outward_halfspace_residual_m": 0.0017626341618868823,
+              "source_face_ids_zero_based": [
+                4588,
+                4589,
+                4590,
+                4613,
+                4614
+              ]
+            },
+            {
+              "unique_source_vertex_id_zero_based": 11250,
+              "point_source_body_local_m": [
+                0.006814060267060995,
+                -0.02204984985291958,
+                -0.025856144726276398
+              ],
+              "point_opposite_hull_body_local_m": [
+                -0.01472321035986364,
+                -0.022320305959568125,
+                -0.009950286761128965
+              ],
+              "maximum_outward_halfspace_residual_m": 0.0018390242157881077,
+              "source_face_ids_zero_based": [
+                4590,
+                4591,
+                4614,
+                4615,
+                4616
+              ]
+            }
+          ],
+          "whole_source_component_containment_in_opposite_hull": "EXCLUDED_NO_SOURCE_VERTEX_INSIDE_OR_BOUNDARY"
+        },
+        "strict_source_surface_crossing_or_strict_vertex_inside_opposite_hull": false,
+        "source_surface_exterior_to_opposite_convex_solid": true
+      },
+      "arm_pair_counterfactuals": {
+        "robot0_link5_local_00": {
+          "arm_hull_vs_full_source_flange": {
+            "continuous_surface_query": {
+              "surface_min_distance_m": 0.0012169957303264888,
+              "surface_intersection": false,
+              "strict_transverse_witness": null,
+              "nearest_face_ids_zero_based": [
+                117,
+                4061
+              ],
+              "closest_points": [
+                [
+                  0.009088491975105629,
+                  -0.02307989772341898,
+                  -0.023178441675412942
+                ],
+                [
+                  0.010274770454007962,
+                  -0.023024768650313426,
+                  -0.023444491977845757
+                ]
+              ],
+              "visited_node_pairs": 786,
+              "leaf_pairs": 239,
+              "triangle_pairs_evaluated": 12402,
+              "all_surface_search_complete": true,
+              "global_zero_certified_by_intersection": false,
+              "numerical_absolute_bound_tolerance_m": 1e-12
+            },
+            "source_vertex_membership": {
+              "method": "Every exact unique source-STL vertex, transformed only by stored body transforms, against normalized ConvexHull halfspaces of actual compiled graph supports. Negative maximum residual is inside.",
+              "source_triangle_count": 13302,
+              "all_unique_source_vertices_tested": 6621,
+              "strictly_inside_vertex_count": 0,
+              "strictly_exterior_vertex_count": 6621,
+              "boundary_or_numerically_unknown_vertex_count": 0,
+              "existing_geometric_tolerance_m": 1e-10,
+              "minimum_of_maximum_outward_halfspace_residual_m": 0.0013169222604152136,
+              "maximum_of_maximum_outward_halfspace_residual_m": 0.03959616530372104,
+              "opposite_compiled_support_max_halfspace_residual_m": 2.7755575615628914e-17,
+              "least_exterior_or_deepest_inside_source_vertices": [
+                {
+                  "unique_source_vertex_id_zero_based": 1275,
+                  "point_source_body_local_m": [
+                    -0.010439694859087467,
+                    -0.023304635658860207,
+                    -0.00679033575579524
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.010404103048706004,
+                    -0.025209788747417392,
+                    -0.02332058179718035
+                  ],
+                  "maximum_outward_halfspace_residual_m": 0.0013169222604152136,
+                  "source_face_ids_zero_based": [
+                    262,
+                    263,
+                    4059,
+                    4060,
+                    4061
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 1092,
+                  "point_source_body_local_m": [
+                    -0.01093904860317707,
+                    -0.02380478009581566,
+                    -0.006768211256712675
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.010443794005635394,
+                    -0.02523191694570644,
+                    -0.024026218448575356
+                  ],
+                  "maximum_outward_halfspace_residual_m": 0.0015105432173537475,
+                  "source_face_ids_zero_based": [
+                    2214,
+                    2216,
+                    2217,
+                    2218,
+                    4058,
+                    4059,
+                    4060
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 1183,
+                  "point_source_body_local_m": [
+                    -0.010694442316889763,
+                    -0.023285018280148506,
+                    -0.00990739930421114
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.010219602317931694,
+                    -0.022092726064081775,
+                    -0.023497347127965834
+                  ],
+                  "maximum_outward_halfspace_residual_m": 0.0015176422572796954,
+                  "source_face_ids_zero_based": [
+                    0,
+                    262,
+                    4061,
+                    4062,
+                    4063
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 988,
+                  "point_source_body_local_m": [
+                    -0.011191274970769882,
+                    -0.023785360157489777,
+                    -0.009854407049715519
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.010261121631166858,
+                    -0.022145722009234946,
+                    -0.024201236633247226
+                  ],
+                  "maximum_outward_halfspace_residual_m": 0.0016348189269299249,
+                  "source_face_ids_zero_based": [
+                    2209,
+                    2210,
+                    2212,
+                    2213,
+                    2214,
+                    4060,
+                    4061,
+                    4062
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 1460,
+                  "point_source_body_local_m": [
+                    -0.009698327630758286,
+                    -0.02329101599752903,
+                    -0.008954820223152637
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.010888350018823639,
+                    -0.02304530149961348,
+                    -0.022759062698775992
+                  ],
+                  "maximum_outward_halfspace_residual_m": 0.0016636260994538962,
+                  "source_face_ids_zero_based": [
+                    0,
+                    242,
+                    243,
+                    244,
+                    245,
+                    246,
+                    247,
+                    259,
+                    260,
+                    261,
+                    262,
+                    263,
+                    264,
+                    504,
+                    505,
+                    506
+                  ]
+                }
+              ],
+              "whole_source_component_containment_in_opposite_hull": "EXCLUDED_NO_SOURCE_VERTEX_INSIDE_OR_BOUNDARY"
+            },
+            "strict_source_surface_crossing_or_strict_vertex_inside_opposite_hull": false,
+            "source_surface_exterior_to_opposite_convex_solid": true
+          },
+          "arm_hull_vs_assigned_source_flange01_component": {
+            "continuous_surface_query": {
+              "surface_min_distance_m": 0.0012169957303264888,
+              "surface_intersection": false,
+              "strict_transverse_witness": null,
+              "nearest_face_ids_zero_based": [
+                117,
+                4061
+              ],
+              "closest_points": [
+                [
+                  0.009088491975105629,
+                  -0.02307989772341898,
+                  -0.023178441675412942
+                ],
+                [
+                  0.010274770454007962,
+                  -0.023024768650313426,
+                  -0.023444491977845757
+                ]
+              ],
+              "visited_node_pairs": 623,
+              "leaf_pairs": 188,
+              "triangle_pairs_evaluated": 7184,
+              "all_surface_search_complete": true,
+              "global_zero_certified_by_intersection": false,
+              "numerical_absolute_bound_tolerance_m": 1e-12
+            },
+            "source_vertex_membership": {
+              "method": "Every exact unique source-STL vertex, transformed only by stored body transforms, against normalized ConvexHull halfspaces of actual compiled graph supports. Negative maximum residual is inside.",
+              "source_triangle_count": 4864,
+              "all_unique_source_vertices_tested": 2418,
+              "strictly_inside_vertex_count": 0,
+              "strictly_exterior_vertex_count": 2418,
+              "boundary_or_numerically_unknown_vertex_count": 0,
+              "existing_geometric_tolerance_m": 1e-10,
+              "minimum_of_maximum_outward_halfspace_residual_m": 0.0013169222604152136,
+              "maximum_of_maximum_outward_halfspace_residual_m": 0.03959616530372104,
+              "opposite_compiled_support_max_halfspace_residual_m": 2.7755575615628914e-17,
+              "least_exterior_or_deepest_inside_source_vertices": [
+                {
+                  "unique_source_vertex_id_zero_based": 315,
+                  "point_source_body_local_m": [
+                    -0.010439694859087467,
+                    -0.023304635658860207,
+                    -0.00679033575579524
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.010404103048706004,
+                    -0.025209788747417392,
+                    -0.02332058179718035
+                  ],
+                  "maximum_outward_halfspace_residual_m": 0.0013169222604152136,
+                  "source_face_ids_zero_based": [
+                    262,
+                    263,
+                    4059,
+                    4060,
+                    4061
+                  ],
+                  "original_full_source_STL_face_ids_zero_based": [
+                    262,
+                    263,
+                    4059,
+                    4060,
+                    4061
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 263,
+                  "point_source_body_local_m": [
+                    -0.01093904860317707,
+                    -0.02380478009581566,
+                    -0.006768211256712675
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.010443794005635394,
+                    -0.02523191694570644,
+                    -0.024026218448575356
+                  ],
+                  "maximum_outward_halfspace_residual_m": 0.0015105432173537475,
+                  "source_face_ids_zero_based": [
+                    2214,
+                    2216,
+                    2217,
+                    2218,
+                    4058,
+                    4059,
+                    4060
+                  ],
+                  "original_full_source_STL_face_ids_zero_based": [
+                    2214,
+                    2216,
+                    2217,
+                    2218,
+                    4058,
+                    4059,
+                    4060
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 294,
+                  "point_source_body_local_m": [
+                    -0.010694442316889763,
+                    -0.023285018280148506,
+                    -0.00990739930421114
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.010219602317931694,
+                    -0.022092726064081775,
+                    -0.023497347127965834
+                  ],
+                  "maximum_outward_halfspace_residual_m": 0.0015176422572796954,
+                  "source_face_ids_zero_based": [
+                    0,
+                    262,
+                    4061,
+                    4062,
+                    4063
+                  ],
+                  "original_full_source_STL_face_ids_zero_based": [
+                    0,
+                    262,
+                    4061,
+                    4062,
+                    4063
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 249,
+                  "point_source_body_local_m": [
+                    -0.011191274970769882,
+                    -0.023785360157489777,
+                    -0.009854407049715519
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.010261121631166858,
+                    -0.022145722009234946,
+                    -0.024201236633247226
+                  ],
+                  "maximum_outward_halfspace_residual_m": 0.0016348189269299249,
+                  "source_face_ids_zero_based": [
+                    2209,
+                    2210,
+                    2212,
+                    2213,
+                    2214,
+                    4060,
+                    4061,
+                    4062
+                  ],
+                  "original_full_source_STL_face_ids_zero_based": [
+                    2209,
+                    2210,
+                    2212,
+                    2213,
+                    2214,
+                    4060,
+                    4061,
+                    4062
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 398,
+                  "point_source_body_local_m": [
+                    -0.009698327630758286,
+                    -0.02329101599752903,
+                    -0.008954820223152637
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.010888350018823639,
+                    -0.02304530149961348,
+                    -0.022759062698775992
+                  ],
+                  "maximum_outward_halfspace_residual_m": 0.0016636260994538962,
+                  "source_face_ids_zero_based": [
+                    0,
+                    242,
+                    243,
+                    244,
+                    245,
+                    246,
+                    247,
+                    259,
+                    260,
+                    261,
+                    262,
+                    263,
+                    264,
+                    504,
+                    505,
+                    506
+                  ],
+                  "original_full_source_STL_face_ids_zero_based": [
+                    0,
+                    242,
+                    243,
+                    244,
+                    245,
+                    246,
+                    247,
+                    259,
+                    260,
+                    261,
+                    262,
+                    263,
+                    264,
+                    504,
+                    505,
+                    506
+                  ]
+                }
+              ],
+              "whole_source_component_containment_in_opposite_hull": "EXCLUDED_NO_SOURCE_VERTEX_INSIDE_OR_BOUNDARY"
+            },
+            "strict_source_surface_crossing_or_strict_vertex_inside_opposite_hull": false,
+            "source_surface_exterior_to_opposite_convex_solid": true,
+            "source_component_triangle_count": 4864,
+            "nearest_original_source_STL_face_id_zero_based": 4061
+          }
+        },
+        "robot0_link5_local_01": {
+          "arm_hull_vs_full_source_flange": {
+            "continuous_surface_query": {
+              "surface_min_distance_m": 0.0,
+              "surface_intersection": true,
+              "strict_transverse_witness": {
+                "edge_from_triangle": 0,
+                "edge_vertices": [
+                  0,
+                  1
+                ],
+                "edge_parameter": 0.3808020949995151,
+                "other_triangle_barycentric": [
+                  0.026811136617903464,
+                  0.06671728530724978,
+                  0.9064715780748468
+                ],
+                "edge_endpoint_signed_plane_distances_m": [
+                  0.011619785190368303,
+                  -0.018894188716164693
+                ],
+                "point": [
+                  0.010963886590172955,
+                  -0.018503695695102407,
+                  -0.025570622439843642
+                ],
+                "strict_transverse_crossing": true,
+                "face_ids_zero_based": [
+                  53,
+                  2208
+                ],
+                "triangle_a": [
+                  [
+                    0.009999999843674452,
+                    -0.01580000116540955,
+                    -0.041290819461035834
+                  ],
+                  [
+                    0.012531201113719278,
+                    -0.02290000025994263,
+                    -9.016583317401905e-06
+                  ],
+                  [
+                    0.009999999761206002,
+                    -0.015800001144195365,
+                    -0.10650901287493772
+                  ]
+                ],
+                "triangle_b": [
+                  [
+                    0.009516022776216241,
+                    -0.01604968033617771,
+                    -0.02497632457797138
+                  ],
+                  [
+                    0.010688295723087698,
+                    -0.01637506179917989,
+                    -0.025918806029961546
+                  ],
+                  [
+                    0.0110269945247306,
+                    -0.018732949012057867,
+                    -0.025562573579922067
+                  ]
+                ]
+              },
+              "nearest_face_ids_zero_based": [
+                53,
+                2208
+              ],
+              "closest_points": [
+                [
+                  0.010963886590172955,
+                  -0.018503695695102407,
+                  -0.025570622439843642
+                ],
+                [
+                  0.010963886590172955,
+                  -0.018503695695102407,
+                  -0.025570622439843642
+                ]
+              ],
+              "visited_node_pairs": 460,
+              "leaf_pairs": 105,
+              "triangle_pairs_evaluated": 4103,
+              "all_surface_search_complete": false,
+              "global_zero_certified_by_intersection": true
+            },
+            "source_vertex_membership": {
+              "method": "Every exact unique source-STL vertex, transformed only by stored body transforms, against normalized ConvexHull halfspaces of actual compiled graph supports. Negative maximum residual is inside.",
+              "source_triangle_count": 13302,
+              "all_unique_source_vertices_tested": 6621,
+              "strictly_inside_vertex_count": 8,
+              "strictly_exterior_vertex_count": 6613,
+              "boundary_or_numerically_unknown_vertex_count": 0,
+              "existing_geometric_tolerance_m": 1e-10,
+              "minimum_of_maximum_outward_halfspace_residual_m": -0.0008228964840477568,
+              "maximum_of_maximum_outward_halfspace_residual_m": 0.0385703511512763,
+              "opposite_compiled_support_max_halfspace_residual_m": 3.469446951953614e-18,
+              "least_exterior_or_deepest_inside_source_vertices": [
+                {
+                  "unique_source_vertex_id_zero_based": 870,
+                  "point_source_body_local_m": [
+                    -0.011634059250354767,
+                    -0.02376607246696949,
+                    -0.012919072061777115
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.009951470508539253,
+                    -0.01908105855585561,
+                    -0.024518341772253434
+                  ],
+                  "maximum_outward_halfspace_residual_m": -0.0008228964840477568,
+                  "source_face_ids_zero_based": [
+                    2210,
+                    2211,
+                    4062,
+                    4063,
+                    4064
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 1016,
+                  "point_source_body_local_m": [
+                    -0.011141655966639519,
+                    -0.0232655368745327,
+                    -0.013002711348235607
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.009906853040923928,
+                    -0.018997415594328902,
+                    -0.023817623897556685
+                  ],
+                  "maximum_outward_halfspace_residual_m": -0.0006488321563529811,
+                  "source_face_ids_zero_based": [
+                    0,
+                    506,
+                    507,
+                    4063,
+                    4064,
+                    4065
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 945,
+                  "point_source_body_local_m": [
+                    -0.011317763477563858,
+                    -0.025278862565755844,
+                    -0.010888378135859966
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.011289690349358087,
+                    -0.02111175694463143,
+                    -0.02529146946616327
+                  ],
+                  "maximum_outward_halfspace_residual_m": -0.0005689162097425576,
+                  "source_face_ids_zero_based": [
+                    2209,
+                    2212,
+                    2634,
+                    2637
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 953,
+                  "point_source_body_local_m": [
+                    -0.01128765381872654,
+                    -0.02562611736357212,
+                    -0.010894598439335823
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.011568534949347425,
+                    -0.021105537822064285,
+                    -0.02550060623937242
+                  ],
+                  "maximum_outward_halfspace_residual_m": -0.000304175312508744,
+                  "source_face_ids_zero_based": [
+                    2540,
+                    2541,
+                    2632,
+                    2633,
+                    2634,
+                    2635,
+                    2636,
+                    2637
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 1183,
+                  "point_source_body_local_m": [
+                    -0.010694442316889763,
+                    -0.023285018280148506,
+                    -0.00990739930421114
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.010219602317931694,
+                    -0.022092726064081775,
+                    -0.023497347127965834
+                  ],
+                  "maximum_outward_halfspace_residual_m": -0.0002450477089792173,
+                  "source_face_ids_zero_based": [
+                    0,
+                    262,
+                    4061,
+                    4062,
+                    4063
+                  ]
+                }
+              ],
+              "whole_source_component_containment_in_opposite_hull": "UNKNOWN_SOURCE_VERTEX_INSIDE_OR_BOUNDARY_REQUIRES_COMPONENT_INTERPRETATION"
+            },
+            "strict_source_surface_crossing_or_strict_vertex_inside_opposite_hull": true,
+            "source_surface_exterior_to_opposite_convex_solid": false
+          },
+          "arm_hull_vs_assigned_source_flange01_component": {
+            "continuous_surface_query": {
+              "surface_min_distance_m": 0.0,
+              "surface_intersection": true,
+              "strict_transverse_witness": {
+                "edge_from_triangle": 0,
+                "edge_vertices": [
+                  0,
+                  1
+                ],
+                "edge_parameter": 0.4570943932817218,
+                "other_triangle_barycentric": [
+                  0.7391074118414496,
+                  0.11507019814044989,
+                  0.14582239001810066
+                ],
+                "edge_endpoint_signed_plane_distances_m": [
+                  -0.011741638167784521,
+                  0.013945918582770011
+                ],
+                "point": [
+                  0.011156997752479515,
+                  -0.019045370943825923,
+                  -0.02242113882106949
+                ],
+                "strict_transverse_crossing": true,
+                "face_ids_zero_based": [
+                  53,
+                  505
+                ],
+                "triangle_a": [
+                  [
+                    0.009999999843674452,
+                    -0.01580000116540955,
+                    -0.041290819461035834
+                  ],
+                  [
+                    0.012531201113719278,
+                    -0.02290000025994263,
+                    -9.016583317401905e-06
+                  ],
+                  [
+                    0.009999999761206002,
+                    -0.015800001144195365,
+                    -0.10650901287493772
+                  ]
+                ],
+                "triangle_b": [
+                  [
+                    0.010888350018823639,
+                    -0.02304530149961348,
+                    -0.022759062698775992
+                  ],
+                  [
+                    0.013166750754173616,
+                    -0.007734863784631448,
+                    -0.020068706989838137
+                  ],
+                  [
+                    0.010932730786379317,
+                    -0.007696798063140255,
+                    -0.02256468847951368
+                  ]
+                ]
+              },
+              "nearest_face_ids_zero_based": [
+                53,
+                505
+              ],
+              "closest_points": [
+                [
+                  0.011156997752479515,
+                  -0.019045370943825923,
+                  -0.02242113882106949
+                ],
+                [
+                  0.011156997752479515,
+                  -0.019045370943825923,
+                  -0.02242113882106949
+                ]
+              ],
+              "visited_node_pairs": 435,
+              "leaf_pairs": 143,
+              "triangle_pairs_evaluated": 4104,
+              "all_surface_search_complete": false,
+              "global_zero_certified_by_intersection": true
+            },
+            "source_vertex_membership": {
+              "method": "Every exact unique source-STL vertex, transformed only by stored body transforms, against normalized ConvexHull halfspaces of actual compiled graph supports. Negative maximum residual is inside.",
+              "source_triangle_count": 4864,
+              "all_unique_source_vertices_tested": 2418,
+              "strictly_inside_vertex_count": 8,
+              "strictly_exterior_vertex_count": 2410,
+              "boundary_or_numerically_unknown_vertex_count": 0,
+              "existing_geometric_tolerance_m": 1e-10,
+              "minimum_of_maximum_outward_halfspace_residual_m": -0.0008228964840477568,
+              "maximum_of_maximum_outward_halfspace_residual_m": 0.037523010218432115,
+              "opposite_compiled_support_max_halfspace_residual_m": 3.469446951953614e-18,
+              "least_exterior_or_deepest_inside_source_vertices": [
+                {
+                  "unique_source_vertex_id_zero_based": 223,
+                  "point_source_body_local_m": [
+                    -0.011634059250354767,
+                    -0.02376607246696949,
+                    -0.012919072061777115
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.009951470508539253,
+                    -0.01908105855585561,
+                    -0.024518341772253434
+                  ],
+                  "maximum_outward_halfspace_residual_m": -0.0008228964840477568,
+                  "source_face_ids_zero_based": [
+                    2210,
+                    2211,
+                    4062,
+                    4063,
+                    4064
+                  ],
+                  "original_full_source_STL_face_ids_zero_based": [
+                    2210,
+                    2211,
+                    4062,
+                    4063,
+                    4064
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 250,
+                  "point_source_body_local_m": [
+                    -0.011141655966639519,
+                    -0.0232655368745327,
+                    -0.013002711348235607
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.009906853040923928,
+                    -0.018997415594328902,
+                    -0.023817623897556685
+                  ],
+                  "maximum_outward_halfspace_residual_m": -0.0006488321563529811,
+                  "source_face_ids_zero_based": [
+                    0,
+                    506,
+                    507,
+                    4063,
+                    4064,
+                    4065
+                  ],
+                  "original_full_source_STL_face_ids_zero_based": [
+                    0,
+                    506,
+                    507,
+                    4063,
+                    4064,
+                    4065
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 239,
+                  "point_source_body_local_m": [
+                    -0.011317763477563858,
+                    -0.025278862565755844,
+                    -0.010888378135859966
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.011289690349358087,
+                    -0.02111175694463143,
+                    -0.02529146946616327
+                  ],
+                  "maximum_outward_halfspace_residual_m": -0.0005689162097425576,
+                  "source_face_ids_zero_based": [
+                    2209,
+                    2212,
+                    2634,
+                    2637
+                  ],
+                  "original_full_source_STL_face_ids_zero_based": [
+                    2209,
+                    2212,
+                    2634,
+                    2637
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 241,
+                  "point_source_body_local_m": [
+                    -0.01128765381872654,
+                    -0.02562611736357212,
+                    -0.010894598439335823
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.011568534949347425,
+                    -0.021105537822064285,
+                    -0.02550060623937242
+                  ],
+                  "maximum_outward_halfspace_residual_m": -0.000304175312508744,
+                  "source_face_ids_zero_based": [
+                    2540,
+                    2541,
+                    2632,
+                    2633,
+                    2634,
+                    2635,
+                    2636,
+                    2637
+                  ],
+                  "original_full_source_STL_face_ids_zero_based": [
+                    2540,
+                    2541,
+                    2632,
+                    2633,
+                    2634,
+                    2635,
+                    2636,
+                    2637
+                  ]
+                },
+                {
+                  "unique_source_vertex_id_zero_based": 294,
+                  "point_source_body_local_m": [
+                    -0.010694442316889763,
+                    -0.023285018280148506,
+                    -0.00990739930421114
+                  ],
+                  "point_opposite_hull_body_local_m": [
+                    0.010219602317931694,
+                    -0.022092726064081775,
+                    -0.023497347127965834
+                  ],
+                  "maximum_outward_halfspace_residual_m": -0.0002450477089792173,
+                  "source_face_ids_zero_based": [
+                    0,
+                    262,
+                    4061,
+                    4062,
+                    4063
+                  ],
+                  "original_full_source_STL_face_ids_zero_based": [
+                    0,
+                    262,
+                    4061,
+                    4062,
+                    4063
+                  ]
+                }
+              ],
+              "whole_source_component_containment_in_opposite_hull": "UNKNOWN_SOURCE_VERTEX_INSIDE_OR_BOUNDARY_REQUIRES_COMPONENT_INTERPRETATION"
+            },
+            "strict_source_surface_crossing_or_strict_vertex_inside_opposite_hull": true,
+            "source_surface_exterior_to_opposite_convex_solid": false,
+            "source_component_triangle_count": 4864,
+            "nearest_original_source_STL_face_id_zero_based": 505
+          }
+        }
+      }
+    }
+  },
+  "flange01_only_source_preserving_refinement": "EXCLUDED_BY_SOURCE_FLANGE01_SURFACE_INTRUSION_INTO_UNCHANGED_ARM_HULL",
+  "call_audit": {
+    "allowed_apis": [
+      "mj_id2name",
+      "mj_name2id"
+    ],
+    "blocked_apis": [
+      "mj_Euler",
+      "mj_RungeKutta",
+      "mj_addContact",
+      "mj_addM",
+      "mj_angmomMat",
+      "mj_applyFT",
+      "mj_camlight",
+      "mj_checkAcc",
+      "mj_checkPos",
+      "mj_checkVel",
+      "mj_collision",
+      "mj_comPos",
+      "mj_comVel",
+      "mj_compareFwdInv",
+      "mj_constraintUpdate",
+      "mj_contactForce",
+      "mj_crb",
+      "mj_defaultLROpt",
+      "mj_defaultOption",
+      "mj_defaultSolRefImp",
+      "mj_defaultVisual",
+      "mj_differentiatePos",
+      "mj_energyPos",
+      "mj_energyVel",
+      "mj_factorM",
+      "mj_flex",
+      "mj_forward",
+      "mj_forwardSkip",
+      "mj_fullM",
+      "mj_fwdAcceleration",
+      "mj_fwdActuation",
+      "mj_fwdConstraint",
+      "mj_fwdPosition",
+      "mj_fwdVelocity",
+      "mj_geomDistance",
+      "mj_getState",
+      "mj_getTotalmass",
+      "mj_implicit",
+      "mj_integratePos",
+      "mj_invConstraint",
+      "mj_invPosition",
+      "mj_invVelocity",
+      "mj_inverse",
+      "mj_inverseSkip",
+      "mj_isDual",
+      "mj_isPyramidal",
+      "mj_isSparse",
+      "mj_island",
+      "mj_jac",
+      "mj_jacBody",
+      "mj_jacBodyCom",
+      "mj_jacDot",
+      "mj_jacGeom",
+      "mj_jacPointAxis",
+      "mj_jacSite",
+      "mj_jacSubtreeCom",
+      "mj_kinematics",
+      "mj_loadAllPluginLibraries",
+      "mj_loadPluginLibrary",
+      "mj_local2Global",
+      "mj_makeConstraint",
+      "mj_mulJacTVec",
+      "mj_mulJacVec",
+      "mj_mulM",
+      "mj_mulM2",
+      "mj_multiRay",
+      "mj_normalizeQuat",
+      "mj_objectAcceleration",
+      "mj_objectVelocity",
+      "mj_passive",
+      "mj_printData",
+      "mj_printFormattedData",
+      "mj_printFormattedModel",
+      "mj_printModel",
+      "mj_printSchema",
+      "mj_projectConstraint",
+      "mj_ray",
+      "mj_rayHfield",
+      "mj_rayMesh",
+      "mj_referenceConstraint",
+      "mj_resetCallbacks",
+      "mj_resetData",
+      "mj_resetDataDebug",
+      "mj_resetDataKeyframe",
+      "mj_rne",
+      "mj_rnePostConstraint",
+      "mj_saveLastXML",
+      "mj_saveModel",
+      "mj_sensorAcc",
+      "mj_sensorPos",
+      "mj_sensorVel",
+      "mj_setConst",
+      "mj_setKeyframe",
+      "mj_setLengthRange",
+      "mj_setState",
+      "mj_setTotalmass",
+      "mj_sizeModel",
+      "mj_solveM",
+      "mj_solveM2",
+      "mj_stateSize",
+      "mj_step",
+      "mj_step1",
+      "mj_step2",
+      "mj_subtreeVel",
+      "mj_tendon",
+      "mj_transmission",
+      "mj_version",
+      "mj_versionString"
+    ],
+    "allowed_api_calls": {
+      "mj_name2id": 3,
+      "mj_id2name": 3
+    },
+    "forbidden_api_attempts": [],
+    "physics_steps": 0,
+    "constraint_solves": 0,
+    "resets": 0,
+    "forward_calls": 0,
+    "collision_calls": 0,
+    "model_constructor_calls": 1,
+    "data_constructor_calls": 0,
+    "new_FK_calls": 0,
+    "model_fields_unchanged": true
+  },
+  "physics_steps": 0,
+  "forward_calls": 0,
+  "collision_calls": 0,
+  "constraint_solves": 0,
+  "new_candidate_count": 0,
+  "new_pose_count": 0,
+  "input_sha256_before": {
+    "examples/right_hand/candidates/link5_flange_local/manifest.json": "373cbab3606677cc01610a74d00cb257adece2bb547c959fbf17499a37b779f7",
+    "examples/right_hand/candidates/link5_flange_local/meshes/robot0_flange_local_01.obj": "4fd5ff0c3bf9788eed291e70867e6e9f0d2e7cd0592a0efcaef46317ca858c62",
+    "examples/right_hand/candidates/link5_flange_local/meshes/robot0_link5_local_00.obj": "631b2ae8b5b706b019c82d3049d248792292ae678b728ab5aa6a1202177c9548",
+    "examples/right_hand/candidates/link5_flange_local/meshes/robot0_link5_local_01.obj": "631e4f74493fea04724c2a566dc50e72f314cff5561c3a3b93c1d315cdba28da",
+    "examples/right_hand/candidates/link5_flange_local/model.xml": "1b2530d923b446605492b43652dd5a3200fd755674ba17a54f0c961cde362b39",
+    "examples/right_hand/evidence/d3_geometry/triangle/surface_geometry.py": "21b91daa9ccfc7ddedc91ca4a95eb3f2f1b72b720a5619b2bb59144f39de71de",
+    "examples/right_hand/evidence/d3_link5_flange_fullscan/caps/attribute_first_failure.py": "ec99ce624207276495556bcbc65fd46fe7a4bd0153c394675b2fb0b2c0b7f7d9",
+    "examples/right_hand/evidence/d3_link5_flange_fullscan/caps/check_representative_counterfactuals.py": "fe9d39a773fc72cf52c83b0a51f7a4af30336137b7a9e457a4bd74bad66228f1",
+    "examples/right_hand/evidence/d3_link5_flange_fullscan/scan/poses.json.gz": "b9e005b6208ef2fe9faaeb5437254ad91dea10e0c705d037a56d180fdd3f8335",
+    "examples/right_hand/evidence/d3_link5_flange_fullscan/scan/summary.json": "61277affdf09a86f9c3bb739d0f7109fdb050cb9fd9d0d8c6e8d7df22d54338d",
+    "examples/right_hand/link5_flange_poses.py": "3e6804238de7402b8e9867035422dbc0aa690efe8bab648b153a095b68807290",
+    "examples/right_hand/proxy76_contacts.py": "97986d2c2f7138721c67cc3cb5adefc93c817d2429bef059bd69b4e89cfa9478",
+    "examples/right_hand/proxy76_validate.py": "aa9224ee4daf5f8d9355a40ab8b26f878d50ddd82ca0808d6e9d52855fc6948c",
+    "meshes/nero/source/gripper_flange-186697a7.stl": "186697a73e7cafd9fd41d96f1eea9b34b444c058b9561fb2e3ea439c835ae2e8",
+    "meshes/nero/source/link5-dc497f5a.stl": "dc497f5a9bab2d0d314250134d4ec86617abea7205d122db41b765acdb86ae7e",
+    "tools/build_right_proxy76.py": "ef858f59bf57b73657f27ed50e623ba361ae30bee588c9be46d7f88b53bf025c"
+  },
+  "input_sha256_after": {
+    "examples/right_hand/candidates/link5_flange_local/manifest.json": "373cbab3606677cc01610a74d00cb257adece2bb547c959fbf17499a37b779f7",
+    "examples/right_hand/candidates/link5_flange_local/meshes/robot0_flange_local_01.obj": "4fd5ff0c3bf9788eed291e70867e6e9f0d2e7cd0592a0efcaef46317ca858c62",
+    "examples/right_hand/candidates/link5_flange_local/meshes/robot0_link5_local_00.obj": "631b2ae8b5b706b019c82d3049d248792292ae678b728ab5aa6a1202177c9548",
+    "examples/right_hand/candidates/link5_flange_local/meshes/robot0_link5_local_01.obj": "631e4f74493fea04724c2a566dc50e72f314cff5561c3a3b93c1d315cdba28da",
+    "examples/right_hand/candidates/link5_flange_local/model.xml": "1b2530d923b446605492b43652dd5a3200fd755674ba17a54f0c961cde362b39",
+    "examples/right_hand/evidence/d3_geometry/triangle/surface_geometry.py": "21b91daa9ccfc7ddedc91ca4a95eb3f2f1b72b720a5619b2bb59144f39de71de",
+    "examples/right_hand/evidence/d3_link5_flange_fullscan/caps/attribute_first_failure.py": "ec99ce624207276495556bcbc65fd46fe7a4bd0153c394675b2fb0b2c0b7f7d9",
+    "examples/right_hand/evidence/d3_link5_flange_fullscan/caps/check_representative_counterfactuals.py": "fe9d39a773fc72cf52c83b0a51f7a4af30336137b7a9e457a4bd74bad66228f1",
+    "examples/right_hand/evidence/d3_link5_flange_fullscan/scan/poses.json.gz": "b9e005b6208ef2fe9faaeb5437254ad91dea10e0c705d037a56d180fdd3f8335",
+    "examples/right_hand/evidence/d3_link5_flange_fullscan/scan/summary.json": "61277affdf09a86f9c3bb739d0f7109fdb050cb9fd9d0d8c6e8d7df22d54338d",
+    "examples/right_hand/link5_flange_poses.py": "3e6804238de7402b8e9867035422dbc0aa690efe8bab648b153a095b68807290",
+    "examples/right_hand/proxy76_contacts.py": "97986d2c2f7138721c67cc3cb5adefc93c817d2429bef059bd69b4e89cfa9478",
+    "examples/right_hand/proxy76_validate.py": "aa9224ee4daf5f8d9355a40ab8b26f878d50ddd82ca0808d6e9d52855fc6948c",
+    "meshes/nero/source/gripper_flange-186697a7.stl": "186697a73e7cafd9fd41d96f1eea9b34b444c058b9561fb2e3ea439c835ae2e8",
+    "meshes/nero/source/link5-dc497f5a.stl": "dc497f5a9bab2d0d314250134d4ec86617abea7205d122db41b765acdb86ae7e",
+    "tools/build_right_proxy76.py": "ef858f59bf57b73657f27ed50e623ba361ae30bee588c9be46d7f88b53bf025c"
+  },
+  "limits": [
+    "Geometric counterfactuals are not new model acceptance.",
+    "Source vertex membership complements complete continuous mixed surface queries; positive surface gap alone does not exclude a contained source component.",
+    "Source surfaces and component assignment remain unchanged; no physical penetration depth or closed-source solid conclusion is inferred.",
+    "Representatives can falsify flange-only refinement but do not certify any next design over all 921 poses."
+  ]
+}

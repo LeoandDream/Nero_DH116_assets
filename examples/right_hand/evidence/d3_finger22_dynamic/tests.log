@@ -1,0 +1,17 @@
+test_frozen_inputs_and_original_thresholds (test_finger22_conditional.Finger22ConditionalTests.test_frozen_inputs_and_original_thresholds) ... ok
+test_root_or_uncertain_contact_stops_but_front_pad_does_not (test_finger22_conditional.Finger22ConditionalTests.test_root_or_uncertain_contact_stops_but_front_pad_does_not) ... ok
+test_unknown_and_zero_force_risks_stop (test_finger22_conditional.Finger22ConditionalTests.test_unknown_and_zero_force_risks_stop) ... ok
+test_bound_inputs_use_78_piece_detail_and_original_criteria (test_white_bowl_frozen78.Frozen78ScheduleTests.test_bound_inputs_use_78_piece_detail_and_original_criteria) ... ok
+test_changed_original_criteria_and_source_phase_order_are_rejected (test_white_bowl_frozen78.Frozen78ScheduleTests.test_changed_original_criteria_and_source_phase_order_are_rejected) ... ok
+test_phase_boundaries_and_early_stop_budget (test_white_bowl_frozen78.Frozen78ScheduleTests.test_phase_boundaries_and_early_stop_budget) ... ok
+test_reject_old_model_preflight_and_changed_path_or_unknown_result (test_white_bowl_frozen78.Frozen78ScheduleTests.test_reject_old_model_preflight_and_changed_path_or_unknown_result) ... ok
+test_repeat_only_approach_and_preserve_all_numeric_values_and_order (test_white_bowl_frozen78.Frozen78ScheduleTests.test_repeat_only_approach_and_preserve_all_numeric_values_and_order) ... ok
+test_old_thresholds_and_budget_are_preserved (test_wrist_conditional.ConditionalTests.test_old_thresholds_and_budget_are_preserved) ... ok
+test_outside_registered_path_envelope_stops (test_wrist_conditional.ConditionalTests.test_outside_registered_path_envelope_stops) ... ok
+test_reset_snapshot_comparison_does_not_ignore_body_poses (test_wrist_conditional.ConditionalTests.test_reset_snapshot_comparison_does_not_ignore_body_poses) ... ok
+test_wrist_hand_contact_stops_even_without_positive_force (test_wrist_conditional.ConditionalTests.test_wrist_hand_contact_stops_even_without_positive_force) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.310s
+
+OK

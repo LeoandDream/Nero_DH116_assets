@@ -1,0 +1,9 @@
+{
+  "rebuilt_from_frozen_alignment": true,
+  "all76_mesh_geometry_sha256_exact": true,
+  "all19_baked_files_exact": true,
+  "xml_semantically_exact_with_asset_references_resolved_to_bytes": true,
+  "changes_to_candidate": false,
+  "physics_steps": 0,
+  "method": "Standard-library file/XML comparison only; no MuJoCo import, FK or physics"
+}

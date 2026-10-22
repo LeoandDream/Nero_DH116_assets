@@ -1,0 +1,14 @@
+{
+  "verdict": "SEPARATED_AT_ALL_FROZEN_FINITE_SAMPLES",
+  "candidate_parts": 78,
+  "finite_sample_count": 921,
+  "scope": "All 115 contact-eligible nonadjacent internal right-hand body pairs; finite samples only; not arm/table/bowl, adjacent filtered pairs, or actual dynamic states.",
+  "dynamic_control_or_grasp_certified": false,
+  "input_sha256": {
+    "examples/right_hand/candidates/finger13_local/model.xml": "b27f4f86fbaeacd2bb925463f39f67181ef7db12963c4d9f7fc01797a7924d1b",
+    "examples/right_hand/evidence/d3_white_bowl_001/candidate.json": "ba767b42f99d3562255909bde5c970d529ba254769029ec1cd7a98faf76af0fb",
+    "examples/right_hand/evidence/d3_bowl_preflight/internal-detail.json": "78efd06cd1f7bc7e5597ba0674687bd77e5b4db151ff66519d389bdd44094ccd",
+    "examples/right_hand/evidence/d3_bowl_preflight/internal-summary.json": "05ff6ff370dadf8a8b8e7762103eb346df75629027445394ed565546f8b8201e",
+    "examples/right_hand/evidence/d3_bowl_preflight/verification.json": "5723d7f9087285ef1607bd75d76897f945fe006201c3a2041ac8cb638a1c9b15"
+  }
+}

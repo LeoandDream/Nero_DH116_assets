@@ -1,0 +1,55 @@
+{
+  "analytic_cases": {
+    "parallel_face_interior": {
+      "distance_m": 2.0,
+      "expected_m": 2.0,
+      "absolute_error_m": 0.0
+    },
+    "strict_transverse_crossing": {
+      "distance_m": 0.0,
+      "expected_m": 0.0,
+      "absolute_error_m": 0.0
+    },
+    "coplanar_overlap": {
+      "distance_m": 0.0,
+      "expected_m": 0.0,
+      "absolute_error_m": 0.0
+    },
+    "edge_edge_interior": {
+      "distance_m": 1.224744871391589,
+      "expected_m": 1.224744871391589,
+      "absolute_error_m": 0.0
+    },
+    "second_triangle_point_above_face": {
+      "distance_m": 3.0,
+      "expected_m": 3.0,
+      "absolute_error_m": 0.0
+    },
+    "second_triangle_point_nearest_edge": {
+      "distance_m": 0.5,
+      "expected_m": 0.5,
+      "absolute_error_m": 0.0
+    },
+    "first_triangle_point_nearest_edge": {
+      "distance_m": 0.5,
+      "expected_m": 0.5,
+      "absolute_error_m": 0.0
+    },
+    "both_triangles_points": {
+      "distance_m": 1.7320508075688772,
+      "expected_m": 1.7320508075688772,
+      "absolute_error_m": 0.0
+    }
+  },
+  "BVH_vs_exhaustive_triangle_pairs": 899,
+  "BVH_distance_m": 0.564005067852481,
+  "reverse_distance_m": 0.564005067852481,
+  "results_rows": 24,
+  "actual_surface_queries": 16,
+  "reused_A_certificates": 8,
+  "positive_distance_cases": 4,
+  "all_positive_distance_nearest_pair_QP_succeeded": true,
+  "all_crossing_witnesses_decimal_rechecked": true,
+  "all_crossing_witnesses_within_recorded_contact_15mm": true,
+  "note": "Finite-precision continuous triangle geometry. Decimal checks strengthen recorded transformed-triangle witnesses; they do not establish an exact solver-stage state. Three source STLs are non-watertight/nonmanifold, so disjoint-solid inference is limited."
+}

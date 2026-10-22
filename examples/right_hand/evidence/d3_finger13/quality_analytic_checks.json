@@ -1,0 +1,25 @@
+{
+  "physics_steps": 0,
+  "mujoco_imported": false,
+  "checks": {
+    "touching_two_boxes": {
+      "status": "PASS",
+      "measured_area_m2": 0.0,
+      "expected_area_m2": 0
+    },
+    "known_gap": {
+      "status": "PASS",
+      "measured_area_m2": 0.10000000000000006,
+      "expected_area_m2": 0.1
+    },
+    "inherited_gap_is_not_new": {
+      "status": "PASS",
+      "newly_uncovered_area_m2": 0.0
+    },
+    "convex_containment_in_and_out": {
+      "status": "PASS",
+      "known_violation_m": 0.1,
+      "measured_violation_m": 0.10000000000000009
+    }
+  }
+}

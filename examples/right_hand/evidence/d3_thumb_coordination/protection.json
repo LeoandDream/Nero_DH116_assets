@@ -1,0 +1,11 @@
+{
+  "baseline": "8142d0ca9a6e78332118ab5e632cafe4e39da28b",
+  "all_original_tracked_files_checked": 378,
+  "original_files_changed": [],
+  "original_main_worktree": {
+    "head": "9f4054f6197ecb1127202cee14cd75c3924a47e3",
+    "status": " M README.md\n",
+    "readme_sha256": "d68ec6d62a6f42b8c1636ad2774c8329073d973c2621cc7fe148c8c8c89d8f25"
+  },
+  "formal_model_sha256": "739d3d29bbfd4a6468fb8b75f4de09b719c0f96abb39508959c1dfc33a84b9cc"
+}

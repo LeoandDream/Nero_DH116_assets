@@ -1,0 +1,163 @@
+{
+  "baseline_commit": "6b432737dbddc7e8917630382c582ac8704d637a",
+  "execution_implementation_commit": "f068d125728b4f6d2ba0f443c303eb8b7705590a",
+  "physical_runs": {
+    "new_candidate": 1,
+    "new_control": 0,
+    "new_real_steps": 7000,
+    "offline_real_steps": 0
+  },
+  "xml_compile_base": "mjcf/",
+  "artifacts": {
+    "README.md": {
+      "sha256": "fb9884980d5b00afe892c95ea8af5f12fd4de8aeb64ecac9e14ad9774795d39e",
+      "bytes": 8205
+    },
+    "annotation-tests-green.log": {
+      "sha256": "aa112ab2cc31d695106a860556b8e7668ce67280963b47ffa2d92167c113bff0",
+      "bytes": 608
+    },
+    "audited-comparison.json": {
+      "sha256": "a9f288362b4d74a41b95c1b3503ccade790c6ec05e909e8908cbceac43370cbb",
+      "bytes": 40115
+    },
+    "audited-contacts-per-step.jsonl.gz": {
+      "sha256": "136d5e7442ed5d8c8e9424cf8279e665bfa00a3b2a3da1595857a70e9ff6ea72",
+      "bytes": 53703,
+      "uncompressed_sha256": "dff1c64634b18b7e7db0ced42b315582aee246ead544da99f9d5fff55b41852a",
+      "uncompressed_bytes": 921274,
+      "rows": 7000
+    },
+    "baseline-audit.json": {
+      "sha256": "229839cd33d471d757c292bbcf538924e4e705d39c8580d2a1d82aa3056ac57b",
+      "bytes": 17008
+    },
+    "comparison.png": {
+      "sha256": "0460460844c2192d45486a395f5ab710c524fba5fb17b12d5eceb8e9cc8e0d3a",
+      "bytes": 472902
+    },
+    "compiled-comparison.json": {
+      "sha256": "6ba2e30b9e88350baa5cf217c25ff75f78ab4408810e935e6e22f8d08f5cf085",
+      "bytes": 105362
+    },
+    "diagnostic.xml": {
+      "sha256": "0b279f42221f5c3731f4e23b40954734b6733ce8cb9861130e6f33c81cdcbc9f",
+      "bytes": 49598
+    },
+    "environment.json": {
+      "sha256": "2f4d68264f99c759035470a4fec3e8d3215cf6e2ec03d3c2e6510516366f3d6c",
+      "bytes": 4100
+    },
+    "execution.json": {
+      "sha256": "7aae0d426cd03e7e9e35e1e131a8ff63d6701ec8a571b5e5eef32f6751ba0f4a",
+      "bytes": 374
+    },
+    "filtered-contacts.jsonl.gz": {
+      "sha256": "81b9f2164057f5d2b19f5bf4102b8b7f52ddb2e76951892bb77c4456ef44d9ab",
+      "bytes": 342987,
+      "uncompressed_sha256": "2e992400912c07bd29bdff5f1d6e1d6cd576c670eade436b84871a265aa62bc7",
+      "uncompressed_bytes": 1728956,
+      "rows": 7000
+    },
+    "filtered-result.json": {
+      "sha256": "ae4f40f6ba511102dfe710a65aaae4830a0d07a93aea51c582f0147cbdc8f806",
+      "bytes": 1847
+    },
+    "filtered-state.jsonl.gz": {
+      "sha256": "6fab08e35c0adc53c473b5944dbe56a3db0d87aa4b47ba8842cd66997d7aaa5a",
+      "bytes": 4675904,
+      "uncompressed_sha256": "ba8746fc43b5d3bb2d3de559869ac7cc7021fdc6eb657be11f142a7ed10ef820",
+      "uncompressed_bytes": 24026571,
+      "rows": 7000
+    },
+    "final-tests.log": {
+      "sha256": "fdcee9178cf2b42a8ec4cef6022632495cad49576411d6ce802e457816b954c3",
+      "bytes": 742
+    },
+    "frozen-commands.json.gz": {
+      "sha256": "17e604056aa3c160e2b1ffd2f30592de63c430704d44b2559e5453a43f9f6142",
+      "bytes": 15941,
+      "uncompressed_sha256": "479e114b38d2698ab8df814b9ae14a67c2c3e672983bfc6eea2b95ad1366349d",
+      "uncompressed_bytes": 1121943
+    },
+    "frozen-protocol.json": {
+      "sha256": "4c06875a89dec5fc12385bc3abcf8d058ca9e30d2a9811d3394811dc5d118bc7",
+      "bytes": 1739
+    },
+    "input-identity.json": {
+      "sha256": "64f324d44fe840353206987270c458407b8fa43fc3c1c74e6a48d7699de339c7",
+      "bytes": 26953
+    },
+    "isolation-exit.json": {
+      "sha256": "b4f5de9ce76682310b1c0e618650a4b84dace61d3cbf10df11a7cded77b2369d",
+      "bytes": 149
+    },
+    "legacy-comparison.json": {
+      "sha256": "ebe8c5febad3d516de5a4bc50b32722f66b059ac6fbaf0cc91a56a5fd8cc63fc",
+      "bytes": 16123
+    },
+    "physical-attempt.json": {
+      "sha256": "0ef5fe51f4827c5ca890553784a070ef4c410d0f08b081d5590d12974083d44d",
+      "bytes": 57
+    },
+    "plot_comparison.py": {
+      "sha256": "14c34593ebf62067ea088fed2d0db58220d8d6748afde5adc486c2f90e86f79d",
+      "bytes": 6619
+    },
+    "postexecution-review.json": {
+      "sha256": "94398af2935fcc4f13f89f9bf6c2a4885a48c75793d28e97c76deeff6e91a806",
+      "bytes": 23085
+    },
+    "preexecution-review.json": {
+      "sha256": "4b69fb1e0a50f5658afdf2edfe088888dc807eee168a4aea6e91007f53247d4f",
+      "bytes": 1838
+    },
+    "preflight-status.json": {
+      "sha256": "c56057d31ae2f46006101dfe0250f58194c3d5deb4d9723f5679f958b74045da",
+      "bytes": 67
+    },
+    "reset-and-step-audit.json": {
+      "sha256": "06b4a2013f49ecc88a8aa96f835d30c50ffc118c6e9c0b71939fcd595cf81970",
+      "bytes": 25270
+    },
+    "runner.log": {
+      "sha256": "744a09cfb731cf0bef1ac9a22588b470db415b3555d399404db298abddf3579f",
+      "bytes": 424
+    },
+    "tests.log": {
+      "sha256": "1c4fa45c22293ff60f14dfb7bb6d93e6b1931d45f2f1aa02425b3d9b5ab1133e",
+      "bytes": 555
+    },
+    "verification.json": {
+      "sha256": "32228ca1b624ffeaaf56b22d7fc70387b79e00404d9f7289130875c403752f8d",
+      "bytes": 1364
+    }
+  },
+  "code_sha256": {
+    "examples/right_hand/internal_contact.py": "075813681ce7fb9b6165ba848d6e42f428e950906382944107e93ceeab4bb7eb",
+    "examples/right_hand/internal_contact_analysis.py": "c1cf08cef8891c102b0bbfd80d35c8074a654e19100c6526a7890a29a9e8f8bc",
+    "tests/test_internal_contact.py": "5afde81a90639cdea4248e09dde49134c73e8e8f9cdf99dc747fad00ed6592de",
+    "tests/test_internal_contact_analysis.py": "5cf46a860a96cfa26928a251e116710e051ac6f8c7042c62064d5b1fb8ba489f"
+  },
+  "baseline_artifacts": {
+    "hand-motion-state.jsonl.gz": {
+      "relative_path": "../hand-motion-state.jsonl.gz",
+      "sha256": "57e37a567b9a9381e5dff9563dce5521b9d48be81554b20781e98ab75291c54b",
+      "uncompressed_sha256": "ad184353f23fc368f32884dbf8a15df3c96af31f41ded9e3ef7c18258be94079"
+    },
+    "hand-motion-contacts.jsonl.gz": {
+      "relative_path": "../hand-motion-contacts.jsonl.gz",
+      "sha256": "c48cd97035d6bf63296fcac199b1e898d92547d566623fae5513745dc20b5b04",
+      "uncompressed_sha256": "6fac9a84e29d6eb8a4d7e08d7938c76d1a18d4ab2d541d97804aed74fbf61aad"
+    },
+    "frozen-commands.json.gz": {
+      "relative_path": "../frozen-commands.json.gz",
+      "sha256": "d21df12fa6eb6419a248131d0ae3faddeeaeeb4e9a59f34c3cf17f3e43c0da37",
+      "uncompressed_sha256": "7f756fc5d6bb2bfef5ab3e97b02f4b09cc91ec469ab1d028bc92eaa4e5349fdb"
+    },
+    "hand-motion-result.json": {
+      "relative_path": "../hand-motion-result.json",
+      "sha256": "693e68cade25de72c6bd35799cc5feb2b8930bc093ac97f451080ddb94d2e055"
+    }
+  }
+}

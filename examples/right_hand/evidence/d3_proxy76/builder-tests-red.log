@@ -1,0 +1,29 @@
+test_identity_does_not_reorder_faces (test_right_proxy76.ProxyMigrationTests.test_identity_does_not_reorder_faces) ... FAIL
+test_reflection_preserves_positive_oriented_tetrahedron_volume (test_right_proxy76.ProxyMigrationTests.test_reflection_preserves_positive_oriented_tetrahedron_volume) ... FAIL
+
+======================================================================
+FAIL: test_identity_does_not_reorder_faces (test_right_proxy76.ProxyMigrationTests.test_identity_does_not_reorder_faces)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/data_robot/projects/.worktrees/nero_dh116_right_proxy76/tests/test_right_proxy76.py", line 31, in test_identity_does_not_reorder_faces
+    b = self.builder()
+        ^^^^^^^^^^^^^^
+  File "/data_robot/projects/.worktrees/nero_dh116_right_proxy76/tests/test_right_proxy76.py", line 14, in builder
+    self.assertTrue(path.is_file(), 'The explicit static migration builder is required')
+AssertionError: False is not true : The explicit static migration builder is required
+
+======================================================================
+FAIL: test_reflection_preserves_positive_oriented_tetrahedron_volume (test_right_proxy76.ProxyMigrationTests.test_reflection_preserves_positive_oriented_tetrahedron_volume)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/data_robot/projects/.worktrees/nero_dh116_right_proxy76/tests/test_right_proxy76.py", line 21, in test_reflection_preserves_positive_oriented_tetrahedron_volume
+    b = self.builder()
+        ^^^^^^^^^^^^^^
+  File "/data_robot/projects/.worktrees/nero_dh116_right_proxy76/tests/test_right_proxy76.py", line 14, in builder
+    self.assertTrue(path.is_file(), 'The explicit static migration builder is required')
+AssertionError: False is not true : The explicit static migration builder is required
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+FAILED (failures=2)

@@ -1,0 +1,130 @@
+[
+  {
+    "raw_file": "arm.xml",
+    "raw_sha256": "f17aa71bbaad1eaf3389a20edce4198273349365e28f06107c6a576cd0bd47ef",
+    "raw_bytes": 124483,
+    "saved_file": "run/arm.xml",
+    "saved_sha256": "f17aa71bbaad1eaf3389a20edce4198273349365e28f06107c6a576cd0bd47ef",
+    "storage": "original bytes"
+  },
+  {
+    "raw_file": "attempt-claim.json",
+    "raw_sha256": "ea942803b6dff27324d05fac32c4fcda269a7b1382962dd1aeab144563f1bef8",
+    "raw_bytes": 249,
+    "saved_file": "run/attempt-claim.json",
+    "saved_sha256": "ea942803b6dff27324d05fac32c4fcda269a7b1382962dd1aeab144563f1bef8",
+    "storage": "original bytes"
+  },
+  {
+    "raw_file": "contacts.jsonl.gz",
+    "raw_sha256": "f48ae08657831661c6880891e3220754feedb954067f3202dc476509d1468040",
+    "raw_bytes": 11592105,
+    "saved_file": "run/contacts.jsonl.gz",
+    "saved_sha256": "f48ae08657831661c6880891e3220754feedb954067f3202dc476509d1468040",
+    "storage": "original bytes"
+  },
+  {
+    "raw_file": "finger22-risk-regions.json",
+    "raw_sha256": "3e6da08b2c9c63f2d2728fa3bfe9b4b2a1ca09cd30acd06addb161a9323aadac",
+    "raw_bytes": 202,
+    "saved_file": "run/finger22-risk-regions.json",
+    "saved_sha256": "3e6da08b2c9c63f2d2728fa3bfe9b4b2a1ca09cd30acd06addb161a9323aadac",
+    "storage": "original bytes"
+  },
+  {
+    "raw_file": "frozen-before-first-step.json",
+    "raw_sha256": "d05f6aa6a120547cf7149f649a8ecf8f2ffe25c6fa04b658aa48bee0e711ea0a",
+    "raw_bytes": 104427,
+    "saved_file": "run/frozen-before-first-step.json",
+    "saved_sha256": "d05f6aa6a120547cf7149f649a8ecf8f2ffe25c6fa04b658aa48bee0e711ea0a",
+    "storage": "original bytes"
+  },
+  {
+    "raw_file": "geometry-provenance.json",
+    "raw_sha256": "744aab98c68d7af9883438376ff2382ad61799ced7ad8e4c29a82cd52469422c",
+    "raw_bytes": 14552,
+    "saved_file": "run/geometry-provenance.json",
+    "saved_sha256": "744aab98c68d7af9883438376ff2382ad61799ced7ad8e4c29a82cd52469422c",
+    "storage": "original bytes"
+  },
+  {
+    "raw_file": "hand.xml",
+    "raw_sha256": "da89b33d1d624826336d24ebaeba2481dbc7c839f239d8119321b1ffeb6fb27f",
+    "raw_bytes": 46920,
+    "saved_file": "run/hand.xml",
+    "saved_sha256": "da89b33d1d624826336d24ebaeba2481dbc7c839f239d8119321b1ffeb6fb27f",
+    "storage": "original bytes"
+  },
+  {
+    "raw_file": "input-audit.json",
+    "raw_sha256": "644e08bc445d3655800f9bc57e6c033a216b6666cbde8d4c87bff13dd7b1ba9e",
+    "raw_bytes": 1018,
+    "saved_file": "run/input-audit.json",
+    "saved_sha256": "644e08bc445d3655800f9bc57e6c033a216b6666cbde8d4c87bff13dd7b1ba9e",
+    "storage": "original bytes"
+  },
+  {
+    "raw_file": "libero_config/config.yaml",
+    "raw_sha256": "240eb6daffa78a796295f5214cd3a10402354f1a1af319b41a7472b52782c548",
+    "raw_bytes": 478,
+    "saved_file": "run/libero_config/config.yaml",
+    "saved_sha256": "240eb6daffa78a796295f5214cd3a10402354f1a1af319b41a7472b52782c548",
+    "storage": "original bytes"
+  },
+  {
+    "raw_file": "model.xml",
+    "raw_sha256": "8576697c81a13d0e35149e880dec1b51f4a6b3f9041b61453e402fea68eaf98c",
+    "raw_bytes": 222561,
+    "saved_file": "run/model.xml",
+    "saved_sha256": "8576697c81a13d0e35149e880dec1b51f4a6b3f9041b61453e402fea68eaf98c",
+    "storage": "original bytes"
+  },
+  {
+    "raw_file": "mount.xml",
+    "raw_sha256": "011ebeaae8f339d448fb1105c5c979b93df484d640f6bd5d93df3eb4964b0645",
+    "raw_bytes": 2174,
+    "saved_file": "run/mount.xml",
+    "saved_sha256": "011ebeaae8f339d448fb1105c5c979b93df484d640f6bd5d93df3eb4964b0645",
+    "storage": "original bytes"
+  },
+  {
+    "raw_file": "old-to-new-compiled-audit.json",
+    "raw_sha256": "34486ff08e51bf3da1c43f235548a56251812dfc5a1efb1d391629207c4022b7",
+    "raw_bytes": 276,
+    "saved_file": "run/old-to-new-compiled-audit.json",
+    "saved_sha256": "34486ff08e51bf3da1c43f235548a56251812dfc5a1efb1d391629207c4022b7",
+    "storage": "original bytes"
+  },
+  {
+    "raw_file": "result.json",
+    "raw_sha256": "2615e9d37101d80a0f5d6f8e5dc9928bf116990b495db66b30e38a186b73504c",
+    "raw_bytes": 76048,
+    "saved_file": "run/result.json",
+    "saved_sha256": "2615e9d37101d80a0f5d6f8e5dc9928bf116990b495db66b30e38a186b73504c",
+    "storage": "original bytes"
+  },
+  {
+    "raw_file": "robot-physical-preflight.json",
+    "raw_sha256": "99feb594de682455dfdd2e58b34e2037ecfbefe371c7fd3e3646fb2b93bd2aee",
+    "raw_bytes": 1605060,
+    "saved_file": "run/robot-physical-preflight.json.gz",
+    "saved_sha256": "892234b2f623dae5801d17a3675c0b25e9cd0f98636b7f95199b0f4a3cd5230a",
+    "storage": "lossless gzip; raw SHA is of original decompressed bytes"
+  },
+  {
+    "raw_file": "schedule.json",
+    "raw_sha256": "4fcb72c06028ba405122c808d8ec90486f022199e1c01904d65b034c18be0b81",
+    "raw_bytes": 218055,
+    "saved_file": "run/schedule.json",
+    "saved_sha256": "4fcb72c06028ba405122c808d8ec90486f022199e1c01904d65b034c18be0b81",
+    "storage": "original bytes"
+  },
+  {
+    "raw_file": "state.jsonl.gz",
+    "raw_sha256": "e02535e6ade6092e0328a8147cd471040fd1ae01de9f46aed291d3523949fe3a",
+    "raw_bytes": 9330908,
+    "saved_file": "run/state.jsonl.gz",
+    "saved_sha256": "e02535e6ade6092e0328a8147cd471040fd1ae01de9f46aed291d3523949fe3a",
+    "storage": "original bytes"
+  }
+]

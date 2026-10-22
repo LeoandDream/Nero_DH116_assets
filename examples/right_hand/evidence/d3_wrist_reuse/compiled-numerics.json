@@ -1,0 +1,1540 @@
+{
+  "check": "Raw OBJ vertices against their own compiled convex halfspaces; records representational inward error, not millimetre-scale physical interference or full-union surface coverage.",
+  "threshold_m_unchanged": 1e-10,
+  "parts": [
+    {
+      "geom": "robot0_wrist_reuse_link5_000",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 2.799959639143701e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_001",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 2.9345244151324223e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_002",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.043645038445451e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_003",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.028556247117951e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_004",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 2.680238322949613e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_005",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 2.067577137276899e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_006",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 2.9291086361959984e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_007",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 2.0168213835103366e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_008",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.413693609350293e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_009",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.147572942180826e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_010",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 8.530537318196529e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_011",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.442189634334408e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_012",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.5258746904889264e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_013",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.3193632020236379e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_014",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.100374361073797e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_015",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 2.1652892118195766e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_016",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.0765710545257434e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_017",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.145448105415954e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_018",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.6782817982563536e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_019",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 3.2483521567039375e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_020",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.4235019274444483e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_021",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.75395953316837e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_022",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.7950658251497664e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_023",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.3965344367039556e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_024",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 3.193185341143767e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_025",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 2.666570478315755e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_026",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.15904112969157e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_027",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.8208824933974022e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_028",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 3.5312541640797335e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_029",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.3461409487103282e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_030",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 2.4557300637439994e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_031",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 2.278569846692058e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_032",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 3.629363684587439e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_033",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.5685946361254643e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_034",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.177792588410671e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_035",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.940436078437198e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_036",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.591445707854744e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_037",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.0771200840975492e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_038",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 8.674559230648082e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_039",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 2.2221686157841702e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_040",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 2.567998869107413e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_041",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.9294739278530315e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_042",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.4484419982863095e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_043",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 3.299202022688519e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_044",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.379400537495863e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_045",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.0571863662267589e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_046",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 2.034241233794809e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_047",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.277273830105341e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_048",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.2986870051578947e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_049",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.1189718318593833e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_050",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 8.035663003058691e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_051",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.81750500339551e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_052",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 8.80570061312369e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_053",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.995133988574871e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_054",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 2.892740769144808e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_055",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 2.277907015790781e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_056",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 6.816752926019909e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_057",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.3598265152792166e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_058",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 2.9227872483383877e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_059",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.566736039515515e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_060",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 3.0705395448471506e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_061",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 2.966923498548546e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_062",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 7.977645419265933e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_063",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.0700280661524175e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_064",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 2.779639046712745e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_065",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 8.931391251576493e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_066",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 2.8499765464262694e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_067",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 7.216909257701243e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_068",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.077791539302549e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_069",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 2.325497974742241e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_070",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 8.699438634740542e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_071",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 3.110400575989658e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_072",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 7.882711636209017e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_073",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.821371459162176e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_074",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.1955358647508518e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_075",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 8.74145870272125e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_076",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 6.460193803514702e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_077",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 8.494692275984317e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_078",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.791432658465597e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_079",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.8696438008891647e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_080",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.5187678961692264e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_081",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 7.188476203179306e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_082",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.4199529330127802e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_083",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 2.464379741939915e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_084",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.7235568805507029e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_085",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 4.782944630632446e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_086",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.3748407828861886e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_087",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 3.973620724129212e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_088",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.2457529868781236e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_089",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 3.62368698936244e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_090",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 7.72280010774562e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_091",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 8.800111264695154e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_092",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.2784774454377423e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_093",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 7.003475872152665e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_094",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 8.052948551051653e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_095",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 7.588891841325829e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_096",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 3.3928074516520468e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_097",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 2.6651453821635585e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_098",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.0136810071892377e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_099",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 7.558757855741227e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_100",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 2.8394487733285345e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_101",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.2275495550606585e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_102",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 2.620329134228605e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_103",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.554507571277508e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_104",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.0546897036278757e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_105",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 2.9606538609616706e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_106",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.6598207808193877e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_107",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.3529852412041965e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_108",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 7.215242292524238e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_109",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 5.1747361673459835e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_110",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 6.818493464288977e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_111",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 6.973786464969933e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_112",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 5.717354478740333e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_113",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 4.863214150829798e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_114",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 7.1425989012219304e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_115",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.217018315244019e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_116",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.096234127037306e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_117",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 6.762739368504356e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_118",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.614754603592957e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_119",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 8.562264647293816e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_120",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 3.238938936500624e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_121",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 3.6505521661123197e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_122",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 3.0941891132618693e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_123",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 3.1627240132392487e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_124",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 3.591724029305965e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_125",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 3.826020028574462e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_126",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 3.1695331914605163e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_127",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 3.2190748400218183e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_128",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 3.6118196350409804e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_129",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 3.3944164562482726e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_130",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 3.2005889744057825e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_131",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 3.6719017409980736e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_132",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.8803701443137477e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_133",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.7119074387228483e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_134",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 2.374378475084038e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_135",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.5087634839400232e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_136",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 2.267566422825551e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_137",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.6997935541746e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_138",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.4300184023041673e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_139",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.2831745522224565e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_140",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 2.483427824495621e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_141",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.4473411306253903e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_142",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 2.3693500633692466e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_143",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.5954418619568145e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_144",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 4.770211919913336e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_145",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 7.398648305123601e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_link5_146",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 7.828315440328026e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_000",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.1144914435767816e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_001",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.5424770696825796e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_002",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 8.975517065690219e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_003",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.9735536607723425e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_004",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.9280877033844845e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_005",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.746937285060042e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_006",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.46532214834183e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_007",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.7522357419197387e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_008",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.823105791332047e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_009",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.563529482226052e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_010",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.3623596140099892e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_011",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.0229172855980018e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_012",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 8.985834992758512e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_013",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.1971144214806273e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_014",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 8.699771424092173e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_015",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 7.937863352736052e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_016",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.5061760588741535e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_017",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.360300416705325e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_018",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.2015740416537746e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_019",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.0044640154360795e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_020",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.220771438056552e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_021",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 8.876832810478241e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_022",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.3457778294534428e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_023",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.552457089223587e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_024",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.564711314635765e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_025",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.301136007222599e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_026",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.563473936380351e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_027",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.870305510417676e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_028",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 8.746657668978752e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_029",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.3620100672295798e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_030",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 8.089173740566391e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_031",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.206328997757307e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_032",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 8.685684393938686e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_033",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.5212803169961653e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_034",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.003078352276539e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_035",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.0586791478195412e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_036",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.659736986736604e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_037",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 7.875451644989706e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_038",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 7.322476444637793e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_039",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.1201063965238234e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_040",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 7.627044031066621e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_041",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.4567867120951483e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_042",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.3479905941471415e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_043",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 8.788507976920101e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_044",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.966490445434406e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_045",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 2.0913773074449082e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_046",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.0266824092275417e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_047",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.525021345316624e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_048",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 8.94312707222511e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_049",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.2860995046715118e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_050",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 8.568561173094569e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_051",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.7631536994300312e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_052",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.644732836036944e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_053",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 7.40765025708523e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_054",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 7.568781018596482e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_055",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.3125334287315826e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_056",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 6.059577908890112e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_057",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.6752978379552808e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_058",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.7563741121218168e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_059",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 6.646746382454882e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_060",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 7.243304255000194e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_061",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.068878079054876e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_062",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 8.597380793395892e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_063",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 2.233112618432731e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_064",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.505649739560695e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_065",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.201326887919858e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_066",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.1731814304749566e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_067",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.0364441301730087e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_068",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.0090514673821716e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_069",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.229441724767362e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_070",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.7782579922465125e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_071",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 8.537888833426432e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_072",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.015930588912591e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_073",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.268917022797751e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_074",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.132478245854614e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_075",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.8527269718404682e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_076",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.98076548491822e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_077",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.1824868063892158e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_078",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 8.529695873227272e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_079",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.6804424587957278e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_080",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.0484403310806467e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_081",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.6075865014175683e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_082",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.5356640785391118e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_083",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 8.316909522187999e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_084",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.277270202057153e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_085",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.089935158745899e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_086",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.973289403406353e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_087",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.0831859263704668e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_088",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.6915525438698786e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_089",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.8123410203130241e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_090",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.023482312789703e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_091",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.828997078789918e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_092",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.434675679598215e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_093",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 8.394260286870292e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_094",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 8.750423094450177e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_095",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 8.342292273644247e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_096",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 8.673970031819467e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_097",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 7.360253587163079e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_098",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 7.938188717471206e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_099",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.0401857084008093e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_100",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.679697945963461e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_101",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.330000140528316e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_102",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.0705419259404714e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_103",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.0502645038379388e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_104",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 8.73752899893665e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_105",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 7.785870871634959e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_106",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.157861254791337e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_107",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 7.721144661132495e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_108",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.1515711960397024e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_109",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 8.264651601974649e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_110",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.2398921663686613e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_111",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 8.994067088319291e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_112",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.0523211989299508e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_113",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 8.843782303702419e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_114",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.0304776615344124e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_115",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.0314037714176383e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_116",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.226850603005765e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_117",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 7.359500821257914e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_118",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 7.070477814341558e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_119",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 8.696335734859062e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_120",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 8.469417285550396e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_121",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 4.028205199957391e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_122",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.0082469893701873e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_123",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.005392890468526e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_124",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.624393400298192e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_125",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.181930875346023e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_126",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.083176467916676e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_127",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 8.466823631092524e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_128",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 8.337270110403416e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_129",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 6.471964839049882e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_130",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 7.898399052852501e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_131",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 7.197403181259665e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_132",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.0469434451321202e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_133",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 4.3334060124966545e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_134",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.040272072602384e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_135",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.709550975733894e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_136",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 7.018203743852647e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_137",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 8.323633587936641e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_138",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 5.131456336238127e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_139",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.561205993602329e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_140",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.9275160009768477e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_141",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.576325878113412e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_142",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.818658144220331e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_143",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.2841874057201164e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_144",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 7.340295890558658e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_145",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 6.923994468055472e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_146",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 8.755945447858071e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_147",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.889061548806755e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_148",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 8.685232613453549e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_149",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 8.427351663731208e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_150",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.881536353062437e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_151",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 1.1033316102764286e-09,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_152",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 8.546542397402934e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_153",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 8.997067049709706e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_154",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 8.774579499408117e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_155",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 8.44007936456892e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_156",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.600884184890468e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_157",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 9.444009393955177e-10,
+      "exceeds_unchanged_1e_10m": true
+    },
+    {
+      "geom": "robot0_wrist_reuse_gripper_flange_158",
+      "maximum_raw_vertex_outside_own_compiled_hull_m": 8.132733826660132e-10,
+      "exceeds_unchanged_1e_10m": true
+    }
+  ],
+  "maximum_m": 9.614754603592957e-09,
+  "parts_exceeding_threshold": 306,
+  "old_compiled_coverage_FAIL": "Preserved unchanged; not reclassified by this diagnostic.",
+  "continuous_full_source_coverage": "UNKNOWN: no new full-source coverage acceptance or approximation exception is authorized."
+}

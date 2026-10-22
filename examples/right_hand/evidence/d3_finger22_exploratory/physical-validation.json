@@ -1,0 +1,15 @@
+{
+  "steps_independently_recomputed": 4769,
+  "failures_recomputed": [
+    {
+      "step": 4769,
+      "reasons": [
+        "ROBOT_CONTACT_OVERLAP"
+      ]
+    }
+  ],
+  "support_gaps_after_settle_steps": [],
+  "tracking_mimic_limits_overlap_finite_clock_wrist_envelope_and_support_exact": true,
+  "new_physics_Reset_FK_collision_calls": 0,
+  "forbidden_API_attempts": {}
+}

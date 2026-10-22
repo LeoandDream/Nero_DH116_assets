@@ -1,0 +1,11 @@
+test_only_finger12_changes_and_saved_plan_is_not_mutated (test_thumb_coordination.CoordinationPlanTests.test_only_finger12_changes_and_saved_plan_is_not_mutated) ... /data_robot/verification/nero_dh116_right/.reference-env/lib/python3.11/site-packages/OpenGL/platform/egl.py:76: ResourceWarning: unclosed file <_io.TextIOWrapper name='/proc/cpuinfo' mode='r' encoding='UTF-8'>
+  info = open('/proc/cpuinfo').read()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_rejects_a_changed_schedule_before_any_physics (test_thumb_coordination.CoordinationPlanTests.test_rejects_a_changed_schedule_before_any_physics) ... ok
+test_rejects_wrong_length_or_another_active_channel (test_thumb_coordination.CoordinationPlanTests.test_rejects_wrong_length_or_another_active_channel) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.466s
+
+OK

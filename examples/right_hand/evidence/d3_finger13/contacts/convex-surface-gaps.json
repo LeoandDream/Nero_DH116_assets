@@ -1,0 +1,436 @@
+{
+  "schema": "finger13-6451-continuous-convex-surfaces-v1",
+  "physics_steps": 0,
+  "mujoco_imports": 0,
+  "mujoco_api_calls": 0,
+  "method": "Actual raw collision meshes, independent per-part ConvexHull; cached exact verified body FK; existing complete continuous triangle BVH query, 1e-12 m absolute pruning bound.",
+  "input_sha256_before": {
+    "meshes/dh116/gripper0_finger42_link-15a9090c.stl": "15a9090c995e1f29ab0bb4b0a4ede7a4f60f1d0e0bf809c3ada86c53d0b66bed",
+    "examples/right_hand/candidates/finger13_local/meshes/negative_wing.obj": "a4621dd53571679a9056c58762e80602d03131c098daa0a3716349b651efa838",
+    "examples/right_hand/candidates/finger13_local/meshes/positive_wing.obj": "6831b4df4dbdeae09f66d11dfa14a9af06c9a7b13e4af91f42f4b0163b7e58c4",
+    "examples/right_hand/proxy76_validate.py": "aa9224ee4daf5f8d9355a40ab8b26f878d50ddd82ca0808d6e9d52855fc6948c",
+    "examples/right_hand/evidence/d3_geometry/triangle/surface_geometry.py": "21b91daa9ccfc7ddedc91ca4a95eb3f2f1b72b720a5619b2bb59144f39de71de",
+    "runs/d3_finger13/convex_surface_check.py": "89ea285a53dada00a4da5a28c34495c5a7d4aa6c2c4f45ec968fa99a32918c73",
+    "examples/right_hand/candidates/finger13_local/model.xml": "b27f4f86fbaeacd2bb925463f39f67181ef7db12963c4d9f7fc01797a7924d1b",
+    "examples/right_hand/candidates/finger13_local/meshes/central.obj": "8c20a825d74245599088b8c5d3a0130297883847185e2336850dd0157019db97",
+    "meshes/dh116/gripper0_finger13_link-f34ca4cb.stl": "f34ca4cbc816d42643c532cf102b1583e1d8d39e156072f65f4bfa1e55fae7a5",
+    "examples/right_hand/candidates/proxy76/model.xml": "56949ed130a54b1d8b5fbd76e51b1262b45b7346e29130e42e8db156dd7d15d6",
+    "runs/d3_finger13/contacts/contacts.json": "7b70546afefe3021f97c0d9928c4d315edf1ed8593fb6a453686b2af49e20c34"
+  },
+  "input_sha256_after": {
+    "meshes/dh116/gripper0_finger42_link-15a9090c.stl": "15a9090c995e1f29ab0bb4b0a4ede7a4f60f1d0e0bf809c3ada86c53d0b66bed",
+    "examples/right_hand/candidates/finger13_local/meshes/negative_wing.obj": "a4621dd53571679a9056c58762e80602d03131c098daa0a3716349b651efa838",
+    "examples/right_hand/candidates/finger13_local/meshes/positive_wing.obj": "6831b4df4dbdeae09f66d11dfa14a9af06c9a7b13e4af91f42f4b0163b7e58c4",
+    "examples/right_hand/proxy76_validate.py": "aa9224ee4daf5f8d9355a40ab8b26f878d50ddd82ca0808d6e9d52855fc6948c",
+    "examples/right_hand/evidence/d3_geometry/triangle/surface_geometry.py": "21b91daa9ccfc7ddedc91ca4a95eb3f2f1b72b720a5619b2bb59144f39de71de",
+    "runs/d3_finger13/convex_surface_check.py": "89ea285a53dada00a4da5a28c34495c5a7d4aa6c2c4f45ec968fa99a32918c73",
+    "examples/right_hand/candidates/finger13_local/model.xml": "b27f4f86fbaeacd2bb925463f39f67181ef7db12963c4d9f7fc01797a7924d1b",
+    "examples/right_hand/candidates/finger13_local/meshes/central.obj": "8c20a825d74245599088b8c5d3a0130297883847185e2336850dd0157019db97",
+    "meshes/dh116/gripper0_finger13_link-f34ca4cb.stl": "f34ca4cbc816d42643c532cf102b1583e1d8d39e156072f65f4bfa1e55fae7a5",
+    "examples/right_hand/candidates/proxy76/model.xml": "56949ed130a54b1d8b5fbd76e51b1262b45b7346e29130e42e8db156dd7d15d6",
+    "runs/d3_finger13/contacts/contacts.json": "7b70546afefe3021f97c0d9928c4d315edf1ed8593fb6a453686b2af49e20c34"
+  },
+  "inputs_unchanged": true,
+  "results": [
+    {
+      "pose_id": "two_exclusion17_step_6451_pre",
+      "models": {
+        "proxy76": [
+          {
+            "geoms": [
+              "gripper0_proxy76_finger13_link_00",
+              "gripper0_proxy76_finger42_link_00"
+            ],
+            "certificate_body13_m": {
+              "surface_min_distance_m": 0.0,
+              "surface_intersection": true,
+              "strict_transverse_witness": {
+                "edge_from_triangle": 0,
+                "edge_vertices": [
+                  0,
+                  1
+                ],
+                "edge_parameter": 0.7122281125594598,
+                "other_triangle_barycentric": [
+                  0.865564059781676,
+                  0.06844701440686325,
+                  0.06598892581146061
+                ],
+                "edge_endpoint_signed_plane_distances_m": [
+                  -0.00025482600631005154,
+                  0.00010296105912086764
+                ],
+                "point": [
+                  -0.0029486830129336755,
+                  -0.0062751433803841464,
+                  0.00014140959060050633
+                ],
+                "strict_transverse_crossing": true,
+                "face_ids_zero_based": [
+                  352,
+                  2309
+                ],
+                "triangle_a": [
+                  [
+                    0.0006271442398428917,
+                    -0.009431091137230396,
+                    0.005347793456166983
+                  ],
+                  [
+                    -0.004393476527184248,
+                    -0.004999999888241291,
+                    -0.001962201436981559
+                  ],
+                  [
+                    -0.003715202445164323,
+                    -0.004999999888241291,
+                    -0.0028800074942409992
+                  ]
+                ],
+                "triangle_b": [
+                  [
+                    -0.0032597943058801544,
+                    -0.006334150573007066,
+                    0.0011436798022846327
+                  ],
+                  [
+                    -0.0009750929177331832,
+                    -0.005976708576171646,
+                    -0.005858607428961656
+                  ],
+                  [
+                    -0.0009150023242878464,
+                    -0.005810708878947721,
+                    -0.006781658430682739
+                  ]
+                ]
+              },
+              "nearest_face_ids_zero_based": [
+                352,
+                2309
+              ],
+              "closest_points": [
+                [
+                  -0.0029486830129336755,
+                  -0.0062751433803841464,
+                  0.00014140959060050633
+                ],
+                [
+                  -0.0029486830129336755,
+                  -0.0062751433803841464,
+                  0.00014140959060050633
+                ]
+              ],
+              "visited_node_pairs": 512,
+              "leaf_pairs": 145,
+              "triangle_pairs_evaluated": 4110,
+              "all_surface_search_complete": false,
+              "global_zero_certified_by_intersection": true
+            }
+          }
+        ],
+        "finger13_repair": [
+          {
+            "geoms": [
+              "gripper0_finger13_local_00",
+              "gripper0_proxy76_finger42_link_00"
+            ],
+            "certificate_body13_m": {
+              "surface_min_distance_m": 0.0008957008356326033,
+              "surface_intersection": false,
+              "strict_transverse_witness": null,
+              "nearest_face_ids_zero_based": [
+                625,
+                1329
+              ],
+              "closest_points": [
+                [
+                  -0.001650193938985467,
+                  -0.008283829316496849,
+                  0.005877254996448755
+                ],
+                [
+                  -0.00219198314675266,
+                  -0.008900150798800794,
+                  0.005518239297974984
+                ]
+              ],
+              "visited_node_pairs": 2019,
+              "leaf_pairs": 638,
+              "triangle_pairs_evaluated": 20662,
+              "all_surface_search_complete": true,
+              "global_zero_certified_by_intersection": false,
+              "numerical_absolute_bound_tolerance_m": 1e-12
+            }
+          },
+          {
+            "geoms": [
+              "gripper0_finger13_local_01",
+              "gripper0_proxy76_finger42_link_00"
+            ],
+            "certificate_body13_m": {
+              "surface_min_distance_m": 0.00017709367379677255,
+              "surface_intersection": false,
+              "strict_transverse_witness": null,
+              "nearest_face_ids_zero_based": [
+                1197,
+                3639
+              ],
+              "closest_points": [
+                [
+                  -0.004393476527184248,
+                  -0.004999999888241291,
+                  -0.001962201436981559
+                ],
+                [
+                  -0.004454722142455744,
+                  -0.005162313574646541,
+                  -0.0019977740544617458
+                ]
+              ],
+              "visited_node_pairs": 443,
+              "leaf_pairs": 101,
+              "triangle_pairs_evaluated": 2694,
+              "all_surface_search_complete": true,
+              "global_zero_certified_by_intersection": false,
+              "numerical_absolute_bound_tolerance_m": 1e-12
+            }
+          },
+          {
+            "geoms": [
+              "gripper0_finger13_local_02",
+              "gripper0_proxy76_finger42_link_00"
+            ],
+            "certificate_body13_m": {
+              "surface_min_distance_m": 0.011845513053690913,
+              "surface_intersection": false,
+              "strict_transverse_witness": null,
+              "nearest_face_ids_zero_based": [
+                1537,
+                760
+              ],
+              "closest_points": [
+                [
+                  -0.0033155592001329125,
+                  0.004999999888241291,
+                  0.005883430874428056
+                ],
+                [
+                  -0.005058674916134357,
+                  -0.00617721226867276,
+                  0.0023695077811997237
+                ]
+              ],
+              "visited_node_pairs": 3284,
+              "leaf_pairs": 1217,
+              "triangle_pairs_evaluated": 39471,
+              "all_surface_search_complete": true,
+              "global_zero_certified_by_intersection": false,
+              "numerical_absolute_bound_tolerance_m": 1e-12
+            }
+          }
+        ]
+      }
+    },
+    {
+      "pose_id": "two_exclusion17_step_6451_post",
+      "models": {
+        "proxy76": [
+          {
+            "geoms": [
+              "gripper0_proxy76_finger13_link_00",
+              "gripper0_proxy76_finger42_link_00"
+            ],
+            "certificate_body13_m": {
+              "surface_min_distance_m": 0.0,
+              "surface_intersection": true,
+              "strict_transverse_witness": {
+                "edge_from_triangle": 1,
+                "edge_vertices": [
+                  0,
+                  1
+                ],
+                "edge_parameter": 0.006202431404308587,
+                "other_triangle_barycentric": [
+                  0.3207348243980662,
+                  0.07663310581679492,
+                  0.6026320697851388
+                ],
+                "edge_endpoint_signed_plane_distances_m": [
+                  2.677959773602148e-06,
+                  -0.00042908171623698204
+                ],
+                "point": [
+                  -0.003271362770582485,
+                  -0.006361114754935893,
+                  0.0009928513077648098
+                ],
+                "strict_transverse_crossing": true,
+                "face_ids_zero_based": [
+                  351,
+                  2309
+                ],
+                "triangle_a": [
+                  [
+                    9.102628973778337e-05,
+                    -0.00924373883754015,
+                    0.005523288622498512
+                  ],
+                  [
+                    -0.004393476527184248,
+                    -0.004999999888241291,
+                    -0.001962201436981559
+                  ],
+                  [
+                    -0.004918212071061134,
+                    -0.004999999888241291,
+                    -0.0010425766231492162
+                  ]
+                ],
+                "triangle_b": [
+                  [
+                    -0.0032854209707093972,
+                    -0.006363256710156428,
+                    0.001036322823540048
+                  ],
+                  [
+                    -0.0010188581970934484,
+                    -0.006017915491380938,
+                    -0.005972463399398276
+                  ],
+                  [
+                    -0.0009611922327288861,
+                    -0.005853579729700107,
+                    -0.006895966688327999
+                  ]
+                ]
+              },
+              "nearest_face_ids_zero_based": [
+                351,
+                2309
+              ],
+              "closest_points": [
+                [
+                  -0.003271362770582485,
+                  -0.006361114754935893,
+                  0.0009928513077648098
+                ],
+                [
+                  -0.003271362770582485,
+                  -0.006361114754935893,
+                  0.0009928513077648098
+                ]
+              ],
+              "visited_node_pairs": 515,
+              "leaf_pairs": 145,
+              "triangle_pairs_evaluated": 4104,
+              "all_surface_search_complete": false,
+              "global_zero_certified_by_intersection": true
+            }
+          }
+        ],
+        "finger13_repair": [
+          {
+            "geoms": [
+              "gripper0_finger13_local_00",
+              "gripper0_proxy76_finger42_link_00"
+            ],
+            "certificate_body13_m": {
+              "surface_min_distance_m": 0.0009602764099770938,
+              "surface_intersection": false,
+              "strict_transverse_witness": null,
+              "nearest_face_ids_zero_based": [
+                625,
+                1329
+              ],
+              "closest_points": [
+                [
+                  -0.001650193938985467,
+                  -0.008283829316496849,
+                  0.005877254996448755
+                ],
+                [
+                  -0.002231841341030623,
+                  -0.008945449501708785,
+                  0.0054950563389776184
+                ]
+              ],
+              "visited_node_pairs": 2099,
+              "leaf_pairs": 665,
+              "triangle_pairs_evaluated": 21616,
+              "all_surface_search_complete": true,
+              "global_zero_certified_by_intersection": false,
+              "numerical_absolute_bound_tolerance_m": 1e-12
+            }
+          },
+          {
+            "geoms": [
+              "gripper0_finger13_local_01",
+              "gripper0_proxy76_finger42_link_00"
+            ],
+            "certificate_body13_m": {
+              "surface_min_distance_m": 0.0002422261336995006,
+              "surface_intersection": false,
+              "strict_transverse_witness": null,
+              "nearest_face_ids_zero_based": [
+                1197,
+                3639
+              ],
+              "closest_points": [
+                [
+                  -0.004393476527184248,
+                  -0.004999999888241291,
+                  -0.001962201436981559
+                ],
+                [
+                  -0.004477308160068617,
+                  -0.00522212222453709,
+                  -0.00201023709970671
+                ]
+              ],
+              "visited_node_pairs": 465,
+              "leaf_pairs": 108,
+              "triangle_pairs_evaluated": 2883,
+              "all_surface_search_complete": true,
+              "global_zero_certified_by_intersection": false,
+              "numerical_absolute_bound_tolerance_m": 1e-12
+            }
+          },
+          {
+            "geoms": [
+              "gripper0_finger13_local_02",
+              "gripper0_proxy76_finger42_link_00"
+            ],
+            "certificate_body13_m": {
+              "surface_min_distance_m": 0.011904939039148707,
+              "surface_intersection": false,
+              "strict_transverse_witness": null,
+              "nearest_face_ids_zero_based": [
+                1537,
+                760
+              ],
+              "closest_points": [
+                [
+                  -0.0033713988390035713,
+                  0.004999999888241291,
+                  0.005911130670214385
+                ],
+                [
+                  -0.005109463645822812,
+                  -0.006244132048711729,
+                  0.002407389635614873
+                ]
+              ],
+              "visited_node_pairs": 3292,
+              "leaf_pairs": 1215,
+              "triangle_pairs_evaluated": 39423,
+              "all_surface_search_complete": true,
+              "global_zero_certified_by_intersection": false,
+              "numerical_absolute_bound_tolerance_m": 1e-12
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

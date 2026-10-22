@@ -1,0 +1,799 @@
+{
+  "schema": "d3-link5-flange-static-geometry-summary-v1",
+  "full_result_file": "geometry-results.json.gz",
+  "full_result_uncompressed_sha256": "a2c996c68f8c3ffc677123b4cd010ad7d556c6d80939870a9faee3d4bc920db0",
+  "script_sha256": "860099e2d2e99290044141db98c884bb1ef36eaa3eff3714bb78d76947e7f64d",
+  "result_input_sha256_before_after_match": true,
+  "current_input_sha256_match": true,
+  "verification": "All six rows verified; five cached actual graph face crossings and strict interior LP witnesses; graph-face oriented halfspace margins independently rechecked using long-double coordinates; both source full-surface BVH gaps positive. No solid containment conclusion.",
+  "pair": [
+    "robot0_candidate_nero_link5_4",
+    "robot0_source_flange_part_2"
+  ],
+  "call_audit": {
+    "allowed_apis": [
+      "mj_id2name",
+      "mj_kinematics",
+      "mj_name2id"
+    ],
+    "allowed_api_calls": {
+      "mj_name2id": 4,
+      "mj_kinematics": 6
+    },
+    "forbidden_api_attempts": [],
+    "physics_steps": 0,
+    "constraint_solves": 0,
+    "resets": 0,
+    "forward_calls": 0,
+    "collision_calls": 0,
+    "model_constructor_calls": 1,
+    "data_constructor_calls": 6,
+    "model_public_fields_unchanged": true,
+    "protected_state_buffers_unchanged_after_FK": true,
+    "candidate_nq": 18,
+    "full_frozen_qpos_length": 33,
+    "qpos_binding": "First 18 frozen coordinates in unchanged candidate robot joint order; remaining scene/object coordinates are not used."
+  },
+  "actual_proxy_graph_topology": [
+    {
+      "faces": 388,
+      "exact_weld_vertices": 196,
+      "undirected_edges": 582,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "two_face_orientation_conflicts": 0,
+      "zero_area_faces": 0,
+      "min_double_area_m2": 3.826657832052202e-09,
+      "duplicate_faces_extra": 0,
+      "vertex_connected_components": 1,
+      "component_vertex_counts": [
+        196
+      ],
+      "edge_watertight_exact_float32_weld": true,
+      "consistently_oriented_edges": true,
+      "note": "Topology uses exact original float32 coordinates; edge-water-tightness does not itself establish absence of self-intersections."
+    },
+    {
+      "faces": 1424,
+      "exact_weld_vertices": 714,
+      "undirected_edges": 2136,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "two_face_orientation_conflicts": 0,
+      "zero_area_faces": 0,
+      "min_double_area_m2": 1.1835903972084792e-09,
+      "duplicate_faces_extra": 0,
+      "vertex_connected_components": 1,
+      "component_vertex_counts": [
+        714
+      ],
+      "edge_watertight_exact_float32_weld": true,
+      "consistently_oriented_edges": true,
+      "note": "Topology uses exact original float32 coordinates; edge-water-tightness does not itself establish absence of self-intersections."
+    }
+  ],
+  "source_topology": {
+    "source_visual_obj": [
+      {
+        "faces": 36200,
+        "exact_weld_vertices": 17975,
+        "undirected_edges": 54324,
+        "boundary_edges": 173,
+        "nonmanifold_edges": 63,
+        "two_face_orientation_conflicts": 0,
+        "zero_area_faces": 0,
+        "min_double_area_m2": 2.9899868124259145e-11,
+        "duplicate_faces_extra": 0,
+        "vertex_connected_components": 6,
+        "component_vertex_counts": [
+          9563,
+          1955,
+          1356,
+          1852,
+          1275,
+          1974
+        ],
+        "edge_watertight_exact_float32_weld": false,
+        "consistently_oriented_edges": false,
+        "note": "Exact-coordinate welding of the supplied parsed mesh; closed consistently oriented edges do not prove an embedded solid."
+      },
+      {
+        "faces": 13302,
+        "exact_weld_vertices": 6621,
+        "undirected_edges": 19953,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "two_face_orientation_conflicts": 0,
+        "zero_area_faces": 0,
+        "min_double_area_m2": 1.3736008321164808e-09,
+        "duplicate_faces_extra": 0,
+        "vertex_connected_components": 3,
+        "component_vertex_counts": [
+          2607,
+          2418,
+          1596
+        ],
+        "edge_watertight_exact_float32_weld": true,
+        "consistently_oriented_edges": true,
+        "note": "Exact-coordinate welding of the supplied parsed mesh; closed consistently oriented edges do not prove an embedded solid."
+      }
+    ],
+    "proxy_raw_mesh": [
+      {
+        "faces": 388,
+        "exact_weld_vertices": 196,
+        "undirected_edges": 582,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "two_face_orientation_conflicts": 0,
+        "zero_area_faces": 0,
+        "min_double_area_m2": 3.826453635091277e-09,
+        "duplicate_faces_extra": 0,
+        "vertex_connected_components": 1,
+        "component_vertex_counts": [
+          196
+        ],
+        "edge_watertight_exact_float32_weld": true,
+        "consistently_oriented_edges": true,
+        "note": "Exact-coordinate welding of the supplied parsed mesh; closed consistently oriented edges do not prove an embedded solid."
+      },
+      {
+        "faces": 1424,
+        "exact_weld_vertices": 714,
+        "undirected_edges": 2136,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "two_face_orientation_conflicts": 0,
+        "zero_area_faces": 0,
+        "min_double_area_m2": 1.1833983956327506e-09,
+        "duplicate_faces_extra": 0,
+        "vertex_connected_components": 1,
+        "component_vertex_counts": [
+          714
+        ],
+        "edge_watertight_exact_float32_weld": true,
+        "consistently_oriented_edges": true,
+        "note": "Exact-coordinate welding of the supplied parsed mesh; closed consistently oriented edges do not prove an embedded solid."
+      }
+    ],
+    "source_urdf_stl": [
+      {
+        "faces": 36200,
+        "exact_weld_vertices": 18027,
+        "undirected_edges": 54354,
+        "boundary_edges": 108,
+        "nonmanifold_edges": 0,
+        "two_face_orientation_conflicts": 0,
+        "zero_area_faces": 0,
+        "min_double_area_m2": 2.9998114652600315e-11,
+        "duplicate_faces_extra": 0,
+        "vertex_connected_components": 7,
+        "component_vertex_counts": [
+          4743,
+          1955,
+          1374,
+          1852,
+          1275,
+          1979,
+          4849
+        ],
+        "edge_watertight_exact_float32_weld": false,
+        "consistently_oriented_edges": false,
+        "note": "Exact-coordinate welding of the supplied parsed mesh; closed consistently oriented edges do not prove an embedded solid."
+      },
+      {
+        "faces": 13302,
+        "exact_weld_vertices": 6621,
+        "undirected_edges": 19953,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "two_face_orientation_conflicts": 0,
+        "zero_area_faces": 0,
+        "min_double_area_m2": 1.3734092252524562e-09,
+        "duplicate_faces_extra": 0,
+        "vertex_connected_components": 3,
+        "component_vertex_counts": [
+          2607,
+          2418,
+          1596
+        ],
+        "edge_watertight_exact_float32_weld": true,
+        "consistently_oriented_edges": true,
+        "note": "Exact-coordinate welding of the supplied parsed mesh; closed consistently oriented edges do not prove an embedded solid."
+      }
+    ]
+  },
+  "rows": [
+    {
+      "step": 1314,
+      "primary_pose": "post_qpos_static_FK_pose",
+      "cached_pose_available": false,
+      "saved_contact_distance_mm": null,
+      "classification": "SOURCE_AND_PROXY_SURFACES_SEPARATED",
+      "source_visual_surface_gap_mm": 3.2733910120121723,
+      "source_stl_surface_gap_mm": 3.273350381710752,
+      "source_visual_nearest_face_ids": [
+        3318,
+        6464
+      ],
+      "source_stl_nearest_face_ids": [
+        3278,
+        6464
+      ],
+      "actual_graph_proxy_surface_gap_mm": 0.0038959627347368783,
+      "actual_graph_proxy_strict_surface_crossing": false,
+      "actual_proxy_strict_interior_overlap": false,
+      "proxy_common_ball_lp_radius_mm": -0.0019415733598198215,
+      "proxy_strict_inner_ball_radius_mm": 0.0,
+      "proxy_dual_upper_bound_mm": -0.001941573359820481,
+      "proxy_lp_primal_dual_gap_mm": -6.594117613056838e-16,
+      "actual_graph_face_witness_recheck": {
+        "robot0_link5": {
+          "actual_graph_min_center_face_margin_mm": -0.001949896829918652,
+          "worst_graph_face_zero_based": 320,
+          "actual_graph_min_witness_ball_face_clearance_mm": -0.001949896829918652
+        },
+        "robot0_gripper_flange": {
+          "actual_graph_min_center_face_margin_mm": -0.001941573359818211,
+          "worst_graph_face_zero_based": 44,
+          "actual_graph_min_witness_ball_face_clearance_mm": -0.001941573359818211
+        }
+      },
+      "source_point_checks": {
+        "proxy_common_ball_center": {
+          "source_visual_obj": {
+            "robot0_link5": {
+              "distance_to_full_source_surface_mm": 4.144781738129255,
+              "diagnostic_winding_number": 1.943240757077786e-08,
+              "nearest_source_face_zero_based": 3626
+            },
+            "robot0_gripper_flange": {
+              "distance_to_full_source_surface_mm": 4.965949072448802,
+              "diagnostic_winding_number": 3.092205940311753e-17,
+              "nearest_source_face_zero_based": 4063
+            }
+          },
+          "source_urdf_stl": {
+            "robot0_link5": {
+              "distance_to_full_source_surface_mm": 4.144722903808928,
+              "diagnostic_winding_number": -3.506996477166217e-10,
+              "nearest_source_face_zero_based": 4632
+            },
+            "robot0_gripper_flange": {
+              "distance_to_full_source_surface_mm": 4.965947389872729,
+              "diagnostic_winding_number": -2.4295903816735198e-17,
+              "nearest_source_face_zero_based": 4063
+            }
+          }
+        }
+      },
+      "post_FK_separate_visual_surface_gap_mm": 3.2733910120121723,
+      "post_FK_separate_proxy_lp_radius_mm": -0.0019415733598198215,
+      "cached_vs_post_transform_max_abs_difference": null,
+      "source_solid_containment": "UNKNOWN_SOURCE_LINK5_NOT_CLOSED_MANIFOLD"
+    },
+    {
+      "step": 1315,
+      "primary_pose": "cached_RK4_contact_pose",
+      "cached_pose_available": true,
+      "saved_contact_distance_mm": -0.0017074058854193656,
+      "classification": "PROXY_CONTACT_WITH_POSITIVE_SOURCE_VISUAL_SURFACE_CLEARANCE",
+      "source_visual_surface_gap_mm": 3.273804426264523,
+      "source_stl_surface_gap_mm": 3.273763798024306,
+      "source_visual_nearest_face_ids": [
+        3318,
+        6464
+      ],
+      "source_stl_nearest_face_ids": [
+        3278,
+        6464
+      ],
+      "actual_graph_proxy_surface_gap_mm": 0.0,
+      "actual_graph_proxy_strict_surface_crossing": true,
+      "actual_proxy_strict_interior_overlap": true,
+      "proxy_common_ball_lp_radius_mm": 0.0008508945717332738,
+      "proxy_strict_inner_ball_radius_mm": 0.0004254472858665968,
+      "proxy_dual_upper_bound_mm": 0.0008508945717335958,
+      "proxy_lp_primal_dual_gap_mm": 3.220080452281948e-16,
+      "actual_graph_face_witness_recheck": {
+        "robot0_link5": {
+          "actual_graph_min_center_face_margin_mm": 0.0008425693995748099,
+          "worst_graph_face_zero_based": 320,
+          "actual_graph_min_witness_ball_face_clearance_mm": 0.0004171221137082131
+        },
+        "robot0_gripper_flange": {
+          "actual_graph_min_center_face_margin_mm": 0.000850894571732394,
+          "worst_graph_face_zero_based": 44,
+          "actual_graph_min_witness_ball_face_clearance_mm": 0.0004254472858657972
+        }
+      },
+      "source_point_checks": {
+        "proxy_common_ball_center": {
+          "source_visual_obj": {
+            "robot0_link5": {
+              "distance_to_full_source_surface_mm": 4.144390692287491,
+              "diagnostic_winding_number": 1.9445318891149274e-08,
+              "nearest_source_face_zero_based": 3626
+            },
+            "robot0_gripper_flange": {
+              "distance_to_full_source_surface_mm": 4.963186513969468,
+              "diagnostic_winding_number": -4.638308910467629e-17,
+              "nearest_source_face_zero_based": 4063
+            }
+          },
+          "source_urdf_stl": {
+            "robot0_link5": {
+              "distance_to_full_source_surface_mm": 4.144331812438364,
+              "diagnostic_winding_number": -3.508009395483522e-10,
+              "nearest_source_face_zero_based": 3809
+            },
+            "robot0_gripper_flange": {
+              "distance_to_full_source_surface_mm": 4.9631848310801505,
+              "diagnostic_winding_number": -4.748744836907334e-17,
+              "nearest_source_face_zero_based": 0
+            }
+          }
+        },
+        "saved_contact_position": {
+          "source_visual_obj": {
+            "robot0_link5": {
+              "distance_to_full_source_surface_mm": 4.143819550374557,
+              "diagnostic_winding_number": 1.944258907407542e-08,
+              "nearest_source_face_zero_based": 3626
+            },
+            "robot0_gripper_flange": {
+              "distance_to_full_source_surface_mm": 4.963183354691598,
+              "diagnostic_winding_number": 6.073975954183799e-17,
+              "nearest_source_face_zero_based": 4063
+            }
+          },
+          "source_urdf_stl": {
+            "robot0_link5": {
+              "distance_to_full_source_surface_mm": 4.143760677220438,
+              "diagnostic_winding_number": -3.5079213559629644e-10,
+              "nearest_source_face_zero_based": 4632
+            },
+            "robot0_gripper_flange": {
+              "distance_to_full_source_surface_mm": 4.963181672274446,
+              "diagnostic_winding_number": 3.368295756411016e-17,
+              "nearest_source_face_zero_based": 4063
+            }
+          }
+        }
+      },
+      "post_FK_separate_visual_surface_gap_mm": 3.2738045575108976,
+      "post_FK_separate_proxy_lp_radius_mm": 0.0008510498563351121,
+      "cached_vs_post_transform_max_abs_difference": {
+        "robot0_link5": {
+          "rotation": 6.920485295935919e-09,
+          "translation_m": 5.23453280720787e-10
+        },
+        "robot0_gripper_flange": {
+          "rotation": 1.0381515980206757e-08,
+          "translation_m": 3.332893405705306e-10
+        }
+      },
+      "source_solid_containment": "UNKNOWN_SOURCE_LINK5_NOT_CLOSED_MANIFOLD"
+    },
+    {
+      "step": 1321,
+      "primary_pose": "cached_RK4_contact_pose",
+      "cached_pose_available": true,
+      "saved_contact_distance_mm": -0.01997959727413613,
+      "classification": "PROXY_CONTACT_WITH_POSITIVE_SOURCE_VISUAL_SURFACE_CLEARANCE",
+      "source_visual_surface_gap_mm": 3.2752289583834133,
+      "source_stl_surface_gap_mm": 3.2751883372019757,
+      "source_visual_nearest_face_ids": [
+        3318,
+        6464
+      ],
+      "source_stl_nearest_face_ids": [
+        3278,
+        6464
+      ],
+      "actual_graph_proxy_surface_gap_mm": 0.0,
+      "actual_graph_proxy_strict_surface_crossing": true,
+      "actual_proxy_strict_interior_overlap": true,
+      "proxy_common_ball_lp_radius_mm": 0.009956936229895623,
+      "proxy_strict_inner_ball_radius_mm": 0.004978468114947816,
+      "proxy_dual_upper_bound_mm": 0.009956936229895463,
+      "proxy_lp_primal_dual_gap_mm": -1.5959455978986625e-16,
+      "actual_graph_face_witness_recheck": {
+        "robot0_link5": {
+          "actual_graph_min_center_face_margin_mm": 0.009948605465234708,
+          "worst_graph_face_zero_based": 320,
+          "actual_graph_min_witness_ball_face_clearance_mm": 0.004970137350286892
+        },
+        "robot0_gripper_flange": {
+          "actual_graph_min_center_face_margin_mm": 0.009956936229896154,
+          "worst_graph_face_zero_based": 44,
+          "actual_graph_min_witness_ball_face_clearance_mm": 0.004978468114948338
+        }
+      },
+      "source_point_checks": {
+        "proxy_common_ball_center": {
+          "source_visual_obj": {
+            "robot0_link5": {
+              "distance_to_full_source_surface_mm": 4.143160186941035,
+              "diagnostic_winding_number": 1.9487761997463294e-08,
+              "nearest_source_face_zero_based": 3626
+            },
+            "robot0_gripper_flange": {
+              "distance_to_full_source_surface_mm": 4.954194270189561,
+              "diagnostic_winding_number": -7.454425034680117e-17,
+              "nearest_source_face_zero_based": 4063
+            }
+          },
+          "source_urdf_stl": {
+            "robot0_link5": {
+              "distance_to_full_source_surface_mm": 4.143101157887758,
+              "diagnostic_winding_number": -3.511325123738948e-10,
+              "nearest_source_face_zero_based": 4632
+            },
+            "robot0_gripper_flange": {
+              "distance_to_full_source_surface_mm": 4.954192586324441,
+              "diagnostic_winding_number": -4.5278729840279234e-17,
+              "nearest_source_face_zero_based": 4063
+            }
+          }
+        },
+        "saved_contact_position": {
+          "source_visual_obj": {
+            "robot0_link5": {
+              "distance_to_full_source_surface_mm": 4.136484436734762,
+              "diagnostic_winding_number": 1.9455766165129967e-08,
+              "nearest_source_face_zero_based": 3626
+            },
+            "robot0_gripper_flange": {
+              "distance_to_full_source_surface_mm": 4.954168366739106,
+              "diagnostic_winding_number": 1.380449080496318e-17,
+              "nearest_source_face_zero_based": 4063
+            }
+          },
+          "source_urdf_stl": {
+            "robot0_link5": {
+              "distance_to_full_source_surface_mm": 4.136425486043045,
+              "diagnostic_winding_number": -3.510303326373157e-10,
+              "nearest_source_face_zero_based": 4632
+            },
+            "robot0_gripper_flange": {
+              "distance_to_full_source_surface_mm": 4.954166688408094,
+              "diagnostic_winding_number": 5.2457065058860084e-17,
+              "nearest_source_face_zero_based": 0
+            }
+          }
+        }
+      },
+      "post_FK_separate_visual_surface_gap_mm": 3.2752281064021895,
+      "post_FK_separate_proxy_lp_radius_mm": 0.009954152511982343,
+      "cached_vs_post_transform_max_abs_difference": {
+        "robot0_link5": {
+          "rotation": 1.9032545983677096e-08,
+          "translation_m": 1.6058034901789142e-09
+        },
+        "robot0_gripper_flange": {
+          "rotation": 1.8256725026200016e-07,
+          "translation_m": 2.6110862361150566e-09
+        }
+      },
+      "source_solid_containment": "UNKNOWN_SOURCE_LINK5_NOT_CLOSED_MANIFOLD"
+    },
+    {
+      "step": 1326,
+      "primary_pose": "cached_RK4_contact_pose",
+      "cached_pose_available": true,
+      "saved_contact_distance_mm": -0.02283787263634836,
+      "classification": "PROXY_CONTACT_WITH_POSITIVE_SOURCE_VISUAL_SURFACE_CLEARANCE",
+      "source_visual_surface_gap_mm": 3.2759508236829453,
+      "source_stl_surface_gap_mm": 3.27591020584045,
+      "source_visual_nearest_face_ids": [
+        3318,
+        6464
+      ],
+      "source_stl_nearest_face_ids": [
+        3278,
+        6464
+      ],
+      "actual_graph_proxy_surface_gap_mm": 0.0,
+      "actual_graph_proxy_strict_surface_crossing": true,
+      "actual_proxy_strict_interior_overlap": true,
+      "proxy_common_ball_lp_radius_mm": 0.011381371813909393,
+      "proxy_strict_inner_ball_radius_mm": 0.005690685906954289,
+      "proxy_dual_upper_bound_mm": 0.011381371813909524,
+      "proxy_lp_primal_dual_gap_mm": 1.3183898417423734e-16,
+      "actual_graph_face_witness_recheck": {
+        "robot0_link5": {
+          "actual_graph_min_center_face_margin_mm": 0.011373039871366635,
+          "worst_graph_face_zero_based": 320,
+          "actual_graph_min_witness_ball_face_clearance_mm": 0.005682353964412346
+        },
+        "robot0_gripper_flange": {
+          "actual_graph_min_center_face_margin_mm": 0.011381371813909214,
+          "worst_graph_face_zero_based": 44,
+          "actual_graph_min_witness_ball_face_clearance_mm": 0.005690685906954925
+        }
+      },
+      "source_point_checks": {
+        "proxy_common_ball_center": {
+          "source_visual_obj": {
+            "robot0_link5": {
+              "distance_to_full_source_surface_mm": 4.143283598191978,
+              "diagnostic_winding_number": 1.949637674185502e-08,
+              "nearest_source_face_zero_based": 3626
+            },
+            "robot0_gripper_flange": {
+              "distance_to_full_source_surface_mm": 4.952890202946733,
+              "diagnostic_winding_number": -4.141347241488954e-17,
+              "nearest_source_face_zero_based": 4063
+            }
+          },
+          "source_urdf_stl": {
+            "robot0_link5": {
+              "distance_to_full_source_surface_mm": 4.143224540389112,
+              "diagnostic_winding_number": -3.5119390591412115e-10,
+              "nearest_source_face_zero_based": 4632
+            },
+            "robot0_gripper_flange": {
+              "distance_to_full_source_surface_mm": 4.952888519241359,
+              "diagnostic_winding_number": 1.7117568598154344e-17,
+              "nearest_source_face_zero_based": 4063
+            }
+          }
+        },
+        "saved_contact_position": {
+          "source_visual_obj": {
+            "robot0_link5": {
+              "distance_to_full_source_surface_mm": 4.135654024838612,
+              "diagnostic_winding_number": 1.9459790803684394e-08,
+              "nearest_source_face_zero_based": 3626
+            },
+            "robot0_gripper_flange": {
+              "distance_to_full_source_surface_mm": 4.9528623665696285,
+              "diagnostic_winding_number": 4.6935268736874815e-17,
+              "nearest_source_face_zero_based": 4063
+            }
+          },
+          "source_urdf_stl": {
+            "robot0_link5": {
+              "distance_to_full_source_surface_mm": 4.135595056610549,
+              "diagnostic_winding_number": -3.5107735625479375e-10,
+              "nearest_source_face_zero_based": 4632
+            },
+            "robot0_gripper_flange": {
+              "distance_to_full_source_surface_mm": 4.952860689191855,
+              "diagnostic_winding_number": -7.951386703658792e-17,
+              "nearest_source_face_zero_based": 4063
+            }
+          }
+        }
+      },
+      "post_FK_separate_visual_surface_gap_mm": 3.2759507078492045,
+      "post_FK_separate_proxy_lp_radius_mm": 0.011379981771447684,
+      "cached_vs_post_transform_max_abs_difference": {
+        "robot0_link5": {
+          "rotation": 3.232440426437222e-09,
+          "translation_m": 7.866856055471771e-10
+        },
+        "robot0_gripper_flange": {
+          "rotation": 1.1468721694551931e-07,
+          "translation_m": 9.825544822206211e-10
+        }
+      },
+      "source_solid_containment": "UNKNOWN_SOURCE_LINK5_NOT_CLOSED_MANIFOLD"
+    },
+    {
+      "step": 1400,
+      "primary_pose": "cached_RK4_contact_pose",
+      "cached_pose_available": true,
+      "saved_contact_distance_mm": -0.004026937553726616,
+      "classification": "PROXY_CONTACT_WITH_POSITIVE_SOURCE_VISUAL_SURFACE_CLEARANCE",
+      "source_visual_surface_gap_mm": 3.280515860201111,
+      "source_stl_surface_gap_mm": 3.280475262117497,
+      "source_visual_nearest_face_ids": [
+        3318,
+        6464
+      ],
+      "source_stl_nearest_face_ids": [
+        3278,
+        6464
+      ],
+      "actual_graph_proxy_surface_gap_mm": 0.0,
+      "actual_graph_proxy_strict_surface_crossing": true,
+      "actual_proxy_strict_interior_overlap": true,
+      "proxy_common_ball_lp_radius_mm": 0.0020068425993390137,
+      "proxy_strict_inner_ball_radius_mm": 0.0010034212996681722,
+      "proxy_dual_upper_bound_mm": 0.0020068425993382544,
+      "proxy_lp_primal_dual_gap_mm": -7.593752016088473e-16,
+      "actual_graph_face_witness_recheck": {
+        "robot0_link5": {
+          "actual_graph_min_center_face_margin_mm": 0.001998512738750717,
+          "worst_graph_face_zero_based": 320,
+          "actual_graph_min_witness_ball_face_clearance_mm": 0.0009950914390825447
+        },
+        "robot0_gripper_flange": {
+          "actual_graph_min_center_face_margin_mm": 0.0020068425993364785,
+          "worst_graph_face_zero_based": 43,
+          "actual_graph_min_witness_ball_face_clearance_mm": 0.0010034212996683062
+        }
+      },
+      "source_point_checks": {
+        "proxy_common_ball_center": {
+          "source_visual_obj": {
+            "robot0_link5": {
+              "distance_to_full_source_surface_mm": 4.148379935111888,
+              "diagnostic_winding_number": 1.9476459366310266e-08,
+              "nearest_source_face_zero_based": 3626
+            },
+            "robot0_gripper_flange": {
+              "distance_to_full_source_surface_mm": 4.963386318447052,
+              "diagnostic_winding_number": 1.0325759122112459e-16,
+              "nearest_source_face_zero_based": 4063
+            }
+          },
+          "source_urdf_stl": {
+            "robot0_link5": {
+              "distance_to_full_source_surface_mm": 4.148320965271136,
+              "diagnostic_winding_number": -3.50968373665146e-10,
+              "nearest_source_face_zero_based": 4632
+            },
+            "robot0_gripper_flange": {
+              "distance_to_full_source_surface_mm": 4.963384639527143,
+              "diagnostic_winding_number": 1.766974823035287e-17,
+              "nearest_source_face_zero_based": 4063
+            }
+          }
+        },
+        "saved_contact_position": {
+          "source_visual_obj": {
+            "robot0_link5": {
+              "distance_to_full_source_surface_mm": 4.147032740400778,
+              "diagnostic_winding_number": 1.947001160450202e-08,
+              "nearest_source_face_zero_based": 3626
+            },
+            "robot0_gripper_flange": {
+              "distance_to_full_source_surface_mm": 4.9633786754850995,
+              "diagnostic_winding_number": 1.1595772276169072e-17,
+              "nearest_source_face_zero_based": 0
+            }
+          },
+          "source_urdf_stl": {
+            "robot0_link5": {
+              "distance_to_full_source_surface_mm": 4.146973786349713,
+              "diagnostic_winding_number": -3.5094789000950996e-10,
+              "nearest_source_face_zero_based": 4632
+            },
+            "robot0_gripper_flange": {
+              "distance_to_full_source_surface_mm": 4.963376997679452,
+              "diagnostic_winding_number": 3.368295756411016e-17,
+              "nearest_source_face_zero_based": 4063
+            }
+          }
+        }
+      },
+      "post_FK_separate_visual_surface_gap_mm": 3.280515864757,
+      "post_FK_separate_proxy_lp_radius_mm": 0.0020068384619852594,
+      "cached_vs_post_transform_max_abs_difference": {
+        "robot0_link5": {
+          "rotation": 2.4147766009008365e-09,
+          "translation_m": 2.4162871703481414e-10
+        },
+        "robot0_gripper_flange": {
+          "rotation": 2.0360447772205248e-09,
+          "translation_m": 3.0678215523494146e-10
+        }
+      },
+      "source_solid_containment": "UNKNOWN_SOURCE_LINK5_NOT_CLOSED_MANIFOLD"
+    },
+    {
+      "step": 1401,
+      "primary_pose": "cached_RK4_contact_pose",
+      "cached_pose_available": true,
+      "saved_contact_distance_mm": -0.0040217034673423885,
+      "classification": "PROXY_CONTACT_WITH_POSITIVE_SOURCE_VISUAL_SURFACE_CLEARANCE",
+      "source_visual_surface_gap_mm": 3.280517382689066,
+      "source_stl_surface_gap_mm": 3.280476784612082,
+      "source_visual_nearest_face_ids": [
+        3318,
+        6464
+      ],
+      "source_stl_nearest_face_ids": [
+        3278,
+        6464
+      ],
+      "actual_graph_proxy_surface_gap_mm": 0.0,
+      "actual_graph_proxy_strict_surface_crossing": true,
+      "actual_proxy_strict_interior_overlap": true,
+      "proxy_common_ball_lp_radius_mm": 0.002004234168138472,
+      "proxy_strict_inner_ball_radius_mm": 0.0010021170840687566,
+      "proxy_dual_upper_bound_mm": 0.0020042341681385523,
+      "proxy_lp_primal_dual_gap_mm": 8.023096076392733e-17,
+      "actual_graph_face_witness_recheck": {
+        "robot0_link5": {
+          "actual_graph_min_center_face_margin_mm": 0.0019959043079771557,
+          "worst_graph_face_zero_based": 320,
+          "actual_graph_min_witness_ball_face_clearance_mm": 0.000993787223908399
+        },
+        "robot0_gripper_flange": {
+          "actual_graph_min_center_face_margin_mm": 0.0020042341681371176,
+          "worst_graph_face_zero_based": 43,
+          "actual_graph_min_witness_ball_face_clearance_mm": 0.001002117084068361
+        }
+      },
+      "source_point_checks": {
+        "proxy_common_ball_center": {
+          "source_visual_obj": {
+            "robot0_link5": {
+              "distance_to_full_source_surface_mm": 4.148381513355085,
+              "diagnostic_winding_number": 1.9476454878194218e-08,
+              "nearest_source_face_zero_based": 3626
+            },
+            "robot0_gripper_flange": {
+              "distance_to_full_source_surface_mm": 4.963389290901754,
+              "diagnostic_winding_number": 5.466578358765419e-17,
+              "nearest_source_face_zero_based": 4063
+            }
+          },
+          "source_urdf_stl": {
+            "robot0_link5": {
+              "distance_to_full_source_surface_mm": 4.148322543536066,
+              "diagnostic_winding_number": -3.5096832949077545e-10,
+              "nearest_source_face_zero_based": 3809
+            },
+            "robot0_gripper_flange": {
+              "distance_to_full_source_surface_mm": 4.963387611983332,
+              "diagnostic_winding_number": 4.417437057588218e-17,
+              "nearest_source_face_zero_based": 4063
+            }
+          }
+        },
+        "saved_contact_position": {
+          "source_visual_obj": {
+            "robot0_link5": {
+              "distance_to_full_source_surface_mm": 4.1470360691452965,
+              "diagnostic_winding_number": 1.9470015650874364e-08,
+              "nearest_source_face_zero_based": 3626
+            },
+            "robot0_gripper_flange": {
+              "distance_to_full_source_surface_mm": 4.963381657095909,
+              "diagnostic_winding_number": -1.380449080496318e-17,
+              "nearest_source_face_zero_based": 4063
+            }
+          },
+          "source_urdf_stl": {
+            "robot0_link5": {
+              "distance_to_full_source_surface_mm": 4.146977115095444,
+              "diagnostic_winding_number": -3.5094771772946474e-10,
+              "nearest_source_face_zero_based": 4632
+            },
+            "robot0_gripper_flange": {
+              "distance_to_full_source_surface_mm": 4.9633799792903055,
+              "diagnostic_winding_number": -5.521796321985272e-19,
+              "nearest_source_face_zero_based": 4063
+            }
+          }
+        }
+      },
+      "post_FK_separate_visual_surface_gap_mm": 3.2805173865385506,
+      "post_FK_separate_proxy_lp_radius_mm": 0.002004235333540309,
+      "cached_vs_post_transform_max_abs_difference": {
+        "robot0_link5": {
+          "rotation": 2.739842352994515e-09,
+          "translation_m": 2.809530386116421e-10
+        },
+        "robot0_gripper_flange": {
+          "rotation": 2.427883893929561e-09,
+          "translation_m": 3.58645113607281e-10
+        }
+      },
+      "source_solid_containment": "UNKNOWN_SOURCE_LINK5_NOT_CLOSED_MANIFOLD"
+    }
+  ],
+  "limitations": [
+    "No dynamics, collision generation, constraints, filtering changes, mesh/model changes, actions, forces, or new physical attempts.",
+    "Saved contacts are final RK4 internal-stage cached poses; saved qpos is post integration. They are evaluated as different cases.",
+    "Positive source surface gap excludes triangle intersection at the stated pose. Link5 is not closed manifold, so solid containment and physical penetration are UNKNOWN.",
+    "Strict proxy interior-overlap witnesses characterize the convex collision representation; common-ball radius is not a physical penetration depth.",
+    "SciPy geometry uses floating-point predicates; full nearest search pruning tolerance is 1e-12m."
+  ],
+  "repair_priority": "The one local link5_4 / flange_part_2 collision pair is implicated. Both proxy common-ball center and saved contact position lie several millimetres from both full source surfaces; source winding is diagnostic near zero. This does not uniquely assign one mesh as the primary overfill cause."
+}

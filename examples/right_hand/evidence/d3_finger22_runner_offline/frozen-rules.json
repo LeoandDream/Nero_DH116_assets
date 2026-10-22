@@ -1,0 +1,111 @@
+{
+  "status": "FROZEN_EXPERIMENTAL_OFFLINE_INTEGRATION_ONLY",
+  "task": "https://github.com/LeoandDream/Nero_DH116_assets/pull/4#issuecomment-6283942006",
+  "model_sha256": "7f9d84061c3e7d176763c688d2389f8b3d3e38386b8e990a0fa047ff2bc3329c",
+  "hand_collision_count": 81,
+  "wrist_collision_count": 306,
+  "schedule": "Original270 macros / max6750 physical steps / seed20261007 / original full native Reset; no new run in this task",
+  "original_criteria_unchanged": {
+    "scope": "NEW fixed right white-bowl criteria; not left/manufacturer/full-range certification",
+    "lift_from_own_settled_baseline_m_min": 0.02,
+    "continuous_hold_s_min": 1.0,
+    "hold_requires": [
+      "height >= settled+20mm",
+      "no bowl-table or other environmental support contacts",
+      "positive-force thumb and index contacts on opposing bowl sides"
+    ],
+    "steady_active_error_rad_max": 0.02,
+    "arm_tracking_error_rad_max": 0.1,
+    "linear_mimic_error_rad_max": 0.02,
+    "joint_limit_overshoot_rad_max": 0.01,
+    "eligible_internal_and_external_overlap_m_max": 0.002,
+    "warnings_allowed": 0,
+    "nonfinite_states_allowed": 0,
+    "native_task_result": "record native cabinet-placement predicate separately",
+    "strict_grasp_success_claim": false,
+    "stop": "First numerical/physical bound violation; no automatic retry or edits"
+  },
+  "historical4731": "UNKNOWN_STOP_UNCHANGED",
+  "formal_numeric_status": "FAIL_UNCHANGED",
+  "activation": "Offline adapter and saved-cache replay only; separate authorization required for every future dynamics attempt.",
+  "geometric_candidate_rule": [
+    "Use actual final RK4 body poses plus compiled complete support meshes and exact native counterpart geometry, never post-step FK.",
+    "Certify closed convex support topology; clip every hull triangle against complete guarded counterpart polytope. Retain every face/edge/point candidate.",
+    "If native contact exists but no independent geometric candidate/certificate, or counterpart/eligibility/pose/convexity cannot be certified: UNKNOWN stop.",
+    "No MPR midpoint position window; no enlargement of2.446um and no normal-based deletion of candidates."
+  ],
+  "region_rule": [
+    "Root piece00: any eligible contact remains a conservative root/bore risk stop, including zero force.",
+    "Apply seam and closure tests to the clipped CONTACT PATCH, not the entire triangle: a triangle can extend to a cut while its contact patch stays far away.",
+    "Any candidate patch meeting cut planes within the compiled/source correspondence bound, or the known cavity-closure witness plane: risk stop. All unproven cavity/other regions default UNKNOWN; a single witness never certifies complete cavity material.",
+    "Proposed source front registry: existing6165/6176 plus6175 only with the saved full-source envelope and manifold shared-edge certificate. Require whole guarded contact-patch projection coverage and outward source association; do not label entire proxy facet285 or all +X faces functional.",
+    "Every candidate must meet the reviewed source-patch rule. Any RISK/UNKNOWN candidate dominates; never select only a favorable face.",
+    "Functional provenance is a diagnostic category, not a fidelity waiver. Record per-patch source/proxy offset;4731 has a real42.765um source gap and48.313-49.025um +X surface offset. No approval of precision exceptions is implied."
+  ],
+  "numerics": {
+    "convex_predicates": "Exact integer support and rational clipping on frozen support-vertex hulls; no residual threshold",
+    "g22_geometry_arithmetic_guard_m": 1.7388106817250946e-13,
+    "compiled_to_source_correspondence_guard_m": 3.032172567760128e-09,
+    "formal_threshold_m": 1e-10,
+    "formal_status": "FAIL_UNCHANGED",
+    "MPR_midpoint_error_bound_assumed": null
+  },
+  "retained_stops": [
+    "All original dynamic thresholds and first-failure rule, wrist external-contact stop and original path envelope remain unchanged.",
+    "Missing/ambiguous provenance: save entire event and stop UNKNOWN.",
+    "Log all candidate polygons/IDs/proofs, contact distance/force/normal, post-integration state and final RK4 cache separately; no extra forward or control solve."
+  ],
+  "unresolved": [
+    "Full functional-front map outside the registered source patches",
+    "Nonmanifold material/cavity truth, all-domain collision fidelity, all historicalFAIL",
+    "4742 crossing, completeclose/lift/hold/grasp; not re-tested"
+  ],
+  "baseline_commit": "cab43054059844c8f240c5b9e8683f3d0919c252",
+  "registered_source_faces_zero_based": [
+    6165,
+    6176,
+    6175
+  ],
+  "source6175_required_manifold_neighbor": 6176,
+  "semantic_guard_m": 3.032172567760128e-09,
+  "cuts_local_z_m": [
+    0.0098,
+    0.0233,
+    0.032
+  ],
+  "runner_boundary": {
+    "rk4_timing": "final RK4 internal-stage cache; qpos/height in state row are post-integration; no post-step forward",
+    "initial_timing": "initial native Reset cache; no integration",
+    "contact_eligibility": "Recompute white_bowl_geometry.filter_reasons from compiled model; require equality with recorded reasons; mismatch UNKNOWN. Never change filters or other77 contact decisions.",
+    "frame": "Cached body-local support geometry transformed using same saved binary64 coefficients as cab4305; every pose verified finite, orthogonal and consistent with contact-local pose.",
+    "candidate_aggregation": "Any RISK dominates; else any UNKNOWN dominates; empty candidates UNKNOWN. Keep all candidates, including edges/points.",
+    "exceptions": "Malformed event, unavailable cache, unsupported counterpart or proof error => STOP_UNKNOWN; never swallow into continue.",
+    "cost": "Prepare exact hulls once before integration; synchronous per-event provenance, no asynchronous continue or numeric fallback. Record latency; no new physical acceptance threshold."
+  },
+  "synthetic_negative_expected": {
+    "root_bore": "STOP_RISK",
+    "cavity_closure": "STOP_RISK",
+    "cut_seam": "STOP_RISK",
+    "unregistered_positive_x": "STOP_UNKNOWN",
+    "multiple_with_unknown": "STOP_UNKNOWN",
+    "multiple_with_risk": "STOP_RISK",
+    "edge_or_point": "STOP_UNKNOWN",
+    "source_envelope_unproved": "STOP_UNKNOWN",
+    "missing_pose": "STOP_UNKNOWN",
+    "counterpart_mismatch": "STOP_UNKNOWN",
+    "exception": "STOP_UNKNOWN"
+  },
+  "frozen_inputs_sha256": {
+    "examples/right_hand/candidates/finger22_local/model.xml": "7f9d84061c3e7d176763c688d2389f8b3d3e38386b8e990a0fa047ff2bc3329c",
+    "meshes/dh116_right/source/finger22_link.STL": "5ebb8a2084495cb9e87b6ee531681500cfe5a37280320e97270d6e52c804081d",
+    "examples/right_hand/finger22_contact_regions.py": "2b7a339540e1bd22ea0a6f3af794d7263b708953c3eb59bf6f91860410e10c51",
+    "examples/right_hand/white_bowl_geometry.py": "1aef93fcd594a50360cd7c74a492939b9c3ff071b5be236ce1fd4e84c24178aa",
+    "examples/right_hand/evidence/d3_finger22_contact_regions/evidence.json.gz": "2da685b027ccafa9335cf4ab040b4ad479d1397841469e3ef08b424b810c4798",
+    "examples/right_hand/evidence/d3_finger22_risk_review/witnesses.json": "7824f33d0abffda5d094244f962b569220b0ba26b460abf790abb93181aee06b",
+    "examples/right_hand/evidence/d3_finger22_risk_review/numeric.json": "b7a38a2dfb40adf21fec9098f893ae1eb37ebbb33e0b8e4cd28df9e161f62dbf",
+    "examples/right_hand/evidence/d3_finger22_dynamic/run/contacts.jsonl.gz": "7d8a64e58d0dd46b924eb0e1e650afb049f239ab4bcc95ab74ec9d40e447f2d9",
+    "examples/right_hand/evidence/d3_finger22_dynamic/run/model.xml": "8576697c81a13d0e35149e880dec1b51f4a6b3f9041b61453e402fea68eaf98c",
+    "examples/right_hand/evidence/d3_finger22_dynamic/run/schedule.json": "4fcb72c06028ba405122c808d8ec90486f022199e1c01904d65b034c18be0b81",
+    "examples/right_hand/evidence/d3_finger22_dynamic/run/robot-physical-preflight.json.gz": "d76819d4baedcc29f03940071410b86636798fbdd844800a1a32ff748a05d025"
+  }
+}

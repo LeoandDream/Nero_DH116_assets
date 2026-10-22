@@ -1,0 +1,33 @@
+{
+  "saved_close_post_states": 742,
+  "state_range": [
+    4001,
+    4742
+  ],
+  "eligible_other_geoms_per_state": 507,
+  "all_qualified_hand_pairs_unchanged_outside_finger22": true,
+  "unchanged_native_contact_differences": 0,
+  "native_changed_geom_state_count": 80,
+  "counts": {
+    "eligible_other_geom_states": 376194,
+    "whole_geometry_AABB_separated_old_and_new": 375768,
+    "old_SEPARATED_AABB": 122,
+    "new_SEPARATED": 426,
+    "old_SEPARATED": 146,
+    "old_STRICT_OVERLAP": 158
+  },
+  "required_cached_states": [
+    4741,
+    4742
+  ],
+  "source_surface_assessment_counts": {
+    "SEPARATED_SURFACES_AND_PROXY": 426
+  },
+  "false_contact_interpretation": "Positive source surface gap + proxy overlap is a surface-based false-contact witness; solid containment remains UNKNOWN for nonmanifold source.",
+  "missed_contact_interpretation": "All eligible f22-source-vs-unchanged-other collision geometries checked with whole-source AABB exclusion or full triangle surface query, including when old/new proxies are separated. Other hand proxy approximation is frozen, not revalidated against its manufacturer STL.",
+  "cached_all_bowl_boxes_separated": true,
+  "step4518": "POST_STEP_FK_ONLY; no saved finger22 RK4 cache; original first positive force contact is finger13",
+  "source_solid_contacts": "UNKNOWN_NONMANIFOLD_SOURCE; surface crossings/gaps are reported without a solid-containment claim",
+  "dynamic_prediction": "UNKNOWN_NOT_RUN; saved poses are not a new trajectory or force counterfactual",
+  "physics_steps": 0
+}

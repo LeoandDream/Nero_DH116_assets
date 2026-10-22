@@ -1,0 +1,13 @@
+test_78part_roles_include_every_enabled_geom_on_exact_body (test_right_white_bowl_model.RightWhiteBowlRolesTests.test_78part_roles_include_every_enabled_geom_on_exact_body) ... ok
+test_disabled_parent_geom_is_excluded_without_collecting_descendants (test_right_white_bowl_model.RightWhiteBowlRolesTests.test_disabled_parent_geom_is_excluded_without_collecting_descendants) ... ok
+test_formal17_preserves_existing_role_lists (test_right_white_bowl_model.RightWhiteBowlRolesTests.test_formal17_preserves_existing_role_lists) ... ok
+test_bound_inputs_use_78_piece_detail_and_original_criteria (test_white_bowl_frozen78.Frozen78ScheduleTests.test_bound_inputs_use_78_piece_detail_and_original_criteria) ... ok
+test_changed_original_criteria_and_source_phase_order_are_rejected (test_white_bowl_frozen78.Frozen78ScheduleTests.test_changed_original_criteria_and_source_phase_order_are_rejected) ... ok
+test_phase_boundaries_and_early_stop_budget (test_white_bowl_frozen78.Frozen78ScheduleTests.test_phase_boundaries_and_early_stop_budget) ... ok
+test_reject_old_model_preflight_and_changed_path_or_unknown_result (test_white_bowl_frozen78.Frozen78ScheduleTests.test_reject_old_model_preflight_and_changed_path_or_unknown_result) ... ok
+test_repeat_only_approach_and_preserve_all_numeric_values_and_order (test_white_bowl_frozen78.Frozen78ScheduleTests.test_repeat_only_approach_and_preserve_all_numeric_values_and_order) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.118s
+
+OK

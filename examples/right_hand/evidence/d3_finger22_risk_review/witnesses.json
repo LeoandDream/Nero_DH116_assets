@@ -1,0 +1,180 @@
+{
+  "buried_source": {
+    "source_face_zero_based": 8902,
+    "source_triangle_m": [
+      [
+        -0.002864466980099678,
+        0.0017000000225380063,
+        0.016004076227545738
+      ],
+      [
+        0.003135527018457651,
+        0.0017000000225380063,
+        0.0159955732524395
+      ],
+      [
+        -0.002864466980099678,
+        -0.0017000000225380063,
+        0.016004076227545738
+      ]
+    ],
+    "piece": "gripper0_finger22_local_01",
+    "query_point_m": [
+      -0.002293466379176287,
+      0.00035105662971431756,
+      0.016003267026087124
+    ],
+    "nearest_surface_point_m": [
+      0.0003517816450719054,
+      0.0060749704722810275,
+      0.01662113278484602
+    ],
+    "nearest_triangle_id": 3163,
+    "distance_m": 0.006335793942574401,
+    "nearest_triangle_vertices_m": [
+      [
+        0.0005362914437691177,
+        0.005268753316166405,
+        0.0233
+      ],
+      [
+        0.0012064644279428474,
+        0.0061015893172676776,
+        0.012715410734658376
+      ],
+      [
+        -0.0032187871448666455,
+        0.007004124338632957,
+        0.0233
+      ]
+    ],
+    "nearest_proxy_part": "gripper0_finger22_local_01",
+    "proxy_membership": "strictly_inside",
+    "signed_distance_to_proxy_union_m": -0.006335793942574401,
+    "compiled_nearest_surface_point_m": [
+      0.00035178114587252436,
+      0.006074970814278751,
+      0.01662113270894818
+    ],
+    "compiled_nearest_support_triangle_m": [
+      [
+        0.0005362983584860149,
+        0.00526875573982681,
+        0.023299950314357058
+      ],
+      [
+        0.0024253512514750813,
+        0.005852996192644885,
+        0.009800002127684445
+      ],
+      [
+        -0.003218775266089528,
+        0.007004121814209598,
+        0.023299970906555882
+      ]
+    ],
+    "compiled_distance_m": 0.006335794035722132
+  },
+  "reverse_proxy": {
+    "piece": "gripper0_finger22_local_00",
+    "query_point_m": [
+      -0.00019602233267838976,
+      0.005504977121740382,
+      0.00030202697743005134
+    ],
+    "nearest_surface_point_m": [
+      -0.001700743890168432,
+      0.0038999998942017555,
+      0.0024574889495117633
+    ],
+    "nearest_triangle_id": 10155,
+    "distance_m": 0.003079960256169423,
+    "nearest_triangle_vertices_m": [
+      [
+        -0.0014963168650865555,
+        0.0020000000949949026,
+        0.002600198844447732
+      ],
+      [
+        -0.001925104297697544,
+        0.0038999998942017555,
+        0.0023008636198937893
+      ],
+      [
+        -0.0014963168650865555,
+        0.0038999998942017555,
+        0.002600198844447732
+      ]
+    ],
+    "same_witness_compiled_boundary_check": {
+      "raw_witness_to_compiled_surface_distance_m": 2.18256323383669e-11,
+      "compiled_nearest_point_m": [
+        -0.0001960223276903717,
+        0.0055049771426394275,
+        0.00030202697359497645
+      ],
+      "compiled_point_to_source_distance_m": 0.0030799602721808075,
+      "nearest_source_face_zero_based": 10155,
+      "old_compiled_finite_sample_max_m": 0.0030253927418194284,
+      "interpretation": "raw/compiled area samples use different triangulations, so finite sampled maxima 3.079960/3.025393mm differ; the old raw maximum remains a 3.079960mm witness on the compiled boundary. This is not a 0.055mm compiler displacement."
+    }
+  },
+  "working_face": {
+    "source_face_zero_based": 6165,
+    "source_triangle_m": [
+      [
+        0.0038348266389220953,
+        3.7976943811912633e-10,
+        0.01928006112575531
+      ],
+      [
+        0.003708099015057087,
+        0.00045110052451491356,
+        0.020588833838701248
+      ],
+      [
+        0.003719374304637313,
+        -1.1065035998569783e-08,
+        0.020588301122188568
+      ]
+    ],
+    "query_point_m": [
+      0.00371398135203868,
+      0.0002437614593601856,
+      0.020580656904076414
+    ],
+    "nearest_surface_point_m": [
+      0.003806384966148808,
+      0.0002459518571124503,
+      0.02058770129413772
+    ],
+    "distance_m": 9.269762226865574e-05,
+    "piece": "gripper0_finger22_local_01",
+    "sample_id": 197,
+    "seed": 222,
+    "sample_count": 1024
+  },
+  "root_bore_context": {
+    "source_face10155_vertex_radii_about_joint_Y_m": [
+      0.002999999698568281,
+      0.002999999992394051,
+      0.002999999698568281
+    ],
+    "joint_axis": "local Y through body origin",
+    "axis_probe_m": [
+      0.0,
+      0.003,
+      0.0
+    ],
+    "probe_source_surface_distance_m": 0.0029885838831449425,
+    "probe_nearest_source_face_zero_based": 10169,
+    "probe_nearest_source_point_m": [
+      0.0017176474755188418,
+      0.003,
+      0.002445673890042876
+    ],
+    "probe_old_single_convex_max_halfspace_m": -0.0023009071496104725,
+    "probe_current_root_convex_max_halfspace_m": -0.002300761398694687,
+    "interpretation": "The same joint-axis aperture is convex-filled in the old single hull and the frozen root piece; source material interior remains UNKNOWN."
+  }
+}

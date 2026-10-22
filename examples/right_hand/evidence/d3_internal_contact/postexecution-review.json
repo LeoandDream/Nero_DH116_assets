@@ -1,0 +1,598 @@
+{
+  "review_status": "OFFLINE_AUDIT_COMPLETE",
+  "physics_calls": 0,
+  "raw_sha256_before_equals_after": true,
+  "raw_sha256": {
+    "/data_robot/verification/nero_dh116_right/runs/d3_internal_filtered_001/filtered-state.jsonl": "ba8746fc43b5d3bb2d3de559869ac7cc7021fdc6eb657be11f142a7ed10ef820",
+    "/data_robot/verification/nero_dh116_right/runs/d3_internal_filtered_001/filtered-contacts.jsonl": "2e992400912c07bd29bdff5f1d6e1d6cd576c670eade436b84871a265aa62bc7",
+    "/data_robot/verification/nero_dh116_right/runs/d3_internal_filtered_001/filtered-result.json": "ae4f40f6ba511102dfe710a65aaae4830a0d07a93aea51c582f0147cbdc8f806",
+    "/data_robot/verification/nero_dh116_right/runs/d3_internal_filtered_001/diagnostic.xml": "0b279f42221f5c3731f4e23b40954734b6733ce8cb9861130e6f33c81cdcbc9f",
+    "/data_robot/verification/nero_dh116_right/runs/d3_internal_filtered_001/comparison.json": "ebe8c5febad3d516de5a4bc50b32722f66b059ac6fbaf0cc91a56a5fd8cc63fc",
+    "/data_robot/verification/nero_dh116_right/runs/d3_internal_filtered_001/reset-and-step-audit.json": "06b4a2013f49ecc88a8aa96f835d30c50ffc118c6e9c0b71939fcd595cf81970",
+    "/data_robot/verification/nero_dh116_right/runs/d3_internal_filtered_001/compiled-comparison.json": "6ba2e30b9e88350baa5cf217c25ff75f78ab4408810e935e6e22f8d08f5cf085",
+    "/data_robot/verification/nero_dh116_right/runs/d3_internal_filtered_001/execution.json": "7aae0d426cd03e7e9e35e1e131a8ff63d6701ec8a571b5e5eef32f6751ba0f4a",
+    "/data_robot/verification/nero_dh116_right/examples/right_hand/evidence/hand-motion-state.jsonl.gz": "57e37a567b9a9381e5dff9563dce5521b9d48be81554b20781e98ab75291c54b",
+    "/data_robot/verification/nero_dh116_right/examples/right_hand/evidence/hand-motion-contacts.jsonl.gz": "c48cd97035d6bf63296fcac199b1e898d92547d566623fae5513745dc20b5b04",
+    "/data_robot/verification/nero_dh116_right/examples/right_hand/evidence/hand-motion-result.json": "693e68cade25de72c6bd35799cc5feb2b8930bc093ac97f451080ddb94d2e055"
+  },
+  "summaries": {
+    "baseline": {
+      "steps": 7000,
+      "nonfinite_steps": 0,
+      "warning_steps": 0,
+      "contact_entries": 3210,
+      "misclassified_contact_entries": 0,
+      "misclassified_contact_row_steps": 0,
+      "misclassified_first": null,
+      "misclassified_last": null,
+      "misclassified_body_pairs": {},
+      "state_max_overlap_mismatched_rows": 0,
+      "state_max_overlap_first_mismatch": null,
+      "corrected_max_enabled_nonadjacent_overlap_m": 0.012477555021287268,
+      "corrected_max_enabled_nonadjacent_overlap_step": 6511,
+      "first_overlap_failure": {
+        "step": 229,
+        "time_s": 0.45800000000000035,
+        "overlap_m": 0.0020121855934654167
+      },
+      "overlap_failure_steps": 750,
+      "tracking": {
+        "finger11": {
+          "max_all_rad": 0.1984474365732095,
+          "max_steady_rad": 0.04422274109356783,
+          "first_steady_exceed_step": 451,
+          "steady_exceed_steps": 100,
+          "own_closed_steady_max_rad": 0.024062331942956927,
+          "all_six_closed_steady_max_rad": 0.04422274109356783
+        },
+        "finger12": {
+          "max_all_rad": 0.16297651257174595,
+          "max_steady_rad": 0.09755731183800082,
+          "first_steady_exceed_step": 6451,
+          "steady_exceed_steps": 50,
+          "own_closed_steady_max_rad": 0.0027306490427640995,
+          "all_six_closed_steady_max_rad": 0.09755731183800082
+        },
+        "finger21": {
+          "max_all_rad": 0.31191094111933815,
+          "max_steady_rad": 0.008375810476810797,
+          "first_steady_exceed_step": null,
+          "steady_exceed_steps": 0,
+          "own_closed_steady_max_rad": 0.008375403507832502,
+          "all_six_closed_steady_max_rad": 0.008375810476810797
+        },
+        "finger31": {
+          "max_all_rad": 0.3838362539158138,
+          "max_steady_rad": 0.1329749210621809,
+          "first_steady_exceed_step": 6451,
+          "steady_exceed_steps": 50,
+          "own_closed_steady_max_rad": 0.008413938384690844,
+          "all_six_closed_steady_max_rad": 0.1329749210621809
+        },
+        "finger41": {
+          "max_all_rad": 0.3489276059212174,
+          "max_steady_rad": 0.21534176278796124,
+          "first_steady_exceed_step": 6451,
+          "steady_exceed_steps": 50,
+          "own_closed_steady_max_rad": 0.008390727218456906,
+          "all_six_closed_steady_max_rad": 0.21534176278796124
+        },
+        "finger51": {
+          "max_all_rad": 0.3118931074215061,
+          "max_steady_rad": 0.008348367963146197,
+          "first_steady_exceed_step": null,
+          "steady_exceed_steps": 0,
+          "own_closed_steady_max_rad": 0.008348367963146197,
+          "all_six_closed_steady_max_rad": 0.008347121432158211
+        }
+      },
+      "pairs": {
+        "gripper0_base_link <-> gripper0_finger12_link": {
+          "contact_steps": 858,
+          "entries": 858,
+          "first_contact_step": 200,
+          "min_distance_m": -0.006047435571495536,
+          "min_distance_step": 500,
+          "max_normal_force_N": 62.23316676544722,
+          "max_normal_force_step": 500,
+          "overlap_exceed_steps": 736,
+          "first_overlap_exceed_step": 229,
+          "corrected_enabled": true
+        },
+        "gripper0_finger14_link <-> gripper0_finger33_link": {
+          "contact_steps": 34,
+          "entries": 34,
+          "first_contact_step": 6225,
+          "min_distance_m": -0.0013002989405176003,
+          "min_distance_step": 6235,
+          "max_normal_force_N": 24.536293147885385,
+          "max_normal_force_step": 6246,
+          "overlap_exceed_steps": 0,
+          "first_overlap_exceed_step": null,
+          "corrected_enabled": true
+        },
+        "gripper0_finger14_link <-> gripper0_finger32_link": {
+          "contact_steps": 34,
+          "entries": 34,
+          "first_contact_step": 6226,
+          "min_distance_m": -0.0014397932096484021,
+          "min_distance_step": 6237,
+          "max_normal_force_N": 30.44105759250844,
+          "max_normal_force_step": 6244,
+          "overlap_exceed_steps": 0,
+          "first_overlap_exceed_step": null,
+          "corrected_enabled": true
+        },
+        "gripper0_finger13_link <-> gripper0_finger33_link": {
+          "contact_steps": 128,
+          "entries": 128,
+          "first_contact_step": 6229,
+          "min_distance_m": -0.002012415863163125,
+          "min_distance_step": 6605,
+          "max_normal_force_N": 37.36485225223697,
+          "max_normal_force_step": 6605,
+          "overlap_exceed_steps": 1,
+          "first_overlap_exceed_step": 6605,
+          "corrected_enabled": true
+        },
+        "gripper0_finger13_link <-> gripper0_finger32_link": {
+          "contact_steps": 143,
+          "entries": 143,
+          "first_contact_step": 6232,
+          "min_distance_m": -0.0024471499547484596,
+          "min_distance_step": 6603,
+          "max_normal_force_N": 36.0832695461503,
+          "max_normal_force_step": 6606,
+          "overlap_exceed_steps": 20,
+          "first_overlap_exceed_step": 6593,
+          "corrected_enabled": true
+        },
+        "gripper0_finger14_link <-> gripper0_finger42_link": {
+          "contact_steps": 13,
+          "entries": 13,
+          "first_contact_step": 6232,
+          "min_distance_m": -0.000805957652006274,
+          "min_distance_step": 6236,
+          "max_normal_force_N": 21.605973846641067,
+          "max_normal_force_step": 6236,
+          "overlap_exceed_steps": 0,
+          "first_overlap_exceed_step": null,
+          "corrected_enabled": true
+        },
+        "gripper0_finger13_link <-> gripper0_finger42_link": {
+          "contact_steps": 343,
+          "entries": 343,
+          "first_contact_step": 6233,
+          "min_distance_m": -0.00557130275852709,
+          "min_distance_step": 6315,
+          "max_normal_force_N": 43.641377420100085,
+          "max_normal_force_step": 6250,
+          "overlap_exceed_steps": 310,
+          "first_overlap_exceed_step": 6246,
+          "corrected_enabled": true
+        },
+        "gripper0_finger13_link <-> gripper0_finger43_link": {
+          "contact_steps": 323,
+          "entries": 323,
+          "first_contact_step": 6234,
+          "min_distance_m": -0.0037703091712122483,
+          "min_distance_step": 6300,
+          "max_normal_force_N": 40.14954365913454,
+          "max_normal_force_step": 6250,
+          "overlap_exceed_steps": 235,
+          "first_overlap_exceed_step": 6250,
+          "corrected_enabled": true
+        },
+        "gripper0_finger12_link <-> gripper0_finger43_link": {
+          "contact_steps": 332,
+          "entries": 332,
+          "first_contact_step": 6256,
+          "min_distance_m": -0.012296654585360388,
+          "min_distance_step": 6490,
+          "max_normal_force_N": 63.32490937279775,
+          "max_normal_force_step": 6483,
+          "overlap_exceed_steps": 311,
+          "first_overlap_exceed_step": 6264,
+          "corrected_enabled": true
+        },
+        "gripper0_finger12_link <-> gripper0_finger42_link": {
+          "contact_steps": 332,
+          "entries": 332,
+          "first_contact_step": 6259,
+          "min_distance_m": -0.012477555021287268,
+          "min_distance_step": 6511,
+          "max_normal_force_N": 66.63651902410457,
+          "max_normal_force_step": 6498,
+          "overlap_exceed_steps": 311,
+          "first_overlap_exceed_step": 6269,
+          "corrected_enabled": true
+        },
+        "gripper0_finger12_link <-> gripper0_finger33_link": {
+          "contact_steps": 337,
+          "entries": 337,
+          "first_contact_step": 6278,
+          "min_distance_m": -0.005437798994295729,
+          "min_distance_step": 6549,
+          "max_normal_force_N": 40.47912250823539,
+          "max_normal_force_step": 6589,
+          "overlap_exceed_steps": 289,
+          "first_overlap_exceed_step": 6319,
+          "corrected_enabled": true
+        },
+        "gripper0_finger12_link <-> gripper0_finger32_link": {
+          "contact_steps": 333,
+          "entries": 333,
+          "first_contact_step": 6282,
+          "min_distance_m": -0.0060279231520966895,
+          "min_distance_step": 6545,
+          "max_normal_force_N": 40.64530087247533,
+          "max_normal_force_step": 6573,
+          "overlap_exceed_steps": 289,
+          "first_overlap_exceed_step": 6319,
+          "corrected_enabled": true
+        }
+      },
+      "corrected_failures": {
+        "ACTIVE_STEADY_TRACKING": {
+          "first_step": 451,
+          "count": 100
+        },
+        "ENABLED_NONADJACENT_SELF_OVERLAP": {
+          "first_step": 229,
+          "count": 750
+        }
+      },
+      "corrected_screening_status": "FAIL",
+      "first_any_numeric_failure_step": 229
+    },
+    "candidate": {
+      "steps": 7000,
+      "nonfinite_steps": 0,
+      "warning_steps": 0,
+      "contact_entries": 1728,
+      "misclassified_contact_entries": 333,
+      "misclassified_contact_row_steps": 333,
+      "misclassified_first": {
+        "step": 6258,
+        "time_s": 12.51600000000085,
+        "bodies": [
+          "gripper0_finger12_link",
+          "gripper0_finger43_link"
+        ],
+        "raw_reasons": [
+          "EXPLICIT_EXCLUDE"
+        ],
+        "corrected_reasons": [],
+        "raw_enabled": false,
+        "corrected_enabled": true
+      },
+      "misclassified_last": {
+        "step": 6590,
+        "time_s": 13.18000000000107,
+        "bodies": [
+          "gripper0_finger12_link",
+          "gripper0_finger43_link"
+        ],
+        "raw_reasons": [
+          "EXPLICIT_EXCLUDE"
+        ],
+        "corrected_reasons": [],
+        "raw_enabled": false,
+        "corrected_enabled": true
+      },
+      "misclassified_body_pairs": {
+        "gripper0_finger12_link <-> gripper0_finger43_link": 333
+      },
+      "state_max_overlap_mismatched_rows": 163,
+      "state_max_overlap_first_mismatch": {
+        "step": 6289,
+        "time_s": 12.57800000000087,
+        "raw": 0.00632627333733017,
+        "corrected": 0.006370362996654408
+      },
+      "corrected_max_enabled_nonadjacent_overlap_m": 0.014197593812429375,
+      "corrected_max_enabled_nonadjacent_overlap_step": 6395,
+      "first_overlap_failure": {
+        "step": 6242,
+        "time_s": 12.484000000000838,
+        "overlap_m": 0.002010241362942958
+      },
+      "overlap_failure_steps": 378,
+      "tracking": {
+        "finger11": {
+          "max_all_rad": 0.191623875787595,
+          "max_steady_rad": 0.01136875549513272,
+          "first_steady_exceed_step": null,
+          "steady_exceed_steps": 0,
+          "own_closed_steady_max_rad": 0.0007854291084250509,
+          "all_six_closed_steady_max_rad": 0.01136875549513272
+        },
+        "finger12": {
+          "max_all_rad": 0.16252455009374384,
+          "max_steady_rad": 0.06424280017589284,
+          "first_steady_exceed_step": 6451,
+          "steady_exceed_steps": 50,
+          "own_closed_steady_max_rad": 0.0027306456510540755,
+          "all_six_closed_steady_max_rad": 0.06424280017589284
+        },
+        "finger21": {
+          "max_all_rad": 0.3119109411205634,
+          "max_steady_rad": 0.008375890418464316,
+          "first_steady_exceed_step": null,
+          "steady_exceed_steps": 0,
+          "own_closed_steady_max_rad": 0.00837540350773791,
+          "all_six_closed_steady_max_rad": 0.008375890418464316
+        },
+        "finger31": {
+          "max_all_rad": 0.4007398930875764,
+          "max_steady_rad": 0.12263215278161677,
+          "first_steady_exceed_step": 6451,
+          "steady_exceed_steps": 50,
+          "own_closed_steady_max_rad": 0.008413938384690844,
+          "all_six_closed_steady_max_rad": 0.12263215278161677
+        },
+        "finger41": {
+          "max_all_rad": 0.3573016826235307,
+          "max_steady_rad": 0.10978828189562595,
+          "first_steady_exceed_step": 6451,
+          "steady_exceed_steps": 50,
+          "own_closed_steady_max_rad": 0.008390727218456906,
+          "all_six_closed_steady_max_rad": 0.10978828189562595
+        },
+        "finger51": {
+          "max_all_rad": 0.3118931074215061,
+          "max_steady_rad": 0.008348367963146197,
+          "first_steady_exceed_step": null,
+          "steady_exceed_steps": 0,
+          "own_closed_steady_max_rad": 0.008348367963146197,
+          "all_six_closed_steady_max_rad": 0.008347130697049732
+        }
+      },
+      "pairs": {
+        "gripper0_finger14_link <-> gripper0_finger33_link": {
+          "contact_steps": 32,
+          "entries": 32,
+          "first_contact_step": 6225,
+          "min_distance_m": -0.0012066985193622736,
+          "min_distance_step": 6232,
+          "max_normal_force_N": 24.29122798444848,
+          "max_normal_force_step": 6246,
+          "overlap_exceed_steps": 0,
+          "first_overlap_exceed_step": null,
+          "corrected_enabled": true
+        },
+        "gripper0_finger14_link <-> gripper0_finger32_link": {
+          "contact_steps": 32,
+          "entries": 32,
+          "first_contact_step": 6226,
+          "min_distance_m": -0.0013149922210427887,
+          "min_distance_step": 6234,
+          "max_normal_force_N": 28.977458033804442,
+          "max_normal_force_step": 6233,
+          "overlap_exceed_steps": 0,
+          "first_overlap_exceed_step": null,
+          "corrected_enabled": true
+        },
+        "gripper0_finger13_link <-> gripper0_finger33_link": {
+          "contact_steps": 100,
+          "entries": 100,
+          "first_contact_step": 6230,
+          "min_distance_m": -0.0023831472061893707,
+          "min_distance_step": 6609,
+          "max_normal_force_N": 39.64024786597222,
+          "max_normal_force_step": 6609,
+          "overlap_exceed_steps": 10,
+          "first_overlap_exceed_step": 6606,
+          "corrected_enabled": true
+        },
+        "gripper0_finger14_link <-> gripper0_finger42_link": {
+          "contact_steps": 23,
+          "entries": 23,
+          "first_contact_step": 6231,
+          "min_distance_m": -0.001357871921614921,
+          "min_distance_step": 6238,
+          "max_normal_force_N": 25.967535027994305,
+          "max_normal_force_step": 6238,
+          "overlap_exceed_steps": 0,
+          "first_overlap_exceed_step": null,
+          "corrected_enabled": true
+        },
+        "gripper0_finger13_link <-> gripper0_finger42_link": {
+          "contact_steps": 222,
+          "entries": 222,
+          "first_contact_step": 6232,
+          "min_distance_m": -0.006550483304995077,
+          "min_distance_step": 6305,
+          "max_normal_force_N": 46.297531597668524,
+          "max_normal_force_step": 6255,
+          "overlap_exceed_steps": 183,
+          "first_overlap_exceed_step": 6242,
+          "corrected_enabled": true
+        },
+        "gripper0_finger13_link <-> gripper0_finger43_link": {
+          "contact_steps": 180,
+          "entries": 180,
+          "first_contact_step": 6232,
+          "min_distance_m": -0.004667754783441022,
+          "min_distance_step": 6287,
+          "max_normal_force_N": 42.65334024003524,
+          "max_normal_force_step": 6255,
+          "overlap_exceed_steps": 135,
+          "first_overlap_exceed_step": 6247,
+          "corrected_enabled": true
+        },
+        "gripper0_finger14_link <-> gripper0_finger43_link": {
+          "contact_steps": 4,
+          "entries": 4,
+          "first_contact_step": 6232,
+          "min_distance_m": -0.0003785030136949273,
+          "min_distance_step": 6233,
+          "max_normal_force_N": 9.931646780592734,
+          "max_normal_force_step": 6232,
+          "overlap_exceed_steps": 0,
+          "first_overlap_exceed_step": null,
+          "corrected_enabled": true
+        },
+        "gripper0_finger13_link <-> gripper0_finger32_link": {
+          "contact_steps": 123,
+          "entries": 123,
+          "first_contact_step": 6235,
+          "min_distance_m": -0.002944158772657323,
+          "min_distance_step": 6603,
+          "max_normal_force_N": 38.666768441880336,
+          "max_normal_force_step": 6610,
+          "overlap_exceed_steps": 26,
+          "first_overlap_exceed_step": 6594,
+          "corrected_enabled": true
+        },
+        "gripper0_finger12_link <-> gripper0_finger43_link": {
+          "contact_steps": 333,
+          "entries": 333,
+          "first_contact_step": 6258,
+          "min_distance_m": -0.014197593812429375,
+          "min_distance_step": 6395,
+          "max_normal_force_N": 75.85182800632766,
+          "max_normal_force_step": 6393,
+          "overlap_exceed_steps": 298,
+          "first_overlap_exceed_step": 6266,
+          "corrected_enabled": true
+        },
+        "gripper0_finger12_link <-> gripper0_finger33_link": {
+          "contact_steps": 342,
+          "entries": 342,
+          "first_contact_step": 6277,
+          "min_distance_m": -0.006054969207852938,
+          "min_distance_step": 6560,
+          "max_normal_force_N": 43.872014317930805,
+          "max_normal_force_step": 6590,
+          "overlap_exceed_steps": 292,
+          "first_overlap_exceed_step": 6321,
+          "corrected_enabled": true
+        },
+        "gripper0_finger12_link <-> gripper0_finger32_link": {
+          "contact_steps": 337,
+          "entries": 337,
+          "first_contact_step": 6282,
+          "min_distance_m": -0.006767584937690682,
+          "min_distance_step": 6553,
+          "max_normal_force_N": 42.75490390908347,
+          "max_normal_force_step": 6564,
+          "overlap_exceed_steps": 290,
+          "first_overlap_exceed_step": 6322,
+          "corrected_enabled": true
+        }
+      },
+      "corrected_failures": {
+        "ACTIVE_STEADY_TRACKING": {
+          "first_step": 6451,
+          "count": 50
+        },
+        "ENABLED_NONADJACENT_SELF_OVERLAP": {
+          "first_step": 6242,
+          "count": 378
+        }
+      },
+      "corrected_screening_status": "FAIL",
+      "first_any_numeric_failure_step": 6242
+    }
+  },
+  "first_exact_divergence": {
+    "full_qpos": {
+      "step": 200,
+      "time_s": 0.4000000000000003,
+      "max_absolute_difference": 2.366962313016252e-05
+    },
+    "full_qvel": {
+      "step": 200,
+      "time_s": 0.4000000000000003,
+      "max_absolute_difference": 0.02718950943657683
+    },
+    "actuator_force": {
+      "step": 200,
+      "time_s": 0.4000000000000003,
+      "max_absolute_difference": 0.05815797080990848
+    },
+    "internal_actuator_ctrl_13": {
+      "step": 201,
+      "time_s": 0.4020000000000003,
+      "max_absolute_difference": 0.00022285597322690975
+    }
+  },
+  "all_7000_actions_targets_phases_times_equal": true,
+  "tracking_comparison": {
+    "finger11": {
+      "baseline_steady_rad": 0.04422274109356783,
+      "candidate_steady_rad": 0.01136875549513272,
+      "candidate_minus_baseline_rad": -0.03285398559843511,
+      "baseline_exceed_steps": 100,
+      "candidate_exceed_steps": 0
+    },
+    "finger12": {
+      "baseline_steady_rad": 0.09755731183800082,
+      "candidate_steady_rad": 0.06424280017589284,
+      "candidate_minus_baseline_rad": -0.03331451166210797,
+      "baseline_exceed_steps": 50,
+      "candidate_exceed_steps": 50
+    },
+    "finger21": {
+      "baseline_steady_rad": 0.008375810476810797,
+      "candidate_steady_rad": 0.008375890418464316,
+      "candidate_minus_baseline_rad": 7.994165351909999e-08,
+      "baseline_exceed_steps": 0,
+      "candidate_exceed_steps": 0
+    },
+    "finger31": {
+      "baseline_steady_rad": 0.1329749210621809,
+      "candidate_steady_rad": 0.12263215278161677,
+      "candidate_minus_baseline_rad": -0.01034276828056413,
+      "baseline_exceed_steps": 50,
+      "candidate_exceed_steps": 50
+    },
+    "finger41": {
+      "baseline_steady_rad": 0.21534176278796124,
+      "candidate_steady_rad": 0.10978828189562595,
+      "candidate_minus_baseline_rad": -0.1055534808923353,
+      "baseline_exceed_steps": 50,
+      "candidate_exceed_steps": 50
+    },
+    "finger51": {
+      "baseline_steady_rad": 0.008348367963146197,
+      "candidate_steady_rad": 0.008348367963146197,
+      "candidate_minus_baseline_rad": 0.0,
+      "baseline_exceed_steps": 0,
+      "candidate_exceed_steps": 0
+    }
+  },
+  "interpretation": "The raw harness mislabels actual finger12-finger43 contacts using the added finger12-finger42 weld signature. This is offline measurement classification only. Actual engine exclusions remain the two actual-body pairs, with finger43 contact present; controller, commands and physical trajectory were not altered by correction. Formal model remains FAIL, grasp UNKNOWN.",
+  "actual_candidate_compiled_eligibility_audit": {
+    "pairs_checked": 5671,
+    "changed": [
+      [
+        69,
+        73,
+        true,
+        false
+      ],
+      [
+        73,
+        93,
+        true,
+        false
+      ]
+    ],
+    "exclude_signatures": [
+      65538,
+      655372,
+      786454
+    ],
+    "finger12_body_id": 12,
+    "finger42_body_id": 22,
+    "finger43_body_id": 23,
+    "finger43_weld_id": 22
+  },
+  "actual_run_audit": {
+    "attempted_mj_step_calls": 7000,
+    "completed_mj_step_calls": 7000,
+    "all_compiled_fields_unchanged_during_run": true
+  }
+}

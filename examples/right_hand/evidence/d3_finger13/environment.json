@@ -1,0 +1,13 @@
+{
+  "python": "3.11.16",
+  "interpreter_used": "/data_robot/verification/nero_dh116_right/.reference-env/bin/python",
+  "packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.15.3",
+    "mujoco": "3.2.3",
+    "matplotlib": "3.10.3"
+  },
+  "dependencies_installed_this_task": false,
+  "environment_definition": "examples/libero_reference/env/README.md",
+  "interpreter_path_is_provenance_only": true
+}

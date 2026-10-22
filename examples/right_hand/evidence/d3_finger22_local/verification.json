@@ -1,0 +1,31 @@
+{
+  "status": "EVIDENCE_CONSISTENT_CANDIDATE_BLOCKED",
+  "python": "3.11.16",
+  "numpy": "1.26.4",
+  "scipy": "1.15.3",
+  "mujoco": "3.2.3",
+  "all_742_rows_read_back": true,
+  "old_strict_overlap_pair_states": 158,
+  "new_strict_overlap_pair_states": 0,
+  "unchanged_contact_pair_states": 926,
+  "sparse_dual_certificates_independently_rechecked": 158,
+  "RK4_cached_box_piece_queries": 288,
+  "physics_steps": 0,
+  "protected_model_sha256": {
+    "mjcf/nero_dh116.xml": "c446124b7d938aa6e00ba5914047001de66c2a2c162e7dea1644437e5a85cb33",
+    "mjcf/nero_dh116_right.xml": "739d3d29bbfd4a6468fb8b75f4de09b719c0f96abb39508959c1dfc33a84b9cc",
+    "examples/right_hand/candidates/finger13_local/model.xml": "b27f4f86fbaeacd2bb925463f39f67181ef7db12963c4d9f7fc01797a7924d1b",
+    "examples/right_hand/candidates/link5_flange_local/model.xml": "1b2530d923b446605492b43652dd5a3200fd755674ba17a54f0c961cde362b39",
+    "examples/right_hand/candidates/wrist_reuse/model.xml": "9604a4a6935a34496f93e223219f687b4df8b7aa83037dc208fc9f3499eb05c9"
+  },
+  "user_readme_sha256": "d68ec6d62a6f42b8c1636ad2774c8329073d973c2621cc7fe148c8c8c89d8f25",
+  "source_scripts_sha256": {
+    "tools/build_finger22_local.py": "5a30c32413183d645fd6c355595d48ae437d6ecf00887625b17f3b103f0881d0",
+    "examples/right_hand/finger22_static.py": "85d6707d40d291ab926f29b5868c2946d57724c1021dae9760a4cb90c1a900a1",
+    "tests/test_finger22_local.py": "576549ab755cd8199d5a15ef4bb319beb4f48cdb80ba1f8d0d3c6cb85b49599f"
+  },
+  "scope": "Evidence validation only. No geometry rebuilt, no static pose scan repeated, no dynamics.",
+  "reused_tools_at_unchanged_baseline_commit": "360e53a023624e96bd88aef549927655b5034445",
+  "quality_summary_losslessly_gzipped": true,
+  "static_collision_calls": 1484
+}

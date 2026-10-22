@@ -1,0 +1,12 @@
+test_boundary_touch_not_silently_discarded (test_finger22_contact_regions.ContactRegionTests.test_boundary_touch_not_silently_discarded) ... ok
+test_exact_affine_box_keeps_closed_supports (test_finger22_contact_regions.ContactRegionTests.test_exact_affine_box_keeps_closed_supports) ... ok
+test_face_edge_corner_keep_all_candidates (test_finger22_contact_regions.ContactRegionTests.test_face_edge_corner_keep_all_candidates) ... ok
+test_full_source_envelope_rejects_a_forward_occluder (test_finger22_contact_regions.ContactRegionTests.test_full_source_envelope_rejects_a_forward_occluder) ... ok
+test_functional_requires_source_domain_not_only_positive_normal (test_finger22_contact_regions.ContactRegionTests.test_functional_requires_source_domain_not_only_positive_normal) ... ok
+test_risk_or_unknown_never_becomes_continue (test_finger22_contact_regions.ContactRegionTests.test_risk_or_unknown_never_becomes_continue) ... ok
+test_separation_and_positive_common_ball_certificates (test_finger22_contact_regions.ContactRegionTests.test_separation_and_positive_common_ball_certificates) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.215s
+
+OK

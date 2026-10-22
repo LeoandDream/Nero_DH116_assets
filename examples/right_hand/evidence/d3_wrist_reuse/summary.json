@@ -1,0 +1,39 @@
+{
+  "migration": "PASS",
+  "wrist_plan": {
+    "poses": 921,
+    "potential_pairs_per_pose": 23373,
+    "total_pair_cases": 21526533,
+    "classifications": {
+      "AABB_SEPARATED": 21525267,
+      "SEPARATED": 1266
+    },
+    "old_anomalous_poses": 435,
+    "old_eliminated": 435,
+    "old_remaining": 0,
+    "new_anomalous_poses": 0,
+    "anomalous_pose_indices": [],
+    "status": "PASS",
+    "elapsed_s": 6.561108110006899,
+    "projection_threshold_m": 1e-10,
+    "old_pair_events_not_subtracted_from_new_pairs": true
+  },
+  "saved_states": {
+    "states": 1401,
+    "baseline_wrist_contact_states": 87,
+    "candidate_wrist_contact_states": 0,
+    "new_body_pair_state_counts": {},
+    "lost_body_pair_state_counts": {
+      "robot0_gripper_flange / robot0_link5": 87
+    },
+    "candidate_wrist_contact_point_counts": {},
+    "states_with_bit_identical_nonwrist_contact_records": 1401,
+    "alignment": "Fresh static FK + collision at saved post-qpos for BOTH models; original RK4 last-stage caches attached separately, never treated as identical alignment.",
+    "elapsed_s": 5.81604552292265,
+    "integration_state_and_model_fields_unchanged": true,
+    "external_suitability": "UNKNOWN: this saved early-approach prefix cannot certify unseen bowl/table/hand configurations or the 2.17mm outward-fill region."
+  },
+  "external_suitability": "UNKNOWN",
+  "dynamics_and_formal_release": "UNKNOWN_NOT_RUN_NOT_APPROVED",
+  "historical_failures_and_original_thresholds_unchanged": true
+}

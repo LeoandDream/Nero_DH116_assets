@@ -1,0 +1,158 @@
+{
+  "source_count": 17,
+  "source_SHA_matches": [
+    {
+      "file": "meshes/dh116_right/source/base_link.STL",
+      "actual_sha256": "094504fed409afe137eafa6643c36f081934df873ef1cf9924ebb9725436b161",
+      "matches_existing_source_certificate": true
+    },
+    {
+      "file": "meshes/dh116_right/source/finger11_link.STL",
+      "actual_sha256": "5659ee7dd15833a86f30c2138685baf48671fa7458a79cbb1d611ddb7f3648c8",
+      "matches_existing_source_certificate": true
+    },
+    {
+      "file": "meshes/dh116_right/source/finger12_link.STL",
+      "actual_sha256": "8807c48538b9396e1d132df7c5cf6ee0a44c28c4dcb759b5b00a74003b715e67",
+      "matches_existing_source_certificate": true
+    },
+    {
+      "file": "meshes/dh116_right/source/finger13_link.STL",
+      "actual_sha256": "594501a21c86d1d19b73cf17572b7a04ae488c5fee4b623e25c618dd15eb3419",
+      "matches_existing_source_certificate": true
+    },
+    {
+      "file": "meshes/dh116_right/source/finger14_link.STL",
+      "actual_sha256": "c58b2a741f13cbe1da9b6bbffb0ce6acf97de28b829fe45ea65458313efff449",
+      "matches_existing_source_certificate": true
+    },
+    {
+      "file": "meshes/dh116_right/source/finger21_link.STL",
+      "actual_sha256": "7162d86cefa849458536cbb77968560dbf4e6c7a8b1734777640f9da1f828886",
+      "matches_existing_source_certificate": true
+    },
+    {
+      "file": "meshes/dh116_right/source/finger22_link.STL",
+      "actual_sha256": "5ebb8a2084495cb9e87b6ee531681500cfe5a37280320e97270d6e52c804081d",
+      "matches_existing_source_certificate": true
+    },
+    {
+      "file": "meshes/dh116_right/source/finger23_link.STL",
+      "actual_sha256": "ccbd2de17dac2fe356e4275240f5f00f8eee01dd2f32a44fc5b1e150f93d99f6",
+      "matches_existing_source_certificate": true
+    },
+    {
+      "file": "meshes/dh116_right/source/finger31_link.STL",
+      "actual_sha256": "2d4ec902f4b2d06872cfbda2e5a63f387aa82dfd522fd44da5e38b83f90cf2b6",
+      "matches_existing_source_certificate": true
+    },
+    {
+      "file": "meshes/dh116_right/source/finger32_link.STL",
+      "actual_sha256": "f3cf0d1634338d331bc58ae7838023925a1654003f5728423de25808f490821e",
+      "matches_existing_source_certificate": true
+    },
+    {
+      "file": "meshes/dh116_right/source/finger33_link.STL",
+      "actual_sha256": "2082e780c44d9e2ac91a9c355c3751f084fcbb42c39e33961178b81e5b3ce147",
+      "matches_existing_source_certificate": true
+    },
+    {
+      "file": "meshes/dh116_right/source/finger41_link.STL",
+      "actual_sha256": "5366f649baa0c5c29cc1afdbcc6163b2bcb9001f0b9b8ae69a213f5209860289",
+      "matches_existing_source_certificate": true
+    },
+    {
+      "file": "meshes/dh116_right/source/finger42_link.STL",
+      "actual_sha256": "4382f6f699a2cb342f00f5bf4ddbe20b7d2b664b522c5abcd49cfee551e748ae",
+      "matches_existing_source_certificate": true
+    },
+    {
+      "file": "meshes/dh116_right/source/finger43_link.STL",
+      "actual_sha256": "4e0b20fc9c464825b466d3ca51ff4557f70d4a3ea935a00b09ad5639722251df",
+      "matches_existing_source_certificate": true
+    },
+    {
+      "file": "meshes/dh116_right/source/finger51_link.STL",
+      "actual_sha256": "f1b5983e1cd4b29f5e4609001c525e93ff80bb1d921711a6327fd8e688fad1db",
+      "matches_existing_source_certificate": true
+    },
+    {
+      "file": "meshes/dh116_right/source/finger52_link.STL",
+      "actual_sha256": "7c5f953a3cde495eae505dfa3ea248e768c69ab911c21f61825ddb42b4531994",
+      "matches_existing_source_certificate": true
+    },
+    {
+      "file": "meshes/dh116_right/source/finger53_link.STL",
+      "actual_sha256": "63eb67492fce45f80b798d9ead4d194a9eafdae1ed6c0893820222ef3ffedbf1",
+      "matches_existing_source_certificate": true
+    }
+  ],
+  "exact_sample_count": 921,
+  "FK_max_abs_error": 0.0,
+  "first_negative": null,
+  "first_unknown": null,
+  "zero_dynamics": {
+    "allowed_apis": [
+      "mj_geomDistance",
+      "mj_id2name",
+      "mj_kinematics",
+      "mj_name2id"
+    ],
+    "allowed_api_calls": {
+      "mj_id2name": 168,
+      "mj_kinematics": 921,
+      "mj_geomDistance": 39885
+    },
+    "forbidden_api_attempts": [],
+    "physics_steps": 0,
+    "constraint_solves": 0,
+    "resets": 0,
+    "forward_calls": 0,
+    "collision_calls": 0
+  },
+  "counts": {
+    "samples_complete": 921,
+    "body_pair_checks": 105915,
+    "part_pair_checks": 2229741,
+    "aabb_certified_separated": 2189856,
+    "positive_geom_distances": 39885,
+    "zero_geom_distances": 0,
+    "negative_geom_distances": 0
+  },
+  "min_actual_query": {
+    "sample_index": 796,
+    "sample_id": "m198_quarter4",
+    "phase": "lift",
+    "time_s": 9.950000000000001,
+    "body_names": [
+      "finger21_link",
+      "finger31_link"
+    ],
+    "geom_names": [
+      "gripper0_proxy76_finger21_link_00",
+      "gripper0_proxy76_finger31_link_00"
+    ],
+    "cutoff_m": 0.01,
+    "distance_m": 0.0018704029351288617,
+    "closest_segment_m": [
+      -0.1749556130909517,
+      0.0547624992739691,
+      1.0779215345367061,
+      -0.1766790387789559,
+      0.05407842715969676,
+      1.0781670062868953
+    ]
+  },
+  "lowest_certified_bound": {
+    "sample_index": 115,
+    "sample_id": "m028_quarter3",
+    "phase": "approach_high",
+    "certified_lower_bound_or_geom_distance_m": 1.9065259819484037e-07,
+    "query_min_if_aabb_overlap_m": 0.009680360506818397,
+    "body_names": [
+      "finger33_link",
+      "finger42_link"
+    ]
+  },
+  "static_verdict": "SEPARATED_AT_ALL_FROZEN_FINITE_SAMPLES"
+}

@@ -1,0 +1,117 @@
+{
+  "baseline_commit": "8142d0ca9a6e78332118ab5e632cafe4e39da28b",
+  "diagnostic_only": true,
+  "new_real_physics_steps": 1000,
+  "lambda0_rerun": false,
+  "lambda1_runs": 1,
+  "numeric": {
+    "lambda0": {
+      "steps": 1000,
+      "nonfinite_steps": 0,
+      "warning_steps": 0,
+      "tracking": {
+        "finger11": {
+          "max_all_steps_error_rad": 0.17902201408316787,
+          "max_closed_steady_error_rad": 0.024062331942956927,
+          "max_open_steady_error_rad": 0.0012710606371313005,
+          "first_steady_exceed_step": 451,
+          "final_q_rad": 0.0006146238185654232
+        },
+        "finger12": {
+          "max_all_steps_error_rad": 0.00036395742851989664,
+          "max_closed_steady_error_rad": 7.94646514358026e-05,
+          "max_open_steady_error_rad": 0.00011008825740453431,
+          "first_steady_exceed_step": null,
+          "final_q_rad": 0.00011008825740453431
+        }
+      },
+      "base_finger12": {
+        "contact_steps": 428,
+        "first_contact_step": 200,
+        "first_contact_time_s": 0.4000000000000003,
+        "first_overlap_exceed_step": 229,
+        "first_overlap_exceed_time_s": 0.45800000000000035,
+        "min_contact_distance_m": -0.006047435571495536,
+        "max_normal_force_N": 62.23316676544722,
+        "max_normal_force_step": 500,
+        "overlap_exceed_steps": 368
+      },
+      "max_enabled_nonadjacent_overlap_m": 0.006047435571495536,
+      "first_contact_or_tracking_failure_step": 229,
+      "first_contact_or_tracking_failure_time_s": 0.45800000000000035
+    },
+    "lambda1": {
+      "steps": 1000,
+      "nonfinite_steps": 0,
+      "warning_steps": 0,
+      "tracking": {
+        "finger11": {
+          "max_all_steps_error_rad": 0.1779305111539088,
+          "max_closed_steady_error_rad": 0.022723927198742944,
+          "max_open_steady_error_rad": 0.0012703726464461682,
+          "first_steady_exceed_step": 451,
+          "final_q_rad": 0.000614448262947339
+        },
+        "finger12": {
+          "max_all_steps_error_rad": 0.11456673171840664,
+          "max_closed_steady_error_rad": 0.004492615304574343,
+          "max_open_steady_error_rad": 0.0028551561632103673,
+          "first_steady_exceed_step": null,
+          "final_q_rad": 0.0012180239041157703
+        }
+      },
+      "base_finger12": {
+        "contact_steps": 426,
+        "first_contact_step": 201,
+        "first_contact_time_s": 0.4020000000000003,
+        "first_overlap_exceed_step": 231,
+        "first_overlap_exceed_time_s": 0.46200000000000035,
+        "min_contact_distance_m": -0.005915937025693698,
+        "max_normal_force_N": 60.8816813127164,
+        "max_normal_force_step": 500,
+        "overlap_exceed_steps": 365
+      },
+      "max_enabled_nonadjacent_overlap_m": 0.005915937025693698,
+      "first_contact_or_tracking_failure_step": 231,
+      "first_contact_or_tracking_failure_time_s": 0.46200000000000035
+    }
+  },
+  "source_surface": {
+    "lambda0": {
+      "records_checked": 1000,
+      "classification_counts": {
+        "surface_disjoint_float64": 572,
+        "strict_transverse_crossing": 428
+      },
+      "first_strict_intersection_step": 200,
+      "last_strict_intersection_step": 627,
+      "boundary_or_numerical_steps": [],
+      "classification_transition_steps": [
+        200,
+        628
+      ],
+      "all_recorded_post_source_surfaces_separated": false
+    },
+    "lambda1": {
+      "records_checked": 1000,
+      "classification_counts": {
+        "surface_disjoint_float64": 574,
+        "strict_transverse_crossing": 426
+      },
+      "first_strict_intersection_step": 201,
+      "last_strict_intersection_step": 626,
+      "boundary_or_numerical_steps": [],
+      "classification_transition_steps": [
+        201,
+        627
+      ],
+      "all_recorded_post_source_surfaces_separated": false
+    }
+  },
+  "lambda1_numeric_screening": "FAIL",
+  "lambda1_source_surface_screening": "FAIL",
+  "local_hypothesis": "NOT_SUPPORTED_LAMBDA1_CANDIDATE_FAILED",
+  "full_7000_acceptance": "UNCHANGED_FAIL",
+  "grasp_success": "UNKNOWN",
+  "libero_task": "NOT_RUN"
+}

@@ -1,0 +1,101 @@
+{
+  "schema": "nero-dh116-libero-runtime-file-preflight-v1",
+  "recorded_utc": "2026-10-20T14:36:11.333414+00:00",
+  "scope": "Pure file, package metadata, Git identity and system binary/library presence checks already executed in this task; no repeated full scan while saving this record.",
+  "checkout": {
+    "path": "/data_robot/projects/.worktrees/nero_dh116_finger22_risk_review",
+    "head": "85a265ac96f0be141f82d10667b9ea8e8ce02e99"
+  },
+  "runtime": {
+    "prefix": "/data_robot/verification/nero_dh116_right",
+    "head": "8ffe0333c344669e3e3ad66125ba18f0cf48c0f6",
+    "existing_untracked_preserved": [
+      "examples/right_hand/white_bowl_candidate.py",
+      "examples/right_hand/white_bowl_geometry.py",
+      "examples/right_hand/white_bowl_model.py",
+      "examples/right_hand/white_bowl_run.py"
+    ],
+    "python_version": "3.11.16",
+    "python_base_executable_sha256": "ec579de7512e84d960bc642a840de69c785c52d6adf89e3a15f51717b29be40f",
+    "numpy_version": "1.26.4",
+    "mujoco_version": "3.2.3",
+    "robosuite_version": "1.4.1",
+    "libero_version": "0.1.0",
+    "libero_commit": "f78abd68ee283de9f9be3c8f7e2a9ad60246e95c",
+    "libero_git_diff_empty": true
+  },
+  "completed_checks": {
+    "historical_inputs": {
+      "source": "examples/right_hand/evidence/d3_finger22_dynamic/run/frozen-before-first-step.json#/input_sha256_before",
+      "checked": 518,
+      "mismatches": [],
+      "resolution": "checkout files from new worktree; .reference-deps/ and runs/ from fixed runtime prefix"
+    },
+    "locked_packages": {
+      "sources": [
+        "examples/libero_reference/env/requirements.lock",
+        "examples/libero_reference/env/build.lock"
+      ],
+      "checked": 57,
+      "mismatches": [],
+      "method": "importlib.metadata only; no package imports"
+    },
+    "libero_source_manifest": {
+      "source": "examples/libero_reference/env/libero-source.sha256",
+      "checked": 1116,
+      "mismatches": []
+    },
+    "robosuite_stock_wheel": {
+      "wheel_sha256": "62587cd5888d9d3d813f3ffcc7017f6f77efa618952527a0b9bb139ffd0a3741",
+      "installed_files_compared_byte_for_byte": 1019,
+      "mismatches": []
+    },
+    "mujoco_stock_wheel": {
+      "wheel_sha256": "4c6add7cb34dd194ffecab169dca296ef3280eeecb2d4fc647280b6484dac8c8",
+      "installed_files_compared_byte_for_byte": 62,
+      "mismatches": []
+    }
+  },
+  "frozen_resources": {
+    "examples/right_hand/evidence/d3_research_contact_policy/research-policy.json": "48632dfa4bbe0630ef7d61b9e706240d7769ad6361d588e1d02025bde4bc6454",
+    "examples/right_hand/candidates/finger22_local/model.xml": "7f9d84061c3e7d176763c688d2389f8b3d3e38386b8e990a0fa047ff2bc3329c",
+    "examples/right_hand/white_bowl_run.py": "67afdd0ebd03ed37b8ef874d5985e4e2b0fbe62912a8a201d09b4a1ffeb4b2e5",
+    "examples/right_hand/evidence/d3_finger22_dynamic/run/schedule.json": "4fcb72c06028ba405122c808d8ec90486f022199e1c01904d65b034c18be0b81"
+  },
+  "system_availability": {
+    "bwrap": "/usr/bin/bwrap",
+    "ffmpeg": "/usr/bin/ffmpeg",
+    "ffmpeg_version": "4.4.2-0ubuntu0.22.04.1",
+    "ffmpeg_libx264_enabled": true,
+    "nvidia_device_nodes_present": true,
+    "dri_device_directory_present": true,
+    "egl_libraries_present": [
+      "libEGL.so.1",
+      "libEGL_nvidia.so.0",
+      "libGLdispatch.so.0",
+      "libGLESv2.so.2"
+    ],
+    "disk_available_human_snapshot": {
+      "/data_robot": "6.0T",
+      "/tmp": "109G"
+    },
+    "disk_semantics": "Human-readable df -h observation, not exact byte values; not remeasured when recording."
+  },
+  "execution_boundaries": {
+    "mujoco_imports": 0,
+    "native_model_constructors": 0,
+    "native_compilations": 0,
+    "mj_step": 0,
+    "Reset": 0,
+    "forward": 0,
+    "egl_contexts_created": 0,
+    "new_geometry_generated": 0,
+    "old_files_modified": 0,
+    "note": "Counts describe only this read-only preflight subtask, not the subsequently authorized once-only rollout or prior historical compiler deviation."
+  },
+  "limitations": [
+    "EGL shared libraries/device availability is not a newly executed render test.",
+    "Installed package versions plus selected stock file equality and frozen resource hashes do not establish task success.",
+    "Previous compiler self-test execution deviation remains unchanged."
+  ]
+}

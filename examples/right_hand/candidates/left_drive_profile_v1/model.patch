@@ -1,0 +1,96 @@
+--- a/model.xml
++++ b/model.xml
+@@ -519,15 +519,15 @@
+                         <geom name="gripper0_base_link_visual_0" type="mesh" mesh="gripper0_base_link" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" rgba="1 1 1 1" />
+                         <body name="gripper0_finger11_link" pos="0.018 0.021747 0.043279" quat="0.99904823167098911 -0.043619156285622802 0 0">
+                           <inertial mass="0.010254" pos="0.0078225 0.0020462 -0.0025622" fullinertia="7.2142E-07 1.1141E-06 1.144E-06 -1.1025E-07 1.8578E-07 4.8596E-08" />
+-                          <joint name="gripper0_finger11" type="hinge" pos="0 0 0" axis="0 0 -1" range="0 1.047198" damping="2.0" armature="0.01" frictionloss="0" />
++                          <joint name="gripper0_finger11" type="hinge" pos="0 0 0" axis="0 0 -1" range="0 1.047198" damping="0" armature="0" frictionloss="0" />
+                           <geom name="gripper0_finger11_link_visual_0" type="mesh" mesh="gripper0_finger11_link" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" rgba="1 1 1 1" />
+                           <body name="gripper0_finger12_link" pos="0.018876 0.0049375 -0.0056093" quat="0.88168791042395422 -0.058430086915037989 0.45425840376001447 0.11340924198999838">
+                             <inertial mass="0.010145" pos="0.0014182 -1.2893E-06 0.024329" fullinertia="2.4795E-06 2.2943E-06 8.8906E-07 2.3633E-11 -9.1895E-08 4.4162E-11" />
+-                            <joint name="gripper0_finger12" type="hinge" pos="0 0 0" axis="0 -1 0" range="0 0.523599" damping="2.0" armature="0.01" frictionloss="0" />
++                            <joint name="gripper0_finger12" type="hinge" pos="0 0 0" axis="0 -1 0" range="0 0.523599" damping="0" armature="0" frictionloss="0" />
+                             <geom name="gripper0_finger12_link_visual_0" type="mesh" mesh="gripper0_finger12_link" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" rgba="1 1 1 1" />
+                             <body name="gripper0_finger13_link" pos="0 0 0.045" quat="1 0 0 0">
+                               <inertial mass="0.020548" pos="0.0064864 -1.72E-06 0.014709" fullinertia="2.4642E-06 2.3555E-06 8.7678E-07 2.2654E-10 -1.276E-07 3.4328E-10" />
+-                              <joint name="gripper0_finger13" type="hinge" pos="0 0 0" axis="0 -1 0" range="0.004592 0.594583" damping="2.0" armature="0.01" frictionloss="0" />
++                              <joint name="gripper0_finger13" type="hinge" pos="0 0 0" axis="0 -1 0" range="0.004592 0.594583" damping="0" armature="0" frictionloss="0" />
+                               <geom name="gripper0_finger13_link_visual_0" type="mesh" mesh="gripper0_finger13_link" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" rgba="1 1 1 1" />
+                               <body name="gripper0_finger14_link" pos="0 0 0" quat="1 0 0 0">
+                                 <inertial mass="0.00064654" pos="0.0030983 8.624E-07 0.024752" fullinertia="4.6206E-08 3.0972E-08 3.328E-08 -1.7511E-11 -7.0078E-09 3.3703E-12" />
+@@ -562,11 +562,11 @@
+                         </body>
+                         <body name="gripper0_finger21_link" pos="-0.011581 0.031971 0.10003" quat="0.99824312139773297 -0.026139868701238692 0.053154872156489515 -0.0013919096307386831">
+                           <inertial mass="0.0067143" pos="-0.0017978 3.2789E-07 0.018686" fullinertia="1.1951E-06 1.0688E-06 3.7304E-07 6.7451E-12 -4.4967E-09 -2.4168E-12" />
+-                          <joint name="gripper0_finger21" type="hinge" pos="0 0 0" axis="0 1 0" range="0 1.396263" damping="2.0" armature="0.01" frictionloss="0" />
++                          <joint name="gripper0_finger21" type="hinge" pos="0 0 0" axis="0 1 0" range="0 1.396263" damping="0" armature="0" frictionloss="0" />
+                           <geom name="gripper0_finger21_link_visual_0" type="mesh" mesh="gripper0_finger21_link" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" rgba="1 1 1 1" />
+                           <body name="gripper0_finger22_link" pos="0 0 0.035" quat="1 0 0 0">
+                             <inertial mass="0.014789" pos="-0.0019337 7.2998E-07 0.02175" fullinertia="1.4665E-06 1.4889E-06 3.5281E-07 1.1416E-11 -1.6584E-07 -9.2753E-11" />
+-                            <joint name="gripper0_finger22" type="hinge" pos="0 0 0" axis="0 1 0" range="0.011072 1.687426" damping="2.0" armature="0.01" frictionloss="0" />
++                            <joint name="gripper0_finger22" type="hinge" pos="0 0 0" axis="0 1 0" range="0.011072 1.687426" damping="0" armature="0" frictionloss="0" />
+                             <geom name="gripper0_finger22_link_visual_0" type="mesh" mesh="gripper0_finger22_link" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" rgba="1 1 1 1" />
+                             <body name="gripper0_finger23_link" pos="0 0 0" quat="1 0 0 0">
+                               <inertial mass="0.00083419" pos="0.0027534 -5.1038E-07 0.027456" fullinertia="1.0852E-07 9.6252E-08 2.404E-08 -2.4081E-13 -9.2843E-09 -2.9524E-12" />
+@@ -593,11 +593,11 @@
+                         </body>
+                         <body name="gripper0_finger31_link" pos="-0.013501 0.0105 0.10286" quat="0.99869621095951899 0 0.051047803234809563 0">
+                           <inertial mass="0.0067141" pos="-0.0017978 3.3269E-07 0.018686" fullinertia="1.1951E-06 1.0688E-06 3.7303E-07 1.1431E-11 -4.4917E-09 8.2241E-12" />
+-                          <joint name="gripper0_finger31" type="hinge" pos="0 0 0" axis="0 1 0" range="0 1.396263" damping="2.0" armature="0.01" frictionloss="0" />
++                          <joint name="gripper0_finger31" type="hinge" pos="0 0 0" axis="0 1 0" range="0 1.396263" damping="0" armature="0" frictionloss="0" />
+                           <geom name="gripper0_finger31_link_visual_0" type="mesh" mesh="gripper0_finger31_link" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" rgba="1 1 1 1" />
+                           <body name="gripper0_finger32_link" pos="0 0 0.035" quat="1 0 0 0">
+                             <inertial mass="0.017444" pos="-0.0021242 6.6141E-08 0.024943" fullinertia="4.1711E-06 4.1927E-06 4.4322E-07 1.8194E-11 -2.6488E-07 -1.6389E-11" />
+-                            <joint name="gripper0_finger32" type="hinge" pos="0 0 0" axis="0 1 0" range="0.011072 1.687426" damping="2.0" armature="0.01" frictionloss="0" />
++                            <joint name="gripper0_finger32" type="hinge" pos="0 0 0" axis="0 1 0" range="0.011072 1.687426" damping="0" armature="0" frictionloss="0" />
+                             <geom name="gripper0_finger32_link_visual_0" type="mesh" mesh="gripper0_finger32_link" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" rgba="1 1 1 1" />
+                             <body name="gripper0_finger33_link" pos="0 0 0" quat="1 0 0 0">
+                               <inertial mass="0.00083416" pos="0.0025776 -4.8031E-07 0.03447" fullinertia="1.0861E-07 9.6246E-08 2.3939E-08 1.3942E-12 -8.8309E-09 -5.9916E-13" />
+@@ -617,11 +617,11 @@
+                         </body>
+                         <body name="gripper0_finger41_link" pos="-0.015081 -0.010971 0.10183" quat="0.99715023839905703 0.026111386467041704 0.0707542540177757 0.0018528615330230757">
+                           <inertial mass="0.006714" pos="-0.0017978 2.8835E-07 0.018686" fullinertia="1.1951E-06 1.0688E-06 3.7303E-07 1.5194E-11 -4.4902E-09 1.057E-11" />
+-                          <joint name="gripper0_finger41" type="hinge" pos="0 0 0" axis="0 1 0" range="0 1.396263" damping="2.0" armature="0.01" frictionloss="0" />
++                          <joint name="gripper0_finger41" type="hinge" pos="0 0 0" axis="0 1 0" range="0 1.396263" damping="0" armature="0" frictionloss="0" />
+                           <geom name="gripper0_finger41_link_visual_0" type="mesh" mesh="gripper0_finger41_link" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" rgba="1 1 1 1" />
+                           <body name="gripper0_finger42_link" pos="0 0 0.035" quat="1 0 0 0">
+                             <inertial mass="0.014788" pos="-0.00099481 6.0006E-07 0.021813" fullinertia="1.4501E-06 1.4888E-06 3.6915E-07 2.324E-11 -2.1315E-07 -8.582E-11" />
+-                            <joint name="gripper0_finger42" type="hinge" pos="0 0 0" axis="0 1 0" range="0.011072 1.687426" damping="2.0" armature="0.01" frictionloss="0" />
++                            <joint name="gripper0_finger42" type="hinge" pos="0 0 0" axis="0 1 0" range="0.011072 1.687426" damping="0" armature="0" frictionloss="0" />
+                             <geom name="gripper0_finger42_link_visual_0" type="mesh" mesh="gripper0_finger42_link" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" rgba="1 1 1 1" />
+                             <body name="gripper0_finger43_link" pos="0 0 0" quat="1 0 0 0">
+                               <inertial mass="0.0008342" pos="0.0039336 -3.2576E-07 0.027311" fullinertia="1.0756E-07 9.6251E-08 2.4997E-08 5.2726E-13 -1.2886E-08 -6.5627E-13" />
+@@ -641,11 +641,11 @@
+                         </body>
+                         <body name="gripper0_finger51_link" pos="-0.013081 -0.032156 0.097798" quat="0.99854635674640846 0.039232954310970194 0.036930250575102956 0.0014509710431255109">
+                           <inertial mass="0.0067142" pos="-0.0017978 4.0336E-07 0.018686" fullinertia="1.1951E-06 1.0688E-06 3.7303E-07 9.6674E-12 -4.4947E-09 3.902E-12" />
+-                          <joint name="gripper0_finger51" type="hinge" pos="0 0 0" axis="0 1 0" range="0 1.396263" damping="2.0" armature="0.01" frictionloss="0" />
++                          <joint name="gripper0_finger51" type="hinge" pos="0 0 0" axis="0 1 0" range="0 1.396263" damping="0" armature="0" frictionloss="0" />
+                           <geom name="gripper0_finger51_link_visual_0" type="mesh" mesh="gripper0_finger51_link" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" rgba="1 1 1 1" />
+                           <body name="gripper0_finger52_link" pos="0 0 0.035" quat="1 0 0 0">
+                             <inertial mass="0.010445" pos="-0.0024432 3.1795E-07 0.016659" fullinertia="1.336E-06 1.3478E-06 2.4659E-07 2.6011E-11 -1.1818E-07 -5.5233E-12" />
+-                            <joint name="gripper0_finger52" type="hinge" pos="0 0 0" axis="0 1 0" range="0.011072 1.687426" damping="2.0" armature="0.01" frictionloss="0" />
++                            <joint name="gripper0_finger52" type="hinge" pos="0 0 0" axis="0 1 0" range="0.011072 1.687426" damping="0" armature="0" frictionloss="0" />
+                             <geom name="gripper0_finger52_link_visual_0" type="mesh" mesh="gripper0_finger52_link" group="1" contype="0" conaffinity="0" density="0" pos="0 0 0" quat="1 0 0 0" rgba="1 1 1 1" />
+                             <body name="gripper0_finger53_link" pos="0 0 0" quat="1 0 0 0">
+                               <inertial mass="0.00059177" pos="0.0021833 1.5926E-06 0.02278" fullinertia="4.5328E-08 3.6598E-08 1.5894E-08 2.1034E-12 -3.5665E-09 -2.539E-12" />
+@@ -1076,12 +1076,12 @@
+     <motor name="robot0_urdf_motor_joint5" joint="robot0_joint5" ctrllimited="true" ctrlrange="-100 100" />
+     <motor name="robot0_urdf_motor_joint6" joint="robot0_joint6" ctrllimited="true" ctrlrange="-100 100" />
+     <motor name="robot0_urdf_motor_joint7" joint="robot0_joint7" ctrllimited="true" ctrlrange="-100 100" />
+-    <position name="gripper0_urdf_act_finger11" joint="gripper0_finger11" ctrllimited="true" ctrlrange="0 1.047198" kp="50" kv="2.0" />
+-    <position name="gripper0_urdf_act_finger12" joint="gripper0_finger12" ctrllimited="true" ctrlrange="0 0.523599" kp="50" kv="2.0" />
+-    <position name="gripper0_urdf_act_finger21" joint="gripper0_finger21" ctrllimited="true" ctrlrange="0 1.396263" kp="50" kv="2.0" />
+-    <position name="gripper0_urdf_act_finger31" joint="gripper0_finger31" ctrllimited="true" ctrlrange="0 1.396263" kp="50" kv="2.0" />
+-    <position name="gripper0_urdf_act_finger41" joint="gripper0_finger41" ctrllimited="true" ctrlrange="0 1.396263" kp="50" kv="2.0" />
+-    <position name="gripper0_urdf_act_finger51" joint="gripper0_finger51" ctrllimited="true" ctrlrange="0 1.396263" kp="50" kv="2.0" />
++    <position name="gripper0_urdf_act_finger11" joint="gripper0_finger11" ctrllimited="true" ctrlrange="0 1.047198" kp="0.65286574077483084" kv="0.026114629630993234" />
++    <position name="gripper0_urdf_act_finger12" joint="gripper0_finger12" ctrllimited="true" ctrlrange="0 0.523599" kp="0.65991473097275011" kv="0.026396589238910004" />
++    <position name="gripper0_urdf_act_finger21" joint="gripper0_finger21" ctrllimited="true" ctrlrange="0 1.396263" kp="0.5098435598707074" kv="0.020393742394828294" />
++    <position name="gripper0_urdf_act_finger31" joint="gripper0_finger31" ctrllimited="true" ctrlrange="0 1.396263" kp="0.69307170971793874" kv="0.027722868388717549" />
++    <position name="gripper0_urdf_act_finger41" joint="gripper0_finger41" ctrllimited="true" ctrlrange="0 1.396263" kp="0.51027003659620607" kv="0.020410801463848244" />
++    <position name="gripper0_urdf_act_finger51" joint="gripper0_finger51" ctrllimited="true" ctrlrange="0 1.396263" kp="0.29451331029853522" kv="0.011780532411941408" />
+   </actuator>
+   <equality>
+     <joint name="gripper0_urdf_mimic_finger13" joint1="gripper0_finger13" joint2="gripper0_finger12" polycoef="0.004592 0.8808 0 0 0" solref="0.004 1" solimp="0.9 0.99 0.001 0.5 2" />

@@ -1,0 +1,5 @@
+assets: /data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/assets
+bddl_files: /data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/bddl_files
+benchmark_root: /data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero
+datasets: /data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/datasets
+init_states: /data_robot/verification/nero_dh116_right/.reference-deps/LIBERO/libero/libero/init_files

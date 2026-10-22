@@ -1,0 +1,39 @@
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /data_robot/verification/nero_dh116_right/.reference-env/lib/python3.11/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+PASS: seven existing absolute-position control methods unchanged in AST: 7
+{
+  "actual_body_exclusion": true,
+  "fake_weld_exclusion_rejected": true,
+  "blocked_dynamics_calls": [
+    "mj_step",
+    "mj_step1",
+    "mj_step2",
+    "mj_forward",
+    "mj_forwardSkip",
+    "mj_fwdConstraint",
+    "mj_RungeKutta",
+    "mj_Euler"
+  ],
+  "guard_counts": {
+    "mj_geomDistance": 0,
+    "mj_kinematics": 0,
+    "mj_name2id": 0,
+    "physics_steps": 0,
+    "forward_calls": 0,
+    "constraint_solves": 0,
+    "integration_calls": 0,
+    "collision_calls": 0,
+    "forbidden_attempts": 8
+  },
+  "existing_focused_geometry_checks": {
+    "strict_crossing": "strict_transverse_crossing",
+    "coplanar_overlap": "boundary_or_numerical_contact",
+    "parallel_separation": "surface_disjoint_float64",
+    "overlapping_boxes_disjoint_triangles": "surface_disjoint_float64",
+    "nonstrict_then_strict": "strict_transverse_crossing",
+    "rigid_BVH_leaf_enclosure": true
+  }
+}
+PASS: neutral mimic state exactly matches formal right keyframe
+PASS: five support/opposition cases and nonfinite failure serialization; no simulator constructed or dynamics run

@@ -1,0 +1,165 @@
+{
+  "status": "EXPLORATORY_STOPPED_AT_FIRST_ORIGINAL_PHYSICAL_BOUND",
+  "authorization": "https://github.com/LeoandDream/Nero_DH116_assets/pull/4#issuecomment-6290062555",
+  "baseline_commit": "16b851f76cd04f535e96dacaf2e0d7b86af17f0a",
+  "actual_physics_steps": 4769,
+  "dynamic_attempts": 1,
+  "crossed4731": true,
+  "crossed4742": true,
+  "phase_physics_steps": {
+    "settle_preshape": 250,
+    "approach_high": 2000,
+    "descend": 1750,
+    "close": 769
+  },
+  "first_failure": {
+    "step": 4769,
+    "macro": 190,
+    "source_macro": 150,
+    "repeat_index": 0,
+    "phase": "close",
+    "reasons": [
+      "ROBOT_CONTACT_OVERLAP"
+    ]
+  },
+  "over2mm_contacts_at_failure": [
+    {
+      "geom": [
+        "white_bowl_1_g23",
+        "gripper0_proxy76_finger23_link_06"
+      ],
+      "body": [
+        "white_bowl_1_main",
+        "gripper0_finger23_link"
+      ],
+      "distance_m": -0.002029397980521897,
+      "position_world_m": [
+        -0.1620564249234805,
+        0.051223430303863976,
+        0.9309125530249877
+      ],
+      "frame": [
+        -0.7475180412432808,
+        -0.6639836179597368,
+        -0.018507649686202696,
+        -0.013837172089123448,
+        -0.012290881395700712,
+        0.9998287187829187,
+        -0.664097365364737,
+        0.7476460989770596,
+        1.734723475976807e-18
+      ],
+      "normal_world": [
+        -0.7475180412432808,
+        -0.6639836179597368,
+        -0.018507649686202696
+      ],
+      "cached_body_pose": [
+        {
+          "position_world_m": [
+            -0.1663129943389552,
+            0.09226581924820654,
+            0.8999897568056734
+          ],
+          "rotation_world": [
+            0.0031178547317874394,
+            -0.9999947363650535,
+            0.0008978998049807146,
+            0.9991517643117972,
+            0.0030783546448518995,
+            -0.04106428625100697,
+            0.04106130604955951,
+            0.0010251706535168749,
+            0.9991561030042486
+          ]
+        },
+        {
+          "position_world_m": [
+            -0.16503875070825375,
+            0.04632161863619599,
+            0.951603083482586
+          ],
+          "rotation_world": [
+            -0.07431984456662656,
+            0.9966068273291401,
+            0.03537502543517419,
+            0.9966708282278688,
+            0.07303861241024744,
+            0.03623011532911275,
+            0.03352343752015355,
+            0.037949872438947575,
+            -0.9987171703333738
+          ]
+        }
+      ],
+      "force_contact_frame": [
+        1.737957893863028,
+        -0.7590798331878482,
+        -0.9373809502145966,
+        0.37537330241731237,
+        0.0,
+        0.0
+      ],
+      "filter_reasons": [],
+      "finger22_region": null
+    }
+  ],
+  "prior_step_max_overlap_m": 0.0019464053936827008,
+  "state_control_force_prefix_identical_to_old_run": 4731,
+  "native_RK4_contact_cache_prefix_identical_to_old_run": 4731,
+  "first_state_difference": {},
+  "first_native_cache_difference": null,
+  "Reset_controller_criteria_and270actions_exact": true,
+  "first_positive_hand_bowl_step": 4518,
+  "original_physical_health": "FAIL",
+  "grasp_result": "UNKNOWN_EARLY_STOP",
+  "native_task_result": false,
+  "strict_grasp_success_claim": false,
+  "lift_from_Reset_m": -0.07001050485701388,
+  "lift_from_own_settled_m": 0.00057878504008535,
+  "longest_continuous_valid_hold_s": 0.0,
+  "final_environment_support": true,
+  "maxima": {
+    "arm_tracking_rad": 0.08880659361068322,
+    "active_tracking_rad": 0.04666121456570388,
+    "active_hold_tracking_rad": 0.0,
+    "mimic_rad": 0.00027890900694577114,
+    "joint_overshoot_rad": 0.0,
+    "robot_overlap_m": 0.002029397980521897,
+    "bowl_lift_m": 0.00057878504008535
+  },
+  "numerical_warnings_seen": false,
+  "all_states_finite": true,
+  "wrist_external_contact_steps": 0,
+  "posthoc_finger22_event_counts": {
+    "REGISTERED_LOCAL_FUNCTIONAL_APPROXIMATION": 1,
+    "STOP_UNKNOWN_SEMANTICS": 74
+  },
+  "posthoc_finger22_events": 75,
+  "other_contacts_not_reclassified": 40513,
+  "posthoc_decisions_never_used_online": true,
+  "posthoc_forbidden_API_attempts": {},
+  "posthoc_new_physics_Reset_FK_collision_calls": 0,
+  "independent_physical_validation": {
+    "steps_independently_recomputed": 4769,
+    "failures_recomputed": [
+      {
+        "step": 4769,
+        "reasons": [
+          "ROBOT_CONTACT_OVERLAP"
+        ]
+      }
+    ],
+    "support_gaps_after_settle_steps": [],
+    "tracking_mimic_limits_overlap_finite_clock_wrist_envelope_and_support_exact": true,
+    "new_physics_Reset_FK_collision_calls": 0
+  },
+  "old_files_unchanged": 1170,
+  "user_readme_unchanged": true,
+  "all_runtime_inputs_unchanged": true,
+  "model_sha256": "7f9d84061c3e7d176763c688d2389f8b3d3e38386b8e990a0fa047ff2bc3329c",
+  "formal_numeric_status": "FAIL_UNCHANGED_1e-10m",
+  "full_geometry_material_fidelity": "UNKNOWN_UNCHANGED",
+  "release_approved": false,
+  "limit": "Native proxy overlap is a measured threshold violation, not proof of true manufacturer-STL material penetration. No lift/hold was attempted."
+}

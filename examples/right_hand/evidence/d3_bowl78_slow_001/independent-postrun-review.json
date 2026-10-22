@@ -1,0 +1,348 @@
+{
+  "schema": "independent-white-bowl78-postrun-review-v1",
+  "method": "Independent stdlib-only JSON/gzip recomputation; no project or simulator imports and no reset/forward/step/collision calls.",
+  "verification_status": "MATCHES_RECORDED_EARLY_STOP",
+  "input_sha256": {
+    "/data_robot/projects/.worktrees/nero_dh116_right_finger13/examples/right_hand/evidence/d3_white_bowl_001/candidate.json": "ba767b42f99d3562255909bde5c970d529ba254769029ec1cd7a98faf76af0fb",
+    "/data_robot/projects/.worktrees/nero_dh116_right_finger13/examples/right_hand/evidence/d3_white_bowl_001/state.jsonl.gz": "ae30f82dbb543bbd74f8d15d6cdf9b646e7c29d67d3ed1d50f4fb7f84998efb3",
+    "/data_robot/projects/.worktrees/nero_dh116_right_finger13/examples/right_hand/evidence/d3_white_bowl_001/frozen-before-first-step.json": "73a14419e0e623f77ab366f4d41c29d44e71d70b34bf1a6fd7b61e714da250c5",
+    "/data_robot/verification/nero_dh116_right/runs/d3_bowl78_trial_001/schedule.json": "4fcb72c06028ba405122c808d8ec90486f022199e1c01904d65b034c18be0b81",
+    "/data_robot/verification/nero_dh116_right/runs/d3_bowl78_trial_001/state.jsonl.gz": "3a0fb1b74e89ec6df2e192546c38f59518d3ac4ff4b9c92c1d98d6d9ab02d615",
+    "/data_robot/verification/nero_dh116_right/runs/d3_bowl78_trial_001/contacts.jsonl.gz": "727a5b7d4b4016f7915cc38a4cc147c3ce89475ae171d6a339f570eefff99d89",
+    "/data_robot/verification/nero_dh116_right/runs/d3_bowl78_trial_001/result.json": "1ada099f6dc115a3df93f2d351db70d5cbf7760ae5b1391bbb94338fb9854184",
+    "/data_robot/verification/nero_dh116_right/runs/d3_bowl78_trial_001/frozen-before-first-step.json": "888b8040f2e032eeb97a2310d3091324874e6f16935c77e814e98e8c3a086884",
+    "/data_robot/verification/nero_dh116_right/runs/d3_bowl78_trial_001/robot-physical-preflight.json": "3e2fd8b06b84705065e466763d1f2aae2862cac642ed0e50598ec45e44b7aeae"
+  },
+  "source_counts": {
+    "original_commands": 230,
+    "scheduled_commands": 270,
+    "scheduled_command_multiplicities": {
+      "1": 190,
+      "2": 40
+    },
+    "state_rows": 1401,
+    "contact_rows": 1401,
+    "contact_records": 12914,
+    "robot_contact_records": 87,
+    "bowl_robot_contact_records": 0,
+    "completed_commands": 56,
+    "begun_actual_macros": 57,
+    "visited_source_macros": 34,
+    "phase_physics_steps": {
+      "settle_preshape": 250,
+      "approach_high": 1151
+    },
+    "phase_begun_commands": {
+      "settle_preshape": 10,
+      "approach_high": 47
+    },
+    "old_shared_rows": 501
+  },
+  "checks_performed": {
+    "candidate_sha": 1,
+    "frozen_candidate_sha": 1,
+    "frozen_schedule_sha": 1,
+    "criteria_unchanged": 1,
+    "all_270_schedule_rows_exact": 1,
+    "schedule_budget": 1,
+    "state_contact_counts": 1,
+    "parent_filter_enabled": 1,
+    "step_continuity": 1401,
+    "row_macro": 1401,
+    "row_source_macro": 1401,
+    "row_repeat_index": 1401,
+    "row_phase": 1401,
+    "row_action_13": 1401,
+    "row_target_qpos_18": 1401,
+    "robot_state_qpos_mapping": 1401,
+    "bowl_qpos_mapping": 1401,
+    "metric_arm_error_rad": 1401,
+    "metric_active_error_rad": 1401,
+    "metric_mimic_rad": 1401,
+    "metric_joint_overshoot_rad": 1401,
+    "metric_robot_overlap_m": 1401,
+    "metric_environment_support": 1401,
+    "metric_opposed_thumb_index_contact": 1401,
+    "metric_continuous_valid_hold_steps": 1401,
+    "metric_lift_from_own_settled_m": 1401,
+    "metric_lift_from_reset_m": 1401,
+    "recorded_finite_flag": 1401,
+    "all_step_failure_reasons": 1401,
+    "contact_numeric_finite": 12914,
+    "contact_geom_body_mapping": 12914,
+    "contact_filter_recomputed": 12914,
+    "all_result_maxima": 1,
+    "first_failure_matches": 1,
+    "stop_immediately_on_first_failure": 1,
+    "recorded_completed_commands": 1,
+    "recorded_settled_z": 1,
+    "recorded_reset_z": 1,
+    "recorded_final_lifts": 1,
+    "recorded_hold_duration": 1
+  },
+  "difference_count": 0,
+  "differences": [],
+  "criteria_exact_original": {
+    "scope": "NEW fixed right white-bowl criteria; not left/manufacturer/full-range certification",
+    "lift_from_own_settled_baseline_m_min": 0.02,
+    "continuous_hold_s_min": 1.0,
+    "hold_requires": [
+      "height >= settled+20mm",
+      "no bowl-table or other environmental support contacts",
+      "positive-force thumb and index contacts on opposing bowl sides"
+    ],
+    "steady_active_error_rad_max": 0.02,
+    "arm_tracking_error_rad_max": 0.1,
+    "linear_mimic_error_rad_max": 0.02,
+    "joint_limit_overshoot_rad_max": 0.01,
+    "eligible_internal_and_external_overlap_m_max": 0.002,
+    "warnings_allowed": 0,
+    "nonfinite_states_allowed": 0,
+    "native_task_result": "record native cabinet-placement predicate separately",
+    "strict_grasp_success_claim": false,
+    "stop": "First numerical/physical bound violation; no automatic retry or edits"
+  },
+  "first_violation_independently_recomputed": {
+    "step": 1401,
+    "macro": 56,
+    "source_macro": 33,
+    "repeat_index": 0,
+    "phase": "approach_high",
+    "reasons": [
+      "ARM_TRACKING"
+    ],
+    "arm_error_rad": [
+      0.02277418943685197,
+      0.023838180564673128,
+      0.002966806584915549,
+      0.04679976523004137,
+      0.042364151605984945,
+      0.11159018715604213,
+      0.012834942395334226
+    ],
+    "time_s": 2.801999999999913
+  },
+  "violation_row_count": 1,
+  "last_safe_step": 1400,
+  "last_safe_J6_error_rad": 0.0974699920320879,
+  "per_arm_channel_max_error": [
+    {
+      "joint": "robot0_joint1",
+      "error_rad": 0.02283829314017971,
+      "step": 951,
+      "macro": 38,
+      "source_macro": 24,
+      "repeat_index": 0,
+      "phase": "approach_high"
+    },
+    {
+      "joint": "robot0_joint2",
+      "error_rad": 0.02398249773763894,
+      "step": 1301,
+      "macro": 52,
+      "source_macro": 31,
+      "repeat_index": 0,
+      "phase": "approach_high"
+    },
+    {
+      "joint": "robot0_joint3",
+      "error_rad": 0.0031797803478110787,
+      "step": 701,
+      "macro": 28,
+      "source_macro": 19,
+      "repeat_index": 0,
+      "phase": "approach_high"
+    },
+    {
+      "joint": "robot0_joint4",
+      "error_rad": 0.04757920106608604,
+      "step": 901,
+      "macro": 36,
+      "source_macro": 23,
+      "repeat_index": 0,
+      "phase": "approach_high"
+    },
+    {
+      "joint": "robot0_joint5",
+      "error_rad": 0.042364151605984945,
+      "step": 1401,
+      "macro": 56,
+      "source_macro": 33,
+      "repeat_index": 0,
+      "phase": "approach_high"
+    },
+    {
+      "joint": "robot0_joint6",
+      "error_rad": 0.11159018715604213,
+      "step": 1401,
+      "macro": 56,
+      "source_macro": 33,
+      "repeat_index": 0,
+      "phase": "approach_high"
+    },
+    {
+      "joint": "robot0_joint7",
+      "error_rad": 0.012834942395334226,
+      "step": 1401,
+      "macro": 56,
+      "source_macro": 33,
+      "repeat_index": 0,
+      "phase": "approach_high"
+    }
+  ],
+  "per_active_hand_channel_max_error": [
+    {
+      "joint": "gripper0_finger11",
+      "error_rad": 0.02634468107933209,
+      "step": 226,
+      "macro": 9,
+      "source_macro": 9,
+      "repeat_index": 0,
+      "phase": "settle_preshape"
+    },
+    {
+      "joint": "gripper0_finger12",
+      "error_rad": 0.00010179358122612575,
+      "step": 1401,
+      "macro": 56,
+      "source_macro": 33,
+      "repeat_index": 0,
+      "phase": "approach_high"
+    },
+    {
+      "joint": "gripper0_finger21",
+      "error_rad": 0.00014234306395990577,
+      "step": 1401,
+      "macro": 56,
+      "source_macro": 33,
+      "repeat_index": 0,
+      "phase": "approach_high"
+    },
+    {
+      "joint": "gripper0_finger31",
+      "error_rad": 0.00017688358859184374,
+      "step": 1401,
+      "macro": 56,
+      "source_macro": 33,
+      "repeat_index": 0,
+      "phase": "approach_high"
+    },
+    {
+      "joint": "gripper0_finger41",
+      "error_rad": 0.00013066017726050106,
+      "step": 1401,
+      "macro": 56,
+      "source_macro": 33,
+      "repeat_index": 0,
+      "phase": "approach_high"
+    },
+    {
+      "joint": "gripper0_finger51",
+      "error_rad": 9.839798017100298e-05,
+      "step": 1401,
+      "macro": 56,
+      "source_macro": 33,
+      "repeat_index": 0,
+      "phase": "approach_high"
+    }
+  ],
+  "independent_maxima": {
+    "arm_tracking_rad": 0.11159018715604213,
+    "active_tracking_rad": 0.02634468107933209,
+    "active_hold_tracking_rad": 0.0,
+    "mimic_rad": 9.82354097267199e-07,
+    "joint_overshoot_rad": 0.0,
+    "robot_overlap_m": 2.2837872636348362e-05,
+    "bowl_lift_m": 2.475092881759622e-07
+  },
+  "height_and_hold": {
+    "reset_bowl_z_m": 0.97,
+    "own_settled_step": 250,
+    "own_settled_bowl_z_m": 0.8994107101029007,
+    "final_bowl_z_m": 0.8994109576121889,
+    "final_lift_from_reset_m": -0.07058904238781105,
+    "final_lift_from_own_settled_m": 2.475092881759622e-07,
+    "max_continuous_valid_hold_steps": 0,
+    "hold_phase_observed_steps": 0
+  },
+  "warnings_finite": {
+    "warning_rows": 0,
+    "nonfinite_recorded_numeric_state_rows": 0,
+    "all_recorded_finite_flags_true": true,
+    "qacc_independently_checkable": false,
+    "stored_state_numeric_arrays_strictly_finite": true
+  },
+  "old17_comparison": {
+    "initial_reset_exact_equality": {
+      "qpos": true,
+      "qvel": true,
+      "ctrl": true
+    },
+    "compared_common_rows": 501,
+    "first_action_retiming_difference_step": 276,
+    "fields": {
+      "action_13": {
+        "first_different_step": 276,
+        "shared_prefix_rows_equal": 275,
+        "maximum_abs_difference_first250": 0.0,
+        "first_difference_max_abs": 0.014656180044093414
+      },
+      "full_qpos": {
+        "first_different_step": 276,
+        "shared_prefix_rows_equal": 275,
+        "maximum_abs_difference_first250": 0.0,
+        "first_difference_max_abs": 1.4656657520983885e-06
+      },
+      "full_qvel": {
+        "first_different_step": 276,
+        "shared_prefix_rows_equal": 275,
+        "maximum_abs_difference_first250": 0.0,
+        "first_difference_max_abs": 0.0014657005343817683
+      },
+      "ctrl": {
+        "first_different_step": 276,
+        "shared_prefix_rows_equal": 275,
+        "maximum_abs_difference_first250": 0.0,
+        "first_difference_max_abs": 0.07472256481891579
+      },
+      "actuator_force": {
+        "first_different_step": 276,
+        "shared_prefix_rows_equal": 275,
+        "maximum_abs_difference_first250": 0.0,
+        "first_difference_max_abs": 0.07472256481891579
+      },
+      "robot_state_18": {
+        "first_different_step": 276,
+        "shared_prefix_rows_equal": 275,
+        "maximum_abs_difference_first250": 0.0,
+        "first_difference_max_abs": 1.4656657520983885e-06
+      },
+      "bowl_position_m": {
+        "first_different_step": null,
+        "shared_prefix_rows_equal": 501,
+        "maximum_abs_difference_first250": 0.0
+      }
+    },
+    "interpretation": "First250settle and all first275 pre-retiming rows are exact equal for logged state/action/control fields. First state differences coincide with different command at step276. This is not a paired causal isolation of model geometry from timing.",
+    "note": "Exact trajectory equality applies to logged fields only and the shared prefix; it does not certify identical unlogged solver/cache state."
+  },
+  "reported_outcomes": {
+    "execution": "STOPPED_AT_FIRST_FAILURE",
+    "B": "FAIL",
+    "control_health": "FAIL",
+    "grasp_result": "UNKNOWN_EARLY_STOP",
+    "native_task_result": false,
+    "strict_grasp_success_claim": false,
+    "dynamic_attempts": 1
+  },
+  "limitations": [
+    "No qacc array was logged; qacc finiteness is supported only by the runtime finite flag.",
+    "Warnings are independently checked from recorded dictionaries, not reconstructed simulator warning counters.",
+    "No hold/close/lift phase was reached; grasp remains UNKNOWN_EARLY_STOP.",
+    "Native success predicate is reported from result.json and was not executed again.",
+    "Contact geometry/forces are cached final RK4 internal-stage values; state and height are post-integration."
+  ],
+  "new_physics_steps": 0,
+  "new_resets": 0,
+  "new_forward_calls": 0
+}

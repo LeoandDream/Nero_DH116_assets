@@ -1,0 +1,642 @@
+{
+  "method": "Kinematic ancestor inspection plus separate +0.1rad perturbation of each passive joint at all 8 logged poses, using only mj_kinematics+comPos+geomDistance. No model changes.",
+  "body_ancestor_chains": {
+    "gripper0_base_link": [
+      {
+        "body": "gripper0_base_link",
+        "joints": []
+      },
+      {
+        "body": "robot0_gripper_flange",
+        "joints": []
+      },
+      {
+        "body": "robot0_link7",
+        "joints": [
+          "robot0_joint7"
+        ]
+      },
+      {
+        "body": "robot0_link6",
+        "joints": [
+          "robot0_joint6"
+        ]
+      },
+      {
+        "body": "robot0_link5",
+        "joints": [
+          "robot0_joint5"
+        ]
+      },
+      {
+        "body": "robot0_link4",
+        "joints": [
+          "robot0_joint4"
+        ]
+      },
+      {
+        "body": "robot0_link3",
+        "joints": [
+          "robot0_joint3"
+        ]
+      },
+      {
+        "body": "robot0_link2",
+        "joints": [
+          "robot0_joint2"
+        ]
+      },
+      {
+        "body": "robot0_link1",
+        "joints": [
+          "robot0_joint1"
+        ]
+      },
+      {
+        "body": "robot0_base_link",
+        "joints": []
+      }
+    ],
+    "gripper0_finger12_link": [
+      {
+        "body": "gripper0_finger12_link",
+        "joints": [
+          "gripper0_finger12"
+        ]
+      },
+      {
+        "body": "gripper0_finger11_link",
+        "joints": [
+          "gripper0_finger11"
+        ]
+      },
+      {
+        "body": "gripper0_base_link",
+        "joints": []
+      },
+      {
+        "body": "robot0_gripper_flange",
+        "joints": []
+      },
+      {
+        "body": "robot0_link7",
+        "joints": [
+          "robot0_joint7"
+        ]
+      },
+      {
+        "body": "robot0_link6",
+        "joints": [
+          "robot0_joint6"
+        ]
+      },
+      {
+        "body": "robot0_link5",
+        "joints": [
+          "robot0_joint5"
+        ]
+      },
+      {
+        "body": "robot0_link4",
+        "joints": [
+          "robot0_joint4"
+        ]
+      },
+      {
+        "body": "robot0_link3",
+        "joints": [
+          "robot0_joint3"
+        ]
+      },
+      {
+        "body": "robot0_link2",
+        "joints": [
+          "robot0_joint2"
+        ]
+      },
+      {
+        "body": "robot0_link1",
+        "joints": [
+          "robot0_joint1"
+        ]
+      },
+      {
+        "body": "robot0_base_link",
+        "joints": []
+      }
+    ],
+    "gripper0_finger42_link": [
+      {
+        "body": "gripper0_finger42_link",
+        "joints": [
+          "gripper0_finger42"
+        ]
+      },
+      {
+        "body": "gripper0_finger41_link",
+        "joints": [
+          "gripper0_finger41"
+        ]
+      },
+      {
+        "body": "gripper0_base_link",
+        "joints": []
+      },
+      {
+        "body": "robot0_gripper_flange",
+        "joints": []
+      },
+      {
+        "body": "robot0_link7",
+        "joints": [
+          "robot0_joint7"
+        ]
+      },
+      {
+        "body": "robot0_link6",
+        "joints": [
+          "robot0_joint6"
+        ]
+      },
+      {
+        "body": "robot0_link5",
+        "joints": [
+          "robot0_joint5"
+        ]
+      },
+      {
+        "body": "robot0_link4",
+        "joints": [
+          "robot0_joint4"
+        ]
+      },
+      {
+        "body": "robot0_link3",
+        "joints": [
+          "robot0_joint3"
+        ]
+      },
+      {
+        "body": "robot0_link2",
+        "joints": [
+          "robot0_joint2"
+        ]
+      },
+      {
+        "body": "robot0_link1",
+        "joints": [
+          "robot0_joint1"
+        ]
+      },
+      {
+        "body": "robot0_base_link",
+        "joints": []
+      }
+    ]
+  },
+  "conclusion": "base_link and finger12_link have none of the five passive joints in their ancestor chains; their pair is exactly invariant to all five passive definitions at fixed active/arm qpos. finger42_link includes finger41 (active driver) and finger42 (passive follower); only finger42 among the five passive joints changes this pair. Arm transforms move both bodies rigidly and do not change their intrinsic distance.",
+  "tests": [
+    {
+      "pose_id": "step_229_pre",
+      "tests": [
+        {
+          "passive_joint": "finger13",
+          "perturbation_rad": 0.1,
+          "geomDistance_changes_m": [
+            0.0,
+            0.0
+          ],
+          "base_finger12_transforms_max_abs_change": 0.0,
+          "finger42_geom_R_max_abs_change": 0.0
+        },
+        {
+          "passive_joint": "finger22",
+          "perturbation_rad": 0.1,
+          "geomDistance_changes_m": [
+            0.0,
+            0.0
+          ],
+          "base_finger12_transforms_max_abs_change": 0.0,
+          "finger42_geom_R_max_abs_change": 0.0
+        },
+        {
+          "passive_joint": "finger32",
+          "perturbation_rad": 0.1,
+          "geomDistance_changes_m": [
+            0.0,
+            0.0
+          ],
+          "base_finger12_transforms_max_abs_change": 0.0,
+          "finger42_geom_R_max_abs_change": 0.0
+        },
+        {
+          "passive_joint": "finger42",
+          "perturbation_rad": 0.1,
+          "geomDistance_changes_m": [
+            0.0,
+            0.00015490570272225224
+          ],
+          "base_finger12_transforms_max_abs_change": 0.0,
+          "finger42_geom_R_max_abs_change": 0.09115264806011225
+        },
+        {
+          "passive_joint": "finger52",
+          "perturbation_rad": 0.1,
+          "geomDistance_changes_m": [
+            0.0,
+            0.0
+          ],
+          "base_finger12_transforms_max_abs_change": 0.0,
+          "finger42_geom_R_max_abs_change": 0.0
+        }
+      ]
+    },
+    {
+      "pose_id": "step_229_post",
+      "tests": [
+        {
+          "passive_joint": "finger13",
+          "perturbation_rad": 0.1,
+          "geomDistance_changes_m": [
+            0.0,
+            0.0
+          ],
+          "base_finger12_transforms_max_abs_change": 0.0,
+          "finger42_geom_R_max_abs_change": 0.0
+        },
+        {
+          "passive_joint": "finger22",
+          "perturbation_rad": 0.1,
+          "geomDistance_changes_m": [
+            0.0,
+            0.0
+          ],
+          "base_finger12_transforms_max_abs_change": 0.0,
+          "finger42_geom_R_max_abs_change": 0.0
+        },
+        {
+          "passive_joint": "finger32",
+          "perturbation_rad": 0.1,
+          "geomDistance_changes_m": [
+            0.0,
+            0.0
+          ],
+          "base_finger12_transforms_max_abs_change": 0.0,
+          "finger42_geom_R_max_abs_change": 0.0
+        },
+        {
+          "passive_joint": "finger42",
+          "perturbation_rad": 0.1,
+          "geomDistance_changes_m": [
+            0.0,
+            0.0001973383310406307
+          ],
+          "base_finger12_transforms_max_abs_change": 0.0,
+          "finger42_geom_R_max_abs_change": 0.09115358221823106
+        },
+        {
+          "passive_joint": "finger52",
+          "perturbation_rad": 0.1,
+          "geomDistance_changes_m": [
+            0.0,
+            0.0
+          ],
+          "base_finger12_transforms_max_abs_change": 0.0,
+          "finger42_geom_R_max_abs_change": 0.0
+        }
+      ]
+    },
+    {
+      "pose_id": "step_451_pre",
+      "tests": [
+        {
+          "passive_joint": "finger13",
+          "perturbation_rad": 0.1,
+          "geomDistance_changes_m": [
+            0.0,
+            0.0
+          ],
+          "base_finger12_transforms_max_abs_change": 0.0,
+          "finger42_geom_R_max_abs_change": 0.0
+        },
+        {
+          "passive_joint": "finger22",
+          "perturbation_rad": 0.1,
+          "geomDistance_changes_m": [
+            0.0,
+            0.0
+          ],
+          "base_finger12_transforms_max_abs_change": 0.0,
+          "finger42_geom_R_max_abs_change": 0.0
+        },
+        {
+          "passive_joint": "finger32",
+          "perturbation_rad": 0.1,
+          "geomDistance_changes_m": [
+            0.0,
+            0.0
+          ],
+          "base_finger12_transforms_max_abs_change": 0.0,
+          "finger42_geom_R_max_abs_change": 0.0
+        },
+        {
+          "passive_joint": "finger42",
+          "perturbation_rad": 0.1,
+          "geomDistance_changes_m": [
+            0.0,
+            0.00018295010925317712
+          ],
+          "base_finger12_transforms_max_abs_change": 0.0,
+          "finger42_geom_R_max_abs_change": 0.09127772252383837
+        },
+        {
+          "passive_joint": "finger52",
+          "perturbation_rad": 0.1,
+          "geomDistance_changes_m": [
+            0.0,
+            0.0
+          ],
+          "base_finger12_transforms_max_abs_change": 0.0,
+          "finger42_geom_R_max_abs_change": 0.0
+        }
+      ]
+    },
+    {
+      "pose_id": "step_451_post",
+      "tests": [
+        {
+          "passive_joint": "finger13",
+          "perturbation_rad": 0.1,
+          "geomDistance_changes_m": [
+            0.0,
+            0.0
+          ],
+          "base_finger12_transforms_max_abs_change": 0.0,
+          "finger42_geom_R_max_abs_change": 0.0
+        },
+        {
+          "passive_joint": "finger22",
+          "perturbation_rad": 0.1,
+          "geomDistance_changes_m": [
+            0.0,
+            0.0
+          ],
+          "base_finger12_transforms_max_abs_change": 0.0,
+          "finger42_geom_R_max_abs_change": 0.0
+        },
+        {
+          "passive_joint": "finger32",
+          "perturbation_rad": 0.1,
+          "geomDistance_changes_m": [
+            0.0,
+            0.0
+          ],
+          "base_finger12_transforms_max_abs_change": 0.0,
+          "finger42_geom_R_max_abs_change": 0.0
+        },
+        {
+          "passive_joint": "finger42",
+          "perturbation_rad": 0.1,
+          "geomDistance_changes_m": [
+            0.0,
+            0.00018339830550395675
+          ],
+          "base_finger12_transforms_max_abs_change": 0.0,
+          "finger42_geom_R_max_abs_change": 0.09127784933899236
+        },
+        {
+          "passive_joint": "finger52",
+          "perturbation_rad": 0.1,
+          "geomDistance_changes_m": [
+            0.0,
+            0.0
+          ],
+          "base_finger12_transforms_max_abs_change": 0.0,
+          "finger42_geom_R_max_abs_change": 0.0
+        }
+      ]
+    },
+    {
+      "pose_id": "step_6498_pre",
+      "tests": [
+        {
+          "passive_joint": "finger13",
+          "perturbation_rad": 0.1,
+          "geomDistance_changes_m": [
+            0.0,
+            0.0
+          ],
+          "base_finger12_transforms_max_abs_change": 0.0,
+          "finger42_geom_R_max_abs_change": 0.0
+        },
+        {
+          "passive_joint": "finger22",
+          "perturbation_rad": 0.1,
+          "geomDistance_changes_m": [
+            0.0,
+            0.0
+          ],
+          "base_finger12_transforms_max_abs_change": 0.0,
+          "finger42_geom_R_max_abs_change": 0.0
+        },
+        {
+          "passive_joint": "finger32",
+          "perturbation_rad": 0.1,
+          "geomDistance_changes_m": [
+            0.0,
+            0.0
+          ],
+          "base_finger12_transforms_max_abs_change": 0.0,
+          "finger42_geom_R_max_abs_change": 0.0
+        },
+        {
+          "passive_joint": "finger42",
+          "perturbation_rad": 0.1,
+          "geomDistance_changes_m": [
+            0.0,
+            -0.0011942718887913983
+          ],
+          "base_finger12_transforms_max_abs_change": 0.0,
+          "finger42_geom_R_max_abs_change": 0.09504167427225299
+        },
+        {
+          "passive_joint": "finger52",
+          "perturbation_rad": 0.1,
+          "geomDistance_changes_m": [
+            0.0,
+            0.0
+          ],
+          "base_finger12_transforms_max_abs_change": 0.0,
+          "finger42_geom_R_max_abs_change": 0.0
+        }
+      ]
+    },
+    {
+      "pose_id": "step_6498_post",
+      "tests": [
+        {
+          "passive_joint": "finger13",
+          "perturbation_rad": 0.1,
+          "geomDistance_changes_m": [
+            0.0,
+            0.0
+          ],
+          "base_finger12_transforms_max_abs_change": 0.0,
+          "finger42_geom_R_max_abs_change": 0.0
+        },
+        {
+          "passive_joint": "finger22",
+          "perturbation_rad": 0.1,
+          "geomDistance_changes_m": [
+            0.0,
+            0.0
+          ],
+          "base_finger12_transforms_max_abs_change": 0.0,
+          "finger42_geom_R_max_abs_change": 0.0
+        },
+        {
+          "passive_joint": "finger32",
+          "perturbation_rad": 0.1,
+          "geomDistance_changes_m": [
+            0.0,
+            0.0
+          ],
+          "base_finger12_transforms_max_abs_change": 0.0,
+          "finger42_geom_R_max_abs_change": 0.0
+        },
+        {
+          "passive_joint": "finger42",
+          "perturbation_rad": 0.1,
+          "geomDistance_changes_m": [
+            0.0,
+            -0.001192334789522187
+          ],
+          "base_finger12_transforms_max_abs_change": 0.0,
+          "finger42_geom_R_max_abs_change": 0.09503356214022426
+        },
+        {
+          "passive_joint": "finger52",
+          "perturbation_rad": 0.1,
+          "geomDistance_changes_m": [
+            0.0,
+            0.0
+          ],
+          "base_finger12_transforms_max_abs_change": 0.0,
+          "finger42_geom_R_max_abs_change": 0.0
+        }
+      ]
+    },
+    {
+      "pose_id": "step_6511_pre",
+      "tests": [
+        {
+          "passive_joint": "finger13",
+          "perturbation_rad": 0.1,
+          "geomDistance_changes_m": [
+            0.0,
+            0.0
+          ],
+          "base_finger12_transforms_max_abs_change": 0.0,
+          "finger42_geom_R_max_abs_change": 0.0
+        },
+        {
+          "passive_joint": "finger22",
+          "perturbation_rad": 0.1,
+          "geomDistance_changes_m": [
+            0.0,
+            0.0
+          ],
+          "base_finger12_transforms_max_abs_change": 0.0,
+          "finger42_geom_R_max_abs_change": 0.0
+        },
+        {
+          "passive_joint": "finger32",
+          "perturbation_rad": 0.1,
+          "geomDistance_changes_m": [
+            0.0,
+            0.0
+          ],
+          "base_finger12_transforms_max_abs_change": 0.0,
+          "finger42_geom_R_max_abs_change": 0.0
+        },
+        {
+          "passive_joint": "finger42",
+          "perturbation_rad": 0.1,
+          "geomDistance_changes_m": [
+            0.0,
+            -0.0011611006735301466
+          ],
+          "base_finger12_transforms_max_abs_change": 0.0,
+          "finger42_geom_R_max_abs_change": 0.09492724218589113
+        },
+        {
+          "passive_joint": "finger52",
+          "perturbation_rad": 0.1,
+          "geomDistance_changes_m": [
+            0.0,
+            0.0
+          ],
+          "base_finger12_transforms_max_abs_change": 0.0,
+          "finger42_geom_R_max_abs_change": 0.0
+        }
+      ]
+    },
+    {
+      "pose_id": "step_6511_post",
+      "tests": [
+        {
+          "passive_joint": "finger13",
+          "perturbation_rad": 0.1,
+          "geomDistance_changes_m": [
+            0.0,
+            0.0
+          ],
+          "base_finger12_transforms_max_abs_change": 0.0,
+          "finger42_geom_R_max_abs_change": 0.0
+        },
+        {
+          "passive_joint": "finger22",
+          "perturbation_rad": 0.1,
+          "geomDistance_changes_m": [
+            0.0,
+            0.0
+          ],
+          "base_finger12_transforms_max_abs_change": 0.0,
+          "finger42_geom_R_max_abs_change": 0.0
+        },
+        {
+          "passive_joint": "finger32",
+          "perturbation_rad": 0.1,
+          "geomDistance_changes_m": [
+            0.0,
+            0.0
+          ],
+          "base_finger12_transforms_max_abs_change": 0.0,
+          "finger42_geom_R_max_abs_change": 0.0
+        },
+        {
+          "passive_joint": "finger42",
+          "perturbation_rad": 0.1,
+          "geomDistance_changes_m": [
+            0.0,
+            -0.0011584136908007192
+          ],
+          "base_finger12_transforms_max_abs_change": 0.0,
+          "finger42_geom_R_max_abs_change": 0.09492111678445353
+        },
+        {
+          "passive_joint": "finger52",
+          "perturbation_rad": 0.1,
+          "geomDistance_changes_m": [
+            0.0,
+            0.0
+          ],
+          "base_finger12_transforms_max_abs_change": 0.0,
+          "finger42_geom_R_max_abs_change": 0.0
+        }
+      ]
+    }
+  ],
+  "all_base_finger12_distance_changes_exact_zero": true,
+  "only_finger42_changes_finger12_finger42_distance": true
+}

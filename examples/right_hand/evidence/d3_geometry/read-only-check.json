@@ -1,0 +1,33 @@
+{
+  "physics_steps": 0,
+  "constraint_solves": 0,
+  "stepping_and_solve_APIs_blocked": true,
+  "input_sha256": {
+    "mjcf/nero_dh116_right.xml": "739d3d29bbfd4a6468fb8b75f4de09b719c0f96abb39508959c1dfc33a84b9cc",
+    "urdf/dh116_right.urdf": "1134b2e3ac3afb323dd1b5c11a793dab4c50d18445bec2ff47017c0c1c49a354",
+    "meshes/dh116_right/source/base_link.STL": "094504fed409afe137eafa6643c36f081934df873ef1cf9924ebb9725436b161",
+    "meshes/dh116_right/source/finger11_link.STL": "5659ee7dd15833a86f30c2138685baf48671fa7458a79cbb1d611ddb7f3648c8",
+    "meshes/dh116_right/source/finger12_link.STL": "8807c48538b9396e1d132df7c5cf6ee0a44c28c4dcb759b5b00a74003b715e67",
+    "meshes/dh116_right/source/finger13_link.STL": "594501a21c86d1d19b73cf17572b7a04ae488c5fee4b623e25c618dd15eb3419",
+    "meshes/dh116_right/source/finger14_link.STL": "c58b2a741f13cbe1da9b6bbffb0ce6acf97de28b829fe45ea65458313efff449",
+    "meshes/dh116_right/source/finger21_link.STL": "7162d86cefa849458536cbb77968560dbf4e6c7a8b1734777640f9da1f828886",
+    "meshes/dh116_right/source/finger22_link.STL": "5ebb8a2084495cb9e87b6ee531681500cfe5a37280320e97270d6e52c804081d",
+    "meshes/dh116_right/source/finger23_link.STL": "ccbd2de17dac2fe356e4275240f5f00f8eee01dd2f32a44fc5b1e150f93d99f6",
+    "meshes/dh116_right/source/finger31_link.STL": "2d4ec902f4b2d06872cfbda2e5a63f387aa82dfd522fd44da5e38b83f90cf2b6",
+    "meshes/dh116_right/source/finger32_link.STL": "f3cf0d1634338d331bc58ae7838023925a1654003f5728423de25808f490821e",
+    "meshes/dh116_right/source/finger33_link.STL": "2082e780c44d9e2ac91a9c355c3751f084fcbb42c39e33961178b81e5b3ce147",
+    "meshes/dh116_right/source/finger41_link.STL": "5366f649baa0c5c29cc1afdbcc6163b2bcb9001f0b9b8ae69a213f5209860289",
+    "meshes/dh116_right/source/finger42_link.STL": "4382f6f699a2cb342f00f5bf4ddbe20b7d2b664b522c5abcd49cfee551e748ae",
+    "meshes/dh116_right/source/finger43_link.STL": "4e0b20fc9c464825b466d3ca51ff4557f70d4a3ea935a00b09ad5639722251df",
+    "meshes/dh116_right/source/finger51_link.STL": "f1b5983e1cd4b29f5e4609001c525e93ff80bb1d921711a6327fd8e688fad1db",
+    "meshes/dh116_right/source/finger52_link.STL": "7c5f953a3cde495eae505dfa3ea248e768c69ab911c21f61825ddb42b4531994",
+    "meshes/dh116_right/source/finger53_link.STL": "63eb67492fce45f80b798d9ead4d194a9eafdae1ed6c0893820222ef3ffedbf1",
+    "examples/right_hand/evidence/hand-motion-state.jsonl.gz": "57e37a567b9a9381e5dff9563dce5521b9d48be81554b20781e98ab75291c54b",
+    "examples/right_hand/evidence/hand-motion-contacts.jsonl.gz": "c48cd97035d6bf63296fcac199b1e898d92547d566623fae5513745dc20b5b04",
+    "examples/right_hand/evidence/frozen-commands.json.gz": "d21df12fa6eb6419a248131d0ae3faddeeaeeb4e9a59f34c3cf17f3e43c0da37"
+  },
+  "inputs_unchanged": true,
+  "all_preexisting_tracked_files_unchanged": true,
+  "preexisting_tracked_files_checked": 354,
+  "source_commit": "ce920568e159ac38af4fda412ac84f2262e27035"
+}

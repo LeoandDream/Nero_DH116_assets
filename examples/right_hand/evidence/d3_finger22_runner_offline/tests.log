@@ -1,0 +1,24 @@
+test_4731_actual_cache_local_source_only (test_finger22_contact_adapter.AdapterTests.test_4731_actual_cache_local_source_only) ... ok
+test_exceptions_are_unknown_and_all_candidates_aggregate (test_finger22_contact_adapter.AdapterTests.test_exceptions_are_unknown_and_all_candidates_aggregate) ... ok
+test_frozen_geometry_risk_witnesses_and_seam (test_finger22_contact_adapter.AdapterTests.test_frozen_geometry_risk_witnesses_and_seam) ... ok
+test_geom_order_and_mpr_midpoint_do_not_select_surface (test_finger22_contact_adapter.AdapterTests.test_geom_order_and_mpr_midpoint_do_not_select_surface) ... ok
+test_initial_cache_contract_never_requires_or_executes_reset (test_finger22_contact_adapter.AdapterTests.test_initial_cache_contract_never_requires_or_executes_reset) ... ok
+test_native_non_bowl_counterpart_is_not_silently_allowed (test_finger22_contact_adapter.AdapterTests.test_native_non_bowl_counterpart_is_not_silently_allowed) ... ok
+test_runner_can_attach_and_serialize_diagnostic_without_cycles (test_finger22_contact_adapter.AdapterTests.test_runner_can_attach_and_serialize_diagnostic_without_cycles) ... ok
+test_schema_cache_binding_and_qualification_fail_closed (test_finger22_contact_adapter.AdapterTests.test_schema_cache_binding_and_qualification_fail_closed) ... ok
+test_source_envelope_failure_cannot_pass_by_positive_x (test_finger22_contact_adapter.AdapterTests.test_source_envelope_failure_cannot_pass_by_positive_x) ... ok
+test_stop_adapter_retains_physical_reasons_and_unknown_is_fail_closed (test_finger22_contact_adapter.AdapterTests.test_stop_adapter_retains_physical_reasons_and_unknown_is_fail_closed) ... ok
+test_unregistered_and_edge_contacts_remain_unknown (test_finger22_contact_adapter.AdapterTests.test_unregistered_and_edge_contacts_remain_unknown) ... ok
+test_unrelated_contacts_untouched_and_zero_force_not_skipped (test_finger22_contact_adapter.AdapterTests.test_unrelated_contacts_untouched_and_zero_force_not_skipped) ... ok
+test_boundary_touch_not_silently_discarded (test_finger22_contact_regions.ContactRegionTests.test_boundary_touch_not_silently_discarded) ... ok
+test_exact_affine_box_keeps_closed_supports (test_finger22_contact_regions.ContactRegionTests.test_exact_affine_box_keeps_closed_supports) ... ok
+test_face_edge_corner_keep_all_candidates (test_finger22_contact_regions.ContactRegionTests.test_face_edge_corner_keep_all_candidates) ... ok
+test_full_source_envelope_rejects_a_forward_occluder (test_finger22_contact_regions.ContactRegionTests.test_full_source_envelope_rejects_a_forward_occluder) ... ok
+test_functional_requires_source_domain_not_only_positive_normal (test_finger22_contact_regions.ContactRegionTests.test_functional_requires_source_domain_not_only_positive_normal) ... ok
+test_risk_or_unknown_never_becomes_continue (test_finger22_contact_regions.ContactRegionTests.test_risk_or_unknown_never_becomes_continue) ... ok
+test_separation_and_positive_common_ball_certificates (test_finger22_contact_regions.ContactRegionTests.test_separation_and_positive_common_ball_certificates) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 17.715s
+
+OK

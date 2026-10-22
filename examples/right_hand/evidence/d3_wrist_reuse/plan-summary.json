@@ -1,0 +1,18 @@
+{
+  "poses": 921,
+  "potential_pairs_per_pose": 23373,
+  "total_pair_cases": 21526533,
+  "classifications": {
+    "AABB_SEPARATED": 21525267,
+    "SEPARATED": 1266
+  },
+  "old_anomalous_poses": 435,
+  "old_eliminated": 435,
+  "old_remaining": 0,
+  "new_anomalous_poses": 0,
+  "anomalous_pose_indices": [],
+  "status": "PASS",
+  "elapsed_s": 6.561108110006899,
+  "projection_threshold_m": 1e-10,
+  "old_pair_events_not_subtracted_from_new_pairs": true
+}

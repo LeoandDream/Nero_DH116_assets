@@ -1,0 +1,8 @@
+{
+  "model": "mjcf/nero_dh116_right.xml",
+  "model_sha256": "739d3d29bbfd4a6468fb8b75f4de09b719c0f96abb39508959c1dfc33a84b9cc",
+  "keyframe": "right_open",
+  "physics_steps": 0,
+  "simulation_time_s": 0.0,
+  "image_sha256": "193547c9562812b252f9d24c3d9b6b2b211d8b252e1257caed11438c83e47d24"
+}

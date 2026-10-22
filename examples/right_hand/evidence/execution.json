@@ -1,0 +1,4 @@
+{
+  "command": "python examples/right_hand/run.py --output runs/right_hand_001",
+  "exit_code": 2
+}

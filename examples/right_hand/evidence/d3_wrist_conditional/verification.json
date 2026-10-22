@@ -1,0 +1,32 @@
+{
+  "base_commit": "b7daa08e49d20a07259f44098aab8241c04635ce",
+  "existing_files_checked": 1026,
+  "changed_existing_files": [
+    "examples/right_hand/white_bowl_run.py"
+  ],
+  "all_other_existing_files_byte_identical": true,
+  "protected_main_head": "9f4054f6197ecb1127202cee14cd75c3924a47e3",
+  "main_README_sha256": "d68ec6d62a6f42b8c1636ad2774c8329073d973c2621cc7fe148c8c8c89d8f25",
+  "model_sha256": "9604a4a6935a34496f93e223219f687b4df8b7aa83037dc208fc9f3499eb05c9",
+  "executed_code_sha256": {
+    "examples/right_hand/white_bowl_run.py": "c518aa6b1df4c3725b3c568a21528d23a295753762619295c6cb608ec819b990",
+    "examples/right_hand/wrist_conditional.py": "c6118daa9d14a97a94c4f6025368f4dae443f78454820777395235e2dd0e402c",
+    "examples/right_hand/wrist_external_preflight.py": "5e2acb678fcd2922400e7f1fc2197df02040b0e53e97e1092f5bbd3feb98fa6b"
+  },
+  "frozen_input_files_reverified": 508,
+  "native_full_reset_exact": true,
+  "seven_original_stop_AST_nodes_unchanged": true,
+  "diagnostic_physics_attempts": 1,
+  "actual_mj_step": 4742,
+  "completed_macros": 189,
+  "partial_macro_physical_steps": 17,
+  "stop_exit_code": 2,
+  "no_dynamics_retry_after_stop": true,
+  "extra_integrations_for_review": 0,
+  "static_targeted_tests_passed": 20,
+  "original_numeric_FAIL_and_threshold_preserved": true,
+  "raw_uncompressed_sha256": {
+    "state.jsonl.gz": "03b503162f154ad6b3a6d75594f76831ef4a794dce3ef5d96fe8771ecf2b56f2",
+    "contacts.jsonl.gz": "eb22aa4522cdf0bcb87bc9c18bf2b2b331344d65d088f877ef5b72c1ffbf7b72"
+  }
+}

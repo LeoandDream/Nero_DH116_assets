@@ -1,0 +1,20 @@
+--- 
++++ 
+@@ -346,7 +346,7 @@
+                              qfrc_passive_cached=d.qfrc_passive.tolist(),
+                              mimic_residuals_rad=(q[[9,11,13,15,17]]-expected).tolist())
+             state.update(legacy_failures=policy_row['legacy_failures'], research=policy_row)
+-            trace.write(json.dumps(finite_json(state), allow_nan=False)+'\n')
++
+             cache = {'step': counts['mj_step'],
+                 'timing': 'final RK4 internal-stage cache; qpos/height in state row are post-integration; no post-step forward',
+                 'bowl_center_cached_m': d.xpos[bowl_id].tolist(), 'contacts': contacts}
+@@ -354,6 +354,8 @@
+                 cache['body_poses'] = {m.body(b).name: {'position_world_m': d.xpos[b].tolist(),
+                     'rotation_world': d.xmat[b].tolist()} for b in range(m.nbody)
+                     if (m.body(b).name or '').startswith(('robot0_','gripper0_','mount0_')) or b==bowl_id}
++            _functional.record_step(state, cache, reasons, current, result)
++            trace.write(json.dumps(finite_json(state), allow_nan=False)+'\n')
+             contact_log.write(json.dumps(finite_json(cache), allow_nan=False)+'\n')
+             if reasons:
+                 _observations.capture(env, counts['mj_step'], current, 'EARLY_STOP')

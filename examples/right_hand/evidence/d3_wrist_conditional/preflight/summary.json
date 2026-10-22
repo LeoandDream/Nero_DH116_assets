@@ -1,0 +1,41 @@
+{
+  "status": "PASS_FINITE_SAMPLES_REFERENCE_SCENE_ONLY",
+  "supplied_poses": 921,
+  "poses_checked": 921,
+  "eligible_pairs_per_pose": 60357,
+  "pair_categories": {
+    "other_environment": 16218,
+    "table": 306,
+    "other_robot_or_mount": 11334,
+    "hand": 21483,
+    "white_bowl": 11016
+  },
+  "first_block": null,
+  "minimum_certified_clearance_by_category_m": {
+    "hand": 6.407019998988517e-07,
+    "other_environment": 0.110206566619785,
+    "other_robot_or_mount": 9.107323006851686e-09,
+    "table": 0.1187580093192161,
+    "white_bowl": 0.08428856193229517
+  },
+  "risk_piece_minimum_clearances_m": {
+    "root_0300mm_entire_piece / hand": 0.019071044965170772,
+    "root_0300mm_entire_piece / other_environment": 0.12012326264664519,
+    "root_0300mm_entire_piece / other_robot_or_mount": 0.08462282076417305,
+    "root_0300mm_entire_piece / table": 0.12612400386691547,
+    "root_0300mm_entire_piece / white_bowl": 0.09165455647999454,
+    "outer_fill_217mm_entire_piece / hand": 0.03284423189835339,
+    "outer_fill_217mm_entire_piece / other_environment": 0.11267734453259257,
+    "outer_fill_217mm_entire_piece / other_robot_or_mount": 0.06204496853950267,
+    "outer_fill_217mm_entire_piece / table": 0.14756553806727346,
+    "outer_fill_217mm_entire_piece / white_bowl": 0.11309609068035253
+  },
+  "narrowphase_queries": 68736,
+  "whole_geometry_AABB_certificates": 55520061,
+  "wrist_wrist_queries": 0,
+  "dynamic_attempts": 0,
+  "physics_steps": 0,
+  "numerical_appendix": "FAIL_UNCHANGED",
+  "precision_or_external_fill_exceptions": "NOT_APPROVED",
+  "elapsed_s": 106.18474307702854
+}

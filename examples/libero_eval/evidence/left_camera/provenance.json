@@ -1,0 +1,23 @@
+{
+  "kind": "historical actual LIBERO camera observation; no new rendering",
+  "source_run": "D1-B acceptance_001",
+  "source_trace_sha256": "880581b82882313c4abc4c9c838402be6ed04eac18dd5c30ee3780258a27fafa",
+  "new_physics_steps": 0,
+  "images": {
+    "agentview": {
+      "repository_path": "examples/libero_eval/evidence/left_camera/agentview_openpi_final.png",
+      "source_path_record": "/data_robot/verification/nero_dh116_d1b/runs/acceptance_001/agentview_openpi_final.png",
+      "sha256": "36a631243a2fadee924bc4b472da0df1b4b0ac59de648c78016ac49c504b156c",
+      "physics_step": 5750,
+      "camera_observation_orientation": "historical obs[key][::-1,::-1]; copied without rerendering"
+    },
+    "robot0_eye_in_hand": {
+      "repository_path": "examples/libero_eval/evidence/left_camera/wrist_openpi_final.png",
+      "source_path_record": "/data_robot/verification/nero_dh116_d1b/runs/acceptance_001/wrist_openpi_final.png",
+      "sha256": "dced380a98a6f9f4ea6ce3d50c4fc18a0d19322a69d72ab9ceb4b1aa8f7b04d2",
+      "physics_step": 5750,
+      "camera_observation_orientation": "historical obs[key][::-1,::-1]; copied without rerendering"
+    }
+  },
+  "source_final_observation_sha256": "b2420caa9da6d70b4e6564da011027f1a5bbfc0fec3005c46ed3272eee288942"
+}

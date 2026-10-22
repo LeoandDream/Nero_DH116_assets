@@ -1,0 +1,133 @@
+{
+  "authorization": "https://github.com/LeoandDream/Nero_DH116_assets/issues/5#issuecomment-6346434609",
+  "baseline": "1cec8e94930d19223d94c11fe4dbf5c51b92024f",
+  "protocol": "functional_v1",
+  "profile": "R_close149_left_drive_profile_v1",
+  "attempt_budget": 1,
+  "automatic_retries": 0,
+  "prepared_utc": "2026-10-22T17:12:58.448114+00:00",
+  "launcher_pid": 3516010,
+  "native_attempt_started": true,
+  "entry_sha256": "785810166bbf66be7f3e22c5b13c87e32b15636d92c3cf15926d0ef4a76d2240",
+  "test_sha256": "87f084d30348ad144feacae7864d0020616878ad634508d0617a725e951638cd",
+  "old_B_entry_sha256": "7ba5a51c70e97f34be588771d908db1fbd009255c7b790984fac719c9aa6cbeb",
+  "old_runs_hidden": true,
+  "only_new_parent_writable": true,
+  "argv": [
+    "bwrap",
+    "--ro-bind",
+    "/",
+    "/",
+    "--ro-bind",
+    "/data_robot/projects/.worktrees/nero_dh116_finger22_risk_review",
+    "/data_robot/verification/nero_dh116_right",
+    "--ro-bind",
+    "/data_robot/verification/nero_dh116_right/.reference-env",
+    "/data_robot/verification/nero_dh116_right/.reference-env",
+    "--ro-bind",
+    "/data_robot/verification/nero_dh116_right/.reference-deps",
+    "/data_robot/verification/nero_dh116_right/.reference-deps",
+    "--tmpfs",
+    "/data_robot/verification/nero_dh116_right/runs",
+    "--bind",
+    "/data_robot/verification/nero_dh116_right/runs/issue5_functional_v1",
+    "/data_robot/verification/nero_dh116_right/runs/issue5_functional_v1",
+    "--tmpfs",
+    "/data_robot/projects",
+    "--tmpfs",
+    "/tmp",
+    "--dev-bind",
+    "/dev",
+    "/dev",
+    "--proc",
+    "/proc",
+    "--chdir",
+    "/data_robot/verification/nero_dh116_right",
+    "/bin/bash",
+    "-c",
+    "set -e; source examples/libero_reference/env/activate.sh; export MPLCONFIGDIR=/tmp/mpl NUMBA_CACHE_DIR=/tmp/numba XDG_CACHE_HOME=/tmp/xdg TMPDIR=/tmp OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1; python -B examples/right_hand/close149_functional.py --protocol functional_v1 --output runs/issue5_functional_v1/close149_B_functional_v1_once"
+  ],
+  "stdlib_probe_exit_code": 0,
+  "stdlib_probe_stdout": "FUNCTIONAL_V1_OVERLAY_STDLIB_PASS\n",
+  "stdlib_probe_stderr": "",
+  "started_utc": "2026-10-22T17:12:59.278830+00:00",
+  "actual_process_exit_code": 0,
+  "ended_utc": "2026-10-22T17:14:23.036245+00:00",
+  "physics_steps": 6500,
+  "execution": "FINISHED",
+  "first_failure": null,
+  "native_task_result": false,
+  "grasp_result": "PASS_FIXED_WHITE_BOWL",
+  "control_health": "PASS",
+  "longest_continuous_valid_hold_s": 1.5,
+  "lift_from_own_settled_m": 0.1004936062411379,
+  "functional_v1": {
+    "protocol": "functional_v1",
+    "diagnostic_only": [
+      "OUTSIDE_REGISTERED_PATH_ENVELOPE",
+      "ACTIVE_HOLD_TRACKING"
+    ],
+    "first_diagnostics": {
+      "OUTSIDE_REGISTERED_PATH_ENVELOPE": {
+        "step": 245,
+        "phase": "settle_preshape",
+        "details": [
+          {
+            "joint": "gripper0_finger11",
+            "q_rad": 0.14716427280610606,
+            "lower_rad": -0.02,
+            "upper_rad": 0.14714413600034068,
+            "outside_rad": 2.013680576537502e-05,
+            "side": "upper"
+          }
+        ]
+      },
+      "ACTIVE_HOLD_TRACKING": {
+        "step": 5751,
+        "phase": "hold",
+        "details": {
+          "active_errors_rad": [
+            0.006547423209488673,
+            0.02643523690187774,
+            0.04741493356285564,
+            0.01567440928205302,
+            0.015957416951915635,
+            0.020393060746247953
+          ],
+          "maximum_rad": 0.04741493356285564,
+          "original_diagnostic_threshold_rad": 0.02
+        }
+      }
+    },
+    "diagnostic_step_counts": {
+      "OUTSIDE_REGISTERED_PATH_ENVELOPE": 5108,
+      "ACTIVE_HOLD_TRACKING": 750
+    },
+    "old_research_first_failure": {
+      "step": 245,
+      "reasons": [
+        "OUTSIDE_REGISTERED_PATH_ENVELOPE"
+      ]
+    },
+    "old_legacy_first_failure": {
+      "step": 245,
+      "reasons": [
+        "OUTSIDE_REGISTERED_PATH_ENVELOPE"
+      ]
+    },
+    "functional_first_failure": null,
+    "prefix_physics": {
+      "matched_steps": 245,
+      "required_steps": 245,
+      "first_difference": null,
+      "state_exclusions": [
+        "failures",
+        "legacy_failures",
+        "research"
+      ],
+      "all_contact_cache_fields_compared": true,
+      "comparison": "exact canonical JSON; no tolerance"
+    },
+    "previous_finite_path_geometry_scope": "Not asserted after the original envelope is exceeded."
+  }
+}

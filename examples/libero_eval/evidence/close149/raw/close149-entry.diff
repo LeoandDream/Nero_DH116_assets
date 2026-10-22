@@ -1,0 +1,31 @@
+--- frozen_research_entry
++++ close149_entry
+@@ -13,14 +13,15 @@
+     import white_bowl_run as legacy
+     input_audit = validate_checkout(previous, ROOT)
+     registration = previous.protocol(ROOT)
++    registration.update(_close149_registration)
+     registration.update(authorization=AUTHORIZATION, baseline_commit=BASELINE,
+-        experiment='issue5_right_research_contact_v1_once', research_policy_sha256=POLICY_SHA,
++        experiment='issue5_close149_once', research_policy_sha256=POLICY_SHA,
+         research_rule_version=rules['version'], prior_proposal_status_unchanged=rules['status'],
+         online_use_authorized_by=AUTHORIZATION, formal_2mm_and_historical_FAIL='UNCHANGED_SEPARATE_CHANNEL',
+         compiler_step_scope='Native compiler self-tests are setup of this authorized attempt, not included in recorded trajectory-step count; no claim of absolute native mj_step instrumentation.')
+     write(output/'registered-protocol.json', registration)
+     sources = {str(p.relative_to(ROOT)): digest(p) for p in
+-               (Path(__file__), POLICY_DIR/'research-policy.json', POLICY_DIR/'shadow.py', HERE/'white_bowl_run.py')}
++               (Path(__file__), _research_source, POLICY_DIR/'research-policy.json', POLICY_DIR/'shadow.py', HERE/'white_bowl_run.py')}
+     write(output/'input-audit.json', {'previous_inputs': input_audit, 'new_source_sha256': sources})
+     observations = Observations(output)
+     policy = ResearchPolicy(rules)
+@@ -43,8 +44,8 @@
+             for key in ('qpos', 'qvel', 'ctrl', 'controller', 'criteria', 'native_scene'):
+                 if value[key] != frozen[key]:
+                     raise ValueError('Frozen Reset/controller/criteria differ: '+key)
+-            if read(output/'schedule.json') != read(ROOT/previous.OLD_RUN/'schedule.json'):
+-                raise ValueError('Frozen270actions differ')
++            if read(output/'schedule.json') != _close149_schedule:
++                raise ValueError('FrozenClose149actions differ')
+             value.update(research_policy_sha256=POLICY_SHA, online_use_authorized_by=AUTHORIZATION,
+                          new_source_sha256=sources, baseline_commit=BASELINE)
+         if Path(path).name == 'result.json':

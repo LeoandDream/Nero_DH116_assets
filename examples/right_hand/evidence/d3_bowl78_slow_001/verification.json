@@ -1,0 +1,31 @@
+{
+  "schema": "right-bowl78-one-attempt-final-integrity-v1",
+  "protected_existing_files_checked": 588,
+  "all_protected_existing_files_unchanged": true,
+  "executed_code_matches_current_commit_input": {
+    "examples/right_hand/white_bowl_model.py": true,
+    "examples/right_hand/white_bowl_run.py": true,
+    "examples/right_hand/white_bowl_frozen78.py": true
+  },
+  "main_head_unchanged": "9f4054f6197ecb1127202cee14cd75c3924a47e3",
+  "main_status_unchanged": " M README.md\n",
+  "main_readme_sha256": "d68ec6d62a6f42b8c1636ad2774c8329073d973c2621cc7fe148c8c8c89d8f25",
+  "input_hashes_before_equal_after": true,
+  "frozen_input_file_count": 211,
+  "scene_resource_reference_count": 198,
+  "unique_scene_resources": 192,
+  "all_resources_inside_independent_runtime_root": true,
+  "dynamic_attempts": 1,
+  "actual_mj_step": 1401,
+  "planned_max_mj_step": 6750,
+  "extra_dynamic_attempts_after_failure": 0,
+  "raw_uncompressed_sha256": {
+    "state.jsonl.gz": "fe5577de73b9cac87a9892fb5f1267db14a22479825bcf8f75d94ff69144fcad",
+    "contacts.jsonl.gz": "f5fc29060726941ffaebea52f208df3dff37f75615f268ad39cde9bb269c6016"
+  },
+  "original_thresholds_unchanged": true,
+  "explicit_contact_fidelity": "UNKNOWN_NO_HAND_BOWL_CONTACT_OBSERVED",
+  "root_cause": "UNKNOWN_CONTACT_CONFOUNDED",
+  "support_and_opposition_AST_unchanged": true,
+  "all_physical_bound_checks_AST_unchanged": true
+}

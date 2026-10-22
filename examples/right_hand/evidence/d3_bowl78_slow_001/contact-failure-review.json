@@ -1,0 +1,743 @@
+{
+  "schema": "right-bowl78-offline-contact-failure-review-v1",
+  "method": "Standard-library JSON/JSONL arithmetic on frozen raw output and stored compiled snapshots only; no project imports, simulator, FK, forward, reset, integration or new trial.",
+  "trial_directory": "/data_robot/verification/nero_dh116_right/runs/d3_bowl78_trial_001",
+  "raw_inputs_sha256": {
+    "result.json": "1ada099f6dc115a3df93f2d351db70d5cbf7760ae5b1391bbb94338fb9854184",
+    "frozen-before-first-step.json": "888b8040f2e032eeb97a2310d3091324874e6f16935c77e814e98e8c3a086884",
+    "robot-physical-preflight.json": "3e2fd8b06b84705065e466763d1f2aae2862cac642ed0e50598ec45e44b7aeae",
+    "state.jsonl.gz": "3a0fb1b74e89ec6df2e192546c38f59518d3ac4ff4b9c92c1d98d6d9ab02d615",
+    "contacts.jsonl.gz": "727a5b7d4b4016f7915cc38a4cc147c3ce89475ae171d6a339f570eefff99d89"
+  },
+  "recorded_result": {
+    "A": "PASS_FINITE_SAMPLED_INTERNAL_GEOMETRY_ONLY",
+    "B": "FAIL",
+    "execution": "STOPPED_AT_FIRST_FAILURE",
+    "control_health": "FAIL",
+    "grasp_result": "UNKNOWN_EARLY_STOP",
+    "native_task_result": false,
+    "strict_grasp_success_claim": false,
+    "dynamic_attempts": 1,
+    "physics_steps": 1401,
+    "completed_commands": 56,
+    "first_failure": {
+      "step": 1401,
+      "macro": 56,
+      "source_macro": 33,
+      "repeat_index": 0,
+      "phase": "approach_high",
+      "reasons": [
+        "ARM_TRACKING"
+      ]
+    },
+    "inputs_unchanged": true,
+    "counts": {
+      "mj_step": 1401,
+      "mj_step1_nonintegrating": 2,
+      "mj_forward_nonintegrating": 2807,
+      "mj_step2": 0,
+      "constructor": 1,
+      "explicit_native_reset": 1
+    }
+  },
+  "trace_integrity": {
+    "state_rows": 1401,
+    "contact_rows": 1401,
+    "all_steps_consecutive_and_aligned": true,
+    "phase_step_counts": {
+      "settle_preshape": 250,
+      "approach_high": 1151
+    },
+    "first_and_only_failure": [
+      {
+        "step": 1401,
+        "failures": [
+          "ARM_TRACKING"
+        ]
+      }
+    ],
+    "no_rows_after_failure": true,
+    "eligible_overlap_all_state_rows_exactly_recomputed": true,
+    "support_opposition_all_state_rows_recomputed": true,
+    "warning_rows": 0,
+    "finite_flag_false_rows": 0
+  },
+  "contact_counts": {
+    "environment_records": 12827,
+    "environment_positive_records": 10724,
+    "all_contacts_records": 12914,
+    "all_contacts_positive_records": 10811,
+    "internal_robot_records": 87,
+    "internal_robot_positive_records": 87,
+    "any_robot_records": 87,
+    "any_robot_positive_records": 87,
+    "all_contacts_steps": 1341,
+    "all_contacts_positive_steps": 1341,
+    "environment_steps": 1341,
+    "environment_positive_steps": 1341,
+    "internal_robot_steps": 87,
+    "internal_robot_positive_steps": 87,
+    "robot_external_records": 0,
+    "robot_external_positive_records": 0,
+    "robot_external_steps": 0,
+    "robot_external_positive_steps": 0,
+    "any_robot_steps": 87,
+    "any_robot_positive_steps": 87,
+    "any_hand_records": 0,
+    "any_hand_positive_records": 0,
+    "any_hand_steps": 0,
+    "any_hand_positive_steps": 0,
+    "hand_bowl_records": 0,
+    "hand_bowl_positive_records": 0,
+    "hand_bowl_steps": 0,
+    "hand_bowl_positive_steps": 0
+  },
+  "robot_pair_reviews": [
+    {
+      "body_pair": [
+        "robot0_gripper_flange",
+        "robot0_link5"
+      ],
+      "geom_pairs": [
+        [
+          "robot0_candidate_nero_link5_4",
+          "robot0_source_flange_part_2"
+        ]
+      ],
+      "records": 87,
+      "distinct_steps": 87,
+      "first_step": 1315,
+      "last_step": 1401,
+      "continuous_every_step": true,
+      "positive_force_records": 87,
+      "positive_force_steps": 87,
+      "eligible_records_according_to_recorded_filter": 87,
+      "maximum_normal_force_N": 0.4461089154188657,
+      "minimum_normal_force_N": 0.12418494625623744,
+      "maximum_overlap_m": 2.2837872636348362e-05,
+      "first_contact": {
+        "step": 1315,
+        "phase": "approach_high",
+        "macro": 52,
+        "source_macro": 31,
+        "geom": [
+          "robot0_candidate_nero_link5_4",
+          "robot0_source_flange_part_2"
+        ],
+        "body": [
+          "robot0_link5",
+          "robot0_gripper_flange"
+        ],
+        "distance_m": -1.7074058854193656e-06,
+        "normal_force_N": 0.1941070418166123,
+        "force_contact_frame": [
+          0.1941070418166123,
+          0.09212069296505673,
+          0.1708546798025557,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "position_world_m": [
+          -0.1810967492470753,
+          0.19230398176809751,
+          1.1548131494983362
+        ],
+        "filter_reasons": []
+      },
+      "maximum_force_contact": {
+        "step": 1321,
+        "phase": "approach_high",
+        "macro": 52,
+        "source_macro": 31,
+        "geom": [
+          "robot0_candidate_nero_link5_4",
+          "robot0_source_flange_part_2"
+        ],
+        "body": [
+          "robot0_link5",
+          "robot0_gripper_flange"
+        ],
+        "distance_m": -1.9979597274136128e-05,
+        "normal_force_N": 0.4461089154188657,
+        "force_contact_frame": [
+          0.4461089154188657,
+          -0.44297487313462025,
+          -0.05278660992679689,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "position_world_m": [
+          -0.1813087670523098,
+          0.19198508414786702,
+          1.1548127438206643
+        ],
+        "filter_reasons": []
+      },
+      "maximum_overlap_contact": {
+        "step": 1326,
+        "phase": "approach_high",
+        "macro": 53,
+        "source_macro": 31,
+        "geom": [
+          "robot0_candidate_nero_link5_4",
+          "robot0_source_flange_part_2"
+        ],
+        "body": [
+          "robot0_link5",
+          "robot0_gripper_flange"
+        ],
+        "distance_m": -2.2837872636348362e-05,
+        "normal_force_N": 0.39720028860576667,
+        "force_contact_frame": [
+          0.39720028860576667,
+          -0.3874086648758196,
+          -0.08765041727019479,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "position_world_m": [
+          -0.1814905112220288,
+          0.19172131046223356,
+          1.154802215635741
+        ],
+        "filter_reasons": []
+      },
+      "failure_contact": {
+        "step": 1401,
+        "phase": "approach_high",
+        "macro": 56,
+        "source_macro": 33,
+        "geom": [
+          "robot0_candidate_nero_link5_4",
+          "robot0_source_flange_part_2"
+        ],
+        "body": [
+          "robot0_link5",
+          "robot0_gripper_flange"
+        ],
+        "distance_m": -4.0217034673423884e-06,
+        "normal_force_N": 0.12579855774934123,
+        "force_contact_frame": [
+          0.12579855774934123,
+          -0.017875462359915585,
+          0.01621870835973704,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "position_world_m": [
+          -0.1842279881297577,
+          0.18786364266212335,
+          1.1545766253951544
+        ],
+        "filter_reasons": []
+      }
+    }
+  ],
+  "environment_body_pairs": {
+    "chefmate_8_frypan_1_main|table": 6692,
+    "table|white_bowl_1_main": 6135
+  },
+  "bowl_support": {
+    "positive_force_nonhand_support_steps": 1340,
+    "first_step": 62,
+    "last_step": 1401,
+    "opposed_thumb_index_steps": 0,
+    "settled_baseline_step250_z_m": 0.8994107101029007,
+    "final_lift_from_own_settled_m": 2.475092881759622e-07,
+    "hold_phase_steps": 0
+  },
+  "selected_contact_failure_timeline": [
+    {
+      "step": 1314,
+      "time_s": 2.627999999999932,
+      "macro": 52,
+      "source_macro": 31,
+      "repeat_index": 0,
+      "phase": "approach_high",
+      "joint6_qpos_rad": -0.3924850757132665,
+      "joint6_qvel_rad_s": -0.13891548987175403,
+      "joint6_target_rad": -0.4758431669313546,
+      "joint6_abs_error_rad": 0.08335809121808807,
+      "joint6_ctrl": 0.025372228275058768,
+      "joint6_actuator_force": 0.025372228275058768,
+      "robot_contact_count": 0,
+      "robot_overlap_m": 0.0,
+      "failures": []
+    },
+    {
+      "step": 1315,
+      "time_s": 2.629999999999932,
+      "macro": 52,
+      "source_macro": 31,
+      "repeat_index": 0,
+      "phase": "approach_high",
+      "joint6_qpos_rad": -0.3927630040185861,
+      "joint6_qvel_rad_s": -0.13419712725475585,
+      "joint6_target_rad": -0.4758431669313546,
+      "joint6_abs_error_rad": 0.08308016291276848,
+      "joint6_ctrl": 0.025370082686486415,
+      "joint6_actuator_force": 0.025370082686486415,
+      "robot_contact_count": 1,
+      "robot_overlap_m": 1.7074058854193656e-06,
+      "failures": []
+    },
+    {
+      "step": 1399,
+      "time_s": 2.7979999999999134,
+      "macro": 55,
+      "source_macro": 32,
+      "repeat_index": 1,
+      "phase": "approach_high",
+      "joint6_qpos_rad": -0.3924933884415823,
+      "joint6_qvel_rad_s": 0.00019522269022168812,
+      "joint6_target_rad": -0.4899629909907238,
+      "joint6_abs_error_rad": 0.0974696025491415,
+      "joint6_ctrl": 0.02384434142634875,
+      "joint6_actuator_force": 0.02384434142634875,
+      "robot_contact_count": 1,
+      "robot_overlap_m": 4.032464739898044e-06,
+      "failures": []
+    },
+    {
+      "step": 1400,
+      "time_s": 2.7999999999999132,
+      "macro": 55,
+      "source_macro": 32,
+      "repeat_index": 1,
+      "phase": "approach_high",
+      "joint6_qpos_rad": -0.39249299895863593,
+      "joint6_qvel_rad_s": 0.00019366737680165332,
+      "joint6_target_rad": -0.4899629909907238,
+      "joint6_abs_error_rad": 0.0974699920320879,
+      "joint6_ctrl": 0.023841732370294792,
+      "joint6_actuator_force": 0.023841732370294792,
+      "robot_contact_count": 1,
+      "robot_overlap_m": 4.026937553726616e-06,
+      "failures": []
+    },
+    {
+      "step": 1401,
+      "time_s": 2.801999999999913,
+      "macro": 56,
+      "source_macro": 33,
+      "repeat_index": 0,
+      "phase": "approach_high",
+      "joint6_qpos_rad": -0.39249262789405087,
+      "joint6_qvel_rad_s": 0.00017730360017148542,
+      "joint6_target_rad": -0.504082815050093,
+      "joint6_abs_error_rad": 0.11159018715604213,
+      "joint6_ctrl": 0.02332717603494779,
+      "joint6_actuator_force": 0.02332717603494779,
+      "robot_contact_count": 1,
+      "robot_overlap_m": 4.0217034673423884e-06,
+      "failures": [
+        "ARM_TRACKING"
+      ]
+    }
+  ],
+  "causal_bounds": {
+    "observed_trigger": "Joint6 absolute target tracking first exceeds frozen0.1rad bound at executed macro56/source_macro33, step1401.",
+    "internal_contact_confound": "Positive-normal-force link5/flange contact exists at every logged step1315 through1401 inclusive, including failure. Maximum overlap22.8378726um is below frozen2mm overlap bound; sub-threshold contact is not absence of contact.",
+    "hand_bowl_fidelity_request_needed": false,
+    "hand_bowl_basis": "No recorded hand-bowl contact of any force, and no robot-external contact.",
+    "grasp": "UNKNOWN_EARLY_STOP: descent, closure, lift and hold never begin.",
+    "root_cause": "UNKNOWN_CONTACT_CONFOUNDED. No executed contact-removal, trajectory-speed, controller or asset counterfactual establishes a unique dynamical cause.",
+    "force_alignment": "Contact forces/geometry/cached_body_pose are final RK4 internal-stage cache; qpos and bowl height are post-step states.",
+    "next_read_only_action": "Inspect saved link5/flange contact cache against unchanged source geometry and project contact wrench against joint/controller torque timeline before considering any new run or exclusion."
+  },
+  "raw_files_unchanged_after_review": true,
+  "control_review": {
+    "artifact": "/data_robot/projects/.worktrees/nero_dh116_right_finger13/runs/d3_bowl78_prepare/independent-control-review.json",
+    "sha256": "9f398c13c90923841b56b6db977235b2118ad793682eec187baac4197c5e7265",
+    "recorded_state_arithmetic": {
+      "joint": "robot0_joint6",
+      "target_delta_rad": -0.01411982405936918,
+      "qpos_delta_rad": 3.710645850585337e-07,
+      "abs_error_delta_rad": 0.014120195123954238,
+      "threshold_rad": 0.1,
+      "new_state_previous_target_abs_error_rad": 0.09747036309667295,
+      "previous_state_new_target_abs_error_rad": 0.11158981609145707,
+      "interpretation": "Arithmetic using recorded states only; not a dynamical counterfactual or causal test."
+    },
+    "near_ctrl_definition": "Within 1 percent of the configured full ctrlrange width of a bound; includes exact bound samples. Descriptive offline statistic only.",
+    "all_13_actuator_force_limits_disabled": true,
+    "all_7_arm_ctrl_bound_and_near_bound_counts_zero": true,
+    "interpretation": [
+      "All seven arm ctrl signals are far from their enabled [-100,100] ctrl bounds.",
+      "Five hand actuators are commanded at their lower position bound throughout all 1401 logged steps; this does not establish effort saturation.",
+      "All 13 actuator_forcelimited flags are zero; recorded [0,0] forceranges are inactive and must not be treated as clipping bounds.",
+      "Recorded motor forces equal ctrl; hand position actuator forces have separate units/semantics from their ctrl position target.",
+      "Signals are logged post-step and force/cache alignment follows the frozen RK4 measurement caveat; no dynamical causal attribution is made."
+    ],
+    "per_actuator_statistics": [
+      {
+        "name": "robot0_urdf_motor_joint1",
+        "index": 0,
+        "joint": "robot0_joint1",
+        "ctrllimited": 1,
+        "ctrlrange": [
+          -100.0,
+          100.0
+        ],
+        "forcelimited": 0,
+        "forcerange": [
+          0.0,
+          0.0
+        ],
+        "ctrl_min": -0.0850079538619128,
+        "ctrl_max": 0.02748549607794279,
+        "ctrl_exact_lower_count": 0,
+        "ctrl_exact_upper_count": 0,
+        "ctrl_near_lower_count": 0,
+        "ctrl_near_upper_count": 0,
+        "ctrl_outside_count": 0,
+        "near_ctrl_absolute_tolerance": 2.0,
+        "force_min": -0.0850079538619128,
+        "force_max": 0.02748549607794279,
+        "force_limit_bound_counts": null,
+        "at_stop_ctrl": -0.03497259005272804,
+        "at_stop_force": -0.03497259005272804
+      },
+      {
+        "name": "robot0_urdf_motor_joint2",
+        "index": 1,
+        "joint": "robot0_joint2",
+        "ctrllimited": 1,
+        "ctrlrange": [
+          -100.0,
+          100.0
+        ],
+        "forcelimited": 0,
+        "forcerange": [
+          0.0,
+          0.0
+        ],
+        "ctrl_min": 7.380530643489658,
+        "ctrl_max": 8.407017432774023,
+        "ctrl_exact_lower_count": 0,
+        "ctrl_exact_upper_count": 0,
+        "ctrl_near_lower_count": 0,
+        "ctrl_near_upper_count": 0,
+        "ctrl_outside_count": 0,
+        "near_ctrl_absolute_tolerance": 2.0,
+        "force_min": 7.380530643489658,
+        "force_max": 8.407017432774023,
+        "force_limit_bound_counts": null,
+        "at_stop_ctrl": 7.428071645228189,
+        "at_stop_force": 7.428071645228189
+      },
+      {
+        "name": "robot0_urdf_motor_joint3",
+        "index": 2,
+        "joint": "robot0_joint3",
+        "ctrllimited": 1,
+        "ctrlrange": [
+          -100.0,
+          100.0
+        ],
+        "forcelimited": 0,
+        "forcerange": [
+          0.0,
+          0.0
+        ],
+        "ctrl_min": 0.5706187640883355,
+        "ctrl_max": 0.6738856026058404,
+        "ctrl_exact_lower_count": 0,
+        "ctrl_exact_upper_count": 0,
+        "ctrl_near_lower_count": 0,
+        "ctrl_near_upper_count": 0,
+        "ctrl_outside_count": 0,
+        "near_ctrl_absolute_tolerance": 2.0,
+        "force_min": 0.5706187640883355,
+        "force_max": 0.6738856026058404,
+        "force_limit_bound_counts": null,
+        "at_stop_ctrl": 0.6551224486630624,
+        "at_stop_force": 0.6551224486630624
+      },
+      {
+        "name": "robot0_urdf_motor_joint4",
+        "index": 3,
+        "joint": "robot0_joint4",
+        "ctrllimited": 1,
+        "ctrlrange": [
+          -100.0,
+          100.0
+        ],
+        "forcelimited": 0,
+        "forcerange": [
+          0.0,
+          0.0
+        ],
+        "ctrl_min": -2.5151965471860165,
+        "ctrl_max": -2.3663679660366466,
+        "ctrl_exact_lower_count": 0,
+        "ctrl_exact_upper_count": 0,
+        "ctrl_near_lower_count": 0,
+        "ctrl_near_upper_count": 0,
+        "ctrl_outside_count": 0,
+        "near_ctrl_absolute_tolerance": 2.0,
+        "force_min": -2.5151965471860165,
+        "force_max": -2.3663679660366466,
+        "force_limit_bound_counts": null,
+        "at_stop_ctrl": -2.3663679660366466,
+        "at_stop_force": -2.3663679660366466
+      },
+      {
+        "name": "robot0_urdf_motor_joint5",
+        "index": 4,
+        "joint": "robot0_joint5",
+        "ctrllimited": 1,
+        "ctrlrange": [
+          -100.0,
+          100.0
+        ],
+        "forcelimited": 0,
+        "forcerange": [
+          0.0,
+          0.0
+        ],
+        "ctrl_min": -0.24232964042760452,
+        "ctrl_max": -0.19301498885027008,
+        "ctrl_exact_lower_count": 0,
+        "ctrl_exact_upper_count": 0,
+        "ctrl_near_lower_count": 0,
+        "ctrl_near_upper_count": 0,
+        "ctrl_outside_count": 0,
+        "near_ctrl_absolute_tolerance": 2.0,
+        "force_min": -0.24232964042760452,
+        "force_max": -0.19301498885027008,
+        "force_limit_bound_counts": null,
+        "at_stop_ctrl": -0.19301498885027008,
+        "at_stop_force": -0.19301498885027008
+      },
+      {
+        "name": "robot0_urdf_motor_joint6",
+        "index": 5,
+        "joint": "robot0_joint6",
+        "ctrllimited": 1,
+        "ctrlrange": [
+          -100.0,
+          100.0
+        ],
+        "forcelimited": 0,
+        "forcerange": [
+          0.0,
+          0.0
+        ],
+        "ctrl_min": 0.02332717603494779,
+        "ctrl_max": 0.040101444973836387,
+        "ctrl_exact_lower_count": 0,
+        "ctrl_exact_upper_count": 0,
+        "ctrl_near_lower_count": 0,
+        "ctrl_near_upper_count": 0,
+        "ctrl_outside_count": 0,
+        "near_ctrl_absolute_tolerance": 2.0,
+        "force_min": 0.02332717603494779,
+        "force_max": 0.040101444973836387,
+        "force_limit_bound_counts": null,
+        "at_stop_ctrl": 0.02332717603494779,
+        "at_stop_force": 0.02332717603494779
+      },
+      {
+        "name": "robot0_urdf_motor_joint7",
+        "index": 6,
+        "joint": "robot0_joint7",
+        "ctrllimited": 1,
+        "ctrlrange": [
+          -100.0,
+          100.0
+        ],
+        "forcelimited": 0,
+        "forcerange": [
+          0.0,
+          0.0
+        ],
+        "ctrl_min": 0.09944094751690402,
+        "ctrl_max": 0.17180433913375984,
+        "ctrl_exact_lower_count": 0,
+        "ctrl_exact_upper_count": 0,
+        "ctrl_near_lower_count": 0,
+        "ctrl_near_upper_count": 0,
+        "ctrl_outside_count": 0,
+        "near_ctrl_absolute_tolerance": 2.0,
+        "force_min": 0.09944094751690402,
+        "force_max": 0.17180433913375984,
+        "force_limit_bound_counts": null,
+        "at_stop_ctrl": 0.17180433913375984,
+        "at_stop_force": 0.17180433913375984
+      },
+      {
+        "name": "gripper0_urdf_act_finger11",
+        "index": 7,
+        "joint": "gripper0_finger11",
+        "ctrllimited": 1,
+        "ctrlrange": [
+          0.0,
+          1.047198
+        ],
+        "forcelimited": 0,
+        "forcerange": [
+          0.0,
+          0.0
+        ],
+        "ctrl_min": 0.012714413600034113,
+        "ctrl_max": 0.1271441360003407,
+        "ctrl_exact_lower_count": 0,
+        "ctrl_exact_upper_count": 0,
+        "ctrl_near_lower_count": 0,
+        "ctrl_near_upper_count": 0,
+        "ctrl_outside_count": 0,
+        "near_ctrl_absolute_tolerance": 0.01047198,
+        "force_min": -0.01670688045022395,
+        "force_max": 0.7635406310299908,
+        "force_limit_bound_counts": null,
+        "at_stop_ctrl": 0.1271441360003407,
+        "at_stop_force": -0.012497568085746202
+      },
+      {
+        "name": "gripper0_urdf_act_finger12",
+        "index": 8,
+        "joint": "gripper0_finger12",
+        "ctrllimited": 1,
+        "ctrlrange": [
+          0.0,
+          0.523599
+        ],
+        "forcelimited": 0,
+        "forcerange": [
+          0.0,
+          0.0
+        ],
+        "ctrl_min": 0.0,
+        "ctrl_max": 0.0,
+        "ctrl_exact_lower_count": 1401,
+        "ctrl_exact_upper_count": 0,
+        "ctrl_near_lower_count": 1401,
+        "ctrl_near_upper_count": 0,
+        "ctrl_outside_count": 0,
+        "near_ctrl_absolute_tolerance": 0.00523599,
+        "force_min": -0.00514135759180243,
+        "force_max": -0.0009586967024517606,
+        "force_limit_bound_counts": null,
+        "at_stop_ctrl": 0.0,
+        "at_stop_force": -0.005094491131747732
+      },
+      {
+        "name": "gripper0_urdf_act_finger21",
+        "index": 9,
+        "joint": "gripper0_finger21",
+        "ctrllimited": 1,
+        "ctrlrange": [
+          0.0,
+          1.396263
+        ],
+        "forcelimited": 0,
+        "forcerange": [
+          0.0,
+          0.0
+        ],
+        "ctrl_min": 0.0,
+        "ctrl_max": 0.0,
+        "ctrl_exact_lower_count": 1401,
+        "ctrl_exact_upper_count": 0,
+        "ctrl_near_lower_count": 1401,
+        "ctrl_near_upper_count": 0,
+        "ctrl_outside_count": 0,
+        "near_ctrl_absolute_tolerance": 0.01396263,
+        "force_min": -0.0071497542562459935,
+        "force_max": -0.0009262647858028455,
+        "force_limit_bound_counts": null,
+        "at_stop_ctrl": 0.0,
+        "at_stop_force": -0.0071497542562459935
+      },
+      {
+        "name": "gripper0_urdf_act_finger31",
+        "index": 10,
+        "joint": "gripper0_finger31",
+        "ctrllimited": 1,
+        "ctrlrange": [
+          0.0,
+          1.396263
+        ],
+        "forcelimited": 0,
+        "forcerange": [
+          0.0,
+          0.0
+        ],
+        "ctrl_min": 0.0,
+        "ctrl_max": 0.0,
+        "ctrl_exact_lower_count": 1401,
+        "ctrl_exact_upper_count": 0,
+        "ctrl_near_lower_count": 1401,
+        "ctrl_near_upper_count": 0,
+        "ctrl_outside_count": 0,
+        "near_ctrl_absolute_tolerance": 0.01396263,
+        "force_min": -0.008889102757187883,
+        "force_max": -0.0009889001871414042,
+        "force_limit_bound_counts": null,
+        "at_stop_ctrl": 0.0,
+        "at_stop_force": -0.008889102757187883
+      },
+      {
+        "name": "gripper0_urdf_act_finger41",
+        "index": 11,
+        "joint": "gripper0_finger41",
+        "ctrllimited": 1,
+        "ctrlrange": [
+          0.0,
+          1.396263
+        ],
+        "forcelimited": 0,
+        "forcerange": [
+          0.0,
+          0.0
+        ],
+        "ctrl_min": 0.0,
+        "ctrl_max": 0.0,
+        "ctrl_exact_lower_count": 1401,
+        "ctrl_exact_upper_count": 0,
+        "ctrl_near_lower_count": 1401,
+        "ctrl_near_upper_count": 0,
+        "ctrl_outside_count": 0,
+        "near_ctrl_absolute_tolerance": 0.01396263,
+        "force_min": -0.00657097489738901,
+        "force_max": -0.0005937147740021569,
+        "force_limit_bound_counts": null,
+        "at_stop_ctrl": 0.0,
+        "at_stop_force": -0.00657097489738901
+      },
+      {
+        "name": "gripper0_urdf_act_finger51",
+        "index": 12,
+        "joint": "gripper0_finger51",
+        "ctrllimited": 1,
+        "ctrlrange": [
+          0.0,
+          1.396263
+        ],
+        "forcelimited": 0,
+        "forcerange": [
+          0.0,
+          0.0
+        ],
+        "ctrl_min": 0.0,
+        "ctrl_max": 0.0,
+        "ctrl_exact_lower_count": 1401,
+        "ctrl_exact_upper_count": 0,
+        "ctrl_near_lower_count": 1401,
+        "ctrl_near_upper_count": 0,
+        "ctrl_outside_count": 0,
+        "near_ctrl_absolute_tolerance": 0.01396263,
+        "force_min": -0.004948449071432478,
+        "force_max": -0.0004085775783608504,
+        "force_limit_bound_counts": null,
+        "at_stop_ctrl": 0.0,
+        "at_stop_force": -0.004948449071432478
+      }
+    ]
+  }
+}

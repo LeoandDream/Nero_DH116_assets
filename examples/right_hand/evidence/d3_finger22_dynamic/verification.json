@@ -1,0 +1,22 @@
+{
+  "evidence_integrity": "PASS",
+  "experiment": "EARLY_STOP_UNKNOWN_INCOMPLETE",
+  "actual_dynamic_attempts": 1,
+  "real_steps": 4731,
+  "exit_code": 2,
+  "protected_original_files_unchanged": 1115,
+  "user_readme_unchanged": true,
+  "formal_assets_candidates_shared_meshes_unchanged": true,
+  "only_original_tracked_change": "examples/right_hand/white_bowl_run.py",
+  "executed_runner_policy_protocol_bytes_match": true,
+  "runtime_input_hashes_before_after_and_now_match": 518,
+  "raw_run_files_all_lossless_verified": 14,
+  "portable_review_replayed_exactly": true,
+  "full_RK4_robot_and_bowl_body_cache_rows": 4731,
+  "cached_bodies_each_step": 33,
+  "targeted_tests": 12,
+  "formal_numeric_status": "FAIL_UNCHANGED",
+  "release_approved": false,
+  "local_main_head": "9f4054f6197ecb1127202cee14cd75c3924a47e3",
+  "worktree_base_head": "685c458c29308bbfb2b4e605766cf7da8e336458"
+}

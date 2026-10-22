@@ -1,0 +1,10 @@
+--- 
++++ 
+@@ -231,6 +231,7 @@
+             if initial_stops:
+                 write(output/'initial-risk-block.json', {'reasons': initial_stops, 'contacts': initial})
+                 raise ValueError('Initial state violates registered diagnostic stops')
++        _drive_reset_cache(model, data, output)
+         write(output / 'frozen-before-first-step.json', frozen)
+         setup_allowed, integrating = False, True
+         result.update(B='RUNNING', execution='RUNNING', dynamic_attempts=1)

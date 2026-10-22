@@ -1,0 +1,75 @@
+{
+  "baseline": "1cec8e94930d19223d94c11fe4dbf5c51b92024f",
+  "original_tracked_files_checked": 2186,
+  "changed_old_files": [],
+  "main_head_unchanged": "9f4054f6197ecb1127202cee14cd75c3924a47e3",
+  "user_readme_sha256_unchanged": "d68ec6d62a6f42b8c1636ad2774c8329073d973c2621cc7fe148c8c8c89d8f25",
+  "source_hashes_match_executed_entry_and_tests": true,
+  "archived_original_artifacts_verified": 558,
+  "one_experiment": {
+    "attempts": 1,
+    "automatic_retries": 0,
+    "actual_process_exit_code": 0,
+    "explicit_episode_steps": 6500,
+    "old_B_episode_steps": 0,
+    "A_episode_steps": 0,
+    "left_episode_steps": 0
+  },
+  "targeted_tests": {
+    "functional_v1": 7,
+    "old_B": 8,
+    "close149": 8,
+    "native_tests": 0
+  },
+  "prefix_physics": {
+    "matched_steps": 245,
+    "required_steps": 245,
+    "first_difference": null,
+    "state_exclusions": [
+      "failures",
+      "legacy_failures",
+      "research"
+    ],
+    "all_contact_cache_fields_compared": true,
+    "comparison": "exact canonical JSON; no tolerance"
+  },
+  "video_probe": {
+    "agentview": {
+      "programs": [],
+      "streams": [
+        {
+          "width": 256,
+          "height": 256,
+          "r_frame_rate": "20/1",
+          "duration": "13.000000",
+          "nb_frames": "260"
+        }
+      ]
+    },
+    "robot0_eye_in_hand": {
+      "programs": [],
+      "streams": [
+        {
+          "width": 256,
+          "height": 256,
+          "r_frame_rate": "20/1",
+          "duration": "13.000000",
+          "nb_frames": "260"
+        }
+      ]
+    }
+  },
+  "final_frame_visual_inspection": "Both original agentview and wrist frames inspected; consistent with held bowl. Quantitative success independently recomputed from contacts and states.",
+  "export_steps": 6500,
+  "media_single_copy": true,
+  "postprocessing_engine_calls": 0,
+  "old_rules_first_failure": {
+    "step": 245,
+    "reasons": [
+      "OUTSIDE_REGISTERED_PATH_ENVELOPE"
+    ]
+  },
+  "functional_first_hard_failure": null,
+  "historical_FAIL_and_fidelity_status": "UNCHANGED",
+  "raw_evidence_whitespace": "Original native XML/diff bytes preserved; code whitespace check separately scoped."
+}

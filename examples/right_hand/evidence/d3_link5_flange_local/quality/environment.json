@@ -1,0 +1,27 @@
+{
+  "quality_actual_environment": {
+    "sys_executable": "/data_robot/projects/nero_gripper_assets/.venv/bin/python",
+    "python": "3.11.9",
+    "mujoco": "3.2.3",
+    "numpy": "1.26.4",
+    "scipy": "1.15.3"
+  },
+  "poses_and_tests_environment_root_verified": {
+    "sys_executable": "/data_robot/verification/nero_dh116_right/.reference-env/bin/python",
+    "python": "3.11.16",
+    "mujoco": "3.2.3",
+    "numpy": "1.26.4",
+    "scipy": "1.15.3",
+    "verification_source": "Root agent read-only verification; no re-run or environment changes"
+  },
+  "comparison": {
+    "python_patch_version_identical": false,
+    "mujoco_numpy_scipy_declared_versions_identical": true,
+    "binary_build_identity_verified": false
+  },
+  "limits": [
+    "This quality calculation ran in quality_actual_environment, not the poses/tests interpreter.",
+    "No package installation, environment modification or recomputation was performed.",
+    "Compiled geometry residuals apply to the recorded quality environment."
+  ]
+}

@@ -1,0 +1,2423 @@
+{
+  "schema": "d3-proxy76-left-inventory-v1",
+  "base_commit": "a564d2841c20e6012d0ce605ea8f619ae9a219a5",
+  "left_model_path": "mjcf/nero_dh116.xml",
+  "left_model_sha256": "c446124b7d938aa6e00ba5914047001de66c2a2c162e7dea1644437e5a85cb33",
+  "source_manifest_sha256": "eaefa95a30b5e3a13802e74ff737a3fdf52c7ea8c4620c6afcbacae97bf9018d",
+  "collision_selection": "Direct child mesh geoms group=0 under each of the 17 gripper0 hand bodies; source XML has no default section. All original geom and mesh attributes retained for inventory only. Migration must use right original contact attributes; left masks/friction/solver parameters are not approved for copying.",
+  "summary": {
+    "collision_geoms": 76,
+    "hand_links": 17,
+    "by_source_format": {
+      "obj": 66,
+      "stl": 10
+    },
+    "unique_mesh_assets": 76,
+    "unique_source_files": 76,
+    "left_default_sections": 0,
+    "stl_binary_header_and_length_verified": 10,
+    "obj_face_arities": {
+      "3": 29576
+    },
+    "required_source_adapters": [
+      "OBJ indexed triangular faces (66 files)",
+      "binary STL triangle records (10 files)"
+    ]
+  },
+  "links": [
+    {
+      "link": "base_link",
+      "left_body": "gripper0_base_link",
+      "collision_count": 10,
+      "collision_geoms": [
+        "gripper0_proxy_base_link_0",
+        "gripper0_proxy_base_link_1",
+        "gripper0_proxy_base_link_2",
+        "gripper0_proxy_base_link_3",
+        "gripper0_proxy_base_link_4",
+        "gripper0_proxy_base_link_5",
+        "gripper0_proxy_base_link_6",
+        "gripper0_proxy_base_link_7",
+        "gripper0_proxy_base_link_8",
+        "gripper0_proxy_base_link_9"
+      ],
+      "left_original_mesh_attributes": {
+        "name": "gripper0_base_link",
+        "file": "../meshes/dh116/gripper0_base_link-0be94e52.stl"
+      },
+      "left_original_mesh_source_manifest_entry": {
+        "asset": "gripper0_base_link",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/0be94e52875c963d1aec4d981700ada994dc2e7e38d03eb3ccddd6b9c90a2c6c.stl",
+        "file": "meshes/dh116/gripper0_base_link-0be94e52.stl",
+        "sha256": "0be94e52875c963d1aec4d981700ada994dc2e7e38d03eb3ccddd6b9c90a2c6c"
+      },
+      "left_original_mesh_sha256": "0be94e52875c963d1aec4d981700ada994dc2e7e38d03eb3ccddd6b9c90a2c6c",
+      "right_source_path": "meshes/dh116_right/source/base_link.STL",
+      "right_source_sha256": "094504fed409afe137eafa6643c36f081934df873ef1cf9924ebb9725436b161"
+    },
+    {
+      "link": "finger11_link",
+      "left_body": "gripper0_finger11_link",
+      "collision_count": 1,
+      "collision_geoms": [
+        "gripper0_finger11_link_collision_0"
+      ],
+      "left_original_mesh_attributes": {
+        "name": "gripper0_finger11_link",
+        "file": "../meshes/dh116/gripper0_finger11_link-f4e9f3fe.stl"
+      },
+      "left_original_mesh_source_manifest_entry": {
+        "asset": "gripper0_finger11_link",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/f4e9f3fe79d699b3b76f2ac1e29d7067d48f354e8a40f5264ef6efe6353461f9.stl",
+        "file": "meshes/dh116/gripper0_finger11_link-f4e9f3fe.stl",
+        "sha256": "f4e9f3fe79d699b3b76f2ac1e29d7067d48f354e8a40f5264ef6efe6353461f9"
+      },
+      "left_original_mesh_sha256": "f4e9f3fe79d699b3b76f2ac1e29d7067d48f354e8a40f5264ef6efe6353461f9",
+      "right_source_path": "meshes/dh116_right/source/finger11_link.STL",
+      "right_source_sha256": "5659ee7dd15833a86f30c2138685baf48671fa7458a79cbb1d611ddb7f3648c8"
+    },
+    {
+      "link": "finger12_link",
+      "left_body": "gripper0_finger12_link",
+      "collision_count": 8,
+      "collision_geoms": [
+        "gripper0_proxy_finger12_link_0",
+        "gripper0_proxy_finger12_link_1",
+        "gripper0_proxy_finger12_link_2",
+        "gripper0_proxy_finger12_link_3",
+        "gripper0_proxy_finger12_link_4",
+        "gripper0_proxy_finger12_link_5",
+        "gripper0_proxy_finger12_link_6",
+        "gripper0_proxy_finger12_link_7"
+      ],
+      "left_original_mesh_attributes": {
+        "name": "gripper0_finger12_link",
+        "file": "../meshes/dh116/gripper0_finger12_link-3da0a8e9.stl"
+      },
+      "left_original_mesh_source_manifest_entry": {
+        "asset": "gripper0_finger12_link",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/3da0a8e9b050d3d4608e6d30cf9466031a87a3e0bc12f3398963a1b8706494a0.stl",
+        "file": "meshes/dh116/gripper0_finger12_link-3da0a8e9.stl",
+        "sha256": "3da0a8e9b050d3d4608e6d30cf9466031a87a3e0bc12f3398963a1b8706494a0"
+      },
+      "left_original_mesh_sha256": "3da0a8e9b050d3d4608e6d30cf9466031a87a3e0bc12f3398963a1b8706494a0",
+      "right_source_path": "meshes/dh116_right/source/finger12_link.STL",
+      "right_source_sha256": "8807c48538b9396e1d132df7c5cf6ee0a44c28c4dcb759b5b00a74003b715e67"
+    },
+    {
+      "link": "finger13_link",
+      "left_body": "gripper0_finger13_link",
+      "collision_count": 1,
+      "collision_geoms": [
+        "gripper0_finger13_link_collision_0"
+      ],
+      "left_original_mesh_attributes": {
+        "name": "gripper0_finger13_link",
+        "file": "../meshes/dh116/gripper0_finger13_link-f34ca4cb.stl"
+      },
+      "left_original_mesh_source_manifest_entry": {
+        "asset": "gripper0_finger13_link",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/f34ca4cbc816d42643c532cf102b1583e1d8d39e156072f65f4bfa1e55fae7a5.stl",
+        "file": "meshes/dh116/gripper0_finger13_link-f34ca4cb.stl",
+        "sha256": "f34ca4cbc816d42643c532cf102b1583e1d8d39e156072f65f4bfa1e55fae7a5"
+      },
+      "left_original_mesh_sha256": "f34ca4cbc816d42643c532cf102b1583e1d8d39e156072f65f4bfa1e55fae7a5",
+      "right_source_path": "meshes/dh116_right/source/finger13_link.STL",
+      "right_source_sha256": "594501a21c86d1d19b73cf17572b7a04ae488c5fee4b623e25c618dd15eb3419"
+    },
+    {
+      "link": "finger14_link",
+      "left_body": "gripper0_finger14_link",
+      "collision_count": 12,
+      "collision_geoms": [
+        "gripper0_moderate_finger14_link_0",
+        "gripper0_moderate_finger14_link_1",
+        "gripper0_moderate_finger14_link_2",
+        "gripper0_moderate_finger14_link_3",
+        "gripper0_moderate_finger14_link_4",
+        "gripper0_moderate_finger14_link_5",
+        "gripper0_moderate_finger14_link_6",
+        "gripper0_moderate_finger14_link_7",
+        "gripper0_moderate_finger14_link_8",
+        "gripper0_moderate_finger14_link_9",
+        "gripper0_moderate_finger14_link_10",
+        "gripper0_moderate_finger14_link_11"
+      ],
+      "left_original_mesh_attributes": {
+        "name": "gripper0_finger14_link",
+        "file": "../meshes/dh116/gripper0_finger14_link-c8ee9ee3.stl"
+      },
+      "left_original_mesh_source_manifest_entry": {
+        "asset": "gripper0_finger14_link",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/c8ee9ee3ba82e3fc1ee91677c3f6c616c439c0bfa0d1fa9669a6d3df8cf0eba1.stl",
+        "file": "meshes/dh116/gripper0_finger14_link-c8ee9ee3.stl",
+        "sha256": "c8ee9ee3ba82e3fc1ee91677c3f6c616c439c0bfa0d1fa9669a6d3df8cf0eba1"
+      },
+      "left_original_mesh_sha256": "c8ee9ee3ba82e3fc1ee91677c3f6c616c439c0bfa0d1fa9669a6d3df8cf0eba1",
+      "right_source_path": "meshes/dh116_right/source/finger14_link.STL",
+      "right_source_sha256": "c58b2a741f13cbe1da9b6bbffb0ce6acf97de28b829fe45ea65458313efff449"
+    },
+    {
+      "link": "finger21_link",
+      "left_body": "gripper0_finger21_link",
+      "collision_count": 1,
+      "collision_geoms": [
+        "gripper0_finger21_link_collision_0"
+      ],
+      "left_original_mesh_attributes": {
+        "name": "gripper0_finger21_link",
+        "file": "../meshes/dh116/gripper0_finger21_link-1bb8e6bd.stl"
+      },
+      "left_original_mesh_source_manifest_entry": {
+        "asset": "gripper0_finger21_link",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/1bb8e6bd2d50d1b07c7077610fade1c71dd0923d8025f1589e3f904c856f28c1.stl",
+        "file": "meshes/dh116/gripper0_finger21_link-1bb8e6bd.stl",
+        "sha256": "1bb8e6bd2d50d1b07c7077610fade1c71dd0923d8025f1589e3f904c856f28c1"
+      },
+      "left_original_mesh_sha256": "1bb8e6bd2d50d1b07c7077610fade1c71dd0923d8025f1589e3f904c856f28c1",
+      "right_source_path": "meshes/dh116_right/source/finger21_link.STL",
+      "right_source_sha256": "7162d86cefa849458536cbb77968560dbf4e6c7a8b1734777640f9da1f828886"
+    },
+    {
+      "link": "finger22_link",
+      "left_body": "gripper0_finger22_link",
+      "collision_count": 1,
+      "collision_geoms": [
+        "gripper0_finger22_link_collision_0"
+      ],
+      "left_original_mesh_attributes": {
+        "name": "gripper0_finger22_link",
+        "file": "../meshes/dh116/gripper0_finger22_link-53c55c84.stl"
+      },
+      "left_original_mesh_source_manifest_entry": {
+        "asset": "gripper0_finger22_link",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/53c55c846f481d90248332d5a87319d11e0d96f0fb8cbb35717cc9ac9745f5e5.stl",
+        "file": "meshes/dh116/gripper0_finger22_link-53c55c84.stl",
+        "sha256": "53c55c846f481d90248332d5a87319d11e0d96f0fb8cbb35717cc9ac9745f5e5"
+      },
+      "left_original_mesh_sha256": "53c55c846f481d90248332d5a87319d11e0d96f0fb8cbb35717cc9ac9745f5e5",
+      "right_source_path": "meshes/dh116_right/source/finger22_link.STL",
+      "right_source_sha256": "5ebb8a2084495cb9e87b6ee531681500cfe5a37280320e97270d6e52c804081d"
+    },
+    {
+      "link": "finger23_link",
+      "left_body": "gripper0_finger23_link",
+      "collision_count": 12,
+      "collision_geoms": [
+        "gripper0_moderate_finger23_link_0",
+        "gripper0_moderate_finger23_link_1",
+        "gripper0_moderate_finger23_link_2",
+        "gripper0_moderate_finger23_link_3",
+        "gripper0_moderate_finger23_link_4",
+        "gripper0_moderate_finger23_link_5",
+        "gripper0_moderate_finger23_link_6",
+        "gripper0_moderate_finger23_link_7",
+        "gripper0_moderate_finger23_link_8",
+        "gripper0_moderate_finger23_link_9",
+        "gripper0_moderate_finger23_link_10",
+        "gripper0_moderate_finger23_link_11"
+      ],
+      "left_original_mesh_attributes": {
+        "name": "gripper0_finger23_link",
+        "file": "../meshes/dh116/gripper0_finger23_link-730786ab.stl"
+      },
+      "left_original_mesh_source_manifest_entry": {
+        "asset": "gripper0_finger23_link",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/730786ab7997aa990ae4ace17ab279d36a233223bcdc47d3e0e7578b35ab703b.stl",
+        "file": "meshes/dh116/gripper0_finger23_link-730786ab.stl",
+        "sha256": "730786ab7997aa990ae4ace17ab279d36a233223bcdc47d3e0e7578b35ab703b"
+      },
+      "left_original_mesh_sha256": "730786ab7997aa990ae4ace17ab279d36a233223bcdc47d3e0e7578b35ab703b",
+      "right_source_path": "meshes/dh116_right/source/finger23_link.STL",
+      "right_source_sha256": "ccbd2de17dac2fe356e4275240f5f00f8eee01dd2f32a44fc5b1e150f93d99f6"
+    },
+    {
+      "link": "finger31_link",
+      "left_body": "gripper0_finger31_link",
+      "collision_count": 1,
+      "collision_geoms": [
+        "gripper0_finger31_link_collision_0"
+      ],
+      "left_original_mesh_attributes": {
+        "name": "gripper0_finger31_link",
+        "file": "../meshes/dh116/gripper0_finger31_link-7e3176cd.stl"
+      },
+      "left_original_mesh_source_manifest_entry": {
+        "asset": "gripper0_finger31_link",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/7e3176cd95983c3e84369fe1639f65dcab86d54cd49ca3ed8612807ba3bc7358.stl",
+        "file": "meshes/dh116/gripper0_finger31_link-7e3176cd.stl",
+        "sha256": "7e3176cd95983c3e84369fe1639f65dcab86d54cd49ca3ed8612807ba3bc7358"
+      },
+      "left_original_mesh_sha256": "7e3176cd95983c3e84369fe1639f65dcab86d54cd49ca3ed8612807ba3bc7358",
+      "right_source_path": "meshes/dh116_right/source/finger31_link.STL",
+      "right_source_sha256": "2d4ec902f4b2d06872cfbda2e5a63f387aa82dfd522fd44da5e38b83f90cf2b6"
+    },
+    {
+      "link": "finger32_link",
+      "left_body": "gripper0_finger32_link",
+      "collision_count": 1,
+      "collision_geoms": [
+        "gripper0_finger32_link_collision_0"
+      ],
+      "left_original_mesh_attributes": {
+        "name": "gripper0_finger32_link",
+        "file": "../meshes/dh116/gripper0_finger32_link-68b0442e.stl"
+      },
+      "left_original_mesh_source_manifest_entry": {
+        "asset": "gripper0_finger32_link",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/68b0442e8c8e3e0e8e94ef55596378b85556bda1959c64debbdd48d21b3af931.stl",
+        "file": "meshes/dh116/gripper0_finger32_link-68b0442e.stl",
+        "sha256": "68b0442e8c8e3e0e8e94ef55596378b85556bda1959c64debbdd48d21b3af931"
+      },
+      "left_original_mesh_sha256": "68b0442e8c8e3e0e8e94ef55596378b85556bda1959c64debbdd48d21b3af931",
+      "right_source_path": "meshes/dh116_right/source/finger32_link.STL",
+      "right_source_sha256": "f3cf0d1634338d331bc58ae7838023925a1654003f5728423de25808f490821e"
+    },
+    {
+      "link": "finger33_link",
+      "left_body": "gripper0_finger33_link",
+      "collision_count": 8,
+      "collision_geoms": [
+        "gripper0_proxy_finger33_link_0",
+        "gripper0_proxy_finger33_link_1",
+        "gripper0_proxy_finger33_link_2",
+        "gripper0_proxy_finger33_link_3",
+        "gripper0_proxy_finger33_link_4",
+        "gripper0_proxy_finger33_link_5",
+        "gripper0_proxy_finger33_link_6",
+        "gripper0_proxy_finger33_link_7"
+      ],
+      "left_original_mesh_attributes": {
+        "name": "gripper0_finger33_link",
+        "file": "../meshes/dh116/gripper0_finger33_link-88aa0605.stl"
+      },
+      "left_original_mesh_source_manifest_entry": {
+        "asset": "gripper0_finger33_link",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/88aa060526d69f07a7d2688c2222ccbae0ea013d7395fb1a483f4287db842669.stl",
+        "file": "meshes/dh116/gripper0_finger33_link-88aa0605.stl",
+        "sha256": "88aa060526d69f07a7d2688c2222ccbae0ea013d7395fb1a483f4287db842669"
+      },
+      "left_original_mesh_sha256": "88aa060526d69f07a7d2688c2222ccbae0ea013d7395fb1a483f4287db842669",
+      "right_source_path": "meshes/dh116_right/source/finger33_link.STL",
+      "right_source_sha256": "2082e780c44d9e2ac91a9c355c3751f084fcbb42c39e33961178b81e5b3ce147"
+    },
+    {
+      "link": "finger41_link",
+      "left_body": "gripper0_finger41_link",
+      "collision_count": 1,
+      "collision_geoms": [
+        "gripper0_finger41_link_collision_0"
+      ],
+      "left_original_mesh_attributes": {
+        "name": "gripper0_finger41_link",
+        "file": "../meshes/dh116/gripper0_finger41_link-5f1647a2.stl"
+      },
+      "left_original_mesh_source_manifest_entry": {
+        "asset": "gripper0_finger41_link",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/5f1647a233765270e256bf1cb1deeca0ac29ad4241e2a8e95477756885b73857.stl",
+        "file": "meshes/dh116/gripper0_finger41_link-5f1647a2.stl",
+        "sha256": "5f1647a233765270e256bf1cb1deeca0ac29ad4241e2a8e95477756885b73857"
+      },
+      "left_original_mesh_sha256": "5f1647a233765270e256bf1cb1deeca0ac29ad4241e2a8e95477756885b73857",
+      "right_source_path": "meshes/dh116_right/source/finger41_link.STL",
+      "right_source_sha256": "5366f649baa0c5c29cc1afdbcc6163b2bcb9001f0b9b8ae69a213f5209860289"
+    },
+    {
+      "link": "finger42_link",
+      "left_body": "gripper0_finger42_link",
+      "collision_count": 1,
+      "collision_geoms": [
+        "gripper0_finger42_link_collision_0"
+      ],
+      "left_original_mesh_attributes": {
+        "name": "gripper0_finger42_link",
+        "file": "../meshes/dh116/gripper0_finger42_link-15a9090c.stl"
+      },
+      "left_original_mesh_source_manifest_entry": {
+        "asset": "gripper0_finger42_link",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/15a9090c995e1f29ab0bb4b0a4ede7a4f60f1d0e0bf809c3ada86c53d0b66bed.stl",
+        "file": "meshes/dh116/gripper0_finger42_link-15a9090c.stl",
+        "sha256": "15a9090c995e1f29ab0bb4b0a4ede7a4f60f1d0e0bf809c3ada86c53d0b66bed"
+      },
+      "left_original_mesh_sha256": "15a9090c995e1f29ab0bb4b0a4ede7a4f60f1d0e0bf809c3ada86c53d0b66bed",
+      "right_source_path": "meshes/dh116_right/source/finger42_link.STL",
+      "right_source_sha256": "4382f6f699a2cb342f00f5bf4ddbe20b7d2b664b522c5abcd49cfee551e748ae"
+    },
+    {
+      "link": "finger43_link",
+      "left_body": "gripper0_finger43_link",
+      "collision_count": 8,
+      "collision_geoms": [
+        "gripper0_proxy_finger43_link_0",
+        "gripper0_proxy_finger43_link_1",
+        "gripper0_proxy_finger43_link_2",
+        "gripper0_proxy_finger43_link_3",
+        "gripper0_proxy_finger43_link_4",
+        "gripper0_proxy_finger43_link_5",
+        "gripper0_proxy_finger43_link_6",
+        "gripper0_proxy_finger43_link_7"
+      ],
+      "left_original_mesh_attributes": {
+        "name": "gripper0_finger43_link",
+        "file": "../meshes/dh116/gripper0_finger43_link-9c482424.stl"
+      },
+      "left_original_mesh_source_manifest_entry": {
+        "asset": "gripper0_finger43_link",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/9c48242481fb3a21921bdb7d8b5a5273bb1c193d757e0396e16f63bafcf59293.stl",
+        "file": "meshes/dh116/gripper0_finger43_link-9c482424.stl",
+        "sha256": "9c48242481fb3a21921bdb7d8b5a5273bb1c193d757e0396e16f63bafcf59293"
+      },
+      "left_original_mesh_sha256": "9c48242481fb3a21921bdb7d8b5a5273bb1c193d757e0396e16f63bafcf59293",
+      "right_source_path": "meshes/dh116_right/source/finger43_link.STL",
+      "right_source_sha256": "4e0b20fc9c464825b466d3ca51ff4557f70d4a3ea935a00b09ad5639722251df"
+    },
+    {
+      "link": "finger51_link",
+      "left_body": "gripper0_finger51_link",
+      "collision_count": 1,
+      "collision_geoms": [
+        "gripper0_finger51_link_collision_0"
+      ],
+      "left_original_mesh_attributes": {
+        "name": "gripper0_finger51_link",
+        "file": "../meshes/dh116/gripper0_finger51_link-dfabcfce.stl"
+      },
+      "left_original_mesh_source_manifest_entry": {
+        "asset": "gripper0_finger51_link",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/dfabcfce1fc923cc0745a2df5ec07efc657506c7ad50b8e883de7fc996ce9f59.stl",
+        "file": "meshes/dh116/gripper0_finger51_link-dfabcfce.stl",
+        "sha256": "dfabcfce1fc923cc0745a2df5ec07efc657506c7ad50b8e883de7fc996ce9f59"
+      },
+      "left_original_mesh_sha256": "dfabcfce1fc923cc0745a2df5ec07efc657506c7ad50b8e883de7fc996ce9f59",
+      "right_source_path": "meshes/dh116_right/source/finger51_link.STL",
+      "right_source_sha256": "f1b5983e1cd4b29f5e4609001c525e93ff80bb1d921711a6327fd8e688fad1db"
+    },
+    {
+      "link": "finger52_link",
+      "left_body": "gripper0_finger52_link",
+      "collision_count": 1,
+      "collision_geoms": [
+        "gripper0_finger52_link_collision_0"
+      ],
+      "left_original_mesh_attributes": {
+        "name": "gripper0_finger52_link",
+        "file": "../meshes/dh116/gripper0_finger52_link-acf84396.stl"
+      },
+      "left_original_mesh_source_manifest_entry": {
+        "asset": "gripper0_finger52_link",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/acf84396741cf2d5fa50ad3a25e9ca4fdb0947387cb39c2697951761a5f7d22c.stl",
+        "file": "meshes/dh116/gripper0_finger52_link-acf84396.stl",
+        "sha256": "acf84396741cf2d5fa50ad3a25e9ca4fdb0947387cb39c2697951761a5f7d22c"
+      },
+      "left_original_mesh_sha256": "acf84396741cf2d5fa50ad3a25e9ca4fdb0947387cb39c2697951761a5f7d22c",
+      "right_source_path": "meshes/dh116_right/source/finger52_link.STL",
+      "right_source_sha256": "7c5f953a3cde495eae505dfa3ea248e768c69ab911c21f61825ddb42b4531994"
+    },
+    {
+      "link": "finger53_link",
+      "left_body": "gripper0_finger53_link",
+      "collision_count": 8,
+      "collision_geoms": [
+        "gripper0_proxy_finger53_link_0",
+        "gripper0_proxy_finger53_link_1",
+        "gripper0_proxy_finger53_link_2",
+        "gripper0_proxy_finger53_link_3",
+        "gripper0_proxy_finger53_link_4",
+        "gripper0_proxy_finger53_link_5",
+        "gripper0_proxy_finger53_link_6",
+        "gripper0_proxy_finger53_link_7"
+      ],
+      "left_original_mesh_attributes": {
+        "name": "gripper0_finger53_link",
+        "file": "../meshes/dh116/gripper0_finger53_link-028f6059.stl"
+      },
+      "left_original_mesh_source_manifest_entry": {
+        "asset": "gripper0_finger53_link",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/028f60596c26150c19aa100bdb13f073b15b9544a6598514130f02af2427255e.stl",
+        "file": "meshes/dh116/gripper0_finger53_link-028f6059.stl",
+        "sha256": "028f60596c26150c19aa100bdb13f073b15b9544a6598514130f02af2427255e"
+      },
+      "left_original_mesh_sha256": "028f60596c26150c19aa100bdb13f073b15b9544a6598514130f02af2427255e",
+      "right_source_path": "meshes/dh116_right/source/finger53_link.STL",
+      "right_source_sha256": "63eb67492fce45f80b798d9ead4d194a9eafdae1ed6c0893820222ef3ffedbf1"
+    }
+  ],
+  "collision_geoms": [
+    {
+      "left_geom_name": "gripper0_proxy_base_link_0",
+      "left_body": "gripper0_base_link",
+      "link": "base_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_proxy_base_link_0",
+        "name": "gripper0_proxy_base_link_0",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_proxy_base_link_0",
+      "mesh_attributes": {
+        "name": "gripper0_proxy_base_link_0",
+        "file": "../meshes/dh116/gripper0_proxy_base_link_0-b6201105.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_proxy_base_link_0-b6201105.obj",
+      "source_format": "obj",
+      "source_sha256": "b62011053253549820237dd9bcd6e4fa5aa395a9b20c0f5013081357bde6163d",
+      "source_manifest_entry": {
+        "asset": "gripper0_proxy_base_link_0",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/base_link_000.obj",
+        "file": "meshes/dh116/gripper0_proxy_base_link_0-b6201105.obj",
+        "sha256": "b62011053253549820237dd9bcd6e4fa5aa395a9b20c0f5013081357bde6163d"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_proxy_base_link_1",
+      "left_body": "gripper0_base_link",
+      "link": "base_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_proxy_base_link_1",
+        "name": "gripper0_proxy_base_link_1",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_proxy_base_link_1",
+      "mesh_attributes": {
+        "name": "gripper0_proxy_base_link_1",
+        "file": "../meshes/dh116/gripper0_proxy_base_link_1-d5d01f7a.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_proxy_base_link_1-d5d01f7a.obj",
+      "source_format": "obj",
+      "source_sha256": "d5d01f7ad0324a13077df2ab2be613e0486d5a2fe9ef0e0ae9bd2719717f22ff",
+      "source_manifest_entry": {
+        "asset": "gripper0_proxy_base_link_1",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/base_link_001.obj",
+        "file": "meshes/dh116/gripper0_proxy_base_link_1-d5d01f7a.obj",
+        "sha256": "d5d01f7ad0324a13077df2ab2be613e0486d5a2fe9ef0e0ae9bd2719717f22ff"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_proxy_base_link_2",
+      "left_body": "gripper0_base_link",
+      "link": "base_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_proxy_base_link_2",
+        "name": "gripper0_proxy_base_link_2",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_proxy_base_link_2",
+      "mesh_attributes": {
+        "name": "gripper0_proxy_base_link_2",
+        "file": "../meshes/dh116/gripper0_proxy_base_link_2-28926ea0.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_proxy_base_link_2-28926ea0.obj",
+      "source_format": "obj",
+      "source_sha256": "28926ea04aaba25ef8cf8287baa5169807b7412a42e3480a17c261b401c90bce",
+      "source_manifest_entry": {
+        "asset": "gripper0_proxy_base_link_2",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/base_link_002.obj",
+        "file": "meshes/dh116/gripper0_proxy_base_link_2-28926ea0.obj",
+        "sha256": "28926ea04aaba25ef8cf8287baa5169807b7412a42e3480a17c261b401c90bce"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_proxy_base_link_3",
+      "left_body": "gripper0_base_link",
+      "link": "base_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_proxy_base_link_3",
+        "name": "gripper0_proxy_base_link_3",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_proxy_base_link_3",
+      "mesh_attributes": {
+        "name": "gripper0_proxy_base_link_3",
+        "file": "../meshes/dh116/gripper0_proxy_base_link_3-f0401ef7.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_proxy_base_link_3-f0401ef7.obj",
+      "source_format": "obj",
+      "source_sha256": "f0401ef72c46652c02a47ac13e0605a1de889c50fba784b09f46793574a0c77a",
+      "source_manifest_entry": {
+        "asset": "gripper0_proxy_base_link_3",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/base_link_003.obj",
+        "file": "meshes/dh116/gripper0_proxy_base_link_3-f0401ef7.obj",
+        "sha256": "f0401ef72c46652c02a47ac13e0605a1de889c50fba784b09f46793574a0c77a"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_proxy_base_link_4",
+      "left_body": "gripper0_base_link",
+      "link": "base_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_proxy_base_link_4",
+        "name": "gripper0_proxy_base_link_4",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_proxy_base_link_4",
+      "mesh_attributes": {
+        "name": "gripper0_proxy_base_link_4",
+        "file": "../meshes/dh116/gripper0_proxy_base_link_4-b17bb2bf.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_proxy_base_link_4-b17bb2bf.obj",
+      "source_format": "obj",
+      "source_sha256": "b17bb2bf43d3910b603f39d1f375f5e62183e4d5ed42ed0929d5f4f73023c8fe",
+      "source_manifest_entry": {
+        "asset": "gripper0_proxy_base_link_4",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/base_link_004.obj",
+        "file": "meshes/dh116/gripper0_proxy_base_link_4-b17bb2bf.obj",
+        "sha256": "b17bb2bf43d3910b603f39d1f375f5e62183e4d5ed42ed0929d5f4f73023c8fe"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_proxy_base_link_5",
+      "left_body": "gripper0_base_link",
+      "link": "base_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_proxy_base_link_5",
+        "name": "gripper0_proxy_base_link_5",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_proxy_base_link_5",
+      "mesh_attributes": {
+        "name": "gripper0_proxy_base_link_5",
+        "file": "../meshes/dh116/gripper0_proxy_base_link_5-c3ec3427.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_proxy_base_link_5-c3ec3427.obj",
+      "source_format": "obj",
+      "source_sha256": "c3ec3427e5f6b215b34633b3e33d7f241c5f43b40ba1ccf7bc5dcfe589dfaf26",
+      "source_manifest_entry": {
+        "asset": "gripper0_proxy_base_link_5",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/base_link_005.obj",
+        "file": "meshes/dh116/gripper0_proxy_base_link_5-c3ec3427.obj",
+        "sha256": "c3ec3427e5f6b215b34633b3e33d7f241c5f43b40ba1ccf7bc5dcfe589dfaf26"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_proxy_base_link_6",
+      "left_body": "gripper0_base_link",
+      "link": "base_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_proxy_base_link_6",
+        "name": "gripper0_proxy_base_link_6",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_proxy_base_link_6",
+      "mesh_attributes": {
+        "name": "gripper0_proxy_base_link_6",
+        "file": "../meshes/dh116/gripper0_proxy_base_link_6-d557eda8.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_proxy_base_link_6-d557eda8.obj",
+      "source_format": "obj",
+      "source_sha256": "d557eda8c52b780dbd408c8e0fecdf5c561dc300435b8b513063dbfda526f3a3",
+      "source_manifest_entry": {
+        "asset": "gripper0_proxy_base_link_6",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/base_link_006.obj",
+        "file": "meshes/dh116/gripper0_proxy_base_link_6-d557eda8.obj",
+        "sha256": "d557eda8c52b780dbd408c8e0fecdf5c561dc300435b8b513063dbfda526f3a3"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_proxy_base_link_7",
+      "left_body": "gripper0_base_link",
+      "link": "base_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_proxy_base_link_7",
+        "name": "gripper0_proxy_base_link_7",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_proxy_base_link_7",
+      "mesh_attributes": {
+        "name": "gripper0_proxy_base_link_7",
+        "file": "../meshes/dh116/gripper0_proxy_base_link_7-bb374ff6.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_proxy_base_link_7-bb374ff6.obj",
+      "source_format": "obj",
+      "source_sha256": "bb374ff68592ac7fc07655d98b65f23a5a0a82ea894dc749205b928ba162a317",
+      "source_manifest_entry": {
+        "asset": "gripper0_proxy_base_link_7",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/base_link_007.obj",
+        "file": "meshes/dh116/gripper0_proxy_base_link_7-bb374ff6.obj",
+        "sha256": "bb374ff68592ac7fc07655d98b65f23a5a0a82ea894dc749205b928ba162a317"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_proxy_base_link_8",
+      "left_body": "gripper0_base_link",
+      "link": "base_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_proxy_base_link_8",
+        "name": "gripper0_proxy_base_link_8",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_proxy_base_link_8",
+      "mesh_attributes": {
+        "name": "gripper0_proxy_base_link_8",
+        "file": "../meshes/dh116/gripper0_proxy_base_link_8-f1f6bbdb.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_proxy_base_link_8-f1f6bbdb.obj",
+      "source_format": "obj",
+      "source_sha256": "f1f6bbdb592e1dae9b8c43c02b4123c0db07eb274234074f7739c3324933c259",
+      "source_manifest_entry": {
+        "asset": "gripper0_proxy_base_link_8",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/base_link_008.obj",
+        "file": "meshes/dh116/gripper0_proxy_base_link_8-f1f6bbdb.obj",
+        "sha256": "f1f6bbdb592e1dae9b8c43c02b4123c0db07eb274234074f7739c3324933c259"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_proxy_base_link_9",
+      "left_body": "gripper0_base_link",
+      "link": "base_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_proxy_base_link_9",
+        "name": "gripper0_proxy_base_link_9",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_proxy_base_link_9",
+      "mesh_attributes": {
+        "name": "gripper0_proxy_base_link_9",
+        "file": "../meshes/dh116/gripper0_proxy_base_link_9-41570f8d.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_proxy_base_link_9-41570f8d.obj",
+      "source_format": "obj",
+      "source_sha256": "41570f8dc791a0be2a04494e5cf3fc0fe032751605a5a49b8bbc393a7d91da07",
+      "source_manifest_entry": {
+        "asset": "gripper0_proxy_base_link_9",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/base_link_009.obj",
+        "file": "meshes/dh116/gripper0_proxy_base_link_9-41570f8d.obj",
+        "sha256": "41570f8dc791a0be2a04494e5cf3fc0fe032751605a5a49b8bbc393a7d91da07"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_finger11_link_collision_0",
+      "left_body": "gripper0_finger11_link",
+      "link": "finger11_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_finger11_link",
+        "name": "gripper0_finger11_link_collision_0",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_finger11_link",
+      "mesh_attributes": {
+        "name": "gripper0_finger11_link",
+        "file": "../meshes/dh116/gripper0_finger11_link-f4e9f3fe.stl"
+      },
+      "source_path": "meshes/dh116/gripper0_finger11_link-f4e9f3fe.stl",
+      "source_format": "stl",
+      "source_sha256": "f4e9f3fe79d699b3b76f2ac1e29d7067d48f354e8a40f5264ef6efe6353461f9",
+      "source_manifest_entry": {
+        "asset": "gripper0_finger11_link",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/f4e9f3fe79d699b3b76f2ac1e29d7067d48f354e8a40f5264ef6efe6353461f9.stl",
+        "file": "meshes/dh116/gripper0_finger11_link-f4e9f3fe.stl",
+        "sha256": "f4e9f3fe79d699b3b76f2ac1e29d7067d48f354e8a40f5264ef6efe6353461f9"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_proxy_finger12_link_0",
+      "left_body": "gripper0_finger12_link",
+      "link": "finger12_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_proxy_finger12_link_0",
+        "name": "gripper0_proxy_finger12_link_0",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_proxy_finger12_link_0",
+      "mesh_attributes": {
+        "name": "gripper0_proxy_finger12_link_0",
+        "file": "../meshes/dh116/gripper0_proxy_finger12_link_0-2a6bdf00.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_proxy_finger12_link_0-2a6bdf00.obj",
+      "source_format": "obj",
+      "source_sha256": "2a6bdf00ae7c1ea87a8b35cfa5755ea112dda7b5b180813e69ab552ce4d52aee",
+      "source_manifest_entry": {
+        "asset": "gripper0_proxy_finger12_link_0",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger12_link_000.obj",
+        "file": "meshes/dh116/gripper0_proxy_finger12_link_0-2a6bdf00.obj",
+        "sha256": "2a6bdf00ae7c1ea87a8b35cfa5755ea112dda7b5b180813e69ab552ce4d52aee"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_proxy_finger12_link_1",
+      "left_body": "gripper0_finger12_link",
+      "link": "finger12_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_proxy_finger12_link_1",
+        "name": "gripper0_proxy_finger12_link_1",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_proxy_finger12_link_1",
+      "mesh_attributes": {
+        "name": "gripper0_proxy_finger12_link_1",
+        "file": "../meshes/dh116/gripper0_proxy_finger12_link_1-74d9a1f6.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_proxy_finger12_link_1-74d9a1f6.obj",
+      "source_format": "obj",
+      "source_sha256": "74d9a1f6088dfd3ba6ce894762c8f63cd3fd5e6f3ba3badafc7475294f80ca72",
+      "source_manifest_entry": {
+        "asset": "gripper0_proxy_finger12_link_1",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger12_link_001.obj",
+        "file": "meshes/dh116/gripper0_proxy_finger12_link_1-74d9a1f6.obj",
+        "sha256": "74d9a1f6088dfd3ba6ce894762c8f63cd3fd5e6f3ba3badafc7475294f80ca72"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_proxy_finger12_link_2",
+      "left_body": "gripper0_finger12_link",
+      "link": "finger12_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_proxy_finger12_link_2",
+        "name": "gripper0_proxy_finger12_link_2",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_proxy_finger12_link_2",
+      "mesh_attributes": {
+        "name": "gripper0_proxy_finger12_link_2",
+        "file": "../meshes/dh116/gripper0_proxy_finger12_link_2-9be8c86a.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_proxy_finger12_link_2-9be8c86a.obj",
+      "source_format": "obj",
+      "source_sha256": "9be8c86a32a28eb6cfccfc0d4ce3c0ce3f1e65615350517f8fb624f6334ab118",
+      "source_manifest_entry": {
+        "asset": "gripper0_proxy_finger12_link_2",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger12_link_002.obj",
+        "file": "meshes/dh116/gripper0_proxy_finger12_link_2-9be8c86a.obj",
+        "sha256": "9be8c86a32a28eb6cfccfc0d4ce3c0ce3f1e65615350517f8fb624f6334ab118"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_proxy_finger12_link_3",
+      "left_body": "gripper0_finger12_link",
+      "link": "finger12_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_proxy_finger12_link_3",
+        "name": "gripper0_proxy_finger12_link_3",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_proxy_finger12_link_3",
+      "mesh_attributes": {
+        "name": "gripper0_proxy_finger12_link_3",
+        "file": "../meshes/dh116/gripper0_proxy_finger12_link_3-a648891e.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_proxy_finger12_link_3-a648891e.obj",
+      "source_format": "obj",
+      "source_sha256": "a648891e9b0097a5dc6df5f44a54a4fcbc4b522baeb915df66ebf96b0c653908",
+      "source_manifest_entry": {
+        "asset": "gripper0_proxy_finger12_link_3",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger12_link_003.obj",
+        "file": "meshes/dh116/gripper0_proxy_finger12_link_3-a648891e.obj",
+        "sha256": "a648891e9b0097a5dc6df5f44a54a4fcbc4b522baeb915df66ebf96b0c653908"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_proxy_finger12_link_4",
+      "left_body": "gripper0_finger12_link",
+      "link": "finger12_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_proxy_finger12_link_4",
+        "name": "gripper0_proxy_finger12_link_4",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_proxy_finger12_link_4",
+      "mesh_attributes": {
+        "name": "gripper0_proxy_finger12_link_4",
+        "file": "../meshes/dh116/gripper0_proxy_finger12_link_4-c3d2e735.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_proxy_finger12_link_4-c3d2e735.obj",
+      "source_format": "obj",
+      "source_sha256": "c3d2e735fe8c007812868afe5a413c2f85fb616d8af43bf208c82c441ba33792",
+      "source_manifest_entry": {
+        "asset": "gripper0_proxy_finger12_link_4",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger12_link_004.obj",
+        "file": "meshes/dh116/gripper0_proxy_finger12_link_4-c3d2e735.obj",
+        "sha256": "c3d2e735fe8c007812868afe5a413c2f85fb616d8af43bf208c82c441ba33792"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_proxy_finger12_link_5",
+      "left_body": "gripper0_finger12_link",
+      "link": "finger12_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_proxy_finger12_link_5",
+        "name": "gripper0_proxy_finger12_link_5",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_proxy_finger12_link_5",
+      "mesh_attributes": {
+        "name": "gripper0_proxy_finger12_link_5",
+        "file": "../meshes/dh116/gripper0_proxy_finger12_link_5-b8ec84e4.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_proxy_finger12_link_5-b8ec84e4.obj",
+      "source_format": "obj",
+      "source_sha256": "b8ec84e411668e9739fd702f45376b5bec5972e6f3ae334c9f789714696f4134",
+      "source_manifest_entry": {
+        "asset": "gripper0_proxy_finger12_link_5",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger12_link_005.obj",
+        "file": "meshes/dh116/gripper0_proxy_finger12_link_5-b8ec84e4.obj",
+        "sha256": "b8ec84e411668e9739fd702f45376b5bec5972e6f3ae334c9f789714696f4134"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_proxy_finger12_link_6",
+      "left_body": "gripper0_finger12_link",
+      "link": "finger12_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_proxy_finger12_link_6",
+        "name": "gripper0_proxy_finger12_link_6",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_proxy_finger12_link_6",
+      "mesh_attributes": {
+        "name": "gripper0_proxy_finger12_link_6",
+        "file": "../meshes/dh116/gripper0_proxy_finger12_link_6-6e9a388e.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_proxy_finger12_link_6-6e9a388e.obj",
+      "source_format": "obj",
+      "source_sha256": "6e9a388e036622b035a0c6c3a57a7c59f1128444e6aff3ea15eee700a8cdd197",
+      "source_manifest_entry": {
+        "asset": "gripper0_proxy_finger12_link_6",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger12_link_006.obj",
+        "file": "meshes/dh116/gripper0_proxy_finger12_link_6-6e9a388e.obj",
+        "sha256": "6e9a388e036622b035a0c6c3a57a7c59f1128444e6aff3ea15eee700a8cdd197"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_proxy_finger12_link_7",
+      "left_body": "gripper0_finger12_link",
+      "link": "finger12_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_proxy_finger12_link_7",
+        "name": "gripper0_proxy_finger12_link_7",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_proxy_finger12_link_7",
+      "mesh_attributes": {
+        "name": "gripper0_proxy_finger12_link_7",
+        "file": "../meshes/dh116/gripper0_proxy_finger12_link_7-3748cad4.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_proxy_finger12_link_7-3748cad4.obj",
+      "source_format": "obj",
+      "source_sha256": "3748cad4e9e316b359b5586674afbf3722ade675c9e240b95ea32cbd2ef1d918",
+      "source_manifest_entry": {
+        "asset": "gripper0_proxy_finger12_link_7",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger12_link_007.obj",
+        "file": "meshes/dh116/gripper0_proxy_finger12_link_7-3748cad4.obj",
+        "sha256": "3748cad4e9e316b359b5586674afbf3722ade675c9e240b95ea32cbd2ef1d918"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_finger13_link_collision_0",
+      "left_body": "gripper0_finger13_link",
+      "link": "finger13_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_finger13_link",
+        "name": "gripper0_finger13_link_collision_0",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_finger13_link",
+      "mesh_attributes": {
+        "name": "gripper0_finger13_link",
+        "file": "../meshes/dh116/gripper0_finger13_link-f34ca4cb.stl"
+      },
+      "source_path": "meshes/dh116/gripper0_finger13_link-f34ca4cb.stl",
+      "source_format": "stl",
+      "source_sha256": "f34ca4cbc816d42643c532cf102b1583e1d8d39e156072f65f4bfa1e55fae7a5",
+      "source_manifest_entry": {
+        "asset": "gripper0_finger13_link",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/f34ca4cbc816d42643c532cf102b1583e1d8d39e156072f65f4bfa1e55fae7a5.stl",
+        "file": "meshes/dh116/gripper0_finger13_link-f34ca4cb.stl",
+        "sha256": "f34ca4cbc816d42643c532cf102b1583e1d8d39e156072f65f4bfa1e55fae7a5"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_moderate_finger14_link_0",
+      "left_body": "gripper0_finger14_link",
+      "link": "finger14_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_moderate_finger14_link_0",
+        "name": "gripper0_moderate_finger14_link_0",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_moderate_finger14_link_0",
+      "mesh_attributes": {
+        "name": "gripper0_moderate_finger14_link_0",
+        "file": "../meshes/dh116/gripper0_moderate_finger14_link_0-2b2ddda5.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_moderate_finger14_link_0-2b2ddda5.obj",
+      "source_format": "obj",
+      "source_sha256": "2b2ddda55ee186117724461d4e1eb7fb257d191676319114d69fd76026ceacaf",
+      "source_manifest_entry": {
+        "asset": "gripper0_moderate_finger14_link_0",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger14_link_00.obj",
+        "file": "meshes/dh116/gripper0_moderate_finger14_link_0-2b2ddda5.obj",
+        "sha256": "2b2ddda55ee186117724461d4e1eb7fb257d191676319114d69fd76026ceacaf"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_moderate_finger14_link_1",
+      "left_body": "gripper0_finger14_link",
+      "link": "finger14_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_moderate_finger14_link_1",
+        "name": "gripper0_moderate_finger14_link_1",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_moderate_finger14_link_1",
+      "mesh_attributes": {
+        "name": "gripper0_moderate_finger14_link_1",
+        "file": "../meshes/dh116/gripper0_moderate_finger14_link_1-0e2d6afb.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_moderate_finger14_link_1-0e2d6afb.obj",
+      "source_format": "obj",
+      "source_sha256": "0e2d6afbd4e4a20a7f7aa039ee80776a89f39f304eccaa1ea9a322937f6c73db",
+      "source_manifest_entry": {
+        "asset": "gripper0_moderate_finger14_link_1",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger14_link_01.obj",
+        "file": "meshes/dh116/gripper0_moderate_finger14_link_1-0e2d6afb.obj",
+        "sha256": "0e2d6afbd4e4a20a7f7aa039ee80776a89f39f304eccaa1ea9a322937f6c73db"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_moderate_finger14_link_2",
+      "left_body": "gripper0_finger14_link",
+      "link": "finger14_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_moderate_finger14_link_2",
+        "name": "gripper0_moderate_finger14_link_2",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_moderate_finger14_link_2",
+      "mesh_attributes": {
+        "name": "gripper0_moderate_finger14_link_2",
+        "file": "../meshes/dh116/gripper0_moderate_finger14_link_2-a71fa24f.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_moderate_finger14_link_2-a71fa24f.obj",
+      "source_format": "obj",
+      "source_sha256": "a71fa24ff8b93d0fad952ff2bfb8d85418fa7318b3552c626204b6675956c09b",
+      "source_manifest_entry": {
+        "asset": "gripper0_moderate_finger14_link_2",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger14_link_02.obj",
+        "file": "meshes/dh116/gripper0_moderate_finger14_link_2-a71fa24f.obj",
+        "sha256": "a71fa24ff8b93d0fad952ff2bfb8d85418fa7318b3552c626204b6675956c09b"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_moderate_finger14_link_3",
+      "left_body": "gripper0_finger14_link",
+      "link": "finger14_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_moderate_finger14_link_3",
+        "name": "gripper0_moderate_finger14_link_3",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_moderate_finger14_link_3",
+      "mesh_attributes": {
+        "name": "gripper0_moderate_finger14_link_3",
+        "file": "../meshes/dh116/gripper0_moderate_finger14_link_3-31cf7b29.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_moderate_finger14_link_3-31cf7b29.obj",
+      "source_format": "obj",
+      "source_sha256": "31cf7b299a871be62338a48441ffff1c40de9443b08c1a66d0e0ac2c70d7e6ce",
+      "source_manifest_entry": {
+        "asset": "gripper0_moderate_finger14_link_3",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger14_link_03.obj",
+        "file": "meshes/dh116/gripper0_moderate_finger14_link_3-31cf7b29.obj",
+        "sha256": "31cf7b299a871be62338a48441ffff1c40de9443b08c1a66d0e0ac2c70d7e6ce"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_moderate_finger14_link_4",
+      "left_body": "gripper0_finger14_link",
+      "link": "finger14_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_moderate_finger14_link_4",
+        "name": "gripper0_moderate_finger14_link_4",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_moderate_finger14_link_4",
+      "mesh_attributes": {
+        "name": "gripper0_moderate_finger14_link_4",
+        "file": "../meshes/dh116/gripper0_moderate_finger14_link_4-c49b43ef.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_moderate_finger14_link_4-c49b43ef.obj",
+      "source_format": "obj",
+      "source_sha256": "c49b43efea1ab9054834dc733b62109f71f3101e8573838fac412acfabf8b0ba",
+      "source_manifest_entry": {
+        "asset": "gripper0_moderate_finger14_link_4",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger14_link_04.obj",
+        "file": "meshes/dh116/gripper0_moderate_finger14_link_4-c49b43ef.obj",
+        "sha256": "c49b43efea1ab9054834dc733b62109f71f3101e8573838fac412acfabf8b0ba"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_moderate_finger14_link_5",
+      "left_body": "gripper0_finger14_link",
+      "link": "finger14_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_moderate_finger14_link_5",
+        "name": "gripper0_moderate_finger14_link_5",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_moderate_finger14_link_5",
+      "mesh_attributes": {
+        "name": "gripper0_moderate_finger14_link_5",
+        "file": "../meshes/dh116/gripper0_moderate_finger14_link_5-c3a6773e.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_moderate_finger14_link_5-c3a6773e.obj",
+      "source_format": "obj",
+      "source_sha256": "c3a6773e2340e69330c2de30484b3a473aca0a23b18074ca53a75911028ddf37",
+      "source_manifest_entry": {
+        "asset": "gripper0_moderate_finger14_link_5",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger14_link_05.obj",
+        "file": "meshes/dh116/gripper0_moderate_finger14_link_5-c3a6773e.obj",
+        "sha256": "c3a6773e2340e69330c2de30484b3a473aca0a23b18074ca53a75911028ddf37"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_moderate_finger14_link_6",
+      "left_body": "gripper0_finger14_link",
+      "link": "finger14_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_moderate_finger14_link_6",
+        "name": "gripper0_moderate_finger14_link_6",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_moderate_finger14_link_6",
+      "mesh_attributes": {
+        "name": "gripper0_moderate_finger14_link_6",
+        "file": "../meshes/dh116/gripper0_moderate_finger14_link_6-1d98430c.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_moderate_finger14_link_6-1d98430c.obj",
+      "source_format": "obj",
+      "source_sha256": "1d98430c1c8b92e1b2e6a308a347fde69723d62ff68ee5f454bbca567ad44f14",
+      "source_manifest_entry": {
+        "asset": "gripper0_moderate_finger14_link_6",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger14_link_06.obj",
+        "file": "meshes/dh116/gripper0_moderate_finger14_link_6-1d98430c.obj",
+        "sha256": "1d98430c1c8b92e1b2e6a308a347fde69723d62ff68ee5f454bbca567ad44f14"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_moderate_finger14_link_7",
+      "left_body": "gripper0_finger14_link",
+      "link": "finger14_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_moderate_finger14_link_7",
+        "name": "gripper0_moderate_finger14_link_7",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_moderate_finger14_link_7",
+      "mesh_attributes": {
+        "name": "gripper0_moderate_finger14_link_7",
+        "file": "../meshes/dh116/gripper0_moderate_finger14_link_7-14d2570c.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_moderate_finger14_link_7-14d2570c.obj",
+      "source_format": "obj",
+      "source_sha256": "14d2570c3750dd1305b4c737cc449486ad0f2d5e67df99e6013088abc7e7430d",
+      "source_manifest_entry": {
+        "asset": "gripper0_moderate_finger14_link_7",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger14_link_07.obj",
+        "file": "meshes/dh116/gripper0_moderate_finger14_link_7-14d2570c.obj",
+        "sha256": "14d2570c3750dd1305b4c737cc449486ad0f2d5e67df99e6013088abc7e7430d"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_moderate_finger14_link_8",
+      "left_body": "gripper0_finger14_link",
+      "link": "finger14_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_moderate_finger14_link_8",
+        "name": "gripper0_moderate_finger14_link_8",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_moderate_finger14_link_8",
+      "mesh_attributes": {
+        "name": "gripper0_moderate_finger14_link_8",
+        "file": "../meshes/dh116/gripper0_moderate_finger14_link_8-fb373efd.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_moderate_finger14_link_8-fb373efd.obj",
+      "source_format": "obj",
+      "source_sha256": "fb373efd00b5bb56164851d7cbf74a85a8f4fa1252368c69a7b2e4a1770f3531",
+      "source_manifest_entry": {
+        "asset": "gripper0_moderate_finger14_link_8",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger14_link_08.obj",
+        "file": "meshes/dh116/gripper0_moderate_finger14_link_8-fb373efd.obj",
+        "sha256": "fb373efd00b5bb56164851d7cbf74a85a8f4fa1252368c69a7b2e4a1770f3531"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_moderate_finger14_link_9",
+      "left_body": "gripper0_finger14_link",
+      "link": "finger14_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_moderate_finger14_link_9",
+        "name": "gripper0_moderate_finger14_link_9",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_moderate_finger14_link_9",
+      "mesh_attributes": {
+        "name": "gripper0_moderate_finger14_link_9",
+        "file": "../meshes/dh116/gripper0_moderate_finger14_link_9-d3124adb.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_moderate_finger14_link_9-d3124adb.obj",
+      "source_format": "obj",
+      "source_sha256": "d3124adbea53e6fb6a27b1a62f60ae3f0fd7459fd6679049637a41cc0c226844",
+      "source_manifest_entry": {
+        "asset": "gripper0_moderate_finger14_link_9",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger14_link_09.obj",
+        "file": "meshes/dh116/gripper0_moderate_finger14_link_9-d3124adb.obj",
+        "sha256": "d3124adbea53e6fb6a27b1a62f60ae3f0fd7459fd6679049637a41cc0c226844"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_moderate_finger14_link_10",
+      "left_body": "gripper0_finger14_link",
+      "link": "finger14_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_moderate_finger14_link_10",
+        "name": "gripper0_moderate_finger14_link_10",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_moderate_finger14_link_10",
+      "mesh_attributes": {
+        "name": "gripper0_moderate_finger14_link_10",
+        "file": "../meshes/dh116/gripper0_moderate_finger14_link_10-21c826aa.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_moderate_finger14_link_10-21c826aa.obj",
+      "source_format": "obj",
+      "source_sha256": "21c826aa07ef02987385785adc8b44235834cb9c4242e62a952ea89d1b4d22ca",
+      "source_manifest_entry": {
+        "asset": "gripper0_moderate_finger14_link_10",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger14_link_10.obj",
+        "file": "meshes/dh116/gripper0_moderate_finger14_link_10-21c826aa.obj",
+        "sha256": "21c826aa07ef02987385785adc8b44235834cb9c4242e62a952ea89d1b4d22ca"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_moderate_finger14_link_11",
+      "left_body": "gripper0_finger14_link",
+      "link": "finger14_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_moderate_finger14_link_11",
+        "name": "gripper0_moderate_finger14_link_11",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_moderate_finger14_link_11",
+      "mesh_attributes": {
+        "name": "gripper0_moderate_finger14_link_11",
+        "file": "../meshes/dh116/gripper0_moderate_finger14_link_11-168acc8b.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_moderate_finger14_link_11-168acc8b.obj",
+      "source_format": "obj",
+      "source_sha256": "168acc8b6dd10290b92679dabf02f9d295c30317cecc7a3e1163386cc241f9bf",
+      "source_manifest_entry": {
+        "asset": "gripper0_moderate_finger14_link_11",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger14_link_11.obj",
+        "file": "meshes/dh116/gripper0_moderate_finger14_link_11-168acc8b.obj",
+        "sha256": "168acc8b6dd10290b92679dabf02f9d295c30317cecc7a3e1163386cc241f9bf"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_finger21_link_collision_0",
+      "left_body": "gripper0_finger21_link",
+      "link": "finger21_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_finger21_link",
+        "name": "gripper0_finger21_link_collision_0",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_finger21_link",
+      "mesh_attributes": {
+        "name": "gripper0_finger21_link",
+        "file": "../meshes/dh116/gripper0_finger21_link-1bb8e6bd.stl"
+      },
+      "source_path": "meshes/dh116/gripper0_finger21_link-1bb8e6bd.stl",
+      "source_format": "stl",
+      "source_sha256": "1bb8e6bd2d50d1b07c7077610fade1c71dd0923d8025f1589e3f904c856f28c1",
+      "source_manifest_entry": {
+        "asset": "gripper0_finger21_link",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/1bb8e6bd2d50d1b07c7077610fade1c71dd0923d8025f1589e3f904c856f28c1.stl",
+        "file": "meshes/dh116/gripper0_finger21_link-1bb8e6bd.stl",
+        "sha256": "1bb8e6bd2d50d1b07c7077610fade1c71dd0923d8025f1589e3f904c856f28c1"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_finger22_link_collision_0",
+      "left_body": "gripper0_finger22_link",
+      "link": "finger22_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_finger22_link",
+        "name": "gripper0_finger22_link_collision_0",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_finger22_link",
+      "mesh_attributes": {
+        "name": "gripper0_finger22_link",
+        "file": "../meshes/dh116/gripper0_finger22_link-53c55c84.stl"
+      },
+      "source_path": "meshes/dh116/gripper0_finger22_link-53c55c84.stl",
+      "source_format": "stl",
+      "source_sha256": "53c55c846f481d90248332d5a87319d11e0d96f0fb8cbb35717cc9ac9745f5e5",
+      "source_manifest_entry": {
+        "asset": "gripper0_finger22_link",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/53c55c846f481d90248332d5a87319d11e0d96f0fb8cbb35717cc9ac9745f5e5.stl",
+        "file": "meshes/dh116/gripper0_finger22_link-53c55c84.stl",
+        "sha256": "53c55c846f481d90248332d5a87319d11e0d96f0fb8cbb35717cc9ac9745f5e5"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_moderate_finger23_link_0",
+      "left_body": "gripper0_finger23_link",
+      "link": "finger23_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_moderate_finger23_link_0",
+        "name": "gripper0_moderate_finger23_link_0",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_moderate_finger23_link_0",
+      "mesh_attributes": {
+        "name": "gripper0_moderate_finger23_link_0",
+        "file": "../meshes/dh116/gripper0_moderate_finger23_link_0-a6cc5f75.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_moderate_finger23_link_0-a6cc5f75.obj",
+      "source_format": "obj",
+      "source_sha256": "a6cc5f7500f773f248fe89c64bbad9f86a99f3419e1b8f655997030c1d269d4d",
+      "source_manifest_entry": {
+        "asset": "gripper0_moderate_finger23_link_0",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger23_link_00.obj",
+        "file": "meshes/dh116/gripper0_moderate_finger23_link_0-a6cc5f75.obj",
+        "sha256": "a6cc5f7500f773f248fe89c64bbad9f86a99f3419e1b8f655997030c1d269d4d"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_moderate_finger23_link_1",
+      "left_body": "gripper0_finger23_link",
+      "link": "finger23_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_moderate_finger23_link_1",
+        "name": "gripper0_moderate_finger23_link_1",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_moderate_finger23_link_1",
+      "mesh_attributes": {
+        "name": "gripper0_moderate_finger23_link_1",
+        "file": "../meshes/dh116/gripper0_moderate_finger23_link_1-c8663aa9.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_moderate_finger23_link_1-c8663aa9.obj",
+      "source_format": "obj",
+      "source_sha256": "c8663aa97fb9936608d4365a4662bd5a9279d9958238f9334738ce88751b2e72",
+      "source_manifest_entry": {
+        "asset": "gripper0_moderate_finger23_link_1",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger23_link_01.obj",
+        "file": "meshes/dh116/gripper0_moderate_finger23_link_1-c8663aa9.obj",
+        "sha256": "c8663aa97fb9936608d4365a4662bd5a9279d9958238f9334738ce88751b2e72"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_moderate_finger23_link_2",
+      "left_body": "gripper0_finger23_link",
+      "link": "finger23_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_moderate_finger23_link_2",
+        "name": "gripper0_moderate_finger23_link_2",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_moderate_finger23_link_2",
+      "mesh_attributes": {
+        "name": "gripper0_moderate_finger23_link_2",
+        "file": "../meshes/dh116/gripper0_moderate_finger23_link_2-7cc9be61.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_moderate_finger23_link_2-7cc9be61.obj",
+      "source_format": "obj",
+      "source_sha256": "7cc9be61c42363c904859ffc3f741df9e9d80761805b9fa41333e8510ee39331",
+      "source_manifest_entry": {
+        "asset": "gripper0_moderate_finger23_link_2",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger23_link_02.obj",
+        "file": "meshes/dh116/gripper0_moderate_finger23_link_2-7cc9be61.obj",
+        "sha256": "7cc9be61c42363c904859ffc3f741df9e9d80761805b9fa41333e8510ee39331"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_moderate_finger23_link_3",
+      "left_body": "gripper0_finger23_link",
+      "link": "finger23_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_moderate_finger23_link_3",
+        "name": "gripper0_moderate_finger23_link_3",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_moderate_finger23_link_3",
+      "mesh_attributes": {
+        "name": "gripper0_moderate_finger23_link_3",
+        "file": "../meshes/dh116/gripper0_moderate_finger23_link_3-2f7c98b4.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_moderate_finger23_link_3-2f7c98b4.obj",
+      "source_format": "obj",
+      "source_sha256": "2f7c98b43d1da8bb87c0b1b9840b9942f8df6f7cb6a07b8bf3aae0a8f943ec91",
+      "source_manifest_entry": {
+        "asset": "gripper0_moderate_finger23_link_3",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger23_link_03.obj",
+        "file": "meshes/dh116/gripper0_moderate_finger23_link_3-2f7c98b4.obj",
+        "sha256": "2f7c98b43d1da8bb87c0b1b9840b9942f8df6f7cb6a07b8bf3aae0a8f943ec91"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_moderate_finger23_link_4",
+      "left_body": "gripper0_finger23_link",
+      "link": "finger23_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_moderate_finger23_link_4",
+        "name": "gripper0_moderate_finger23_link_4",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_moderate_finger23_link_4",
+      "mesh_attributes": {
+        "name": "gripper0_moderate_finger23_link_4",
+        "file": "../meshes/dh116/gripper0_moderate_finger23_link_4-bab546af.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_moderate_finger23_link_4-bab546af.obj",
+      "source_format": "obj",
+      "source_sha256": "bab546afe4a240ed41c8a82c9e7d57d175b91854aef912fadbac9e210734bfc0",
+      "source_manifest_entry": {
+        "asset": "gripper0_moderate_finger23_link_4",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger23_link_04.obj",
+        "file": "meshes/dh116/gripper0_moderate_finger23_link_4-bab546af.obj",
+        "sha256": "bab546afe4a240ed41c8a82c9e7d57d175b91854aef912fadbac9e210734bfc0"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_moderate_finger23_link_5",
+      "left_body": "gripper0_finger23_link",
+      "link": "finger23_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_moderate_finger23_link_5",
+        "name": "gripper0_moderate_finger23_link_5",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_moderate_finger23_link_5",
+      "mesh_attributes": {
+        "name": "gripper0_moderate_finger23_link_5",
+        "file": "../meshes/dh116/gripper0_moderate_finger23_link_5-5d047287.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_moderate_finger23_link_5-5d047287.obj",
+      "source_format": "obj",
+      "source_sha256": "5d047287b86fb6832c2efdcb4f5fb755ded0b63dc28f1aa4fac5b223bca24178",
+      "source_manifest_entry": {
+        "asset": "gripper0_moderate_finger23_link_5",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger23_link_05.obj",
+        "file": "meshes/dh116/gripper0_moderate_finger23_link_5-5d047287.obj",
+        "sha256": "5d047287b86fb6832c2efdcb4f5fb755ded0b63dc28f1aa4fac5b223bca24178"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_moderate_finger23_link_6",
+      "left_body": "gripper0_finger23_link",
+      "link": "finger23_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_moderate_finger23_link_6",
+        "name": "gripper0_moderate_finger23_link_6",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_moderate_finger23_link_6",
+      "mesh_attributes": {
+        "name": "gripper0_moderate_finger23_link_6",
+        "file": "../meshes/dh116/gripper0_moderate_finger23_link_6-a018289e.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_moderate_finger23_link_6-a018289e.obj",
+      "source_format": "obj",
+      "source_sha256": "a018289e8a36f72a3ae897d377677fe7ff2721dc2e88d63ddb0118daa3ab78e2",
+      "source_manifest_entry": {
+        "asset": "gripper0_moderate_finger23_link_6",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger23_link_06.obj",
+        "file": "meshes/dh116/gripper0_moderate_finger23_link_6-a018289e.obj",
+        "sha256": "a018289e8a36f72a3ae897d377677fe7ff2721dc2e88d63ddb0118daa3ab78e2"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_moderate_finger23_link_7",
+      "left_body": "gripper0_finger23_link",
+      "link": "finger23_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_moderate_finger23_link_7",
+        "name": "gripper0_moderate_finger23_link_7",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_moderate_finger23_link_7",
+      "mesh_attributes": {
+        "name": "gripper0_moderate_finger23_link_7",
+        "file": "../meshes/dh116/gripper0_moderate_finger23_link_7-de354fdf.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_moderate_finger23_link_7-de354fdf.obj",
+      "source_format": "obj",
+      "source_sha256": "de354fdf0bea4434032984db408d004804363dc49bbbf36b8bbcc93e1a930ddd",
+      "source_manifest_entry": {
+        "asset": "gripper0_moderate_finger23_link_7",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger23_link_07.obj",
+        "file": "meshes/dh116/gripper0_moderate_finger23_link_7-de354fdf.obj",
+        "sha256": "de354fdf0bea4434032984db408d004804363dc49bbbf36b8bbcc93e1a930ddd"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_moderate_finger23_link_8",
+      "left_body": "gripper0_finger23_link",
+      "link": "finger23_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_moderate_finger23_link_8",
+        "name": "gripper0_moderate_finger23_link_8",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_moderate_finger23_link_8",
+      "mesh_attributes": {
+        "name": "gripper0_moderate_finger23_link_8",
+        "file": "../meshes/dh116/gripper0_moderate_finger23_link_8-9174795a.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_moderate_finger23_link_8-9174795a.obj",
+      "source_format": "obj",
+      "source_sha256": "9174795ac15a8735c73a8cf39c09bc793a2b67585a0d982f09f7b8a5f7b1880b",
+      "source_manifest_entry": {
+        "asset": "gripper0_moderate_finger23_link_8",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger23_link_08.obj",
+        "file": "meshes/dh116/gripper0_moderate_finger23_link_8-9174795a.obj",
+        "sha256": "9174795ac15a8735c73a8cf39c09bc793a2b67585a0d982f09f7b8a5f7b1880b"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_moderate_finger23_link_9",
+      "left_body": "gripper0_finger23_link",
+      "link": "finger23_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_moderate_finger23_link_9",
+        "name": "gripper0_moderate_finger23_link_9",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_moderate_finger23_link_9",
+      "mesh_attributes": {
+        "name": "gripper0_moderate_finger23_link_9",
+        "file": "../meshes/dh116/gripper0_moderate_finger23_link_9-1cc04f8d.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_moderate_finger23_link_9-1cc04f8d.obj",
+      "source_format": "obj",
+      "source_sha256": "1cc04f8dd6803c05636a655c1fd77960a319be6903fa01bf7b5e94662d89b132",
+      "source_manifest_entry": {
+        "asset": "gripper0_moderate_finger23_link_9",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger23_link_09.obj",
+        "file": "meshes/dh116/gripper0_moderate_finger23_link_9-1cc04f8d.obj",
+        "sha256": "1cc04f8dd6803c05636a655c1fd77960a319be6903fa01bf7b5e94662d89b132"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_moderate_finger23_link_10",
+      "left_body": "gripper0_finger23_link",
+      "link": "finger23_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_moderate_finger23_link_10",
+        "name": "gripper0_moderate_finger23_link_10",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_moderate_finger23_link_10",
+      "mesh_attributes": {
+        "name": "gripper0_moderate_finger23_link_10",
+        "file": "../meshes/dh116/gripper0_moderate_finger23_link_10-251c3834.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_moderate_finger23_link_10-251c3834.obj",
+      "source_format": "obj",
+      "source_sha256": "251c38347bbcf580d96dd7ece9aeab16195b08f3a7225da3022a42043d11162d",
+      "source_manifest_entry": {
+        "asset": "gripper0_moderate_finger23_link_10",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger23_link_10.obj",
+        "file": "meshes/dh116/gripper0_moderate_finger23_link_10-251c3834.obj",
+        "sha256": "251c38347bbcf580d96dd7ece9aeab16195b08f3a7225da3022a42043d11162d"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_moderate_finger23_link_11",
+      "left_body": "gripper0_finger23_link",
+      "link": "finger23_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_moderate_finger23_link_11",
+        "name": "gripper0_moderate_finger23_link_11",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_moderate_finger23_link_11",
+      "mesh_attributes": {
+        "name": "gripper0_moderate_finger23_link_11",
+        "file": "../meshes/dh116/gripper0_moderate_finger23_link_11-fad1ae11.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_moderate_finger23_link_11-fad1ae11.obj",
+      "source_format": "obj",
+      "source_sha256": "fad1ae11d1b703d56b111df28d2d4b171c86572c706a5990cd07fb59819671cb",
+      "source_manifest_entry": {
+        "asset": "gripper0_moderate_finger23_link_11",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/benchmark-grasp-diagnostic/moderate-contact-tip-proxy/finger23_link_11.obj",
+        "file": "meshes/dh116/gripper0_moderate_finger23_link_11-fad1ae11.obj",
+        "sha256": "fad1ae11d1b703d56b111df28d2d4b171c86572c706a5990cd07fb59819671cb"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_finger31_link_collision_0",
+      "left_body": "gripper0_finger31_link",
+      "link": "finger31_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_finger31_link",
+        "name": "gripper0_finger31_link_collision_0",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_finger31_link",
+      "mesh_attributes": {
+        "name": "gripper0_finger31_link",
+        "file": "../meshes/dh116/gripper0_finger31_link-7e3176cd.stl"
+      },
+      "source_path": "meshes/dh116/gripper0_finger31_link-7e3176cd.stl",
+      "source_format": "stl",
+      "source_sha256": "7e3176cd95983c3e84369fe1639f65dcab86d54cd49ca3ed8612807ba3bc7358",
+      "source_manifest_entry": {
+        "asset": "gripper0_finger31_link",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/7e3176cd95983c3e84369fe1639f65dcab86d54cd49ca3ed8612807ba3bc7358.stl",
+        "file": "meshes/dh116/gripper0_finger31_link-7e3176cd.stl",
+        "sha256": "7e3176cd95983c3e84369fe1639f65dcab86d54cd49ca3ed8612807ba3bc7358"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_finger32_link_collision_0",
+      "left_body": "gripper0_finger32_link",
+      "link": "finger32_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_finger32_link",
+        "name": "gripper0_finger32_link_collision_0",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_finger32_link",
+      "mesh_attributes": {
+        "name": "gripper0_finger32_link",
+        "file": "../meshes/dh116/gripper0_finger32_link-68b0442e.stl"
+      },
+      "source_path": "meshes/dh116/gripper0_finger32_link-68b0442e.stl",
+      "source_format": "stl",
+      "source_sha256": "68b0442e8c8e3e0e8e94ef55596378b85556bda1959c64debbdd48d21b3af931",
+      "source_manifest_entry": {
+        "asset": "gripper0_finger32_link",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/68b0442e8c8e3e0e8e94ef55596378b85556bda1959c64debbdd48d21b3af931.stl",
+        "file": "meshes/dh116/gripper0_finger32_link-68b0442e.stl",
+        "sha256": "68b0442e8c8e3e0e8e94ef55596378b85556bda1959c64debbdd48d21b3af931"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_proxy_finger33_link_0",
+      "left_body": "gripper0_finger33_link",
+      "link": "finger33_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_proxy_finger33_link_0",
+        "name": "gripper0_proxy_finger33_link_0",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_proxy_finger33_link_0",
+      "mesh_attributes": {
+        "name": "gripper0_proxy_finger33_link_0",
+        "file": "../meshes/dh116/gripper0_proxy_finger33_link_0-766046d8.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_proxy_finger33_link_0-766046d8.obj",
+      "source_format": "obj",
+      "source_sha256": "766046d8b8b6c831fe9982e6e793a913e0d722cd9dd573576eb1dcd437b43bd7",
+      "source_manifest_entry": {
+        "asset": "gripper0_proxy_finger33_link_0",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger33_link_000.obj",
+        "file": "meshes/dh116/gripper0_proxy_finger33_link_0-766046d8.obj",
+        "sha256": "766046d8b8b6c831fe9982e6e793a913e0d722cd9dd573576eb1dcd437b43bd7"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_proxy_finger33_link_1",
+      "left_body": "gripper0_finger33_link",
+      "link": "finger33_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_proxy_finger33_link_1",
+        "name": "gripper0_proxy_finger33_link_1",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_proxy_finger33_link_1",
+      "mesh_attributes": {
+        "name": "gripper0_proxy_finger33_link_1",
+        "file": "../meshes/dh116/gripper0_proxy_finger33_link_1-3157618f.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_proxy_finger33_link_1-3157618f.obj",
+      "source_format": "obj",
+      "source_sha256": "3157618f011017aef1fd0195a6e37d4c115e4f622fa260f9d9b55b658e145d93",
+      "source_manifest_entry": {
+        "asset": "gripper0_proxy_finger33_link_1",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger33_link_001.obj",
+        "file": "meshes/dh116/gripper0_proxy_finger33_link_1-3157618f.obj",
+        "sha256": "3157618f011017aef1fd0195a6e37d4c115e4f622fa260f9d9b55b658e145d93"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_proxy_finger33_link_2",
+      "left_body": "gripper0_finger33_link",
+      "link": "finger33_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_proxy_finger33_link_2",
+        "name": "gripper0_proxy_finger33_link_2",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_proxy_finger33_link_2",
+      "mesh_attributes": {
+        "name": "gripper0_proxy_finger33_link_2",
+        "file": "../meshes/dh116/gripper0_proxy_finger33_link_2-e6bfb653.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_proxy_finger33_link_2-e6bfb653.obj",
+      "source_format": "obj",
+      "source_sha256": "e6bfb653704941708c1617ee5c217027be98aa23ee1a24b1bf04bce8d527bac5",
+      "source_manifest_entry": {
+        "asset": "gripper0_proxy_finger33_link_2",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger33_link_002.obj",
+        "file": "meshes/dh116/gripper0_proxy_finger33_link_2-e6bfb653.obj",
+        "sha256": "e6bfb653704941708c1617ee5c217027be98aa23ee1a24b1bf04bce8d527bac5"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_proxy_finger33_link_3",
+      "left_body": "gripper0_finger33_link",
+      "link": "finger33_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_proxy_finger33_link_3",
+        "name": "gripper0_proxy_finger33_link_3",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_proxy_finger33_link_3",
+      "mesh_attributes": {
+        "name": "gripper0_proxy_finger33_link_3",
+        "file": "../meshes/dh116/gripper0_proxy_finger33_link_3-b780e3de.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_proxy_finger33_link_3-b780e3de.obj",
+      "source_format": "obj",
+      "source_sha256": "b780e3decc6b3167bfaf70939edfd017afb02dfdd069502e5f5d3ef6831132f4",
+      "source_manifest_entry": {
+        "asset": "gripper0_proxy_finger33_link_3",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger33_link_003.obj",
+        "file": "meshes/dh116/gripper0_proxy_finger33_link_3-b780e3de.obj",
+        "sha256": "b780e3decc6b3167bfaf70939edfd017afb02dfdd069502e5f5d3ef6831132f4"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_proxy_finger33_link_4",
+      "left_body": "gripper0_finger33_link",
+      "link": "finger33_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_proxy_finger33_link_4",
+        "name": "gripper0_proxy_finger33_link_4",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_proxy_finger33_link_4",
+      "mesh_attributes": {
+        "name": "gripper0_proxy_finger33_link_4",
+        "file": "../meshes/dh116/gripper0_proxy_finger33_link_4-abbb8319.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_proxy_finger33_link_4-abbb8319.obj",
+      "source_format": "obj",
+      "source_sha256": "abbb83191e86009a5e4ca8df768fe6679c1d6261cf55f5b7263714483c2fa7df",
+      "source_manifest_entry": {
+        "asset": "gripper0_proxy_finger33_link_4",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger33_link_004.obj",
+        "file": "meshes/dh116/gripper0_proxy_finger33_link_4-abbb8319.obj",
+        "sha256": "abbb83191e86009a5e4ca8df768fe6679c1d6261cf55f5b7263714483c2fa7df"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_proxy_finger33_link_5",
+      "left_body": "gripper0_finger33_link",
+      "link": "finger33_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_proxy_finger33_link_5",
+        "name": "gripper0_proxy_finger33_link_5",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_proxy_finger33_link_5",
+      "mesh_attributes": {
+        "name": "gripper0_proxy_finger33_link_5",
+        "file": "../meshes/dh116/gripper0_proxy_finger33_link_5-efd967af.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_proxy_finger33_link_5-efd967af.obj",
+      "source_format": "obj",
+      "source_sha256": "efd967af03781bc920aa654dc3d0622f6187a0c795671128026c01e4a76afd7e",
+      "source_manifest_entry": {
+        "asset": "gripper0_proxy_finger33_link_5",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger33_link_005.obj",
+        "file": "meshes/dh116/gripper0_proxy_finger33_link_5-efd967af.obj",
+        "sha256": "efd967af03781bc920aa654dc3d0622f6187a0c795671128026c01e4a76afd7e"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_proxy_finger33_link_6",
+      "left_body": "gripper0_finger33_link",
+      "link": "finger33_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_proxy_finger33_link_6",
+        "name": "gripper0_proxy_finger33_link_6",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_proxy_finger33_link_6",
+      "mesh_attributes": {
+        "name": "gripper0_proxy_finger33_link_6",
+        "file": "../meshes/dh116/gripper0_proxy_finger33_link_6-09abc110.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_proxy_finger33_link_6-09abc110.obj",
+      "source_format": "obj",
+      "source_sha256": "09abc110026cafb4b30009c4e384e8876522eed2020c12d1191c913d780f90a7",
+      "source_manifest_entry": {
+        "asset": "gripper0_proxy_finger33_link_6",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger33_link_006.obj",
+        "file": "meshes/dh116/gripper0_proxy_finger33_link_6-09abc110.obj",
+        "sha256": "09abc110026cafb4b30009c4e384e8876522eed2020c12d1191c913d780f90a7"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_proxy_finger33_link_7",
+      "left_body": "gripper0_finger33_link",
+      "link": "finger33_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_proxy_finger33_link_7",
+        "name": "gripper0_proxy_finger33_link_7",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_proxy_finger33_link_7",
+      "mesh_attributes": {
+        "name": "gripper0_proxy_finger33_link_7",
+        "file": "../meshes/dh116/gripper0_proxy_finger33_link_7-10a6dd15.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_proxy_finger33_link_7-10a6dd15.obj",
+      "source_format": "obj",
+      "source_sha256": "10a6dd150321cff17d4702d552f9d492ab14006a1caf194d16d9c7943deddfe0",
+      "source_manifest_entry": {
+        "asset": "gripper0_proxy_finger33_link_7",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger33_link_007.obj",
+        "file": "meshes/dh116/gripper0_proxy_finger33_link_7-10a6dd15.obj",
+        "sha256": "10a6dd150321cff17d4702d552f9d492ab14006a1caf194d16d9c7943deddfe0"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_finger41_link_collision_0",
+      "left_body": "gripper0_finger41_link",
+      "link": "finger41_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_finger41_link",
+        "name": "gripper0_finger41_link_collision_0",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_finger41_link",
+      "mesh_attributes": {
+        "name": "gripper0_finger41_link",
+        "file": "../meshes/dh116/gripper0_finger41_link-5f1647a2.stl"
+      },
+      "source_path": "meshes/dh116/gripper0_finger41_link-5f1647a2.stl",
+      "source_format": "stl",
+      "source_sha256": "5f1647a233765270e256bf1cb1deeca0ac29ad4241e2a8e95477756885b73857",
+      "source_manifest_entry": {
+        "asset": "gripper0_finger41_link",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/5f1647a233765270e256bf1cb1deeca0ac29ad4241e2a8e95477756885b73857.stl",
+        "file": "meshes/dh116/gripper0_finger41_link-5f1647a2.stl",
+        "sha256": "5f1647a233765270e256bf1cb1deeca0ac29ad4241e2a8e95477756885b73857"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_finger42_link_collision_0",
+      "left_body": "gripper0_finger42_link",
+      "link": "finger42_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_finger42_link",
+        "name": "gripper0_finger42_link_collision_0",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_finger42_link",
+      "mesh_attributes": {
+        "name": "gripper0_finger42_link",
+        "file": "../meshes/dh116/gripper0_finger42_link-15a9090c.stl"
+      },
+      "source_path": "meshes/dh116/gripper0_finger42_link-15a9090c.stl",
+      "source_format": "stl",
+      "source_sha256": "15a9090c995e1f29ab0bb4b0a4ede7a4f60f1d0e0bf809c3ada86c53d0b66bed",
+      "source_manifest_entry": {
+        "asset": "gripper0_finger42_link",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/15a9090c995e1f29ab0bb4b0a4ede7a4f60f1d0e0bf809c3ada86c53d0b66bed.stl",
+        "file": "meshes/dh116/gripper0_finger42_link-15a9090c.stl",
+        "sha256": "15a9090c995e1f29ab0bb4b0a4ede7a4f60f1d0e0bf809c3ada86c53d0b66bed"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_proxy_finger43_link_0",
+      "left_body": "gripper0_finger43_link",
+      "link": "finger43_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_proxy_finger43_link_0",
+        "name": "gripper0_proxy_finger43_link_0",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_proxy_finger43_link_0",
+      "mesh_attributes": {
+        "name": "gripper0_proxy_finger43_link_0",
+        "file": "../meshes/dh116/gripper0_proxy_finger43_link_0-95b4cbb3.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_proxy_finger43_link_0-95b4cbb3.obj",
+      "source_format": "obj",
+      "source_sha256": "95b4cbb315cc1667311de693dcee6a7456ba742561ca01ff551958d4e519348b",
+      "source_manifest_entry": {
+        "asset": "gripper0_proxy_finger43_link_0",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger43_link_000.obj",
+        "file": "meshes/dh116/gripper0_proxy_finger43_link_0-95b4cbb3.obj",
+        "sha256": "95b4cbb315cc1667311de693dcee6a7456ba742561ca01ff551958d4e519348b"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_proxy_finger43_link_1",
+      "left_body": "gripper0_finger43_link",
+      "link": "finger43_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_proxy_finger43_link_1",
+        "name": "gripper0_proxy_finger43_link_1",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_proxy_finger43_link_1",
+      "mesh_attributes": {
+        "name": "gripper0_proxy_finger43_link_1",
+        "file": "../meshes/dh116/gripper0_proxy_finger43_link_1-07a65f22.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_proxy_finger43_link_1-07a65f22.obj",
+      "source_format": "obj",
+      "source_sha256": "07a65f222145a2d805b53d22a5398b5b7ad94202af938f94b640f73ed1cdf183",
+      "source_manifest_entry": {
+        "asset": "gripper0_proxy_finger43_link_1",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger43_link_001.obj",
+        "file": "meshes/dh116/gripper0_proxy_finger43_link_1-07a65f22.obj",
+        "sha256": "07a65f222145a2d805b53d22a5398b5b7ad94202af938f94b640f73ed1cdf183"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_proxy_finger43_link_2",
+      "left_body": "gripper0_finger43_link",
+      "link": "finger43_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_proxy_finger43_link_2",
+        "name": "gripper0_proxy_finger43_link_2",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_proxy_finger43_link_2",
+      "mesh_attributes": {
+        "name": "gripper0_proxy_finger43_link_2",
+        "file": "../meshes/dh116/gripper0_proxy_finger43_link_2-aab293f6.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_proxy_finger43_link_2-aab293f6.obj",
+      "source_format": "obj",
+      "source_sha256": "aab293f640735836c5ac0c594282d0bbbf8fc41a8eaa13bf6f1f1f1ba864c576",
+      "source_manifest_entry": {
+        "asset": "gripper0_proxy_finger43_link_2",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger43_link_002.obj",
+        "file": "meshes/dh116/gripper0_proxy_finger43_link_2-aab293f6.obj",
+        "sha256": "aab293f640735836c5ac0c594282d0bbbf8fc41a8eaa13bf6f1f1f1ba864c576"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_proxy_finger43_link_3",
+      "left_body": "gripper0_finger43_link",
+      "link": "finger43_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_proxy_finger43_link_3",
+        "name": "gripper0_proxy_finger43_link_3",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_proxy_finger43_link_3",
+      "mesh_attributes": {
+        "name": "gripper0_proxy_finger43_link_3",
+        "file": "../meshes/dh116/gripper0_proxy_finger43_link_3-f7eab61f.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_proxy_finger43_link_3-f7eab61f.obj",
+      "source_format": "obj",
+      "source_sha256": "f7eab61f906cb36cd1063faad73822c846107bc6f174c4742b409375f5b04f63",
+      "source_manifest_entry": {
+        "asset": "gripper0_proxy_finger43_link_3",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger43_link_003.obj",
+        "file": "meshes/dh116/gripper0_proxy_finger43_link_3-f7eab61f.obj",
+        "sha256": "f7eab61f906cb36cd1063faad73822c846107bc6f174c4742b409375f5b04f63"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_proxy_finger43_link_4",
+      "left_body": "gripper0_finger43_link",
+      "link": "finger43_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_proxy_finger43_link_4",
+        "name": "gripper0_proxy_finger43_link_4",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_proxy_finger43_link_4",
+      "mesh_attributes": {
+        "name": "gripper0_proxy_finger43_link_4",
+        "file": "../meshes/dh116/gripper0_proxy_finger43_link_4-78532cbf.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_proxy_finger43_link_4-78532cbf.obj",
+      "source_format": "obj",
+      "source_sha256": "78532cbfb13ff856554cd396d2e5573beb69fe8b4d675ea7f669643dde8f7dd7",
+      "source_manifest_entry": {
+        "asset": "gripper0_proxy_finger43_link_4",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger43_link_004.obj",
+        "file": "meshes/dh116/gripper0_proxy_finger43_link_4-78532cbf.obj",
+        "sha256": "78532cbfb13ff856554cd396d2e5573beb69fe8b4d675ea7f669643dde8f7dd7"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_proxy_finger43_link_5",
+      "left_body": "gripper0_finger43_link",
+      "link": "finger43_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_proxy_finger43_link_5",
+        "name": "gripper0_proxy_finger43_link_5",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_proxy_finger43_link_5",
+      "mesh_attributes": {
+        "name": "gripper0_proxy_finger43_link_5",
+        "file": "../meshes/dh116/gripper0_proxy_finger43_link_5-13af1468.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_proxy_finger43_link_5-13af1468.obj",
+      "source_format": "obj",
+      "source_sha256": "13af146867ef84f7051e45a515347bd29deff7ea5c8f0c15b100fbfe4a9b3cd7",
+      "source_manifest_entry": {
+        "asset": "gripper0_proxy_finger43_link_5",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger43_link_005.obj",
+        "file": "meshes/dh116/gripper0_proxy_finger43_link_5-13af1468.obj",
+        "sha256": "13af146867ef84f7051e45a515347bd29deff7ea5c8f0c15b100fbfe4a9b3cd7"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_proxy_finger43_link_6",
+      "left_body": "gripper0_finger43_link",
+      "link": "finger43_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_proxy_finger43_link_6",
+        "name": "gripper0_proxy_finger43_link_6",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_proxy_finger43_link_6",
+      "mesh_attributes": {
+        "name": "gripper0_proxy_finger43_link_6",
+        "file": "../meshes/dh116/gripper0_proxy_finger43_link_6-2a3fbea9.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_proxy_finger43_link_6-2a3fbea9.obj",
+      "source_format": "obj",
+      "source_sha256": "2a3fbea961a56cc9bfd5384d661e6c0957601ee07999f02d9b642b252463176c",
+      "source_manifest_entry": {
+        "asset": "gripper0_proxy_finger43_link_6",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger43_link_006.obj",
+        "file": "meshes/dh116/gripper0_proxy_finger43_link_6-2a3fbea9.obj",
+        "sha256": "2a3fbea961a56cc9bfd5384d661e6c0957601ee07999f02d9b642b252463176c"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_proxy_finger43_link_7",
+      "left_body": "gripper0_finger43_link",
+      "link": "finger43_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_proxy_finger43_link_7",
+        "name": "gripper0_proxy_finger43_link_7",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_proxy_finger43_link_7",
+      "mesh_attributes": {
+        "name": "gripper0_proxy_finger43_link_7",
+        "file": "../meshes/dh116/gripper0_proxy_finger43_link_7-d800f7ad.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_proxy_finger43_link_7-d800f7ad.obj",
+      "source_format": "obj",
+      "source_sha256": "d800f7adae660e6ceb80e34b8a7e33ba3dcfb60afc357baf4818265705f7d0b2",
+      "source_manifest_entry": {
+        "asset": "gripper0_proxy_finger43_link_7",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger43_link_007.obj",
+        "file": "meshes/dh116/gripper0_proxy_finger43_link_7-d800f7ad.obj",
+        "sha256": "d800f7adae660e6ceb80e34b8a7e33ba3dcfb60afc357baf4818265705f7d0b2"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_finger51_link_collision_0",
+      "left_body": "gripper0_finger51_link",
+      "link": "finger51_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_finger51_link",
+        "name": "gripper0_finger51_link_collision_0",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_finger51_link",
+      "mesh_attributes": {
+        "name": "gripper0_finger51_link",
+        "file": "../meshes/dh116/gripper0_finger51_link-dfabcfce.stl"
+      },
+      "source_path": "meshes/dh116/gripper0_finger51_link-dfabcfce.stl",
+      "source_format": "stl",
+      "source_sha256": "dfabcfce1fc923cc0745a2df5ec07efc657506c7ad50b8e883de7fc996ce9f59",
+      "source_manifest_entry": {
+        "asset": "gripper0_finger51_link",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/dfabcfce1fc923cc0745a2df5ec07efc657506c7ad50b8e883de7fc996ce9f59.stl",
+        "file": "meshes/dh116/gripper0_finger51_link-dfabcfce.stl",
+        "sha256": "dfabcfce1fc923cc0745a2df5ec07efc657506c7ad50b8e883de7fc996ce9f59"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_finger52_link_collision_0",
+      "left_body": "gripper0_finger52_link",
+      "link": "finger52_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_finger52_link",
+        "name": "gripper0_finger52_link_collision_0",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_finger52_link",
+      "mesh_attributes": {
+        "name": "gripper0_finger52_link",
+        "file": "../meshes/dh116/gripper0_finger52_link-acf84396.stl"
+      },
+      "source_path": "meshes/dh116/gripper0_finger52_link-acf84396.stl",
+      "source_format": "stl",
+      "source_sha256": "acf84396741cf2d5fa50ad3a25e9ca4fdb0947387cb39c2697951761a5f7d22c",
+      "source_manifest_entry": {
+        "asset": "gripper0_finger52_link",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/runtime/static_scene_bundle/assets/acf84396741cf2d5fa50ad3a25e9ca4fdb0947387cb39c2697951761a5f7d22c.stl",
+        "file": "meshes/dh116/gripper0_finger52_link-acf84396.stl",
+        "sha256": "acf84396741cf2d5fa50ad3a25e9ca4fdb0947387cb39c2697951761a5f7d22c"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_proxy_finger53_link_0",
+      "left_body": "gripper0_finger53_link",
+      "link": "finger53_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_proxy_finger53_link_0",
+        "name": "gripper0_proxy_finger53_link_0",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_proxy_finger53_link_0",
+      "mesh_attributes": {
+        "name": "gripper0_proxy_finger53_link_0",
+        "file": "../meshes/dh116/gripper0_proxy_finger53_link_0-f66430b1.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_proxy_finger53_link_0-f66430b1.obj",
+      "source_format": "obj",
+      "source_sha256": "f66430b17c3b0ee5d63cb097877e7d8faa12153df6725cb7ad9383607c09bb0a",
+      "source_manifest_entry": {
+        "asset": "gripper0_proxy_finger53_link_0",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger53_link_000.obj",
+        "file": "meshes/dh116/gripper0_proxy_finger53_link_0-f66430b1.obj",
+        "sha256": "f66430b17c3b0ee5d63cb097877e7d8faa12153df6725cb7ad9383607c09bb0a"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_proxy_finger53_link_1",
+      "left_body": "gripper0_finger53_link",
+      "link": "finger53_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_proxy_finger53_link_1",
+        "name": "gripper0_proxy_finger53_link_1",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_proxy_finger53_link_1",
+      "mesh_attributes": {
+        "name": "gripper0_proxy_finger53_link_1",
+        "file": "../meshes/dh116/gripper0_proxy_finger53_link_1-fce5027c.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_proxy_finger53_link_1-fce5027c.obj",
+      "source_format": "obj",
+      "source_sha256": "fce5027c124ece9666bc17a88a364dd24dd79e5ae6fb0c4bdfe8169e0ad0b8dc",
+      "source_manifest_entry": {
+        "asset": "gripper0_proxy_finger53_link_1",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger53_link_001.obj",
+        "file": "meshes/dh116/gripper0_proxy_finger53_link_1-fce5027c.obj",
+        "sha256": "fce5027c124ece9666bc17a88a364dd24dd79e5ae6fb0c4bdfe8169e0ad0b8dc"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_proxy_finger53_link_2",
+      "left_body": "gripper0_finger53_link",
+      "link": "finger53_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_proxy_finger53_link_2",
+        "name": "gripper0_proxy_finger53_link_2",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_proxy_finger53_link_2",
+      "mesh_attributes": {
+        "name": "gripper0_proxy_finger53_link_2",
+        "file": "../meshes/dh116/gripper0_proxy_finger53_link_2-dd7921f7.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_proxy_finger53_link_2-dd7921f7.obj",
+      "source_format": "obj",
+      "source_sha256": "dd7921f79cbac6ac32ea9142d4fa4c76df1dd885c47004aaeb4fca67327152b5",
+      "source_manifest_entry": {
+        "asset": "gripper0_proxy_finger53_link_2",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger53_link_002.obj",
+        "file": "meshes/dh116/gripper0_proxy_finger53_link_2-dd7921f7.obj",
+        "sha256": "dd7921f79cbac6ac32ea9142d4fa4c76df1dd885c47004aaeb4fca67327152b5"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_proxy_finger53_link_3",
+      "left_body": "gripper0_finger53_link",
+      "link": "finger53_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_proxy_finger53_link_3",
+        "name": "gripper0_proxy_finger53_link_3",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_proxy_finger53_link_3",
+      "mesh_attributes": {
+        "name": "gripper0_proxy_finger53_link_3",
+        "file": "../meshes/dh116/gripper0_proxy_finger53_link_3-49e71c08.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_proxy_finger53_link_3-49e71c08.obj",
+      "source_format": "obj",
+      "source_sha256": "49e71c0816ce5464fd8afe99b68e292cd88549525e9986adf9c3c1b53edae3d6",
+      "source_manifest_entry": {
+        "asset": "gripper0_proxy_finger53_link_3",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger53_link_003.obj",
+        "file": "meshes/dh116/gripper0_proxy_finger53_link_3-49e71c08.obj",
+        "sha256": "49e71c0816ce5464fd8afe99b68e292cd88549525e9986adf9c3c1b53edae3d6"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_proxy_finger53_link_4",
+      "left_body": "gripper0_finger53_link",
+      "link": "finger53_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_proxy_finger53_link_4",
+        "name": "gripper0_proxy_finger53_link_4",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_proxy_finger53_link_4",
+      "mesh_attributes": {
+        "name": "gripper0_proxy_finger53_link_4",
+        "file": "../meshes/dh116/gripper0_proxy_finger53_link_4-84f78255.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_proxy_finger53_link_4-84f78255.obj",
+      "source_format": "obj",
+      "source_sha256": "84f782558f32c9ea8067922918c95c221e617026a4e7a0d752d84b0ff828c007",
+      "source_manifest_entry": {
+        "asset": "gripper0_proxy_finger53_link_4",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger53_link_004.obj",
+        "file": "meshes/dh116/gripper0_proxy_finger53_link_4-84f78255.obj",
+        "sha256": "84f782558f32c9ea8067922918c95c221e617026a4e7a0d752d84b0ff828c007"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_proxy_finger53_link_5",
+      "left_body": "gripper0_finger53_link",
+      "link": "finger53_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_proxy_finger53_link_5",
+        "name": "gripper0_proxy_finger53_link_5",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_proxy_finger53_link_5",
+      "mesh_attributes": {
+        "name": "gripper0_proxy_finger53_link_5",
+        "file": "../meshes/dh116/gripper0_proxy_finger53_link_5-3134737f.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_proxy_finger53_link_5-3134737f.obj",
+      "source_format": "obj",
+      "source_sha256": "3134737f88f7b977c10b8835d0f0b8ea8d1b0d90a91c9a862fffc5cd05930704",
+      "source_manifest_entry": {
+        "asset": "gripper0_proxy_finger53_link_5",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger53_link_005.obj",
+        "file": "meshes/dh116/gripper0_proxy_finger53_link_5-3134737f.obj",
+        "sha256": "3134737f88f7b977c10b8835d0f0b8ea8d1b0d90a91c9a862fffc5cd05930704"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_proxy_finger53_link_6",
+      "left_body": "gripper0_finger53_link",
+      "link": "finger53_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_proxy_finger53_link_6",
+        "name": "gripper0_proxy_finger53_link_6",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_proxy_finger53_link_6",
+      "mesh_attributes": {
+        "name": "gripper0_proxy_finger53_link_6",
+        "file": "../meshes/dh116/gripper0_proxy_finger53_link_6-8a45b6d5.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_proxy_finger53_link_6-8a45b6d5.obj",
+      "source_format": "obj",
+      "source_sha256": "8a45b6d5929a3338e58b416f7dbab7e43de69a2697206dbdc9eb48928e14b330",
+      "source_manifest_entry": {
+        "asset": "gripper0_proxy_finger53_link_6",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger53_link_006.obj",
+        "file": "meshes/dh116/gripper0_proxy_finger53_link_6-8a45b6d5.obj",
+        "sha256": "8a45b6d5929a3338e58b416f7dbab7e43de69a2697206dbdc9eb48928e14b330"
+      }
+    },
+    {
+      "left_geom_name": "gripper0_proxy_finger53_link_7",
+      "left_body": "gripper0_finger53_link",
+      "link": "finger53_link",
+      "geom_attributes": {
+        "type": "mesh",
+        "mesh": "gripper0_proxy_finger53_link_7",
+        "name": "gripper0_proxy_finger53_link_7",
+        "group": "0",
+        "rgba": "0 0 0.5 1"
+      },
+      "mesh_asset": "gripper0_proxy_finger53_link_7",
+      "mesh_attributes": {
+        "name": "gripper0_proxy_finger53_link_7",
+        "file": "../meshes/dh116/gripper0_proxy_finger53_link_7-8015cab7.obj"
+      },
+      "source_path": "meshes/dh116/gripper0_proxy_finger53_link_7-8015cab7.obj",
+      "source_format": "obj",
+      "source_sha256": "8015cab75b38d79aa5d59486a2b6d68198e96fbfb4a892a86ee8d334ffd817f1",
+      "source_manifest_entry": {
+        "asset": "gripper0_proxy_finger53_link_7",
+        "source": "/data_robot/projects/nero_pi05_experiment/experiments/EXP-URDF-FIDELITY-001/reports/dh116-practical-collision-proxy/meshes/finger53_link_007.obj",
+        "file": "meshes/dh116/gripper0_proxy_finger53_link_7-8015cab7.obj",
+        "sha256": "8015cab75b38d79aa5d59486a2b6d68198e96fbfb4a892a86ee8d334ffd817f1"
+      }
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "reference": "examples/libero_eval/evidence/close149/raw/robot-physical-preflight.json.gz",
+  "profile": "R_close149_left_drive_profile_v1",
+  "allowed_xml_attributes": 34,
+  "same_snapshot_as_A": false,
+  "all_other_inventory_fields_exact": true,
+  "selection": "joint names and actuator joint bindings; full snapshot, not row-wide exemptions"
+}

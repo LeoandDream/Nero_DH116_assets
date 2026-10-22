@@ -1,0 +1,511 @@
+{
+  "review_type": "Independent pure-stdlib review of saved actual one-shot runtime evidence; zero native imports or simulation.",
+  "baseline_commit": "85a265ac96f0be141f82d10667b9ea8e8ce02e99",
+  "policy_version": "DH116_RESEARCH_CONTACT_V1",
+  "policy_sha256": "48632dfa4bbe0630ef7d61b9e706240d7769ad6361d588e1d02025bde4bc6454",
+  "inputs": {
+    "new_run_original_absolute": "/data_robot/verification/nero_dh116_right/runs/issue5/right_research_once",
+    "historical_run_repository_relative": "examples/right_hand/evidence/d3_finger22_exploratory/run",
+    "new_state_sha256": "2cfa4dcc1d5a40d385a4ac7cb5c946937edc287f46b78cc57c92202581c651c9",
+    "new_contacts_sha256": "d08ed047845577c18e1383caafea4e5f4da90a57dc7f11aedca8ae021a9caff0",
+    "new_result_sha256": "66d08f82064cb4b741d92cd657cf1cce34062cb515225c4a8c6eb752467cd614",
+    "old_state_sha256": "e02535e6ade6092e0328a8147cd471040fd1ae01de9f46aed291d3523949fe3a",
+    "old_contacts_sha256": "f48ae08657831661c6880891e3220754feedb954067f3202dc476509d1468040"
+  },
+  "frozen_initial_conditions": {
+    "same_fields_exact": {
+      "qpos": true,
+      "qvel": true,
+      "ctrl": true,
+      "controller": true,
+      "criteria": true,
+      "native_scene": true
+    },
+    "all_selected_fields_exact": true,
+    "compiled_actual_snapshot_exact": true,
+    "schedule_exact": true,
+    "commands": 270,
+    "physical_step_budget": 6750,
+    "81_hand_306_wrist_model_sha256": "7f9d84061c3e7d176763c688d2389f8b3d3e38386b8e990a0fa047ff2bc3329c",
+    "setup_counts_old": {
+      "mj_step": 0,
+      "mj_step1_nonintegrating": 2,
+      "mj_forward_nonintegrating": 6,
+      "mj_step2": 0,
+      "constructor": 1,
+      "explicit_native_reset": 1
+    },
+    "setup_counts_new": {
+      "mj_step": 0,
+      "mj_step1_nonintegrating": 2,
+      "mj_forward_nonintegrating": 7,
+      "mj_step2": 0,
+      "constructor": 1,
+      "explicit_native_reset": 1
+    }
+  },
+  "historical_prefix_comparison": {
+    "state_rows_checked": 4769,
+    "contact_rows_checked": 4769,
+    "state_first_difference": null,
+    "contacts_first_difference": null,
+    "excluded_state_keys": [
+      "failures",
+      "legacy_failures",
+      "research"
+    ],
+    "comparison": "Exact parsed JSON value comparison; no tolerance; no new forward or simulation.",
+    "state_prefix_exact": true,
+    "contacts_prefix_exact": true,
+    "canonical_state_sha256": {
+      "old": "44a0c44d7341e1ea76f055623cf199c16a46d56bad44ba5041564855723b264c",
+      "new": "44a0c44d7341e1ea76f055623cf199c16a46d56bad44ba5041564855723b264c"
+    },
+    "canonical_contacts_sha256": {
+      "old": "c11fe6652ed51af29a3ccf458d2f12ff3b37efeea7d297250c8a7c4ce0edfecc",
+      "new": "c11fe6652ed51af29a3ccf458d2f12ff3b37efeea7d297250c8a7c4ce0edfecc"
+    }
+  },
+  "actual_research_policy_replay": {
+    "steps": 4775,
+    "entire_online_research_rows_exact": true,
+    "first_online_offline_difference": null,
+    "first_legacy_stop": {
+      "step": 4769,
+      "reasons": [
+        "ROBOT_CONTACT_OVERLAP"
+      ]
+    },
+    "first_research_stop": {
+      "step": 4775,
+      "reasons": [
+        "LOADED_DEPTH_GROWTH"
+      ],
+      "contact_events": [
+        {
+          "reason": "LOADED_DEPTH_GROWTH",
+          "level": "body",
+          "key": [
+            "gripper0_finger23_link",
+            "white_bowl_1_main"
+          ]
+        }
+      ]
+    },
+    "first_warnings": {
+      "SAMPLED_LOAD_WARNING": 4723,
+      "MPR_DEPTH_WARNING": 4769
+    },
+    "stop_group": {
+      "level": "body",
+      "key": [
+        "gripper0_finger23_link",
+        "white_bowl_1_main"
+      ],
+      "contact_points": 5,
+      "depth_m": 0.002614641614307225,
+      "normal_force_N": 5.152555984206995,
+      "deep_samples": 7,
+      "deep_observed_span_s": 0.012,
+      "contact_samples": 93,
+      "contact_observed_span_s": 0.184,
+      "short_exposure_Ns": 0.0560136612852708,
+      "long_exposure_Ns": 0.14488417131429174,
+      "short_window_complete": true,
+      "long_window_complete": true,
+      "short_depth_change_m": 0.0005852436337853281,
+      "short_force_change_N": 0.5967075427136361
+    },
+    "seven_sample_window_4769_to_4775": [
+      {
+        "step": 4769,
+        "body_group": {
+          "level": "body",
+          "key": [
+            "gripper0_finger23_link",
+            "white_bowl_1_main"
+          ],
+          "contact_points": 3,
+          "depth_m": 0.002029397980521897,
+          "normal_force_N": 4.555848441493358,
+          "deep_samples": 1,
+          "deep_observed_span_s": 0.0,
+          "contact_samples": 87,
+          "contact_observed_span_s": 0.17200000000000001,
+          "short_exposure_Ns": 0.053965541739605445,
+          "long_exposure_Ns": 0.1410682426147032,
+          "short_window_complete": true,
+          "long_window_complete": true,
+          "short_depth_change_m": 0.00016431053699987857,
+          "short_force_change_N": 0.10317923770221338
+        },
+        "g23_group": {
+          "level": "geom",
+          "key": [
+            "gripper0_proxy76_finger23_link_06",
+            "white_bowl_1_g23"
+          ],
+          "contact_points": 1,
+          "depth_m": 0.002029397980521897,
+          "normal_force_N": 1.737957893863028,
+          "deep_samples": 1,
+          "deep_observed_span_s": 0.0,
+          "contact_samples": 85,
+          "contact_observed_span_s": 0.168,
+          "short_exposure_Ns": 0.02046991162407663,
+          "long_exposure_Ns": 0.054517548633718174,
+          "short_window_complete": true,
+          "long_window_complete": true,
+          "short_depth_change_m": 0.00016431053699987857,
+          "short_force_change_N": 0.04635693333225177
+        },
+        "research_stops": []
+      },
+      {
+        "step": 4770,
+        "body_group": {
+          "level": "body",
+          "key": [
+            "gripper0_finger23_link",
+            "white_bowl_1_main"
+          ],
+          "contact_points": 3,
+          "depth_m": 0.002040038201625327,
+          "normal_force_N": 4.568350499099807,
+          "deep_samples": 2,
+          "deep_observed_span_s": 0.002,
+          "contact_samples": 88,
+          "contact_observed_span_s": 0.17400000000000002,
+          "short_exposure_Ns": 0.054159469418400566,
+          "long_exposure_Ns": 0.14140407268405147,
+          "short_window_complete": true,
+          "long_window_complete": true,
+          "short_depth_change_m": 0.0001620555566455707,
+          "short_force_change_N": 0.09074844109290581
+        },
+        "g23_group": {
+          "level": "geom",
+          "key": [
+            "gripper0_proxy76_finger23_link_06",
+            "white_bowl_1_g23"
+          ],
+          "contact_points": 1,
+          "depth_m": 0.002040038201625327,
+          "normal_force_N": 1.7384265044065723,
+          "deep_samples": 2,
+          "deep_observed_span_s": 0.002,
+          "contact_samples": 86,
+          "contact_observed_span_s": 0.17,
+          "short_exposure_Ns": 0.020552543222534962,
+          "long_exposure_Ns": 0.054615386254218454,
+          "short_window_complete": true,
+          "long_window_complete": true,
+          "short_depth_change_m": 0.0001620555566455707,
+          "short_force_change_N": 0.03627466512607924
+        },
+        "research_stops": []
+      },
+      {
+        "step": 4771,
+        "body_group": {
+          "level": "body",
+          "key": [
+            "gripper0_finger23_link",
+            "white_bowl_1_main"
+          ],
+          "contact_points": 3,
+          "depth_m": 0.0020512204750619285,
+          "normal_force_N": 4.579166298641622,
+          "deep_samples": 3,
+          "deep_observed_span_s": 0.004,
+          "contact_samples": 89,
+          "contact_observed_span_s": 0.176,
+          "short_exposure_Ns": 0.05434569120227317,
+          "long_exposure_Ns": 0.14193926582439112,
+          "short_window_complete": true,
+          "long_window_complete": true,
+          "short_depth_change_m": 0.0001596658176646205,
+          "short_force_change_N": 0.09547334277969988
+        },
+        "g23_group": {
+          "level": "geom",
+          "key": [
+            "gripper0_proxy76_finger23_link_06",
+            "white_bowl_1_g23"
+          ],
+          "contact_points": 1,
+          "depth_m": 0.0020512204750619285,
+          "normal_force_N": 1.7380051038429642,
+          "deep_samples": 3,
+          "deep_observed_span_s": 0.004,
+          "contact_samples": 87,
+          "contact_observed_span_s": 0.17200000000000001,
+          "short_exposure_Ns": 0.020625180918168878,
+          "long_exposure_Ns": 0.05468102619555945,
+          "short_window_complete": true,
+          "long_window_complete": true,
+          "short_depth_change_m": 0.0001596658176646205,
+          "short_force_change_N": 0.03636303050783729
+        },
+        "research_stops": []
+      },
+      {
+        "step": 4772,
+        "body_group": {
+          "level": "body",
+          "key": [
+            "gripper0_finger23_link",
+            "white_bowl_1_main"
+          ],
+          "contact_points": 3,
+          "depth_m": 0.0020624373018675248,
+          "normal_force_N": 4.5895591272684815,
+          "deep_samples": 4,
+          "deep_observed_span_s": 0.006,
+          "contact_samples": 90,
+          "contact_observed_span_s": 0.178,
+          "short_exposure_Ns": 0.05452774437412431,
+          "long_exposure_Ns": 0.14249881434545728,
+          "short_window_complete": true,
+          "long_window_complete": true,
+          "short_depth_change_m": 0.00015433156402692343,
+          "short_force_change_N": 0.08657982907143946
+        },
+        "g23_group": {
+          "level": "geom",
+          "key": [
+            "gripper0_proxy76_finger23_link_06",
+            "white_bowl_1_g23"
+          ],
+          "contact_points": 1,
+          "depth_m": 0.0020624373018675248,
+          "normal_force_N": 1.737230443463197,
+          "deep_samples": 4,
+          "deep_observed_span_s": 0.006,
+          "contact_samples": 88,
+          "contact_observed_span_s": 0.17400000000000002,
+          "short_exposure_Ns": 0.020691111358987758,
+          "long_exposure_Ns": 0.05475330574229718,
+          "short_window_complete": true,
+          "long_window_complete": true,
+          "short_depth_change_m": 0.00015811213628472848,
+          "short_force_change_N": 0.029567410311041042
+        },
+        "research_stops": []
+      },
+      {
+        "step": 4773,
+        "body_group": {
+          "level": "body",
+          "key": [
+            "gripper0_finger23_link",
+            "white_bowl_1_main"
+          ],
+          "contact_points": 3,
+          "depth_m": 0.002138353292385969,
+          "normal_force_N": 4.625689394274585,
+          "deep_samples": 5,
+          "deep_observed_span_s": 0.008,
+          "contact_samples": 91,
+          "contact_observed_span_s": 0.18,
+          "short_exposure_Ns": 0.05472804911670362,
+          "long_exposure_Ns": 0.14297170388953392,
+          "short_window_complete": true,
+          "long_window_complete": true,
+          "short_depth_change_m": 0.00021157050440849686,
+          "short_force_change_N": 0.1137249135078724
+        },
+        "g23_group": {
+          "level": "geom",
+          "key": [
+            "gripper0_proxy76_finger23_link_06",
+            "white_bowl_1_g23"
+          ],
+          "contact_points": 1,
+          "depth_m": 0.002138353292385969,
+          "normal_force_N": 1.761229586922234,
+          "deep_samples": 5,
+          "deep_observed_span_s": 0.008,
+          "contact_samples": 89,
+          "contact_observed_span_s": 0.176,
+          "short_exposure_Ns": 0.02077424751300574,
+          "long_exposure_Ns": 0.05491133994509981,
+          "short_window_complete": true,
+          "long_window_complete": true,
+          "short_depth_change_m": 0.0002216201531439041,
+          "short_force_change_N": 0.053568743706941646
+        },
+        "research_stops": []
+      },
+      {
+        "step": 4774,
+        "body_group": {
+          "level": "body",
+          "key": [
+            "gripper0_finger23_link",
+            "white_bowl_1_main"
+          ],
+          "contact_points": 5,
+          "depth_m": 0.0021467463770362804,
+          "normal_force_N": 4.789863110500725,
+          "deep_samples": 6,
+          "deep_observed_span_s": 0.01,
+          "contact_samples": 92,
+          "contact_observed_span_s": 0.182,
+          "short_exposure_Ns": 0.05512936388638433,
+          "long_exposure_Ns": 0.1436290119914379,
+          "short_window_complete": true,
+          "long_window_complete": true,
+          "short_depth_change_m": 0.00020034098335357958,
+          "short_force_change_N": 0.2875898561728345
+        },
+        "g23_group": {
+          "level": "geom",
+          "key": [
+            "gripper0_proxy76_finger23_link_06",
+            "white_bowl_1_g23"
+          ],
+          "contact_points": 1,
+          "depth_m": 0.0021467463770362804,
+          "normal_force_N": 1.7388605897930671,
+          "deep_samples": 6,
+          "deep_observed_span_s": 0.01,
+          "contact_samples": 90,
+          "contact_observed_span_s": 0.178,
+          "short_exposure_Ns": 0.020865618250647405,
+          "long_exposure_Ns": 0.05506812921633891,
+          "short_window_complete": true,
+          "long_window_complete": true,
+          "short_depth_change_m": 0.00021735035748838248,
+          "short_force_change_N": 0.0378019939347225
+        },
+        "research_stops": []
+      },
+      {
+        "step": 4775,
+        "body_group": {
+          "level": "body",
+          "key": [
+            "gripper0_finger23_link",
+            "white_bowl_1_main"
+          ],
+          "contact_points": 5,
+          "depth_m": 0.002614641614307225,
+          "normal_force_N": 5.152555984206995,
+          "deep_samples": 7,
+          "deep_observed_span_s": 0.012,
+          "contact_samples": 93,
+          "contact_observed_span_s": 0.184,
+          "short_exposure_Ns": 0.0560136612852708,
+          "long_exposure_Ns": 0.14488417131429174,
+          "short_window_complete": true,
+          "long_window_complete": true,
+          "short_depth_change_m": 0.0005852436337853281,
+          "short_force_change_N": 0.5967075427136361
+        },
+        "g23_group": {
+          "level": "geom",
+          "key": [
+            "gripper0_proxy76_finger23_link_06",
+            "white_bowl_1_g23"
+          ],
+          "contact_points": 1,
+          "depth_m": 0.002614641614307225,
+          "normal_force_N": 1.958327537387321,
+          "deep_samples": 7,
+          "deep_observed_span_s": 0.012,
+          "contact_samples": 91,
+          "contact_observed_span_s": 0.18,
+          "short_exposure_Ns": 0.02112378988810642,
+          "long_exposure_Ns": 0.0553508908311513,
+          "short_window_complete": true,
+          "long_window_complete": true,
+          "short_depth_change_m": 0.0005852436337853281,
+          "short_force_change_N": 0.220369643524293
+        },
+        "research_stops": [
+          "LOADED_DEPTH_GROWTH"
+        ]
+      }
+    ],
+    "independent_exact_force_time_check": {
+      "samples": 7,
+      "observed_span_s": 0.012,
+      "sampled_scalar_normal_load_mean_N": 4.6678051071059,
+      "sampled_scalar_normal_load_exposure_Ns": 0.0560136612852708,
+      "exact_binary64_sample_mean_fraction_N": "5255481335250057/1125899906842624",
+      "exact_exposure_fraction_Ns": "18177472345409091043134658020837/324518553658426726783156020576256",
+      "force_reference_N": 2.3315472126000003,
+      "sample_mean_ge_reference": true,
+      "all_seven_sample_depths_gt_2mm": true,
+      "depth_net_growth_m": 0.0005852436337853281,
+      "interpretation": "Trapezoidal endpoint scalar Fn samples, not actual integrated impulse; body group sums all five native contact points at stop."
+    }
+  },
+  "independent_health": {
+    "all_original_independent_checks_recomputed": true,
+    "independent_failure_step_counts": {},
+    "peaks": {
+      "arm_rad": 0.08880659361068322,
+      "active_rad": 0.04666121456570388,
+      "mimic_rad": 0.00027890900694577114,
+      "limit_overshoot_rad": 0.0,
+      "robot_overlap_m": 0.002614641614307225,
+      "finite": true
+    },
+    "native_warning_steps": 0,
+    "nonfinite_steps": 0,
+    "unexpected_wrist_external_contacts": 0,
+    "maximum_native_contact_count": 92,
+    "active_error_hold_rule_not_exercised": "No hold physics executed; close active error is recorded, not judged by hold-only 0.02rad bound."
+  },
+  "actual_outcome": {
+    "phase_step_counts": {
+      "settle_preshape": 250,
+      "approach_high": 2000,
+      "descend": 1750,
+      "close": 775
+    },
+    "native_task_result": false,
+    "execution": "STOPPED_AT_FIRST_FAILURE",
+    "completed_commands": 190,
+    "partial_command_macro": 190,
+    "close_physics_executed": 775,
+    "close_physics_planned": 1000,
+    "lift_physics_executed": 0,
+    "hold_physics_executed": 0,
+    "grasp_result": "UNKNOWN_EARLY_STOP",
+    "native_task_success_observation_count": 0,
+    "last_bowl_table_or_other_environment_supported": true,
+    "longest_valid_hold_s": 0.0,
+    "final_lift_from_reset_m": -0.06996253727146073,
+    "final_lift_from_settled_m": 0.0006267526256384937,
+    "right_full_task_success": "FAIL_THIS_EARLY_STOPPED_EPISODE",
+    "unexecuted_close_lift_hold": "UNKNOWN_NOT_EXECUTED",
+    "control_health_interpretation": "Original runner control_health=FAIL summarizes any stop; no independent control/numeric/limit/Mimic/wrist failure occurred in observed prefix."
+  },
+  "preservation": {
+    "old_formal_2mm_FAIL": "UNCHANGED",
+    "formal_numeric_FAIL": "UNCHANGED",
+    "high_fidelity_UNKNOWN": "UNCHANGED",
+    "raw_inputs_read_only": true,
+    "no_engine_or_array_module_imported": true
+  },
+  "findings": {
+    "PASS": [
+      "Frozen initial state/controller/criteria/native scene and270actions exact",
+      "First4769 physical state and complete RK4 contact caches exact after documented diagnostic state exclusions",
+      "Research online judgments reproduce offline at every actual step",
+      "Independent numerical/control/limit/Mimic/wrist protections healthy over observed prefix"
+    ],
+    "FAIL": [
+      "Registered research LOADED_DEPTH_GROWTH stop at4775; complete planned rollout not achieved",
+      "No native cabinet-placement success"
+    ],
+    "UNKNOWN": [
+      "Post-stop close completion, lift and hold",
+      "Actual integrated contact impulse and material safety",
+      "Formal high-fidelity model acceptance remains outside experiment scope"
+    ]
+  }
+}

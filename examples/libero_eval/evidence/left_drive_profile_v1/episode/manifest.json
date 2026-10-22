@@ -1,0 +1,102 @@
+{
+  "schema": "nero_dh116_libero_episode_v1",
+  "episode_id": "episode",
+  "hand": "R",
+  "mode": "research",
+  "record_kind": "saved_real_dynamics_export",
+  "export_integrates_physics": false,
+  "model": {
+    "path": "examples/libero_eval/evidence/left_drive_profile_v1/raw/drive-model/model.xml",
+    "sha256": "d9cd16d2ecfc2f78c77a09cbccf91c0fee105572b28bd3fd5134483f72b2b68e",
+    "hand_collision_proxies": 81,
+    "wrist_collision_proxies": 306,
+    "profile": "R_close149_left_drive_profile_v1",
+    "base_model": {
+      "path": "examples/right_hand/candidates/finger22_local/model.xml",
+      "sha256": "7f9d84061c3e7d176763c688d2389f8b3d3e38386b8e990a0fa047ff2bc3329c",
+      "hand_collision_proxies": 81,
+      "wrist_collision_proxies": 306
+    },
+    "raw_original_context_xml": "examples/libero_eval/evidence/left_drive_profile_v1/raw/drive-model/original-context.xml",
+    "raw_original_context_sha256": "e24d17904b9b1d4a55ae031a08bb1457f0f46c4170f987767d0acd161eb3e84b",
+    "actual_runtime_path": "/data_robot/verification/nero_dh116_right/runs/issue5_left_drive_v1/close149_B_once/drive-model/model.xml",
+    "frozen_profile": "examples/right_hand/candidates/left_drive_profile_v1/profile.json"
+  },
+  "task": {
+    "suite": "libero_90",
+    "name": "KITCHEN_SCENE9_put_the_white_bowl_on_top_of_the_cabinet",
+    "bddl_sha256": "a595358c840e6dca31d2d914726bb49d58944252ae868796bd603345a444b627",
+    "goal": "On white_bowl_1 wooden_two_layer_shelf_1_top_side",
+    "native_success_predicate_preserved": true
+  },
+  "initialization": {
+    "kind": "native_seeded_reset",
+    "seed": 20261007,
+    "official_panda_init_state_supported": false,
+    "full_reset_source": {
+      "path": "examples/libero_eval/evidence/left_drive_profile_v1/raw/frozen-before-first-step.json.gz",
+      "sha256": "b35d81ebb523c16ff0ab5108d52417c5ad827796c6ebdf51615411e67e9b3684",
+      "bytes": 86146
+    },
+    "reset_qpos_sha256": "ed3fe239a8bfed5e5eda6f65bb563bda1e458ec965648ed948ae0e5580e53feb"
+  },
+  "contract": {
+    "state": "7 arm + 11 hand joint positions [rad]",
+    "action": "7 absolute arm [rad] + 6 normalized absolute hand [-1,1]",
+    "ctrl": "7 arm torques + 6 hand actuator joint angles"
+  },
+  "environment": {
+    "python": "3.11.16",
+    "mujoco": "3.2.3",
+    "robosuite": "1.4.1",
+    "libero_commit": "f78abd68ee283de9f9be3c8f7e2a9ad60246e95c"
+  },
+  "research_policy_sha256": "48632dfa4bbe0630ef7d61b9e706240d7769ad6361d588e1d02025bde4bc6454",
+  "expanded_actions_13_sha256": "6747e61ae861b30a52c1292b168c13c88651837f5fc2272765397f3d0942b935",
+  "exporter_sha256": "8829122e86919c2e50621ad788f167a7ecedbdd7bf747d0f8c883eabe2e7abfc",
+  "source_files": [
+    {
+      "path": "examples/libero_eval/evidence/left_drive_profile_v1/raw/state.jsonl.gz",
+      "sha256": "9fcf6944319346bbb73ee6f4fe62b073bb2b4c15e94a867be563d2db6ef5cce1",
+      "bytes": 514506
+    },
+    {
+      "path": "examples/libero_eval/evidence/left_drive_profile_v1/raw/contacts.jsonl.gz",
+      "sha256": "5c057c9d6a9cf1cfe24deaf2700b8f2a3b988fc8b63ac5d5ed2c50f554bba9b5",
+      "bytes": 741687
+    },
+    {
+      "path": "examples/libero_eval/evidence/left_drive_profile_v1/raw/result.json.gz",
+      "sha256": "14ff68ccd33306a4a68e7b8433b8250b559f1a0174f57d632fd485a07cdffa92",
+      "bytes": 50065
+    },
+    {
+      "path": "examples/libero_eval/evidence/left_drive_profile_v1/raw/observations.jsonl.gz",
+      "sha256": "073852051d3c07396cf0b76e5249417f55706f75f5f07418fc9422547fd78635",
+      "bytes": 714
+    },
+    {
+      "path": "examples/libero_eval/evidence/left_drive_profile_v1/raw/frozen-before-first-step.json.gz",
+      "sha256": "b35d81ebb523c16ff0ab5108d52417c5ad827796c6ebdf51615411e67e9b3684",
+      "bytes": 86146
+    }
+  ],
+  "steps_sha256": "24078ca69821018cb569d4939a6e20c731dbb75a959dce8966b8a83753ce741f",
+  "limitations": [
+    "No official Panda init-state conversion or multi-seed benchmark implemented.",
+    "Only saved native success measurements are reported; missing per-step signals remain null.",
+    "Left historical contacts lack saved position/frame/RK4 body poses.",
+    "Scripted white-bowl grasp lacks the native cabinet placement phase."
+  ],
+  "post_export_model_identity_correction": {
+    "reason": "Unchanged generic exporter assumes right base model A; explicitly bind this B episode to its actual archived B XML and source profile.",
+    "original_exporter_model": {
+      "path": "examples/right_hand/candidates/finger22_local/model.xml",
+      "sha256": "7f9d84061c3e7d176763c688d2389f8b3d3e38386b8e990a0fa047ff2bc3329c",
+      "hand_collision_proxies": 81,
+      "wrist_collision_proxies": 306
+    },
+    "raw_materialization_sha256": "a7797bb4b2a4e52840a576da94cb2c7e03e63497a1d8cb0a29cf1b928eb4b0e4",
+    "physics_or_state_changes": false
+  }
+}

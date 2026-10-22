@@ -1,0 +1,7 @@
+test_identity_does_not_reorder_faces (test_right_proxy76.ProxyMigrationTests.test_identity_does_not_reorder_faces) ... ok
+test_reflection_preserves_positive_oriented_tetrahedron_volume (test_right_proxy76.ProxyMigrationTests.test_reflection_preserves_positive_oriented_tetrahedron_volume) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.090s
+
+OK

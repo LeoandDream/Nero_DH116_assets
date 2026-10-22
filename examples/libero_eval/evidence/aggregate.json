@@ -1,0 +1,52 @@
+{
+  "schema": "nero_dh116_libero_episode_v1",
+  "n_submitted": 2,
+  "n_episodes": 1,
+  "n_success": 0,
+  "success_rate": 0.0,
+  "n_truncated": 1,
+  "n_incomplete": 0,
+  "n_attempted": 2,
+  "attempted_success_rate": 0.0,
+  "by_hand": {
+    "L": {
+      "n_submitted": 1,
+      "n_episodes": 1,
+      "n_success": 0,
+      "success_rate": 0.0,
+      "n_truncated": 0,
+      "n_incomplete": 0,
+      "n_attempted": 1,
+      "attempted_success_rate": 0.0
+    },
+    "R": {
+      "n_submitted": 1,
+      "n_episodes": 0,
+      "n_success": 0,
+      "success_rate": null,
+      "n_truncated": 1,
+      "n_incomplete": 0,
+      "n_attempted": 1,
+      "attempted_success_rate": 0.0
+    }
+  },
+  "denominator": "success_rate uses completed episodes with measured native task signal; attempted_success_rate includes truncated attempts",
+  "independence": "Deduplication uses hand plus source path and SHA256; different paths or matching hashes alone do not certify independent execution attempts.",
+  "scope": "custom NERO + DH116 native LIBERO episodes; not official benchmark or independent-trial confidence evidence",
+  "episodes": [
+    {
+      "episode_id": "left_001",
+      "hand": "L",
+      "mode": "baseline",
+      "status": "COMPLETED",
+      "native_task_success": false
+    },
+    {
+      "episode_id": "right_001",
+      "hand": "R",
+      "mode": "research",
+      "status": "TRUNCATED",
+      "native_task_success": false
+    }
+  ]
+}

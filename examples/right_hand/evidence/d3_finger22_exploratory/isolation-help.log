@@ -1,0 +1,11 @@
+usage: white_bowl_exploratory.py [-h] --output OUTPUT
+
+One authorized frozen white-bowl experiment; provenance is OFFLINE ONLY. Reuse
+the historical executor byte-for-byte. Its local policy import is bound
+explicitly to this module only while executing this independent entry. No old
+module/file is modified. Model, integration, controller, recorder and physical
+checks remain the old executor's; only the documented stop policy is selected.
+
+options:
+  -h, --help       show this help message and exit
+  --output OUTPUT  NEW output inside fixed execution prefix; no retries

@@ -1,0 +1,406 @@
+{
+  "schema": "frozen-two-writeback-roundtrip-v1",
+  "interpreter": "/data_robot/verification/nero_dh116_right/.reference-env/bin/python",
+  "package_versions": {
+    "mujoco": "3.2.3",
+    "numpy": "1.26.4",
+    "scipy": "1.15.3"
+  },
+  "algorithm": "raw32 = float32(raw OBJ); centered32 = float32(raw32 - compiled mesh CoM); mesh32 = float32(centered32 @ compiled rotation); body64 = mesh32 @ compiled rotation.T + CoM",
+  "algorithm_scope": "The seven selected bindings have unchanged identity original scale/pose; using the compiled body-local geom pose is valid for these arrays.",
+  "verified_original_bindings": {
+    "old__robot0_source_flange_part_2": {
+      "pos": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quat": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "old__robot0_candidate_nero_link5_4": {
+      "pos": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quat": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "new__robot0_flange_local_00": {
+      "pos": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quat": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "new__robot0_flange_local_01": {
+      "pos": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quat": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "new__robot0_link5_local_00": {
+      "pos": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quat": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "new__robot0_link5_local_01": {
+      "pos": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quat": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "new__robot0_link5_local_02": {
+      "pos": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quat": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "official_source": {
+    "url": "https://raw.githubusercontent.com/google-deepmind/mujoco/3.2.3/src/user/user_mesh.cc",
+    "recenter_writeback_lines": [
+      1309,
+      1314
+    ],
+    "rotation_writeback_lines": [
+      1385,
+      1396
+    ],
+    "source_role": "Read-only source inspection identified the intermediate recenter float32 writeback omitted by the one-writeback diagnostic in numerics.json."
+  },
+  "input_hashes": {
+    "analyze_numerics.py": "de92aa6d42b3eaef9ca5ba154cd74080d1c9d007b8917dabc3335cf7aed9ad31",
+    "numerics.json": "55cc16a0d17f0318656317cf6a2b50528560a66e31f708bbc96de2bbc4652b09",
+    "compiled_state.npz": "98b11478181d507c30174638c2c0025d6c97e0079bb8ccb02aae0d89ce0e7bed",
+    "verify_roundtrip.py": "e7b62bfe11da2f9b4929c922907385d45459e5e4e06d5c717605d223c2634ca8"
+  },
+  "parts": {
+    "old__robot0_candidate_nero_link5_4": {
+      "vertex_count": 1275,
+      "ordered_array_exactly_equals_actual_mesh_vert": true,
+      "max_ordered_mesh_vert_error_m": 0.0,
+      "ordered_body_coordinates_exactly_equal_actual_compiled_vertices": true,
+      "max_initial_input_float32_rounding_m": 0.0,
+      "max_recenter_float32_writeback_error_m": 3.3444710820993616e-09,
+      "max_rotate_float32_writeback_error_m": 3.7069125187079795e-09,
+      "max_total_actual_compiled_minus_raw_error_m": 6.6796659895856235e-09,
+      "max_error_decomposition_closure_m": 1.5330010363762258e-17
+    },
+    "old__robot0_source_flange_part_2": {
+      "vertex_count": 3244,
+      "ordered_array_exactly_equals_actual_mesh_vert": true,
+      "max_ordered_mesh_vert_error_m": 0.0,
+      "ordered_body_coordinates_exactly_equal_actual_compiled_vertices": true,
+      "max_initial_input_float32_rounding_m": 0.0,
+      "max_recenter_float32_writeback_error_m": 9.48965704944067e-10,
+      "max_rotate_float32_writeback_error_m": 1.8605539860009645e-09,
+      "max_total_actual_compiled_minus_raw_error_m": 2.103131784253273e-09,
+      "max_error_decomposition_closure_m": 1.5223639444925347e-17
+    },
+    "new__robot0_link5_local_00": {
+      "vertex_count": 254,
+      "ordered_array_exactly_equals_actual_mesh_vert": true,
+      "max_ordered_mesh_vert_error_m": 0.0,
+      "ordered_body_coordinates_exactly_equal_actual_compiled_vertices": true,
+      "max_initial_input_float32_rounding_m": 1.7092627200074288e-09,
+      "max_recenter_float32_writeback_error_m": 7.903847623132523e-10,
+      "max_rotate_float32_writeback_error_m": 1.0206655288390378e-09,
+      "max_total_actual_compiled_minus_raw_error_m": 2.2674546009378573e-09,
+      "max_error_decomposition_closure_m": 7.9911462499581e-18
+    },
+    "new__robot0_link5_local_01": {
+      "vertex_count": 48,
+      "ordered_array_exactly_equals_actual_mesh_vert": true,
+      "max_ordered_mesh_vert_error_m": 0.0,
+      "ordered_body_coordinates_exactly_equal_actual_compiled_vertices": true,
+      "max_initial_input_float32_rounding_m": 1.8268517875115316e-09,
+      "max_recenter_float32_writeback_error_m": 2.421116801919789e-09,
+      "max_rotate_float32_writeback_error_m": 1.827246036123684e-09,
+      "max_total_actual_compiled_minus_raw_error_m": 3.4555513263438617e-09,
+      "max_error_decomposition_closure_m": 1.2865087843374347e-17
+    },
+    "new__robot0_link5_local_02": {
+      "vertex_count": 83,
+      "ordered_array_exactly_equals_actual_mesh_vert": true,
+      "max_ordered_mesh_vert_error_m": 0.0,
+      "ordered_body_coordinates_exactly_equal_actual_compiled_vertices": true,
+      "max_initial_input_float32_rounding_m": 1.8268517875115316e-09,
+      "max_recenter_float32_writeback_error_m": 1.2320943507358146e-09,
+      "max_rotate_float32_writeback_error_m": 1.8691513152607564e-09,
+      "max_total_actual_compiled_minus_raw_error_m": 4.638674556922246e-09,
+      "max_error_decomposition_closure_m": 1.2615549298143619e-17
+    },
+    "new__robot0_flange_local_00": {
+      "vertex_count": 94,
+      "ordered_array_exactly_equals_actual_mesh_vert": true,
+      "max_ordered_mesh_vert_error_m": 0.0,
+      "ordered_body_coordinates_exactly_equal_actual_compiled_vertices": true,
+      "max_initial_input_float32_rounding_m": 0.0,
+      "max_recenter_float32_writeback_error_m": 4.307352310500578e-10,
+      "max_rotate_float32_writeback_error_m": 4.831795165155508e-10,
+      "max_total_actual_compiled_minus_raw_error_m": 8.610141556841837e-10,
+      "max_error_decomposition_closure_m": 1.4033597835493474e-17
+    },
+    "new__robot0_flange_local_01": {
+      "vertex_count": 831,
+      "ordered_array_exactly_equals_actual_mesh_vert": true,
+      "max_ordered_mesh_vert_error_m": 0.0,
+      "ordered_body_coordinates_exactly_equal_actual_compiled_vertices": true,
+      "max_initial_input_float32_rounding_m": 0.0,
+      "max_recenter_float32_writeback_error_m": 1.0333798682480873e-09,
+      "max_rotate_float32_writeback_error_m": 1.1513322446889577e-09,
+      "max_total_actual_compiled_minus_raw_error_m": 1.7432213060498047e-09,
+      "max_error_decomposition_closure_m": 8.278767857794636e-18
+    }
+  },
+  "witnesses": [
+    {
+      "part": "robot0_link5_local_00",
+      "raw_vertex_index": 85,
+      "reconstructed_body_point_m": [
+        -0.005400395443325574,
+        -0.024800000720604762,
+        0.011816201220014165
+      ],
+      "exactly_equals_previously_saved_max_violation_point": true,
+      "input_float32_error_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "recenter_float32_error_m": [
+        -2.323354841848868e-10,
+        7.92378315739306e-12,
+        -2.856215403079787e-10
+      ],
+      "rotate_float32_error_in_body_axes_m": [
+        -1.9014753617686461e-10,
+        -1.625303991392563e-11,
+        7.05395666852975e-10
+      ],
+      "recenter_error_projected_on_reference_normal_m": -1.8186644090663935e-10,
+      "rotate_error_projected_on_reference_normal_m": 7.263196634133447e-10,
+      "unchanged_1e_minus_10_m_status": "FAIL",
+      "compiled_reference_plane_violation_m": 6.877951359493539e-09
+    },
+    {
+      "part": "robot0_link5_local_01",
+      "raw_vertex_index": 18,
+      "reconstructed_body_point_m": [
+        -0.010541916568490758,
+        -0.022900000345678764,
+        0.006765864461743522
+      ],
+      "exactly_equals_previously_saved_max_violation_point": true,
+      "input_float32_error_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "recenter_float32_error_m": [
+        2.4893723540864165e-10,
+        -7.44955035159034e-11,
+        -3.8683514724802137e-10
+      ],
+      "rotate_float32_error_in_body_axes_m": [
+        7.449279067749971e-12,
+        -5.660653729127316e-11,
+        9.904153096846709e-10
+      ],
+      "recenter_error_projected_on_reference_normal_m": -3.7038671076714077e-10,
+      "rotate_error_projected_on_reference_normal_m": 4.2526255613061046e-10,
+      "unchanged_1e_minus_10_m_status": "FAIL",
+      "compiled_reference_plane_violation_m": 1.2630455448886524e-09
+    },
+    {
+      "part": "robot0_link5_local_02",
+      "raw_vertex_index": 31,
+      "reconstructed_body_point_m": [
+        -0.011250000169349739,
+        -0.014965064069581462,
+        -0.10700901619609338
+      ],
+      "exactly_equals_previously_saved_max_violation_point": true,
+      "input_float32_error_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "recenter_float32_error_m": [
+        -3.695538319803404e-11,
+        -2.9476232218939025e-11,
+        1.2311872077397368e-09
+      ],
+      "rotate_float32_error_in_body_axes_m": [
+        3.146404863854226e-10,
+        -1.4780033019496222e-10,
+        -1.4498979207415893e-09
+      ],
+      "recenter_error_projected_on_reference_normal_m": -1.2311870464389333e-09,
+      "rotate_error_projected_on_reference_normal_m": 1.449897642361701e-09,
+      "unchanged_1e_minus_10_m_status": "FAIL",
+      "compiled_reference_plane_violation_m": 2.836765836122801e-09
+    },
+    {
+      "part": "robot0_flange_local_00",
+      "raw_vertex_index": 31,
+      "reconstructed_body_point_m": [
+        -0.00884942069871804,
+        -0.02144591143614899,
+        0.011217894276372372
+      ],
+      "exactly_equals_previously_saved_max_violation_point": true,
+      "input_float32_error_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "recenter_float32_error_m": [
+        -3.653658122576564e-10,
+        -2.904560966743297e-11,
+        3.6107166735688256e-11
+      ],
+      "rotate_float32_error_in_body_axes_m": [
+        2.5138603344360153e-10,
+        -2.94350012268121e-11,
+        2.0766765486941461e-10
+      ],
+      "recenter_error_projected_on_reference_normal_m": 4.044076105448105e-11,
+      "rotate_error_projected_on_reference_normal_m": 2.0497744343177482e-10,
+      "unchanged_1e_minus_10_m_status": "FAIL",
+      "compiled_reference_plane_violation_m": 8.323518506381244e-10
+    },
+    {
+      "part": "robot0_flange_local_01",
+      "raw_vertex_index": 419,
+      "reconstructed_body_point_m": [
+        0.0011569558678672688,
+        -0.025388469916133246,
+        -0.04865162957624625
+      ],
+      "exactly_equals_previously_saved_max_violation_point": true,
+      "input_float32_error_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "recenter_float32_error_m": [
+        4.640086492119222e-12,
+        -9.921598265183462e-12,
+        -4.765677227847043e-10
+      ],
+      "rotate_float32_error_in_body_axes_m": [
+        2.222978421298716e-11,
+        1.335069062699934e-11,
+        -9.034390480755278e-10
+      ],
+      "recenter_error_projected_on_reference_normal_m": 4.758323099648468e-10,
+      "rotate_error_projected_on_reference_normal_m": 8.995977455728248e-10,
+      "unchanged_1e_minus_10_m_status": "FAIL",
+      "compiled_reference_plane_violation_m": 3.054648631262147e-09
+    }
+  ],
+  "all_ordered_arrays_exactly_reconstructed": true,
+  "total_vertex_count": 5829,
+  "all_five_stored_witness_points_exactly_reconstructed": true,
+  "call_audit": {
+    "model_constructor_calls": 0,
+    "data_constructor_calls": 0,
+    "mujoco_api_calls": 0,
+    "forward_calls": 0,
+    "collision_calls": 0,
+    "constraint_solves": 0,
+    "physics_steps": 0
+  },
+  "tolerance_m": 1e-10,
+  "strict_compiled_status": "FAIL_AT_UNCHANGED_NUMERICAL_TOLERANCE",
+  "interpretation": "For these five witnesses, independent float32 recenter and rotate roundtrips place the same original source boundary vertex at different new and old compiled positions. Their normal differences exactly account for the saved nanometre containment violations up to float64 plane-evaluation rounding. This does not establish every uncovered source fragment cause or change the FAIL status.",
+  "limits": [
+    "Only five previously saved maximum-containment witnesses are traced; this is not a new exhaustive source-coverage computation.",
+    "A nearest raw-vertex correspondence is stated with its measured distance; exact same-source claims require zero raw-coordinate difference.",
+    "Float32 reconstruction is checked against actual compiled arrays; residuals are retained, not hidden by the unchanged threshold.",
+    "Finite uncovered surface area can result from nanometre normal displacement of a planar patch; area is not gap width.",
+    "No source-solid, physical-penetration, solver-contact, dynamics, or grasp claim.",
+    "Exposed-union volume is not recomputed or used; its numerical sensitivity is not physical geometry change."
+  ]
+}

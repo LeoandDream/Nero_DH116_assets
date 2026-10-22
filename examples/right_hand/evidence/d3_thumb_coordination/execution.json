@@ -1,0 +1,8 @@
+{
+  "diagnostic_only": true,
+  "lambda": 1,
+  "exit_code": 2,
+  "command": "examples/right_hand/thumb_coordination.py --output runs/d3_thumb_lambda1_001",
+  "baseline": "8142d0ca9a6e78332118ab5e632cafe4e39da28b",
+  "meaning": "0: original numeric screening PASS; 2: FAIL; 1: execution error; source geometry is analyzed separately"
+}

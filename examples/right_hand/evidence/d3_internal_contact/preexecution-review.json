@@ -1,0 +1,37 @@
+{
+  "status": "PASS_NO_EXECUTION_BLOCKER",
+  "baseline_commit": "6b432737dbddc7e8917630382c582ac8704d637a",
+  "review_scope": "read-only source review plus compiler-only tests; no forward or physics integration",
+  "reviewed_sha256": {
+    "examples/right_hand/internal_contact.py": "075813681ce7fb9b6165ba848d6e42f428e950906382944107e93ceeab4bb7eb",
+    "tests/test_internal_contact.py": "5afde81a90639cdea4248e09dde49134c73e8e8f9cdf99dc747fad00ed6592de"
+  },
+  "checks": {
+    "compiler_only_tests_passed": 3,
+    "forward_step_step1_step2_trap_calls": 0,
+    "public_compiled_fields_compared": 572,
+    "public_compiled_field_differences": "authorized exclude signatures and anonymous-exclude name-storage metadata only",
+    "all_geom_pairs_checked": 5671,
+    "effective_eligibility_changes": [
+      [
+        69,
+        73
+      ],
+      [
+        73,
+        93
+      ]
+    ],
+    "hypothetical_external_mask_cases": 116523,
+    "external_eligibility_changes": 0,
+    "native_jpc_self_sim_verified_in_stock_base_controller": true,
+    "step_budget_increment_before_native_step": true,
+    "historical_first_ctrl_check_before_first_native_step": true,
+    "preflight_only_has_no_forward_or_step_path": true
+  },
+  "limitations": [
+    "Unique physical candidate execution is an operator constraint: per-output physical-attempt.json is descriptive and does not globally prohibit a second invocation with a new output directory. Root execution plan explicitly permits one C run only.",
+    "Historical baseline lacks a complete initial integration/cache snapshot; exact native keyframe and first qpos/qvel/ctrl/time are checked, while candidate full integration snapshot is evidence for this run.",
+    "Zero excluded-pair contacts establish filtering only; source-surface geometry risk and formal FAIL/grasp UNKNOWN remain."
+  ]
+}

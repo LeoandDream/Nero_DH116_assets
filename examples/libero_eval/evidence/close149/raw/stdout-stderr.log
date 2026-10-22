@@ -1,0 +1,12 @@
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /data_robot/verification/nero_dh116_right/.reference-env/lib/python3.11/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+command 20/260, physics steps 500
+command 40/260, physics steps 1000
+command 60/260, physics steps 1500
+command 80/260, physics steps 2000
+command 100/260, physics steps 2500
+command 120/260, physics steps 3000
+command 140/260, physics steps 3500
+command 160/260, physics steps 4000
+command 180/260, physics steps 4500

@@ -1,0 +1,13 @@
+command 20/260, physics steps 500
+command 40/260, physics steps 1000
+command 60/260, physics steps 1500
+command 80/260, physics steps 2000
+command 100/260, physics steps 2500
+command 120/260, physics steps 3000
+command 140/260, physics steps 3500
+command 160/260, physics steps 4000
+command 180/260, physics steps 4500
+command 200/260, physics steps 5000
+command 220/260, physics steps 5500
+command 240/260, physics steps 6000
+command 260/260, physics steps 6500

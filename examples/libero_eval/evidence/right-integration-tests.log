@@ -1,0 +1,23 @@
+test_all_4769_saved_samples_match_frozen_shadow_exactly (test_libero_research.ResearchRunnerIntegrationTests.test_all_4769_saved_samples_match_frozen_shadow_exactly) ... ok
+test_all_existing_independent_protections_survive (test_libero_research.ResearchRunnerIntegrationTests.test_all_existing_independent_protections_survive) ... ok
+test_arm_bowl_depth_is_not_hand_bowl_exempt (test_libero_research.ResearchRunnerIntegrationTests.test_arm_bowl_depth_is_not_hand_bowl_exempt) ... ok
+test_executor_policy_dependency_attributes_are_complete (test_libero_research.ResearchRunnerIntegrationTests.test_executor_policy_dependency_attributes_are_complete) ... ok
+test_extreme_load_stops_even_below_original_depth (test_libero_research.ResearchRunnerIntegrationTests.test_extreme_load_stops_even_below_original_depth) ... ok
+test_filtered_contacts_retain_original_ineligibility (test_libero_research.ResearchRunnerIntegrationTests.test_filtered_contacts_retain_original_ineligibility) ... ok
+test_frozen_policy_and_tracker_loaded_without_mutating_proposal (test_libero_research.ResearchRunnerIntegrationTests.test_frozen_policy_and_tracker_loaded_without_mutating_proposal) ... ok
+test_hand_target_depth_in_approach_is_not_research_exempt (test_libero_research.ResearchRunnerIntegrationTests.test_hand_target_depth_in_approach_is_not_research_exempt) ... ok
+test_loaded_depth_growth_requires_seven_samples (test_libero_research.ResearchRunnerIntegrationTests.test_loaded_depth_growth_requires_seven_samples) ... ok
+test_malformed_or_nonfinite_contact_is_unknown_stop (test_libero_research.ResearchRunnerIntegrationTests.test_malformed_or_nonfinite_contact_is_unknown_stop) ... ok
+test_module_import_requires_no_engine_or_array_package (test_libero_research.ResearchRunnerIntegrationTests.test_module_import_requires_no_engine_or_array_package) ... ok
+test_non_target_body_contact_stops_immediately (test_libero_research.ResearchRunnerIntegrationTests.test_non_target_body_contact_stops_immediately) ... ok
+test_original_exact_two_mm_boundary_retained (test_libero_research.ResearchRunnerIntegrationTests.test_original_exact_two_mm_boundary_retained) ... ok
+test_persistent_deep_contact_requires_seventeen_samples (test_libero_research.ResearchRunnerIntegrationTests.test_persistent_deep_contact_requires_seventeen_samples) ... ok
+test_rolling_load_stops_without_a_deep_contact (test_libero_research.ResearchRunnerIntegrationTests.test_rolling_load_stops_without_a_deep_contact) ... ok
+test_single_in_scope_deep_contact_keeps_legacy_failure_but_only_warns_research (test_libero_research.ResearchRunnerIntegrationTests.test_single_in_scope_deep_contact_keeps_legacy_failure_but_only_warns_research) ... ok
+test_step_discontinuities_are_unknown_stop (test_libero_research.ResearchRunnerIntegrationTests.test_step_discontinuities_are_unknown_stop) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 5.035s
+
+OK
+FROZEN_SHADOW_EXACT: 4769 samples; legacy_stop=4769; research_stop=None; first_warning=4723; first_depth_warning=4769; contacts unchanged

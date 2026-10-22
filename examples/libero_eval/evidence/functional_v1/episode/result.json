@@ -1,0 +1,146 @@
+{
+  "schema": "nero_dh116_libero_episode_v1",
+  "hand": "R",
+  "mode": "research",
+  "episode_status": "COMPLETED",
+  "physics_steps": 6500,
+  "planned_physics_steps": 6500,
+  "recorded_commands": 260,
+  "native_task_success": false,
+  "native_task_success_source": "actual saved env.check_success() terminal result; not inferred",
+  "schedule_completed": true,
+  "new_physics_steps": 0,
+  "source_execution": "FINISHED",
+  "stop_reason": null,
+  "control_health": "PASS",
+  "simulator_health": {
+    "status": "PASS",
+    "checks": {
+      "recorded_finite_arrays": "PASS",
+      "monotonic_time": "PASS",
+      "warnings": "PASS",
+      "source_finite_check_including_qacc": "PASS"
+    },
+    "original_protection_thresholds": {
+      "scope": "NEW fixed right white-bowl criteria; not left/manufacturer/full-range certification",
+      "lift_from_own_settled_baseline_m_min": 0.02,
+      "continuous_hold_s_min": 1.0,
+      "hold_requires": [
+        "height >= settled+20mm",
+        "no bowl-table or other environmental support contacts",
+        "positive-force thumb and index contacts on opposing bowl sides"
+      ],
+      "steady_active_error_rad_max": 0.02,
+      "arm_tracking_error_rad_max": 0.1,
+      "linear_mimic_error_rad_max": 0.02,
+      "joint_limit_overshoot_rad_max": 0.01,
+      "eligible_internal_and_external_overlap_m_max": 0.002,
+      "warnings_allowed": 0,
+      "nonfinite_states_allowed": 0,
+      "native_task_result": "record native cabinet-placement predicate separately",
+      "strict_grasp_success_claim": false,
+      "stop": "First numerical/physical bound violation; no automatic retry or edits"
+    },
+    "scope": "Numerical health of saved fields; control, limits, Mimic and contact protection remain separate source-run results.",
+    "missing_evidence_is_not_pass": true
+  },
+  "limited_grasp_result": "PASS_FIXED_WHITE_BOWL",
+  "strict_grasp_success_claim": false,
+  "phase_steps": {
+    "settle_preshape": 250,
+    "approach_high": 2000,
+    "descend": 1750,
+    "close": 750,
+    "lift": 1000,
+    "hold": 750
+  },
+  "metrics": {
+    "reset_bowl_z_m": 0.97,
+    "own_settled_bowl_z_m": 0.8994107101029007,
+    "final_bowl_z_m": 0.9999043163440386,
+    "lift_from_reset_m": 0.029904316344038673,
+    "lift_from_own_settled_m": 0.1004936062411379,
+    "longest_continuous_valid_hold_s": 1.5,
+    "maxima": {
+      "arm_tracking_rad": 0.08902868111786189,
+      "active_tracking_rad": 0.05590574110466823,
+      "active_hold_tracking_rad": 0.04741493356285564,
+      "mimic_rad": 0.002109013192409137,
+      "joint_overshoot_rad": 0.0006736924127486166,
+      "robot_overlap_m": 0.00048527595036050635,
+      "bowl_lift_m": 0.10049676837696675
+    }
+  },
+  "formal_acceptance": "UNCHANGED; no model or formal threshold acceptance claimed",
+  "scope": "custom NERO + DH116 in native LIBERO; not an official leaderboard result",
+  "measurement_protocol": "functional_v1",
+  "functional_diagnostics": {
+    "protocol": "functional_v1",
+    "diagnostic_only": [
+      "OUTSIDE_REGISTERED_PATH_ENVELOPE",
+      "ACTIVE_HOLD_TRACKING"
+    ],
+    "first_diagnostics": {
+      "OUTSIDE_REGISTERED_PATH_ENVELOPE": {
+        "step": 245,
+        "phase": "settle_preshape",
+        "details": [
+          {
+            "joint": "gripper0_finger11",
+            "q_rad": 0.14716427280610606,
+            "lower_rad": -0.02,
+            "upper_rad": 0.14714413600034068,
+            "outside_rad": 2.013680576537502e-05,
+            "side": "upper"
+          }
+        ]
+      },
+      "ACTIVE_HOLD_TRACKING": {
+        "step": 5751,
+        "phase": "hold",
+        "details": {
+          "active_errors_rad": [
+            0.006547423209488673,
+            0.02643523690187774,
+            0.04741493356285564,
+            0.01567440928205302,
+            0.015957416951915635,
+            0.020393060746247953
+          ],
+          "maximum_rad": 0.04741493356285564,
+          "original_diagnostic_threshold_rad": 0.02
+        }
+      }
+    },
+    "diagnostic_step_counts": {
+      "OUTSIDE_REGISTERED_PATH_ENVELOPE": 5108,
+      "ACTIVE_HOLD_TRACKING": 750
+    },
+    "old_research_first_failure": {
+      "step": 245,
+      "reasons": [
+        "OUTSIDE_REGISTERED_PATH_ENVELOPE"
+      ]
+    },
+    "old_legacy_first_failure": {
+      "step": 245,
+      "reasons": [
+        "OUTSIDE_REGISTERED_PATH_ENVELOPE"
+      ]
+    },
+    "functional_first_failure": null,
+    "prefix_physics": {
+      "matched_steps": 245,
+      "required_steps": 245,
+      "first_difference": null,
+      "state_exclusions": [
+        "failures",
+        "legacy_failures",
+        "research"
+      ],
+      "all_contact_cache_fields_compared": true,
+      "comparison": "exact canonical JSON; no tolerance"
+    },
+    "previous_finite_path_geometry_scope": "Not asserted after the original envelope is exceeded."
+  }
+}

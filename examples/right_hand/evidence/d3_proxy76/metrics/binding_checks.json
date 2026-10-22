@@ -1,0 +1,7 @@
+{
+  "formal_right_source_links": 17,
+  "candidate_collision_geoms": 76,
+  "candidate_visuals_match_formal_right": 17,
+  "all_candidate_collision_bindings_match_manifest": true,
+  "parser": "build_right_proxy76.read_mesh and quaternion_matrix, applied asset scale then geom pose"
+}

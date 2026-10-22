@@ -1,0 +1,23 @@
+{
+  "source_face_ids_zero_based": [
+    6165,
+    6176
+  ],
+  "samples": 1024,
+  "seed": 222,
+  "limits": "Fixed finite area samples of the previously identified +X failure-facing source patch; not an entire working-face or global Hausdorff bound.",
+  "raw": {
+    "observed_max_distance_m": 9.269771786470505e-05,
+    "p95_m": 9.151751563836856e-05,
+    "minimum_nearest_point_to_cut_plane_m": 0.0027073270804698762,
+    "nearest_points_not_strictly_inside_any_piece": true,
+    "nearest_exposed_boundary_supported": true
+  },
+  "compiled": {
+    "observed_max_distance_m": 9.269762226865574e-05,
+    "p95_m": 9.151744418774507e-05,
+    "minimum_nearest_point_to_cut_plane_m": 0.0027073270772271403,
+    "nearest_points_not_strictly_inside_any_piece": true,
+    "nearest_exposed_boundary_supported": true
+  }
+}

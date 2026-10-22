@@ -1,0 +1,178 @@
+{
+  "schema": "right-white-bowl-001-offline-geometry-summary-v1",
+  "derivation": "Read-only aggregation and deterministic compression of the existing geometry report; no geometric query, model creation, or dynamics.",
+  "A_GATE": "NO_SOURCE_CROSSING_AT_SUPPLIED_FINITE_SAMPLES",
+  "head": "8ffe0333c344669e3e3ad66125ba18f0cf48c0f6",
+  "baseline_head": "8ffe0333c344669e3e3ad66125ba18f0cf48c0f6",
+  "mujoco_version": "3.2.3",
+  "candidate": "/data_robot/projects/.worktrees/nero_dh116_right/runs/d3_right_white_bowl_001/candidate.json",
+  "candidate_sha256": "ba767b42f99d3562255909bde5c970d529ba254769029ec1cd7a98faf76af0fb",
+  "formal_model_sha256": "739d3d29bbfd4a6468fb8b75f4de09b719c0f96abb39508959c1dfc33a84b9cc",
+  "checker_sha256": "1aef93fcd594a50360cd7c74a492939b9c3ff071b5be236ce1fd4e84c24178aa",
+  "source_mesh_count": 17,
+  "source_meshes": {
+    "gripper0_base_link": {
+      "path": "/data_robot/projects/.worktrees/nero_dh116_right/meshes/dh116_right/source/base_link.STL",
+      "sha256": "094504fed409afe137eafa6643c36f081934df873ef1cf9924ebb9725436b161",
+      "triangle_count": 101775
+    },
+    "gripper0_finger11_link": {
+      "path": "/data_robot/projects/.worktrees/nero_dh116_right/meshes/dh116_right/source/finger11_link.STL",
+      "sha256": "5659ee7dd15833a86f30c2138685baf48671fa7458a79cbb1d611ddb7f3648c8",
+      "triangle_count": 4192
+    },
+    "gripper0_finger12_link": {
+      "path": "/data_robot/projects/.worktrees/nero_dh116_right/meshes/dh116_right/source/finger12_link.STL",
+      "sha256": "8807c48538b9396e1d132df7c5cf6ee0a44c28c4dcb759b5b00a74003b715e67",
+      "triangle_count": 21475
+    },
+    "gripper0_finger13_link": {
+      "path": "/data_robot/projects/.worktrees/nero_dh116_right/meshes/dh116_right/source/finger13_link.STL",
+      "sha256": "594501a21c86d1d19b73cf17572b7a04ae488c5fee4b623e25c618dd15eb3419",
+      "triangle_count": 13020
+    },
+    "gripper0_finger14_link": {
+      "path": "/data_robot/projects/.worktrees/nero_dh116_right/meshes/dh116_right/source/finger14_link.STL",
+      "sha256": "c58b2a741f13cbe1da9b6bbffb0ce6acf97de28b829fe45ea65458313efff449",
+      "triangle_count": 6216
+    },
+    "gripper0_finger21_link": {
+      "path": "/data_robot/projects/.worktrees/nero_dh116_right/meshes/dh116_right/source/finger21_link.STL",
+      "sha256": "7162d86cefa849458536cbb77968560dbf4e6c7a8b1734777640f9da1f828886",
+      "triangle_count": 31866
+    },
+    "gripper0_finger22_link": {
+      "path": "/data_robot/projects/.worktrees/nero_dh116_right/meshes/dh116_right/source/finger22_link.STL",
+      "sha256": "5ebb8a2084495cb9e87b6ee531681500cfe5a37280320e97270d6e52c804081d",
+      "triangle_count": 16784
+    },
+    "gripper0_finger23_link": {
+      "path": "/data_robot/projects/.worktrees/nero_dh116_right/meshes/dh116_right/source/finger23_link.STL",
+      "sha256": "ccbd2de17dac2fe356e4275240f5f00f8eee01dd2f32a44fc5b1e150f93d99f6",
+      "triangle_count": 5876
+    },
+    "gripper0_finger31_link": {
+      "path": "/data_robot/projects/.worktrees/nero_dh116_right/meshes/dh116_right/source/finger31_link.STL",
+      "sha256": "2d4ec902f4b2d06872cfbda2e5a63f387aa82dfd522fd44da5e38b83f90cf2b6",
+      "triangle_count": 31866
+    },
+    "gripper0_finger32_link": {
+      "path": "/data_robot/projects/.worktrees/nero_dh116_right/meshes/dh116_right/source/finger32_link.STL",
+      "sha256": "f3cf0d1634338d331bc58ae7838023925a1654003f5728423de25808f490821e",
+      "triangle_count": 13724
+    },
+    "gripper0_finger33_link": {
+      "path": "/data_robot/projects/.worktrees/nero_dh116_right/meshes/dh116_right/source/finger33_link.STL",
+      "sha256": "2082e780c44d9e2ac91a9c355c3751f084fcbb42c39e33961178b81e5b3ce147",
+      "triangle_count": 5876
+    },
+    "gripper0_finger41_link": {
+      "path": "/data_robot/projects/.worktrees/nero_dh116_right/meshes/dh116_right/source/finger41_link.STL",
+      "sha256": "5366f649baa0c5c29cc1afdbcc6163b2bcb9001f0b9b8ae69a213f5209860289",
+      "triangle_count": 31866
+    },
+    "gripper0_finger42_link": {
+      "path": "/data_robot/projects/.worktrees/nero_dh116_right/meshes/dh116_right/source/finger42_link.STL",
+      "sha256": "4382f6f699a2cb342f00f5bf4ddbe20b7d2b664b522c5abcd49cfee551e748ae",
+      "triangle_count": 16784
+    },
+    "gripper0_finger43_link": {
+      "path": "/data_robot/projects/.worktrees/nero_dh116_right/meshes/dh116_right/source/finger43_link.STL",
+      "sha256": "4e0b20fc9c464825b466d3ca51ff4557f70d4a3ea935a00b09ad5639722251df",
+      "triangle_count": 5876
+    },
+    "gripper0_finger51_link": {
+      "path": "/data_robot/projects/.worktrees/nero_dh116_right/meshes/dh116_right/source/finger51_link.STL",
+      "sha256": "f1b5983e1cd4b29f5e4609001c525e93ff80bb1d921711a6327fd8e688fad1db",
+      "triangle_count": 31866
+    },
+    "gripper0_finger52_link": {
+      "path": "/data_robot/projects/.worktrees/nero_dh116_right/meshes/dh116_right/source/finger52_link.STL",
+      "sha256": "7c5f953a3cde495eae505dfa3ea248e768c69ab911c21f61825ddb42b4531994",
+      "triangle_count": 12348
+    },
+    "gripper0_finger53_link": {
+      "path": "/data_robot/projects/.worktrees/nero_dh116_right/meshes/dh116_right/source/finger53_link.STL",
+      "sha256": "63eb67492fce45f80b798d9ead4d194a9eafdae1ed6c0893820222ef3ffedbf1",
+      "triangle_count": 7066
+    }
+  },
+  "input_manifest_entries": 97,
+  "input_manifest_canonical_json_sha256": "0acca445587cde58520f08d995a3d657021c31148ee9ff25fcd92e118c8c6ed8",
+  "inputs_unchanged": true,
+  "sample_count_supplied": 921,
+  "poses_started": 921,
+  "poses_fully_checked": 921,
+  "eligible_pairs_per_pose": 115,
+  "pair_pose_queries_completed": 105915,
+  "coverage_identity": "921 supplied finite poses x 115 eligible nonadjacent internal hand pairs = 105915 completed pair-pose checks",
+  "all_supplied_samples_and_eligible_pairs_checked": true,
+  "poses_not_visited": 0,
+  "unvisited_pair_pose_queries": 0,
+  "classification_counts": {
+    "true_negative_source_crossing": 105915
+  },
+  "source_surface_classification_counts": {
+    "surface_disjoint_float64": 105915
+  },
+  "strict_source_crossings": 0,
+  "boundary_or_numerical_contacts": 0,
+  "first_source_crossing": null,
+  "compiled_convex_cutoff_counts": {
+    "distmax_0_capped_zero": 105915,
+    "distmax_0_01_positive": 105915,
+    "distmax_0_01_positive_below_cutoff": 21018,
+    "distmax_0_01_capped_at_or_above_cutoff": 84897
+  },
+  "minimum_positive_compiled_distance_at_distmax_0_01m": {
+    "distance_m": 0.0018285133401215042,
+    "sample_index_zero_based": 789,
+    "sample_id": "m197_quarter1",
+    "phase": "lift",
+    "time_s": 9.8625,
+    "pair_index_zero_based": 61,
+    "body_names": [
+      "gripper0_finger21_link",
+      "gripper0_finger31_link"
+    ],
+    "geom_ids": [
+      79,
+      85
+    ]
+  },
+  "worst_negative_compiled_distance_at_distmax_0m": null,
+  "maximum_compiled_overlap_proxy_m_at_distmax_0m": 0.0,
+  "distance_interpretation": "distmax=0 zero is capped and does not establish positive clearance. distmax=0.01 positive minimum is the minimum returned convex proxy, not a source-triangle clearance. At/above-cutoff values are capped.",
+  "zero_physics_proof": {
+    "mj_geomDistance": 211830,
+    "mj_kinematics": 921,
+    "mj_name2id": 0,
+    "physics_steps": 0,
+    "forward_calls": 0,
+    "constraint_solves": 0,
+    "integration_calls": 0,
+    "collision_calls": 0,
+    "forbidden_attempts": 0
+  },
+  "geometry_report": {
+    "raw_path": "geometry.json",
+    "raw_bytes": 361169296,
+    "raw_sha256": "134ff717d4dcfe87ede149fbc24f6887b01e8b3a81a8db1da839b0e0403de1fd",
+    "gzip_path": "geometry.json.gz",
+    "gzip_bytes": 20823350,
+    "gzip_sha256": "570ae09d4599d9677e23184657337cdf2ec21ed16045d17715351ad4b26e3b3a",
+    "gzip_compresslevel": 6,
+    "gzip_mtime": 0,
+    "gzip_original_filename": "",
+    "decompressed_sha256_verified": true,
+    "raw_retained": true
+  },
+  "limitations": [
+    "Finite supplied poses only; no guarantee between samples and no new interpolation.",
+    "A first crossing stops all later pairs/poses; unvisited path is explicitly counted.",
+    "Float64 BVH/triangle predicates; strict witnesses rechecked with 60-digit Decimal on stored transformed float64 triangles, not exact symbolic FK.",
+    "Source surface separation does not establish disjoint physical solids for open meshes or rule out containment. No task-success or grasp claim follows.",
+    "Only eligible nonadjacent internal right-hand pairs are checked; excluded pairs, arm, table, bowl and other external geometry are outside this report.",
+    "MuJoCo 3.2.3 convex results depend on distmax; distmax=0 negative is the overlap proxy, while zero is a capped result rather than positive clearance."
+  ]
+}

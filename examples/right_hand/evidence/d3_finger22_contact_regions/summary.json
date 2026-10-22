@@ -1,0 +1,124 @@
+{
+  "status": "GEOMETRIC_AND_LOCAL_FRONT_PROVENANCE_CERTIFIED_GLOBAL_SEMANTICS_PARTIAL",
+  "model_sha256": "7f9d84061c3e7d176763c688d2389f8b3d3e38386b8e990a0fa047ff2bc3329c",
+  "all36_boxes_four_pieces_pairs": 144,
+  "pair_counts": {
+    "SEPARATED": 143,
+    "STRICT_OVERLAP": 1
+  },
+  "original_4731_early_stop": "UNCHANGED_UNKNOWN",
+  "new_dynamic_steps": 0,
+  "new_Reset_or_FK_or_collision": 0,
+  "forbidden_API_calls": {},
+  "protected_original_files_unchanged": true,
+  "user_readme_unchanged": true,
+  "formal_numeric_status": "FAIL_UNCHANGED_1e-10m",
+  "unique_contact_candidate": {
+    "piece": "gripper0_finger22_local_01",
+    "face": 285,
+    "dimension": 2
+  },
+  "source_gap_m": 4.2765109877300646e-05,
+  "front_refinement": {
+    "face": 285,
+    "source_face": 6175,
+    "whole_source_face_envelope": {
+      "certified": true,
+      "source_face": 6175,
+      "complete_source_triangles_considered": 16784,
+      "projecting_triangle_ids": [
+        625,
+        626,
+        1587,
+        1588,
+        6173,
+        6174,
+        6175,
+        6176,
+        6177,
+        6186,
+        6187,
+        6188,
+        8410,
+        8411,
+        8412,
+        8413,
+        8414
+      ],
+      "source_forward_excess_upper_exact_m": "0",
+      "source_forward_excess_upper_m": 0.0,
+      "maximum_owner": 6173,
+      "all_projected_source_points_at_or_behind_reference_plane": true,
+      "limits": "Directional exterior surface provenance, not a watertight material, tolerance waiver or release certificate."
+    },
+    "contact_patch_envelope": {
+      "certified": true,
+      "source_face": 6175,
+      "complete_source_triangles_considered": 16784,
+      "projecting_triangle_ids": [
+        625,
+        6175
+      ],
+      "source_forward_excess_upper_exact_m": "0",
+      "source_forward_excess_upper_m": 0.0,
+      "maximum_owner": 6175,
+      "all_projected_source_points_at_or_behind_reference_plane": true,
+      "limits": "Directional exterior surface provenance, not a watertight material, tolerance waiver or release certificate."
+    },
+    "projected_provenance": {
+      "status": "FUNCTIONAL_SOURCE_PATCH_APPROXIMATION",
+      "uncovered_projected_area_m2": 0.0,
+      "uncovered_area_exact_m2": "0",
+      "all_registered_source_projection_covered": true,
+      "source_ray_offset_range_m": [
+        4.831318411581165e-05,
+        4.9024730891494276e-05
+      ],
+      "limits": "Functional provenance only; no new fidelity budget, material certificate or grasp/release PASS."
+    },
+    "manifold_source_edge_to_existing_workface6176": true,
+    "local_front_provenance_confirmed": true,
+    "scope": "This contact patch only; do not mark entire proxy facet285 or all +X faces as functional. No geometry-fidelity waiver."
+  },
+  "cached_native_pair_regressions": 12,
+  "all_native_pairs_detected": true,
+  "synthetic": [
+    {
+      "label": "root_bore",
+      "decision": "STOP_RISK_ENVELOPE"
+    },
+    {
+      "label": "cavity_closure",
+      "decision": "STOP_RISK_ENVELOPE"
+    },
+    {
+      "label": "registered_functional_patch",
+      "decision": "FUNCTIONAL_PROVENANCE_ONLY_NOT_RELEASE_PASS"
+    }
+  ],
+  "whole_facet_counts": {
+    "gripper0_finger22_local_00": {
+      "ROOT_BORE_RISK_ENVELOPE": 2686
+    },
+    "gripper0_finger22_local_01": {
+      "CUT_SEAM_RISK_ENVELOPE": 536,
+      "UNKNOWN_CAVITY_OR_UNREGISTERED_SURFACE": 44
+    },
+    "gripper0_finger22_local_02": {
+      "CUT_SEAM_RISK_ENVELOPE": 505,
+      "UNKNOWN_CAVITY_OR_UNREGISTERED_SURFACE": 287
+    },
+    "gripper0_finger22_local_03": {
+      "CUT_SEAM_RISK_ENVELOPE": 307,
+      "UNKNOWN_CAVITY_OR_UNREGISTERED_SURFACE": 2479
+    }
+  },
+  "numerical_interpretation": {
+    "convex_predicates": "Exact integer support and rational clipping on frozen support-vertex hulls; no residual threshold",
+    "g22_geometry_arithmetic_guard_m": 1.7388106817250946e-13,
+    "compiled_to_source_correspondence_guard_m": 3.032172567760128e-09,
+    "formal_threshold_m": 1e-10,
+    "formal_status": "FAIL_UNCHANGED",
+    "MPR_midpoint_error_bound_assumed": null
+  }
+}

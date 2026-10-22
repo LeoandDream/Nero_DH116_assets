@@ -1,0 +1,18 @@
+{
+  "new_engine_operations": 0,
+  "exporter_sha256": "8829122e86919c2e50621ad788f167a7ecedbdd7bf747d0f8c883eabe2e7abfc",
+  "steps_sha256": "7b9d3d1e1c2a03572fc2e38fe492472bc202b854ac4d498d235adb2f1a7acbd9",
+  "expanded_actions_13_sha256": "12293f445fe3f07f40c98aade097f634cd81686b649b904633b2176026aea444",
+  "rows": 4775,
+  "all_state_action_ctrl_exact": true,
+  "both_failure_channels_preserved": true,
+  "new_rollout": false,
+  "old_logs_preserved": true,
+  "native_task_success": false,
+  "simulator_health": "PASS",
+  "camera_observations": 191,
+  "camera_files_referenced_and_present": 382,
+  "videos": 2,
+  "final_source_reexport_exact": true,
+  "previous_steps_sha256_unchanged": true
+}

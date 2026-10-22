@@ -1,0 +1,72 @@
+{
+  "schema": "right-white-bowl-runtime-review-v1",
+  "review_method": "Read-only JSON/XML/source/hash and saved-trace inspection; no simulator calls during review",
+  "trial": "/data_robot/verification/nero_dh116_right/runs/d3_right_white_bowl_trial_001",
+  "formal_model_sha256": "739d3d29bbfd4a6468fb8b75f4de09b719c0f96abb39508959c1dfc33a84b9cc",
+  "candidate_sha256": "ba767b42f99d3562255909bde5c970d529ba254769029ec1cd7a98faf76af0fb",
+  "geometry_sha256": "134ff717d4dcfe87ede149fbc24f6887b01e8b3a81a8db1da839b0e0403de1fd",
+  "runner_sha256": "72355fc828e2e7f03fdb95349242c89c01dfdf71286e157eefaa63c5ef3c0973",
+  "formal_right_identity": {
+    "independently_recompared_fields": 2716,
+    "field_differences": 0,
+    "right_source_STL_assets": 17,
+    "right_coarse_collision_geoms": 17,
+    "all_right_collision_masks": [1, 1],
+    "contact_excludes": [["robot0_base_link", "robot0_link1"]],
+    "reset_robot_qpos18_exactly_matches_formal_keyframe0": true,
+    "reset_qvel_and_ctrl_zero": true,
+    "controller": {"backend": "JointPositionController", "kp": 50.0, "kd": 14.142135623730951, "initial_goal_qpos": null}
+  },
+  "independence_and_freeze": {
+    "scene_resource_references": 119,
+    "all_scene_resources_resolve_inside_independent_checkout": true,
+    "current_independent_checkout_recorded_hash_mismatches": 0,
+    "worktree_counterpart_files_compared": 98,
+    "worktree_counterpart_hash_mismatches": 0,
+    "recorded_input_hashes_unchanged_before_after": true,
+    "serialized_scene_hash_matches_frozen_record": true,
+    "runtime_prefix": "/data_robot/verification/nero_dh116_right/.reference-env",
+    "LIBERO_pth_and_config_resolve_inside_independent_checkout": true,
+    "runner_and_adapter_contain_no_data_robot_projects_path": true,
+    "final_prelaunch_runner_hash_matches_actual_run": true,
+    "limitation": "File-chain, resource and environment-configuration verification; full runtime sys.modules/module_paths were not recorded."
+  },
+  "call_accounting": {
+    "constructors": 1, "explicit_native_resets": 1, "nonintegrating_mj_step1": 2,
+    "setup_mj_forward": 6, "dynamic_mj_forward": 1001, "total_mj_forward": 1007,
+    "physical_mj_step": 501, "mj_step2": 0, "dynamic_attempts": 1,
+    "forward_explanation": "First physical step uses one forward because the freshly initialized controller cache is current; the following 500 steps each use two."
+  },
+  "saved_trace_review": {
+    "state_rows": 501, "contact_rows": 501, "sequential_steps": true,
+    "all_actions_exactly_match_frozen_candidate": true, "all_saved_states_finite": true,
+    "warning_rows": 0, "failure_rows": 1, "robot_contact_rows": 0, "hand_bowl_contact_rows": 0,
+    "first_failure": {"step": 501, "macro": 20, "phase": "approach_high", "time_s": 1.0020000000000007, "joint": "robot0_joint6", "error_rad": 0.1013460045341246, "bound_rad": 0.1},
+    "result": {"B": "FAIL", "control_health": "FAIL", "grasp_result": "UNKNOWN_EARLY_STOP", "native_task_result": false},
+    "limitation": "Stopped during approach before bowl contact, closure, lift or hold; no grasp capability conclusion follows."
+  },
+  "q6_timing_evidence": {
+    "right_approach_total_target_delta_rad": -0.5506731383153981,
+    "right_target_increment_per_50ms_rad": -0.014119824059369124,
+    "right_average_target_slope_rad_s": -0.28239648118738364,
+    "right_step500": {"target_rad": -0.30640527821892444, "actual_rad": -0.2189311339364644, "absolute_error_rad": 0.08747414428246003},
+    "right_step501": {"target_rad": -0.32052510227829356, "actual_rad": -0.21917909774416897, "absolute_error_rad": 0.1013460045341246},
+    "right_max_abs_q6_control_Nm": 0.040101444973836387,
+    "formal_q6_control_range_Nm": [-100, 100],
+    "left_reference": {
+      "trace": "/data_robot/verification/nero_dh116_d1b/runs/d2/reference_001/bounded_grasp.jsonl",
+      "approach_total_target_delta_rad": -0.27153785777209205,
+      "target_increment_per_50ms_rad": -0.006962509173643383,
+      "average_target_slope_rad_s": -0.13925018347286772,
+      "max_abs_q6_error_first501_steps_rad": 0.04739394754529888,
+      "scope": "Timing/path numerical reference only. Different hand and path; no claim of passing the new right-hand criteria."
+    }
+  },
+  "priority_next_hypothesis": {
+    "status": "PROPOSED_NOT_EXECUTED; current round stopped",
+    "intervention": "Approximately double approach_high duration from 40 to 80 macros at unchanged 20 Hz; retain right spatial path, hand shape, other phases, model, controller, native reset and all criteria.",
+    "prediction": "Halving approach target increments should prevent the observed contact-free q6 tracking-bound stop if this timing choice sufficiently explains that stop.",
+    "falsifier": "The unchanged 0.1 rad bound is still exceeded during the slower contact-free approach.",
+    "interpretation_limit": "Passing this counterfactual would establish removal of the observed early stop, not grasp success or a sole root cause."
+  }
+}

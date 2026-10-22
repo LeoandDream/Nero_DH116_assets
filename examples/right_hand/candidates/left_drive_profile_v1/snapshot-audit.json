@@ -1,0 +1,3343 @@
+{
+  "schema": "nero_drive_snapshot_audit_v1",
+  "status": "PASS_OFFLINE_SOURCE_AND_SAVED_SNAPSHOT_CONCORDANCE",
+  "scope": {
+    "worktree": "/data_robot/projects/.worktrees/nero_dh116_finger22_risk_review",
+    "head": "24c0d44dcaab3eeac52d2b0c8f02dfd0fec15773",
+    "profile_to_prepare": "R_close149_left_drive_profile_v1",
+    "offline_only": true,
+    "new_engine_operations": 0,
+    "python_imports_used": [
+      "gzip",
+      "json",
+      "pathlib",
+      "hashlib",
+      "xml.etree.ElementTree"
+    ],
+    "repository_writes": 0,
+    "simulation_execution_authorized": false,
+    "active_joint_names": [
+      "finger11",
+      "finger12",
+      "finger21",
+      "finger31",
+      "finger41",
+      "finger51"
+    ],
+    "all_hand_hinge_joint_names": [
+      "finger11",
+      "finger12",
+      "finger13",
+      "finger21",
+      "finger22",
+      "finger31",
+      "finger32",
+      "finger41",
+      "finger42",
+      "finger51",
+      "finger52"
+    ],
+    "mapping": "Source gripper0_<finger>, raw hand <finger>, saved JOINT name gripper0_<finger>; saved ACTUATOR selected by bindings.actuator_trnid == gripper0_<finger>. Array indices recorded only as metadata, never used for selection."
+  },
+  "paths_and_sha256": {
+    "right_source_xml": {
+      "path": "examples/right_hand/candidates/finger22_local/model.xml",
+      "absolute_path": "/data_robot/projects/.worktrees/nero_dh116_finger22_risk_review/examples/right_hand/candidates/finger22_local/model.xml",
+      "sha256": "7f9d84061c3e7d176763c688d2389f8b3d3e38386b8e990a0fa047ff2bc3329c",
+      "bytes": 157256
+    },
+    "right_actual_hand_xml": {
+      "path": "examples/libero_eval/evidence/close149/raw/hand.xml",
+      "absolute_path": "/data_robot/projects/.worktrees/nero_dh116_finger22_risk_review/examples/libero_eval/evidence/close149/raw/hand.xml",
+      "sha256": "da89b33d1d624826336d24ebaeba2481dbc7c839f239d8119321b1ffeb6fb27f",
+      "bytes": 46920
+    },
+    "right_preflight": {
+      "path": "examples/libero_eval/evidence/close149/raw/robot-physical-preflight.json.gz",
+      "absolute_path": "/data_robot/projects/.worktrees/nero_dh116_finger22_risk_review/examples/libero_eval/evidence/close149/raw/robot-physical-preflight.json.gz",
+      "sha256": "412b0f69c6c0dd6e1898894f0fb9bbb076984dce225ec6cf641474e38441728d",
+      "bytes": 132179,
+      "uncompressed_sha256": "99feb594de682455dfdd2e58b34e2037ecfbefe371c7fd3e3646fb2b93bd2aee"
+    },
+    "left_source_xml": {
+      "path": "mjcf/nero_dh116.xml",
+      "absolute_path": "/data_robot/projects/.worktrees/nero_dh116_finger22_risk_review/mjcf/nero_dh116.xml",
+      "sha256": "c446124b7d938aa6e00ba5914047001de66c2a2c162e7dea1644437e5a85cb33",
+      "bytes": 67614
+    },
+    "left_compiled_fixture": {
+      "path": "examples/libero_reference/fixtures/compiled-model.json",
+      "absolute_path": "/data_robot/projects/.worktrees/nero_dh116_finger22_risk_review/examples/libero_reference/fixtures/compiled-model.json",
+      "sha256": "910700d6223d1a4a20b5e1baff79dced07c9aa55b520093fa105d6ed83564bd7",
+      "bytes": 212583
+    },
+    "left_saved_source_preflight": {
+      "path": "examples/libero_reference/evidence/source-preflight.json",
+      "absolute_path": "/data_robot/projects/.worktrees/nero_dh116_finger22_risk_review/examples/libero_reference/evidence/source-preflight.json",
+      "sha256": "4885d9a2b9ce04e455db995ac76f480e3dc590535e7e27e1534d746f3f60cb66",
+      "bytes": 59471
+    },
+    "left_saved_runtime_preflight": {
+      "path": "examples/libero_reference/evidence/runtime-preflight.json",
+      "absolute_path": "/data_robot/projects/.worktrees/nero_dh116_finger22_risk_review/examples/libero_reference/evidence/runtime-preflight.json",
+      "sha256": "deaa9946061b2752742bcbc1fa402fd9925f4103ca8ca105c02d5faef19198cb",
+      "bytes": 64704
+    },
+    "left_episode_manifest": {
+      "path": "examples/libero_eval/evidence/left_001/manifest.json",
+      "absolute_path": "/data_robot/projects/.worktrees/nero_dh116_finger22_risk_review/examples/libero_eval/evidence/left_001/manifest.json",
+      "sha256": "cb80ae358d853c20d69c83b1aaeffbd53c5093c8633f0c627fb881ef236cf19d",
+      "bytes": 3348
+    }
+  },
+  "right": {
+    "source_xml": {
+      "compiler_attributes": {
+        "angle": "radian",
+        "inertiagrouprange": "0 0",
+        "autolimits": "true"
+      },
+      "default_element_count": 0,
+      "actuators": {
+        "finger11": {
+          "tag": "position",
+          "attributes": {
+            "name": "gripper0_urdf_act_finger11",
+            "joint": "gripper0_finger11",
+            "ctrllimited": "true",
+            "ctrlrange": "0 1.047198",
+            "kp": "50",
+            "kv": "2.0"
+          },
+          "kp_exact_xml_string": "50",
+          "kv_exact_xml_string": "2.0",
+          "omitted_relevant_attributes": [
+            "gear",
+            "forcelimited",
+            "forcerange",
+            "gainprm",
+            "biasprm"
+          ]
+        },
+        "finger12": {
+          "tag": "position",
+          "attributes": {
+            "name": "gripper0_urdf_act_finger12",
+            "joint": "gripper0_finger12",
+            "ctrllimited": "true",
+            "ctrlrange": "0 0.523599",
+            "kp": "50",
+            "kv": "2.0"
+          },
+          "kp_exact_xml_string": "50",
+          "kv_exact_xml_string": "2.0",
+          "omitted_relevant_attributes": [
+            "gear",
+            "forcelimited",
+            "forcerange",
+            "gainprm",
+            "biasprm"
+          ]
+        },
+        "finger21": {
+          "tag": "position",
+          "attributes": {
+            "name": "gripper0_urdf_act_finger21",
+            "joint": "gripper0_finger21",
+            "ctrllimited": "true",
+            "ctrlrange": "0 1.396263",
+            "kp": "50",
+            "kv": "2.0"
+          },
+          "kp_exact_xml_string": "50",
+          "kv_exact_xml_string": "2.0",
+          "omitted_relevant_attributes": [
+            "gear",
+            "forcelimited",
+            "forcerange",
+            "gainprm",
+            "biasprm"
+          ]
+        },
+        "finger31": {
+          "tag": "position",
+          "attributes": {
+            "name": "gripper0_urdf_act_finger31",
+            "joint": "gripper0_finger31",
+            "ctrllimited": "true",
+            "ctrlrange": "0 1.396263",
+            "kp": "50",
+            "kv": "2.0"
+          },
+          "kp_exact_xml_string": "50",
+          "kv_exact_xml_string": "2.0",
+          "omitted_relevant_attributes": [
+            "gear",
+            "forcelimited",
+            "forcerange",
+            "gainprm",
+            "biasprm"
+          ]
+        },
+        "finger41": {
+          "tag": "position",
+          "attributes": {
+            "name": "gripper0_urdf_act_finger41",
+            "joint": "gripper0_finger41",
+            "ctrllimited": "true",
+            "ctrlrange": "0 1.396263",
+            "kp": "50",
+            "kv": "2.0"
+          },
+          "kp_exact_xml_string": "50",
+          "kv_exact_xml_string": "2.0",
+          "omitted_relevant_attributes": [
+            "gear",
+            "forcelimited",
+            "forcerange",
+            "gainprm",
+            "biasprm"
+          ]
+        },
+        "finger51": {
+          "tag": "position",
+          "attributes": {
+            "name": "gripper0_urdf_act_finger51",
+            "joint": "gripper0_finger51",
+            "ctrllimited": "true",
+            "ctrlrange": "0 1.396263",
+            "kp": "50",
+            "kv": "2.0"
+          },
+          "kp_exact_xml_string": "50",
+          "kv_exact_xml_string": "2.0",
+          "omitted_relevant_attributes": [
+            "gear",
+            "forcelimited",
+            "forcerange",
+            "gainprm",
+            "biasprm"
+          ]
+        }
+      },
+      "joints": {
+        "finger11": {
+          "attributes": {
+            "name": "gripper0_finger11",
+            "type": "hinge",
+            "pos": "0 0 0",
+            "axis": "0 0 -1",
+            "range": "0 1.047198",
+            "damping": "2.0",
+            "armature": "0.01",
+            "frictionloss": "0"
+          },
+          "type_xml_string": "hinge",
+          "omitted_relevant_attributes": [
+            "actuatorfrclimited",
+            "actuatorfrcrange"
+          ]
+        },
+        "finger12": {
+          "attributes": {
+            "name": "gripper0_finger12",
+            "type": "hinge",
+            "pos": "0 0 0",
+            "axis": "0 -1 0",
+            "range": "0 0.523599",
+            "damping": "2.0",
+            "armature": "0.01",
+            "frictionloss": "0"
+          },
+          "type_xml_string": "hinge",
+          "omitted_relevant_attributes": [
+            "actuatorfrclimited",
+            "actuatorfrcrange"
+          ]
+        },
+        "finger13": {
+          "attributes": {
+            "name": "gripper0_finger13",
+            "type": "hinge",
+            "pos": "0 0 0",
+            "axis": "0 -1 0",
+            "range": "0.004592 0.594583",
+            "damping": "2.0",
+            "armature": "0.01",
+            "frictionloss": "0"
+          },
+          "type_xml_string": "hinge",
+          "omitted_relevant_attributes": [
+            "actuatorfrclimited",
+            "actuatorfrcrange"
+          ]
+        },
+        "finger21": {
+          "attributes": {
+            "name": "gripper0_finger21",
+            "type": "hinge",
+            "pos": "0 0 0",
+            "axis": "0 1 0",
+            "range": "0 1.396263",
+            "damping": "2.0",
+            "armature": "0.01",
+            "frictionloss": "0"
+          },
+          "type_xml_string": "hinge",
+          "omitted_relevant_attributes": [
+            "actuatorfrclimited",
+            "actuatorfrcrange"
+          ]
+        },
+        "finger22": {
+          "attributes": {
+            "name": "gripper0_finger22",
+            "type": "hinge",
+            "pos": "0 0 0",
+            "axis": "0 1 0",
+            "range": "0.011072 1.687426",
+            "damping": "2.0",
+            "armature": "0.01",
+            "frictionloss": "0"
+          },
+          "type_xml_string": "hinge",
+          "omitted_relevant_attributes": [
+            "actuatorfrclimited",
+            "actuatorfrcrange"
+          ]
+        },
+        "finger31": {
+          "attributes": {
+            "name": "gripper0_finger31",
+            "type": "hinge",
+            "pos": "0 0 0",
+            "axis": "0 1 0",
+            "range": "0 1.396263",
+            "damping": "2.0",
+            "armature": "0.01",
+            "frictionloss": "0"
+          },
+          "type_xml_string": "hinge",
+          "omitted_relevant_attributes": [
+            "actuatorfrclimited",
+            "actuatorfrcrange"
+          ]
+        },
+        "finger32": {
+          "attributes": {
+            "name": "gripper0_finger32",
+            "type": "hinge",
+            "pos": "0 0 0",
+            "axis": "0 1 0",
+            "range": "0.011072 1.687426",
+            "damping": "2.0",
+            "armature": "0.01",
+            "frictionloss": "0"
+          },
+          "type_xml_string": "hinge",
+          "omitted_relevant_attributes": [
+            "actuatorfrclimited",
+            "actuatorfrcrange"
+          ]
+        },
+        "finger41": {
+          "attributes": {
+            "name": "gripper0_finger41",
+            "type": "hinge",
+            "pos": "0 0 0",
+            "axis": "0 1 0",
+            "range": "0 1.396263",
+            "damping": "2.0",
+            "armature": "0.01",
+            "frictionloss": "0"
+          },
+          "type_xml_string": "hinge",
+          "omitted_relevant_attributes": [
+            "actuatorfrclimited",
+            "actuatorfrcrange"
+          ]
+        },
+        "finger42": {
+          "attributes": {
+            "name": "gripper0_finger42",
+            "type": "hinge",
+            "pos": "0 0 0",
+            "axis": "0 1 0",
+            "range": "0.011072 1.687426",
+            "damping": "2.0",
+            "armature": "0.01",
+            "frictionloss": "0"
+          },
+          "type_xml_string": "hinge",
+          "omitted_relevant_attributes": [
+            "actuatorfrclimited",
+            "actuatorfrcrange"
+          ]
+        },
+        "finger51": {
+          "attributes": {
+            "name": "gripper0_finger51",
+            "type": "hinge",
+            "pos": "0 0 0",
+            "axis": "0 1 0",
+            "range": "0 1.396263",
+            "damping": "2.0",
+            "armature": "0.01",
+            "frictionloss": "0"
+          },
+          "type_xml_string": "hinge",
+          "omitted_relevant_attributes": [
+            "actuatorfrclimited",
+            "actuatorfrcrange"
+          ]
+        },
+        "finger52": {
+          "attributes": {
+            "name": "gripper0_finger52",
+            "type": "hinge",
+            "pos": "0 0 0",
+            "axis": "0 1 0",
+            "range": "0.011072 1.687426",
+            "damping": "2.0",
+            "armature": "0.01",
+            "frictionloss": "0"
+          },
+          "type_xml_string": "hinge",
+          "omitted_relevant_attributes": [
+            "actuatorfrclimited",
+            "actuatorfrcrange"
+          ]
+        }
+      },
+      "coverage": {
+        "active_actuators": 6,
+        "hand_hinge_joints": 11
+      }
+    },
+    "actual_hand_xml": {
+      "compiler_attributes": {
+        "angle": "radian",
+        "inertiagrouprange": "0 0",
+        "autolimits": "true"
+      },
+      "default_element_count": 0,
+      "actuators": {
+        "finger11": {
+          "tag": "position",
+          "attributes": {
+            "name": "urdf_act_finger11",
+            "joint": "finger11",
+            "ctrllimited": "true",
+            "ctrlrange": "0 1.047198",
+            "kp": "50",
+            "kv": "2.0"
+          },
+          "kp_exact_xml_string": "50",
+          "kv_exact_xml_string": "2.0",
+          "omitted_relevant_attributes": [
+            "gear",
+            "forcelimited",
+            "forcerange",
+            "gainprm",
+            "biasprm"
+          ]
+        },
+        "finger12": {
+          "tag": "position",
+          "attributes": {
+            "name": "urdf_act_finger12",
+            "joint": "finger12",
+            "ctrllimited": "true",
+            "ctrlrange": "0 0.523599",
+            "kp": "50",
+            "kv": "2.0"
+          },
+          "kp_exact_xml_string": "50",
+          "kv_exact_xml_string": "2.0",
+          "omitted_relevant_attributes": [
+            "gear",
+            "forcelimited",
+            "forcerange",
+            "gainprm",
+            "biasprm"
+          ]
+        },
+        "finger21": {
+          "tag": "position",
+          "attributes": {
+            "name": "urdf_act_finger21",
+            "joint": "finger21",
+            "ctrllimited": "true",
+            "ctrlrange": "0 1.396263",
+            "kp": "50",
+            "kv": "2.0"
+          },
+          "kp_exact_xml_string": "50",
+          "kv_exact_xml_string": "2.0",
+          "omitted_relevant_attributes": [
+            "gear",
+            "forcelimited",
+            "forcerange",
+            "gainprm",
+            "biasprm"
+          ]
+        },
+        "finger31": {
+          "tag": "position",
+          "attributes": {
+            "name": "urdf_act_finger31",
+            "joint": "finger31",
+            "ctrllimited": "true",
+            "ctrlrange": "0 1.396263",
+            "kp": "50",
+            "kv": "2.0"
+          },
+          "kp_exact_xml_string": "50",
+          "kv_exact_xml_string": "2.0",
+          "omitted_relevant_attributes": [
+            "gear",
+            "forcelimited",
+            "forcerange",
+            "gainprm",
+            "biasprm"
+          ]
+        },
+        "finger41": {
+          "tag": "position",
+          "attributes": {
+            "name": "urdf_act_finger41",
+            "joint": "finger41",
+            "ctrllimited": "true",
+            "ctrlrange": "0 1.396263",
+            "kp": "50",
+            "kv": "2.0"
+          },
+          "kp_exact_xml_string": "50",
+          "kv_exact_xml_string": "2.0",
+          "omitted_relevant_attributes": [
+            "gear",
+            "forcelimited",
+            "forcerange",
+            "gainprm",
+            "biasprm"
+          ]
+        },
+        "finger51": {
+          "tag": "position",
+          "attributes": {
+            "name": "urdf_act_finger51",
+            "joint": "finger51",
+            "ctrllimited": "true",
+            "ctrlrange": "0 1.396263",
+            "kp": "50",
+            "kv": "2.0"
+          },
+          "kp_exact_xml_string": "50",
+          "kv_exact_xml_string": "2.0",
+          "omitted_relevant_attributes": [
+            "gear",
+            "forcelimited",
+            "forcerange",
+            "gainprm",
+            "biasprm"
+          ]
+        }
+      },
+      "joints": {
+        "finger11": {
+          "attributes": {
+            "name": "finger11",
+            "type": "hinge",
+            "pos": "0 0 0",
+            "axis": "0 0 -1",
+            "range": "0 1.047198",
+            "damping": "2.0",
+            "armature": "0.01",
+            "frictionloss": "0"
+          },
+          "type_xml_string": "hinge",
+          "omitted_relevant_attributes": [
+            "actuatorfrclimited",
+            "actuatorfrcrange"
+          ]
+        },
+        "finger12": {
+          "attributes": {
+            "name": "finger12",
+            "type": "hinge",
+            "pos": "0 0 0",
+            "axis": "0 -1 0",
+            "range": "0 0.523599",
+            "damping": "2.0",
+            "armature": "0.01",
+            "frictionloss": "0"
+          },
+          "type_xml_string": "hinge",
+          "omitted_relevant_attributes": [
+            "actuatorfrclimited",
+            "actuatorfrcrange"
+          ]
+        },
+        "finger13": {
+          "attributes": {
+            "name": "finger13",
+            "type": "hinge",
+            "pos": "0 0 0",
+            "axis": "0 -1 0",
+            "range": "0.004592 0.594583",
+            "damping": "2.0",
+            "armature": "0.01",
+            "frictionloss": "0"
+          },
+          "type_xml_string": "hinge",
+          "omitted_relevant_attributes": [
+            "actuatorfrclimited",
+            "actuatorfrcrange"
+          ]
+        },
+        "finger21": {
+          "attributes": {
+            "name": "finger21",
+            "type": "hinge",
+            "pos": "0 0 0",
+            "axis": "0 1 0",
+            "range": "0 1.396263",
+            "damping": "2.0",
+            "armature": "0.01",
+            "frictionloss": "0"
+          },
+          "type_xml_string": "hinge",
+          "omitted_relevant_attributes": [
+            "actuatorfrclimited",
+            "actuatorfrcrange"
+          ]
+        },
+        "finger22": {
+          "attributes": {
+            "name": "finger22",
+            "type": "hinge",
+            "pos": "0 0 0",
+            "axis": "0 1 0",
+            "range": "0.011072 1.687426",
+            "damping": "2.0",
+            "armature": "0.01",
+            "frictionloss": "0"
+          },
+          "type_xml_string": "hinge",
+          "omitted_relevant_attributes": [
+            "actuatorfrclimited",
+            "actuatorfrcrange"
+          ]
+        },
+        "finger31": {
+          "attributes": {
+            "name": "finger31",
+            "type": "hinge",
+            "pos": "0 0 0",
+            "axis": "0 1 0",
+            "range": "0 1.396263",
+            "damping": "2.0",
+            "armature": "0.01",
+            "frictionloss": "0"
+          },
+          "type_xml_string": "hinge",
+          "omitted_relevant_attributes": [
+            "actuatorfrclimited",
+            "actuatorfrcrange"
+          ]
+        },
+        "finger32": {
+          "attributes": {
+            "name": "finger32",
+            "type": "hinge",
+            "pos": "0 0 0",
+            "axis": "0 1 0",
+            "range": "0.011072 1.687426",
+            "damping": "2.0",
+            "armature": "0.01",
+            "frictionloss": "0"
+          },
+          "type_xml_string": "hinge",
+          "omitted_relevant_attributes": [
+            "actuatorfrclimited",
+            "actuatorfrcrange"
+          ]
+        },
+        "finger41": {
+          "attributes": {
+            "name": "finger41",
+            "type": "hinge",
+            "pos": "0 0 0",
+            "axis": "0 1 0",
+            "range": "0 1.396263",
+            "damping": "2.0",
+            "armature": "0.01",
+            "frictionloss": "0"
+          },
+          "type_xml_string": "hinge",
+          "omitted_relevant_attributes": [
+            "actuatorfrclimited",
+            "actuatorfrcrange"
+          ]
+        },
+        "finger42": {
+          "attributes": {
+            "name": "finger42",
+            "type": "hinge",
+            "pos": "0 0 0",
+            "axis": "0 1 0",
+            "range": "0.011072 1.687426",
+            "damping": "2.0",
+            "armature": "0.01",
+            "frictionloss": "0"
+          },
+          "type_xml_string": "hinge",
+          "omitted_relevant_attributes": [
+            "actuatorfrclimited",
+            "actuatorfrcrange"
+          ]
+        },
+        "finger51": {
+          "attributes": {
+            "name": "finger51",
+            "type": "hinge",
+            "pos": "0 0 0",
+            "axis": "0 1 0",
+            "range": "0 1.396263",
+            "damping": "2.0",
+            "armature": "0.01",
+            "frictionloss": "0"
+          },
+          "type_xml_string": "hinge",
+          "omitted_relevant_attributes": [
+            "actuatorfrclimited",
+            "actuatorfrcrange"
+          ]
+        },
+        "finger52": {
+          "attributes": {
+            "name": "finger52",
+            "type": "hinge",
+            "pos": "0 0 0",
+            "axis": "0 1 0",
+            "range": "0.011072 1.687426",
+            "damping": "2.0",
+            "armature": "0.01",
+            "frictionloss": "0"
+          },
+          "type_xml_string": "hinge",
+          "omitted_relevant_attributes": [
+            "actuatorfrclimited",
+            "actuatorfrcrange"
+          ]
+        }
+      },
+      "coverage": {
+        "active_actuators": 6,
+        "hand_hinge_joints": 11
+      }
+    },
+    "formal_snapshot": {
+      "origin": "right_preflight.formal_snapshot",
+      "mujoco_version_in_saved_snapshot": "3.2.3",
+      "actuators": {
+        "finger11": {
+          "object_name": "gripper0_urdf_act_finger11",
+          "saved_index_for_reference_only": 7,
+          "bindings": {
+            "actuator_trnid": "gripper0_finger11"
+          },
+          "fields": {
+            "actuator_trntype": 0,
+            "actuator_dyntype": 0,
+            "actuator_gaintype": 0,
+            "actuator_biastype": 1,
+            "actuator_gainprm": [
+              50.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_biasprm": [
+              0.0,
+              -50.0,
+              -2.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_gear": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_ctrllimited": 1,
+            "actuator_ctrlrange": [
+              0.0,
+              1.047198
+            ],
+            "actuator_forcelimited": 0,
+            "actuator_forcerange": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "finger12": {
+          "object_name": "gripper0_urdf_act_finger12",
+          "saved_index_for_reference_only": 8,
+          "bindings": {
+            "actuator_trnid": "gripper0_finger12"
+          },
+          "fields": {
+            "actuator_trntype": 0,
+            "actuator_dyntype": 0,
+            "actuator_gaintype": 0,
+            "actuator_biastype": 1,
+            "actuator_gainprm": [
+              50.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_biasprm": [
+              0.0,
+              -50.0,
+              -2.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_gear": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_ctrllimited": 1,
+            "actuator_ctrlrange": [
+              0.0,
+              0.523599
+            ],
+            "actuator_forcelimited": 0,
+            "actuator_forcerange": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "finger21": {
+          "object_name": "gripper0_urdf_act_finger21",
+          "saved_index_for_reference_only": 9,
+          "bindings": {
+            "actuator_trnid": "gripper0_finger21"
+          },
+          "fields": {
+            "actuator_trntype": 0,
+            "actuator_dyntype": 0,
+            "actuator_gaintype": 0,
+            "actuator_biastype": 1,
+            "actuator_gainprm": [
+              50.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_biasprm": [
+              0.0,
+              -50.0,
+              -2.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_gear": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_ctrllimited": 1,
+            "actuator_ctrlrange": [
+              0.0,
+              1.396263
+            ],
+            "actuator_forcelimited": 0,
+            "actuator_forcerange": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "finger31": {
+          "object_name": "gripper0_urdf_act_finger31",
+          "saved_index_for_reference_only": 10,
+          "bindings": {
+            "actuator_trnid": "gripper0_finger31"
+          },
+          "fields": {
+            "actuator_trntype": 0,
+            "actuator_dyntype": 0,
+            "actuator_gaintype": 0,
+            "actuator_biastype": 1,
+            "actuator_gainprm": [
+              50.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_biasprm": [
+              0.0,
+              -50.0,
+              -2.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_gear": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_ctrllimited": 1,
+            "actuator_ctrlrange": [
+              0.0,
+              1.396263
+            ],
+            "actuator_forcelimited": 0,
+            "actuator_forcerange": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "finger41": {
+          "object_name": "gripper0_urdf_act_finger41",
+          "saved_index_for_reference_only": 11,
+          "bindings": {
+            "actuator_trnid": "gripper0_finger41"
+          },
+          "fields": {
+            "actuator_trntype": 0,
+            "actuator_dyntype": 0,
+            "actuator_gaintype": 0,
+            "actuator_biastype": 1,
+            "actuator_gainprm": [
+              50.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_biasprm": [
+              0.0,
+              -50.0,
+              -2.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_gear": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_ctrllimited": 1,
+            "actuator_ctrlrange": [
+              0.0,
+              1.396263
+            ],
+            "actuator_forcelimited": 0,
+            "actuator_forcerange": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "finger51": {
+          "object_name": "gripper0_urdf_act_finger51",
+          "saved_index_for_reference_only": 12,
+          "bindings": {
+            "actuator_trnid": "gripper0_finger51"
+          },
+          "fields": {
+            "actuator_trntype": 0,
+            "actuator_dyntype": 0,
+            "actuator_gaintype": 0,
+            "actuator_biastype": 1,
+            "actuator_gainprm": [
+              50.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_biasprm": [
+              0.0,
+              -50.0,
+              -2.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_gear": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_ctrllimited": 1,
+            "actuator_ctrlrange": [
+              0.0,
+              1.396263
+            ],
+            "actuator_forcelimited": 0,
+            "actuator_forcerange": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "joints": {
+        "finger11": {
+          "object_name": "gripper0_finger11",
+          "saved_index_for_reference_only": 7,
+          "fields": {
+            "jnt_type": 3,
+            "jnt_actfrclimited": 0,
+            "jnt_actfrcrange": [
+              0.0,
+              0.0
+            ]
+          },
+          "dofs": {
+            "dof_damping": [
+              2.0
+            ],
+            "dof_armature": [
+              0.01
+            ],
+            "dof_frictionloss": [
+              0.0
+            ]
+          }
+        },
+        "finger12": {
+          "object_name": "gripper0_finger12",
+          "saved_index_for_reference_only": 8,
+          "fields": {
+            "jnt_type": 3,
+            "jnt_actfrclimited": 0,
+            "jnt_actfrcrange": [
+              0.0,
+              0.0
+            ]
+          },
+          "dofs": {
+            "dof_damping": [
+              2.0
+            ],
+            "dof_armature": [
+              0.01
+            ],
+            "dof_frictionloss": [
+              0.0
+            ]
+          }
+        },
+        "finger13": {
+          "object_name": "gripper0_finger13",
+          "saved_index_for_reference_only": 9,
+          "fields": {
+            "jnt_type": 3,
+            "jnt_actfrclimited": 0,
+            "jnt_actfrcrange": [
+              0.0,
+              0.0
+            ]
+          },
+          "dofs": {
+            "dof_damping": [
+              2.0
+            ],
+            "dof_armature": [
+              0.01
+            ],
+            "dof_frictionloss": [
+              0.0
+            ]
+          }
+        },
+        "finger21": {
+          "object_name": "gripper0_finger21",
+          "saved_index_for_reference_only": 10,
+          "fields": {
+            "jnt_type": 3,
+            "jnt_actfrclimited": 0,
+            "jnt_actfrcrange": [
+              0.0,
+              0.0
+            ]
+          },
+          "dofs": {
+            "dof_damping": [
+              2.0
+            ],
+            "dof_armature": [
+              0.01
+            ],
+            "dof_frictionloss": [
+              0.0
+            ]
+          }
+        },
+        "finger22": {
+          "object_name": "gripper0_finger22",
+          "saved_index_for_reference_only": 11,
+          "fields": {
+            "jnt_type": 3,
+            "jnt_actfrclimited": 0,
+            "jnt_actfrcrange": [
+              0.0,
+              0.0
+            ]
+          },
+          "dofs": {
+            "dof_damping": [
+              2.0
+            ],
+            "dof_armature": [
+              0.01
+            ],
+            "dof_frictionloss": [
+              0.0
+            ]
+          }
+        },
+        "finger31": {
+          "object_name": "gripper0_finger31",
+          "saved_index_for_reference_only": 12,
+          "fields": {
+            "jnt_type": 3,
+            "jnt_actfrclimited": 0,
+            "jnt_actfrcrange": [
+              0.0,
+              0.0
+            ]
+          },
+          "dofs": {
+            "dof_damping": [
+              2.0
+            ],
+            "dof_armature": [
+              0.01
+            ],
+            "dof_frictionloss": [
+              0.0
+            ]
+          }
+        },
+        "finger32": {
+          "object_name": "gripper0_finger32",
+          "saved_index_for_reference_only": 13,
+          "fields": {
+            "jnt_type": 3,
+            "jnt_actfrclimited": 0,
+            "jnt_actfrcrange": [
+              0.0,
+              0.0
+            ]
+          },
+          "dofs": {
+            "dof_damping": [
+              2.0
+            ],
+            "dof_armature": [
+              0.01
+            ],
+            "dof_frictionloss": [
+              0.0
+            ]
+          }
+        },
+        "finger41": {
+          "object_name": "gripper0_finger41",
+          "saved_index_for_reference_only": 14,
+          "fields": {
+            "jnt_type": 3,
+            "jnt_actfrclimited": 0,
+            "jnt_actfrcrange": [
+              0.0,
+              0.0
+            ]
+          },
+          "dofs": {
+            "dof_damping": [
+              2.0
+            ],
+            "dof_armature": [
+              0.01
+            ],
+            "dof_frictionloss": [
+              0.0
+            ]
+          }
+        },
+        "finger42": {
+          "object_name": "gripper0_finger42",
+          "saved_index_for_reference_only": 15,
+          "fields": {
+            "jnt_type": 3,
+            "jnt_actfrclimited": 0,
+            "jnt_actfrcrange": [
+              0.0,
+              0.0
+            ]
+          },
+          "dofs": {
+            "dof_damping": [
+              2.0
+            ],
+            "dof_armature": [
+              0.01
+            ],
+            "dof_frictionloss": [
+              0.0
+            ]
+          }
+        },
+        "finger51": {
+          "object_name": "gripper0_finger51",
+          "saved_index_for_reference_only": 16,
+          "fields": {
+            "jnt_type": 3,
+            "jnt_actfrclimited": 0,
+            "jnt_actfrcrange": [
+              0.0,
+              0.0
+            ]
+          },
+          "dofs": {
+            "dof_damping": [
+              2.0
+            ],
+            "dof_armature": [
+              0.01
+            ],
+            "dof_frictionloss": [
+              0.0
+            ]
+          }
+        },
+        "finger52": {
+          "object_name": "gripper0_finger52",
+          "saved_index_for_reference_only": 17,
+          "fields": {
+            "jnt_type": 3,
+            "jnt_actfrclimited": 0,
+            "jnt_actfrcrange": [
+              0.0,
+              0.0
+            ]
+          },
+          "dofs": {
+            "dof_damping": [
+              2.0
+            ],
+            "dof_armature": [
+              0.01
+            ],
+            "dof_frictionloss": [
+              0.0
+            ]
+          }
+        }
+      },
+      "coverage": {
+        "active_actuators": 6,
+        "hand_hinge_joints": 11,
+        "actuator_field_groups": 66,
+        "joint_field_groups": 66,
+        "total_field_groups": 132
+      }
+    },
+    "actual_snapshot": {
+      "origin": "right_preflight.actual_snapshot",
+      "mujoco_version_in_saved_snapshot": "3.2.3",
+      "actuators": {
+        "finger11": {
+          "object_name": "gripper0_urdf_act_finger11",
+          "saved_index_for_reference_only": 7,
+          "bindings": {
+            "actuator_trnid": "gripper0_finger11"
+          },
+          "fields": {
+            "actuator_trntype": 0,
+            "actuator_dyntype": 0,
+            "actuator_gaintype": 0,
+            "actuator_biastype": 1,
+            "actuator_gainprm": [
+              50.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_biasprm": [
+              0.0,
+              -50.0,
+              -2.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_gear": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_ctrllimited": 1,
+            "actuator_ctrlrange": [
+              0.0,
+              1.047198
+            ],
+            "actuator_forcelimited": 0,
+            "actuator_forcerange": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "finger12": {
+          "object_name": "gripper0_urdf_act_finger12",
+          "saved_index_for_reference_only": 8,
+          "bindings": {
+            "actuator_trnid": "gripper0_finger12"
+          },
+          "fields": {
+            "actuator_trntype": 0,
+            "actuator_dyntype": 0,
+            "actuator_gaintype": 0,
+            "actuator_biastype": 1,
+            "actuator_gainprm": [
+              50.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_biasprm": [
+              0.0,
+              -50.0,
+              -2.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_gear": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_ctrllimited": 1,
+            "actuator_ctrlrange": [
+              0.0,
+              0.523599
+            ],
+            "actuator_forcelimited": 0,
+            "actuator_forcerange": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "finger21": {
+          "object_name": "gripper0_urdf_act_finger21",
+          "saved_index_for_reference_only": 9,
+          "bindings": {
+            "actuator_trnid": "gripper0_finger21"
+          },
+          "fields": {
+            "actuator_trntype": 0,
+            "actuator_dyntype": 0,
+            "actuator_gaintype": 0,
+            "actuator_biastype": 1,
+            "actuator_gainprm": [
+              50.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_biasprm": [
+              0.0,
+              -50.0,
+              -2.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_gear": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_ctrllimited": 1,
+            "actuator_ctrlrange": [
+              0.0,
+              1.396263
+            ],
+            "actuator_forcelimited": 0,
+            "actuator_forcerange": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "finger31": {
+          "object_name": "gripper0_urdf_act_finger31",
+          "saved_index_for_reference_only": 10,
+          "bindings": {
+            "actuator_trnid": "gripper0_finger31"
+          },
+          "fields": {
+            "actuator_trntype": 0,
+            "actuator_dyntype": 0,
+            "actuator_gaintype": 0,
+            "actuator_biastype": 1,
+            "actuator_gainprm": [
+              50.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_biasprm": [
+              0.0,
+              -50.0,
+              -2.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_gear": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_ctrllimited": 1,
+            "actuator_ctrlrange": [
+              0.0,
+              1.396263
+            ],
+            "actuator_forcelimited": 0,
+            "actuator_forcerange": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "finger41": {
+          "object_name": "gripper0_urdf_act_finger41",
+          "saved_index_for_reference_only": 11,
+          "bindings": {
+            "actuator_trnid": "gripper0_finger41"
+          },
+          "fields": {
+            "actuator_trntype": 0,
+            "actuator_dyntype": 0,
+            "actuator_gaintype": 0,
+            "actuator_biastype": 1,
+            "actuator_gainprm": [
+              50.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_biasprm": [
+              0.0,
+              -50.0,
+              -2.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_gear": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_ctrllimited": 1,
+            "actuator_ctrlrange": [
+              0.0,
+              1.396263
+            ],
+            "actuator_forcelimited": 0,
+            "actuator_forcerange": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "finger51": {
+          "object_name": "gripper0_urdf_act_finger51",
+          "saved_index_for_reference_only": 12,
+          "bindings": {
+            "actuator_trnid": "gripper0_finger51"
+          },
+          "fields": {
+            "actuator_trntype": 0,
+            "actuator_dyntype": 0,
+            "actuator_gaintype": 0,
+            "actuator_biastype": 1,
+            "actuator_gainprm": [
+              50.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_biasprm": [
+              0.0,
+              -50.0,
+              -2.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_gear": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_ctrllimited": 1,
+            "actuator_ctrlrange": [
+              0.0,
+              1.396263
+            ],
+            "actuator_forcelimited": 0,
+            "actuator_forcerange": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "joints": {
+        "finger11": {
+          "object_name": "gripper0_finger11",
+          "saved_index_for_reference_only": 7,
+          "fields": {
+            "jnt_type": 3,
+            "jnt_actfrclimited": 0,
+            "jnt_actfrcrange": [
+              0.0,
+              0.0
+            ]
+          },
+          "dofs": {
+            "dof_damping": [
+              2.0
+            ],
+            "dof_armature": [
+              0.01
+            ],
+            "dof_frictionloss": [
+              0.0
+            ]
+          }
+        },
+        "finger12": {
+          "object_name": "gripper0_finger12",
+          "saved_index_for_reference_only": 8,
+          "fields": {
+            "jnt_type": 3,
+            "jnt_actfrclimited": 0,
+            "jnt_actfrcrange": [
+              0.0,
+              0.0
+            ]
+          },
+          "dofs": {
+            "dof_damping": [
+              2.0
+            ],
+            "dof_armature": [
+              0.01
+            ],
+            "dof_frictionloss": [
+              0.0
+            ]
+          }
+        },
+        "finger13": {
+          "object_name": "gripper0_finger13",
+          "saved_index_for_reference_only": 9,
+          "fields": {
+            "jnt_type": 3,
+            "jnt_actfrclimited": 0,
+            "jnt_actfrcrange": [
+              0.0,
+              0.0
+            ]
+          },
+          "dofs": {
+            "dof_damping": [
+              2.0
+            ],
+            "dof_armature": [
+              0.01
+            ],
+            "dof_frictionloss": [
+              0.0
+            ]
+          }
+        },
+        "finger21": {
+          "object_name": "gripper0_finger21",
+          "saved_index_for_reference_only": 10,
+          "fields": {
+            "jnt_type": 3,
+            "jnt_actfrclimited": 0,
+            "jnt_actfrcrange": [
+              0.0,
+              0.0
+            ]
+          },
+          "dofs": {
+            "dof_damping": [
+              2.0
+            ],
+            "dof_armature": [
+              0.01
+            ],
+            "dof_frictionloss": [
+              0.0
+            ]
+          }
+        },
+        "finger22": {
+          "object_name": "gripper0_finger22",
+          "saved_index_for_reference_only": 11,
+          "fields": {
+            "jnt_type": 3,
+            "jnt_actfrclimited": 0,
+            "jnt_actfrcrange": [
+              0.0,
+              0.0
+            ]
+          },
+          "dofs": {
+            "dof_damping": [
+              2.0
+            ],
+            "dof_armature": [
+              0.01
+            ],
+            "dof_frictionloss": [
+              0.0
+            ]
+          }
+        },
+        "finger31": {
+          "object_name": "gripper0_finger31",
+          "saved_index_for_reference_only": 12,
+          "fields": {
+            "jnt_type": 3,
+            "jnt_actfrclimited": 0,
+            "jnt_actfrcrange": [
+              0.0,
+              0.0
+            ]
+          },
+          "dofs": {
+            "dof_damping": [
+              2.0
+            ],
+            "dof_armature": [
+              0.01
+            ],
+            "dof_frictionloss": [
+              0.0
+            ]
+          }
+        },
+        "finger32": {
+          "object_name": "gripper0_finger32",
+          "saved_index_for_reference_only": 13,
+          "fields": {
+            "jnt_type": 3,
+            "jnt_actfrclimited": 0,
+            "jnt_actfrcrange": [
+              0.0,
+              0.0
+            ]
+          },
+          "dofs": {
+            "dof_damping": [
+              2.0
+            ],
+            "dof_armature": [
+              0.01
+            ],
+            "dof_frictionloss": [
+              0.0
+            ]
+          }
+        },
+        "finger41": {
+          "object_name": "gripper0_finger41",
+          "saved_index_for_reference_only": 14,
+          "fields": {
+            "jnt_type": 3,
+            "jnt_actfrclimited": 0,
+            "jnt_actfrcrange": [
+              0.0,
+              0.0
+            ]
+          },
+          "dofs": {
+            "dof_damping": [
+              2.0
+            ],
+            "dof_armature": [
+              0.01
+            ],
+            "dof_frictionloss": [
+              0.0
+            ]
+          }
+        },
+        "finger42": {
+          "object_name": "gripper0_finger42",
+          "saved_index_for_reference_only": 15,
+          "fields": {
+            "jnt_type": 3,
+            "jnt_actfrclimited": 0,
+            "jnt_actfrcrange": [
+              0.0,
+              0.0
+            ]
+          },
+          "dofs": {
+            "dof_damping": [
+              2.0
+            ],
+            "dof_armature": [
+              0.01
+            ],
+            "dof_frictionloss": [
+              0.0
+            ]
+          }
+        },
+        "finger51": {
+          "object_name": "gripper0_finger51",
+          "saved_index_for_reference_only": 16,
+          "fields": {
+            "jnt_type": 3,
+            "jnt_actfrclimited": 0,
+            "jnt_actfrcrange": [
+              0.0,
+              0.0
+            ]
+          },
+          "dofs": {
+            "dof_damping": [
+              2.0
+            ],
+            "dof_armature": [
+              0.01
+            ],
+            "dof_frictionloss": [
+              0.0
+            ]
+          }
+        },
+        "finger52": {
+          "object_name": "gripper0_finger52",
+          "saved_index_for_reference_only": 17,
+          "fields": {
+            "jnt_type": 3,
+            "jnt_actfrclimited": 0,
+            "jnt_actfrcrange": [
+              0.0,
+              0.0
+            ]
+          },
+          "dofs": {
+            "dof_damping": [
+              2.0
+            ],
+            "dof_armature": [
+              0.01
+            ],
+            "dof_frictionloss": [
+              0.0
+            ]
+          }
+        }
+      },
+      "coverage": {
+        "active_actuators": 6,
+        "hand_hinge_joints": 11,
+        "actuator_field_groups": 66,
+        "joint_field_groups": 66,
+        "total_field_groups": 132
+      }
+    },
+    "saved_preflight_status": {
+      "passed": true,
+      "fields_checked_original_broad_saved_check_not_rerun": 9671,
+      "differences_count_original_saved_check": 0
+    }
+  },
+  "left": {
+    "source_xml": {
+      "compiler_attributes": {
+        "angle": "radian",
+        "inertiagrouprange": "0 0",
+        "autolimits": "true"
+      },
+      "default_element_count": 0,
+      "actuators": {
+        "finger11": {
+          "tag": "position",
+          "attributes": {
+            "name": "gripper0_urdf_act_finger11",
+            "joint": "gripper0_finger11",
+            "ctrllimited": "true",
+            "ctrlrange": "0 1.047198",
+            "kp": "0.65286574077483084",
+            "kv": "0.026114629630993234"
+          },
+          "kp_exact_xml_string": "0.65286574077483084",
+          "kv_exact_xml_string": "0.026114629630993234",
+          "omitted_relevant_attributes": [
+            "gear",
+            "forcelimited",
+            "forcerange",
+            "gainprm",
+            "biasprm"
+          ]
+        },
+        "finger12": {
+          "tag": "position",
+          "attributes": {
+            "name": "gripper0_urdf_act_finger12",
+            "joint": "gripper0_finger12",
+            "ctrllimited": "true",
+            "ctrlrange": "0 0.523599",
+            "kp": "0.65991473097275011",
+            "kv": "0.026396589238910004"
+          },
+          "kp_exact_xml_string": "0.65991473097275011",
+          "kv_exact_xml_string": "0.026396589238910004",
+          "omitted_relevant_attributes": [
+            "gear",
+            "forcelimited",
+            "forcerange",
+            "gainprm",
+            "biasprm"
+          ]
+        },
+        "finger21": {
+          "tag": "position",
+          "attributes": {
+            "name": "gripper0_urdf_act_finger21",
+            "joint": "gripper0_finger21",
+            "ctrllimited": "true",
+            "ctrlrange": "0 1.396263",
+            "kp": "0.5098435598707074",
+            "kv": "0.020393742394828294"
+          },
+          "kp_exact_xml_string": "0.5098435598707074",
+          "kv_exact_xml_string": "0.020393742394828294",
+          "omitted_relevant_attributes": [
+            "gear",
+            "forcelimited",
+            "forcerange",
+            "gainprm",
+            "biasprm"
+          ]
+        },
+        "finger31": {
+          "tag": "position",
+          "attributes": {
+            "name": "gripper0_urdf_act_finger31",
+            "joint": "gripper0_finger31",
+            "ctrllimited": "true",
+            "ctrlrange": "0 1.396263",
+            "kp": "0.69307170971793874",
+            "kv": "0.027722868388717549"
+          },
+          "kp_exact_xml_string": "0.69307170971793874",
+          "kv_exact_xml_string": "0.027722868388717549",
+          "omitted_relevant_attributes": [
+            "gear",
+            "forcelimited",
+            "forcerange",
+            "gainprm",
+            "biasprm"
+          ]
+        },
+        "finger41": {
+          "tag": "position",
+          "attributes": {
+            "name": "gripper0_urdf_act_finger41",
+            "joint": "gripper0_finger41",
+            "ctrllimited": "true",
+            "ctrlrange": "0 1.396263",
+            "kp": "0.51027003659620607",
+            "kv": "0.020410801463848244"
+          },
+          "kp_exact_xml_string": "0.51027003659620607",
+          "kv_exact_xml_string": "0.020410801463848244",
+          "omitted_relevant_attributes": [
+            "gear",
+            "forcelimited",
+            "forcerange",
+            "gainprm",
+            "biasprm"
+          ]
+        },
+        "finger51": {
+          "tag": "position",
+          "attributes": {
+            "name": "gripper0_urdf_act_finger51",
+            "joint": "gripper0_finger51",
+            "ctrllimited": "true",
+            "ctrlrange": "0 1.396263",
+            "kp": "0.29451331029853522",
+            "kv": "0.011780532411941408"
+          },
+          "kp_exact_xml_string": "0.29451331029853522",
+          "kv_exact_xml_string": "0.011780532411941408",
+          "omitted_relevant_attributes": [
+            "gear",
+            "forcelimited",
+            "forcerange",
+            "gainprm",
+            "biasprm"
+          ]
+        }
+      },
+      "joints": {
+        "finger11": {
+          "attributes": {
+            "name": "gripper0_finger11",
+            "pos": "0 0 0",
+            "axis": "0 0 1",
+            "range": "0 1.0471980000000001",
+            "damping": "0",
+            "frictionloss": "0",
+            "armature": "0",
+            "solreflimit": "0.004 1",
+            "solimplimit": "0.9 0.99 0.001 0.5 2"
+          },
+          "type_xml_string": null,
+          "omitted_relevant_attributes": [
+            "actuatorfrclimited",
+            "actuatorfrcrange"
+          ]
+        },
+        "finger12": {
+          "attributes": {
+            "name": "gripper0_finger12",
+            "pos": "0 0 0",
+            "axis": "0 -1 0",
+            "range": "0 0.52359900000000004",
+            "damping": "0",
+            "frictionloss": "0",
+            "armature": "0",
+            "solreflimit": "0.004 1",
+            "solimplimit": "0.9 0.99 0.001 0.5 2"
+          },
+          "type_xml_string": null,
+          "omitted_relevant_attributes": [
+            "actuatorfrclimited",
+            "actuatorfrcrange"
+          ]
+        },
+        "finger13": {
+          "attributes": {
+            "name": "gripper0_finger13",
+            "pos": "0 0 0",
+            "axis": "0 -1 0",
+            "range": "0.0045919999999999997 0.59458299999999997",
+            "damping": "0",
+            "frictionloss": "0",
+            "armature": "0",
+            "solreflimit": "0.004 1",
+            "solimplimit": "0.9 0.99 0.001 0.5 2"
+          },
+          "type_xml_string": null,
+          "omitted_relevant_attributes": [
+            "actuatorfrclimited",
+            "actuatorfrcrange"
+          ]
+        },
+        "finger21": {
+          "attributes": {
+            "name": "gripper0_finger21",
+            "pos": "0 0 0",
+            "axis": "0 1 0",
+            "range": "0 1.396263",
+            "damping": "0",
+            "frictionloss": "0",
+            "armature": "0",
+            "solreflimit": "0.004 1",
+            "solimplimit": "0.9 0.99 0.001 0.5 2"
+          },
+          "type_xml_string": null,
+          "omitted_relevant_attributes": [
+            "actuatorfrclimited",
+            "actuatorfrcrange"
+          ]
+        },
+        "finger22": {
+          "attributes": {
+            "name": "gripper0_finger22",
+            "pos": "0 0 0",
+            "axis": "0 1 0",
+            "range": "0.011072 1.6874260000000001",
+            "damping": "0",
+            "frictionloss": "0",
+            "armature": "0",
+            "solreflimit": "0.004 1",
+            "solimplimit": "0.9 0.99 0.001 0.5 2"
+          },
+          "type_xml_string": null,
+          "omitted_relevant_attributes": [
+            "actuatorfrclimited",
+            "actuatorfrcrange"
+          ]
+        },
+        "finger31": {
+          "attributes": {
+            "name": "gripper0_finger31",
+            "pos": "0 0 0",
+            "axis": "0 1 0",
+            "range": "0 1.396263",
+            "damping": "0",
+            "frictionloss": "0",
+            "armature": "0",
+            "solreflimit": "0.004 1",
+            "solimplimit": "0.9 0.99 0.001 0.5 2"
+          },
+          "type_xml_string": null,
+          "omitted_relevant_attributes": [
+            "actuatorfrclimited",
+            "actuatorfrcrange"
+          ]
+        },
+        "finger32": {
+          "attributes": {
+            "name": "gripper0_finger32",
+            "pos": "0 0 0",
+            "axis": "0 1 0",
+            "range": "0.011072 1.6874260000000001",
+            "damping": "0",
+            "frictionloss": "0",
+            "armature": "0",
+            "solreflimit": "0.004 1",
+            "solimplimit": "0.9 0.99 0.001 0.5 2"
+          },
+          "type_xml_string": null,
+          "omitted_relevant_attributes": [
+            "actuatorfrclimited",
+            "actuatorfrcrange"
+          ]
+        },
+        "finger41": {
+          "attributes": {
+            "name": "gripper0_finger41",
+            "pos": "0 0 0",
+            "axis": "0 1 0",
+            "range": "0 1.396263",
+            "damping": "0",
+            "frictionloss": "0",
+            "armature": "0",
+            "solreflimit": "0.004 1",
+            "solimplimit": "0.9 0.99 0.001 0.5 2"
+          },
+          "type_xml_string": null,
+          "omitted_relevant_attributes": [
+            "actuatorfrclimited",
+            "actuatorfrcrange"
+          ]
+        },
+        "finger42": {
+          "attributes": {
+            "name": "gripper0_finger42",
+            "pos": "0 0 0",
+            "axis": "0 1 0",
+            "range": "0.011072 1.6874260000000001",
+            "damping": "0",
+            "frictionloss": "0",
+            "armature": "0",
+            "solreflimit": "0.004 1",
+            "solimplimit": "0.9 0.99 0.001 0.5 2"
+          },
+          "type_xml_string": null,
+          "omitted_relevant_attributes": [
+            "actuatorfrclimited",
+            "actuatorfrcrange"
+          ]
+        },
+        "finger51": {
+          "attributes": {
+            "name": "gripper0_finger51",
+            "pos": "0 0 0",
+            "axis": "0 1 0",
+            "range": "0 1.396263",
+            "damping": "0",
+            "frictionloss": "0",
+            "armature": "0",
+            "solreflimit": "0.004 1",
+            "solimplimit": "0.9 0.99 0.001 0.5 2"
+          },
+          "type_xml_string": null,
+          "omitted_relevant_attributes": [
+            "actuatorfrclimited",
+            "actuatorfrcrange"
+          ]
+        },
+        "finger52": {
+          "attributes": {
+            "name": "gripper0_finger52",
+            "pos": "0 0 0",
+            "axis": "0 1 0",
+            "range": "0.011072 1.6874260000000001",
+            "damping": "0",
+            "frictionloss": "0",
+            "armature": "0",
+            "solreflimit": "0.004 1",
+            "solimplimit": "0.9 0.99 0.001 0.5 2"
+          },
+          "type_xml_string": null,
+          "omitted_relevant_attributes": [
+            "actuatorfrclimited",
+            "actuatorfrcrange"
+          ]
+        }
+      },
+      "coverage": {
+        "active_actuators": 6,
+        "hand_hinge_joints": 11
+      }
+    },
+    "saved_compiled_fixture": {
+      "origin": "left_compiled_fixture",
+      "mujoco_version_in_saved_snapshot": "3.2.3",
+      "actuators": {
+        "finger11": {
+          "object_name": "gripper0_urdf_act_finger11",
+          "saved_index_for_reference_only": 7,
+          "bindings": {
+            "actuator_trnid": "gripper0_finger11"
+          },
+          "fields": {
+            "actuator_trntype": 0,
+            "actuator_dyntype": 0,
+            "actuator_gaintype": 0,
+            "actuator_biastype": 1,
+            "actuator_gainprm": [
+              0.6528657407748308,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_biasprm": [
+              0.0,
+              -0.6528657407748308,
+              -0.026114629630993234,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_gear": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_ctrllimited": 1,
+            "actuator_ctrlrange": [
+              0.0,
+              1.047198
+            ],
+            "actuator_forcelimited": 0,
+            "actuator_forcerange": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "finger12": {
+          "object_name": "gripper0_urdf_act_finger12",
+          "saved_index_for_reference_only": 8,
+          "bindings": {
+            "actuator_trnid": "gripper0_finger12"
+          },
+          "fields": {
+            "actuator_trntype": 0,
+            "actuator_dyntype": 0,
+            "actuator_gaintype": 0,
+            "actuator_biastype": 1,
+            "actuator_gainprm": [
+              0.6599147309727501,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_biasprm": [
+              0.0,
+              -0.6599147309727501,
+              -0.026396589238910004,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_gear": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_ctrllimited": 1,
+            "actuator_ctrlrange": [
+              0.0,
+              0.523599
+            ],
+            "actuator_forcelimited": 0,
+            "actuator_forcerange": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "finger21": {
+          "object_name": "gripper0_urdf_act_finger21",
+          "saved_index_for_reference_only": 9,
+          "bindings": {
+            "actuator_trnid": "gripper0_finger21"
+          },
+          "fields": {
+            "actuator_trntype": 0,
+            "actuator_dyntype": 0,
+            "actuator_gaintype": 0,
+            "actuator_biastype": 1,
+            "actuator_gainprm": [
+              0.5098435598707074,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_biasprm": [
+              0.0,
+              -0.5098435598707074,
+              -0.020393742394828294,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_gear": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_ctrllimited": 1,
+            "actuator_ctrlrange": [
+              0.0,
+              1.396263
+            ],
+            "actuator_forcelimited": 0,
+            "actuator_forcerange": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "finger31": {
+          "object_name": "gripper0_urdf_act_finger31",
+          "saved_index_for_reference_only": 10,
+          "bindings": {
+            "actuator_trnid": "gripper0_finger31"
+          },
+          "fields": {
+            "actuator_trntype": 0,
+            "actuator_dyntype": 0,
+            "actuator_gaintype": 0,
+            "actuator_biastype": 1,
+            "actuator_gainprm": [
+              0.6930717097179387,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_biasprm": [
+              0.0,
+              -0.6930717097179387,
+              -0.02772286838871755,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_gear": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_ctrllimited": 1,
+            "actuator_ctrlrange": [
+              0.0,
+              1.396263
+            ],
+            "actuator_forcelimited": 0,
+            "actuator_forcerange": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "finger41": {
+          "object_name": "gripper0_urdf_act_finger41",
+          "saved_index_for_reference_only": 11,
+          "bindings": {
+            "actuator_trnid": "gripper0_finger41"
+          },
+          "fields": {
+            "actuator_trntype": 0,
+            "actuator_dyntype": 0,
+            "actuator_gaintype": 0,
+            "actuator_biastype": 1,
+            "actuator_gainprm": [
+              0.5102700365962061,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_biasprm": [
+              0.0,
+              -0.5102700365962061,
+              -0.020410801463848244,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_gear": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_ctrllimited": 1,
+            "actuator_ctrlrange": [
+              0.0,
+              1.396263
+            ],
+            "actuator_forcelimited": 0,
+            "actuator_forcerange": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "finger51": {
+          "object_name": "gripper0_urdf_act_finger51",
+          "saved_index_for_reference_only": 12,
+          "bindings": {
+            "actuator_trnid": "gripper0_finger51"
+          },
+          "fields": {
+            "actuator_trntype": 0,
+            "actuator_dyntype": 0,
+            "actuator_gaintype": 0,
+            "actuator_biastype": 1,
+            "actuator_gainprm": [
+              0.2945133102985352,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_biasprm": [
+              0.0,
+              -0.2945133102985352,
+              -0.011780532411941408,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_gear": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "actuator_ctrllimited": 1,
+            "actuator_ctrlrange": [
+              0.0,
+              1.396263
+            ],
+            "actuator_forcelimited": 0,
+            "actuator_forcerange": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "joints": {
+        "finger11": {
+          "object_name": "gripper0_finger11",
+          "saved_index_for_reference_only": 7,
+          "fields": {
+            "jnt_type": 3,
+            "jnt_actfrclimited": 0,
+            "jnt_actfrcrange": [
+              0.0,
+              0.0
+            ]
+          },
+          "dofs": {
+            "dof_damping": [
+              0.0
+            ],
+            "dof_armature": [
+              0.0
+            ],
+            "dof_frictionloss": [
+              0.0
+            ]
+          }
+        },
+        "finger12": {
+          "object_name": "gripper0_finger12",
+          "saved_index_for_reference_only": 8,
+          "fields": {
+            "jnt_type": 3,
+            "jnt_actfrclimited": 0,
+            "jnt_actfrcrange": [
+              0.0,
+              0.0
+            ]
+          },
+          "dofs": {
+            "dof_damping": [
+              0.0
+            ],
+            "dof_armature": [
+              0.0
+            ],
+            "dof_frictionloss": [
+              0.0
+            ]
+          }
+        },
+        "finger13": {
+          "object_name": "gripper0_finger13",
+          "saved_index_for_reference_only": 9,
+          "fields": {
+            "jnt_type": 3,
+            "jnt_actfrclimited": 0,
+            "jnt_actfrcrange": [
+              0.0,
+              0.0
+            ]
+          },
+          "dofs": {
+            "dof_damping": [
+              0.0
+            ],
+            "dof_armature": [
+              0.0
+            ],
+            "dof_frictionloss": [
+              0.0
+            ]
+          }
+        },
+        "finger21": {
+          "object_name": "gripper0_finger21",
+          "saved_index_for_reference_only": 10,
+          "fields": {
+            "jnt_type": 3,
+            "jnt_actfrclimited": 0,
+            "jnt_actfrcrange": [
+              0.0,
+              0.0
+            ]
+          },
+          "dofs": {
+            "dof_damping": [
+              0.0
+            ],
+            "dof_armature": [
+              0.0
+            ],
+            "dof_frictionloss": [
+              0.0
+            ]
+          }
+        },
+        "finger22": {
+          "object_name": "gripper0_finger22",
+          "saved_index_for_reference_only": 11,
+          "fields": {
+            "jnt_type": 3,
+            "jnt_actfrclimited": 0,
+            "jnt_actfrcrange": [
+              0.0,
+              0.0
+            ]
+          },
+          "dofs": {
+            "dof_damping": [
+              0.0
+            ],
+            "dof_armature": [
+              0.0
+            ],
+            "dof_frictionloss": [
+              0.0
+            ]
+          }
+        },
+        "finger31": {
+          "object_name": "gripper0_finger31",
+          "saved_index_for_reference_only": 12,
+          "fields": {
+            "jnt_type": 3,
+            "jnt_actfrclimited": 0,
+            "jnt_actfrcrange": [
+              0.0,
+              0.0
+            ]
+          },
+          "dofs": {
+            "dof_damping": [
+              0.0
+            ],
+            "dof_armature": [
+              0.0
+            ],
+            "dof_frictionloss": [
+              0.0
+            ]
+          }
+        },
+        "finger32": {
+          "object_name": "gripper0_finger32",
+          "saved_index_for_reference_only": 13,
+          "fields": {
+            "jnt_type": 3,
+            "jnt_actfrclimited": 0,
+            "jnt_actfrcrange": [
+              0.0,
+              0.0
+            ]
+          },
+          "dofs": {
+            "dof_damping": [
+              0.0
+            ],
+            "dof_armature": [
+              0.0
+            ],
+            "dof_frictionloss": [
+              0.0
+            ]
+          }
+        },
+        "finger41": {
+          "object_name": "gripper0_finger41",
+          "saved_index_for_reference_only": 14,
+          "fields": {
+            "jnt_type": 3,
+            "jnt_actfrclimited": 0,
+            "jnt_actfrcrange": [
+              0.0,
+              0.0
+            ]
+          },
+          "dofs": {
+            "dof_damping": [
+              0.0
+            ],
+            "dof_armature": [
+              0.0
+            ],
+            "dof_frictionloss": [
+              0.0
+            ]
+          }
+        },
+        "finger42": {
+          "object_name": "gripper0_finger42",
+          "saved_index_for_reference_only": 15,
+          "fields": {
+            "jnt_type": 3,
+            "jnt_actfrclimited": 0,
+            "jnt_actfrcrange": [
+              0.0,
+              0.0
+            ]
+          },
+          "dofs": {
+            "dof_damping": [
+              0.0
+            ],
+            "dof_armature": [
+              0.0
+            ],
+            "dof_frictionloss": [
+              0.0
+            ]
+          }
+        },
+        "finger51": {
+          "object_name": "gripper0_finger51",
+          "saved_index_for_reference_only": 16,
+          "fields": {
+            "jnt_type": 3,
+            "jnt_actfrclimited": 0,
+            "jnt_actfrcrange": [
+              0.0,
+              0.0
+            ]
+          },
+          "dofs": {
+            "dof_damping": [
+              0.0
+            ],
+            "dof_armature": [
+              0.0
+            ],
+            "dof_frictionloss": [
+              0.0
+            ]
+          }
+        },
+        "finger52": {
+          "object_name": "gripper0_finger52",
+          "saved_index_for_reference_only": 17,
+          "fields": {
+            "jnt_type": 3,
+            "jnt_actfrclimited": 0,
+            "jnt_actfrcrange": [
+              0.0,
+              0.0
+            ]
+          },
+          "dofs": {
+            "dof_damping": [
+              0.0
+            ],
+            "dof_armature": [
+              0.0
+            ],
+            "dof_frictionloss": [
+              0.0
+            ]
+          }
+        }
+      },
+      "coverage": {
+        "active_actuators": 6,
+        "hand_hinge_joints": 11,
+        "actuator_field_groups": 66,
+        "joint_field_groups": 66,
+        "total_field_groups": 132
+      }
+    },
+    "saved_source_identity_evidence": {
+      "source_preflight_passed_saved_value": true,
+      "xml_sha_matches_saved_source_preflight": true,
+      "fixture_sha_matches_saved_source_preflight": true
+    },
+    "compiled_status": "CONFIRMED_BY_EXISTING_SAVED_FIXTURE_FOR_6_ACTUATORS_11_HINGES_ONLY"
+  },
+  "checks": [
+    {
+      "check": "right_source_to_actual_hand.actuator.finger11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_formal.actuator.finger11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_actual.actuator.finger11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_formal_to_actual.actuator.finger11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "left_xml_to_saved_compiled.actuator.finger11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_source_to_actual_hand.actuator.finger12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_formal.actuator.finger12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_actual.actuator.finger12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_formal_to_actual.actuator.finger12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "left_xml_to_saved_compiled.actuator.finger12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_source_to_actual_hand.actuator.finger21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_formal.actuator.finger21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_actual.actuator.finger21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_formal_to_actual.actuator.finger21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "left_xml_to_saved_compiled.actuator.finger21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_source_to_actual_hand.actuator.finger31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_formal.actuator.finger31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_actual.actuator.finger31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_formal_to_actual.actuator.finger31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "left_xml_to_saved_compiled.actuator.finger31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_source_to_actual_hand.actuator.finger41",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_formal.actuator.finger41",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_actual.actuator.finger41",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_formal_to_actual.actuator.finger41",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "left_xml_to_saved_compiled.actuator.finger41",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_source_to_actual_hand.actuator.finger51",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_formal.actuator.finger51",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_actual.actuator.finger51",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_formal_to_actual.actuator.finger51",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "left_xml_to_saved_compiled.actuator.finger51",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_source_to_actual_hand.joint.finger11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_formal.joint.finger11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_actual.joint.finger11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_formal_to_actual.joint.finger11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "left_xml_to_saved_compiled.joint.finger11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_source_to_actual_hand.joint.finger12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_formal.joint.finger12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_actual.joint.finger12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_formal_to_actual.joint.finger12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "left_xml_to_saved_compiled.joint.finger12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_source_to_actual_hand.joint.finger13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_formal.joint.finger13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_actual.joint.finger13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_formal_to_actual.joint.finger13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "left_xml_to_saved_compiled.joint.finger13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_source_to_actual_hand.joint.finger21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_formal.joint.finger21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_actual.joint.finger21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_formal_to_actual.joint.finger21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "left_xml_to_saved_compiled.joint.finger21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_source_to_actual_hand.joint.finger22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_formal.joint.finger22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_actual.joint.finger22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_formal_to_actual.joint.finger22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "left_xml_to_saved_compiled.joint.finger22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_source_to_actual_hand.joint.finger31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_formal.joint.finger31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_actual.joint.finger31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_formal_to_actual.joint.finger31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "left_xml_to_saved_compiled.joint.finger31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_source_to_actual_hand.joint.finger32",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_formal.joint.finger32",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_actual.joint.finger32",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_formal_to_actual.joint.finger32",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "left_xml_to_saved_compiled.joint.finger32",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_source_to_actual_hand.joint.finger41",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_formal.joint.finger41",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_actual.joint.finger41",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_formal_to_actual.joint.finger41",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "left_xml_to_saved_compiled.joint.finger41",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_source_to_actual_hand.joint.finger42",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_formal.joint.finger42",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_actual.joint.finger42",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_formal_to_actual.joint.finger42",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "left_xml_to_saved_compiled.joint.finger42",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_source_to_actual_hand.joint.finger51",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_formal.joint.finger51",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_actual.joint.finger51",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_formal_to_actual.joint.finger51",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "left_xml_to_saved_compiled.joint.finger51",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_source_to_actual_hand.joint.finger52",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_formal.joint.finger52",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_actual.joint.finger52",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "right_formal_to_actual.joint.finger52",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "left_xml_to_saved_compiled.joint.finger52",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "left_saved_source_preflight_identity",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "conflicts": [],
+  "force_limit_interpretation": {
+    "right_and_left_saved_actuator_forcelimited_all_six": 0,
+    "right_and_left_saved_actuator_forcerange_all_six": [
+      0.0,
+      0.0
+    ],
+    "right_and_left_saved_joint_actfrclimited_all_eleven": 0,
+    "right_and_left_saved_joint_actfrcrange_all_eleven": [
+      0.0,
+      0.0
+    ],
+    "meaning": "Flag 0 disables the corresponding force clamp. [0,0] with disabled flag does not mean zero actuator output or a zero-torque clamp. Control clamping is separately enabled (ctrllimited=1) for the saved angular ctrlrange. This audit does not establish physical force safety."
+  },
+  "unknowns": [
+    "No new compilation, reset, forward, step, or dynamics run was performed; future compiled profile concordance and physical effects remain unverified.",
+    "XML omits explicit actuator gear/force limit attributes and joint actuator force limit attributes; existing saved compiled values are reported separately rather than claimed as explicit XML values."
+  ],
+  "coverage": {
+    "xml_models": 3,
+    "source_xml_actuators_total": 18,
+    "source_xml_hand_hinges_total": 33,
+    "saved_snapshots": 3,
+    "saved_snapshot_actuators_total": 18,
+    "saved_snapshot_hand_hinges_total": 33,
+    "field_groups_per_saved_snapshot": 132,
+    "all_checks": 86,
+    "passed_checks": 86
+  }
+}

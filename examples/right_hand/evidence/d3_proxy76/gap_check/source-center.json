@@ -1,0 +1,168 @@
+{
+  "schema": "d3-6451-candidate-common-ball-center-source-surface-v1",
+  "pose_id": "two_exclusion17_step_6451_post",
+  "center_world_m": [
+    -0.06530766775826106,
+    0.2199769352438152,
+    1.0978731606564252
+  ],
+  "method": "Candidate proxy76 LP center, cached exact-pose body transforms; two TriangleSurface.nearest continuous point-to-original-right-STL queries. No sampling and no new FK.",
+  "query_count": 2,
+  "physics_steps": 0,
+  "mujoco_imports": 0,
+  "mujoco_api_calls": 0,
+  "input_sha256_before": {
+    "/data_robot/projects/.worktrees/nero_dh116_right_proxy76/runs/d3_proxy76/gap_check/convex-common-ball.json": "ec1e11399c4326a6489ef6a4dc10c45cc91143bfcd51ae6e71630008b94c3326",
+    "/data_robot/projects/.worktrees/nero_dh116_right_proxy76/runs/d3_proxy76/gap_check/check_source_center.py": "5a91597af7e537705c04ae706899e8c047a28432d37dec95f21a4dd821abd315",
+    "/data_robot/projects/.worktrees/nero_dh116_right_proxy76/examples/right_hand/proxy76_geometry.py": "5c284fe872519406007bbab1fcf3d5b8b167ec9a377585f79e66a1b559170341",
+    "/data_robot/projects/.worktrees/nero_dh116_right_proxy76/examples/right_hand/evidence/d3_geometry/triangle/surface_geometry.py": "21b91daa9ccfc7ddedc91ca4a95eb3f2f1b72b720a5619b2bb59144f39de71de",
+    "/data_robot/projects/.worktrees/nero_dh116_right_proxy76/meshes/dh116_right/source/finger13_link.STL": "594501a21c86d1d19b73cf17572b7a04ae488c5fee4b623e25c618dd15eb3419",
+    "/data_robot/projects/.worktrees/nero_dh116_right_proxy76/meshes/dh116_right/source/finger42_link.STL": "4382f6f699a2cb342f00f5bf4ddbe20b7d2b664b522c5abcd49cfee551e748ae",
+    "/data_robot/projects/.worktrees/nero_dh116_right_proxy76/meshes/dh116/gripper0_finger13_link-f34ca4cb.stl": "f34ca4cbc816d42643c532cf102b1583e1d8d39e156072f65f4bfa1e55fae7a5",
+    "/data_robot/projects/.worktrees/nero_dh116_right_proxy76/meshes/dh116/gripper0_finger42_link-15a9090c.stl": "15a9090c995e1f29ab0bb4b0a4ede7a4f60f1d0e0bf809c3ada86c53d0b66bed"
+  },
+  "input_sha256_after": {
+    "/data_robot/projects/.worktrees/nero_dh116_right_proxy76/runs/d3_proxy76/gap_check/convex-common-ball.json": "ec1e11399c4326a6489ef6a4dc10c45cc91143bfcd51ae6e71630008b94c3326",
+    "/data_robot/projects/.worktrees/nero_dh116_right_proxy76/runs/d3_proxy76/gap_check/check_source_center.py": "5a91597af7e537705c04ae706899e8c047a28432d37dec95f21a4dd821abd315",
+    "/data_robot/projects/.worktrees/nero_dh116_right_proxy76/examples/right_hand/proxy76_geometry.py": "5c284fe872519406007bbab1fcf3d5b8b167ec9a377585f79e66a1b559170341",
+    "/data_robot/projects/.worktrees/nero_dh116_right_proxy76/examples/right_hand/evidence/d3_geometry/triangle/surface_geometry.py": "21b91daa9ccfc7ddedc91ca4a95eb3f2f1b72b720a5619b2bb59144f39de71de",
+    "/data_robot/projects/.worktrees/nero_dh116_right_proxy76/meshes/dh116_right/source/finger13_link.STL": "594501a21c86d1d19b73cf17572b7a04ae488c5fee4b623e25c618dd15eb3419",
+    "/data_robot/projects/.worktrees/nero_dh116_right_proxy76/meshes/dh116_right/source/finger42_link.STL": "4382f6f699a2cb342f00f5bf4ddbe20b7d2b664b522c5abcd49cfee551e748ae",
+    "/data_robot/projects/.worktrees/nero_dh116_right_proxy76/meshes/dh116/gripper0_finger13_link-f34ca4cb.stl": "f34ca4cbc816d42643c532cf102b1583e1d8d39e156072f65f4bfa1e55fae7a5",
+    "/data_robot/projects/.worktrees/nero_dh116_right_proxy76/meshes/dh116/gripper0_finger42_link-15a9090c.stl": "15a9090c995e1f29ab0bb4b0a4ede7a4f60f1d0e0bf809c3ada86c53d0b66bed"
+  },
+  "inputs_unchanged": true,
+  "results": {
+    "finger13_link": {
+      "center_body_local_m": [
+        -0.003285978330134059,
+        -0.006364441186178377,
+        0.001036034969372217
+      ],
+      "unsigned_center_to_right_source_surface_m": 0.0013644412979370857,
+      "nearest_source_point_body_local_m": [
+        -0.003285978330134059,
+        -0.004999999888241291,
+        0.001036034969372217
+      ],
+      "nearest_source_face_id_zero_based": 1067,
+      "nearest_source_triangle_body_local_m": [
+        [
+          -0.002907560672610998,
+          -0.004999999888241291,
+          0.0007389785605482757
+        ],
+        [
+          -0.004460688214749098,
+          -0.004999999888241291,
+          0.004452093970030546
+        ],
+        [
+          -0.0050186230801045895,
+          -0.004999999888241291,
+          -0.0008300584158860147
+        ]
+      ],
+      "active_proxy_hull_plane": {
+        "normal_in_body_local": [
+          -0.4232428617229139,
+          -0.8732368578339905,
+          -0.24150128389061962
+        ],
+        "offset_mm": -6.699565936139103,
+        "global_hull_plane_index": 351,
+        "supporting_proxy_raw_vertices_body_local_mm": [
+          [
+            -4.918212071061134,
+            -4.999999888241291,
+            -1.0425766231492162
+          ],
+          [
+            -4.393476527184248,
+            -4.999999888241291,
+            -1.9622014369815588
+          ],
+          [
+            0.09102628973778337,
+            -9.24373883754015,
+            5.523288622498512
+          ]
+        ],
+        "supporting_raw_vertex_count": 3,
+        "proxy_raw_triangles_coplanar_with_this_hull_plane": 0,
+        "max_support_vertex_pair_span_mm": 9.703228700559045,
+        "support_match_tolerance_mm": 1e-07
+      },
+      "own_proxy_hull_min_center_face_margin_mm": 0.0013382161050095043,
+      "source_stl_path": "meshes/dh116_right/source/finger13_link.STL",
+      "source_stl_sha256": "594501a21c86d1d19b73cf17572b7a04ae488c5fee4b623e25c618dd15eb3419",
+      "source_solid_interior_classification": "UNKNOWN_NO_WATERTIGHT_SOLID_ASSUMPTION"
+    },
+    "finger42_link": {
+      "center_body_local_m": [
+        -0.005160595646570536,
+        0.003873491541504578,
+        0.03269128455101836
+      ],
+      "unsigned_center_to_right_source_surface_m": 0.0001228980354214557,
+      "nearest_source_point_body_local_m": [
+        -0.005274409954813691,
+        0.003919777893099128,
+        0.032688490985975024
+      ],
+      "nearest_source_face_id_zero_based": 4266,
+      "nearest_source_triangle_body_local_m": [
+        [
+          -0.005264957435429096,
+          0.003944740630686283,
+          0.032716985791921616
+        ],
+        [
+          -0.005248504225164652,
+          0.003981935791671276,
+          0.03266293928027153
+        ],
+        [
+          -0.005309699568897486,
+          0.0038297122810035944,
+          0.032633956521749496
+        ]
+      ],
+      "active_proxy_hull_plane": {
+        "normal_in_body_local": [
+          -0.879651538515631,
+          0.2970559604446882,
+          0.37144437962010685
+        ],
+        "offset_mm": -17.834501775441275,
+        "global_hull_plane_index": 5146,
+        "supporting_proxy_raw_vertices_body_local_mm": [
+          [
+            -5.286546424031258,
+            3.575933165848255,
+            32.63457864522934
+          ],
+          [
+            -5.161765031516552,
+            3.8739554584026337,
+            32.691746950149536
+          ],
+          [
+            -2.953379647806287,
+            1.9508112454786897,
+            39.459627121686935
+          ]
+        ],
+        "supporting_raw_vertex_count": 3,
+        "proxy_raw_triangles_coplanar_with_this_hull_plane": 0,
+        "max_support_vertex_pair_span_mm": 7.393644241356345,
+        "support_match_tolerance_mm": 1e-07
+      },
+      "own_proxy_hull_min_center_face_margin_mm": 0.0013382161050095043,
+      "source_stl_path": "meshes/dh116_right/source/finger42_link.STL",
+      "source_stl_sha256": "4382f6f699a2cb342f00f5bf4ddbe20b7d2b664b522c5abcd49cfee551e748ae",
+      "source_solid_interior_classification": "UNKNOWN_NO_WATERTIGHT_SOLID_ASSUMPTION"
+    }
+  },
+  "interpretation_limit": "A proxy-interior center separated from a source surface diagnoses proxy/source geometric mismatch at this location. Unsigned distances cannot identify source-solid inside/outside, prove a void, or alone choose which link must be repaired."
+}

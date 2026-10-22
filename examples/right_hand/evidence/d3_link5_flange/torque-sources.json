@@ -1,0 +1,946 @@
+{
+  "version": "MuJoCo 3.2.3",
+  "fetched_utc": "2026-10-19T08:28:02.286301+00:00",
+  "line_number_convention": "1-based raw UTF-8 source lines, including blank lines; browser extracted-text lines differ",
+  "sources": [
+    {
+      "file": "engine_support.c",
+      "raw_url": "https://raw.githubusercontent.com/google-deepmind/mujoco/3.2.3/src/engine/engine_support.c",
+      "sha256": "b7506c5cad3a3c3c5f25ee65d0bf022d488ea3291894f04b84b743e64ac8252a",
+      "byte_count": 42141,
+      "line_count": 1670,
+      "excerpts": [
+        {
+          "line_start": 42,
+          "line_end": 43,
+          "source_url": "https://github.com/google-deepmind/mujoco/blob/3.2.3/src/engine/engine_support.c#L42-L43",
+          "lines": [
+            {
+              "line": 42,
+              "text": " #define mjVERSION 323"
+            },
+            {
+              "line": 43,
+              "text": "#define mjVERSIONSTRING \"3.2.3\""
+            }
+          ]
+        },
+        {
+          "line_start": 655,
+          "line_end": 659,
+          "source_url": "https://github.com/google-deepmind/mujoco/blob/3.2.3/src/engine/engine_support.c#L655-L659",
+          "lines": [
+            {
+              "line": 655,
+              "text": "// dense or sparse Jacobian difference for two body points: pos2 - pos1, global"
+            },
+            {
+              "line": 656,
+              "text": "int mj_jacDifPair(const mjModel* m, const mjData* d, int* chain,"
+            },
+            {
+              "line": 657,
+              "text": "                  int b1, int b2, const mjtNum pos1[3], const mjtNum pos2[3],"
+            },
+            {
+              "line": 658,
+              "text": "                  mjtNum* jac1p, mjtNum* jac2p, mjtNum* jacdifp,"
+            },
+            {
+              "line": 659,
+              "text": "                  mjtNum* jac1r, mjtNum* jac2r, mjtNum* jacdifr) {"
+            }
+          ]
+        },
+        {
+          "line_start": 696,
+          "line_end": 724,
+          "source_url": "https://github.com/google-deepmind/mujoco/blob/3.2.3/src/engine/engine_support.c#L696-L724",
+          "lines": [
+            {
+              "line": 696,
+              "text": "    // regular processing"
+            },
+            {
+              "line": 697,
+              "text": "    else {"
+            },
+            {
+              "line": 698,
+              "text": "      // Jacobians"
+            },
+            {
+              "line": 699,
+              "text": "      mj_jacSparse(m, d, jac1p, jac1r, pos1, b1, NV, chain);"
+            },
+            {
+              "line": 700,
+              "text": "      mj_jacSparse(m, d, jac2p, jac2r, pos2, b2, NV, chain);"
+            },
+            {
+              "line": 701,
+              "text": ""
+            },
+            {
+              "line": 702,
+              "text": "      // differences"
+            },
+            {
+              "line": 703,
+              "text": "      if (jacdifp) {"
+            },
+            {
+              "line": 704,
+              "text": "        mju_sub(jacdifp, jac2p, jac1p, 3*NV);"
+            },
+            {
+              "line": 705,
+              "text": "      }"
+            },
+            {
+              "line": 706,
+              "text": "      if (jacdifr) {"
+            },
+            {
+              "line": 707,
+              "text": "        mju_sub(jacdifr, jac2r, jac1r, 3*NV);"
+            },
+            {
+              "line": 708,
+              "text": "      }"
+            },
+            {
+              "line": 709,
+              "text": "    }"
+            },
+            {
+              "line": 710,
+              "text": "  }"
+            },
+            {
+              "line": 711,
+              "text": ""
+            },
+            {
+              "line": 712,
+              "text": "  // dense case"
+            },
+            {
+              "line": 713,
+              "text": "  else {"
+            },
+            {
+              "line": 714,
+              "text": "    // Jacobians"
+            },
+            {
+              "line": 715,
+              "text": "    mj_jac(m, d, jac1p, jac1r, pos1, b1);"
+            },
+            {
+              "line": 716,
+              "text": "    mj_jac(m, d, jac2p, jac2r, pos2, b2);"
+            },
+            {
+              "line": 717,
+              "text": ""
+            },
+            {
+              "line": 718,
+              "text": "    // differences"
+            },
+            {
+              "line": 719,
+              "text": "    if (jacdifp) {"
+            },
+            {
+              "line": 720,
+              "text": "      mju_sub(jacdifp, jac2p, jac1p, 3*NV);"
+            },
+            {
+              "line": 721,
+              "text": "    }"
+            },
+            {
+              "line": 722,
+              "text": "    if (jacdifr) {"
+            },
+            {
+              "line": 723,
+              "text": "      mju_sub(jacdifr, jac2r, jac1r, 3*NV);"
+            },
+            {
+              "line": 724,
+              "text": "    }"
+            }
+          ]
+        },
+        {
+          "line_start": 1449,
+          "line_end": 1467,
+          "source_url": "https://github.com/google-deepmind/mujoco/blob/3.2.3/src/engine/engine_support.c#L1449-L1467",
+          "lines": [
+            {
+              "line": 1449,
+              "text": "// extract 6D force:torque for one contact, in contact frame"
+            },
+            {
+              "line": 1450,
+              "text": "void mj_contactForce(const mjModel* m, const mjData* d, int id, mjtNum result[6]) {"
+            },
+            {
+              "line": 1451,
+              "text": "  mjContact* con;"
+            },
+            {
+              "line": 1452,
+              "text": ""
+            },
+            {
+              "line": 1453,
+              "text": "  // clear result"
+            },
+            {
+              "line": 1454,
+              "text": "  mju_zero(result, 6);"
+            },
+            {
+              "line": 1455,
+              "text": ""
+            },
+            {
+              "line": 1456,
+              "text": "  // make sure contact is valid"
+            },
+            {
+              "line": 1457,
+              "text": "  if (id >= 0 && id < d->ncon && d->contact[id].efc_address >= 0) {"
+            },
+            {
+              "line": 1458,
+              "text": "    // get contact pointer"
+            },
+            {
+              "line": 1459,
+              "text": "    con = d->contact + id;"
+            },
+            {
+              "line": 1460,
+              "text": ""
+            },
+            {
+              "line": 1461,
+              "text": "    if (mj_isPyramidal(m)) {"
+            },
+            {
+              "line": 1462,
+              "text": "      mju_decodePyramid(result, d->efc_force + con->efc_address, con->friction, con->dim);"
+            },
+            {
+              "line": 1463,
+              "text": "    } else {"
+            },
+            {
+              "line": 1464,
+              "text": "      mju_copy(result, d->efc_force + con->efc_address, con->dim);"
+            },
+            {
+              "line": 1465,
+              "text": "    }"
+            },
+            {
+              "line": 1466,
+              "text": "  }"
+            },
+            {
+              "line": 1467,
+              "text": "}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "engine_core_constraint.c",
+      "raw_url": "https://raw.githubusercontent.com/google-deepmind/mujoco/3.2.3/src/engine/engine_core_constraint.c",
+      "sha256": "4b771eb665610cd7029f7c7a3f4b6dcdafd4b27d4d744c288b9e0615f9dbb4fb",
+      "byte_count": 68698,
+      "line_count": 2433,
+      "excerpts": [
+        {
+          "line_start": 977,
+          "line_end": 995,
+          "source_url": "https://github.com/google-deepmind/mujoco/blob/3.2.3/src/engine/engine_core_constraint.c#L977-L995",
+          "lines": [
+            {
+              "line": 977,
+              "text": "      // special case: single body on each side"
+            },
+            {
+              "line": 978,
+              "text": "      if ((con->geom[0] >= 0 || con->vert[0] >= 0) &&"
+            },
+            {
+              "line": 979,
+              "text": "          (con->geom[1] >= 0 || con->vert[1] >= 0)) {"
+            },
+            {
+              "line": 980,
+              "text": "        // get bodies"
+            },
+            {
+              "line": 981,
+              "text": "        int bid[2];"
+            },
+            {
+              "line": 982,
+              "text": "        for (int side=0; side < 2; side++) {"
+            },
+            {
+              "line": 983,
+              "text": "          bid[side] = (con->geom[side] >= 0) ?"
+            },
+            {
+              "line": 984,
+              "text": "                      m->geom_bodyid[con->geom[side]] :"
+            },
+            {
+              "line": 985,
+              "text": "                      m->flex_vertbodyid[m->flex_vertadr[con->flex[side]] + con->vert[side]];"
+            },
+            {
+              "line": 986,
+              "text": "        }"
+            },
+            {
+              "line": 987,
+              "text": ""
+            },
+            {
+              "line": 988,
+              "text": "        // compute Jacobian differences"
+            },
+            {
+              "line": 989,
+              "text": "        if (dim > 3) {"
+            },
+            {
+              "line": 990,
+              "text": "          NV = mj_jacDifPair(m, d, chain, bid[0], bid[1], con->pos, con->pos,"
+            },
+            {
+              "line": 991,
+              "text": "                             jac1p, jac2p, jacdifp, jac1r, jac2r, jacdifr);"
+            },
+            {
+              "line": 992,
+              "text": "        } else {"
+            },
+            {
+              "line": 993,
+              "text": "          NV = mj_jacDifPair(m, d, chain, bid[0], bid[1], con->pos, con->pos,"
+            },
+            {
+              "line": 994,
+              "text": "                             jac1p, jac2p, jacdifp, NULL, NULL, NULL);"
+            },
+            {
+              "line": 995,
+              "text": "        }"
+            }
+          ]
+        },
+        {
+          "line_start": 1044,
+          "line_end": 1048,
+          "source_url": "https://github.com/google-deepmind/mujoco/blob/3.2.3/src/engine/engine_core_constraint.c#L1044-L1048",
+          "lines": [
+            {
+              "line": 1044,
+              "text": "      // rotate Jacobian differences to contact frame"
+            },
+            {
+              "line": 1045,
+              "text": "      mju_mulMatMat(jac, con->frame, jacdifp, dim > 1 ? 3 : 1, 3, NV);"
+            },
+            {
+              "line": 1046,
+              "text": "      if (dim > 3) {"
+            },
+            {
+              "line": 1047,
+              "text": "        mju_mulMatMat(jac + 3*NV, con->frame, jacdifr, dim-3, 3, NV);"
+            },
+            {
+              "line": 1048,
+              "text": "      }"
+            }
+          ]
+        },
+        {
+          "line_start": 2415,
+          "line_end": 2418,
+          "source_url": "https://github.com/google-deepmind/mujoco/blob/3.2.3/src/engine/engine_core_constraint.c#L2415-L2418",
+          "lines": [
+            {
+              "line": 2415,
+              "text": "  // compute qfrc_constraint"
+            },
+            {
+              "line": 2416,
+              "text": "  int flg_vecunc = 1;"
+            },
+            {
+              "line": 2417,
+              "text": "  int flg_resunc = 1;"
+            },
+            {
+              "line": 2418,
+              "text": "  mj_mulJacTVec_island(m, d, d->qfrc_constraint, d->efc_force, island, flg_vecunc, flg_resunc);"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "engine_core_smooth.c",
+      "raw_url": "https://raw.githubusercontent.com/google-deepmind/mujoco/3.2.3/src/engine/engine_core_smooth.c",
+      "sha256": "b3448a95c7edb43f743d35cd932481f8880212e90b96868da58d1a20fc53fe86",
+      "byte_count": 59513,
+      "line_count": 1983,
+      "excerpts": [
+        {
+          "line_start": 87,
+          "line_end": 111,
+          "source_url": "https://github.com/google-deepmind/mujoco/blob/3.2.3/src/engine/engine_core_smooth.c#L87-L111",
+          "lines": [
+            {
+              "line": 87,
+              "text": "      // apply fixed translation and rotation relative to parent"
+            },
+            {
+              "line": 88,
+              "text": "      if (pid) {"
+            },
+            {
+              "line": 89,
+              "text": "        mju_mulMatVec3(xpos, d->xmat+9*pid, bodypos);"
+            },
+            {
+              "line": 90,
+              "text": "        mju_addTo3(xpos, d->xpos+3*pid);"
+            },
+            {
+              "line": 91,
+              "text": "        mju_mulQuat(xquat, d->xquat+4*pid, bodyquat);"
+            },
+            {
+              "line": 92,
+              "text": "      } else {"
+            },
+            {
+              "line": 93,
+              "text": "        // parent is the world"
+            },
+            {
+              "line": 94,
+              "text": "        mju_copy3(xpos, bodypos);"
+            },
+            {
+              "line": 95,
+              "text": "        mju_copy4(xquat, bodyquat);"
+            },
+            {
+              "line": 96,
+              "text": "      }"
+            },
+            {
+              "line": 97,
+              "text": ""
+            },
+            {
+              "line": 98,
+              "text": "      // accumulate joints, compute xpos and xquat for this body"
+            },
+            {
+              "line": 99,
+              "text": "      mjtNum xanchor[3], xaxis[3];"
+            },
+            {
+              "line": 100,
+              "text": "      for (int j=0; j < jntnum; j++) {"
+            },
+            {
+              "line": 101,
+              "text": "        // get joint id, qpos address, joint type"
+            },
+            {
+              "line": 102,
+              "text": "        int jid = jntadr + j;"
+            },
+            {
+              "line": 103,
+              "text": "        int qadr = m->jnt_qposadr[jid];"
+            },
+            {
+              "line": 104,
+              "text": "        mjtJoint jtype = m->jnt_type[jid];"
+            },
+            {
+              "line": 105,
+              "text": ""
+            },
+            {
+              "line": 106,
+              "text": "        // compute axis in global frame; ball jnt_axis is (0,0,1), set by compiler"
+            },
+            {
+              "line": 107,
+              "text": "        mju_rotVecQuat(xaxis, m->jnt_axis+3*jid, xquat);"
+            },
+            {
+              "line": 108,
+              "text": ""
+            },
+            {
+              "line": 109,
+              "text": "        // compute anchor in global frame"
+            },
+            {
+              "line": 110,
+              "text": "        mju_rotVecQuat(xanchor, m->jnt_pos+3*jid, xquat);"
+            },
+            {
+              "line": 111,
+              "text": "        mju_addTo3(xanchor, xpos);"
+            }
+          ]
+        },
+        {
+          "line_start": 119,
+          "line_end": 147,
+          "source_url": "https://github.com/google-deepmind/mujoco/blob/3.2.3/src/engine/engine_core_smooth.c#L119-L147",
+          "lines": [
+            {
+              "line": 119,
+              "text": "        case mjJNT_BALL:"
+            },
+            {
+              "line": 120,
+              "text": "        case mjJNT_HINGE:"
+            },
+            {
+              "line": 121,
+              "text": "          {"
+            },
+            {
+              "line": 122,
+              "text": "            // compute local quaternion rotation"
+            },
+            {
+              "line": 123,
+              "text": "            mjtNum qloc[4];"
+            },
+            {
+              "line": 124,
+              "text": "            if (jtype == mjJNT_BALL) {"
+            },
+            {
+              "line": 125,
+              "text": "              mju_copy4(qloc, d->qpos+qadr);"
+            },
+            {
+              "line": 126,
+              "text": "              mju_normalize4(qloc);"
+            },
+            {
+              "line": 127,
+              "text": "            } else {"
+            },
+            {
+              "line": 128,
+              "text": "              mju_axisAngle2Quat(qloc, m->jnt_axis+3*jid, d->qpos[qadr] - m->qpos0[qadr]);"
+            },
+            {
+              "line": 129,
+              "text": "            }"
+            },
+            {
+              "line": 130,
+              "text": ""
+            },
+            {
+              "line": 131,
+              "text": "            // apply rotation"
+            },
+            {
+              "line": 132,
+              "text": "            mju_mulQuat(xquat, xquat, qloc);"
+            },
+            {
+              "line": 133,
+              "text": ""
+            },
+            {
+              "line": 134,
+              "text": "            // correct for off-center rotation"
+            },
+            {
+              "line": 135,
+              "text": "            mjtNum vec[3];"
+            },
+            {
+              "line": 136,
+              "text": "            mju_rotVecQuat(vec, m->jnt_pos+3*jid, xquat);"
+            },
+            {
+              "line": 137,
+              "text": "            mju_sub3(xpos, xanchor, vec);"
+            },
+            {
+              "line": 138,
+              "text": "          }"
+            },
+            {
+              "line": 139,
+              "text": "          break;"
+            },
+            {
+              "line": 140,
+              "text": ""
+            },
+            {
+              "line": 141,
+              "text": "        default:"
+            },
+            {
+              "line": 142,
+              "text": "          mjERROR(\"unknown joint type %d\", jtype);    // SHOULD NOT OCCUR"
+            },
+            {
+              "line": 143,
+              "text": "        }"
+            },
+            {
+              "line": 144,
+              "text": ""
+            },
+            {
+              "line": 145,
+              "text": "        // assign xanchor and xaxis"
+            },
+            {
+              "line": 146,
+              "text": "        mju_copy3(d->xanchor+3*jid, xanchor);"
+            },
+            {
+              "line": 147,
+              "text": "        mju_copy3(d->xaxis+3*jid, xaxis);"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "engine_forward.c",
+      "raw_url": "https://raw.githubusercontent.com/google-deepmind/mujoco/3.2.3/src/engine/engine_forward.c",
+      "sha256": "3fd61739f1101588cdc8ffdd5a03e9776c31abe346c7298f81a9232cc01398a6",
+      "byte_count": 31191,
+      "line_count": 1147,
+      "excerpts": [
+        {
+          "line_start": 883,
+          "line_end": 929,
+          "source_url": "https://github.com/google-deepmind/mujoco/blob/3.2.3/src/engine/engine_forward.c#L883-L929",
+          "lines": [
+            {
+              "line": 883,
+              "text": "  // compute the remaining X[i], F[i]"
+            },
+            {
+              "line": 884,
+              "text": "  for (int i=1; i < N; i++) {"
+            },
+            {
+              "line": 885,
+              "text": "    // compute dX"
+            },
+            {
+              "line": 886,
+              "text": "    mju_zero(dX, 2*nv+na);"
+            },
+            {
+              "line": 887,
+              "text": "    for (int j=0; j < i; j++) {"
+            },
+            {
+              "line": 888,
+              "text": "      mju_addToScl(dX, X[j]+nq, A[(i-1)*(N-1)+j], nv);"
+            },
+            {
+              "line": 889,
+              "text": "      mju_addToScl(dX+nv, F[j], A[(i-1)*(N-1)+j], nv+na);"
+            },
+            {
+              "line": 890,
+              "text": "    }"
+            },
+            {
+              "line": 891,
+              "text": ""
+            },
+            {
+              "line": 892,
+              "text": "    // compute X[i] = X[0] '+' dX"
+            },
+            {
+              "line": 893,
+              "text": "    mju_copy(X[i], X[0], nq+nv+na);"
+            },
+            {
+              "line": 894,
+              "text": "    mj_integratePos(m, X[i], dX, h);"
+            },
+            {
+              "line": 895,
+              "text": "    mju_addToScl(X[i]+nq, dX+nv, h, nv+na);"
+            },
+            {
+              "line": 896,
+              "text": ""
+            },
+            {
+              "line": 897,
+              "text": "    // set X[i], T[i-1] in mjData"
+            },
+            {
+              "line": 898,
+              "text": "    mju_copy(d->qpos, X[i], nq);"
+            },
+            {
+              "line": 899,
+              "text": "    mju_copy(d->qvel, X[i]+nq, nv);"
+            },
+            {
+              "line": 900,
+              "text": "    if (na) {"
+            },
+            {
+              "line": 901,
+              "text": "      mju_copy(d->act, X[i]+nq+nv, na);"
+            },
+            {
+              "line": 902,
+              "text": "    }"
+            },
+            {
+              "line": 903,
+              "text": "    d->time = T[i-1];"
+            },
+            {
+              "line": 904,
+              "text": ""
+            },
+            {
+              "line": 905,
+              "text": "    // evaluate F[i]"
+            },
+            {
+              "line": 906,
+              "text": "    mj_forwardSkip(m, d, mjSTAGE_NONE, 1);  // 1: do not recompute sensors and energy"
+            },
+            {
+              "line": 907,
+              "text": "    mju_copy(F[i], d->qacc, nv);"
+            },
+            {
+              "line": 908,
+              "text": "    if (na) {"
+            },
+            {
+              "line": 909,
+              "text": "      mju_copy(F[i]+nv, d->act_dot, na);"
+            },
+            {
+              "line": 910,
+              "text": "    }"
+            },
+            {
+              "line": 911,
+              "text": "  }"
+            },
+            {
+              "line": 912,
+              "text": ""
+            },
+            {
+              "line": 913,
+              "text": "  // compute dX for final update (using B instead of A)"
+            },
+            {
+              "line": 914,
+              "text": "  mju_zero(dX, 2*nv+na);"
+            },
+            {
+              "line": 915,
+              "text": "  for (int j=0; j < N; j++) {"
+            },
+            {
+              "line": 916,
+              "text": "    mju_addToScl(dX, X[j]+nq, B[j], nv);"
+            },
+            {
+              "line": 917,
+              "text": "    mju_addToScl(dX+nv, F[j], B[j], nv+na);"
+            },
+            {
+              "line": 918,
+              "text": "  }"
+            },
+            {
+              "line": 919,
+              "text": ""
+            },
+            {
+              "line": 920,
+              "text": "  // reset state and time"
+            },
+            {
+              "line": 921,
+              "text": "  d->time = time;"
+            },
+            {
+              "line": 922,
+              "text": "  mju_copy(d->qpos, X[0], nq);"
+            },
+            {
+              "line": 923,
+              "text": "  mju_copy(d->qvel, X[0]+nq, nv);"
+            },
+            {
+              "line": 924,
+              "text": "  mju_copy(d->act, X[0]+nq+nv, na);"
+            },
+            {
+              "line": 925,
+              "text": ""
+            },
+            {
+              "line": 926,
+              "text": "  // advance state and time"
+            },
+            {
+              "line": 927,
+              "text": "  mj_advance(m, d, dX+2*nv, dX+nv, dX);"
+            },
+            {
+              "line": 928,
+              "text": ""
+            },
+            {
+              "line": 929,
+              "text": "  mj_freeStack(d);"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "engine_util_spatial.c",
+      "raw_url": "https://raw.githubusercontent.com/google-deepmind/mujoco/3.2.3/src/engine/engine_util_spatial.c",
+      "sha256": "3927df89ee7079939ef092981998adaa366f937c1e72ebfa4d9207f49e83b128",
+      "byte_count": 15045,
+      "line_count": 549,
+      "excerpts": [
+        {
+          "line_start": 96,
+          "line_end": 114,
+          "source_url": "https://github.com/google-deepmind/mujoco/blob/3.2.3/src/engine/engine_util_spatial.c#L96-L114",
+          "lines": [
+            {
+              "line": 96,
+              "text": "// convert axisAngle to quaternion"
+            },
+            {
+              "line": 97,
+              "text": "void mju_axisAngle2Quat(mjtNum res[4], const mjtNum axis[3], mjtNum angle) {"
+            },
+            {
+              "line": 98,
+              "text": "  // zero angle: null quat"
+            },
+            {
+              "line": 99,
+              "text": "  if (angle == 0) {"
+            },
+            {
+              "line": 100,
+              "text": "    res[0] = 1;"
+            },
+            {
+              "line": 101,
+              "text": "    res[1] = 0;"
+            },
+            {
+              "line": 102,
+              "text": "    res[2] = 0;"
+            },
+            {
+              "line": 103,
+              "text": "    res[3] = 0;"
+            },
+            {
+              "line": 104,
+              "text": "  }"
+            },
+            {
+              "line": 105,
+              "text": ""
+            },
+            {
+              "line": 106,
+              "text": "  // regular processing"
+            },
+            {
+              "line": 107,
+              "text": "  else {"
+            },
+            {
+              "line": 108,
+              "text": "    mjtNum s = mju_sin(angle*0.5);"
+            },
+            {
+              "line": 109,
+              "text": "    res[0] = mju_cos(angle*0.5);"
+            },
+            {
+              "line": 110,
+              "text": "    res[1] = axis[0]*s;"
+            },
+            {
+              "line": 111,
+              "text": "    res[2] = axis[1]*s;"
+            },
+            {
+              "line": 112,
+              "text": "    res[3] = axis[2]*s;"
+            },
+            {
+              "line": 113,
+              "text": "  }"
+            },
+            {
+              "line": 114,
+              "text": "}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "verified_inferences": [
+    "Contact Jacobian is frame @ (Jgeom2 - Jgeom1); transpose-times-force means world wrench frame.T @ contact force acts positively on geom2 and negatively on geom1.",
+    "The hinge axis is computed from parent pose and fixed body transform before its own joint rotation; positive q uses positive axis-angle rotation.",
+    "RK4 evaluates force at internal stage4 then updates final qpos/qvel without refreshing cached body poses/contact forces."
+  ]
+}

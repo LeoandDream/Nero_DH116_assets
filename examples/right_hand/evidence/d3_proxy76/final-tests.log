@@ -1,0 +1,8 @@
+test_identity_does_not_reorder_faces (test_right_proxy76.ProxyMigrationTests.test_identity_does_not_reorder_faces) ... ok
+test_reflection_preserves_positive_oriented_tetrahedron_volume (test_right_proxy76.ProxyMigrationTests.test_reflection_preserves_positive_oriented_tetrahedron_volume) ... ok
+test_saved_convex_overlap_has_positive_clearance_to_every_plane (test_right_proxy76.ProxyMigrationTests.test_saved_convex_overlap_has_positive_clearance_to_every_plane) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.215s
+
+OK

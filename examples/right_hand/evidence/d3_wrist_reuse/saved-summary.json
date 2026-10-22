@@ -1,0 +1,5984 @@
+{
+  "states": 1401,
+  "baseline_wrist_contact_states": 87,
+  "candidate_wrist_contact_states": 0,
+  "new_body_pair_state_counts": {},
+  "lost_body_pair_state_counts": {
+    "robot0_gripper_flange / robot0_link5": 87
+  },
+  "candidate_wrist_contact_point_counts": {},
+  "states_with_bit_identical_nonwrist_contact_records": 1401,
+  "selected_steps": [
+    {
+      "step": 1314,
+      "phase": "approach_high",
+      "baseline_FK_contacts": [
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.6186115707486826e-05,
+          "position_world_m": [
+            -0.18306799124515064,
+            0.109588694931507,
+            0.8999838138842925
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.5714278570917702e-05,
+          "position_world_m": [
+            -0.15000799125861886,
+            0.10958869486944044,
+            0.8999842857214291
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.333068610016423e-05,
+          "position_world_m": [
+            -0.1830679914730457,
+            0.07502869540335178,
+            0.8999866693138998
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.2858848963595107e-05,
+          "position_world_m": [
+            -0.15000799148651392,
+            0.0750286953412852,
+            0.8999871411510364
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -2.106179084311185e-05,
+          "position_world_m": [
+            0.09332903451022995,
+            0.04299860225531029,
+            0.8999789382091569
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -8.447229725777428e-06,
+          "position_world_m": [
+            0.09332910688182718,
+            -0.06670139484353285,
+            0.8999915527702742
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -2.0594164407018903e-05,
+          "position_world_m": [
+            -0.016370965485759725,
+            0.042998530098803306,
+            0.899979405835593
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -7.979603289684482e-06,
+          "position_world_m": [
+            -0.016370893114162496,
+            -0.06670146700003984,
+            0.8999920203967103
+          ]
+        }
+      ],
+      "candidate_FK_contacts": [
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.6186115707486826e-05,
+          "position_world_m": [
+            -0.18306799124515064,
+            0.109588694931507,
+            0.8999838138842925
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.5714278570917702e-05,
+          "position_world_m": [
+            -0.15000799125861886,
+            0.10958869486944044,
+            0.8999842857214291
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.333068610016423e-05,
+          "position_world_m": [
+            -0.1830679914730457,
+            0.07502869540335178,
+            0.8999866693138998
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.2858848963595107e-05,
+          "position_world_m": [
+            -0.15000799148651392,
+            0.0750286953412852,
+            0.8999871411510364
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -2.106179084311185e-05,
+          "position_world_m": [
+            0.09332903451022995,
+            0.04299860225531029,
+            0.8999789382091569
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -8.447229725777428e-06,
+          "position_world_m": [
+            0.09332910688182718,
+            -0.06670139484353285,
+            0.8999915527702742
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -2.0594164407018903e-05,
+          "position_world_m": [
+            -0.016370965485759725,
+            0.042998530098803306,
+            0.899979405835593
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -7.979603289684482e-06,
+          "position_world_m": [
+            -0.016370893114162496,
+            -0.06670146700003984,
+            0.8999920203967103
+          ]
+        }
+      ],
+      "new_body_pairs": [],
+      "lost_body_pairs": [],
+      "baseline_wrist_contact_depths_m": {},
+      "candidate_wrist_contact_depths_m": {},
+      "candidate_wrist_contact_locations": [],
+      "saved_RK4_cache": {
+        "step": 1314,
+        "timing": "final RK4 internal-stage cache; qpos/height in state row are post-integration; no post-step forward",
+        "bowl_center_cached_m": [
+          -0.16644797538106618,
+          0.09230860259915645,
+          0.8994109576121889
+        ],
+        "contacts": [
+          {
+            "geom": [
+              "table_collision",
+              "white_bowl_1_g1"
+            ],
+            "body": [
+              "table",
+              "white_bowl_1_main"
+            ],
+            "distance_m": -1.6186115707486826e-05,
+            "position_world_m": [
+              -0.18306799124515064,
+              0.109588694931507,
+              0.8999838138842925
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  -0.16644797538106618,
+                  0.09230860259915645,
+                  0.8994109576121889
+                ],
+                "rotation_world": [
+                  6.5941862525953354e-09,
+                  -0.9999999995926127,
+                  -2.8544290683499247e-05,
+                  0.999999986347084,
+                  1.8773914089997845e-09,
+                  0.00016524476906323176,
+                  -0.00016524476894232417,
+                  -2.8544291383441196e-05,
+                  0.9999999859396957
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.005701732327140782,
+              -2.2486663905913845e-20,
+              -1.8244029988581795e-18,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "table_collision",
+              "white_bowl_1_g1"
+            ],
+            "body": [
+              "table",
+              "white_bowl_1_main"
+            ],
+            "distance_m": -1.5714278570917702e-05,
+            "position_world_m": [
+              -0.15000799125861886,
+              0.10958869486944044,
+              0.8999842857214291
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  -0.16644797538106618,
+                  0.09230860259915645,
+                  0.8994109576121889
+                ],
+                "rotation_world": [
+                  6.5941862525953354e-09,
+                  -0.9999999995926127,
+                  -2.8544290683499247e-05,
+                  0.999999986347084,
+                  1.8773914089997845e-09,
+                  0.00016524476906323176,
+                  -0.00016524476894232417,
+                  -2.8544291383441196e-05,
+                  0.9999999859396957
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.005535432165629924,
+              9.783445155208019e-20,
+              -1.7204524329001165e-18,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "table_collision",
+              "white_bowl_1_g1"
+            ],
+            "body": [
+              "table",
+              "white_bowl_1_main"
+            ],
+            "distance_m": -1.333068610016423e-05,
+            "position_world_m": [
+              -0.1830679914730457,
+              0.07502869540335178,
+              0.8999866693138998
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  -0.16644797538106618,
+                  0.09230860259915645,
+                  0.8994109576121889
+                ],
+                "rotation_world": [
+                  6.5941862525953354e-09,
+                  -0.9999999995926127,
+                  -2.8544290683499247e-05,
+                  0.999999986347084,
+                  1.8773914089997845e-09,
+                  0.00016524476906323176,
+                  -0.00016524476894232417,
+                  -2.8544291383441196e-05,
+                  0.9999999859396957
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.004695446924784149,
+              -1.2096051010010007e-19,
+              -1.3381619879814497e-18,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "table_collision",
+              "white_bowl_1_g1"
+            ],
+            "body": [
+              "table",
+              "white_bowl_1_main"
+            ],
+            "distance_m": -1.2858848963595107e-05,
+            "position_world_m": [
+              -0.15000799148651392,
+              0.0750286953412852,
+              0.8999871411510364
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  -0.16644797538106618,
+                  0.09230860259915645,
+                  0.8994109576121889
+                ],
+                "rotation_world": [
+                  6.5941862525953354e-09,
+                  -0.9999999995926127,
+                  -2.8544290683499247e-05,
+                  0.999999986347084,
+                  1.8773914089997845e-09,
+                  0.00016524476906323176,
+                  -0.00016524476894232417,
+                  -2.8544291383441196e-05,
+                  0.9999999859396957
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.004529191682861155,
+              -6.483430110238608e-22,
+              -1.2342314725136443e-18,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "table_collision",
+              "chefmate_8_frypan_1_g4"
+            ],
+            "body": [
+              "table",
+              "chefmate_8_frypan_1_main"
+            ],
+            "distance_m": -2.106179084311185e-05,
+            "position_world_m": [
+              0.09332903451022995,
+              0.04299860225531029,
+              0.8999789382091569
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  0.038479063877714645,
+                  -0.011851616358675446,
+                  0.8991709586270531
+                ],
+                "rotation_world": [
+                  -6.597228552895906e-07,
+                  -0.9999999999634427,
+                  8.525398839306407e-06,
+                  0.9999999735537203,
+                  -6.577621420311708e-07,
+                  0.00022998288833868925,
+                  -0.00022998288272259673,
+                  8.525550338809088e-06,
+                  0.9999999735175955
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.17876444101333544,
+              4.923321144729495e-17,
+              2.9929852823781837e-16,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "table_collision",
+              "chefmate_8_frypan_1_g4"
+            ],
+            "body": [
+              "table",
+              "chefmate_8_frypan_1_main"
+            ],
+            "distance_m": -8.447229725777428e-06,
+            "position_world_m": [
+              0.09332910688182718,
+              -0.06670139484353285,
+              0.8999915527702742
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  0.038479063877714645,
+                  -0.011851616358675446,
+                  0.8991709586270531
+                ],
+                "rotation_world": [
+                  -6.597228552895906e-07,
+                  -0.9999999999634427,
+                  8.525398839306407e-06,
+                  0.9999999735537203,
+                  -6.577621420311708e-07,
+                  0.00022998288833868925,
+                  -0.00022998288272259673,
+                  8.525550338809088e-06,
+                  0.9999999735175955
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.07166788307337499,
+              1.963623145796693e-17,
+              1.9207865708770623e-17,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "table_collision",
+              "chefmate_8_frypan_1_g4"
+            ],
+            "body": [
+              "table",
+              "chefmate_8_frypan_1_main"
+            ],
+            "distance_m": -2.0594164407018903e-05,
+            "position_world_m": [
+              -0.016370965485759725,
+              0.042998530098803306,
+              0.899979405835593
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  0.038479063877714645,
+                  -0.011851616358675446,
+                  0.8991709586270531
+                ],
+                "rotation_world": [
+                  -6.597228552895906e-07,
+                  -0.9999999999634427,
+                  8.525398839306407e-06,
+                  0.9999999735537203,
+                  -6.577621420311708e-07,
+                  0.00022998288833868925,
+                  -0.00022998288272259673,
+                  8.525550338809088e-06,
+                  0.9999999735175955
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.174791708011201,
+              2.891569367038358e-17,
+              2.896223887140716e-16,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "table_collision",
+              "chefmate_8_frypan_1_g4"
+            ],
+            "body": [
+              "table",
+              "chefmate_8_frypan_1_main"
+            ],
+            "distance_m": -7.979603289684482e-06,
+            "position_world_m": [
+              -0.016370893114162496,
+              -0.06670146700003984,
+              0.8999920203967103
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  0.038479063877714645,
+                  -0.011851616358675446,
+                  0.8991709586270531
+                ],
+                "rotation_world": [
+                  -6.597228552895906e-07,
+                  -0.9999999999634427,
+                  8.525398839306407e-06,
+                  0.9999999735537203,
+                  -6.577621420311708e-07,
+                  0.00022998288833868925,
+                  -0.00022998288272259673,
+                  8.525550338809088e-06,
+                  0.9999999735175955
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.06769988790327262,
+              -6.728854644021646e-19,
+              9.541200126088402e-18,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          }
+        ]
+      }
+    },
+    {
+      "step": 1315,
+      "phase": "approach_high",
+      "baseline_FK_contacts": [
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.618611570748589e-05,
+          "position_world_m": [
+            -0.18306799124515064,
+            0.10958869493150698,
+            0.8999838138842925
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.5714278570917682e-05,
+          "position_world_m": [
+            -0.15000799125861886,
+            0.10958869486944042,
+            0.8999842857214291
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.3330686100164254e-05,
+          "position_world_m": [
+            -0.1830679914730457,
+            0.07502869540335175,
+            0.8999866693138998
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.2858848963596046e-05,
+          "position_world_m": [
+            -0.15000799148651392,
+            0.0750286953412852,
+            0.8999871411510364
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -2.1061790843101195e-05,
+          "position_world_m": [
+            0.09332903451022995,
+            0.04299860225531029,
+            0.8999789382091569
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -8.447229725766773e-06,
+          "position_world_m": [
+            0.09332910688182718,
+            -0.06670139484353285,
+            0.8999915527702742
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -2.0594164407029562e-05,
+          "position_world_m": [
+            -0.016370965485759725,
+            0.042998530098803306,
+            0.899979405835593
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -7.97960328969514e-06,
+          "position_world_m": [
+            -0.016370893114162496,
+            -0.06670146700003984,
+            0.8999920203967103
+          ]
+        },
+        {
+          "geoms": [
+            "robot0_candidate_nero_link5_4",
+            "robot0_source_flange_part_2"
+          ],
+          "bodies": [
+            "robot0_link5",
+            "robot0_gripper_flange"
+          ],
+          "distance_m": -1.7077174795745996e-06,
+          "position_world_m": [
+            -0.1810967492240986,
+            0.19230398225756443,
+            1.154813149525495
+          ]
+        }
+      ],
+      "candidate_FK_contacts": [
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.618611570748589e-05,
+          "position_world_m": [
+            -0.18306799124515064,
+            0.10958869493150698,
+            0.8999838138842925
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.5714278570917682e-05,
+          "position_world_m": [
+            -0.15000799125861886,
+            0.10958869486944042,
+            0.8999842857214291
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.3330686100164254e-05,
+          "position_world_m": [
+            -0.1830679914730457,
+            0.07502869540335175,
+            0.8999866693138998
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.2858848963596046e-05,
+          "position_world_m": [
+            -0.15000799148651392,
+            0.0750286953412852,
+            0.8999871411510364
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -2.1061790843101195e-05,
+          "position_world_m": [
+            0.09332903451022995,
+            0.04299860225531029,
+            0.8999789382091569
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -8.447229725766773e-06,
+          "position_world_m": [
+            0.09332910688182718,
+            -0.06670139484353285,
+            0.8999915527702742
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -2.0594164407029562e-05,
+          "position_world_m": [
+            -0.016370965485759725,
+            0.042998530098803306,
+            0.899979405835593
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -7.97960328969514e-06,
+          "position_world_m": [
+            -0.016370893114162496,
+            -0.06670146700003984,
+            0.8999920203967103
+          ]
+        }
+      ],
+      "new_body_pairs": [],
+      "lost_body_pairs": [
+        "robot0_gripper_flange / robot0_link5"
+      ],
+      "baseline_wrist_contact_depths_m": {
+        "robot0_gripper_flange / robot0_link5": -1.7077174795745996e-06
+      },
+      "candidate_wrist_contact_depths_m": {},
+      "candidate_wrist_contact_locations": [],
+      "saved_RK4_cache": {
+        "step": 1315,
+        "timing": "final RK4 internal-stage cache; qpos/height in state row are post-integration; no post-step forward",
+        "bowl_center_cached_m": [
+          -0.16644797538106618,
+          0.09230860259915645,
+          0.8994109576121889
+        ],
+        "contacts": [
+          {
+            "geom": [
+              "table_collision",
+              "white_bowl_1_g1"
+            ],
+            "body": [
+              "table",
+              "white_bowl_1_main"
+            ],
+            "distance_m": -1.618611570748589e-05,
+            "position_world_m": [
+              -0.18306799124515064,
+              0.10958869493150698,
+              0.8999838138842925
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  -0.16644797538106618,
+                  0.09230860259915645,
+                  0.8994109576121889
+                ],
+                "rotation_world": [
+                  6.5941862525953354e-09,
+                  -0.9999999995926127,
+                  -2.854429068349792e-05,
+                  0.999999986347084,
+                  1.8773914089997845e-09,
+                  0.00016524476906323176,
+                  -0.00016524476894232417,
+                  -2.8544291383439868e-05,
+                  0.9999999859396957
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.005701732327140772,
+              1.5051037707421907e-18,
+              1.0433821732529456e-19,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "table_collision",
+              "white_bowl_1_g1"
+            ],
+            "body": [
+              "table",
+              "white_bowl_1_main"
+            ],
+            "distance_m": -1.5714278570917682e-05,
+            "position_world_m": [
+              -0.15000799125861886,
+              0.10958869486944042,
+              0.8999842857214291
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  -0.16644797538106618,
+                  0.09230860259915645,
+                  0.8994109576121889
+                ],
+                "rotation_world": [
+                  6.5941862525953354e-09,
+                  -0.9999999995926127,
+                  -2.854429068349792e-05,
+                  0.999999986347084,
+                  1.8773914089997845e-09,
+                  0.00016524476906323176,
+                  -0.00016524476894232417,
+                  -2.8544291383439868e-05,
+                  0.9999999859396957
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.005535432165629927,
+              1.4847583784613003e-18,
+              1.1989401928701856e-19,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "table_collision",
+              "white_bowl_1_g1"
+            ],
+            "body": [
+              "table",
+              "white_bowl_1_main"
+            ],
+            "distance_m": -1.3330686100164254e-05,
+            "position_world_m": [
+              -0.1830679914730457,
+              0.07502869540335175,
+              0.8999866693138998
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  -0.16644797538106618,
+                  0.09230860259915645,
+                  0.8994109576121889
+                ],
+                "rotation_world": [
+                  6.5941862525953354e-09,
+                  -0.9999999995926127,
+                  -2.854429068349792e-05,
+                  0.999999986347084,
+                  1.8773914089997845e-09,
+                  0.00016524476906323176,
+                  -0.00016524476894232417,
+                  -2.8544291383439868e-05,
+                  0.9999999859396957
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.004695446924784146,
+              8.570815273885055e-19,
+              1.0779783364773878e-19,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "table_collision",
+              "white_bowl_1_g1"
+            ],
+            "body": [
+              "table",
+              "white_bowl_1_main"
+            ],
+            "distance_m": -1.2858848963596046e-05,
+            "position_world_m": [
+              -0.15000799148651392,
+              0.0750286953412852,
+              0.8999871411510364
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  -0.16644797538106618,
+                  0.09230860259915645,
+                  0.8994109576121889
+                ],
+                "rotation_world": [
+                  6.5941862525953354e-09,
+                  -0.9999999995926127,
+                  -2.854429068349792e-05,
+                  0.999999986347084,
+                  1.8773914089997845e-09,
+                  0.00016524476906323176,
+                  -0.00016524476894232417,
+                  -2.8544291383439868e-05,
+                  0.9999999859396957
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.004529191682861164,
+              8.367503143534575e-19,
+              1.233525705627839e-19,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "table_collision",
+              "chefmate_8_frypan_1_g4"
+            ],
+            "body": [
+              "table",
+              "chefmate_8_frypan_1_main"
+            ],
+            "distance_m": -2.1061790843101195e-05,
+            "position_world_m": [
+              0.09332903451022995,
+              0.04299860225531029,
+              0.8999789382091569
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  0.038479063877714645,
+                  -0.011851616358675446,
+                  0.8991709586270531
+                ],
+                "rotation_world": [
+                  -6.597228552895906e-07,
+                  -0.9999999999634427,
+                  8.525398839302002e-06,
+                  0.9999999735537203,
+                  -6.577621420311708e-07,
+                  0.0002299828883386895,
+                  -0.00022998288272259697,
+                  8.525550338804683e-06,
+                  0.9999999735175955
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.17876444101333475,
+              1.6602668861682383e-17,
+              -2.0308567936864237e-16,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "table_collision",
+              "chefmate_8_frypan_1_g4"
+            ],
+            "body": [
+              "table",
+              "chefmate_8_frypan_1_main"
+            ],
+            "distance_m": -8.447229725766773e-06,
+            "position_world_m": [
+              0.09332910688182718,
+              -0.06670139484353285,
+              0.8999915527702742
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  0.038479063877714645,
+                  -0.011851616358675446,
+                  0.8991709586270531
+                ],
+                "rotation_world": [
+                  -6.597228552895906e-07,
+                  -0.9999999999634427,
+                  8.525398839302002e-06,
+                  0.9999999735537203,
+                  -6.577621420311708e-07,
+                  0.0002299828883386895,
+                  -0.00022998288272259697,
+                  8.525550338804683e-06,
+                  0.9999999735175955
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.07166788307337402,
+              -1.304613799982797e-17,
+              -2.099413857152937e-17,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "table_collision",
+              "chefmate_8_frypan_1_g4"
+            ],
+            "body": [
+              "table",
+              "chefmate_8_frypan_1_main"
+            ],
+            "distance_m": -2.0594164407029562e-05,
+            "position_world_m": [
+              -0.016370965485759725,
+              0.042998530098803306,
+              0.899979405835593
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  0.038479063877714645,
+                  -0.011851616358675446,
+                  0.8991709586270531
+                ],
+                "rotation_world": [
+                  -6.597228552895906e-07,
+                  -0.9999999999634427,
+                  8.525398839302002e-06,
+                  0.9999999735537203,
+                  -6.577621420311708e-07,
+                  0.0002299828883386895,
+                  -0.00022998288272259697,
+                  8.525550338804683e-06,
+                  0.9999999735175955
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.1747917080112018,
+              4.6065207693769083e-17,
+              -1.9746475484127632e-16,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "table_collision",
+              "chefmate_8_frypan_1_g4"
+            ],
+            "body": [
+              "table",
+              "chefmate_8_frypan_1_main"
+            ],
+            "distance_m": -7.97960328969514e-06,
+            "position_world_m": [
+              -0.016370893114162496,
+              -0.06670146700003984,
+              0.8999920203967103
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  0.038479063877714645,
+                  -0.011851616358675446,
+                  0.8991709586270531
+                ],
+                "rotation_world": [
+                  -6.597228552895906e-07,
+                  -0.9999999999634427,
+                  8.525398839302002e-06,
+                  0.9999999735537203,
+                  -6.577621420311708e-07,
+                  0.0002299828883386895,
+                  -0.00022998288272259697,
+                  8.525550338804683e-06,
+                  0.9999999735175955
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.06769988790327341,
+              1.6405867114583062e-17,
+              -1.5379227507000244e-17,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "robot0_candidate_nero_link5_4",
+              "robot0_source_flange_part_2"
+            ],
+            "body": [
+              "robot0_link5",
+              "robot0_gripper_flange"
+            ],
+            "distance_m": -1.7074058854193656e-06,
+            "position_world_m": [
+              -0.1810967492470753,
+              0.19230398176809751,
+              1.1548131494983362
+            ],
+            "frame": [
+              -0.6060691967268969,
+              0.223274557807497,
+              -0.7634321191924536,
+              0.13882437039826143,
+              0.9747555959500137,
+              0.17486944372205118,
+              0.7832036280319059,
+              1.3877787807814457e-17,
+              -0.6217652909560485
+            ],
+            "normal_world": [
+              -0.6060691967268969,
+              0.223274557807497,
+              -0.7634321191924536
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  -0.16716524682163372,
+                  0.21674704329141448,
+                  1.1707839780584137
+                ],
+                "rotation_world": [
+                  -0.6303694229883647,
+                  -0.3261024780364026,
+                  0.7044796408554568,
+                  0.29630015350744754,
+                  0.7377143867274973,
+                  0.6066166026797611,
+                  -0.7175239435675849,
+                  0.5911299835347467,
+                  -0.3684083779902827
+                ]
+              },
+              {
+                "position_world_m": [
+                  -0.15607849572274968,
+                  0.19426450794523922,
+                  1.1508937916783986
+                ],
+                "rotation_world": [
+                  0.3924952479283026,
+                  0.8520029949023032,
+                  0.34646554955898,
+                  0.7103934160028064,
+                  -0.041557820131012016,
+                  -0.702576787323508,
+                  -0.5841991739583031,
+                  0.521884895607704,
+                  -0.6215685649089503
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.1941070418166123,
+              0.09212069296505673,
+              0.1708546798025557,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          }
+        ]
+      }
+    },
+    {
+      "step": 1321,
+      "phase": "approach_high",
+      "baseline_FK_contacts": [
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.618611570748589e-05,
+          "position_world_m": [
+            -0.18306799124515064,
+            0.10958869493150698,
+            0.8999838138842925
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.5714278570917682e-05,
+          "position_world_m": [
+            -0.15000799125861886,
+            0.10958869486944042,
+            0.8999842857214291
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.3330686100164254e-05,
+          "position_world_m": [
+            -0.1830679914730457,
+            0.07502869540335175,
+            0.8999866693138998
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.2858848963596046e-05,
+          "position_world_m": [
+            -0.15000799148651392,
+            0.0750286953412852,
+            0.8999871411510364
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -2.1061790843101195e-05,
+          "position_world_m": [
+            0.09332903451022995,
+            0.04299860225531029,
+            0.8999789382091569
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -8.447229725766773e-06,
+          "position_world_m": [
+            0.09332910688182718,
+            -0.06670139484353285,
+            0.8999915527702742
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -2.0594164407029562e-05,
+          "position_world_m": [
+            -0.016370965485759725,
+            0.042998530098803306,
+            0.899979405835593
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -7.97960328969514e-06,
+          "position_world_m": [
+            -0.016370893114162496,
+            -0.06670146700003984,
+            0.8999920203967103
+          ]
+        },
+        {
+          "geoms": [
+            "robot0_candidate_nero_link5_4",
+            "robot0_source_flange_part_2"
+          ],
+          "bodies": [
+            "robot0_link5",
+            "robot0_gripper_flange"
+          ],
+          "distance_m": -1.9974011462681443e-05,
+          "position_world_m": [
+            -0.18130876763676781,
+            0.19198508382211704,
+            1.154812738793352
+          ]
+        }
+      ],
+      "candidate_FK_contacts": [
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.618611570748589e-05,
+          "position_world_m": [
+            -0.18306799124515064,
+            0.10958869493150698,
+            0.8999838138842925
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.5714278570917682e-05,
+          "position_world_m": [
+            -0.15000799125861886,
+            0.10958869486944042,
+            0.8999842857214291
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.3330686100164254e-05,
+          "position_world_m": [
+            -0.1830679914730457,
+            0.07502869540335175,
+            0.8999866693138998
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.2858848963596046e-05,
+          "position_world_m": [
+            -0.15000799148651392,
+            0.0750286953412852,
+            0.8999871411510364
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -2.1061790843101195e-05,
+          "position_world_m": [
+            0.09332903451022995,
+            0.04299860225531029,
+            0.8999789382091569
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -8.447229725766773e-06,
+          "position_world_m": [
+            0.09332910688182718,
+            -0.06670139484353285,
+            0.8999915527702742
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -2.0594164407029562e-05,
+          "position_world_m": [
+            -0.016370965485759725,
+            0.042998530098803306,
+            0.899979405835593
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -7.97960328969514e-06,
+          "position_world_m": [
+            -0.016370893114162496,
+            -0.06670146700003984,
+            0.8999920203967103
+          ]
+        }
+      ],
+      "new_body_pairs": [],
+      "lost_body_pairs": [
+        "robot0_gripper_flange / robot0_link5"
+      ],
+      "baseline_wrist_contact_depths_m": {
+        "robot0_gripper_flange / robot0_link5": -1.9974011462681443e-05
+      },
+      "candidate_wrist_contact_depths_m": {},
+      "candidate_wrist_contact_locations": [],
+      "saved_RK4_cache": {
+        "step": 1321,
+        "timing": "final RK4 internal-stage cache; qpos/height in state row are post-integration; no post-step forward",
+        "bowl_center_cached_m": [
+          -0.16644797538106618,
+          0.09230860259915645,
+          0.8994109576121889
+        ],
+        "contacts": [
+          {
+            "geom": [
+              "table_collision",
+              "white_bowl_1_g1"
+            ],
+            "body": [
+              "table",
+              "white_bowl_1_main"
+            ],
+            "distance_m": -1.618611570748589e-05,
+            "position_world_m": [
+              -0.18306799124515064,
+              0.10958869493150698,
+              0.8999838138842925
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  -0.16644797538106618,
+                  0.09230860259915645,
+                  0.8994109576121889
+                ],
+                "rotation_world": [
+                  6.5941862525953354e-09,
+                  -0.9999999995926127,
+                  -2.85442906834972e-05,
+                  0.999999986347084,
+                  1.8773914089997845e-09,
+                  0.0001652447690632302,
+                  -0.00016524476894232257,
+                  -2.854429138343915e-05,
+                  0.9999999859396957
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.0057017323271407695,
+              3.570598742434384e-18,
+              -3.0454954084276987e-18,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "table_collision",
+              "white_bowl_1_g1"
+            ],
+            "body": [
+              "table",
+              "white_bowl_1_main"
+            ],
+            "distance_m": -1.5714278570917682e-05,
+            "position_world_m": [
+              -0.15000799125861886,
+              0.10958869486944042,
+              0.8999842857214291
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  -0.16644797538106618,
+                  0.09230860259915645,
+                  0.8994109576121889
+                ],
+                "rotation_world": [
+                  6.5941862525953354e-09,
+                  -0.9999999995926127,
+                  -2.85442906834972e-05,
+                  0.999999986347084,
+                  1.8773914089997845e-09,
+                  0.0001652447690632302,
+                  -0.00016524476894232257,
+                  -2.854429138343915e-05,
+                  0.9999999859396957
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.005535432165629932,
+              3.163206066356881e-18,
+              -3.026579557775308e-18,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "table_collision",
+              "white_bowl_1_g1"
+            ],
+            "body": [
+              "table",
+              "white_bowl_1_main"
+            ],
+            "distance_m": -1.3330686100164254e-05,
+            "position_world_m": [
+              -0.1830679914730457,
+              0.07502869540335175,
+              0.8999866693138998
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  -0.16644797538106618,
+                  0.09230860259915645,
+                  0.8994109576121889
+                ],
+                "rotation_world": [
+                  6.5941862525953354e-09,
+                  -0.9999999995926127,
+                  -2.85442906834972e-05,
+                  0.999999986347084,
+                  1.8773914089997845e-09,
+                  0.0001652447690632302,
+                  -0.00016524476894232257,
+                  -2.854429138343915e-05,
+                  0.9999999859396957
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.004695446924784137,
+              2.915119293873042e-18,
+              -2.61843650155238e-18,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "table_collision",
+              "white_bowl_1_g1"
+            ],
+            "body": [
+              "table",
+              "white_bowl_1_main"
+            ],
+            "distance_m": -1.2858848963596046e-05,
+            "position_world_m": [
+              -0.15000799148651392,
+              0.0750286953412852,
+              0.8999871411510364
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  -0.16644797538106618,
+                  0.09230860259915645,
+                  0.8994109576121889
+                ],
+                "rotation_world": [
+                  6.5941862525953354e-09,
+                  -0.9999999995926127,
+                  -2.85442906834972e-05,
+                  0.999999986347084,
+                  1.8773914089997845e-09,
+                  0.0001652447690632302,
+                  -0.00016524476894232257,
+                  -2.854429138343915e-05,
+                  0.9999999859396957
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.004529191682861166,
+              2.5077792707221865e-18,
+              -2.5995361768764705e-18,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "table_collision",
+              "chefmate_8_frypan_1_g4"
+            ],
+            "body": [
+              "table",
+              "chefmate_8_frypan_1_main"
+            ],
+            "distance_m": -2.1061790843101195e-05,
+            "position_world_m": [
+              0.09332903451022995,
+              0.04299860225531029,
+              0.8999789382091569
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  0.038479063877714645,
+                  -0.011851616358675446,
+                  0.8991709586270531
+                ],
+                "rotation_world": [
+                  -6.597228552895906e-07,
+                  -0.9999999999634427,
+                  8.52539883930226e-06,
+                  0.9999999735537203,
+                  -6.577621420311708e-07,
+                  0.0002299828883386902,
+                  -0.0002299828827225977,
+                  8.52555033880494e-06,
+                  0.9999999735175955
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.1787644410133341,
+              2.2558266186137394e-17,
+              -3.0801013883923705e-16,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "table_collision",
+              "chefmate_8_frypan_1_g4"
+            ],
+            "body": [
+              "table",
+              "chefmate_8_frypan_1_main"
+            ],
+            "distance_m": -8.447229725766773e-06,
+            "position_world_m": [
+              0.09332910688182718,
+              -0.06670139484353285,
+              0.8999915527702742
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  0.038479063877714645,
+                  -0.011851616358675446,
+                  0.8991709586270531
+                ],
+                "rotation_world": [
+                  -6.597228552895906e-07,
+                  -0.9999999999634427,
+                  8.52539883930226e-06,
+                  0.9999999735537203,
+                  -6.577621420311708e-07,
+                  0.0002299828883386902,
+                  -0.0002299828827225977,
+                  8.52555033880494e-06,
+                  0.9999999735175955
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.0716678830733741,
+              -5.5811484633845386e-18,
+              -5.810421680186968e-17,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "table_collision",
+              "chefmate_8_frypan_1_g4"
+            ],
+            "body": [
+              "table",
+              "chefmate_8_frypan_1_main"
+            ],
+            "distance_m": -2.0594164407029562e-05,
+            "position_world_m": [
+              -0.016370965485759725,
+              0.042998530098803306,
+              0.899979405835593
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  0.038479063877714645,
+                  -0.011851616358675446,
+                  0.8991709586270531
+                ],
+                "rotation_world": [
+                  -6.597228552895906e-07,
+                  -0.9999999999634427,
+                  8.52539883930226e-06,
+                  0.9999999735537203,
+                  -6.577621420311708e-07,
+                  0.0002299828883386902,
+                  -0.0002299828827225977,
+                  8.52555033880494e-06,
+                  0.9999999735175955
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.17479170801120167,
+              1.2085144197288055e-16,
+              -3.02423235782456e-16,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "table_collision",
+              "chefmate_8_frypan_1_g4"
+            ],
+            "body": [
+              "table",
+              "chefmate_8_frypan_1_main"
+            ],
+            "distance_m": -7.97960328969514e-06,
+            "position_world_m": [
+              -0.016370893114162496,
+              -0.06670146700003984,
+              0.8999920203967103
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  0.038479063877714645,
+                  -0.011851616358675446,
+                  0.8991709586270531
+                ],
+                "rotation_world": [
+                  -6.597228552895906e-07,
+                  -0.9999999999634427,
+                  8.52539883930226e-06,
+                  0.9999999735537203,
+                  -6.577621420311708e-07,
+                  0.0002299828883386902,
+                  -0.0002299828827225977,
+                  8.52555033880494e-06,
+                  0.9999999735175955
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.0676998879032739,
+              9.267592280554073e-17,
+              -5.252513154641345e-17,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "robot0_candidate_nero_link5_4",
+              "robot0_source_flange_part_2"
+            ],
+            "body": [
+              "robot0_link5",
+              "robot0_gripper_flange"
+            ],
+            "distance_m": -1.9979597274136128e-05,
+            "position_world_m": [
+              -0.1813087670523098,
+              0.19198508414786702,
+              1.1548127438206643
+            ],
+            "frame": [
+              -0.6070600266451376,
+              0.22409735109523202,
+              -0.762403109438639,
+              0.13959078943686615,
+              0.9745667638659244,
+              0.17531124970261375,
+              0.7822995178024832,
+              -1.3877787807814457e-17,
+              -0.6229024517900076
+            ],
+            "normal_world": [
+              -0.6070600266451376,
+              0.22409735109523202,
+              -0.762403109438639
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  -0.16733751808707342,
+                  0.2164160332485517,
+                  1.1707603736264143
+                ],
+                "rotation_world": [
+                  -0.6312088314557887,
+                  -0.324676503002553,
+                  0.704386669017984,
+                  0.297043245839379,
+                  0.737732780477312,
+                  0.6062306942991424,
+                  -0.7164779977036447,
+                  0.5918914706322835,
+                  -0.3692204839920567
+                ]
+              },
+              {
+                "position_world_m": [
+                  -0.1563002602898893,
+                  0.19392920357032878,
+                  1.1508475287494728
+                ],
+                "rotation_world": [
+                  0.3914486680277584,
+                  0.8531113079221382,
+                  0.34491888407953636,
+                  0.7102473508403047,
+                  -0.04178480557844738,
+                  -0.702710986570653,
+                  -0.5850783203329474,
+                  0.520053003373839,
+                  -0.6222766529110881
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.4461089154188657,
+              -0.44297487313462025,
+              -0.05278660992679689,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          }
+        ]
+      }
+    },
+    {
+      "step": 1326,
+      "phase": "approach_high",
+      "baseline_FK_contacts": [
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.6186115707486148e-05,
+          "position_world_m": [
+            -0.18306799124515064,
+            0.109588694931507,
+            0.8999838138842925
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.5714278570919776e-05,
+          "position_world_m": [
+            -0.15000799125861886,
+            0.10958869486944044,
+            0.8999842857214291
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.3330686100162594e-05,
+          "position_world_m": [
+            -0.1830679914730457,
+            0.07502869540335178,
+            0.8999866693138998
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.2858848963596222e-05,
+          "position_world_m": [
+            -0.15000799148651392,
+            0.0750286953412852,
+            0.8999871411510364
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -2.106179084310341e-05,
+          "position_world_m": [
+            0.09332903451022995,
+            0.042998602255310304,
+            0.8999789382091569
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -8.4472297257776e-06,
+          "position_world_m": [
+            0.09332910688182718,
+            -0.06670139484353285,
+            0.8999915527702742
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -2.0594164407019597e-05,
+          "position_world_m": [
+            -0.01637096548575974,
+            0.04299853009880332,
+            0.899979405835593
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -7.979603289693788e-06,
+          "position_world_m": [
+            -0.01637089311416251,
+            -0.06670146700003984,
+            0.8999920203967103
+          ]
+        },
+        {
+          "geoms": [
+            "robot0_candidate_nero_link5_4",
+            "robot0_source_flange_part_2"
+          ],
+          "bodies": [
+            "robot0_link5",
+            "robot0_gripper_flange"
+          ],
+          "distance_m": -2.283508337753223e-05,
+          "position_world_m": [
+            -0.1814905119905535,
+            0.19172131120773,
+            1.1548022131334261
+          ]
+        }
+      ],
+      "candidate_FK_contacts": [
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.6186115707486148e-05,
+          "position_world_m": [
+            -0.18306799124515064,
+            0.109588694931507,
+            0.8999838138842925
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.5714278570919776e-05,
+          "position_world_m": [
+            -0.15000799125861886,
+            0.10958869486944044,
+            0.8999842857214291
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.3330686100162594e-05,
+          "position_world_m": [
+            -0.1830679914730457,
+            0.07502869540335178,
+            0.8999866693138998
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.2858848963596222e-05,
+          "position_world_m": [
+            -0.15000799148651392,
+            0.0750286953412852,
+            0.8999871411510364
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -2.106179084310341e-05,
+          "position_world_m": [
+            0.09332903451022995,
+            0.042998602255310304,
+            0.8999789382091569
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -8.4472297257776e-06,
+          "position_world_m": [
+            0.09332910688182718,
+            -0.06670139484353285,
+            0.8999915527702742
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -2.0594164407019597e-05,
+          "position_world_m": [
+            -0.01637096548575974,
+            0.04299853009880332,
+            0.899979405835593
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -7.979603289693788e-06,
+          "position_world_m": [
+            -0.01637089311416251,
+            -0.06670146700003984,
+            0.8999920203967103
+          ]
+        }
+      ],
+      "new_body_pairs": [],
+      "lost_body_pairs": [
+        "robot0_gripper_flange / robot0_link5"
+      ],
+      "baseline_wrist_contact_depths_m": {
+        "robot0_gripper_flange / robot0_link5": -2.283508337753223e-05
+      },
+      "candidate_wrist_contact_depths_m": {},
+      "candidate_wrist_contact_locations": [],
+      "saved_RK4_cache": {
+        "step": 1326,
+        "timing": "final RK4 internal-stage cache; qpos/height in state row are post-integration; no post-step forward",
+        "bowl_center_cached_m": [
+          -0.16644797538106618,
+          0.09230860259915645,
+          0.8994109576121889
+        ],
+        "contacts": [
+          {
+            "geom": [
+              "table_collision",
+              "white_bowl_1_g1"
+            ],
+            "body": [
+              "table",
+              "white_bowl_1_main"
+            ],
+            "distance_m": -1.6186115707486148e-05,
+            "position_world_m": [
+              -0.18306799124515064,
+              0.109588694931507,
+              0.8999838138842925
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  -0.16644797538106618,
+                  0.09230860259915645,
+                  0.8994109576121889
+                ],
+                "rotation_world": [
+                  6.5941862525953354e-09,
+                  -0.9999999995926127,
+                  -2.8544290683494016e-05,
+                  0.999999986347084,
+                  1.8773914089997845e-09,
+                  0.00016524476906323285,
+                  -0.00016524476894232528,
+                  -2.854429138343595e-05,
+                  0.9999999859396957
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.005701732327140768,
+              -2.4243844005968324e-18,
+              2.7172478694457844e-18,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "table_collision",
+              "white_bowl_1_g1"
+            ],
+            "body": [
+              "table",
+              "white_bowl_1_main"
+            ],
+            "distance_m": -1.5714278570919776e-05,
+            "position_world_m": [
+              -0.15000799125861886,
+              0.10958869486944044,
+              0.8999842857214291
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  -0.16644797538106618,
+                  0.09230860259915645,
+                  0.8994109576121889
+                ],
+                "rotation_world": [
+                  6.5941862525953354e-09,
+                  -0.9999999995926127,
+                  -2.8544290683494016e-05,
+                  0.999999986347084,
+                  1.8773914089997845e-09,
+                  0.00016524476906323285,
+                  -0.00016524476894232528,
+                  -2.854429138343595e-05,
+                  0.9999999859396957
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.005535432165629951,
+              -2.5476715806609983e-18,
+              2.5569799787964782e-18,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "table_collision",
+              "white_bowl_1_g1"
+            ],
+            "body": [
+              "table",
+              "white_bowl_1_main"
+            ],
+            "distance_m": -1.3330686100162594e-05,
+            "position_world_m": [
+              -0.1830679914730457,
+              0.07502869540335178,
+              0.8999866693138998
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  -0.16644797538106618,
+                  0.09230860259915645,
+                  0.8994109576121889
+                ],
+                "rotation_world": [
+                  6.5941862525953354e-09,
+                  -0.9999999995926127,
+                  -2.8544290683494016e-05,
+                  0.999999986347084,
+                  1.8773914089997845e-09,
+                  0.00016524476906323285,
+                  -0.00016524476894232528,
+                  -2.854429138343595e-05,
+                  0.9999999859396957
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.004695446924784122,
+              -1.982802791992486e-18,
+              1.9525920722128068e-18,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "table_collision",
+              "white_bowl_1_g1"
+            ],
+            "body": [
+              "table",
+              "white_bowl_1_main"
+            ],
+            "distance_m": -1.2858848963596222e-05,
+            "position_world_m": [
+              -0.15000799148651392,
+              0.0750286953412852,
+              0.8999871411510364
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  -0.16644797538106618,
+                  0.09230860259915645,
+                  0.8994109576121889
+                ],
+                "rotation_world": [
+                  6.5941862525953354e-09,
+                  -0.9999999995926127,
+                  -2.8544290683494016e-05,
+                  0.999999986347084,
+                  1.8773914089997845e-09,
+                  0.00016524476906323285,
+                  -0.00016524476894232528,
+                  -2.854429138343595e-05,
+                  0.9999999859396957
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.004529191682861172,
+              -2.1060919665554707e-18,
+              1.7923550200781184e-18,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "table_collision",
+              "chefmate_8_frypan_1_g4"
+            ],
+            "body": [
+              "table",
+              "chefmate_8_frypan_1_main"
+            ],
+            "distance_m": -2.106179084311185e-05,
+            "position_world_m": [
+              0.09332903451022995,
+              0.04299860225531029,
+              0.8999789382091569
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  0.038479063877714645,
+                  -0.011851616358675446,
+                  0.8991709586270531
+                ],
+                "rotation_world": [
+                  -6.597228552895906e-07,
+                  -0.9999999999634427,
+                  8.525398839306705e-06,
+                  0.9999999735537203,
+                  -6.577621420311708e-07,
+                  0.0002299828883386902,
+                  -0.0002299828827225977,
+                  8.525550338809386e-06,
+                  0.9999999735175955
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.17876444101333516,
+              1.2974588760711096e-16,
+              3.874738204791065e-16,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "table_collision",
+              "chefmate_8_frypan_1_g4"
+            ],
+            "body": [
+              "table",
+              "chefmate_8_frypan_1_main"
+            ],
+            "distance_m": -8.447229725777428e-06,
+            "position_world_m": [
+              0.09332910688182718,
+              -0.06670139484353285,
+              0.8999915527702742
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  0.038479063877714645,
+                  -0.011851616358675446,
+                  0.8991709586270531
+                ],
+                "rotation_world": [
+                  -6.597228552895906e-07,
+                  -0.9999999999634427,
+                  8.525398839306705e-06,
+                  0.9999999735537203,
+                  -6.577621420311708e-07,
+                  0.0002299828883386902,
+                  -0.0002299828827225977,
+                  8.525550338809386e-06,
+                  0.9999999735175955
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.07166788307337545,
+              1.0194560382999435e-16,
+              4.951807838752012e-17,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "table_collision",
+              "chefmate_8_frypan_1_g4"
+            ],
+            "body": [
+              "table",
+              "chefmate_8_frypan_1_main"
+            ],
+            "distance_m": -2.0594164407018903e-05,
+            "position_world_m": [
+              -0.016370965485759725,
+              0.042998530098803306,
+              0.899979405835593
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  0.038479063877714645,
+                  -0.011851616358675446,
+                  0.8991709586270531
+                ],
+                "rotation_world": [
+                  -6.597228552895906e-07,
+                  -0.9999999999634427,
+                  8.525398839306705e-06,
+                  0.9999999735537203,
+                  -6.577621420311708e-07,
+                  0.0002299828883386902,
+                  -0.0002299828827225977,
+                  8.525550338809386e-06,
+                  0.9999999735175955
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.1747917080112003,
+              5.0828298937165005e-17,
+              3.778260414143498e-16,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "table_collision",
+              "chefmate_8_frypan_1_g4"
+            ],
+            "body": [
+              "table",
+              "chefmate_8_frypan_1_main"
+            ],
+            "distance_m": -7.979603289684482e-06,
+            "position_world_m": [
+              -0.016370893114162496,
+              -0.06670146700003984,
+              0.8999920203967103
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  0.038479063877714645,
+                  -0.011851616358675446,
+                  0.8991709586270531
+                ],
+                "rotation_world": [
+                  -6.597228552895906e-07,
+                  -0.9999999999634427,
+                  8.525398839306705e-06,
+                  0.9999999735537203,
+                  -6.577621420311708e-07,
+                  0.0002299828883386902,
+                  -0.0002299828827225977,
+                  8.525550338809386e-06,
+                  0.9999999735175955
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.06769988790327276,
+              2.3059204756531302e-17,
+              3.9881296611922507e-17,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "robot0_candidate_nero_link5_4",
+              "robot0_source_flange_part_2"
+            ],
+            "body": [
+              "robot0_link5",
+              "robot0_gripper_flange"
+            ],
+            "distance_m": -2.2837872636348362e-05,
+            "position_world_m": [
+              -0.1814905112220288,
+              0.19172131046223356,
+              1.154802215635741
+            ],
+            "frame": [
+              -0.6078668832208062,
+              0.22469962640377916,
+              -0.7615825169851425,
+              0.14017192724664396,
+              0.9744280773325459,
+              0.175618202125974,
+              0.7815687321633231,
+              1.3877787807814457e-17,
+              -0.623819137975596
+            ],
+            "normal_world": [
+              -0.6078668832208062,
+              0.22469962640377916,
+              -0.7615825169851425
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  -0.16748411224444956,
+                  0.2161397331008963,
+                  1.1707378178370065
+                ],
+                "rotation_world": [
+                  -0.6319165813619095,
+                  -0.32348286986660146,
+                  0.7043012616080884,
+                  0.2976551972954694,
+                  0.7377500699796019,
+                  0.6059094138302259,
+                  -0.7155996211030808,
+                  0.5925231363819983,
+                  -0.3699101446691716
+                ]
+              },
+              {
+                "position_world_m": [
+                  -0.15648674635524534,
+                  0.193650399584564,
+                  1.1508057386368322
+                ],
+                "rotation_world": [
+                  0.39109219690519337,
+                  0.853777646179793,
+                  0.3436722630698641,
+                  0.7101335755105458,
+                  -0.04239808073201052,
+                  -0.7027892341825177,
+                  -0.5854546937658605,
+                  0.5189085985353628,
+                  -0.6228777311106799
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.39720028860576667,
+              -0.3874086648758196,
+              -0.08765041727019479,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          }
+        ]
+      }
+    },
+    {
+      "step": 1400,
+      "phase": "approach_high",
+      "baseline_FK_contacts": [
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.6186115707486148e-05,
+          "position_world_m": [
+            -0.18306799124515064,
+            0.109588694931507,
+            0.8999838138842925
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.5714278570919776e-05,
+          "position_world_m": [
+            -0.15000799125861886,
+            0.10958869486944044,
+            0.8999842857214291
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.3330686100162594e-05,
+          "position_world_m": [
+            -0.1830679914730457,
+            0.07502869540335178,
+            0.8999866693138998
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.2858848963596222e-05,
+          "position_world_m": [
+            -0.15000799148651392,
+            0.0750286953412852,
+            0.8999871411510364
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -2.1061790843101195e-05,
+          "position_world_m": [
+            0.09332903451022995,
+            0.04299860225531029,
+            0.8999789382091569
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -8.447229725766773e-06,
+          "position_world_m": [
+            0.09332910688182718,
+            -0.06670139484353285,
+            0.8999915527702742
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -2.0594164407029562e-05,
+          "position_world_m": [
+            -0.016370965485759725,
+            0.042998530098803306,
+            0.899979405835593
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -7.97960328969514e-06,
+          "position_world_m": [
+            -0.016370893114162496,
+            -0.06670146700003984,
+            0.8999920203967103
+          ]
+        },
+        {
+          "geoms": [
+            "robot0_candidate_nero_link5_4",
+            "robot0_source_flange_part_2"
+          ],
+          "bodies": [
+            "robot0_link5",
+            "robot0_gripper_flange"
+          ],
+          "distance_m": -4.026929251833942e-06,
+          "position_world_m": [
+            -0.1841924323265285,
+            0.18791332835385666,
+            1.1545795109854808
+          ]
+        }
+      ],
+      "candidate_FK_contacts": [
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.6186115707486148e-05,
+          "position_world_m": [
+            -0.18306799124515064,
+            0.109588694931507,
+            0.8999838138842925
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.5714278570919776e-05,
+          "position_world_m": [
+            -0.15000799125861886,
+            0.10958869486944044,
+            0.8999842857214291
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.3330686100162594e-05,
+          "position_world_m": [
+            -0.1830679914730457,
+            0.07502869540335178,
+            0.8999866693138998
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.2858848963596222e-05,
+          "position_world_m": [
+            -0.15000799148651392,
+            0.0750286953412852,
+            0.8999871411510364
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -2.1061790843101195e-05,
+          "position_world_m": [
+            0.09332903451022995,
+            0.04299860225531029,
+            0.8999789382091569
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -8.447229725766773e-06,
+          "position_world_m": [
+            0.09332910688182718,
+            -0.06670139484353285,
+            0.8999915527702742
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -2.0594164407029562e-05,
+          "position_world_m": [
+            -0.016370965485759725,
+            0.042998530098803306,
+            0.899979405835593
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -7.97960328969514e-06,
+          "position_world_m": [
+            -0.016370893114162496,
+            -0.06670146700003984,
+            0.8999920203967103
+          ]
+        }
+      ],
+      "new_body_pairs": [],
+      "lost_body_pairs": [
+        "robot0_gripper_flange / robot0_link5"
+      ],
+      "baseline_wrist_contact_depths_m": {
+        "robot0_gripper_flange / robot0_link5": -4.026929251833942e-06
+      },
+      "candidate_wrist_contact_depths_m": {},
+      "candidate_wrist_contact_locations": [],
+      "saved_RK4_cache": {
+        "step": 1400,
+        "timing": "final RK4 internal-stage cache; qpos/height in state row are post-integration; no post-step forward",
+        "bowl_center_cached_m": [
+          -0.16644797538106618,
+          0.09230860259915645,
+          0.8994109576121889
+        ],
+        "contacts": [
+          {
+            "geom": [
+              "table_collision",
+              "white_bowl_1_g1"
+            ],
+            "body": [
+              "table",
+              "white_bowl_1_main"
+            ],
+            "distance_m": -1.6186115707486148e-05,
+            "position_world_m": [
+              -0.18306799124515064,
+              0.109588694931507,
+              0.8999838138842925
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  -0.16644797538106618,
+                  0.09230860259915645,
+                  0.8994109576121889
+                ],
+                "rotation_world": [
+                  6.5941862525953354e-09,
+                  -0.9999999995926127,
+                  -2.8544290683492904e-05,
+                  0.999999986347084,
+                  1.8773914089997845e-09,
+                  0.0001652447690632319,
+                  -0.0001652447689423243,
+                  -2.8544291383434853e-05,
+                  0.9999999859396957
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.005701732327140768,
+              -1.8480554102395566e-18,
+              2.636819807366891e-18,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "table_collision",
+              "white_bowl_1_g1"
+            ],
+            "body": [
+              "table",
+              "white_bowl_1_main"
+            ],
+            "distance_m": -1.5714278570919776e-05,
+            "position_world_m": [
+              -0.15000799125861886,
+              0.10958869486944044,
+              0.8999842857214291
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  -0.16644797538106618,
+                  0.09230860259915645,
+                  0.8994109576121889
+                ],
+                "rotation_world": [
+                  6.5941862525953354e-09,
+                  -0.9999999995926127,
+                  -2.8544290683492904e-05,
+                  0.999999986347084,
+                  1.8773914089997845e-09,
+                  0.0001652447690632319,
+                  -0.0001652447689423243,
+                  -2.8544291383434853e-05,
+                  0.9999999859396957
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.005535432165629953,
+              -1.9923979878430288e-18,
+              2.476558083710514e-18,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "table_collision",
+              "white_bowl_1_g1"
+            ],
+            "body": [
+              "table",
+              "white_bowl_1_main"
+            ],
+            "distance_m": -1.3330686100162594e-05,
+            "position_world_m": [
+              -0.1830679914730457,
+              0.07502869540335178,
+              0.8999866693138998
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  -0.16644797538106618,
+                  0.09230860259915645,
+                  0.8994109576121889
+                ],
+                "rotation_world": [
+                  6.5941862525953354e-09,
+                  -0.9999999995926127,
+                  -2.8544290683492904e-05,
+                  0.999999986347084,
+                  1.8773914089997845e-09,
+                  0.0001652447690632319,
+                  -0.0001652447689423243,
+                  -2.8544291383434853e-05,
+                  0.9999999859396957
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.0046954469247841215,
+              -1.4112093247625924e-18,
+              1.893391200156295e-18,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "table_collision",
+              "white_bowl_1_g1"
+            ],
+            "body": [
+              "table",
+              "white_bowl_1_main"
+            ],
+            "distance_m": -1.2858848963596222e-05,
+            "position_world_m": [
+              -0.15000799148651392,
+              0.0750286953412852,
+              0.8999871411510364
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  -0.16644797538106618,
+                  0.09230860259915645,
+                  0.8994109576121889
+                ],
+                "rotation_world": [
+                  6.5941862525953354e-09,
+                  -0.9999999995926127,
+                  -2.8544290683492904e-05,
+                  0.999999986347084,
+                  1.8773914089997845e-09,
+                  0.0001652447690632319,
+                  -0.0001652447689423243,
+                  -2.8544291383434853e-05,
+                  0.9999999859396957
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.0045291916828611705,
+              -1.5555504569206343e-18,
+              1.7331598195544488e-18,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "table_collision",
+              "chefmate_8_frypan_1_g4"
+            ],
+            "body": [
+              "table",
+              "chefmate_8_frypan_1_main"
+            ],
+            "distance_m": -2.1061790843112023e-05,
+            "position_world_m": [
+              0.09332903451022995,
+              0.0429986022553103,
+              0.8999789382091569
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  0.038479063877714645,
+                  -0.011851616358675446,
+                  0.8991709586270531
+                ],
+                "rotation_world": [
+                  -6.597228552895906e-07,
+                  -0.9999999999634427,
+                  8.525398839304103e-06,
+                  0.9999999735537203,
+                  -6.577621420311708e-07,
+                  0.0002299828883386899,
+                  -0.00022998288272259738,
+                  8.525550338806784e-06,
+                  0.9999999735175955
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.17876444101333658,
+              -2.297396774586066e-16,
+              2.0477858797296173e-17,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "table_collision",
+              "chefmate_8_frypan_1_g4"
+            ],
+            "body": [
+              "table",
+              "chefmate_8_frypan_1_main"
+            ],
+            "distance_m": -8.447229725768987e-06,
+            "position_world_m": [
+              0.09332910688182718,
+              -0.06670139484353287,
+              0.8999915527702742
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  0.038479063877714645,
+                  -0.011851616358675446,
+                  0.8991709586270531
+                ],
+                "rotation_world": [
+                  -6.597228552895906e-07,
+                  -0.9999999999634427,
+                  8.525398839304103e-06,
+                  0.9999999735537203,
+                  -6.577621420311708e-07,
+                  0.0002299828883386899,
+                  -0.00022998288272259738,
+                  8.525550338806784e-06,
+                  0.9999999735175955
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.07166788307337349,
+              -9.674382099838422e-17,
+              -2.0679527929444962e-17,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "table_collision",
+              "chefmate_8_frypan_1_g4"
+            ],
+            "body": [
+              "table",
+              "chefmate_8_frypan_1_main"
+            ],
+            "distance_m": -2.059416440702821e-05,
+            "position_world_m": [
+              -0.01637096548575974,
+              0.04299853009880331,
+              0.899979405835593
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  0.038479063877714645,
+                  -0.011851616358675446,
+                  0.8991709586270531
+                ],
+                "rotation_world": [
+                  -6.597228552895906e-07,
+                  -0.9999999999634427,
+                  8.525398839304103e-06,
+                  0.9999999735537203,
+                  -6.577621420311708e-07,
+                  0.0002299828883386899,
+                  -0.00022998288272259738,
+                  8.525550338806784e-06,
+                  0.9999999735175955
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.17479170801120295,
+              -1.814348995812276e-16,
+              1.7343696651385252e-17,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "table_collision",
+              "chefmate_8_frypan_1_g4"
+            ],
+            "body": [
+              "table",
+              "chefmate_8_frypan_1_main"
+            ],
+            "distance_m": -7.979603289685175e-06,
+            "position_world_m": [
+              -0.01637089311416251,
+              -0.06670146700003986,
+              0.8999920203967103
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  0.038479063877714645,
+                  -0.011851616358675446,
+                  0.8991709586270531
+                ],
+                "rotation_world": [
+                  -6.597228552895906e-07,
+                  -0.9999999999634427,
+                  8.525398839304103e-06,
+                  0.9999999735537203,
+                  -6.577621420311708e-07,
+                  0.0002299828883386899,
+                  -0.00022998288272259738,
+                  8.525550338806784e-06,
+                  0.9999999735175955
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.06769988790327215,
+              -4.84608865820352e-17,
+              -2.381194674736243e-17,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "robot0_candidate_nero_link5_4",
+              "robot0_source_flange_part_2"
+            ],
+            "body": [
+              "robot0_link5",
+              "robot0_gripper_flange"
+            ],
+            "distance_m": -4.026937553726616e-06,
+            "position_world_m": [
+              -0.18419243246010042,
+              0.18791332811461794,
+              1.154579511267348
+            ],
+            "frame": [
+              -0.619287358032734,
+              0.23300361740851872,
+              -0.7497949602760619,
+              0.14838023168716785,
+              0.9724758682222118,
+              0.17964963837959086,
+              0.771016520591679,
+              0.0,
+              -0.636815141916947
+            ],
+            "normal_world": [
+              -0.619287358032734,
+              0.23300361740851872,
+              -0.7497949602760619
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  -0.16967521014461615,
+                  0.21213785606482527,
+                  1.1703691285764015
+                ],
+                "rotation_world": [
+                  -0.6419689341177104,
+                  -0.3061689494501443,
+                  0.7029484063715953,
+                  0.3063150052805931,
+                  0.7380558280175449,
+                  0.6012027214420158,
+                  -0.7028847737486713,
+                  0.6012771150824975,
+                  -0.38002476986421296
+                ]
+              },
+              {
+                "position_world_m": [
+                  -0.15924409547525115,
+                  0.18962520597468374,
+                  1.150160902716019
+                ],
+                "rotation_world": [
+                  0.38814076568468825,
+                  0.8620242375391628,
+                  0.32597693155916485,
+                  0.7086937028831831,
+                  -0.05306382478053047,
+                  -0.703517921586496,
+                  -0.5891519171719853,
+                  0.5040817834386457,
+                  -0.6315073824571554
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.12418494625623744,
+              -0.03641404506059039,
+              0.0064304537380820625,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          }
+        ]
+      }
+    },
+    {
+      "step": 1401,
+      "phase": "approach_high",
+      "baseline_FK_contacts": [
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.618611570748589e-05,
+          "position_world_m": [
+            -0.18306799124515064,
+            0.10958869493150698,
+            0.8999838138842925
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.5714278570917682e-05,
+          "position_world_m": [
+            -0.15000799125861886,
+            0.10958869486944042,
+            0.8999842857214291
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.3330686100164254e-05,
+          "position_world_m": [
+            -0.1830679914730457,
+            0.07502869540335175,
+            0.8999866693138998
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.2858848963596046e-05,
+          "position_world_m": [
+            -0.15000799148651392,
+            0.0750286953412852,
+            0.8999871411510364
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -2.1061790843101195e-05,
+          "position_world_m": [
+            0.09332903451022995,
+            0.04299860225531029,
+            0.8999789382091569
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -8.447229725766773e-06,
+          "position_world_m": [
+            0.09332910688182718,
+            -0.06670139484353285,
+            0.8999915527702742
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -2.0594164407029562e-05,
+          "position_world_m": [
+            -0.016370965485759725,
+            0.042998530098803306,
+            0.899979405835593
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -7.97960328969514e-06,
+          "position_world_m": [
+            -0.016370893114162496,
+            -0.06670146700003984,
+            0.8999920203967103
+          ]
+        },
+        {
+          "geoms": [
+            "robot0_candidate_nero_link5_4",
+            "robot0_source_flange_part_2"
+          ],
+          "bodies": [
+            "robot0_link5",
+            "robot0_gripper_flange"
+          ],
+          "distance_m": -4.021705806032645e-06,
+          "position_world_m": [
+            -0.1842279880357122,
+            0.18786364287627105,
+            1.1545766250827674
+          ]
+        }
+      ],
+      "candidate_FK_contacts": [
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.618611570748589e-05,
+          "position_world_m": [
+            -0.18306799124515064,
+            0.10958869493150698,
+            0.8999838138842925
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.5714278570917682e-05,
+          "position_world_m": [
+            -0.15000799125861886,
+            0.10958869486944042,
+            0.8999842857214291
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.3330686100164254e-05,
+          "position_world_m": [
+            -0.1830679914730457,
+            0.07502869540335175,
+            0.8999866693138998
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "white_bowl_1_g1"
+          ],
+          "bodies": [
+            "table",
+            "white_bowl_1_main"
+          ],
+          "distance_m": -1.2858848963596046e-05,
+          "position_world_m": [
+            -0.15000799148651392,
+            0.0750286953412852,
+            0.8999871411510364
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -2.1061790843101195e-05,
+          "position_world_m": [
+            0.09332903451022995,
+            0.04299860225531029,
+            0.8999789382091569
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -8.447229725766773e-06,
+          "position_world_m": [
+            0.09332910688182718,
+            -0.06670139484353285,
+            0.8999915527702742
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -2.0594164407029562e-05,
+          "position_world_m": [
+            -0.016370965485759725,
+            0.042998530098803306,
+            0.899979405835593
+          ]
+        },
+        {
+          "geoms": [
+            "table_collision",
+            "chefmate_8_frypan_1_g4"
+          ],
+          "bodies": [
+            "table",
+            "chefmate_8_frypan_1_main"
+          ],
+          "distance_m": -7.97960328969514e-06,
+          "position_world_m": [
+            -0.016370893114162496,
+            -0.06670146700003984,
+            0.8999920203967103
+          ]
+        }
+      ],
+      "new_body_pairs": [],
+      "lost_body_pairs": [
+        "robot0_gripper_flange / robot0_link5"
+      ],
+      "baseline_wrist_contact_depths_m": {
+        "robot0_gripper_flange / robot0_link5": -4.021705806032645e-06
+      },
+      "candidate_wrist_contact_depths_m": {},
+      "candidate_wrist_contact_locations": [],
+      "saved_RK4_cache": {
+        "step": 1401,
+        "timing": "final RK4 internal-stage cache; qpos/height in state row are post-integration; no post-step forward",
+        "bowl_center_cached_m": [
+          -0.16644797538106618,
+          0.09230860259915645,
+          0.8994109576121889
+        ],
+        "contacts": [
+          {
+            "geom": [
+              "table_collision",
+              "white_bowl_1_g1"
+            ],
+            "body": [
+              "table",
+              "white_bowl_1_main"
+            ],
+            "distance_m": -1.618611570748589e-05,
+            "position_world_m": [
+              -0.18306799124515064,
+              0.10958869493150698,
+              0.8999838138842925
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  -0.16644797538106618,
+                  0.09230860259915645,
+                  0.8994109576121889
+                ],
+                "rotation_world": [
+                  6.5941862525953354e-09,
+                  -0.9999999995926127,
+                  -2.854429068349495e-05,
+                  0.999999986347084,
+                  1.8773914089997845e-09,
+                  0.00016524476906323176,
+                  -0.0001652447689423242,
+                  -2.85442913834369e-05,
+                  0.9999999859396957
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.00570173232714077,
+              3.208842676744801e-18,
+              -2.5246077803472395e-18,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "table_collision",
+              "white_bowl_1_g1"
+            ],
+            "body": [
+              "table",
+              "white_bowl_1_main"
+            ],
+            "distance_m": -1.5714278570917682e-05,
+            "position_world_m": [
+              -0.15000799125861886,
+              0.10958869486944042,
+              0.8999842857214291
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  -0.16644797538106618,
+                  0.09230860259915645,
+                  0.8994109576121889
+                ],
+                "rotation_world": [
+                  6.5941862525953354e-09,
+                  -0.9999999995926127,
+                  -2.854429068349495e-05,
+                  0.999999986347084,
+                  1.8773914089997845e-09,
+                  0.00016524476906323176,
+                  -0.0001652447689423242,
+                  -2.85442913834369e-05,
+                  0.9999999859396957
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.005535432165629932,
+              2.8654606730840613e-18,
+              -2.5063583497164642e-18,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "table_collision",
+              "white_bowl_1_g1"
+            ],
+            "body": [
+              "table",
+              "white_bowl_1_main"
+            ],
+            "distance_m": -1.3330686100164254e-05,
+            "position_world_m": [
+              -0.1830679914730457,
+              0.07502869540335175,
+              0.8999866693138998
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  -0.16644797538106618,
+                  0.09230860259915645,
+                  0.8994109576121889
+                ],
+                "rotation_world": [
+                  6.5941862525953354e-09,
+                  -0.9999999995926127,
+                  -2.854429068349495e-05,
+                  0.999999986347084,
+                  1.8773914089997845e-09,
+                  0.00016524476906323176,
+                  -0.0001652447689423242,
+                  -2.85442913834369e-05,
+                  0.9999999859396957
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.004695446924784138,
+              2.5531915579631635e-18,
+              -2.1685173085420393e-18,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "table_collision",
+              "white_bowl_1_g1"
+            ],
+            "body": [
+              "table",
+              "white_bowl_1_main"
+            ],
+            "distance_m": -1.2858848963596046e-05,
+            "position_world_m": [
+              -0.15000799148651392,
+              0.0750286953412852,
+              0.8999871411510364
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  -0.16644797538106618,
+                  0.09230860259915645,
+                  0.8994109576121889
+                ],
+                "rotation_world": [
+                  6.5941862525953354e-09,
+                  -0.9999999995926127,
+                  -2.854429068349495e-05,
+                  0.999999986347084,
+                  1.8773914089997845e-09,
+                  0.00016524476906323176,
+                  -0.0001652447689423242,
+                  -2.85442913834369e-05,
+                  0.9999999859396957
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.004529191682861165,
+              2.2098558061847314e-18,
+              -2.1502809914282918e-18,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "table_collision",
+              "chefmate_8_frypan_1_g4"
+            ],
+            "body": [
+              "table",
+              "chefmate_8_frypan_1_main"
+            ],
+            "distance_m": -2.1061790843101195e-05,
+            "position_world_m": [
+              0.09332903451022995,
+              0.04299860225531029,
+              0.8999789382091569
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  0.038479063877714645,
+                  -0.011851616358675446,
+                  0.8991709586270531
+                ],
+                "rotation_world": [
+                  -6.597228552895906e-07,
+                  -0.9999999999634427,
+                  8.525398839300268e-06,
+                  0.9999999735537203,
+                  -6.577621420311708e-07,
+                  0.0002299828883386895,
+                  -0.00022998288272259697,
+                  8.525550338802948e-06,
+                  0.9999999735175955
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.1787644410133342,
+              8.379674796664572e-18,
+              -3.228568714872189e-16,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "table_collision",
+              "chefmate_8_frypan_1_g4"
+            ],
+            "body": [
+              "table",
+              "chefmate_8_frypan_1_main"
+            ],
+            "distance_m": -8.447229725766773e-06,
+            "position_world_m": [
+              0.09332910688182718,
+              -0.06670139484353285,
+              0.8999915527702742
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  0.038479063877714645,
+                  -0.011851616358675446,
+                  0.8991709586270531
+                ],
+                "rotation_world": [
+                  -6.597228552895906e-07,
+                  -0.9999999999634427,
+                  8.525398839300268e-06,
+                  0.9999999735537203,
+                  -6.577621420311708e-07,
+                  0.0002299828883386895,
+                  -0.00022998288272259697,
+                  8.525550338802948e-06,
+                  0.9999999735175955
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.07166788307337399,
+              -2.013647578689147e-17,
+              -6.318237186980031e-17,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "table_collision",
+              "chefmate_8_frypan_1_g4"
+            ],
+            "body": [
+              "table",
+              "chefmate_8_frypan_1_main"
+            ],
+            "distance_m": -2.0594164407029562e-05,
+            "position_world_m": [
+              -0.016370965485759725,
+              0.042998530098803306,
+              0.899979405835593
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  0.038479063877714645,
+                  -0.011851616358675446,
+                  0.8991709586270531
+                ],
+                "rotation_world": [
+                  -6.597228552895906e-07,
+                  -0.9999999999634427,
+                  8.525398839300268e-06,
+                  0.9999999735537203,
+                  -6.577621420311708e-07,
+                  0.0002299828883386895,
+                  -0.00022998288272259697,
+                  8.525550338802948e-06,
+                  0.9999999735175955
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.17479170801120178,
+              1.165012614234523e-16,
+              -3.172724756201203e-16,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "table_collision",
+              "chefmate_8_frypan_1_g4"
+            ],
+            "body": [
+              "table",
+              "chefmate_8_frypan_1_main"
+            ],
+            "distance_m": -7.97960328969514e-06,
+            "position_world_m": [
+              -0.016370893114162496,
+              -0.06670146700003984,
+              0.8999920203967103
+            ],
+            "frame": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "normal_world": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  0.0,
+                  0.0,
+                  0.875
+                ],
+                "rotation_world": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              {
+                "position_world_m": [
+                  0.038479063877714645,
+                  -0.011851616358675446,
+                  0.8991709586270531
+                ],
+                "rotation_world": [
+                  -6.597228552895906e-07,
+                  -0.9999999999634427,
+                  8.525398839300268e-06,
+                  0.9999999735537203,
+                  -6.577621420311708e-07,
+                  0.0002299828883386895,
+                  -0.00022998288272259697,
+                  8.525550338802948e-06,
+                  0.9999999735175955
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.06769988790327384,
+              8.794517656306355e-17,
+              -5.760605134771283e-17,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          },
+          {
+            "geom": [
+              "robot0_candidate_nero_link5_4",
+              "robot0_source_flange_part_2"
+            ],
+            "body": [
+              "robot0_link5",
+              "robot0_gripper_flange"
+            ],
+            "distance_m": -4.0217034673423884e-06,
+            "position_world_m": [
+              -0.1842279881297577,
+              0.18786364266212335,
+              1.1545766253951544
+            ],
+            "frame": [
+              -0.6194341300284407,
+              0.23311507218674146,
+              -0.749639060932179,
+              0.14849046953678524,
+              0.972449157087079,
+              0.17970313669319954,
+              0.770877382605466,
+              -1.3877787807814457e-17,
+              -0.6369835641422361
+            ],
+            "normal_world": [
+              -0.6194341300284407,
+              0.23311507218674146,
+              -0.749639060932179
+            ],
+            "cached_body_pose": [
+              {
+                "position_world_m": [
+                  -0.16970425622632787,
+                  0.21208564819605003,
+                  1.1703641307528125
+                ],
+                "rotation_world": [
+                  -0.6420962508268917,
+                  -0.30594275689474465,
+                  0.7029306040980813,
+                  0.306426786485326,
+                  0.7380604675519256,
+                  0.6011400591886307,
+                  -0.7027197373052266,
+                  0.6013865443628392,
+                  -0.380156803254916
+                ]
+              },
+              {
+                "position_world_m": [
+                  -0.15928047648657134,
+                  0.18957282165771913,
+                  1.1501523169563495
+                ],
+                "rotation_world": [
+                  0.38808738121057385,
+                  0.8621349143709451,
+                  0.32574771521489243,
+                  0.7086786704181691,
+                  -0.05319132382070911,
+                  -0.7035234361160524,
+                  -0.5892051651500142,
+                  0.5038790256527895,
+                  -0.6316195064021859
+                ]
+              }
+            ],
+            "force_contact_frame": [
+              0.12579855774934123,
+              -0.017875462359915585,
+              0.01621870835973704,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filter_reasons": []
+          }
+        ]
+      }
+    }
+  ],
+  "alignment": "Fresh static FK + collision at saved post-qpos for BOTH models; original RK4 last-stage caches attached separately, never treated as identical alignment.",
+  "elapsed_s": 5.81604552292265,
+  "integration_state_and_model_fields_unchanged": true,
+  "external_suitability": "UNKNOWN: this saved early-approach prefix cannot certify unseen bowl/table/hand configurations or the 2.17mm outward-fill region."
+}

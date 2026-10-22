@@ -1,0 +1,154 @@
+{
+  "implementation_commit": "160c8f4076ae39034c28d07c40be9c62c1aa69ac",
+  "runtime_root": "/data_robot/verification/nero_dh116_right",
+  "artifacts": {
+    "hand-motion-state.jsonl.gz": {
+      "sha256": "57e37a567b9a9381e5dff9563dce5521b9d48be81554b20781e98ab75291c54b",
+      "uncompressed_file": "hand-motion-state.jsonl",
+      "uncompressed_sha256": "ad184353f23fc368f32884dbf8a15df3c96af31f41ded9e3ef7c18258be94079",
+      "uncompressed_bytes": 24037230,
+      "rows": 7000,
+      "bytes": 4681005
+    },
+    "hand-motion-contacts.jsonl.gz": {
+      "sha256": "c48cd97035d6bf63296fcac199b1e898d92547d566623fae5513745dc20b5b04",
+      "uncompressed_file": "hand-motion-contacts.jsonl",
+      "uncompressed_sha256": "6fac9a84e29d6eb8a4d7e08d7938c76d1a18d4ab2d541d97804aed74fbf61aad",
+      "uncompressed_bytes": 2827964,
+      "rows": 7000,
+      "bytes": 588370
+    },
+    "external-probe-state.jsonl.gz": {
+      "sha256": "9407a1e036889a69acaa1c376592d383a9c516003a76a0e81b12cb5527f2a2f0",
+      "uncompressed_file": "external-probe-state.jsonl",
+      "uncompressed_sha256": "628560173dfa470429dd51ef7e0b73671b3e06d2bb7b6b97e2003a6a853d7f9e",
+      "uncompressed_bytes": 7410282,
+      "rows": 2000,
+      "bytes": 1575404
+    },
+    "external-probe-contacts.jsonl.gz": {
+      "sha256": "66551803f66a98b6d3e40d8eb1da835ab4dc3c76cf778e9ebd45c47df1124cb3",
+      "uncompressed_file": "external-probe-contacts.jsonl",
+      "uncompressed_sha256": "0520d3f8134c3b3bf781f79c9e84386e5e358c0ff5aa271aed5f751888c51c2c",
+      "uncompressed_bytes": 212166,
+      "rows": 2000,
+      "bytes": 35760
+    },
+    "frozen-commands.json.gz": {
+      "sha256": "d21df12fa6eb6419a248131d0ae3faddeeaeeb4e9a59f34c3cf17f3e43c0da37",
+      "uncompressed_file": "frozen-commands.json",
+      "uncompressed_sha256": "7f756fc5d6bb2bfef5ab3e97b02f4b09cc91ec469ab1d028bc92eaa4e5349fdb",
+      "uncompressed_bytes": 1668658,
+      "bytes": 21286
+    },
+    "SOURCE_COMPARISON.md": {
+      "sha256": "e55e7f747d8ee54d94a7fdec5e25158a988632ea625c5daca8f1bdfaee3afe57",
+      "bytes": 5190
+    },
+    "checksums.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "dependency-rebuild.json": {
+      "sha256": "53d0705db73a6b560fcdda6f78e0b16e4fc22d2e131fab12d0aff01d2d5df75f",
+      "bytes": 17608
+    },
+    "environment-tests.log": {
+      "sha256": "65e5db7630fc6b067dabaa4bc230b32c0066062fc413d0872b15997affbc3492",
+      "bytes": 101
+    },
+    "environment.json": {
+      "sha256": "2f4d68264f99c759035470a4fec3e8d3215cf6e2ec03d3c2e6510516366f3d6c",
+      "bytes": 4100
+    },
+    "execution.json": {
+      "sha256": "130b44f21b6f4bf3015c7acf551de1ca2e53d23b17defd9700f2788d61755987",
+      "bytes": 100
+    },
+    "external-probe-result.json": {
+      "sha256": "6c02e87b087d1c1c5421742b74801551635bd6cf164e93a85a4fd5f2e057768d",
+      "bytes": 1824
+    },
+    "frozen-protocol.json": {
+      "sha256": "4c06875a89dec5fc12385bc3abcf8d058ca9e30d2a9811d3394811dc5d118bc7",
+      "bytes": 1739
+    },
+    "hand-motion-result.json": {
+      "sha256": "693e68cade25de72c6bd35799cc5feb2b8930bc093ac97f451080ddb94d2e055",
+      "bytes": 1850
+    },
+    "isolation.json": {
+      "sha256": "5769899e8d12c54e9a3325a6441f0af3ee422f6ef477b8f594ef5f9bd3a23750",
+      "bytes": 343
+    },
+    "left-protection.json": {
+      "sha256": "70ee2fbd10bd1d1639f3b8fa6721ac5431b697c0409135d1c1f46f52690b6cf0",
+      "bytes": 37158
+    },
+    "left-reference-tests.log": {
+      "sha256": "620e2e7c9be94494866613a1d23c57a831fe40cdfd4707f32ce04341641c8c6b",
+      "bytes": 8284
+    },
+    "mount-geometry.json": {
+      "sha256": "c91e701c040567bc1a55e87281ae5cc2defa8c71c87cfb15993f06ce564940a4",
+      "bytes": 1831
+    },
+    "pip-check.log": {
+      "sha256": "9261363b733079a641c2e4cc9bc46ffa1d8336945a87f807b6cf68847dbc9b09",
+      "bytes": 30
+    },
+    "probe-placement.json": {
+      "sha256": "891efb01a6c68dc7fddb4b68bedc4b3530ece3a065e3f2b1c0c72ef85386c4fd",
+      "bytes": 3621
+    },
+    "right-open.json": {
+      "sha256": "e072641ba53bcb37a64a75c09b3e9bffe8e0dea6134c94abefdd393bb0ab449f",
+      "bytes": 293
+    },
+    "right-open.png": {
+      "sha256": "193547c9562812b252f9d24c3d9b6b2b211d8b252e1257caed11438c83e47d24",
+      "bytes": 44329
+    },
+    "run-result.json": {
+      "sha256": "c77837e11f4d8c691979c537af6ed94e7e84e6e03709a5a9bbfbd8c23203a580",
+      "bytes": 4378
+    },
+    "runner.log": {
+      "sha256": "e3e5297cc2530948dafb341328420048e291793111342f6289018281e75107e4",
+      "bytes": 414
+    },
+    "source-comparison.json": {
+      "sha256": "e0474bb0a6e7456ea2cba9840543d7f5214212827242e3496bc550bb1b4355fb",
+      "bytes": 156032
+    },
+    "source-preflight.json": {
+      "sha256": "ee4e0a36400030d3481e37858f5cc47be523eafcc07da5bef7726f844b62edb7",
+      "bytes": 24946
+    },
+    "static-distance-audit.json": {
+      "sha256": "38626493b65587e8b541a437cb8271c7cc0e22af1f6355610c4463ded31b9742",
+      "bytes": 446504
+    },
+    "unit-tests.log": {
+      "sha256": "56e8f61be113d3a783579d2543b08e8ec2780a75b1a50461d2b42e6c3046143f",
+      "bytes": 4722
+    },
+    "RESULTS.md": {
+      "sha256": "e95d09e212d9496ba9e1b3374cdb6c40ed69be2a9fc5e99ee140029d735441f7",
+      "bytes": 6176
+    }
+  },
+  "date": "2026-10-17",
+  "scope": "Right-hand candidate actual screening; physical FAIL retained, not left LIBERO acceptance",
+  "validation": {
+    "implementation_unit_tests": 21,
+    "unchanged_left_reference_unit_tests": 47,
+    "environment_rejection_tests": 3,
+    "tests_passed": 71,
+    "physics_steps": 9000,
+    "recorded_state_steps": 9000,
+    "warnings_steps": 0,
+    "nonfinite_steps": 0,
+    "runtime_exit_code": 2
+  }
+}

@@ -15,6 +15,15 @@
 | 状态／动作 | 18D 关节位置；7D 机械臂绝对关节目标＋6D 独立手位置目标 |
 | 参考运行环境 | Python 3.11、MuJoCo 3.2.3；动态接入采用 robosuite 1.4.1 |
 
+## 左右手入口
+
+| 版本 | 模型 | 验证范围 |
+| --- | --- | --- |
+| 已验收左手 V1（默认） | [`mjcf/nero_dh116.xml`](mjcf/nero_dh116.xml) | 原有静态检查与固定 LIBERO 白碗参考测试 |
+| DH116-R000-A1 右手组合 | [`mjcf/nero_dh116_right.xml`](mjcf/nero_dh116_right.xml) | 独立机械字段、位置动作、接触与穿透检查；抓持能力 UNKNOWN |
+
+上表规格与默认查看器针对左手。右手采用独立厂家 URDF 及线性 Mimic，17份源 Mesh 的凸包碰撞表示与左手76块分块代理不同。右手使用方法、来源及能力边界见[右手说明](docs/RIGHT_HAND.md)与[实际验收记录](examples/right_hand/evidence/RESULTS.md)。
+
 ## 安装与预览
 
 在 Linux 下创建 Python 3.11 环境，并从仓库根目录运行：

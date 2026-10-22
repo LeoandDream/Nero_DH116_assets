@@ -1,0 +1,258 @@
+{
+  "pieces": [
+    {
+      "geom": "gripper0_finger22_local_00",
+      "vertices": 1346,
+      "mesh_vert_dtype": "float32",
+      "all_staged_vertices_bitwise_match": true,
+      "compiled_center_m": [
+        -0.002031654513458756,
+        -4.048188123595999e-08,
+        0.0021412765007617655
+      ],
+      "compiled_rotation": [
+        [
+          0.0,
+          -0.9999318946566409,
+          0.011670734697542129
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.011670734697542129,
+          0.9999318946566409
+        ]
+      ],
+      "half_ulp_component_bounds_m": [
+        [
+          4.656612873077393e-10,
+          2.3283064365386963e-10,
+          4.656612873077393e-10
+        ],
+        [
+          2.3283064365386963e-10,
+          2.3283064365386963e-10,
+          4.656612873077393e-10
+        ],
+        [
+          2.3283064365386963e-10,
+          2.3283064365386963e-10,
+          4.656612873077393e-10
+        ]
+      ],
+      "gamma1_subtraction_m": 1.805222781383671e-18,
+      "gamma5_rotation_m": 6.4854885755228746e-18,
+      "gamma6_back_transform_m": 9.403301699904875e-18,
+      "orthogonality_residual_frobenius": 3.147510278686181e-19,
+      "cancellation_error_bound_m": 3.667952855915952e-21,
+      "explicit_float64_arithmetic_guard_m": 1.4350121091410984e-14,
+      "paired_vertex_error_upper_bound_m": 1.8391388456519112e-09,
+      "observed_paired_vertex_max_m": 8.16539477924435e-10,
+      "all_compiled_vertices_vs_actual_mesh_graph_halfspace_residual_m": 7.806255641895632e-18
+    },
+    {
+      "geom": "gripper0_finger22_local_01",
+      "vertices": 292,
+      "mesh_vert_dtype": "float32",
+      "all_staged_vertices_bitwise_match": true,
+      "compiled_center_m": [
+        -0.002469398920674138,
+        -2.521928825761589e-07,
+        0.01630258716391731
+      ],
+      "compiled_rotation": [
+        [
+          0.9931903500225208,
+          -0.0005455080403101589,
+          -0.11650163536672196
+        ],
+        [
+          0.0006036881236019472,
+          0.9999997100821822,
+          0.0004641079625775194
+        ],
+        [
+          0.1165013484161969,
+          -0.0005312782034517001,
+          0.9931903913956671
+        ]
+      ],
+      "half_ulp_component_bounds_m": [
+        [
+          4.656612873077393e-10,
+          2.3283064365386963e-10,
+          9.313225746154785e-10
+        ],
+        [
+          2.3283064365386963e-10,
+          2.3283064365386963e-10,
+          2.3283064365386963e-10
+        ],
+        [
+          2.3283064365386963e-10,
+          2.3283064365386963e-10,
+          2.3283064365386963e-10
+        ]
+      ],
+      "gamma1_subtraction_m": 4.5627673204782734e-18,
+      "gamma5_rotation_m": 6.1597334345390235e-18,
+      "gamma6_back_transform_m": 1.735404621862745e-17,
+      "orthogonality_residual_frobenius": 1.713407792288592e-17,
+      "cancellation_error_bound_m": 1.7489580847239812e-19,
+      "explicit_float64_arithmetic_guard_m": 1.4541967630066212e-14,
+      "paired_vertex_error_upper_bound_m": 1.8735276276031613e-09,
+      "observed_paired_vertex_max_m": 7.718841319580265e-10,
+      "all_compiled_vertices_vs_actual_mesh_graph_halfspace_residual_m": 3.469446951953614e-18
+    },
+    {
+      "geom": "gripper0_finger22_local_02",
+      "vertices": 398,
+      "mesh_vert_dtype": "float32",
+      "all_staged_vertices_bitwise_match": true,
+      "compiled_center_m": [
+        -0.0020660388752820284,
+        1.4529772603179565e-07,
+        0.027696682969312603
+      ],
+      "compiled_rotation": [
+        [
+          -0.2245541485669731,
+          -0.9744616125642721,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.9744616125642721,
+          -0.22455414856697314,
+          0.0
+        ]
+      ],
+      "half_ulp_component_bounds_m": [
+        [
+          4.656612873077393e-10,
+          2.3283064365386963e-10,
+          1.862645149230957e-09
+        ],
+        [
+          2.3283064365386963e-10,
+          2.3283064365386963e-10,
+          2.3283064365386963e-10
+        ],
+        [
+          2.3283064365386963e-10,
+          4.656612873077393e-10,
+          2.3283064365386963e-10
+        ]
+      ],
+      "gamma1_subtraction_m": 6.712755304044242e-18,
+      "gamma5_rotation_m": 5.6468024270282025e-18,
+      "gamma6_back_transform_m": 2.3313390285745452e-17,
+      "orthogonality_residual_frobenius": 2.548351979171269e-16,
+      "cancellation_error_bound_m": 2.210736691406301e-18,
+      "explicit_float64_arithmetic_guard_m": 1.4665602066088468e-14,
+      "paired_vertex_error_upper_bound_m": 2.9076420618827944e-09,
+      "observed_paired_vertex_max_m": 1.682763582349961e-09,
+      "all_compiled_vertices_vs_actual_mesh_graph_halfspace_residual_m": 6.938893903907228e-18
+    },
+    {
+      "geom": "gripper0_finger22_local_03",
+      "vertices": 1395,
+      "mesh_vert_dtype": "float32",
+      "all_staged_vertices_bitwise_match": true,
+      "compiled_center_m": [
+        0.000275737904289938,
+        9.441647497651189e-06,
+        0.03791113745787916
+      ],
+      "compiled_rotation": [
+        [
+          0.8950624220345792,
+          -0.009094435504977239,
+          0.44584812650098526
+        ],
+        [
+          0.014661242274626583,
+          0.999851668944032,
+          -0.00903814609300321
+        ],
+        [
+          -0.4456997965408527,
+          0.01462639233302513,
+          0.8950629922026511
+        ]
+      ],
+      "half_ulp_component_bounds_m": [
+        [
+          2.3283064365386963e-10,
+          2.3283064365386963e-10,
+          1.862645149230957e-09
+        ],
+        [
+          2.3283064365386963e-10,
+          2.3283064365386963e-10,
+          4.656612873077393e-10
+        ],
+        [
+          2.3283064365386963e-10,
+          2.3283064365386963e-10,
+          4.656612873077393e-10
+        ]
+      ],
+      "gamma1_subtraction_m": 9.436213709197057e-18,
+      "gamma5_rotation_m": 7.171533701265353e-18,
+      "gamma6_back_transform_m": 3.2062877034216305e-17,
+      "orthogonality_residual_frobenius": 1.6344953794097394e-16,
+      "cancellation_error_bound_m": 1.6476515559700902e-18,
+      "explicit_float64_arithmetic_guard_m": 1.4879750175022502e-14,
+      "paired_vertex_error_upper_bound_m": 3.032172567760128e-09,
+      "observed_paired_vertex_max_m": 1.8426064312741987e-09,
+      "all_compiled_vertices_vs_actual_mesh_graph_halfspace_residual_m": 2.42861286636753e-17
+    }
+  ],
+  "maximum_plane_violation_attribution": {
+    "geom": "gripper0_finger22_local_03",
+    "OBJ_vertex_zero_based": 3,
+    "raw_point_m": [
+      -0.007250103008043012,
+      -0.0004586382947549411,
+      0.032
+    ],
+    "compiled_body_point_m": [
+      -0.007250103574920154,
+      -0.0004586383174968447,
+      0.032000001448086283
+    ],
+    "plane": [
+      -0.955627178425821,
+      -0.01894901146926179,
+      0.293968758235024,
+      -0.016344086486701024
+    ],
+    "raw_plane_residual_m": 0.0,
+    "compiled_plane_residual_m": 9.678462649376218e-10,
+    "signed_plane_error_contributions_m": {
+      "OBJ_float32_parse": 5.99951846261963e-10,
+      "center_float32_writeback": 1.2841353373669684e-10,
+      "rotation_float32_writeback": 2.3948088664820586e-10,
+      "remaining_float64_roundtrip": -3.495380933544275e-19
+    }
+  },
+  "bound_formula": "B=||h0||2 + r^2(||h1||2+gamma1_sub) + r(||h2||2+gamma5_rot) + ||RR^T-I||F max||a-c||2 + gamma6_back + explicit_float64_guard; r>=||R||2. h are input-scale half-ULP radii, not observed error maxima.",
+  "assumptions": [
+    "IEEE binary32 nearest rounding, binary64 arithmetic; no overflow/underflow in these observed stages.",
+    "Default mesh refpos/refquat/scale and identity XML geom pose, checked against bindings.",
+    "Conditioned on recorded compiled center/rotation, which are shared by forward and inverse transforms; no claim about inertia/eigenvector physical accuracy.",
+    "All three-stage reconstructed arrays exactly match actual 3.2.3 mesh_vert; rotation/centroid uncertainty cancels except measured orthogonality residual.",
+    "Vertex pairing gives the same conservative bound for convex-hull Hausdorff distance provided actual mesh_graph encloses all compiled vertices; graph residual is reported separately."
+  ],
+  "original_threshold_m": 1e-10,
+  "formal_numeric_status": "FAIL_UNCHANGED_NOT_A_NEW_TOLERANCE"
+}

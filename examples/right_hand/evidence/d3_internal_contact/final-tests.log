@@ -1,0 +1,9 @@
+test_compiled_scope_is_exactly_two_pairs_and_preserves_external_masks (test_internal_contact.LocalContactTests.test_compiled_scope_is_exactly_two_pairs_and_preserves_external_masks) ... ok
+test_entry_exists_for_frozen_two_pair_policy (test_internal_contact.LocalContactTests.test_entry_exists_for_frozen_two_pair_policy) ... ok
+test_rejects_a_third_internal_exclusion (test_internal_contact.LocalContactTests.test_rejects_a_third_internal_exclusion) ... ok
+test_weld_neighbor_stays_eligible_and_its_distance_is_counted (test_internal_contact_analysis.ContactAnnotationTests.test_weld_neighbor_stays_eligible_and_its_distance_is_counted) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 4.698s
+
+OK

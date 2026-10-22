@@ -1,0 +1,11 @@
+{
+  "candidate_sha256": "ba767b42f99d3562255909bde5c970d529ba254769029ec1cd7a98faf76af0fb",
+  "generation_log_sha256": "5b818733e531743d5d3833562d2564cd7d6d83f418fa32365f2a7c9d84323ec3",
+  "geometry_checker_sha256": "1aef93fcd594a50360cd7c74a492939b9c3ff071b5be236ce1fd4e84c24178aa",
+  "command_count": 230,
+  "offline_sample_count": 921,
+  "generated_candidates": 1,
+  "new_physics_steps": 0,
+  "path_frozen_before_geometry": true,
+  "no_alternative_candidates_authorized": true
+}
