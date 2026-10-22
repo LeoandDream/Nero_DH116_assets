@@ -1,0 +1,6 @@
+test_mount_hidden_without_changing_physical_fields (test_static_view.StaticViewTests.test_mount_hidden_without_changing_physical_fields) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.974s
+
+OK

@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "baseline": "7998718be17d39a2491f76ee747e07309b6b3193",
+  "original_tracked_files": 2767,
+  "unchanged_original_models_meshes_code_and_history": true,
+  "intentional_original_file_edits": [
+    "README.md",
+    "SHA256SUMS",
+    "docs/RIGHT_HAND.md",
+    "licenses/SOURCES.md"
+  ],
+  "original_differences_at_check": [
+    "README.md",
+    "SHA256SUMS",
+    "docs/RIGHT_HAND.md",
+    "licenses/SOURCES.md"
+  ],
+  "unexpected_original_differences": [],
+  "main_head": "9f4054f6197ecb1127202cee14cd75c3924a47e3",
+  "main_head_unchanged": true,
+  "main_readme_sha256": "d68ec6d62a6f42b8c1636ad2774c8329073d973c2621cc7fe148c8c8c89d8f25",
+  "main_readme_unchanged": true,
+  "preserved_PR4_head": "7998718be17d39a2491f76ee747e07309b6b3193",
+  "PR4_draft": true
+}

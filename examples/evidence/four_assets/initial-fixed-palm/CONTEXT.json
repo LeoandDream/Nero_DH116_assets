@@ -1,0 +1,5 @@
+{
+  "models_original_directory": "mjcf",
+  "reason": "Initial export lacked five implicit parent filters after palm became world-fixed; first-step FAIL retained, not a new grasp attempt.",
+  "mesh_bytes": "Unchanged; resolve XML paths in the original mjcf directory."
+}

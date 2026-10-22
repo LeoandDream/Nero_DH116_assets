@@ -1,0 +1,25 @@
+{
+  "scope": "Bounded six-channel response; not full joint travel, grasp or task success",
+  "reset": "Delivered keyframe 0, native reset + forward once per asset",
+  "schedule": "Each hand channel separately: 100-step ramp up, 100 hold, 100 ramp down, 100 hold; no retries",
+  "hand_excursion": "Reference target + 10% of each actuator range; other channels at reference",
+  "standalone_steps_each": 2400,
+  "assembly_steps_each": 400,
+  "assembly_schedule": "Same 400-step ramp/hold/return; all six hand channels +10% range, J6 +0.01 rad",
+  "dt_s": 0.002,
+  "health_bounds_from_original": {
+    "mimic_rad": 0.02,
+    "joint_limit_overshoot_rad": 0.01,
+    "arm_tracking_rad": 0.1,
+    "contact_depth_m": 0.002,
+    "warnings": 0,
+    "nonfinite": 0
+  },
+  "response_observation_rad_min": 0.0001,
+  "response_note": "Observable correct-direction response only; no steady 0.02rad hand tracking gate",
+  "contact_cache": "mj_step RK4 final internal-stage geometry/force cache, before any forward; qpos/qvel are post-step",
+  "selected_assets": [
+    "dh116_left",
+    "dh116_right"
+  ]
+}
