@@ -1,0 +1,749 @@
+{
+  "schema": 1,
+  "status": "LICENSED_SOURCE_AND_DERIVATIVE_PROVENANCE_CONFIRMED",
+  "license": "MIT",
+  "copyright_notice": "Copyright (c) 2026 aalicecc",
+  "license_source": {
+    "repository": "agilexrobotics/agx_arm_urdf",
+    "commit": "1ee5659d02b33b9379fd647a2e5647800d67f0f4",
+    "url": "https://github.com/agilexrobotics/agx_arm_urdf/blob/1ee5659d02b33b9379fd647a2e5647800d67f0f4/LICENSE",
+    "readme_scope_url": "https://github.com/agilexrobotics/agx_arm_urdf/blob/1ee5659d02b33b9379fd647a2e5647800d67f0f4/README.md",
+    "notice_file": "licenses/NERO_URDF_MIT.txt",
+    "notice_git_blob_sha1": "601f56ad41b103897cd4227a2d1ea0594b389d08",
+    "notice_sha256": "247944c63de1573653722ba784f96123da267105b7b48577e0c8826a24b809f6"
+  },
+  "licensed_source_files": {
+    "stl": {
+      "upstream_path": "nero/meshes/gripper_flange.stl",
+      "upstream_url": "https://github.com/agilexrobotics/agx_arm_urdf/blob/1ee5659d02b33b9379fd647a2e5647800d67f0f4/nero/meshes/gripper_flange.stl",
+      "git_blob_sha1": "b15a867f76655e5502772486fe4028a2baaaf576",
+      "local_source": "meshes/nero/source/gripper_flange-186697a7.stl",
+      "sha256": "186697a73e7cafd9fd41d96f1eea9b34b444c058b9561fb2e3ea439c835ae2e8",
+      "byte_identical": true
+    },
+    "dae": {
+      "upstream_path": "nero/meshes/dae/gripper_flange.dae",
+      "upstream_url": "https://github.com/agilexrobotics/agx_arm_urdf/blob/1ee5659d02b33b9379fd647a2e5647800d67f0f4/nero/meshes/dae/gripper_flange.dae",
+      "git_blob_sha1": "e0885e73a999c63f7b726648d1f5e721ebd68331",
+      "local_source": "meshes/nero/source/gripper_flange-58e5a5fd.dae",
+      "sha256": "58e5a5fd582a6a9bda58fe3946cf8b7c3994e19ff4c1c1a75f61677f797fff42",
+      "byte_identical": true
+    }
+  },
+  "visual_derivatives": {
+    "archive_record": "EXP-URDF-FIDELITY-001/reports/urdf-visual-whole-mesh/result.json",
+    "archive_record_sha256": "80c38ed7b77bf4e78442ed82e85f39fdafe4c87f91c6b5c8732ef99e4a1f2034",
+    "source_sha256": "58e5a5fd582a6a9bda58fe3946cf8b7c3994e19ff4c1c1a75f61677f797fff42",
+    "output_obj": {
+      "file": "meshes/mount/robot0_original_urdf_visual_gripper_flange-adfe6fc7.obj",
+      "sha256": "adfe6fc7b74ac2a3bc253a86a7720b2612053a4e906cb9f5bb0141d246085ab7"
+    },
+    "output_texture": {
+      "file": "meshes/textures/robot0_original_urdf_visual_gripper_flange_texture-abc58d51.png",
+      "sha256": "abc58d5127d7cdf313beb9ec8ee839860a9c6bfbc48c8b8eb6a3f7d8bb63de6f"
+    },
+    "source_material_colors": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "conversion": "Existing DAE triangles export and diffuse-color lookup texture; no image sampling or new geometry generation in this audit."
+  },
+  "collision_derivatives": {
+    "left_eight": {
+      "source_sha256": "186697a73e7cafd9fd41d96f1eea9b34b444c058b9561fb2e3ea439c835ae2e8",
+      "archive_record_sha256": "1fc77b7ef2f7c955f5271c7a3df0a9518f993fc2623587968b497963dd046d76",
+      "files": [
+        {
+          "file": "meshes/mount/robot0_source_flange_part_0-7c6df993.obj",
+          "sha256": "7c6df99313f122093d0632fd9956e21da9592c2a7b53e267bb1ca60a485afb90"
+        },
+        {
+          "file": "meshes/mount/robot0_source_flange_part_1-24b510b6.obj",
+          "sha256": "24b510b6d7d21fb3ecedb42bb8b319eda76bc658cccc6564ebc897729632b0d6"
+        },
+        {
+          "file": "meshes/mount/robot0_source_flange_part_2-c5005972.obj",
+          "sha256": "c500597223128b393b9ffc527bff96c8f9d7b782a258a2dcc27459b199310a0e"
+        },
+        {
+          "file": "meshes/mount/robot0_source_flange_part_3-a1e2dbb0.obj",
+          "sha256": "a1e2dbb01a0dc3e71497b725e88fe799aa4658d3952c56a33c61424f72bc4b54"
+        },
+        {
+          "file": "meshes/mount/robot0_source_flange_part_4-5bfdf6a3.obj",
+          "sha256": "5bfdf6a3094c061466d310f3abee69e801a366487b64fb88db3179a04f361279"
+        },
+        {
+          "file": "meshes/mount/robot0_source_flange_part_5-6668a712.obj",
+          "sha256": "6668a7126ea4beb7012f249a7a037b3ed1edb254cae75957bb19aee1d3143d70"
+        },
+        {
+          "file": "meshes/mount/robot0_source_flange_part_6-91ccc782.obj",
+          "sha256": "91ccc782f3402baa42be3f07ccb62534b85d1375fec76e170afa009e48cc6376"
+        },
+        {
+          "file": "meshes/mount/robot0_source_flange_part_7-4853dcf0.obj",
+          "sha256": "4853dcf02b546afa7e65c663307078defec264e1cbb0fbcd77bed51ecf9cce96"
+        }
+      ]
+    },
+    "right_159": {
+      "source_sha256": "186697a73e7cafd9fd41d96f1eea9b34b444c058b9561fb2e3ea439c835ae2e8",
+      "source_commit": "5fc2ea346ba7bccb80052024d9c16c3ee2b5a526",
+      "provenance_url": "https://github.com/LeoandDream/Nero_DH116_assets/blob/5fc2ea346ba7bccb80052024d9c16c3ee2b5a526/examples/right_hand/candidates/wrist_reuse/PROVENANCE.md",
+      "zip_sha256": "801e5d24cbace320511dcfb25afdce11c8ed2f4afd7572dd1007145d21ea500a",
+      "files": [
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_000.obj",
+          "sha256": "f717a5ef7ffc3123b2890cd0c7e8f461aea3252574d64b4e144903755fe982c8"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_001.obj",
+          "sha256": "e91c5fa5dcff8f681f855bbe59e2d61ff5efa767fb69bfbe28bb4dfa86582bbe"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_002.obj",
+          "sha256": "acfc4a8cc5c143861ed83ae730888717556f3cd4acf9caabe87f6f80fe9d9637"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_003.obj",
+          "sha256": "702d593c21906f64123797d75efba6c3715e12dc230267936522a2b504b4f422"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_004.obj",
+          "sha256": "88d11a84f27f6aaee641232d3675ea30a97cd59405d76dcfd567799b0542191b"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_005.obj",
+          "sha256": "64b8932879b53425db379e3e34ed4d0c9647cff63cbd962cbe68b3b6ef32be56"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_006.obj",
+          "sha256": "8f5d4b1f96e88ce6672c481824175e8b1ced47b66d00553e4d524f7539544c7c"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_007.obj",
+          "sha256": "ba9610e8ae5214032ae781dd8914ecdf6642a7e316f83d1cf07d0ed1a23cfef7"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_008.obj",
+          "sha256": "3e60f3fd598dd131c75f92e2517df192f51f893c5a0e32c548af8aa0a087fc2c"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_009.obj",
+          "sha256": "98c70a5d56f861d7a5c6158a47dcc1482747a8f97fd005864af0b8901fa7213b"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_010.obj",
+          "sha256": "f47b82a05134246ba7e073a7eda3f7f7220ddf968b24360b002b1df6ae590928"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_011.obj",
+          "sha256": "e38be074087054f65a8ad5e3848d2db82c2596a706b5ad48a583f75cb86bea8f"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_012.obj",
+          "sha256": "39a8a753004d15d17d240d85423075841fdc765ac84fb094bc15177d04130974"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_013.obj",
+          "sha256": "0c790a815818b7645601132b3a1e2edff245b34b0ac6a7da9c9700905ebe17c4"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_014.obj",
+          "sha256": "a32df9946bdac8f98d97c1722cff0a1d6a0c2ae7dba3ee7f2e01c109b2eeb520"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_015.obj",
+          "sha256": "a469ef4d3120a6445cc654229c42fc23dfcf92f1f88710ecc95023d093aa8527"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_016.obj",
+          "sha256": "ce643996772dfad8b10b2125df00727ca9c9d0b930053101caa21d5df83c1936"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_017.obj",
+          "sha256": "5f7a76c03629489235ac347127de096888e5e4ba2bf1b35b6990eb711bd53a06"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_018.obj",
+          "sha256": "de1e6570fd83ad084bc6805ad4f6f207b7ef65b91739605dc10618d517a8bf13"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_019.obj",
+          "sha256": "cff8aa1ca6145c0d44d744596582689b2907a5561b1841641c1a58bab2a4ca75"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_020.obj",
+          "sha256": "043850ccc035c9bb0dced1e31930685816c7c8eba2badd4c0d793f0431c9a63f"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_021.obj",
+          "sha256": "a9ba15e3ba52cab14e3ed2f366cf37ff5235af1170f5d5e47c4e6a2e79c9f4ee"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_022.obj",
+          "sha256": "db7643cb70e036aa8adb602b3604b135c36fbf5bfc63ba973df29fef41880d15"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_023.obj",
+          "sha256": "3915bdac87c5f010dbd383e3e61fdadbb644f141b832a4feafdac7a8441b4f5f"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_024.obj",
+          "sha256": "8da6cfe8322e60ae742f4e18dac2da425f564abf77b9de4a5867398cf79777be"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_025.obj",
+          "sha256": "427dd163294c515b431e639e8dde80cc3ccaf8fce0b70ad8fbacce8556712e2d"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_026.obj",
+          "sha256": "dab1f03cd7bce7a61f66af6352e739cfaada61392997e35121552b9564dc7f49"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_027.obj",
+          "sha256": "bea7a936e25b8bda233e51d5b6130543c1c20a6cfc7ef30c27aa2283afc71591"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_028.obj",
+          "sha256": "cc12ce7818efbbd7fca84873b7c980e74da44ad32888be78daabd2cd2220670c"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_029.obj",
+          "sha256": "0c6d6a249000cb9c92614c77a7fa4e4030c5819361ac8255ced72c66b4f1702a"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_030.obj",
+          "sha256": "6ee01234ff26359ddc0e0da907d303e7c96abe48ab350e96017074901025d468"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_031.obj",
+          "sha256": "5aaadc44164f7e7692e1638832afcef0cfc121cd2ff9e744fed49f3207a96510"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_032.obj",
+          "sha256": "00f163855dc8efe9e6f0ee3f629748f4abfeef4fed9cd0e2ad262286112890c3"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_033.obj",
+          "sha256": "15104389b30dbaf9c961228d6e451171a23491c7c83d40ca6050de072c7148d1"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_034.obj",
+          "sha256": "1e2dc32d44e9091d67efb518f9be4a591d944952a2311dc0bcc115e3c3102c7a"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_035.obj",
+          "sha256": "fa9600841737f7948b46c7f9c59285aeeb840ca87a22fbc4f1cf6217926b2e98"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_036.obj",
+          "sha256": "77160bc78e4fdc65171911de1558fcc9bbffc11bca2f375bbf23f2e30936f164"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_037.obj",
+          "sha256": "0a314d491aed2b3b165147f8190ef7025340cf144d18775860ddff223e9ce816"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_038.obj",
+          "sha256": "c4eff3a4cb89be372349c0fa598811da58f6adc882048ffea22f7e3e41383278"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_039.obj",
+          "sha256": "5c533e7473335b16dcab7e5ca1d8b85201809dd3505fa4f9e3d81277bca581cf"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_040.obj",
+          "sha256": "9ee5692926ecd257d34f9079297262f112f9370765d2cae70466de694e1670cb"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_041.obj",
+          "sha256": "ff96a82433f755adfdcef4f1a55a6aa40c2b5beaebc05d8f7a56e3a56b1f8b49"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_042.obj",
+          "sha256": "a619d23a61bd75f0f9cd29b12fe18bda5d7b3edb940a52b200c4be96eacc71de"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_043.obj",
+          "sha256": "84fc7775765e3a845664d48130f1b12d61dabe74462f476899a01587c9707da5"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_044.obj",
+          "sha256": "4241c41895e3d17e64d511d2ffc824ae5ea3c107e71861f72f16932cc0bf4a1c"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_045.obj",
+          "sha256": "37f676e39a3da04b952516d41a40d4ff403285ec389a72c86c7c366959d95f71"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_046.obj",
+          "sha256": "b6a11f917ebac37cc4c742b15f395918112abf67ec1a43f56d4889bdb65c82d1"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_047.obj",
+          "sha256": "e15347e8836c5f624d6f2e9832195af266151c9ad21a49e217129f59c923191c"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_048.obj",
+          "sha256": "795854605c83d2f05697d246c78d94223b4a0c38044c038b12ca5bb481b41793"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_049.obj",
+          "sha256": "2b55a50081a536d80f98d1411bb9e6a3e8685ebaa19183f1e6d30217c4ef9c19"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_050.obj",
+          "sha256": "e7a92e284c973c3ec3e3e9a6359f0152036295245b17429b1f2aaca1a4c3d1e4"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_051.obj",
+          "sha256": "f717e558abb6d739cde0cef797f1741c5b7f073f1b86db614cfb0ee42b73e982"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_052.obj",
+          "sha256": "3b143ea9632d8b701926543abbac465f3afab9839fb7962df7e90de580329189"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_053.obj",
+          "sha256": "918a9959c28b067b6f8fcd55cfae08b5e6f0fcd66fddca636aebfe515e4dc39b"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_054.obj",
+          "sha256": "eec3c9cae42d3b2e43d0304201fe09d8f8dae4bba5c57bfb3ee4cb04af589e7f"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_055.obj",
+          "sha256": "396beaeeb961dd34a033d9271391f05357bde84140475de73cda4de638ed054a"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_056.obj",
+          "sha256": "9c52b8bb26efaddd3bad48735883af128ff3d7e7c80d2d2c4cd16655e8ff0564"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_057.obj",
+          "sha256": "c366502a75d24a5b4dd0e0cae4e6c34340a4a814403ecf281a750cf12dbbdff7"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_058.obj",
+          "sha256": "e21e1c4e36bd38c89066033696a42582165bf1c099c6489caa2a3717bb13e64a"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_059.obj",
+          "sha256": "ec295ecef78f25d8c536666beefd613e78b2d041f46a0827e3109b1dc8bceba0"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_060.obj",
+          "sha256": "bd946175a0cd26b8ef7d6bc920bc56a383c855348402e27d0ed83c586b166240"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_061.obj",
+          "sha256": "ae258fa93b8e586f9b9fb90952d30cc99d58cb3eed1b573ab6162c294e2a113d"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_062.obj",
+          "sha256": "1e5575a5858048074cf4844d004c3f9a820f23ce0a038b712ac4adcdac1c03b8"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_063.obj",
+          "sha256": "2c6cd5fb91c1b55e3f1d7914546fa53b182429050dd0fd062165ec7865d5ead8"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_064.obj",
+          "sha256": "7c28b92a2df9662c46cf18f616edd89a0b2e75038320c05753fbc424c1f51f51"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_065.obj",
+          "sha256": "cbf5577f15116710c0163785657c9704dbdf983609a63455b7874e4ac48db517"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_066.obj",
+          "sha256": "fe622b692d5cbf099e1cda3733d6ff5aa2bbf6c988af509a7779d41bf8a2ad6a"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_067.obj",
+          "sha256": "e5068b7f81ceeb687a53b3246b39d9917182743c2a52eaa7f5aab700411c101b"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_068.obj",
+          "sha256": "aa5cc9ffef5ef6040b2710550627ffd54b379e3f83675dee06d9a0061908c27d"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_069.obj",
+          "sha256": "5819f4c60885f0c56c82ffa8f41e64abaf56231ecb006ec5be0cb936556f422c"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_070.obj",
+          "sha256": "bb919a5a83114db32962ceb3600e3cbea13c729cfb5f0da135884d5e4565125d"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_071.obj",
+          "sha256": "ea479acca31da0d70b068ecce1a4983f8cf14cebf483a8b4ded9273dac4e504c"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_072.obj",
+          "sha256": "db58297691944212b890bfd927d9ad920fd789dd79a66eb06d69b107e60bbdd6"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_073.obj",
+          "sha256": "5a288e7504805f185685ea4d43bd9a3b3a6298f0619a453fee43d3bcc0093aa2"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_074.obj",
+          "sha256": "3778d91e954dc639b8658132b7facb3d4441d69fed4728789cfe68e22cac5523"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_075.obj",
+          "sha256": "8743ec923ad97b255a6ac2ef5cf275b786c5d94f8d9f51e176ed3b765d8877ef"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_076.obj",
+          "sha256": "a8d00a906995eac7f622cd9b6cf03f9c719a1d198d0becacb664930b4f6fd623"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_077.obj",
+          "sha256": "542c10ae6eecd7b2e3078694550cb6990c51f969bae2360d8d4171dfbfd8fb31"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_078.obj",
+          "sha256": "71929cf42f035defebab22ed0113ca400531e41b6dc4067a673c8ce6bd1b9f93"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_079.obj",
+          "sha256": "587afbee5755a2012b79f318b6375a9948087c0c925cb5e7a6641334e35f6b84"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_080.obj",
+          "sha256": "d41bc8ccd5c764c6b55e894001fc3ae538cb7b1164fdc344c3825b5d4bfe27ba"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_081.obj",
+          "sha256": "ed268a9799eb2fd9d8b61aedacd84402f66cf2874ae94b7406feb27873cef378"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_082.obj",
+          "sha256": "a88e21b56ab778500754f438c4e03b3f17869951dc6ed8d770f09d2b34bad5ea"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_083.obj",
+          "sha256": "6ca42ace81f06fabed03cf8692818fdd16fe51df78218d9949e540177256b29a"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_084.obj",
+          "sha256": "002d18f36a24871853aa6220f5eb8a7763fd1cf12385827ad8b182693dad5a46"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_085.obj",
+          "sha256": "3400ef7a295a82b67ffb6d2714011a0d4f119cc6134e0d725b073a7a413dcdd3"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_086.obj",
+          "sha256": "afce6755cea4a8f223e95695b2b5ed2d8ad2f94e45cce8a9167c040159c425d6"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_087.obj",
+          "sha256": "6a3d9eab2e9283980e86c97f139d2e3ee96881badb48dfaa3f7fd3767086caf3"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_088.obj",
+          "sha256": "7124a1634d0351ac0066c4888312d5cee48abd6dd2881d06c4b2fd328472b3ae"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_089.obj",
+          "sha256": "97024384fe2de56e5b7d6406872b0c18e13457a575629a1505c1535b97958a0c"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_090.obj",
+          "sha256": "cf837b5e11a3e0df23b465e751f731b633a85beabc29d7b9fa1dc7a78c18a74b"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_091.obj",
+          "sha256": "cefd8a621140380f9414ec80e2b52c5457a00dd79cc95bd365b2fcdca0d30ead"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_092.obj",
+          "sha256": "e4ea31324cef374d2c7d73e948453b51cdf9e70f494d61ff01e51f5ef957ef02"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_093.obj",
+          "sha256": "a38b2705768249bde39bf7d0796880168fd94a1d5603ebf2d34e017ea3090495"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_094.obj",
+          "sha256": "bf8f951d36fd56554846fd12b69e186ee19cf79599149298d21c1a223443b765"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_095.obj",
+          "sha256": "f274231542206b42889b5fb3d787b74a4f786a27caa86bf395dc1e339ef69b70"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_096.obj",
+          "sha256": "10450da93c1703a6f8b050c2a3acd34c298637c39abcffec1b9273492554cae2"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_097.obj",
+          "sha256": "4b102e61bd34cb9742206e91b5869a992307237c8993fdc39c3313b286b69cf2"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_098.obj",
+          "sha256": "b33ee2d47e650d9781f092746d4eff9be68a0e5e3c1a991ce16efe4f09dcb2a8"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_099.obj",
+          "sha256": "247c634a4904f7dc50d0d75a4a504ae72ca8d7739a1c81d8f0f1d4659ab75722"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_100.obj",
+          "sha256": "204fb027595db7335a85915cc4c35cc2cc2a46455690fc164fba4a68958a9102"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_101.obj",
+          "sha256": "6372ccb9464b69ca159e2e01902a1d0aaf03ebff4e6ec10f7376d84276906e69"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_102.obj",
+          "sha256": "81293d04a1b4f385e372b1a5cd6b230d3aca8802616b56d10ea589eb744acb14"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_103.obj",
+          "sha256": "4d8d46347543a99523aa1f27a0863bfb4d244f09844dbff68fc232108e393f7e"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_104.obj",
+          "sha256": "43fd9a69978334c07883d7979a5bf083b11ace1e1531fc54f8ae49df5d4fbe98"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_105.obj",
+          "sha256": "6c109174bbd70695970423b2a5d332e262d8e03661d6fafaa8779c7598fa1371"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_106.obj",
+          "sha256": "7f3aa14870e3d2b362aa4dc5ce69fb8fa87508b30d9f15f9a4990dacb6deecfe"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_107.obj",
+          "sha256": "1c36d39ac53e1bbbef3785a0519263a73b1fb9d0ddbd53c2f00adef0fd9bef9f"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_108.obj",
+          "sha256": "dab2dbc9212ea7af591070682638716414cf7baa85a5f3c0cb2b1233c3a2b1d9"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_109.obj",
+          "sha256": "bbf468dcf2801cce064b01a6cfc84dd782a5cef4631d9b9919e23b82dc021d82"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_110.obj",
+          "sha256": "c591ab15a801b769d06c2bda9c6cd30b2a939ecec8f5ebcc13fab15c9ca3c1ea"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_111.obj",
+          "sha256": "a57898d0c7f1f0679129047f9c6c8b1529ff1988e340bb04354deeda5b9b623a"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_112.obj",
+          "sha256": "290824b50687f466e420f47da71674fc09b27dab5a85ba5a8ee3b154fc454a30"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_113.obj",
+          "sha256": "cf12f1cdf190a8b038766a20ddfa09764a846f468327ee3e0255e40fc653ab01"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_114.obj",
+          "sha256": "05840fcc6491c4cdf91fdb856d92361f59394c4259f5c7773317faeb5b2cf259"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_115.obj",
+          "sha256": "aa0457573f8a5e41be0194f62f0678c2a8948e31ed4ed44cecc39bcc3492472a"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_116.obj",
+          "sha256": "ce1ba194e251f22c9994a74eb0432435b20553e42b5533762348b7228edb3476"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_117.obj",
+          "sha256": "bf504d1b8a86ce08f2c91c3e27d515cd5e53296f153dcda76ceed5c9631d745b"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_118.obj",
+          "sha256": "e116a5a719835c5f39d04533d39b8e5cafc19f1fc83fd997fc987766f5a51feb"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_119.obj",
+          "sha256": "3cf237787c41c93a5760fce4f66bb45aae56ee3fe222e51934b28cfb7905e4e2"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_120.obj",
+          "sha256": "7c9f6024f3bd8497197398eb135a25dba69c8469a42839c3593f481ec0e23b1f"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_121.obj",
+          "sha256": "aa9ab2e9f475b7b11ef845dc68bf7eeb145e68fed6fb30aecd1b242af9c13e7b"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_122.obj",
+          "sha256": "8d895a7452f81b90b25ef6d657b995b3a2e5b34baeba17b6a516fd176acbca2c"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_123.obj",
+          "sha256": "27f601fd0981c8f5c8891885d3de8c36ad2a83716188c70498fd344631b89d8e"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_124.obj",
+          "sha256": "93d815759e6731bd5c36f0d4932221a59293366ca070f543db63670d997f6189"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_125.obj",
+          "sha256": "3c601e6a11ccbc1b5ffa781d7ed3e5a1dddcf2c6a246daa54896af86d8c13caf"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_126.obj",
+          "sha256": "ea83a02276ebbc76e5d5c674f6558dfc2c44b6089c058e40286a5e338de2b0dc"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_127.obj",
+          "sha256": "2f879e476f940881fbee871d9cf2d15ec996784e132321861f75804e80f48b46"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_128.obj",
+          "sha256": "4e420687c38606a1caf18cdbc4f729aaaf2601903b30fbe634a0bbf5e3528bc7"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_129.obj",
+          "sha256": "95d64f06c8cfa0b5231ff44c75b058f09a0df13602a60becdc723729454506ab"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_130.obj",
+          "sha256": "a118862542f9baa69ec36fd1421a871a22d73eb5092ce6f42d0c66aed6bd3fec"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_131.obj",
+          "sha256": "776de77cd1c49cbb3487a35d2e883bd504ff1a71d9daa42fbc760c8c16f0dc83"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_132.obj",
+          "sha256": "a93fe27bfb20c79715d26d18a54d5f083dea411a43f9a46d87f04e83df2c4fde"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_133.obj",
+          "sha256": "2428c808f35f97e422640e386be61be7999be1f44d53ef49ecb977c9f0d570ed"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_134.obj",
+          "sha256": "6e8b82ec0b7c0eb286819720ddda66520c0086efcc93fa47e45434fb0b345e51"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_135.obj",
+          "sha256": "3d8002a44fbadb3509e036ac4cb04470672911255fa83d6ffb275c07989e3c0c"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_136.obj",
+          "sha256": "8dde75e99642fd10ed1199ccdb3ee37df80c8a4564db50f46c5e0b915f217f2d"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_137.obj",
+          "sha256": "0289f92e2bb4a24a6c4573044aa1020a09ea53f1ee038d3085469fe952b81467"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_138.obj",
+          "sha256": "9ddde67f69bc5bee73ba5c3eb107e051e982878dc1c176cfff0e00742ce79e0c"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_139.obj",
+          "sha256": "7e4c799a7d4bce998201087ffa3889ad30b3f4ad0f8f76b0505de515ef8c2669"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_140.obj",
+          "sha256": "5282b853bf5c6b354122370d86a37d4dfa4c8fa040a0f5717ea3145a8bc27016"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_141.obj",
+          "sha256": "3fccb58de3955ec9c0a059284565cca545e82b36b518c505ad831f09a4fe0037"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_142.obj",
+          "sha256": "ff2180985bceefdd8485ee3faaec7ba4618f4657791b31cc2e6ae79f30a2c5bb"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_143.obj",
+          "sha256": "55ba2c32388f3855bfe9c8b8866bde7b8610e402e5e37b440c2c9876c8c7382c"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_144.obj",
+          "sha256": "a5f1f0e7bba6068b2b1e7b192d36c0e8a38ba8ed7c8f533c6bd795e9f52986b3"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_145.obj",
+          "sha256": "c49475da5ecd58995c3514abcfc85b6089ccab2204d43be8abc7d492081fcf28"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_146.obj",
+          "sha256": "801c89515d50e51a3b0e3fe84864b7410e0b07047dfbe934252c5e68f030b67d"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_147.obj",
+          "sha256": "9c0c14482a42398f78c8d7c77faf0bcb4f3530cc8c9b51a84fb836795db35496"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_148.obj",
+          "sha256": "99ea7655aa6c0f57a3a0ce1d771501d02c8d20a82151d5db5162c59aa8518a55"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_149.obj",
+          "sha256": "de65d27ebc6bb395184e2f80cc89512ff84ca5f98fd739590e3ba89a5b2beb79"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_150.obj",
+          "sha256": "c29e95584297d2c6ac470daf28974a660b792f068e2fb3b62f6a608f6a740807"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_151.obj",
+          "sha256": "d208f999bdaa262fc9bdc2c46c19ad72a234fde1535759bea062f8a89376ebf0"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_152.obj",
+          "sha256": "5e4c879034ec220bc9b05862b8bfb6b2e036442282087790028517e451dd3e30"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_153.obj",
+          "sha256": "17941ff382466eca43c477a82e5fe9fe4a04db1d432390721772ee02f8be7078"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_154.obj",
+          "sha256": "74bf711aa2ceae5de2b4990f9403f99ffcc2d9b077a171fea28d04ee2d688e99"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_155.obj",
+          "sha256": "ce4843773aa26cb6253a50234b221e9cf5bffd119ba6b779c005016ce9258fec"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_156.obj",
+          "sha256": "be20780453bb45173a88ff400be728ddcff2e7232e251d3fdd362d72f458a652"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_157.obj",
+          "sha256": "4b3ce7f84d923873ce0c55d9205d1711ff0341b4a4160837b440dfe270ae90e2"
+        },
+        {
+          "file": "meshes/nero/research_wrist/robot0_wrist_reuse_gripper_flange_158.obj",
+          "sha256": "330ac319815573d146ff8b8ad05041702e027c6f2ea51804f4468ca0d01ee6ac"
+        }
+      ]
+    }
+  },
+  "upstream_sim": {
+    "commit": "f8cd8b147c75d59e14f90fb0646770eefa268ed0",
+    "README_MIT_declaration": "https://github.com/agilexrobotics/agx_arm_sim/blob/f8cd8b147c75d59e14f90fb0646770eefa268ed0/README.md#license",
+    "note": "No independent LICENSE file there; permission basis here is the exact MIT-licensed source files in agx_arm_urdf, not public visibility or inferred copyright."
+  },
+  "conditions": [
+    "Preserve upstream MIT copyright and permission notice with copies and derivatives.",
+    "No source mesh, texture, proxy or physical model changed.",
+    "Earlier archive UNKNOWN remains historical; this record adds source licensing evidence only."
+  ]
+}
