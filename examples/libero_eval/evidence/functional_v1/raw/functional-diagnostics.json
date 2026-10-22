@@ -1,0 +1,69 @@
+{
+  "protocol": "functional_v1",
+  "diagnostic_only": [
+    "OUTSIDE_REGISTERED_PATH_ENVELOPE",
+    "ACTIVE_HOLD_TRACKING"
+  ],
+  "first_diagnostics": {
+    "OUTSIDE_REGISTERED_PATH_ENVELOPE": {
+      "step": 245,
+      "phase": "settle_preshape",
+      "details": [
+        {
+          "joint": "gripper0_finger11",
+          "q_rad": 0.14716427280610606,
+          "lower_rad": -0.02,
+          "upper_rad": 0.14714413600034068,
+          "outside_rad": 2.013680576537502e-05,
+          "side": "upper"
+        }
+      ]
+    },
+    "ACTIVE_HOLD_TRACKING": {
+      "step": 5751,
+      "phase": "hold",
+      "details": {
+        "active_errors_rad": [
+          0.006547423209488673,
+          0.02643523690187774,
+          0.04741493356285564,
+          0.01567440928205302,
+          0.015957416951915635,
+          0.020393060746247953
+        ],
+        "maximum_rad": 0.04741493356285564,
+        "original_diagnostic_threshold_rad": 0.02
+      }
+    }
+  },
+  "diagnostic_step_counts": {
+    "OUTSIDE_REGISTERED_PATH_ENVELOPE": 5108,
+    "ACTIVE_HOLD_TRACKING": 750
+  },
+  "old_research_first_failure": {
+    "step": 245,
+    "reasons": [
+      "OUTSIDE_REGISTERED_PATH_ENVELOPE"
+    ]
+  },
+  "old_legacy_first_failure": {
+    "step": 245,
+    "reasons": [
+      "OUTSIDE_REGISTERED_PATH_ENVELOPE"
+    ]
+  },
+  "functional_first_failure": null,
+  "prefix_physics": {
+    "matched_steps": 245,
+    "required_steps": 245,
+    "first_difference": null,
+    "state_exclusions": [
+      "failures",
+      "legacy_failures",
+      "research"
+    ],
+    "all_contact_cache_fields_compared": true,
+    "comparison": "exact canonical JSON; no tolerance"
+  },
+  "previous_finite_path_geometry_scope": "Not asserted after the original envelope is exceeded."
+}

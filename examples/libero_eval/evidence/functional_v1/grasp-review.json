@@ -1,0 +1,175 @@
+{
+  "mode": "PURE_STDLIB_STREAMING_NO_ENGINE_IMPORT_OR_OPERATIONS",
+  "source_run": "/data_robot/verification/nero_dh116_right/runs/issue5_functional_v1/close149_B_functional_v1_once",
+  "rows": 6500,
+  "sample_period_s": 0.002,
+  "contact_timing": "final RK4 internal-stage contact/force/body cache; qpos and bowl center in support/opposition predicate are recorded post-step; no new forward",
+  "criteria_recomputed": "Hold phase AND lift from step250 post-step>=0.020m AND zero positive-normal-force bowl/nonhand contacts AND positive-force thumb/index contacts with negative XY radial dot product; original function does not filter on filter_reasons.",
+  "first_events": {
+    "positive_table_support": {
+      "step": 62,
+      "phase": "settle_preshape"
+    },
+    "positive_hand_bowl_contact": {
+      "step": 4462,
+      "phase": "close",
+      "geoms": [
+        [
+          "white_bowl_1_g31",
+          "gripper0_finger13_local_01"
+        ],
+        [
+          "white_bowl_1_g32",
+          "gripper0_finger13_local_01"
+        ]
+      ],
+      "normal_force_N": [
+        0.013260716079638288,
+        0.013260716079638288
+      ]
+    },
+    "opposed_thumb_index": {
+      "step": 4637,
+      "phase": "close",
+      "opposed_pair_geoms": [
+        [
+          [
+            "white_bowl_1_g31",
+            "gripper0_finger13_local_01"
+          ],
+          [
+            "white_bowl_1_g22",
+            "gripper0_proxy76_finger23_link_06"
+          ]
+        ],
+        [
+          [
+            "white_bowl_1_g32",
+            "gripper0_finger13_local_01"
+          ],
+          [
+            "white_bowl_1_g22",
+            "gripper0_proxy76_finger23_link_06"
+          ]
+        ]
+      ]
+    },
+    "unsupported_after_table": {
+      "step": 4794,
+      "phase": "lift"
+    },
+    "unsupported_after_hand_contact": {
+      "step": 4794,
+      "phase": "lift"
+    },
+    "unsupported_in_lift": {
+      "step": 4794,
+      "phase": "lift"
+    },
+    "20mm_unsupported_opposed_any_phase": {
+      "step": 5101,
+      "phase": "lift",
+      "lift_m": 0.020048378401478106
+    }
+  },
+  "phase_ranges": {
+    "settle_preshape": {
+      "first": 1,
+      "last": 250,
+      "count": 250
+    },
+    "approach_high": {
+      "first": 251,
+      "last": 2250,
+      "count": 2000
+    },
+    "descend": {
+      "first": 2251,
+      "last": 4000,
+      "count": 1750
+    },
+    "close": {
+      "first": 4001,
+      "last": 4750,
+      "count": 750
+    },
+    "lift": {
+      "first": 4751,
+      "last": 5750,
+      "count": 1000
+    },
+    "hold": {
+      "first": 5751,
+      "last": 6500,
+      "count": 750
+    }
+  },
+  "step250_settled_z_m": 0.8994107101029007,
+  "final_z_m": 0.9999043163440386,
+  "final_lift_m": 0.1004936062411379,
+  "maximum_lift_m": 0.10049676837696675,
+  "maximum_lift_step": 6409,
+  "hold": {
+    "planned_steps": 750,
+    "recorded_steps": 750,
+    "all750_valid": true,
+    "bad_steps": [],
+    "minimum_lift_m": 0.08678270791347764,
+    "maximum_lift_m": 0.10049676837696675,
+    "longest_continuous_valid_steps": 750,
+    "longest_continuous_valid_s": 1.5,
+    "original_1s_predicate": true,
+    "full1_5s_completed": true,
+    "minimum_thumb_normal_force_sum_N": 0.300956714693114,
+    "minimum_index_normal_force_sum_N": 0.3137198036226415
+  },
+  "unsupported_after_positive_table_intervals": [
+    {
+      "first": 4794,
+      "last": 6500,
+      "phase_first": "lift"
+    }
+  ],
+  "final_environment_support": false,
+  "final_opposed": true,
+  "state_derived_field_mismatches": [],
+  "hard_failures": [],
+  "numerical_health_events": [],
+  "prefix": {
+    "required_steps": 245,
+    "nonmetadata_state_fields": 35,
+    "state_exclusions": [
+      "failures",
+      "legacy_failures",
+      "research"
+    ],
+    "all_contact_cache_fields": true,
+    "exact_canonical_JSON": true,
+    "differences": [],
+    "pass": true
+  },
+  "reset": {
+    "frozen_fields": {
+      "qpos": null,
+      "qvel": null,
+      "ctrl": null,
+      "controller": null,
+      "criteria": null,
+      "native_scene": null,
+      "initial_contact_cache": null
+    },
+    "RK4_native_Reset_cache": {
+      "time_s": null,
+      "cache": null,
+      "warning_counts": null
+    },
+    "compiled_snapshots": {
+      "formal_snapshot": null,
+      "actual_snapshot": null
+    },
+    "pass": true
+  },
+  "native_task_result": false,
+  "native_task_result_scope": "saved actual env.check_success() value; cannot independently recompute without engine, reported separately",
+  "pass": true
+}

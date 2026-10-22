@@ -1,0 +1,124 @@
+{
+  "status": "PASS_OFFLINE_PROTECTION_RECOMPUTATION",
+  "runtime": "/data_robot/verification/nero_dh116_right/runs/issue5_functional_v1/close149_B_functional_v1_once",
+  "method": "Pure standard library; streaming paired saved state/contact lines; fresh frozen ResearchPolicy and ContactTracker evaluated once per saved physical step; no native engine, compile, Reset, forward or integration.",
+  "steps_checked": 6500,
+  "checks": {
+    "raw_health_metrics": 6500,
+    "old_formal_decision": 6500,
+    "old_B_research_decision": 6500,
+    "functional_decision": 6500,
+    "diagnostic_decision": 6500,
+    "full_V1_groups_warnings_events_exact": 6500
+  },
+  "removed_from_actual_hard_stop_only": [
+    "OUTSIDE_REGISTERED_PATH_ENVELOPE",
+    "ACTIVE_HOLD_TRACKING"
+  ],
+  "diagnostic_stats": {
+    "OUTSIDE_REGISTERED_PATH_ENVELOPE": {
+      "first_step": 245,
+      "last_step": 6500,
+      "steps": 5108
+    },
+    "ACTIVE_HOLD_TRACKING": {
+      "first_step": 5751,
+      "last_step": 6500,
+      "steps": 750
+    }
+  },
+  "old_B_research_failures": {
+    "OUTSIDE_REGISTERED_PATH_ENVELOPE": {
+      "first_step": 245,
+      "last_step": 6500,
+      "steps": 5108
+    },
+    "ACTIVE_HOLD_TRACKING": {
+      "first_step": 5751,
+      "last_step": 6500,
+      "steps": 750
+    }
+  },
+  "formal_legacy_failures": {
+    "OUTSIDE_REGISTERED_PATH_ENVELOPE": {
+      "first_step": 245,
+      "last_step": 6500,
+      "steps": 5108
+    },
+    "ACTIVE_HOLD_TRACKING": {
+      "first_step": 5751,
+      "last_step": 6500,
+      "steps": 750
+    }
+  },
+  "actual_hard_failures": {},
+  "contact_warning_stats": {},
+  "contact_stop_stats": {},
+  "old_2mm_first_trigger": null,
+  "old_2mm_triggered": false,
+  "maxima_recomputed_exact": {
+    "arm_tracking_rad": 0.08902868111786189,
+    "active_tracking_rad": 0.05590574110466823,
+    "active_hold_tracking_rad": 0.04741493356285564,
+    "mimic_rad": 0.002109013192409137,
+    "joint_overshoot_rad": 0.0006736924127486166,
+    "robot_overlap_m": 0.00048527595036050635,
+    "bowl_lift_m": 0.10049676837696675
+  },
+  "all_result_maxima_exact": true,
+  "peak_individual_contact_normal_force": {
+    "step": 61,
+    "geom": [
+      "table_collision",
+      "chefmate_8_frypan_1_g4"
+    ],
+    "body": [
+      "table",
+      "chefmate_8_frypan_1_main"
+    ],
+    "normal_force_N": 3.01241026902891
+  },
+  "peak_scoped_aggregated_contact_normal_force": {
+    "step": 6500,
+    "level": "body",
+    "key": [
+      "gripper0_finger23_link",
+      "white_bowl_1_main"
+    ],
+    "normal_force_N": 0.33946693813755846
+  },
+  "contact_tracker_history": "One sequential tracker retained across all phase transitions; all serialized groups, warnings and stop events match original policy exactly.",
+  "thresholds_unchanged": {
+    "scope": "NEW fixed right white-bowl criteria; not left/manufacturer/full-range certification",
+    "lift_from_own_settled_baseline_m_min": 0.02,
+    "continuous_hold_s_min": 1.0,
+    "hold_requires": [
+      "height >= settled+20mm",
+      "no bowl-table or other environmental support contacts",
+      "positive-force thumb and index contacts on opposing bowl sides"
+    ],
+    "steady_active_error_rad_max": 0.02,
+    "arm_tracking_error_rad_max": 0.1,
+    "linear_mimic_error_rad_max": 0.02,
+    "joint_limit_overshoot_rad_max": 0.01,
+    "eligible_internal_and_external_overlap_m_max": 0.002,
+    "warnings_allowed": 0,
+    "nonfinite_states_allowed": 0,
+    "native_task_result": "record native cabinet-placement predicate separately",
+    "strict_grasp_success_claim": false,
+    "stop": "First numerical/physical bound violation; no automatic retry or edits"
+  },
+  "source_sha256": {
+    "examples/right_hand/libero_research.py": "7f15b06b5cf1333362a580f6841f90ca8bdde19d3e70ce97d16c342f79ff0b73",
+    "examples/right_hand/evidence/d3_research_contact_policy/shadow.py": "76abc56586d03579f1063d973a1cc63548daa85839e08f320248a8aa2e9999ec",
+    "examples/right_hand/evidence/d3_research_contact_policy/research-policy.json": "48632dfa4bbe0630ef7d61b9e706240d7769ad6361d588e1d02025bde4bc6454"
+  },
+  "raw_sha256": {
+    "state.jsonl.gz": "8049352d6cf2c227b4ad9e7cb45c14c35015068db0bccad6f43b5f56f131400f",
+    "contacts.jsonl.gz": "7c0cfdc63298fb0b58b4dffed20c8d2f7dbf653460a2ea29dd1710c28f1e8502",
+    "result.json": "2238cec327780963ec2dacf71a9ce270143445ade6dd72f1927d7b8ec9f2e963",
+    "registered-protocol.json": "47f2b29ddd554362fe2851455a52d41dcc0232dcf76195ef7c088557de982530"
+  },
+  "blocked_native_modules_present": [],
+  "limits": "Qualification fields are the original saved RK4 contact qualification; no collision geometry or model compilation performed. Post-step qpos/health vs final RK4-stage contacts/forces retain documented timing difference."
+}

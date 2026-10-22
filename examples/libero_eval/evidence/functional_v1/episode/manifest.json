@@ -1,0 +1,102 @@
+{
+  "schema": "nero_dh116_libero_episode_v1",
+  "episode_id": "episode",
+  "hand": "R",
+  "mode": "research",
+  "record_kind": "saved_real_dynamics_export",
+  "export_integrates_physics": false,
+  "model": {
+    "path": "examples/libero_eval/evidence/functional_v1/raw/drive-model/model.xml",
+    "sha256": "d9cd16d2ecfc2f78c77a09cbccf91c0fee105572b28bd3fd5134483f72b2b68e",
+    "hand_collision_proxies": 81,
+    "wrist_collision_proxies": 306,
+    "profile": "R_close149_left_drive_profile_v1",
+    "base_model": {
+      "path": "examples/right_hand/candidates/finger22_local/model.xml",
+      "sha256": "7f9d84061c3e7d176763c688d2389f8b3d3e38386b8e990a0fa047ff2bc3329c",
+      "hand_collision_proxies": 81,
+      "wrist_collision_proxies": 306
+    },
+    "raw_original_context_xml": "examples/libero_eval/evidence/functional_v1/raw/drive-model/original-context.xml",
+    "raw_original_context_sha256": "e24d17904b9b1d4a55ae031a08bb1457f0f46c4170f987767d0acd161eb3e84b",
+    "actual_runtime_path": "/data_robot/verification/nero_dh116_right/runs/issue5_functional_v1/close149_B_functional_v1_once/drive-model/model.xml"
+  },
+  "task": {
+    "suite": "libero_90",
+    "name": "KITCHEN_SCENE9_put_the_white_bowl_on_top_of_the_cabinet",
+    "bddl_sha256": "a595358c840e6dca31d2d914726bb49d58944252ae868796bd603345a444b627",
+    "goal": "On white_bowl_1 wooden_two_layer_shelf_1_top_side",
+    "native_success_predicate_preserved": true
+  },
+  "initialization": {
+    "kind": "native_seeded_reset",
+    "seed": 20261007,
+    "official_panda_init_state_supported": false,
+    "full_reset_source": {
+      "path": "examples/libero_eval/evidence/functional_v1/raw/frozen-before-first-step.json.gz",
+      "sha256": "c239cc0654375e62d688d70a92c86bb4f4c09792dc4d9b8f42e3712c3110e8d7",
+      "bytes": 86910
+    },
+    "reset_qpos_sha256": "ed3fe239a8bfed5e5eda6f65bb563bda1e458ec965648ed948ae0e5580e53feb"
+  },
+  "contract": {
+    "state": "7 arm + 11 hand joint positions [rad]",
+    "action": "7 absolute arm [rad] + 6 normalized absolute hand [-1,1]",
+    "ctrl": "7 arm torques + 6 hand actuator joint angles"
+  },
+  "environment": {
+    "python": "3.11.16",
+    "mujoco": "3.2.3",
+    "robosuite": "1.4.1",
+    "libero_commit": "f78abd68ee283de9f9be3c8f7e2a9ad60246e95c"
+  },
+  "research_policy_sha256": "48632dfa4bbe0630ef7d61b9e706240d7769ad6361d588e1d02025bde4bc6454",
+  "expanded_actions_13_sha256": "2c059be7cc5440d372835fb14feaa2ab707b3f4958049e4a55fcb8bf0eb0e247",
+  "exporter_sha256": "8829122e86919c2e50621ad788f167a7ecedbdd7bf747d0f8c883eabe2e7abfc",
+  "source_files": [
+    {
+      "path": "examples/libero_eval/evidence/functional_v1/raw/state.jsonl.gz",
+      "sha256": "8049352d6cf2c227b4ad9e7cb45c14c35015068db0bccad6f43b5f56f131400f",
+      "bytes": 13931122
+    },
+    {
+      "path": "examples/libero_eval/evidence/functional_v1/raw/contacts.jsonl.gz",
+      "sha256": "7c0cfdc63298fb0b58b4dffed20c8d2f7dbf653460a2ea29dd1710c28f1e8502",
+      "bytes": 16450013
+    },
+    {
+      "path": "examples/libero_eval/evidence/functional_v1/raw/result.json.gz",
+      "sha256": "54d7583808e13889bdff030238d7e15e3933b616fcc4111f949c9759a909e68b",
+      "bytes": 50821
+    },
+    {
+      "path": "examples/libero_eval/evidence/functional_v1/raw/observations.jsonl.gz",
+      "sha256": "2107c9affc27538b3dcb1cc4c2ab758b82b845dda38b78d3c18a36e4624e5582",
+      "bytes": 9630
+    },
+    {
+      "path": "examples/libero_eval/evidence/functional_v1/raw/frozen-before-first-step.json.gz",
+      "sha256": "c239cc0654375e62d688d70a92c86bb4f4c09792dc4d9b8f42e3712c3110e8d7",
+      "bytes": 86910
+    }
+  ],
+  "steps_sha256": "3eb07286a9d14c6403cee4124ac26f248bce4fd4bb4b8476f79931ab435f803b",
+  "limitations": [
+    "No official Panda init-state conversion or multi-seed benchmark implemented.",
+    "Only saved native success measurements are reported; missing per-step signals remain null.",
+    "Left historical contacts lack saved position/frame/RK4 body poses.",
+    "Scripted white-bowl grasp lacks the native cabinet placement phase."
+  ],
+  "measurement_protocol": "functional_v1",
+  "post_export_metadata": {
+    "original_exporter_model": {
+      "path": "examples/right_hand/candidates/finger22_local/model.xml",
+      "sha256": "7f9d84061c3e7d176763c688d2389f8b3d3e38386b8e990a0fa047ff2bc3329c",
+      "hand_collision_proxies": 81,
+      "wrist_collision_proxies": 306
+    },
+    "reason": "Existing exporter has fixed A identity; bind this new B episode to the actually used XML and explicit protocol. Exporter unchanged.",
+    "no_physics_or_state_changes": true,
+    "raw_materialization_sha256": "94fa64bf79c3ff373aa5b7be35631d9c4a15eae78ea27cc7f72440d8459e5d61"
+  }
+}

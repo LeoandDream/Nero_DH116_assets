@@ -1,0 +1,4957 @@
+{
+  "schema": "nero_dh116_libero_episode_v1",
+  "observations": [
+    {
+      "step": 25,
+      "macro": 0,
+      "time_s": 0.05000000000000003,
+      "phase": "settle_preshape",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000000.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000000.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 0,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 25
+    },
+    {
+      "step": 50,
+      "macro": 1,
+      "time_s": 0.10000000000000007,
+      "phase": "settle_preshape",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000001.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000001.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 1,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 50
+    },
+    {
+      "step": 75,
+      "macro": 2,
+      "time_s": 0.1500000000000001,
+      "phase": "settle_preshape",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000002.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000002.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 2,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 75
+    },
+    {
+      "step": 100,
+      "macro": 3,
+      "time_s": 0.20000000000000015,
+      "phase": "settle_preshape",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000003.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000003.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 3,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 100
+    },
+    {
+      "step": 125,
+      "macro": 4,
+      "time_s": 0.25000000000000017,
+      "phase": "settle_preshape",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000004.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000004.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 4,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 125
+    },
+    {
+      "step": 150,
+      "macro": 5,
+      "time_s": 0.3000000000000002,
+      "phase": "settle_preshape",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000005.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000005.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 5,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 150
+    },
+    {
+      "step": 175,
+      "macro": 6,
+      "time_s": 0.35000000000000026,
+      "phase": "settle_preshape",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000006.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000006.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 6,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 175
+    },
+    {
+      "step": 200,
+      "macro": 7,
+      "time_s": 0.4000000000000003,
+      "phase": "settle_preshape",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000007.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000007.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 7,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 200
+    },
+    {
+      "step": 225,
+      "macro": 8,
+      "time_s": 0.45000000000000034,
+      "phase": "settle_preshape",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000008.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000008.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 8,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 225
+    },
+    {
+      "step": 250,
+      "macro": 9,
+      "time_s": 0.5000000000000003,
+      "phase": "settle_preshape",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000009.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000009.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 9,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 250
+    },
+    {
+      "step": 275,
+      "macro": 10,
+      "time_s": 0.5500000000000004,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000010.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000010.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 10,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 275
+    },
+    {
+      "step": 300,
+      "macro": 11,
+      "time_s": 0.6000000000000004,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000011.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000011.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 11,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 300
+    },
+    {
+      "step": 325,
+      "macro": 12,
+      "time_s": 0.6500000000000005,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000012.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000012.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 12,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 325
+    },
+    {
+      "step": 350,
+      "macro": 13,
+      "time_s": 0.7000000000000005,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000013.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000013.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 13,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 350
+    },
+    {
+      "step": 375,
+      "macro": 14,
+      "time_s": 0.7500000000000006,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000014.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000014.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 14,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 375
+    },
+    {
+      "step": 400,
+      "macro": 15,
+      "time_s": 0.8000000000000006,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000015.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000015.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 15,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 400
+    },
+    {
+      "step": 425,
+      "macro": 16,
+      "time_s": 0.8500000000000006,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000016.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000016.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 16,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 425
+    },
+    {
+      "step": 450,
+      "macro": 17,
+      "time_s": 0.9000000000000007,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000017.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000017.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 17,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 450
+    },
+    {
+      "step": 475,
+      "macro": 18,
+      "time_s": 0.9500000000000007,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000018.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000018.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 18,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 475
+    },
+    {
+      "step": 500,
+      "macro": 19,
+      "time_s": 1.0000000000000007,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000019.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000019.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 19,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 500
+    },
+    {
+      "step": 525,
+      "macro": 20,
+      "time_s": 1.0500000000000007,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000020.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000020.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 20,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 525
+    },
+    {
+      "step": 550,
+      "macro": 21,
+      "time_s": 1.1000000000000008,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000021.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000021.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 21,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 550
+    },
+    {
+      "step": 575,
+      "macro": 22,
+      "time_s": 1.1500000000000008,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000022.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000022.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 22,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 575
+    },
+    {
+      "step": 600,
+      "macro": 23,
+      "time_s": 1.2000000000000008,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000023.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000023.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 23,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 600
+    },
+    {
+      "step": 625,
+      "macro": 24,
+      "time_s": 1.2500000000000009,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000024.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000024.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 24,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 625
+    },
+    {
+      "step": 650,
+      "macro": 25,
+      "time_s": 1.300000000000001,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000025.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000025.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 25,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 650
+    },
+    {
+      "step": 675,
+      "macro": 26,
+      "time_s": 1.350000000000001,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000026.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000026.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 26,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 675
+    },
+    {
+      "step": 700,
+      "macro": 27,
+      "time_s": 1.400000000000001,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000027.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000027.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 27,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 700
+    },
+    {
+      "step": 725,
+      "macro": 28,
+      "time_s": 1.450000000000001,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000028.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000028.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 28,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 725
+    },
+    {
+      "step": 750,
+      "macro": 29,
+      "time_s": 1.500000000000001,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000029.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000029.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 29,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 750
+    },
+    {
+      "step": 775,
+      "macro": 30,
+      "time_s": 1.5500000000000012,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000030.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000030.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 30,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 775
+    },
+    {
+      "step": 800,
+      "macro": 31,
+      "time_s": 1.6000000000000012,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000031.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000031.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 31,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 800
+    },
+    {
+      "step": 825,
+      "macro": 32,
+      "time_s": 1.6500000000000012,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000032.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000032.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 32,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 825
+    },
+    {
+      "step": 850,
+      "macro": 33,
+      "time_s": 1.7000000000000013,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000033.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000033.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 33,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 850
+    },
+    {
+      "step": 875,
+      "macro": 34,
+      "time_s": 1.7500000000000013,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000034.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000034.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 34,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 875
+    },
+    {
+      "step": 900,
+      "macro": 35,
+      "time_s": 1.8000000000000014,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000035.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000035.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 35,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 900
+    },
+    {
+      "step": 925,
+      "macro": 36,
+      "time_s": 1.8500000000000014,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000036.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000036.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 36,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 925
+    },
+    {
+      "step": 950,
+      "macro": 37,
+      "time_s": 1.9000000000000015,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000037.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000037.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 37,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 950
+    },
+    {
+      "step": 975,
+      "macro": 38,
+      "time_s": 1.9500000000000015,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000038.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000038.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 38,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 975
+    },
+    {
+      "step": 1000,
+      "macro": 39,
+      "time_s": 2.0000000000000013,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000039.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000039.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 39,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 1000
+    },
+    {
+      "step": 1025,
+      "macro": 40,
+      "time_s": 2.049999999999996,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000040.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000040.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 40,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 1025
+    },
+    {
+      "step": 1050,
+      "macro": 41,
+      "time_s": 2.0999999999999903,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000041.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000041.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 41,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 1050
+    },
+    {
+      "step": 1075,
+      "macro": 42,
+      "time_s": 2.149999999999985,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000042.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000042.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 42,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 1075
+    },
+    {
+      "step": 1100,
+      "macro": 43,
+      "time_s": 2.1999999999999793,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000043.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000043.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 43,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 1100
+    },
+    {
+      "step": 1125,
+      "macro": 44,
+      "time_s": 2.249999999999974,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000044.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000044.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 44,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 1125
+    },
+    {
+      "step": 1150,
+      "macro": 45,
+      "time_s": 2.2999999999999683,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000045.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000045.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 45,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 1150
+    },
+    {
+      "step": 1175,
+      "macro": 46,
+      "time_s": 2.349999999999963,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000046.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000046.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 46,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 1175
+    },
+    {
+      "step": 1200,
+      "macro": 47,
+      "time_s": 2.3999999999999573,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000047.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000047.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 47,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 1200
+    },
+    {
+      "step": 1225,
+      "macro": 48,
+      "time_s": 2.4499999999999518,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000048.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000048.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 48,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 1225
+    },
+    {
+      "step": 1250,
+      "macro": 49,
+      "time_s": 2.4999999999999463,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000049.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000049.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 49,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 1250
+    },
+    {
+      "step": 1275,
+      "macro": 50,
+      "time_s": 2.5499999999999408,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000050.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000050.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 50,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 1275
+    },
+    {
+      "step": 1300,
+      "macro": 51,
+      "time_s": 2.5999999999999353,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000051.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000051.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 51,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 1300
+    },
+    {
+      "step": 1325,
+      "macro": 52,
+      "time_s": 2.6499999999999297,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000052.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000052.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 52,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 1325
+    },
+    {
+      "step": 1350,
+      "macro": 53,
+      "time_s": 2.6999999999999242,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000053.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000053.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 53,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 1350
+    },
+    {
+      "step": 1375,
+      "macro": 54,
+      "time_s": 2.7499999999999187,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000054.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000054.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 54,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 1375
+    },
+    {
+      "step": 1400,
+      "macro": 55,
+      "time_s": 2.7999999999999132,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000055.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000055.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 55,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 1400
+    },
+    {
+      "step": 1425,
+      "macro": 56,
+      "time_s": 2.8499999999999077,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000056.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000056.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 56,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 1425
+    },
+    {
+      "step": 1450,
+      "macro": 57,
+      "time_s": 2.899999999999902,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000057.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000057.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 57,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 1450
+    },
+    {
+      "step": 1475,
+      "macro": 58,
+      "time_s": 2.9499999999998967,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000058.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000058.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 58,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 1475
+    },
+    {
+      "step": 1500,
+      "macro": 59,
+      "time_s": 2.999999999999891,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000059.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000059.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 59,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 1500
+    },
+    {
+      "step": 1525,
+      "macro": 60,
+      "time_s": 3.0499999999998857,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000060.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000060.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 60,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 1525
+    },
+    {
+      "step": 1550,
+      "macro": 61,
+      "time_s": 3.09999999999988,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000061.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000061.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 61,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 1550
+    },
+    {
+      "step": 1575,
+      "macro": 62,
+      "time_s": 3.1499999999998747,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000062.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000062.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 62,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 1575
+    },
+    {
+      "step": 1600,
+      "macro": 63,
+      "time_s": 3.199999999999869,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000063.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000063.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 63,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 1600
+    },
+    {
+      "step": 1625,
+      "macro": 64,
+      "time_s": 3.2499999999998637,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000064.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000064.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 64,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 1625
+    },
+    {
+      "step": 1650,
+      "macro": 65,
+      "time_s": 3.299999999999858,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000065.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000065.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 65,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 1650
+    },
+    {
+      "step": 1675,
+      "macro": 66,
+      "time_s": 3.3499999999998527,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000066.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000066.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 66,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 1675
+    },
+    {
+      "step": 1700,
+      "macro": 67,
+      "time_s": 3.399999999999847,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000067.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000067.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 67,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 1700
+    },
+    {
+      "step": 1725,
+      "macro": 68,
+      "time_s": 3.4499999999998416,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000068.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000068.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 68,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 1725
+    },
+    {
+      "step": 1750,
+      "macro": 69,
+      "time_s": 3.499999999999836,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000069.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000069.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 69,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 1750
+    },
+    {
+      "step": 1775,
+      "macro": 70,
+      "time_s": 3.5499999999998306,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000070.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000070.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 70,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 1775
+    },
+    {
+      "step": 1800,
+      "macro": 71,
+      "time_s": 3.599999999999825,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000071.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000071.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 71,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 1800
+    },
+    {
+      "step": 1825,
+      "macro": 72,
+      "time_s": 3.6499999999998196,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000072.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000072.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 72,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 1825
+    },
+    {
+      "step": 1850,
+      "macro": 73,
+      "time_s": 3.699999999999814,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000073.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000073.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 73,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 1850
+    },
+    {
+      "step": 1875,
+      "macro": 74,
+      "time_s": 3.7499999999998086,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000074.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000074.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 74,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 1875
+    },
+    {
+      "step": 1900,
+      "macro": 75,
+      "time_s": 3.799999999999803,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000075.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000075.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 75,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 1900
+    },
+    {
+      "step": 1925,
+      "macro": 76,
+      "time_s": 3.8499999999997976,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000076.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000076.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 76,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 1925
+    },
+    {
+      "step": 1950,
+      "macro": 77,
+      "time_s": 3.899999999999792,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000077.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000077.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 77,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 1950
+    },
+    {
+      "step": 1975,
+      "macro": 78,
+      "time_s": 3.9499999999997866,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000078.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000078.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 78,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 1975
+    },
+    {
+      "step": 2000,
+      "macro": 79,
+      "time_s": 3.999999999999781,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000079.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000079.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 79,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 2000
+    },
+    {
+      "step": 2025,
+      "macro": 80,
+      "time_s": 4.049999999999776,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000080.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000080.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 80,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 2025
+    },
+    {
+      "step": 2050,
+      "macro": 81,
+      "time_s": 4.0999999999997705,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000081.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000081.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 81,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 2050
+    },
+    {
+      "step": 2075,
+      "macro": 82,
+      "time_s": 4.149999999999765,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000082.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000082.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 82,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 2075
+    },
+    {
+      "step": 2100,
+      "macro": 83,
+      "time_s": 4.1999999999997595,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000083.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000083.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 83,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 2100
+    },
+    {
+      "step": 2125,
+      "macro": 84,
+      "time_s": 4.249999999999754,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000084.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000084.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 84,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 2125
+    },
+    {
+      "step": 2150,
+      "macro": 85,
+      "time_s": 4.2999999999997485,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000085.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000085.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 85,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 2150
+    },
+    {
+      "step": 2175,
+      "macro": 86,
+      "time_s": 4.349999999999743,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000086.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000086.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 86,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 2175
+    },
+    {
+      "step": 2200,
+      "macro": 87,
+      "time_s": 4.3999999999997375,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000087.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000087.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 87,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 2200
+    },
+    {
+      "step": 2225,
+      "macro": 88,
+      "time_s": 4.449999999999732,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000088.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000088.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 88,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 2225
+    },
+    {
+      "step": 2250,
+      "macro": 89,
+      "time_s": 4.499999999999726,
+      "phase": "approach_high",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000089.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000089.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 89,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 2250
+    },
+    {
+      "step": 2275,
+      "macro": 90,
+      "time_s": 4.549999999999721,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000090.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000090.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 90,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 2275
+    },
+    {
+      "step": 2300,
+      "macro": 91,
+      "time_s": 4.599999999999715,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000091.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000091.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 91,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 2300
+    },
+    {
+      "step": 2325,
+      "macro": 92,
+      "time_s": 4.64999999999971,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000092.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000092.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 92,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 2325
+    },
+    {
+      "step": 2350,
+      "macro": 93,
+      "time_s": 4.699999999999704,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000093.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000093.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 93,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 2350
+    },
+    {
+      "step": 2375,
+      "macro": 94,
+      "time_s": 4.749999999999699,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000094.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000094.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 94,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 2375
+    },
+    {
+      "step": 2400,
+      "macro": 95,
+      "time_s": 4.799999999999693,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000095.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000095.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 95,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 2400
+    },
+    {
+      "step": 2425,
+      "macro": 96,
+      "time_s": 4.849999999999688,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000096.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000096.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 96,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 2425
+    },
+    {
+      "step": 2450,
+      "macro": 97,
+      "time_s": 4.899999999999682,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000097.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000097.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 97,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 2450
+    },
+    {
+      "step": 2475,
+      "macro": 98,
+      "time_s": 4.949999999999677,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000098.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000098.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 98,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 2475
+    },
+    {
+      "step": 2500,
+      "macro": 99,
+      "time_s": 4.999999999999671,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000099.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000099.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 99,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 2500
+    },
+    {
+      "step": 2525,
+      "macro": 100,
+      "time_s": 5.049999999999666,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000100.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000100.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 100,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 2525
+    },
+    {
+      "step": 2550,
+      "macro": 101,
+      "time_s": 5.09999999999966,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000101.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000101.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 101,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 2550
+    },
+    {
+      "step": 2575,
+      "macro": 102,
+      "time_s": 5.149999999999655,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000102.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000102.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 102,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 2575
+    },
+    {
+      "step": 2600,
+      "macro": 103,
+      "time_s": 5.199999999999649,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000103.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000103.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 103,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 2600
+    },
+    {
+      "step": 2625,
+      "macro": 104,
+      "time_s": 5.249999999999644,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000104.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000104.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 104,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 2625
+    },
+    {
+      "step": 2650,
+      "macro": 105,
+      "time_s": 5.299999999999638,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000105.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000105.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 105,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 2650
+    },
+    {
+      "step": 2675,
+      "macro": 106,
+      "time_s": 5.349999999999633,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000106.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000106.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 106,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 2675
+    },
+    {
+      "step": 2700,
+      "macro": 107,
+      "time_s": 5.399999999999627,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000107.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000107.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 107,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 2700
+    },
+    {
+      "step": 2725,
+      "macro": 108,
+      "time_s": 5.449999999999622,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000108.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000108.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 108,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 2725
+    },
+    {
+      "step": 2750,
+      "macro": 109,
+      "time_s": 5.499999999999616,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000109.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000109.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 109,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 2750
+    },
+    {
+      "step": 2775,
+      "macro": 110,
+      "time_s": 5.549999999999611,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000110.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000110.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 110,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 2775
+    },
+    {
+      "step": 2800,
+      "macro": 111,
+      "time_s": 5.599999999999605,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000111.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000111.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 111,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 2800
+    },
+    {
+      "step": 2825,
+      "macro": 112,
+      "time_s": 5.6499999999996,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000112.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000112.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 112,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 2825
+    },
+    {
+      "step": 2850,
+      "macro": 113,
+      "time_s": 5.699999999999594,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000113.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000113.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 113,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 2850
+    },
+    {
+      "step": 2875,
+      "macro": 114,
+      "time_s": 5.749999999999589,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000114.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000114.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 114,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 2875
+    },
+    {
+      "step": 2900,
+      "macro": 115,
+      "time_s": 5.799999999999583,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000115.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000115.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 115,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 2900
+    },
+    {
+      "step": 2925,
+      "macro": 116,
+      "time_s": 5.849999999999578,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000116.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000116.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 116,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 2925
+    },
+    {
+      "step": 2950,
+      "macro": 117,
+      "time_s": 5.899999999999572,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000117.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000117.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 117,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 2950
+    },
+    {
+      "step": 2975,
+      "macro": 118,
+      "time_s": 5.949999999999567,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000118.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000118.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 118,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 2975
+    },
+    {
+      "step": 3000,
+      "macro": 119,
+      "time_s": 5.999999999999561,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000119.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000119.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 119,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 3000
+    },
+    {
+      "step": 3025,
+      "macro": 120,
+      "time_s": 6.049999999999556,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000120.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000120.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 120,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 3025
+    },
+    {
+      "step": 3050,
+      "macro": 121,
+      "time_s": 6.09999999999955,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000121.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000121.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 121,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 3050
+    },
+    {
+      "step": 3075,
+      "macro": 122,
+      "time_s": 6.149999999999545,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000122.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000122.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 122,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 3075
+    },
+    {
+      "step": 3100,
+      "macro": 123,
+      "time_s": 6.199999999999539,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000123.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000123.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 123,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 3100
+    },
+    {
+      "step": 3125,
+      "macro": 124,
+      "time_s": 6.249999999999534,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000124.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000124.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 124,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 3125
+    },
+    {
+      "step": 3150,
+      "macro": 125,
+      "time_s": 6.299999999999528,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000125.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000125.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 125,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 3150
+    },
+    {
+      "step": 3175,
+      "macro": 126,
+      "time_s": 6.349999999999523,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000126.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000126.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 126,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 3175
+    },
+    {
+      "step": 3200,
+      "macro": 127,
+      "time_s": 6.399999999999517,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000127.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000127.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 127,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 3200
+    },
+    {
+      "step": 3225,
+      "macro": 128,
+      "time_s": 6.449999999999512,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000128.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000128.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 128,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 3225
+    },
+    {
+      "step": 3250,
+      "macro": 129,
+      "time_s": 6.499999999999506,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000129.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000129.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 129,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 3250
+    },
+    {
+      "step": 3275,
+      "macro": 130,
+      "time_s": 6.549999999999501,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000130.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000130.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 130,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 3275
+    },
+    {
+      "step": 3300,
+      "macro": 131,
+      "time_s": 6.599999999999495,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000131.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000131.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 131,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 3300
+    },
+    {
+      "step": 3325,
+      "macro": 132,
+      "time_s": 6.64999999999949,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000132.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000132.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 132,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 3325
+    },
+    {
+      "step": 3350,
+      "macro": 133,
+      "time_s": 6.699999999999484,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000133.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000133.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 133,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 3350
+    },
+    {
+      "step": 3375,
+      "macro": 134,
+      "time_s": 6.749999999999479,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000134.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000134.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 134,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 3375
+    },
+    {
+      "step": 3400,
+      "macro": 135,
+      "time_s": 6.799999999999473,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000135.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000135.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 135,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 3400
+    },
+    {
+      "step": 3425,
+      "macro": 136,
+      "time_s": 6.849999999999468,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000136.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000136.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 136,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 3425
+    },
+    {
+      "step": 3450,
+      "macro": 137,
+      "time_s": 6.899999999999462,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000137.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000137.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 137,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 3450
+    },
+    {
+      "step": 3475,
+      "macro": 138,
+      "time_s": 6.949999999999457,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000138.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000138.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 138,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 3475
+    },
+    {
+      "step": 3500,
+      "macro": 139,
+      "time_s": 6.999999999999451,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000139.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000139.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 139,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 3500
+    },
+    {
+      "step": 3525,
+      "macro": 140,
+      "time_s": 7.049999999999446,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000140.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000140.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 140,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 3525
+    },
+    {
+      "step": 3550,
+      "macro": 141,
+      "time_s": 7.09999999999944,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000141.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000141.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 141,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 3550
+    },
+    {
+      "step": 3575,
+      "macro": 142,
+      "time_s": 7.149999999999435,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000142.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000142.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 142,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 3575
+    },
+    {
+      "step": 3600,
+      "macro": 143,
+      "time_s": 7.199999999999429,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000143.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000143.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 143,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 3600
+    },
+    {
+      "step": 3625,
+      "macro": 144,
+      "time_s": 7.249999999999424,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000144.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000144.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 144,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 3625
+    },
+    {
+      "step": 3650,
+      "macro": 145,
+      "time_s": 7.299999999999418,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000145.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000145.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 145,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 3650
+    },
+    {
+      "step": 3675,
+      "macro": 146,
+      "time_s": 7.349999999999413,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000146.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000146.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 146,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 3675
+    },
+    {
+      "step": 3700,
+      "macro": 147,
+      "time_s": 7.399999999999407,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000147.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000147.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 147,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 3700
+    },
+    {
+      "step": 3725,
+      "macro": 148,
+      "time_s": 7.4499999999994015,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000148.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000148.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 148,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 3725
+    },
+    {
+      "step": 3750,
+      "macro": 149,
+      "time_s": 7.499999999999396,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000149.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000149.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 149,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 3750
+    },
+    {
+      "step": 3775,
+      "macro": 150,
+      "time_s": 7.5499999999993905,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000150.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000150.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 150,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 3775
+    },
+    {
+      "step": 3800,
+      "macro": 151,
+      "time_s": 7.599999999999385,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000151.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000151.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 151,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 3800
+    },
+    {
+      "step": 3825,
+      "macro": 152,
+      "time_s": 7.6499999999993795,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000152.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000152.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 152,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 3825
+    },
+    {
+      "step": 3850,
+      "macro": 153,
+      "time_s": 7.699999999999374,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000153.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000153.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 153,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 3850
+    },
+    {
+      "step": 3875,
+      "macro": 154,
+      "time_s": 7.7499999999993685,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000154.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000154.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 154,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 3875
+    },
+    {
+      "step": 3900,
+      "macro": 155,
+      "time_s": 7.799999999999363,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000155.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000155.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 155,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 3900
+    },
+    {
+      "step": 3925,
+      "macro": 156,
+      "time_s": 7.8499999999993575,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000156.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000156.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 156,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 3925
+    },
+    {
+      "step": 3950,
+      "macro": 157,
+      "time_s": 7.899999999999352,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000157.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000157.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 157,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 3950
+    },
+    {
+      "step": 3975,
+      "macro": 158,
+      "time_s": 7.9499999999993465,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000158.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000158.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 158,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 3975
+    },
+    {
+      "step": 4000,
+      "macro": 159,
+      "time_s": 7.999999999999341,
+      "phase": "descend",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000159.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000159.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 159,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 4000
+    },
+    {
+      "step": 4025,
+      "macro": 160,
+      "time_s": 8.049999999999358,
+      "phase": "close",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000160.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000160.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 160,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 4025
+    },
+    {
+      "step": 4050,
+      "macro": 161,
+      "time_s": 8.099999999999374,
+      "phase": "close",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000161.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000161.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 161,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 4050
+    },
+    {
+      "step": 4075,
+      "macro": 162,
+      "time_s": 8.149999999999391,
+      "phase": "close",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000162.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000162.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 162,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 4075
+    },
+    {
+      "step": 4100,
+      "macro": 163,
+      "time_s": 8.199999999999408,
+      "phase": "close",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000163.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000163.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 163,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 4100
+    },
+    {
+      "step": 4125,
+      "macro": 164,
+      "time_s": 8.249999999999424,
+      "phase": "close",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000164.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000164.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 164,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 4125
+    },
+    {
+      "step": 4150,
+      "macro": 165,
+      "time_s": 8.299999999999441,
+      "phase": "close",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000165.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000165.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 165,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 4150
+    },
+    {
+      "step": 4175,
+      "macro": 166,
+      "time_s": 8.349999999999458,
+      "phase": "close",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000166.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000166.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 166,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 4175
+    },
+    {
+      "step": 4200,
+      "macro": 167,
+      "time_s": 8.399999999999475,
+      "phase": "close",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000167.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000167.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 167,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 4200
+    },
+    {
+      "step": 4225,
+      "macro": 168,
+      "time_s": 8.449999999999491,
+      "phase": "close",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000168.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000168.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 168,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 4225
+    },
+    {
+      "step": 4250,
+      "macro": 169,
+      "time_s": 8.499999999999508,
+      "phase": "close",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000169.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000169.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 169,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 4250
+    },
+    {
+      "step": 4275,
+      "macro": 170,
+      "time_s": 8.549999999999525,
+      "phase": "close",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000170.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000170.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 170,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 4275
+    },
+    {
+      "step": 4300,
+      "macro": 171,
+      "time_s": 8.599999999999541,
+      "phase": "close",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000171.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000171.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 171,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 4300
+    },
+    {
+      "step": 4325,
+      "macro": 172,
+      "time_s": 8.649999999999558,
+      "phase": "close",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000172.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000172.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 172,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 4325
+    },
+    {
+      "step": 4350,
+      "macro": 173,
+      "time_s": 8.699999999999575,
+      "phase": "close",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000173.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000173.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 173,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 4350
+    },
+    {
+      "step": 4375,
+      "macro": 174,
+      "time_s": 8.749999999999591,
+      "phase": "close",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000174.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000174.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 174,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 4375
+    },
+    {
+      "step": 4400,
+      "macro": 175,
+      "time_s": 8.799999999999608,
+      "phase": "close",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000175.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000175.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 175,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 4400
+    },
+    {
+      "step": 4425,
+      "macro": 176,
+      "time_s": 8.849999999999625,
+      "phase": "close",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000176.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000176.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 176,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 4425
+    },
+    {
+      "step": 4450,
+      "macro": 177,
+      "time_s": 8.899999999999642,
+      "phase": "close",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000177.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000177.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 177,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 4450
+    },
+    {
+      "step": 4475,
+      "macro": 178,
+      "time_s": 8.949999999999658,
+      "phase": "close",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000178.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000178.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 178,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 4475
+    },
+    {
+      "step": 4500,
+      "macro": 179,
+      "time_s": 8.999999999999675,
+      "phase": "close",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000179.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000179.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 179,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 4500
+    },
+    {
+      "step": 4525,
+      "macro": 180,
+      "time_s": 9.049999999999692,
+      "phase": "close",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000180.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000180.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 180,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 4525
+    },
+    {
+      "step": 4550,
+      "macro": 181,
+      "time_s": 9.099999999999708,
+      "phase": "close",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000181.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000181.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 181,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 4550
+    },
+    {
+      "step": 4575,
+      "macro": 182,
+      "time_s": 9.149999999999725,
+      "phase": "close",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000182.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000182.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 182,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 4575
+    },
+    {
+      "step": 4600,
+      "macro": 183,
+      "time_s": 9.199999999999742,
+      "phase": "close",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000183.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000183.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 183,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 4600
+    },
+    {
+      "step": 4625,
+      "macro": 184,
+      "time_s": 9.249999999999758,
+      "phase": "close",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000184.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000184.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 184,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 4625
+    },
+    {
+      "step": 4650,
+      "macro": 185,
+      "time_s": 9.299999999999775,
+      "phase": "close",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000185.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000185.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 185,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 4650
+    },
+    {
+      "step": 4675,
+      "macro": 186,
+      "time_s": 9.349999999999792,
+      "phase": "close",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000186.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000186.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 186,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 4675
+    },
+    {
+      "step": 4700,
+      "macro": 187,
+      "time_s": 9.399999999999809,
+      "phase": "close",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000187.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000187.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 187,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 4700
+    },
+    {
+      "step": 4725,
+      "macro": 188,
+      "time_s": 9.449999999999825,
+      "phase": "close",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000188.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000188.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 188,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 4725
+    },
+    {
+      "step": 4750,
+      "macro": 189,
+      "time_s": 9.499999999999842,
+      "phase": "close",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000189.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000189.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 189,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 4750
+    },
+    {
+      "step": 4775,
+      "macro": 190,
+      "time_s": 9.549999999999859,
+      "phase": "lift",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000190.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000190.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 190,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 4775
+    },
+    {
+      "step": 4800,
+      "macro": 191,
+      "time_s": 9.599999999999875,
+      "phase": "lift",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000191.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000191.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 191,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 4800
+    },
+    {
+      "step": 4825,
+      "macro": 192,
+      "time_s": 9.649999999999892,
+      "phase": "lift",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000192.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000192.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 192,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 4825
+    },
+    {
+      "step": 4850,
+      "macro": 193,
+      "time_s": 9.699999999999909,
+      "phase": "lift",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000193.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000193.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 193,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 4850
+    },
+    {
+      "step": 4875,
+      "macro": 194,
+      "time_s": 9.749999999999925,
+      "phase": "lift",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000194.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000194.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 194,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 4875
+    },
+    {
+      "step": 4900,
+      "macro": 195,
+      "time_s": 9.799999999999942,
+      "phase": "lift",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000195.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000195.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 195,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 4900
+    },
+    {
+      "step": 4925,
+      "macro": 196,
+      "time_s": 9.849999999999959,
+      "phase": "lift",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000196.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000196.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 196,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 4925
+    },
+    {
+      "step": 4950,
+      "macro": 197,
+      "time_s": 9.899999999999975,
+      "phase": "lift",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000197.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000197.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 197,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 4950
+    },
+    {
+      "step": 4975,
+      "macro": 198,
+      "time_s": 9.949999999999992,
+      "phase": "lift",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000198.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000198.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 198,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 4975
+    },
+    {
+      "step": 5000,
+      "macro": 199,
+      "time_s": 10.000000000000009,
+      "phase": "lift",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000199.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000199.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 199,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 5000
+    },
+    {
+      "step": 5025,
+      "macro": 200,
+      "time_s": 10.050000000000026,
+      "phase": "lift",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000200.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000200.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 200,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 5025
+    },
+    {
+      "step": 5050,
+      "macro": 201,
+      "time_s": 10.100000000000042,
+      "phase": "lift",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000201.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000201.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 201,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 5050
+    },
+    {
+      "step": 5075,
+      "macro": 202,
+      "time_s": 10.150000000000059,
+      "phase": "lift",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000202.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000202.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 202,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 5075
+    },
+    {
+      "step": 5100,
+      "macro": 203,
+      "time_s": 10.200000000000076,
+      "phase": "lift",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000203.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000203.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 203,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 5100
+    },
+    {
+      "step": 5125,
+      "macro": 204,
+      "time_s": 10.250000000000092,
+      "phase": "lift",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000204.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000204.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 204,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 5125
+    },
+    {
+      "step": 5150,
+      "macro": 205,
+      "time_s": 10.300000000000109,
+      "phase": "lift",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000205.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000205.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 205,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 5150
+    },
+    {
+      "step": 5175,
+      "macro": 206,
+      "time_s": 10.350000000000126,
+      "phase": "lift",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000206.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000206.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 206,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 5175
+    },
+    {
+      "step": 5200,
+      "macro": 207,
+      "time_s": 10.400000000000142,
+      "phase": "lift",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000207.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000207.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 207,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 5200
+    },
+    {
+      "step": 5225,
+      "macro": 208,
+      "time_s": 10.45000000000016,
+      "phase": "lift",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000208.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000208.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 208,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 5225
+    },
+    {
+      "step": 5250,
+      "macro": 209,
+      "time_s": 10.500000000000176,
+      "phase": "lift",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000209.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000209.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 209,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 5250
+    },
+    {
+      "step": 5275,
+      "macro": 210,
+      "time_s": 10.550000000000193,
+      "phase": "lift",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000210.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000210.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 210,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 5275
+    },
+    {
+      "step": 5300,
+      "macro": 211,
+      "time_s": 10.60000000000021,
+      "phase": "lift",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000211.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000211.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 211,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 5300
+    },
+    {
+      "step": 5325,
+      "macro": 212,
+      "time_s": 10.650000000000226,
+      "phase": "lift",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000212.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000212.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 212,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 5325
+    },
+    {
+      "step": 5350,
+      "macro": 213,
+      "time_s": 10.700000000000243,
+      "phase": "lift",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000213.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000213.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 213,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 5350
+    },
+    {
+      "step": 5375,
+      "macro": 214,
+      "time_s": 10.75000000000026,
+      "phase": "lift",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000214.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000214.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 214,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 5375
+    },
+    {
+      "step": 5400,
+      "macro": 215,
+      "time_s": 10.800000000000276,
+      "phase": "lift",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000215.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000215.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 215,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 5400
+    },
+    {
+      "step": 5425,
+      "macro": 216,
+      "time_s": 10.850000000000293,
+      "phase": "lift",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000216.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000216.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 216,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 5425
+    },
+    {
+      "step": 5450,
+      "macro": 217,
+      "time_s": 10.90000000000031,
+      "phase": "lift",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000217.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000217.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 217,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 5450
+    },
+    {
+      "step": 5475,
+      "macro": 218,
+      "time_s": 10.950000000000326,
+      "phase": "lift",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000218.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000218.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 218,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 5475
+    },
+    {
+      "step": 5500,
+      "macro": 219,
+      "time_s": 11.000000000000343,
+      "phase": "lift",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000219.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000219.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 219,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 5500
+    },
+    {
+      "step": 5525,
+      "macro": 220,
+      "time_s": 11.05000000000036,
+      "phase": "lift",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000220.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000220.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 220,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 5525
+    },
+    {
+      "step": 5550,
+      "macro": 221,
+      "time_s": 11.100000000000376,
+      "phase": "lift",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000221.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000221.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 221,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 5550
+    },
+    {
+      "step": 5575,
+      "macro": 222,
+      "time_s": 11.150000000000393,
+      "phase": "lift",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000222.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000222.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 222,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 5575
+    },
+    {
+      "step": 5600,
+      "macro": 223,
+      "time_s": 11.20000000000041,
+      "phase": "lift",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000223.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000223.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 223,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 5600
+    },
+    {
+      "step": 5625,
+      "macro": 224,
+      "time_s": 11.250000000000426,
+      "phase": "lift",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000224.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000224.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 224,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 5625
+    },
+    {
+      "step": 5650,
+      "macro": 225,
+      "time_s": 11.300000000000443,
+      "phase": "lift",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000225.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000225.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 225,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 5650
+    },
+    {
+      "step": 5675,
+      "macro": 226,
+      "time_s": 11.35000000000046,
+      "phase": "lift",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000226.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000226.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 226,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 5675
+    },
+    {
+      "step": 5700,
+      "macro": 227,
+      "time_s": 11.400000000000476,
+      "phase": "lift",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000227.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000227.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 227,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 5700
+    },
+    {
+      "step": 5725,
+      "macro": 228,
+      "time_s": 11.450000000000493,
+      "phase": "lift",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000228.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000228.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 228,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 5725
+    },
+    {
+      "step": 5750,
+      "macro": 229,
+      "time_s": 11.50000000000051,
+      "phase": "lift",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000229.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000229.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 229,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 5750
+    },
+    {
+      "step": 5775,
+      "macro": 230,
+      "time_s": 11.550000000000527,
+      "phase": "hold",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000230.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000230.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 230,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 5775
+    },
+    {
+      "step": 5800,
+      "macro": 231,
+      "time_s": 11.600000000000543,
+      "phase": "hold",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000231.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000231.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 231,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 5800
+    },
+    {
+      "step": 5825,
+      "macro": 232,
+      "time_s": 11.65000000000056,
+      "phase": "hold",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000232.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000232.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 232,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 5825
+    },
+    {
+      "step": 5850,
+      "macro": 233,
+      "time_s": 11.700000000000577,
+      "phase": "hold",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000233.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000233.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 233,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 5850
+    },
+    {
+      "step": 5875,
+      "macro": 234,
+      "time_s": 11.750000000000593,
+      "phase": "hold",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000234.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000234.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 234,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 5875
+    },
+    {
+      "step": 5900,
+      "macro": 235,
+      "time_s": 11.80000000000061,
+      "phase": "hold",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000235.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000235.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 235,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 5900
+    },
+    {
+      "step": 5925,
+      "macro": 236,
+      "time_s": 11.850000000000627,
+      "phase": "hold",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000236.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000236.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 236,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 5925
+    },
+    {
+      "step": 5950,
+      "macro": 237,
+      "time_s": 11.900000000000643,
+      "phase": "hold",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000237.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000237.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 237,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 5950
+    },
+    {
+      "step": 5975,
+      "macro": 238,
+      "time_s": 11.95000000000066,
+      "phase": "hold",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000238.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000238.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 238,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 5975
+    },
+    {
+      "step": 6000,
+      "macro": 239,
+      "time_s": 12.000000000000677,
+      "phase": "hold",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000239.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000239.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 239,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 6000
+    },
+    {
+      "step": 6025,
+      "macro": 240,
+      "time_s": 12.050000000000693,
+      "phase": "hold",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000240.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000240.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 240,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 6025
+    },
+    {
+      "step": 6050,
+      "macro": 241,
+      "time_s": 12.10000000000071,
+      "phase": "hold",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000241.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000241.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 241,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 6050
+    },
+    {
+      "step": 6075,
+      "macro": 242,
+      "time_s": 12.150000000000727,
+      "phase": "hold",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000242.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000242.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 242,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 6075
+    },
+    {
+      "step": 6100,
+      "macro": 243,
+      "time_s": 12.200000000000744,
+      "phase": "hold",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000243.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000243.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 243,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 6100
+    },
+    {
+      "step": 6125,
+      "macro": 244,
+      "time_s": 12.25000000000076,
+      "phase": "hold",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000244.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000244.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 244,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 6125
+    },
+    {
+      "step": 6150,
+      "macro": 245,
+      "time_s": 12.300000000000777,
+      "phase": "hold",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000245.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000245.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 245,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 6150
+    },
+    {
+      "step": 6175,
+      "macro": 246,
+      "time_s": 12.350000000000794,
+      "phase": "hold",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000246.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000246.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 246,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 6175
+    },
+    {
+      "step": 6200,
+      "macro": 247,
+      "time_s": 12.40000000000081,
+      "phase": "hold",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000247.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000247.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 247,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 6200
+    },
+    {
+      "step": 6225,
+      "macro": 248,
+      "time_s": 12.450000000000827,
+      "phase": "hold",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000248.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000248.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 248,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 6225
+    },
+    {
+      "step": 6250,
+      "macro": 249,
+      "time_s": 12.500000000000844,
+      "phase": "hold",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000249.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000249.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 249,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 6250
+    },
+    {
+      "step": 6275,
+      "macro": 250,
+      "time_s": 12.55000000000086,
+      "phase": "hold",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000250.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000250.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 250,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 6275
+    },
+    {
+      "step": 6300,
+      "macro": 251,
+      "time_s": 12.600000000000877,
+      "phase": "hold",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000251.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000251.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 251,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 6300
+    },
+    {
+      "step": 6325,
+      "macro": 252,
+      "time_s": 12.650000000000894,
+      "phase": "hold",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000252.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000252.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 252,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 6325
+    },
+    {
+      "step": 6350,
+      "macro": 253,
+      "time_s": 12.70000000000091,
+      "phase": "hold",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000253.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000253.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 253,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 6350
+    },
+    {
+      "step": 6375,
+      "macro": 254,
+      "time_s": 12.750000000000927,
+      "phase": "hold",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000254.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000254.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 254,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 6375
+    },
+    {
+      "step": 6400,
+      "macro": 255,
+      "time_s": 12.800000000000944,
+      "phase": "hold",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000255.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000255.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 255,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 6400
+    },
+    {
+      "step": 6425,
+      "macro": 256,
+      "time_s": 12.85000000000096,
+      "phase": "hold",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000256.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000256.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 256,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 6425
+    },
+    {
+      "step": 6450,
+      "macro": 257,
+      "time_s": 12.900000000000977,
+      "phase": "hold",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000257.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000257.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 257,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 6450
+    },
+    {
+      "step": 6475,
+      "macro": 258,
+      "time_s": 12.950000000000994,
+      "phase": "hold",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000258.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000258.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 258,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 6475
+    },
+    {
+      "step": 6500,
+      "macro": 259,
+      "time_s": 13.00000000000101,
+      "phase": "hold",
+      "native_task_success": false,
+      "cameras": {
+        "agentview": "frames/agentview/000259.jpg",
+        "robot0_eye_in_hand": "frames/robot0_eye_in_hand/000259.jpg"
+      },
+      "reason": "MACRO_COMPLETE",
+      "frame_index": 259,
+      "image_encoding": "JPEG quality92, no chroma subsampling; RGB top-left origin, 256x256",
+      "timing": "render/goal use current final RK4-stage derived cache; qpos/qvel are post-step; no additional forward",
+      "reward": 0.0,
+      "done": false,
+      "info": {},
+      "physics_step": 6500
+    }
+  ],
+  "final_images": null,
+  "videos": [
+    {
+      "path": "videos/agentview.mp4",
+      "sha256": "64da5bdeab068f151ae6c997ebbf11f3d88816e6a44ca3a7f3a7ebfa3be8a134"
+    },
+    {
+      "path": "videos/robot0_eye_in_hand.mp4",
+      "sha256": "a8c894e4cb2c3ec2058fdc6d2e80da9bfb0286dead3621b3194fca90c60a4a32"
+    }
+  ],
+  "missing_frames_are_not_reconstructed": true
+}
