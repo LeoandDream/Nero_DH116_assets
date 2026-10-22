@@ -1,0 +1,10 @@
+test_fixed_palm_preserves_five_original_parent_filters (test_four_assets.FourAssets.test_fixed_palm_preserves_five_original_parent_filters) ... ok
+test_four_entries_dimensions_and_common_order (test_four_assets.FourAssets.test_four_entries_dimensions_and_common_order) ... ok
+test_left_V1_and_right_B_source_identity (test_four_assets.FourAssets.test_left_V1_and_right_B_source_identity) ... ok
+test_portable_resource_closure (test_four_assets.FourAssets.test_portable_resource_closure) ... ok
+test_standalone_has_no_arm_and_preserves_hand_subtree (test_four_assets.FourAssets.test_standalone_has_no_arm_and_preserves_hand_subtree) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.669s
+
+OK

@@ -1,0 +1,113 @@
+{
+  "versions": {
+    "python": "3.11.16",
+    "mujoco": "3.2.3",
+    "numpy": "1.26.4",
+    "robosuite": "1.4.1"
+  },
+  "passed": true,
+  "assets": [
+    {
+      "asset": "dh116_left",
+      "model_sha256": "dc0c11196db0d22a84d0a9b7e97c496b1e694c24dc73eed6883dc615b82ec872",
+      "state_dim": 11,
+      "action_dim": 6,
+      "nq": 11,
+      "nu": 6,
+      "physical_steps": 2400,
+      "max_mimic_rad": 0.0007523599417726956,
+      "max_limit_overshoot_rad": 0.0006175037344899213,
+      "max_arm_tracking_rad": 0.0,
+      "max_contact_depth_m": 0.0,
+      "max_hand_target_error_rad": 0.03569113774795574,
+      "warnings": 0,
+      "stop": null,
+      "responses": [
+        {
+          "channel": "gripper0_finger11",
+          "displacement_rad": 0.10196642899611708,
+          "observable_positive_response": true
+        },
+        {
+          "channel": "gripper0_finger12",
+          "displacement_rad": 0.049786560392271854,
+          "observable_positive_response": true
+        },
+        {
+          "channel": "gripper0_finger21",
+          "displacement_rad": 0.14460054181889048,
+          "observable_positive_response": true
+        },
+        {
+          "channel": "gripper0_finger31",
+          "displacement_rad": 0.14385957776695982,
+          "observable_positive_response": true
+        },
+        {
+          "channel": "gripper0_finger41",
+          "displacement_rad": 0.14448194772945952,
+          "observable_positive_response": true
+        },
+        {
+          "channel": "gripper0_finger51",
+          "displacement_rad": 0.14509284903459324,
+          "observable_positive_response": true
+        }
+      ],
+      "passed": true,
+      "wall_time_s": 2.234882182907313
+    },
+    {
+      "asset": "dh116_right",
+      "model_sha256": "cac325e716d55890857278b54ed14101116748ea68fffbcc544f2e51bf724aec",
+      "state_dim": 11,
+      "action_dim": 6,
+      "nq": 11,
+      "nu": 6,
+      "physical_steps": 2400,
+      "max_mimic_rad": 0.0007336518384749822,
+      "max_limit_overshoot_rad": 0.007820115466713433,
+      "max_arm_tracking_rad": 0.0,
+      "max_contact_depth_m": 0.0,
+      "max_hand_target_error_rad": 0.03403841714646898,
+      "warnings": 0,
+      "stop": null,
+      "responses": [
+        {
+          "channel": "gripper0_finger11",
+          "displacement_rad": 0.10197177490626337,
+          "observable_positive_response": true
+        },
+        {
+          "channel": "gripper0_finger12",
+          "displacement_rad": 0.036241165580397916,
+          "observable_positive_response": true
+        },
+        {
+          "channel": "gripper0_finger21",
+          "displacement_rad": 0.14472530393156746,
+          "observable_positive_response": true
+        },
+        {
+          "channel": "gripper0_finger31",
+          "displacement_rad": 0.14440466564078852,
+          "observable_positive_response": true
+        },
+        {
+          "channel": "gripper0_finger41",
+          "displacement_rad": 0.1446396820866432,
+          "observable_positive_response": true
+        },
+        {
+          "channel": "gripper0_finger51",
+          "displacement_rad": 0.14518814776417424,
+          "observable_positive_response": true
+        }
+      ],
+      "passed": true,
+      "wall_time_s": 2.42295842198655
+    }
+  ],
+  "new_grasp_episodes": 0,
+  "scope": "Bounded six-channel response; not full joint travel, grasp or task success"
+}

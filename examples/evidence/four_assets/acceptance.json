@@ -1,0 +1,110 @@
+{
+  "baseline": {
+    "left_main_commit": "9b5ee0d38442dcf12bc9f41ec5a0111fb0bd6a7c",
+    "left_sha256": "c446124b7d938aa6e00ba5914047001de66c2a2c162e7dea1644437e5a85cb33",
+    "right_commit": "7998718be17d39a2491f76ee747e07309b6b3193",
+    "right_B_raw_sha256": "e24d17904b9b1d4a55ae031a08bb1457f0f46c4170f987767d0acd161eb3e84b",
+    "right_raw_source": "examples/libero_eval/evidence/functional_v1/raw/drive-model/original-context.xml",
+    "right_original_resource_context": "examples/right_hand/candidates/finger22_local"
+  },
+  "assets": {
+    "nero_dh116_left": {
+      "passed": true,
+      "state_dim": 18,
+      "action_dim": 13,
+      "model": "mjcf/nero_dh116.xml",
+      "model_sha256": "c446124b7d938aa6e00ba5914047001de66c2a2c162e7dea1644437e5a85cb33",
+      "physical_steps": 400,
+      "trace": "isolated/control/nero_dh116_left.jsonl.gz",
+      "max_mimic_rad": 0.0006127953483106297,
+      "max_limit_overshoot_rad": 0.0,
+      "max_arm_tracking_rad": 0.015240247870117518,
+      "warnings": 0,
+      "functional_evidence": "examples/libero_reference/evidence/RESULTS.md"
+    },
+    "nero_dh116_right": {
+      "passed": true,
+      "state_dim": 18,
+      "action_dim": 13,
+      "model": "mjcf/nero_dh116_right_research.xml",
+      "model_sha256": "ea335674996894488f30bae5f29e6271f662f320dbcb44f9b32817dd1b5fc93a",
+      "physical_steps": 400,
+      "trace": "isolated/control/nero_dh116_right.jsonl.gz",
+      "max_mimic_rad": 0.0006956156409255107,
+      "max_limit_overshoot_rad": 0.0,
+      "max_arm_tracking_rad": 0.00905285519600052,
+      "warnings": 0,
+      "functional_evidence": "examples/libero_eval/evidence/functional_v1/RESULTS.md"
+    },
+    "dh116_left": {
+      "passed": true,
+      "state_dim": 11,
+      "action_dim": 6,
+      "model": "mjcf/dh116_left.xml",
+      "model_sha256": "dc0c11196db0d22a84d0a9b7e97c496b1e694c24dc73eed6883dc615b82ec872",
+      "physical_steps": 2400,
+      "trace": "isolated-final/control/dh116_left.jsonl.gz",
+      "max_mimic_rad": 0.0007523599417726956,
+      "max_limit_overshoot_rad": 0.0006175037344899213,
+      "max_arm_tracking_rad": 0.0,
+      "warnings": 0,
+      "functional_evidence": null
+    },
+    "dh116_right": {
+      "passed": true,
+      "state_dim": 11,
+      "action_dim": 6,
+      "model": "mjcf/dh116_right.xml",
+      "model_sha256": "cac325e716d55890857278b54ed14101116748ea68fffbcc544f2e51bf724aec",
+      "physical_steps": 2400,
+      "trace": "isolated-final/control/dh116_right.jsonl.gz",
+      "max_mimic_rad": 0.0007336518384749822,
+      "max_limit_overshoot_rad": 0.007820115466713433,
+      "max_arm_tracking_rad": 0.0,
+      "warnings": 0,
+      "functional_evidence": null
+    }
+  },
+  "new_grasp_episodes": 0,
+  "interface_alignment": "Same L/R names, units and mappings: hand state/action 11/6; assembly 18/13.",
+  "hand_fixed_palm_filter": "Original parent-filter qualification restored explicitly; exact graph comparison required.",
+  "isolation": {
+    "clean_bundle_only": [
+      "mjcf",
+      "meshes",
+      "docs/assets.json",
+      "examples/control_asset.py",
+      "examples/check_assets.py",
+      "requirements"
+    ],
+    "hidden": [
+      "/data_robot/projects (all repositories and history)",
+      "/data_robot/verification/nero_dh116_right (except read-only Python interpreter and installed SDK)"
+    ],
+    "LIBERO_available": false,
+    "PYTHONPATH_unset": true,
+    "fresh_dependency_install_performed": false,
+    "note": "Reused installed version-pinned SDK as read-only interpreter/site-packages; all robot/runtime/history dirs hidden. Not a new pip-install test.",
+    "mount_program": "bubblewrap",
+    "final_command": "bwrap --ro-bind / / --tmpfs /data_robot/projects --tmpfs /data_robot/verification/nero_dh116_right --dir /data_robot/verification/nero_dh116_right/.reference-env --ro-bind /data_robot/verification/nero_dh116_right/.reference-env /data_robot/verification/nero_dh116_right/.reference-env --dir /data_robot/verification/nero_dh116_right/.reference-deps/python --ro-bind /data_robot/verification/nero_dh116_right/.reference-deps/python /data_robot/verification/nero_dh116_right/.reference-deps/python --tmpfs /tmp --dir /tmp/asset --ro-bind /tmp/nero-issue6-clean-final /tmp/asset --dir /tmp/output --bind <worktree>/examples/evidence/four_assets/isolated-final /tmp/output --dev-bind /dev /dev --proc /proc --setenv HOME /tmp --unsetenv PYTHONPATH --setenv PYTHONDONTWRITEBYTECODE 1 --setenv NUMBA_CACHE_DIR /tmp/numba --setenv MPLCONFIGDIR /tmp/mpl --chdir /tmp/asset /data_robot/verification/nero_dh116_right/.reference-env/bin/python -B examples/check_assets.py --assets dh116_left dh116_right --output /tmp/output/control",
+    "initial_command_difference": "Same mounts; clean bundle /tmp/nero-issue6-clean-core, output isolated, no --assets selector (all four)."
+  },
+  "scope": "Research runtime delivery only, not full-travel/high-fidelity/official-LIBERO or release approval.",
+  "passed": true,
+  "trajectory_steps_final_models": 5600,
+  "initial_export_failed_steps_retained": 2,
+  "versions": {
+    "python": "3.11.16",
+    "mujoco": "3.2.3",
+    "numpy": "1.26.4",
+    "robosuite": "1.4.1"
+  },
+  "executed_current_code_sha256": {
+    "examples/control_asset.py": "f06c0d211f6a69d4ecb347ac18d4e932648dabb1fdfe3e7c5c79615afcaffb91",
+    "examples/check_assets.py": "abc3afbc7c2dade2b483cff017b1860fb7963eebc3e13ba1820e0e6895273c42",
+    "tools/check_asset_sources.py": "79e724910467ce427a0b9ff30e71f543529ec1f629bb282a35e93a77d16a7e41",
+    "tools/build_four_assets.py": "cbd1aeee0dec0e06542e8db5401481395d569b5a8c311b5c7a9c3898325cf18c"
+  },
+  "source_equivalence": "verified-source-equivalence.json",
+  "left_static_regression": "left-static-regression.log"
+}

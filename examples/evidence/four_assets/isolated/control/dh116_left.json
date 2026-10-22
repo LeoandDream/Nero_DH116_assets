@@ -1,0 +1,23 @@
+{
+  "asset": "dh116_left",
+  "model_sha256": "cccd6dec43e1e68e6aaf2818f9e1d0a26dd579b92287198627cc0d1da8b57477",
+  "state_dim": 11,
+  "action_dim": 6,
+  "nq": 11,
+  "nu": 6,
+  "physical_steps": 1,
+  "max_mimic_rad": 5.087155363883711e-05,
+  "max_limit_overshoot_rad": 0.0,
+  "max_arm_tracking_rad": 0.0,
+  "max_contact_depth_m": 0.011462132239824861,
+  "max_hand_target_error_rad": 0.0010318379528695756,
+  "warnings": 0,
+  "stop": {
+    "step": 1,
+    "type": "RuntimeError",
+    "message": "CONTACT_DEPTH"
+  },
+  "responses": [],
+  "passed": false,
+  "wall_time_s": 0.003161880187690258
+}

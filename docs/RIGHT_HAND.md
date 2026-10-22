@@ -1,3 +1,5 @@
+> **版本说明（Issue #6）**：下文描述的是早期 `mjcf/nero_dh116_right.xml` 的17源Mesh粗模型，其全幅FAIL与抓持UNKNOWN保持原结论。新的研究交付入口为 [`mjcf/dh116_right.xml`](../mjcf/dh116_right.xml) 和 [`mjcf/nero_dh116_right_research.xml`](../mjcf/nero_dh116_right_research.xml)，继承 `7998718` 的81手部＋306腕部、B驱动配置；固定白碗功能结果见[原始成功证据](../examples/libero_eval/evidence/functional_v1/RESULTS.md)，交付对应性见[四模型验收](../examples/evidence/four_assets/RESULTS.md)。不能混用两版验证结论。
+
 # NERO＋DH116-R000-A1 右手组合
 
 独立入口为 [`mjcf/nero_dh116_right.xml`](../mjcf/nero_dh116_right.xml)，源描述为 [`urdf/dh116_right.urdf`](../urdf/dh116_right.urdf)。左手入口、Mesh、控制参数、D1/D2测试和验收证据保留原样。左右手具有相同维度的接口，但机械与碰撞模型不同，左手白碗结果不能作为右手验收成绩。

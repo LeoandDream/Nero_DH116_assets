@@ -1,0 +1,4 @@
+dh116_left FAIL 1 {'step': 1, 'type': 'RuntimeError', 'message': 'CONTACT_DEPTH'}
+dh116_right FAIL 1 {'step': 1, 'type': 'RuntimeError', 'message': 'CONTACT_DEPTH'}
+nero_dh116_left PASS 400 None
+nero_dh116_right PASS 400 None

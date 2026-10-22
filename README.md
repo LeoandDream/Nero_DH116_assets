@@ -1,121 +1,91 @@
-# NERO × DH116 — MuJoCo 仿真资产
+# NERO × DH116 — 四套研究级 MuJoCo 资产
 
-松灵 NERO 七轴机械臂与 DH116-L000-A1 左手的组合机器人模型，用于 MuJoCo 场景搭建和 robosuite 工程接入。提供一套组合 MJCF、源 URDF、可视网格、分块凸碰撞代理及状态／动作契约。
+提供可直接加载和控制的 DH116 左右独立手、NERO＋左右手组合。保留各侧真实机械定义，不强制统一关节轴、惯性、行程或碰撞代理。面向研究仿真使用；未做全域高保真、实物标定或官方 LIBERO Benchmark 认证。
 
-![NERO 与 DH116 模型预览](examples/preview.png)
+## 四个入口
 
-## 模型规格
+| 入口名 | MJCF | state / action | 验证范围 |
+| --- | --- | --- | --- |
+| `dh116_left` | [独立 DH116-L](mjcf/dh116_left.xml) | 11D / 6D | 独立加载、六主动通道有界开合、Mimic与限位健康 |
+| `dh116_right` | [独立 DH116-R](mjcf/dh116_right.xml) | 11D / 6D | 同上；保留右手机械与 B 驱动配置 |
+| `nero_dh116_left` | [NERO＋DH116-L V1](mjcf/nero_dh116.xml) | 18D / 13D | 原字节保留左手V1；固定白碗抬升及1.5s持握证据 |
+| `nero_dh116_right` | [NERO＋DH116-R 研究候选](mjcf/nero_dh116_right_research.xml) | 18D / 13D | 对应 `7998718` 的 B＋functional_v1；固定白碗抬升及1.5s持握证据 |
 
-| 项目 | 内容 |
-| --- | --- |
-| 机械臂 | NERO，7 个旋转关节 |
-| 灵巧手 | DH116 左手，11 个关节、6 个主动通道、5 组线性 Mimic |
-| 动力学 | 刚体质量与惯性、关节限位、机械臂力矩驱动、手部位置伺服 |
-| 碰撞几何 | 分块凸代理：机械臂 51 块、灵巧手 76 块、连接件 8 块 |
-| 状态／动作 | 18D 关节位置；7D 机械臂绝对关节目标＋6D 独立手位置目标 |
-| 参考运行环境 | Python 3.11、MuJoCo 3.2.3；动态接入采用 robosuite 1.4.1 |
+[四模型索引及资源SHA](docs/assets.json)是路径、顺序、维度和来源的机器可读入口。[本轮验收与局限](examples/evidence/four_assets/RESULTS.md)区分新增实际控制测试、编译等价核验及复用的抓持证据。
 
-## 左右手入口
+**右手成功配置是81块手部＋306块腕部的 B 研究候选。** 旧的[17源Mesh右手模型](mjcf/nero_dh116_right.xml)及其全幅开合FAIL仍保留；它没有继承新候选的抓持结论。[右手版本说明](docs/RIGHT_HAND.md)。306腕代理为复现冻结配置，不表示最优碰撞架构。
 
-| 版本 | 模型 | 验证范围 |
-| --- | --- | --- |
-| 已验收左手 V1（默认） | [`mjcf/nero_dh116.xml`](mjcf/nero_dh116.xml) | 原有静态检查与固定 LIBERO 白碗参考测试 |
-| DH116-R000-A1 右手组合 | [`mjcf/nero_dh116_right.xml`](mjcf/nero_dh116_right.xml) | 独立机械字段、位置动作、接触与穿透检查；抓持能力 UNKNOWN |
+## 安装与运行
 
-上表规格与默认查看器针对左手。右手采用独立厂家 URDF 及线性 Mimic，17份源 Mesh 的凸包碰撞表示与左手76块分块代理不同。右手使用方法、来源及能力边界见[右手说明](docs/RIGHT_HAND.md)与[实际验收记录](examples/right_hand/evidence/RESULTS.md)。
-
-## 安装与预览
-
-在 Linux 下创建 Python 3.11 环境，并从仓库根目录运行：
+Linux，Python 3.11，MuJoCo 3.2.3。独立手仅需 MuJoCo / NumPy；组合控制示例额外采用 stock robosuite 1.4.1 的关节位置控制器，不需要 LIBERO。
 
 ```bash
 git clone https://github.com/LeoandDream/Nero_DH116_assets.git
 cd Nero_DH116_assets
+# 交付审查期间切换到本任务Draft PR分支：
+git switch feature/issue6-four-assets
 python3.11 -m venv .venv
 source .venv/bin/activate
-python -m pip install -r requirements.txt
-python examples/view_static.py
+python -m pip install -r examples/requirements-control.txt
+python examples/control_asset.py --asset dh116_left
+python examples/control_asset.py --asset dh116_right
+python examples/control_asset.py --asset nero_dh116_left
+python examples/control_asset.py --asset nero_dh116_right
 ```
 
-叠加碰撞代理、显示挂载座，或在支持 EGL 的环境中导出图片：
+命令从各模型的参考keyframe初始化并保持目标250个真实物理步。独立手的掌部固定在局部原点；组合机器人仍使用原基座装配和世界位置。独立手移除了机械臂/法兰及其自由度，没有隐藏的浮动基座。
 
-```bash
-python examples/view_static.py --collision
-python examples/view_static.py --collision --mount
-MUJOCO_GL=egl python examples/view_static.py --image preview.png
-```
-
-查看器显示模型的参考姿态，不推进仿真时间。`--mount` 只控制挂载座的显示，碰撞和惯性设置保持不变。
-
-## 在自己的程序中加载
-
-以下代码从仓库根目录加载机器人，并按契约读取关节位置：
+复制模型时同时保留其相对引用的 `meshes/`。原生加载无需实验文件：
 
 ```python
-import json
-from pathlib import Path
-
 import mujoco
-import numpy as np
-
-root = Path.cwd()
-model = mujoco.MjModel.from_xml_path(str(root / "mjcf/nero_dh116.xml"))
+model = mujoco.MjModel.from_xml_path("mjcf/dh116_right.xml")
 data = mujoco.MjData(model)
 mujoco.mj_resetDataKeyframe(model, data, 0)
 mujoco.mj_forward(model, data)
-
-contract = json.loads((root / "docs/robot-contract.json").read_text())
-joint_ids = np.array([
-    mujoco.mj_name2id(model, mujoco.mjtObj.mjOBJ_JOINT, name)
-    for name in contract["state_order"]
-])
-if np.any(joint_ids < 0):
-    raise ValueError("模型缺少接口契约中的机器人关节")
-state = data.qpos[model.jnt_qposadr[joint_ids]].copy()
-print("机器人状态维度:", state.shape)  # (18,)
 ```
 
-组合机器人入口是 `mjcf/nero_dh116.xml`。`urdf/` 提供机械臂、左手及机械臂带法兰的独立描述，没有完整 NERO＋DH116 组合 URDF。复制 MJCF 时需同时保留其相对路径引用的 `meshes/`。
+所有四入口的资源闭包仅位于 `mjcf/` 和 `meshes/`。`tools/build_four_assets.py` 是维护者的来源打包工具，运行交付模型不需要它，也不需要原实验目录或临时 LIBERO 模型。
 
-## 接入控制
+## 统一控制接口
 
-| 接口 | 前 7 维 | 后 6 维 |
-| --- | --- | --- |
-| Robot action | 机械臂绝对关节目标角，rad | 独立归一化手位置目标，[-1, 1] |
-| MuJoCo `data.ctrl` | 机械臂电机力矩，N·m | 主动手关节目标角，rad |
+两侧使用相同的关节名和通道顺序，具体数值范围从所选模型读取：
 
-机械臂位置目标需经关节位置控制器转换为力矩，手部目标需映射到各主动关节角度范围。参考集成使用 robosuite `JointPositionController.set_goal(..., set_qpos=...)` 的绝对位置入口和 MuJoCo position 伺服；**Robot action 不能直接赋给 `data.ctrl`**。本仓库提供模型文件、接口定义及[原生 LIBERO 白碗参考入口](examples/libero_reference/README.md)；其他任务环境由下游工程配置。
+- 手部 state：`finger11, finger12, finger13, finger21, finger22, finger31, finger32, finger41, finger42, finger51, finger52`，均加 `gripper0_` 前缀，单位rad。
+- 手部 action：`finger11, finger12, finger21, finger31, finger41, finger51` 六个归一化绝对位置，范围 `[-1,1]`。按各自 actuator ctrlrange 线性映射到目标角度。
+- 组合 state：NERO七关节在前，手部11关节在后。组合 action：NERO七个绝对目标角度rad在前，手部六通道在后。独立手无需补齐不存在的NERO状态。
+- MuJoCo `ctrl`：独立手为六个主动关节角度；组合为七个NERO电机力矩＋六个手关节角度。**不能把组合13D位置action直接赋给ctrl。**
 
-机器人采用固定基座，默认世界位置为 `(-0.569, 0, 0.912) m`。接入新场景前需核对基座位姿、挂载座、相机和模型级求解设置。详见[模型与接入说明](docs/MODEL.md)。
-
-## 独立动态参考测试
-
-无需访问历史实验目录，按[安装与运行说明](examples/libero_reference/README.md)重建固定环境后：
-
-```bash
-source examples/libero_reference/env/activate.sh
-python examples/libero_reference/run.py --output runs/white_bowl
+```python
+from examples.control_asset import AssetRuntime
+robot = AssetRuntime("dh116_right")  # 也可选择其他三个入口
+command = robot.home_action()
+command[-6:] += 0.1                 # 小幅增加归一化手目标
+robot.set_action(command)
+robot.step(25)                      # 2ms物理步；25步对应20Hz命令
+print(robot.state())                # 独立手11D；组合18D
 ```
 
-参考入口直接使用本仓库 MJCF 与 Mesh，执行230条命令及5750个真实物理步，并输出逐步差异报告。`historical_trajectory_equal` 检查完整 JSON 结构、双向字段集合（含嵌套字典）与逐值精确数值；`raw_jsonl_bytes_equal` 单独检查解压后原始 JSONL 字节的 SHA256 是否相同。两者均为 true，且完成230条命令、5750步及原有 `DIAGNOSTIC_FINISHED` 状态时，才返回 `EXACT_REFERENCE_REPRODUCED`／退出码0；差异返回2，运行错误返回1。
+组合示例复用 stock `JointPositionController.set_goal(..., set_qpos=...)`，再将力矩写入原电机；手部使用原 position servo 和线性 Mimic。独立手显式保留五组掌部—近端指节的原有父子过滤，防止固定到world后MuJoCo改变这些接触资格；其余自碰撞及外物接触规则保留，详见验收记录。
 
-`native_task_result=false` 是实际调用 `env.check_success()` 得到的原生完整任务结果；参考脚本没有执行柜子放置阶段。兼容字段 `strict_grasp_success_claim=false` 仅表示未提出严格抓取成功声明，脚本未运行额外严格抓取成功谓词，不能将其解读为一次抓取成功判定的失败结果。
-
-## 仿真演示与验证
-
-[白碗闭合、抬升与持握演示][demo]
-
-在参考 LIBERO 场景中，模型完成白碗闭合、抬升和连续 1.5 s 对向持握。测试采用 230 个 13D 命令、5750 个物理步；Mimic 峰值偏差约 0.001 rad，最大手—碗代理交叠约 0.580 mm。测试条件、结果和适用范围见[验证说明](docs/VALIDATION.md)。
-
-## 文件检查与许可
+## 验收与白碗实验
 
 ```bash
+python -m unittest discover -s tests -p test_four_assets.py -v
+python examples/check_assets.py --output runs/four_assets_001
 sha256sum -c SHA256SUMS
-python -m unittest discover -s tests -v
 ```
 
-第一条命令核对交付文件完整性；第二条检查查看器的显示过滤及所覆盖物理字段不变性。网格来源和源描述映射见 [SOURCE_MANIFEST.json](SOURCE_MANIFEST.json)、[URDF_SOURCES.json](URDF_SOURCES.json)。
+有界检查不覆盖全幅闭合或任意物体。手部目标误差作诊断；不会将旧路径包络或0.02rad持握误差当作通用失败。保留数值、限位、Mimic、机械臂跟踪及接触健康检查；不增加训练、参数扫描或几何调优。
 
-资源按来源分别提供许可：NERO URDF 为 MIT，DH116 为 Apache-2.0；厂家连接件的独立许可尚未确认。详见[来源与许可](licenses/SOURCES.md)。
+- 左手：[固定环境与原生LIBERO复现入口](examples/libero_reference/README.md)、[已验收结果](examples/libero_reference/evidence/RESULTS.md)。5750物理步，连续1.5s持握；相对沉降位置抬升约103.95mm。
+- 右手：[B＋functional_v1结果](examples/libero_eval/evidence/functional_v1/RESULTS.md)。6500物理步，连续1.5s无环境支撑对向持握；相对沉降位置抬升约100.49mm。
+- [左右统一LIBERO记录接口](examples/libero_eval/README.md)仍保留。历史场景Reset、控制器和动作是抓持结果的一部分，裸MJCF本身不包含白碗、策略或任务环境。
 
-[demo]: examples/libero_reference/evidence/closure-side.mp4
+两次白碗实验的原生柜顶放置任务结果均为false；中间抓持能力不等于完整任务成功。历史FAIL、数值附查FAIL和高保真UNKNOWN保留。本轮没有重跑抓取，也不宣称独立手单独执行过白碗任务。
+
+## 来源、许可与发布状态
+
+NERO源描述采用MIT，DH116厂家源采用Apache-2.0；网格来源和逐文件搬运映射见 [来源清单](SOURCE_MANIFEST.json)、[右手源清单](RIGHT_SOURCE_MANIFEST.json)、[四入口资源清单](docs/assets.json)及[许可说明](licenses/SOURCES.md)。厂家法兰的独立许可仍未确认：组合资产不可作无保留的公开授权发布声明。独立手不含NERO或法兰资源。
+
+当前为Issue #6的研究交付候选，需交付审查；PR #4保持Draft，未合并main、未发布Release。原[左手模型说明](docs/MODEL.md)、[静态查看器](examples/view_static.py)与全部历史证据保留。

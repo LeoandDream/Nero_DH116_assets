@@ -1,0 +1,50 @@
+{
+  "asset": "nero_dh116_right",
+  "model_sha256": "ea335674996894488f30bae5f29e6271f662f320dbcb44f9b32817dd1b5fc93a",
+  "state_dim": 18,
+  "action_dim": 13,
+  "nq": 18,
+  "nu": 13,
+  "physical_steps": 400,
+  "max_mimic_rad": 0.0006956156409255107,
+  "max_limit_overshoot_rad": 0.0,
+  "max_arm_tracking_rad": 0.00905285519600052,
+  "max_contact_depth_m": 0.0,
+  "max_hand_target_error_rad": 0.04705528319696115,
+  "warnings": 0,
+  "stop": null,
+  "responses": [
+    {
+      "channel": "gripper0_finger11",
+      "displacement_rad": 0.1305803912706407,
+      "observable_positive_response": true
+    },
+    {
+      "channel": "gripper0_finger12",
+      "displacement_rad": 0.05825226453193366,
+      "observable_positive_response": true
+    },
+    {
+      "channel": "gripper0_finger21",
+      "displacement_rad": 0.14537937217445807,
+      "observable_positive_response": true
+    },
+    {
+      "channel": "gripper0_finger31",
+      "displacement_rad": 0.14459341099517187,
+      "observable_positive_response": true
+    },
+    {
+      "channel": "gripper0_finger41",
+      "displacement_rad": 0.14387996957159505,
+      "observable_positive_response": true
+    },
+    {
+      "channel": "gripper0_finger51",
+      "displacement_rad": 0.146400158867464,
+      "observable_positive_response": true
+    }
+  ],
+  "passed": true,
+  "wall_time_s": 1.0681230360642076
+}

@@ -1,0 +1,24 @@
+test_fixed_palm_preserves_five_original_parent_filters (test_four_assets.FourAssets.test_fixed_palm_preserves_five_original_parent_filters) ... FAIL
+test_four_entries_dimensions_and_common_order (test_four_assets.FourAssets.test_four_entries_dimensions_and_common_order) ... ok
+test_left_V1_and_right_B_source_identity (test_four_assets.FourAssets.test_left_V1_and_right_B_source_identity) ... ok
+test_portable_resource_closure (test_four_assets.FourAssets.test_portable_resource_closure) ... ok
+test_standalone_has_no_arm_and_preserves_hand_subtree (test_four_assets.FourAssets.test_standalone_has_no_arm_and_preserves_hand_subtree) ... ok
+
+======================================================================
+FAIL: test_fixed_palm_preserves_five_original_parent_filters (test_four_assets.FourAssets.test_fixed_palm_preserves_five_original_parent_filters)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/data_robot/projects/.worktrees/nero_dh116_four_assets/tests/test_four_assets.py", line 59, in test_fixed_palm_preserves_five_original_parent_filters
+    self.assertEqual({(e.get('body1'),e.get('body2')) for e in tree.findall('contact/exclude')},expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Items in the second set but not the first:
+('gripper0_base_link', 'gripper0_finger41_link')
+('gripper0_base_link', 'gripper0_finger21_link')
+('gripper0_base_link', 'gripper0_finger31_link')
+('gripper0_base_link', 'gripper0_finger11_link')
+('gripper0_base_link', 'gripper0_finger51_link')
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.604s
+
+FAILED (failures=1)
