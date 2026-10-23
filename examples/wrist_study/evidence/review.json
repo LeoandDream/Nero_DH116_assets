@@ -1,0 +1,108 @@
+{
+  "scope": "Fixed native L white-bowl regression; no full native cabinet success claim",
+  "physics_steps": 5750,
+  "native_status": "DIAGNOSTIC_FINISHED",
+  "stop_reason": null,
+  "functional_rollouts": 1,
+  "source_settled_post_qpos_z_m": 0.8994107101029007,
+  "final_bowl_post_qpos_z_m": 1.0033629373690915,
+  "final_lift_from_settled_m": 0.1039522272661908,
+  "final_lift_from_reset_m": 0.03336293736909157,
+  "first_positive_thumb_or_index_step": 3638,
+  "first_positive_opposed_step": 3642,
+  "first_environment_support_disappeared_after_settling_step": 4044,
+  "planned_hold_steps": 750,
+  "actual_hold_steps": 750,
+  "hold_positive_opposed_steps": 750,
+  "hold_environment_support_steps": 0,
+  "hold_lift_range_m": [
+    0.09058804546479027,
+    0.10403706071645491
+  ],
+  "longest_continuous_valid_hold_s": 1.5,
+  "complete_1_5s_hold_observed": true,
+  "actual_wrist_contact_events": 0,
+  "historical_trajectory_equal": true,
+  "raw_jsonl_bytes_equal": true,
+  "native_cabinet_task_result": false,
+  "strict_grasp_success_claim": false,
+  "frozen_diagnostic_maxima": {
+    "max_linear_mimic_error_rad": 0.0010005620208883587,
+    "max_arm_target_error_rad": 0.07815017042475991,
+    "max_other_robot_overlap_m": 0.0,
+    "min_bowl_contact_distance_m": -0.0005797042681449684,
+    "max_bowl_contact_normal_N": 0.2948832030561538
+  },
+  "geometry_table": [
+    {
+      "side": "L",
+      "count": 15,
+      "static_poses": 12,
+      "wrist_contact_poses": 0,
+      "max_static_MPR_depth_m": 0.0,
+      "max_abs_static_J6_wrist_torque_Nm": 0.0
+    },
+    {
+      "side": "L",
+      "count": 306,
+      "static_poses": 12,
+      "wrist_contact_poses": 0,
+      "max_static_MPR_depth_m": 0.0,
+      "max_abs_static_J6_wrist_torque_Nm": 0.0
+    },
+    {
+      "side": "R",
+      "count": 15,
+      "static_poses": 14,
+      "wrist_contact_poses": 10,
+      "max_static_MPR_depth_m": 0.00769258282537173,
+      "max_abs_static_J6_wrist_torque_Nm": 0.5245303453378041
+    },
+    {
+      "side": "R",
+      "count": 306,
+      "static_poses": 14,
+      "wrist_contact_poses": 0,
+      "max_static_MPR_depth_m": 0.0,
+      "max_abs_static_J6_wrist_torque_Nm": 0.0
+    }
+  ],
+  "step_timing_table": [
+    {
+      "side": "L",
+      "after_step": 250,
+      "15_median_step_us": 1299.96934375,
+      "306_median_step_us": 1552.74828125,
+      "306_to_15_time_ratio": 1.1944499220041702
+    },
+    {
+      "side": "L",
+      "after_step": 5000,
+      "15_median_step_us": 1770.28975,
+      "306_median_step_us": 1993.393875,
+      "306_to_15_time_ratio": 1.1260268975742531
+    },
+    {
+      "side": "R",
+      "after_step": 1314,
+      "15_median_step_us": 1557.851,
+      "306_median_step_us": 1698.532953125,
+      "306_to_15_time_ratio": 1.0903051403022497
+    },
+    {
+      "side": "R",
+      "after_step": 6000,
+      "15_median_step_us": 2142.917671875,
+      "306_median_step_us": 2338.8945625,
+      "306_to_15_time_ratio": 1.091453299021761
+    }
+  ],
+  "full_run_mean_mj_step_us": 1739.0034151304349,
+  "interpretation": [
+    "Static forces are recomputed at post-step poses; benchmark force/state perturbations come from real short open-loop playback.",
+    "Benchmark playback is not the original closed-loop native protocol and is not a complete causal/controller result.",
+    "The single full functional run uses the unchanged native L protocol and its original stopping rules.",
+    "Geometry quality improves at old bad wrist poses; the already-successful fixed L task has no observed functional improvement.",
+    "Retain R306 as its success baseline; preserve L15 default; keep the rebuilt L306 candidate as an optional reviewed research asset."
+  ]
+}

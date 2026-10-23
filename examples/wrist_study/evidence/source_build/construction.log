@@ -1,0 +1,352 @@
+{"event": "profile", "mesh": "link5", "component": 0, "convex_regions": 60, "original_holes": 10, "guide_holes": 6}
+{"event": "piece", "mesh": "link5", "index": 0, "label": "profile_0_000", "vertices": 39, "width_mm": 0.7851402023095477}
+{"event": "piece", "mesh": "link5", "index": 1, "label": "profile_0_001", "vertices": 63, "width_mm": 7.04940044}
+{"event": "piece", "mesh": "link5", "index": 2, "label": "profile_0_002", "vertices": 32, "width_mm": 0.4106924095929644}
+{"event": "piece", "mesh": "link5", "index": 3, "label": "profile_0_003", "vertices": 37, "width_mm": 0.7203289093542959}
+{"event": "piece", "mesh": "link5", "index": 4, "label": "profile_0_004", "vertices": 38, "width_mm": 0.7808758912580122}
+{"event": "piece", "mesh": "link5", "index": 5, "label": "profile_0_005", "vertices": 37, "width_mm": 0.8142175663525854}
+{"event": "piece", "mesh": "link5", "index": 6, "label": "profile_0_006", "vertices": 33, "width_mm": 0.5133147622773115}
+{"event": "piece", "mesh": "link5", "index": 7, "label": "profile_0_007", "vertices": 103, "width_mm": 7.435308487371575}
+{"event": "piece", "mesh": "link5", "index": 8, "label": "profile_0_008", "vertices": 53, "width_mm": 4.516736890207705}
+{"event": "piece", "mesh": "link5", "index": 9, "label": "profile_0_009", "vertices": 50, "width_mm": 2.508599860988149}
+{"event": "piece", "mesh": "link5", "index": 10, "label": "profile_0_010", "vertices": 57, "width_mm": 4.8999799999999984}
+{"event": "piece", "mesh": "link5", "index": 11, "label": "profile_0_011", "vertices": 51, "width_mm": 4.853826703411962}
+{"event": "piece", "mesh": "link5", "index": 12, "label": "profile_0_012", "vertices": 74, "width_mm": 11.219275297220584}
+{"event": "piece", "mesh": "link5", "index": 13, "label": "profile_0_013", "vertices": 27, "width_mm": 0.7386751700977235}
+{"event": "piece", "mesh": "link5", "index": 14, "label": "profile_0_014", "vertices": 26, "width_mm": 0.7682987858095535}
+{"event": "piece", "mesh": "link5", "index": 15, "label": "profile_0_015", "vertices": 26, "width_mm": 1.386355224613488}
+{"event": "piece", "mesh": "link5", "index": 16, "label": "profile_0_016", "vertices": 28, "width_mm": 1.417183892875977}
+{"event": "piece", "mesh": "link5", "index": 17, "label": "profile_0_017", "vertices": 50, "width_mm": 4.8999799999999984}
+{"event": "piece", "mesh": "link5", "index": 18, "label": "profile_0_018", "vertices": 66, "width_mm": 2.432828495107238}
+{"event": "piece", "mesh": "link5", "index": 19, "label": "profile_0_019", "vertices": 25, "width_mm": 1.8223203303539965}
+{"event": "piece", "mesh": "link5", "index": 20, "label": "profile_0_020", "vertices": 26, "width_mm": 1.8405041760816248}
+{"event": "piece", "mesh": "link5", "index": 21, "label": "profile_0_021", "vertices": 60, "width_mm": 1.4251430669669045}
+{"event": "piece", "mesh": "link5", "index": 22, "label": "profile_0_022", "vertices": 87, "width_mm": 1.412689892060094}
+{"event": "piece", "mesh": "link5", "index": 23, "label": "profile_0_023", "vertices": 74, "width_mm": 2.54414808030097}
+{"event": "piece", "mesh": "link5", "index": 24, "label": "profile_0_024", "vertices": 26, "width_mm": 1.7262766212360336}
+{"event": "piece", "mesh": "link5", "index": 25, "label": "profile_0_025", "vertices": 23, "width_mm": 1.778442945594101}
+{"event": "piece", "mesh": "link5", "index": 26, "label": "profile_0_026", "vertices": 64, "width_mm": 4.8999799999999984}
+{"event": "piece", "mesh": "link5", "index": 27, "label": "profile_0_027", "vertices": 20, "width_mm": 0.804384013598787}
+{"event": "piece", "mesh": "link5", "index": 28, "label": "profile_0_028", "vertices": 34, "width_mm": 7.456574728899365}
+{"event": "piece", "mesh": "link5", "index": 29, "label": "profile_0_029", "vertices": 26, "width_mm": 0.7971905979999999}
+{"event": "piece", "mesh": "link5", "index": 30, "label": "profile_0_030", "vertices": 18, "width_mm": 0.5833690200000019}
+{"event": "piece", "mesh": "link5", "index": 31, "label": "profile_0_031", "vertices": 35, "width_mm": 8.009676899999999}
+{"event": "piece", "mesh": "link5", "index": 32, "label": "profile_0_032", "vertices": 37, "width_mm": 2.619440382000002}
+{"event": "piece", "mesh": "link5", "index": 33, "label": "profile_0_033", "vertices": 57, "width_mm": 10.135168649838041}
+{"event": "piece", "mesh": "link5", "index": 34, "label": "profile_0_034", "vertices": 48, "width_mm": 1.7778436460028773}
+{"event": "piece", "mesh": "link5", "index": 35, "label": "profile_0_035", "vertices": 54, "width_mm": 3.4704118839023086}
+{"event": "piece", "mesh": "link5", "index": 36, "label": "profile_0_036", "vertices": 150, "width_mm": 7.304742098373638}
+{"event": "piece", "mesh": "link5", "index": 37, "label": "profile_0_037", "vertices": 100, "width_mm": 5.351220236510377}
+{"event": "piece", "mesh": "link5", "index": 38, "label": "profile_0_038", "vertices": 59, "width_mm": 4.8999799999999984}
+{"event": "piece", "mesh": "link5", "index": 39, "label": "profile_0_039", "vertices": 31, "width_mm": 1.780104787568515}
+{"event": "piece", "mesh": "link5", "index": 40, "label": "profile_0_040", "vertices": 24, "width_mm": 1.778442945599}
+{"event": "piece", "mesh": "link5", "index": 41, "label": "profile_0_041", "vertices": 25, "width_mm": 0.7498443225878622}
+{"event": "piece", "mesh": "link5", "index": 42, "label": "profile_0_042", "vertices": 26, "width_mm": 1.8405041760816248}
+{"event": "piece", "mesh": "link5", "index": 43, "label": "profile_0_043", "vertices": 23, "width_mm": 1.8223203303677806}
+{"event": "piece", "mesh": "link5", "index": 44, "label": "profile_0_044", "vertices": 48, "width_mm": 4.8999799999999984}
+{"event": "piece", "mesh": "link5", "index": 45, "label": "profile_0_045", "vertices": 25, "width_mm": 1.4171838928569331}
+{"event": "piece", "mesh": "link5", "index": 46, "label": "profile_0_046", "vertices": 25, "width_mm": 1.3863552246232165}
+{"event": "piece", "mesh": "link5", "index": 47, "label": "profile_0_047", "vertices": 29, "width_mm": 0.7682987858102369}
+{"event": "piece", "mesh": "link5", "index": 48, "label": "profile_0_048", "vertices": 27, "width_mm": 0.7386751701084389}
+{"event": "piece", "mesh": "link5", "index": 49, "label": "profile_0_049", "vertices": 46, "width_mm": 9.878379025560095}
+{"event": "piece", "mesh": "link5", "index": 50, "label": "profile_0_050", "vertices": 60, "width_mm": 4.8999799999999984}
+{"event": "piece", "mesh": "link5", "index": 51, "label": "profile_0_051", "vertices": 51, "width_mm": 2.507758528869656}
+{"event": "piece", "mesh": "link5", "index": 52, "label": "profile_0_052", "vertices": 54, "width_mm": 3.6506105408011553}
+{"event": "piece", "mesh": "link5", "index": 53, "label": "profile_0_053", "vertices": 58, "width_mm": 5.614264530891915}
+{"event": "piece", "mesh": "link5", "index": 54, "label": "profile_0_054", "vertices": 31, "width_mm": 0.5133147621640827}
+{"event": "piece", "mesh": "link5", "index": 55, "label": "profile_0_055", "vertices": 32, "width_mm": 0.7808758911508756}
+{"event": "piece", "mesh": "link5", "index": 56, "label": "profile_0_056", "vertices": 39, "width_mm": 0.7199253993480613}
+{"event": "piece", "mesh": "link5", "index": 57, "label": "profile_0_057", "vertices": 36, "width_mm": 0.41003217336078174}
+{"event": "piece", "mesh": "link5", "index": 58, "label": "profile_0_058", "vertices": 37, "width_mm": 0.7851402024142001}
+{"event": "piece", "mesh": "link5", "index": 59, "label": "profile_0_059", "vertices": 43, "width_mm": 4.378390843999999}
+{"event": "profile", "mesh": "link5", "component": 1, "convex_regions": 48, "original_holes": 8, "guide_holes": 5}
+{"event": "piece", "mesh": "link5", "index": 60, "label": "profile_1_000", "vertices": 70, "width_mm": 4.619390382000001}
+{"event": "piece", "mesh": "link5", "index": 61, "label": "profile_1_001", "vertices": 45, "width_mm": 0.7851402025706722}
+{"event": "piece", "mesh": "link5", "index": 62, "label": "profile_1_002", "vertices": 47, "width_mm": 0.4159220116698691}
+{"event": "piece", "mesh": "link5", "index": 63, "label": "profile_1_003", "vertices": 43, "width_mm": 0.7235065293006576}
+{"event": "piece", "mesh": "link5", "index": 64, "label": "profile_1_004", "vertices": 43, "width_mm": 0.7808758912430519}
+{"event": "piece", "mesh": "link5", "index": 65, "label": "profile_1_005", "vertices": 47, "width_mm": 0.812882830282139}
+{"event": "piece", "mesh": "link5", "index": 66, "label": "profile_1_006", "vertices": 31, "width_mm": 0.5133147624699214}
+{"event": "piece", "mesh": "link5", "index": 67, "label": "profile_1_007", "vertices": 54, "width_mm": 4.900039999999998}
+{"event": "piece", "mesh": "link5", "index": 68, "label": "profile_1_008", "vertices": 60, "width_mm": 4.900039999999998}
+{"event": "piece", "mesh": "link5", "index": 69, "label": "profile_1_009", "vertices": 20, "width_mm": 0.5833690199999993}
+{"event": "piece", "mesh": "link5", "index": 70, "label": "profile_1_010", "vertices": 56, "width_mm": 4.850703315278664}
+{"event": "piece", "mesh": "link5", "index": 71, "label": "profile_1_011", "vertices": 25, "width_mm": 0.7971905979999999}
+{"event": "piece", "mesh": "link5", "index": 72, "label": "profile_1_012", "vertices": 49, "width_mm": 4.900039999999998}
+{"event": "piece", "mesh": "link5", "index": 73, "label": "profile_1_013", "vertices": 54, "width_mm": 0.5352280112736283}
+{"event": "piece", "mesh": "link5", "index": 74, "label": "profile_1_014", "vertices": 71, "width_mm": 2.678579845807532}
+{"event": "piece", "mesh": "link5", "index": 75, "label": "profile_1_015", "vertices": 69, "width_mm": 1.5092884600625516}
+{"event": "piece", "mesh": "link5", "index": 76, "label": "profile_1_016", "vertices": 59, "width_mm": 4.900039999999998}
+{"event": "piece", "mesh": "link5", "index": 77, "label": "profile_1_017", "vertices": 70, "width_mm": 1.717250002020554}
+{"event": "piece", "mesh": "link5", "index": 78, "label": "profile_1_018", "vertices": 95, "width_mm": 3.3269853907608655}
+{"event": "piece", "mesh": "link5", "index": 79, "label": "profile_1_019", "vertices": 184, "width_mm": 15.584180268075471}
+{"event": "piece", "mesh": "link5", "index": 80, "label": "profile_1_020", "vertices": 18, "width_mm": 0.5833690200000019}
+{"event": "piece", "mesh": "link5", "index": 81, "label": "profile_1_021", "vertices": 18, "width_mm": 0.583369019999995}
+{"event": "piece", "mesh": "link5", "index": 82, "label": "profile_1_022", "vertices": 36, "width_mm": 0.7971905979999999}
+{"event": "piece", "mesh": "link5", "index": 83, "label": "profile_1_023", "vertices": 24, "width_mm": 0.5833690200000019}
+{"event": "piece", "mesh": "link5", "index": 84, "label": "profile_1_024", "vertices": 22, "width_mm": 0.5833690200000019}
+{"event": "piece", "mesh": "link5", "index": 85, "label": "profile_1_025", "vertices": 22, "width_mm": 0.7971905979999999}
+{"event": "piece", "mesh": "link5", "index": 86, "label": "profile_1_026", "vertices": 22, "width_mm": 0.7971905979999999}
+{"event": "piece", "mesh": "link5", "index": 87, "label": "profile_1_027", "vertices": 43, "width_mm": 14.0}
+{"event": "piece", "mesh": "link5", "index": 88, "label": "profile_1_028", "vertices": 28, "width_mm": 0.7971905979999999}
+{"event": "piece", "mesh": "link5", "index": 89, "label": "profile_1_029", "vertices": 55, "width_mm": 2.619440382000002}
+{"event": "piece", "mesh": "link5", "index": 90, "label": "profile_1_030", "vertices": 72, "width_mm": 2.8102129295678733}
+{"event": "piece", "mesh": "link5", "index": 91, "label": "profile_1_031", "vertices": 74, "width_mm": 2.852596502942034}
+{"event": "piece", "mesh": "link5", "index": 92, "label": "profile_1_032", "vertices": 163, "width_mm": 6.300064882146426}
+{"event": "piece", "mesh": "link5", "index": 93, "label": "profile_1_033", "vertices": 56, "width_mm": 4.900039999999998}
+{"event": "piece", "mesh": "link5", "index": 94, "label": "profile_1_034", "vertices": 52, "width_mm": 0.5352280112736283}
+{"event": "piece", "mesh": "link5", "index": 95, "label": "profile_1_035", "vertices": 61, "width_mm": 4.900039999999998}
+{"event": "piece", "mesh": "link5", "index": 96, "label": "profile_1_036", "vertices": 23, "width_mm": 0.7971905979999999}
+{"event": "piece", "mesh": "link5", "index": 97, "label": "profile_1_037", "vertices": 18, "width_mm": 0.5833690199999993}
+{"event": "piece", "mesh": "link5", "index": 98, "label": "profile_1_038", "vertices": 57, "width_mm": 4.900039999999998}
+{"event": "piece", "mesh": "link5", "index": 99, "label": "profile_1_039", "vertices": 55, "width_mm": 4.900039999999998}
+{"event": "piece", "mesh": "link5", "index": 100, "label": "profile_1_040", "vertices": 35, "width_mm": 0.5133147622973511}
+{"event": "piece", "mesh": "link5", "index": 101, "label": "profile_1_041", "vertices": 48, "width_mm": 0.8142207676009767}
+{"event": "piece", "mesh": "link5", "index": 102, "label": "profile_1_042", "vertices": 43, "width_mm": 0.7808758913707553}
+{"event": "piece", "mesh": "link5", "index": 103, "label": "profile_1_043", "vertices": 45, "width_mm": 0.720320906202214}
+{"event": "piece", "mesh": "link5", "index": 104, "label": "profile_1_044", "vertices": 47, "width_mm": 0.41067930537681474}
+{"event": "piece", "mesh": "link5", "index": 105, "label": "profile_1_045", "vertices": 46, "width_mm": 0.7851402022781284}
+{"event": "piece", "mesh": "link5", "index": 106, "label": "profile_1_046", "vertices": 68, "width_mm": 4.619390382000001}
+{"event": "piece", "mesh": "link5", "index": 107, "label": "profile_1_047", "vertices": 50, "width_mm": 0.7237157092353464}
+{"event": "profile", "mesh": "gripper_flange", "component": 0, "convex_regions": 92, "original_holes": 15, "guide_holes": 8}
+{"event": "piece", "mesh": "gripper_flange", "index": 0, "label": "profile_0_000", "vertices": 77, "width_mm": 2.4336711427133046}
+{"event": "piece", "mesh": "gripper_flange", "index": 1, "label": "profile_0_001", "vertices": 78, "width_mm": 2.7083326594932386}
+{"event": "piece", "mesh": "gripper_flange", "index": 2, "label": "profile_0_002", "vertices": 68, "width_mm": 3.9999497653500984}
+{"event": "piece", "mesh": "gripper_flange", "index": 3, "label": "profile_0_003", "vertices": 154, "width_mm": 3.9999545468191107}
+{"event": "piece", "mesh": "gripper_flange", "index": 4, "label": "profile_0_004", "vertices": 73, "width_mm": 2.0160085417515736}
+{"event": "piece", "mesh": "gripper_flange", "index": 5, "label": "profile_0_005", "vertices": 50, "width_mm": 0.530176830248915}
+{"event": "piece", "mesh": "gripper_flange", "index": 6, "label": "profile_0_006", "vertices": 73, "width_mm": 2.2894694028152904}
+{"event": "piece", "mesh": "gripper_flange", "index": 7, "label": "profile_0_007", "vertices": 70, "width_mm": 0.4997879600443407}
+{"event": "piece", "mesh": "gripper_flange", "index": 8, "label": "profile_0_008", "vertices": 59, "width_mm": 0.5252429137807615}
+{"event": "piece", "mesh": "gripper_flange", "index": 9, "label": "profile_0_009", "vertices": 59, "width_mm": 0.5256996656831415}
+{"event": "piece", "mesh": "gripper_flange", "index": 10, "label": "profile_0_010", "vertices": 82, "width_mm": 2.6808246576502364}
+{"event": "piece", "mesh": "gripper_flange", "index": 11, "label": "profile_0_011", "vertices": 60, "width_mm": 0.43365200363904355}
+{"event": "piece", "mesh": "gripper_flange", "index": 12, "label": "profile_0_012", "vertices": 83, "width_mm": 3.951890389049928}
+{"event": "piece", "mesh": "gripper_flange", "index": 13, "label": "profile_0_013", "vertices": 33, "width_mm": 0.5216388573124585}
+{"event": "piece", "mesh": "gripper_flange", "index": 14, "label": "profile_0_014", "vertices": 103, "width_mm": 2.2508106042683407}
+{"event": "piece", "mesh": "gripper_flange", "index": 15, "label": "profile_0_015", "vertices": 58, "width_mm": 0.4983027940506017}
+{"event": "piece", "mesh": "gripper_flange", "index": 16, "label": "profile_0_016", "vertices": 28, "width_mm": 0.8275032926394286}
+{"event": "piece", "mesh": "gripper_flange", "index": 17, "label": "profile_0_017", "vertices": 53, "width_mm": 0.511217462627736}
+{"event": "piece", "mesh": "gripper_flange", "index": 18, "label": "profile_0_018", "vertices": 86, "width_mm": 5.11578568500012}
+{"event": "piece", "mesh": "gripper_flange", "index": 19, "label": "profile_0_019", "vertices": 59, "width_mm": 0.47539215840372445}
+{"event": "piece", "mesh": "gripper_flange", "index": 20, "label": "profile_0_020", "vertices": 101, "width_mm": 2.2674162934120288}
+{"event": "piece", "mesh": "gripper_flange", "index": 21, "label": "profile_0_021", "vertices": 74, "width_mm": 3.9999555850361683}
+{"event": "piece", "mesh": "gripper_flange", "index": 22, "label": "profile_0_022", "vertices": 30, "width_mm": 0.5216389309710707}
+{"event": "piece", "mesh": "gripper_flange", "index": 23, "label": "profile_0_023", "vertices": 66, "width_mm": 0.5350132986731981}
+{"event": "piece", "mesh": "gripper_flange", "index": 24, "label": "profile_0_024", "vertices": 74, "width_mm": 0.4421128593671622}
+{"event": "piece", "mesh": "gripper_flange", "index": 25, "label": "profile_0_025", "vertices": 36, "width_mm": 0.42662232900886504}
+{"event": "piece", "mesh": "gripper_flange", "index": 26, "label": "profile_0_026", "vertices": 80, "width_mm": 0.37515082847199355}
+{"event": "piece", "mesh": "gripper_flange", "index": 27, "label": "profile_0_027", "vertices": 80, "width_mm": 2.7098335736873356}
+{"event": "piece", "mesh": "gripper_flange", "index": 28, "label": "profile_0_028", "vertices": 103, "width_mm": 2.282029190516604}
+{"event": "piece", "mesh": "gripper_flange", "index": 29, "label": "profile_0_029", "vertices": 152, "width_mm": 3.999957643139419}
+{"event": "piece", "mesh": "gripper_flange", "index": 30, "label": "profile_0_030", "vertices": 59, "width_mm": 0.43450085536100336}
+{"event": "piece", "mesh": "gripper_flange", "index": 31, "label": "profile_0_031", "vertices": 71, "width_mm": 0.27035744921839355}
+{"event": "piece", "mesh": "gripper_flange", "index": 32, "label": "profile_0_032", "vertices": 57, "width_mm": 0.6800628817870413}
+{"event": "piece", "mesh": "gripper_flange", "index": 33, "label": "profile_0_033", "vertices": 38, "width_mm": 0.5208019526714569}
+{"event": "piece", "mesh": "gripper_flange", "index": 34, "label": "profile_0_034", "vertices": 45, "width_mm": 0.5435911012404947}
+{"event": "piece", "mesh": "gripper_flange", "index": 35, "label": "profile_0_035", "vertices": 37, "width_mm": 0.8290487051643286}
+{"event": "piece", "mesh": "gripper_flange", "index": 36, "label": "profile_0_036", "vertices": 31, "width_mm": 0.4814507527521189}
+{"event": "piece", "mesh": "gripper_flange", "index": 37, "label": "profile_0_037", "vertices": 51, "width_mm": 0.48549195233712344}
+{"event": "piece", "mesh": "gripper_flange", "index": 38, "label": "profile_0_038", "vertices": 53, "width_mm": 0.7290167186598945}
+{"event": "piece", "mesh": "gripper_flange", "index": 39, "label": "profile_0_039", "vertices": 30, "width_mm": 0.815823972600306}
+{"event": "piece", "mesh": "gripper_flange", "index": 40, "label": "profile_0_040", "vertices": 45, "width_mm": 0.5406454466575055}
+{"event": "piece", "mesh": "gripper_flange", "index": 41, "label": "profile_0_041", "vertices": 80, "width_mm": 2.679084672499516}
+{"event": "piece", "mesh": "gripper_flange", "index": 42, "label": "profile_0_042", "vertices": 73, "width_mm": 2.803740037251418}
+{"event": "piece", "mesh": "gripper_flange", "index": 43, "label": "profile_0_043", "vertices": 34, "width_mm": 0.8284644963020525}
+{"event": "piece", "mesh": "gripper_flange", "index": 44, "label": "profile_0_044", "vertices": 101, "width_mm": 5.299941542128435}
+{"event": "piece", "mesh": "gripper_flange", "index": 45, "label": "profile_0_045", "vertices": 133, "width_mm": 5.299939584563127}
+{"event": "piece", "mesh": "gripper_flange", "index": 46, "label": "profile_0_046", "vertices": 160, "width_mm": 5.299940024258824}
+{"event": "piece", "mesh": "gripper_flange", "index": 47, "label": "profile_0_047", "vertices": 51, "width_mm": 0.5304888640102158}
+{"event": "piece", "mesh": "gripper_flange", "index": 48, "label": "profile_0_048", "vertices": 36, "width_mm": 0.6568040733246359}
+{"event": "piece", "mesh": "gripper_flange", "index": 49, "label": "profile_0_049", "vertices": 64, "width_mm": 0.509180529505261}
+{"event": "piece", "mesh": "gripper_flange", "index": 50, "label": "profile_0_050", "vertices": 28, "width_mm": 0.5327003222261179}
+{"event": "piece", "mesh": "gripper_flange", "index": 51, "label": "profile_0_051", "vertices": 71, "width_mm": 2.304908362498673}
+{"event": "piece", "mesh": "gripper_flange", "index": 52, "label": "profile_0_052", "vertices": 74, "width_mm": 1.9486164049933516}
+{"event": "piece", "mesh": "gripper_flange", "index": 53, "label": "profile_0_053", "vertices": 30, "width_mm": 0.39747130655786583}
+{"event": "piece", "mesh": "gripper_flange", "index": 54, "label": "profile_0_054", "vertices": 37, "width_mm": 0.7597496229258884}
+{"event": "piece", "mesh": "gripper_flange", "index": 55, "label": "profile_0_055", "vertices": 36, "width_mm": 0.47651588716368654}
+{"event": "piece", "mesh": "gripper_flange", "index": 56, "label": "profile_0_056", "vertices": 30, "width_mm": 0.5548879288830126}
+{"event": "piece", "mesh": "gripper_flange", "index": 57, "label": "profile_0_057", "vertices": 34, "width_mm": 0.8275725021394607}
+{"event": "piece", "mesh": "gripper_flange", "index": 58, "label": "profile_0_058", "vertices": 44, "width_mm": 0.5442628037156394}
+{"event": "piece", "mesh": "gripper_flange", "index": 59, "label": "profile_0_059", "vertices": 37, "width_mm": 0.5210072376074758}
+{"event": "piece", "mesh": "gripper_flange", "index": 60, "label": "profile_0_060", "vertices": 29, "width_mm": 0.4976903692838902}
+{"event": "piece", "mesh": "gripper_flange", "index": 61, "label": "profile_0_061", "vertices": 61, "width_mm": 0.3364410643290085}
+{"event": "piece", "mesh": "gripper_flange", "index": 62, "label": "profile_0_062", "vertices": 72, "width_mm": 0.48168271795442746}
+{"event": "piece", "mesh": "gripper_flange", "index": 63, "label": "profile_0_063", "vertices": 149, "width_mm": 3.999956634931006}
+{"event": "piece", "mesh": "gripper_flange", "index": 64, "label": "profile_0_064", "vertices": 124, "width_mm": 3.2103916286345346}
+{"event": "piece", "mesh": "gripper_flange", "index": 65, "label": "profile_0_065", "vertices": 62, "width_mm": 3.1139946194306685}
+{"event": "piece", "mesh": "gripper_flange", "index": 66, "label": "profile_0_066", "vertices": 66, "width_mm": 0.48527116045609436}
+{"event": "piece", "mesh": "gripper_flange", "index": 67, "label": "profile_0_067", "vertices": 50, "width_mm": 0.6796346712797324}
+{"event": "piece", "mesh": "gripper_flange", "index": 68, "label": "profile_0_068", "vertices": 87, "width_mm": 3.999958763658218}
+{"event": "piece", "mesh": "gripper_flange", "index": 69, "label": "profile_0_069", "vertices": 74, "width_mm": 0.5478821972481288}
+{"event": "piece", "mesh": "gripper_flange", "index": 70, "label": "profile_0_070", "vertices": 43, "width_mm": 0.5436177657332577}
+{"event": "piece", "mesh": "gripper_flange", "index": 71, "label": "profile_0_071", "vertices": 52, "width_mm": 0.19090247709507108}
+{"event": "piece", "mesh": "gripper_flange", "index": 72, "label": "profile_0_072", "vertices": 103, "width_mm": 2.5032578250175406}
+{"event": "piece", "mesh": "gripper_flange", "index": 73, "label": "profile_0_073", "vertices": 57, "width_mm": 0.37311357713515925}
+{"event": "piece", "mesh": "gripper_flange", "index": 74, "label": "profile_0_074", "vertices": 58, "width_mm": 0.500357675362928}
+{"event": "piece", "mesh": "gripper_flange", "index": 75, "label": "profile_0_075", "vertices": 38, "width_mm": 0.8108102565741537}
+{"event": "piece", "mesh": "gripper_flange", "index": 76, "label": "profile_0_076", "vertices": 78, "width_mm": 0.8846568556696923}
+{"event": "piece", "mesh": "gripper_flange", "index": 77, "label": "profile_0_077", "vertices": 52, "width_mm": 0.5458037608157065}
+{"event": "piece", "mesh": "gripper_flange", "index": 78, "label": "profile_0_078", "vertices": 93, "width_mm": 3.980693471468535}
+{"event": "piece", "mesh": "gripper_flange", "index": 79, "label": "profile_0_079", "vertices": 82, "width_mm": 2.260404839471689}
+{"event": "piece", "mesh": "gripper_flange", "index": 80, "label": "profile_0_080", "vertices": 57, "width_mm": 0.48396352821050703}
+{"event": "piece", "mesh": "gripper_flange", "index": 81, "label": "profile_0_081", "vertices": 82, "width_mm": 1.9468979698123323}
+{"event": "piece", "mesh": "gripper_flange", "index": 82, "label": "profile_0_082", "vertices": 69, "width_mm": 0.5367343523494418}
+{"event": "piece", "mesh": "gripper_flange", "index": 83, "label": "profile_0_083", "vertices": 68, "width_mm": 0.43262902221733945}
+{"event": "piece", "mesh": "gripper_flange", "index": 84, "label": "profile_0_084", "vertices": 56, "width_mm": 0.5311325674613558}
+{"event": "piece", "mesh": "gripper_flange", "index": 85, "label": "profile_0_085", "vertices": 61, "width_mm": 0.5196153277956423}
+{"event": "piece", "mesh": "gripper_flange", "index": 86, "label": "profile_0_086", "vertices": 71, "width_mm": 2.5540371318113415}
+{"event": "piece", "mesh": "gripper_flange", "index": 87, "label": "profile_0_087", "vertices": 68, "width_mm": 3.999958343683996}
+{"event": "piece", "mesh": "gripper_flange", "index": 88, "label": "profile_0_088", "vertices": 146, "width_mm": 5.262842738169491}
+{"event": "piece", "mesh": "gripper_flange", "index": 89, "label": "profile_0_089", "vertices": 70, "width_mm": 2.7702567198824095}
+{"event": "piece", "mesh": "gripper_flange", "index": 90, "label": "profile_0_090", "vertices": 79, "width_mm": 1.9199105597040542}
+{"event": "piece", "mesh": "gripper_flange", "index": 91, "label": "profile_0_091", "vertices": 83, "width_mm": 2.448341483775512}
+{"event": "profile", "mesh": "gripper_flange", "component": 2, "convex_regions": 29, "original_holes": 7, "guide_holes": 2}
+{"event": "piece", "mesh": "gripper_flange", "index": 92, "label": "profile_2_000", "vertices": 74, "width_mm": 4.240600202487748}
+{"event": "piece", "mesh": "gripper_flange", "index": 93, "label": "profile_2_001", "vertices": 99, "width_mm": 2.069581597097115}
+{"event": "piece", "mesh": "gripper_flange", "index": 94, "label": "profile_2_002", "vertices": 56, "width_mm": 0.5022319693615556}
+{"event": "piece", "mesh": "gripper_flange", "index": 95, "label": "profile_2_003", "vertices": 49, "width_mm": 0.5112231328902768}
+{"event": "piece", "mesh": "gripper_flange", "index": 96, "label": "profile_2_004", "vertices": 51, "width_mm": 0.36442464119427964}
+{"event": "piece", "mesh": "gripper_flange", "index": 97, "label": "profile_2_005", "vertices": 56, "width_mm": 0.18287436676810467}
+{"event": "piece", "mesh": "gripper_flange", "index": 98, "label": "profile_2_006", "vertices": 122, "width_mm": 3.212646052776495}
+{"event": "piece", "mesh": "gripper_flange", "index": 99, "label": "profile_2_007", "vertices": 77, "width_mm": 0.5442300272651299}
+{"event": "piece", "mesh": "gripper_flange", "index": 100, "label": "profile_2_008", "vertices": 90, "width_mm": 1.4223877527815392}
+{"event": "piece", "mesh": "gripper_flange", "index": 101, "label": "profile_2_009", "vertices": 64, "width_mm": 0.5980390826165081}
+{"event": "piece", "mesh": "gripper_flange", "index": 102, "label": "profile_2_010", "vertices": 34, "width_mm": 0.7970170211812214}
+{"event": "piece", "mesh": "gripper_flange", "index": 103, "label": "profile_2_011", "vertices": 601, "width_mm": 7.999904846735319}
+{"event": "piece", "mesh": "gripper_flange", "index": 104, "label": "profile_2_012", "vertices": 96, "width_mm": 5.299941774649673}
+{"event": "piece", "mesh": "gripper_flange", "index": 105, "label": "profile_2_013", "vertices": 46, "width_mm": 0.35748855325333073}
+{"event": "piece", "mesh": "gripper_flange", "index": 106, "label": "profile_2_014", "vertices": 145, "width_mm": 5.299943413235027}
+{"event": "piece", "mesh": "gripper_flange", "index": 107, "label": "profile_2_015", "vertices": 32, "width_mm": 0.5420649026899949}
+{"event": "piece", "mesh": "gripper_flange", "index": 108, "label": "profile_2_016", "vertices": 104, "width_mm": 3.128570634934949}
+{"event": "piece", "mesh": "gripper_flange", "index": 109, "label": "profile_2_017", "vertices": 33, "width_mm": 0.6717469046428128}
+{"event": "piece", "mesh": "gripper_flange", "index": 110, "label": "profile_2_018", "vertices": 103, "width_mm": 2.9649542366997315}
+{"event": "piece", "mesh": "gripper_flange", "index": 111, "label": "profile_2_019", "vertices": 61, "width_mm": 0.3335466947629825}
+{"event": "piece", "mesh": "gripper_flange", "index": 112, "label": "profile_2_020", "vertices": 103, "width_mm": 2.0774974274175655}
+{"event": "piece", "mesh": "gripper_flange", "index": 113, "label": "profile_2_021", "vertices": 96, "width_mm": 1.3394238677069625}
+{"event": "piece", "mesh": "gripper_flange", "index": 114, "label": "profile_2_022", "vertices": 66, "width_mm": 0.5497626641628849}
+{"event": "piece", "mesh": "gripper_flange", "index": 115, "label": "profile_2_023", "vertices": 71, "width_mm": 0.5192898295711462}
+{"event": "piece", "mesh": "gripper_flange", "index": 116, "label": "profile_2_024", "vertices": 104, "width_mm": 2.119575836240863}
+{"event": "piece", "mesh": "gripper_flange", "index": 117, "label": "profile_2_025", "vertices": 61, "width_mm": 0.3835254154175694}
+{"event": "piece", "mesh": "gripper_flange", "index": 118, "label": "profile_2_026", "vertices": 56, "width_mm": 0.507278627465315}
+{"event": "piece", "mesh": "gripper_flange", "index": 119, "label": "profile_2_027", "vertices": 86, "width_mm": 1.3995092934142885}
+{"event": "piece", "mesh": "gripper_flange", "index": 120, "label": "profile_2_028", "vertices": 89, "width_mm": 3.7638660407339373}
+{"event": "piece", "mesh": "link5", "index": 108, "label": "case_z0_sector00", "vertices": 90, "width_mm": 15.70469373600495}
+{"event": "piece", "mesh": "link5", "index": 109, "label": "case_z0_sector01", "vertices": 145, "width_mm": 16.073739183759816}
+{"event": "piece", "mesh": "link5", "index": 110, "label": "case_z0_sector02", "vertices": 82, "width_mm": 7.754747076419887}
+{"event": "piece", "mesh": "link5", "index": 111, "label": "case_z0_sector03", "vertices": 79, "width_mm": 7.754750244963325}
+{"event": "piece", "mesh": "link5", "index": 112, "label": "case_z0_sector04", "vertices": 140, "width_mm": 16.072548010275604}
+{"event": "piece", "mesh": "link5", "index": 113, "label": "case_z0_sector05", "vertices": 91, "width_mm": 15.704693639476117}
+{"event": "piece", "mesh": "link5", "index": 114, "label": "case_z0_sector06", "vertices": 69, "width_mm": 15.70400340709982}
+{"event": "piece", "mesh": "link5", "index": 115, "label": "case_z0_sector07", "vertices": 103, "width_mm": 16.09392999574641}
+{"event": "piece", "mesh": "link5", "index": 116, "label": "case_z0_sector08", "vertices": 70, "width_mm": 7.847399057800051}
+{"event": "piece", "mesh": "link5", "index": 117, "label": "case_z0_sector09", "vertices": 59, "width_mm": 9.027561128254074}
+{"event": "piece", "mesh": "link5", "index": 118, "label": "case_z0_sector10", "vertices": 94, "width_mm": 16.09393139828251}
+{"event": "piece", "mesh": "link5", "index": 119, "label": "case_z0_sector11", "vertices": 78, "width_mm": 15.704302534072033}
+{"event": "piece", "mesh": "link5", "index": 120, "label": "case_z1_sector00", "vertices": 25, "width_mm": 14.435766935482775}
+{"event": "piece", "mesh": "link5", "index": 121, "label": "case_z1_sector01", "vertices": 51, "width_mm": 12.591888847139156}
+{"event": "piece", "mesh": "link5", "index": 122, "label": "case_z1_sector02", "vertices": 40, "width_mm": 6.116874068544956}
+{"event": "piece", "mesh": "link5", "index": 123, "label": "case_z1_sector03", "vertices": 33, "width_mm": 6.116883928618935}
+{"event": "piece", "mesh": "link5", "index": 124, "label": "case_z1_sector04", "vertices": 50, "width_mm": 12.591853796103395}
+{"event": "piece", "mesh": "link5", "index": 125, "label": "case_z1_sector05", "vertices": 28, "width_mm": 14.43535543495608}
+{"event": "piece", "mesh": "link5", "index": 126, "label": "case_z1_sector06", "vertices": 47, "width_mm": 14.423327135362296}
+{"event": "piece", "mesh": "link5", "index": 127, "label": "case_z1_sector07", "vertices": 74, "width_mm": 12.018051989648196}
+{"event": "piece", "mesh": "link5", "index": 128, "label": "case_z1_sector08", "vertices": 55, "width_mm": 6.007851774917153}
+{"event": "piece", "mesh": "link5", "index": 129, "label": "case_z1_sector09", "vertices": 52, "width_mm": 5.707600209864279}
+{"event": "piece", "mesh": "link5", "index": 130, "label": "case_z1_sector10", "vertices": 70, "width_mm": 11.831236301894767}
+{"event": "piece", "mesh": "link5", "index": 131, "label": "case_z1_sector11", "vertices": 53, "width_mm": 14.423259321765329}
+{"event": "piece", "mesh": "link5", "index": 132, "label": "case_z2_sector00", "vertices": 111, "width_mm": 14.189736441693315}
+{"event": "piece", "mesh": "link5", "index": 133, "label": "case_z2_sector01", "vertices": 105, "width_mm": 12.735781338434927}
+{"event": "piece", "mesh": "link5", "index": 134, "label": "case_z2_sector02", "vertices": 89, "width_mm": 6.059954838404134}
+{"event": "piece", "mesh": "link5", "index": 135, "label": "case_z2_sector03", "vertices": 87, "width_mm": 6.041124206401557}
+{"event": "piece", "mesh": "link5", "index": 136, "label": "case_z2_sector04", "vertices": 105, "width_mm": 12.73574259315401}
+{"event": "piece", "mesh": "link5", "index": 137, "label": "case_z2_sector05", "vertices": 110, "width_mm": 14.189739948648917}
+{"event": "piece", "mesh": "link5", "index": 138, "label": "case_z2_sector06", "vertices": 107, "width_mm": 14.189739948573544}
+{"event": "piece", "mesh": "link5", "index": 139, "label": "case_z2_sector07", "vertices": 95, "width_mm": 12.119246649927872}
+{"event": "piece", "mesh": "link5", "index": 140, "label": "case_z2_sector08", "vertices": 64, "width_mm": 5.531693503821409}
+{"event": "piece", "mesh": "link5", "index": 141, "label": "case_z2_sector09", "vertices": 61, "width_mm": 4.796640763179451}
+{"event": "piece", "mesh": "link5", "index": 142, "label": "case_z2_sector10", "vertices": 97, "width_mm": 11.875995852160598}
+{"event": "piece", "mesh": "link5", "index": 143, "label": "case_z2_sector11", "vertices": 114, "width_mm": 14.189736441746962}
+{"event": "piece", "mesh": "link5", "index": 144, "label": "rear_solid_2", "vertices": 296, "width_mm": 33.999970000000005}
+{"event": "piece", "mesh": "link5", "index": 145, "label": "rear_solid_3", "vertices": 229, "width_mm": 26.99994}
+{"event": "piece", "mesh": "link5", "index": 146, "label": "rear_solid_5", "vertices": 257, "width_mm": 21.499999999999993}
+{"event": "piece", "mesh": "gripper_flange", "index": 121, "label": "retained_flange_floor", "vertices": 20, "width_mm": 1.9999788643073013}
+{"event": "piece", "mesh": "gripper_flange", "index": 122, "label": "retained_root_arc_0", "vertices": 53, "width_mm": 1.2865158318957035}
+{"event": "piece", "mesh": "gripper_flange", "index": 123, "label": "retained_root_arc_1", "vertices": 47, "width_mm": 2.143126022736048}
+{"event": "piece", "mesh": "gripper_flange", "index": 124, "label": "retained_root_arc_2", "vertices": 43, "width_mm": 1.9148461586551684}
+{"event": "piece", "mesh": "gripper_flange", "index": 125, "label": "retained_root_arc_3", "vertices": 43, "width_mm": 0.3693755920768809}
+{"event": "piece", "mesh": "gripper_flange", "index": 126, "label": "retained_root_flat", "vertices": 43, "width_mm": 0.6419131641548868}
+{"event": "piece", "mesh": "gripper_flange", "index": 127, "label": "retained_wall_hole_00", "vertices": 15, "width_mm": 1.5000000007903873}
+{"event": "piece", "mesh": "gripper_flange", "index": 128, "label": "retained_wall_hole_01", "vertices": 36, "width_mm": 1.732050808370869}
+{"event": "piece", "mesh": "gripper_flange", "index": 129, "label": "retained_wall_hole_02", "vertices": 29, "width_mm": 1.550472779147683}
+{"event": "piece", "mesh": "gripper_flange", "index": 130, "label": "retained_wall_hole_03", "vertices": 25, "width_mm": 1.545327731079067}
+{"event": "piece", "mesh": "gripper_flange", "index": 131, "label": "retained_wall_hole_04", "vertices": 33, "width_mm": 1.7320508084052584}
+{"event": "piece", "mesh": "gripper_flange", "index": 132, "label": "retained_wall_hole_05", "vertices": 20, "width_mm": 1.5000000004274416}
+{"event": "piece", "mesh": "gripper_flange", "index": 133, "label": "retained_wall_hole_06", "vertices": 17, "width_mm": 1.5000000007160996}
+{"event": "piece", "mesh": "gripper_flange", "index": 134, "label": "retained_wall_hole_07", "vertices": 25, "width_mm": 1.7320508076815777}
+{"event": "piece", "mesh": "gripper_flange", "index": 135, "label": "retained_wall_hole_08", "vertices": 34, "width_mm": 2.0802395500883164}
+{"event": "piece", "mesh": "gripper_flange", "index": 136, "label": "retained_wall_hole_09", "vertices": 34, "width_mm": 2.072603746234969}
+{"event": "piece", "mesh": "gripper_flange", "index": 137, "label": "retained_wall_hole_10", "vertices": 30, "width_mm": 1.7320508082168464}
+{"event": "piece", "mesh": "gripper_flange", "index": 138, "label": "retained_wall_hole_11", "vertices": 16, "width_mm": 1.5000000006269225}
+{"event": "piece", "mesh": "gripper_flange", "index": 139, "label": "retained_wall_side_low", "vertices": 46, "width_mm": 2.036915013861867}
+{"event": "piece", "mesh": "gripper_flange", "index": 140, "label": "floor_remainder_0", "vertices": 97, "width_mm": 2.000147381}
+{"event": "piece", "mesh": "gripper_flange", "index": 141, "label": "floor_remainder_1", "vertices": 27, "width_mm": 2.0000262770590074}
+{"event": "piece", "mesh": "gripper_flange", "index": 142, "label": "floor_remainder_3", "vertices": 107, "width_mm": 2.0001400830000002}
+{"event": "piece", "mesh": "gripper_flange", "index": 143, "label": "floor_remainder_4", "vertices": 29, "width_mm": 2.0001454290000003}
+{"event": "piece", "mesh": "gripper_flange", "index": 144, "label": "ring_sector_00", "vertices": 76, "width_mm": 5.467279412572978}
+{"event": "piece", "mesh": "gripper_flange", "index": 145, "label": "ring_sector_01", "vertices": 47, "width_mm": 4.521484735935291}
+{"event": "piece", "mesh": "gripper_flange", "index": 146, "label": "ring_sector_02", "vertices": 77, "width_mm": 6.027845276067471}
+{"event": "piece", "mesh": "gripper_flange", "index": 147, "label": "ring_sector_03", "vertices": 97, "width_mm": 2.3834949488640325}
+{"event": "piece", "mesh": "gripper_flange", "index": 148, "label": "ring_sector_04", "vertices": 30, "width_mm": 2.3768447556486683}
+{"event": "piece", "mesh": "gripper_flange", "index": 149, "label": "ring_sector_05", "vertices": 29, "width_mm": 2.371603618556744}
+{"event": "piece", "mesh": "gripper_flange", "index": 150, "label": "ring_sector_06", "vertices": 61, "width_mm": 2.3659356625603047}
+{"event": "piece", "mesh": "gripper_flange", "index": 151, "label": "ring_sector_07", "vertices": 90, "width_mm": 2.375768464018293}
+{"event": "piece", "mesh": "gripper_flange", "index": 152, "label": "ring_sector_08", "vertices": 81, "width_mm": 6.063103599161134}
+{"event": "piece", "mesh": "gripper_flange", "index": 153, "label": "ring_sector_09", "vertices": 40, "width_mm": 3.941029947856889}
+{"event": "piece", "mesh": "gripper_flange", "index": 154, "label": "ring_sector_10", "vertices": 75, "width_mm": 6.102797856022278}
+{"event": "piece", "mesh": "gripper_flange", "index": 155, "label": "ring_sector_11", "vertices": 106, "width_mm": 2.3708655234794507}
+{"event": "piece", "mesh": "gripper_flange", "index": 156, "label": "ring_sector_12", "vertices": 33, "width_mm": 3.449961326313946}
+{"event": "piece", "mesh": "gripper_flange", "index": 157, "label": "ring_sector_13", "vertices": 31, "width_mm": 3.9999492480791607}
+{"event": "piece", "mesh": "gripper_flange", "index": 158, "label": "ring_sector_14", "vertices": 30, "width_mm": 3.79954027336489}
+{
+  "piece_counts": {
+    "link5": 147,
+    "gripper_flange": 159
+  },
+  "total_pieces": 306,
+  "vertices": 19490,
+  "faces": 37756,
+  "minimum_face_normal_width_mm": 0.18287436676810467,
+  "minimum_volume_mm3": 1.5993918883951923,
+  "skipped_zero_volume_source_patches": [],
+  "retained_local_blocks": [
+    "flange_floor",
+    "root_arc_0",
+    "root_arc_1",
+    "root_arc_2",
+    "root_arc_3",
+    "root_flat",
+    "wall_hole_00",
+    "wall_hole_01",
+    "wall_hole_02",
+    "wall_hole_03",
+    "wall_hole_04",
+    "wall_hole_05",
+    "wall_hole_06",
+    "wall_hole_07",
+    "wall_hole_08",
+    "wall_hole_09",
+    "wall_hole_10",
+    "wall_hole_11",
+    "wall_side_low"
+  ],
+  "retained_count": 19,
+  "source_vertex_policy": "Every generated 3D vertex lies on an original clipped triangle; frozen local vertices are unchanged. No voxel remesh, no recursive proxy splitting, no random or zero-thickness regularization.",
+  "local_exception": {
+    "name": "root_arc_1",
+    "maximum_sampled_exterior_mm": 0.2998888207524339,
+    "located_points": 303,
+    "review": 6267190197
+  },
+  "physics_steps": 0
+}

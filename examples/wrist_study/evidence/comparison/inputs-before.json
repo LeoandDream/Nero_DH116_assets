@@ -1,0 +1,13 @@
+{
+  "/data_robot/projects/.worktrees/nero_dh116_issue10/examples/wrist_study/compare.py": "ab91f0c5af6014844ada73387b7d8d159ab80b77952cb2a52c3fb153f338ac9f",
+  "/data_robot/projects/.worktrees/nero_dh116_issue10/examples/wrist_study/protocol.json": "f88eeb04bbb97c15cc19e89f74ef7ae08b00d3b50a67ae01d379a074abe32911",
+  "/data_robot/verification/nero_dh116_d1b/runs/d2/reference_001/bounded_grasp-model.xml": "d42c2cdef9354cdfa8b018fc6563dcecd8901a8e96b62f7373beec9ecf31413e",
+  "/data_robot/projects/.worktrees/nero_dh116_four_assets/examples/libero_eval/evidence/functional_v1/raw/model.xml": "ffc4dbdfeed433ab7085c02b759e41d2cfa12813ac16f128cc2a349d971941ba",
+  "/data_robot/projects/.worktrees/nero_dh116_issue10/examples/libero_reference/evidence/d2/bounded_grasp.jsonl.gz": "8e208bce4d035b69b1c81239b365556f408472805cbda07086ef7d3d72f6b6e7",
+  "/data_robot/projects/.worktrees/nero_dh116_four_assets/examples/libero_eval/evidence/functional_v1/raw/state.jsonl.gz": "8049352d6cf2c227b4ad9e7cb45c14c35015068db0bccad6f43b5f56f131400f",
+  "/data_robot/projects/.worktrees/nero_dh116_issue9/docs/wrist15-preflight.json.gz": "eaa8e0d67bac0455b2da00f58c9c85b6607ff81e25f5ed817c1f793048057828",
+  "/data_robot/verification/nero_dh116_d1b/runs/d2/reference_001/full-reset-state.json": "c54b0c18930cf9cf4f3c7a8d6a9a9d94d32fd232d3b905d0b6f5a9e1a5c2062c",
+  "/data_robot/projects/.worktrees/nero_dh116_four_assets/examples/libero_eval/evidence/functional_v1/raw/robot-physical-preflight.json.gz": "0f029be14bee044e25597afb3f96f2813ceb87957681eafce2b3650a1df2913d",
+  "/data_robot/projects/.worktrees/nero_dh116_issue10/mjcf/nero_dh116.xml": "c446124b7d938aa6e00ba5914047001de66c2a2c162e7dea1644437e5a85cb33",
+  "/data_robot/projects/.worktrees/nero_dh116_issue10/mjcf/nero_dh116_right_research.xml": "ea335674996894488f30bae5f29e6271f662f320dbcb44f9b32817dd1b5fc93a"
+}

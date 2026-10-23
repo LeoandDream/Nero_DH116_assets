@@ -1,0 +1,1226 @@
+[
+  {
+    "candidate": "robot0_wrist_fine_link5_000",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_001",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_002",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_003",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_004",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_005",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_006",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_007",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_008",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_009",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_010",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_011",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_012",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_013",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_014",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_015",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_016",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_017",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_018",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_019",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_020",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_021",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_022",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_023",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_024",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_025",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_026",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_027",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_028",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_029",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_030",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_031",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_032",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_033",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_034",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_035",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_036",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_037",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_038",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_039",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_040",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_041",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_042",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_043",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_044",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_045",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_046",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_047",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_048",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_049",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_050",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_051",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_052",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_053",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_054",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_055",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_056",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_057",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_058",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_059",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_060",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_061",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_062",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_063",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_064",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_065",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_066",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_067",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_068",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_069",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_070",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_071",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_072",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_073",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_074",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_075",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_076",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_077",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_078",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_079",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_080",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_081",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_082",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_083",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_084",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_085",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_086",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_087",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_088",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_089",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_090",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_091",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_092",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_093",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_094",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_095",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_096",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_097",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_098",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_099",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_100",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_101",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_102",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_103",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_104",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_105",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_106",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_107",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_000",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_001",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_002",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_003",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_004",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_005",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_006",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_007",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_008",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_009",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_010",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_011",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_012",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_013",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_014",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_015",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_016",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_017",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_018",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_019",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_020",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_021",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_022",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_023",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_024",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_025",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_026",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_027",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_028",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_029",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_030",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_031",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_032",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_033",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_034",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_035",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_036",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_037",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_038",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_039",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_040",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_041",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_042",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_043",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_044",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_045",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_046",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_047",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_048",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_049",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_050",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_051",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_052",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_053",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_054",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_055",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_056",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_057",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_058",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_059",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_060",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_061",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_062",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_063",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_064",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_065",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_066",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_067",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_068",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_069",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_070",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_071",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_072",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_073",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_074",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_075",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_076",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_077",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_078",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_079",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_080",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_081",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_082",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_083",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_084",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_085",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_086",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_087",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_088",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_089",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_090",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_091",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_092",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_093",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_094",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_095",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_096",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_097",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_098",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_099",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_100",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_101",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_102",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_103",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_104",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_105",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_106",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_107",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_108",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_109",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_110",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_111",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_112",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_113",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_114",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_115",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_116",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_117",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_118",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_119",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_120",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_108",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_109",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_110",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_111",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_112",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_113",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_114",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_115",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_116",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_117",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_118",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_119",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_120",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_121",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_122",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_123",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_124",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_125",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_126",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_127",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_128",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_129",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_130",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_131",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_132",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_133",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_134",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_135",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_136",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_137",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_138",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_139",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_140",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_141",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_142",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_143",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_144",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_145",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_link5_146",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_121",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_122",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_123",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_124",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_125",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_126",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_127",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_128",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_129",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_130",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_131",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_132",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_133",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_134",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_135",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_136",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_137",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_138",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_139",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_140",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_141",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_142",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_143",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_144",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_145",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_146",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_147",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_148",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_149",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_150",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_151",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_152",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_153",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_154",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_155",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_156",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_157",
+    "compiled_geometry_exact_to_diagnostic306": true
+  },
+  {
+    "candidate": "robot0_wrist_fine_gripper_flange_158",
+    "compiled_geometry_exact_to_diagnostic306": true
+  }
+]

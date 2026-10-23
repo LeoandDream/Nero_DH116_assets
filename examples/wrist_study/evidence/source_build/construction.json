@@ -1,0 +1,7583 @@
+{
+  "parts": [
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 0,
+      "label": "profile_0_000",
+      "construction": "source_clipped_hull",
+      "vertices": 39,
+      "faces": 74,
+      "volume_mm3": 28.781913815450846,
+      "minimum_face_normal_width_mm": 0.7851402023095477,
+      "bounds_feature_mm": [
+        [
+          -12.99995,
+          -15.79999,
+          -107.009
+        ],
+        [
+          -8.461073183,
+          -7.79998,
+          -103.077521883
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 1,
+      "label": "profile_0_001",
+      "construction": "source_clipped_hull",
+      "vertices": 63,
+      "faces": 122,
+      "volume_mm3": 2997.063423719154,
+      "minimum_face_normal_width_mm": 7.04940044,
+      "bounds_feature_mm": [
+        [
+          -12.99995,
+          -17.611829119,
+          -106.471054972
+        ],
+        [
+          -5.95054956,
+          -5.79995,
+          -41.6318767
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 2,
+      "label": "profile_0_002",
+      "construction": "source_clipped_hull",
+      "vertices": 32,
+      "faces": 60,
+      "volume_mm3": 33.466130018383545,
+      "minimum_face_normal_width_mm": 0.4106924095929644,
+      "bounds_feature_mm": [
+        [
+          -12.99995,
+          -17.678277369,
+          -57.812399971000005
+        ],
+        [
+          -8.413539,
+          -5.79995,
+          -41.597464888
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 3,
+      "label": "profile_0_003",
+      "construction": "source_clipped_hull",
+      "vertices": 37,
+      "faces": 70,
+      "volume_mm3": 57.32234540795174,
+      "minimum_face_normal_width_mm": 0.7203289093542959,
+      "bounds_feature_mm": [
+        [
+          -12.99995,
+          -17.778928617,
+          -57.100333343
+        ],
+        [
+          -7.830621764,
+          -5.79995,
+          -41.548308725
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 4,
+      "label": "profile_0_004",
+      "construction": "source_clipped_hull",
+      "vertices": 38,
+      "faces": 72,
+      "volume_mm3": 14.451528804496558,
+      "minimum_face_normal_width_mm": 0.7808758912580122,
+      "bounds_feature_mm": [
+        [
+          -12.413802921,
+          -15.79999,
+          -107.009
+        ],
+        [
+          -7.888984389000001,
+          -7.79998,
+          -103.87012663799999
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 5,
+      "label": "profile_0_005",
+      "construction": "source_clipped_hull",
+      "vertices": 37,
+      "faces": 70,
+      "volume_mm3": 64.16036336407953,
+      "minimum_face_normal_width_mm": 0.8142175663525854,
+      "bounds_feature_mm": [
+        [
+          -12.99995,
+          -18.020900764,
+          -56.531540574
+        ],
+        [
+          -7.038368645,
+          -5.79995,
+          -41.506089235000005
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 6,
+      "label": "profile_0_006",
+      "construction": "source_clipped_hull",
+      "vertices": 33,
+      "faces": 62,
+      "volume_mm3": 10.425492953940314,
+      "minimum_face_normal_width_mm": 0.5133147622773115,
+      "bounds_feature_mm": [
+        [
+          -12.364404242,
+          -15.79999,
+          -107.009
+        ],
+        [
+          -7.146572586,
+          -7.79998,
+          -104.44220623800001
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 7,
+      "label": "profile_0_007",
+      "construction": "source_clipped_hull",
+      "vertices": 103,
+      "faces": 202,
+      "volume_mm3": 464.94248976625016,
+      "minimum_face_normal_width_mm": 7.435308487371575,
+      "bounds_feature_mm": [
+        [
+          -12.999020304999998,
+          -25.195554155,
+          -41.239350355
+        ],
+        [
+          -2.42252164,
+          -8.577380744,
+          -33.298446664000004
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 8,
+      "label": "profile_0_008",
+      "construction": "source_clipped_hull",
+      "vertices": 53,
+      "faces": 102,
+      "volume_mm3": 132.69293201301087,
+      "minimum_face_normal_width_mm": 4.516736890207705,
+      "bounds_feature_mm": [
+        [
+          -12.99995,
+          -27.79996,
+          -7.461225214000001
+        ],
+        [
+          -0.641002095,
+          -22.89998,
+          -0.572917613
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 9,
+      "label": "profile_0_009",
+      "construction": "source_clipped_hull",
+      "vertices": 50,
+      "faces": 96,
+      "volume_mm3": 69.44711978769003,
+      "minimum_face_normal_width_mm": 2.508599860988149,
+      "bounds_feature_mm": [
+        [
+          -12.99995,
+          -27.79996,
+          -2.54636487
+        ],
+        [
+          -1.04888227,
+          -22.89998,
+          -0.003701881
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 10,
+      "label": "profile_0_010",
+      "construction": "source_clipped_hull",
+      "vertices": 57,
+      "faces": 110,
+      "volume_mm3": 200.96076421118286,
+      "minimum_face_normal_width_mm": 4.8999799999999984,
+      "bounds_feature_mm": [
+        [
+          -12.999392094000001,
+          -27.79996,
+          -0.008953025
+        ],
+        [
+          -1.030518893,
+          -22.89998,
+          7.631322395
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 11,
+      "label": "profile_0_011",
+      "construction": "source_clipped_hull",
+      "vertices": 51,
+      "faces": 98,
+      "volume_mm3": 174.09527880167175,
+      "minimum_face_normal_width_mm": 4.853826703411962,
+      "bounds_feature_mm": [
+        [
+          -12.596067747000001,
+          -27.79996,
+          -12.992828544
+        ],
+        [
+          -0.078978691,
+          -22.875910039,
+          -1.007209772
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 12,
+      "label": "profile_0_012",
+      "construction": "source_clipped_hull",
+      "vertices": 74,
+      "faces": 144,
+      "volume_mm3": 1204.1297716850697,
+      "minimum_face_normal_width_mm": 11.219275297220584,
+      "bounds_feature_mm": [
+        [
+          -12.99995,
+          -21.926539028999997,
+          -56.531046448
+        ],
+        [
+          -1.0166240329999998,
+          -5.79995,
+          -39.886960679
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 13,
+      "label": "profile_0_013",
+      "construction": "source_clipped_hull",
+      "vertices": 27,
+      "faces": 50,
+      "volume_mm3": 50.787778541439486,
+      "minimum_face_normal_width_mm": 0.7386751700977235,
+      "bounds_feature_mm": [
+        [
+          -8.343705691,
+          -15.79999,
+          -102.030507757
+        ],
+        [
+          -5.554834841,
+          -7.79998,
+          -90.25745721099999
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 14,
+      "label": "profile_0_014",
+      "construction": "source_clipped_hull",
+      "vertices": 26,
+      "faces": 48,
+      "volume_mm3": 52.763197236513115,
+      "minimum_face_normal_width_mm": 0.7682987858095535,
+      "bounds_feature_mm": [
+        [
+          -8.33948657,
+          -15.79999,
+          -69.771673575
+        ],
+        [
+          -5.5574681550000005,
+          -5.79995,
+          -58.99170343
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 15,
+      "label": "profile_0_015",
+      "construction": "source_clipped_hull",
+      "vertices": 26,
+      "faces": 48,
+      "volume_mm3": 74.3850438262997,
+      "minimum_face_normal_width_mm": 1.386355224613488,
+      "bounds_feature_mm": [
+        [
+          -7.770857887,
+          -15.79999,
+          -101.51559309299999
+        ],
+        [
+          -4.4937389780000006,
+          -7.79998,
+          -92.018956368
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 16,
+      "label": "profile_0_016",
+      "construction": "source_clipped_hull",
+      "vertices": 28,
+      "faces": 52,
+      "volume_mm3": 75.28636132002052,
+      "minimum_face_normal_width_mm": 1.417183892875977,
+      "bounds_feature_mm": [
+        [
+          -7.7676213469999995,
+          -15.79999,
+          -68.002948197
+        ],
+        [
+          -4.4974693839999995,
+          -5.79995,
+          -59.503275249000005
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 17,
+      "label": "profile_0_017",
+      "construction": "source_clipped_hull",
+      "vertices": 50,
+      "faces": 96,
+      "volume_mm3": 136.16706133143813,
+      "minimum_face_normal_width_mm": 4.8999799999999984,
+      "bounds_feature_mm": [
+        [
+          -10.5177291,
+          -27.79996,
+          0.599671503
+        ],
+        [
+          -0.6000634460000001,
+          -22.89998,
+          11.249188637
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 18,
+      "label": "profile_0_018",
+      "construction": "source_clipped_hull",
+      "vertices": 66,
+      "faces": 128,
+      "volume_mm3": 133.1430691672492,
+      "minimum_face_normal_width_mm": 2.432828495107238,
+      "bounds_feature_mm": [
+        [
+          -9.508345356,
+          -26.37424336,
+          -37.877806786
+        ],
+        [
+          -1.430206104,
+          -14.265547751,
+          -31.123101761
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 19,
+      "label": "profile_0_019",
+      "construction": "source_clipped_hull",
+      "vertices": 25,
+      "faces": 46,
+      "volume_mm3": 81.54396246121601,
+      "minimum_face_normal_width_mm": 1.8223203303539965,
+      "bounds_feature_mm": [
+        [
+          -6.9689098959999995,
+          -15.79999,
+          -101.53445205099999
+        ],
+        [
+          -2.917264736,
+          -7.79998,
+          -93.572444101
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 20,
+      "label": "profile_0_020",
+      "construction": "source_clipped_hull",
+      "vertices": 26,
+      "faces": 48,
+      "volume_mm3": 80.78753645279731,
+      "minimum_face_normal_width_mm": 1.8405041760816248,
+      "bounds_feature_mm": [
+        [
+          -6.964828492,
+          -15.79999,
+          -66.448067095
+        ],
+        [
+          -2.9225750130000003,
+          -5.79995,
+          -59.481856985
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 21,
+      "label": "profile_0_021",
+      "construction": "source_clipped_hull",
+      "vertices": 60,
+      "faces": 116,
+      "volume_mm3": 61.91127372749156,
+      "minimum_face_normal_width_mm": 1.4251430669669045,
+      "bounds_feature_mm": [
+        [
+          -9.518402000999998,
+          -25.407535891000002,
+          -39.30009095
+        ],
+        [
+          -2.3189524880000003,
+          -10.909257039,
+          -33.284876827
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 22,
+      "label": "profile_0_022",
+      "construction": "source_clipped_hull",
+      "vertices": 87,
+      "faces": 170,
+      "volume_mm3": 56.31246701765084,
+      "minimum_face_normal_width_mm": 1.412689892060094,
+      "bounds_feature_mm": [
+        [
+          -7.403034872999999,
+          -27.689615874,
+          -35.756380326
+        ],
+        [
+          0.12264055299999999,
+          -18.756615266,
+          -26.546030821
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 23,
+      "label": "profile_0_023",
+      "construction": "source_clipped_hull",
+      "vertices": 74,
+      "faces": 144,
+      "volume_mm3": 148.4764393003061,
+      "minimum_face_normal_width_mm": 2.54414808030097,
+      "bounds_feature_mm": [
+        [
+          -8.309363697,
+          -27.333435455,
+          -36.739330106000004
+        ],
+        [
+          0.106940929,
+          -16.631598495,
+          -28.456022255
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 24,
+      "label": "profile_0_024",
+      "construction": "source_clipped_hull",
+      "vertices": 26,
+      "faces": 48,
+      "volume_mm3": 80.14503856655416,
+      "minimum_face_normal_width_mm": 1.7262766212360336,
+      "bounds_feature_mm": [
+        [
+          -6.152401385,
+          -15.79999,
+          -65.395687584
+        ],
+        [
+          -1.056581707,
+          -5.79995,
+          -58.889515809
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 25,
+      "label": "profile_0_025",
+      "construction": "source_clipped_hull",
+      "vertices": 23,
+      "faces": 42,
+      "volume_mm3": 81.23038189566309,
+      "minimum_face_normal_width_mm": 1.778442945594101,
+      "bounds_feature_mm": [
+        [
+          -6.158711209000001,
+          -15.79999,
+          -102.123351732
+        ],
+        [
+          -1.048452157,
+          -7.79998,
+          -94.62582100399999
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 26,
+      "label": "profile_0_026",
+      "construction": "source_clipped_hull",
+      "vertices": 64,
+      "faces": 124,
+      "volume_mm3": 200.9020313760593,
+      "minimum_face_normal_width_mm": 4.8999799999999984,
+      "bounds_feature_mm": [
+        [
+          -6.5001063850000005,
+          -27.79996,
+          1.030146551
+        ],
+        [
+          1.3579845,
+          -22.89998,
+          12.919720000000002
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 27,
+      "label": "profile_0_027",
+      "construction": "source_clipped_hull",
+      "vertices": 20,
+      "faces": 36,
+      "volume_mm3": 71.98301602211504,
+      "minimum_face_normal_width_mm": 0.804384013598787,
+      "bounds_feature_mm": [
+        [
+          -5.514960967,
+          -15.79999,
+          -58.0015069
+        ],
+        [
+          6.050743917999999,
+          -5.79995,
+          -56.635944054
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 28,
+      "label": "profile_0_028",
+      "construction": "source_clipped_hull",
+      "vertices": 34,
+      "faces": 64,
+      "volume_mm3": 485.62127069609613,
+      "minimum_face_normal_width_mm": 7.456574728899365,
+      "bounds_feature_mm": [
+        [
+          -5.5582563,
+          -15.79999,
+          -65.020244124
+        ],
+        [
+          5.511487943,
+          -5.79995,
+          -57.219615144
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 29,
+      "label": "profile_0_029",
+      "construction": "source_clipped_hull",
+      "vertices": 26,
+      "faces": 48,
+      "volume_mm3": 77.7038778885208,
+      "minimum_face_normal_width_mm": 0.7971905979999999,
+      "bounds_feature_mm": [
+        [
+          -5.5135801870000005,
+          -15.79999,
+          -103.806190598
+        ],
+        [
+          5.5135801870000005,
+          -5.79995,
+          -103.009
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 30,
+      "label": "profile_0_030",
+      "construction": "source_clipped_hull",
+      "vertices": 18,
+      "faces": 32,
+      "volume_mm3": 54.75402158984976,
+      "minimum_face_normal_width_mm": 0.5833690200000019,
+      "bounds_feature_mm": [
+        [
+          -6.058306673,
+          -15.79999,
+          -104.389559618
+        ],
+        [
+          6.058306673,
+          -6.297160486,
+          -103.806190598
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 31,
+      "label": "profile_0_031",
+      "construction": "source_clipped_hull",
+      "vertices": 35,
+      "faces": 66,
+      "volume_mm3": 525.9398916667382,
+      "minimum_face_normal_width_mm": 8.009676899999999,
+      "bounds_feature_mm": [
+        [
+          -5.563379414,
+          -15.79999,
+          -103.009
+        ],
+        [
+          5.563379414,
+          -5.79995,
+          -94.9993231
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 32,
+      "label": "profile_0_032",
+      "construction": "source_clipped_hull",
+      "vertices": 37,
+      "faces": 70,
+      "volume_mm3": 383.809484626483,
+      "minimum_face_normal_width_mm": 2.619440382000002,
+      "bounds_feature_mm": [
+        [
+          -12.31681184,
+          -15.79999,
+          -107.009
+        ],
+        [
+          12.31681184,
+          -7.79998,
+          -104.389559618
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 33,
+      "label": "profile_0_033",
+      "construction": "source_clipped_hull",
+      "vertices": 57,
+      "faces": 110,
+      "volume_mm3": 1233.8061849731919,
+      "minimum_face_normal_width_mm": 10.135168649838041,
+      "bounds_feature_mm": [
+        [
+          -6.171162439000001,
+          -17.119294201000002,
+          -57.206653863999996
+        ],
+        [
+          6.966735792000001,
+          -5.79995,
+          -40.667888066
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 34,
+      "label": "profile_0_034",
+      "construction": "source_clipped_hull",
+      "vertices": 48,
+      "faces": 92,
+      "volume_mm3": 126.38714250792238,
+      "minimum_face_normal_width_mm": 1.7778436460028773,
+      "bounds_feature_mm": [
+        [
+          -7.722073774,
+          -27.79996,
+          -21.83983391
+        ],
+        [
+          8.071192828,
+          -22.260378316,
+          -19.472451016
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 35,
+      "label": "profile_0_035",
+      "construction": "source_clipped_hull",
+      "vertices": 54,
+      "faces": 104,
+      "volume_mm3": 238.8221546174517,
+      "minimum_face_normal_width_mm": 3.4704118839023086,
+      "bounds_feature_mm": [
+        [
+          -7.351628366,
+          -27.79996,
+          -24.779418053
+        ],
+        [
+          7.477825521,
+          -21.702287874000003,
+          -21.288927533000003
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 36,
+      "label": "profile_0_036",
+      "construction": "source_clipped_hull",
+      "vertices": 150,
+      "faces": 296,
+      "volume_mm3": 717.6349399829849,
+      "minimum_face_normal_width_mm": 7.304742098373638,
+      "bounds_feature_mm": [
+        [
+          -7.106811254999999,
+          -27.79996,
+          -35.751029985
+        ],
+        [
+          7.49576,
+          -19.239105970999997,
+          -24.402528351999997
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 37,
+      "label": "profile_0_037",
+      "construction": "source_clipped_hull",
+      "vertices": 100,
+      "faces": 196,
+      "volume_mm3": 1494.9387068555834,
+      "minimum_face_normal_width_mm": 5.351220236510377,
+      "bounds_feature_mm": [
+        [
+          -11.124601619,
+          -27.79996,
+          -20.416290534
+        ],
+        [
+          12.748575292,
+          -22.429773435,
+          -1.001323253
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 38,
+      "label": "profile_0_038",
+      "construction": "source_clipped_hull",
+      "vertices": 59,
+      "faces": 114,
+      "volume_mm3": 136.50219252384147,
+      "minimum_face_normal_width_mm": 4.8999799999999984,
+      "bounds_feature_mm": [
+        [
+          0.011752608,
+          -27.79996,
+          1.030146551
+        ],
+        [
+          6.5001063850000005,
+          -22.89998,
+          12.919720000000002
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 39,
+      "label": "profile_0_039",
+      "construction": "source_clipped_hull",
+      "vertices": 31,
+      "faces": 58,
+      "volume_mm3": 78.20322469996667,
+      "minimum_face_normal_width_mm": 1.780104787568515,
+      "bounds_feature_mm": [
+        [
+          1.047492831,
+          -15.79999,
+          -65.389471588
+        ],
+        [
+          5.57733873,
+          -5.79995,
+          -58.127711083
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 40,
+      "label": "profile_0_040",
+      "construction": "source_clipped_hull",
+      "vertices": 24,
+      "faces": 44,
+      "volume_mm3": 81.23038190650934,
+      "minimum_face_normal_width_mm": 1.778442945599,
+      "bounds_feature_mm": [
+        [
+          1.048452157,
+          -15.79999,
+          -102.123351732
+        ],
+        [
+          6.158711209000001,
+          -7.79998,
+          -94.62582100399999
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 41,
+      "label": "profile_0_041",
+      "construction": "source_clipped_hull",
+      "vertices": 25,
+      "faces": 46,
+      "volume_mm3": 23.178746022877714,
+      "minimum_face_normal_width_mm": 0.7498443225878622,
+      "bounds_feature_mm": [
+        [
+          2.912925219,
+          -15.79999,
+          -65.395687584
+        ],
+        [
+          6.152401385,
+          -5.79995,
+          -58.908597932999996
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 42,
+      "label": "profile_0_042",
+      "construction": "source_clipped_hull",
+      "vertices": 26,
+      "faces": 48,
+      "volume_mm3": 80.78753645676801,
+      "minimum_face_normal_width_mm": 1.8405041760816248,
+      "bounds_feature_mm": [
+        [
+          2.9225750130000003,
+          -15.79999,
+          -66.448067095
+        ],
+        [
+          6.964828492,
+          -5.79995,
+          -59.481856985
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 43,
+      "label": "profile_0_043",
+      "construction": "source_clipped_hull",
+      "vertices": 23,
+      "faces": 42,
+      "volume_mm3": 81.54396246704005,
+      "minimum_face_normal_width_mm": 1.8223203303677806,
+      "bounds_feature_mm": [
+        [
+          2.917264736,
+          -15.79999,
+          -101.53445205099999
+        ],
+        [
+          6.9689098959999995,
+          -7.79998,
+          -93.572444101
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 44,
+      "label": "profile_0_044",
+      "construction": "source_clipped_hull",
+      "vertices": 48,
+      "faces": 92,
+      "volume_mm3": 136.16706473060913,
+      "minimum_face_normal_width_mm": 4.8999799999999984,
+      "bounds_feature_mm": [
+        [
+          0.6000634460000001,
+          -27.79996,
+          0.599671503
+        ],
+        [
+          10.5177291,
+          -22.89998,
+          11.249188637
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 45,
+      "label": "profile_0_045",
+      "construction": "source_clipped_hull",
+      "vertices": 25,
+      "faces": 46,
+      "volume_mm3": 75.28636131109043,
+      "minimum_face_normal_width_mm": 1.4171838928569331,
+      "bounds_feature_mm": [
+        [
+          4.4974693839999995,
+          -15.79999,
+          -68.002948197
+        ],
+        [
+          7.7676213469999995,
+          -5.79995,
+          -59.503275249000005
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 46,
+      "label": "profile_0_046",
+      "construction": "source_clipped_hull",
+      "vertices": 25,
+      "faces": 46,
+      "volume_mm3": 74.38504382441623,
+      "minimum_face_normal_width_mm": 1.3863552246232165,
+      "bounds_feature_mm": [
+        [
+          4.4937389780000006,
+          -15.79999,
+          -101.51559309299999
+        ],
+        [
+          7.770857887,
+          -7.79998,
+          -92.018956368
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 47,
+      "label": "profile_0_047",
+      "construction": "source_clipped_hull",
+      "vertices": 29,
+      "faces": 54,
+      "volume_mm3": 52.76319723642178,
+      "minimum_face_normal_width_mm": 0.7682987858102369,
+      "bounds_feature_mm": [
+        [
+          5.5574681550000005,
+          -15.79999,
+          -69.771673575
+        ],
+        [
+          8.33948657,
+          -5.79995,
+          -58.99170343
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 48,
+      "label": "profile_0_048",
+      "construction": "source_clipped_hull",
+      "vertices": 27,
+      "faces": 50,
+      "volume_mm3": 50.78777854684055,
+      "minimum_face_normal_width_mm": 0.7386751701084389,
+      "bounds_feature_mm": [
+        [
+          5.554834841,
+          -15.79999,
+          -102.030507757
+        ],
+        [
+          8.343705691,
+          -7.79998,
+          -90.25745721099999
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 49,
+      "label": "profile_0_049",
+      "construction": "source_clipped_hull",
+      "vertices": 46,
+      "faces": 88,
+      "volume_mm3": 774.0504629510971,
+      "minimum_face_normal_width_mm": 9.878379025560095,
+      "bounds_feature_mm": [
+        [
+          1.7879239059999998,
+          -15.79999,
+          -56.531506992999994
+        ],
+        [
+          12.99995,
+          -5.79995,
+          -41.25708
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 50,
+      "label": "profile_0_050",
+      "construction": "source_clipped_hull",
+      "vertices": 60,
+      "faces": 116,
+      "volume_mm3": 200.9608944858455,
+      "minimum_face_normal_width_mm": 4.8999799999999984,
+      "bounds_feature_mm": [
+        [
+          1.030518893,
+          -27.79996,
+          -0.008953025
+        ],
+        [
+          12.999392094000001,
+          -22.89998,
+          7.631322395
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 51,
+      "label": "profile_0_051",
+      "construction": "source_clipped_hull",
+      "vertices": 51,
+      "faces": 98,
+      "volume_mm3": 69.42591261903519,
+      "minimum_face_normal_width_mm": 2.507758528869656,
+      "bounds_feature_mm": [
+        [
+          1.0488841740000001,
+          -27.79996,
+          -2.5454821880000003
+        ],
+        [
+          12.99995,
+          -22.89998,
+          -0.003701881
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 52,
+      "label": "profile_0_052",
+      "construction": "source_clipped_hull",
+      "vertices": 54,
+      "faces": 104,
+      "volume_mm3": 105.44266540042007,
+      "minimum_face_normal_width_mm": 3.6506105408011553,
+      "bounds_feature_mm": [
+        [
+          0.646888882,
+          -27.79996,
+          -6.434250173
+        ],
+        [
+          12.99995,
+          -22.89998,
+          -0.572910507
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 53,
+      "label": "profile_0_053",
+      "construction": "source_clipped_hull",
+      "vertices": 58,
+      "faces": 112,
+      "volume_mm3": 1615.503989425295,
+      "minimum_face_normal_width_mm": 5.614264530891915,
+      "bounds_feature_mm": [
+        [
+          5.95054956,
+          -15.79999,
+          -106.471054972
+        ],
+        [
+          12.99995,
+          -5.79995,
+          -58.301537689
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 54,
+      "label": "profile_0_054",
+      "construction": "source_clipped_hull",
+      "vertices": 31,
+      "faces": 58,
+      "volume_mm3": 10.425492366313325,
+      "minimum_face_normal_width_mm": 0.5133147621640827,
+      "bounds_feature_mm": [
+        [
+          7.146572586,
+          -15.79999,
+          -107.009
+        ],
+        [
+          12.364404242,
+          -7.79998,
+          -104.44220623800001
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 55,
+      "label": "profile_0_055",
+      "construction": "source_clipped_hull",
+      "vertices": 32,
+      "faces": 60,
+      "volume_mm3": 14.451453086747112,
+      "minimum_face_normal_width_mm": 0.7808758911508756,
+      "bounds_feature_mm": [
+        [
+          7.888984389000001,
+          -15.79999,
+          -107.009
+        ],
+        [
+          12.413802921,
+          -7.79998,
+          -103.87012663799999
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 56,
+      "label": "profile_0_056",
+      "construction": "source_clipped_hull",
+      "vertices": 39,
+      "faces": 74,
+      "volume_mm3": 52.547239094376444,
+      "minimum_face_normal_width_mm": 0.7199253993480613,
+      "bounds_feature_mm": [
+        [
+          7.83049643,
+          -15.79999,
+          -57.100232842
+        ],
+        [
+          12.99995,
+          -5.79995,
+          -41.486314174
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 57,
+      "label": "profile_0_057",
+      "construction": "source_clipped_hull",
+      "vertices": 36,
+      "faces": 68,
+      "volume_mm3": 30.833293573797587,
+      "minimum_face_normal_width_mm": 0.41003217336078174,
+      "bounds_feature_mm": [
+        [
+          8.413438508,
+          -15.79999,
+          -57.812029124
+        ],
+        [
+          12.99995,
+          -5.79995,
+          -41.535620583
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 58,
+      "label": "profile_0_058",
+      "construction": "source_clipped_hull",
+      "vertices": 37,
+      "faces": 70,
+      "volume_mm3": 28.77559510152128,
+      "minimum_face_normal_width_mm": 0.7851402024142001,
+      "bounds_feature_mm": [
+        [
+          8.461073183,
+          -15.79999,
+          -107.009
+        ],
+        [
+          12.99995,
+          -7.79998,
+          -103.077521883
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 0,
+      "index": 59,
+      "label": "profile_0_059",
+      "construction": "source_clipped_hull",
+      "vertices": 43,
+      "faces": 82,
+      "volume_mm3": 1094.9853933250045,
+      "minimum_face_normal_width_mm": 4.378390843999999,
+      "bounds_feature_mm": [
+        [
+          8.621559156,
+          -15.79999,
+          -105.452276872
+        ],
+        [
+          12.99995,
+          -5.79995,
+          -41.570097207
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 60,
+      "label": "profile_1_000",
+      "construction": "source_clipped_hull",
+      "vertices": 70,
+      "faces": 136,
+      "volume_mm3": 2100.504788212969,
+      "minimum_face_normal_width_mm": 4.619390382000001,
+      "bounds_feature_mm": [
+        [
+          -12.99995,
+          5.99998,
+          -106.471054972
+        ],
+        [
+          -8.380559618,
+          19.99998,
+          -42.107552982
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 61,
+      "label": "profile_1_001",
+      "construction": "source_clipped_hull",
+      "vertices": 45,
+      "faces": 86,
+      "volume_mm3": 17.000667500383862,
+      "minimum_face_normal_width_mm": 0.7851402025706722,
+      "bounds_feature_mm": [
+        [
+          -12.99995,
+          7.999960000000001,
+          -107.009
+        ],
+        [
+          -8.461073183,
+          12.99995,
+          -103.077521883
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 62,
+      "label": "profile_1_002",
+      "construction": "source_clipped_hull",
+      "vertices": 47,
+      "faces": 90,
+      "volume_mm3": 20.283372117311846,
+      "minimum_face_normal_width_mm": 0.4159220116698691,
+      "bounds_feature_mm": [
+        [
+          -12.99995,
+          5.99998,
+          -57.815302783
+        ],
+        [
+          -8.414333816,
+          12.99995,
+          -42.073640200999996
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 63,
+      "label": "profile_1_003",
+      "construction": "source_clipped_hull",
+      "vertices": 43,
+      "faces": 82,
+      "volume_mm3": 34.34095356166869,
+      "minimum_face_normal_width_mm": 0.7235065293006576,
+      "bounds_feature_mm": [
+        [
+          -12.99995,
+          5.99998,
+          -57.101128236
+        ],
+        [
+          -7.831619324,
+          12.99995,
+          -42.025640865999996
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 64,
+      "label": "profile_1_004",
+      "construction": "source_clipped_hull",
+      "vertices": 43,
+      "faces": 82,
+      "volume_mm3": 8.637838023027035,
+      "minimum_face_normal_width_mm": 0.7808758912430519,
+      "bounds_feature_mm": [
+        [
+          -12.413802921,
+          7.999960000000001,
+          -107.009
+        ],
+        [
+          -7.888984389000001,
+          12.99995,
+          -103.87012663799999
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 65,
+      "label": "profile_1_005",
+      "construction": "source_clipped_hull",
+      "vertices": 47,
+      "faces": 90,
+      "volume_mm3": 38.24188310508331,
+      "minimum_face_normal_width_mm": 0.812882830282139,
+      "bounds_feature_mm": [
+        [
+          -12.99995,
+          5.99998,
+          -56.531807855
+        ],
+        [
+          -7.039513553,
+          12.99995,
+          -41.984644554999996
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 66,
+      "label": "profile_1_006",
+      "construction": "source_clipped_hull",
+      "vertices": 31,
+      "faces": 58,
+      "volume_mm3": 6.224934219416798,
+      "minimum_face_normal_width_mm": 0.5133147624699214,
+      "bounds_feature_mm": [
+        [
+          -12.364404242,
+          7.999960000000001,
+          -107.009
+        ],
+        [
+          -7.146572586,
+          12.99995,
+          -104.44220623800001
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 67,
+      "label": "profile_1_007",
+      "construction": "source_clipped_hull",
+      "vertices": 54,
+      "faces": 104,
+      "volume_mm3": 194.3206544530381,
+      "minimum_face_normal_width_mm": 4.900039999999998,
+      "bounds_feature_mm": [
+        [
+          -12.99995,
+          23.09995,
+          -7.463713437
+        ],
+        [
+          -0.6409883919999999,
+          27.99999,
+          -0.009705932
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 68,
+      "label": "profile_1_008",
+      "construction": "source_clipped_hull",
+      "vertices": 60,
+      "faces": 116,
+      "volume_mm3": 200.4182503916712,
+      "minimum_face_normal_width_mm": 4.900039999999998,
+      "bounds_feature_mm": [
+        [
+          -12.999539629000001,
+          23.09995,
+          -0.00896547
+        ],
+        [
+          -1.030518893,
+          27.99999,
+          7.631322395
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 69,
+      "label": "profile_1_009",
+      "construction": "source_clipped_hull",
+      "vertices": 20,
+      "faces": 36,
+      "volume_mm3": 254.31234041562521,
+      "minimum_face_normal_width_mm": 0.5833690199999993,
+      "bounds_feature_mm": [
+        [
+          -8.380559618,
+          5.99998,
+          -102.067361091
+        ],
+        [
+          -7.797190598,
+          19.99998,
+          -58.950630382
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 70,
+      "label": "profile_1_010",
+      "construction": "source_clipped_hull",
+      "vertices": 56,
+      "faces": 108,
+      "volume_mm3": 173.791785006283,
+      "minimum_face_normal_width_mm": 4.850703315278664,
+      "bounds_feature_mm": [
+        [
+          -12.595656504,
+          23.051139812,
+          -12.993231779
+        ],
+        [
+          -0.07898942,
+          27.99999,
+          -1.007223475
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 71,
+      "label": "profile_1_011",
+      "construction": "source_clipped_hull",
+      "vertices": 25,
+      "faces": 46,
+      "volume_mm3": 340.2087710872147,
+      "minimum_face_normal_width_mm": 0.7971905979999999,
+      "bounds_feature_mm": [
+        [
+          -7.797190598,
+          5.99998,
+          -101.522650093
+        ],
+        [
+          -7.0,
+          19.99998,
+          -59.495350528
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 72,
+      "label": "profile_1_012",
+      "construction": "source_clipped_hull",
+      "vertices": 49,
+      "faces": 94,
+      "volume_mm3": 135.78413619054766,
+      "minimum_face_normal_width_mm": 4.900039999999998,
+      "bounds_feature_mm": [
+        [
+          -10.5177291,
+          23.09995,
+          0.599671503
+        ],
+        [
+          -0.6000634460000001,
+          27.99999,
+          11.249188637
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 73,
+      "label": "profile_1_013",
+      "construction": "source_clipped_hull",
+      "vertices": 54,
+      "faces": 104,
+      "volume_mm3": 9.197128733352871,
+      "minimum_face_normal_width_mm": 0.5352280112736283,
+      "bounds_feature_mm": [
+        [
+          -12.99995,
+          23.09995,
+          -0.5513308069999999
+        ],
+        [
+          -1.054665639,
+          27.99999,
+          -0.005105586
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 74,
+      "label": "profile_1_014",
+      "construction": "source_clipped_hull",
+      "vertices": 71,
+      "faces": 138,
+      "volume_mm3": 180.40371457854133,
+      "minimum_face_normal_width_mm": 2.678579845807532,
+      "bounds_feature_mm": [
+        [
+          -7.875317417000001,
+          14.496948753,
+          -30.042142774000002
+        ],
+        [
+          7.173544169,
+          27.901115706,
+          -27.188399816
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 75,
+      "label": "profile_1_015",
+      "construction": "source_clipped_hull",
+      "vertices": 69,
+      "faces": 134,
+      "volume_mm3": 72.07796058321172,
+      "minimum_face_normal_width_mm": 1.5092884600625516,
+      "bounds_feature_mm": [
+        [
+          -7.082954706,
+          19.034137473999998,
+          -24.977800639999998
+        ],
+        [
+          7.013452003,
+          27.99999,
+          -23.460241476
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 76,
+      "label": "profile_1_016",
+      "construction": "source_clipped_hull",
+      "vertices": 59,
+      "faces": 114,
+      "volume_mm3": 200.32667609578124,
+      "minimum_face_normal_width_mm": 4.900039999999998,
+      "bounds_feature_mm": [
+        [
+          -6.5001063850000005,
+          23.09995,
+          1.030146551
+        ],
+        [
+          1.3579845,
+          27.99999,
+          12.919720000000002
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 77,
+      "label": "profile_1_017",
+      "construction": "source_clipped_hull",
+      "vertices": 70,
+      "faces": 136,
+      "volume_mm3": 129.6621226100884,
+      "minimum_face_normal_width_mm": 1.717250002020554,
+      "bounds_feature_mm": [
+        [
+          -8.190778076,
+          21.088628056,
+          -21.603218773000002
+        ],
+        [
+          7.7395909839999995,
+          27.99999,
+          -19.198879849
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 78,
+      "label": "profile_1_018",
+      "construction": "source_clipped_hull",
+      "vertices": 95,
+      "faces": 186,
+      "volume_mm3": 508.88149504196434,
+      "minimum_face_normal_width_mm": 3.3269853907608655,
+      "bounds_feature_mm": [
+        [
+          -9.189771062,
+          9.436460683,
+          -32.800642169999996
+        ],
+        [
+          8.066263913,
+          27.704003434,
+          -27.282858021
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 79,
+      "label": "profile_1_019",
+      "construction": "source_clipped_hull",
+      "vertices": 184,
+      "faces": 364,
+      "volume_mm3": 5508.416364486862,
+      "minimum_face_normal_width_mm": 15.584180268075471,
+      "bounds_feature_mm": [
+        [
+          -12.99995,
+          5.99998,
+          -56.628440382
+        ],
+        [
+          12.99995,
+          26.32586541,
+          -30.520810007999998
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 80,
+      "label": "profile_1_020",
+      "construction": "source_clipped_hull",
+      "vertices": 18,
+      "faces": 32,
+      "volume_mm3": 51.20412223876358,
+      "minimum_face_normal_width_mm": 0.5833690200000019,
+      "bounds_feature_mm": [
+        [
+          -6.058308145,
+          5.99998,
+          -59.389559618
+        ],
+        [
+          6.058308145,
+          14.999979999999999,
+          -58.806190598
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 81,
+      "label": "profile_1_021",
+      "construction": "source_clipped_hull",
+      "vertices": 18,
+      "faces": 32,
+      "volume_mm3": 51.20384239818921,
+      "minimum_face_normal_width_mm": 0.583369019999995,
+      "bounds_feature_mm": [
+        [
+          -6.0582469869999995,
+          5.99998,
+          -57.211809402
+        ],
+        [
+          6.0582469869999995,
+          14.999979999999999,
+          -56.628440382
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 82,
+      "label": "profile_1_022",
+      "construction": "source_clipped_hull",
+      "vertices": 36,
+      "faces": 68,
+      "volume_mm3": 61.88456159233503,
+      "minimum_face_normal_width_mm": 0.7971905979999999,
+      "bounds_feature_mm": [
+        [
+          -5.5135801870000005,
+          5.99998,
+          -103.806190598
+        ],
+        [
+          5.5135801870000005,
+          14.999979999999999,
+          -103.009
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 83,
+      "label": "profile_1_023",
+      "construction": "source_clipped_hull",
+      "vertices": 24,
+      "faces": 44,
+      "volume_mm3": 42.12055973543409,
+      "minimum_face_normal_width_mm": 0.5833690200000019,
+      "bounds_feature_mm": [
+        [
+          -6.058306673,
+          6.497140767,
+          -104.389559618
+        ],
+        [
+          6.058306673,
+          14.999979999999999,
+          -103.806190598
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 84,
+      "label": "profile_1_024",
+      "construction": "source_clipped_hull",
+      "vertices": 22,
+      "faces": 40,
+      "volume_mm3": 48.64291194545852,
+      "minimum_face_normal_width_mm": 0.5833690200000019,
+      "bounds_feature_mm": [
+        [
+          -6.058306673,
+          5.99998,
+          -102.211809402
+        ],
+        [
+          6.058306673,
+          14.999979999999999,
+          -101.62844038200001
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 85,
+      "label": "profile_1_025",
+      "construction": "source_clipped_hull",
+      "vertices": 22,
+      "faces": 40,
+      "volume_mm3": 65.82563684918433,
+      "minimum_face_normal_width_mm": 0.7971905979999999,
+      "bounds_feature_mm": [
+        [
+          -5.513583366,
+          5.99998,
+          -58.806190598
+        ],
+        [
+          5.513583366,
+          14.999979999999999,
+          -58.009
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 86,
+      "label": "profile_1_026",
+      "construction": "source_clipped_hull",
+      "vertices": 22,
+      "faces": 40,
+      "volume_mm3": 65.82556084151538,
+      "minimum_face_normal_width_mm": 0.7971905979999999,
+      "bounds_feature_mm": [
+        [
+          -5.5135795210000005,
+          5.99998,
+          -58.009
+        ],
+        [
+          5.5135795210000005,
+          14.999979999999999,
+          -57.211809402
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 87,
+      "label": "profile_1_027",
+      "construction": "source_clipped_hull",
+      "vertices": 43,
+      "faces": 82,
+      "volume_mm3": 6914.458666782505,
+      "minimum_face_normal_width_mm": 14.0,
+      "bounds_feature_mm": [
+        [
+          -7.0,
+          5.99998,
+          -101.62844038200001
+        ],
+        [
+          7.0,
+          19.99998,
+          -59.389559618
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 88,
+      "label": "profile_1_028",
+      "construction": "source_clipped_hull",
+      "vertices": 28,
+      "faces": 52,
+      "volume_mm3": 62.86872983255205,
+      "minimum_face_normal_width_mm": 0.7971905979999999,
+      "bounds_feature_mm": [
+        [
+          -5.5135801870000005,
+          5.99998,
+          -103.009
+        ],
+        [
+          5.5135801870000005,
+          14.999979999999999,
+          -102.211809402
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 89,
+      "label": "profile_1_029",
+      "construction": "source_clipped_hull",
+      "vertices": 55,
+      "faces": 106,
+      "volume_mm3": 292.28423798070884,
+      "minimum_face_normal_width_mm": 2.619440382000002,
+      "bounds_feature_mm": [
+        [
+          -12.31681184,
+          7.999960000000001,
+          -107.009
+        ],
+        [
+          12.31681184,
+          14.999979999999999,
+          -104.389559618
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 90,
+      "label": "profile_1_030",
+      "construction": "source_clipped_hull",
+      "vertices": 72,
+      "faces": 140,
+      "volume_mm3": 238.86465560543675,
+      "minimum_face_normal_width_mm": 2.8102129295678733,
+      "bounds_feature_mm": [
+        [
+          -7.565124957,
+          19.604480481,
+          -24.399451782
+        ],
+        [
+          7.401885802,
+          27.99999,
+          -20.966658441
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 91,
+      "label": "profile_1_031",
+      "construction": "source_clipped_hull",
+      "vertices": 74,
+      "faces": 144,
+      "volume_mm3": 272.69480388325564,
+      "minimum_face_normal_width_mm": 2.852596502942034,
+      "bounds_feature_mm": [
+        [
+          -7.163531044,
+          16.637026241,
+          -27.263854368
+        ],
+        [
+          7.171350885000001,
+          27.99999,
+          -24.410385121
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 92,
+      "label": "profile_1_032",
+      "construction": "source_clipped_hull",
+      "vertices": 163,
+      "faces": 322,
+      "volume_mm3": 1596.4388227312581,
+      "minimum_face_normal_width_mm": 6.300064882146426,
+      "bounds_feature_mm": [
+        [
+          -11.126869100999999,
+          21.677602479,
+          -20.367871499
+        ],
+        [
+          12.845234249,
+          27.99999,
+          -0.9960837399999999
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 93,
+      "label": "profile_1_033",
+      "construction": "source_clipped_hull",
+      "vertices": 56,
+      "faces": 108,
+      "volume_mm3": 136.10476766131717,
+      "minimum_face_normal_width_mm": 4.900039999999998,
+      "bounds_feature_mm": [
+        [
+          0.011752608,
+          23.09995,
+          1.03014968
+        ],
+        [
+          6.4996918280000004,
+          27.99999,
+          12.919720000000002
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 94,
+      "label": "profile_1_034",
+      "construction": "source_clipped_hull",
+      "vertices": 52,
+      "faces": 100,
+      "volume_mm3": 9.197157435427869,
+      "minimum_face_normal_width_mm": 0.5352280112736283,
+      "bounds_feature_mm": [
+        [
+          1.054665639,
+          23.09995,
+          -0.5513308069999999
+        ],
+        [
+          12.99995,
+          27.99999,
+          -0.005105586
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 95,
+      "label": "profile_1_035",
+      "construction": "source_clipped_hull",
+      "vertices": 61,
+      "faces": 118,
+      "volume_mm3": 135.78401419937555,
+      "minimum_face_normal_width_mm": 4.900039999999998,
+      "bounds_feature_mm": [
+        [
+          0.600060317,
+          23.09995,
+          0.599674535
+        ],
+        [
+          10.517452688,
+          27.99999,
+          11.249433102
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 96,
+      "label": "profile_1_036",
+      "construction": "source_clipped_hull",
+      "vertices": 23,
+      "faces": 42,
+      "volume_mm3": 340.2087710412996,
+      "minimum_face_normal_width_mm": 0.7971905979999999,
+      "bounds_feature_mm": [
+        [
+          7.0,
+          5.99998,
+          -101.522650093
+        ],
+        [
+          7.797190598,
+          19.99998,
+          -59.495350528
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 97,
+      "label": "profile_1_037",
+      "construction": "source_clipped_hull",
+      "vertices": 18,
+      "faces": 32,
+      "volume_mm3": 254.31234036509747,
+      "minimum_face_normal_width_mm": 0.5833690199999993,
+      "bounds_feature_mm": [
+        [
+          7.797190598,
+          5.99998,
+          -102.067361091
+        ],
+        [
+          8.380559618,
+          19.99998,
+          -58.950630382
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 98,
+      "label": "profile_1_038",
+      "construction": "source_clipped_hull",
+      "vertices": 57,
+      "faces": 110,
+      "volume_mm3": 200.43003853103204,
+      "minimum_face_normal_width_mm": 4.900039999999998,
+      "bounds_feature_mm": [
+        [
+          1.03051586,
+          23.09995,
+          -0.00896547
+        ],
+        [
+          12.999539629000001,
+          27.99999,
+          7.631726609
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 99,
+      "label": "profile_1_039",
+      "construction": "source_clipped_hull",
+      "vertices": 55,
+      "faces": 106,
+      "volume_mm3": 144.83620418047366,
+      "minimum_face_normal_width_mm": 4.900039999999998,
+      "bounds_feature_mm": [
+        [
+          0.6521286340000001,
+          23.09995,
+          -5.587959886
+        ],
+        [
+          12.99995,
+          27.99999,
+          -0.009705932
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 100,
+      "label": "profile_1_040",
+      "construction": "source_clipped_hull",
+      "vertices": 35,
+      "faces": 66,
+      "volume_mm3": 6.22278447385608,
+      "minimum_face_normal_width_mm": 0.5133147622973511,
+      "bounds_feature_mm": [
+        [
+          7.146572586,
+          7.999960000000001,
+          -107.009
+        ],
+        [
+          12.364404242,
+          12.99995,
+          -104.44220623800001
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 101,
+      "label": "profile_1_041",
+      "construction": "source_clipped_hull",
+      "vertices": 48,
+      "faces": 92,
+      "volume_mm3": 39.44944825187979,
+      "minimum_face_normal_width_mm": 0.8142207676009767,
+      "bounds_feature_mm": [
+        [
+          7.038365789,
+          5.99998,
+          -56.531539907
+        ],
+        [
+          12.99995,
+          12.99995,
+          -41.504859536
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 102,
+      "label": "profile_1_042",
+      "construction": "source_clipped_hull",
+      "vertices": 43,
+      "faces": 82,
+      "volume_mm3": 8.635593143643051,
+      "minimum_face_normal_width_mm": 0.7808758913707553,
+      "bounds_feature_mm": [
+        [
+          7.888984389000001,
+          7.999960000000001,
+          -107.009
+        ],
+        [
+          12.413802921,
+          12.99995,
+          -103.87012663799999
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 103,
+      "label": "profile_1_043",
+      "construction": "source_clipped_hull",
+      "vertices": 45,
+      "faces": 86,
+      "volume_mm3": 35.22802500782709,
+      "minimum_face_normal_width_mm": 0.720320906202214,
+      "bounds_feature_mm": [
+        [
+          7.830619275000001,
+          5.99998,
+          -57.100331349
+        ],
+        [
+          12.99995,
+          12.99995,
+          -41.547082169999996
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 104,
+      "label": "profile_1_044",
+      "construction": "source_clipped_hull",
+      "vertices": 47,
+      "faces": 90,
+      "volume_mm3": 20.612960193039143,
+      "minimum_face_normal_width_mm": 0.41067930537681474,
+      "bounds_feature_mm": [
+        [
+          8.413537006,
+          5.99998,
+          -57.81239262
+        ],
+        [
+          12.99995,
+          12.99995,
+          -41.596241305
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 105,
+      "label": "profile_1_045",
+      "construction": "source_clipped_hull",
+      "vertices": 46,
+      "faces": 88,
+      "volume_mm3": 17.000119462158885,
+      "minimum_face_normal_width_mm": 0.7851402022781284,
+      "bounds_feature_mm": [
+        [
+          8.461073183,
+          7.999960000000001,
+          -107.009
+        ],
+        [
+          12.99995,
+          12.99995,
+          -103.077521883
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 106,
+      "label": "profile_1_046",
+      "construction": "source_clipped_hull",
+      "vertices": 68,
+      "faces": 132,
+      "volume_mm3": 2111.9577696480346,
+      "minimum_face_normal_width_mm": 4.619390382000001,
+      "bounds_feature_mm": [
+        [
+          8.380559618,
+          5.99998,
+          -106.471054972
+        ],
+        [
+          12.99995,
+          19.99998,
+          -41.630654399
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 1,
+      "index": 107,
+      "label": "profile_1_047",
+      "construction": "source_clipped_hull",
+      "vertices": 50,
+      "faces": 96,
+      "volume_mm3": 12.031682910851,
+      "minimum_face_normal_width_mm": 0.7237157092353464,
+      "bounds_feature_mm": [
+        [
+          9.795622865999999,
+          8.321726933,
+          -40.967069470999995
+        ],
+        [
+          12.978416839,
+          13.864470170999999,
+          -33.647757245
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 0,
+      "label": "profile_0_000",
+      "construction": "source_clipped_hull",
+      "vertices": 77,
+      "faces": 150,
+      "volume_mm3": 34.72475081847226,
+      "minimum_face_normal_width_mm": 2.4336711427133046,
+      "bounds_feature_mm": [
+        [
+          -16.801441609999998,
+          -27.346794640000002,
+          -28.290243005
+        ],
+        [
+          -10.267273226,
+          -23.346835399,
+          -25.730976065
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 1,
+      "label": "profile_0_001",
+      "construction": "source_clipped_hull",
+      "vertices": 78,
+      "faces": 152,
+      "volume_mm3": 38.22939714208063,
+      "minimum_face_normal_width_mm": 2.7083326594932386,
+      "bounds_feature_mm": [
+        [
+          -16.588657482,
+          -27.346766211,
+          -38.429757082
+        ],
+        [
+          -10.127914702,
+          -23.346809739999998,
+          -35.522280523
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 2,
+      "label": "profile_0_002",
+      "construction": "source_clipped_hull",
+      "vertices": 68,
+      "faces": 132,
+      "volume_mm3": 52.60382554495965,
+      "minimum_face_normal_width_mm": 3.9999497653500984,
+      "bounds_feature_mm": [
+        [
+          -16.087272132000003,
+          -27.34679575,
+          -26.264655832000003
+        ],
+        [
+          -10.074057157,
+          -23.346843257,
+          -21.591262982
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 3,
+      "label": "profile_0_003",
+      "construction": "source_clipped_hull",
+      "vertices": 154,
+      "faces": 304,
+      "volume_mm3": 216.0899958645956,
+      "minimum_face_normal_width_mm": 3.9999545468191107,
+      "bounds_feature_mm": [
+        [
+          -17.117193714000003,
+          -27.346787263,
+          -35.75275999
+        ],
+        [
+          -9.579702293,
+          -23.346812307,
+          -27.360453456000002
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 4,
+      "label": "profile_0_004",
+      "construction": "source_clipped_hull",
+      "vertices": 73,
+      "faces": 142,
+      "volume_mm3": 25.13744524006818,
+      "minimum_face_normal_width_mm": 2.0160085417515736,
+      "bounds_feature_mm": [
+        [
+          -15.658196108999999,
+          -27.346761513,
+          -40.258792368
+        ],
+        [
+          -10.247392842,
+          -23.346797998,
+          -36.854101389
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 5,
+      "label": "profile_0_005",
+      "construction": "source_clipped_hull",
+      "vertices": 50,
+      "faces": 96,
+      "volume_mm3": 5.470200211137596,
+      "minimum_face_normal_width_mm": 0.530176830248915,
+      "bounds_feature_mm": [
+        [
+          -16.091091116999998,
+          -27.346793944,
+          -26.803930467
+        ],
+        [
+          -10.453256767,
+          -23.346836696,
+          -25.72171029
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 6,
+      "label": "profile_0_006",
+      "construction": "source_clipped_hull",
+      "vertices": 73,
+      "faces": 142,
+      "volume_mm3": 30.73480143246958,
+      "minimum_face_normal_width_mm": 2.2894694028152904,
+      "bounds_feature_mm": [
+        [
+          -14.710426929,
+          -27.346755019,
+          -42.167808706
+        ],
+        [
+          -9.140495603000002,
+          -23.34679397,
+          -37.815567081
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 7,
+      "label": "profile_0_007",
+      "construction": "source_clipped_hull",
+      "vertices": 70,
+      "faces": 136,
+      "volume_mm3": 5.023311421941071,
+      "minimum_face_normal_width_mm": 0.4997879600443407,
+      "bounds_feature_mm": [
+        [
+          -15.661973757,
+          -27.34676163,
+          -38.438263090999996
+        ],
+        [
+          -10.448934462999999,
+          -23.346809709000002,
+          -36.318414287
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 8,
+      "label": "profile_0_008",
+      "construction": "source_clipped_hull",
+      "vertices": 59,
+      "faces": 114,
+      "volume_mm3": 5.059195357725679,
+      "minimum_face_normal_width_mm": 0.5252429137807615,
+      "bounds_feature_mm": [
+        [
+          -14.715632171,
+          -27.346754773,
+          -40.267261216
+        ],
+        [
+          -9.904324581000001,
+          -23.346797813,
+          -37.400937432999996
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 9,
+      "label": "profile_0_009",
+      "construction": "source_clipped_hull",
+      "vertices": 59,
+      "faces": 114,
+      "volume_mm3": 5.543791066623991,
+      "minimum_face_normal_width_mm": 0.5256996656831415,
+      "bounds_feature_mm": [
+        [
+          -14.346246204,
+          -27.346798697,
+          -25.448153126
+        ],
+        [
+          -9.663078761,
+          -23.346846001,
+          -21.58211669
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 10,
+      "label": "profile_0_010",
+      "construction": "source_clipped_hull",
+      "vertices": 82,
+      "faces": 160,
+      "volume_mm3": 37.20811679596947,
+      "minimum_face_normal_width_mm": 2.6808246576502364,
+      "bounds_feature_mm": [
+        [
+          -13.391472078,
+          -27.346752636,
+          -44.250672508
+        ],
+        [
+          -8.552347809999999,
+          -23.346787573,
+          -38.203035933
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 11,
+      "label": "profile_0_011",
+      "construction": "source_clipped_hull",
+      "vertices": 60,
+      "faces": 116,
+      "volume_mm3": 4.782677530513097,
+      "minimum_face_normal_width_mm": 0.43365200363904355,
+      "bounds_feature_mm": [
+        [
+          -14.342350922,
+          -27.346800973,
+          -25.099422303
+        ],
+        [
+          -9.172377492,
+          -23.346842978999998,
+          -21.574995808
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 12,
+      "label": "profile_0_012",
+      "construction": "source_clipped_hull",
+      "vertices": 83,
+      "faces": 162,
+      "volume_mm3": 78.33946320941415,
+      "minimum_face_normal_width_mm": 3.951890389049928,
+      "bounds_feature_mm": [
+        [
+          -10.917689659,
+          -27.346879649,
+          -3.2087480580000003
+        ],
+        [
+          -6.965797783999999,
+          -22.046941013999998,
+          6.400954728
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 13,
+      "label": "profile_0_013",
+      "construction": "source_clipped_hull",
+      "vertices": 33,
+      "faces": 62,
+      "volume_mm3": 12.328820926315634,
+      "minimum_face_normal_width_mm": 0.5216388573124585,
+      "bounds_feature_mm": [
+        [
+          -9.800413276,
+          -27.346780279,
+          -35.052192301
+        ],
+        [
+          -9.063377074,
+          -23.346816809,
+          -27.898533831
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 14,
+      "label": "profile_0_014",
+      "construction": "source_clipped_hull",
+      "vertices": 103,
+      "faces": 202,
+      "volume_mm3": 22.48052784559745,
+      "minimum_face_normal_width_mm": 2.2508106042683407,
+      "bounds_feature_mm": [
+        [
+          -10.917687856,
+          -27.346892026,
+          6.253505867
+        ],
+        [
+          -7.013993628,
+          -22.046951259,
+          8.717827531
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 15,
+      "label": "profile_0_015",
+      "construction": "source_clipped_hull",
+      "vertices": 58,
+      "faces": 112,
+      "volume_mm3": 3.652187591404996,
+      "minimum_face_normal_width_mm": 0.4983027940506017,
+      "bounds_feature_mm": [
+        [
+          -10.917687862,
+          -27.296905028,
+          5.22086846
+        ],
+        [
+          -7.790749119,
+          -22.046946584,
+          6.435106718
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 16,
+      "label": "profile_0_016",
+      "construction": "source_clipped_hull",
+      "vertices": 28,
+      "faces": 52,
+      "volume_mm3": 19.952059787491024,
+      "minimum_face_normal_width_mm": 0.8275032926394286,
+      "bounds_feature_mm": [
+        [
+          -9.323374239,
+          -27.346779605,
+          -34.939809306
+        ],
+        [
+          -8.232626814,
+          -23.346814023,
+          -28.15416349
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 17,
+      "label": "profile_0_017",
+      "construction": "source_clipped_hull",
+      "vertices": 53,
+      "faces": 102,
+      "volume_mm3": 3.7108694760014513,
+      "minimum_face_normal_width_mm": 0.511217462627736,
+      "bounds_feature_mm": [
+        [
+          -10.917687859,
+          -27.307969167,
+          5.752023689
+        ],
+        [
+          -7.61282612,
+          -22.046952889,
+          6.451332579
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 18,
+      "label": "profile_0_018",
+      "construction": "source_clipped_hull",
+      "vertices": 86,
+      "faces": 168,
+      "volume_mm3": 193.58847986457346,
+      "minimum_face_normal_width_mm": 5.11578568500012,
+      "bounds_feature_mm": [
+        [
+          -14.339318234,
+          -27.34681262,
+          -24.901113026999997
+        ],
+        [
+          -1.4538423950000001,
+          -22.231016097,
+          -18.623553734
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 19,
+      "label": "profile_0_019",
+      "construction": "source_clipped_hull",
+      "vertices": 59,
+      "faces": 114,
+      "volume_mm3": 4.015742408252246,
+      "minimum_face_normal_width_mm": 0.47539215840372445,
+      "bounds_feature_mm": [
+        [
+          -10.917687865,
+          -27.290630523,
+          4.538419846
+        ],
+        [
+          -7.545076288,
+          -22.046946538,
+          6.418196561999999
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 20,
+      "label": "profile_0_020",
+      "construction": "source_clipped_hull",
+      "vertices": 101,
+      "faces": 198,
+      "volume_mm3": 23.273034382684934,
+      "minimum_face_normal_width_mm": 2.2674162934120288,
+      "bounds_feature_mm": [
+        [
+          -10.374726485,
+          -27.346895133,
+          6.892358977000001
+        ],
+        [
+          -6.4584536329999995,
+          -22.046953738,
+          10.497330386
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 21,
+      "label": "profile_0_021",
+      "construction": "source_clipped_hull",
+      "vertices": 74,
+      "faces": 144,
+      "volume_mm3": 150.16234517024577,
+      "minimum_face_normal_width_mm": 3.9999555850361683,
+      "bounds_feature_mm": [
+        [
+          -13.292602653,
+          -27.346827244,
+          -20.50259333
+        ],
+        [
+          -1.012010383,
+          -23.346854964000002,
+          -12.857242663
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 22,
+      "label": "profile_0_022",
+      "construction": "source_clipped_hull",
+      "vertices": 30,
+      "faces": 56,
+      "volume_mm3": 12.32879107031035,
+      "minimum_face_normal_width_mm": 0.5216389309710707,
+      "bounds_feature_mm": [
+        [
+          -8.492623289,
+          -27.346782749000003,
+          -35.195432284000006
+        ],
+        [
+          -7.75558777,
+          -23.346815096,
+          -28.041804234
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 23,
+      "label": "profile_0_023",
+      "construction": "source_clipped_hull",
+      "vertices": 66,
+      "faces": 128,
+      "volume_mm3": 10.362498187758286,
+      "minimum_face_normal_width_mm": 0.5350132986731981,
+      "bounds_feature_mm": [
+        [
+          -10.917689664000001,
+          -27.346876496,
+          -3.2339134250000003
+        ],
+        [
+          -6.452826651,
+          -22.046941269,
+          3.979406104
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 24,
+      "label": "profile_0_024",
+      "construction": "source_clipped_hull",
+      "vertices": 74,
+      "faces": 144,
+      "volume_mm3": 8.87266471284836,
+      "minimum_face_normal_width_mm": 0.4421128593671622,
+      "bounds_feature_mm": [
+        [
+          -10.917689667,
+          -27.346875513999997,
+          -3.251000536
+        ],
+        [
+          -5.924211296,
+          -22.046944661,
+          3.789065423
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 25,
+      "label": "profile_0_025",
+      "construction": "source_clipped_hull",
+      "vertices": 36,
+      "faces": 68,
+      "volume_mm3": 10.42745327962857,
+      "minimum_face_normal_width_mm": 0.42662232900886504,
+      "bounds_feature_mm": [
+        [
+          -7.976297814,
+          -27.346781962999998,
+          -35.563202861
+        ],
+        [
+          -7.399409097,
+          -23.346810148,
+          -27.720070776
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 26,
+      "label": "profile_0_026",
+      "construction": "source_clipped_hull",
+      "vertices": 80,
+      "faces": 156,
+      "volume_mm3": 7.9940595433344335,
+      "minimum_face_normal_width_mm": 0.37515082847199355,
+      "bounds_feature_mm": [
+        [
+          -10.917689669000001,
+          -27.34687427,
+          -3.263270636
+        ],
+        [
+          -5.294884711,
+          -22.046941091999997,
+          3.9676630259999994
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 27,
+      "label": "profile_0_027",
+      "construction": "source_clipped_hull",
+      "vertices": 80,
+      "faces": 156,
+      "volume_mm3": 94.3415425806214,
+      "minimum_face_normal_width_mm": 2.7098335736873356,
+      "bounds_feature_mm": [
+        [
+          -11.827158473999999,
+          -27.346835087000002,
+          -20.105842557
+        ],
+        [
+          -0.21730336,
+          -23.346855938,
+          -9.648701399
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 28,
+      "label": "profile_0_028",
+      "construction": "source_clipped_hull",
+      "vertices": 103,
+      "faces": 202,
+      "volume_mm3": 25.17610796033007,
+      "minimum_face_normal_width_mm": 2.282029190516604,
+      "bounds_feature_mm": [
+        [
+          -8.85690844,
+          -27.346898782,
+          7.114475886
+        ],
+        [
+          -5.861498635,
+          -22.046953836,
+          11.391398
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 29,
+      "label": "profile_0_029",
+      "construction": "source_clipped_hull",
+      "vertices": 152,
+      "faces": 300,
+      "volume_mm3": 213.345382444069,
+      "minimum_face_normal_width_mm": 3.999957643139419,
+      "bounds_feature_mm": [
+        [
+          -11.412841768,
+          -27.34675553,
+          -47.802748404999996
+        ],
+        [
+          -1.561268275,
+          -23.346777188999997,
+          -37.988474704
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 30,
+      "label": "profile_0_030",
+      "construction": "source_clipped_hull",
+      "vertices": 59,
+      "faces": 114,
+      "volume_mm3": 4.5165992388818585,
+      "minimum_face_normal_width_mm": 0.43450085536100336,
+      "bounds_feature_mm": [
+        [
+          -6.693400853999999,
+          -27.346894218,
+          6.967437439
+        ],
+        [
+          -5.359311478,
+          -22.046952809,
+          11.392209701
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 31,
+      "label": "profile_0_031",
+      "construction": "source_clipped_hull",
+      "vertices": 71,
+      "faces": 138,
+      "volume_mm3": 3.0285613192024554,
+      "minimum_face_normal_width_mm": 0.27035744921839355,
+      "bounds_feature_mm": [
+        [
+          -6.683088572,
+          -27.346894784,
+          6.707005292
+        ],
+        [
+          -4.977253308,
+          -22.046951942,
+          11.39269956
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 32,
+      "label": "profile_0_032",
+      "construction": "source_clipped_hull",
+      "vertices": 57,
+      "faces": 110,
+      "volume_mm3": 17.57818216753324,
+      "minimum_face_normal_width_mm": 0.6800628817870413,
+      "bounds_feature_mm": [
+        [
+          -8.377528784999999,
+          -27.34680203,
+          -25.271474174
+        ],
+        [
+          -1.7444644679999999,
+          -22.046863748,
+          -21.074556259999998
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 33,
+      "label": "profile_0_033",
+      "construction": "source_clipped_hull",
+      "vertices": 38,
+      "faces": 72,
+      "volume_mm3": 12.306368531597688,
+      "minimum_face_normal_width_mm": 0.5208019526714569,
+      "bounds_feature_mm": [
+        [
+          -7.884198702,
+          -27.346757513,
+          -41.756203865
+        ],
+        [
+          -1.7825244409999998,
+          -23.346794335000002,
+          -37.632109727
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 34,
+      "label": "profile_0_034",
+      "construction": "source_clipped_hull",
+      "vertices": 45,
+      "faces": 86,
+      "volume_mm3": 15.966148541186154,
+      "minimum_face_normal_width_mm": 0.5435911012404947,
+      "bounds_feature_mm": [
+        [
+          -7.658586014,
+          -27.346800593,
+          -25.693468463
+        ],
+        [
+          -1.705665988,
+          -22.046863484,
+          -21.608445441
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 35,
+      "label": "profile_0_035",
+      "construction": "source_clipped_hull",
+      "vertices": 37,
+      "faces": 70,
+      "volume_mm3": 16.289054809810548,
+      "minimum_face_normal_width_mm": 0.8290487051643286,
+      "bounds_feature_mm": [
+        [
+          -7.4631293020000005,
+          -27.346758572000002,
+          -40.47235397
+        ],
+        [
+          -1.01865717,
+          -23.346799471,
+          -36.869786818
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 36,
+      "label": "profile_0_036",
+      "construction": "source_clipped_hull",
+      "vertices": 31,
+      "faces": 58,
+      "volume_mm3": 11.534162054743698,
+      "minimum_face_normal_width_mm": 0.4814507527521189,
+      "bounds_feature_mm": [
+        [
+          -7.1112515489999995,
+          -27.346758529,
+          -40.110226917000006
+        ],
+        [
+          -0.531666572,
+          -23.346801237999998,
+          -36.329313748
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 37,
+      "label": "profile_0_037",
+      "construction": "source_clipped_hull",
+      "vertices": 51,
+      "faces": 98,
+      "volume_mm3": 13.425123766206863,
+      "minimum_face_normal_width_mm": 0.48549195233712344,
+      "bounds_feature_mm": [
+        [
+          -7.1114434740000005,
+          -27.346801088,
+          -26.762803022
+        ],
+        [
+          -0.288982843,
+          -22.046856555999998,
+          -23.107440341
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 38,
+      "label": "profile_0_038",
+      "construction": "source_clipped_hull",
+      "vertices": 53,
+      "faces": 102,
+      "volume_mm3": 19.7470220133813,
+      "minimum_face_normal_width_mm": 0.7290167186598945,
+      "bounds_feature_mm": [
+        [
+          -7.304094598,
+          -27.346799898,
+          -26.223457070000002
+        ],
+        [
+          -0.7789173549999999,
+          -22.046856652,
+          -22.617983275999997
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 39,
+      "label": "profile_0_039",
+      "construction": "source_clipped_hull",
+      "vertices": 30,
+      "faces": 56,
+      "volume_mm3": 9.97343293501999,
+      "minimum_face_normal_width_mm": 0.815823972600306,
+      "bounds_feature_mm": [
+        [
+          -7.470452208,
+          -27.346756607,
+          -41.216303209
+        ],
+        [
+          -1.432858785,
+          -23.346796276,
+          -37.621651662000005
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 40,
+      "label": "profile_0_040",
+      "construction": "source_clipped_hull",
+      "vertices": 45,
+      "faces": 86,
+      "volume_mm3": 8.155732037517112,
+      "minimum_face_normal_width_mm": 0.5406454466575055,
+      "bounds_feature_mm": [
+        [
+          -7.308287119999999,
+          -27.34680068,
+          -25.700649065
+        ],
+        [
+          -1.4354113990000001,
+          -22.046863352,
+          -22.149204102000002
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 41,
+      "label": "profile_0_041",
+      "construction": "source_clipped_hull",
+      "vertices": 80,
+      "faces": 156,
+      "volume_mm3": 36.294049105610156,
+      "minimum_face_normal_width_mm": 2.679084672499516,
+      "bounds_feature_mm": [
+        [
+          -5.087638912999999,
+          -27.346738345,
+          -48.408505253
+        ],
+        [
+          -1.16977722,
+          -23.346777406,
+          -42.437989472
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 42,
+      "label": "profile_0_042",
+      "construction": "source_clipped_hull",
+      "vertices": 73,
+      "faces": 142,
+      "volume_mm3": 36.05571380111516,
+      "minimum_face_normal_width_mm": 2.803740037251418,
+      "bounds_feature_mm": [
+        [
+          -2.279777051,
+          -27.346737757,
+          -48.531322037
+        ],
+        [
+          0.59207613,
+          -23.346780559,
+          -42.87768783
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 43,
+      "label": "profile_0_043",
+      "construction": "source_clipped_hull",
+      "vertices": 34,
+      "faces": 64,
+      "volume_mm3": 29.853153416922694,
+      "minimum_face_normal_width_mm": 0.8284644963020525,
+      "bounds_feature_mm": [
+        [
+          -4.511887902,
+          -27.346888612,
+          5.174078298
+        ],
+        [
+          4.275161624,
+          -22.046948912,
+          6.002574556
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 44,
+      "label": "profile_0_044",
+      "construction": "source_clipped_hull",
+      "vertices": 101,
+      "faces": 198,
+      "volume_mm3": 267.5272427210023,
+      "minimum_face_normal_width_mm": 5.299941542128435,
+      "bounds_feature_mm": [
+        [
+          -6.6768651409999995,
+          -27.34689892,
+          5.9985842940000005
+        ],
+        [
+          5.6656549410000006,
+          -22.046950286,
+          11.452451002
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 45,
+      "label": "profile_0_045",
+      "construction": "source_clipped_hull",
+      "vertices": 133,
+      "faces": 262,
+      "volume_mm3": 906.4295653619718,
+      "minimum_face_normal_width_mm": 5.299939584563127,
+      "bounds_feature_mm": [
+        [
+          -7.556014568,
+          -27.346801317,
+          -39.985751578
+        ],
+        [
+          7.322776683,
+          -22.046839623,
+          -23.113437482
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 46,
+      "label": "profile_0_046",
+      "construction": "source_clipped_hull",
+      "vertices": 160,
+      "faces": 316,
+      "volume_mm3": 1783.6841928160293,
+      "minimum_face_normal_width_mm": 5.299940024258824,
+      "bounds_feature_mm": [
+        [
+          -11.312368592999999,
+          -27.346882177,
+          -19.976812109999997
+        ],
+        [
+          11.471191130000001,
+          -22.046939479000002,
+          4.64978084
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 47,
+      "label": "profile_0_047",
+      "construction": "source_clipped_hull",
+      "vertices": 51,
+      "faces": 98,
+      "volume_mm3": 5.112608769150687,
+      "minimum_face_normal_width_mm": 0.5304888640102158,
+      "bounds_feature_mm": [
+        [
+          -0.371210535,
+          -27.346737438999998,
+          -48.531322101
+        ],
+        [
+          0.602231081,
+          -23.34678045,
+          -43.22187806
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 48,
+      "label": "profile_0_048",
+      "construction": "source_clipped_hull",
+      "vertices": 36,
+      "faces": 68,
+      "volume_mm3": 26.611609532988275,
+      "minimum_face_normal_width_mm": 0.6568040733246359,
+      "bounds_feature_mm": [
+        [
+          -4.6235004779999995,
+          -27.346884607,
+          4.237728853
+        ],
+        [
+          4.701908595,
+          -22.046946603,
+          5.167658194
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 49,
+      "label": "profile_0_049",
+      "construction": "source_clipped_hull",
+      "vertices": 64,
+      "faces": 124,
+      "volume_mm3": 4.989020879104677,
+      "minimum_face_normal_width_mm": 0.509180529505261,
+      "bounds_feature_mm": [
+        [
+          0.167439644,
+          -27.346736503,
+          -48.53132213
+        ],
+        [
+          0.678830999,
+          -23.346780347,
+          -43.043941606000004
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 50,
+      "label": "profile_0_050",
+      "construction": "source_clipped_hull",
+      "vertices": 28,
+      "faces": 52,
+      "volume_mm3": 11.702374185292872,
+      "minimum_face_normal_width_mm": 0.5327003222261179,
+      "bounds_feature_mm": [
+        [
+          -4.442695628,
+          -27.346883969,
+          4.914120722
+        ],
+        [
+          4.273108476,
+          -22.046948944,
+          5.449686065
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 51,
+      "label": "profile_0_051",
+      "construction": "source_clipped_hull",
+      "vertices": 71,
+      "faces": 138,
+      "volume_mm3": 29.024452879986264,
+      "minimum_face_normal_width_mm": 2.304908362498673,
+      "bounds_feature_mm": [
+        [
+          0.611825219,
+          -27.346740574000002,
+          -48.531067778
+        ],
+        [
+          2.949252953,
+          -23.346779877,
+          -42.683601001
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 52,
+      "label": "profile_0_052",
+      "construction": "source_clipped_hull",
+      "vertices": 74,
+      "faces": 144,
+      "volume_mm3": 28.020812870273748,
+      "minimum_face_normal_width_mm": 1.9486164049933516,
+      "bounds_feature_mm": [
+        [
+          1.1403937169999998,
+          -27.346742169,
+          -48.267432119000006
+        ],
+        [
+          4.941354293000001,
+          -23.346781146,
+          -42.200905111
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 53,
+      "label": "profile_0_053",
+      "construction": "source_clipped_hull",
+      "vertices": 30,
+      "faces": 56,
+      "volume_mm3": 5.293232951489911,
+      "minimum_face_normal_width_mm": 0.39747130655786583,
+      "bounds_feature_mm": [
+        [
+          1.511875069,
+          -27.346807694,
+          -25.110507922
+        ],
+        [
+          7.647002196,
+          -23.346844137999998,
+          -21.086098659
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 54,
+      "label": "profile_0_054",
+      "construction": "source_clipped_hull",
+      "vertices": 37,
+      "faces": 70,
+      "volume_mm3": 15.163768934365434,
+      "minimum_face_normal_width_mm": 0.7597496229258884,
+      "bounds_feature_mm": [
+        [
+          0.530372564,
+          -27.346801439,
+          -27.014328743
+        ],
+        [
+          6.9142523780000005,
+          -23.346837305999998,
+          -22.627861207
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 55,
+      "label": "profile_0_055",
+      "construction": "source_clipped_hull",
+      "vertices": 36,
+      "faces": 68,
+      "volume_mm3": 11.978886410904279,
+      "minimum_face_normal_width_mm": 0.47651588716368654,
+      "bounds_feature_mm": [
+        [
+          0.5415098700000001,
+          -27.346762692,
+          -40.270718997
+        ],
+        [
+          6.876532099,
+          -23.346800125,
+          -36.337752813
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 56,
+      "label": "profile_0_056",
+      "construction": "source_clipped_hull",
+      "vertices": 30,
+      "faces": 56,
+      "volume_mm3": 13.168784712494762,
+      "minimum_face_normal_width_mm": 0.5548879288830126,
+      "bounds_feature_mm": [
+        [
+          1.197218114,
+          -27.346804011,
+          -25.949431051
+        ],
+        [
+          7.2298547399999995,
+          -23.346838366,
+          -22.145071164
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 57,
+      "label": "profile_0_057",
+      "construction": "source_clipped_hull",
+      "vertices": 34,
+      "faces": 64,
+      "volume_mm3": 16.553567527271493,
+      "minimum_face_normal_width_mm": 0.8275725021394607,
+      "bounds_feature_mm": [
+        [
+          1.000984191,
+          -27.346760016,
+          -40.700675828
+        ],
+        [
+          7.229846758,
+          -23.346799424999997,
+          -36.873437173999996
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 58,
+      "label": "profile_0_058",
+      "construction": "source_clipped_hull",
+      "vertices": 44,
+      "faces": 84,
+      "volume_mm3": 12.778524595520183,
+      "minimum_face_normal_width_mm": 0.5442628037156394,
+      "bounds_feature_mm": [
+        [
+          1.356144045,
+          -27.3467568,
+          -41.215700815
+        ],
+        [
+          7.641459221,
+          -23.346797793,
+          -37.625101267
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 59,
+      "label": "profile_0_059",
+      "construction": "source_clipped_hull",
+      "vertices": 37,
+      "faces": 70,
+      "volume_mm3": 12.705643168866352,
+      "minimum_face_normal_width_mm": 0.5210072376074758,
+      "bounds_feature_mm": [
+        [
+          1.471911699,
+          -27.346806337,
+          -25.468889666
+        ],
+        [
+          7.641378953,
+          -23.346839787,
+          -21.604090548
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 60,
+      "label": "profile_0_060",
+      "construction": "source_clipped_hull",
+      "vertices": 29,
+      "faces": 54,
+      "volume_mm3": 6.189892158176596,
+      "minimum_face_normal_width_mm": 0.4976903692838902,
+      "bounds_feature_mm": [
+        [
+          1.192812534,
+          -27.346802244,
+          -26.480608090999997
+        ],
+        [
+          6.9524007459999995,
+          -23.346838251,
+          -22.621569385
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 61,
+      "label": "profile_0_061",
+      "construction": "source_clipped_hull",
+      "vertices": 61,
+      "faces": 118,
+      "volume_mm3": 3.6986575882663297,
+      "minimum_face_normal_width_mm": 0.3364410643290085,
+      "bounds_feature_mm": [
+        [
+          4.696474792,
+          -27.346895686,
+          6.661882297
+        ],
+        [
+          5.673238471,
+          -22.04695359,
+          11.452439633
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 62,
+      "label": "profile_0_062",
+      "construction": "source_clipped_hull",
+      "vertices": 72,
+      "faces": 140,
+      "volume_mm3": 4.919750556207677,
+      "minimum_face_normal_width_mm": 0.48168271795442746,
+      "bounds_feature_mm": [
+        [
+          5.099245088,
+          -27.346895203,
+          6.95604934
+        ],
+        [
+          5.68438117,
+          -22.046955964000002,
+          11.452439625
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 63,
+      "label": "profile_0_063",
+      "construction": "source_clipped_hull",
+      "vertices": 149,
+      "faces": 294,
+      "volume_mm3": 198.39901501835413,
+      "minimum_face_normal_width_mm": 3.999956634931006,
+      "bounds_feature_mm": [
+        [
+          1.445745496,
+          -27.346755831,
+          -47.776455461
+        ],
+        [
+          10.063064053,
+          -23.346781121,
+          -37.983552328
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 64,
+      "label": "profile_0_064",
+      "construction": "source_clipped_hull",
+      "vertices": 124,
+      "faces": 244,
+      "volume_mm3": 34.95028882474004,
+      "minimum_face_normal_width_mm": 3.2103916286345346,
+      "bounds_feature_mm": [
+        [
+          5.606839538,
+          -27.346895865,
+          7.112965098
+        ],
+        [
+          8.896058848000001,
+          -22.046953248999998,
+          11.452260002
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 65,
+      "label": "profile_0_065",
+      "construction": "source_clipped_hull",
+      "vertices": 62,
+      "faces": 120,
+      "volume_mm3": 97.01673226891123,
+      "minimum_face_normal_width_mm": 3.1139946194306685,
+      "bounds_feature_mm": [
+        [
+          0.521787403,
+          -27.346826168,
+          -20.480978999
+        ],
+        [
+          12.173684352999999,
+          -23.346855708,
+          -12.173249365
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 66,
+      "label": "profile_0_066",
+      "construction": "source_clipped_hull",
+      "vertices": 66,
+      "faces": 128,
+      "volume_mm3": 12.862519999783883,
+      "minimum_face_normal_width_mm": 0.48527116045609436,
+      "bounds_feature_mm": [
+        [
+          5.664731188999999,
+          -27.346878298,
+          -6.273088716999999
+        ],
+        [
+          10.771083814,
+          -22.046943144,
+          3.785063442
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 67,
+      "label": "profile_0_067",
+      "construction": "source_clipped_hull",
+      "vertices": 50,
+      "faces": 96,
+      "volume_mm3": 17.93299483563756,
+      "minimum_face_normal_width_mm": 0.6796346712797324,
+      "bounds_feature_mm": [
+        [
+          7.317178518,
+          -27.34678389,
+          -35.371476271
+        ],
+        [
+          7.997133198,
+          -22.046839381,
+          -27.71692552
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 68,
+      "label": "profile_0_068",
+      "construction": "source_clipped_hull",
+      "vertices": 87,
+      "faces": 170,
+      "volume_mm3": 220.06764506304546,
+      "minimum_face_normal_width_mm": 3.999958763658218,
+      "bounds_feature_mm": [
+        [
+          1.203026074,
+          -27.346823921000002,
+          -25.106570532000003
+        ],
+        [
+          13.084846309,
+          -23.346844565,
+          -15.496505885
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 69,
+      "label": "profile_0_069",
+      "construction": "source_clipped_hull",
+      "vertices": 74,
+      "faces": 144,
+      "volume_mm3": 14.184933900271146,
+      "minimum_face_normal_width_mm": 0.5478821972481288,
+      "bounds_feature_mm": [
+        [
+          6.202246227,
+          -27.346876331,
+          -6.246353734
+        ],
+        [
+          10.770255531,
+          -22.046939824000003,
+          3.9738705989999996
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 70,
+      "label": "profile_0_070",
+      "construction": "source_clipped_hull",
+      "vertices": 43,
+      "faces": 82,
+      "volume_mm3": 15.991440898750223,
+      "minimum_face_normal_width_mm": 0.5436177657332577,
+      "bounds_feature_mm": [
+        [
+          7.747959421,
+          -27.346777029,
+          -35.048757233
+        ],
+        [
+          8.537766302,
+          -22.046841961,
+          -28.154234542999998
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 71,
+      "label": "profile_0_071",
+      "construction": "source_clipped_hull",
+      "vertices": 52,
+      "faces": 100,
+      "volume_mm3": 1.7450311646938697,
+      "minimum_face_normal_width_mm": 0.19090247709507108,
+      "bounds_feature_mm": [
+        [
+          7.37341444,
+          -27.300029763,
+          4.643493323
+        ],
+        [
+          10.616076913999999,
+          -22.046949071,
+          7.267234008
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 72,
+      "label": "profile_0_072",
+      "construction": "source_clipped_hull",
+      "vertices": 103,
+      "faces": 202,
+      "volume_mm3": 27.053897990340978,
+      "minimum_face_normal_width_mm": 2.5032578250175406,
+      "bounds_feature_mm": [
+        [
+          6.228426263,
+          -27.346892144,
+          6.718541146
+        ],
+        [
+          10.381410052,
+          -22.046954279,
+          10.282618933999998
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 73,
+      "label": "profile_0_073",
+      "construction": "source_clipped_hull",
+      "vertices": 57,
+      "faces": 110,
+      "volume_mm3": 3.148149443591572,
+      "minimum_face_normal_width_mm": 0.37311357713515925,
+      "bounds_feature_mm": [
+        [
+          7.514902742,
+          -27.309005303,
+          5.003036595
+        ],
+        [
+          10.615025712000001,
+          -22.046951956,
+          7.279713222
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 74,
+      "label": "profile_0_074",
+      "construction": "source_clipped_hull",
+      "vertices": 58,
+      "faces": 112,
+      "volume_mm3": 3.8703263253363676,
+      "minimum_face_normal_width_mm": 0.500357675362928,
+      "bounds_feature_mm": [
+        [
+          7.4798236750000004,
+          -27.321000402,
+          5.510425135
+        ],
+        [
+          10.612937669999999,
+          -22.046951632,
+          7.295661744
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 75,
+      "label": "profile_0_075",
+      "construction": "source_clipped_hull",
+      "vertices": 38,
+      "faces": 72,
+      "volume_mm3": 12.367059590346818,
+      "minimum_face_normal_width_mm": 0.8108102565741537,
+      "bounds_feature_mm": [
+        [
+          8.265015566999999,
+          -27.346778155000003,
+          -34.93878334
+        ],
+        [
+          9.083785471,
+          -22.046837957,
+          -28.246342532
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 76,
+      "label": "profile_0_076",
+      "construction": "source_clipped_hull",
+      "vertices": 78,
+      "faces": 152,
+      "volume_mm3": 12.21997103549892,
+      "minimum_face_normal_width_mm": 0.8846568556696923,
+      "bounds_feature_mm": [
+        [
+          7.011050625999999,
+          -27.3449786,
+          6.032916703000001
+        ],
+        [
+          10.610269139,
+          -22.046953575,
+          8.159949963
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 77,
+      "label": "profile_0_077",
+      "construction": "source_clipped_hull",
+      "vertices": 52,
+      "faces": 100,
+      "volume_mm3": 15.336999371291224,
+      "minimum_face_normal_width_mm": 0.5458037608157065,
+      "bounds_feature_mm": [
+        [
+          8.550219019,
+          -27.346782667,
+          -35.191869344000004
+        ],
+        [
+          9.559602182,
+          -22.046839038,
+          -28.153278181999998
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 78,
+      "label": "profile_0_078",
+      "construction": "source_clipped_hull",
+      "vertices": 93,
+      "faces": 182,
+      "volume_mm3": 109.49489263738974,
+      "minimum_face_normal_width_mm": 3.980693471468535,
+      "bounds_feature_mm": [
+        [
+          6.71828218,
+          -27.346880401,
+          -6.208573389
+        ],
+        [
+          10.769085049,
+          -22.046942773,
+          7.260951481999999
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 79,
+      "label": "profile_0_079",
+      "construction": "source_clipped_hull",
+      "vertices": 82,
+      "faces": 160,
+      "volume_mm3": 35.421688853352734,
+      "minimum_face_normal_width_mm": 2.260404839471689,
+      "bounds_feature_mm": [
+        [
+          8.292058139,
+          -27.346755369,
+          -45.160337002999995
+        ],
+        [
+          11.971550806,
+          -23.346791308,
+          -38.211505460000005
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 80,
+      "label": "profile_0_080",
+      "construction": "source_clipped_hull",
+      "vertices": 57,
+      "faces": 110,
+      "volume_mm3": 6.774855218263002,
+      "minimum_face_normal_width_mm": 0.48396352821050703,
+      "bounds_feature_mm": [
+        [
+          8.61753188,
+          -27.346813468,
+          -24.957382342000002
+        ],
+        [
+          13.088243653000001,
+          -23.346841686999998,
+          -18.704968749
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 81,
+      "label": "profile_0_081",
+      "construction": "source_clipped_hull",
+      "vertices": 82,
+      "faces": 160,
+      "volume_mm3": 26.928990319757318,
+      "minimum_face_normal_width_mm": 1.9468979698123323,
+      "bounds_feature_mm": [
+        [
+          8.873229098,
+          -27.346755008,
+          -43.49816265
+        ],
+        [
+          13.3233208,
+          -23.346794375,
+          -38.003875341
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 82,
+      "label": "profile_0_082",
+      "construction": "source_clipped_hull",
+      "vertices": 69,
+      "faces": 134,
+      "volume_mm3": 5.131567381571061,
+      "minimum_face_normal_width_mm": 0.5367343523494418,
+      "bounds_feature_mm": [
+        [
+          9.861409593,
+          -27.346758725,
+          -39.773645321000004
+        ],
+        [
+          14.763633163000002,
+          -23.346804549999998,
+          -37.147723344
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 83,
+      "label": "profile_0_083",
+      "construction": "source_clipped_hull",
+      "vertices": 68,
+      "faces": 132,
+      "volume_mm3": 4.809607137010109,
+      "minimum_face_normal_width_mm": 0.43262902221733945,
+      "bounds_feature_mm": [
+        [
+          9.905356816000001,
+          -27.346793061,
+          -26.290371667
+        ],
+        [
+          16.048108283999998,
+          -23.34683865,
+          -25.541172401
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 84,
+      "label": "profile_0_084",
+      "construction": "source_clipped_hull",
+      "vertices": 56,
+      "faces": 108,
+      "volume_mm3": 5.658208706508658,
+      "minimum_face_normal_width_mm": 0.5311325674613558,
+      "bounds_feature_mm": [
+        [
+          10.150717856,
+          -27.346791973,
+          -26.54268098
+        ],
+        [
+          16.051453858000002,
+          -23.346838394000002,
+          -26.006545775
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 85,
+      "label": "profile_0_085",
+      "construction": "source_clipped_hull",
+      "vertices": 61,
+      "faces": 118,
+      "volume_mm3": 5.575376362954073,
+      "minimum_face_normal_width_mm": 0.5196153277956423,
+      "bounds_feature_mm": [
+        [
+          10.153211578999999,
+          -27.346789847,
+          -27.078246559
+        ],
+        [
+          16.054557722,
+          -23.346837963000002,
+          -26.300132646999998
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 86,
+      "label": "profile_0_086",
+      "construction": "source_clipped_hull",
+      "vertices": 71,
+      "faces": 138,
+      "volume_mm3": 30.847832686722384,
+      "minimum_face_normal_width_mm": 2.5540371318113415,
+      "bounds_feature_mm": [
+        [
+          9.414106619,
+          -27.346759293999998,
+          -41.95422871
+        ],
+        [
+          14.758641753000001,
+          -23.346799793,
+          -37.615582199
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 87,
+      "label": "profile_0_087",
+      "construction": "source_clipped_hull",
+      "vertices": 68,
+      "faces": 132,
+      "volume_mm3": 93.58087103867324,
+      "minimum_face_normal_width_mm": 3.999958343683996,
+      "bounds_feature_mm": [
+        [
+          9.140396424,
+          -27.346812347999997,
+          -26.282036485
+        ],
+        [
+          16.045251401,
+          -23.346838829,
+          -18.714552265
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 88,
+      "label": "profile_0_088",
+      "construction": "source_clipped_hull",
+      "vertices": 146,
+      "faces": 288,
+      "volume_mm3": 229.44000382204854,
+      "minimum_face_normal_width_mm": 5.262842738169491,
+      "bounds_feature_mm": [
+        [
+          9.091035469,
+          -27.346793166999998,
+          -35.729667527
+        ],
+        [
+          16.881501483,
+          -22.046842532,
+          -27.581943851000002
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 89,
+      "label": "profile_0_089",
+      "construction": "source_clipped_hull",
+      "vertices": 70,
+      "faces": 136,
+      "volume_mm3": 36.68851604975741,
+      "minimum_face_normal_width_mm": 2.7702567198824095,
+      "bounds_feature_mm": [
+        [
+          10.130724717,
+          -27.346763071999998,
+          -39.764772228
+        ],
+        [
+          15.934923883999998,
+          -23.346804902000002,
+          -36.281586214
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 90,
+      "label": "profile_0_090",
+      "construction": "source_clipped_hull",
+      "vertices": 79,
+      "faces": 154,
+      "volume_mm3": 28.555533811722935,
+      "minimum_face_normal_width_mm": 1.9199105597040542,
+      "bounds_feature_mm": [
+        [
+          9.885062280000001,
+          -27.346793833,
+          -28.294621568
+        ],
+        [
+          16.566763658,
+          -23.346834914000002,
+          -26.309188417
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 0,
+      "index": 91,
+      "label": "profile_0_091",
+      "construction": "source_clipped_hull",
+      "vertices": 83,
+      "faces": 162,
+      "volume_mm3": 35.48105717601369,
+      "minimum_face_normal_width_mm": 2.448341483775512,
+      "bounds_feature_mm": [
+        [
+          10.029774024,
+          -27.346765486,
+          -37.139255528999996
+        ],
+        [
+          16.617486619,
+          -23.34680875,
+          -34.525599244999995
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 2,
+      "index": 92,
+      "label": "profile_2_000",
+      "construction": "source_clipped_hull",
+      "vertices": 74,
+      "faces": 144,
+      "volume_mm3": 178.95923234570063,
+      "minimum_face_normal_width_mm": 4.240600202487748,
+      "bounds_feature_mm": [
+        [
+          -11.002589647999999,
+          22.352466893000003,
+          -14.23564292
+        ],
+        [
+          -6.687527577,
+          27.652431906,
+          6.398897681
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 2,
+      "index": 93,
+      "label": "profile_2_001",
+      "construction": "source_clipped_hull",
+      "vertices": 99,
+      "faces": 194,
+      "volume_mm3": 20.86098381147471,
+      "minimum_face_normal_width_mm": 2.069581597097115,
+      "bounds_feature_mm": [
+        [
+          -10.917684316999999,
+          22.352461967,
+          6.25351694
+        ],
+        [
+          -7.019942178,
+          27.652393904,
+          8.528759477000001
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 2,
+      "index": 94,
+      "label": "profile_2_002",
+      "construction": "source_clipped_hull",
+      "vertices": 56,
+      "faces": 108,
+      "volume_mm3": 3.683109738661353,
+      "minimum_face_normal_width_mm": 0.5022319693615556,
+      "bounds_feature_mm": [
+        [
+          -10.917684325,
+          22.352466146,
+          5.216247067
+        ],
+        [
+          -7.790779038,
+          27.602423206,
+          6.4353455859999995
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 2,
+      "index": 95,
+      "label": "profile_2_003",
+      "construction": "source_clipped_hull",
+      "vertices": 49,
+      "faces": 94,
+      "volume_mm3": 3.7106691624017385,
+      "minimum_face_normal_width_mm": 0.5112231328902768,
+      "bounds_feature_mm": [
+        [
+          -10.917684321,
+          22.352467543,
+          5.752037707
+        ],
+        [
+          -7.6128825540000005,
+          27.613485239,
+          6.4515691429999995
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 2,
+      "index": 96,
+      "label": "profile_2_004",
+      "construction": "source_clipped_hull",
+      "vertices": 51,
+      "faces": 98,
+      "volume_mm3": 2.932579022580839,
+      "minimum_face_normal_width_mm": 0.36442464119427964,
+      "bounds_feature_mm": [
+        [
+          -10.917684329,
+          22.352465621,
+          4.731492865
+        ],
+        [
+          -7.650035882,
+          27.596111521999998,
+          6.418296425
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 2,
+      "index": 97,
+      "label": "profile_2_005",
+      "construction": "source_clipped_hull",
+      "vertices": 56,
+      "faces": 108,
+      "volume_mm3": 1.5993918883951923,
+      "minimum_face_normal_width_mm": 0.18287436676810467,
+      "bounds_feature_mm": [
+        [
+          -10.91768433,
+          22.352466068,
+          4.407449604
+        ],
+        [
+          -7.453267403,
+          27.592660326,
+          6.4053006
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 2,
+      "index": 98,
+      "label": "profile_2_006",
+      "construction": "source_clipped_hull",
+      "vertices": 122,
+      "faces": 240,
+      "volume_mm3": 33.33252809703791,
+      "minimum_face_normal_width_mm": 3.212646052776495,
+      "bounds_feature_mm": [
+        [
+          -10.466237049,
+          22.352459034,
+          6.888329714999999
+        ],
+        [
+          -6.433842623,
+          27.652400386,
+          10.998784167
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 2,
+      "index": 99,
+      "label": "profile_2_007",
+      "construction": "source_clipped_hull",
+      "vertices": 77,
+      "faces": 150,
+      "volume_mm3": 24.227707941546104,
+      "minimum_face_normal_width_mm": 0.5442300272651299,
+      "bounds_feature_mm": [
+        [
+          -11.004605803999999,
+          22.352473019999998,
+          -14.299108107999999
+        ],
+        [
+          -6.14993639,
+          27.652434698,
+          3.8520971960000003
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 2,
+      "index": 100,
+      "label": "profile_2_008",
+      "construction": "source_clipped_hull",
+      "vertices": 90,
+      "faces": 176,
+      "volume_mm3": 17.325695115612596,
+      "minimum_face_normal_width_mm": 1.4223877527815392,
+      "bounds_feature_mm": [
+        [
+          -7.9986391029999995,
+          22.352459769,
+          7.121215084
+        ],
+        [
+          -5.864404479,
+          27.652394762,
+          11.401960634
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 2,
+      "index": 101,
+      "label": "profile_2_009",
+      "construction": "source_clipped_hull",
+      "vertices": 64,
+      "faces": 124,
+      "volume_mm3": 6.458085179782161,
+      "minimum_face_normal_width_mm": 0.5980390826165081,
+      "bounds_feature_mm": [
+        [
+          -6.625693721,
+          22.352458105,
+          6.8364973419999995
+        ],
+        [
+          -5.141524943,
+          27.652389294000002,
+          11.402984855
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 2,
+      "index": 102,
+      "label": "profile_2_010",
+      "construction": "source_clipped_hull",
+      "vertices": 34,
+      "faces": 64,
+      "volume_mm3": 29.411394416992064,
+      "minimum_face_normal_width_mm": 0.7970170211812214,
+      "bounds_feature_mm": [
+        [
+          -4.621663341,
+          22.352465653,
+          5.448429679
+        ],
+        [
+          4.275915643,
+          27.652404635,
+          6.251478572
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 2,
+      "index": 103,
+      "label": "profile_2_011",
+      "construction": "source_clipped_hull",
+      "vertices": 601,
+      "faces": 1198,
+      "volume_mm3": 3240.9935758512224,
+      "minimum_face_normal_width_mm": 7.999904846735319,
+      "bounds_feature_mm": [
+        [
+          -14.105244332,
+          19.652593363,
+          -45.546672875
+        ],
+        [
+          13.869549393000002,
+          27.652552326000002,
+          -21.024392212
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 2,
+      "index": 104,
+      "label": "profile_2_012",
+      "construction": "source_clipped_hull",
+      "vertices": 96,
+      "faces": 188,
+      "volume_mm3": 262.436886755101,
+      "minimum_face_normal_width_mm": 5.299941774649673,
+      "bounds_feature_mm": [
+        [
+          -6.611373995999999,
+          22.352458227,
+          6.001524324
+        ],
+        [
+          5.6655272000000005,
+          27.652404612,
+          11.452596608
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 2,
+      "index": 105,
+      "label": "profile_2_013",
+      "construction": "source_clipped_hull",
+      "vertices": 46,
+      "faces": 88,
+      "volume_mm3": 15.372837646808529,
+      "minimum_face_normal_width_mm": 0.35748855325333073,
+      "bounds_feature_mm": [
+        [
+          -5.1388700169999995,
+          22.352471749,
+          3.955179911
+        ],
+        [
+          5.086287757,
+          27.652409685000002,
+          4.424049863
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 2,
+      "index": 106,
+      "label": "profile_2_014",
+      "construction": "source_clipped_hull",
+      "vertices": 145,
+      "faces": 286,
+      "volume_mm3": 1773.7288274114635,
+      "minimum_face_normal_width_mm": 5.299943413235027,
+      "bounds_feature_mm": [
+        [
+          -11.319277417,
+          22.352471354000002,
+          -17.884071248
+        ],
+        [
+          11.083603588,
+          27.652473922000002,
+          4.070698987999999
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 2,
+      "index": 107,
+      "label": "profile_2_015",
+      "construction": "source_clipped_hull",
+      "vertices": 32,
+      "faces": 60,
+      "volume_mm3": 23.463398710981807,
+      "minimum_face_normal_width_mm": 0.5420649026899949,
+      "bounds_feature_mm": [
+        [
+          -4.510863864,
+          22.352465727000002,
+          4.906429358
+        ],
+        [
+          4.274008642,
+          27.652402539,
+          5.452930566
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 2,
+      "index": 108,
+      "label": "profile_2_016",
+      "construction": "source_clipped_hull",
+      "vertices": 104,
+      "faces": 204,
+      "volume_mm3": 280.316689893934,
+      "minimum_face_normal_width_mm": 3.128570634934949,
+      "bounds_feature_mm": [
+        [
+          -11.819214431999999,
+          23.652518772,
+          -21.012667732
+        ],
+        [
+          11.583730608,
+          27.652483006,
+          -17.884071248
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 2,
+      "index": 109,
+      "label": "profile_2_017",
+      "construction": "source_clipped_hull",
+      "vertices": 33,
+      "faces": 62,
+      "volume_mm3": 26.396618622982267,
+      "minimum_face_normal_width_mm": 0.6717469046428128,
+      "bounds_feature_mm": [
+        [
+          -4.770604656000001,
+          22.352470038000003,
+          4.230112814
+        ],
+        [
+          4.709666489,
+          27.652407414000002,
+          4.910912475
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 2,
+      "index": 110,
+      "label": "profile_2_018",
+      "construction": "source_clipped_hull",
+      "vertices": 103,
+      "faces": 202,
+      "volume_mm3": 141.54976355674205,
+      "minimum_face_normal_width_mm": 2.9649542366997315,
+      "bounds_feature_mm": [
+        [
+          -11.821285515,
+          23.652527881,
+          -24.089816965999997
+        ],
+        [
+          12.277951699,
+          27.65248807,
+          -21.011458308
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 2,
+      "index": 111,
+      "label": "profile_2_019",
+      "construction": "source_clipped_hull",
+      "vertices": 61,
+      "faces": 118,
+      "volume_mm3": 3.6672792476039002,
+      "minimum_face_normal_width_mm": 0.3335466947629825,
+      "bounds_feature_mm": [
+        [
+          4.696501649,
+          22.352462613,
+          6.662043951
+        ],
+        [
+          5.6731040550000005,
+          27.652396163000002,
+          11.452591338
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 2,
+      "index": 112,
+      "label": "profile_2_020",
+      "construction": "source_clipped_hull",
+      "vertices": 103,
+      "faces": 202,
+      "volume_mm3": 26.292195553641054,
+      "minimum_face_normal_width_mm": 2.0774974274175655,
+      "bounds_feature_mm": [
+        [
+          5.0959959900000005,
+          22.352457642,
+          6.954671184
+        ],
+        [
+          7.7579892599999996,
+          27.652395768,
+          11.452591337000001
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 2,
+      "index": 113,
+      "label": "profile_2_021",
+      "construction": "source_clipped_hull",
+      "vertices": 96,
+      "faces": 188,
+      "volume_mm3": 16.01183307310852,
+      "minimum_face_normal_width_mm": 1.3394238677069625,
+      "bounds_feature_mm": [
+        [
+          5.9336559630000005,
+          22.35246514,
+          7.037176811
+        ],
+        [
+          8.898719512000001,
+          27.652396105,
+          11.001225192000001
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 2,
+      "index": 114,
+      "label": "profile_2_022",
+      "construction": "source_clipped_hull",
+      "vertices": 66,
+      "faces": 128,
+      "volume_mm3": 24.475600755974007,
+      "minimum_face_normal_width_mm": 0.5497626641628849,
+      "bounds_feature_mm": [
+        [
+          5.9093282060000005,
+          22.352473809,
+          -14.300892959
+        ],
+        [
+          10.768994288,
+          27.652439514,
+          3.852254393
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 2,
+      "index": 115,
+      "label": "profile_2_023",
+      "construction": "source_clipped_hull",
+      "vertices": 71,
+      "faces": 138,
+      "volume_mm3": 23.124864226542655,
+      "minimum_face_normal_width_mm": 0.5192898295711462,
+      "bounds_feature_mm": [
+        [
+          6.452499887,
+          22.352471517999998,
+          -14.23704339
+        ],
+        [
+          10.766966023,
+          27.652435966000002,
+          4.117256985
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 2,
+      "index": 116,
+      "label": "profile_2_024",
+      "construction": "source_clipped_hull",
+      "vertices": 104,
+      "faces": 204,
+      "volume_mm3": 21.661756224111333,
+      "minimum_face_normal_width_mm": 2.119575836240863,
+      "bounds_feature_mm": [
+        [
+          6.4912627579999995,
+          22.352460766,
+          6.730497716
+        ],
+        [
+          10.233264857,
+          27.652397565999998,
+          10.280503549
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 2,
+      "index": 117,
+      "label": "profile_2_025",
+      "construction": "source_clipped_hull",
+      "vertices": 61,
+      "faces": 118,
+      "volume_mm3": 3.1779203529266056,
+      "minimum_face_normal_width_mm": 0.3835254154175694,
+      "bounds_feature_mm": [
+        [
+          7.513852623,
+          22.352465555,
+          4.999247711000001
+        ],
+        [
+          10.634837162,
+          27.611306286999998,
+          7.126475186
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 2,
+      "index": 118,
+      "label": "profile_2_026",
+      "construction": "source_clipped_hull",
+      "vertices": 56,
+      "faces": 108,
+      "volume_mm3": 3.863073607646379,
+      "minimum_face_normal_width_mm": 0.507278627465315,
+      "bounds_feature_mm": [
+        [
+          7.481030508,
+          22.352466145,
+          5.505495029
+        ],
+        [
+          10.633845461,
+          27.622836807,
+          7.143534129
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 2,
+      "index": 119,
+      "label": "profile_2_027",
+      "construction": "source_clipped_hull",
+      "vertices": 86,
+      "faces": 168,
+      "volume_mm3": 16.153478159111458,
+      "minimum_face_normal_width_mm": 1.3995092934142885,
+      "bounds_feature_mm": [
+        [
+          6.999242294,
+          22.352460216999997,
+          6.028564148
+        ],
+        [
+          10.632625596,
+          27.651899957,
+          8.522219606
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 2,
+      "index": 120,
+      "label": "profile_2_028",
+      "construction": "source_clipped_hull",
+      "vertices": 89,
+      "faces": 174,
+      "volume_mm3": 163.068411153424,
+      "minimum_face_normal_width_mm": 3.7638660407339373,
+      "bounds_feature_mm": [
+        [
+          6.927472743,
+          22.352463320000002,
+          -14.157769745
+        ],
+        [
+          10.764447792,
+          27.652431726,
+          7.112606952
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 4,
+      "index": 108,
+      "label": "case_z0_sector00",
+      "construction": "source_clipped_hull",
+      "vertices": 90,
+      "faces": 176,
+      "volume_mm3": 13896.342459588044,
+      "minimum_face_normal_width_mm": 15.70469373600495,
+      "bounds_feature_mm": [
+        [
+          15.99997,
+          0.0,
+          -168.52852552299998
+        ],
+        [
+          34.986129999999996,
+          19.696369527999998,
+          -100.0
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 4,
+      "index": 109,
+      "label": "case_z0_sector01",
+      "construction": "source_clipped_hull",
+      "vertices": 145,
+      "faces": 286,
+      "volume_mm3": 14419.385414456261,
+      "minimum_face_normal_width_mm": 16.073739183759816,
+      "bounds_feature_mm": [
+        [
+          14.29688699,
+          9.237586987,
+          -168.541786398
+        ],
+        [
+          34.115112747,
+          33.544920665,
+          -100.0
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 4,
+      "index": 110,
+      "label": "case_z0_sector02",
+      "construction": "source_clipped_hull",
+      "vertices": 82,
+      "faces": 160,
+      "volume_mm3": 7191.368407791078,
+      "minimum_face_normal_width_mm": 7.754747076419887,
+      "bounds_feature_mm": [
+        [
+          -0.0,
+          24.762934656000002,
+          -168.5428
+        ],
+        [
+          19.367168976,
+          34.77525,
+          -100.0
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 4,
+      "index": 111,
+      "label": "case_z0_sector03",
+      "construction": "source_clipped_hull",
+      "vertices": 79,
+      "faces": 154,
+      "volume_mm3": 7190.955136477444,
+      "minimum_face_normal_width_mm": 7.754750244963325,
+      "bounds_feature_mm": [
+        [
+          -19.367168976,
+          24.762908071000002,
+          -168.5428
+        ],
+        [
+          -0.0,
+          34.77525,
+          -100.0
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 4,
+      "index": 112,
+      "label": "case_z0_sector04",
+      "construction": "source_clipped_hull",
+      "vertices": 140,
+      "faces": 276,
+      "volume_mm3": 14419.900846612903,
+      "minimum_face_normal_width_mm": 16.072548010275604,
+      "bounds_feature_mm": [
+        [
+          -34.115089134,
+          9.237586987,
+          -168.541785569
+        ],
+        [
+          -14.29687164,
+          33.544920665,
+          -100.0
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 4,
+      "index": 113,
+      "label": "case_z0_sector05",
+      "construction": "source_clipped_hull",
+      "vertices": 91,
+      "faces": 178,
+      "volume_mm3": 13896.214179736515,
+      "minimum_face_normal_width_mm": 15.704693639476117,
+      "bounds_feature_mm": [
+        [
+          -34.986129999999996,
+          0.0,
+          -168.528522125
+        ],
+        [
+          -15.99997,
+          19.696355895,
+          -100.0
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 4,
+      "index": 114,
+      "label": "case_z0_sector06",
+      "construction": "source_clipped_hull",
+      "vertices": 69,
+      "faces": 134,
+      "volume_mm3": 13704.569344962587,
+      "minimum_face_normal_width_mm": 15.70400340709982,
+      "bounds_feature_mm": [
+        [
+          -34.954842097,
+          -19.411506394,
+          -168.50901454299998
+        ],
+        [
+          -15.99997,
+          0.0,
+          -100.0
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 4,
+      "index": 115,
+      "label": "case_z0_sector07",
+      "construction": "source_clipped_hull",
+      "vertices": 103,
+      "faces": 202,
+      "volume_mm3": 13229.61817325626,
+      "minimum_face_normal_width_mm": 16.09392999574641,
+      "bounds_feature_mm": [
+        [
+          -33.621715326,
+          -33.04847334,
+          -168.491384916
+        ],
+        [
+          -15.557644117,
+          -9.237586987,
+          -100.0
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 4,
+      "index": 116,
+      "label": "case_z0_sector08",
+      "construction": "source_clipped_hull",
+      "vertices": 70,
+      "faces": 136,
+      "volume_mm3": 7960.862104357859,
+      "minimum_face_normal_width_mm": 7.847399057800051,
+      "bounds_feature_mm": [
+        [
+          -19.080544979,
+          -34.74736,
+          -168.4812
+        ],
+        [
+          -0.0,
+          -26.64369,
+          -100.0
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 4,
+      "index": 117,
+      "label": "case_z0_sector09",
+      "construction": "source_clipped_hull",
+      "vertices": 59,
+      "faces": 114,
+      "volume_mm3": 8963.817584805363,
+      "minimum_face_normal_width_mm": 9.027561128254074,
+      "bounds_feature_mm": [
+        [
+          0.0,
+          -34.74736,
+          -168.4812
+        ],
+        [
+          19.080544979,
+          -23.904720225,
+          -100.0
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 4,
+      "index": 118,
+      "label": "case_z0_sector10",
+      "construction": "source_clipped_hull",
+      "vertices": 94,
+      "faces": 184,
+      "volume_mm3": 13609.615912791653,
+      "minimum_face_normal_width_mm": 16.09393139828251,
+      "bounds_feature_mm": [
+        [
+          13.801396657,
+          -33.04847334,
+          -168.491383643
+        ],
+        [
+          33.621847919,
+          -9.237586987,
+          -100.0
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 4,
+      "index": 119,
+      "label": "case_z0_sector11",
+      "construction": "source_clipped_hull",
+      "vertices": 78,
+      "faces": 152,
+      "volume_mm3": 13704.475448622661,
+      "minimum_face_normal_width_mm": 15.704302534072033,
+      "bounds_feature_mm": [
+        [
+          15.99997,
+          -19.411582947,
+          -168.509024745
+        ],
+        [
+          34.954872789,
+          -0.0,
+          -100.0
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 4,
+      "index": 120,
+      "label": "case_z1_sector00",
+      "construction": "source_clipped_hull",
+      "vertices": 25,
+      "faces": 46,
+      "volume_mm3": 3927.7220403250403,
+      "minimum_face_normal_width_mm": 14.435766935482775,
+      "bounds_feature_mm": [
+        [
+          15.99997,
+          0.0,
+          -100.0
+        ],
+        [
+          30.475190635,
+          17.242847605,
+          -75.0
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 4,
+      "index": 121,
+      "label": "case_z1_sector01",
+      "construction": "source_clipped_hull",
+      "vertices": 51,
+      "faces": 98,
+      "volume_mm3": 3675.9404746893424,
+      "minimum_face_normal_width_mm": 12.591888847139156,
+      "bounds_feature_mm": [
+        [
+          13.659232088,
+          9.237586987,
+          -100.0
+        ],
+        [
+          29.865488118000002,
+          31.256050007,
+          -75.0
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 4,
+      "index": 122,
+      "label": "case_z1_sector02",
+      "construction": "source_clipped_hull",
+      "vertices": 40,
+      "faces": 76,
+      "volume_mm3": 1930.4893237225144,
+      "minimum_face_normal_width_mm": 6.116874068544956,
+      "bounds_feature_mm": [
+        [
+          -0.0,
+          23.658483970000002,
+          -100.0
+        ],
+        [
+          18.045688885,
+          32.677203708,
+          -75.0
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 4,
+      "index": 123,
+      "label": "case_z1_sector03",
+      "construction": "source_clipped_hull",
+      "vertices": 33,
+      "faces": 62,
+      "volume_mm3": 1929.7713207990805,
+      "minimum_face_normal_width_mm": 6.116883928618935,
+      "bounds_feature_mm": [
+        [
+          -18.042947145,
+          23.658496979,
+          -100.0
+        ],
+        [
+          -0.0,
+          32.677203708,
+          -75.0
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 4,
+      "index": 124,
+      "label": "case_z1_sector04",
+      "construction": "source_clipped_hull",
+      "vertices": 50,
+      "faces": 96,
+      "volume_mm3": 3676.2434235232017,
+      "minimum_face_normal_width_mm": 12.591853796103395,
+      "bounds_feature_mm": [
+        [
+          -29.866661063,
+          9.237586987,
+          -100.0
+        ],
+        [
+          -13.6592396,
+          31.251301173999998,
+          -75.0
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 4,
+      "index": 125,
+      "label": "case_z1_sector05",
+      "construction": "source_clipped_hull",
+      "vertices": 28,
+      "faces": 52,
+      "volume_mm3": 3930.3389243358565,
+      "minimum_face_normal_width_mm": 14.43535543495608,
+      "bounds_feature_mm": [
+        [
+          -30.475180743,
+          0.0,
+          -100.0
+        ],
+        [
+          -15.99997,
+          17.243524805,
+          -75.0
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 4,
+      "index": 126,
+      "label": "case_z1_sector06",
+      "construction": "source_clipped_hull",
+      "vertices": 47,
+      "faces": 90,
+      "volume_mm3": 3881.1981817083606,
+      "minimum_face_normal_width_mm": 14.423327135362296,
+      "bounds_feature_mm": [
+        [
+          -30.472150301,
+          -16.984970487000002,
+          -100.0
+        ],
+        [
+          -15.99997,
+          0.0,
+          -75.0
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 4,
+      "index": 127,
+      "label": "case_z1_sector07",
+      "construction": "source_clipped_hull",
+      "vertices": 74,
+      "faces": 144,
+      "volume_mm3": 3270.8238548571208,
+      "minimum_face_normal_width_mm": 12.018051989648196,
+      "bounds_feature_mm": [
+        [
+          -29.418831849,
+          -30.734124111,
+          -100.0
+        ],
+        [
+          -13.784250221999999,
+          -9.237586987,
+          -75.0
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 4,
+      "index": 128,
+      "label": "case_z1_sector08",
+      "construction": "source_clipped_hull",
+      "vertices": 55,
+      "faces": 106,
+      "volume_mm3": 2049.263901388191,
+      "minimum_face_normal_width_mm": 6.007851774917153,
+      "bounds_feature_mm": [
+        [
+          -17.744354829000002,
+          -32.600823682999994,
+          -100.0
+        ],
+        [
+          0.0,
+          -23.875021729,
+          -75.0
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 4,
+      "index": 129,
+      "label": "case_z1_sector09",
+      "construction": "source_clipped_hull",
+      "vertices": 52,
+      "faces": 100,
+      "volume_mm3": 1935.192606705981,
+      "minimum_face_normal_width_mm": 5.707600209864279,
+      "bounds_feature_mm": [
+        [
+          0.0,
+          -32.600823682999994,
+          -100.0
+        ],
+        [
+          17.74396152,
+          -24.916808007,
+          -75.0
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 4,
+      "index": 130,
+      "label": "case_z1_sector10",
+      "construction": "source_clipped_hull",
+      "vertices": 70,
+      "faces": 136,
+      "volume_mm3": 3223.8255319059363,
+      "minimum_face_normal_width_mm": 11.831236301894767,
+      "bounds_feature_mm": [
+        [
+          14.385727283,
+          -30.733442881,
+          -100.0
+        ],
+        [
+          29.416247431,
+          -9.237586987,
+          -75.0
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 4,
+      "index": 131,
+      "label": "case_z1_sector11",
+      "construction": "source_clipped_hull",
+      "vertices": 53,
+      "faces": 102,
+      "volume_mm3": 3881.234114394493,
+      "minimum_face_normal_width_mm": 14.423259321765329,
+      "bounds_feature_mm": [
+        [
+          15.99997,
+          -16.983478372999997,
+          -100.0
+        ],
+        [
+          30.472074586999998,
+          -0.0,
+          -75.0
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 4,
+      "index": 132,
+      "label": "case_z2_sector00",
+      "construction": "source_clipped_hull",
+      "vertices": 111,
+      "faces": 218,
+      "volume_mm3": 5814.0181461024495,
+      "minimum_face_normal_width_mm": 14.189736441693315,
+      "bounds_feature_mm": [
+        [
+          9.99999,
+          0.0,
+          -75.0
+        ],
+        [
+          28.391302019999998,
+          15.907961847,
+          -30.741210000000002
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 4,
+      "index": 133,
+      "label": "case_z2_sector01",
+      "construction": "source_clipped_hull",
+      "vertices": 105,
+      "faces": 206,
+      "volume_mm3": 5113.3883443877085,
+      "minimum_face_normal_width_mm": 12.735781338434927,
+      "bounds_feature_mm": [
+        [
+          13.584838227999999,
+          9.237586987,
+          -75.0
+        ],
+        [
+          27.553398164,
+          29.170675146,
+          -31.405105820000003
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 4,
+      "index": 134,
+      "label": "case_z2_sector02",
+      "construction": "source_clipped_hull",
+      "vertices": 89,
+      "faces": 174,
+      "volume_mm3": 2730.588638149782,
+      "minimum_face_normal_width_mm": 6.059954838404134,
+      "bounds_feature_mm": [
+        [
+          0.0,
+          23.529630023,
+          -75.0
+        ],
+        [
+          16.841697148,
+          30.917873005,
+          -33.956871177
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 4,
+      "index": 135,
+      "label": "case_z2_sector03",
+      "construction": "source_clipped_hull",
+      "vertices": 87,
+      "faces": 170,
+      "volume_mm3": 2731.0399152821133,
+      "minimum_face_normal_width_mm": 6.041124206401557,
+      "bounds_feature_mm": [
+        [
+          -16.841708251,
+          23.529630023,
+          -75.0
+        ],
+        [
+          0.0,
+          30.917873005,
+          -33.959679693
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 4,
+      "index": 136,
+      "label": "case_z2_sector04",
+      "construction": "source_clipped_hull",
+      "vertices": 105,
+      "faces": 206,
+      "volume_mm3": 5112.566438643535,
+      "minimum_face_normal_width_mm": 12.73574259315401,
+      "bounds_feature_mm": [
+        [
+          -27.563423638,
+          9.237586987,
+          -75.0
+        ],
+        [
+          -13.584838227999999,
+          29.170694377,
+          -31.401708824
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 4,
+      "index": 137,
+      "label": "case_z2_sector05",
+      "construction": "source_clipped_hull",
+      "vertices": 110,
+      "faces": 216,
+      "volume_mm3": 5815.512182211594,
+      "minimum_face_normal_width_mm": 14.189739948648917,
+      "bounds_feature_mm": [
+        [
+          -28.391309151999998,
+          0.0,
+          -75.0
+        ],
+        [
+          -9.99999,
+          15.913750057,
+          -30.74842
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 4,
+      "index": 138,
+      "label": "case_z2_sector06",
+      "construction": "source_clipped_hull",
+      "vertices": 107,
+      "faces": 210,
+      "volume_mm3": 5744.728346612902,
+      "minimum_face_normal_width_mm": 14.189739948573544,
+      "bounds_feature_mm": [
+        [
+          -28.379479897,
+          -15.746219095999999,
+          -75.0
+        ],
+        [
+          -9.99999,
+          0.0,
+          -30.757565459
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 4,
+      "index": 139,
+      "label": "case_z2_sector07",
+      "construction": "source_clipped_hull",
+      "vertices": 95,
+      "faces": 186,
+      "volume_mm3": 4720.441948270851,
+      "minimum_face_normal_width_mm": 12.119246649927872,
+      "bounds_feature_mm": [
+        [
+          -27.273251501999997,
+          -28.749021209000002,
+          -75.0
+        ],
+        [
+          -13.445182809,
+          -9.237586987,
+          -31.396897187
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 4,
+      "index": 140,
+      "label": "case_z2_sector08",
+      "construction": "source_clipped_hull",
+      "vertices": 64,
+      "faces": 124,
+      "volume_mm3": 2419.7083219549813,
+      "minimum_face_normal_width_mm": 5.531693503821409,
+      "bounds_feature_mm": [
+        [
+          -16.598255134000002,
+          -30.756787421,
+          -75.0
+        ],
+        [
+          0.0,
+          -23.287739742000003,
+          -33.936233783
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 4,
+      "index": 141,
+      "label": "case_z2_sector09",
+      "construction": "source_clipped_hull",
+      "vertices": 61,
+      "faces": 118,
+      "volume_mm3": 2252.5398329281165,
+      "minimum_face_normal_width_mm": 4.796640763179451,
+      "bounds_feature_mm": [
+        [
+          0.0,
+          -30.756787421,
+          -75.0
+        ],
+        [
+          16.587239396999998,
+          -23.272736456,
+          -33.927989552
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 4,
+      "index": 142,
+      "label": "case_z2_sector10",
+      "construction": "source_clipped_hull",
+      "vertices": 97,
+      "faces": 190,
+      "volume_mm3": 4640.839236103501,
+      "minimum_face_normal_width_mm": 11.875995852160598,
+      "bounds_feature_mm": [
+        [
+          13.436520658000001,
+          -28.729941393,
+          -75.0
+        ],
+        [
+          27.273307133,
+          -9.237586987,
+          -31.404429494
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 4,
+      "index": 143,
+      "label": "case_z2_sector11",
+      "construction": "source_clipped_hull",
+      "vertices": 114,
+      "faces": 224,
+      "volume_mm3": 5744.345901314486,
+      "minimum_face_normal_width_mm": 14.189736441746962,
+      "bounds_feature_mm": [
+        [
+          9.99999,
+          -15.746251215,
+          -75.0
+        ],
+        [
+          28.379472883,
+          -0.0,
+          -30.747619878
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 2,
+      "index": 144,
+      "label": "rear_solid_2",
+      "construction": "source_clipped_hull",
+      "vertices": 296,
+      "faces": 588,
+      "volume_mm3": 77995.41465296493,
+      "minimum_face_normal_width_mm": 33.999970000000005,
+      "bounds_feature_mm": [
+        [
+          -18.99999,
+          -18.99999,
+          -163.009
+        ],
+        [
+          28.99998,
+          14.999979999999999,
+          -99.00897
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 3,
+      "index": 145,
+      "label": "rear_solid_3",
+      "construction": "source_clipped_hull",
+      "vertices": 229,
+      "faces": 454,
+      "volume_mm3": 40646.64517473906,
+      "minimum_face_normal_width_mm": 26.99994,
+      "bounds_feature_mm": [
+        [
+          -16.99501,
+          -1.9999699999999998,
+          -153.0089
+        ],
+        [
+          26.955360000000002,
+          24.99997,
+          -109.009
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "link5",
+      "component": 5,
+      "index": 146,
+      "label": "rear_solid_5",
+      "construction": "source_clipped_hull",
+      "vertices": 257,
+      "faces": 510,
+      "volume_mm3": 23216.72688926892,
+      "minimum_face_normal_width_mm": 21.499999999999993,
+      "bounds_feature_mm": [
+        [
+          -18.99999,
+          -21.999950000000002,
+          -176.509
+        ],
+        [
+          18.99999,
+          21.999950000000002,
+          -155.00900000000001
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 1,
+      "index": 121,
+      "label": "retained_flange_floor",
+      "construction": "retained_feature_block",
+      "vertices": 20,
+      "faces": 36,
+      "volume_mm3": 239.99724155078113,
+      "minimum_face_normal_width_mm": 1.9999788643073013,
+      "bounds_feature_mm": [
+        [
+          -6.0,
+          5.0,
+          -0.5473171440000001
+        ],
+        [
+          6.0,
+          15.0,
+          1.452693364
+        ]
+      ],
+      "source_retained": {
+        "file": "/data_robot/projects/.experiments/nero-official-flange-root-local-20261019/pieces/flange_floor.npz",
+        "sha256": "024bd4ea7eb06a7760553cde53bda21b6f4ece76dcb97c6be253821e2475c449"
+      }
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 1,
+      "index": 122,
+      "label": "retained_root_arc_0",
+      "construction": "retained_feature_block",
+      "vertices": 53,
+      "faces": 102,
+      "volume_mm3": 10.962568811671652,
+      "minimum_face_normal_width_mm": 1.2865158318957035,
+      "bounds_feature_mm": [
+        [
+          8.970696934000001,
+          19.237721658,
+          1.447647335
+        ],
+        [
+          11.128195604,
+          21.389254342,
+          11.452572306
+        ]
+      ],
+      "source_retained": {
+        "file": "/data_robot/projects/.experiments/nero-official-flange-root-local-20261019/pieces/root_arc_0.npz",
+        "sha256": "9edb3b588738d760b371969aef899f48f10ffcd9b5ebdf003b536add19c0788d"
+      }
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 1,
+      "index": 123,
+      "label": "retained_root_arc_1",
+      "construction": "retained_feature_block",
+      "vertices": 47,
+      "faces": 90,
+      "volume_mm3": 46.0663411321869,
+      "minimum_face_normal_width_mm": 2.143126022736048,
+      "bounds_feature_mm": [
+        [
+          8.479884166,
+          17.353775454,
+          1.447647335
+        ],
+        [
+          11.825036004000001,
+          20.022986954,
+          11.452572076000001
+        ]
+      ],
+      "source_retained": {
+        "file": "/data_robot/projects/.experiments/nero-official-flange-root-local-20261019/pieces/root_arc_1.npz",
+        "sha256": "76d427e72f0ca188a1d6a2edf08d20105e71d7d8fc609e1350d9cb4c317576f8"
+      }
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 1,
+      "index": 124,
+      "label": "retained_root_arc_2",
+      "construction": "retained_feature_block",
+      "vertices": 43,
+      "faces": 82,
+      "volume_mm3": 36.02541065836767,
+      "minimum_face_normal_width_mm": 1.9148461586551684,
+      "bounds_feature_mm": [
+        [
+          10.072687939,
+          16.252889529999997,
+          1.447647335
+        ],
+        [
+          12.871632933999999,
+          18.82417007,
+          11.452565562
+        ]
+      ],
+      "source_retained": {
+        "file": "/data_robot/projects/.experiments/nero-official-flange-root-local-20261019/pieces/root_arc_2.npz",
+        "sha256": "da2924e0fa62a60961f10444200c9a02e9cf549e71e7c5eb28bcd10cb8f795e0"
+      }
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 1,
+      "index": 125,
+      "label": "retained_root_arc_3",
+      "construction": "retained_feature_block",
+      "vertices": 43,
+      "faces": 82,
+      "volume_mm3": 1.7703246014463236,
+      "minimum_face_normal_width_mm": 0.3693755920768809,
+      "bounds_feature_mm": [
+        [
+          12.158054085,
+          16.671268639,
+          1.447647335
+        ],
+        [
+          13.171641167,
+          17.90722346,
+          11.452565469
+        ]
+      ],
+      "source_retained": {
+        "file": "/data_robot/projects/.experiments/nero-official-flange-root-local-20261019/pieces/root_arc_3.npz",
+        "sha256": "8b7c9cc333ab39bf70429fb457812af98f0bd21167c14cad4edac04a5f771684"
+      }
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 1,
+      "index": 126,
+      "label": "retained_root_flat",
+      "construction": "retained_feature_block",
+      "vertices": 43,
+      "faces": 82,
+      "volume_mm3": 3.581000089333614,
+      "minimum_face_normal_width_mm": 0.6419131641548868,
+      "bounds_feature_mm": [
+        [
+          9.973973101999999,
+          21.389254342,
+          1.447647335
+        ],
+        [
+          10.882029515000001,
+          23.211023421,
+          9.584861958000001
+        ]
+      ],
+      "source_retained": {
+        "file": "/data_robot/projects/.experiments/nero-official-flange-root-local-20261019/pieces/root_flat.npz",
+        "sha256": "d7475a9c2c3be09daa620974f2030452539182299bc6ceaa1c64e2cfe45b8ce5"
+      }
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 1,
+      "index": 127,
+      "label": "retained_wall_hole_00",
+      "construction": "retained_feature_block",
+      "vertices": 15,
+      "faces": 26,
+      "volume_mm3": 2.505077198412185,
+      "minimum_face_normal_width_mm": 1.5000000007903873,
+      "bounds_feature_mm": [
+        [
+          11.739676133,
+          15.297354758,
+          7.952598299
+        ],
+        [
+          13.364318722,
+          17.684850818,
+          9.684649106
+        ]
+      ],
+      "source_retained": {
+        "file": "/data_robot/projects/.experiments/nero-official-flange-root-local-20261019/pieces/wall_hole_00.npz",
+        "sha256": "c96a42e3ed5757e86ab7972c7a960427ad8339c5555c326601b75a0e2f9e3838"
+      }
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 1,
+      "index": 128,
+      "label": "retained_wall_hole_01",
+      "construction": "retained_feature_block",
+      "vertices": 36,
+      "faces": 68,
+      "volume_mm3": 5.855514271928731,
+      "minimum_face_normal_width_mm": 1.732050808370869,
+      "bounds_feature_mm": [
+        [
+          11.739674977,
+          14.882953805,
+          8.802586738
+        ],
+        [
+          14.228510956,
+          17.684464363,
+          11.452565575
+        ]
+      ],
+      "source_retained": {
+        "file": "/data_robot/projects/.experiments/nero-official-flange-root-local-20261019/pieces/wall_hole_01.npz",
+        "sha256": "f6ef37c482804d8339e8c50866dd774194f7c96a9e7299e05580a84803f8d853"
+      }
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 1,
+      "index": 129,
+      "label": "retained_wall_hole_02",
+      "construction": "retained_feature_block",
+      "vertices": 29,
+      "faces": 54,
+      "volume_mm3": 3.952728013068107,
+      "minimum_face_normal_width_mm": 1.550472779147683,
+      "bounds_feature_mm": [
+        [
+          12.724746837,
+          14.275734835,
+          9.424821361000001
+        ],
+        [
+          15.438319226,
+          17.051129525,
+          11.452564696000001
+        ]
+      ],
+      "source_retained": {
+        "file": "/data_robot/projects/.experiments/nero-official-flange-root-local-20261019/pieces/wall_hole_02.npz",
+        "sha256": "29382f95d230b7759f07b95209457185ec4d2ddaf38c6aef81e1662925b21d3e"
+      }
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 1,
+      "index": 130,
+      "label": "retained_wall_hole_03",
+      "construction": "retained_feature_block",
+      "vertices": 25,
+      "faces": 46,
+      "volume_mm3": 3.9369403049621967,
+      "minimum_face_normal_width_mm": 1.545327731079067,
+      "bounds_feature_mm": [
+        [
+          14.005160968,
+          13.008270911,
+          9.424820495
+        ],
+        [
+          16.783096226999998,
+          15.708893093000002,
+          11.452557602
+        ]
+      ],
+      "source_retained": {
+        "file": "/data_robot/projects/.experiments/nero-official-flange-root-local-20261019/pieces/wall_hole_03.npz",
+        "sha256": "77d00f15b3ff12325a7651a4238058c395819dcac782b59158735f3b4fc4868c"
+      }
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 1,
+      "index": 131,
+      "label": "retained_wall_hole_04",
+      "construction": "retained_feature_block",
+      "vertices": 33,
+      "faces": 62,
+      "volume_mm3": 5.878265807270203,
+      "minimum_face_normal_width_mm": 1.7320508084052584,
+      "bounds_feature_mm": [
+        [
+          14.612379932,
+          11.994717137,
+          8.802588219999999
+        ],
+        [
+          17.412963967,
+          14.499091117,
+          11.452548263
+        ]
+      ],
+      "source_retained": {
+        "file": "/data_robot/projects/.experiments/nero-official-flange-root-local-20261019/pieces/wall_hole_04.npz",
+        "sha256": "cd66c8253a034ac7ae3d334c2ea2fba6598d7762849afebd6c824b5d1dd32658"
+      }
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 1,
+      "index": 132,
+      "label": "retained_wall_hole_05",
+      "construction": "retained_feature_block",
+      "vertices": 20,
+      "faces": 36,
+      "volume_mm3": 2.5247274568897793,
+      "minimum_face_normal_width_mm": 1.5000000004274416,
+      "bounds_feature_mm": [
+        [
+          15.026778742000001,
+          11.997234209,
+          7.952598299
+        ],
+        [
+          17.414278122,
+          13.634889315,
+          9.684649106
+        ]
+      ],
+      "source_retained": {
+        "file": "/data_robot/projects/.experiments/nero-official-flange-root-local-20261019/pieces/wall_hole_05.npz",
+        "sha256": "5c2d92b23381977b53f9e1a42812b0c8fde89ee36e2fb6b110e11cf4b4bbfb0c"
+      }
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 1,
+      "index": 133,
+      "label": "retained_wall_hole_06",
+      "construction": "retained_feature_block",
+      "vertices": 17,
+      "faces": 30,
+      "volume_mm3": 2.5247721380180814,
+      "minimum_face_normal_width_mm": 1.5000000007160996,
+      "bounds_feature_mm": [
+        [
+          15.026775451,
+          11.997235373999999,
+          6.2205474910000005
+        ],
+        [
+          17.414280578,
+          13.634900864,
+          7.952598299
+        ]
+      ],
+      "source_retained": {
+        "file": "/data_robot/projects/.experiments/nero-official-flange-root-local-20261019/pieces/wall_hole_06.npz",
+        "sha256": "83903871f4e13826f39f2689abb87fe2d862951afa5a057fe1f991edd455ddbb"
+      }
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 1,
+      "index": 134,
+      "label": "retained_wall_hole_07",
+      "construction": "retained_feature_block",
+      "vertices": 25,
+      "faces": 46,
+      "volume_mm3": 7.7342847331863736,
+      "minimum_face_normal_width_mm": 1.7320508076815777,
+      "bounds_feature_mm": [
+        [
+          14.612381492999999,
+          11.995627926000001,
+          2.7564458760000004
+        ],
+        [
+          17.413767784999997,
+          14.499097641,
+          7.102610361
+        ]
+      ],
+      "source_retained": {
+        "file": "/data_robot/projects/.experiments/nero-official-flange-root-local-20261019/pieces/wall_hole_07.npz",
+        "sha256": "c1c1f07cfd45b7bfc5f7e3030f0aeb905e33af65c5aad72a762ca5e54a4bc024"
+      }
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 1,
+      "index": 135,
+      "label": "retained_wall_hole_08",
+      "construction": "retained_feature_block",
+      "vertices": 34,
+      "faces": 64,
+      "volume_mm3": 21.045055605223265,
+      "minimum_face_normal_width_mm": 2.0802395500883164,
+      "bounds_feature_mm": [
+        [
+          14.00517238,
+          11.994724318,
+          1.447647335
+        ],
+        [
+          17.40848638,
+          15.708902112999999,
+          6.480374923
+        ]
+      ],
+      "source_retained": {
+        "file": "/data_robot/projects/.experiments/nero-official-flange-root-local-20261019/pieces/wall_hole_08.npz",
+        "sha256": "dc0863890195849c472823210178e5b8e17af78d9ede00b1cf61ecd6db7a605c"
+      }
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 1,
+      "index": 136,
+      "label": "retained_wall_hole_09",
+      "construction": "retained_feature_block",
+      "vertices": 34,
+      "faces": 64,
+      "volume_mm3": 20.96820087434712,
+      "minimum_face_normal_width_mm": 2.072603746234969,
+      "bounds_feature_mm": [
+        [
+          11.739681013999999,
+          14.275746246,
+          1.447647335
+        ],
+        [
+          15.438328247,
+          17.683405582,
+          6.480375103999999
+        ]
+      ],
+      "source_retained": {
+        "file": "/data_robot/projects/.experiments/nero-official-flange-root-local-20261019/pieces/wall_hole_09.npz",
+        "sha256": "a52fd047ee6b72dfe3d643c0651ad4642eb5a20dede8bb4f9dec6bcb88b563af"
+      }
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 1,
+      "index": 137,
+      "label": "retained_wall_hole_10",
+      "construction": "retained_feature_block",
+      "vertices": 30,
+      "faces": 56,
+      "volume_mm3": 7.687172653358917,
+      "minimum_face_normal_width_mm": 1.7320508082168464,
+      "bounds_feature_mm": [
+        [
+          11.739678572999999,
+          14.88296103,
+          2.7564458760000004
+        ],
+        [
+          14.228518688,
+          17.684780487,
+          7.102610984
+        ]
+      ],
+      "source_retained": {
+        "file": "/data_robot/projects/.experiments/nero-official-flange-root-local-20261019/pieces/wall_hole_10.npz",
+        "sha256": "00d7b7b30f95f3e72dc49c6f1524abfbf7399b44fbfbdce758d622996c78fb75"
+      }
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 1,
+      "index": 138,
+      "label": "retained_wall_hole_11",
+      "construction": "retained_feature_block",
+      "vertices": 16,
+      "faces": 28,
+      "volume_mm3": 2.5051019719984176,
+      "minimum_face_normal_width_mm": 1.5000000006269225,
+      "bounds_feature_mm": [
+        [
+          11.739677353,
+          15.297347527,
+          6.2205474910000005
+        ],
+        [
+          13.364323489,
+          17.684855720999998,
+          7.952598299
+        ]
+      ],
+      "source_retained": {
+        "file": "/data_robot/projects/.experiments/nero-official-flange-root-local-20261019/pieces/wall_hole_11.npz",
+        "sha256": "d1b2b3eea7bb91757bbd18a40c005ef91e21859312312c54b7f516f53b172849"
+      }
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 1,
+      "index": 139,
+      "label": "retained_wall_side_low",
+      "construction": "retained_feature_block",
+      "vertices": 46,
+      "faces": 88,
+      "volume_mm3": 54.05160254426109,
+      "minimum_face_normal_width_mm": 2.036915013861867,
+      "bounds_feature_mm": [
+        [
+          15.966783958,
+          9.976178554,
+          1.447647335
+        ],
+        [
+          19.025895631,
+          13.442213758,
+          11.452546551
+        ]
+      ],
+      "source_retained": {
+        "file": "/data_robot/projects/.experiments/nero-official-flange-root-local-20261019/pieces/wall_side_low.npz",
+        "sha256": "94b13a591e0a00d375007d89d61fae4023081e130aabe09d89125fd4f656b70d"
+      }
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 1,
+      "index": 140,
+      "label": "floor_remainder_0",
+      "construction": "source_clipped_hull",
+      "vertices": 97,
+      "faces": 190,
+      "volume_mm3": 1087.2099344914056,
+      "minimum_face_normal_width_mm": 2.000147381,
+      "bounds_feature_mm": [
+        [
+          6.0,
+          -23.346928782,
+          -0.547400046
+        ],
+        [
+          21.881881643,
+          23.652466513,
+          1.452747335
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 1,
+      "index": 141,
+      "label": "floor_remainder_1",
+      "construction": "source_clipped_hull",
+      "vertices": 27,
+      "faces": 50,
+      "volume_mm3": 335.51520502790794,
+      "minimum_face_normal_width_mm": 2.0000262770590074,
+      "bounds_feature_mm": [
+        [
+          -16.351418099,
+          15.0,
+          -0.547286203
+        ],
+        [
+          6.0,
+          23.652473425,
+          1.452747335
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 1,
+      "index": 142,
+      "label": "floor_remainder_3",
+      "construction": "source_clipped_hull",
+      "vertices": 107,
+      "faces": 210,
+      "volume_mm3": 976.9998660937158,
+      "minimum_face_normal_width_mm": 2.0001400830000002,
+      "bounds_feature_mm": [
+        [
+          -22.117540807,
+          -23.346925484,
+          -0.547392748
+        ],
+        [
+          -6.0,
+          15.0,
+          1.452747335
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 1,
+      "index": 143,
+      "label": "floor_remainder_4",
+      "construction": "source_clipped_hull",
+      "vertices": 29,
+      "faces": 54,
+      "volume_mm3": 678.8495359438101,
+      "minimum_face_normal_width_mm": 2.0001454290000003,
+      "bounds_feature_mm": [
+        [
+          -6.0,
+          -23.346928216,
+          -0.547398094
+        ],
+        [
+          6.0,
+          5.0,
+          1.452747335
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 1,
+      "index": 144,
+      "label": "ring_sector_00",
+      "construction": "source_clipped_hull",
+      "vertices": 76,
+      "faces": 148,
+      "volume_mm3": 385.9727208843143,
+      "minimum_face_normal_width_mm": 5.467279412572978,
+      "bounds_feature_mm": [
+        [
+          1.170195444,
+          18.185170279,
+          1.452647335
+        ],
+        [
+          10.823477971,
+          23.652466912,
+          11.452586209
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 1,
+      "index": 145,
+      "label": "ring_sector_01",
+      "construction": "source_clipped_hull",
+      "vertices": 47,
+      "faces": 90,
+      "volume_mm3": 338.95494779971403,
+      "minimum_face_normal_width_mm": 4.521484735935291,
+      "bounds_feature_mm": [
+        [
+          -7.837573804000001,
+          19.130957107,
+          1.452647335
+        ],
+        [
+          1.377599322,
+          23.652469571,
+          11.452592079
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 1,
+      "index": 146,
+      "label": "ring_sector_02",
+      "construction": "source_clipped_hull",
+      "vertices": 77,
+      "faces": 150,
+      "volume_mm3": 355.7838420741787,
+      "minimum_face_normal_width_mm": 6.027845276067471,
+      "bounds_feature_mm": [
+        [
+          -14.264963303,
+          15.459539746999999,
+          1.452647335
+        ],
+        [
+          -6.339308794000001,
+          23.652469037,
+          11.452592098
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 1,
+      "index": 147,
+      "label": "ring_sector_03",
+      "construction": "source_clipped_hull",
+      "vertices": 97,
+      "faces": 190,
+      "volume_mm3": 178.67514584880948,
+      "minimum_face_normal_width_mm": 2.3834949488640325,
+      "bounds_feature_mm": [
+        [
+          -19.501227401,
+          9.561165775,
+          1.452647335
+        ],
+        [
+          -12.9720941,
+          17.000321264,
+          11.452569626999999
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 1,
+      "index": 148,
+      "label": "ring_sector_04",
+      "construction": "source_clipped_hull",
+      "vertices": 30,
+      "faces": 56,
+      "volume_mm3": 177.0066002538606,
+      "minimum_face_normal_width_mm": 2.3768447556486683,
+      "bounds_feature_mm": [
+        [
+          -21.98001246,
+          2.337287066,
+          1.452647335
+        ],
+        [
+          -17.732290054,
+          10.514968309999999,
+          11.452554846
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 1,
+      "index": 149,
+      "label": "ring_sector_05",
+      "construction": "source_clipped_hull",
+      "vertices": 29,
+      "faces": 54,
+      "volume_mm3": 176.41122550665625,
+      "minimum_face_normal_width_mm": 2.371603618556744,
+      "bounds_feature_mm": [
+        [
+          -22.117542105,
+          -5.7061958,
+          1.452647335
+        ],
+        [
+          -19.360065431,
+          2.569095,
+          11.452533487
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 1,
+      "index": 150,
+      "label": "ring_sector_06",
+      "construction": "source_clipped_hull",
+      "vertices": 61,
+      "faces": 118,
+      "volume_mm3": 176.47724158176507,
+      "minimum_face_normal_width_mm": 2.3659356625603047,
+      "bounds_feature_mm": [
+        [
+          -21.295812644,
+          -13.138744159,
+          1.452647335
+        ],
+        [
+          -16.033769088,
+          -5.187513898000001,
+          11.452513343
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 1,
+      "index": 151,
+      "label": "ring_sector_07",
+      "construction": "source_clipped_hull",
+      "vertices": 90,
+      "faces": 176,
+      "volume_mm3": 181.10963759488723,
+      "minimum_face_normal_width_mm": 2.375768464018293,
+      "bounds_feature_mm": [
+        [
+          -17.648396189,
+          -18.99643931,
+          1.452647335
+        ],
+        [
+          -10.449808347,
+          -11.936698819999998,
+          11.452487565999999
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 1,
+      "index": 152,
+      "label": "ring_sector_08",
+      "construction": "source_clipped_hull",
+      "vertices": 81,
+      "faces": 158,
+      "volume_mm3": 384.5372446180748,
+      "minimum_face_normal_width_mm": 6.063103599161134,
+      "bounds_feature_mm": [
+        [
+          -11.717178232,
+          -23.346955502999997,
+          1.452647335
+        ],
+        [
+          -3.445825228,
+          -16.941719766000002,
+          11.452470573
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 1,
+      "index": 153,
+      "label": "ring_sector_09",
+      "construction": "source_clipped_hull",
+      "vertices": 40,
+      "faces": 76,
+      "volume_mm3": 315.39765365129807,
+      "minimum_face_normal_width_mm": 3.941029947856889,
+      "bounds_feature_mm": [
+        [
+          -4.116697878,
+          -23.34695383,
+          1.452647335
+        ],
+        [
+          4.820757283000001,
+          -19.405898397999998,
+          11.452460177999999
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 1,
+      "index": 154,
+      "label": "ring_sector_10",
+      "construction": "source_clipped_hull",
+      "vertices": 75,
+      "faces": 146,
+      "volume_mm3": 376.78460810479226,
+      "minimum_face_normal_width_mm": 6.102797856022278,
+      "bounds_feature_mm": [
+        [
+          4.006995703,
+          -23.346954834,
+          1.452647335
+        ],
+        [
+          12.027657784999999,
+          -16.523319484,
+          11.452463374
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 1,
+      "index": 155,
+      "label": "ring_sector_11",
+      "construction": "source_clipped_hull",
+      "vertices": 106,
+      "faces": 208,
+      "volume_mm3": 175.6397604765089,
+      "minimum_face_normal_width_mm": 2.3708655234794507,
+      "bounds_feature_mm": [
+        [
+          10.867558185,
+          -18.287165233,
+          1.452647335
+        ],
+        [
+          17.863336316,
+          -11.358229556000001,
+          11.452478991
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 1,
+      "index": 156,
+      "label": "ring_sector_12",
+      "construction": "source_clipped_hull",
+      "vertices": 33,
+      "faces": 62,
+      "volume_mm3": 226.92937343785923,
+      "minimum_face_normal_width_mm": 3.449961326313946,
+      "bounds_feature_mm": [
+        [
+          16.2212329,
+          -12.508042746,
+          1.452647335
+        ],
+        [
+          21.240325009,
+          -4.2380971590000005,
+          11.452496492
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 1,
+      "index": 157,
+      "label": "ring_sector_13",
+      "construction": "source_clipped_hull",
+      "vertices": 31,
+      "faces": 58,
+      "volume_mm3": 289.28812084985987,
+      "minimum_face_normal_width_mm": 3.9999492480791607,
+      "bounds_feature_mm": [
+        [
+          17.881937997999998,
+          -5.034049502999999,
+          1.452647335
+        ],
+        [
+          21.8818884,
+          3.1711120029999997,
+          11.452516705999999
+        ]
+      ],
+      "source_retained": null
+    },
+    {
+      "mesh": "gripper_flange",
+      "component": 1,
+      "index": 158,
+      "label": "ring_sector_14",
+      "construction": "source_clipped_hull",
+      "vertices": 30,
+      "faces": 56,
+      "volume_mm3": 241.93714489950497,
+      "minimum_face_normal_width_mm": 3.79954027336489,
+      "bounds_feature_mm": [
+        [
+          17.27924812,
+          2.61931826,
+          1.452647335
+        ],
+        [
+          21.649002997,
+          10.984605962,
+          11.452542297
+        ]
+      ],
+      "source_retained": null
+    }
+  ],
+  "piece_counts": {
+    "link5": 147,
+    "gripper_flange": 159
+  },
+  "total_pieces": 306,
+  "vertices": 19490,
+  "faces": 37756,
+  "minimum_face_normal_width_mm": 0.18287436676810467,
+  "minimum_volume_mm3": 1.5993918883951923,
+  "skipped_zero_volume_source_patches": [],
+  "profile_partitions": [
+    {
+      "original_area_mm2": 2348.0183219999994,
+      "material_area_mm2": 2348.0183319999996,
+      "guide_area_mm2": 2390.798823327072,
+      "original_holes": 10,
+      "guide_holes": 6,
+      "removed_projection_features": [
+        {
+          "type": "tiny_projection_hole",
+          "area_mm2": 4.999999999985576e-07
+        },
+        {
+          "type": "tiny_projection_hole",
+          "area_mm2": 5.000000000025544e-07
+        },
+        {
+          "type": "tiny_projection_hole",
+          "area_mm2": 8.000000000038206e-06
+        },
+        {
+          "type": "tiny_projection_hole",
+          "area_mm2": 9.999999999980033e-07
+        }
+      ],
+      "triangles": 147,
+      "convex_regions": 60,
+      "partition_area_difference_mm2": 0.0,
+      "uncovered_original_projection_area_mm2": 0.0,
+      "mesh": "link5",
+      "component": 0
+    },
+    {
+      "original_area_mm2": 2783.4748895,
+      "material_area_mm2": 2783.4748919999997,
+      "guide_area_mm2": 2816.8682920256465,
+      "original_holes": 8,
+      "guide_holes": 5,
+      "removed_projection_features": [
+        {
+          "type": "tiny_projection_hole",
+          "area_mm2": 1.0000000000042207e-06
+        },
+        {
+          "type": "tiny_projection_hole",
+          "area_mm2": 4.999999999987796e-07
+        },
+        {
+          "type": "tiny_projection_hole",
+          "area_mm2": 1.0000000000006678e-06
+        }
+      ],
+      "triangles": 118,
+      "convex_regions": 48,
+      "partition_area_difference_mm2": 0.0,
+      "uncovered_original_projection_area_mm2": 0.0,
+      "mesh": "link5",
+      "component": 1
+    },
+    {
+      "original_area_mm2": 1444.6883039999996,
+      "material_area_mm2": 1444.6883119999998,
+      "guide_area_mm2": 1469.7691416327693,
+      "original_holes": 15,
+      "guide_holes": 8,
+      "removed_projection_features": [
+        {
+          "type": "tiny_projection_hole",
+          "area_mm2": 9.999999999980033e-07
+        },
+        {
+          "type": "tiny_projection_hole",
+          "area_mm2": 9.999999999988916e-07
+        },
+        {
+          "type": "tiny_projection_hole",
+          "area_mm2": 1.9999999999986713e-06
+        },
+        {
+          "type": "tiny_projection_hole",
+          "area_mm2": 1.9999999999951185e-06
+        },
+        {
+          "type": "tiny_projection_hole",
+          "area_mm2": 9.999999999977814e-07
+        },
+        {
+          "type": "tiny_projection_hole",
+          "area_mm2": 5.000000000003339e-07
+        },
+        {
+          "type": "tiny_projection_hole",
+          "area_mm2": 5.000000000003339e-07
+        }
+      ],
+      "triangles": 192,
+      "convex_regions": 92,
+      "partition_area_difference_mm2": 0.0,
+      "uncovered_original_projection_area_mm2": 0.0,
+      "mesh": "gripper_flange",
+      "component": 0
+    },
+    {
+      "original_area_mm2": 1259.7091444999994,
+      "material_area_mm2": 1259.7091569999995,
+      "guide_area_mm2": 1276.742625730418,
+      "original_holes": 7,
+      "guide_holes": 2,
+      "removed_projection_features": [
+        {
+          "type": "tiny_projection_hole",
+          "area_mm2": 4.499999999996788e-06
+        },
+        {
+          "type": "tiny_projection_hole",
+          "area_mm2": 4.50000000000567e-06
+        },
+        {
+          "type": "tiny_projection_hole",
+          "area_mm2": 1.4999999999998916e-06
+        },
+        {
+          "type": "tiny_projection_hole",
+          "area_mm2": 9.999999999994466e-07
+        },
+        {
+          "type": "tiny_projection_hole",
+          "area_mm2": 1.000000000004221e-06
+        }
+      ],
+      "triangles": 78,
+      "convex_regions": 29,
+      "partition_area_difference_mm2": 0.0,
+      "uncovered_original_projection_area_mm2": 0.0,
+      "mesh": "gripper_flange",
+      "component": 2
+    }
+  ],
+  "retained_local_blocks": [
+    "flange_floor",
+    "root_arc_0",
+    "root_arc_1",
+    "root_arc_2",
+    "root_arc_3",
+    "root_flat",
+    "wall_hole_00",
+    "wall_hole_01",
+    "wall_hole_02",
+    "wall_hole_03",
+    "wall_hole_04",
+    "wall_hole_05",
+    "wall_hole_06",
+    "wall_hole_07",
+    "wall_hole_08",
+    "wall_hole_09",
+    "wall_hole_10",
+    "wall_hole_11",
+    "wall_side_low"
+  ],
+  "retained_count": 19,
+  "source_vertex_policy": "Every generated 3D vertex lies on an original clipped triangle; frozen local vertices are unchanged. No voxel remesh, no recursive proxy splitting, no random or zero-thickness regularization.",
+  "local_exception": {
+    "name": "root_arc_1",
+    "maximum_sampled_exterior_mm": 0.2998888207524339,
+    "located_points": 303,
+    "review": 6267190197
+  },
+  "physics_steps": 0
+}

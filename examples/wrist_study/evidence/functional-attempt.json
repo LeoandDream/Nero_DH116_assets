@@ -1,0 +1,6 @@
+{
+  "output": "/data_robot/projects/.worktrees/nero_dh116_issue10/runs/issue10/left_functional_002",
+  "candidate_sha256": "dedec2c3dcb4f05f9799c5c8149f023a82e103c5718aeeed4b8cb1028540e7d6",
+  "authorized_max_steps": 5750,
+  "retry_allowed": false
+}

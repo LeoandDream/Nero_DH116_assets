@@ -1,0 +1,5 @@
+{
+  "protocol_sha256": "f88eeb04bbb97c15cc19e89f74ef7ae08b00d3b50a67ae01d379a074abe32911",
+  "script_sha256": "ab91f0c5af6014844ada73387b7d8d159ab80b77952cb2a52c3fb153f338ac9f",
+  "purpose": "registered short ctrl-playback microbenchmark, NOT functional rollout"
+}

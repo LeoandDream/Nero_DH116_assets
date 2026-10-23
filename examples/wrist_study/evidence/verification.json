@@ -1,0 +1,25 @@
+{
+  "base_main": "fb2c12ba2fe0830ae66c77d52ac42f087fbb0070",
+  "existing_tracked_files_changed": [],
+  "original_delivery_SHA256SUMS_entries_verified": 655,
+  "protected_models": {
+    "mjcf/nero_dh116.xml": "c446124b7d938aa6e00ba5914047001de66c2a2c162e7dea1644437e5a85cb33",
+    "mjcf/dh116_left.xml": "dc0c11196db0d22a84d0a9b7e97c496b1e694c24dc73eed6883dc615b82ec872",
+    "mjcf/dh116_right.xml": "cac325e716d55890857278b54ed14101116748ea68fffbcc544f2e51bf724aec",
+    "mjcf/nero_dh116_right_research.xml": "ea335674996894488f30bae5f29e6271f662f320dbcb44f9b32817dd1b5fc93a"
+  },
+  "user_README_sha256": "d68ec6d62a6f42b8c1636ad2774c8329073d973c2621cc7fe148c8c8c89d8f25",
+  "study_unit_tests_passed": 5,
+  "existing_four_asset_tests_passed": 7,
+  "clean_load": "PASS_CLEAN_STATIC_LOAD",
+  "functional_attempts": 1,
+  "functional_physics_steps": 5750,
+  "microbenchmark_physics_steps": 1664,
+  "total_explicit_physics_steps": 7414,
+  "no_parameter_tuning": true,
+  "no_model_or_action_retries_after_integration": true,
+  "main_or_default_asset_changes": false,
+  "historical_FAIL_and_UNKNOWN_preserved": true,
+  "selection": "Keep default L15/R306; retain reconstructed L306 as optional reviewed research candidate.",
+  "formal_model_acceptance": "NOT_CHANGED; fixed functional regression does not supersede high-fidelity limitations."
+}
