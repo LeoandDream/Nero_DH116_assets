@@ -1,0 +1,24 @@
+{
+  "setup_blocks_before_integration": [
+    {
+      "status": "SETUP_BLOCKED_BEFORE_ANY_INTEGRATION",
+      "physics_steps": 0,
+      "benchmark_start_ledger_exists": false,
+      "reason": "Archived right scene refers to removed verification/proxy76 paths. Resolve by named frozen main resources and verify any still-existing original bytes; preserve scene geometry/parameters."
+    },
+    {
+      "status": "SOURCE_PREFLIGHT_BLOCKED",
+      "physics_steps": 0,
+      "native_environment_constructed": false,
+      "functional_attempt_consumed": false,
+      "reason": "Optional parameter in old model.py and its test changed frozen source SHA. Restored both original files; model selection moves to the independent experiment entry, without changing frozen source checks."
+    }
+  ],
+  "microbenchmark_physics_steps": 1664,
+  "native_functional_rollouts": 1,
+  "native_functional_physics_steps": 5750,
+  "total_explicit_new_physics_steps": 7414,
+  "additional_right_full_rollouts": 0,
+  "automatic_tuning": false,
+  "retries_after_functional_integration": 0
+}

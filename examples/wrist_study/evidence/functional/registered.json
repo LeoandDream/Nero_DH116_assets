@@ -1,0 +1,18 @@
+{
+  "issue": "https://github.com/LeoandDream/Nero_DH116_assets/issues/10",
+  "candidate": "examples/wrist_study/candidate/model.xml",
+  "candidate_sha256": "dedec2c3dcb4f05f9799c5c8149f023a82e103c5718aeeed4b8cb1028540e7d6",
+  "protocol_sha256": "f88eeb04bbb97c15cc19e89f74ef7ae08b00d3b50a67ae01d379a074abe32911",
+  "actions_sha256": "4f0a40e3ed5b834ffb21ca36c2e5e0b0d1d7da79c69862a75b67d1d6241b049f",
+  "max_physics_steps": 5750,
+  "diagnostic_sha256": "80a1375d94f57484dd314a8f5c9708c53a160f8e0360316c2e75efbc0c4379a4",
+  "functional_script_sha256": "abdf2bfd6fe31a80e92ace410911846589188765f0f71c8a14592db315a98992",
+  "python": "3.11.16 (main, Sep 24 2026, 17:56:40) [Clang 22.1.3 ]",
+  "mujoco": "3.2.3",
+  "robosuite": "1.4.1",
+  "libero_commit": "f78abd68ee283de9f9be3c8f7e2a9ad60246e95c",
+  "new_controller": false,
+  "stopping_rules": "Unmodified frozen left diagnostic.py; no tolerance or threshold changes",
+  "full_reset_flow": "native constructor, seed/reset, absolute-goal probe, diagnostic seed/reset",
+  "publication_scope": "Fixed white-bowl research regression; native cabinet success reported separately"
+}

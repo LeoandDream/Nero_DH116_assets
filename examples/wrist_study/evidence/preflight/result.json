@@ -1,0 +1,17 @@
+{
+  "status": "PASS_FINITE_TASK_PREFLIGHT",
+  "candidate_306_anomaly_states": 0,
+  "left_actual_saved_post_states": 5750,
+  "old_R_arm_witnesses": 14,
+  "baseline15_R_witness_contact_states": 10,
+  "compiled_geometry_exact_to_original306": 306,
+  "candidate_model_sha256": "dedec2c3dcb4f05f9799c5c8149f023a82e103c5718aeeed4b8cb1028540e7d6",
+  "mj_kinematics_calls": 11528,
+  "mj_collision_calls": 11528,
+  "explicit_physics_steps": 0,
+  "mj_forward_calls": 0,
+  "limitations": [
+    "Finite post-state geometry, not original RK4 contact caches or continuous trajectory proof.",
+    "Original 0.300mm/2.17mm approximations and high-fidelity FAIL/UNKNOWN remain."
+  ]
+}

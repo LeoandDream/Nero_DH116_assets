@@ -1,0 +1,135 @@
+"""One source-feature collision construction. No dynamics, retries, or hull recursion."""
+from pathlib import Path
+from collections import defaultdict
+import sys,json,hashlib,time,heapq,shutil
+import numpy as np,trimesh
+from scipy.spatial import ConvexHull,QhullError
+import shapely
+from shapely.geometry import Polygon
+ROOT=Path(__file__).resolve().parent;BASE=ROOT.parent
+PREV=BASE/'nero-official-feature-local-20261019';V1=BASE/'nero-official-local-convex-candidate-20261019';LOCAL=BASE/'nero-official-flange-root-local-20261019'
+sys.path.insert(0,str(PREV))
+from local_probe import clip_triangles
+
+def write(p,x):p.write_text(json.dumps(x,indent=2)+'\n')
+def clip(v,f,eq):return clip_triangles(v,f,np.asarray(eq),np.arange(len(f)))[:2]
+def zbox(lo,hi):return np.array([[0,0,1,-hi],[0,0,-1,lo]])
+def wedge(a,b):
+    a,b=np.deg2rad([a,b]);return np.array([[np.sin(a),-np.cos(a),0,0],[-np.sin(b),np.cos(b),0,0]])
+def hull(v):
+    v=np.unique(np.round(v,12),axis=0)
+    if len(v)<4 or np.linalg.matrix_rank(v-v.mean(0),tol=1e-10)<3:return None
+    h=ConvexHull(v);ids=np.unique(h.simplices);vv=v[ids];f=np.searchsorted(ids,h.simplices);n=np.cross(vv[f[:,1]]-vv[f[:,0]],vv[f[:,2]]-vv[f[:,0]]);flip=np.einsum('ij,ij->i',n,vv[f].mean(1)-vv.mean(0))<0;f[flip]=f[flip][:,[0,2,1]]
+    return vv,f,h.volume
+
+def convex_regions(projected):
+    # GEOS uses mm. These are partition guides only, not replacement vertices.
+    polys=[]
+    for tri in projected:
+        p=Polygon(tri)
+        if p.area>1e-8:polys.append(shapely.set_precision(p,.001))
+    raw=shapely.union_all(polys);parts=list(raw.geoms)if raw.geom_type=='MultiPolygon'else[raw]
+    cleaned=[];removed=[]
+    for p in parts:
+        if p.area<.01:removed.append(dict(type='tiny_component',area_mm2=p.area));continue
+        holes=[]
+        for ring in p.interiors:
+            area=Polygon(ring).area
+            if area>=.1:holes.append(ring.coords)
+            else:removed.append(dict(type='tiny_projection_hole',area_mm2=area))
+        cleaned.append(Polygon(p.exterior.coords,holes))
+    material=shapely.union_all(cleaned);guide=material.simplify(.10,preserve_topology=True).buffer(.102,join_style='mitre')
+    triangles=list(shapely.constrained_delaunay_triangles(guide).geoms)
+    # Merge adjacent *2D source-contour triangles* only when their union is convex.
+    # Not re-hulling old 3D proxy components, and no recursive error subdivision.
+    active={i:t for i,t in enumerate(triangles)};neighbors=defaultdict(dict);edges=defaultdict(list)
+    for i,t in active.items():
+        xy=np.round(np.asarray(t.exterior.coords)[:-1],8)
+        for a,b in zip(xy,np.roll(xy,-1,axis=0)):
+            key=tuple(sorted([tuple(a),tuple(b)]));edges[key].append(i)
+    for edge,ids in edges.items():
+        if len(ids)==2:
+            i,j=ids;length=float(np.linalg.norm(np.array(edge[0])-edge[1]));neighbors[i][j]=length;neighbors[j][i]=length
+    queue=[];serial=0
+    def enqueue(i,j):
+        nonlocal serial
+        if i not in active or j not in active or j not in neighbors[i]:return
+        h=shapely.convex_hull(shapely.union_all([active[i],active[j]]))
+        if h.area-active[i].area-active[j].area<1e-7:
+            serial+=1;heapq.heappush(queue,(-neighbors[i][j],serial,i,j,h))
+    for i in active:
+        for j in neighbors[i]:
+            if i<j:enqueue(i,j)
+    while queue:
+        _,_,i,j,_=heapq.heappop(queue)
+        if i not in active or j not in active or j not in neighbors[i]:continue
+        h=shapely.convex_hull(shapely.union_all([active[i],active[j]]))
+        if h.area-active[i].area-active[j].area>=1e-7:continue
+        active[i]=h;del active[j]
+        affected=set(neighbors[i])|set(neighbors[j]);affected.discard(i);affected.discard(j)
+        for n in affected:
+            length=neighbors[i].get(n,0)+neighbors[j].get(n,0);neighbors[i][n]=length;neighbors[n].pop(j,None);neighbors[n][i]=length
+        neighbors[i].pop(j,None);neighbors.pop(j,None)
+        for n in affected:enqueue(i,n)
+    regions=sorted(active.values(),key=lambda p:(p.centroid.x,p.centroid.y))
+    error=shapely.union_all(regions).symmetric_difference(guide).area
+    return regions,dict(original_area_mm2=raw.area,material_area_mm2=material.area,guide_area_mm2=guide.area,original_holes=sum(len(p.interiors)for p in parts),guide_holes=sum(len(p.interiors)for p in(list(guide.geoms)if guide.geom_type=='MultiPolygon'else[guide])),removed_projection_features=removed,triangles=len(triangles),convex_regions=len(regions),partition_area_difference_mm2=error,uncovered_original_projection_area_mm2=raw.difference(guide).area)
+
+def main():
+    out=ROOT/'build/parts';out.mkdir(exist_ok=False);records=[];skipped=[];profile_records=[]
+    transforms={n:dict(np.load(PREV/'source'/f'{n}-original.npz'))for n in ['link5','gripper_flange']};W=np.load(PREV/'source/flange-wall-frame.npz')['R']
+    def component(n,i):
+        z=np.load(V1/'build'/f'{n}-component-{i}.npz');t=transforms[n];v=z['vertices']@t['compiler_to_original_R'].T+t['compiler_to_original_p'];return (v@W if n=='gripper_flange'else v),z['faces']
+    def add(n,i,label,vertices,source_kind='source_clipped_hull',retained=None):
+        result=hull(vertices)
+        if result is None:skipped.append(dict(mesh=n,component=i,label=label,vertices=len(vertices),reason='zero-volume source patch; no artificial thickening'));return
+        v,f,volume=result;t=transforms[n];asset=v@W.T if n=='gripper_flange'else v;compiler=(asset-t['compiler_to_original_p'])@t['compiler_to_original_R'];index=sum(r['mesh']==n for r in records);path=out/f'{n}-{index:03d}.npz';ch=ConvexHull(v);widths=np.ptp(v@ch.equations[:,:3].T,axis=0)
+        np.savez_compressed(path,vertices=compiler,faces=f,component=i,local_piece=index,volume=volume)
+        row=dict(mesh=n,component=i,index=index,label=label,construction=source_kind,vertices=len(v),faces=len(f),volume_mm3=volume*1e9,minimum_face_normal_width_mm=float(widths.min()*1000),bounds_feature_mm=(np.array([v.min(0),v.max(0)])*1000).tolist(),source_retained=retained)
+        records.append(row);print(json.dumps(dict(event='piece',mesh=n,index=index,label=label,vertices=len(v),width_mm=row['minimum_face_normal_width_mm'])),flush=True)
+    # Wrist side forks and gripper side plates: explicit planar contours/holes.
+    for n,i in [('link5',0),('link5',1),('gripper_flange',0),('gripper_flange',2)]:
+        v,f=component(n,i);regions,meta=convex_regions(v[f][:,:,[0,2]]*1000);meta.update(mesh=n,component=i);profile_records.append(meta);print(json.dumps(dict(event='profile',mesh=n,component=i,**{k:meta[k]for k in ['convex_regions','original_holes','guide_holes']})),flush=True)
+        arrays={}
+        for j,p in enumerate(regions):
+            xy=np.asarray(p.exterior.coords)[:-1]/1000;eq2=ConvexHull(xy).equations;eq=np.c_[eq2[:,0],np.zeros(len(eq2)),eq2[:,1],eq2[:,2]];vv,ff=clip(v,f,eq)
+            if len(ff):add(n,i,f'profile_{i}_{j:03d}',vv)
+            arrays[f'polygon_{j}']=xy
+        np.savez_compressed(ROOT/'build'/f'{n}-profile-{i}.npz',**arrays)
+    # Remaining link5 inner/outer cylindrical case: fixed thick wall sectors.
+    v,f=component('link5',4)
+    for k,(lo,hi)in enumerate([(-.169,-.100),(-.100,-.075),(-.075,-.030)]):
+        for j in range(12):
+            vv,ff=clip(v,f,np.vstack([zbox(lo,hi),wedge(j*30,(j+1)*30)]))
+            if len(ff):add('link5',4,f'case_z{k}_sector{j:02d}',vv)
+    for i in [2,3,5]:
+        v,f=component('link5',i);add('link5',i,f'rear_solid_{i}',v)
+    # Nineteen frozen local flange blocks are reused exactly in their feature
+    # coordinates. The old link5 leak is re-covered by full source-contour cells.
+    retained=[]
+    for path in sorted((LOCAL/'pieces').glob('*.npz')):
+        if path.stem=='link5_wall':continue
+        z=np.load(path);add('gripper_flange',1,'retained_'+path.stem,z['vertices'],source_kind='retained_feature_block',retained=dict(file=str(path),sha256=hashlib.sha256(path.read_bytes()).hexdigest()))
+        retained.append(path.stem)
+    v,f=component('gripper_flange',1);plan=json.loads((PREV/'evidence/local-plan.json').read_text());base=plan['source_floor_level_mm']/1000
+    # Lower plate: include source intersections with the actual floor plane,
+    # then subtract the existing rectangular local floor cell into disjoint
+    # halfspaces. No upper wall hull is allowed to bridge the plate cavity.
+    # The exported floor plane has ~55nm of residual tilt in this feature frame.
+    # Include it wholly, rather than cutting its source triangles in half.
+    lower_v,lower_f=clip(v,f,[[0,0,1,-(base+1e-7)]])
+    floor=next(p for p in plan['regions']if p['name']=='flange_floor');eq=np.array(floor['equations']);prefix=[]
+    for j,e in enumerate(eq):
+        vv,ff=clip(lower_v,lower_f,np.array(prefix+[-e]))
+        if len(ff):add('gripper_flange',1,f'floor_remainder_{j}',vv)
+        prefix.append(e)
+    upper_faces=f[v[f][:,:,2].max(1)>base+.00001];upper_v,upper_f=clip(v,upper_faces,[[0,0,-1,base]])
+    # Remaining ring wall. 30..65deg is entirely assigned to the frozen local
+    # hole/side/root blocks; no coarse hull can fill those slots again.
+    edges=np.linspace(65,390,16)
+    for j,(a,b)in enumerate(zip(edges[:-1],edges[1:])):
+        vv,ff=clip(upper_v,upper_f,wedge(a,b))
+        if len(ff):add('gripper_flange',1,f'ring_sector_{j:02d}',vv)
+    summary=dict(parts=records,piece_counts={n:sum(r['mesh']==n for r in records)for n in ['link5','gripper_flange']},total_pieces=len(records),vertices=sum(r['vertices']for r in records),faces=sum(r['faces']for r in records),minimum_face_normal_width_mm=min(r['minimum_face_normal_width_mm']for r in records),minimum_volume_mm3=min(r['volume_mm3']for r in records),skipped_zero_volume_source_patches=skipped,profile_partitions=profile_records,retained_local_blocks=retained,retained_count=len(retained),source_vertex_policy='Every generated 3D vertex lies on an original clipped triangle; frozen local vertices are unchanged. No voxel remesh, no recursive proxy splitting, no random or zero-thickness regularization.',local_exception=dict(name='root_arc_1',maximum_sampled_exterior_mm=.2998888207524339,located_points=303,review=6267190197),physics_steps=0)
+    write(ROOT/'evidence/construction.json',summary);print(json.dumps({k:v for k,v in summary.items()if k not in ['parts','profile_partitions']},indent=2))
+if __name__=='__main__':main()

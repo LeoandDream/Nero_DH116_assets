@@ -1,0 +1,109 @@
+{
+  "issue": "https://github.com/LeoandDream/Nero_DH116_assets/issues/10",
+  "base_main": "fb2c12ba2fe0830ae66c77d52ac42f087fbb0070",
+  "historical_inputs_commit": "5fc2ea346ba7bccb80052024d9c16c3ee2b5a526",
+  "issue9_commit": "3a592a3cc4d50f64ae40a64c12474b237d62088c",
+  "scope": "Compare existing 15/306 first; at most one source-method left candidate and one native 5750-step left regression. No right full rollout.",
+  "static_steps": {
+    "L": [
+      1,
+      250,
+      1000,
+      1315,
+      1401,
+      2000,
+      2250,
+      3000,
+      4000,
+      4750,
+      5000,
+      5750
+    ],
+    "R": [
+      1,
+      250,
+      1000,
+      1315,
+      1401,
+      2000,
+      2250,
+      4000,
+      4637,
+      4750,
+      4794,
+      5101,
+      5750,
+      6500
+    ]
+  },
+  "benchmark": {
+    "windows": [
+      {
+        "side": "L",
+        "after_step": 250
+      },
+      {
+        "side": "L",
+        "after_step": 5000
+      },
+      {
+        "side": "R",
+        "after_step": 1314
+      },
+      {
+        "side": "R",
+        "after_step": 6000
+      }
+    ],
+    "steps_per_window": 64,
+    "warmup_steps_per_representation": 16,
+    "repetitions": 3,
+    "orders": [
+      [
+        15,
+        306
+      ],
+      [
+        306,
+        15
+      ],
+      [
+        15,
+        306
+      ]
+    ],
+    "controls": "Exact next recorded 13D MuJoCo ctrl sequence, open-loop playback for cost isolation, NOT a new controller or native policy counterfactual.",
+    "initialization": "Same saved qpos/qvel/time per A/B; qacc_warmstart starts zero; static forward outside timer. No saved complete integration-state equality claim.",
+    "timing": "perf_counter_ns around mj_step only; compile/forward/ctrl assignment/contact reads/serialization measured separately or excluded.",
+    "health_stop": "nonfinite, MuJoCo warning, nonmonotonic/wrong timestep; abort affected playback and preserve its first cause; no tuned retry.",
+    "inference_limit": "Short open-loop cost/control perturbation only; no new functional-grasp claim."
+  },
+  "candidate_condition": "Clear relevant collision-quality benefit and no unacceptable measured cost; reconstruct from original source-feature build method, not copy opposite delivered OBJ. Preserve all nonwrist fields.",
+  "candidate_count_limit": 1,
+  "functional_regression_limit": 1,
+  "functional_steps_max": 5750,
+  "functional_protocol": "Frozen native left LIBERO diagnostic, original 230 actions, Reset, controller, stopping bounds, native/strict semantics unchanged. Numerical/geometry/candidate preflight must pass.",
+  "selection": "Consider geometric quality, false/abnormal contacts, measured J6 effects, historical and newly executed grasp evidence, measured step cost. Keep current defaults absent task-level evidence justifying replacement.",
+  "immutable": [
+    "main",
+    "four official MJCF entries",
+    "left V1",
+    "right B+functional_v1/306",
+    "user README",
+    "historical successes/FAILs",
+    "hand76/81",
+    "drive",
+    "Mimic",
+    "filters",
+    "friction/solver",
+    "actions"
+  ],
+  "no_actions": [
+    "automatic tuning/retry",
+    "parameter scan",
+    "precision global certification",
+    "right6500 rollout",
+    "merge",
+    "Tag/Release"
+  ]
+}

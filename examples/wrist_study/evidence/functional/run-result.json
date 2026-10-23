@@ -1,0 +1,13 @@
+{
+  "status": "DIAGNOSTIC_FINISHED",
+  "physics_steps": 5750,
+  "commands": 230,
+  "functional_rollouts": 1,
+  "native_task_result": false,
+  "strict_grasp_success_claim": false,
+  "retry": false,
+  "stop_reason": null,
+  "mj_step_total_ns": 9999269637,
+  "mean_mj_step_us": 1739.0034151304349,
+  "historical_trajectory_equal": true
+}

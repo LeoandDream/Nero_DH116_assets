@@ -1,0 +1,25 @@
+{
+  "status": "PASS_CLEAN_STATIC_LOAD",
+  "nq": 18,
+  "nv": 18,
+  "nu": 13,
+  "ngeom": 457,
+  "resources": 452,
+  "all_resources_inside_clean_checkout": true,
+  "requires_historical_runtime_paths": false,
+  "explicit_physics_steps": 0,
+  "resets": 0,
+  "xml_audit": {
+    "removed_counts": [
+      7,
+      8
+    ],
+    "replacement_counts": [
+      147,
+      159
+    ],
+    "hand_collision_count": 76,
+    "unauthorized_xml_fields_identical": true
+  },
+  "base_files_unchanged": true
+}
