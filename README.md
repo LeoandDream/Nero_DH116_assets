@@ -1,15 +1,15 @@
 # NERO × DH116 — 四套研究级 MuJoCo 资产
 
-四套已验收配置来自冻结提交 `5fc2ea3`。本交付分支直接基于main选择性整理，不依赖合并PR #4或PR #7的研究历史。保留main原有左手V1和LIBERO参考入口。
+四套研究级 MuJoCo 资产保持既有机械与控制接口。左手组合默认采用经5750步白碗验证的306块高细度腕部；原左手V1（15腕）继续保留为 `mjcf/nero_dh116.xml`，支持历史复现。
 
 | 入口名 | MJCF | state / action |
 | --- | --- | --- |
 | `dh116_left` | [独立DH116-L](mjcf/dh116_left.xml) | 11D / 6D |
 | `dh116_right` | [独立DH116-R](mjcf/dh116_right.xml) | 11D / 6D |
-| `nero_dh116_left` | [NERO＋DH116-L V1](mjcf/nero_dh116.xml) | 18D / 13D |
+| `nero_dh116_left` | [NERO＋DH116-L（306腕）](mjcf/nero_dh116_left_fine.xml) | 18D / 13D |
 | `nero_dh116_right` | [NERO＋DH116-R研究配置](mjcf/nero_dh116_right_research.xml) | 18D / 13D |
 
-四份XML与必要资源保持冻结版本原字节。右手为成功抓持的 **B＋functional_v1、81手部＋306腕部配置**，不冒用早期17Mesh粗模型的结果，也不将306腕代理称为最终最优结构。研究级验收、适用范围和原始证据见[精简交付报告](docs/DELIVERY.md)。
+两套独立手与右手组合保持原字节；左手新默认仅替换NERO link5＋法兰碰撞为306块，手部76块、驱动与Mimic不变。右手仍为 **B＋functional_v1、81手部＋306腕部配置**，306并不代表全域最优。详见[左腕升级说明](docs/LEFT_WRIST_FINE.md)与[历史交付报告](docs/DELIVERY.md)。
 
 ## 安装与最小控制
 
@@ -54,10 +54,10 @@ sha256sum -c SHA256SUMS
 
 上述交付检查仅解析XML、校验资源/接口与哈希，不编译或运行MuJoCo。本轮不重跑仿真；动力学能力引用冻结版本已保存并认可的证据。原始白碗指标只支持固定工况的研究使用，不能当作全行程、任意物体、完整LIBERO任务或实物标定通过。
 
-main已有的[左手原生LIBERO参考入口](examples/libero_reference/README.md)与[原V1模型说明](docs/MODEL.md)保持；右手历次实验、调参、历史FAIL、原始轨迹和视频留在固定提交链接中，未批量搬入本分支。
+原[左手V1及LIBERO参考入口](examples/libero_reference/README.md)保持原样，其冻结复现仍加载 `mjcf/nero_dh116.xml`（15腕），不会跟随默认索引切换。右手及其他历史实验/FAIL原始证据保留于固定GitHub提交。
 
 ## 来源与许可
 
 NERO与经核对的厂家法兰源件/衍生物采用MIT，DH116采用Apache-2.0。厂家原版权/许可通知、法兰逐项再分发依据见[来源与许可](licenses/SOURCES.md)及[法兰来源证书](licenses/flange-provenance.json)。既有仓库公开不作为授权依据。
 
-当前为独立交付审查分支；PR #4、#7保持Draft，main未改动。本轮不合并、创建Tag或发布Release。
+本次默认左腕切换为独立审查变更；旧研究基线及历史PR保留，未经复核不自动合并或发布Release。
